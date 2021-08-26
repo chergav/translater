@@ -1,0 +1,21 @@
+:root{
+	--font-prm: hsl(0 0% var(--lightness) /.9);
+	--font-sec: hsl(0 0% var(--lightness) /.6);
+}
+body{
+	font-family: Roboto, sans-serif;
+	font-size: 1rem;
+}
+select{font: inherit;}
+.lt{
+	--lightness: 0%;
+	background: #fff;
+	color: var(--font-prm);
+	color-scheme: light;
+}
+.dk{
+	--lightness: 100%;
+	background: #121212;
+	color: var(--font-prm);
+	color-scheme: dark;
+}

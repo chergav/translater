@@ -1,0 +1,19 @@
+{
+	"description": {
+		"message": "Translate selected text"
+	},
+	"menu_title": {
+		"message": "Open in Google Translate"
+	},
+	"menu_options": {
+		"message": "Options"
+	},
+	"options_title": {
+		"message": "Options for $NAME$",
+		"placeholders": {
+			"name": {
+				"content": "Translater"
+			}
+		}
+	}
+}

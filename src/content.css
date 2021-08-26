@@ -1,0 +1,68 @@
+div#trlr-contaner{
+	position: absolute;
+	visibility: hidden;
+	padding: 8px 16px;
+	max-width: 460px;
+	max-height: 300px;
+	overflow-y: auto;
+	font: 14px Roboto, sans-serif;
+	text-align: start;
+	z-index: 2048 !important;
+    box-shadow: 0 6px 6px -3px rgba(0,0,0,.2),
+		0 10px 14px 1px rgba(0,0,0,.14),
+		0 4px 18px 3px rgba(0,0,0,.12);
+}
+div#trlr-contaner.lt{
+	--font-prm: rgb(0 0 0 /.9);
+	--font-sec: rgb(0 0 0 /.6);
+	--back-color: #fff;
+	background: var(--back-color);
+	color: var(--font-prm);
+	border: 1px solid #aaa;
+	color-scheme: light;
+}
+div#trlr-contaner.dk{
+	--font-prm: rgb(255 255 255 /.9);
+	--font-sec: rgb(255 255 255 /.6);
+	--back-color: #121212;
+	background: var(--back-color);
+	color: var(--font-prm);
+	border: 1px solid #222;
+	color-scheme: dark;
+}
+div#trlr-contaner p.trlr-par{
+	text-align: inherit;
+	margin: 8px 0;
+	font: inherit;
+    overflow-wrap: break-word;
+}
+div#trlr-contaner p.lang{
+	color: var(--font-sec);
+}
+div#trlr-contaner p.orig{
+	font-size: 18px;
+}
+div#trlr-contaner table,
+div#trlr-contaner table tr,
+div#trlr-contaner table td{
+	background: var(--back-color);
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	color: inherit;
+	border: none;
+}
+div#trlr-contaner table td.trlr-td {
+	white-space: normal;
+	vertical-align: top;
+	text-align: inherit;
+	border: inherit;
+	padding: 0 0 8px 0;
+	font-size: inherit;
+	color: inherit;
+}
+div#trlr-contaner table td.no-wrap {
+	white-space: nowrap;
+	font-style: italic;
+	color: var(--font-sec);
+}

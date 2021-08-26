@@ -1,0 +1,19 @@
+{
+	"description": {
+		"message": "Перевод выделенного текста"
+	},
+	"menu_title": {
+		"message": "Открыть в Google Переводчик"
+	},
+	"menu_options": {
+		"message": "Параметры"
+	},
+	"options_title": {
+		"message": "Настройки расширения $NAME$",
+		"placeholders": {
+			"name": {
+				"content": "Translater"
+			}
+		}
+	}
+}

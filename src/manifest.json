@@ -1,0 +1,41 @@
+{
+	"manifest_version": 2,
+	"name": "Translater",
+	"description": "__MSG_description__",
+	"version": "1.0.0",
+	"author": "chergav",
+	"minimum_chrome_version": "63",
+	"default_locale": "en",
+	"icons": {
+		"16": "icons/16.png",
+		"19": "icons/19.png",
+		"48": "icons/48.png",
+		"128": "icons/128.png"
+	},
+	"browser_action": {
+		"default_icon": {
+			"19": "icons/19.png"
+		},
+		"default_popup": "popup.html",
+		"default_title": "Translater"
+	},
+	"content_scripts": [{
+		"all_frames": true,
+		"matches": [ "<all_urls>" ],
+		"css": [ "content.css" ],
+		"js": [ "content.js" ]
+	}],
+	"background": {
+		"page": "background.html"
+	},
+	"options_ui": {
+		"page": "options.html",
+		"open_in_tab": true
+	},
+	"permissions": [
+		"activeTab",
+		"contextMenus",
+		"storage",
+		"*://translate.googleapis.com/*"
+	]
+}
