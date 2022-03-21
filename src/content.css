@@ -8,6 +8,7 @@ div#trlr-contaner{
 	font: 14px Roboto, sans-serif;
 	text-align: start;
 	z-index: 2048 !important;
+	border-radius: 0;
     box-shadow: 0 6px 6px -3px rgba(0,0,0,.2),
 		0 10px 14px 1px rgba(0,0,0,.14),
 		0 4px 18px 3px rgba(0,0,0,.12);
@@ -51,6 +52,7 @@ div#trlr-contaner table td{
 	font: inherit;
 	color: inherit;
 	border: none;
+	box-shadow: none;
 }
 div#trlr-contaner table td.trlr-td {
 	white-space: normal;

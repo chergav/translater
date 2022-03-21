@@ -1,4 +1,9 @@
-export const settings = {
+const settings = {
+	defaultSettings: {
+		sourceLang: 'auto',
+		targetLang: chrome.i18n.getUILanguage(),
+		theme: 'dk',
+	},
 	themes: {
 		'lt': 'light', 
 		'dk': 'dark'
@@ -110,3 +115,5 @@ export const settings = {
 		"zu":"Zulu"
 	}
 }
+
+export default settings;

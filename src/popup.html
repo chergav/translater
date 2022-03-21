@@ -3,10 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="common/common.css">
-
 </head>
 <body>
-	<button id="options">options</button>
+	<h3>
+		<img src="icons/48.png" alt="">
+		<span>Translater</span>
+	</h3>
+	<table>
+		<tbody>
+			<tr>
+				<td><label for="select_target_lang">target lang:</label></td>
+				<td><select id="select_target_lang"></select></td>
+			</tr>
+			<tr>
+				<td><label for="select_theme">theme:</label></td>
+				<td><select id="select_theme"></select></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<br>
+
+	<a href="#" id="options" data-locale="options_button"></a>
 
 	<script src="popup.js" type="module"></script>
 </body>

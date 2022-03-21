@@ -1,5 +1,5 @@
-import { Storage } from './common/storage.js';
-import { settings } from './common/settings.js';
+import storage from './common/storage.js';
+import settings from './common/settings.js';
 
 (async () => {
 	const selectTargetLang = document.querySelector('#select_target_lang');
@@ -7,35 +7,40 @@ import { settings } from './common/settings.js';
 	const html = document.documentElement;
 	const { themes, languages } = settings;
 	let targetLang, theme;
-	
+
 	const getSettings = async () => {
-		({ targetLang, theme } = await Storage.get());
+		({ targetLang, theme } = await storage.get('settings'));
+		//console.log('opts', await storage.get('settings'));
 		html.className = theme;
 	};
 
-	const createOptions = (selected, obj) => {
+	const createOptions = (selected, object) => {
 		let options = '';
-		for (const i in obj) {
+		for (const key in object) {
 			options += `
-				<option value="${i}" ${i === selected ? 'selected' : ''}>${obj[i]}</option>
+				<option value="${key}" ${key === selected ? 'selected' : ''}>
+					${object[key]}
+				</option>
 			`;
 		}
 		return options;
 	};
 
-	const saveSettings = () => 
-		Storage.set({ 
-			targetLang: selectTargetLang.value,
-			theme: selectTheme.value
+	const saveSettings = () =>
+		storage.set({
+			settings: {
+				targetLang: selectTargetLang.value,
+				theme: selectTheme.value,
+			},
 		});
 
 	await getSettings();
 
 	chrome.storage.onChanged.addListener(getSettings);
 
-	document.querySelectorAll('[data-locale]').forEach(i => 
-		i.textContent = chrome.i18n.getMessage(i.dataset.locale)
-	);
+	document
+		.querySelectorAll('[data-locale]')
+		.forEach(i => (i.textContent = chrome.i18n.getMessage(i.dataset.locale)));
 
 	selectTargetLang.innerHTML = createOptions(targetLang, languages);
 	selectTheme.innerHTML = createOptions(theme, themes);

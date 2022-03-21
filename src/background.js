@@ -1,34 +1,29 @@
-import { Storage } from './common/storage.js';
-import { settings } from './common/settings.js';
+import storage from './common/storage.js';
 
-let { targetLang } = await Storage.get();
+(async () => {
+	const { targetLang } = await storage.get('settings');
 
-const translateOnGT = text => {
-	const url = `
-		https://translate.google.com/?sl=auto
-		&tl=${targetLang}
-		&text=${encodeURIComponent(text)}
-	`;
-	chrome.tabs.create({ url: url });
-};
-
-const menuCreate = () =>
+	const translateOnGT = text => {
+		const url = `
+			https://translate.google.com/?sl=auto
+			&tl=${targetLang}
+			&text=${encodeURIComponent(text)}
+		`;
+		chrome.tabs.create({ url: url });
+	};
+	
 	chrome.contextMenus.create({
-		title: chrome.i18n.getMessage('menu_title'),
-		contexts: ["selection"],
-		onclick: (info, _) => translateOnGT(info.selectionText)
+		id: 'mainMenu',
+		title: 'Open in Google Translate',
+		// chrome.i18n.getMessage('menu_title'),
+		// not work in service worker; wait chrome 100v
+		// https://bugs.chromium.org/p/chromium/issues/detail?id=1268098
+		contexts: ['selection'],
 	});
-
-const handleMessage = (message, sender, sendResponse) => {
-	if (message === 'settings') {
-		Storage.get().then(sendResponse);
-	} else if (message === 'languages'){
-		sendResponse(settings.languages)
-	}
-	return true;
-};
-
-chrome.storage.onChanged.addListener(i => ({ targetLang } = i.settings.newValue));
-chrome.runtime.onMessage.addListener(handleMessage);
-
-menuCreate();
+	
+	chrome.contextMenus.onClicked.addListener(function (info, _) {
+		if (info.menuItemId === 'mainMenu') {
+			translateOnGT(info.selectionText);
+		}
+	});
+})();

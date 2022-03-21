@@ -1,4 +1,7 @@
 {
+	"name": {
+		"message": "Translater"
+	},
 	"description": {
 		"message": "Перевод выделенного текста"
 	},
@@ -15,5 +18,8 @@
 				"content": "Translater"
 			}
 		}
+	},
+	"options_button": {
+		"message": "Настройки"
 	}
 }

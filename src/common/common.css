@@ -1,19 +1,30 @@
-:root{
+:root {
 	--font-prm: hsl(0 0% var(--lightness) /.9);
 	--font-sec: hsl(0 0% var(--lightness) /.6);
 }
-body{
+body {
 	font-family: Roboto, sans-serif;
 	font-size: 1rem;
+	min-width: 320px;
 }
-select{font: inherit;}
-.lt{
+select {
+	font: inherit;
+}
+h3 {
+	display: flex;
+	align-items: center;
+	margin: 0 0 1rem 0;
+}
+h3 img {
+	margin-right: 1rem;
+}
+.lt {
 	--lightness: 0%;
 	background: #fff;
 	color: var(--font-prm);
 	color-scheme: light;
 }
-.dk{
+.dk {
 	--lightness: 100%;
 	background: #121212;
 	color: var(--font-prm);

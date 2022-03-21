@@ -1,4 +1,7 @@
 {
+	"name": {
+		"message": "Translater"
+	},
 	"description": {
 		"message": "Translate selected text"
 	},
@@ -15,5 +18,8 @@
 				"content": "Translater"
 			}
 		}
+	},
+	"options_button": {
+		"message": "Options"
 	}
 }
