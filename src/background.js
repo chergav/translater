@@ -1,17 +1,16 @@
 import storage from './common/storage.js';
 
-(async () => {
+const translateOnGT = async text => {
 	const { targetLang } = await storage.get('settings');
+	const url = `
+		https://translate.google.com/?sl=auto
+		&tl=${targetLang}
+		&text=${encodeURIComponent(text)}
+	`;
+	chrome.tabs.create({ url: url });
+};
 
-	const translateOnGT = text => {
-		const url = `
-			https://translate.google.com/?sl=auto
-			&tl=${targetLang}
-			&text=${encodeURIComponent(text)}
-		`;
-		chrome.tabs.create({ url: url });
-	};
-	
+chrome.runtime.onInstalled.addListener(() => {
 	chrome.contextMenus.create({
 		id: 'mainMenu',
 		title: 'Open in Google Translate',
@@ -20,10 +19,11 @@ import storage from './common/storage.js';
 		// https://bugs.chromium.org/p/chromium/issues/detail?id=1268098
 		contexts: ['selection'],
 	});
-	
-	chrome.contextMenus.onClicked.addListener(function (info, _) {
-		if (info.menuItemId === 'mainMenu') {
-			translateOnGT(info.selectionText);
-		}
-	});
-})();
+});
+
+chrome.contextMenus.onClicked.addListener((info, _) => {
+	console.log(info, _);
+	if (info.menuItemId === 'mainMenu') {
+		translateOnGT(info.selectionText);
+	}
+});
