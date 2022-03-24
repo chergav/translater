@@ -6,7 +6,7 @@
 		"message": "Перевод выделенного текста"
 	},
 	"menu_title": {
-		"message": "Открыть в Google Переводчик"
+		"message": "Google Переводчик"
 	},
 	"menu_options": {
 		"message": "Параметры"
@@ -21,5 +21,11 @@
 	},
 	"options_button": {
 		"message": "Настройки"
+	},
+	"target_lang": {
+		"message": "Ваш язык:"
+	},
+	"theme": {
+		"message": "Тема:"
 	}
 }

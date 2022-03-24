@@ -4,10 +4,12 @@ let targetLang, theme, languages;
 
 const getTranlate = async e => {
 	if (!targetLang || !theme || !languages) {
-		({ settings: { targetLang, theme }} = await chrome.storage.sync.get('settings'));
-		({ languages } = await chrome.storage.sync.get('languages'));
+		({
+			settings: { targetLang, theme },
+			languages,
+		} = await chrome.storage.sync.get());
 	}
-	
+
 	await waitTime(10);
 
 	const selection = window.getSelection().toString();
@@ -63,8 +65,7 @@ const showTranslateContaner = (translate, selectionRect) => {
 	let top = pageYOffset + selectionRect.bottom + 8;
 	if (left < 0) left = 8;
 	if (left + width > innerWidth) left = innerWidth - width - 8;
-	if (selectionRect.top + 8 + height > innerHeight)
-		top = pageYOffset + innerHeight - height - 8;
+	if (selectionRect.top + 8 + height > innerHeight) top = pageYOffset + innerHeight - height - 8;
 	trlrc.style.left = `${left}px`;
 	trlrc.style.top = `${top}px`;
 	trlrc.style.visibility = 'visible';

@@ -6,7 +6,7 @@
 		"message": "Translate selected text"
 	},
 	"menu_title": {
-		"message": "Open in Google Translate"
+		"message": "Google Translate"
 	},
 	"menu_options": {
 		"message": "Options"
@@ -21,5 +21,11 @@
 	},
 	"options_button": {
 		"message": "Options"
+	},
+	"target_lang": {
+		"message": "Your language:"
+	},
+	"theme": {
+		"message": "Theme:"
 	}
 }
