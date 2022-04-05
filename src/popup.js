@@ -7,12 +7,11 @@ import settings from './common/settings.js';
 	const html = document.documentElement;
 	const { themes, languages } = settings;
 	const options = document.querySelector('#options');
-	options.addEventListener('click', () => chrome.runtime.openOptionsPage());
+	let targetLang, theme;
+
 	document
 		.querySelectorAll('[data-locale]')
 		.forEach(i => (i.textContent = chrome.i18n.getMessage(i.dataset.locale)));
-
-	let targetLang, theme;
 
 	const getSettings = async () => {
 		({ targetLang, theme } = await storage.get('settings'));
@@ -48,4 +47,5 @@ import settings from './common/settings.js';
 
 	selectTargetLang.addEventListener('input', saveSettings);
 	selectTheme.addEventListener('input', saveSettings);
+	options.addEventListener('click', () => chrome.runtime.openOptionsPage());
 })();

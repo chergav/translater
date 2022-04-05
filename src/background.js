@@ -13,9 +13,8 @@ const translateOnGT = async text => {
 chrome.runtime.onInstalled.addListener(() => {
 	chrome.contextMenus.create({
 		id: 'mainMenu',
-		title: 'Google Переводчик',
-		// chrome.i18n.getMessage('menu_title'),
-		// not work in service worker; wait chrome 100v
+		title: chrome.i18n.getMessage('menu_title') || 'Google Translate',
+		// chrome.i18n.getMessage in service worker chrome 100+
 		// https://bugs.chromium.org/p/chromium/issues/detail?id=1268098
 		contexts: ['selection'],
 	});
