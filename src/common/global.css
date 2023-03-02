@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {	
+	:root, :host, html, body {
+		font-family: 'Inter Variable', system-ui, sans-serif;
+		font-weight: 400;
+	}
+
+	.light {
+		color-scheme: light;
+	}
+	
+	.dark {
+		color-scheme: dark;
+	}
+}
