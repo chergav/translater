@@ -1,6 +1,6 @@
 {
 	"name": "translater",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"license": "MIT",
 	"author": "chergav",
 	"type": "module",
@@ -9,7 +9,7 @@
 		"build": "NODE_ENV=production vite build",
 		"preview": "vite preview",
 		"prepack:crx": "yarn build",
-		"pack:crx": "crx3 dist -o extension/translater.crx",
+		"pack:crx": "crx3 dist -o extension/translater-$npm_package_version.crx",
 		"prepack:zip": "FIREFOX=true yarn build && node utils/clean-manifest-for-ff.js",
 		"pack:zip": "web-ext build -o -s dist -a extension"
 	},

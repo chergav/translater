@@ -41,7 +41,7 @@ export default defineManifest(() => ({
 		'activeTab',
 		'storage'
 	],
-	host_permissions: ['https://translate.googleapis.com/*'],
+	host_permissions: ['<all_urls>', 'https://translate.googleapis.com/*'],
 	web_accessible_resources: [
 		{
 			matches: ['<all_urls>'],
