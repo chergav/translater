@@ -9,9 +9,9 @@
 		"build": "NODE_ENV=production vite build",
 		"preview": "vite preview",
 		"prepack:crx": "yarn build",
-		"pack:crx": "crx3 dist -o extension/translater-$npm_package_version.crx",
+		"pack:crx": "crx3 dist --crxURL https://raw.githubusercontent.com/chergav/translater/master/extension/translater-$npm_package_version.crx -p extension/translater.pem -x extension/translater.xml -o extension/translater-$npm_package_version.crx -z extension/translater-$npm_package_version.zip",
 		"prepack:zip": "FIREFOX=true yarn build && node utils/clean-manifest-for-ff.js",
-		"pack:zip": "web-ext build -o -s dist -a extension"
+		"pack:zip": "web-ext build -o -s dist -a extension -n translater-ff-$npm_package_version.zip"
 	},
 	"dependencies": {
 		"@floating-ui/dom": "^1.1.0"

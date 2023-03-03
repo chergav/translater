@@ -21,4 +21,5 @@ dist
 *.sln
 *.sw?
 
-extension/
+extension/*.pem
+extension/*.zip

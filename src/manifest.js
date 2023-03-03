@@ -49,7 +49,7 @@ export default defineManifest(() => ({
 			use_dynamic_url: true
 		}
 	],
-	...(process.env.FIREFOX &&
+	...(process.env.FIREFOX ?
 		{
 			browser_specific_settings: {
 				gecko: {
@@ -57,6 +57,7 @@ export default defineManifest(() => ({
 					strict_min_version: '109.0'
 				}
 			}
-		}
+		} :
+		{ update_url: 'https://raw.githubusercontent.com/chergav/translater/master/extension/translater.xml' }
 	)
 }));
