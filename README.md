@@ -11,7 +11,10 @@ Translate selected text with Google Translate
 ## Install
 
 1. [FireFox Add-ons](https://addons.mozilla.org/firefox/addon/translater-gt)
-2. Download from [releases](https://github.com/chergav/translater/releases) page
+2. For Chrome (updates are only supported for Linux users)
 
-   * for Chromium based browsers `translater-n.n.n.crx`
-   * for Firefox `translater-n.n.n.zip` or link above
+   * download from [releases](https://github.com/chergav/translater/releases) page `translater-n.n.n.zip`
+   * unpack `translater-n.n.n.zip`
+   * open `chrome://extensions/`
+   * switch Developer mode on
+   * drop `translater-n.n.n.crx` on page

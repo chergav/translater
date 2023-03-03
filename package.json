@@ -9,7 +9,8 @@
 		"build": "NODE_ENV=production vite build",
 		"preview": "vite preview",
 		"prepack:crx": "yarn build",
-		"pack:crx": "crx3 dist --crxURL https://raw.githubusercontent.com/chergav/translater/master/extension/translater-$npm_package_version.crx -p extension/translater.pem -x extension/translater.xml -o extension/translater-$npm_package_version.crx -z extension/translater-$npm_package_version.zip",
+		"pack:crx": "crx3 dist --crxURL https://raw.githubusercontent.com/chergav/translater/master/extension/translater-$npm_package_version.crx -p extension/translater.pem -x extension/translater.xml -o extension/translater-$npm_package_version.crx",
+		"postpack:crx": "cd extension && zip translater-$npm_package_version.zip translater-$npm_package_version.crx",
 		"prepack:zip": "FIREFOX=true yarn build && node utils/clean-manifest-for-ff.js",
 		"pack:zip": "web-ext build -o -s dist -a extension -n translater-ff-$npm_package_version.zip"
 	},
