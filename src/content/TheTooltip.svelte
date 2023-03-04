@@ -5,13 +5,17 @@
 			xmlns="http://www.w3.org/2000/svg"
 			fill="none"
 			viewBox="0 0 24 24"
-			stroke-width="1"
+			stroke-width="1.5"
 			stroke="currentColor"
 			class="inline-block w-5 h-5 mx-1"
 		>
-			<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+			<path
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+			/>
 		</svg>
-		  
+
 		<Select bind:value={$persistentStore.targetLang} on:change={handleTranslate} {languages} />
 	</div>
 	<div>
@@ -24,7 +28,6 @@
 				hover:bg-gray-200
 				hover:text-gray-900
 				rounded-full
-				text-sm
 				p-1
 				ml-auto
 				inline-flex
@@ -39,7 +42,7 @@
 				xmlns="http://www.w3.org/2000/svg"
 				fill="none"
 				viewBox="0 0 24 24"
-				stroke-width="1"
+				stroke-width="1.5"
 				stroke="currentColor"
 				class="w-5 h-5"
 			>
@@ -49,9 +52,9 @@
 	</div>
 </header>
 
-<main class="min-h-[92px]">
+<main>
 	{#await promise}
-		<div class="flex justify-center items-center h-[92px] w-full">
+		<div class="flex justify-center items-center h-[88px] w-full">
 			<div
 				class="
 					animate-spin
@@ -64,63 +67,99 @@
 					dark:border-gray-600
 					dark:border-r-blue-600
 				"
-			></div>
+			/>
 		</div>
 	{:then translate}
 		<div class="p-2 whitespace-pre-line max-h-96 overflow-y-auto text-sm">
-			{translate.sentences.reduce((a, v) => (a += v.trans), '')}
+			{translatedText}
 		</div>
 
-		<div class="flex flex-row items-center {isAdditionalInfo(translate) ? 'p-2' : 'p-0'}">
-			{#each tabs as item}
-				{#if item.component && translate[item.srcKey]}
-					<button
-						type="button"
-						class="
-							hover:bg-gray-200
-							rounded-md
-							text-sm
-							px-2
-							py-1.5
-							mr-2
-							inline-flex
-							items-center
-							dark:hover:bg-gray-700
-							transition
-							{activeTab === item.tab
-							? 'bg-gray-200 text-gray-900 dark:bg-gray-700 dark:text-white'
-							: 'text-gray-500 dark:text-gray-400'}
-						"
-						on:click={() => {
-							tabHandler(item.tab);
-						}}
-					>
-						<span>{item.label}</span>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 20 20"
-							stroke-width="1"
-							stroke="currentColor"
+		<div class="p-2 flex flex-row items-center justify-between">
+			<div class="flex flex-row">
+				{#each tabs as item}
+					{#if item.component && translate[item.srcKey]}
+						<button
+							type="button"
 							class="
-								ml-1
-								w-6
-								h-6
-								{activeTab === item.tab ? 'rotate-180' : ''}
-								transition-transform
+								hover:bg-gray-200
+								rounded-md
+								text-sm
+								px-2
+								py-1.5
+								mr-2
+								inline-flex
+								items-center
+								dark:hover:bg-gray-700
+								transition
+								{activeTab === item.tab
+								? 'bg-gray-200 text-gray-900 dark:bg-gray-700 dark:text-white'
+								: 'text-gray-500 dark:text-gray-400'}
 							"
+							on:click={() => {
+								tabHandler(item.tab);
+							}}
 						>
-							<path
-								stroke="#6b7280"
-								stroke-linecap="round"
-								stroke-linejoin="round"
+							<span>{item.label}</span>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 20 20"
 								stroke-width="1.5"
-								d="M6 8l4 4 4-4"
-							/>
-						</svg>
-					</button>
-				{/if}
-			{/each}
+								stroke="currentColor"
+								class="
+									ml-1
+									w-6
+									h-6
+									{activeTab === item.tab ? 'rotate-180' : ''}
+									transition-transform
+								"
+							>
+								<path
+									stroke="#6b7280"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 8l4 4 4-4"
+								/>
+							</svg>
+						</button>
+					{/if}
+				{/each}
+			</div>
+			<div class="flex flex-row">
+				<button
+					type="button"
+					class="
+						text-gray-500
+						hover:text-gray-900
+						hover:bg-gray-200
+						rounded-md
+						text-sm
+						p-1.5
+						inline-flex
+						items-center
+						dark:hover:bg-gray-700
+						dark:text-gray-400
+						dark:hover:text-white
+						transition
+					"
+					on:click={copyToClipboard}
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-6 h-6"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75"
+						/>
+					</svg>
+				</button>
+			</div>
 		</div>
 
 		<dir class="m-0 p-0">
@@ -156,7 +195,7 @@
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"
 					viewBox="0 0 24 24"
-					stroke-width="1"
+					stroke-width="1.5"
 					stroke="currentColor"
 					class="ml-1 w-5 h-5"
 				>
@@ -184,7 +223,10 @@ import Examples from '@/lib/Examples.svelte';
 
 const dispatch = createEventDispatcher();
 
-let sourceLang = 'auto', targetLang, selection;
+let sourceLang = 'auto',
+	targetLang,
+	selection,
+	translatedText;
 
 const getTranslate = async () => {
 	const selectedText = document.getSelection().toString().trim();
@@ -202,15 +244,14 @@ const getTranslate = async () => {
 			sourceLang,
 			targetLang,
 			selection,
-		}
+		},
 	});
-	
+
 	sourceLang = sourceLang === 'auto' ? translate.src.replace('-', '_') : sourceLang;
+	translatedText = translate.sentences.reduce((a, v) => (a += v.trans), '');
 
 	return translate;
 };
-
-const isAdditionalInfo = translate => translate.dict || translate.definitions || translate.examples;
 
 let promise = getTranslate();
 
@@ -221,7 +262,12 @@ const handleTranslate = () => {
 const tabs = [
 	{ tab: 0, srcKey: false, label: '', component: false },
 	{ tab: 1, srcKey: 'dict', label: i18n.getMessage('tooltip_dictionary'), component: Dictionary },
-	{ tab: 2, srcKey: 'definitions', label: i18n.getMessage('tooltip_definitions'), component: Definitions },
+	{
+		tab: 2,
+		srcKey: 'definitions',
+		label: i18n.getMessage('tooltip_definitions'),
+		component: Definitions,
+	},
 	{ tab: 3, srcKey: 'examples', label: i18n.getMessage('tooltip_examples'), component: Examples },
 ];
 
@@ -229,6 +275,15 @@ let activeTab = 0;
 
 const tabHandler = tab => {
 	activeTab = activeTab === tab ? 0 : tab;
+};
+
+const copyToClipboard = async () => {
+	try {
+		await navigator.clipboard.writeText(translatedText);
+		console.log('copy success');
+	} catch (error) {
+		console.error(`Copy to clipboard error: ${error}`);
+	}
 };
 
 afterUpdate(() => {

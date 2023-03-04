@@ -1,8 +1,8 @@
-![Translater image](docs/screenshot-1.png)
-
 # ![](src/icons/48.png) Translater
 
 Translate selected text with Google Translate
+
+![Translater image](docs/screenshot-1.png)
 
 ***
 
@@ -17,6 +17,6 @@ Translate selected text with Google Translate
 <!-- 2. [Microsoft Edge Add-ons](https://qwe) -->
 2. For Chrome (autoupdate are only supported for Linux users)
 
-	* download from [releases](https://github.com/chergav/translater/releases) page `translater-n.n.n.zip` and unpack
-	* open page `chrome://extensions/` and switch Developer mode on
-	* drop `translater-n.n.n.crx` on page
+   * download from [releases page](https://github.com/chergav/translater/releases) `translater-n.n.n.zip` and unpack
+   * open page `chrome://extensions/` and switch Developer mode on
+   * drop `translater-n.n.n.crx` on page
