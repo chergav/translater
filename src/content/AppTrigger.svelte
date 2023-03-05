@@ -11,9 +11,11 @@
 		"
 		bind:this={trigger}
 	>
-		{#if $persistentStore.inlineButtonShow}
-			<TheTrigger />
-		{/if}
+		{#await promise then isYourLang}
+			{#if $persistentStore.inlineButtonShow && !isYourLang}
+				<TheTrigger class="text-red-300" />
+			{/if}
+		{/await}
 	</div>
 </div>
 
@@ -26,9 +28,10 @@ loadFont();
 <script>
 import { onMount } from 'svelte';
 import TheTrigger from './TheTrigger.svelte';
-import { computePosition, offset } from '@floating-ui/dom';
+import { computePosition } from '@floating-ui/dom';
 import { getSelectedEndCoord } from './rects';
 import { persistentStore, themeClass } from '@/common/store';
+import { detectLanguage } from '@/common/browserApi';
 
 const reference = {
 	getBoundingClientRect: () => getSelectedEndCoord(),
@@ -39,8 +42,7 @@ let trigger;
 const triggerPosition = () => {
 	computePosition(reference, trigger, {
 		strategy: 'absolute',
-		placement: 'bottom-end',
-		middleware: [offset(({ rects }) => ({ mainAxis: 0, crossAxis: rects.floating.width / 2 }))],
+		placement: 'bottom-end'
 	}).then(({ x, y }) => {
 		Object.assign(trigger.style, {
 			left: `${x}px`,
@@ -48,6 +50,16 @@ const triggerPosition = () => {
 		});
 	});
 };
+
+const isYourLang = async () => {
+	const selectedText = document.getSelection().toString().trim();
+
+	const detectedLanguage = await detectLanguage(selectedText);
+
+	return $persistentStore.targetLang === detectedLanguage;
+};
+
+let promise = isYourLang();
 
 onMount(() => {
 	triggerPosition();

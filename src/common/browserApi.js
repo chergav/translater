@@ -8,7 +8,8 @@ const detectLanguage = async text => {
 
 const storageGet = async (key = null) => {
 	const data = await storage.local.get(key);
-	return data && data[key] ? data[key] : null;
+	// eslint-disable-next-line no-prototype-builtins
+	return data && data.hasOwnProperty(key) ? data[key] : null;
 };
 
 const storageSet = async data => {
