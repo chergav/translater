@@ -13,7 +13,7 @@
 		"postpack:crx": "cd extension && zip translater-$npm_package_version.zip translater-$npm_package_version.crx",
 		"prepack:zip": "FIREFOX=true yarn build && node utils/clean-manifest-for-ff.js",
 		"pack:zip": "web-ext build -o -s dist/firefox -a extension -n translater-ff-$npm_package_version.zip",
-		"postpack:zip": "zip -FSr extension/translater-scr-for-amo-$npm_package_version.zip ./ -x '.git/*' 'dist/*' 'docs/*' 'extension/*' 'node_modules/*'",
+		"postpack:zip": "zip -FSr extension/translater-src-for-amo-$npm_package_version.zip ./ -x '.git/*' 'dist/*' 'docs/*' 'extension/*' 'node_modules/*'",
 		"pack:all": "yarn pack:crx && yarn pack:zip"
 	},
 	"dependencies": {
