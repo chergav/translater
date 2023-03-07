@@ -13,7 +13,7 @@
 	>
 		{#await promise then isYourLang}
 			{#if $persistentStore.inlineButtonShow && !isYourLang}
-				<TheTrigger class="text-red-300" />
+				<TheTrigger />
 			{/if}
 		{/await}
 	</div>

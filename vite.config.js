@@ -7,7 +7,7 @@ import manifest from './src/manifest';
 export default defineConfig({
 	build: {
 		target: 'esnext',
-		// minify: false,
+		outDir: process.env.FIREFOX ? 'dist/firefox' : 'dist/chrome',
 		...(process.env.FIREFOX && {
 			rollupOptions: {
 				input: {
