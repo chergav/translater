@@ -1,8 +1,8 @@
-# ![](src/icons/48.png) Translater
+# ![translater icon](src/icons/48.png) Translater
 
 Translate selected text with Google Translate
 
-![Translater image](docs/screenshot-1.png)
+![translater screenshot](docs/screenshot-1.png)
 
 ***
 

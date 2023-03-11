@@ -22,6 +22,9 @@
 	"options_inline_button_show": {
 		"message": "Show inline button"
 	},
+	"options_show_original_text": {
+		"message": "Show original text"
+	},
 	"target_lang_label": {
 		"message": "Translate to:"
 	},
@@ -45,6 +48,9 @@
 	},
 	"theme_system": {
 		"message": "Default theme"
+	},
+	"select_language_auto": {
+		"message": "detect language"
 	},
 	"supported_languages_af": {
 		"message": "african"

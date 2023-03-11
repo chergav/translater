@@ -3,7 +3,8 @@ import { i18n } from 'webextension-polyfill';
 const defaultSettings = {
 	targetLang: i18n.getUILanguage(),
 	theme: 'system',
-	inlineButtonShow: true
+	inlineButtonShow: true,
+	showOriginalText: true
 };
 
 const themes = [
@@ -70,11 +71,11 @@ const languages = [
 		value: 'Chewa'
 	},
 	{
-		key: 'zh_CN',
+		key: 'zh-CN',
 		value: 'Chinese (Simplified)'
 	},
 	{
-		key: 'zh_TW',
+		key: 'zh-TW',
 		value: 'Chinese (Traditional)'
 	},
 	{

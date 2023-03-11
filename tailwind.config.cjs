@@ -10,6 +10,7 @@ module.exports = {
 			xl: ['24px', '32px']
 		},
 		spacing: {
+			'px': '1px',
 			'0': '0px',
 			'1': '4px',
 			'1.5': '6px',
@@ -20,6 +21,8 @@ module.exports = {
 			'6': '24px',
 			'7': '28px',
 			'8': '32px',
+
+			'64': '256px',
 
 			'96': '384px'
 		}

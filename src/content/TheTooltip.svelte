@@ -1,81 +1,177 @@
-<header class="p-2 flex justify-between items-center border-b border-gray-300 dark:border-gray-700">
-	<div class="flex items-center">
-		<Select bind:value={sourceLang} on:change={handleTranslate} {languages} auto={true} />
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			fill="none"
-			viewBox="0 0 24 24"
-			stroke-width="1.5"
-			stroke="currentColor"
-			class="inline-block w-5 h-5 mx-1"
-		>
-			<path
-				stroke-linecap="round"
-				stroke-linejoin="round"
-				d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-			/>
-		</svg>
-
-		<Select bind:value={$persistentStore.targetLang} on:change={handleTranslate} {languages} />
-	</div>
-	<div>
-		<button
-			type="button"
-			id="close-tooltip"
+{#await promise}
+	<div class="flex justify-center items-center h-[162px] w-full">
+		<div
 			class="
-				bg-transparent
-				text-gray-500
-				hover:bg-gray-200
-				hover:text-gray-900
+				animate-spin
+				w-8
+				h-8
 				rounded-full
+				border-[3px]
+				border-gray-200
+				border-r-blue-600
+				dark:border-gray-600
+				dark:border-r-blue-600
+			"
+		/>
+	</div>
+{:then translate}
+	<div>
+		<div class="p-2 flex justify-between items-center">
+			<div class="w-full flex">
+				<button
+					type="button"
+					class="
+					hover:text-gray-900
+					hover:bg-gray-200
+					rounded-md
+					text-sm
+					p-1
+					mr-2
+					inline-flex
+					items-center
+					dark:hover:bg-gray-700
+					dark:hover:text-white
+					transition
+					{originalOpen
+						? 'text-gray-900 bg-gray-200 dark:bg-gray-700 dark:text-white'
+						: 'text-gray-500 dark:text-gray-400'}
+				"
+					on:click={() => {
+						originalOpen = !originalOpen;
+					}}
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="
+						w-5
+						h-5
+						{originalOpen ? 'rotate-180' : ''}
+						transition-transform
+					"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+						/>
+					</svg>
+				</button>
+				<Select small bind:value={sourceLang} on:change={handleTranslate} {languages} auto={true} />
+				<ButtonCopy textToCopy={selectedText} />
+				<ButtonTTS textToSpeech={selectedText} langCode={sourceLang} />
+			</div>
+			<div>
+				<button
+					type="button"
+					id="close-tooltip"
+					class="
+					bg-transparent
+					text-gray-500
+					hover:bg-gray-200
+					hover:text-gray-900
+					rounded-full
+					p-1
+					inline-flex
+					items-center
+					dark:hover:bg-gray-700
+					dark:text-gray-400
+					dark:hover:text-white
+					transition
+				"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-5 h-5"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M6 18L18 6M6 6l12 12"
+						/>
+					</svg>
+				</button>
+			</div>
+		</div>
+		{#if originalOpen}
+			<div
+				class="p-2 whitespace-pre-line max-h-64 overflow-y-auto text-sm"
+				transition:slide|local={{ duration: 150 }}
+			>
+				{selectedText}
+			</div>
+			<div class="h-px mx-2 border-0 bg-gray-300 dark:bg-gray-700"></div>
+		{/if}
+	</div>
+
+	<div>
+		<div class="p-2 flex">
+			<button
+				type="button"
+				class="
+				hover:text-gray-900
+				hover:bg-gray-200
+				rounded-md
+				text-sm
 				p-1
-				ml-auto
+				mr-2
 				inline-flex
 				items-center
 				dark:hover:bg-gray-700
-				dark:text-gray-400
 				dark:hover:text-white
 				transition
+				{translateOpen
+					? 'text-gray-900 bg-gray-200 dark:bg-gray-700 dark:text-white'
+					: 'text-gray-500 dark:text-gray-400'}
 			"
-		>
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none"
-				viewBox="0 0 24 24"
-				stroke-width="1.5"
-				stroke="currentColor"
-				class="w-5 h-5"
+				on:click={() => {
+					translateOpen = !translateOpen;
+				}}
 			>
-				<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-			</svg>
-		</button>
-	</div>
-</header>
-
-<main>
-	{#await promise}
-		<div class="flex justify-center items-center h-[88px] w-full">
-			<div
-				class="
-					animate-spin
-					w-8
-					h-8
-					rounded-full
-					border-[3px]
-					border-gray-200
-					border-r-blue-600
-					dark:border-gray-600
-					dark:border-r-blue-600
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="
+					w-5
+					h-5
+					{translateOpen ? 'rotate-180' : ''}
+					transition-transform
 				"
-			/>
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+					/>
+				</svg>
+			</button>
+			<Select small bind:value={$persistentStore.targetLang} on:change={handleTranslate} {languages} />
+			<ButtonCopy textToCopy={translatedText} />
+			<ButtonTTS textToSpeech={translatedText} langCode={targetLang} />
 		</div>
-	{:then translate}
-		<div class="p-2 whitespace-pre-line max-h-96 overflow-y-auto text-sm">
-			{translatedText}
-		</div>
+		{#if translateOpen}
+			<div
+				class="p-2 whitespace-pre-line max-h-64 overflow-y-auto text-sm"
+				transition:slide|local={{ duration: 150 }}
+			>
+				{translatedText}
+			</div>
+		{/if}
+	</div>
 
-		<div class="p-2 flex flex-row items-center justify-between">
-			<div class="flex flex-row">
+	<div class="border-t border-gray-300 dark:border-gray-700">
+		<div class="p-2 flex items-center justify-between">
+			<div class="flex">
 				{#each tabs as item}
 					{#if item.component && translate[item.srcKey]}
 						<button
@@ -85,7 +181,7 @@
 								rounded-md
 								text-sm
 								px-2
-								py-1.5
+								py-1
 								mr-2
 								inline-flex
 								items-center
@@ -108,14 +204,13 @@
 								stroke="currentColor"
 								class="
 									ml-1
-									w-6
-									h-6
+									w-5
+									h-5
 									{activeTab === item.tab ? 'rotate-180' : ''}
 									transition-transform
 								"
 							>
 								<path
-									stroke="#6b7280"
 									stroke-linecap="round"
 									stroke-linejoin="round"
 									d="M6 8l4 4 4-4"
@@ -125,8 +220,35 @@
 					{/if}
 				{/each}
 			</div>
-			<div class="flex flex-row">
-				<ButtonCopy {translatedText} />
+			<div>
+				<a
+					href={`https://translate.google.com/?sl=${sourceLang}&tl=${targetLang}&text=${encodeURIComponent(
+						selectedText
+					)}`}
+					target="_blank"
+					rel="noreferrer"
+					class="text-blue-600 visited:text-purple-600 underline"
+				>
+					<div class="flex flex-row items-center">
+						<span>Google Translate</span>
+						<span>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="ml-1 w-5 h-5"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+								/>
+							</svg>
+						</span>
+					</div>
+				</a>
 			</div>
 		</div>
 
@@ -139,47 +261,13 @@
 				{/if}
 			{/each}
 		</dir>
-	{:catch error}
-		<div class="p-2 whitespace-pre-line max-h-96 overflow-y-auto text-sm text-red-500">
-			Something went wrong: {error.message}
-		</div>
-		{@const l = console.log(error)}
-	{/await}
-</main>
-
-<footer class="p-2 flex flex-row items-center border-t border-gray-300 dark:border-gray-700">
-	<a
-		href={`https://translate.google.com/?sl=${sourceLang}&tl=${targetLang}&text=${encodeURIComponent(
-			selection
-		)}`}
-		target="_blank"
-		rel="noreferrer"
-		class="text-blue-600 visited:text-purple-600 underline"
-	>
-		<div class="flex flex-row items-center">
-			<span>Google Translate</span>
-			<span>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 0 20 20"
-					fill="currentColor"
-					class="ml-1 w-5 h-5"
-				>
-					<path
-						fill-rule="evenodd"
-						d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z"
-						clip-rule="evenodd"
-					/>
-					<path
-						fill-rule="evenodd"
-						d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z"
-						clip-rule="evenodd"
-					/>
-				</svg>
-			</span>
-		</div>
-	</a>
-</footer>
+	</div>
+{:catch error}
+	<div class="p-2 whitespace-pre-line max-h-96 overflow-y-auto text-sm text-red-500">
+		Something went wrong: {error.message}
+	</div>
+	{@const l = console.log(error)}
+{/await}
 
 <script>
 import { createEventDispatcher, afterUpdate } from 'svelte';
@@ -192,19 +280,22 @@ import Dictionary from './lib/Dictionary.svelte';
 import Definitions from './lib/Definitions.svelte';
 import Examples from './lib/Examples.svelte';
 import ButtonCopy from './lib/ButtonCopy.svelte';
+import ButtonTTS from './lib/ButtonTTS.svelte';
 
 const dispatch = createEventDispatcher();
 
 let sourceLang = 'auto',
 	targetLang,
-	selection,
-	translatedText;
+	selectedText,
+	translatedText,
+	originalOpen = $persistentStore.showOriginalText,
+	translateOpen = true;
 
 const getTranslate = async () => {
-	const selectedText = document.getSelection().toString().trim();
+	const selection = document.getSelection().toString().trim();
 
-	if (selectedText) {
-		selection = selectedText;
+	if (selection) {
+		selectedText = selection;
 	}
 
 	//console.log(selection.length); // max 2000
@@ -215,11 +306,11 @@ const getTranslate = async () => {
 		getTranslate: {
 			sourceLang,
 			targetLang,
-			selection,
+			selectedText,
 		},
 	});
 
-	sourceLang = sourceLang === 'auto' ? translate.src.replace('-', '_') : sourceLang;
+	sourceLang = sourceLang === 'auto' ? translate.src : sourceLang;
 	translatedText = translate.sentences.reduce((a, v) => (a += v.trans), '');
 
 	return translate;

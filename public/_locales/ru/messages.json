@@ -22,6 +22,9 @@
 	"options_inline_button_show": {
 		"message": "Показать встроенную кнопку"
 	},
+	"options_show_original_text": {
+		"message": "Показать исходный текст"
+	},
 	"target_lang_label": {
 		"message": "Перевести на:"
 	},
@@ -45,6 +48,9 @@
 	},
 	"theme_system": {
 		"message": "Тема по умолчанию"
+	},
+	"select_language_auto": {
+		"message": "определить язык"
 	},
 	"supported_languages_af": {
 		"message": "африканский"

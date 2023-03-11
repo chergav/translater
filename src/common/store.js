@@ -4,7 +4,8 @@ import { storageSet, getSettings, storageListener } from '@/common/browserApi';
 const initialPersistentData = {
 	targetLang: await getSettings('targetLang'),
 	theme: await getSettings('theme'),
-	inlineButtonShow: await getSettings('inlineButtonShow')
+	inlineButtonShow: await getSettings('inlineButtonShow'),
+	showOriginalText: await getSettings('showOriginalText')
 };
 
 const createPersistentStore = () => {
