@@ -273,7 +273,6 @@
 import { createEventDispatcher, afterUpdate } from 'svelte';
 import { slide } from 'svelte/transition';
 import { persistentStore } from '@/common/store';
-import { runtime, i18n } from 'webextension-polyfill';
 import { languages } from '@/common/settings';
 import Select from '@/lib/Select.svelte';
 import Dictionary from './lib/Dictionary.svelte';
@@ -302,7 +301,7 @@ const getTranslate = async () => {
 
 	targetLang = $persistentStore.targetLang;
 
-	const translate = await runtime.sendMessage({
+	const translate = await chrome.runtime.sendMessage({
 		getTranslate: {
 			sourceLang,
 			targetLang,
@@ -324,14 +323,14 @@ const handleTranslate = () => {
 
 const tabs = [
 	{ tab: 0, srcKey: false, label: '', component: false },
-	{ tab: 1, srcKey: 'dict', label: i18n.getMessage('tooltip_dictionary'), component: Dictionary },
+	{ tab: 1, srcKey: 'dict', label: chrome.i18n.getMessage('tooltip_dictionary'), component: Dictionary },
 	{
 		tab: 2,
 		srcKey: 'definitions',
-		label: i18n.getMessage('tooltip_definitions'),
+		label: chrome.i18n.getMessage('tooltip_definitions'),
 		component: Definitions,
 	},
-	{ tab: 3, srcKey: 'examples', label: i18n.getMessage('tooltip_examples'), component: Examples },
+	{ tab: 3, srcKey: 'examples', label: chrome.i18n.getMessage('tooltip_examples'), component: Examples },
 ];
 
 let activeTab = 0;

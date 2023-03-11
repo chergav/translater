@@ -1,4 +1,3 @@
-import { runtime } from 'webextension-polyfill';
 import AppTrigger from './AppTrigger.svelte';
 import AppTooltip from './AppTooltip.svelte';
 import css from '@/common/global.css?inline';
@@ -123,7 +122,7 @@ document.addEventListener('mouseup', createTrigger);
 document.addEventListener('mousedown', removeTrigger);
 document.addEventListener('mousedown', removeTooltipOutside);
 
-runtime.onMessage.addListener(
+chrome.runtime.onMessage.addListener(
 	message => {
 		switch (message.action) {
 		case 'showTooltip':

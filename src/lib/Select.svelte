@@ -4,7 +4,7 @@
 		bind:value
 		on:change
 		class="
-			{small ? 'py-[3px]' : 'p-1.5' }
+			{small ? 'py-[3px]' : 'py-1.5' }
 			pl-1.5
 			mr-2
 			text-sm
@@ -26,7 +26,7 @@
 	>
 		{#if auto}
 			<option value="auto">
-				{i18n.getMessage('select_language_auto')}
+				{getMessage('select_language_auto')}
 			</option>
 		{/if}
 		{#each sortI18nLanguages() as { key, value } (key)}
@@ -36,7 +36,7 @@
 </label>
 
 <script>
-import { i18n } from 'webextension-polyfill';
+import { getMessage } from '@/common/browserApi';
 export let value;
 export let label = '';
 export let languages = [];
@@ -49,7 +49,7 @@ const getI18nLanguages = () => {
 	for (const { key } of languages) {
 		i18nLanguages.push({
 			key,
-			value: i18n.getMessage(`supported_languages_${key.replace('-', '_')}`)
+			value: chrome.i18n.getMessage(`supported_languages_${key.replace('-', '_')}`)
 		})
 	}
 

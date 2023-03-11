@@ -8,7 +8,7 @@
 						{#if index === 0}
 							<td>
 								<span class="text-gray-500 text-xs">
-									{i18n.getMessage('tooltip_dictionary_frequency')}
+									{getMessage('tooltip_dictionary_frequency')}
 								</span>
 							</td>
 						{/if}
@@ -53,7 +53,7 @@
 {/if}
 
 <script>
-import { i18n } from 'webextension-polyfill';
+import { getMessage } from '@/common/browserApi';
 export let translate;
 
 const gender = {

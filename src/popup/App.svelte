@@ -1,21 +1,21 @@
-<div class="p-2 flex items-center">
-	<img src={runtime.getURL('/src/icons/48.png')} width="24" alt="" />
+<div class="p-3 flex items-center">
+	<img src={getURL('/src/icons/48.png')} width="24" alt="" />
 	<span class="ml-2">Translater</span>
 </div>
 
 <hr class="border-gray-300 dark:border-gray-700" />
 
-<div class="p-2 min-h-[150px]">
+<div class="p-3 min-h-[150px]">
 	<Select
 		bind:value={$persistentStore.targetLang}
-		label={i18n.getMessage('target_lang_label')}
+		label={getMessage('target_lang_label')}
 		{languages}
 	/>
 </div>
 
 <hr class="border-gray-300 dark:border-gray-700" />
 
-<div class="p-2">
+<div class="p-3">
 	<button
 		type="button"
 		class="
@@ -31,24 +31,24 @@
 		"
 		on:click={openOptionsPage}
 	>
-		{i18n.getMessage('popup_menu_options')}
+		{getMessage('popup_menu_options')}
 	</button>
 </div>
 
 <script context="module">
+import { getMessage, getURL } from '@/common/browserApi';
 import { loadFont } from '@/common/fontLoader';
 
 loadFont();
 </script>
 
 <script>
-import { runtime, i18n } from 'webextension-polyfill';
 import { persistentStore, themeClass } from '@/common/store';
 import { languages } from '@/common/settings';
 import Select from '@/lib/Select.svelte';
 
 const openOptionsPage = () => {
-	runtime.openOptionsPage();
+	chrome.runtime.openOptionsPage();
 };
 
 $: document.documentElement.className = $themeClass;

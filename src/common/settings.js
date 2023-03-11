@@ -1,7 +1,5 @@
-import { i18n } from 'webextension-polyfill';
-
 const defaultSettings = {
-	targetLang: i18n.getUILanguage(),
+	targetLang: chrome.i18n.getUILanguage(),
 	theme: 'system',
 	inlineButtonShow: true,
 	showOriginalText: true

@@ -1,8 +1,7 @@
-import { tabs, runtime, contextMenus, i18n } from 'webextension-polyfill';
 import { getGoogleTranslate } from '@/common/googleApi';
 
 const getCurrentTab = async () => {
-	const [tab] = await tabs.query({ active: true, lastFocusedWindow: true });
+	const [tab] = await chrome.tabs.query({ active: true, lastFocusedWindow: true });
 	return tab;
 };
 
@@ -13,18 +12,18 @@ const sendMessage = async () => {
 
 	const tab = await getCurrentTab();
 
-	tabs.sendMessage(tab.id, message);
+	chrome.tabs.sendMessage(tab.id, message);
 };
 
-runtime.onInstalled.addListener(() => {
-	contextMenus.create({
+chrome.runtime.onInstalled.addListener(() => {
+	chrome.contextMenus.create({
 		id: 'translaterMenu',
-		title: i18n.getMessage('context_menus_title'),
+		title: chrome.i18n.getMessage('context_menus_title'),
 		contexts: ['selection']
 	});
 });
 
-contextMenus.onClicked.addListener(info => {
+chrome.contextMenus.onClicked.addListener(info => {
 	if (info.menuItemId === 'translaterMenu') {
 		sendMessage();
 	}
@@ -38,4 +37,4 @@ const handleMessage = (data, sender, sendResponse) => {
 	return true;
 };
 
-runtime.onMessage.addListener(handleMessage);
+chrome.runtime.onMessage.addListener(handleMessage);

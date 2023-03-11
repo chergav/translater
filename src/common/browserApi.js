@@ -1,19 +1,18 @@
-import { i18n, storage } from 'webextension-polyfill';
 import { defaultSettings } from '@/common/settings';
 
 const detectLanguage = async text => {
-	const result = await i18n.detectLanguage(text);
+	const result = await chrome.i18n.detectLanguage(text);
 	return result.isReliable ? result.languages[0].language : null;
 };
 
 const storageGet = async (key = null) => {
-	const data = await storage.local.get(key);
+	const data = await chrome.storage.local.get(key);
 	// eslint-disable-next-line no-prototype-builtins
 	return data && data.hasOwnProperty(key) ? data[key] : null;
 };
 
 const storageSet = async data => {
-	await storage.local.set(data);
+	await chrome.storage.local.set(data);
 };
 
 const getSettings = async key => {
@@ -27,9 +26,13 @@ const getSettings = async key => {
 };
 
 const storageListener = callback => {
-	storage.onChanged.addListener(changes => {
+	chrome.storage.onChanged.addListener(changes => {
 		callback(changes);
 	});
 };
 
-export { detectLanguage, storageGet, storageSet, getSettings, storageListener };
+const getMessage = msg => chrome.i18n.getMessage(msg);
+
+const getURL = path => chrome.runtime.getURL(path);
+
+export { detectLanguage, storageGet, storageSet, getSettings, storageListener, getMessage, getURL };
