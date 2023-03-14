@@ -20,10 +20,13 @@
 		}
 	},
 	"options_inline_button_show": {
-		"message": "Показать встроенную кнопку"
+		"message": "Показывать кнопку при выделении текста"
+	},
+	"options_text_field_button_show": {
+		"message": "Показать кнопку в текстовом поле"
 	},
 	"options_show_original_text": {
-		"message": "Показать исходный текст"
+		"message": "Показать исходный текст во всплывающем окне"
 	},
 	"target_lang_label": {
 		"message": "Перевести на:"

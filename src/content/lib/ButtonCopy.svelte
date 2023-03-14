@@ -7,7 +7,6 @@
 		rounded-md
 		text-sm
 		p-1
-		mr-2
 		inline-flex
 		items-center
 		dark:hover:bg-gray-700

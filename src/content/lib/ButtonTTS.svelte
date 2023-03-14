@@ -7,7 +7,6 @@
 		rounded-md
 		text-sm
 		p-1
-		mr-2
 		inline-flex
 		items-center
 		dark:hover:bg-gray-700
@@ -77,6 +76,7 @@
 </button>
 
 <script>
+import { onDestroy } from 'svelte';
 import { store } from '../store';
 
 export let textToSpeech;
@@ -136,4 +136,8 @@ const speak = () => {
 
 	synth.speak(ssu);
 };
+
+onDestroy(() => {
+	speakCancel();
+});
 </script>

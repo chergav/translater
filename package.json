@@ -1,6 +1,6 @@
 {
 	"name": "translater",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"license": "MIT",
 	"author": "chergav",
 	"type": "module",
@@ -10,7 +10,7 @@
 		"preview": "vite preview",
 		"prepack:crx": "yarn build",
 		"pack:crx": "crx3 dist/chrome --crxURL https://raw.githubusercontent.com/chergav/translater/master/extension/translater-$npm_package_version.crx -p extension/translater.pem -x extension/translater.xml -o extension/translater-$npm_package_version.crx",
-		"postpack:crx": "cd extension && zip translater-$npm_package_version.zip translater-$npm_package_version.crx",
+		"postpack:crx": "node utils/delete-update_url-manifest.js && cd dist/chrome && zip -FSr ../../extension/translater-ms-$npm_package_version.zip ./",
 		"prepack:zip": "FIREFOX=true yarn build && node utils/clean-manifest-for-ff.js",
 		"pack:zip": "web-ext build -o -s dist/firefox -a extension -n translater-ff-$npm_package_version.zip",
 		"postpack:zip": "zip -FSr extension/translater-src-for-amo-$npm_package_version.zip ./ -x '.git/*' 'dist/*' 'docs/*' 'extension/*' 'node_modules/*'",
@@ -20,7 +20,7 @@
 		"@floating-ui/dom": "^1.1.0"
 	},
 	"devDependencies": {
-		"@crxjs/vite-plugin": "^2.0.0-beta.13",
+		"@crxjs/vite-plugin": "^2.0.0-beta.15",
 		"@sveltejs/vite-plugin-svelte": "^2.0.2",
 		"@tailwindcss/forms": "^0.5.3",
 		"autoprefixer": "^10.4.13",

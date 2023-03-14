@@ -70,8 +70,9 @@
 <script>
 import TheTooltip from './TheTooltip.svelte';
 import { computePosition, offset, flip, shift } from '@floating-ui/dom';
-import { getSelectedElemRect } from './rects';
+import { getSelectedElemRect } from './utils';
 import { themeClass } from '@/common/store';
+import { store } from './store';
 
 const reference = {
 	getBoundingClientRect: () => getSelectedElemRect(),
@@ -88,7 +89,7 @@ const tooltipPosition = () => {
 		placement: 'bottom-start',
 		middleware: [
 			offset(({ rects, placement }) =>
-				placement === 'bottom-start' ? rects.floating.y + 34 : rects.floating.y + 10
+				placement === 'bottom-start' ? rects.floating.y + 35 : rects.floating.y + 10
 			),
 			flip({ flipAlignment: false }),
 			shift({ padding: 10 }),
@@ -117,5 +118,10 @@ const dragMove = event => {
 
 const dragEnd = () => {
 	moving = false;
+
+	store.update(data => ({
+		...data,
+		textFieldElem: null
+	}));
 };
 </script>

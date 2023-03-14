@@ -5,6 +5,7 @@ const initialPersistentData = {
 	targetLang: await getSettings('targetLang'),
 	theme: await getSettings('theme'),
 	inlineButtonShow: await getSettings('inlineButtonShow'),
+	textFieldButtonShow: await getSettings('textFieldButtonShow'),
 	showOriginalText: await getSettings('showOriginalText')
 };
 

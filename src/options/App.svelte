@@ -13,6 +13,31 @@
 	<hr class="h-px my-3 border-0 bg-gray-300 dark:bg-gray-700" />
 
 	<div class="p-3">
+		<label>
+			<input type="checkbox" class="rounded-md" bind:checked={$persistentStore.inlineButtonShow}>
+			<span>{getMessage('options_inline_button_show')}</span>
+		</label>
+	</div>
+
+	<div class="p-3">
+		<label>
+			<input type="checkbox" class="rounded-md" bind:checked={$persistentStore.textFieldButtonShow}>
+			<span>{getMessage('options_text_field_button_show')}</span>
+		</label>
+	</div>
+
+	<hr class="h-px my-3 border-0 bg-gray-300 dark:bg-gray-700" />
+
+	<div class="p-3">
+		<label>
+			<input type="checkbox" class="rounded-md" bind:checked={$persistentStore.showOriginalText}>
+			<span>{getMessage('options_show_original_text')}</span>
+		</label>
+	</div>
+
+	<hr class="h-px my-3 border-0 bg-gray-300 dark:bg-gray-700" />
+
+	<div class="p-3">
 		{#each themes as item (item.key)}
 			<div class="mb-2">
 				<label>
@@ -21,21 +46,6 @@
 				</label>
 			</div>
 		{/each}
-	</div>
-
-	<hr class="h-px my-3 border-0 bg-gray-300 dark:bg-gray-700" />
-
-	<div class="p-3">
-		<label>
-			<input type="checkbox" class="rounded-md" bind:checked={$persistentStore.inlineButtonShow}>
-			<span>{getMessage('options_inline_button_show')}</span>
-		</label>
-	</div>
-	<div class="p-3">
-		<label>
-			<input type="checkbox" class="rounded-md" bind:checked={$persistentStore.showOriginalText}>
-			<span>{getMessage('options_show_original_text')}</span>
-		</label>
 	</div>
 </div>
 

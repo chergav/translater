@@ -1,7 +1,8 @@
 import AppTrigger from './AppTrigger.svelte';
 import AppTooltip from './AppTooltip.svelte';
 import css from '@/common/global.css?inline';
-import { isInTextField } from './rects';
+import { store } from './store';
+import { getSelectedText } from './utils';
 
 const app = {
 	trigger: null,
@@ -77,19 +78,19 @@ const createTrigger = event => {
 	const isLeftClick = event.button === 0;
 	if (!isLeftClick) return;
 
-	/**
-	 * TODO: support textfields
-	 */
-	if (isInTextField()) return;
-
 	const isInTriggerElem = event.target.closest(triggerTag);
 	if (isInTriggerElem) return;
 
 	const isInTooltipElem = event.target.closest(tooltipTag);
 	if (isInTooltipElem) return;
 
-	const selectedText = document.getSelection().toString().trim();
+	const selectedText = getSelectedText();
 	if (!selectedText.length) return;
+
+	store.update(data => ({
+		...data,
+		selectedText
+	}));
 
 	const root = createShadowElem(triggerTag);
 

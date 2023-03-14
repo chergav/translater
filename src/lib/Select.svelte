@@ -6,7 +6,6 @@
 		class="
 			{small ? 'py-[3px]' : 'py-1.5' }
 			pl-1.5
-			mr-2
 			text-sm
 			rounded-md
 			border-gray-300

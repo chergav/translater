@@ -20,10 +20,13 @@
 		}
 	},
 	"options_inline_button_show": {
-		"message": "Show inline button"
+		"message": "Show button when text is selected"
+	},
+	"options_text_field_button_show": {
+		"message": "Show button in textfield"
 	},
 	"options_show_original_text": {
-		"message": "Show original text"
+		"message": "Show source text in popup window"
 	},
 	"target_lang_label": {
 		"message": "Translate to:"

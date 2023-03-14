@@ -7,12 +7,11 @@
 			leading-[0]
 			rounded-[12px]
 			overflow-hidden
-			my-class
 		"
-		bind:this={trigger}
+		use:triggerPosition
 	>
-		{#await promise then isYourLang}
-			{#if $persistentStore.inlineButtonShow && !isYourLang}
+		{#await promise then isNotYourLang}
+			{#if showTrigger() && isNotYourLang}
 				<TheTrigger />
 			{/if}
 		{/await}
@@ -26,23 +25,27 @@ loadFont();
 </script>
 
 <script>
-import { onMount } from 'svelte';
 import TheTrigger from './TheTrigger.svelte';
-import { computePosition } from '@floating-ui/dom';
-import { getSelectedEndCoord } from './rects';
+import { computePosition, offset, flip } from '@floating-ui/dom';
+import { getSelectedEndCoord } from './utils';
 import { persistentStore, themeClass } from '@/common/store';
+import { store } from './store';
 import { detectLanguage } from '@/common/browserApi';
 
 const reference = {
 	getBoundingClientRect: () => getSelectedEndCoord(),
 };
 
-let trigger;
-
-const triggerPosition = () => {
+const triggerPosition = trigger => {
 	computePosition(reference, trigger, {
 		strategy: 'absolute',
-		placement: 'bottom-end'
+		placement: 'bottom-end',
+		middleware: [
+			offset({
+				alignmentAxis: 17,
+			}),
+			flip(),
+		],
 	}).then(({ x, y }) => {
 		Object.assign(trigger.style, {
 			left: `${x}px`,
@@ -51,17 +54,15 @@ const triggerPosition = () => {
 	});
 };
 
-const isYourLang = async () => {
+const showTrigger = () => $store.textFieldElem ? $persistentStore.textFieldButtonShow : $persistentStore.inlineButtonShow;
+
+const isNotYourLang = async () => {
 	const selectedText = document.getSelection().toString().trim();
 
 	const detectedLanguage = await detectLanguage(selectedText);
 
-	return $persistentStore.targetLang === detectedLanguage;
+	return $persistentStore.targetLang !== detectedLanguage;
 };
 
-let promise = isYourLang();
-
-onMount(() => {
-	triggerPosition();
-});
+let promise = isNotYourLang();
 </script>

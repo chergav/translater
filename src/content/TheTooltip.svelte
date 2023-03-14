@@ -1,5 +1,5 @@
 {#await promise}
-	<div class="flex justify-center items-center h-[162px] w-full">
+	<div class="flex justify-center items-center h-[146px] w-full">
 		<div
 			class="
 				animate-spin
@@ -16,50 +16,14 @@
 	</div>
 {:then translate}
 	<div>
-		<div class="p-2 flex justify-between items-center">
-			<div class="w-full flex">
-				<button
-					type="button"
-					class="
-					hover:text-gray-900
-					hover:bg-gray-200
-					rounded-md
-					text-sm
-					p-1
-					mr-2
-					inline-flex
-					items-center
-					dark:hover:bg-gray-700
-					dark:hover:text-white
-					transition
-					{originalOpen
-						? 'text-gray-900 bg-gray-200 dark:bg-gray-700 dark:text-white'
-						: 'text-gray-500 dark:text-gray-400'}
-				"
+		<div class="px-2 pt-2 flex justify-between items-center">
+			<div class="w-full flex gap-2">
+				<ButtonExpand
+					expand={originalOpen}
 					on:click={() => {
 						originalOpen = !originalOpen;
 					}}
-				>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="1.5"
-						stroke="currentColor"
-						class="
-						w-5
-						h-5
-						{originalOpen ? 'rotate-180' : ''}
-						transition-transform
-					"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-						/>
-					</svg>
-				</button>
+				/>
 				<Select small bind:value={sourceLang} on:change={handleTranslate} {languages} auto={true} />
 				<ButtonCopy textToCopy={selectedText} />
 				<ButtonTTS textToSpeech={selectedText} langCode={sourceLang} />
@@ -112,56 +76,20 @@
 	</div>
 
 	<div>
-		<div class="p-2 flex">
-			<button
-				type="button"
-				class="
-				hover:text-gray-900
-				hover:bg-gray-200
-				rounded-md
-				text-sm
-				p-1
-				mr-2
-				inline-flex
-				items-center
-				dark:hover:bg-gray-700
-				dark:hover:text-white
-				transition
-				{translateOpen
-					? 'text-gray-900 bg-gray-200 dark:bg-gray-700 dark:text-white'
-					: 'text-gray-500 dark:text-gray-400'}
-			"
+		<div class="p-2 flex gap-2">
+			<ButtonExpand
+				expand={translateOpen}
 				on:click={() => {
 					translateOpen = !translateOpen;
 				}}
-			>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					fill="none"
-					viewBox="0 0 24 24"
-					stroke-width="1.5"
-					stroke="currentColor"
-					class="
-					w-5
-					h-5
-					{translateOpen ? 'rotate-180' : ''}
-					transition-transform
-				"
-				>
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-					/>
-				</svg>
-			</button>
+			/>
 			<Select small bind:value={$persistentStore.targetLang} on:change={handleTranslate} {languages} />
 			<ButtonCopy textToCopy={translatedText} />
 			<ButtonTTS textToSpeech={translatedText} langCode={targetLang} />
 		</div>
 		{#if translateOpen}
 			<div
-				class="p-2 whitespace-pre-line max-h-64 overflow-y-auto text-sm"
+				class="px-2 pb-2 whitespace-pre-line max-h-64 overflow-y-auto text-sm"
 				transition:slide|local={{ duration: 150 }}
 			>
 				{translatedText}
@@ -171,7 +99,7 @@
 
 	<div class="border-t border-gray-300 dark:border-gray-700">
 		<div class="p-2 flex items-center justify-between">
-			<div class="flex">
+			<div class="flex gap-2">
 				{#each tabs as item}
 					{#if item.component && translate[item.srcKey]}
 						<button
@@ -182,7 +110,6 @@
 								text-sm
 								px-2
 								py-1
-								mr-2
 								inline-flex
 								items-center
 								dark:hover:bg-gray-700
@@ -273,6 +200,7 @@
 import { createEventDispatcher, afterUpdate } from 'svelte';
 import { slide } from 'svelte/transition';
 import { persistentStore } from '@/common/store';
+import { store } from './store';
 import { languages } from '@/common/settings';
 import Select from '@/lib/Select.svelte';
 import Dictionary from './lib/Dictionary.svelte';
@@ -280,6 +208,7 @@ import Definitions from './lib/Definitions.svelte';
 import Examples from './lib/Examples.svelte';
 import ButtonCopy from './lib/ButtonCopy.svelte';
 import ButtonTTS from './lib/ButtonTTS.svelte';
+import ButtonExpand from './lib/ButtonExpand.svelte';
 
 const dispatch = createEventDispatcher();
 
@@ -291,15 +220,10 @@ let sourceLang = 'auto',
 	translateOpen = true;
 
 const getTranslate = async () => {
-	const selection = document.getSelection().toString().trim();
-
-	if (selection) {
-		selectedText = selection;
-	}
-
-	//console.log(selection.length); // max 2000
-
+	selectedText = $store.selectedText;
 	targetLang = $persistentStore.targetLang;
+	
+	//console.log(selectedText.length); // max 2000
 
 	const translate = await chrome.runtime.sendMessage({
 		getTranslate: {

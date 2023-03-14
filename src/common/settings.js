@@ -2,6 +2,7 @@ const defaultSettings = {
 	targetLang: chrome.i18n.getUILanguage(),
 	theme: 'system',
 	inlineButtonShow: true,
+	textFieldButtonShow: true,
 	showOriginalText: true
 };
 
