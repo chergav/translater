@@ -19,14 +19,26 @@
 			}
 		}
 	},
+	"options_header_inline_translate": {
+		"message": "Встроенный перевод"
+	},
+	"options_header_popup_window": {
+		"message": "Всплывающее окно"
+	},
+	"options_header_appearance": {
+		"message": "Внешний вид"
+	},
 	"options_inline_button_show": {
-		"message": "Показывать кнопку при выделении текста"
+		"message": "Показать кнопку, когда текст выделен"
 	},
 	"options_text_field_button_show": {
 		"message": "Показать кнопку в текстовом поле"
 	},
 	"options_show_original_text": {
 		"message": "Показать исходный текст во всплывающем окне"
+	},
+	"options_show_transliteration": {
+		"message": "Показать транслитерацию"
 	},
 	"target_lang_label": {
 		"message": "Перевести на:"

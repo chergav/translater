@@ -16,8 +16,7 @@ const storageSet = async data => {
 };
 
 const getSettings = async key => {
-	// eslint-disable-next-line no-prototype-builtins
-	if (!defaultSettings.hasOwnProperty(key)) {
+	if (!Object.hasOwn(defaultSettings, key)) {
 		throw new Error(`[translater] defaultSettings has no key: "${key}"`);
 	}
 

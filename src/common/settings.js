@@ -3,7 +3,8 @@ const defaultSettings = {
 	theme: 'system',
 	inlineButtonShow: true,
 	textFieldButtonShow: true,
-	showOriginalText: true
+	showOriginalText: true,
+	showTransliteration: true
 };
 
 const themes = [

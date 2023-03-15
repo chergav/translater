@@ -25,8 +25,8 @@
 					}}
 				/>
 				<Select small bind:value={sourceLang} on:change={handleTranslate} {languages} auto={true} />
-				<ButtonCopy textToCopy={selectedText} />
-				<ButtonTTS textToSpeech={selectedText} langCode={sourceLang} />
+				<ButtonCopy textToCopy={sentences.orig} />
+				<ButtonTTS textToSpeech={sentences.orig} langCode={sourceLang} />
 			</div>
 			<div>
 				<button
@@ -66,10 +66,13 @@
 		</div>
 		{#if originalOpen}
 			<div
-				class="p-2 whitespace-pre-line max-h-64 overflow-y-auto text-sm"
+				class="p-2 whitespace-pre-line max-h-64 overflow-y-auto"
 				transition:slide|local={{ duration: 150 }}
 			>
-				{selectedText}
+				<div class="text-sm">{sentences.orig}</div>
+				{#if sentences.src_translit && $persistentStore.showTransliteration}
+					<div class="mt-2 text-sm text-gray-500">{sentences.src_translit}</div>
+				{/if}
 			</div>
 			<div class="h-px mx-2 border-0 bg-gray-300 dark:bg-gray-700"></div>
 		{/if}
@@ -84,15 +87,18 @@
 				}}
 			/>
 			<Select small bind:value={$persistentStore.targetLang} on:change={handleTranslate} {languages} />
-			<ButtonCopy textToCopy={translatedText} />
-			<ButtonTTS textToSpeech={translatedText} langCode={targetLang} />
+			<ButtonCopy textToCopy={sentences.trans} />
+			<ButtonTTS textToSpeech={sentences.trans} langCode={targetLang} />
 		</div>
 		{#if translateOpen}
 			<div
 				class="px-2 pb-2 whitespace-pre-line max-h-64 overflow-y-auto text-sm"
 				transition:slide|local={{ duration: 150 }}
 			>
-				{translatedText}
+				<div class="text-sm">{sentences.trans}</div>
+				{#if sentences.translit && $persistentStore.showTransliteration}
+					<div class="mt-2 text-sm text-gray-500">{sentences.translit}</div>
+				{/if}
 			</div>
 		{/if}
 	</div>
@@ -150,7 +156,7 @@
 			<div>
 				<a
 					href={`https://translate.google.com/?sl=${sourceLang}&tl=${targetLang}&text=${encodeURIComponent(
-						selectedText
+						sentences.orig
 					)}`}
 					target="_blank"
 					rel="noreferrer"
@@ -214,27 +220,33 @@ const dispatch = createEventDispatcher();
 
 let sourceLang = 'auto',
 	targetLang,
-	selectedText,
-	translatedText,
-	originalOpen = $persistentStore.showOriginalText,
+	sentences = {
+		trans: '',
+		orig: '',
+		translit: '',
+		src_translit: ''
+	},
 	translateOpen = true;
 
+$: originalOpen = $persistentStore.showOriginalText;
+
 const getTranslate = async () => {
-	selectedText = $store.selectedText;
 	targetLang = $persistentStore.targetLang;
 	
-	//console.log(selectedText.length); // max 2000
-
 	const translate = await chrome.runtime.sendMessage({
 		getTranslate: {
 			sourceLang,
 			targetLang,
-			selectedText,
+			selectedText: $store.selectedText,
 		},
 	});
 
 	sourceLang = sourceLang === 'auto' ? translate.src : sourceLang;
-	translatedText = translate.sentences.reduce((a, v) => (a += v.trans), '');
+
+	sentences.trans = translate.sentences.reduce((a, v) => (a += v.trans ? v.trans : ''), '');
+	sentences.orig = translate.sentences.reduce((a, v) => (a += v.orig ? `${v.orig} ` : ''), '');
+	sentences.translit = translate.sentences.reduce((a, v) => (a += v.translit ? v.translit : ''), '');
+	sentences.src_translit = translate.sentences.reduce((a, v) => (a += v.src_translit ? v.src_translit : ''), '');
 
 	return translate;
 };

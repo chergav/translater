@@ -19,6 +19,15 @@
 			}
 		}
 	},
+	"options_header_inline_translate": {
+		"message": "Inline translate"
+	},
+	"options_header_popup_window": {
+		"message": "Popup window"
+	},
+	"options_header_appearance": {
+		"message": "Appearance"
+	},
 	"options_inline_button_show": {
 		"message": "Show button when text is selected"
 	},
@@ -27,6 +36,9 @@
 	},
 	"options_show_original_text": {
 		"message": "Show source text in popup window"
+	},
+	"options_show_transliteration": {
+		"message": "Show transliteration"
 	},
 	"target_lang_label": {
 		"message": "Translate to:"

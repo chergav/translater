@@ -6,7 +6,8 @@ const initialPersistentData = {
 	theme: await getSettings('theme'),
 	inlineButtonShow: await getSettings('inlineButtonShow'),
 	textFieldButtonShow: await getSettings('textFieldButtonShow'),
-	showOriginalText: await getSettings('showOriginalText')
+	showOriginalText: await getSettings('showOriginalText'),
+	showTransliteration: await getSettings('showTransliteration')
 };
 
 const createPersistentStore = () => {

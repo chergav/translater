@@ -1,4 +1,4 @@
-import { getGoogleTranslate } from '@/common/googleApi';
+import { getTranslate } from '@/common/googleApi';
 
 const getCurrentTab = async () => {
 	const [tab] = await chrome.tabs.query({ active: true, lastFocusedWindow: true });
@@ -31,7 +31,7 @@ chrome.contextMenus.onClicked.addListener(info => {
 
 const handleMessage = (data, sender, sendResponse) => {
 	if (data.getTranslate) {
-		getGoogleTranslate(data.getTranslate).then(sendResponse);
+		getTranslate(data.getTranslate).then(sendResponse);
 	}
 
 	return true;

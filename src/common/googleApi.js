@@ -1,11 +1,29 @@
-const getGoogleTranslate = async ({ sourceLang = 'auto', targetLang = 'auto', selectedText = '' } = {}) => {
-	const base = 'https://translate.googleapis.com/translate_a/single';
+const generateRequestURL = ({ sourceLang = 'auto', targetLang = 'auto', selectedText = '' } = {}) => {
 	// https://stackoverflow.com/questions/26714426/what-is-the-meaning-of-google-translate-query-params
-	const params = '?client=gtx&dt=t&dt=bd&dt=md&dt=ex&dt=ss&dj=1';
-	const langs = `&sl=${sourceLang}&tl=${targetLang}`;
-	const query = `&q=${encodeURIComponent(selectedText)}`;
+	const queryParams = {
+		client: 'gtx',
+		sl: sourceLang,
+		tl: targetLang,
+		hl: targetLang,
+		ie: 'UTF-8',
+		oe: 'UTF-8',
+		otf: '1',
+		ssel: '0',
+		tsel: '0',
+		kc: '7',
+		dj: '1',
+		q: selectedText
+	};
 
-	const url = base + params + langs + query;
+	const searchParams = new URLSearchParams(queryParams);
+
+	['at', 'bd', 'ex', 'ld', 'md', 'qca', 'rw', 'rm', 'ss', 't'].forEach(i => searchParams.append('dt', i));
+
+	return `https://translate.google.com/translate_a/single?${searchParams}`;
+};
+
+const getTranslate = async params => {
+	const url = generateRequestURL(params);
 
 	try {
 		const data = await fetch(url);
@@ -15,4 +33,4 @@ const getGoogleTranslate = async ({ sourceLang = 'auto', targetLang = 'auto', se
 	}
 };
 
-export { getGoogleTranslate };
+export { getTranslate };
