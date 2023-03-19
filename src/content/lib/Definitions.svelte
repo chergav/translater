@@ -35,8 +35,7 @@
 							<div class="text-gray-500 mt-2 mb-1">Synonyms:</div>
 							{#each sortSynonyms(defEntry.synsets) as entry}
 								{#if entry.label_info}
-									{@const labels = getLabels(entry.label_info)}
-									{#each labels as label}
+									{#each getLabels(entry.label_info) as label}
 										<span class="ml-2 text-xs text-gray-500">{label}:</span>
 									{/each}
 									{#each entry.synonym as synonym}
@@ -59,7 +58,7 @@
 												cursor-pointer
 											"
 											on:click={() => {
-												dispatch('translateSynonym', synonym);
+												dispatch('translateWord', synonym);
 											}}
 										>
 											{synonym}
@@ -86,7 +85,7 @@
 												cursor-pointer
 											"
 											on:click={() => {
-												dispatch('translateSynonym', synonym);
+												dispatch('translateWord', synonym);
 											}}
 										>
 											{synonym}

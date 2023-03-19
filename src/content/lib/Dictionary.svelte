@@ -19,11 +19,12 @@
 							<td class="align-top whitespace-nowrap">
 								{entry.word}
 							</td>
-							<td class="align-top px-2 text-gray-500">
+							<td class="align-top px-2 py-.5 text-gray-500">
 								{#each entry.reverse_translation as reverse_translation, i}
 									{@const lastIndex = entry.reverse_translation.length - 1}
 									<div class="inline-flex flex-wrap">
 										<!-- svelte-ignore a11y-click-events-have-key-events -->
+										<!-- svelte-ignore a11y-mouse-events-have-key-events -->
 										<span
 											class="
 												cursor-pointer
@@ -37,9 +38,18 @@
 												dark:hover:bg-gray-700
 												dark:hover:text-gray-300
 												transition-colors
+												{currentWord === reverse_translation
+												? 'text-gray-900 bg-gray-200 dark:bg-gray-700 dark:text-gray-300'
+												: ''}
 											"
 											on:click={() => {
-												dispatch('translateSynonym', reverse_translation)
+												dispatch('translateWord', reverse_translation);
+											}}
+											on:mouseenter={() => {
+												currentWord = reverse_translation;
+											}}
+											on:mouseleave={() => {
+												currentWord = '';
 											}}
 										>
 											{reverse_translation}
@@ -78,7 +88,10 @@
 <script>
 import { createEventDispatcher } from 'svelte';
 import { getMessage } from '@/common/browserApi';
+
 export let translate;
+
+let currentWord;
 
 const dispatch = createEventDispatcher();
 

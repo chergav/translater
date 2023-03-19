@@ -200,7 +200,7 @@
 			{#each tabs as item}
 				{#if activeTab === item.tab}
 					<div transition:slide|local={{ duration: 250 }}>
-						<svelte:component this={item.component} {translate} on:translateSynonym={handleTranslate} />
+						<svelte:component this={item.component} {translate} on:translateWord={handleTranslate} />
 					</div>
 				{/if}
 			{/each}
@@ -237,11 +237,7 @@ let sourceLang = 'auto',
 
 $: originalOpen = $persistentStore.showOriginalText;
 
-const getTranslate = async event => {
-	if (event && event.detail) {
-		$store.selectedText = event.detail;
-	}
-
+const getTranslate = async () => {
 	targetLang = $persistentStore.targetLang;
 
 	const translate = await chrome.runtime.sendMessage({
@@ -267,8 +263,16 @@ const getTranslate = async event => {
 
 let promise = getTranslate();
 
-const handleTranslate = event => {
-	promise = getTranslate(event);
+const handleTranslate = ({ detail }) => {
+	if (detail) {
+		if ($store.selectedText === detail) {
+			return;
+		}
+
+		$store.selectedText = detail;
+	}
+
+	promise = getTranslate();
 };
 
 const tabs = [
