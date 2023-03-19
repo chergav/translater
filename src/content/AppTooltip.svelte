@@ -70,39 +70,52 @@
 <script>
 import TheTooltip from './TheTooltip.svelte';
 import { computePosition, offset, flip, shift } from '@floating-ui/dom';
-import { getSelectedElemRect } from './utils';
-import { themeClass } from '@/common/store';
+import { persistentStore, themeClass } from '@/common/store';
 import { store } from './store';
 
 const reference = {
-	getBoundingClientRect: () => getSelectedElemRect(),
+	getBoundingClientRect: () => $store.selectedElemRect,
 };
 
-let tooltip;
-let saveLeft, left = 0;
-let saveTop, top = 0;
-let moving = false;
+let tooltip,
+	left = 0,
+	top = 0,
+	moving = false;
 
 const tooltipPosition = () => {
+	if (!$store.selectedElemRect) {
+		return;
+	}
+
+	const bottomOffset = $store.isInTextField
+		? $persistentStore.textFieldButtonShow ? 31 : 10
+		: $persistentStore.inlineButtonShow ? 31 : 10;
+
 	computePosition(reference, tooltip, {
 		strategy: 'absolute',
 		placement: 'bottom-start',
 		middleware: [
 			offset(({ rects, placement }) =>
-				placement === 'bottom-start' ? rects.floating.y + 35 : rects.floating.y + 10
+				placement === 'bottom-start'
+					? rects.floating.y + bottomOffset
+					: rects.floating.y + 10
 			),
 			flip({ flipAlignment: false }),
 			shift({ padding: 10 }),
 		],
 	}).then(({ x, y }) => {
-		left = saveLeft = x ? x : saveLeft;
-		top = saveTop = y ? y : saveTop;
+		left = x;
+		top = y;
 	});
 };
 
 const dragStart = event => {
 	const isLeftClick = event.button === 0;
-	if (!isLeftClick) return;
+
+	if (!isLeftClick) {
+		return;
+	}
+
 	moving = true;
 };
 
@@ -110,18 +123,15 @@ const dragMove = event => {
 	if (moving) {
 		left += event.movementX;
 		top += event.movementY;
-		if (left < 1) left = 0;
-		saveLeft = left;
-		saveTop = top;
+
+		if (left < 1) {
+			left = 0;
+		}
 	}
 };
 
 const dragEnd = () => {
 	moving = false;
-
-	store.update(data => ({
-		...data,
-		textFieldElem: null
-	}));
+	$store.selectedElemRect = null;
 };
 </script>

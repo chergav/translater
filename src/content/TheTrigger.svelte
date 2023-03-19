@@ -1,8 +1,8 @@
 <button
 	id="trigger-button"
 	class="
-		p-1
-		rounded-xl
+		p-.5
+		rounded-lg
 		bg-gray-50
 		text-gray-900
 		dark:bg-gray-800

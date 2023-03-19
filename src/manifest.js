@@ -9,7 +9,7 @@ export default defineManifest(() => ({
 	author: pkg.author,
 	homepage_url: 'https://github.com/chergav/translater',
 	default_locale: 'en',
-	...(!process.env.FIREFOX && { minimum_chrome_version: '88' }),
+	...(!process.env.FIREFOX && { minimum_chrome_version: '93' }),
 	icons: {
 		16: 'src/icons/16.png',
 		19: 'src/icons/19.png',

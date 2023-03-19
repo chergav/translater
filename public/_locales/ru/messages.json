@@ -35,7 +35,7 @@
 		"message": "Показать кнопку в текстовом поле"
 	},
 	"options_show_original_text": {
-		"message": "Показать исходный текст во всплывающем окне"
+		"message": "Показать исходный текст"
 	},
 	"options_show_transliteration": {
 		"message": "Показать транслитерацию"

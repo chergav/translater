@@ -1,5 +1,5 @@
 <label class="text-gray-900 dark:text-white">
-	<span>{label}</span>
+	<span class="{label ? 'mr-2' : ''}">{label}</span>
 	<select
 		bind:value
 		on:change
@@ -21,6 +21,7 @@
 			dark:focus:ring-opacity-50
 			dark:focus:border-gray-500
 			cursor-pointer
+			select-none
 		"
 	>
 		{#if auto}
@@ -55,5 +56,5 @@ const getI18nLanguages = () => {
 	return i18nLanguages;
 };
 
-const sortI18nLanguages = () => getI18nLanguages().sort((a,b) => a.value.localeCompare(b.value));
+const sortI18nLanguages = () => getI18nLanguages().sort((a, b) => a.value.localeCompare(b.value));
 </script>

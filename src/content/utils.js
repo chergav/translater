@@ -1,6 +1,3 @@
-import { get } from 'svelte/store';
-import { store } from './store';
-
 const isInTextField = () => ['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName);
 
 const getSelectedText = () => {
@@ -20,16 +17,15 @@ const getSelectedText = () => {
 };
 
 const getSelectedElemRect = () => {
-	const { textFieldElem } = get(store);
 	let element;
 
-	if (textFieldElem) {
-		element = textFieldElem;
+	if (isInTextField()) {
+		element = document.activeElement;
 	} else {
 		const selection = document.getSelection();
 
 		if (!selection.rangeCount || !selection.toString()) {
-			return {};
+			return null;
 		}
 
 		element = selection.getRangeAt(0).cloneRange();
@@ -44,20 +40,12 @@ const getSelectedEndCoord = () => {
 
 	if (isInTextField()) {
 		element = document.activeElement;
-
-		store.update(data => ({
-			...data,
-			textFieldElem: element
-		}));
 	} else {
-		store.update(data => ({
-			...data,
-			textFieldElem: null
-		}));
-
 		const selection = document.getSelection();
 
-		if (!selection.rangeCount) return null;
+		if (!selection.rangeCount) {
+			return null;
+		}
 
 		element = selection.getRangeAt(0).cloneRange();
 
@@ -71,7 +59,9 @@ const getSelectedEndCoord = () => {
 	const rects = element.getClientRects();
 
 	// if DOMRectList empty
-	if (!rects.length) return lastRect;
+	if (!rects.length) {
+		return lastRect;
+	}
 
 	return element.getBoundingClientRect();
 };

@@ -24,7 +24,13 @@
 						originalOpen = !originalOpen;
 					}}
 				/>
-				<Select small bind:value={sourceLang} on:change={handleTranslate} {languages} auto={true} />
+				<Select
+					small
+					bind:value={sourceLang}
+					on:change={handleTranslate}
+					{languages}
+					auto={true}
+				/>
 				<ButtonCopy textToCopy={sentences.orig} />
 				<ButtonTTS textToSpeech={sentences.orig} langCode={sourceLang} />
 			</div>
@@ -74,7 +80,7 @@
 					<div class="mt-2 text-sm text-gray-500">{sentences.src_translit}</div>
 				{/if}
 			</div>
-			<div class="h-px mx-2 border-0 bg-gray-300 dark:bg-gray-700"></div>
+			<div class="h-px mx-2 border-0 bg-gray-300 dark:bg-gray-700" />
 		{/if}
 	</div>
 
@@ -86,7 +92,12 @@
 					translateOpen = !translateOpen;
 				}}
 			/>
-			<Select small bind:value={$persistentStore.targetLang} on:change={handleTranslate} {languages} />
+			<Select
+				small
+				bind:value={$persistentStore.targetLang}
+				on:change={handleTranslate}
+				{languages}
+			/>
 			<ButtonCopy textToCopy={sentences.trans} />
 			<ButtonTTS textToSpeech={sentences.trans} langCode={targetLang} />
 		</div>
@@ -189,7 +200,7 @@
 			{#each tabs as item}
 				{#if activeTab === item.tab}
 					<div transition:slide|local={{ duration: 250 }}>
-						<svelte:component this={item.component} {translate} />
+						<svelte:component this={item.component} {translate} on:translateSynonym={handleTranslate} />
 					</div>
 				{/if}
 			{/each}
@@ -203,7 +214,7 @@
 {/await}
 
 <script>
-import { createEventDispatcher, afterUpdate } from 'svelte';
+import { createEventDispatcher, onMount } from 'svelte';
 import { slide } from 'svelte/transition';
 import { persistentStore } from '@/common/store';
 import { store } from './store';
@@ -220,19 +231,19 @@ const dispatch = createEventDispatcher();
 
 let sourceLang = 'auto',
 	targetLang,
-	sentences = {
-		trans: '',
-		orig: '',
-		translit: '',
-		src_translit: ''
-	},
-	translateOpen = true;
+	sentences = {},
+	translateOpen = true,
+	activeTab = 0;
 
 $: originalOpen = $persistentStore.showOriginalText;
 
-const getTranslate = async () => {
+const getTranslate = async event => {
+	if (event && event.detail) {
+		$store.selectedText = event.detail;
+	}
+
 	targetLang = $persistentStore.targetLang;
-	
+
 	const translate = await chrome.runtime.sendMessage({
 		getTranslate: {
 			sourceLang,
@@ -243,39 +254,50 @@ const getTranslate = async () => {
 
 	sourceLang = sourceLang === 'auto' ? translate.src : sourceLang;
 
-	sentences.trans = translate.sentences.reduce((a, v) => (a += v.trans ? v.trans : ''), '');
-	sentences.orig = translate.sentences.reduce((a, v) => (a += v.orig ? `${v.orig} ` : ''), '');
-	sentences.translit = translate.sentences.reduce((a, v) => (a += v.translit ? v.translit : ''), '');
-	sentences.src_translit = translate.sentences.reduce((a, v) => (a += v.src_translit ? v.src_translit : ''), '');
+	['trans', 'orig', 'translit', 'src_translit'].forEach(i => {
+		sentences[i] = translate.sentences.reduce((a, v) => (a += v[i] ?? ''), '');
+	});
+
+	activeTab = 0;
+
+	dispatch('update');
 
 	return translate;
 };
 
 let promise = getTranslate();
 
-const handleTranslate = () => {
-	promise = getTranslate();
+const handleTranslate = event => {
+	promise = getTranslate(event);
 };
 
 const tabs = [
 	{ tab: 0, srcKey: false, label: '', component: false },
-	{ tab: 1, srcKey: 'dict', label: chrome.i18n.getMessage('tooltip_dictionary'), component: Dictionary },
+	{
+		tab: 1,
+		srcKey: 'dict',
+		label: chrome.i18n.getMessage('tooltip_dictionary'),
+		component: Dictionary,
+	},
 	{
 		tab: 2,
 		srcKey: 'definitions',
 		label: chrome.i18n.getMessage('tooltip_definitions'),
 		component: Definitions,
 	},
-	{ tab: 3, srcKey: 'examples', label: chrome.i18n.getMessage('tooltip_examples'), component: Examples },
+	{
+		tab: 3,
+		srcKey: 'examples',
+		label: chrome.i18n.getMessage('tooltip_examples'),
+		component: Examples,
+	},
 ];
-
-let activeTab = 0;
 
 const tabHandler = tab => {
 	activeTab = activeTab === tab ? 0 : tab;
 };
 
-afterUpdate(() => {
+onMount(() => {
 	dispatch('update');
 });
 </script>

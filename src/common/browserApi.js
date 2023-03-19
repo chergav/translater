@@ -7,8 +7,7 @@ const detectLanguage = async text => {
 
 const storageGet = async (key = null) => {
 	const data = await chrome.storage.local.get(key);
-	// eslint-disable-next-line no-prototype-builtins
-	return data && data.hasOwnProperty(key) ? data[key] : null;
+	return data && Object.hasOwn(data, key) ? data[key] : null;
 };
 
 const storageSet = async data => {

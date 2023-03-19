@@ -2,7 +2,9 @@ import { writable } from 'svelte/store';
 
 const initData = {
 	selectedText: null,
-	textFieldElem: null,
+	isInTextField: false,
+	selectedElemRect: null,
+	selectedEndCoord: null,
 	voices: null
 };
 

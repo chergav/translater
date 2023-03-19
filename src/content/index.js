@@ -2,7 +2,7 @@ import AppTrigger from './AppTrigger.svelte';
 import AppTooltip from './AppTooltip.svelte';
 import css from '@/common/global.css?inline';
 import { store } from './store';
-import { getSelectedText } from './utils';
+import { isInTextField, getSelectedText, getSelectedElemRect, getSelectedEndCoord } from './utils';
 
 const app = {
 	trigger: null,
@@ -89,7 +89,10 @@ const createTrigger = event => {
 
 	store.update(data => ({
 		...data,
-		selectedText
+		selectedText,
+		isInTextField: isInTextField(),
+		selectedElemRect: getSelectedElemRect(),
+		selectedEndCoord: getSelectedEndCoord()
 	}));
 
 	const root = createShadowElem(triggerTag);

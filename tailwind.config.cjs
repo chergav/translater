@@ -12,6 +12,7 @@ module.exports = {
 		spacing: {
 			'px': '1px',
 			'0': '0px',
+			'.5': '2px',
 			'1': '4px',
 			'1.5': '6px',
 			'2': '8px',
@@ -25,6 +26,14 @@ module.exports = {
 			'64': '256px',
 
 			'96': '384px'
+		},
+		borderRadius: {
+			'sm': '2px',
+			DEFAULT: '4px',
+			'md': '6px',
+			'lg': '8px',
+			'xl': '12px',
+			'full': '9999px'
 		}
 	},
 	plugins: [require('@tailwindcss/forms')],

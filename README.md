@@ -15,7 +15,7 @@ Translate selected text with Google Translate
 
 1. [FireFox Add-ons](https://addons.mozilla.org/firefox/addon/translater-gt)
 <!-- 2. [Microsoft Edge Add-ons](https://qwe) -->
-2. For Chrome (autoupdate are only supported for Linux users)
+2. For Chromium based browsers (autoupdate are only supported for Linux users)
 
    * download from [releases page](https://github.com/chergav/translater/releases) `translater-n.n.n.crx` (right-mouse button -> 'Save link as')
    * open page `chrome://extensions` and switch Developer mode on

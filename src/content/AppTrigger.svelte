@@ -5,7 +5,6 @@
 			absolute
 			z-[99999]
 			leading-[0]
-			rounded-[12px]
 			overflow-hidden
 		"
 		use:triggerPosition
@@ -27,13 +26,12 @@ loadFont();
 <script>
 import TheTrigger from './TheTrigger.svelte';
 import { computePosition, offset, flip } from '@floating-ui/dom';
-import { getSelectedEndCoord } from './utils';
 import { persistentStore, themeClass } from '@/common/store';
 import { store } from './store';
 import { detectLanguage } from '@/common/browserApi';
 
 const reference = {
-	getBoundingClientRect: () => getSelectedEndCoord(),
+	getBoundingClientRect: () => $store.selectedEndCoord,
 };
 
 const triggerPosition = trigger => {
@@ -42,7 +40,7 @@ const triggerPosition = trigger => {
 		placement: 'bottom-end',
 		middleware: [
 			offset({
-				alignmentAxis: 17,
+				alignmentAxis: 15,
 			}),
 			flip(),
 		],
@@ -54,7 +52,7 @@ const triggerPosition = trigger => {
 	});
 };
 
-const showTrigger = () => $store.textFieldElem ? $persistentStore.textFieldButtonShow : $persistentStore.inlineButtonShow;
+const showTrigger = () => $store.isInTextField ? $persistentStore.textFieldButtonShow : $persistentStore.inlineButtonShow;
 
 const isNotYourLang = async () => {
 	const selectedText = document.getSelection().toString().trim();

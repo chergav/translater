@@ -6,9 +6,9 @@
 				{#each definition.entry as defEntry}
 					<li class="mb-2 pl-2">
 						{#if defEntry.label_info}
-							{@const label =	getLabels(defEntry.label_info)}
+							{@const label = getLabels(defEntry.label_info)}
 							{#each label as label}
-								<span 
+								<span
 									class="
 										bg-gray-300
 										text-gray-900
@@ -35,18 +35,60 @@
 							<div class="text-gray-500 mt-2 mb-1">Synonyms:</div>
 							{#each sortSynonyms(defEntry.synsets) as entry}
 								{#if entry.label_info}
-									{@const label = getLabels(entry.label_info)}
-									{#each label as label}
+									{@const labels = getLabels(entry.label_info)}
+									{#each labels as label}
 										<span class="ml-2 text-xs text-gray-500">{label}:</span>
 									{/each}
 									{#each entry.synonym as synonym}
-										<span class="mr-1 mb-1 px-2 inline-block text-gray-500 border border-gray-500 rounded-full">
+										<!-- svelte-ignore a11y-click-events-have-key-events -->
+										<span
+											class="
+												mr-1
+												mb-1
+												px-2
+												inline-block
+												text-gray-500
+												border
+												border-gray-500
+												rounded-full
+												hover:text-gray-900
+												hover:border-gray-900
+												dark:hover:text-gray-300
+												dark:hover:border-gray-300
+												transition-colors
+												cursor-pointer
+											"
+											on:click={() => {
+												dispatch('translateSynonym', synonym);
+											}}
+										>
 											{synonym}
 										</span>
 									{/each}
 								{:else}
 									{#each entry.synonym as synonym}
-										<span class="mr-1 mb-1 px-2 inline-block text-gray-500 border border-gray-500 rounded-full">
+										<!-- svelte-ignore a11y-click-events-have-key-events -->
+										<span
+											class="
+												mr-1
+												mb-1
+												px-2
+												inline-block
+												text-gray-500
+												border
+												border-gray-500
+												rounded-full
+												hover:text-gray-900
+												hover:border-gray-900
+												dark:hover:text-gray-300
+												dark:hover:border-gray-300
+												transition-colors
+												cursor-pointer
+											"
+											on:click={() => {
+												dispatch('translateSynonym', synonym);
+											}}
+										>
 											{synonym}
 										</span>
 									{/each}
@@ -61,9 +103,13 @@
 </div>
 
 <script>
+import { createEventDispatcher } from 'svelte';
 export let translate;
 
-const sortSynonyms = synonyms => synonyms.sort((a,b) => a.label_info ? 1 : b.label_info ? -1 : 0);
+const dispatch = createEventDispatcher();
+
+const sortSynonyms = synonyms =>
+	synonyms.sort((a, b) => (a.label_info ? 1 : b.label_info ? -1 : 0));
 
 const addSynonymToDefinition = () => {
 	const { definitions, synsets } = translate;
@@ -83,7 +129,7 @@ const addSynonymToDefinition = () => {
 	}
 
 	delete translate.synsets;
-	
+
 	return definitions;
 };
 
