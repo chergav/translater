@@ -2,41 +2,43 @@
 	{#each addSynonymToDefinition() as definition}
 		<div class="mb-3">
 			<div class="text-blue-600 capitalize">{definition.pos}</div>
-			<ul class="marker:text-gray-500 list-decimal pl-5 space-y-3">
+			<ul class="marker:text-gray-500 marker:border list-decimal pl-5 space-y-3">
 				{#each definition.entry as defEntry}
+					{@const defLabels = defEntry.label_info ? getLabels(defEntry.label_info) : []}
 					<li class="mb-2 pl-2">
-						{#if defEntry.label_info}
-							{@const label = getLabels(defEntry.label_info)}
-							{#each label as label}
-								<span
-									class="
-										bg-gray-300
-										text-gray-900
-										text-xs
-										uppercase
-										font-medium
-										mr-2
-										px-1
-										py-[2px]
-										rounded
-										dark:bg-gray-700
-										dark:text-gray-400
-									"
-								>
-									{label}
-								</span>
-							{/each}
-						{/if}
+						{#each defLabels as label}
+							<span
+								class="
+									bg-gray-300
+									text-gray-900
+									text-xs
+									uppercase
+									font-medium
+									mr-1
+									px-1
+									py-[2px]
+									rounded
+									dark:bg-gray-700
+									dark:text-gray-400
+								"
+							>
+								{label}
+							</span>
+						{/each}
 						<div>{defEntry.gloss}</div>
 						{#if defEntry.example}
 							<div class="text-gray-500">"{defEntry.example}"</div>
 						{/if}
 						{#if defEntry.synsets}
-							<div class="text-gray-500 mt-2 mb-1">Synonyms:</div>
+							<div class="text-gray-500 mt-2 mb-1">
+								{getMessage('tooltip_definitions_synonyms')}
+							</div>
 							{#each sortSynonyms(defEntry.synsets) as entry}
 								{#if entry.label_info}
 									{#each getLabels(entry.label_info) as label}
-										<span class="ml-2 text-xs text-gray-500">{label}:</span>
+										{#if !defLabels.includes(label)}
+											<span class="ml-2 text-xs text-gray-500">{label}:</span>
+										{/if}
 									{/each}
 									{#each entry.synonym as synonym}
 										<!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -46,14 +48,11 @@
 												mb-1
 												px-2
 												inline-block
+												rounded-full
 												text-gray-500
 												border
-												border-gray-500
-												rounded-full
-												hover:text-gray-900
-												hover:border-gray-900
-												dark:hover:text-gray-300
-												dark:hover:border-gray-300
+												border-gray-200
+												dark:border-gray-700
 												transition-colors
 												cursor-pointer
 											"
@@ -73,14 +72,11 @@
 												mb-1
 												px-2
 												inline-block
+												rounded-full
 												text-gray-500
 												border
-												border-gray-500
-												rounded-full
-												hover:text-gray-900
-												hover:border-gray-900
-												dark:hover:text-gray-300
-												dark:hover:border-gray-300
+												border-gray-200
+												dark:border-gray-700
 												transition-colors
 												cursor-pointer
 											"
@@ -102,6 +98,7 @@
 </div>
 
 <script>
+import { getMessage } from '@/common/browserApi';
 import { createEventDispatcher } from 'svelte';
 export let translate;
 

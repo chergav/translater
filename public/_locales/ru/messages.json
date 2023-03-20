@@ -52,6 +52,9 @@
 	"tooltip_definitions": {
 		"message": "Определения"
 	},
+	"tooltip_definitions_synonyms": {
+		"message": "Синонимы:"
+	},
 	"tooltip_examples": {
 		"message": "Примеры"
 	},
