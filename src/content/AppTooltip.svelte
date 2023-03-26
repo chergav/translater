@@ -42,6 +42,7 @@
 				{moving ? 'cursor-grabbing' : 'cursor-move'}
 			"
 			on:mousedown={dragStart}
+			on:mouseup={dragEnd}
 		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -65,9 +66,11 @@
 	</div>
 </div>
 
-<svelte:window on:mousemove={dragMove} on:mouseup={dragEnd} />
+<svelte:window on:mousemove={dragMove} />
+<svelte:document on:click={removeTooltip} />
 
 <script>
+import { apps } from './index';
 import TheTooltip from './TheTooltip.svelte';
 import { computePosition, offset, flip, shift } from '@floating-ui/dom';
 import { persistentStore, themeClass } from '@/common/store';
@@ -87,6 +90,7 @@ const tooltipPosition = () => {
 		return;
 	}
 
+	// offset when open from context menu without inline button
 	const bottomOffset = $store.isInTextField
 		? $persistentStore.textFieldButtonShow ? 31 : 10
 		: $persistentStore.inlineButtonShow ? 31 : 10;
@@ -133,5 +137,21 @@ const dragMove = event => {
 const dragEnd = () => {
 	moving = false;
 	$store.selectedElemRect = null;
+};
+
+const removeTooltip = event => {
+	const isLeftClick = event.button === 0;
+	if (!isLeftClick) return;
+
+	const tooltipElem = document.querySelector(apps.tooltip.tag);
+	if (!tooltipElem) return;
+
+	const isInTriggerElem = event.target.closest(apps.trigger.tag);
+	if (isInTriggerElem) return;
+
+	const isInTooltipElem = event.target.closest(apps.tooltip.tag);
+	if (isInTooltipElem) return;
+
+	$store.currentApp = null;
 };
 </script>

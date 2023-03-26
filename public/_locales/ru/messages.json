@@ -9,23 +9,23 @@
 		"message": "Перевести выделенный текст"
 	},
 	"popup_menu_options": {
-		"message": "Параметры"
+		"message": "Настройки"
 	},
 	"options_title": {
-		"message": "$NAME$ - опции",
+		"message": "$NAME$ - настройки",
 		"placeholders": {
 			"name": {
 				"content": "Translater"
 			}
 		}
 	},
-	"options_header_inline_translate": {
+	"options_tab_inline_translate": {
 		"message": "Встроенный перевод"
 	},
-	"options_header_popup_window": {
+	"options_tab_popup_window": {
 		"message": "Всплывающее окно"
 	},
-	"options_header_appearance": {
+	"options_tab_appearance": {
 		"message": "Внешний вид"
 	},
 	"options_inline_button_show": {
@@ -33,6 +33,12 @@
 	},
 	"options_text_field_button_show": {
 		"message": "Показать кнопку в текстовом поле"
+	},
+	"options_hide_button_on_sites": {
+		"message": "Скрыть кнопку на этих сайтах:"
+	},
+	"options_hide_button_on_sites_empty_list": {
+		"message": "Вы можете добавить сайты с помощью кнопки настроек на сайте, который хотите исключить"
 	},
 	"options_show_original_text": {
 		"message": "Показать исходный текст"
@@ -57,6 +63,15 @@
 	},
 	"tooltip_examples": {
 		"message": "Примеры"
+	},
+	"tooltip_settings_disable_inline_button_for_site": {
+		"message": "Отключить кнопку для этого сайта"
+	},
+	"tooltip_settings_enable_inline_button_global": {
+		"message": "Показывать кнопку для всех сайтов"
+	},
+	"tooltip_settings_options_link": {
+		"message": "Дополнительные настройки"
 	},
 	"theme_light": {
 		"message": "Светлая тема"
@@ -230,7 +245,7 @@
 		"message": "латинский"
 	},
 	"supported_languages_lv": {
-		"message": "Латышский"
+		"message": "латышский"
 	},
 	"supported_languages_lt": {
 		"message": "литовский"
@@ -381,5 +396,14 @@
 	},
 	"supported_languages_zu": {
 		"message": "зулу"
+	},
+	"supported_languages_qu": {
+		"message": "кечуа"
+	},
+	"supported_languages_om": {
+		"message": "оромо"
+	},
+	"supported_languages_ilo": {
+		"message": "илоко"
 	}
 }

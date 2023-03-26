@@ -1,4 +1,4 @@
-<div class="p-2 max-h-96 overflow-y-auto border-t border-gray-300 dark:border-gray-700">
+<div class="p-2 max-h-96 overflow-y-auto border-t border-gray-300 dark:border-gray-700 scrollbar">
 	{#each addSynonymToDefinition() as definition}
 		<div class="mb-3">
 			<div class="text-blue-600 capitalize">{definition.pos}</div>

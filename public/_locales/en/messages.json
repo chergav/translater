@@ -9,23 +9,23 @@
 		"message": "Translate selected text"
 	},
 	"popup_menu_options": {
-		"message": "Options"
+		"message": "Settings"
 	},
 	"options_title": {
-		"message": "$NAME$ - options",
+		"message": "$NAME$ - settings",
 		"placeholders": {
 			"name": {
 				"content": "Translater"
 			}
 		}
 	},
-	"options_header_inline_translate": {
+	"options_tab_inline_translate": {
 		"message": "Inline translate"
 	},
-	"options_header_popup_window": {
+	"options_tab_popup_window": {
 		"message": "Popup window"
 	},
-	"options_header_appearance": {
+	"options_tab_appearance": {
 		"message": "Appearance"
 	},
 	"options_inline_button_show": {
@@ -33,6 +33,12 @@
 	},
 	"options_text_field_button_show": {
 		"message": "Show button in textfield"
+	},
+	"options_hide_button_on_sites": {
+		"message": "Hide button on these sites:"
+	},
+	"options_hide_button_on_sites_empty_list": {
+		"message": "You can add sites using the settings button on the site you want to exclude"
 	},
 	"options_show_original_text": {
 		"message": "Show source text"
@@ -57,6 +63,15 @@
 	},
 	"tooltip_examples": {
 		"message": "Examples"
+	},
+	"tooltip_settings_disable_inline_button_for_site": {
+		"message": "Disable the button for this site"
+	},
+	"tooltip_settings_enable_inline_button_global": {
+		"message": "Show the button for all sites"
+	},
+	"tooltip_settings_options_link": {
+		"message": "Additional settingsи"
 	},
 	"theme_light": {
 		"message": "Light theme"
@@ -381,5 +396,14 @@
 	},
 	"supported_languages_zu": {
 		"message": "zulu"
+	},
+	"supported_languages_qu": {
+		"message": "quechua"
+	},
+	"supported_languages_om": {
+		"message": "oromo"
+	},
+	"supported_languages_ilo": {
+		"message": "ilocano"
 	}
 }

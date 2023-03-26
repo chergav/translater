@@ -35,44 +35,12 @@
 				<ButtonTTS textToSpeech={sentences.orig} langCode={sourceLang} />
 			</div>
 			<div>
-				<button
-					type="button"
-					id="close-tooltip"
-					class="
-					bg-transparent
-					text-gray-500
-					hover:bg-gray-200
-					hover:text-gray-900
-					rounded-full
-					p-1
-					inline-flex
-					items-center
-					dark:hover:bg-gray-700
-					dark:text-gray-400
-					dark:hover:text-white
-					transition
-				"
-				>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="1.5"
-						stroke="currentColor"
-						class="w-5 h-5"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M6 18L18 6M6 6l12 12"
-						/>
-					</svg>
-				</button>
+				<ButtonClose />
 			</div>
 		</div>
 		{#if originalOpen}
 			<div
-				class="p-2 whitespace-pre-line max-h-64 overflow-y-auto"
+				class="p-2 whitespace-pre-line max-h-64 overflow-y-auto scrollbar"
 				transition:slide|local={{ duration: 150 }}
 			>
 				<div class="text-sm">{sentences.orig}</div>
@@ -103,7 +71,7 @@
 		</div>
 		{#if translateOpen}
 			<div
-				class="px-2 pb-2 whitespace-pre-line max-h-64 overflow-y-auto text-sm"
+				class="px-2 pb-2 whitespace-pre-line max-h-64 overflow-y-auto text-sm scrollbar"
 				transition:slide|local={{ duration: 150 }}
 			>
 				<div class="text-sm">{sentences.trans}</div>
@@ -173,7 +141,7 @@
 					rel="noreferrer"
 					class="text-blue-600 visited:text-purple-600 underline"
 				>
-					<div class="flex flex-row items-center">
+					<div class="flex items-center">
 						<span>Google Translate</span>
 						<span>
 							<svg
@@ -226,6 +194,7 @@ import Examples from './lib/Examples.svelte';
 import ButtonCopy from './lib/ButtonCopy.svelte';
 import ButtonTTS from './lib/ButtonTTS.svelte';
 import ButtonExpand from './lib/ButtonExpand.svelte';
+import ButtonClose from './lib/ButtonClose.svelte';
 
 const dispatch = createEventDispatcher();
 
@@ -241,11 +210,12 @@ const getTranslate = async () => {
 	targetLang = $persistentStore.targetLang;
 
 	const translate = await chrome.runtime.sendMessage({
-		getTranslate: {
+		type: 'getTranslate',
+		content: {
 			sourceLang,
 			targetLang,
 			selectedText: $store.selectedText,
-		},
+		}
 	});
 
 	sourceLang = sourceLang === 'auto' ? translate.src : sourceLang;

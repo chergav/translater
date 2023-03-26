@@ -43,18 +43,10 @@ export let languages = [];
 export let auto = false;
 export let small = false;
 
-const getI18nLanguages = () => {
-	let i18nLanguages = [];
-	
-	for (const { key } of languages) {
-		i18nLanguages.push({
-			key,
-			value: chrome.i18n.getMessage(`supported_languages_${key.replace('-', '_')}`)
-		})
-	}
-
-	return i18nLanguages;
-};
+const getI18nLanguages = () => languages.map(({ key }) => ({
+	key,
+	value: getMessage(`supported_languages_${key.replace('-', '_')}`)
+}));
 
 const sortI18nLanguages = () => getI18nLanguages().sort((a, b) => a.value.localeCompare(b.value));
 </script>

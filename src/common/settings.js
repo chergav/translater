@@ -4,7 +4,9 @@ const defaultSettings = {
 	inlineButtonShow: true,
 	textFieldButtonShow: true,
 	showOriginalText: true,
-	showTransliteration: true
+	showTransliteration: true,
+	blacklistDomainForInline: [],
+	blacklistDomainForText: []
 };
 
 const themes = [
@@ -429,6 +431,18 @@ const languages = [
 	{
 		key: 'zu',
 		value: 'Zulu'
+	},
+	{
+		key: 'qu',
+		value: 'Quechua'
+	},
+	{
+		key: 'om',
+		value: 'Oromo'
+	},
+	{
+		key: 'ilo',
+		value: 'Ilocano'
 	}
 ];
 

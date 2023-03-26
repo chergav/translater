@@ -7,7 +7,9 @@ const initialPersistentData = {
 	inlineButtonShow: await getSettings('inlineButtonShow'),
 	textFieldButtonShow: await getSettings('textFieldButtonShow'),
 	showOriginalText: await getSettings('showOriginalText'),
-	showTransliteration: await getSettings('showTransliteration')
+	showTransliteration: await getSettings('showTransliteration'),
+	blacklistDomainForInline: await getSettings('blacklistDomainForInline'),
+	blacklistDomainForText: await getSettings('blacklistDomainForText')
 };
 
 const createPersistentStore = () => {

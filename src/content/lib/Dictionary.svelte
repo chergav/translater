@@ -1,5 +1,5 @@
 {#if translate.dict}
-	<div class="p-2 max-h-96 overflow-y-auto border-t border-gray-300 dark:border-gray-700">
+	<div class="p-2 max-h-96 overflow-y-auto border-t border-gray-300 dark:border-gray-700 scrollbar">
 		<table class="w-full text-sm text-gray-900 dark:text-white">
 			<tbody>
 				{#each translate.dict as dict, index}
@@ -45,7 +45,7 @@
 											on:click={() => {
 												dispatch('translateWord', reverse_translation);
 											}}
-											on:mouseenter={() => {
+											on:mouseenter={() => {												
 												currentWord = reverse_translation;
 											}}
 											on:mouseleave={() => {

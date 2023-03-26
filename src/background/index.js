@@ -29,9 +29,20 @@ chrome.contextMenus.onClicked.addListener(info => {
 	}
 });
 
-const handleMessage = (data, sender, sendResponse) => {
-	if (data.getTranslate) {
-		getTranslate(data.getTranslate).then(sendResponse);
+const handleMessage = (message, sender, sendResponse) => {
+	switch (message.type) {
+	case 'getTranslate':
+		getTranslate(message.content).then(sendResponse);
+		break;
+	case 'openOptionsPage':
+		// chrome.runtime.openOptionsPage();
+		chrome.tabs.create({
+			url: `${chrome.runtime.getURL('src/options/index.html')}${message.content.hash}`
+		});
+		break;
+	default:
+		console.error(`Error message type "${message.type}".`);
+		break;
 	}
 
 	return true;

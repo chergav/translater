@@ -17,6 +17,8 @@
 	</div>
 </div>
 
+<svelte:document on:mousedown={removeTrigger} />
+
 <script context="module">
 import { loadFont } from '@/common/fontLoader';
 
@@ -24,11 +26,28 @@ loadFont();
 </script>
 
 <script>
+import { apps } from './index';
 import TheTrigger from './TheTrigger.svelte';
 import { computePosition, offset, flip } from '@floating-ui/dom';
 import { persistentStore, themeClass } from '@/common/store';
 import { store } from './store';
 import { detectLanguage } from '@/common/browserApi';
+
+const removeTrigger = event => {
+	const isLeftClick = event.button === 0;
+	if (!isLeftClick) return;
+
+	const isInTriggerElem = event.target.closest(apps.trigger.tag);
+	if (isInTriggerElem) return;
+
+	const triggerElem = document.querySelector(apps.trigger.tag);
+
+	if (triggerElem) {
+		apps.trigger.app.$destroy();
+		triggerElem.remove();
+		document.getSelection().removeAllRanges();
+	}
+};
 
 const reference = {
 	getBoundingClientRect: () => $store.selectedEndCoord,
@@ -40,7 +59,7 @@ const triggerPosition = trigger => {
 		placement: 'bottom-end',
 		middleware: [
 			offset({
-				alignmentAxis: 15,
+				alignmentAxis: 15, // half button width
 			}),
 			flip(),
 		],
@@ -52,7 +71,11 @@ const triggerPosition = trigger => {
 	});
 };
 
-const showTrigger = () => $store.isInTextField ? $persistentStore.textFieldButtonShow : $persistentStore.inlineButtonShow;
+const isOptionShowButton = () => $store.isInTextField ? $persistentStore.textFieldButtonShow : $persistentStore.inlineButtonShow;
+
+const isDomainInBlacklist = () => $persistentStore.blacklistDomainForInline.includes($store.hostname);
+
+const showTrigger = () => isOptionShowButton() && !isDomainInBlacklist();
 
 const isNotYourLang = async () => {
 	const selectedText = document.getSelection().toString().trim();

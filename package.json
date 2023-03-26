@@ -1,6 +1,6 @@
 {
 	"name": "translater",
-	"version": "0.6.2",
+	"version": "0.7.0",
 	"license": "MIT",
 	"author": "chergav",
 	"type": "module",
@@ -17,7 +17,7 @@
 		"pack:all": "yarn pack:crx && yarn pack:zip"
 	},
 	"dependencies": {
-		"@floating-ui/dom": "^1.1.0"
+		"@floating-ui/dom": "^1.2.5"
 	},
 	"devDependencies": {
 		"@crxjs/vite-plugin": "^2.0.0-beta.15",
@@ -28,7 +28,7 @@
 		"eslint": "^8.32.0",
 		"eslint-plugin-svelte3": "^4.0.0",
 		"postcss": "^8.4.21",
-		"svelte": "^3.55.1",
+		"svelte": "^3.57.0",
 		"tailwindcss": "^3.2.6",
 		"vite": "^4.0.4",
 		"web-ext": "^7.5.0"

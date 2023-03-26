@@ -23,7 +23,7 @@ export default defineConfig({
 		__DEV__: process.env.NODE_ENV !== 'production'
 	},
 	plugins: [
-		svelte(),
-		crx({ manifest })
+		crx({ manifest }),
+		svelte()
 	]
 });

@@ -1,16 +1,24 @@
 import AppTrigger from './AppTrigger.svelte';
 import AppTooltip from './AppTooltip.svelte';
+import AppSettings from './AppSettings.svelte';
 import css from '@/common/global.css?inline';
-import { store } from './store';
+import { store, currentApp } from './store';
 import { isInTextField, getSelectedText, getSelectedElemRect, getSelectedEndCoord } from './utils';
 
-const app = {
-	trigger: null,
-	tooltip: null
+export const apps = {
+	trigger: {
+		app: null,
+		tag: 'g-translater-trigger'
+	},
+	tooltip: {
+		app: null,
+		tag: 'g-translater-tooltip'
+	},
+	settings: {
+		app: null,
+		tag: 'g-translater-settings'
+	}
 };
-
-const triggerTag = 'gav-translate-trigger';
-const tooltipTag = 'gav-translate-tooltip';
 
 const createShadowElem = tag => {
 	const container = document.createElement(tag);
@@ -24,53 +32,44 @@ const createShadowElem = tag => {
 	return root;
 };
 
-const removeTooltip = () => {
-	app.tooltip.$destroy();
-	document.querySelector(tooltipTag).remove();
+const removeApps = () => {
+	['tooltip', 'settings'].forEach(i => {
+		if (apps[i].app) {
+			apps[i].app.$destroy();
+			apps[i].app = null;
+			document.querySelector(apps[i].tag).remove();
+		}
+	});
 };
 
-const removeTooltipInside = event => {
-	const isLeftClick = event.button === 0;
-	if (!isLeftClick) return;
+const createTooltip = () => {
+	const root = createShadowElem(apps.tooltip.tag);
 
-	const closeTooltip = event.target.closest('#close-tooltip');
-	if (!closeTooltip) return;
-
-	removeTooltip();
+	apps.tooltip.app = new AppTooltip({
+		target: root
+	});
 };
 
-const removeTooltipOutside = event => {
-	const isLeftClick = event.button === 0;
-	if (!isLeftClick) return;
+const createSettings = () => {
+	const root = createShadowElem(apps.settings.tag);
 
-	const tooltipElem = document.querySelector(tooltipTag);
-	if (!tooltipElem) return;
-
-	const isInTriggerElem = event.target.closest(triggerTag);
-	if (isInTriggerElem) return;
-
-	const isInTooltipElem = event.target.closest(tooltipTag);
-	if (isInTooltipElem) return;
-
-	removeTooltip();
+	apps.settings.app = new AppSettings({
+		target: root
+	});
 };
 
-const createTooltip = event => {
-	if (event) {
-		const triggerButton = event.target.closest('#trigger-button');
-		if (!triggerButton) return;
-	}
+const appHandler = app => {
+	removeApps();
 
-	const tooltipContainer = document.querySelector(tooltipTag);
-
-	if (!tooltipContainer) {
-		const root = createShadowElem(tooltipTag);
-
-		root.addEventListener('click', removeTooltipInside);
-
-		app.tooltip = new AppTooltip({
-			target: root
-		});
+	switch (app) {
+	case 'tooltip':
+		createTooltip();
+		break;
+	case 'settings':
+		createSettings();
+		break;
+	default:
+		console.error(`App: "${app}" is not exist.`);
 	}
 };
 
@@ -78,10 +77,10 @@ const createTrigger = event => {
 	const isLeftClick = event.button === 0;
 	if (!isLeftClick) return;
 
-	const isInTriggerElem = event.target.closest(triggerTag);
+	const isInTriggerElem = event.target.closest(apps.trigger.tag);
 	if (isInTriggerElem) return;
 
-	const isInTooltipElem = event.target.closest(tooltipTag);
+	const isInTooltipElem = event.target.closest(apps.tooltip.tag);
 	if (isInTooltipElem) return;
 
 	const selectedText = getSelectedText();
@@ -90,50 +89,40 @@ const createTrigger = event => {
 	store.update(data => ({
 		...data,
 		selectedText,
+		hostname: window.location.hostname,
 		isInTextField: isInTextField(),
 		selectedElemRect: getSelectedElemRect(),
 		selectedEndCoord: getSelectedEndCoord()
 	}));
 
-	const root = createShadowElem(triggerTag);
+	const root = createShadowElem(apps.trigger.tag);
 
-	root.addEventListener('click', createTooltip);
-
-	app.trigger = new AppTrigger({
+	apps.trigger.app = new AppTrigger({
 		target: root
 	});
 };
 
-const removeTrigger = event => {
-	const isLeftClick = event.button === 0;
-	if (!isLeftClick) return;
-
-	const isInTriggerElem = event.target.closest(triggerTag);
-	if (isInTriggerElem) return;
-
-	const triggerElem = document.querySelector(triggerTag);
-
-	if (triggerElem) {
-		app.trigger.$destroy();
-		triggerElem.remove();
-		document.getSelection().removeAllRanges();
+currentApp.subscribe(app => {
+	if (app) {
+		appHandler(app);
+	} else {
+		removeApps();
 	}
-};
-
-// console.log(`[translater] DEV: ${__DEV__}`);
+});
 
 document.addEventListener('mouseup', createTrigger);
-document.addEventListener('mousedown', removeTrigger);
-document.addEventListener('mousedown', removeTooltipOutside);
 
 chrome.runtime.onMessage.addListener(
 	message => {
 		switch (message.action) {
 		case 'showTooltip':
-			createTooltip();
+			store.update(data => ({
+				...data,
+				currentApp: 'tooltip'
+			}));
 			break;
 		default:
-			console.error(`Action "${message.action}" not found.`);
+			console.error(`Action "${message.action}" is not found.`);
 		}
 	}
 );

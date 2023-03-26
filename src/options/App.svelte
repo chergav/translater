@@ -1,11 +1,11 @@
 <div class="flex justify-center">
-	<div class="w-[440px] select-none">
+	<div class="w-[650px] select-none">
 		<div class="py-5 flex items-center">
 			<img src={getURL('/src/icons/48.png')} alt="" />
-			<span class="ml-4 text-xl">Translater</span>
+			<span class="ml-5 text-xl">Translater</span>
 		</div>
 
-		<div class="py-4 border-t border-gray-300 dark:border-gray-700">
+		<div class="py-4 border-y border-gray-300 dark:border-gray-700">
 			<Select
 				bind:value={$persistentStore.targetLang}
 				label={getMessage('target_lang_label')}
@@ -13,75 +13,47 @@
 			/>
 		</div>
 
-		<div class="py-2 border-t border-gray-300 dark:border-gray-700">
-			<h2 class="text-lg mb-2">{getMessage('options_header_inline_translate')}</h2>
-
-			<div class="py-2">
-				<label class="flex items-center cursor-pointer">
-					<input
-						type="checkbox"
-						class="rounded-md mr-3"
-						bind:checked={$persistentStore.inlineButtonShow}
-					/>
-					<span>{getMessage('options_inline_button_show')}</span>
-				</label>
+		<div class="flex flex-row py-4">
+			<div class="mr-6">
+				<ul class="flex flex-col">
+					{#each tabs as item}
+					<!-- svelte-ignore a11y-click-events-have-key-events -->
+						<li
+							class="
+								px-2
+								py-1
+								my-1
+								inline-flex
+								items-center
+								whitespace-nowrap
+								rounded
+								hover:bg-gray-200
+								dark:hover:bg-gray-700
+								transition
+								cursor-pointer
+								{activeTab === item.tab
+								? 'bg-gray-200 text-gray-900 dark:bg-gray-700 dark:text-white'
+								: 'text-gray-500 dark:text-gray-400'}
+							"
+							on:click={() => {
+								activeTab = item.tab;
+							}}
+						>
+							<span>{item.label}</span>
+						</li>
+					{/each}
+				</ul>
 			</div>
-			<div class="py-2">
-				<label class="flex items-center cursor-pointer">
-					<input
-						type="checkbox"
-						class="rounded-md mr-3"
-						bind:checked={$persistentStore.textFieldButtonShow}
-					/>
-					<span>{getMessage('options_text_field_button_show')}</span>
-				</label>
-			</div>
-		</div>
-
-		<div class="py-2 border-t border-gray-300 dark:border-gray-700">
-			<h2 class="text-lg mb-2">{getMessage('options_header_popup_window')}</h2>
-
-			<div class="py-2">
-				<label class="flex items-center cursor-pointer">
-					<input
-						type="checkbox"
-						class="rounded-md mr-3"
-						bind:checked={$persistentStore.showOriginalText}
-					/>
-					<span>{getMessage('options_show_original_text')}</span>
-				</label>
-			</div>
-			<div class="py-2">
-				<label class="flex items-center cursor-pointer">
-					<input
-						type="checkbox"
-						class="rounded-md mr-3"
-						bind:checked={$persistentStore.showTransliteration}
-					/>
-					<span>{getMessage('options_show_transliteration')}</span>
-				</label>
-			</div>
-		</div>
-
-		<div class="py-2 border-t border-gray-300 dark:border-gray-700">
-			<h2 class="text-lg mb-2">{getMessage('options_header_appearance')}</h2>
-
-			<div class="py-2">
-				{#each themes as item (item.key)}
-					<div class="mb-3">
-						<label class="flex items-center cursor-pointer">
-							<input
-								type="radio"
-								bind:group={$persistentStore.theme}
-								value={item.key}
-								class="mr-3"
-							/>
-							<span>{getMessage(item.value)}</span>
-						</label>
-					</div>
+			<div>
+				{#each tabs as item}
+					{#if activeTab === item.tab}
+						<div>
+							<svelte:component this={item.component} />
+						</div>
+					{/if}
 				{/each}
 			</div>
-		</div>
+		</div>		
 	</div>
 </div>
 
@@ -98,8 +70,33 @@ loadFont();
 <script>
 import { getMessage, getURL } from '@/common/browserApi';
 import { persistentStore, themeClass } from '@/common/store';
-import { languages, themes } from '@/common/settings';
+import { languages } from '@/common/settings';
 import Select from '@/lib/Select.svelte';
+import InlineTranslate from './lib/InlineTranslate.svelte';
+import PopupWindow from './lib/PopupWindow.svelte';
+import Appearance from './lib/Appearance.svelte';
 
 $: document.documentElement.className = $themeClass;
+
+let activeTab = window.location.hash || '#inline_translate';
+
+$: window.location.hash = activeTab;
+
+const tabs = [
+	{
+		tab: '#inline_translate',
+		label: getMessage('options_tab_inline_translate'),
+		component: InlineTranslate,
+	},
+	{
+		tab: '#popup_window',
+		label: getMessage('options_tab_popup_window'),
+		component: PopupWindow,
+	},
+	{
+		tab: '#appearance',
+		label: getMessage('options_tab_appearance'),
+		component: Appearance,
+	},
+];
 </script>

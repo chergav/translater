@@ -12,7 +12,8 @@ export default defineManifest(() => ({
 	...(!process.env.FIREFOX && { minimum_chrome_version: '93' }),
 	icons: {
 		16: 'src/icons/16.png',
-		19: 'src/icons/19.png',
+		24: 'src/icons/24.png',
+		32: 'src/icons/32.png',
 		48: 'src/icons/48.png',
 		128: 'src/icons/128.png'
 	},
@@ -20,7 +21,11 @@ export default defineManifest(() => ({
 		default_title: '__MSG_app_name__',
 		default_popup: 'src/popup/index.html',
 		default_icon: {
-			19: 'src/icons/19.png'
+			16: 'src/icons/16.png',
+			24: 'src/icons/24.png',
+			32: 'src/icons/32.png',
+			48: 'src/icons/48.png',
+			128: 'src/icons/128.png'
 		}
 	},
 	options_ui: {
