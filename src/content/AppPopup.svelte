@@ -61,17 +61,17 @@
 			</svg>
 		</div>
 		<div class="w-full">
-			<TheTooltip on:update={tooltipPosition} />
+			<Popup on:update={tooltipPosition} />
 		</div>
 	</div>
 </div>
 
 <svelte:window on:mousemove={dragMove} />
-<svelte:document on:click={removeTooltip} />
+<svelte:document on:click={removePopup} />
 
 <script>
 import { apps } from './index';
-import TheTooltip from './TheTooltip.svelte';
+import Popup from './lib/Popup.svelte';
 import { computePosition, offset, flip, shift } from '@floating-ui/dom';
 import { persistentStore, themeClass } from '@/common/store';
 import { store } from './store';
@@ -139,18 +139,18 @@ const dragEnd = () => {
 	$store.selectedElemRect = null;
 };
 
-const removeTooltip = event => {
+const removePopup = event => {
 	const isLeftClick = event.button === 0;
 	if (!isLeftClick) return;
 
-	const tooltipElem = document.querySelector(apps.tooltip.tag);
-	if (!tooltipElem) return;
+	const popupElem = document.querySelector(apps.popup.tag);
+	if (!popupElem) return;
 
 	const isInTriggerElem = event.target.closest(apps.trigger.tag);
 	if (isInTriggerElem) return;
 
-	const isInTooltipElem = event.target.closest(apps.tooltip.tag);
-	if (isInTooltipElem) return;
+	const isInPopupElem = event.target.closest(apps.popup.tag);
+	if (isInPopupElem) return;
 
 	$store.currentApp = null;
 };

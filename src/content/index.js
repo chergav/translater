@@ -1,5 +1,5 @@
 import AppTrigger from './AppTrigger.svelte';
-import AppTooltip from './AppTooltip.svelte';
+import AppPopup from './AppPopup.svelte';
 import AppSettings from './AppSettings.svelte';
 import css from '@/common/global.css?inline';
 import { store, currentApp } from './store';
@@ -10,9 +10,9 @@ export const apps = {
 		app: null,
 		tag: 'g-translater-trigger'
 	},
-	tooltip: {
+	popup: {
 		app: null,
-		tag: 'g-translater-tooltip'
+		tag: 'g-translater-popupp'
 	},
 	settings: {
 		app: null,
@@ -33,7 +33,7 @@ const createShadowElem = tag => {
 };
 
 const removeApps = () => {
-	['tooltip', 'settings'].forEach(i => {
+	['popup', 'settings'].forEach(i => {
 		if (apps[i].app) {
 			apps[i].app.$destroy();
 			apps[i].app = null;
@@ -42,10 +42,10 @@ const removeApps = () => {
 	});
 };
 
-const createTooltip = () => {
-	const root = createShadowElem(apps.tooltip.tag);
+const createPopup = () => {
+	const root = createShadowElem(apps.popup.tag);
 
-	apps.tooltip.app = new AppTooltip({
+	apps.popup.app = new AppPopup({
 		target: root
 	});
 };
@@ -62,8 +62,8 @@ const appHandler = app => {
 	removeApps();
 
 	switch (app) {
-	case 'tooltip':
-		createTooltip();
+	case 'popup':
+		createPopup();
 		break;
 	case 'settings':
 		createSettings();
@@ -80,8 +80,8 @@ const createTrigger = event => {
 	const isInTriggerElem = event.target.closest(apps.trigger.tag);
 	if (isInTriggerElem) return;
 
-	const isInTooltipElem = event.target.closest(apps.tooltip.tag);
-	if (isInTooltipElem) return;
+	const isInPopupElem = event.target.closest(apps.popup.tag);
+	if (isInPopupElem) return;
 
 	const selectedText = getSelectedText();
 	if (!selectedText.length) return;
@@ -115,10 +115,10 @@ document.addEventListener('mouseup', createTrigger);
 chrome.runtime.onMessage.addListener(
 	message => {
 		switch (message.action) {
-		case 'showTooltip':
+		case 'showPopup':
 			store.update(data => ({
 				...data,
-				currentApp: 'tooltip'
+				currentApp: 'popup'
 			}));
 			break;
 		default:

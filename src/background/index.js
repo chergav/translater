@@ -7,7 +7,7 @@ const getCurrentTab = async () => {
 
 const sendMessage = async () => {
 	const message = {
-		action: 'showTooltip'
+		action: 'showPopup'
 	};
 
 	const tab = await getCurrentTab();

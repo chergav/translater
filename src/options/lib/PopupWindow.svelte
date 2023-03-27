@@ -1,10 +1,10 @@
-<div class="pb-4">
+<div class="mb-4">
 	<Checkbox
 		bind:checked={$persistentStore.showOriginalText}
 		label={getMessage('options_show_original_text')}
 	/>
 </div>
-<div class="pb-4">
+<div class="mb-4">
 	<Checkbox
 		bind:checked={$persistentStore.showTransliteration}
 		label={getMessage('options_show_transliteration')}

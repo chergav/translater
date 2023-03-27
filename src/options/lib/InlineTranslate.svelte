@@ -1,16 +1,16 @@
-<div class="pb-4">
+<div class="mb-4">
 	<Checkbox
 		bind:checked={$persistentStore.inlineButtonShow}
 		label={getMessage('options_inline_button_show')}
 	/>
 </div>
-<div class="pb-4">
+<div class="mb-4">
 	<Checkbox
 		bind:checked={$persistentStore.textFieldButtonShow}
 		label={getMessage('options_text_field_button_show')}
 	/>
 </div>
-<div class="pb-4">
+<div class="mb-4">
 	<p class="text-base mb-2">{getMessage('options_hide_button_on_sites')}</p>
 	{#each $persistentStore.blacklistDomainForInline as domain}
 		<span

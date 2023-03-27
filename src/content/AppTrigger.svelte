@@ -11,7 +11,7 @@
 	>
 		{#await promise then isNotYourLang}
 			{#if showTrigger() && isNotYourLang}
-				<TheTrigger />
+				<Trigger />
 			{/if}
 		{/await}
 	</div>
@@ -27,7 +27,7 @@ loadFont();
 
 <script>
 import { apps } from './index';
-import TheTrigger from './TheTrigger.svelte';
+import Trigger from './lib/Trigger.svelte';
 import { computePosition, offset, flip } from '@floating-ui/dom';
 import { persistentStore, themeClass } from '@/common/store';
 import { store } from './store';

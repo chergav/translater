@@ -1,5 +1,5 @@
 {#each options as { key, value }}
-	<div class="mb-3">
+	<div class="mb-4">
 		<label
 			class="
 				inline-flex

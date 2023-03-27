@@ -185,16 +185,16 @@
 import { createEventDispatcher, onMount } from 'svelte';
 import { slide } from 'svelte/transition';
 import { persistentStore } from '@/common/store';
-import { store } from './store';
+import { store } from '../store';
 import { languages } from '@/common/settings';
 import Select from '@/lib/Select.svelte';
-import Dictionary from './lib/Dictionary.svelte';
-import Definitions from './lib/Definitions.svelte';
-import Examples from './lib/Examples.svelte';
-import ButtonCopy from './lib/ButtonCopy.svelte';
-import ButtonTTS from './lib/ButtonTTS.svelte';
-import ButtonExpand from './lib/ButtonExpand.svelte';
-import ButtonClose from './lib/ButtonClose.svelte';
+import Dictionary from './Dictionary.svelte';
+import Definitions from './Definitions.svelte';
+import Examples from './Examples.svelte';
+import ButtonCopy from './ButtonCopy.svelte';
+import ButtonTTS from './ButtonTTS.svelte';
+import ButtonExpand from './ButtonExpand.svelte';
+import ButtonClose from './ButtonClose.svelte';
 
 const dispatch = createEventDispatcher();
 

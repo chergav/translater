@@ -1,9 +1,4 @@
-<div
-	class="
-		flex
-		flex-col
-	"
->
+<div class="flex flex-col">
 	<div
 		class="
 			flex
@@ -63,22 +58,16 @@
 </div>
 
 <script>
-import { store } from './store';
+import { store } from '../store';
 let isSettingsOpen = false;
 
 const TooltipOpen = () => {
-	$store.currentApp = 'tooltip';
+	$store.currentApp = 'popup';
 	isSettingsOpen = false;
 };
 
 const SettingsOpen = () => {
 	$store.currentApp = 'settings';
-	const tooltipElem = document.querySelector('g-translate-tooltip');
-
-	if (tooltipElem) {
-		tooltipElem.remove();
-	}
-
 	isSettingsOpen = true;
 };
 </script>

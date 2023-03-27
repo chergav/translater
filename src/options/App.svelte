@@ -22,7 +22,7 @@
 							class="
 								px-2
 								py-1
-								my-1
+								mb-2
 								inline-flex
 								items-center
 								whitespace-nowrap
