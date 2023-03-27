@@ -205,6 +205,7 @@ let sourceLang = 'auto',
 	activeTab = 0;
 
 $: originalOpen = $persistentStore.showOriginalText;
+$: $persistentStore.targetLang, handleTranslate({ detail: null });
 
 const getTranslate = async () => {
 	targetLang = $persistentStore.targetLang;
