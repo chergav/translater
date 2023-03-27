@@ -25,46 +25,18 @@
 				<ButtonClose />
 			</div>
 			<ul>
-				<li>
-					<label
-						class="
-							p-2
-							flex
-							items-center
-							hover:bg-gray-200
-							dark:hover:bg-gray-700
-							transition-colors
-							cursor-pointer
-						"
-					>
-						<input
-							type="checkbox"
-							class="rounded mr-2"
-							bind:checked={isDomainInBlacklist}
-							on:change={addDomainToBlacklist}
-						/>
-						<span>{getMessage('tooltip_settings_disable_inline_button_for_site')}</span>
-					</label>
+				<li class="p-2">
+					<Checkbox
+						bind:checked={isDomainInBlacklist}
+						on:change={addDomainToBlacklist}
+						label={getMessage('tooltip_settings_disable_inline_button_for_site')}
+					/>
 				</li>
-				<li>
-					<label
-						class="
-							p-2
-							flex
-							items-center
-							hover:bg-gray-200
-							dark:hover:bg-gray-700
-							transition-colors
-							cursor-pointer
-						"
-					>
-						<input
-							type="checkbox"
-							class="rounded mr-2"
-							bind:checked={$persistentStore.inlineButtonShow}
-						/>
-						<span>{getMessage('tooltip_settings_enable_inline_button_global')}</span>
-					</label>
+				<li class="p-2">
+					<Checkbox
+						bind:checked={$persistentStore.inlineButtonShow}
+						label={getMessage('tooltip_settings_enable_inline_button_global')}
+					/>
 				</li>
 			</ul>
 			<div class="p-2 border-t border-gray-300 dark:border-gray-700">
@@ -110,6 +82,7 @@ import { computePosition, offset, flip, shift } from '@floating-ui/dom';
 import { persistentStore, themeClass } from '@/common/store';
 import { store } from './store';
 import ButtonClose from './lib/ButtonClose.svelte';
+import Checkbox from '@/lib/Checkbox.svelte';
 
 const reference = {
 	getBoundingClientRect: () => $store.selectedEndCoord,

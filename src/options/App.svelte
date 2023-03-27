@@ -1,5 +1,5 @@
 <div class="flex justify-center">
-	<div class="w-[650px] select-none">
+	<div class="w-[650px]">
 		<div class="py-5 flex items-center">
 			<img src={getURL('/src/icons/48.png')} alt="" />
 			<span class="ml-5 text-xl">Translater</span>
@@ -47,13 +47,11 @@
 			<div>
 				{#each tabs as item}
 					{#if activeTab === item.tab}
-						<div>
-							<svelte:component this={item.component} />
-						</div>
+						<svelte:component this={item.component} />
 					{/if}
 				{/each}
 			</div>
-		</div>		
+		</div>
 	</div>
 </div>
 

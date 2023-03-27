@@ -1,22 +1,14 @@
 <div class="pb-4">
-	<label class="flex items-center cursor-pointer">
-		<input
-			type="checkbox"
-			class="rounded mr-3"
-			bind:checked={$persistentStore.inlineButtonShow}
-		/>
-		<span>{getMessage('options_inline_button_show')}</span>
-	</label>
+	<Checkbox
+		bind:checked={$persistentStore.inlineButtonShow}
+		label={getMessage('options_inline_button_show')}
+	/>
 </div>
 <div class="pb-4">
-	<label class="flex items-center cursor-pointer">
-		<input
-			type="checkbox"
-			class="rounded mr-3"
-			bind:checked={$persistentStore.textFieldButtonShow}
-		/>
-		<span>{getMessage('options_text_field_button_show')}</span>
-	</label>
+	<Checkbox
+		bind:checked={$persistentStore.textFieldButtonShow}
+		label={getMessage('options_text_field_button_show')}
+	/>
 </div>
 <div class="pb-4">
 	<p class="text-base mb-2">{getMessage('options_hide_button_on_sites')}</p>
@@ -65,6 +57,7 @@
 <script>
 import { getMessage } from '@/common/browserApi';
 import { persistentStore } from '@/common/store';
+import Checkbox from '@/lib/Checkbox.svelte';
 
 const deleteFromBlacklist = domain => {
 	const { blacklistDomainForInline } = $persistentStore;
