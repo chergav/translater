@@ -31,7 +31,7 @@
 						{/if}
 						{#if defEntry.synsets}
 							<div class="text-gray-500 mt-2 mb-1">
-								{getMessage('tooltip_definitions_synonyms')}
+								{getMessage('popup_definitions_synonyms')}
 							</div>
 							{#each sortSynonyms(defEntry.synsets) as entry}
 								{#if entry.label_info}

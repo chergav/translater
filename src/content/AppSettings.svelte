@@ -29,13 +29,13 @@
 					<Checkbox
 						bind:checked={isDomainInBlacklist}
 						on:change={addDomainToBlacklist}
-						label={getMessage('tooltip_settings_disable_inline_button_for_site')}
+						label={getMessage('popup_settings_disable_inline_button_for_site')}
 					/>
 				</li>
 				<li class="p-2">
 					<Checkbox
 						bind:checked={$persistentStore.inlineButtonShow}
-						label={getMessage('tooltip_settings_enable_inline_button_global')}
+						label={getMessage('popup_settings_enable_inline_button_global')}
 					/>
 				</li>
 			</ul>
@@ -50,7 +50,7 @@
 					"
 					on:click={openOptionsPage}
 				>
-					<span>{getMessage('tooltip_settings_options_link')}</span>
+					<span>{getMessage('popup_settings_options_link')}</span>
 					<span>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"

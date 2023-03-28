@@ -251,19 +251,19 @@ const tabs = [
 	{
 		tab: 1,
 		srcKey: 'dict',
-		label: chrome.i18n.getMessage('tooltip_dictionary'),
+		label: chrome.i18n.getMessage('popup_dictionary'),
 		component: Dictionary,
 	},
 	{
 		tab: 2,
 		srcKey: 'definitions',
-		label: chrome.i18n.getMessage('tooltip_definitions'),
+		label: chrome.i18n.getMessage('popup_definitions'),
 		component: Definitions,
 	},
 	{
 		tab: 3,
 		srcKey: 'examples',
-		label: chrome.i18n.getMessage('tooltip_examples'),
+		label: chrome.i18n.getMessage('popup_examples'),
 		component: Examples,
 	},
 ];

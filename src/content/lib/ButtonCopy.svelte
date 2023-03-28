@@ -15,6 +15,7 @@
 		transition
 	"
 	on:click={copyToClipboard}
+	use:tooltip={{title: getMessage('tooltip_copy_to_clipboard')}}
 >
 	{#if copySuccess}
 		<svg
@@ -76,6 +77,8 @@
 
 <script>
 import { fade } from 'svelte/transition';
+import { tooltip } from '@/lib/tooltip';
+import { getMessage } from '@/common/browserApi';
 
 export let textToCopy;
 let copySuccess = false,

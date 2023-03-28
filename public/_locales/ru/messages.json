@@ -49,28 +49,28 @@
 	"target_lang_label": {
 		"message": "Перевести на:"
 	},
-	"tooltip_dictionary": {
+	"popup_dictionary": {
 		"message": "Словарь"
 	},
-	"tooltip_dictionary_frequency": {
+	"popup_dictionary_frequency": {
 		"message": "Частота"
 	},
-	"tooltip_definitions": {
+	"popup_definitions": {
 		"message": "Определения"
 	},
-	"tooltip_definitions_synonyms": {
+	"popup_definitions_synonyms": {
 		"message": "Синонимы:"
 	},
-	"tooltip_examples": {
+	"popup_examples": {
 		"message": "Примеры"
 	},
-	"tooltip_settings_disable_inline_button_for_site": {
+	"popup_settings_disable_inline_button_for_site": {
 		"message": "Отключить кнопку для этого сайта"
 	},
-	"tooltip_settings_enable_inline_button_global": {
+	"popup_settings_enable_inline_button_global": {
 		"message": "Показывать кнопку для всех сайтов"
 	},
-	"tooltip_settings_options_link": {
+	"popup_settings_options_link": {
 		"message": "Дополнительные настройки"
 	},
 	"theme_light": {
@@ -81,6 +81,12 @@
 	},
 	"theme_system": {
 		"message": "Тема по умолчанию"
+	},
+	"tooltip_copy_to_clipboard": {
+		"message": "Скопировать в буфер обмена"
+	},
+	"tooltip_listen_to_the_text": {
+		"message": "Прослушать текст"
 	},
 	"select_language_auto": {
 		"message": "определить язык"

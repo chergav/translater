@@ -52,6 +52,9 @@
 				{/each}
 			</div>
 		</div>
+
+		<!-- <button use:tooltip={{title: 'Hi I\'m Tooltip!'}}>button with tooltip</button> -->
+
 	</div>
 </div>
 
@@ -66,6 +69,9 @@ loadFont();
 </script>
 
 <script>
+// import { tooltip } from '@/lib/tooltip';
+
+
 import { getMessage, getURL } from '@/common/browserApi';
 import { persistentStore, themeClass } from '@/common/store';
 import { languages } from '@/common/settings';

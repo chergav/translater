@@ -8,7 +8,7 @@
 						{#if index === 0}
 							<td>
 								<span class="text-gray-500 text-xs">
-									{getMessage('tooltip_dictionary_frequency')}
+									{getMessage('popup_dictionary_frequency')}
 								</span>
 							</td>
 						{/if}

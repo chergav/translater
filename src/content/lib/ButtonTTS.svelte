@@ -24,6 +24,7 @@
 	on:click={() => {
 		speaking ? speakCancel() : speak();
 	}}
+	use:tooltip={{title: getMessage('tooltip_listen_to_the_text')}}
 >
 	{#if availableVoice}
 		{#if speaking}
@@ -78,6 +79,8 @@
 <script>
 import { onDestroy } from 'svelte';
 import { store } from '../store';
+import { tooltip } from '@/lib/tooltip';
+import { getMessage } from '@/common/browserApi';
 
 export let textToSpeech;
 export let langCode;

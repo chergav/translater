@@ -49,28 +49,28 @@
 	"target_lang_label": {
 		"message": "Translate to:"
 	},
-	"tooltip_dictionary": {
+	"popup_dictionary": {
 		"message": "Dictionary"
 	},
-	"tooltip_dictionary_frequency": {
+	"popup_dictionary_frequency": {
 		"message": "Frequency"
 	},
-	"tooltip_definitions": {
+	"popup_definitions": {
 		"message": "Definitions"
 	},
-	"tooltip_definitions_synonyms": {
+	"popup_definitions_synonyms": {
 		"message": "Synonyms:"
 	},
-	"tooltip_examples": {
+	"popup_examples": {
 		"message": "Examples"
 	},
-	"tooltip_settings_disable_inline_button_for_site": {
+	"popup_settings_disable_inline_button_for_site": {
 		"message": "Disable the button for this site"
 	},
-	"tooltip_settings_enable_inline_button_global": {
+	"popup_settings_enable_inline_button_global": {
 		"message": "Show the button for all sites"
 	},
-	"tooltip_settings_options_link": {
+	"popup_settings_options_link": {
 		"message": "Additional settings"
 	},
 	"theme_light": {
@@ -81,6 +81,12 @@
 	},
 	"theme_system": {
 		"message": "Default theme"
+	},
+	"tooltip_copy_to_clipboard": {
+		"message": "Copy to clipboard"
+	},
+	"tooltip_listen_to_the_text": {
+		"message": "Listen to the text"
 	},
 	"select_language_auto": {
 		"message": "detect language"
