@@ -1,47 +1,55 @@
+import { createShadowElem } from '@/content/appsHandler';
 import Tooltip from './Tooltip.svelte';
-import css from '@/common/global.css?inline';
 
-export const tooltip = (element, { title = '', placement = 'top' } = {}) => {
-	let tooltipComponent;
-	let container;
+export const tooltip = (element, { title = '', placement = 'top', delay = 300 } = {}) => {
+	let container,
+		tooltipComponent,
+		timeoutID;
 
-	const createShadowElem = tag => {
-		container = document.createElement(tag);
-		const root = document.createElement('div');
-		const styleEl = document.createElement('style');
-		const shadowDOM = container.attachShadow({ mode: __DEV__ ? 'open' : 'closed' }) || container;
-		styleEl.textContent = css;
-		shadowDOM.appendChild(styleEl);
-		shadowDOM.appendChild(root);
-		document.body.appendChild(container);
-		return root;
+	const createTooltip = () => {
+		timeoutID = setTimeout(() => {
+			const { customElement, root } = createShadowElem('translater-shadow-tooltip');
+
+			container = customElement;
+
+			tooltipComponent = new Tooltip({
+				target: root,
+				props: {
+					title,
+					placement,
+					element
+				},
+				intro: true
+			});
+		}, delay);
 	};
 
-	const mouseOver = () => {
-		const root = createShadowElem('g-translater-tooltip');
+	const removeTooltip = () => {
+		if (tooltipComponent) {
+			tooltipComponent.$destroy();
+			tooltipComponent = null;
+			container.remove();
+		}
 
-		tooltipComponent = new Tooltip({
-			props: {
-				title,
-				placement,
-				element
-			},
-			target: root
-		});
+		clearTimeout(timeoutID);
 	};
 
-	const mouseLeave = () => {
-		tooltipComponent.$destroy();
-		container.remove();
-	};
-
-	element.addEventListener('mouseenter', mouseOver);
-	element.addEventListener('mouseleave', mouseLeave);
+	element.addEventListener('pointerenter', createTooltip);
+	element.addEventListener('pointerleave', removeTooltip);
 
 	return {
+		update(newOptions) {
+			//console.log(newOptions);
+			if (tooltipComponent) {
+				tooltipComponent.$set(newOptions);
+			} else {
+				title = newOptions.title;
+			}
+
+		},
 		destroy() {
-			element.removeEventListener('mouseenter', mouseOver);
-			element.removeEventListener('mouseleave', mouseLeave);
+			element.removeEventListener('pointerenter', createTooltip);
+			element.removeEventListener('pointerleave', removeTooltip);
 		}
 	};
 };

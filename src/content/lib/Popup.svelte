@@ -35,7 +35,11 @@
 				<ButtonTTS textToSpeech={sentences.orig} langCode={sourceLang} />
 			</div>
 			<div>
-				<ButtonClose />
+				<ButtonClose
+					on:click={() => {
+						destroyApp('popup');
+					}}
+				/>
 			</div>
 		</div>
 		{#if originalOpen}
@@ -168,7 +172,11 @@
 			{#each tabs as item}
 				{#if activeTab === item.tab}
 					<div transition:slide|local={{ duration: 250 }}>
-						<svelte:component this={item.component} {translate} on:translateWord={handleTranslate} />
+						<svelte:component
+							this={item.component}
+							{translate}
+							on:translateWord={handleTranslate}
+						/>
 					</div>
 				{/if}
 			{/each}
@@ -195,6 +203,7 @@ import ButtonCopy from './ButtonCopy.svelte';
 import ButtonTTS from './ButtonTTS.svelte';
 import ButtonExpand from './ButtonExpand.svelte';
 import ButtonClose from './ButtonClose.svelte';
+import { destroyApp } from '../appsHandler';
 
 const dispatch = createEventDispatcher();
 
@@ -216,7 +225,7 @@ const getTranslate = async () => {
 			sourceLang,
 			targetLang,
 			selectedText: $store.selectedText,
-		}
+		},
 	});
 
 	sourceLang = sourceLang === 'auto' ? translate.src : sourceLang;

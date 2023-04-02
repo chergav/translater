@@ -12,19 +12,15 @@
 		dark:hover:bg-gray-700
 		dark:text-gray-400
 		dark:hover:text-white
-		transition
 		disabled:opacity-50
-		disabled:hover:text-gray-500
-		disabled:hover:bg-transparent
-		disabled:hover:dark:text-gray-400
-		disabled:hover:dark:bg-transparent
+		transition
+		[&>*]:pointer-events-none
 	"
-	disabled={!availableVoice || disabled}
-	title={availableVoice ? '' : 'language is not support by browser'}
+	disabled={!availableVoice}
 	on:click={() => {
 		speaking ? speakCancel() : speak();
 	}}
-	use:tooltip={{title: getMessage('tooltip_listen_to_the_text')}}
+	use:tooltip={{ title }}
 >
 	{#if availableVoice}
 		{#if speaking}
@@ -104,6 +100,10 @@ const getavailableVoice = lang => {
 };
 
 $: $store.voices, (availableVoice = getavailableVoice(langCode));
+
+$: title = availableVoice
+	? getMessage('tooltip_listen_to_the_text')
+	: getMessage('tooltip_listen_language_is_not_support');
 
 const speakCancel = () => {
 	synth.cancel();

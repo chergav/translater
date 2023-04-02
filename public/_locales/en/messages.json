@@ -1,9 +1,9 @@
 {
 	"app_name": {
-		"message": "Translater"
+		"message": "Translater - translation of selected text"
 	},
 	"app_description": {
-		"message": "Translation of selected text"
+		"message": "Translation selected text with Google Translate with light and dark theme"
 	},
 	"context_menus_title": {
 		"message": "Translate selected text"
@@ -85,8 +85,17 @@
 	"tooltip_copy_to_clipboard": {
 		"message": "Copy to clipboard"
 	},
+	"tooltip_copy_not_support_on_http": {
+		"message": "Copy is not support on HTTP sites"
+	},
+	"tooltip_copy_error": {
+		"message": "Copy error!"
+	},
 	"tooltip_listen_to_the_text": {
 		"message": "Listen to the text"
+	},
+	"tooltip_listen_language_is_not_support": {
+		"message": "Language is not support by browser"
 	},
 	"select_language_auto": {
 		"message": "detect language"

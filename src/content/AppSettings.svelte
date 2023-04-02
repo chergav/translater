@@ -18,11 +18,19 @@
 			select-none
 		"
 		use:settingsPosition
+		use:clickOutside
+		on:click_outside={() => {
+			destroyApp('settings');
+		}}
 		style="left: {left}px; top: {top}px;"
 	>
 		<div class="w-full">
 			<div class="p-2 flex justify-end">
-				<ButtonClose />
+				<ButtonClose
+					on:click={() => {
+						destroyApp('settings');
+					}}
+				/>
 			</div>
 			<ul>
 				<li class="p-2">
@@ -73,16 +81,15 @@
 	</div>
 </div>
 
-<svelte:document on:click={removeSettings} />
-
 <script>
-import { apps } from './index';
-import { getMessage, getURL } from '@/common/browserApi';
+import { destroyApp } from './appsHandler';
+import { getMessage } from '@/common/browserApi';
 import { computePosition, offset, flip, shift } from '@floating-ui/dom';
 import { persistentStore, themeClass } from '@/common/store';
 import { store } from './store';
 import ButtonClose from './lib/ButtonClose.svelte';
 import Checkbox from '@/lib/Checkbox.svelte';
+import { clickOutside } from './clickOutside';
 
 const reference = {
 	getBoundingClientRect: () => $store.selectedEndCoord,
@@ -99,9 +106,7 @@ const settingsPosition = settings => {
 		placement: 'bottom-end',
 		middleware: [
 			offset(({ rects, placement }) => ({
-				mainAxis: placement === 'bottom-end'
-					? rects.floating.y + 31
-					: rects.floating.y + 1,
+				mainAxis: placement === 'bottom-end' ? rects.floating.y + 31 : rects.floating.y + 1,
 				alignmentAxis: -rects.floating.width + 15, // 15 - half button width
 			})),
 			flip({ flipAlignment: false }),
@@ -126,24 +131,8 @@ const openOptionsPage = () => {
 	chrome.runtime.sendMessage({
 		type: 'openOptionsPage',
 		content: {
-			hash: '#inline_translate'
-		}
+			hash: '#inline_translate',
+		},
 	});
-};
-
-const removeSettings = event => {
-	const isLeftClick = event.button === 0;
-	if (!isLeftClick) return;
-
-	const settingsElem = document.querySelector(apps.settings.tag);
-	if (!settingsElem) return;
-
-	const isInTriggerElem = event.target.closest(apps.trigger.tag);
-	if (isInTriggerElem) return;
-
-	const isInSettingsElem = event.target.closest(apps.settings.tag);
-	if (isInSettingsElem) return;
-
-	$store.currentApp = null;
 };
 </script>

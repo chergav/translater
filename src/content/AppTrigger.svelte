@@ -8,7 +8,10 @@
 			overflow-hidden
 		"
 		use:triggerPosition
+		use:clickOutside
+		on:click_outside={destroyTrigger}
 	>
+	
 		{#await promise then isNotYourLang}
 			{#if showTrigger() && isNotYourLang}
 				<Trigger />
@@ -17,8 +20,6 @@
 	</div>
 </div>
 
-<svelte:document on:mousedown={removeTrigger} />
-
 <script context="module">
 import { loadFont } from '@/common/fontLoader';
 
@@ -26,28 +27,13 @@ loadFont();
 </script>
 
 <script>
-import { apps } from './index';
+import { destroyApp } from './appsHandler';
 import Trigger from './lib/Trigger.svelte';
 import { computePosition, offset, flip } from '@floating-ui/dom';
 import { persistentStore, themeClass } from '@/common/store';
 import { store } from './store';
 import { detectLanguage } from '@/common/browserApi';
-
-const removeTrigger = event => {
-	const isLeftClick = event.button === 0;
-	if (!isLeftClick) return;
-
-	const isInTriggerElem = event.target.closest(apps.trigger.tag);
-	if (isInTriggerElem) return;
-
-	const triggerElem = document.querySelector(apps.trigger.tag);
-
-	if (triggerElem) {
-		apps.trigger.app.$destroy();
-		triggerElem.remove();
-		document.getSelection().removeAllRanges();
-	}
-};
+import { clickOutside } from './clickOutside';
 
 const reference = {
 	getBoundingClientRect: () => $store.selectedEndCoord,
@@ -86,4 +72,10 @@ const isNotYourLang = async () => {
 };
 
 let promise = isNotYourLang();
+
+const destroyTrigger = () => {
+	document.getSelection().removeAllRanges();
+
+	destroyApp('trigger');
+};
 </script>

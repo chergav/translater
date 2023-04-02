@@ -16,7 +16,7 @@
 			{isSettingsOpen ? 'w-max' : ''}
 		"
 	>
-		<button id="g-translate-tooltip-open" class="p-.5" on:click={TooltipOpen}>
+		<button class="p-.5" on:click={createPopup}>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				fill="none"
@@ -33,7 +33,7 @@
 				/>
 			</svg>
 		</button>
-		<button id="g-translate-setting-open" class="p-.5" on:click={SettingsOpen}>
+		<button class="p-.5" on:click={createSettings}>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				fill="none"
@@ -58,16 +58,19 @@
 </div>
 
 <script>
-import { store } from '../store';
+import { createApp, destroyApp } from '../appsHandler';
+
 let isSettingsOpen = false;
 
-const TooltipOpen = () => {
-	$store.currentApp = 'popup';
+const createPopup = () => {
+	destroyApp('settings');
+	createApp('popup');
 	isSettingsOpen = false;
 };
 
-const SettingsOpen = () => {
-	$store.currentApp = 'settings';
+const createSettings = () => {
+	destroyApp('popup');
+	createApp('settings');
 	isSettingsOpen = true;
 };
 </script>

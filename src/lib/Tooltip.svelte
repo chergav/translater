@@ -1,5 +1,4 @@
-{#if isTooltipShow}
-<div class="{$themeClass}">
+<div class={$themeClass}>
 	<div
 		class="
 			absolute
@@ -9,26 +8,21 @@
 			py-1
 			rounded-md
 			text-sm
-			border
-			bg-white
+			bg-gray-200
 			text-gray-900
-			border-gray-300
-			dark:bg-gray-900
+			dark:bg-gray-700
 			dark:text-white
-			dark:border-gray-800
+			shadow-md
 			z-[9999999]
 		"
-		use:tooltipPosition
-		transition:fade
+		bind:this={tooltipElement}
 	>
-		{title}
+		{@html title}
 	</div>
 </div>
-{/if}
 
 <script>
 import { onMount } from 'svelte';
-import { fade } from 'svelte/transition';
 import { computePosition, offset, flip, shift } from '@floating-ui/dom';
 import { themeClass } from '@/common/store';
 
@@ -36,7 +30,9 @@ export let title;
 export let placement;
 export let element;
 
-let isTooltipShow = false;
+let tooltipElement;
+
+$: if (tooltipElement && title) tooltipPosition(tooltipElement);
 
 const tooltipPosition = tooltip => {
 	computePosition(element, tooltip, {
@@ -51,6 +47,6 @@ const tooltipPosition = tooltip => {
 };
 
 onMount(() => {
-	isTooltipShow = true;
+	tooltipPosition(tooltipElement);
 });
 </script>

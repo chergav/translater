@@ -1,6 +1,5 @@
 <div class={$themeClass}>
 	<div
-		id="tooltip-contaner"
 		class="
 			absolute
 			z-[99999]
@@ -23,10 +22,13 @@
 			{moving ? 'select-none' : 'select-auto'}
 		"
 		bind:this={tooltip}
+		use:clickOutside
+		on:click_outside={() => {
+			destroyApp('popup');
+		}}
 		style="left: {left}px; top: {top}px;"
 	>
 		<div
-			id="tooltip-grag-handler"
 			class="
 				w-[16px]
 				flex
@@ -67,14 +69,14 @@
 </div>
 
 <svelte:window on:mousemove={dragMove} />
-<svelte:document on:click={removePopup} />
 
 <script>
-import { apps } from './index';
+import { destroyApp } from './appsHandler';
 import Popup from './lib/Popup.svelte';
 import { computePosition, offset, flip, shift } from '@floating-ui/dom';
 import { persistentStore, themeClass } from '@/common/store';
 import { store } from './store';
+import { clickOutside } from './clickOutside';
 
 const reference = {
 	getBoundingClientRect: () => $store.selectedElemRect,
@@ -92,8 +94,12 @@ const tooltipPosition = () => {
 
 	// offset when open from context menu without inline button
 	const bottomOffset = $store.isInTextField
-		? $persistentStore.textFieldButtonShow ? 31 : 10
-		: $persistentStore.inlineButtonShow ? 31 : 10;
+		? $persistentStore.textFieldButtonShow
+			? 31
+			: 10
+		: $persistentStore.inlineButtonShow
+		? 31
+		: 10;
 
 	computePosition(reference, tooltip, {
 		strategy: 'absolute',
@@ -137,21 +143,5 @@ const dragMove = event => {
 const dragEnd = () => {
 	moving = false;
 	$store.selectedElemRect = null;
-};
-
-const removePopup = event => {
-	const isLeftClick = event.button === 0;
-	if (!isLeftClick) return;
-
-	const popupElem = document.querySelector(apps.popup.tag);
-	if (!popupElem) return;
-
-	const isInTriggerElem = event.target.closest(apps.trigger.tag);
-	if (isInTriggerElem) return;
-
-	const isInPopupElem = event.target.closest(apps.popup.tag);
-	if (isInPopupElem) return;
-
-	$store.currentApp = null;
 };
 </script>
