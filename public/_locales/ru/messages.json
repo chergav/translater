@@ -82,11 +82,20 @@
 	"theme_system": {
 		"message": "Тема по умолчанию"
 	},
+	"tooltip_translate_text": {
+		"message": "Перевести выделенный текст"
+	},
+	"tooltip_settings": {
+		"message": "Настройки"
+	},
 	"tooltip_copy_to_clipboard": {
 		"message": "Скопировать в буфер обмена"
 	},
 	"tooltip_copy_not_support_on_http": {
 		"message": "Копирование не поддерживается на HTTP-сайтах"
+	},
+	"tooltip_copyed": {
+		"message": "Скопировано!"
 	},
 	"tooltip_copy_error": {
 		"message": "Ошибка копирования!"

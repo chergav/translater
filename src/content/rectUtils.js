@@ -43,8 +43,8 @@ const getSelectedEndCoord = () => {
 	} else {
 		const selection = document.getSelection();
 
-		if (!selection.rangeCount) {
-			return null;
+		if (!selection.rangeCount || selection.isCollapsed) {
+			return {};
 		}
 
 		element = selection.getRangeAt(0).cloneRange();

@@ -16,7 +16,11 @@
 			{isSettingsOpen ? 'w-max' : ''}
 		"
 	>
-		<button class="p-.5" on:click={createPopup}>
+		<button
+			class="p-.5"
+			on:click={createPopup}
+			use:tooltip={{ title: getMessage('tooltip_translate_text') }}
+		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				fill="none"
@@ -33,7 +37,11 @@
 				/>
 			</svg>
 		</button>
-		<button class="p-.5" on:click={createSettings}>
+		<button
+			class="p-.5"
+			on:click={createSettings}
+			use:tooltip={{ title: getMessage('tooltip_settings') }}
+		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				fill="none"
@@ -59,6 +67,8 @@
 
 <script>
 import { createApp, destroyApp } from '../appsHandler';
+import { tooltip } from '@/lib/tooltip';
+import { getMessage } from '@/common/browserApi';
 
 let isSettingsOpen = false;
 

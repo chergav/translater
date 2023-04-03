@@ -82,11 +82,20 @@
 	"theme_system": {
 		"message": "Default theme"
 	},
+	"tooltip_translate_text": {
+		"message": "Translate selected text"
+	},
+	"tooltip_settings": {
+		"message": "Settings"
+	},
 	"tooltip_copy_to_clipboard": {
 		"message": "Copy to clipboard"
 	},
 	"tooltip_copy_not_support_on_http": {
 		"message": "Copy is not support on HTTP sites"
+	},
+	"tooltip_copyed": {
+		"message": "Copyed!"
 	},
 	"tooltip_copy_error": {
 		"message": "Copy error!"

@@ -35,7 +35,6 @@ const handleMessage = (message, sender, sendResponse) => {
 		getTranslate(message.content).then(sendResponse);
 		break;
 	case 'openOptionsPage':
-		// chrome.runtime.openOptionsPage();
 		chrome.tabs.create({
 			url: `${chrome.runtime.getURL('src/options/index.html')}${message.content.hash}`
 		});
