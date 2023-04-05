@@ -1,4 +1,4 @@
-import { getTranslate } from '@/common/googleApi';
+import { googleTranslate } from '@/common/googleApi';
 
 const getCurrentTab = async () => {
 	const [tab] = await chrome.tabs.query({ active: true, lastFocusedWindow: true });
@@ -29,13 +29,18 @@ chrome.contextMenus.onClicked.addListener(info => {
 	}
 });
 
+const getTranslate = async requestObj => {
+	const gt = await googleTranslate(requestObj);
+
+	return gt;
+};
+
 const handleMessage = (message, sender, sendResponse) => {
 	switch (message.type) {
 	case 'getTranslate':
 		getTranslate(message.content).then(sendResponse);
 		break;
 	case 'openOptionsPage':
-		// chrome.runtime.openOptionsPage();
 		chrome.tabs.create({
 			url: `${chrome.runtime.getURL('src/options/index.html')}${message.content.hash}`
 		});

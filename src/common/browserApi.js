@@ -10,6 +10,8 @@ const storageGet = async (key = null) => {
 	return data && Object.hasOwn(data, key) ? data[key] : null;
 };
 
+const storageGetAll = async () => await chrome.storage.local.get(defaultSettings);
+
 const storageSet = async data => {
 	await chrome.storage.local.set(data);
 };
@@ -33,4 +35,13 @@ const getMessage = msg => chrome.i18n.getMessage(msg);
 
 const getURL = path => chrome.runtime.getURL(path);
 
-export { detectLanguage, storageGet, storageSet, getSettings, storageListener, getMessage, getURL };
+export {
+	detectLanguage,
+	storageGet,
+	storageGetAll,
+	storageSet,
+	getSettings,
+	storageListener,
+	getMessage,
+	getURL
+};

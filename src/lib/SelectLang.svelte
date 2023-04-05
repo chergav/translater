@@ -22,16 +22,29 @@
 			cursor-pointer
 		"
 	>
-		{#each options as { key, value }}
+		{#if auto}
+			<option value="auto">
+				{getMessage('select_language_auto')}
+			</option>
+		{/if}
+		{#each sortI18nLanguages() as { key, value } (key)}
 			<option value={key}>{value}</option>
 		{/each}
 	</select>
 </label>
 
 <script>
+import { getMessage } from '@/common/browserApi';
 export let value;
 export let label = '';
-export let options = [];
+export let languages = [];
+export let auto = false;
 export let small = false;
 
+const getI18nLanguages = () => languages.map(({ key }) => ({
+	key,
+	value: getMessage(`supported_languages_${key.replace('-', '_')}`)
+}));
+
+const sortI18nLanguages = () => getI18nLanguages().sort((a, b) => a.value.localeCompare(b.value));
 </script>

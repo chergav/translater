@@ -28,6 +28,9 @@
 	"options_tab_appearance": {
 		"message": "Внешний вид"
 	},
+	"options_tab_history": {
+		"message": "История"
+	},
 	"options_inline_button_show": {
 		"message": "Показать кнопку, когда текст выделен"
 	},

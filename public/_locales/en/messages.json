@@ -28,6 +28,9 @@
 	"options_tab_appearance": {
 		"message": "Appearance"
 	},
+	"options_tab_history": {
+		"message": "History"
+	},
 	"options_inline_button_show": {
 		"message": "Show button when text is selected"
 	},

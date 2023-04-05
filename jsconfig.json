@@ -16,7 +16,6 @@
 			"dom.iterable",
 			"scripthost"
 		],
-		"importsNotUsedAsValues": "error",
 		"isolatedModules": true,
 		"resolveJsonModule": true,
 		"sourceMap": true,

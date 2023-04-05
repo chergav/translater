@@ -1,16 +1,17 @@
 import { writable, derived } from 'svelte/store';
-import { storageSet, getSettings, storageListener } from '@/common/browserApi';
+import { storageGetAll, storageSet, storageListener } from '@/common/browserApi';
+// import { defaultSettings } from '@/common/settings';
 
-const initialPersistentData = {
-	targetLang: await getSettings('targetLang'),
-	theme: await getSettings('theme'),
-	inlineButtonShow: await getSettings('inlineButtonShow'),
-	textFieldButtonShow: await getSettings('textFieldButtonShow'),
-	showOriginalText: await getSettings('showOriginalText'),
-	showTransliteration: await getSettings('showTransliteration'),
-	blacklistDomainForInline: await getSettings('blacklistDomainForInline'),
-	blacklistDomainForText: await getSettings('blacklistDomainForText')
-};
+// console.log(await chrome.storage.local.get(defaultSettings));
+
+// const initialPersistentData = {};
+const initialPersistentData = await storageGetAll();
+
+// for (const key in defaultSettings) {
+// 	if (Object.hasOwn(defaultSettings, key)) {
+// 		initialPersistentData[key] = await getSettings(key);
+// 	}
+// }
 
 const createPersistentStore = () => {
 	const { subscribe, set, update } = writable(initialPersistentData);
@@ -19,6 +20,7 @@ const createPersistentStore = () => {
 		subscribe,
 		set: value => {
 			storageSet(value);
+			console.log(value);
 			return set(value);
 		},
 		update
@@ -33,6 +35,11 @@ const prefersColorScheme = () =>
 const themeClass = derived(persistentStore, $persistentStore =>
 	$persistentStore.theme === 'system' ? prefersColorScheme() : $persistentStore.theme
 );
+
+// persistentStore.subscribe(value => {
+// 	storageSet(value);
+// 	console.log(value);
+// });
 
 storageListener(changes => {
 	for (const key in changes) {

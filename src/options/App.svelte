@@ -6,7 +6,7 @@
 		</div>
 
 		<div class="py-4 border-y border-gray-300 dark:border-gray-700">
-			<Select
+			<SelectLang
 				bind:value={$persistentStore.targetLang}
 				label={getMessage('target_lang_label')}
 				{languages}
@@ -21,12 +21,12 @@
 						<li
 							class="
 								px-2
-								py-1
+								py-1.5
 								mb-2
 								inline-flex
 								items-center
 								whitespace-nowrap
-								rounded
+								rounded-md
 								hover:bg-gray-200
 								dark:hover:bg-gray-700
 								transition
@@ -44,7 +44,7 @@
 					{/each}
 				</ul>
 			</div>
-			<div>
+			<div class="w-full">
 				{#each tabs as item}
 					{#if activeTab === item.tab}
 						<svelte:component this={item.component} />
@@ -69,10 +69,11 @@ loadFont();
 import { getMessage, getURL } from '@/common/browserApi';
 import { persistentStore, themeClass } from '@/common/store';
 import { languages } from '@/common/settings';
-import Select from '@/lib/Select.svelte';
+import SelectLang from '@/lib/SelectLang.svelte';
 import InlineTranslate from './lib/InlineTranslate.svelte';
 import PopupWindow from './lib/PopupWindow.svelte';
 import Appearance from './lib/Appearance.svelte';
+import History from './lib/History.svelte';
 
 $: document.documentElement.className = $themeClass;
 
@@ -95,6 +96,11 @@ const tabs = [
 		tab: '#appearance',
 		label: getMessage('options_tab_appearance'),
 		component: Appearance,
+	},
+	{
+		tab: '#history',
+		label: getMessage('options_tab_history'),
+		component: History,
 	},
 ];
 </script>

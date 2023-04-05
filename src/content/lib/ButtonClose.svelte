@@ -1,6 +1,5 @@
 <button
 	type="button"
-	id="close-tooltip"
 	class="
 		bg-transparent
 		text-gray-500

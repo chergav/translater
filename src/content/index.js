@@ -9,7 +9,10 @@ import {
 
 const createTrigger = event => {
 	const isLeftClick = event.button === 0;
-	if (!isLeftClick) return;
+
+	if (!isLeftClick) {
+		return;
+	}
 
 	if (app.trigger.instance) {
 		return;
@@ -23,7 +26,10 @@ const createTrigger = event => {
 	}
 
 	const selectedText = getSelectedText();
-	if (!selectedText.length) return;
+
+	if (!selectedText.length) {
+		return;
+	}
 
 	store.update(data => ({
 		...data,

@@ -24,7 +24,7 @@
 						originalOpen = !originalOpen;
 					}}
 				/>
-				<Select
+				<SelectLang
 					small
 					bind:value={sourceLang}
 					on:change={handleTranslate}
@@ -64,7 +64,7 @@
 					translateOpen = !translateOpen;
 				}}
 			/>
-			<Select
+			<SelectLang
 				small
 				bind:value={$persistentStore.targetLang}
 				on:change={handleTranslate}
@@ -195,7 +195,7 @@ import { slide } from 'svelte/transition';
 import { persistentStore } from '@/common/store';
 import { store } from '../store';
 import { languages } from '@/common/settings';
-import Select from '@/lib/Select.svelte';
+import SelectLang from '@/lib/SelectLang.svelte';
 import Dictionary from './Dictionary.svelte';
 import Definitions from './Definitions.svelte';
 import Examples from './Examples.svelte';
@@ -204,6 +204,7 @@ import ButtonTTS from './ButtonTTS.svelte';
 import ButtonExpand from './ButtonExpand.svelte';
 import ButtonClose from './ButtonClose.svelte';
 import { destroyApp } from '../appsHandler';
+import { historyAdd } from '@/common/history';
 
 const dispatch = createEventDispatcher();
 
@@ -214,7 +215,7 @@ let sourceLang = 'auto',
 	activeTab = 0;
 
 $: originalOpen = $persistentStore.showOriginalText;
-$: $persistentStore.targetLang, handleTranslate({ detail: null });
+// $: $persistentStore.targetLang, handleTranslate({ detail: null });
 
 const getTranslate = async () => {
 	targetLang = $persistentStore.targetLang;
@@ -230,9 +231,20 @@ const getTranslate = async () => {
 
 	sourceLang = sourceLang === 'auto' ? translate.src : sourceLang;
 
-	['trans', 'orig', 'translit', 'src_translit'].forEach(i => {
+	['orig', 'trans', 'translit', 'src_translit'].forEach(i => {
 		sentences[i] = translate.sentences.reduce((a, v) => (a += v[i] ?? ''), '');
 	});
+
+	const { orig, trans } = sentences;
+
+	const historyItem = {
+		sourceLang,
+		targetLang,
+		orig,
+		trans
+	};
+
+	historyAdd(historyItem);
 
 	activeTab = 0;
 
