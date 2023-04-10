@@ -1,18 +1,7 @@
-import { googleTranslate } from '@/common/googleApi';
+import { googleTranslate } from '~/common/googleApi';
 
-const getCurrentTab = async () => {
-	const [tab] = await chrome.tabs.query({ active: true, lastFocusedWindow: true });
-	return tab;
-};
-
-const sendMessage = async () => {
-	const message = {
-		action: 'showPopup'
-	};
-
-	const tab = await getCurrentTab();
-
-	chrome.tabs.sendMessage(tab.id, message);
+const sendMessage = async (tabId, message) => {
+	chrome.tabs.sendMessage(tabId, message);
 };
 
 chrome.runtime.onInstalled.addListener(() => {
@@ -23,9 +12,9 @@ chrome.runtime.onInstalled.addListener(() => {
 	});
 });
 
-chrome.contextMenus.onClicked.addListener(info => {
+chrome.contextMenus.onClicked.addListener((info, tab) => {
 	if (info.menuItemId === 'translaterMenu') {
-		sendMessage();
+		sendMessage(tab.id, { action: 'showPopup' });
 	}
 });
 

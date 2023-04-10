@@ -1,11 +1,11 @@
-import { app, createShadowElem, createApp } from './appsHandler';
+import { app, createShadowElem, createApp } from './utils/appsHandler';
 import { store } from './store';
 import {
 	isInTextField,
 	getSelectedText,
 	getSelectedElemRect,
 	getSelectedEndCoord
-} from './rectUtils';
+} from './utils/rectUtils';
 
 const createTrigger = event => {
 	const isLeftClick = event.button === 0;

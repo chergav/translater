@@ -82,14 +82,14 @@
 </div>
 
 <script>
-import { destroyApp } from './appsHandler';
-import { getMessage } from '@/common/browserApi';
+import { destroyApp } from './utils/appsHandler';
+import { getMessage } from '~/common/browserApi';
 import { computePosition, offset, flip, shift } from '@floating-ui/dom';
-import { persistentStore, themeClass } from '@/common/store';
+import { persistentStore, themeClass } from '~/common/store';
 import { store } from './store';
-import ButtonClose from './lib/ButtonClose.svelte';
-import Checkbox from '@/lib/Checkbox.svelte';
-import { clickOutside } from './clickOutside';
+import ButtonClose from '~/lib/ButtonClose.svelte';
+import Checkbox from '~/lib/Checkbox.svelte';
+import { clickOutside } from './utils/clickOutside';
 
 const reference = {
 	getBoundingClientRect: () => $store.selectedEndCoord,

@@ -1,7 +1,7 @@
-import AppTrigger from './AppTrigger.svelte';
-import AppPopup from './AppPopup.svelte';
-import AppSettings from './AppSettings.svelte';
-import css from '@/common/global.css?inline';
+import AppTrigger from '../AppTrigger.svelte';
+import AppPopup from '../AppPopup.svelte';
+import AppSettings from '../AppSettings.svelte';
+import css from '~/common/global.css?inline';
 
 const app = {
 	trigger: {

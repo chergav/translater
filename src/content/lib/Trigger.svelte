@@ -58,7 +58,7 @@
 </div>
 
 <script>
-import { createApp, destroyApp } from '../appsHandler';
+import { createApp, destroyApp } from '../utils/appsHandler';
 
 let isSettingsOpen = false;
 

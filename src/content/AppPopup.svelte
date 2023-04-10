@@ -55,10 +55,7 @@
 			>
 				<path d="M0 0h24v24H0V0z" fill="none" />
 				<path
-					d="M11 18c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2-8c-1.1 0-2
-					.9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9
-					2-2-.9-2-2-2zm6 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1
-					0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+					d="M11 18c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
 				/>
 			</svg>
 		</div>
@@ -71,12 +68,12 @@
 <svelte:window on:mousemove={dragMove} />
 
 <script>
-import { destroyApp } from './appsHandler';
+import { destroyApp } from './utils/appsHandler';
 import Popup from './lib/Popup.svelte';
 import { computePosition, offset, flip, shift } from '@floating-ui/dom';
-import { persistentStore, themeClass } from '@/common/store';
+import { persistentStore, themeClass } from '~/common/store';
 import { store } from './store';
-import { clickOutside } from './clickOutside';
+import { clickOutside } from './utils/clickOutside';
 
 const reference = {
 	getBoundingClientRect: () => $store.selectedElemRect,

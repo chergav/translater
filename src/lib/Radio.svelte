@@ -34,7 +34,7 @@
 {/each}
 
 <script>
-import { getMessage } from '@/common/browserApi';
+import { getMessage } from '~/common/browserApi';
 export let options;
 export let selected;
 </script>

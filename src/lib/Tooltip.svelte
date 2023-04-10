@@ -24,7 +24,7 @@
 <script>
 import { onMount } from 'svelte';
 import { computePosition, offset, flip, shift } from '@floating-ui/dom';
-import { themeClass } from '@/common/store';
+import { themeClass } from '~/common/store';
 
 export let title;
 export let placement;

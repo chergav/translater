@@ -34,7 +34,7 @@
 </label>
 
 <script>
-import { getMessage } from '@/common/browserApi';
+import { getMessage } from '~/common/browserApi';
 export let value;
 export let label = '';
 export let languages = [];

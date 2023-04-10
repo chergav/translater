@@ -49,6 +49,24 @@
 	"options_show_transliteration": {
 		"message": "Show transliteration"
 	},
+	"options_history_length": {
+		"message": "History length"
+	},
+	"options_history_disable": {
+		"message": "Disable history"
+	},
+	"options_clear_history": {
+		"message": "Clear history"
+	},
+	"options_delete_history_item": {
+		"message": "Delete from history"
+	},
+	"text_expand": {
+		"message": "Expand"
+	},
+	"text_collapse": {
+		"message": "Сollapse"
+	},
 	"target_lang_label": {
 		"message": "Translate to:"
 	},
@@ -99,6 +117,12 @@
 	},
 	"tooltip_listen_language_is_not_support": {
 		"message": "Language is not support by browser"
+	},
+	"date_today": {
+		"message": "today"
+	},
+	"date_yesterday": {
+		"message": "yesterday"
 	},
 	"select_language_auto": {
 		"message": "detect language"

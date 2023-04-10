@@ -1,8 +1,7 @@
-import { persistentStore } from '@/common/store';
+import { persistentStore } from '~/common/store';
 
 let store;
 
-// const unsubscribe =
 persistentStore.subscribe(value => {
 	store = value;
 });
@@ -12,15 +11,13 @@ const historyAdd = historyItem => {
 		return;
 	}
 
-	historyItem.id = Date.now();
+	historyItem.time = Date.now();
 
 	store.history = [historyItem, ...store.history];
 
 	if (store.history.length >= store.historyLength) {
 		store.history = store.history.slice(0, store.historyLength);
 	}
-
-	console.log(store.history);
 
 	persistentStore.set(store);
 };

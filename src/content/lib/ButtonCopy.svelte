@@ -97,8 +97,8 @@
 
 <script>
 import { fade } from 'svelte/transition';
-import { tooltip } from '@/lib/tooltip';
-import { getMessage } from '@/common/browserApi';
+import { tooltip } from '~/lib/tooltip';
+import { getMessage } from '~/common/browserApi';
 
 export let textToCopy;
 
