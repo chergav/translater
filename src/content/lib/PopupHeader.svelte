@@ -1,7 +1,7 @@
 <header class="p-2 flex justify-between border-b border-gray-300 dark:border-gray-700">
 	<div class="flex gap-2">
 		<ButtonImage
-			disabled={isCache || disabledPrev}
+			{disabled}
 			tooltip={{ title: 'back' }}
 			on:click={cachePrev}
 			
@@ -59,11 +59,10 @@ import { destroyApp } from '../utils/appsHandler';
 import { longpress } from '~/content/utils/longpress';
 
 let historyCurrentIndex = -1,
-	disabledPrev = true,
+	disabledPrev = false,
 	disabledNext = true;
 
-$: isCache = $store.translateCache.length > 1;
-$: console.log(isCache);
+$: disabled = $store.translateCache.length < 2 || disabledPrev;
 
 const historyItem = index => $store.translateCache.at(index);
 
@@ -79,8 +78,6 @@ const cachePrev = () => {
 	if (historyCurrentIndex <= -$store.translateCache.length) {
 		disabledPrev = true;
 	}
-
-	console.log(historyCurrentIndex, disabledPrev)
 };
 
 const cacheNext = () => {	
@@ -93,7 +90,5 @@ const cacheNext = () => {
 	if (historyCurrentIndex >= -1) {
 		disabledNext = true;
 	}
-
-	console.log(historyCurrentIndex, disabledNext);
 };
 </script>
