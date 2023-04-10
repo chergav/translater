@@ -7,13 +7,14 @@
 		rounded-md
 		bg-transparent
 		text-gray-500
-		hover:bg-gray-200
-		hover:text-gray-900
-		dark:hover:bg-gray-700
+		enabled:hover:bg-gray-200
+		enabled:hover:text-gray-900
+		enabled:dark:hover:bg-gray-700
 		dark:text-gray-400
-		dark:hover:text-white
+		enabled:dark:hover:text-white
 		disabled:opacity-50
 		transition-colors
+		[&>*]:pointer-events-none
 	"
 	{disabled}
 	on:click
