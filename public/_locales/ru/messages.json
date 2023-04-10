@@ -52,6 +52,9 @@
 	"options_history_length": {
 		"message": "Длинна истории"
 	},
+	"options_records_in_history": {
+		"message": "Записей в истории:"
+	},
 	"options_history_disable": {
 		"message": "Отключить историю"
 	},
@@ -126,6 +129,12 @@
 	},
 	"tooltip_listen_language_is_not_support": {
 		"message": "Язык не поддерживается браузером"
+	},
+	"tooltip_go_back": {
+		"message": "Назад"
+	},
+	"tooltip_go_forward": {
+		"message": "Вперед"
 	},
 	"date_today": {
 		"message": "сегодня"

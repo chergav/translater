@@ -6,8 +6,8 @@
 	/>
 </div>
 
-<div class="py-4 flex justify-between border-y border-gray-300 dark:border-gray-700">
-	<span>current history length: {$persistentStore.history.length}</span>
+<div class="py-4 flex justify-between items-center border-y border-gray-300 dark:border-gray-700">
+	<span>{getMessage('options_records_in_history')} {$persistentStore.history.length}</span>
 	<ButtonFlat
 		label={getMessage('options_clear_history')}
 		on:click={() => {

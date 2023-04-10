@@ -2,12 +2,10 @@
 	<div class="flex gap-2">
 		<ButtonImage
 			{disabled}
-			tooltip={{ title: 'back' }}
+			tooltip={{ title: getMessage('tooltip_go_back') }}
 			on:click={cachePrev}
-			
+			on:longpress={() => { console.log('longpress'); }}
 		>
-		<!-- use:longpress
-			on:longpress={() => { console.log('longpress'); }} -->
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				fill="none"
@@ -25,7 +23,7 @@
 		</ButtonImage>
 		<ButtonImage
 			disabled={disabledNext}
-			tooltip={{ title: 'forward' }}
+			tooltip={{ title: getMessage('tooltip_go_forward') }}
 			on:click={cacheNext}
 		>
 			<svg
@@ -53,10 +51,10 @@
 
 <script>
 import { store } from '../store';
+import { getMessage } from '~/common/browserApi';
 import ButtonImage from '~/lib/ButtonImage.svelte';
 import ButtonClose from '~/lib/ButtonClose.svelte';
 import { destroyApp } from '../utils/appsHandler';
-import { longpress } from '~/content/utils/longpress';
 
 let historyCurrentIndex = -1,
 	disabledPrev = false,

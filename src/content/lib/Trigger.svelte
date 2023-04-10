@@ -66,9 +66,9 @@
 </div>
 
 <script>
-import { createApp, destroyApp } from '../appsHandler';
-import { tooltip } from '@/lib/tooltip';
-import { getMessage } from '@/common/browserApi';
+import { createApp, destroyApp } from '../utils/appsHandler';
+import { tooltip } from '~/lib/tooltip';
+import { getMessage } from '~/common/browserApi';
 
 let isSettingsOpen = false;
 

@@ -1,26 +1,9 @@
-<button
-	type="button"
-	class="
-		text-gray-500
-		hover:text-gray-900
-		hover:bg-gray-200
-		rounded-md
-		text-sm
-		p-1
-		inline-flex
-		items-center
-		dark:hover:bg-gray-700
-		dark:text-gray-400
-		dark:hover:text-white
-		disabled:opacity-50
-		transition
-		[&>*]:pointer-events-none
-	"
+<ButtonImage
 	disabled={!availableVoice}
 	on:click={() => {
 		speaking ? speakCancel() : speak();
 	}}
-	use:tooltip={{ title }}
+	tooltip={{ title }}
 >
 	{#if availableVoice}
 		{#if speaking}
@@ -70,13 +53,13 @@
 			/>
 		</svg>
 	{/if}
-</button>
+</ButtonImage>
 
 <script>
 import { onDestroy } from 'svelte';
 import { store } from '../store';
-import { tooltip } from '~/lib/tooltip';
 import { getMessage } from '~/common/browserApi';
+import ButtonImage from '~/lib/ButtonImage.svelte';
 
 export let textToSpeech;
 export let langCode;

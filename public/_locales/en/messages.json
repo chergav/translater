@@ -52,6 +52,9 @@
 	"options_history_length": {
 		"message": "History length"
 	},
+	"options_records_in_history": {
+		"message": "Records in history:"
+	},
 	"options_history_disable": {
 		"message": "Disable history"
 	},
@@ -126,6 +129,12 @@
 	},
 	"tooltip_listen_language_is_not_support": {
 		"message": "Language is not support by browser"
+	},
+	"tooltip_go_back": {
+		"message": "Back"
+	},
+	"tooltip_go_forward": {
+		"message": "Forward"
 	},
 	"date_today": {
 		"message": "today"

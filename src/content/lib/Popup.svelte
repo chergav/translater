@@ -202,39 +202,33 @@ const getTranslate = async () => {
 
 	targetLang = $persistentStore.targetLang;
 
-	const cached = $store.translateCache.find(i => i.sentences.orig === $store.selectedText);
-
-	if (cached) {
-		translate = cached;
-	} else {
-		translate = await chrome.runtime.sendMessage({
-			type: 'getTranslate',
-			content: {
-				sourceLang,
-				targetLang,
-				selectedText: $store.selectedText,
-			},
-		});
-
-		['orig', 'trans', 'translit', 'src_translit'].forEach(i => {
-			sentences[i] = translate.sentences.reduce((a, v) => (a += v[i] ?? ''), '');
-		});
-
-		sourceLang = sourceLang === 'auto' ? translate.src : sourceLang;
-
-		translate.sentences = sentences;
-
-		const historyItem = {
+	translate = await chrome.runtime.sendMessage({
+		type: 'getTranslate',
+		content: {
 			sourceLang,
 			targetLang,
-			orig: sentences.orig,
-			trans: sentences.trans,
-		};
+			selectedText: $store.selectedText,
+		},
+	});
 
-		$store.translateCache = [...$store.translateCache, translate];
+	['orig', 'trans', 'translit', 'src_translit'].forEach(i => {
+		sentences[i] = translate.sentences.reduce((a, v) => (a += v[i] ?? ''), '');
+	});
 
-		historyAdd(historyItem);
-	}
+	sourceLang = sourceLang === 'auto' ? translate.src : sourceLang;
+
+	translate.sentences = sentences;
+
+	const historyItem = {
+		sourceLang,
+		targetLang,
+		orig: sentences.orig,
+		trans: sentences.trans,
+	};
+
+	$store.translateCache = [...$store.translateCache, translate];
+
+	historyAdd(historyItem);
 
 	dispatch('update');
 
