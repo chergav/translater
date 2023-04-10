@@ -45,8 +45,8 @@
 </button>
 
 <script>
-import { tooltip } from '@/lib/tooltip';
-import { getMessage } from '@/common/browserApi';
+import { tooltip } from '~/lib/tooltip';
+import { getMessage } from '~/common/browserApi';
 
 export let textToCopy;
 

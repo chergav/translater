@@ -21,19 +21,19 @@
 </div>
 
 <script context="module">
-import { loadFont } from '@/common/fontLoader';
+import { loadFont } from '~/common/fontLoader';
 
 loadFont();
 </script>
 
 <script>
-import { destroyApp } from './appsHandler';
+import { destroyApp } from './utils/appsHandler';
 import Trigger from './lib/Trigger.svelte';
 import { computePosition, offset, flip } from '@floating-ui/dom';
-import { persistentStore, themeClass } from '@/common/store';
+import { persistentStore, themeClass } from '~/common/store';
 import { store } from './store';
-import { detectLanguage } from '@/common/browserApi';
-import { clickOutside } from './clickOutside';
+import { detectLanguage } from '~/common/browserApi';
+import { clickOutside } from './utils/clickOutside';
 
 const reference = {
 	getBoundingClientRect: () => $store.selectedEndCoord,

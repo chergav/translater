@@ -17,7 +17,7 @@ export default defineConfig({
 		})
 	},
 	resolve: {
-		alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) }
+		alias: { '~': fileURLToPath(new URL('./src', import.meta.url)) }
 	},
 	define: {
 		__DEV__: process.env.NODE_ENV !== 'production'

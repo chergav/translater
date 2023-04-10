@@ -22,7 +22,7 @@ const generateRequestURL = ({ sourceLang = 'auto', targetLang = 'auto', selected
 	return `https://translate.google.com/translate_a/single?${searchParams}`;
 };
 
-const getTranslate = async params => {
+const googleTranslate = async params => {
 	const url = generateRequestURL(params);
 
 	try {
@@ -33,4 +33,4 @@ const getTranslate = async params => {
 	}
 };
 
-export { getTranslate };
+export { googleTranslate };

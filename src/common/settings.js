@@ -6,7 +6,9 @@ const defaultSettings = {
 	showOriginalText: true,
 	showTransliteration: true,
 	blacklistDomainForInline: [],
-	blacklistDomainForText: []
+	blacklistDomainForText: [],
+	historyLength: 50,
+	history: []
 };
 
 const themes = [

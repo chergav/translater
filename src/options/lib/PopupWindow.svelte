@@ -12,7 +12,7 @@
 </div>
 
 <script>
-import { getMessage } from '@/common/browserApi';
-import { persistentStore } from '@/common/store';
-import Checkbox from '@/lib/Checkbox.svelte';
+import { getMessage } from '~/common/browserApi';
+import { persistentStore } from '~/common/store';
+import Checkbox from '~/lib/Checkbox.svelte';
 </script>

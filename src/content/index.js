@@ -1,15 +1,18 @@
-import { app, createShadowElem, createApp } from './appsHandler';
+import { app, createShadowElem, createApp } from './utils/appsHandler';
 import { store } from './store';
 import {
 	isInTextField,
 	getSelectedText,
 	getSelectedElemRect,
 	getSelectedEndCoord
-} from './rectUtils';
+} from './utils/rectUtils';
 
 const createTrigger = event => {
 	const isLeftClick = event.button === 0;
-	if (!isLeftClick) return;
+
+	if (!isLeftClick) {
+		return;
+	}
 
 	if (app.trigger.instance) {
 		return;
@@ -23,7 +26,10 @@ const createTrigger = event => {
 	}
 
 	const selectedText = getSelectedText();
-	if (!selectedText.length) return;
+
+	if (!selectedText.length) {
+		return;
+	}
 
 	store.update(data => ({
 		...data,

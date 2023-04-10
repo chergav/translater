@@ -28,6 +28,9 @@
 	"options_tab_appearance": {
 		"message": "Внешний вид"
 	},
+	"options_tab_history": {
+		"message": "История"
+	},
 	"options_inline_button_show": {
 		"message": "Показать кнопку, когда текст выделен"
 	},
@@ -45,6 +48,24 @@
 	},
 	"options_show_transliteration": {
 		"message": "Показать транслитерацию"
+	},
+	"options_history_length": {
+		"message": "Длинна истории"
+	},
+	"options_history_disable": {
+		"message": "Отключить историю"
+	},
+	"options_clear_history": {
+		"message": "Очистить историю"
+	},
+	"options_delete_history_item": {
+		"message": "Удалить из истории"
+	},
+	"text_expand": {
+		"message": "Еще"
+	},
+	"text_collapse": {
+		"message": "Свернуть"
 	},
 	"target_lang_label": {
 		"message": "Перевести на:"
@@ -105,6 +126,12 @@
 	},
 	"tooltip_listen_language_is_not_support": {
 		"message": "Язык не поддерживается браузером"
+	},
+	"date_today": {
+		"message": "сегодня"
+	},
+	"date_yesterday": {
+		"message": "вчера"
 	},
 	"select_language_auto": {
 		"message": "определить язык"

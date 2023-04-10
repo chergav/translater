@@ -75,8 +75,8 @@
 <script>
 import { onDestroy } from 'svelte';
 import { store } from '../store';
-import { tooltip } from '@/lib/tooltip';
-import { getMessage } from '@/common/browserApi';
+import { tooltip } from '~/lib/tooltip';
+import { getMessage } from '~/common/browserApi';
 
 export let textToSpeech;
 export let langCode;

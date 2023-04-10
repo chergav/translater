@@ -1,21 +1,21 @@
 <button
 	type="button"
-	id="close-tooltip"
 	class="
+		p-1
+		inline-flex
+		items-center
+		rounded-full
 		bg-transparent
 		text-gray-500
 		hover:bg-gray-200
 		hover:text-gray-900
-		rounded-full
-		p-1
-		inline-flex
-		items-center
 		dark:hover:bg-gray-700
 		dark:text-gray-400
 		dark:hover:text-white
-		transition
+		transition-colors
 	"
 	on:click
+	use:action={tooltip}
 >
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
@@ -28,3 +28,9 @@
 		<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
 	</svg>
 </button>
+
+<script>
+import { tooltip as action } from '~/lib/tooltip';
+
+export let tooltip = {};
+</script>

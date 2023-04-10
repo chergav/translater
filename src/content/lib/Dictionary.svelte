@@ -87,7 +87,7 @@
 
 <script>
 import { createEventDispatcher } from 'svelte';
-import { getMessage } from '@/common/browserApi';
+import { getMessage } from '~/common/browserApi';
 
 export let translate;
 

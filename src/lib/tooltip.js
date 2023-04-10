@@ -1,4 +1,4 @@
-import { createShadowElem } from '@/content/appsHandler';
+import { createShadowElem } from '~/content/utils/appsHandler';
 import Tooltip from './Tooltip.svelte';
 
 export const tooltip = (element, { title = '', placement = 'top', delay = 300 } = {}) => {
@@ -7,6 +7,10 @@ export const tooltip = (element, { title = '', placement = 'top', delay = 300 } 
 		timeoutID;
 
 	const createTooltip = () => {
+		if (!title) {
+			return;
+		}
+
 		timeoutID = setTimeout(() => {
 			const { customElement, root } = createShadowElem('translater-shadow-tooltip');
 
@@ -39,7 +43,6 @@ export const tooltip = (element, { title = '', placement = 'top', delay = 300 } 
 
 	return {
 		update(newOptions) {
-			//console.log(newOptions);
 			if (tooltipComponent) {
 				tooltipComponent.$set(newOptions);
 			} else {

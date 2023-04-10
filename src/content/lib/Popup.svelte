@@ -1,4 +1,5 @@
-{#await promise}
+<PopupHeader />
+{#await $store.translated}
 	<div class="flex justify-center items-center h-[146px] w-full">
 		<div
 			class="
@@ -24,22 +25,15 @@
 						originalOpen = !originalOpen;
 					}}
 				/>
-				<Select
+				<SelectLang
 					small
 					bind:value={sourceLang}
 					on:change={handleTranslate}
 					{languages}
 					auto={true}
 				/>
-				<ButtonCopy textToCopy={sentences.orig} />
-				<ButtonTTS textToSpeech={sentences.orig} langCode={sourceLang} />
-			</div>
-			<div>
-				<ButtonClose
-					on:click={() => {
-						destroyApp('popup');
-					}}
-				/>
+				<ButtonCopy textToCopy={translate.sentences.orig} />
+				<ButtonTTS textToSpeech={translate.sentences.orig} langCode={sourceLang} />
 			</div>
 		</div>
 		{#if originalOpen}
@@ -47,9 +41,9 @@
 				class="p-2 whitespace-pre-line max-h-64 overflow-y-auto scrollbar"
 				transition:slide|local={{ duration: 150 }}
 			>
-				<div class="text-sm">{sentences.orig}</div>
-				{#if sentences.src_translit && $persistentStore.showTransliteration}
-					<div class="mt-2 text-sm text-gray-500">{sentences.src_translit}</div>
+				<div class="text-sm">{translate.sentences.orig}</div>
+				{#if translate.sentences.src_translit && $persistentStore.showTransliteration}
+					<div class="mt-2 text-sm text-gray-500">{translate.sentences.src_translit}</div>
 				{/if}
 			</div>
 			<div class="h-px mx-2 border-0 bg-gray-300 dark:bg-gray-700" />
@@ -64,23 +58,23 @@
 					translateOpen = !translateOpen;
 				}}
 			/>
-			<Select
+			<SelectLang
 				small
 				bind:value={$persistentStore.targetLang}
 				on:change={handleTranslate}
 				{languages}
 			/>
-			<ButtonCopy textToCopy={sentences.trans} />
-			<ButtonTTS textToSpeech={sentences.trans} langCode={targetLang} />
+			<ButtonCopy textToCopy={translate.sentences.trans} />
+			<ButtonTTS textToSpeech={translate.sentences.trans} langCode={targetLang} />
 		</div>
 		{#if translateOpen}
 			<div
 				class="px-2 pb-2 whitespace-pre-line max-h-64 overflow-y-auto text-sm scrollbar"
 				transition:slide|local={{ duration: 150 }}
 			>
-				<div class="text-sm">{sentences.trans}</div>
-				{#if sentences.translit && $persistentStore.showTransliteration}
-					<div class="mt-2 text-sm text-gray-500">{sentences.translit}</div>
+				<div class="text-sm">{translate.sentences.trans}</div>
+				{#if translate.sentences.translit && $persistentStore.showTransliteration}
+					<div class="mt-2 text-sm text-gray-500">{translate.sentences.translit}</div>
 				{/if}
 			</div>
 		{/if}
@@ -91,27 +85,14 @@
 			<div class="flex gap-2">
 				{#each tabs as item}
 					{#if item.component && translate[item.srcKey]}
-						<button
-							type="button"
-							class="
-								hover:bg-gray-200
-								rounded-md
-								text-sm
-								px-2
-								py-1
-								inline-flex
-								items-center
-								dark:hover:bg-gray-700
-								transition
-								{activeTab === item.tab
-								? 'bg-gray-200 text-gray-900 dark:bg-gray-700 dark:text-white'
-								: 'text-gray-500 dark:text-gray-400'}
-							"
+						<TabFlat
+							small
+							active={activeTab === item.tab}
+							label={item.label}
 							on:click={() => {
 								tabHandler(item.tab);
 							}}
 						>
-							<span>{item.label}</span>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
@@ -132,14 +113,14 @@
 									d="M6 8l4 4 4-4"
 								/>
 							</svg>
-						</button>
+						</TabFlat>
 					{/if}
 				{/each}
 			</div>
 			<div>
 				<a
 					href={`https://translate.google.com/?sl=${sourceLang}&tl=${targetLang}&text=${encodeURIComponent(
-						sentences.orig
+						translate.sentences.orig
 					)}`}
 					target="_blank"
 					rel="noreferrer"
@@ -192,56 +173,75 @@
 <script>
 import { createEventDispatcher, onMount } from 'svelte';
 import { slide } from 'svelte/transition';
-import { persistentStore } from '@/common/store';
+import { persistentStore } from '~/common/store';
 import { store } from '../store';
-import { languages } from '@/common/settings';
-import Select from '@/lib/Select.svelte';
+import { languages } from '~/common/settings';
+import PopupHeader from './PopupHeader.svelte';
+import SelectLang from '~/lib/SelectLang.svelte';
+import TabFlat from '~/lib/TabFlat.svelte';
 import Dictionary from './Dictionary.svelte';
 import Definitions from './Definitions.svelte';
 import Examples from './Examples.svelte';
 import ButtonCopy from './ButtonCopy.svelte';
 import ButtonTTS from './ButtonTTS.svelte';
 import ButtonExpand from './ButtonExpand.svelte';
-import ButtonClose from './ButtonClose.svelte';
-import { destroyApp } from '../appsHandler';
+import { historyAdd } from '~/common/history';
 
 const dispatch = createEventDispatcher();
 
 let sourceLang = 'auto',
 	targetLang,
-	sentences = {},
 	translateOpen = true,
 	activeTab = 0;
 
 $: originalOpen = $persistentStore.showOriginalText;
-// $: $persistentStore.targetLang, handleTranslate({ detail: null });
 
 const getTranslate = async () => {
+	let sentences = {},
+		translate;
+
 	targetLang = $persistentStore.targetLang;
 
-	const translate = await chrome.runtime.sendMessage({
-		type: 'getTranslate',
-		content: {
+	const cached = $store.translateCache.find(i => i.sentences.orig === $store.selectedText);
+
+	if (cached) {
+		translate = cached;
+	} else {
+		translate = await chrome.runtime.sendMessage({
+			type: 'getTranslate',
+			content: {
+				sourceLang,
+				targetLang,
+				selectedText: $store.selectedText,
+			},
+		});
+
+		['orig', 'trans', 'translit', 'src_translit'].forEach(i => {
+			sentences[i] = translate.sentences.reduce((a, v) => (a += v[i] ?? ''), '');
+		});
+
+		sourceLang = sourceLang === 'auto' ? translate.src : sourceLang;
+
+		translate.sentences = sentences;
+
+		const historyItem = {
 			sourceLang,
 			targetLang,
-			selectedText: $store.selectedText,
-		},
-	});
+			orig: sentences.orig,
+			trans: sentences.trans,
+		};
 
-	sourceLang = sourceLang === 'auto' ? translate.src : sourceLang;
+		$store.translateCache = [...$store.translateCache, translate];
 
-	['trans', 'orig', 'translit', 'src_translit'].forEach(i => {
-		sentences[i] = translate.sentences.reduce((a, v) => (a += v[i] ?? ''), '');
-	});
-
-	activeTab = 0;
+		historyAdd(historyItem);
+	}
 
 	dispatch('update');
 
 	return translate;
 };
 
-let promise = getTranslate();
+$store.translated = getTranslate();
 
 const handleTranslate = ({ detail }) => {
 	if (detail) {
@@ -252,7 +252,7 @@ const handleTranslate = ({ detail }) => {
 		$store.selectedText = detail;
 	}
 
-	promise = getTranslate();
+	$store.translated = getTranslate();
 };
 
 const tabs = [

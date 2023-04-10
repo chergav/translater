@@ -1,6 +1,8 @@
 export const clickOutside = node => {
 	const handleClick = event => {
-		if (!event.target) {
+		const isLeftClick = event.button === 0;
+
+		if (!event.target || !isLeftClick) {
 			return;
 		}
 
@@ -16,12 +18,12 @@ export const clickOutside = node => {
 
 	// to prevent call immediately on selection
 	setTimeout(() => {
-		document.addEventListener('click', handleClick, true);
+		document.addEventListener('mousedown', handleClick, true);
 	}, 100);
 
 	return {
 		destroy() {
-			document.removeEventListener('click', handleClick, true);
+			document.removeEventListener('mousedown', handleClick, true);
 		}
 	};
 };

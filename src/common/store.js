@@ -1,16 +1,7 @@
 import { writable, derived } from 'svelte/store';
-import { storageSet, getSettings, storageListener } from '@/common/browserApi';
+import { storageGet, storageSet, storageListener } from '~/common/browserApi';
 
-const initialPersistentData = {
-	targetLang: await getSettings('targetLang'),
-	theme: await getSettings('theme'),
-	inlineButtonShow: await getSettings('inlineButtonShow'),
-	textFieldButtonShow: await getSettings('textFieldButtonShow'),
-	showOriginalText: await getSettings('showOriginalText'),
-	showTransliteration: await getSettings('showTransliteration'),
-	blacklistDomainForInline: await getSettings('blacklistDomainForInline'),
-	blacklistDomainForText: await getSettings('blacklistDomainForText')
-};
+const initialPersistentData = await storageGet();
 
 const createPersistentStore = () => {
 	const { subscribe, set, update } = writable(initialPersistentData);
