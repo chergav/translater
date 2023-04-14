@@ -12,14 +12,20 @@
 		transition
 		select-none
 		{active
-		? 'bg-gray-200 text-gray-900 dark:bg-gray-700 dark:text-white'
+		? 'text-blue-600'
 		: 'text-gray-500 dark:text-gray-400'}
 		{className}
 	"
 	on:click
 >
+	{#if icon}
+		<span class="mr-2">{@html icon}</span>
+	{/if}
 	{label}
 	<slot />
+	{#if iconRight}
+		<span class="ml-2">{@html iconRight}</span>
+	{/if}
 </button>
 
 <script>
@@ -27,4 +33,6 @@ export let label = '';
 export let className = '';
 export let active = false;
 export let small = false;
+export let icon = '';
+export let iconRight = '';
 </script>
