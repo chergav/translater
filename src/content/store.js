@@ -3,6 +3,7 @@ import { writable } from 'svelte/store';
 const initData = {
 	selectedText: null,
 	translated: null,
+	sourceLang: 'auto',
 	hostname: null,
 	isInTextField: false,
 	selectedElemRect: null,

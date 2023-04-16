@@ -5,14 +5,11 @@
 		inline-flex
 		items-center
 		rounded-md
-		bg-transparent
-		text-gray-500
-		enabled:hover:text-gray-900
+		text-gray-900
+		dark:text-white
 		enabled:hover:bg-gray-200
 		enabled:dark:hover:bg-gray-700
-		dark:text-gray-400
-		enabled:dark:hover:text-white
-		disabled:opacity-50
+		disabled:opacity-30
 		transition-colors
 		[&>*]:pointer-events-none
 	"

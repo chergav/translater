@@ -32,6 +32,7 @@ export let element;
 
 let tooltipElement;
 
+// computePosition on title change
 $: if (tooltipElement && title) tooltipPosition(tooltipElement);
 
 const tooltipPosition = tooltip => {

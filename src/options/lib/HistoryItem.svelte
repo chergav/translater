@@ -7,7 +7,7 @@
 		dark:border-gray-700
 		last:border-b-0
 	"
-	transition:slide|local={{ duration: 200 }}
+	transition:slide|local={{ duration: 300 }}
 >
 	<div class="mb-2 flex justify-between">
 		<span>{getLang(item.sourceLang)} -> {getLang(item.targetLang)}</span>
@@ -21,7 +21,7 @@
 	<div class={truncateOrig ? 'line-clamp-1' : ''}>
 		{item.orig}
 	</div>
-	{#if item.orig.length > 50}
+	{#if item.orig.length > 45}
 		<button
 			class="
 				mb-1
@@ -40,7 +40,7 @@
 	<div class="{truncateTrans ? 'line-clamp-1' : ''} text-gray-500">
 		{item.trans}
 	</div>
-	{#if item.trans.length > 50}
+	{#if item.trans.length > 45}
 		<button
 			class="
 				text-xs

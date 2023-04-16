@@ -16,25 +16,23 @@
 		/>
 	</div>
 {:then translate}
-	<div>
-		<div class="px-2 pt-2 flex justify-between items-center">
-			<div class="w-full flex gap-2">
-				<ButtonExpand
-					expand={originalOpen}
-					on:click={() => {
-						originalOpen = !originalOpen;
-					}}
-				/>
-				<SelectLang
-					small
-					bind:value={sourceLang}
-					on:change={handleTranslate}
-					{languages}
-					auto={true}
-				/>
-				<ButtonCopy textToCopy={translate.sentences.orig} />
-				<ButtonTTS textToSpeech={translate.sentences.orig} langCode={sourceLang} />
-			</div>
+	<main>
+		<div class="px-2 pt-2 flex gap-2">
+			<ButtonExpand
+				expand={originalOpen}
+				on:click={() => {
+					originalOpen = !originalOpen;
+				}}
+			/>
+			<SelectLang
+				small
+				auto
+				bind:value={$store.sourceLang}
+				on:change={handleTranslate}
+				{languages}
+			/>
+			<ButtonCopy textToCopy={translate.sentences.orig} />
+			<ButtonTTS textToSpeech={translate.sentences.orig} langCode={$store.sourceLang} />
 		</div>
 		{#if originalOpen}
 			<div
@@ -48,9 +46,7 @@
 			</div>
 			<div class="h-px mx-2 border-0 bg-gray-300 dark:bg-gray-700" />
 		{/if}
-	</div>
 
-	<div>
 		<div class="p-2 flex gap-2">
 			<ButtonExpand
 				expand={translateOpen}
@@ -78,9 +74,9 @@
 				{/if}
 			</div>
 		{/if}
-	</div>
+	</main>
 
-	<div class="border-t border-gray-300 dark:border-gray-700">
+	<footer class="border-t border-gray-300 dark:border-gray-700">
 		<div class="p-2 flex items-center justify-between">
 			<div class="flex gap-2">
 				{#each tabs as item}
@@ -119,7 +115,7 @@
 			</div>
 			<div>
 				<a
-					href={`https://translate.google.com/?sl=${sourceLang}&tl=${targetLang}&text=${encodeURIComponent(
+					href={`https://translate.google.com/?sl=${$store.sourceLang}&tl=${targetLang}&text=${encodeURIComponent(
 						translate.sentences.orig
 					)}`}
 					target="_blank"
@@ -162,7 +158,7 @@
 				{/if}
 			{/each}
 		</dir>
-	</div>
+	</footer>
 {:catch error}
 	<div class="p-2 whitespace-pre-line max-h-96 overflow-y-auto text-sm text-red-500">
 		Something went wrong: {error.message}
@@ -189,8 +185,7 @@ import { historyAdd } from '~/common/history';
 
 const dispatch = createEventDispatcher();
 
-let sourceLang = 'auto',
-	targetLang,
+let targetLang,
 	translateOpen = true,
 	activeTab = 0;
 
@@ -202,33 +197,38 @@ const getTranslate = async () => {
 
 	targetLang = $persistentStore.targetLang;
 
-	translate = await chrome.runtime.sendMessage({
-		type: 'getTranslate',
-		content: {
-			sourceLang,
+	const cached = $store.translateCache.find(i => i.sentences.orig === $store.selectedText);
+
+	if (cached && $store.sourceLang === cached.src) {
+		translate = cached;
+		$store.sourceLang = cached.src;
+	} else {
+		translate = await chrome.runtime.sendMessage({
+			type: 'getTranslate',
+			content: {
+				sourceLang: $store.sourceLang,
+				targetLang,
+				selectedText: $store.selectedText,
+			},
+		});
+
+		['orig', 'trans', 'translit', 'src_translit'].forEach(i => {
+			sentences[i] = translate.sentences.reduce((a, v) => (a += v[i] ?? ''), '');
+		});
+
+		$store.sourceLang = $store.sourceLang === 'auto' ? translate.src : $store.sourceLang;
+
+		translate.sentences = sentences;
+
+		$store.translateCache = [...$store.translateCache, translate];
+
+		historyAdd({
+			sourceLang: $store.sourceLang,
 			targetLang,
-			selectedText: $store.selectedText,
-		},
-	});
-
-	['orig', 'trans', 'translit', 'src_translit'].forEach(i => {
-		sentences[i] = translate.sentences.reduce((a, v) => (a += v[i] ?? ''), '');
-	});
-
-	sourceLang = sourceLang === 'auto' ? translate.src : sourceLang;
-
-	translate.sentences = sentences;
-
-	const historyItem = {
-		sourceLang,
-		targetLang,
-		orig: sentences.orig,
-		trans: sentences.trans,
-	};
-
-	$store.translateCache = [...$store.translateCache, translate];
-
-	historyAdd(historyItem);
+			orig: sentences.orig,
+			trans: sentences.trans
+		});
+	}
 
 	dispatch('update');
 

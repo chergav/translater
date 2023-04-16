@@ -21,7 +21,7 @@
 	{#if icon}
 		<span class="mr-2">{@html icon}</span>
 	{/if}
-	{label}
+	<span>{label}</span>
 	<slot />
 	{#if iconRight}
 		<span class="ml-2">{@html iconRight}</span>

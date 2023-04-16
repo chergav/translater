@@ -1,8 +1,6 @@
 <label class="text-gray-900 dark:text-white">
 	<span class="select-none {label ? 'mr-2' : ''}">{label}</span>
 	<select
-		bind:value
-		on:change
 		class="
 			{small ? 'py-[3px] text-sm' : 'py-1.5 text-base' }
 			pl-2
@@ -21,6 +19,8 @@
 			dark:focus:border-gray-500
 			cursor-pointer
 		"
+		bind:value
+		on:change
 	>
 		{#each options as { key, value }}
 			<option value={key}>{value}</option>
@@ -33,5 +33,4 @@ export let value;
 export let label = '';
 export let options = [];
 export let small = false;
-
 </script>

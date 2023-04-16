@@ -1,22 +1,4 @@
-<button
-	type="button"
-	class="
-		hover:text-gray-900
-		hover:bg-gray-200
-		rounded-md
-		text-sm
-		p-1
-		inline-flex
-		items-center
-		dark:hover:bg-gray-700
-		dark:hover:text-white
-		transition
-		{expand
-		? 'text-gray-900 bg-gray-200 dark:bg-gray-700 dark:text-white'
-		: 'text-gray-500 dark:text-gray-400'}
-	"
-	on:click
->
+<ButtonImage on:click>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		fill="none"
@@ -36,8 +18,10 @@
 			d="M19.5 8.25l-7.5 7.5-7.5-7.5"
 		/>
 	</svg>
-</button>
+</ButtonImage>
 
 <script>
+import ButtonImage from '~/lib/ButtonImage.svelte';
+
 export let expand;
 </script>

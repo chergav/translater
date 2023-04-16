@@ -1,8 +1,6 @@
 <label class="text-gray-900 dark:text-white">
 	<span class="select-none {label ? 'mr-2' : ''}">{label}</span>
 	<select
-		bind:value
-		on:change
 		class="
 			{small ? 'py-[3px] text-sm' : 'py-1.5 text-base' }
 			pl-2
@@ -21,6 +19,8 @@
 			dark:focus:border-gray-500
 			cursor-pointer
 		"
+		bind:value
+		on:change
 	>
 		{#if auto}
 			<option value="auto">

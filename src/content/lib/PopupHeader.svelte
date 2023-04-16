@@ -56,7 +56,7 @@ import ButtonImage from '~/lib/ButtonImage.svelte';
 import ButtonClose from '~/lib/ButtonClose.svelte';
 import { destroyApp } from '../utils/appsHandler';
 
-let historyCurrentIndex = -1,
+let cacheIndex = -1,
 	disabledPrev = false,
 	disabledNext = true;
 
@@ -69,11 +69,13 @@ const promise = data => new Promise((res, _) => { res(data); });
 const cachePrev = () => {
 	disabledNext = false;
 
-	const item = historyItem(--historyCurrentIndex);
+	const item = historyItem(--cacheIndex);
 
 	$store.translated = promise(item);
 
-	if (historyCurrentIndex <= -$store.translateCache.length) {
+	$store.sourceLang = item.src;
+
+	if (cacheIndex <= -$store.translateCache.length) {
 		disabledPrev = true;
 	}
 };
@@ -81,11 +83,13 @@ const cachePrev = () => {
 const cacheNext = () => {	
 	disabledPrev = false;
 
-	const item = historyItem(++historyCurrentIndex);
+	const item = historyItem(++cacheIndex);
 
 	$store.translated = promise(item);
 
-	if (historyCurrentIndex >= -1) {
+	$store.sourceLang = item.src;
+
+	if (cacheIndex >= -1) {
 		disabledNext = true;
 	}
 };
