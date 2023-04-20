@@ -1,26 +1,30 @@
 <header class="p-2 flex justify-between border-b border-gray-300 dark:border-gray-700">
 	<div class="flex gap-2">
-		<ButtonImage
-			{disabled}
-			tooltip={{ title: getMessage('tooltip_go_back') }}
-			on:click={cachePrev}
-			on:longpress={() => { console.log('longpress'); }}
-		>
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none"
-				viewBox="0 0 24 24"
-				stroke-width="1.5"
-				stroke="currentColor"
-				class="w-5 h-5"
+		<div class="relative">
+			<ButtonImage
+				{disabled}
+				tooltip={{ title: getMessage('tooltip_go_back') }}
+				on:click={cachePrev}
+				on:longpress={() => {
+					console.log('longpress');					
+				}}
 			>
-				<path
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75"
-				/>
-			</svg>
-		</ButtonImage>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="w-5 h-5"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75"
+					/>
+				</svg>
+			</ButtonImage>
+		</div>
 		<ButtonImage
 			disabled={disabledNext}
 			tooltip={{ title: getMessage('tooltip_go_forward') }}

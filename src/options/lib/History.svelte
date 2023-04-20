@@ -17,7 +17,7 @@
 </div>
 <div class="w-full max-h-[60vh] overflow-y-auto scrollbar">
 	{#each Object.entries(dateGroupedArray) as [key, value]}
-		<div class="p-2 text-sm text-blue-600">{relativeDate(key)}</div>
+		<div class="p-2 text-sm text-blue-600">{getRelativeDate(key)}</div>
 		{#each value as historyItem (historyItem.time)}
 			<HistoryItem item={historyItem} />
 		{/each}
@@ -38,41 +38,35 @@ const historyOptions = [
 	{ key: 100, value: '100' },
 ];
 
-const groupByDate = array => {
-	const dateGroupedArray = {};
-	for (let i = 0; i < array.length; i++) {
-		const date = new Date(array[i].time);
-		const dateString = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+const groupByDate = data => data.reduce((acc, obj) => {
+	const date = new Date(obj.time).toISOString().split('T')[0]; // 'yyyy-mm-dd'
 
-		if (!dateGroupedArray[dateString]) {
-			dateGroupedArray[dateString] = [];
-		}
-
-		dateGroupedArray[dateString].push(array[i]);
+	if (!acc[date]) {
+		acc[date] = [];
 	}
-	return dateGroupedArray;
-};
+
+	acc[date].push(obj);
+
+	return acc;
+}, {});
 
 $: dateGroupedArray = groupByDate($persistentStore.history);
 
-const relativeDate = date => {
-	const UILanguage = getUILanguage();
-	const d = new Date();
-	const today = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
-	const yesterday = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate() - 1}`;
+const getRelativeDate = dateString => {
+	const date = new Date(dateString);
+	const today = new Date();
+	const yesterday = new Date(today);
+	yesterday.setDate(yesterday.getDate() - 1);
 
-	if (date === today) {
+	if (date.toDateString() === today.toDateString()) {
 		return getMessage('date_today');
-	} else if (date === yesterday) {
+	} else if (date.toDateString() === yesterday.toDateString()) {
 		return getMessage('date_yesterday');
 	}
 
-	const dateTimeFormat = new Intl.DateTimeFormat(UILanguage, {
-		year: 'numeric',
-		month: 'long',
-		day: 'numeric'
-	});
+	const UILanguage = getUILanguage();
+	const options = { day: 'numeric', month: 'long', year: 'numeric' };
 
-	return dateTimeFormat.format(new Date(date));
-};
+	return date.toLocaleDateString(UILanguage, options);
+}
 </script>

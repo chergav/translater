@@ -195,14 +195,14 @@ const getTranslate = async () => {
 	let sentences = {},
 		translate;
 
-	targetLang = $persistentStore.targetLang;
-
 	const cached = $store.translateCache.find(i => i.sentences.orig === $store.selectedText);
 
-	if (cached && $store.sourceLang === cached.src) {
+	if (cached && $store.sourceLang === cached.src && targetLang === $persistentStore.targetLang) {
 		translate = cached;
 		$store.sourceLang = cached.src;
 	} else {
+		targetLang = $persistentStore.targetLang;
+
 		translate = await chrome.runtime.sendMessage({
 			type: 'getTranslate',
 			content: {
