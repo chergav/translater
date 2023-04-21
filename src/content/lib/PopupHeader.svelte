@@ -54,6 +54,7 @@
 </header>
 
 <script>
+import { persistentStore } from '~/common/store';
 import { store } from '../store';
 import { getMessage } from '~/common/browserApi';
 import ButtonImage from '~/lib/ButtonImage.svelte';
@@ -78,6 +79,7 @@ const cachePrev = () => {
 	$store.translated = promise(item);
 
 	$store.sourceLang = item.src;
+	$persistentStore.targetLang = item.targetLang;
 
 	if (cacheIndex <= -$store.translateCache.length) {
 		disabledPrev = true;
@@ -92,6 +94,7 @@ const cacheNext = () => {
 	$store.translated = promise(item);
 
 	$store.sourceLang = item.src;
+	$persistentStore.targetLang = item.targetLang;
 
 	if (cacheIndex >= -1) {
 		disabledNext = true;

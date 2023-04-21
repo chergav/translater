@@ -61,7 +61,10 @@
 				{languages}
 			/>
 			<ButtonCopy textToCopy={translate.sentences.trans} />
-			<ButtonTTS textToSpeech={translate.sentences.trans} langCode={targetLang} />
+			<ButtonTTS
+				textToSpeech={translate.sentences.trans}
+				langCode={$persistentStore.targetLang}
+			/>
 		</div>
 		{#if translateOpen}
 			<div
@@ -115,9 +118,10 @@
 			</div>
 			<div>
 				<a
-					href={`https://translate.google.com/?sl=${$store.sourceLang}&tl=${targetLang}&text=${encodeURIComponent(
-						translate.sentences.orig
-					)}`}
+					href={`https://translate.google.com/?
+						sl=${$store.sourceLang}&
+						tl=${$persistentStore.targetLang}&
+						text=${encodeURIComponent(translate.sentences.orig)}`}
 					target="_blank"
 					rel="noreferrer"
 					class="text-blue-600 visited:text-purple-600 underline"
@@ -185,8 +189,7 @@ import { historyAdd } from '~/common/history';
 
 const dispatch = createEventDispatcher();
 
-let targetLang,
-	translateOpen = true,
+let translateOpen = true,
 	activeTab = 0;
 
 $: originalOpen = $persistentStore.showOriginalText;
@@ -195,13 +198,18 @@ const getTranslate = async () => {
 	let sentences = {},
 		translate;
 
-	const cached = $store.translateCache.find(i => i.sentences.orig === $store.selectedText);
+	const cached = $store.translateCache.find(i =>
+		i.sentences.orig === $store.selectedText &&
+		i.targetLang === $persistentStore.targetLang &&
+		i.src === $store.sourceLang
+	);
 
-	if (cached && $store.sourceLang === cached.src && targetLang === $persistentStore.targetLang) {
+	if (cached) {
 		translate = cached;
 		$store.sourceLang = cached.src;
+		$persistentStore.targetLang = cached.targetLang;
 	} else {
-		targetLang = $persistentStore.targetLang;
+		const targetLang = $persistentStore.targetLang;
 
 		translate = await chrome.runtime.sendMessage({
 			type: 'getTranslate',
@@ -219,6 +227,7 @@ const getTranslate = async () => {
 		$store.sourceLang = $store.sourceLang === 'auto' ? translate.src : $store.sourceLang;
 
 		translate.sentences = sentences;
+		translate.targetLang = targetLang;
 
 		$store.translateCache = [...$store.translateCache, translate];
 
@@ -226,7 +235,7 @@ const getTranslate = async () => {
 			sourceLang: $store.sourceLang,
 			targetLang,
 			orig: sentences.orig,
-			trans: sentences.trans
+			trans: sentences.trans,
 		});
 	}
 
