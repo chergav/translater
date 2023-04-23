@@ -6,12 +6,19 @@ persistentStore.subscribe(value => {
 	store = value;
 });
 
-const historyAdd = historyItem => {
+const historyAdd = ({ sourceLang, targetLang, orig, trans }) => {
+	// if history off
 	if (!store.historyLength) {
 		return;
 	}
 
-	historyItem.time = Date.now();
+	const historyItem = {
+		sourceLang,
+		targetLang,
+		orig,
+		trans,
+		time: Date.now()
+	};
 
 	store.history = [historyItem, ...store.history];
 

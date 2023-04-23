@@ -1,0 +1,474 @@
+{
+    "app_name": {
+        "message": "$NAME$ - 所選文本的翻譯",
+        "placeholders": {
+            "name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "app_description": {
+        "message": "使用具有淺色和深色主題的谷歌翻譯翻譯所選文本"
+    },
+    "context_menus_title": {
+        "message": "翻譯所選文本"
+    },
+    "popup_menu_options": {
+        "message": "設置"
+    },
+    "options_title": {
+        "message": "$NAME$ - 設置",
+        "placeholders": {
+            "name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "options_tab_inline_translate": {
+        "message": "閱讀和輸入"
+    },
+    "options_tab_popup_window": {
+        "message": "彈出窗口"
+    },
+    "options_tab_appearance": {
+        "message": "外觀"
+    },
+    "options_tab_history": {
+        "message": "歷史"
+    },
+    "options_inline_button_show": {
+        "message": "選擇文本時顯示按鈕"
+    },
+    "options_text_field_button_show": {
+        "message": "在文本字段中顯示按鈕"
+    },
+    "options_hide_button_on_sites": {
+        "message": "隱藏這些站點上的按鈕："
+    },
+    "options_hide_button_on_sites_empty_list": {
+        "message": "您可以使用要排除的站點上的設置按鈕添加站點"
+    },
+    "options_show_original_text": {
+        "message": "顯示源文本"
+    },
+    "options_show_transliteration": {
+        "message": "顯示音譯"
+    },
+    "options_history_length": {
+        "message": "歷史長度"
+    },
+    "options_records_in_history": {
+        "message": "歷史記錄："
+    },
+    "options_history_disable": {
+        "message": "禁用歷史"
+    },
+    "options_clear_history": {
+        "message": "清除歷史"
+    },
+    "options_delete_history_item": {
+        "message": "從歷史記錄中刪除"
+    },
+    "text_expand": {
+        "message": "更多"
+    },
+    "text_collapse": {
+        "message": "Сollapse"
+    },
+    "target_lang_label": {
+        "message": "轉換為："
+    },
+    "popup_dictionary": {
+        "message": "詞典"
+    },
+    "popup_dictionary_frequency": {
+        "message": "頻率"
+    },
+    "popup_definitions": {
+        "message": "定義"
+    },
+    "popup_definitions_synonyms": {
+        "message": "同義詞："
+    },
+    "popup_examples": {
+        "message": "示例"
+    },
+    "popup_settings_disable_inline_button_for_site": {
+        "message": "禁用該站點的按鈕"
+    },
+    "popup_settings_enable_inline_button_global": {
+        "message": "顯示所有站點的按鈕"
+    },
+    "popup_settings_options_link": {
+        "message": "其他設置"
+    },
+    "theme_light": {
+        "message": "淺色主題"
+    },
+    "theme_dark": {
+        "message": "深色主題"
+    },
+    "theme_system": {
+        "message": "默認主題"
+    },
+    "tooltip_translate_text": {
+        "message": "翻譯選定的文本"
+    },
+    "tooltip_settings": {
+        "message": "設置"
+    },
+    "tooltip_copy_to_clipboard": {
+        "message": "複製到剪貼板"
+    },
+    "tooltip_copy_not_support_on_http": {
+        "message": "HTTP 站點不支持複製"
+    },
+    "tooltip_copyed": {
+        "message": "已復制！"
+    },
+    "tooltip_copy_error": {
+        "message": "複製錯誤！"
+    },
+    "tooltip_listen_to_the_text": {
+        "message": "聽文本"
+    },
+    "tooltip_listen_language_is_not_support": {
+        "message": "瀏覽器不支持語言"
+    },
+    "tooltip_go_back": {
+        "message": "Back"
+    },
+    "tooltip_go_forward": {
+        "message": "Forward"
+    },
+    "date_today": {
+        "message": "today"
+    },
+    "date_yesterday": {
+        "message": "yesterday"
+    },
+    "select_language_auto": {
+        "message": "detect language"
+    },
+    "supported_languages_af": {
+        "message": "african"
+    },
+    "supported_languages_sq": {
+        "message": "albanian"
+    },
+    "supported_languages_am": {
+        "message": "amharic"
+    },
+    "supported_languages_ar": {
+        "message": "arabic"
+    },
+    "supported_languages_hy": {
+        "message": "armenian"
+    },
+    "supported_languages_az": {
+        "message": "azerbaijani"
+    },
+    "supported_languages_eu": {
+        "message": "basque"
+    },
+    "supported_languages_be": {
+        "message": "belarusian"
+    },
+    "supported_languages_bn": {
+        "message": "bengali"
+    },
+    "supported_languages_bs": {
+        "message": "bosnian"
+    },
+    "supported_languages_bg": {
+        "message": "bulgarian"
+    },
+    "supported_languages_ca": {
+        "message": "catalan"
+    },
+    "supported_languages_ceb": {
+        "message": "cebuano"
+    },
+    "supported_languages_ny": {
+        "message": "chewa"
+    },
+    "supported_languages_zh_CN": {
+        "message": "中文（簡體）"
+    },
+    "supported_languages_zh_TW": {
+        "message": "中文（繁體）"
+    },
+    "supported_languages_co": {
+        "message": "科西嘉語"
+    },
+    "supported_languages_hr": {
+        "message": "克羅地亞語"
+    },
+    "supported_languages_cs": {
+        "message": "捷克語"
+    },
+    "supported_languages_da": {
+        "message": "丹麥語"
+    },
+    "supported_languages_nl": {
+        "message": "荷蘭語"
+    },
+    "supported_languages_en": {
+        "message": "英語"
+    },
+    "supported_languages_eo": {
+        "message": "世界語"
+    },
+    "supported_languages_et": {
+        "message": "愛沙尼亞語"
+    },
+    "supported_languages_fi": {
+        "message": "芬蘭語"
+    },
+    "supported_languages_fr": {
+        "message": "法語"
+    },
+    "supported_languages_fy": {
+        "message": "弗里斯蘭語"
+    },
+    "supported_languages_gl": {
+        "message": "加利西亞語"
+    },
+    "supported_languages_ka": {
+        "message": "格魯吉亞語"
+    },
+    "supported_languages_de": {
+        "message": "德語"
+    },
+    "supported_languages_el": {
+        "message": "希臘語"
+    },
+    "supported_languages_gu": {
+        "message": "古吉拉特語"
+    },
+    "supported_languages_ht": {
+        "message": "海地語"
+    },
+    "supported_languages_ha": {
+        "message": "豪薩語"
+    },
+    "supported_languages_haw": {
+        "message": "夏威夷語"
+    },
+    "supported_languages_he": {
+        "message": "希伯來語"
+    },
+    "supported_languages_hi": {
+        "message": "印地語"
+    },
+    "supported_languages_hu": {
+        "message": "匈牙利語"
+    },
+    "supported_languages_is": {
+        "message": "冰島語"
+    },
+    "supported_languages_ig": {
+        "message": "igbo"
+    },
+    "supported_languages_id": {
+        "message": "印度尼西亞語"
+    },
+    "supported_languages_ga": {
+        "message": "愛爾蘭語"
+    },
+    "supported_languages_it": {
+        "message": "意大利語"
+    },
+    "supported_languages_ja": {
+        "message": "日語"
+    },
+    "supported_languages_jv": {
+        "message": "爪哇語"
+    },
+    "supported_languages_kn": {
+        "message": "卡納達語"
+    },
+    "supported_languages_kk": {
+        "message": "哈薩克語"
+    },
+    "supported_languages_km": {
+        "message": "高棉語"
+    },
+    "supported_languages_ky": {
+        "message": "吉爾吉斯語"
+    },
+    "supported_languages_ko": {
+        "message": "韓國語"
+    },
+    "supported_languages_ku": {
+        "message": "庫爾德語"
+    },
+    "supported_languages_lo": {
+        "message": "老撾語"
+    },
+    "supported_languages_la": {
+        "message": "拉丁語"
+    },
+    "supported_languages_lv": {
+        "message": "拉脫維亞語"
+    },
+    "supported_languages_lt": {
+        "message": "立陶宛語"
+    },
+    "supported_languages_lb": {
+        "message": "盧森堡語"
+    },
+    "supported_languages_mk": {
+        "message": "馬其頓語"
+    },
+    "supported_languages_mg": {
+        "message": "馬拉加什語"
+    },
+    "supported_languages_ms": {
+        "message": "馬來語"
+    },
+    "supported_languages_ml": {
+        "message": "馬拉雅拉姆語"
+    },
+    "supported_languages_mt": {
+        "message": "馬耳他語"
+    },
+    "supported_languages_mi": {
+        "message": "maori"
+    },
+    "supported_languages_mr": {
+        "message": "marathi"
+    },
+    "supported_languages_mn": {
+        "message": "mongolian"
+    },
+    "supported_languages_hmn": {
+        "message": "monk"
+    },
+    "supported_languages_my": {
+        "message": "myanmar"
+    },
+    "supported_languages_ne": {
+        "message": "mepali"
+    },
+    "supported_languages_no": {
+        "message": "norwegian"
+    },
+    "supported_languages_fa": {
+        "message": "persian"
+    },
+    "supported_languages_pl": {
+        "message": "polish"
+    },
+    "supported_languages_pt": {
+        "message": "portuguese"
+    },
+    "supported_languages_pa": {
+        "message": "punjabi"
+    },
+    "supported_languages_ps": {
+        "message": "pushto"
+    },
+    "supported_languages_ro": {
+        "message": "romanian"
+    },
+    "supported_languages_ru": {
+        "message": "russian"
+    },
+    "supported_languages_sm": {
+        "message": "samoan"
+    },
+    "supported_languages_gd": {
+        "message": "scottish gaelic"
+    },
+    "supported_languages_sr": {
+        "message": "serbian"
+    },
+    "supported_languages_sn": {
+        "message": "shona"
+    },
+    "supported_languages_sd": {
+        "message": "sindhi"
+    },
+    "supported_languages_si": {
+        "message": "sinhala"
+    },
+    "supported_languages_sk": {
+        "message": "slovak"
+    },
+    "supported_languages_sl": {
+        "message": "slovenian"
+    },
+    "supported_languages_so": {
+        "message": "somali"
+    },
+    "supported_languages_sx": {
+        "message": "sotho"
+    },
+    "supported_languages_es": {
+        "message": "spanish"
+    },
+    "supported_languages_su": {
+        "message": "sundanese"
+    },
+    "supported_languages_sw": {
+        "message": "swahili"
+    },
+    "supported_languages_sv": {
+        "message": "swedish"
+    },
+    "supported_languages_tl": {
+        "message": "tagalog"
+    },
+    "supported_languages_tg": {
+        "message": "tajiki"
+    },
+    "supported_languages_ta": {
+        "message": "tamil"
+    },
+    "supported_languages_te": {
+        "message": "telugu"
+    },
+    "supported_languages_th": {
+        "message": "thai"
+    },
+    "supported_languages_tr": {
+        "message": "turkish"
+    },
+    "supported_languages_uk": {
+        "message": "ukrainian"
+    },
+    "supported_languages_ur": {
+        "message": "urdu"
+    },
+    "supported_languages_uz": {
+        "message": "uzbek"
+    },
+    "supported_languages_vi": {
+        "message": "vietnamese"
+    },
+    "supported_languages_cy": {
+        "message": "welsh"
+    },
+    "supported_languages_xh": {
+        "message": "xosa"
+    },
+    "supported_languages_yi": {
+        "message": "yiddish"
+    },
+    "supported_languages_yo": {
+        "message": "yoruba"
+    },
+    "supported_languages_zu": {
+        "message": "zulu"
+    },
+    "supported_languages_qu": {
+        "message": "quechua"
+    },
+    "supported_languages_om": {
+        "message": "oromo"
+    },
+    "supported_languages_ilo": {
+        "message": "ilocano"
+    }
+}

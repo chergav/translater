@@ -194,31 +194,46 @@ let translateOpen = true,
 
 $: originalOpen = $persistentStore.showOriginalText;
 
+const fetchTranslate = async (sourceLang, targetLang, selectedText) => {
+	try {
+		const content = {
+			sourceLang,
+			targetLang,
+			selectedText
+		};
+
+		const response = await chrome.runtime.sendMessage({
+			type: 'getTranslate',
+			content
+		});
+
+		return response;
+	} catch (error) {
+		console.error('Error occurred while fetching translation: ', error);
+		throw error;
+	}
+}
+
 const getTranslate = async () => {
-	let sentences = {},
-		translate;
+	const sentences = {};
+    const targetLang = $persistentStore.targetLang;
+    const selectedText = $store.selectedText;
+    const sourceLang = $store.sourceLang;
 
 	const cached = $store.translateCache.find(i =>
-		i.sentences.orig === $store.selectedText &&
-		i.targetLang === $persistentStore.targetLang &&
-		i.src === $store.sourceLang
+		i.sentences.orig === selectedText &&
+		i.targetLang === targetLang &&
+		i.src === sourceLang
 	);
+
+	let translate;
 
 	if (cached) {
 		translate = cached;
 		$store.sourceLang = cached.src;
 		$persistentStore.targetLang = cached.targetLang;
 	} else {
-		const targetLang = $persistentStore.targetLang;
-
-		translate = await chrome.runtime.sendMessage({
-			type: 'getTranslate',
-			content: {
-				sourceLang: $store.sourceLang,
-				targetLang,
-				selectedText: $store.selectedText,
-			},
-		});
+		translate = await fetchTranslate(sourceLang, targetLang, selectedText);
 
 		['orig', 'trans', 'translit', 'src_translit'].forEach(i => {
 			sentences[i] = translate.sentences.reduce((a, v) => (a += v[i] ?? ''), '');
@@ -235,7 +250,7 @@ const getTranslate = async () => {
 			sourceLang: $store.sourceLang,
 			targetLang,
 			orig: sentences.orig,
-			trans: sentences.trans,
+			trans: sentences.trans
 		});
 	}
 

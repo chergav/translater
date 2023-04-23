@@ -1,6 +1,11 @@
 {
 	"app_name": {
-		"message": "Translater - translation of selected text"
+		"message": "$NAME$ - translation of selected text",
+		"placeholders": {
+			"name": {
+				"content": "Translater"
+			}
+		}
 	},
 	"app_description": {
 		"message": "Translation selected text with Google Translate with light and dark theme"
@@ -38,7 +43,7 @@
 		"message": "Show button in textfield"
 	},
 	"options_hide_button_on_sites": {
-		"message": "Hide button on these sites:"
+		"message": "Hide the button on these sites:"
 	},
 	"options_hide_button_on_sites_empty_list": {
 		"message": "You can add sites using the settings button on the site you want to exclude"
@@ -65,7 +70,7 @@
 		"message": "Delete from history"
 	},
 	"text_expand": {
-		"message": "Expand"
+		"message": "More"
 	},
 	"text_collapse": {
 		"message": "Сollapse"
