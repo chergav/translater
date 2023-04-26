@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "$NAME$ - 所選文本的翻譯",
+        "message": "Translater - 所選文本的翻譯",
         "placeholders": {
             "name": {
                 "content": "Translater"

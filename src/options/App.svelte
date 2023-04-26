@@ -1,7 +1,7 @@
 <div class="flex justify-center">
 	<div class="w-[700px]">
 		<div class="py-5 flex items-center">
-			<img src={getURL('/src/icons/48.png')} alt="" />
+			<img src={getURL('/src/icons/128.png')} width="48" alt="" />
 			<span class="ml-5 text-xl">Translater</span>
 		</div>
 

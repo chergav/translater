@@ -1,5 +1,5 @@
 <div class="p-3 flex items-center">
-	<img src={getURL('/src/icons/24.png')} width="24" alt="" />
+	<img src={getURL('/src/icons/48.png')} width="24" alt="" />
 	<span class="ml-3">Translater</span>
 </div>
 

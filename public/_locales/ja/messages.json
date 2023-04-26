@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "$NAME$ - 選択したテキストの翻訳",
+        "message": "Translater - 選択したテキストの翻訳",
         "placeholders": {
             "name": {
                 "content": "Translater"

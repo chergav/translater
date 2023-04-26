@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "$NAME$ - перевод выделенного текста",
+        "message": "Translater - перевод выделенного текста",
         "placeholders": {
             "name": {
                 "content": "Translater"
