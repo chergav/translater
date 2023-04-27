@@ -8,7 +8,7 @@
         }
     },
     "app_description": {
-        "message": "Übersetzung des ausgewählten Textes mit Google Übersetzer mit hellem und dunklem Design"
+        "message": "Übersetzung des ausgewählten Textes mit Google Translate mit hellem und dunklem Thema"
     },
     "context_menus_title": {
         "message": "Ausgewählten Text übersetzen"
@@ -40,7 +40,7 @@
         "message": "Schaltfläche anzeigen, wenn Text ausgewählt ist"
     },
     "options_text_field_button_show": {
-        "message": "Schaltfläche im Textfeld anzeigen"
+        "message": "Anzeigen Schaltfläche im Textfeld"
     },
     "options_hide_button_on_sites": {
         "message": "Schaltfläche auf diesen Sites ausblenden:"
@@ -67,7 +67,7 @@
         "message": "Verlauf löschen"
     },
     "options_delete_history_item": {
-        "message": "Aus Verlauf löschen"
+        "message": "Löschen aus Verlauf"
     },
     "text_expand": {
         "message": "Mehr"
@@ -112,7 +112,7 @@
         "message": "Standarddesign"
     },
     "tooltip_translate_text": {
-        "message": "Ausgewählten Text übersetzen"
+        "message": "Übersetzen ausgewählt text"
     },
     "tooltip_settings": {
         "message": "Einstellungen"
@@ -232,7 +232,7 @@
         "message": "friesisch"
     },
     "supported_languages_gl": {
-        "message": "galizisch"
+        "message": "galicisch"
     },
     "supported_languages_ka": {
         "message": "georgisch"
@@ -256,79 +256,82 @@
         "message": "hawaiisch"
     },
     "supported_languages_he": {
-        "message": "Hebräisch"
+        "message": "hebräisch"
+    },
+    "supported_languages_iw": {
+        "message": "hebräisch"
     },
     "supported_languages_hi": {
-        "message": "Hindi"
+        "message": "hindi"
     },
     "supported_languages_hu": {
-        "message": "Ungarisch"
+        "message": "ungarisch"
     },
     "supported_languages_is": {
-        "message": "Isländisch"
+        "message": "isländisch"
     },
     "supported_languages_ig": {
-        "message": "Ibo"
+        "message": "igbo"
     },
     "supported_languages_id": {
-        "message": "Indonesisch"
+        "message": "indonesisch"
     },
     "supported_languages_ga": {
-        "message": "Irisch"
+        "message": "irisch"
     },
     "supported_languages_it": {
-        "message": "Italienisch"
+        "message": "italienisch"
     },
     "supported_languages_ja": {
-        "message": "Japanisch"
+        "message": "japanisch"
     },
     "supported_languages_jv": {
-        "message": "Javanisch"
+        "message": "javanisch"
     },
     "supported_languages_kn": {
-        "message": "Kannada"
+        "message": "kannada"
     },
     "supported_languages_kk": {
-        "message": "Kasachisch"
+        "message": "kasachisch"
     },
     "supported_languages_km": {
-        "message": "Khmer"
+        "message": "khmer"
     },
     "supported_languages_ky": {
-        "message": "Kirgisisch"
+        "message": "kirgisisch"
     },
     "supported_languages_ko": {
-        "message": "Koreanisch"
+        "message": "koreanisch"
     },
     "supported_languages_ku": {
-        "message": "Kurdisch"
+        "message": "kurdisch"
     },
     "supported_languages_lo": {
-        "message": "Laotisch"
+        "message": "laotisch"
     },
     "supported_languages_la": {
-        "message": "Lateinisch"
+        "message": "lateinisch"
     },
     "supported_languages_lv": {
-        "message": "Lettisch"
+        "message": "lettisch"
     },
     "supported_languages_lt": {
-        "message": "Litauisch"
+        "message": "litauisch"
     },
     "supported_languages_lb": {
-        "message": "Luxemburgisch"
+        "message": "luxemburgisch"
     },
     "supported_languages_mk": {
-        "message": "Mazedonisch"
+        "message": "mazedonisch"
     },
     "supported_languages_mg": {
-        "message": "Malagasisch"
+        "message": "madagassisch"
     },
     "supported_languages_ms": {
-        "message": "Malaiisch"
+        "message": "malaiisch"
     },
     "supported_languages_ml": {
-        "message": "Malayalam"
+        "message": "malayalam"
     },
     "supported_languages_mt": {
         "message": "maltesisch"
@@ -400,7 +403,7 @@
         "message": "slowenisch"
     },
     "supported_languages_so": {
-        "message": "somalisch"
+        "message": "somali"
     },
     "supported_languages_sx": {
         "message": "sotho"

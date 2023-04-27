@@ -17,7 +17,7 @@
         "message": "Configuración"
     },
     "options_title": {
-        "message": "$NOMBRE$ - configuración",
+        "message": "$NOMBRE$: configuración",
         "placeholders": {
             "name": {
                 "content": "Translater"
@@ -25,7 +25,7 @@
         }
     },
     "options_tab_inline_translate": {
-        "message": "Lectura y entrada"
+        "message": "Lectura e ingreso"
     },
     "options_tab_popup_window": {
         "message": "Ventana emergente"
@@ -112,7 +112,7 @@
         "message": "Tema predeterminado"
     },
     "tooltip_translate_text": {
-        "message": "Traducir el texto seleccionado"
+        "message": "Traducir seleccionado texto"
     },
     "tooltip_settings": {
         "message": "Configuración"
@@ -256,6 +256,9 @@
         "message": "hawaiano"
     },
     "supported_languages_he": {
+        "message": "hebreo"
+    },
+    "supported_languages_iw": {
         "message": "hebreo"
     },
     "supported_languages_hi": {
@@ -430,7 +433,7 @@
         "message": "telugu"
     },
     "supported_languages_th": {
-        "message": "tailandés"
+        "message": "thai"
     },
     "supported_languages_tr": {
         "message": "turco"

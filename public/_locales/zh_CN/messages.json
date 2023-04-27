@@ -8,16 +8,16 @@
         }
     },
     "app_description": {
-        "message": "使用具有浅色和深色主题的谷歌翻译翻译所选文本"
+        "message": "Translation selected text with Google Translate with light and dark theme"
     },
     "context_menus_title": {
-        "message": "翻译所选文本"
+        "message": "Translate selected text"
     },
     "popup_menu_options": {
-        "message": "设置"
+        "message": "Settings"
     },
     "options_title": {
-        "message": "$NAME$ - 设置",
+        "message": "$NAME$ - settings",
         "placeholders": {
             "name": {
                 "content": "Translater"
@@ -25,22 +25,22 @@
         }
     },
     "options_tab_inline_translate": {
-        "message": "阅读和输入"
+        "message": "Reading and input"
     },
     "options_tab_popup_window": {
-        "message": "弹出窗口"
+        "message": "Popup window"
     },
     "options_tab_appearance": {
-        "message": "外观"
+        "message": "Appearance"
     },
     "options_tab_history": {
-        "message": "历史"
+        "message": "History"
     },
     "options_inline_button_show": {
-        "message": "选择文本时显示按钮"
+        "message": "Show button when text is selected"
     },
     "options_text_field_button_show": {
-        "message": "在文本字段中显示按钮"
+        "message": "Show文本字段中的按钮"
     },
     "options_hide_button_on_sites": {
         "message": "隐藏这些站点上的按钮："
@@ -67,7 +67,7 @@
         "message": "清除历史"
     },
     "options_delete_history_item": {
-        "message": "从历史记录中删除"
+        "message": "删除来自历史"
     },
     "text_expand": {
         "message": "更多"
@@ -76,10 +76,10 @@
         "message": "Сollapse"
     },
     "target_lang_label": {
-        "message": "转换为："
+        "message": "翻译成："
     },
     "popup_dictionary": {
-        "message": "词典"
+        "message": "字典"
     },
     "popup_dictionary_frequency": {
         "message": "频率"
@@ -91,16 +91,16 @@
         "message": "同义词："
     },
     "popup_examples": {
-        "message": "示例"
+        "message": "例子"
     },
     "popup_settings_disable_inline_button_for_site": {
-        "message": "禁用该站点的按钮"
+        "message": "禁用这个网站的按钮"
     },
     "popup_settings_enable_inline_button_global": {
-        "message": "显示所有站点的按钮"
+        "message": "显示所有网站的按钮"
     },
     "popup_settings_options_link": {
-        "message": "其他设置"
+        "message": "附加设置"
     },
     "theme_light": {
         "message": "浅色主题"
@@ -112,7 +112,7 @@
         "message": "默认主题"
     },
     "tooltip_translate_text": {
-        "message": "翻译选定的文本"
+        "message": "翻译选择文本"
     },
     "tooltip_settings": {
         "message": "设置"
@@ -258,80 +258,83 @@
     "supported_languages_he": {
         "message": "希伯来语"
     },
+    "supported_languages_iw": {
+        "message": "希伯来语"
+    },
     "supported_languages_hi": {
-        "message": "印地语"
+        "message": "hindi"
     },
     "supported_languages_hu": {
-        "message": "匈牙利语"
+        "message": "hungarian"
     },
     "supported_languages_is": {
-        "message": "冰岛语"
+        "message": "icelandic"
     },
     "supported_languages_ig": {
         "message": "igbo"
     },
     "supported_languages_id": {
-        "message": "印度尼西亚语"
+        "message": "indonesian"
     },
     "supported_languages_ga": {
-        "message": "爱尔兰语"
+        "message": "irish"
     },
     "supported_languages_it": {
-        "message": "意大利语"
+        "message": "italian"
     },
     "supported_languages_ja": {
-        "message": "日语"
+        "message": "japanese"
     },
     "supported_languages_jv": {
-        "message": "爪哇语"
+        "message": "javanese"
     },
     "supported_languages_kn": {
-        "message": "卡纳达语"
+        "message": "kannada"
     },
     "supported_languages_kk": {
-        "message": "哈萨克语"
+        "message": "kazakh"
     },
     "supported_languages_km": {
-        "message": "高棉语"
+        "message": "khmer"
     },
     "supported_languages_ky": {
-        "message": "吉尔吉斯语"
+        "message": "kirghiz"
     },
     "supported_languages_ko": {
-        "message": "韩国语"
+        "message": "korean"
     },
     "supported_languages_ku": {
-        "message": "库尔德语"
+        "message": "kurdish"
     },
     "supported_languages_lo": {
-        "message": "老挝语"
+        "message": "laotian"
     },
     "supported_languages_la": {
-        "message": "拉丁语"
+        "message": "latin"
     },
     "supported_languages_lv": {
-        "message": "拉脱维亚语"
+        "message": "latvian"
     },
     "supported_languages_lt": {
-        "message": "立陶宛语"
+        "message": "lithuanian"
     },
     "supported_languages_lb": {
-        "message": "卢森堡语"
+        "message": "luxembourgish"
     },
     "supported_languages_mk": {
-        "message": "马其顿语"
+        "message": "macedonian"
     },
     "supported_languages_mg": {
-        "message": "马拉加什语"
+        "message": "malagasy"
     },
     "supported_languages_ms": {
-        "message": "马来语"
+        "message": "malay"
     },
     "supported_languages_ml": {
-        "message": "马拉雅拉姆语"
+        "message": "malayalam"
     },
     "supported_languages_mt": {
-        "message": "马耳他语"
+        "message": "maltese"
     },
     "supported_languages_mi": {
         "message": "maori"

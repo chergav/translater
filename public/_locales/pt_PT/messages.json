@@ -8,10 +8,10 @@
         }
     },
     "app_description": {
-        "message": "Tradução do texto selecionado com o Google Tradutor com tema claro e escuro"
+        "message": "Tradução do texto selecionado com Google Tradutor com tema claro e escuro"
     },
     "context_menus_title": {
-        "message": "Traduzir o texto selecionado"
+        "message": "Traduzir texto selecionado"
     },
     "popup_menu_options": {
         "message": "Configurações"
@@ -67,7 +67,7 @@
         "message": "Limpar histórico"
     },
     "options_delete_history_item": {
-        "message": "Excluir do histórico"
+        "message": "Excluir da história"
     },
     "text_expand": {
         "message": "Mais"
@@ -112,7 +112,7 @@
         "message": "Tema padrão"
     },
     "tooltip_translate_text": {
-        "message": "Traduzir o texto selecionado"
+        "message": "Traduzir selecionado text"
     },
     "tooltip_settings": {
         "message": "Configurações"
@@ -256,6 +256,9 @@
         "message": "havaiano"
     },
     "supported_languages_he": {
+        "message": "hebraico"
+    },
+    "supported_languages_iw": {
         "message": "hebraico"
     },
     "supported_languages_hi": {
@@ -454,7 +457,7 @@
         "message": "xosa"
     },
     "supported_languages_yi": {
-        "message": "iídiche"
+        "message": "yiddish"
     },
     "supported_languages_yo": {
         "message": "yoruba"
@@ -463,7 +466,7 @@
         "message": "zulu"
     },
     "supported_languages_qu": {
-        "message": "quíchua"
+        "message": "quechua"
     },
     "supported_languages_om": {
         "message": "oromo"

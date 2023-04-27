@@ -40,10 +40,10 @@
         "message": "Afficher le bouton lorsque le texte est sélectionné"
     },
     "options_text_field_button_show": {
-        "message": "Afficher le bouton dans le champ de texte"
+        "message": "Afficher bouton dans le champ de texte"
     },
     "options_hide_button_on_sites": {
-        "message": "Masquer le bouton sur ces sites :"
+        "message": "Masquez le bouton sur ces sites :"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Vous pouvez ajouter des sites à l'aide du bouton des paramètres sur le site que vous souhaitez exclure"
@@ -112,7 +112,7 @@
         "message": "Thème par défaut"
     },
     "tooltip_translate_text": {
-        "message": "Traduire le texte sélectionné"
+        "message": "Traduire sélectionné texte"
     },
     "tooltip_settings": {
         "message": "Paramètres"
@@ -258,6 +258,9 @@
     "supported_languages_he": {
         "message": "hébreu"
     },
+    "supported_languages_iw": {
+        "message": "hébreu"
+    },
     "supported_languages_hi": {
         "message": "hindi"
     },
@@ -295,7 +298,7 @@
         "message": "khmer"
     },
     "supported_languages_ky": {
-        "message": "kirghiz"
+        "message": "kirghize"
     },
     "supported_languages_ko": {
         "message": "coréen"
@@ -424,7 +427,7 @@
         "message": "tajiki"
     },
     "supported_languages_ta": {
-        "message": "tamoul"
+        "message": "tamil"
     },
     "supported_languages_te": {
         "message": "telugu"
@@ -439,7 +442,7 @@
         "message": "ukrainien"
     },
     "supported_languages_ur": {
-        "message": "ourdou"
+        "message": "urdu"
     },
     "supported_languages_uz": {
         "message": "ouzbek"

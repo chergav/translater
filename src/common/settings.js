@@ -163,6 +163,10 @@ const languages = [
 		value: 'Hebrew'
 	},
 	{
+		key: 'iw',
+		value: 'Hebrew'
+	},
+	{
 		key: 'hi',
 		value: 'Hindi'
 	},

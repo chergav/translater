@@ -43,10 +43,10 @@
         "message": "Mostra pulsante nel campo di testo"
     },
     "options_hide_button_on_sites": {
-        "message": "Nascondi il pulsante su questi siti:"
+        "message": "Nascondere il pulsante su questi siti:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Puoi aggiungere siti utilizzando il pulsante delle impostazioni sul sito che desideri escludere"
+        "message": "È possibile aggiungere siti utilizzando il pulsante delle impostazioni sul sito che si desidera escludere"
     },
     "options_show_original_text": {
         "message": "Mostra testo sorgente"
@@ -67,13 +67,13 @@
         "message": "Cancella cronologia"
     },
     "options_delete_history_item": {
-        "message": "Elimina dalla cronologia"
+        "message": "Elimina dalla storia"
     },
     "text_expand": {
         "message": "Altro"
     },
     "text_collapse": {
-        "message": "Comprimi"
+        "message": "Сollapse"
     },
     "target_lang_label": {
         "message": "Traduci in:"
@@ -112,7 +112,7 @@
         "message": "Tema predefinito"
     },
     "tooltip_translate_text": {
-        "message": "Traduci il testo selezionato"
+        "message": "Traduci selezionato testo"
     },
     "tooltip_settings": {
         "message": "Impostazioni"
@@ -258,6 +258,9 @@
     "supported_languages_he": {
         "message": "ebraico"
     },
+    "supported_languages_iw": {
+        "message": "ebraico"
+    },
     "supported_languages_hi": {
         "message": "hindi"
     },
@@ -295,7 +298,7 @@
         "message": "khmer"
     },
     "supported_languages_ky": {
-        "message": "kirghiz"
+        "message": "kirghiso"
     },
     "supported_languages_ko": {
         "message": "coreano"

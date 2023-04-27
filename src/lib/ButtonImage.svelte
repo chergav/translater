@@ -16,16 +16,14 @@
 	{disabled}
 	on:click
 	on:mouseleave
-	on:longpress
 	use:action={tooltip}
-	use:longpress
 >
 	<slot />
 </button>
 
 <script>
 import { tooltip as action } from '~/lib/tooltip';
-import { longpress } from '~/content/utils/longpress';
+// import { longpress } from '~/content/utils/longpress';
 
 export let tooltip = {};
 export let disabled = false;

@@ -4,9 +4,6 @@
 			{disabled}
 			tooltip={{ title: getMessage('tooltip_go_back') }}
 			on:click={cachePrev}
-			on:longpress={() => {
-				console.log('longpress');					
-			}}
 		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"

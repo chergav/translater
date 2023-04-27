@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "Translater - переклад виділеного тексту",
+        "message": "Translater – переклад виділеного тексту",
         "placeholders": {
             "name": {
                 "content": "Translater"
@@ -8,16 +8,16 @@
         }
     },
     "app_description": {
-        "message": "Переклад виділеного тексту за допомогою Google Translate зі світлою та темною темою"
+        "message": "Переклад виділеного тексту за допомогою Google Translate зі світлою та темною темами"
     },
     "context_menus_title": {
-        "message": "Перекласти виділений текст"
+        "message": "Переклад виділеного тексту"
     },
     "popup_menu_options": {
         "message": "Налаштування"
     },
     "options_title": {
-        "message": "$NAME$ - налаштування",
+        "message": "$NAME$ – налаштування",
         "placeholders": {
             "name": {
                 "content": "Translater"
@@ -40,10 +40,10 @@
         "message": "Показувати кнопку, коли текст виділено"
     },
     "options_text_field_button_show": {
-        "message": "Показати кнопку в текстовому полі"
+        "message": "Показати кнопка в текстовому полі"
     },
     "options_hide_button_on_sites": {
-        "message": "Приховати кнопку на цих сайтах:"
+        "message": "Сховайте кнопку на цих сайтах:"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Ви можете додавати сайти за допомогою кнопки налаштувань на сайті, який потрібно виключити"
@@ -112,7 +112,7 @@
         "message": "Тема за замовчуванням"
     },
     "tooltip_translate_text": {
-        "message": "Перекласти виділений текст"
+        "message": "Перекласти вибрано текст"
     },
     "tooltip_settings": {
         "message": "Налаштування"
@@ -121,7 +121,7 @@
         "message": "Копіювати в буфер обміну"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "Копіювати не підтримується на сайтах HTTP"
+        "message": "Копіювання не підтримується на сайтах HTTP"
     },
     "tooltip_copyed": {
         "message": "Скопійовано!"
@@ -258,6 +258,9 @@
     "supported_languages_he": {
         "message": "hebrew"
     },
+    "supported_languages_iw": {
+        "message": "hebrew"
+    },
     "supported_languages_hi": {
         "message": "hindi"
     },
@@ -328,10 +331,10 @@
         "message": "malay"
     },
     "supported_languages_ml": {
-        "message": "malayalam"
+        "message": "малаялам"
     },
     "supported_languages_mt": {
-        "message": "мальтійська"
+        "message": "мальтійський"
     },
     "supported_languages_mi": {
         "message": "маорі"
@@ -340,7 +343,7 @@
         "message": "маратхі"
     },
     "supported_languages_mn": {
-        "message": "монгольська"
+        "message": "монгольський"
     },
     "supported_languages_hmn": {
         "message": "чернець"
@@ -352,16 +355,16 @@
         "message": "мепалі"
     },
     "supported_languages_no": {
-        "message": "норвезька"
+        "message": "норвезький"
     },
     "supported_languages_fa": {
-        "message": "перська"
+        "message": "перський"
     },
     "supported_languages_pl": {
-        "message": "польська"
+        "message": "польський"
     },
     "supported_languages_pt": {
-        "message": "португальська"
+        "message": "португальський"
     },
     "supported_languages_pa": {
         "message": "пенджабі"
@@ -370,19 +373,19 @@
         "message": "пушто"
     },
     "supported_languages_ro": {
-        "message": "румунська"
+        "message": "румунський"
     },
     "supported_languages_ru": {
-        "message": "російська"
+        "message": "російський"
     },
     "supported_languages_sm": {
-        "message": "самоанська"
+        "message": "самоанський"
     },
     "supported_languages_gd": {
-        "message": "шотландська гельська"
+        "message": "шотландський гельський"
     },
     "supported_languages_sr": {
-        "message": "сербська"
+        "message": "сербський"
     },
     "supported_languages_sn": {
         "message": "шона"
@@ -391,25 +394,25 @@
         "message": "синдхі"
     },
     "supported_languages_si": {
-        "message": "сингальська"
+        "message": "сингальський"
     },
     "supported_languages_sk": {
-        "message": "словацька"
+        "message": "словацький"
     },
     "supported_languages_sl": {
-        "message": "словенська"
+        "message": "словенський"
     },
     "supported_languages_so": {
         "message": "сомалі"
     },
     "supported_languages_sx": {
-        "message": "сото"
+        "message": "sotho"
     },
     "supported_languages_es": {
         "message": "іспанська"
     },
     "supported_languages_su": {
-        "message": "суданська"
+        "message": "sundanese"
     },
     "supported_languages_sw": {
         "message": "суахілі"
@@ -421,13 +424,13 @@
         "message": "тагальська"
     },
     "supported_languages_tg": {
-        "message": "таджики"
+        "message": "tadžiki"
     },
     "supported_languages_ta": {
         "message": "тамільська"
     },
     "supported_languages_te": {
-        "message": "телугу"
+        "message": "telugu"
     },
     "supported_languages_th": {
         "message": "тайська"
@@ -466,7 +469,7 @@
         "message": "кечуа"
     },
     "supported_languages_om": {
-        "message": "оромо"
+        "message": "oromo"
     },
     "supported_languages_ilo": {
         "message": "ilocano"

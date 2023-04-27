@@ -8,10 +8,10 @@
         }
     },
     "app_description": {
-        "message": "Vertaling van geselecteerde tekst met Google Translate met licht en donker thema"
+        "message": "Geselecteerde tekst vertalen met Google Translate met licht en donker thema"
     },
     "context_menus_title": {
-        "message": "Vertaal geselecteerde tekst"
+        "message": "Geselecteerde tekst vertalen"
     },
     "popup_menu_options": {
         "message": "Instellingen"
@@ -37,16 +37,16 @@
         "message": "Geschiedenis"
     },
     "options_inline_button_show": {
-        "message": "Toon knop wanneer tekst is geselecteerd"
+        "message": "Knop tonen wanneer tekst is geselecteerd"
     },
     "options_text_field_button_show": {
-        "message": "Toon knop in tekstveld"
+        "message": "Tonen knop in tekstveld"
     },
     "options_hide_button_on_sites": {
         "message": "Verberg de knop op deze sites:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "U kunt sites toevoegen met behulp van de instellingenknop op de site die u wilt uitsluiten"
+        "message": "U kunt sites toevoegen met de instellingenknop op de site die u wilt uitsluiten"
     },
     "options_show_original_text": {
         "message": "Toon brontekst"
@@ -67,7 +67,7 @@
         "message": "Geschiedenis wissen"
     },
     "options_delete_history_item": {
-        "message": "Verwijderen uit geschiedenis"
+        "message": "Verwijderen uit de geschiedenis"
     },
     "text_expand": {
         "message": "Meer"
@@ -112,7 +112,7 @@
         "message": "Standaardthema"
     },
     "tooltip_translate_text": {
-        "message": "Geselecteerde tekst vertalen"
+        "message": "Vertalen geselecteerd tekst"
     },
     "tooltip_settings": {
         "message": "Instellingen"
@@ -258,6 +258,9 @@
     "supported_languages_he": {
         "message": "hebreeuws"
     },
+    "supported_languages_iw": {
+        "message": "hebreeuws"
+    },
     "supported_languages_hi": {
         "message": "hindi"
     },
@@ -283,7 +286,7 @@
         "message": "japans"
     },
     "supported_languages_jv": {
-        "message": "javanees"
+        "message": "javanese"
     },
     "supported_languages_kn": {
         "message": "kannada"
@@ -355,7 +358,7 @@
         "message": "noors"
     },
     "supported_languages_fa": {
-        "message": "perzisch"
+        "message": "Perzisch"
     },
     "supported_languages_pl": {
         "message": "pools"
@@ -400,7 +403,7 @@
         "message": "sloveens"
     },
     "supported_languages_so": {
-        "message": "somali"
+        "message": "somalisch"
     },
     "supported_languages_sx": {
         "message": "sotho"
@@ -454,7 +457,7 @@
         "message": "xosa"
     },
     "supported_languages_yi": {
-        "message": "jiddisch"
+        "message": "yiddish"
     },
     "supported_languages_yo": {
         "message": "yoruba"

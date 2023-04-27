@@ -8,7 +8,7 @@
         }
     },
     "app_description": {
-        "message": "Google 翻訳で選択したテキストを明るいテーマと暗いテーマで翻訳"
+        "message": "Google で選択したテキストを明るいテーマと暗いテーマで翻訳"
     },
     "context_menus_title": {
         "message": "選択したテキストを翻訳"
@@ -40,10 +40,10 @@
         "message": "テキストが選択されたときにボタンを表示"
     },
     "options_text_field_button_show": {
-        "message": "テキストフィールドにボタンを表示"
+        "message": "表示ボタン"
     },
     "options_hide_button_on_sites": {
-        "message": "これらのサイトのボタンを非表示:"
+        "message": "これらのサイトのボタンを非表示にする:"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "除外したいサイトの設定ボタンを使用してサイトを追加できます"
@@ -64,16 +64,16 @@
         "message": "履歴を無効にする"
     },
     "options_clear_history": {
-        "message": "履歴をクリア"
+        "message": "履歴を消去"
     },
     "options_delete_history_item": {
-        "message": "履歴から削除"
+        "message": "削除履歴から"
     },
     "text_expand": {
         "message": "詳細"
     },
     "text_collapse": {
-        "message": "Сollapse"
+        "message": "Сcollapse"
     },
     "target_lang_label": {
         "message": "翻訳先:"
@@ -112,7 +112,7 @@
         "message": "デフォルトのテーマ"
     },
     "tooltip_translate_text": {
-        "message": "選択したテキストを翻訳"
+        "message": "選択した翻訳テキスト"
     },
     "tooltip_settings": {
         "message": "設定"
@@ -258,6 +258,9 @@
     "supported_languages_he": {
         "message": "ヘブライ語"
     },
+    "supported_languages_iw": {
+        "message": "ヘブライ語"
+    },
     "supported_languages_hi": {
         "message": "ヒンディー語"
     },
@@ -268,7 +271,7 @@
         "message": "アイスランド語"
     },
     "supported_languages_ig": {
-        "message": "イグボ語"
+        "message": "イボ語"
     },
     "supported_languages_id": {
         "message": "インドネシア語"
@@ -322,13 +325,13 @@
         "message": "マケドニア語"
     },
     "supported_languages_mg": {
-        "message": "マラガシ"
+        "message": "マラガス"
     },
     "supported_languages_ms": {
         "message": "マレー語"
     },
     "supported_languages_ml": {
-        "message": "マラヤラム"
+        "message": "マラヤーラム語"
     },
     "supported_languages_mt": {
         "message": "マルタ語"
@@ -343,7 +346,7 @@
         "message": "モンゴル語"
     },
     "supported_languages_hmn": {
-        "message": "モンク"
+        "message": "僧侶"
     },
     "supported_languages_my": {
         "message": "ミャンマー"
@@ -355,7 +358,7 @@
         "message": "ノルウェー語"
     },
     "supported_languages_fa": {
-        "message": "ペルシャ語"
+        "message": "ペルシア語"
     },
     "supported_languages_pl": {
         "message": "ポーランド語"
@@ -418,7 +421,7 @@
         "message": "スウェーデン語"
     },
     "supported_languages_tl": {
-        "message": "タジキ語"
+        "message": "タガログ語"
     },
     "supported_languages_tg": {
         "message": "タジキ語"
@@ -466,7 +469,7 @@
         "message": "ケチュア語"
     },
     "supported_languages_om": {
-        "message": "オロモ語"
+        "message": "オロモ"
     },
     "supported_languages_ilo": {
         "message": "イロカーノ語"

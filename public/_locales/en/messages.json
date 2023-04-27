@@ -258,6 +258,9 @@
 	"supported_languages_he": {
 		"message": "hebrew"
 	},
+	"supported_languages_iw": {
+		"message": "hebrew"
+	},
 	"supported_languages_hi": {
 		"message": "hindi"
 	},

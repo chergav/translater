@@ -8,7 +8,7 @@
         }
     },
     "app_description": {
-        "message": "Tłumaczenie zaznaczonego tekstu za pomocą Tłumacza Google z jasnym i ciemnym motywem"
+        "message": "Tłumaczenie zaznaczonego tekstu za pomocą Google Tłumacz"
     },
     "context_menus_title": {
         "message": "Przetłumacz zaznaczony tekst"
@@ -25,7 +25,7 @@
         }
     },
     "options_tab_inline_translate": {
-        "message": "Czytanie i wprowadzanie danych"
+        "message": "Odczyt i wprowadzanie danych"
     },
     "options_tab_popup_window": {
         "message": "Okno wyskakujące"
@@ -67,7 +67,7 @@
         "message": "Wyczyść historię"
     },
     "options_delete_history_item": {
-        "message": "Usuń z historii"
+        "message": "Usuń"
     },
     "text_expand": {
         "message": "Więcej"
@@ -112,7 +112,7 @@
         "message": "Domyślny motyw"
     },
     "tooltip_translate_text": {
-        "message": "Przetłumacz zaznaczony tekst"
+        "message": "Przetłumacz wybrane tekst"
     },
     "tooltip_settings": {
         "message": "Ustawienia"
@@ -121,7 +121,7 @@
         "message": "Kopiuj do schowka"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "Kopiowanie nie jest obsługiwane na stronach HTTP"
+        "message": "Kopiowanie nie jest obsługiwane w witrynach HTTP"
     },
     "tooltip_copyed": {
         "message": "Skopiowano!"
@@ -258,6 +258,9 @@
     "supported_languages_he": {
         "message": "hebrajski"
     },
+    "supported_languages_iw": {
+        "message": "hebrajski"
+    },
     "supported_languages_hi": {
         "message": "hindi"
     },
@@ -343,7 +346,7 @@
         "message": "mongolski"
     },
     "supported_languages_hmn": {
-        "message": "mnich"
+        "message": "monk"
     },
     "supported_languages_my": {
         "message": "myanmar"
@@ -364,7 +367,7 @@
         "message": "portugalski"
     },
     "supported_languages_pa": {
-        "message": "pendżabski"
+        "message": "punjabi"
     },
     "supported_languages_ps": {
         "message": "pushto"

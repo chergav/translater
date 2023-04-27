@@ -8,7 +8,7 @@
         }
     },
     "app_description": {
-        "message": "Перевод выделенного текста с помощью Google Translate со светлой и темной темами"
+        "message": "Перевод выделенного текста с помощью Google Translate со светлой и темной темой"
     },
     "context_menus_title": {
         "message": "Перевод выделенного текста"
@@ -37,10 +37,10 @@
         "message": "История"
     },
     "options_inline_button_show": {
-        "message": "Показывать кнопку при выделении текста"
+        "message": "Показать кнопку при выделении текста"
     },
     "options_text_field_button_show": {
-        "message": "Показать кнопку в текстовом поле"
+        "message": "Показать кнопка в текстовом поле"
     },
     "options_hide_button_on_sites": {
         "message": "Скрыть кнопку на этих сайтах:"
@@ -112,7 +112,7 @@
         "message": "Тема по умолчанию"
     },
     "tooltip_translate_text": {
-        "message": "Перевести выделенный текст"
+        "message": "Перевести выбранное текст"
     },
     "tooltip_settings": {
         "message": "Настройки"
@@ -184,7 +184,7 @@
         "message": "болгарский"
     },
     "supported_languages_ca": {
-        "message": "каталанский"
+        "message": "каталонский"
     },
     "supported_languages_ceb": {
         "message": "кебуанский"
@@ -256,6 +256,9 @@
         "message": "гавайский"
     },
     "supported_languages_he": {
+        "message": "иврит"
+    },
+    "supported_languages_iw": {
         "message": "иврит"
     },
     "supported_languages_hi": {
@@ -346,7 +349,7 @@
         "message": "монах"
     },
     "supported_languages_my": {
-        "message": "мьянмарский"
+        "message": "мьянманский"
     },
     "supported_languages_ne": {
         "message": "мепальский"
