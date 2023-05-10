@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "Vertaler - vertaling van geselecteerde tekst",
+        "message": "Translater - vertaling van geselecteerde tekst",
         "placeholders": {
             "name": {
                 "content": "Translater"

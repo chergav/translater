@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "번역기 - 선택한 텍스트 번역",
+        "message": "Translater - 선택한 텍스트 번역",
         "placeholders": {
             "name": {
                 "content": "Translater"
