@@ -19,7 +19,13 @@ const storageListener = callback => {
 	});
 };
 
-const getMessage = msg => chrome.i18n.getMessage(msg);
+const getMessage = msg => {
+	try {
+		return chrome.i18n.getMessage(msg);
+	} catch {
+		// no console error
+	}
+};
 
 const getURL = path => chrome.runtime.getURL(path);
 

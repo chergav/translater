@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "Translater - tłumaczenie zaznaczonego tekstu",
+        "message": "Tłumacz - tłumaczenie zaznaczonego tekstu",
         "placeholders": {
             "name": {
                 "content": "Translater"
@@ -67,7 +67,7 @@
         "message": "Wyczyść historię"
     },
     "options_delete_history_item": {
-        "message": "Usuń"
+        "message": "Usuń z historii"
     },
     "text_expand": {
         "message": "Więcej"
@@ -132,8 +132,11 @@
     "tooltip_listen_to_the_text": {
         "message": "Posłuchaj tekstu"
     },
+    "tooltip_listen_stop": {
+        "message": "Zatrzymaj"
+    },
     "tooltip_listen_language_is_not_support": {
-        "message": "Przeglądarka nie obsługuje języka"
+        "message": "Język nie jest obsługiwany"
     },
     "tooltip_go_back": {
         "message": "Wstecz"
@@ -163,7 +166,7 @@
         "message": "arabski"
     },
     "supported_languages_hy": {
-        "message": "ormiański"
+        "message": "armeński"
     },
     "supported_languages_az": {
         "message": "azerbejdżański"
@@ -346,13 +349,13 @@
         "message": "mongolski"
     },
     "supported_languages_hmn": {
-        "message": "monk"
+        "message": "mnich"
     },
     "supported_languages_my": {
         "message": "myanmar"
     },
     "supported_languages_ne": {
-        "message": "mepali"
+        "message": "mepalski"
     },
     "supported_languages_no": {
         "message": "norweski"
@@ -424,7 +427,7 @@
         "message": "tagalski"
     },
     "supported_languages_tg": {
-        "message": "tadzki"
+        "message": "tadżycki"
     },
     "supported_languages_ta": {
         "message": "tamilski"

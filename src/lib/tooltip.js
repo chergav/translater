@@ -43,12 +43,10 @@ export const tooltip = (element, { title = '', placement = 'top', delay = 300 } 
 
 	return {
 		update(newOptions) {
+			title = newOptions.title;
 			if (tooltipComponent) {
-				tooltipComponent.$set(newOptions);
-			} else {
-				title = newOptions.title;
+				tooltipComponent.$set({ title });
 			}
-
 		},
 		destroy() {
 			element.removeEventListener('pointerenter', createTooltip);

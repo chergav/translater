@@ -9,7 +9,9 @@ const initData = {
 	selectedElemRect: null,
 	selectedEndCoord: null,
 	voices: null,
-	translateCache: []
+	cacheTranslate: [],
+	cacheTTS: [],
+	audioContextSource: null
 };
 
 export const store = writable(initData);

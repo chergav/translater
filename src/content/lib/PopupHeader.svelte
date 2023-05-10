@@ -60,9 +60,9 @@ let cacheIndex = -1,
 	disabledPrev = false,
 	disabledNext = true;
 
-$: disabled = $store.translateCache.length < 2 || disabledPrev;
+$: disabled = $store.cacheTranslate.length < 2 || disabledPrev;
 
-const historyItem = index => $store.translateCache.at(index);
+const historyItem = index => $store.cacheTranslate.at(index);
 
 const promise = data => new Promise((res, _) => { res(data); });
 
@@ -74,7 +74,7 @@ const cacheItem = index => {
 	$store.sourceLang = item.src;
 	$persistentStore.targetLang = item.targetLang;
 
-	if (index <= -$store.translateCache.length) {
+	if (index <= -$store.cacheTranslate.length) {
 		disabledPrev = true;
 	} else {
 		disabledPrev = false;

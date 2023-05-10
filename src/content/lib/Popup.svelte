@@ -31,8 +31,8 @@
 				on:change={handleTranslate}
 				{languages}
 			/>
-			<ButtonCopy textToCopy={translate.sentences.orig} />
-			<ButtonTTS textToSpeech={translate.sentences.orig} langCode={$store.sourceLang} />
+			<ButtonCopy text={translate.sentences.orig} />
+			<ButtonTTS text={translate.sentences.orig} lang={$store.sourceLang} />
 		</div>
 		{#if originalOpen}
 			<div
@@ -60,11 +60,8 @@
 				on:change={handleTranslate}
 				{languages}
 			/>
-			<ButtonCopy textToCopy={translate.sentences.trans} />
-			<ButtonTTS
-				textToSpeech={translate.sentences.trans}
-				langCode={$persistentStore.targetLang}
-			/>
+			<ButtonCopy text={translate.sentences.trans} />
+			<ButtonTTS text={translate.sentences.trans} lang={$persistentStore.targetLang} />
 		</div>
 		{#if translateOpen}
 			<div
@@ -212,7 +209,7 @@ const fetchTranslate = async (sourceLang, targetLang, selectedText) => {
 		console.error('Error occurred while fetching translation: ', error);
 		throw error;
 	}
-}
+};
 
 const getTranslate = async () => {
 	const sentences = {};
@@ -220,7 +217,7 @@ const getTranslate = async () => {
     const selectedText = $store.selectedText;
     const sourceLang = $store.sourceLang;
 
-	const cached = $store.translateCache.find(i =>
+	const cached = $store.cacheTranslate.find(i =>
 		i.sentences.orig === selectedText &&
 		i.targetLang === targetLang &&
 		i.src === sourceLang
@@ -244,7 +241,7 @@ const getTranslate = async () => {
 		translate.sentences = sentences;
 		translate.targetLang = targetLang;
 
-		$store.translateCache = [...$store.translateCache, translate];
+		$store.cacheTranslate = [...$store.cacheTranslate, translate];
 
 		historyAdd({
 			sourceLang: $store.sourceLang,

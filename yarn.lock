@@ -30,16 +30,17 @@
   dependencies:
     regenerator-runtime "^0.13.11"
 
-"@crxjs/vite-plugin@^2.0.0-beta.16":
-  version "2.0.0-beta.16"
-  resolved "https://registry.yarnpkg.com/@crxjs/vite-plugin/-/vite-plugin-2.0.0-beta.16.tgz#6ab65dd2d531b61a7e40787579f9433d56fb92b2"
-  integrity sha512-/XO6sWmVKcBiHFyCpTD1RtbKbFh7gLOUZxymBQ5EuLnlW/hD80yDWDNvYKFr2xl2YwWkM1100RusR+HwaRssHA==
+"@crxjs/vite-plugin@^2.0.0-beta.17":
+  version "2.0.0-beta.17"
+  resolved "https://registry.yarnpkg.com/@crxjs/vite-plugin/-/vite-plugin-2.0.0-beta.17.tgz#e6d6a57a9e346ae335c3eb5c0c2cc8a75f4d777e"
+  integrity sha512-44CavnsY01jvF2uHfRdqA3j6bg6IcVc+ZrSayYS+H7eqb6BHWh619A2jJ3Y0eHVh9H65041ob4g6I1VMxWx4qw==
   dependencies:
     "@rollup/pluginutils" "^4.1.2"
     "@webcomponents/custom-elements" "^1.5.0"
     acorn-walk "^8.2.0"
     cheerio "^1.0.0-rc.10"
     connect-injector "^0.4.4"
+    convert-source-map "^1.7.0"
     debug "^4.3.3"
     es-module-lexer "^0.10.0"
     fast-glob "^3.2.11"
@@ -974,6 +975,11 @@ connect-injector@^0.4.4:
     q "^1.0.1"
     stream-buffers "^0.2.3"
     uberproto "^1.1.0"
+
+convert-source-map@^1.7.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-1.9.0.tgz#7faae62353fb4213366d0ca98358d22e8368b05f"
+  integrity sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==
 
 core-js@3.29.0:
   version "3.29.0"

@@ -4,6 +4,7 @@
 	on:mouseleave={() => {
 		copySuccess = false;
 		copyFailure = false;
+		title = getMessage('tooltip_copy_to_clipboard');
 	}}
 	tooltip={{ title }}
 >
@@ -31,7 +32,7 @@
 import { getMessage } from '~/common/browserApi';
 import ButtonImage from '~/lib/ButtonImage.svelte';
 
-export let textToCopy;
+export let text;
 
 let copySuccess = false,
 	copyFailure = false,
@@ -43,13 +44,11 @@ let title = isClipboardSupport
 
 const copyToClipboard = async () => {
 	try {
-		await navigator.clipboard.writeText(textToCopy);
+		await navigator.clipboard.writeText(text);
 		copySuccess = true;
-		title = '';
 		title = getMessage('tooltip_copyed');
 	} catch (error) {
 		copyFailure = true;
-		title = '';
 		title = `<span class="text-red-500">${getMessage('tooltip_copy_error')}</span>`;
 		console.log(
 			`Can't copy to clipboard. Possibly, you are on unsecure http page.\nError message: ${error}`

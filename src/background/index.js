@@ -1,7 +1,11 @@
-import { googleTranslate } from '~/common/googleApi';
+import { googleTranslate, googleTTS } from '~/common/googleApi';
 
 const sendMessage = async (tabId, message) => {
-	chrome.tabs.sendMessage(tabId, message);
+	try {
+		await chrome.tabs.sendMessage(tabId, message);
+	} catch {
+		// if content script not loaded
+	}
 };
 
 chrome.runtime.onInstalled.addListener(() => {
@@ -28,6 +32,9 @@ const handleMessage = (message, sender, sendResponse) => {
 	switch (message.type) {
 	case 'getTranslate':
 		getTranslate(message.content).then(sendResponse);
+		break;
+	case 'getTranslateTTS':
+		googleTTS(message.content).then(sendResponse);
 		break;
 	case 'openOptionsPage':
 		chrome.tabs.create({

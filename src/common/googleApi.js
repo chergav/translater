@@ -1,6 +1,10 @@
-const generateRequestURL = ({ sourceLang = 'auto', targetLang = 'auto', selectedText = '' } = {}) => {
+const googleTranslateURL = ({
+	sourceLang = 'auto',
+	targetLang = 'auto',
+	selectedText = ''
+} = {}) => {
 	// https://stackoverflow.com/questions/26714426/what-is-the-meaning-of-google-translate-query-params
-	const queryParams = {
+	const searchParams = new URLSearchParams({
 		client: 'gtx',
 		sl: sourceLang,
 		tl: targetLang,
@@ -13,17 +17,18 @@ const generateRequestURL = ({ sourceLang = 'auto', targetLang = 'auto', selected
 		kc: '7',
 		dj: '1',
 		q: selectedText
-	};
+	});
 
-	const searchParams = new URLSearchParams(queryParams);
+	['at', 'bd', 'ex', 'ld', 'md', 'qca', 'rw', 'rm', 'ss', 't'].forEach(i =>
+		searchParams.append('dt', i)
+	);
 
-	['at', 'bd', 'ex', 'ld', 'md', 'qca', 'rw', 'rm', 'ss', 't'].forEach(i => searchParams.append('dt', i));
-
-	return `https://translate.google.com/translate_a/single?${searchParams}`;
+	// return `https://translate.google.com/translate_a/single?${searchParams}`;
+	return `https://translate.googleapis.com/translate_a/single?${searchParams}`;
 };
 
 const googleTranslate = async params => {
-	const url = generateRequestURL(params);
+	const url = googleTranslateURL(params);
 
 	try {
 		const data = await fetch(url);
@@ -33,4 +38,37 @@ const googleTranslate = async params => {
 	}
 };
 
-export { googleTranslate };
+const googleTTSURL = ({ lang = 'en', text = '' } = {}) => {
+	const searchParams = new URLSearchParams({
+		// client: 'tw-ob',
+		client: 'gtx',
+		// ttsspeed: '0.8',
+		ie: 'UTF-8',
+		tl: lang,
+		q: text.substring(0, 200) // text <= 200 character limit
+	});
+
+	return `https://translate.googleapis.com/translate_tts?${searchParams}`;
+};
+
+const googleTTS = async params => {
+	const url = googleTTSURL(params);
+	console.log(params, url);
+
+	try {
+		const response = await fetch(url);
+
+		if (response.ok) {
+			const ab = await response.arrayBuffer();
+			const array = Array.from(new Uint8Array(ab));
+			console.log(array);
+			return { status: true, data: array };
+		} else {
+			return { status: false };
+		}
+	} catch (error) {
+		console.error(`Google Translate TTS api error: ${error}`);
+	}
+};
+
+export { googleTranslate, googleTTS };

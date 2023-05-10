@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "Translater - vertaling van geselecteerde tekst",
+        "message": "Vertaler - vertaling van geselecteerde tekst",
         "placeholders": {
             "name": {
                 "content": "Translater"
@@ -132,8 +132,11 @@
     "tooltip_listen_to_the_text": {
         "message": "Luister naar de tekst"
     },
+    "tooltip_listen_stop": {
+        "message": "Stop"
+    },
     "tooltip_listen_language_is_not_support": {
-        "message": "Taal wordt niet ondersteund door browser"
+        "message": "Taal wordt niet ondersteund"
     },
     "tooltip_go_back": {
         "message": "Terug"
@@ -148,7 +151,7 @@
         "message": "gisteren"
     },
     "select_language_auto": {
-        "message": "taal detecteren"
+        "message": "detecteer taal"
     },
     "supported_languages_af": {
         "message": "afrikaans"

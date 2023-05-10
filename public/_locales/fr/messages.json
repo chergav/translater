@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "Translater - traduction du texte sélectionné",
+        "message": "Traducteur - traduction du texte sélectionné",
         "placeholders": {
             "name": {
                 "content": "Translater"
@@ -130,10 +130,13 @@
         "message": "Erreur de copie !"
     },
     "tooltip_listen_to_the_text": {
-        "message": "Écoutez le texte"
+        "message": "Écouter le texte"
+    },
+    "tooltip_listen_stop": {
+        "message": "Arrêter"
     },
     "tooltip_listen_language_is_not_support": {
-        "message": "La langue n'est pas prise en charge par le navigateur"
+        "message": "La langue n'est pas prise en charge"
     },
     "tooltip_go_back": {
         "message": "Précédent"

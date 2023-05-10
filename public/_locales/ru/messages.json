@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "Translater - перевод выделенного текста",
+        "message": "Переводчик - перевод выделенного текста",
         "placeholders": {
             "name": {
                 "content": "Translater"
@@ -8,7 +8,7 @@
         }
     },
     "app_description": {
-        "message": "Перевод выделенного текста с помощью Google Translate со светлой и темной темой"
+        "message": "Перевод выделенного текста с помощью Google Translate со светлой и темной темами"
     },
     "context_menus_title": {
         "message": "Перевод выделенного текста"
@@ -132,8 +132,11 @@
     "tooltip_listen_to_the_text": {
         "message": "Прослушать текст"
     },
+    "tooltip_listen_stop": {
+        "message": "Стоп"
+    },
     "tooltip_listen_language_is_not_support": {
-        "message": "Язык не поддерживается браузером"
+        "message": "Язык не поддерживается"
     },
     "tooltip_go_back": {
         "message": "Назад"
@@ -184,7 +187,7 @@
         "message": "болгарский"
     },
     "supported_languages_ca": {
-        "message": "каталонский"
+        "message": "каталанский"
     },
     "supported_languages_ceb": {
         "message": "кебуанский"
@@ -352,7 +355,7 @@
         "message": "мьянманский"
     },
     "supported_languages_ne": {
-        "message": "мепальский"
+        "message": "мепали"
     },
     "supported_languages_no": {
         "message": "норвежский"
@@ -367,7 +370,7 @@
         "message": "португальский"
     },
     "supported_languages_pa": {
-        "message": "пенджаби"
+        "message": "панджаби"
     },
     "supported_languages_ps": {
         "message": "пушту"
