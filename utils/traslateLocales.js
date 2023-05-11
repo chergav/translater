@@ -26,7 +26,19 @@ const genTranslatedObject = (origObject, translatedArray) => {
 
 	for (let i = 0; i < objectKeys.length; i++) {
 		const key = objectKeys[i];
+
 		clonedObject[key].message = translatedArray[i].trim();
+
+		if (key === 'app_name') {
+			clonedObject[key].message = `Translater ${clonedObject[key].message}`;
+			console.log(clonedObject[key]);
+		}
+
+		if (key === 'options_title') {
+			// $ APP_NAME $ -> $APP_NAME$
+			clonedObject[key].message = clonedObject[key].message.replace(/\$\s*(\w+)\s*\$/g, (match, p1) => `$${p1}$`);
+			console.log(clonedObject[key].message);
+		}
 	}
 
 	return clonedObject;
@@ -39,11 +51,12 @@ const translateFile = async (inputFile, locales) => {
 
 	const translationsByLocale = await Promise.all(
 		locales.map(async locale => {
+			const delimiter = '\n';
 			const response = await fetch(
-				generateRequestURL({ text: messageArray.join(' @ '), targetLang: locale })
+				generateRequestURL({ text: messageArray.join(delimiter), targetLang: locale })
 			);
 			const data = await response.json();
-			const translatedArray = data.sentences?.reduce((a, v) => (a += v.trans), '').split('@');
+			const translatedArray = data.sentences?.reduce((a, v) => (a += v.trans), '').split(delimiter);
 			return { locale, translatedArray };
 		})
 	);
@@ -62,30 +75,30 @@ const translateFile = async (inputFile, locales) => {
 };
 
 const locales = [
-	// 'ar',
-	'de',
-	// 'el',
-	'es',
-	// 'et',
-	// 'fa',
-	// 'fi',
-	'fr',
-	// 'he',
-	'it',
-	'ja',
-	'ko',
-	'nl',
-	// 'no',
-	'pl',
-	'pt_BR',
-	'pt_PT',
-	'ru',
-	// 'sv',
-	// 'tr',
-	'uk',
-	'zh_CN',
-	'zh_TW'
+	'ar', // Arabic
+	'de', // German
+	'el', // Greek
+	'es', // Spanish
+	'et', // Estonian
+	'fa', // Persian
+	'fi', // Finnish
+	'fr', // French
+	'he', // Hebrew
+	'id', // Indonesian
+	'it', // Italian
+	'ja', // Japanese
+	'ko', // Korean
+	'nl', // Dutch
+	'no', // Norwegian
+	'pl', // Polish
+	'pt_BR', // Portuguese (Brazil)
+	'pt_PT', // Portuguese (Portugal)
+	'ru', // Russian
+	'sv', // Swedish
+	'tr', // Turkish
+	'uk', // Ukrainian
+	'zh_CN', // Chinese (Simplified)
+	'zh_TW' // Chinese (Traditional)
 ];
-// const locales = ['ru'];
 
 translateFile('public/_locales/en/messages.json', locales);
