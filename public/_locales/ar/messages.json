@@ -1,0 +1,475 @@
+{
+    "app_name": {
+        "message": "Translater - ترجمة النص المختار"
+    },
+    "app_description": {
+        "message": "ترجمة النص المحدد باستخدام Google Translate مع مظهر فاتح وداكن"
+    },
+    "context_menus_title": {
+        "message": "ترجمة النص المحدد"
+    },
+    "popup_menu_options": {
+        "message": "إعدادات"
+    },
+    "options_title": {
+        "message": "$APP_NAME$ - الإعدادات",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "options_tab_inline_translate": {
+        "message": "القراءة والمدخلات"
+    },
+    "options_tab_popup_window": {
+        "message": "نافذة منبثقة"
+    },
+    "options_tab_appearance": {
+        "message": "المظهر الخارجي"
+    },
+    "options_tab_history": {
+        "message": "تاريخ"
+    },
+    "options_inline_button_show": {
+        "message": "زر \"إظهار\" عند تحديد النص"
+    },
+    "options_text_field_button_show": {
+        "message": "زر إظهار في textfield"
+    },
+    "options_hide_button_on_sites": {
+        "message": "إخفاء الزر في هذه المواقع:"
+    },
+    "options_hide_button_on_sites_empty_list": {
+        "message": "يمكنك إضافة مواقع باستخدام زر الإعدادات على الموقع الذي تريد استبعاده"
+    },
+    "options_show_original_text": {
+        "message": "إظهار نص المصدر"
+    },
+    "options_show_transliteration": {
+        "message": "إظهار التحويل الصوتي"
+    },
+    "options_history_length": {
+        "message": "طول التاريخ"
+    },
+    "options_records_in_history": {
+        "message": "إدخالات في التاريخ:"
+    },
+    "options_history_disable": {
+        "message": "تعطيل المحفوظات"
+    },
+    "options_clear_history": {
+        "message": "حذف التاريخ"
+    },
+    "options_delete_history_item": {
+        "message": "حذف من التاريخ"
+    },
+    "text_expand": {
+        "message": "أكثر"
+    },
+    "text_collapse": {
+        "message": "انهيار"
+    },
+    "target_lang_label": {
+        "message": "ترجمة الى:"
+    },
+    "popup_dictionary": {
+        "message": "قاموس"
+    },
+    "popup_dictionary_frequency": {
+        "message": "تكرار"
+    },
+    "popup_definitions": {
+        "message": "تعريفات"
+    },
+    "popup_definitions_synonyms": {
+        "message": "المرادفات:"
+    },
+    "popup_examples": {
+        "message": "أمثلة"
+    },
+    "popup_settings_disable_inline_button_for_site": {
+        "message": "تعطيل الزر لهذا الموقع"
+    },
+    "popup_settings_enable_inline_button_global": {
+        "message": "أظهر الزر لجميع المواقع"
+    },
+    "popup_settings_options_link": {
+        "message": "إعدادات إضافية"
+    },
+    "theme_light": {
+        "message": "مظهر خفيف"
+    },
+    "theme_dark": {
+        "message": "مظهر داكن"
+    },
+    "theme_system": {
+        "message": "السمة الافتراضية"
+    },
+    "tooltip_translate_text": {
+        "message": "ترجمة النص المحدد"
+    },
+    "tooltip_settings": {
+        "message": "إعدادات"
+    },
+    "tooltip_copy_to_clipboard": {
+        "message": "نسخ إلى الحافظة"
+    },
+    "tooltip_copy_not_support_on_http": {
+        "message": "لا يتم دعم النسخ على مواقع HTTP"
+    },
+    "tooltip_copyed": {
+        "message": "نسخ!"
+    },
+    "tooltip_copy_error": {
+        "message": "خطأ في النسخ!"
+    },
+    "tooltip_listen_to_the_text": {
+        "message": "استمع إلى النص"
+    },
+    "tooltip_listen_stop": {
+        "message": "قف"
+    },
+    "tooltip_listen_language_is_not_support": {
+        "message": "اللغة لا تدعم"
+    },
+    "tooltip_go_back": {
+        "message": "خلف"
+    },
+    "tooltip_go_forward": {
+        "message": "إلى الأمام"
+    },
+    "date_today": {
+        "message": "اليوم"
+    },
+    "date_yesterday": {
+        "message": "أمس"
+    },
+    "select_language_auto": {
+        "message": "اكتشاف اللغة"
+    },
+    "supported_languages_af": {
+        "message": "الأفريقي"
+    },
+    "supported_languages_sq": {
+        "message": "الألبانية"
+    },
+    "supported_languages_am": {
+        "message": "الأمهرية"
+    },
+    "supported_languages_ar": {
+        "message": "عربي"
+    },
+    "supported_languages_hy": {
+        "message": "أرميني"
+    },
+    "supported_languages_az": {
+        "message": "أذربيجان"
+    },
+    "supported_languages_eu": {
+        "message": "الباسك"
+    },
+    "supported_languages_be": {
+        "message": "بيلاروسيا"
+    },
+    "supported_languages_bn": {
+        "message": "البنغالية"
+    },
+    "supported_languages_bs": {
+        "message": "البوسني"
+    },
+    "supported_languages_bg": {
+        "message": "البلغارية"
+    },
+    "supported_languages_ca": {
+        "message": "الكاتالونية"
+    },
+    "supported_languages_ceb": {
+        "message": "سيبيونو"
+    },
+    "supported_languages_ny": {
+        "message": "شوا"
+    },
+    "supported_languages_zh_CN": {
+        "message": "الصينية المبسطة)"
+    },
+    "supported_languages_zh_TW": {
+        "message": "تقاليد صينية)"
+    },
+    "supported_languages_co": {
+        "message": "كورسيكان"
+    },
+    "supported_languages_hr": {
+        "message": "الكرواتية"
+    },
+    "supported_languages_cs": {
+        "message": "التشيكية"
+    },
+    "supported_languages_da": {
+        "message": "دانماركي"
+    },
+    "supported_languages_nl": {
+        "message": "هولندي"
+    },
+    "supported_languages_en": {
+        "message": "إنجليزي"
+    },
+    "supported_languages_eo": {
+        "message": "اسبرانتو"
+    },
+    "supported_languages_et": {
+        "message": "الإستونية"
+    },
+    "supported_languages_fi": {
+        "message": "الفنلندية"
+    },
+    "supported_languages_fr": {
+        "message": "فرنسي"
+    },
+    "supported_languages_fy": {
+        "message": "الفريزيان"
+    },
+    "supported_languages_gl": {
+        "message": "الجاليكية"
+    },
+    "supported_languages_ka": {
+        "message": "الجورجية"
+    },
+    "supported_languages_de": {
+        "message": "ألمانية"
+    },
+    "supported_languages_el": {
+        "message": "اليونانية"
+    },
+    "supported_languages_gu": {
+        "message": "الغوجاراتية"
+    },
+    "supported_languages_ht": {
+        "message": "هايتي"
+    },
+    "supported_languages_ha": {
+        "message": "هاوسا"
+    },
+    "supported_languages_haw": {
+        "message": "هاواي"
+    },
+    "supported_languages_he": {
+        "message": "اللغة العبرية"
+    },
+    "supported_languages_iw": {
+        "message": "اللغة العبرية"
+    },
+    "supported_languages_hi": {
+        "message": "الهندية"
+    },
+    "supported_languages_hu": {
+        "message": "المجرية"
+    },
+    "supported_languages_is": {
+        "message": "آيسلندي"
+    },
+    "supported_languages_ig": {
+        "message": "igbo"
+    },
+    "supported_languages_id": {
+        "message": "إندونيسي"
+    },
+    "supported_languages_ga": {
+        "message": "الأيرلندية"
+    },
+    "supported_languages_it": {
+        "message": "الايطالية"
+    },
+    "supported_languages_ja": {
+        "message": "اليابانية"
+    },
+    "supported_languages_jv": {
+        "message": "الجاوي"
+    },
+    "supported_languages_kn": {
+        "message": "الكانادا"
+    },
+    "supported_languages_kk": {
+        "message": "كازاخستان"
+    },
+    "supported_languages_km": {
+        "message": "الخمير"
+    },
+    "supported_languages_ky": {
+        "message": "قرغيز"
+    },
+    "supported_languages_ko": {
+        "message": "الكورية"
+    },
+    "supported_languages_ku": {
+        "message": "كردي"
+    },
+    "supported_languages_lo": {
+        "message": "لاوسي"
+    },
+    "supported_languages_la": {
+        "message": "لاتينية"
+    },
+    "supported_languages_lv": {
+        "message": "لاتفي"
+    },
+    "supported_languages_lt": {
+        "message": "الليتواني"
+    },
+    "supported_languages_lb": {
+        "message": "فاخر"
+    },
+    "supported_languages_mk": {
+        "message": "مقدونيا"
+    },
+    "supported_languages_mg": {
+        "message": "الملغاشية"
+    },
+    "supported_languages_ms": {
+        "message": "لغة الملايو"
+    },
+    "supported_languages_ml": {
+        "message": "المالايالامية"
+    },
+    "supported_languages_mt": {
+        "message": "المالطية"
+    },
+    "supported_languages_mi": {
+        "message": "الماوري"
+    },
+    "supported_languages_mr": {
+        "message": "المهاراتية"
+    },
+    "supported_languages_mn": {
+        "message": "المنغولية"
+    },
+    "supported_languages_hmn": {
+        "message": "راهب"
+    },
+    "supported_languages_my": {
+        "message": "ميانمار"
+    },
+    "supported_languages_ne": {
+        "message": "ميبالي"
+    },
+    "supported_languages_no": {
+        "message": "النرويجية"
+    },
+    "supported_languages_fa": {
+        "message": "اللغة الفارسية"
+    },
+    "supported_languages_pl": {
+        "message": "تلميع"
+    },
+    "supported_languages_pt": {
+        "message": "البرتغالية"
+    },
+    "supported_languages_pa": {
+        "message": "البنجابية"
+    },
+    "supported_languages_ps": {
+        "message": "يدفع الى"
+    },
+    "supported_languages_ro": {
+        "message": "روماني"
+    },
+    "supported_languages_ru": {
+        "message": "الروسية"
+    },
+    "supported_languages_sm": {
+        "message": "ساموان"
+    },
+    "supported_languages_gd": {
+        "message": "الاسكتلندي الجيلي"
+    },
+    "supported_languages_sr": {
+        "message": "الصربية"
+    },
+    "supported_languages_sn": {
+        "message": "شونا"
+    },
+    "supported_languages_sd": {
+        "message": "السندية"
+    },
+    "supported_languages_si": {
+        "message": "السنهالية"
+    },
+    "supported_languages_sk": {
+        "message": "سلوفاكي"
+    },
+    "supported_languages_sl": {
+        "message": "السلوفينية"
+    },
+    "supported_languages_so": {
+        "message": "الصومالية"
+    },
+    "supported_languages_sx": {
+        "message": "سوتو"
+    },
+    "supported_languages_es": {
+        "message": "الأسبانية"
+    },
+    "supported_languages_su": {
+        "message": "سوندانيس"
+    },
+    "supported_languages_sw": {
+        "message": "السواحيلية"
+    },
+    "supported_languages_sv": {
+        "message": "السويدية"
+    },
+    "supported_languages_tl": {
+        "message": "تاجالوج"
+    },
+    "supported_languages_tg": {
+        "message": "تاجيكي"
+    },
+    "supported_languages_ta": {
+        "message": "التاميل"
+    },
+    "supported_languages_te": {
+        "message": "التيلجو"
+    },
+    "supported_languages_th": {
+        "message": "التايلاندية"
+    },
+    "supported_languages_tr": {
+        "message": "اللغة التركية"
+    },
+    "supported_languages_uk": {
+        "message": "اوكراني"
+    },
+    "supported_languages_ur": {
+        "message": "الأردية"
+    },
+    "supported_languages_uz": {
+        "message": "أوزبك"
+    },
+    "supported_languages_vi": {
+        "message": "فيتنامي"
+    },
+    "supported_languages_cy": {
+        "message": "تهرب من دفع الرهان"
+    },
+    "supported_languages_xh": {
+        "message": "اكسوسا"
+    },
+    "supported_languages_yi": {
+        "message": "اليديشية"
+    },
+    "supported_languages_yo": {
+        "message": "اليوروبا"
+    },
+    "supported_languages_zu": {
+        "message": "الزولو"
+    },
+    "supported_languages_qu": {
+        "message": "كيتشوا"
+    },
+    "supported_languages_om": {
+        "message": "أورومو"
+    },
+    "supported_languages_ilo": {
+        "message": "ilocano"
+    }
+}

@@ -1,25 +1,20 @@
 {
     "app_name": {
-        "message": "Translater - 選択したテキストの翻訳",
-        "placeholders": {
-            "name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - 選択したテキストの翻訳"
     },
     "app_description": {
-        "message": "Google で選択したテキストを明るいテーマと暗いテーマで翻訳"
+        "message": "選択したテキストを Google 翻訳で明るいテーマと暗いテーマで翻訳します"
     },
     "context_menus_title": {
-        "message": "選択したテキストを翻訳"
+        "message": "選択したテキストを翻訳する"
     },
     "popup_menu_options": {
         "message": "設定"
     },
     "options_title": {
-        "message": "$NAME$ - 設定",
+        "message": "$APP_NAME$ - 設定",
         "placeholders": {
-            "name": {
+            "app_name": {
                 "content": "Translater"
             }
         }
@@ -28,22 +23,22 @@
         "message": "読み取りと入力"
     },
     "options_tab_popup_window": {
-        "message": "ポップアップ ウィンドウ"
+        "message": "ポップアップウィンドウ"
     },
     "options_tab_appearance": {
         "message": "外観"
     },
     "options_tab_history": {
-        "message": "履歴"
+        "message": "歴史"
     },
     "options_inline_button_show": {
-        "message": "テキストが選択されたときにボタンを表示"
+        "message": "テキストが選択されているときにボタンを表示する"
     },
     "options_text_field_button_show": {
-        "message": "表示テキストフィールドのボタン"
+        "message": "テキストフィールドにボタンを表示"
     },
     "options_hide_button_on_sites": {
-        "message": "これらのサイトのボタンを非表示にする:"
+        "message": "次のサイトのボタンを非表示にします。"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "除外したいサイトの設定ボタンを使用してサイトを追加できます"
@@ -52,28 +47,28 @@
         "message": "ソーステキストを表示"
     },
     "options_show_transliteration": {
-        "message": "文字変換を表示"
+        "message": "音訳を表示"
     },
     "options_history_length": {
-        "message": "履歴の長さ"
+        "message": "歴史の長さ"
     },
     "options_records_in_history": {
-        "message": "履歴の記録:"
+        "message": "履歴のエントリ:"
     },
     "options_history_disable": {
         "message": "履歴を無効にする"
     },
     "options_clear_history": {
-        "message": "履歴を消去"
+        "message": "履歴の削除"
     },
     "options_delete_history_item": {
-        "message": "削除履歴から"
+        "message": "履歴から削除"
     },
     "text_expand": {
-        "message": "詳細"
+        "message": "もっと"
     },
     "text_collapse": {
-        "message": "Сcollapse"
+        "message": "折りたたむ"
     },
     "target_lang_label": {
         "message": "翻訳先:"
@@ -82,7 +77,7 @@
         "message": "辞書"
     },
     "popup_dictionary_frequency": {
-        "message": "頻度"
+        "message": "周波数"
     },
     "popup_definitions": {
         "message": "定義"
@@ -100,10 +95,10 @@
         "message": "すべてのサイトのボタンを表示する"
     },
     "popup_settings_options_link": {
-        "message": "追加設定"
+        "message": "追加の設定"
     },
     "theme_light": {
-        "message": "明るいテーマ"
+        "message": "ライトテーマ"
     },
     "theme_dark": {
         "message": "暗いテーマ"
@@ -112,7 +107,7 @@
         "message": "デフォルトのテーマ"
     },
     "tooltip_translate_text": {
-        "message": "選択した翻訳テキスト"
+        "message": "選択したテキストを翻訳する"
     },
     "tooltip_settings": {
         "message": "設定"
@@ -124,16 +119,16 @@
         "message": "コピーは HTTP サイトではサポートされていません"
     },
     "tooltip_copyed": {
-        "message": "コピー済み!"
+        "message": "コピーしました！"
     },
     "tooltip_copy_error": {
-        "message": "コピーエラー！"
+        "message": "コピーエラーです！"
     },
     "tooltip_listen_to_the_text": {
         "message": "テキストを聞く"
     },
     "tooltip_listen_stop": {
-        "message": "停止"
+        "message": "ストップ"
     },
     "tooltip_listen_language_is_not_support": {
         "message": "言語はサポートされていません"
@@ -142,7 +137,7 @@
         "message": "戻る"
     },
     "tooltip_go_forward": {
-        "message": "進む"
+        "message": "前方"
     },
     "date_today": {
         "message": "今日"
@@ -154,55 +149,55 @@
         "message": "言語を検出"
     },
     "supported_languages_af": {
-        "message": "アフリカ系"
+        "message": "アフリカの"
     },
     "supported_languages_sq": {
-        "message": "アルバニア系"
+        "message": "アルバニア人"
     },
     "supported_languages_am": {
-        "message": "アムハラ系"
+        "message": "アムハラ語"
     },
     "supported_languages_ar": {
         "message": "アラビア語"
     },
     "supported_languages_hy": {
-        "message": "アルメニア系"
+        "message": "アルメニア人"
     },
     "supported_languages_az": {
-        "message": "アゼルバイジャン系"
+        "message": "アゼルバイジャン語"
     },
     "supported_languages_eu": {
-        "message": "バスク系"
+        "message": "バスク語"
     },
     "supported_languages_be": {
-        "message": "ベラルーシ系"
+        "message": "ベラルーシ語"
     },
     "supported_languages_bn": {
-        "message": "ベンガル系"
+        "message": "ベンガル語"
     },
     "supported_languages_bs": {
-        "message": "ボスニア系"
+        "message": "ボスニア人"
     },
     "supported_languages_bg": {
-        "message": "ブルガリア系"
+        "message": "ブルガリア語"
     },
     "supported_languages_ca": {
-        "message": "カタロニア系"
+        "message": "カタロニア語"
     },
     "supported_languages_ceb": {
-        "message": "セブアノ系"
+        "message": "セブアノ人"
     },
     "supported_languages_ny": {
-        "message": "チュア"
+        "message": "チュワ"
     },
     "supported_languages_zh_CN": {
-        "message": "中国語 (簡体字)"
+        "message": "中国語（簡体字）"
     },
     "supported_languages_zh_TW": {
-        "message": "中国語 (繁体字)"
+        "message": "中国の伝統的な）"
     },
     "supported_languages_co": {
-        "message": "コルシカ語"
+        "message": "コルシカ島の"
     },
     "supported_languages_hr": {
         "message": "クロアチア語"
@@ -214,16 +209,16 @@
         "message": "デンマーク語"
     },
     "supported_languages_nl": {
-        "message": "オランダ語"
+        "message": "オランダの"
     },
     "supported_languages_en": {
         "message": "英語"
     },
     "supported_languages_eo": {
-        "message": "エスペラント語"
+        "message": "エスペラント"
     },
     "supported_languages_et": {
-        "message": "エストニア語"
+        "message": "エストニア人"
     },
     "supported_languages_fi": {
         "message": "フィンランド語"
@@ -232,16 +227,16 @@
         "message": "フランス語"
     },
     "supported_languages_fy": {
-        "message": "フリジア語"
+        "message": "フリジア人"
     },
     "supported_languages_gl": {
         "message": "ガリシア語"
     },
     "supported_languages_ka": {
-        "message": "グルジア語"
+        "message": "ジョージア語"
     },
     "supported_languages_de": {
-        "message": "ドイツ語"
+        "message": "ドイツ人"
     },
     "supported_languages_el": {
         "message": "ギリシャ語"
@@ -250,13 +245,13 @@
         "message": "グジャラート語"
     },
     "supported_languages_ht": {
-        "message": "ハイチ語"
+        "message": "ハイチ人"
     },
     "supported_languages_ha": {
-        "message": "ハウサ"
+        "message": "ハウサ語"
     },
     "supported_languages_haw": {
-        "message": "ハワイ語"
+        "message": "ハワイアン"
     },
     "supported_languages_he": {
         "message": "ヘブライ語"
@@ -268,7 +263,7 @@
         "message": "ヒンディー語"
     },
     "supported_languages_hu": {
-        "message": "ハンガリー語"
+        "message": "ハンガリー人"
     },
     "supported_languages_is": {
         "message": "アイスランド語"
@@ -277,16 +272,16 @@
         "message": "イボ語"
     },
     "supported_languages_id": {
-        "message": "インドネシア語"
+        "message": "インドネシア人"
     },
     "supported_languages_ga": {
-        "message": "アイルランド語"
+        "message": "アイルランド人"
     },
     "supported_languages_it": {
-        "message": "イタリア語"
+        "message": "イタリアの"
     },
     "supported_languages_ja": {
-        "message": "日本語"
+        "message": "日本"
     },
     "supported_languages_jv": {
         "message": "ジャワ語"
@@ -307,13 +302,13 @@
         "message": "韓国語"
     },
     "supported_languages_ku": {
-        "message": "クルド語"
+        "message": "クルド"
     },
     "supported_languages_lo": {
         "message": "ラオス語"
     },
     "supported_languages_la": {
-        "message": "ラテン語"
+        "message": "ラテン"
     },
     "supported_languages_lv": {
         "message": "ラトビア語"
@@ -325,10 +320,10 @@
         "message": "ルクセンブルク語"
     },
     "supported_languages_mk": {
-        "message": "マケドニア語"
+        "message": "マケドニアの"
     },
     "supported_languages_mg": {
-        "message": "マラガス"
+        "message": "マダガスカル語"
     },
     "supported_languages_ms": {
         "message": "マレー語"
@@ -346,7 +341,7 @@
         "message": "マラーティー語"
     },
     "supported_languages_mn": {
-        "message": "モンゴル語"
+        "message": "モンゴル人"
     },
     "supported_languages_hmn": {
         "message": "モンク"
@@ -355,7 +350,7 @@
         "message": "ミャンマー"
     },
     "supported_languages_ne": {
-        "message": "メパーリ語"
+        "message": "メパリ"
     },
     "supported_languages_no": {
         "message": "ノルウェー語"
@@ -364,7 +359,7 @@
         "message": "ペルシア語"
     },
     "supported_languages_pl": {
-        "message": "ポーランド語"
+        "message": "研磨"
     },
     "supported_languages_pt": {
         "message": "ポルトガル語"
@@ -373,28 +368,28 @@
         "message": "パンジャブ語"
     },
     "supported_languages_ps": {
-        "message": "プッシュ語"
+        "message": "プッシュト"
     },
     "supported_languages_ro": {
         "message": "ルーマニア語"
     },
     "supported_languages_ru": {
-        "message": "ロシア語"
+        "message": "ロシア"
     },
     "supported_languages_sm": {
         "message": "サモア語"
     },
     "supported_languages_gd": {
-        "message": "スコットランド ゲール語"
+        "message": "スコットランドゲール語"
     },
     "supported_languages_sr": {
         "message": "セルビア語"
     },
     "supported_languages_sn": {
-        "message": "ショナ語"
+        "message": "ショナ"
     },
     "supported_languages_sd": {
-        "message": "シンディ語"
+        "message": "シンド語"
     },
     "supported_languages_si": {
         "message": "シンハラ語"
@@ -421,7 +416,7 @@
         "message": "スワヒリ語"
     },
     "supported_languages_sv": {
-        "message": "スウェーデン語"
+        "message": "スウェーデンの"
     },
     "supported_languages_tl": {
         "message": "タガログ語"
@@ -436,13 +431,13 @@
         "message": "テルグ語"
     },
     "supported_languages_th": {
-        "message": "タイ語"
+        "message": "タイ人"
     },
     "supported_languages_tr": {
         "message": "トルコ語"
     },
     "supported_languages_uk": {
-        "message": "ウクライナ語"
+        "message": "ウクライナ人"
     },
     "supported_languages_ur": {
         "message": "ウルドゥー語"
@@ -457,7 +452,7 @@
         "message": "ウェールズ語"
     },
     "supported_languages_xh": {
-        "message": "クソサ語"
+        "message": "ソサ"
     },
     "supported_languages_yi": {
         "message": "イディッシュ語"
@@ -475,6 +470,6 @@
         "message": "オロモ"
     },
     "supported_languages_ilo": {
-        "message": "イロカーノ語"
+        "message": "イロカノ"
     }
 }

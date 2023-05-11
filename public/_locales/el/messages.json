@@ -1,0 +1,475 @@
+{
+    "app_name": {
+        "message": "Translater - μετάφραση επιλεγμένου κειμένου"
+    },
+    "app_description": {
+        "message": "Μετάφραση επιλεγμένου κειμένου με το Google Translate με ανοιχτό και σκοτεινό θέμα"
+    },
+    "context_menus_title": {
+        "message": "Μετάφραση επιλεγμένου κειμένου"
+    },
+    "popup_menu_options": {
+        "message": "Ρυθμίσεις"
+    },
+    "options_title": {
+        "message": "$APP_NAME$ - ρυθμίσεις",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "options_tab_inline_translate": {
+        "message": "Ανάγνωση και εισαγωγή"
+    },
+    "options_tab_popup_window": {
+        "message": "Αναδυόμενο παράθυρο"
+    },
+    "options_tab_appearance": {
+        "message": "Εξωτερική εμφάνιση"
+    },
+    "options_tab_history": {
+        "message": "Ιστορία"
+    },
+    "options_inline_button_show": {
+        "message": "Εμφάνιση κουμπιού όταν είναι επιλεγμένο κείμενο"
+    },
+    "options_text_field_button_show": {
+        "message": "Εμφάνιση κουμπιού στο πεδίο κειμένου"
+    },
+    "options_hide_button_on_sites": {
+        "message": "Απόκρυψη του κουμπιού σε αυτούς τους ιστότοπους:"
+    },
+    "options_hide_button_on_sites_empty_list": {
+        "message": "Μπορείτε να προσθέσετε ιστότοπους χρησιμοποιώντας το κουμπί ρυθμίσεων στον ιστότοπο που θέλετε να εξαιρέσετε"
+    },
+    "options_show_original_text": {
+        "message": "Εμφάνιση κειμένου πηγής"
+    },
+    "options_show_transliteration": {
+        "message": "Εμφάνιση μεταγραφής"
+    },
+    "options_history_length": {
+        "message": "Διάρκεια ιστορίας"
+    },
+    "options_records_in_history": {
+        "message": "Εγγραφές στην ιστορία:"
+    },
+    "options_history_disable": {
+        "message": "Απενεργοποίηση ιστορικού"
+    },
+    "options_clear_history": {
+        "message": "Διαγραφή ιστορικού"
+    },
+    "options_delete_history_item": {
+        "message": "Διαγραφή από το ιστορικό"
+    },
+    "text_expand": {
+        "message": "Περισσότερο"
+    },
+    "text_collapse": {
+        "message": "Κατάρρευση"
+    },
+    "target_lang_label": {
+        "message": "Μετάφραση σε:"
+    },
+    "popup_dictionary": {
+        "message": "Λεξικό"
+    },
+    "popup_dictionary_frequency": {
+        "message": "Συχνότητα"
+    },
+    "popup_definitions": {
+        "message": "Ορισμοί"
+    },
+    "popup_definitions_synonyms": {
+        "message": "Συνώνυμα:"
+    },
+    "popup_examples": {
+        "message": "Παραδείγματα"
+    },
+    "popup_settings_disable_inline_button_for_site": {
+        "message": "Απενεργοποιήστε το κουμπί για αυτόν τον ιστότοπο"
+    },
+    "popup_settings_enable_inline_button_global": {
+        "message": "Εμφάνιση του κουμπιού για όλους τους ιστότοπους"
+    },
+    "popup_settings_options_link": {
+        "message": "Επιπρόσθετες ρυθμίσεις"
+    },
+    "theme_light": {
+        "message": "Ελαφρύ θέμα"
+    },
+    "theme_dark": {
+        "message": "Σκοτεινό θέμα"
+    },
+    "theme_system": {
+        "message": "Προεπιλεγμένο θέμα"
+    },
+    "tooltip_translate_text": {
+        "message": "Μετάφραση επιλεγμένου κειμένου"
+    },
+    "tooltip_settings": {
+        "message": "Ρυθμίσεις"
+    },
+    "tooltip_copy_to_clipboard": {
+        "message": "Αντιγραφή στο πρόχειρο"
+    },
+    "tooltip_copy_not_support_on_http": {
+        "message": "Η αντιγραφή δεν υποστηρίζεται σε ιστότοπους HTTP"
+    },
+    "tooltip_copyed": {
+        "message": "Αντιγράφηκε!"
+    },
+    "tooltip_copy_error": {
+        "message": "Σφάλμα αντιγραφής!"
+    },
+    "tooltip_listen_to_the_text": {
+        "message": "Ακούστε κείμενο"
+    },
+    "tooltip_listen_stop": {
+        "message": "Να σταματήσει"
+    },
+    "tooltip_listen_language_is_not_support": {
+        "message": "Η γλώσσα δεν υποστηρίζεται"
+    },
+    "tooltip_go_back": {
+        "message": "Πίσω"
+    },
+    "tooltip_go_forward": {
+        "message": "Προς τα εμπρός"
+    },
+    "date_today": {
+        "message": "σήμερα"
+    },
+    "date_yesterday": {
+        "message": "εχθές"
+    },
+    "select_language_auto": {
+        "message": "εντοπισμός γλώσσας"
+    },
+    "supported_languages_af": {
+        "message": "αφρικανός"
+    },
+    "supported_languages_sq": {
+        "message": "Αλβανός"
+    },
+    "supported_languages_am": {
+        "message": "αμχαρικός"
+    },
+    "supported_languages_ar": {
+        "message": "αραβικός"
+    },
+    "supported_languages_hy": {
+        "message": "αρμενικός"
+    },
+    "supported_languages_az": {
+        "message": "Αζερμπαϊτζάν"
+    },
+    "supported_languages_eu": {
+        "message": "βασκική"
+    },
+    "supported_languages_be": {
+        "message": "μπαλλικανική"
+    },
+    "supported_languages_bn": {
+        "message": "Μπενγκάλι"
+    },
+    "supported_languages_bs": {
+        "message": "βοσνιακός"
+    },
+    "supported_languages_bg": {
+        "message": "Βούλγαρος"
+    },
+    "supported_languages_ca": {
+        "message": "καταλανικά"
+    },
+    "supported_languages_ceb": {
+        "message": "σεμπουάνο"
+    },
+    "supported_languages_ny": {
+        "message": "μασάω"
+    },
+    "supported_languages_zh_CN": {
+        "message": "απλοποιημένα Κινέζικα)"
+    },
+    "supported_languages_zh_TW": {
+        "message": "Παραδοσιακά κινέζικα)"
+    },
+    "supported_languages_co": {
+        "message": "Κορσικανός"
+    },
+    "supported_languages_hr": {
+        "message": "Κροατία"
+    },
+    "supported_languages_cs": {
+        "message": "Τσέχος"
+    },
+    "supported_languages_da": {
+        "message": "δανικός"
+    },
+    "supported_languages_nl": {
+        "message": "Ολλανδός"
+    },
+    "supported_languages_en": {
+        "message": "Αγγλικά"
+    },
+    "supported_languages_eo": {
+        "message": "εσπεράντο"
+    },
+    "supported_languages_et": {
+        "message": "εσθονικά"
+    },
+    "supported_languages_fi": {
+        "message": "φινλανδικός"
+    },
+    "supported_languages_fr": {
+        "message": "γαλλική γλώσσα"
+    },
+    "supported_languages_fy": {
+        "message": "φρισιανός"
+    },
+    "supported_languages_gl": {
+        "message": "Γαλλικός"
+    },
+    "supported_languages_ka": {
+        "message": "γεωργιανή"
+    },
+    "supported_languages_de": {
+        "message": "Γερμανός"
+    },
+    "supported_languages_el": {
+        "message": "Ελληνικά"
+    },
+    "supported_languages_gu": {
+        "message": "γκουτζαράτι"
+    },
+    "supported_languages_ht": {
+        "message": "Αϊτή"
+    },
+    "supported_languages_ha": {
+        "message": "hausa"
+    },
+    "supported_languages_haw": {
+        "message": "Χαβάης"
+    },
+    "supported_languages_he": {
+        "message": "Εβραϊκά"
+    },
+    "supported_languages_iw": {
+        "message": "Εβραϊκά"
+    },
+    "supported_languages_hi": {
+        "message": "χίντι"
+    },
+    "supported_languages_hu": {
+        "message": "ουγγρικός"
+    },
+    "supported_languages_is": {
+        "message": "ισλανδικός"
+    },
+    "supported_languages_ig": {
+        "message": "igbo"
+    },
+    "supported_languages_id": {
+        "message": "ινδονησιακά"
+    },
+    "supported_languages_ga": {
+        "message": "ιρλανδικός"
+    },
+    "supported_languages_it": {
+        "message": "ιταλικός"
+    },
+    "supported_languages_ja": {
+        "message": "Ιαπωνικά"
+    },
+    "supported_languages_jv": {
+        "message": "ιαβανέζικο"
+    },
+    "supported_languages_kn": {
+        "message": "κανάντα"
+    },
+    "supported_languages_kk": {
+        "message": "καζακικά"
+    },
+    "supported_languages_km": {
+        "message": "χμερ"
+    },
+    "supported_languages_ky": {
+        "message": "κιργιζικά"
+    },
+    "supported_languages_ko": {
+        "message": "κορεάτης"
+    },
+    "supported_languages_ku": {
+        "message": "κουρδική"
+    },
+    "supported_languages_lo": {
+        "message": "λαοτικός"
+    },
+    "supported_languages_la": {
+        "message": "λατινικά"
+    },
+    "supported_languages_lv": {
+        "message": "λετονική"
+    },
+    "supported_languages_lt": {
+        "message": "λιθουανός"
+    },
+    "supported_languages_lb": {
+        "message": "λουξεμβουργιανός"
+    },
+    "supported_languages_mk": {
+        "message": "Μακεδόνας"
+    },
+    "supported_languages_mg": {
+        "message": "μαλαγασιά"
+    },
+    "supported_languages_ms": {
+        "message": "Μαλαισίας"
+    },
+    "supported_languages_ml": {
+        "message": "μαλαγιαλάμ"
+    },
+    "supported_languages_mt": {
+        "message": "μαλτέζος"
+    },
+    "supported_languages_mi": {
+        "message": "Μαορί"
+    },
+    "supported_languages_mr": {
+        "message": "μαράθι"
+    },
+    "supported_languages_mn": {
+        "message": "Μογγόλος"
+    },
+    "supported_languages_hmn": {
+        "message": "καλόγερος"
+    },
+    "supported_languages_my": {
+        "message": "μιανμάρ"
+    },
+    "supported_languages_ne": {
+        "message": "mepali"
+    },
+    "supported_languages_no": {
+        "message": "Νορβηγός"
+    },
+    "supported_languages_fa": {
+        "message": "περσικός"
+    },
+    "supported_languages_pl": {
+        "message": "στίλβωση"
+    },
+    "supported_languages_pt": {
+        "message": "Πορτογαλικά"
+    },
+    "supported_languages_pa": {
+        "message": "παντζάμπι"
+    },
+    "supported_languages_ps": {
+        "message": "pushto"
+    },
+    "supported_languages_ro": {
+        "message": "ρουμανικός"
+    },
+    "supported_languages_ru": {
+        "message": "Ρωσική"
+    },
+    "supported_languages_sm": {
+        "message": "σαμόα"
+    },
+    "supported_languages_gd": {
+        "message": "σκωτσέζικο γαλελικό"
+    },
+    "supported_languages_sr": {
+        "message": "Σέρβος"
+    },
+    "supported_languages_sn": {
+        "message": "shona"
+    },
+    "supported_languages_sd": {
+        "message": "Σίντι"
+    },
+    "supported_languages_si": {
+        "message": "σινχαλα"
+    },
+    "supported_languages_sk": {
+        "message": "Σλοβάκος"
+    },
+    "supported_languages_sl": {
+        "message": "σλοβενική"
+    },
+    "supported_languages_so": {
+        "message": "σομαλικά"
+    },
+    "supported_languages_sx": {
+        "message": "σόθο"
+    },
+    "supported_languages_es": {
+        "message": "Ισπανικά"
+    },
+    "supported_languages_su": {
+        "message": "Σουντανέζος"
+    },
+    "supported_languages_sw": {
+        "message": "Σουαχίλι"
+    },
+    "supported_languages_sv": {
+        "message": "Σουηδικά"
+    },
+    "supported_languages_tl": {
+        "message": "tagalog"
+    },
+    "supported_languages_tg": {
+        "message": "τατζίκι"
+    },
+    "supported_languages_ta": {
+        "message": "ταμίλ"
+    },
+    "supported_languages_te": {
+        "message": "Τελούγκου"
+    },
+    "supported_languages_th": {
+        "message": "ταϊλανδικά"
+    },
+    "supported_languages_tr": {
+        "message": "τούρκικος"
+    },
+    "supported_languages_uk": {
+        "message": "Ουκρανός"
+    },
+    "supported_languages_ur": {
+        "message": "ουρντού"
+    },
+    "supported_languages_uz": {
+        "message": "ουζμπέκικο"
+    },
+    "supported_languages_vi": {
+        "message": "Βιετναμέζικο"
+    },
+    "supported_languages_cy": {
+        "message": "δεν πληρώνω τα οφειλόμενα"
+    },
+    "supported_languages_xh": {
+        "message": "xosa"
+    },
+    "supported_languages_yi": {
+        "message": "γερμανοεβραϊκή διάλεκτος"
+    },
+    "supported_languages_yo": {
+        "message": "γιορούμπα"
+    },
+    "supported_languages_zu": {
+        "message": "Ζουλού"
+    },
+    "supported_languages_qu": {
+        "message": "κέτσουα"
+    },
+    "supported_languages_om": {
+        "message": "ορομο"
+    },
+    "supported_languages_ilo": {
+        "message": "ilocano"
+    }
+}

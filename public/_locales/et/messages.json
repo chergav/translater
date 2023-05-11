@@ -1,18 +1,18 @@
 {
     "app_name": {
-        "message": "Translater - 所選文本的翻譯"
+        "message": "Translater - valitud teksti tõlkimine"
     },
     "app_description": {
-        "message": "使用帶有淺色和深色主題的谷歌翻譯翻譯選定的文本"
+        "message": "Tõlkige valitud tekst heleda ja tumeda teemaga Google'i tõlkega"
     },
     "context_menus_title": {
-        "message": "翻譯選定的文本"
+        "message": "Tõlgi valitud tekst"
     },
     "popup_menu_options": {
-        "message": "設置"
+        "message": "Seaded"
     },
     "options_title": {
-        "message": "$APP_NAME$ - 設置",
+        "message": "$APP_NAME$ – seaded",
         "placeholders": {
             "app_name": {
                 "content": "Translater"
@@ -20,456 +20,456 @@
         }
     },
     "options_tab_inline_translate": {
-        "message": "讀取和輸入"
+        "message": "Lugemine ja sisestamine"
     },
     "options_tab_popup_window": {
-        "message": "彈出窗口"
+        "message": "Hüpikaken"
     },
     "options_tab_appearance": {
-        "message": "外觀"
+        "message": "Väline välimus"
     },
     "options_tab_history": {
-        "message": "歷史"
+        "message": "Ajalugu"
     },
     "options_inline_button_show": {
-        "message": "選擇文本時顯示按鈕"
+        "message": "Näita nuppu, kui tekst on valitud"
     },
     "options_text_field_button_show": {
-        "message": "在文本字段中顯示按鈕"
+        "message": "Kuva nupp tekstiväljal"
     },
     "options_hide_button_on_sites": {
-        "message": "隱藏這些網站上的按鈕："
+        "message": "Peida nupp nendel saitidel:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "您可以使用要排除的網站上的設置按鈕添加網站"
+        "message": "Saate saite lisada, kasutades välistatava saidi seadete nuppu"
     },
     "options_show_original_text": {
-        "message": "顯示源文本"
+        "message": "Kuva lähtetekst"
     },
     "options_show_transliteration": {
-        "message": "顯示音譯"
+        "message": "Kuva transliteratsioon"
     },
     "options_history_length": {
-        "message": "歷史長度"
+        "message": "Ajaloo pikkus"
     },
     "options_records_in_history": {
-        "message": "歷史條目："
+        "message": "Sissekanded ajalukku:"
     },
     "options_history_disable": {
-        "message": "禁用歷史記錄"
+        "message": "Keela ajalugu"
     },
     "options_clear_history": {
-        "message": "刪除歷史記錄"
+        "message": "Kustuta ajalugu"
     },
     "options_delete_history_item": {
-        "message": "從歷史記錄中刪除"
+        "message": "Kustuta ajaloost"
     },
     "text_expand": {
-        "message": "更多的"
+        "message": "Rohkem"
     },
     "text_collapse": {
-        "message": "崩潰"
+        "message": "Kokkuvarisemine"
     },
     "target_lang_label": {
-        "message": "翻譯成："
+        "message": "Tõlgi keelde:"
     },
     "popup_dictionary": {
-        "message": "字典"
+        "message": "Sõnastik"
     },
     "popup_dictionary_frequency": {
-        "message": "頻率"
+        "message": "Sagedus"
     },
     "popup_definitions": {
-        "message": "定義"
+        "message": "Definitsioonid"
     },
     "popup_definitions_synonyms": {
-        "message": "同義詞："
+        "message": "Sünonüümid:"
     },
     "popup_examples": {
-        "message": "例子"
+        "message": "Näited"
     },
     "popup_settings_disable_inline_button_for_site": {
-        "message": "禁用此站點的按鈕"
+        "message": "Keela selle saidi nupp"
     },
     "popup_settings_enable_inline_button_global": {
-        "message": "顯示所有站點的按鈕"
+        "message": "Kuva kõigi saitide nupp"
     },
     "popup_settings_options_link": {
-        "message": "其他設置"
+        "message": "Lisaseaded"
     },
     "theme_light": {
-        "message": "淺色主題"
+        "message": "Kerge teema"
     },
     "theme_dark": {
-        "message": "深色主題"
+        "message": "Tume teema"
     },
     "theme_system": {
-        "message": "默認主題"
+        "message": "Vaiketeema"
     },
     "tooltip_translate_text": {
-        "message": "翻譯選定的文本"
+        "message": "Tõlgi valitud tekst"
     },
     "tooltip_settings": {
-        "message": "設置"
+        "message": "Seaded"
     },
     "tooltip_copy_to_clipboard": {
-        "message": "複製到剪貼板"
+        "message": "Kopeerida lõikelauale"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "HTTP 站點不支持複製"
+        "message": "HTTP-saitidel kopeerimist ei toetata"
     },
     "tooltip_copyed": {
-        "message": "複製！"
+        "message": "Kopeeritud!"
     },
     "tooltip_copy_error": {
-        "message": "複製錯誤！"
+        "message": "Kopeerimise viga!"
     },
     "tooltip_listen_to_the_text": {
-        "message": "聽文字"
+        "message": "Kuulake teksti"
     },
     "tooltip_listen_stop": {
-        "message": "停止"
+        "message": "Peatus"
     },
     "tooltip_listen_language_is_not_support": {
-        "message": "語言不支持"
+        "message": "Keelt ei toetata"
     },
     "tooltip_go_back": {
-        "message": "後退"
+        "message": "tagasi"
     },
     "tooltip_go_forward": {
-        "message": "向前"
+        "message": "Edasi"
     },
     "date_today": {
-        "message": "今天"
+        "message": "täna"
     },
     "date_yesterday": {
-        "message": "昨天"
+        "message": "eile"
     },
     "select_language_auto": {
-        "message": "檢測語言"
+        "message": "Tuvasta keel"
     },
     "supported_languages_af": {
-        "message": "非洲的"
+        "message": "aafriklane"
     },
     "supported_languages_sq": {
-        "message": "阿爾巴尼亞人"
+        "message": "albaanlane"
     },
     "supported_languages_am": {
-        "message": "阿姆哈拉語"
+        "message": "amhara"
     },
     "supported_languages_ar": {
-        "message": "阿拉伯"
+        "message": "araabia keel"
     },
     "supported_languages_hy": {
-        "message": "亞美尼亞人"
+        "message": "armeenlane"
     },
     "supported_languages_az": {
-        "message": "阿塞拜疆語"
+        "message": "aserbaidžaani"
     },
     "supported_languages_eu": {
-        "message": "巴斯克"
+        "message": "baski keel"
     },
     "supported_languages_be": {
-        "message": "白俄羅斯人"
+        "message": "valgevenelane"
     },
     "supported_languages_bn": {
-        "message": "孟加拉"
+        "message": "bengali keel"
     },
     "supported_languages_bs": {
-        "message": "波斯尼亞"
+        "message": "bosnialane"
     },
     "supported_languages_bg": {
-        "message": "保加利亞語"
+        "message": "bulgaaria keel"
     },
     "supported_languages_ca": {
-        "message": "加泰羅尼亞語"
+        "message": "katalaani"
     },
     "supported_languages_ceb": {
-        "message": "宿霧語"
+        "message": "cebuano"
     },
     "supported_languages_ny": {
-        "message": "切瓦"
+        "message": "chewa"
     },
     "supported_languages_zh_CN": {
-        "message": "簡體中文）"
+        "message": "lihtsustatud hiina keel)"
     },
     "supported_languages_zh_TW": {
-        "message": "中國傳統的）"
+        "message": "traditsiooniline hiina keel)"
     },
     "supported_languages_co": {
-        "message": "科西嘉"
+        "message": "korsikalane"
     },
     "supported_languages_hr": {
-        "message": "克羅地亞語"
+        "message": "horvaatia"
     },
     "supported_languages_cs": {
-        "message": "捷克語"
+        "message": "tšehhi keel"
     },
     "supported_languages_da": {
-        "message": "丹麥語"
+        "message": "taani keel"
     },
     "supported_languages_nl": {
-        "message": "荷蘭語"
+        "message": "hollandlane"
     },
     "supported_languages_en": {
-        "message": "英語"
+        "message": "Inglise"
     },
     "supported_languages_eo": {
-        "message": "世界語"
+        "message": "esperanto"
     },
     "supported_languages_et": {
-        "message": "愛沙尼亞語"
+        "message": "eesti keel"
     },
     "supported_languages_fi": {
-        "message": "芬蘭"
+        "message": "soome keel"
     },
     "supported_languages_fr": {
-        "message": "法語"
+        "message": "prantsuse keel"
     },
     "supported_languages_fy": {
-        "message": "弗里斯蘭語"
+        "message": "friisilane"
     },
     "supported_languages_gl": {
-        "message": "加利西亞語"
+        "message": "galicia"
     },
     "supported_languages_ka": {
-        "message": "格魯吉亞語"
+        "message": "gruusia keel"
     },
     "supported_languages_de": {
-        "message": "德語"
+        "message": "saksa keel"
     },
     "supported_languages_el": {
-        "message": "希臘語"
+        "message": "kreeka keel"
     },
     "supported_languages_gu": {
-        "message": "古吉拉特語"
+        "message": "gudžarati keel"
     },
     "supported_languages_ht": {
-        "message": "海地"
+        "message": "haitilane"
     },
     "supported_languages_ha": {
-        "message": "豪薩語"
+        "message": "hausa"
     },
     "supported_languages_haw": {
-        "message": "夏威夷"
+        "message": "havai"
     },
     "supported_languages_he": {
-        "message": "希伯來語"
+        "message": "heebrea keel"
     },
     "supported_languages_iw": {
-        "message": "希伯來語"
+        "message": "heebrea keel"
     },
     "supported_languages_hi": {
-        "message": "印地語"
+        "message": "hindi"
     },
     "supported_languages_hu": {
-        "message": "匈牙利"
+        "message": "ungarlane"
     },
     "supported_languages_is": {
-        "message": "冰島的"
+        "message": "islandi"
     },
     "supported_languages_ig": {
-        "message": "伊博語"
+        "message": "igbo"
     },
     "supported_languages_id": {
-        "message": "印度尼西亞"
+        "message": "indoneeslane"
     },
     "supported_languages_ga": {
-        "message": "愛爾蘭的"
+        "message": "iirlane"
     },
     "supported_languages_it": {
-        "message": "意大利語"
+        "message": "itaalia keel"
     },
     "supported_languages_ja": {
-        "message": "日本人"
+        "message": "jaapanlane"
     },
     "supported_languages_jv": {
-        "message": "爪哇語"
+        "message": "jaava keel"
     },
     "supported_languages_kn": {
-        "message": "卡納達語"
+        "message": "kannada"
     },
     "supported_languages_kk": {
-        "message": "哈薩克語"
+        "message": "kasahhi"
     },
     "supported_languages_km": {
-        "message": "高棉語"
+        "message": "khmeerid"
     },
     "supported_languages_ky": {
-        "message": "柯爾克孜語"
+        "message": "kirgiis"
     },
     "supported_languages_ko": {
-        "message": "韓國人"
+        "message": "korealane"
     },
     "supported_languages_ku": {
-        "message": "庫爾德"
+        "message": "kurdi"
     },
     "supported_languages_lo": {
-        "message": "老田"
+        "message": "laoslane"
     },
     "supported_languages_la": {
-        "message": "拉丁"
+        "message": "ladina keel"
     },
     "supported_languages_lv": {
-        "message": "拉脫維亞語"
+        "message": "lätlane"
     },
     "supported_languages_lt": {
-        "message": "立陶宛語"
+        "message": "leedulane"
     },
     "supported_languages_lb": {
-        "message": "盧森堡語"
+        "message": "luksemburglane"
     },
     "supported_languages_mk": {
-        "message": "馬其頓語"
+        "message": "makedoonlane"
     },
     "supported_languages_mg": {
-        "message": "馬爾加什"
+        "message": "madagaskari"
     },
     "supported_languages_ms": {
-        "message": "馬來語"
+        "message": "malai"
     },
     "supported_languages_ml": {
-        "message": "馬拉雅拉姆語"
+        "message": "malajalami"
     },
     "supported_languages_mt": {
-        "message": "馬耳他語"
+        "message": "malta keel"
     },
     "supported_languages_mi": {
-        "message": "毛利人"
+        "message": "maoorid"
     },
     "supported_languages_mr": {
-        "message": "馬拉地語"
+        "message": "marati"
     },
     "supported_languages_mn": {
-        "message": "蒙"
+        "message": "mongoolia"
     },
     "supported_languages_hmn": {
-        "message": "僧"
+        "message": "munk"
     },
     "supported_languages_my": {
-        "message": "緬甸"
+        "message": "myanmar"
     },
     "supported_languages_ne": {
-        "message": "梅帕里"
+        "message": "mepali"
     },
     "supported_languages_no": {
-        "message": "挪威"
+        "message": "norra keel"
     },
     "supported_languages_fa": {
-        "message": "波斯語"
+        "message": "pärslane"
     },
     "supported_languages_pl": {
-        "message": "拋光"
+        "message": "lihvima"
     },
     "supported_languages_pt": {
-        "message": "葡萄牙語"
+        "message": "portugallane"
     },
     "supported_languages_pa": {
-        "message": "旁遮普語"
+        "message": "pandžabi"
     },
     "supported_languages_ps": {
-        "message": "推動"
+        "message": "pushto"
     },
     "supported_languages_ro": {
-        "message": "羅馬尼亞語"
+        "message": "rumeenlane"
     },
     "supported_languages_ru": {
-        "message": "俄語"
+        "message": "vene keel"
     },
     "supported_languages_sm": {
-        "message": "薩摩亞語"
+        "message": "samoa"
     },
     "supported_languages_gd": {
-        "message": "蘇格蘭蓋爾語"
+        "message": "šoti gaeli keel"
     },
     "supported_languages_sr": {
-        "message": "塞爾維亞"
+        "message": "serbia"
     },
     "supported_languages_sn": {
-        "message": "紹納"
+        "message": "shona"
     },
     "supported_languages_sd": {
-        "message": "信德"
+        "message": "sindhi"
     },
     "supported_languages_si": {
-        "message": "僧伽羅語"
+        "message": "sinhala"
     },
     "supported_languages_sk": {
-        "message": "斯洛伐克語"
+        "message": "slovaki keel"
     },
     "supported_languages_sl": {
-        "message": "斯洛文尼亞語"
+        "message": "sloveen"
     },
     "supported_languages_so": {
-        "message": "索馬里"
+        "message": "somaali"
     },
     "supported_languages_sx": {
-        "message": "索托"
+        "message": "sotho"
     },
     "supported_languages_es": {
-        "message": "西班牙語"
+        "message": "hispaania keel"
     },
     "supported_languages_su": {
-        "message": "巽他語"
+        "message": "sundane"
     },
     "supported_languages_sw": {
-        "message": "斯瓦希里語"
+        "message": "suahiili keel"
     },
     "supported_languages_sv": {
-        "message": "瑞典"
+        "message": "rootsi keel"
     },
     "supported_languages_tl": {
-        "message": "他加祿語"
+        "message": "tagalog"
     },
     "supported_languages_tg": {
-        "message": "多治木"
+        "message": "tadžiki"
     },
     "supported_languages_ta": {
-        "message": "泰米爾語"
+        "message": "tamiil"
     },
     "supported_languages_te": {
-        "message": "泰盧固語"
+        "message": "telugu"
     },
     "supported_languages_th": {
-        "message": "泰國"
+        "message": "Tai keel"
     },
     "supported_languages_tr": {
-        "message": "土耳其"
+        "message": "türgi keel"
     },
     "supported_languages_uk": {
-        "message": "烏克蘭"
+        "message": "ukrainlane"
     },
     "supported_languages_ur": {
-        "message": "烏爾都語"
+        "message": "urdu keel"
     },
     "supported_languages_uz": {
-        "message": "烏茲別克語"
+        "message": "usbeki keel"
     },
     "supported_languages_vi": {
-        "message": "越南語"
+        "message": "vietnamlane"
     },
     "supported_languages_cy": {
-        "message": "威爾士語"
+        "message": "kõmri keel"
     },
     "supported_languages_xh": {
         "message": "xosa"
     },
     "supported_languages_yi": {
-        "message": "意第緒語"
+        "message": "jidiš"
     },
     "supported_languages_yo": {
-        "message": "約魯巴語"
+        "message": "joruba"
     },
     "supported_languages_zu": {
-        "message": "祖魯語"
+        "message": "zulu"
     },
     "supported_languages_qu": {
-        "message": "克丘亞語"
+        "message": "ketšua"
     },
     "supported_languages_om": {
-        "message": "奧羅莫"
+        "message": "oromo"
     },
     "supported_languages_ilo": {
-        "message": "伊洛卡諾"
+        "message": "ilocano"
     }
 }

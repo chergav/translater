@@ -1,25 +1,20 @@
 {
     "app_name": {
-        "message": "Translater - tradução do texto selecionado",
-        "placeholders": {
-            "name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - tradução do texto selecionado"
     },
     "app_description": {
-        "message": "Tradução do texto selecionado com Google Tradutor com tema claro e escuro"
+        "message": "Tradução de texto selecionado com o Google Tradutor com tema claro e escuro"
     },
     "context_menus_title": {
-        "message": "Traduzir texto selecionado"
+        "message": "Traduzir o texto selecionado"
     },
     "popup_menu_options": {
         "message": "Configurações"
     },
     "options_title": {
-        "message": "$NAME$ - configurações",
+        "message": "$APP_NAME$ - configurações",
         "placeholders": {
-            "name": {
+            "app_name": {
                 "content": "Translater"
             }
         }
@@ -28,13 +23,13 @@
         "message": "Leitura e entrada"
     },
     "options_tab_popup_window": {
-        "message": "Janela pop-up"
+        "message": "Janela de pop-up"
     },
     "options_tab_appearance": {
-        "message": "Aparência"
+        "message": "Aparencia externa"
     },
     "options_tab_history": {
-        "message": "Histórico"
+        "message": "História"
     },
     "options_inline_button_show": {
         "message": "Mostrar botão quando o texto for selecionado"
@@ -43,7 +38,7 @@
         "message": "Mostrar botão no campo de texto"
     },
     "options_hide_button_on_sites": {
-        "message": "Ocultar o botão nestes sites:"
+        "message": "Oculte o botão nestes sites:"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Você pode adicionar sites usando o botão de configurações no site que deseja excluir"
@@ -55,28 +50,28 @@
         "message": "Mostrar transliteração"
     },
     "options_history_length": {
-        "message": "Comprimento do histórico"
+        "message": "Duração da história"
     },
     "options_records_in_history": {
-        "message": "Registros no histórico:"
+        "message": "Entradas na história:"
     },
     "options_history_disable": {
         "message": "Desativar histórico"
     },
     "options_clear_history": {
-        "message": "Limpar histórico"
+        "message": "Apagar histórico"
     },
     "options_delete_history_item": {
-        "message": "Excluir da história"
+        "message": "Excluir do histórico"
     },
     "text_expand": {
         "message": "Mais"
     },
     "text_collapse": {
-        "message": "Сollapse"
+        "message": "colapso"
     },
     "target_lang_label": {
-        "message": "Traduzir para:"
+        "message": "Traduza para:"
     },
     "popup_dictionary": {
         "message": "Dicionário"
@@ -94,7 +89,7 @@
         "message": "Exemplos"
     },
     "popup_settings_disable_inline_button_for_site": {
-        "message": "Desativar o botão para este site"
+        "message": "Desative o botão para este site"
     },
     "popup_settings_enable_inline_button_global": {
         "message": "Mostrar o botão para todos os sites"
@@ -103,25 +98,25 @@
         "message": "Configurações adicionais"
     },
     "theme_light": {
-        "message": "Tema claro"
+        "message": "tema claro"
     },
     "theme_dark": {
-        "message": "Tema escuro"
+        "message": "tema escuro"
     },
     "theme_system": {
-        "message": "Tema padrão"
+        "message": "Tema Padrão"
     },
     "tooltip_translate_text": {
-        "message": "Traduzir selecionado text"
+        "message": "Traduzir o texto selecionado"
     },
     "tooltip_settings": {
         "message": "Configurações"
     },
     "tooltip_copy_to_clipboard": {
-        "message": "Copiar para a área de transferência"
+        "message": "Copiar para área de transferência"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "Copiar não é compatível com sites HTTP"
+        "message": "A cópia não é suportada em sites HTTP"
     },
     "tooltip_copyed": {
         "message": "Copiado!"
@@ -130,13 +125,13 @@
         "message": "Erro de cópia!"
     },
     "tooltip_listen_to_the_text": {
-        "message": "Ouça o texto"
+        "message": "ouvir texto"
     },
     "tooltip_listen_stop": {
-        "message": "Pare"
+        "message": "Parar"
     },
     "tooltip_listen_language_is_not_support": {
-        "message": "Idioma não é compatível"
+        "message": "O idioma não é compatível"
     },
     "tooltip_go_back": {
         "message": "Voltar"
@@ -193,13 +188,13 @@
         "message": "cebuano"
     },
     "supported_languages_ny": {
-        "message": "chewa"
+        "message": "mastiga"
     },
     "supported_languages_zh_CN": {
-        "message": "chinês (simplificado)"
+        "message": "chinês simplificado)"
     },
     "supported_languages_zh_TW": {
-        "message": "chinês (tradicional)"
+        "message": "chinês tradicional)"
     },
     "supported_languages_co": {
         "message": "corso"
@@ -301,7 +296,7 @@
         "message": "khmer"
     },
     "supported_languages_ky": {
-        "message": "kirghiz"
+        "message": "quirguiz"
     },
     "supported_languages_ko": {
         "message": "coreano"
@@ -313,7 +308,7 @@
         "message": "laociano"
     },
     "supported_languages_la": {
-        "message": "latino"
+        "message": "latim"
     },
     "supported_languages_lv": {
         "message": "letão"
@@ -334,7 +329,7 @@
         "message": "malaio"
     },
     "supported_languages_ml": {
-        "message": "malayalam"
+        "message": "malaiala"
     },
     "supported_languages_mt": {
         "message": "maltês"
@@ -343,7 +338,7 @@
         "message": "maori"
     },
     "supported_languages_mr": {
-        "message": "marathi"
+        "message": "Marathi"
     },
     "supported_languages_mn": {
         "message": "mongol"
@@ -352,7 +347,7 @@
         "message": "monge"
     },
     "supported_languages_my": {
-        "message": "myanmar"
+        "message": "Mianmar"
     },
     "supported_languages_ne": {
         "message": "mepali"
@@ -373,10 +368,10 @@
         "message": "punjabi"
     },
     "supported_languages_ps": {
-        "message": "pushto"
+        "message": "empurre para"
     },
     "supported_languages_ro": {
-        "message": "romeno"
+        "message": "romena"
     },
     "supported_languages_ru": {
         "message": "russo"
@@ -397,7 +392,7 @@
         "message": "sindi"
     },
     "supported_languages_si": {
-        "message": "sinhala"
+        "message": "cingalês"
     },
     "supported_languages_sk": {
         "message": "eslovaco"
@@ -418,19 +413,19 @@
         "message": "sundanês"
     },
     "supported_languages_sw": {
-        "message": "swahili"
+        "message": "suaíli"
     },
     "supported_languages_sv": {
         "message": "sueco"
     },
     "supported_languages_tl": {
-        "message": "tagalog"
+        "message": "tagalo"
     },
     "supported_languages_tg": {
-        "message": "tajiki"
+        "message": "tadjique"
     },
     "supported_languages_ta": {
-        "message": "tamil"
+        "message": "tâmil"
     },
     "supported_languages_te": {
         "message": "telugu"
@@ -460,16 +455,16 @@
         "message": "xosa"
     },
     "supported_languages_yi": {
-        "message": "yiddish"
+        "message": "iídiche"
     },
     "supported_languages_yo": {
-        "message": "yoruba"
+        "message": "ioruba"
     },
     "supported_languages_zu": {
         "message": "zulu"
     },
     "supported_languages_qu": {
-        "message": "quechua"
+        "message": "quíchua"
     },
     "supported_languages_om": {
         "message": "oromo"

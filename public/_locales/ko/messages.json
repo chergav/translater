@@ -1,14 +1,9 @@
 {
     "app_name": {
-        "message": "Translater - 선택한 텍스트 번역",
-        "placeholders": {
-            "name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - 선택한 텍스트 번역"
     },
     "app_description": {
-        "message": "선택한 텍스트를 Google 번역으로 밝고 어두운 테마로 번역"
+        "message": "밝고 어두운 테마로 Google 번역으로 선택한 텍스트 번역"
     },
     "context_menus_title": {
         "message": "선택한 텍스트 번역"
@@ -17,9 +12,9 @@
         "message": "설정"
     },
     "options_title": {
-        "message": "$NAME$ - 설정",
+        "message": "$APP_NAME$ - 설정",
         "placeholders": {
-            "name": {
+            "app_name": {
                 "content": "Translater"
             }
         }
@@ -28,25 +23,25 @@
         "message": "읽기 및 입력"
     },
     "options_tab_popup_window": {
-        "message": "팝업 창"
+        "message": "팝업창"
     },
     "options_tab_appearance": {
-        "message": "모양"
+        "message": "외관"
     },
     "options_tab_history": {
-        "message": "기록"
+        "message": "역사"
     },
     "options_inline_button_show": {
         "message": "텍스트 선택 시 버튼 표시"
     },
     "options_text_field_button_show": {
-        "message": "표시 텍스트 필드의 버튼"
+        "message": "텍스트 필드에 버튼 표시"
     },
     "options_hide_button_on_sites": {
-        "message": "다음 사이트의 버튼 숨기기:"
+        "message": "다음 사이트에서 버튼 숨기기:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "제외하려는 사이트의 설정 버튼을 사용하여 사이트를 추가할 수 있습니다."
+        "message": "제외하고 싶은 사이트의 설정 버튼을 이용하여 사이트를 추가할 수 있습니다."
     },
     "options_show_original_text": {
         "message": "원본 텍스트 표시"
@@ -55,34 +50,34 @@
         "message": "음역 표시"
     },
     "options_history_length": {
-        "message": "기록 길이"
+        "message": "역사의 길이"
     },
     "options_records_in_history": {
-        "message": "기록의 기록:"
+        "message": "역사의 항목:"
     },
     "options_history_disable": {
         "message": "기록 비활성화"
     },
     "options_clear_history": {
-        "message": "기록 지우기"
+        "message": "기록 삭제"
     },
     "options_delete_history_item": {
-        "message": "삭제 역사에서"
+        "message": "기록에서 삭제"
     },
     "text_expand": {
-        "message": "자세히"
+        "message": "더"
     },
     "text_collapse": {
-        "message": "Сollapse"
+        "message": "축소"
     },
     "target_lang_label": {
-        "message": "번역:"
+        "message": "다음으로 번역:"
     },
     "popup_dictionary": {
         "message": "사전"
     },
     "popup_dictionary_frequency": {
-        "message": "주파수"
+        "message": "빈도"
     },
     "popup_definitions": {
         "message": "정의"
@@ -94,13 +89,13 @@
         "message": "예"
     },
     "popup_settings_disable_inline_button_for_site": {
-        "message": "이 사이트에 대한 버튼 비활성화"
+        "message": "이 사이트의 버튼 비활성화"
     },
     "popup_settings_enable_inline_button_global": {
         "message": "모든 사이트에 대한 버튼 표시"
     },
     "popup_settings_options_link": {
-        "message": "추가 설정"
+        "message": "추가 세팅"
     },
     "theme_light": {
         "message": "밝은 테마"
@@ -112,19 +107,19 @@
         "message": "기본 테마"
     },
     "tooltip_translate_text": {
-        "message": "번역 선택됨 text"
+        "message": "선택한 텍스트 번역"
     },
     "tooltip_settings": {
         "message": "설정"
     },
     "tooltip_copy_to_clipboard": {
-        "message": "클립보드에 복사"
+        "message": "클립 보드에 복사"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "HTTP 사이트에서는 복사가 지원되지 않습니다."
+        "message": "복사는 HTTP 사이트에서 지원되지 않습니다."
     },
     "tooltip_copyed": {
-        "message": "복사되었습니다!"
+        "message": "복사!"
     },
     "tooltip_copy_error": {
         "message": "복사 오류!"
@@ -133,13 +128,13 @@
         "message": "텍스트 듣기"
     },
     "tooltip_listen_stop": {
-        "message": "중지"
+        "message": "멈추다"
     },
     "tooltip_listen_language_is_not_support": {
-        "message": "언어 지원 안 됨"
+        "message": "언어가 지원되지 않습니다"
     },
     "tooltip_go_back": {
-        "message": "뒤로"
+        "message": "뒤쪽에"
     },
     "tooltip_go_forward": {
         "message": "앞으로"
@@ -151,139 +146,139 @@
         "message": "어제"
     },
     "select_language_auto": {
-        "message": "언어 감지"
+        "message": "언어를 감지"
     },
     "supported_languages_af": {
-        "message": "아프리카"
+        "message": "아프리카 사람"
     },
     "supported_languages_sq": {
-        "message": "알바니아어"
+        "message": "알바니아"
     },
     "supported_languages_am": {
         "message": "암하라어"
     },
     "supported_languages_ar": {
-        "message": "아랍어"
+        "message": "아라비아 말"
     },
     "supported_languages_hy": {
-        "message": "아르메니아어"
+        "message": "아르메니아 사람"
     },
     "supported_languages_az": {
-        "message": "아제르바이잔어"
+        "message": "아제르바이잔"
     },
     "supported_languages_eu": {
-        "message": "바스크어"
+        "message": "바스크 사람"
     },
     "supported_languages_be": {
-        "message": "벨로루시어"
+        "message": "벨로루시의"
     },
     "supported_languages_bn": {
-        "message": "벵골어"
+        "message": "벵골 사람"
     },
     "supported_languages_bs": {
-        "message": "보스니아어"
+        "message": "보스니아"
     },
     "supported_languages_bg": {
-        "message": "불가리아어"
+        "message": "불가리아 사람"
     },
     "supported_languages_ca": {
-        "message": "카탈로니아어"
+        "message": "카탈로니아 사람"
     },
     "supported_languages_ceb": {
-        "message": "세부아노어"
+        "message": "세부아노"
     },
     "supported_languages_ny": {
-        "message": "chewa"
+        "message": "츄와"
     },
     "supported_languages_zh_CN": {
-        "message": "중국어(간체)"
+        "message": "중국어 (간체)"
     },
     "supported_languages_zh_TW": {
-        "message": "중국어(번체)"
+        "message": "중국 전통)"
     },
     "supported_languages_co": {
-        "message": "코르시카어"
+        "message": "코르시카"
     },
     "supported_languages_hr": {
-        "message": "크로아티아어"
+        "message": "크로아티아"
     },
     "supported_languages_cs": {
-        "message": "체코어"
+        "message": "체코 사람"
     },
     "supported_languages_da": {
-        "message": "덴마크어"
+        "message": "덴마크 말"
     },
     "supported_languages_nl": {
-        "message": "네덜란드어"
+        "message": "네덜란드 사람"
     },
     "supported_languages_en": {
         "message": "영어"
     },
     "supported_languages_eo": {
-        "message": "에스페란토어"
+        "message": "에스페란토 말"
     },
     "supported_languages_et": {
-        "message": "에스토니아어"
+        "message": "에스토니아 사람"
     },
     "supported_languages_fi": {
         "message": "핀란드어"
     },
     "supported_languages_fr": {
-        "message": "프랑스어"
+        "message": "프랑스 국민"
     },
     "supported_languages_fy": {
-        "message": "프리지아어"
+        "message": "프리지아"
     },
     "supported_languages_gl": {
-        "message": "갈리시아어"
+        "message": "갈리시아인"
     },
     "supported_languages_ka": {
-        "message": "조지아어"
+        "message": "그루지야 사람"
     },
     "supported_languages_de": {
-        "message": "독일어"
+        "message": "독일 사람"
     },
     "supported_languages_el": {
-        "message": "그리스어"
+        "message": "그리스 어"
     },
     "supported_languages_gu": {
-        "message": "구자라트어 ​​"
+        "message": "구자라트어"
     },
     "supported_languages_ht": {
-        "message": "하이티어"
+        "message": "아이티 섬 사람"
     },
     "supported_languages_ha": {
-        "message": "하우사어"
+        "message": "하우사"
     },
     "supported_languages_haw": {
-        "message": "하와이어"
+        "message": "하와이 사람"
     },
     "supported_languages_he": {
-        "message": "히브리어"
+        "message": "헤브라이 사람"
     },
     "supported_languages_iw": {
-        "message": "히브리어"
+        "message": "헤브라이 사람"
     },
     "supported_languages_hi": {
-        "message": "힌디어"
+        "message": "힌디 어"
     },
     "supported_languages_hu": {
-        "message": "헝가리어"
+        "message": "헝가리 인"
     },
     "supported_languages_is": {
         "message": "아이슬란드어"
     },
     "supported_languages_ig": {
-        "message": "이그보어"
+        "message": "이보"
     },
     "supported_languages_id": {
-        "message": "인도네시아어"
+        "message": "인도네시아 인"
     },
     "supported_languages_ga": {
-        "message": "아일랜드어"
+        "message": "아일랜드의"
     },
     "supported_languages_it": {
-        "message": "이탈리아어"
+        "message": "이탈리아 사람"
     },
     "supported_languages_ja": {
         "message": "일본어"
@@ -301,180 +296,180 @@
         "message": "크메르어"
     },
     "supported_languages_ky": {
-        "message": "키르기스어"
+        "message": "키르기즈 말"
     },
     "supported_languages_ko": {
-        "message": "한국어"
+        "message": "한국인"
     },
     "supported_languages_ku": {
         "message": "쿠르드어"
     },
     "supported_languages_lo": {
-        "message": "라오스어"
+        "message": "라오스 사람"
     },
     "supported_languages_la": {
         "message": "라틴어"
     },
     "supported_languages_lv": {
-        "message": "라트비아어"
+        "message": "라트비아 사람"
     },
     "supported_languages_lt": {
-        "message": "리투아니아어"
+        "message": "리투아니아 사람"
     },
     "supported_languages_lb": {
-        "message": "룩셈부르크어"
+        "message": "룩셈부르크"
     },
     "supported_languages_mk": {
-        "message": "마케도니아어"
+        "message": "마케도니아 어"
     },
     "supported_languages_mg": {
-        "message": "마다가스카르어"
+        "message": "마다가스카르 사람"
     },
     "supported_languages_ms": {
-        "message": "말레이어"
+        "message": "말레이 사람"
     },
     "supported_languages_ml": {
         "message": "말라얄람어"
     },
     "supported_languages_mt": {
-        "message": "몰타어"
+        "message": "몰티즈"
     },
     "supported_languages_mi": {
-        "message": "마오리어"
+        "message": "마오리족"
     },
     "supported_languages_mr": {
         "message": "마라티어"
     },
     "supported_languages_mn": {
-        "message": "몽골어"
+        "message": "몽고 어"
     },
     "supported_languages_hmn": {
-        "message": "스님"
+        "message": "수도사"
     },
     "supported_languages_my": {
-        "message": "미얀마어"
+        "message": "미얀마"
     },
     "supported_languages_ne": {
-        "message": "메팔리어"
+        "message": "메팔리"
     },
     "supported_languages_no": {
-        "message": "노르웨이어"
+        "message": "노르웨이 인"
     },
     "supported_languages_fa": {
-        "message": "페르시아어"
+        "message": "페르시아 인"
     },
     "supported_languages_pl": {
-        "message": "폴란드어"
+        "message": "광택"
     },
     "supported_languages_pt": {
-        "message": "포르투갈어"
+        "message": "포르투갈 인"
     },
     "supported_languages_pa": {
-        "message": "펀잡어"
+        "message": "펀자브어"
     },
     "supported_languages_ps": {
-        "message": "푸쉬토어"
+        "message": "푸시토"
     },
     "supported_languages_ro": {
-        "message": "루마니아어"
+        "message": "루마니아 사람"
     },
     "supported_languages_ru": {
-        "message": "러시아어"
+        "message": "러시아인"
     },
     "supported_languages_sm": {
-        "message": "사모아어"
+        "message": "사모아 사람"
     },
     "supported_languages_gd": {
         "message": "스코틀랜드 게일어"
     },
     "supported_languages_sr": {
-        "message": "세르비아어"
+        "message": "세르비아 사람"
     },
     "supported_languages_sn": {
-        "message": "쇼나어"
+        "message": "쇼나"
     },
     "supported_languages_sd": {
-        "message": "신디어"
+        "message": "신디"
     },
     "supported_languages_si": {
-        "message": "신할라어"
+        "message": "싱할라어"
     },
     "supported_languages_sk": {
-        "message": "슬로바키아어"
+        "message": "슬로바키아 사람"
     },
     "supported_languages_sl": {
-        "message": "슬로베니아어"
+        "message": "슬로베니아"
     },
     "supported_languages_so": {
-        "message": "소말리아어"
+        "message": "소말리아"
     },
     "supported_languages_sx": {
-        "message": "sotho"
+        "message": "소토"
     },
     "supported_languages_es": {
-        "message": "spanish"
+        "message": "스페인의"
     },
     "supported_languages_su": {
-        "message": "sundanese"
+        "message": "순다어"
     },
     "supported_languages_sw": {
-        "message": "swahili"
+        "message": "스와힐리어"
     },
     "supported_languages_sv": {
-        "message": "swedish"
+        "message": "스웨덴어"
     },
     "supported_languages_tl": {
-        "message": "tagalog"
+        "message": "타갈로그어"
     },
     "supported_languages_tg": {
-        "message": "tajiki"
+        "message": "다지키"
     },
     "supported_languages_ta": {
-        "message": "tamil"
+        "message": "타밀 사람"
     },
     "supported_languages_te": {
-        "message": "telugu"
+        "message": "텔루구어"
     },
     "supported_languages_th": {
-        "message": "thai"
+        "message": "타이어"
     },
     "supported_languages_tr": {
-        "message": "turkish"
+        "message": "터키어"
     },
     "supported_languages_uk": {
-        "message": "ukrainian"
+        "message": "우크라이나 인"
     },
     "supported_languages_ur": {
-        "message": "urdu"
+        "message": "우르두어"
     },
     "supported_languages_uz": {
-        "message": "uzbek"
+        "message": "우즈벡"
     },
     "supported_languages_vi": {
-        "message": "vietnamese"
+        "message": "베트남어"
     },
     "supported_languages_cy": {
-        "message": "welsh"
+        "message": "웨일스 말"
     },
     "supported_languages_xh": {
-        "message": "xosa"
+        "message": "소사"
     },
     "supported_languages_yi": {
-        "message": "yiddish"
+        "message": "이디시어"
     },
     "supported_languages_yo": {
-        "message": "yoruba"
+        "message": "요루바어"
     },
     "supported_languages_zu": {
-        "message": "zulu"
+        "message": "줄루 족"
     },
     "supported_languages_qu": {
-        "message": "quechua"
+        "message": "케추아어"
     },
     "supported_languages_om": {
-        "message": "oromo"
+        "message": "오로모"
     },
     "supported_languages_ilo": {
-        "message": "ilocano"
+        "message": "일로카노"
     }
 }

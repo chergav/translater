@@ -1,52 +1,47 @@
 {
     "app_name": {
-        "message": "Translater - 所选文本的翻译",
-        "placeholders": {
-            "name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - 所选文本的翻译"
     },
     "app_description": {
-        "message": "Translation selected text with Google Translate with light and dark theme"
+        "message": "使用带有浅色和深色主题的谷歌翻译翻译选定的文本"
     },
     "context_menus_title": {
-        "message": "Translate selected text"
+        "message": "翻译选定的文本"
     },
     "popup_menu_options": {
-        "message": "Settings"
+        "message": "设置"
     },
     "options_title": {
-        "message": "$NAME$ - settings",
+        "message": "$APP_NAME$ - 设置",
         "placeholders": {
-            "name": {
+            "app_name": {
                 "content": "Translater"
             }
         }
     },
     "options_tab_inline_translate": {
-        "message": "Reading and input"
+        "message": "读取和输入"
     },
     "options_tab_popup_window": {
-        "message": "Popup window"
+        "message": "弹出窗口"
     },
     "options_tab_appearance": {
-        "message": "Appearance"
+        "message": "外观"
     },
     "options_tab_history": {
-        "message": "History"
+        "message": "历史"
     },
     "options_inline_button_show": {
-        "message": "Show button when text is selected"
+        "message": "选择文本时显示按钮"
     },
     "options_text_field_button_show": {
-        "message": "Show文本字段中的按钮"
+        "message": "在文本字段中显示按钮"
     },
     "options_hide_button_on_sites": {
-        "message": "隐藏这些站点上的按钮："
+        "message": "隐藏这些网站上的按钮："
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "您可以使用要排除的站点上的设置按钮添加站点"
+        "message": "您可以使用要排除的网站上的设置按钮添加网站"
     },
     "options_show_original_text": {
         "message": "显示源文本"
@@ -58,22 +53,22 @@
         "message": "历史长度"
     },
     "options_records_in_history": {
-        "message": "历史记录："
+        "message": "历史条目："
     },
     "options_history_disable": {
-        "message": "禁用历史"
+        "message": "禁用历史记录"
     },
     "options_clear_history": {
-        "message": "清除历史"
+        "message": "删除历史记录"
     },
     "options_delete_history_item": {
-        "message": "删除来自历史"
+        "message": "从历史记录中删除"
     },
     "text_expand": {
-        "message": "更多"
+        "message": "更多的"
     },
     "text_collapse": {
-        "message": "Сollapse"
+        "message": "崩溃"
     },
     "target_lang_label": {
         "message": "翻译成："
@@ -94,13 +89,13 @@
         "message": "例子"
     },
     "popup_settings_disable_inline_button_for_site": {
-        "message": "禁用这个网站的按钮"
+        "message": "禁用此站点的按钮"
     },
     "popup_settings_enable_inline_button_global": {
-        "message": "显示所有网站的按钮"
+        "message": "显示所有站点的按钮"
     },
     "popup_settings_options_link": {
-        "message": "附加设置"
+        "message": "其他设置"
     },
     "theme_light": {
         "message": "浅色主题"
@@ -112,7 +107,7 @@
         "message": "默认主题"
     },
     "tooltip_translate_text": {
-        "message": "翻译选择文本"
+        "message": "翻译选定的文本"
     },
     "tooltip_settings": {
         "message": "设置"
@@ -124,7 +119,7 @@
         "message": "HTTP 站点不支持复制"
     },
     "tooltip_copyed": {
-        "message": "已复制！"
+        "message": "复制！"
     },
     "tooltip_copy_error": {
         "message": "复制错误！"
@@ -142,7 +137,7 @@
         "message": "后退"
     },
     "tooltip_go_forward": {
-        "message": "前进"
+        "message": "向前"
     },
     "date_today": {
         "message": "今天"
@@ -154,55 +149,55 @@
         "message": "检测语言"
     },
     "supported_languages_af": {
-        "message": "非洲人"
+        "message": "非洲的"
     },
     "supported_languages_sq": {
         "message": "阿尔巴尼亚人"
     },
     "supported_languages_am": {
-        "message": "阿姆哈拉人"
+        "message": "阿姆哈拉语"
     },
     "supported_languages_ar": {
-        "message": "阿拉伯人"
+        "message": "阿拉伯"
     },
     "supported_languages_hy": {
         "message": "亚美尼亚人"
     },
     "supported_languages_az": {
-        "message": "阿塞拜疆人"
+        "message": "阿塞拜疆语"
     },
     "supported_languages_eu": {
-        "message": "巴斯克人"
+        "message": "巴斯克"
     },
     "supported_languages_be": {
         "message": "白俄罗斯人"
     },
     "supported_languages_bn": {
-        "message": "孟加拉人"
+        "message": "孟加拉"
     },
     "supported_languages_bs": {
-        "message": "波斯尼亚人"
+        "message": "波斯尼亚"
     },
     "supported_languages_bg": {
-        "message": "保加利亚人"
+        "message": "保加利亚语"
     },
     "supported_languages_ca": {
-        "message": "加泰罗尼亚人"
+        "message": "加泰罗尼亚语"
     },
     "supported_languages_ceb": {
-        "message": "宿雾人"
+        "message": "宿雾语"
     },
     "supported_languages_ny": {
-        "message": "chewa"
+        "message": "切瓦"
     },
     "supported_languages_zh_CN": {
-        "message": "中文（简体）"
+        "message": "简体中文）"
     },
     "supported_languages_zh_TW": {
-        "message": "中文（繁体）"
+        "message": "中国传统的）"
     },
     "supported_languages_co": {
-        "message": "科西嘉语"
+        "message": "科西嘉"
     },
     "supported_languages_hr": {
         "message": "克罗地亚语"
@@ -226,7 +221,7 @@
         "message": "爱沙尼亚语"
     },
     "supported_languages_fi": {
-        "message": "芬兰语"
+        "message": "芬兰"
     },
     "supported_languages_fr": {
         "message": "法语"
@@ -250,13 +245,13 @@
         "message": "古吉拉特语"
     },
     "supported_languages_ht": {
-        "message": "海地语"
+        "message": "海地"
     },
     "supported_languages_ha": {
         "message": "豪萨语"
     },
     "supported_languages_haw": {
-        "message": "夏威夷语"
+        "message": "夏威夷"
     },
     "supported_languages_he": {
         "message": "希伯来语"
@@ -265,216 +260,216 @@
         "message": "希伯来语"
     },
     "supported_languages_hi": {
-        "message": "hindi"
+        "message": "印地语"
     },
     "supported_languages_hu": {
-        "message": "hungarian"
+        "message": "匈牙利"
     },
     "supported_languages_is": {
-        "message": "icelandic"
+        "message": "冰岛的"
     },
     "supported_languages_ig": {
-        "message": "igbo"
+        "message": "伊博语"
     },
     "supported_languages_id": {
-        "message": "indonesian"
+        "message": "印度尼西亚"
     },
     "supported_languages_ga": {
-        "message": "irish"
+        "message": "爱尔兰的"
     },
     "supported_languages_it": {
-        "message": "italian"
+        "message": "意大利语"
     },
     "supported_languages_ja": {
-        "message": "japanese"
+        "message": "日本人"
     },
     "supported_languages_jv": {
-        "message": "javanese"
+        "message": "爪哇语"
     },
     "supported_languages_kn": {
-        "message": "kannada"
+        "message": "卡纳达语"
     },
     "supported_languages_kk": {
-        "message": "kazakh"
+        "message": "哈萨克语"
     },
     "supported_languages_km": {
-        "message": "khmer"
+        "message": "高棉语"
     },
     "supported_languages_ky": {
-        "message": "kirghiz"
+        "message": "柯尔克孜语"
     },
     "supported_languages_ko": {
-        "message": "korean"
+        "message": "韩国人"
     },
     "supported_languages_ku": {
-        "message": "kurdish"
+        "message": "库尔德"
     },
     "supported_languages_lo": {
-        "message": "laotian"
+        "message": "老田"
     },
     "supported_languages_la": {
-        "message": "latin"
+        "message": "拉丁"
     },
     "supported_languages_lv": {
-        "message": "latvian"
+        "message": "拉脱维亚语"
     },
     "supported_languages_lt": {
-        "message": "lithuanian"
+        "message": "立陶宛语"
     },
     "supported_languages_lb": {
-        "message": "luxembourgish"
+        "message": "卢森堡语"
     },
     "supported_languages_mk": {
-        "message": "macedonian"
+        "message": "马其顿语"
     },
     "supported_languages_mg": {
-        "message": "malagasy"
+        "message": "马尔加什"
     },
     "supported_languages_ms": {
-        "message": "malay"
+        "message": "马来语"
     },
     "supported_languages_ml": {
-        "message": "malayalam"
+        "message": "马拉雅拉姆语"
     },
     "supported_languages_mt": {
-        "message": "maltese"
+        "message": "马耳他语"
     },
     "supported_languages_mi": {
-        "message": "maori"
+        "message": "毛利人"
     },
     "supported_languages_mr": {
-        "message": "marathi"
+        "message": "马拉地语"
     },
     "supported_languages_mn": {
-        "message": "mongolian"
+        "message": "蒙"
     },
     "supported_languages_hmn": {
-        "message": "monk"
+        "message": "僧"
     },
     "supported_languages_my": {
-        "message": "myanmar"
+        "message": "缅甸"
     },
     "supported_languages_ne": {
-        "message": "mepali"
+        "message": "梅帕里"
     },
     "supported_languages_no": {
-        "message": "norwegian"
+        "message": "挪威"
     },
     "supported_languages_fa": {
-        "message": "persian"
+        "message": "波斯语"
     },
     "supported_languages_pl": {
-        "message": "polish"
+        "message": "抛光"
     },
     "supported_languages_pt": {
-        "message": "portuguese"
+        "message": "葡萄牙语"
     },
     "supported_languages_pa": {
-        "message": "punjabi"
+        "message": "旁遮普语"
     },
     "supported_languages_ps": {
-        "message": "pushto"
+        "message": "推动"
     },
     "supported_languages_ro": {
-        "message": "romanian"
+        "message": "罗马尼亚语"
     },
     "supported_languages_ru": {
-        "message": "russian"
+        "message": "俄语"
     },
     "supported_languages_sm": {
-        "message": "samoan"
+        "message": "萨摩亚语"
     },
     "supported_languages_gd": {
-        "message": "scottish gaelic"
+        "message": "苏格兰盖尔语"
     },
     "supported_languages_sr": {
-        "message": "serbian"
+        "message": "塞尔维亚"
     },
     "supported_languages_sn": {
-        "message": "shona"
+        "message": "绍纳"
     },
     "supported_languages_sd": {
-        "message": "sindhi"
+        "message": "信德"
     },
     "supported_languages_si": {
-        "message": "sinhala"
+        "message": "僧伽罗语"
     },
     "supported_languages_sk": {
-        "message": "slovak"
+        "message": "斯洛伐克语"
     },
     "supported_languages_sl": {
-        "message": "slovenian"
+        "message": "斯洛文尼亚语"
     },
     "supported_languages_so": {
-        "message": "somali"
+        "message": "索马里"
     },
     "supported_languages_sx": {
-        "message": "sotho"
+        "message": "索托"
     },
     "supported_languages_es": {
-        "message": "spanish"
+        "message": "西班牙语"
     },
     "supported_languages_su": {
-        "message": "sundanese"
+        "message": "巽他语"
     },
     "supported_languages_sw": {
-        "message": "swahili"
+        "message": "斯瓦希里语"
     },
     "supported_languages_sv": {
-        "message": "swedish"
+        "message": "瑞典"
     },
     "supported_languages_tl": {
-        "message": "tagalog"
+        "message": "他加禄语"
     },
     "supported_languages_tg": {
-        "message": "tajiki"
+        "message": "多治木"
     },
     "supported_languages_ta": {
-        "message": "tamil"
+        "message": "泰米尔语"
     },
     "supported_languages_te": {
-        "message": "telugu"
+        "message": "泰卢固语"
     },
     "supported_languages_th": {
-        "message": "thai"
+        "message": "泰国"
     },
     "supported_languages_tr": {
-        "message": "turkish"
+        "message": "土耳其"
     },
     "supported_languages_uk": {
-        "message": "ukrainian"
+        "message": "乌克兰"
     },
     "supported_languages_ur": {
-        "message": "urdu"
+        "message": "乌尔都语"
     },
     "supported_languages_uz": {
-        "message": "uzbek"
+        "message": "乌兹别克语"
     },
     "supported_languages_vi": {
-        "message": "vietnamese"
+        "message": "越南语"
     },
     "supported_languages_cy": {
-        "message": "welsh"
+        "message": "威尔士语"
     },
     "supported_languages_xh": {
         "message": "xosa"
     },
     "supported_languages_yi": {
-        "message": "yiddish"
+        "message": "意第绪语"
     },
     "supported_languages_yo": {
-        "message": "yoruba"
+        "message": "约鲁巴语"
     },
     "supported_languages_zu": {
-        "message": "zulu"
+        "message": "祖鲁语"
     },
     "supported_languages_qu": {
-        "message": "quechua"
+        "message": "克丘亚语"
     },
     "supported_languages_om": {
-        "message": "oromo"
+        "message": "奥罗莫"
     },
     "supported_languages_ilo": {
-        "message": "ilocano"
+        "message": "伊洛卡诺"
     }
 }

@@ -1,11 +1,6 @@
 {
     "app_name": {
-        "message": "Translater - traduzione del testo selezionato",
-        "placeholders": {
-            "name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - traduzione del testo selezionato"
     },
     "app_description": {
         "message": "Traduzione del testo selezionato con Google Translate con tema chiaro e scuro"
@@ -17,63 +12,63 @@
         "message": "Impostazioni"
     },
     "options_title": {
-        "message": "$NAME$ - impostazioni",
+        "message": "$APP_NAME$ - impostazioni",
         "placeholders": {
-            "name": {
+            "app_name": {
                 "content": "Translater"
             }
         }
     },
     "options_tab_inline_translate": {
-        "message": "Lettura e immissione"
+        "message": "Lettura e input"
     },
     "options_tab_popup_window": {
-        "message": "Finestra popup"
+        "message": "Finestra pop-up"
     },
     "options_tab_appearance": {
-        "message": "Aspetto"
+        "message": "Aspetto esteriore"
     },
     "options_tab_history": {
-        "message": "Cronologia"
+        "message": "Storia"
     },
     "options_inline_button_show": {
-        "message": "Mostra pulsante quando il testo è selezionato"
+        "message": "Mostra il pulsante quando il testo è selezionato"
     },
     "options_text_field_button_show": {
         "message": "Mostra pulsante nel campo di testo"
     },
     "options_hide_button_on_sites": {
-        "message": "Nascondere il pulsante su questi siti:"
+        "message": "Nascondi il pulsante su questi siti:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "È possibile aggiungere siti utilizzando il pulsante delle impostazioni sul sito che si desidera escludere"
+        "message": "Puoi aggiungere siti utilizzando il pulsante delle impostazioni sul sito che desideri escludere"
     },
     "options_show_original_text": {
-        "message": "Mostra testo sorgente"
+        "message": "Mostra il testo di origine"
     },
     "options_show_transliteration": {
         "message": "Mostra traslitterazione"
     },
     "options_history_length": {
-        "message": "Lunghezza cronologia"
+        "message": "Lunghezza della storia"
     },
     "options_records_in_history": {
-        "message": "Record nella cronologia:"
+        "message": "Voci nella storia:"
     },
     "options_history_disable": {
         "message": "Disabilita cronologia"
     },
     "options_clear_history": {
-        "message": "Cancella cronologia"
+        "message": "Elimina cronologia"
     },
     "options_delete_history_item": {
-        "message": "Elimina dalla storia"
+        "message": "Elimina dalla cronologia"
     },
     "text_expand": {
-        "message": "Altro"
+        "message": "Di più"
     },
     "text_collapse": {
-        "message": "Сollapse"
+        "message": "Collapse"
     },
     "target_lang_label": {
         "message": "Traduci in:"
@@ -100,7 +95,7 @@
         "message": "Mostra il pulsante per tutti i siti"
     },
     "popup_settings_options_link": {
-        "message": "Impostazioni aggiuntive"
+        "message": "Altre impostazioni"
     },
     "theme_light": {
         "message": "Tema chiaro"
@@ -112,7 +107,7 @@
         "message": "Tema predefinito"
     },
     "tooltip_translate_text": {
-        "message": "Traduci selezionato testo"
+        "message": "Traduci il testo selezionato"
     },
     "tooltip_settings": {
         "message": "Impostazioni"
@@ -133,7 +128,7 @@
         "message": "Ascolta il testo"
     },
     "tooltip_listen_stop": {
-        "message": "Stop"
+        "message": "Fermare"
     },
     "tooltip_listen_language_is_not_support": {
         "message": "La lingua non è supportata"
@@ -142,13 +137,13 @@
         "message": "Indietro"
     },
     "tooltip_go_forward": {
-        "message": "Avanti"
+        "message": "Inoltrare"
     },
     "date_today": {
-        "message": "oggi"
+        "message": "Oggi"
     },
     "date_yesterday": {
-        "message": "ieri"
+        "message": "Ieri"
     },
     "select_language_auto": {
         "message": "rileva lingua"
@@ -163,13 +158,13 @@
         "message": "amarico"
     },
     "supported_languages_ar": {
-        "message": "arabo"
+        "message": "Arabo"
     },
     "supported_languages_hy": {
         "message": "armeno"
     },
     "supported_languages_az": {
-        "message": "azero"
+        "message": "azerbaigiano"
     },
     "supported_languages_eu": {
         "message": "basco"
@@ -196,10 +191,10 @@
         "message": "chewa"
     },
     "supported_languages_zh_CN": {
-        "message": "cinese (semplificato)"
+        "message": "cinese semplificato)"
     },
     "supported_languages_zh_TW": {
-        "message": "cinese (tradizionale)"
+        "message": "cinese tradizionale)"
     },
     "supported_languages_co": {
         "message": "corso"
@@ -241,7 +236,7 @@
         "message": "georgiano"
     },
     "supported_languages_de": {
-        "message": "tedesco"
+        "message": "Tedesco"
     },
     "supported_languages_el": {
         "message": "greco"
@@ -253,7 +248,7 @@
         "message": "haitiano"
     },
     "supported_languages_ha": {
-        "message": "hausa"
+        "message": "haussa"
     },
     "supported_languages_haw": {
         "message": "hawaiano"
@@ -280,7 +275,7 @@
         "message": "indonesiano"
     },
     "supported_languages_ga": {
-        "message": "irlandese"
+        "message": "irlandesi"
     },
     "supported_languages_it": {
         "message": "italiano"
@@ -370,7 +365,7 @@
         "message": "portoghese"
     },
     "supported_languages_pa": {
-        "message": "punjabi"
+        "message": "punjab"
     },
     "supported_languages_ps": {
         "message": "pushto"
@@ -385,7 +380,7 @@
         "message": "samoano"
     },
     "supported_languages_gd": {
-        "message": "gaelico scozzese"
+        "message": "Gaelico Scozzese"
     },
     "supported_languages_sr": {
         "message": "serbo"
@@ -427,19 +422,19 @@
         "message": "tagalog"
     },
     "supported_languages_tg": {
-        "message": "tajiki"
+        "message": "tagiki"
     },
     "supported_languages_ta": {
         "message": "tamil"
     },
     "supported_languages_te": {
-        "message": "telugu"
+        "message": "Telugu"
     },
     "supported_languages_th": {
-        "message": "thai"
+        "message": "tailandese"
     },
     "supported_languages_tr": {
-        "message": "turco"
+        "message": "Turco"
     },
     "supported_languages_uk": {
         "message": "ucraino"
@@ -448,7 +443,7 @@
         "message": "urdu"
     },
     "supported_languages_uz": {
-        "message": "uzbeko"
+        "message": "uzbeco"
     },
     "supported_languages_vi": {
         "message": "vietnamita"
@@ -466,7 +461,7 @@
         "message": "yoruba"
     },
     "supported_languages_zu": {
-        "message": "zulu"
+        "message": "zulù"
     },
     "supported_languages_qu": {
         "message": "quechua"
