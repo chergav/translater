@@ -136,6 +136,12 @@
     "tooltip_go_back": {
         "message": "חזור"
     },
+    "tooltip_pin_window": {
+        "message": "חלון סיכה"
+    },
+    "tooltip_unpin_window": {
+        "message": "בטל את הצמדת החלון"
+    },
     "tooltip_go_forward": {
         "message": "קָדִימָה"
     },
@@ -191,10 +197,10 @@
         "message": "צ'ווה"
     },
     "supported_languages_zh_CN": {
-        "message": "סינית מופשטת)"
+        "message": "סינית מופשטת"
     },
     "supported_languages_zh_TW": {
-        "message": "מסורת סינית)"
+        "message": "מסורת סינית"
     },
     "supported_languages_co": {
         "message": "קורסיקאי"
@@ -227,13 +233,13 @@
         "message": "צָרְפָתִית"
     },
     "supported_languages_fy": {
-        "message": "פרסי"
+        "message": "פריזית"
     },
     "supported_languages_gl": {
         "message": "גליציאנית"
     },
     "supported_languages_ka": {
-        "message": "גיאורגית"
+        "message": "גרוזינית"
     },
     "supported_languages_de": {
         "message": "גֶרמָנִיָת"
@@ -269,7 +275,7 @@
         "message": "איסלנדית"
     },
     "supported_languages_ig": {
-        "message": "איבו"
+        "message": "איגבו"
     },
     "supported_languages_id": {
         "message": "אינדונזית"
@@ -284,7 +290,7 @@
         "message": "יַפָּנִית"
     },
     "supported_languages_jv": {
-        "message": "ג'וואנית"
+        "message": "ג'אוואנית"
     },
     "supported_languages_kn": {
         "message": "קנאדה"
@@ -296,7 +302,7 @@
         "message": "חמר"
     },
     "supported_languages_ky": {
-        "message": "קירגיז"
+        "message": "קירגיזי"
     },
     "supported_languages_ko": {
         "message": "קוריאנית"
@@ -317,7 +323,7 @@
         "message": "ליטאית"
     },
     "supported_languages_lb": {
-        "message": "לוקסמבורגית"
+        "message": "לוקסמבורג"
     },
     "supported_languages_mk": {
         "message": "מקדונית"
@@ -329,7 +335,7 @@
         "message": "מלאית"
     },
     "supported_languages_ml": {
-        "message": "מלאיאלם"
+        "message": "מלאיאלאם"
     },
     "supported_languages_mt": {
         "message": "מלטזית"
@@ -350,10 +356,10 @@
         "message": "מיאנמר"
     },
     "supported_languages_ne": {
-        "message": "mepali"
+        "message": "מפאלי"
     },
     "supported_languages_no": {
-        "message": "נורווגית"
+        "message": "נורבגית"
     },
     "supported_languages_fa": {
         "message": "פַּרסִית"
@@ -377,7 +383,7 @@
         "message": "רוּסִי"
     },
     "supported_languages_sm": {
-        "message": "סמואי"
+        "message": "סמואנית"
     },
     "supported_languages_gd": {
         "message": "גאלית סקוטית"
@@ -389,7 +395,7 @@
         "message": "שונה"
     },
     "supported_languages_sd": {
-        "message": "סינדי"
+        "message": "סינדהי"
     },
     "supported_languages_si": {
         "message": "סינהאלה"
@@ -413,7 +419,7 @@
         "message": "סונדני"
     },
     "supported_languages_sw": {
-        "message": "סוואהילי"
+        "message": "סוואהילית"
     },
     "supported_languages_sv": {
         "message": "שוודית"
@@ -437,7 +443,7 @@
         "message": "טורקי"
     },
     "supported_languages_uk": {
-        "message": "אוקראיני"
+        "message": "אוקראינית"
     },
     "supported_languages_ur": {
         "message": "אורדו"
@@ -446,13 +452,13 @@
         "message": "אוזבקית"
     },
     "supported_languages_vi": {
-        "message": "ויאטנמית"
+        "message": "וייטנאמית"
     },
     "supported_languages_cy": {
         "message": "וולשית"
     },
     "supported_languages_xh": {
-        "message": "xosa"
+        "message": "קסוסה"
     },
     "supported_languages_yi": {
         "message": "אִידִישׁ"
@@ -467,9 +473,9 @@
         "message": "קצ'ואה"
     },
     "supported_languages_om": {
-        "message": "אומו"
+        "message": "אורומו"
     },
     "supported_languages_ilo": {
-        "message": "ilocano"
+        "message": "אילוקנו"
     }
 }

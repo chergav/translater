@@ -43,7 +43,7 @@
 												: ''}
 											"
 											on:click={() => {
-												dispatch('translateWord', reverse_translation);
+												$store.selectedText = reverse_translation;
 											}}
 											on:mouseenter={() => {												
 												currentWord = reverse_translation;
@@ -86,14 +86,12 @@
 {/if}
 
 <script>
-import { createEventDispatcher } from 'svelte';
+import { store } from '~/content/store';
 import { getMessage } from '~/common/browserApi';
 
 export let translate;
 
 let currentWord;
-
-const dispatch = createEventDispatcher();
 
 const scoreHandler = n => {
 	const score = isNaN(n) ? 0 : n;

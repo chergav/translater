@@ -136,6 +136,12 @@
     "tooltip_go_back": {
         "message": "tagasi"
     },
+    "tooltip_pin_window": {
+        "message": "Kinnitage aken"
+    },
+    "tooltip_unpin_window": {
+        "message": "Vabastage aken"
+    },
     "tooltip_go_forward": {
         "message": "Edasi"
     },
@@ -149,13 +155,13 @@
         "message": "Tuvasta keel"
     },
     "supported_languages_af": {
-        "message": "aafriklane"
+        "message": "Aafrika"
     },
     "supported_languages_sq": {
         "message": "albaanlane"
     },
     "supported_languages_am": {
-        "message": "amhara"
+        "message": "amhari"
     },
     "supported_languages_ar": {
         "message": "araabia keel"
@@ -164,7 +170,7 @@
         "message": "armeenlane"
     },
     "supported_languages_az": {
-        "message": "aserbaidžaani"
+        "message": "Aserbaidžaan"
     },
     "supported_languages_eu": {
         "message": "baski keel"
@@ -173,10 +179,10 @@
         "message": "valgevenelane"
     },
     "supported_languages_bn": {
-        "message": "bengali keel"
+        "message": "bengali"
     },
     "supported_languages_bs": {
-        "message": "bosnialane"
+        "message": "bosnia keel"
     },
     "supported_languages_bg": {
         "message": "bulgaaria keel"
@@ -185,31 +191,31 @@
         "message": "katalaani"
     },
     "supported_languages_ceb": {
-        "message": "cebuano"
+        "message": "Cebuano"
     },
     "supported_languages_ny": {
-        "message": "chewa"
+        "message": "Chewa"
     },
     "supported_languages_zh_CN": {
-        "message": "lihtsustatud hiina keel)"
+        "message": "lihtsustatud hiina keel"
     },
     "supported_languages_zh_TW": {
-        "message": "traditsiooniline hiina keel)"
+        "message": "traditsiooniline hiina keel"
     },
     "supported_languages_co": {
-        "message": "korsikalane"
+        "message": "Korsika"
     },
     "supported_languages_hr": {
-        "message": "horvaatia"
+        "message": "Horvaatia"
     },
     "supported_languages_cs": {
-        "message": "tšehhi keel"
+        "message": "tšehhi"
     },
     "supported_languages_da": {
         "message": "taani keel"
     },
     "supported_languages_nl": {
-        "message": "hollandlane"
+        "message": "hollandi keel"
     },
     "supported_languages_en": {
         "message": "Inglise"
@@ -227,13 +233,13 @@
         "message": "prantsuse keel"
     },
     "supported_languages_fy": {
-        "message": "friisilane"
+        "message": "friisi keel"
     },
     "supported_languages_gl": {
-        "message": "galicia"
+        "message": "Galicia"
     },
     "supported_languages_ka": {
-        "message": "gruusia keel"
+        "message": "Gruusia keel"
     },
     "supported_languages_de": {
         "message": "saksa keel"
@@ -242,16 +248,16 @@
         "message": "kreeka keel"
     },
     "supported_languages_gu": {
-        "message": "gudžarati keel"
+        "message": "gudžarati"
     },
     "supported_languages_ht": {
         "message": "haitilane"
     },
     "supported_languages_ha": {
-        "message": "hausa"
+        "message": "Hausa"
     },
     "supported_languages_haw": {
-        "message": "havai"
+        "message": "Havai"
     },
     "supported_languages_he": {
         "message": "heebrea keel"
@@ -263,7 +269,7 @@
         "message": "hindi"
     },
     "supported_languages_hu": {
-        "message": "ungarlane"
+        "message": "ungari"
     },
     "supported_languages_is": {
         "message": "islandi"
@@ -272,7 +278,7 @@
         "message": "igbo"
     },
     "supported_languages_id": {
-        "message": "indoneeslane"
+        "message": "Indoneesia"
     },
     "supported_languages_ga": {
         "message": "iirlane"
@@ -281,7 +287,7 @@
         "message": "itaalia keel"
     },
     "supported_languages_ja": {
-        "message": "jaapanlane"
+        "message": "Jaapani"
     },
     "supported_languages_jv": {
         "message": "jaava keel"
@@ -299,13 +305,13 @@
         "message": "kirgiis"
     },
     "supported_languages_ko": {
-        "message": "korealane"
+        "message": "korea keel"
     },
     "supported_languages_ku": {
         "message": "kurdi"
     },
     "supported_languages_lo": {
-        "message": "laoslane"
+        "message": "Laose"
     },
     "supported_languages_la": {
         "message": "ladina keel"
@@ -314,16 +320,16 @@
         "message": "lätlane"
     },
     "supported_languages_lt": {
-        "message": "leedulane"
+        "message": "Leedu"
     },
     "supported_languages_lb": {
-        "message": "luksemburglane"
+        "message": "Luksemburgi keel"
     },
     "supported_languages_mk": {
         "message": "makedoonlane"
     },
     "supported_languages_mg": {
-        "message": "madagaskari"
+        "message": "Madagaskari"
     },
     "supported_languages_ms": {
         "message": "malai"
@@ -341,16 +347,16 @@
         "message": "marati"
     },
     "supported_languages_mn": {
-        "message": "mongoolia"
+        "message": "mongoli keel"
     },
     "supported_languages_hmn": {
-        "message": "munk"
+        "message": "Munk"
     },
     "supported_languages_my": {
-        "message": "myanmar"
+        "message": "Myanmar"
     },
     "supported_languages_ne": {
-        "message": "mepali"
+        "message": "Mepali"
     },
     "supported_languages_no": {
         "message": "norra keel"
@@ -359,16 +365,16 @@
         "message": "pärslane"
     },
     "supported_languages_pl": {
-        "message": "lihvima"
+        "message": "poola keel"
     },
     "supported_languages_pt": {
-        "message": "portugallane"
+        "message": "portugali keel"
     },
     "supported_languages_pa": {
         "message": "pandžabi"
     },
     "supported_languages_ps": {
-        "message": "pushto"
+        "message": "Pushto"
     },
     "supported_languages_ro": {
         "message": "rumeenlane"
@@ -377,40 +383,40 @@
         "message": "vene keel"
     },
     "supported_languages_sm": {
-        "message": "samoa"
+        "message": "Samoa"
     },
     "supported_languages_gd": {
-        "message": "šoti gaeli keel"
+        "message": "Šoti gaeli keel"
     },
     "supported_languages_sr": {
-        "message": "serbia"
+        "message": "serblane"
     },
     "supported_languages_sn": {
-        "message": "shona"
+        "message": "Shona"
     },
     "supported_languages_sd": {
-        "message": "sindhi"
+        "message": "Sindhi"
     },
     "supported_languages_si": {
-        "message": "sinhala"
+        "message": "singali keel"
     },
     "supported_languages_sk": {
-        "message": "slovaki keel"
+        "message": "slovaki"
     },
     "supported_languages_sl": {
-        "message": "sloveen"
+        "message": "Sloveenia"
     },
     "supported_languages_so": {
-        "message": "somaali"
+        "message": "Somaalia"
     },
     "supported_languages_sx": {
-        "message": "sotho"
+        "message": "Sotho"
     },
     "supported_languages_es": {
         "message": "hispaania keel"
     },
     "supported_languages_su": {
-        "message": "sundane"
+        "message": "sundalane"
     },
     "supported_languages_sw": {
         "message": "suahiili keel"
@@ -425,13 +431,13 @@
         "message": "tadžiki"
     },
     "supported_languages_ta": {
-        "message": "tamiil"
+        "message": "tamili keel"
     },
     "supported_languages_te": {
         "message": "telugu"
     },
     "supported_languages_th": {
-        "message": "Tai keel"
+        "message": "Tai"
     },
     "supported_languages_tr": {
         "message": "türgi keel"
@@ -440,19 +446,19 @@
         "message": "ukrainlane"
     },
     "supported_languages_ur": {
-        "message": "urdu keel"
+        "message": "urdu"
     },
     "supported_languages_uz": {
-        "message": "usbeki keel"
+        "message": "usbeki"
     },
     "supported_languages_vi": {
         "message": "vietnamlane"
     },
     "supported_languages_cy": {
-        "message": "kõmri keel"
+        "message": "kõmri"
     },
     "supported_languages_xh": {
-        "message": "xosa"
+        "message": "Xosa"
     },
     "supported_languages_yi": {
         "message": "jidiš"
@@ -461,15 +467,15 @@
         "message": "joruba"
     },
     "supported_languages_zu": {
-        "message": "zulu"
+        "message": "suulu"
     },
     "supported_languages_qu": {
         "message": "ketšua"
     },
     "supported_languages_om": {
-        "message": "oromo"
+        "message": "Oromo"
     },
     "supported_languages_ilo": {
-        "message": "ilocano"
+        "message": "Ilocano"
     }
 }

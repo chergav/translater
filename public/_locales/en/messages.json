@@ -136,6 +136,12 @@
 	"tooltip_go_back": {
 		"message": "Back"
 	},
+	"tooltip_pin_window": {
+		"message": "Pin window"
+	},
+	"tooltip_unpin_window": {
+		"message": "Unpin window"
+	},
 	"tooltip_go_forward": {
 		"message": "Forward"
 	},
@@ -149,327 +155,327 @@
 		"message": "detect language"
 	},
 	"supported_languages_af": {
-		"message": "african"
+		"message": "African"
 	},
 	"supported_languages_sq": {
-		"message": "albanian"
+		"message": "Albanian"
 	},
 	"supported_languages_am": {
-		"message": "amharic"
+		"message": "Amharic"
 	},
 	"supported_languages_ar": {
-		"message": "arabic"
+		"message": "Arabic"
 	},
 	"supported_languages_hy": {
-		"message": "armenian"
+		"message": "Armenian"
 	},
 	"supported_languages_az": {
-		"message": "azerbaijani"
+		"message": "Azerbaijani"
 	},
 	"supported_languages_eu": {
-		"message": "basque"
+		"message": "Basque"
 	},
 	"supported_languages_be": {
-		"message": "belarusian"
+		"message": "Belarusian"
 	},
 	"supported_languages_bn": {
-		"message": "bengali"
+		"message": "Bengali"
 	},
 	"supported_languages_bs": {
-		"message": "bosnian"
+		"message": "Bosnian"
 	},
 	"supported_languages_bg": {
-		"message": "bulgarian"
+		"message": "Bulgarian"
 	},
 	"supported_languages_ca": {
-		"message": "catalan"
+		"message": "Catalan"
 	},
 	"supported_languages_ceb": {
-		"message": "cebuano"
+		"message": "Cebuano"
 	},
 	"supported_languages_ny": {
-		"message": "chewa"
+		"message": "Chewa"
 	},
 	"supported_languages_zh_CN": {
-		"message": "chinese (simplified)"
+		"message": "Chinese simplified"
 	},
 	"supported_languages_zh_TW": {
-		"message": "chinese (traditional)"
+		"message": "Chinese traditional"
 	},
 	"supported_languages_co": {
-		"message": "corsican"
+		"message": "Corsican"
 	},
 	"supported_languages_hr": {
-		"message": "croatian"
+		"message": "Croatian"
 	},
 	"supported_languages_cs": {
-		"message": "czech"
+		"message": "Czech"
 	},
 	"supported_languages_da": {
-		"message": "danish"
+		"message": "Danish"
 	},
 	"supported_languages_nl": {
-		"message": "dutch"
+		"message": "Dutch"
 	},
 	"supported_languages_en": {
-		"message": "english"
+		"message": "English"
 	},
 	"supported_languages_eo": {
-		"message": "esperanto"
+		"message": "Esperanto"
 	},
 	"supported_languages_et": {
-		"message": "estonian"
+		"message": "Estonian"
 	},
 	"supported_languages_fi": {
-		"message": "finnish"
+		"message": "Finnish"
 	},
 	"supported_languages_fr": {
-		"message": "french"
+		"message": "French"
 	},
 	"supported_languages_fy": {
-		"message": "frisian"
+		"message": "Frisian"
 	},
 	"supported_languages_gl": {
-		"message": "galician"
+		"message": "Galician"
 	},
 	"supported_languages_ka": {
-		"message": "georgian"
+		"message": "Georgian"
 	},
 	"supported_languages_de": {
-		"message": "german"
+		"message": "German"
 	},
 	"supported_languages_el": {
-		"message": "greek"
+		"message": "Greek"
 	},
 	"supported_languages_gu": {
-		"message": "gujarati"
+		"message": "Gujarati"
 	},
 	"supported_languages_ht": {
-		"message": "haitian"
+		"message": "Haitian"
 	},
 	"supported_languages_ha": {
-		"message": "hausa"
+		"message": "Hausa"
 	},
 	"supported_languages_haw": {
-		"message": "hawaiian"
+		"message": "Hawaiian"
 	},
 	"supported_languages_he": {
-		"message": "hebrew"
+		"message": "Hebrew"
 	},
 	"supported_languages_iw": {
-		"message": "hebrew"
+		"message": "Hebrew"
 	},
 	"supported_languages_hi": {
-		"message": "hindi"
+		"message": "Hindi"
 	},
 	"supported_languages_hu": {
-		"message": "hungarian"
+		"message": "Hungarian"
 	},
 	"supported_languages_is": {
-		"message": "icelandic"
+		"message": "Icelandic"
 	},
 	"supported_languages_ig": {
-		"message": "igbo"
+		"message": "Igbo"
 	},
 	"supported_languages_id": {
-		"message": "indonesian"
+		"message": "Indonesian"
 	},
 	"supported_languages_ga": {
-		"message": "irish"
+		"message": "Irish"
 	},
 	"supported_languages_it": {
-		"message": "italian"
+		"message": "Italian"
 	},
 	"supported_languages_ja": {
-		"message": "japanese"
+		"message": "Japanese"
 	},
 	"supported_languages_jv": {
-		"message": "javanese"
+		"message": "Javanese"
 	},
 	"supported_languages_kn": {
-		"message": "kannada"
+		"message": "Kannada"
 	},
 	"supported_languages_kk": {
-		"message": "kazakh"
+		"message": "Kazakh"
 	},
 	"supported_languages_km": {
-		"message": "khmer"
+		"message": "Khmer"
 	},
 	"supported_languages_ky": {
-		"message": "kirghiz"
+		"message": "Kirghiz"
 	},
 	"supported_languages_ko": {
-		"message": "korean"
+		"message": "Korean"
 	},
 	"supported_languages_ku": {
-		"message": "kurdish"
+		"message": "Kurdish"
 	},
 	"supported_languages_lo": {
-		"message": "laotian"
+		"message": "Laotian"
 	},
 	"supported_languages_la": {
-		"message": "latin"
+		"message": "Latin"
 	},
 	"supported_languages_lv": {
-		"message": "latvian"
+		"message": "Latvian"
 	},
 	"supported_languages_lt": {
-		"message": "lithuanian"
+		"message": "Lithuanian"
 	},
 	"supported_languages_lb": {
-		"message": "luxembourgish"
+		"message": "Luxembourgish"
 	},
 	"supported_languages_mk": {
-		"message": "macedonian"
+		"message": "Macedonian"
 	},
 	"supported_languages_mg": {
-		"message": "malagasy"
+		"message": "Malagasy"
 	},
 	"supported_languages_ms": {
-		"message": "malay"
+		"message": "Malay"
 	},
 	"supported_languages_ml": {
-		"message": "malayalam"
+		"message": "Malayalam"
 	},
 	"supported_languages_mt": {
-		"message": "maltese"
+		"message": "Maltese"
 	},
 	"supported_languages_mi": {
-		"message": "maori"
+		"message": "Maori"
 	},
 	"supported_languages_mr": {
-		"message": "marathi"
+		"message": "Marathi"
 	},
 	"supported_languages_mn": {
-		"message": "mongolian"
+		"message": "Mongolian"
 	},
 	"supported_languages_hmn": {
-		"message": "monk"
+		"message": "Monk"
 	},
 	"supported_languages_my": {
-		"message": "myanmar"
+		"message": "Myanmar"
 	},
 	"supported_languages_ne": {
-		"message": "mepali"
+		"message": "Mepali"
 	},
 	"supported_languages_no": {
-		"message": "norwegian"
+		"message": "Norwegian"
 	},
 	"supported_languages_fa": {
-		"message": "persian"
+		"message": "Persian"
 	},
 	"supported_languages_pl": {
-		"message": "polish"
+		"message": "Polish"
 	},
 	"supported_languages_pt": {
-		"message": "portuguese"
+		"message": "Portuguese"
 	},
 	"supported_languages_pa": {
-		"message": "punjabi"
+		"message": "Punjabi"
 	},
 	"supported_languages_ps": {
-		"message": "pushto"
+		"message": "Pushto"
 	},
 	"supported_languages_ro": {
-		"message": "romanian"
+		"message": "Romanian"
 	},
 	"supported_languages_ru": {
-		"message": "russian"
+		"message": "Russian"
 	},
 	"supported_languages_sm": {
-		"message": "samoan"
+		"message": "Samoan"
 	},
 	"supported_languages_gd": {
-		"message": "scottish gaelic"
+		"message": "Scottish gaelic"
 	},
 	"supported_languages_sr": {
-		"message": "serbian"
+		"message": "Serbian"
 	},
 	"supported_languages_sn": {
-		"message": "shona"
+		"message": "Shona"
 	},
 	"supported_languages_sd": {
-		"message": "sindhi"
+		"message": "Sindhi"
 	},
 	"supported_languages_si": {
-		"message": "sinhala"
+		"message": "Sinhala"
 	},
 	"supported_languages_sk": {
-		"message": "slovak"
+		"message": "Slovak"
 	},
 	"supported_languages_sl": {
-		"message": "slovenian"
+		"message": "Slovenian"
 	},
 	"supported_languages_so": {
-		"message": "somali"
+		"message": "Somali"
 	},
 	"supported_languages_sx": {
-		"message": "sotho"
+		"message": "Sotho"
 	},
 	"supported_languages_es": {
-		"message": "spanish"
+		"message": "Spanish"
 	},
 	"supported_languages_su": {
-		"message": "sundanese"
+		"message": "Sundanese"
 	},
 	"supported_languages_sw": {
-		"message": "swahili"
+		"message": "Swahili"
 	},
 	"supported_languages_sv": {
-		"message": "swedish"
+		"message": "Swedish"
 	},
 	"supported_languages_tl": {
-		"message": "tagalog"
+		"message": "Tagalog"
 	},
 	"supported_languages_tg": {
-		"message": "tajiki"
+		"message": "Tajiki"
 	},
 	"supported_languages_ta": {
-		"message": "tamil"
+		"message": "Tamil"
 	},
 	"supported_languages_te": {
-		"message": "telugu"
+		"message": "Telugu"
 	},
 	"supported_languages_th": {
-		"message": "thai"
+		"message": "Thai"
 	},
 	"supported_languages_tr": {
-		"message": "turkish"
+		"message": "Turkish"
 	},
 	"supported_languages_uk": {
-		"message": "ukrainian"
+		"message": "Ukrainian"
 	},
 	"supported_languages_ur": {
-		"message": "urdu"
+		"message": "Urdu"
 	},
 	"supported_languages_uz": {
-		"message": "uzbek"
+		"message": "Uzbek"
 	},
 	"supported_languages_vi": {
-		"message": "vietnamese"
+		"message": "Vietnamese"
 	},
 	"supported_languages_cy": {
-		"message": "welsh"
+		"message": "Welsh"
 	},
 	"supported_languages_xh": {
-		"message": "xosa"
+		"message": "Xosa"
 	},
 	"supported_languages_yi": {
-		"message": "yiddish"
+		"message": "Yiddish"
 	},
 	"supported_languages_yo": {
-		"message": "yoruba"
+		"message": "Yoruba"
 	},
 	"supported_languages_zu": {
-		"message": "zulu"
+		"message": "Zulu"
 	},
 	"supported_languages_qu": {
-		"message": "quechua"
+		"message": "Quechua"
 	},
 	"supported_languages_om": {
-		"message": "oromo"
+		"message": "Oromo"
 	},
 	"supported_languages_ilo": {
-		"message": "ilocano"
+		"message": "Ilocano"
 	}
 }

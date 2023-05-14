@@ -26,19 +26,20 @@ const genTranslatedObject = (origObject, translatedArray) => {
 
 	for (let i = 0; i < objectKeys.length; i++) {
 		const key = objectKeys[i];
-
-		clonedObject[key].message = translatedArray[i].trim();
+		let message = translatedArray[i].trim();
 
 		if (key === 'app_name') {
-			clonedObject[key].message = `Translater ${clonedObject[key].message}`;
-			console.log(clonedObject[key]);
+			message = `Translater ${message}`;
+			console.log(message);
 		}
 
 		if (key === 'options_title') {
 			// $ APP_NAME $ -> $APP_NAME$
-			clonedObject[key].message = clonedObject[key].message.replace(/\$\s*(\w+)\s*\$/g, (match, p1) => `$${p1}$`);
-			console.log(clonedObject[key].message);
+			message = message.replace(/\$\s*(\w+)\s*\$/g, (match, p1) => `$${p1}$`);
+			console.log(message);
 		}
+
+		clonedObject[key].message = message;
 	}
 
 	return clonedObject;

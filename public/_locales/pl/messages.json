@@ -136,6 +136,12 @@
     "tooltip_go_back": {
         "message": "Z powrotem"
     },
+    "tooltip_pin_window": {
+        "message": "Przypnij okno"
+    },
+    "tooltip_unpin_window": {
+        "message": "Odepnij okno"
+    },
     "tooltip_go_forward": {
         "message": "Do przodu"
     },
@@ -185,16 +191,16 @@
         "message": "kataloński"
     },
     "supported_languages_ceb": {
-        "message": "cebuano"
+        "message": "cebuański"
     },
     "supported_languages_ny": {
-        "message": "żuć"
+        "message": "Chewa"
     },
     "supported_languages_zh_CN": {
-        "message": "uproszczony chiński)"
+        "message": "uproszczony chiński"
     },
     "supported_languages_zh_TW": {
-        "message": "chiński tradycyjny)"
+        "message": "chiński tradycyjny"
     },
     "supported_languages_co": {
         "message": "korsykański"
@@ -209,7 +215,7 @@
         "message": "duński"
     },
     "supported_languages_nl": {
-        "message": "holenderski"
+        "message": "Holenderski"
     },
     "supported_languages_en": {
         "message": "język angielski"
@@ -248,7 +254,7 @@
         "message": "haitański"
     },
     "supported_languages_ha": {
-        "message": "hausa"
+        "message": "Hausa"
     },
     "supported_languages_haw": {
         "message": "hawajski"
@@ -269,7 +275,7 @@
         "message": "islandzki"
     },
     "supported_languages_ig": {
-        "message": "igbo"
+        "message": "Igbo"
     },
     "supported_languages_id": {
         "message": "indonezyjski"
@@ -344,13 +350,13 @@
         "message": "mongolski"
     },
     "supported_languages_hmn": {
-        "message": "mnich"
+        "message": "Mnich"
     },
     "supported_languages_my": {
         "message": "Myanmar"
     },
     "supported_languages_ne": {
-        "message": "mepali"
+        "message": "Mepali"
     },
     "supported_languages_no": {
         "message": "norweski"
@@ -359,16 +365,16 @@
         "message": "perski"
     },
     "supported_languages_pl": {
-        "message": "polski"
+        "message": "Polski"
     },
     "supported_languages_pt": {
         "message": "portugalski"
     },
     "supported_languages_pa": {
-        "message": "pendżabski"
+        "message": "Pendżabski"
     },
     "supported_languages_ps": {
-        "message": "popchnąć do"
+        "message": "Popchnąć do"
     },
     "supported_languages_ro": {
         "message": "rumuński"
@@ -386,10 +392,10 @@
         "message": "serbski"
     },
     "supported_languages_sn": {
-        "message": "shona"
+        "message": "Shona"
     },
     "supported_languages_sd": {
-        "message": "sindhi"
+        "message": "Sindhi"
     },
     "supported_languages_si": {
         "message": "syngaleski"
@@ -404,13 +410,13 @@
         "message": "somalijski"
     },
     "supported_languages_sx": {
-        "message": "soto"
+        "message": "Soto"
     },
     "supported_languages_es": {
         "message": "hiszpański"
     },
     "supported_languages_su": {
-        "message": "sundajski"
+        "message": "Sundajski"
     },
     "supported_languages_sw": {
         "message": "suahili"
@@ -452,13 +458,13 @@
         "message": "walijski"
     },
     "supported_languages_xh": {
-        "message": "xosa"
+        "message": "Xosa"
     },
     "supported_languages_yi": {
         "message": "jidysz"
     },
     "supported_languages_yo": {
-        "message": "joruba"
+        "message": "Joruba"
     },
     "supported_languages_zu": {
         "message": "Zulus"
@@ -467,9 +473,9 @@
         "message": "keczua"
     },
     "supported_languages_om": {
-        "message": "oromo"
+        "message": "Oromo"
     },
     "supported_languages_ilo": {
-        "message": "ilocano"
+        "message": "Ilocano"
     }
 }

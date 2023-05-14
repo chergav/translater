@@ -136,6 +136,12 @@
     "tooltip_go_back": {
         "message": "Kembali"
     },
+    "tooltip_pin_window": {
+        "message": "Pin jendela"
+    },
+    "tooltip_unpin_window": {
+        "message": "Lepas sematan jendela"
+    },
     "tooltip_go_forward": {
         "message": "Maju"
     },
@@ -155,22 +161,22 @@
         "message": "bahasa Albania"
     },
     "supported_languages_am": {
-        "message": "amharik"
+        "message": "Amharik"
     },
     "supported_languages_ar": {
         "message": "Arab"
     },
     "supported_languages_hy": {
-        "message": "armenia"
+        "message": "Armenia"
     },
     "supported_languages_az": {
-        "message": "azerbaijan"
+        "message": "Azerbaijan"
     },
     "supported_languages_eu": {
-        "message": "basque"
+        "message": "Basque"
     },
     "supported_languages_be": {
-        "message": "belarus"
+        "message": "Belarusia"
     },
     "supported_languages_bn": {
         "message": "Benggala"
@@ -182,19 +188,19 @@
         "message": "Bulgaria"
     },
     "supported_languages_ca": {
-        "message": "katalan"
+        "message": "Katalan"
     },
     "supported_languages_ceb": {
-        "message": "cebuano"
+        "message": "Cebuano"
     },
     "supported_languages_ny": {
-        "message": "kunyah"
+        "message": "Chewa"
     },
     "supported_languages_zh_CN": {
-        "message": "bahasa Tiongkok yang disederhanakan)"
+        "message": "bahasa Tiongkok yang disederhanakan"
     },
     "supported_languages_zh_TW": {
-        "message": "Cina tradisional)"
+        "message": "Cina tradisional"
     },
     "supported_languages_co": {
         "message": "Korsika"
@@ -212,7 +218,7 @@
         "message": "Belanda"
     },
     "supported_languages_en": {
-        "message": "bahasa inggris"
+        "message": "Bahasa inggris"
     },
     "supported_languages_eo": {
         "message": "Esperanto"
@@ -227,31 +233,31 @@
         "message": "Perancis"
     },
     "supported_languages_fy": {
-        "message": "frisian"
+        "message": "Frisia"
     },
     "supported_languages_gl": {
-        "message": "Galicia"
+        "message": "Galisia"
     },
     "supported_languages_ka": {
-        "message": "orang Georgia"
+        "message": "Georgia"
     },
     "supported_languages_de": {
         "message": "Jerman"
     },
     "supported_languages_el": {
-        "message": "orang yunani"
+        "message": "Orang yunani"
     },
     "supported_languages_gu": {
-        "message": "gujarati"
+        "message": "Gujarati"
     },
     "supported_languages_ht": {
         "message": "Haiti"
     },
     "supported_languages_ha": {
-        "message": "hausa"
+        "message": "Hausa"
     },
     "supported_languages_haw": {
-        "message": "hawaii"
+        "message": "Hawaii"
     },
     "supported_languages_he": {
         "message": "Ibrani"
@@ -266,10 +272,10 @@
         "message": "Hongaria"
     },
     "supported_languages_is": {
-        "message": "bahasa Islandia"
+        "message": "Islandia"
     },
     "supported_languages_ig": {
-        "message": "igbo"
+        "message": "Igbo"
     },
     "supported_languages_id": {
         "message": "bahasa Indonesia"
@@ -287,13 +293,13 @@
         "message": "Jawa"
     },
     "supported_languages_kn": {
-        "message": "kannada"
+        "message": "Kannada"
     },
     "supported_languages_kk": {
-        "message": "kazakh"
+        "message": "Kazakh"
     },
     "supported_languages_km": {
-        "message": "khmer"
+        "message": "Khmer"
     },
     "supported_languages_ky": {
         "message": "Kirgiz"
@@ -317,7 +323,7 @@
         "message": "Lithuania"
     },
     "supported_languages_lb": {
-        "message": "luksemburg"
+        "message": "Luksemburg"
     },
     "supported_languages_mk": {
         "message": "Makedonia"
@@ -329,31 +335,31 @@
         "message": "Melayu"
     },
     "supported_languages_ml": {
-        "message": "malayalam"
+        "message": "Malayalam"
     },
     "supported_languages_mt": {
         "message": "Malta"
     },
     "supported_languages_mi": {
-        "message": "maori"
+        "message": "Maori"
     },
     "supported_languages_mr": {
-        "message": "marathi"
+        "message": "Marathi"
     },
     "supported_languages_mn": {
-        "message": "mongolia"
+        "message": "Mongolia"
     },
     "supported_languages_hmn": {
-        "message": "biarawan"
+        "message": "Biarawan"
     },
     "supported_languages_my": {
-        "message": "myanmar"
+        "message": "Myanmar"
     },
     "supported_languages_ne": {
-        "message": "mepali"
+        "message": "Mepali"
     },
     "supported_languages_no": {
-        "message": "norwegia"
+        "message": "Norwegia"
     },
     "supported_languages_fa": {
         "message": "Orang Persia"
@@ -365,10 +371,10 @@
         "message": "Portugis"
     },
     "supported_languages_pa": {
-        "message": "punjabi"
+        "message": "Punjabi"
     },
     "supported_languages_ps": {
-        "message": "pushto"
+        "message": "Tekan ke"
     },
     "supported_languages_ro": {
         "message": "Rumania"
@@ -377,58 +383,58 @@
         "message": "Rusia"
     },
     "supported_languages_sm": {
-        "message": "samoa"
+        "message": "Samoa"
     },
     "supported_languages_gd": {
-        "message": "gaelik Skotlandia"
+        "message": "Gaelik Skotlandia"
     },
     "supported_languages_sr": {
         "message": "Orang Serbia"
     },
     "supported_languages_sn": {
-        "message": "shona"
+        "message": "Shona"
     },
     "supported_languages_sd": {
-        "message": "sindhi"
+        "message": "Sindhi"
     },
     "supported_languages_si": {
-        "message": "sinhala"
+        "message": "Sinhala"
     },
     "supported_languages_sk": {
         "message": "Orang Slovakia"
     },
     "supported_languages_sl": {
-        "message": "bahasa Slovenia"
+        "message": "Slovenia"
     },
     "supported_languages_so": {
         "message": "Somalia"
     },
     "supported_languages_sx": {
-        "message": "sotho"
+        "message": "Soto"
     },
     "supported_languages_es": {
         "message": "Orang Spanyol"
     },
     "supported_languages_su": {
-        "message": "sunda"
+        "message": "Sunda"
     },
     "supported_languages_sw": {
-        "message": "swahili"
+        "message": "Swahili"
     },
     "supported_languages_sv": {
         "message": "Orang Swedia"
     },
     "supported_languages_tl": {
-        "message": "tagalog"
+        "message": "Tagalog"
     },
     "supported_languages_tg": {
-        "message": "tajiki"
+        "message": "Tajiki"
     },
     "supported_languages_ta": {
         "message": "Tamil"
     },
     "supported_languages_te": {
-        "message": "telugu"
+        "message": "Telugu"
     },
     "supported_languages_th": {
         "message": "Thai"
@@ -440,36 +446,36 @@
         "message": "Orang Ukraina"
     },
     "supported_languages_ur": {
-        "message": "urdu"
+        "message": "Urdu"
     },
     "supported_languages_uz": {
-        "message": "uzbek"
+        "message": "Uzbek"
     },
     "supported_languages_vi": {
         "message": "Orang Vietnam"
     },
     "supported_languages_cy": {
-        "message": "welsh"
+        "message": "Welsh"
     },
     "supported_languages_xh": {
-        "message": "xosa"
+        "message": "Xosa"
     },
     "supported_languages_yi": {
         "message": "Yiddi"
     },
     "supported_languages_yo": {
-        "message": "yoruba"
+        "message": "Yoruba"
     },
     "supported_languages_zu": {
-        "message": "zulu"
+        "message": "Zulu"
     },
     "supported_languages_qu": {
-        "message": "quechua"
+        "message": "Quechua"
     },
     "supported_languages_om": {
-        "message": "oromo"
+        "message": "Oromo"
     },
     "supported_languages_ilo": {
-        "message": "ilocano"
+        "message": "Ilocano"
     }
 }

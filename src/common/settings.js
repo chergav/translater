@@ -8,7 +8,8 @@ const defaultSettings = {
 	blacklistDomainForInline: [],
 	blacklistDomainForText: [],
 	historyLength: 50,
-	history: []
+	history: [],
+	pinWindow: false
 };
 
 const themes = [

@@ -20,7 +20,7 @@ const createTrigger = event => {
 
 	store.update(data => ({
 		...data,
-		selectedText,
+		// selectedText,
 		hostname: window.location.hostname,
 		isInTextField: isInTextField(),
 		selectedElemRect: getSelectedElemRect(),

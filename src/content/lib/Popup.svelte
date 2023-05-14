@@ -1,6 +1,6 @@
 <PopupHeader />
 {#await $store.translated}
-	<div class="flex justify-center items-center h-[146px] w-full">
+	<div class="flex justify-center items-center h-[200px] w-full">
 		<div
 			class="
 				animate-spin
@@ -150,11 +150,7 @@
 			{#each tabs as item}
 				{#if activeTab === item.tab}
 					<div transition:slide|local={{ duration: 250 }}>
-						<svelte:component
-							this={item.component}
-							{translate}
-							on:translateWord={handleTranslate}
-						/>
+						<svelte:component this={item.component} {translate}	/>
 					</div>
 				{/if}
 			{/each}
@@ -171,7 +167,7 @@
 import { createEventDispatcher, onMount } from 'svelte';
 import { slide } from 'svelte/transition';
 import { persistentStore } from '~/common/store';
-import { store } from '../store';
+import { store, selectedText } from '../store';
 import { languages } from '~/common/settings';
 import PopupHeader from './PopupHeader.svelte';
 import SelectLang from '~/lib/SelectLang.svelte';
@@ -251,24 +247,14 @@ const getTranslate = async () => {
 		});
 	}
 
-	dispatch('update');
-
 	return translate;
 };
 
-$store.translated = getTranslate();
-
-const handleTranslate = ({ detail }) => {
-	if (detail) {
-		if ($store.selectedText === detail) {
-			return;
-		}
-
-		$store.selectedText = detail;
-	}
-
+const handleTranslate = () => {
 	$store.translated = getTranslate();
 };
+
+$: if ($selectedText) handleTranslate();
 
 const tabs = [
 	{ tab: 0, srcKey: false, label: '', component: false },

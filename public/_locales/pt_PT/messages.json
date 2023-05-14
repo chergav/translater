@@ -136,6 +136,12 @@
     "tooltip_go_back": {
         "message": "Voltar"
     },
+    "tooltip_pin_window": {
+        "message": "Fixar janela"
+    },
+    "tooltip_unpin_window": {
+        "message": "Soltar janela"
+    },
     "tooltip_go_forward": {
         "message": "Avançar"
     },
@@ -188,13 +194,13 @@
         "message": "cebuano"
     },
     "supported_languages_ny": {
-        "message": "mastiga"
+        "message": "Chewa"
     },
     "supported_languages_zh_CN": {
-        "message": "chinês simplificado)"
+        "message": "chinês simplificado"
     },
     "supported_languages_zh_TW": {
-        "message": "chinês tradicional)"
+        "message": "chinês tradicional"
     },
     "supported_languages_co": {
         "message": "corso"
@@ -209,10 +215,10 @@
         "message": "dinamarquês"
     },
     "supported_languages_nl": {
-        "message": "holandês"
+        "message": "Holandês"
     },
     "supported_languages_en": {
-        "message": "inglês"
+        "message": "Inglês"
     },
     "supported_languages_eo": {
         "message": "esperanto"
@@ -224,7 +230,7 @@
         "message": "finlandês"
     },
     "supported_languages_fr": {
-        "message": "francês"
+        "message": "Francês"
     },
     "supported_languages_fy": {
         "message": "frísio"
@@ -236,19 +242,19 @@
         "message": "georgiano"
     },
     "supported_languages_de": {
-        "message": "alemão"
+        "message": "Alemão"
     },
     "supported_languages_el": {
         "message": "grego"
     },
     "supported_languages_gu": {
-        "message": "gujarati"
+        "message": "Gujarati"
     },
     "supported_languages_ht": {
         "message": "haitiano"
     },
     "supported_languages_ha": {
-        "message": "hausa"
+        "message": "Hauçá"
     },
     "supported_languages_haw": {
         "message": "havaiano"
@@ -269,7 +275,7 @@
         "message": "islandês"
     },
     "supported_languages_ig": {
-        "message": "igbo"
+        "message": "Igbo"
     },
     "supported_languages_id": {
         "message": "indonésio"
@@ -287,13 +293,13 @@
         "message": "javanês"
     },
     "supported_languages_kn": {
-        "message": "kannada"
+        "message": "Kannada"
     },
     "supported_languages_kk": {
         "message": "cazaque"
     },
     "supported_languages_km": {
-        "message": "khmer"
+        "message": "Khmer"
     },
     "supported_languages_ky": {
         "message": "quirguiz"
@@ -344,13 +350,13 @@
         "message": "mongol"
     },
     "supported_languages_hmn": {
-        "message": "monge"
+        "message": "Monge"
     },
     "supported_languages_my": {
         "message": "Mianmar"
     },
     "supported_languages_ne": {
-        "message": "mepali"
+        "message": "Mepali"
     },
     "supported_languages_no": {
         "message": "norueguês"
@@ -362,13 +368,13 @@
         "message": "polonês"
     },
     "supported_languages_pt": {
-        "message": "português"
+        "message": "Português"
     },
     "supported_languages_pa": {
         "message": "punjabi"
     },
     "supported_languages_ps": {
-        "message": "empurre para"
+        "message": "Empurre para"
     },
     "supported_languages_ro": {
         "message": "romena"
@@ -380,13 +386,13 @@
         "message": "samoano"
     },
     "supported_languages_gd": {
-        "message": "gaélico escocês"
+        "message": "Gaélico escocês"
     },
     "supported_languages_sr": {
         "message": "sérvio"
     },
     "supported_languages_sn": {
-        "message": "shona"
+        "message": "Shona"
     },
     "supported_languages_sd": {
         "message": "sindi"
@@ -407,7 +413,7 @@
         "message": "sotho"
     },
     "supported_languages_es": {
-        "message": "espanhol"
+        "message": "Espanhol"
     },
     "supported_languages_su": {
         "message": "sundanês"
@@ -428,7 +434,7 @@
         "message": "tâmil"
     },
     "supported_languages_te": {
-        "message": "telugu"
+        "message": "Telugu"
     },
     "supported_languages_th": {
         "message": "tailandês"
@@ -458,18 +464,18 @@
         "message": "iídiche"
     },
     "supported_languages_yo": {
-        "message": "ioruba"
+        "message": "iorubá"
     },
     "supported_languages_zu": {
         "message": "zulu"
     },
     "supported_languages_qu": {
-        "message": "quíchua"
+        "message": "Quechua"
     },
     "supported_languages_om": {
-        "message": "oromo"
+        "message": "Oromo"
     },
     "supported_languages_ilo": {
-        "message": "ilocano"
+        "message": "Ilocano"
     }
 }

@@ -136,6 +136,12 @@
     "tooltip_go_back": {
         "message": "Tilbake"
     },
+    "tooltip_pin_window": {
+        "message": "Fest vindu"
+    },
+    "tooltip_unpin_window": {
+        "message": "Løsne vindu"
+    },
     "tooltip_go_forward": {
         "message": "Framover"
     },
@@ -179,22 +185,22 @@
         "message": "bosnisk"
     },
     "supported_languages_bg": {
-        "message": "bulgarsk"
+        "message": "Bulgarsk"
     },
     "supported_languages_ca": {
         "message": "katalansk"
     },
     "supported_languages_ceb": {
-        "message": "cebuano"
+        "message": "Cebuano"
     },
     "supported_languages_ny": {
-        "message": "chewa"
+        "message": "Chewa"
     },
     "supported_languages_zh_CN": {
-        "message": "forenklet kinesisk)"
+        "message": "forenklet kinesisk"
     },
     "supported_languages_zh_TW": {
-        "message": "tradisjonell kinesisk)"
+        "message": "tradisjonell kinesisk"
     },
     "supported_languages_co": {
         "message": "korsikansk"
@@ -215,7 +221,7 @@
         "message": "Engelsk"
     },
     "supported_languages_eo": {
-        "message": "esperanto"
+        "message": "Esperanto"
     },
     "supported_languages_et": {
         "message": "estisk"
@@ -227,7 +233,7 @@
         "message": "fransk"
     },
     "supported_languages_fy": {
-        "message": "frisk"
+        "message": "frisisk"
     },
     "supported_languages_gl": {
         "message": "galisisk"
@@ -242,16 +248,16 @@
         "message": "gresk"
     },
     "supported_languages_gu": {
-        "message": "gujarati"
+        "message": "Gujarati"
     },
     "supported_languages_ht": {
         "message": "haitisk"
     },
     "supported_languages_ha": {
-        "message": "hausa"
+        "message": "Hausa"
     },
     "supported_languages_haw": {
-        "message": "hawaiisk"
+        "message": "Hawaiisk"
     },
     "supported_languages_he": {
         "message": "Hebraisk"
@@ -260,7 +266,7 @@
         "message": "Hebraisk"
     },
     "supported_languages_hi": {
-        "message": "hindi"
+        "message": "Hindi"
     },
     "supported_languages_hu": {
         "message": "ungarsk"
@@ -269,7 +275,7 @@
         "message": "islandsk"
     },
     "supported_languages_ig": {
-        "message": "igbo"
+        "message": "Igbo"
     },
     "supported_languages_id": {
         "message": "indonesisk"
@@ -287,16 +293,16 @@
         "message": "javanesisk"
     },
     "supported_languages_kn": {
-        "message": "kannada"
+        "message": "Kannada"
     },
     "supported_languages_kk": {
         "message": "kasakhisk"
     },
     "supported_languages_km": {
-        "message": "khmer"
+        "message": "Khmer"
     },
     "supported_languages_ky": {
-        "message": "kirgisisk"
+        "message": "Kirgisisk"
     },
     "supported_languages_ko": {
         "message": "koreansk"
@@ -317,40 +323,40 @@
         "message": "litauisk"
     },
     "supported_languages_lb": {
-        "message": "luxembourgsk"
+        "message": "luxemburgsk"
     },
     "supported_languages_mk": {
         "message": "makedonsk"
     },
     "supported_languages_mg": {
-        "message": "malagasy"
+        "message": "Madagaskar"
     },
     "supported_languages_ms": {
         "message": "malaysisk"
     },
     "supported_languages_ml": {
-        "message": "malayalam"
+        "message": "Malayalam"
     },
     "supported_languages_mt": {
         "message": "maltesisk"
     },
     "supported_languages_mi": {
-        "message": "maori"
+        "message": "Maori"
     },
     "supported_languages_mr": {
-        "message": "marathi"
+        "message": "Marathi"
     },
     "supported_languages_mn": {
         "message": "mongolsk"
     },
     "supported_languages_hmn": {
-        "message": "munk"
+        "message": "Munk"
     },
     "supported_languages_my": {
-        "message": "myanmar"
+        "message": "Myanmar"
     },
     "supported_languages_ne": {
-        "message": "mepali"
+        "message": "Mepali"
     },
     "supported_languages_no": {
         "message": "norsk"
@@ -359,16 +365,16 @@
         "message": "persisk"
     },
     "supported_languages_pl": {
-        "message": "pusse"
+        "message": "Pusse"
     },
     "supported_languages_pt": {
         "message": "portugisisk"
     },
     "supported_languages_pa": {
-        "message": "punjabi"
+        "message": "Punjabi"
     },
     "supported_languages_ps": {
-        "message": "pushto"
+        "message": "Pushto"
     },
     "supported_languages_ro": {
         "message": "rumensk"
@@ -386,10 +392,10 @@
         "message": "serbisk"
     },
     "supported_languages_sn": {
-        "message": "shona"
+        "message": "Shona"
     },
     "supported_languages_sd": {
-        "message": "sindhi"
+        "message": "Sindhi"
     },
     "supported_languages_si": {
         "message": "singalesisk"
@@ -401,37 +407,37 @@
         "message": "slovensk"
     },
     "supported_languages_so": {
-        "message": "somali"
+        "message": "Somali"
     },
     "supported_languages_sx": {
-        "message": "sotho"
+        "message": "Sotho"
     },
     "supported_languages_es": {
         "message": "spansk"
     },
     "supported_languages_su": {
-        "message": "sundanesisk"
+        "message": "Sundanesisk"
     },
     "supported_languages_sw": {
-        "message": "swahili"
+        "message": "Swahili"
     },
     "supported_languages_sv": {
         "message": "svensk"
     },
     "supported_languages_tl": {
-        "message": "tagalog"
+        "message": "Tagalog"
     },
     "supported_languages_tg": {
-        "message": "tadsjiki"
+        "message": "Tadsjiki"
     },
     "supported_languages_ta": {
-        "message": "tamil"
+        "message": "Tamil"
     },
     "supported_languages_te": {
-        "message": "telugu"
+        "message": "Telugu"
     },
     "supported_languages_th": {
-        "message": "thai"
+        "message": "Thai"
     },
     "supported_languages_tr": {
         "message": "tyrkisk"
@@ -440,7 +446,7 @@
         "message": "ukrainsk"
     },
     "supported_languages_ur": {
-        "message": "urdu"
+        "message": "Urdu"
     },
     "supported_languages_uz": {
         "message": "usbekisk"
@@ -452,24 +458,24 @@
         "message": "walisisk"
     },
     "supported_languages_xh": {
-        "message": "xosa"
+        "message": "Xosa"
     },
     "supported_languages_yi": {
-        "message": "jiddisk"
+        "message": "Jiddisch"
     },
     "supported_languages_yo": {
-        "message": "yoruba"
+        "message": "Yoruba"
     },
     "supported_languages_zu": {
-        "message": "zulu"
+        "message": "Zulu"
     },
     "supported_languages_qu": {
-        "message": "quechua"
+        "message": "Quechua"
     },
     "supported_languages_om": {
-        "message": "oromo"
+        "message": "Oromo"
     },
     "supported_languages_ilo": {
-        "message": "ilocano"
+        "message": "Ilocano"
     }
 }

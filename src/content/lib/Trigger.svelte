@@ -64,13 +64,16 @@
 </div>
 
 <script>
-import { createApp, destroyApp } from '../utils/appsHandler';
+import { createApp, destroyApp } from '~/content/utils/appsHandler';
+import { getSelectedText } from '~/content/utils/rectUtils';
+import { store } from '~/content/store';
 import { tooltip } from '~/lib/tooltip';
-import { getMessage, getURL } from '~/common/browserApi';
+import { getMessage } from '~/common/browserApi';
 
 let isSettingsOpen = false;
 
 const createPopup = () => {
+	$store.selectedText = getSelectedText();
 	destroyApp('settings');
 	createApp('popup');
 	isSettingsOpen = false;

@@ -1,4 +1,4 @@
-import { writable } from 'svelte/store';
+import { writable, derived } from 'svelte/store';
 
 const initData = {
 	selectedText: null,
@@ -14,4 +14,8 @@ const initData = {
 	audioContextSource: null
 };
 
-export const store = writable(initData);
+const store = writable(initData);
+
+const selectedText = derived(store, $store => $store.selectedText);
+
+export { store, selectedText };

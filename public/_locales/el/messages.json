@@ -136,6 +136,12 @@
     "tooltip_go_back": {
         "message": "Πίσω"
     },
+    "tooltip_pin_window": {
+        "message": "Καρφίτσα παράθυρο"
+    },
+    "tooltip_unpin_window": {
+        "message": "Ξεκαρφιτσώστε το παράθυρο"
+    },
     "tooltip_go_forward": {
         "message": "Προς τα εμπρός"
     },
@@ -155,7 +161,7 @@
         "message": "Αλβανός"
     },
     "supported_languages_am": {
-        "message": "αμχαρικός"
+        "message": "Αμαρικά"
     },
     "supported_languages_ar": {
         "message": "αραβικός"
@@ -167,16 +173,16 @@
         "message": "Αζερμπαϊτζάν"
     },
     "supported_languages_eu": {
-        "message": "βασκική"
+        "message": "Βάσκος"
     },
     "supported_languages_be": {
-        "message": "μπαλλικανική"
+        "message": "Λευκορωσική"
     },
     "supported_languages_bn": {
         "message": "Μπενγκάλι"
     },
     "supported_languages_bs": {
-        "message": "βοσνιακός"
+        "message": "Βόσνιος"
     },
     "supported_languages_bg": {
         "message": "Βούλγαρος"
@@ -185,16 +191,16 @@
         "message": "καταλανικά"
     },
     "supported_languages_ceb": {
-        "message": "σεμπουάνο"
+        "message": "Cebuano"
     },
     "supported_languages_ny": {
-        "message": "μασάω"
+        "message": "Chewa"
     },
     "supported_languages_zh_CN": {
-        "message": "απλοποιημένα Κινέζικα)"
+        "message": "απλοποιημένα Κινέζικα"
     },
     "supported_languages_zh_TW": {
-        "message": "Παραδοσιακά κινέζικα)"
+        "message": "Παραδοσιακά κινέζικα"
     },
     "supported_languages_co": {
         "message": "Κορσικανός"
@@ -218,7 +224,7 @@
         "message": "εσπεράντο"
     },
     "supported_languages_et": {
-        "message": "εσθονικά"
+        "message": "Εσθονικά"
     },
     "supported_languages_fi": {
         "message": "φινλανδικός"
@@ -227,13 +233,13 @@
         "message": "γαλλική γλώσσα"
     },
     "supported_languages_fy": {
-        "message": "φρισιανός"
+        "message": "Φριζ"
     },
     "supported_languages_gl": {
-        "message": "Γαλλικός"
+        "message": "Γαλικιανός"
     },
     "supported_languages_ka": {
-        "message": "γεωργιανή"
+        "message": "Γεωργιανή"
     },
     "supported_languages_de": {
         "message": "Γερμανός"
@@ -242,13 +248,13 @@
         "message": "Ελληνικά"
     },
     "supported_languages_gu": {
-        "message": "γκουτζαράτι"
+        "message": "Γκουτζαράτι"
     },
     "supported_languages_ht": {
-        "message": "Αϊτή"
+        "message": "Αϊτινή"
     },
     "supported_languages_ha": {
-        "message": "hausa"
+        "message": "Hausa"
     },
     "supported_languages_haw": {
         "message": "Χαβάης"
@@ -260,7 +266,7 @@
         "message": "Εβραϊκά"
     },
     "supported_languages_hi": {
-        "message": "χίντι"
+        "message": "Χίντι"
     },
     "supported_languages_hu": {
         "message": "ουγγρικός"
@@ -269,10 +275,10 @@
         "message": "ισλανδικός"
     },
     "supported_languages_ig": {
-        "message": "igbo"
+        "message": "Igbo"
     },
     "supported_languages_id": {
-        "message": "ινδονησιακά"
+        "message": "Ινδονησιακά"
     },
     "supported_languages_ga": {
         "message": "ιρλανδικός"
@@ -284,28 +290,28 @@
         "message": "Ιαπωνικά"
     },
     "supported_languages_jv": {
-        "message": "ιαβανέζικο"
+        "message": "Ιάβας"
     },
     "supported_languages_kn": {
-        "message": "κανάντα"
+        "message": "Κανάντα"
     },
     "supported_languages_kk": {
-        "message": "καζακικά"
+        "message": "Καζακστάν"
     },
     "supported_languages_km": {
-        "message": "χμερ"
+        "message": "Χμερ"
     },
     "supported_languages_ky": {
-        "message": "κιργιζικά"
+        "message": "Κιργιζικά"
     },
     "supported_languages_ko": {
         "message": "κορεάτης"
     },
     "supported_languages_ku": {
-        "message": "κουρδική"
+        "message": "κουρδικά"
     },
     "supported_languages_lo": {
-        "message": "λαοτικός"
+        "message": "Λάος"
     },
     "supported_languages_la": {
         "message": "λατινικά"
@@ -314,22 +320,22 @@
         "message": "λετονική"
     },
     "supported_languages_lt": {
-        "message": "λιθουανός"
+        "message": "Λιθουανικά"
     },
     "supported_languages_lb": {
-        "message": "λουξεμβουργιανός"
+        "message": "Λουξεμβουργιανό"
     },
     "supported_languages_mk": {
         "message": "Μακεδόνας"
     },
     "supported_languages_mg": {
-        "message": "μαλαγασιά"
+        "message": "Μαδαγασκάρης"
     },
     "supported_languages_ms": {
         "message": "Μαλαισίας"
     },
     "supported_languages_ml": {
-        "message": "μαλαγιαλάμ"
+        "message": "Μαλαγιαλάμ"
     },
     "supported_languages_mt": {
         "message": "μαλτέζος"
@@ -338,19 +344,19 @@
         "message": "Μαορί"
     },
     "supported_languages_mr": {
-        "message": "μαράθι"
+        "message": "Μαράθι"
     },
     "supported_languages_mn": {
         "message": "Μογγόλος"
     },
     "supported_languages_hmn": {
-        "message": "καλόγερος"
+        "message": "Καλόγερος"
     },
     "supported_languages_my": {
-        "message": "μιανμάρ"
+        "message": "Μιανμάρ"
     },
     "supported_languages_ne": {
-        "message": "mepali"
+        "message": "Μεπαλή"
     },
     "supported_languages_no": {
         "message": "Νορβηγός"
@@ -359,16 +365,16 @@
         "message": "περσικός"
     },
     "supported_languages_pl": {
-        "message": "στίλβωση"
+        "message": "Στίλβωση"
     },
     "supported_languages_pt": {
         "message": "Πορτογαλικά"
     },
     "supported_languages_pa": {
-        "message": "παντζάμπι"
+        "message": "Παντζάμπι"
     },
     "supported_languages_ps": {
-        "message": "pushto"
+        "message": "Πούστο"
     },
     "supported_languages_ro": {
         "message": "ρουμανικός"
@@ -377,40 +383,40 @@
         "message": "Ρωσική"
     },
     "supported_languages_sm": {
-        "message": "σαμόα"
+        "message": "Σαμόα"
     },
     "supported_languages_gd": {
-        "message": "σκωτσέζικο γαλελικό"
+        "message": "Σκωτσέζικο Γελικό"
     },
     "supported_languages_sr": {
         "message": "Σέρβος"
     },
     "supported_languages_sn": {
-        "message": "shona"
+        "message": "Σόνα"
     },
     "supported_languages_sd": {
         "message": "Σίντι"
     },
     "supported_languages_si": {
-        "message": "σινχαλα"
+        "message": "Σινχαλά"
     },
     "supported_languages_sk": {
         "message": "Σλοβάκος"
     },
     "supported_languages_sl": {
-        "message": "σλοβενική"
+        "message": "Σλοβενική"
     },
     "supported_languages_so": {
-        "message": "σομαλικά"
+        "message": "Σομαλός"
     },
     "supported_languages_sx": {
-        "message": "σόθο"
+        "message": "Σόθο"
     },
     "supported_languages_es": {
         "message": "Ισπανικά"
     },
     "supported_languages_su": {
-        "message": "Σουντανέζος"
+        "message": "Σουνδανή"
     },
     "supported_languages_sw": {
         "message": "Σουαχίλι"
@@ -419,19 +425,19 @@
         "message": "Σουηδικά"
     },
     "supported_languages_tl": {
-        "message": "tagalog"
+        "message": "Ταγκαλόγκ"
     },
     "supported_languages_tg": {
-        "message": "τατζίκι"
+        "message": "Τατζίκι"
     },
     "supported_languages_ta": {
-        "message": "ταμίλ"
+        "message": "Ταμίλ"
     },
     "supported_languages_te": {
         "message": "Τελούγκου"
     },
     "supported_languages_th": {
-        "message": "ταϊλανδικά"
+        "message": "Ταϊλανδός"
     },
     "supported_languages_tr": {
         "message": "τούρκικος"
@@ -440,36 +446,36 @@
         "message": "Ουκρανός"
     },
     "supported_languages_ur": {
-        "message": "ουρντού"
+        "message": "Ουρντού"
     },
     "supported_languages_uz": {
-        "message": "ουζμπέκικο"
+        "message": "Ουζμπεκιστάν"
     },
     "supported_languages_vi": {
         "message": "Βιετναμέζικο"
     },
     "supported_languages_cy": {
-        "message": "δεν πληρώνω τα οφειλόμενα"
+        "message": "Δεν πληρώνω τα οφειλόμενα"
     },
     "supported_languages_xh": {
-        "message": "xosa"
+        "message": "Xosa"
     },
     "supported_languages_yi": {
         "message": "γερμανοεβραϊκή διάλεκτος"
     },
     "supported_languages_yo": {
-        "message": "γιορούμπα"
+        "message": "Γιορούμπα"
     },
     "supported_languages_zu": {
         "message": "Ζουλού"
     },
     "supported_languages_qu": {
-        "message": "κέτσουα"
+        "message": "Κέτσουα"
     },
     "supported_languages_om": {
-        "message": "ορομο"
+        "message": "Oromo"
     },
     "supported_languages_ilo": {
-        "message": "ilocano"
+        "message": "Ilocano"
     }
 }

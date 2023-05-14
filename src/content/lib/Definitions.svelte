@@ -58,7 +58,7 @@
 													cursor-pointer
 												"
 												on:click={() => {
-													dispatch('translateWord', synonym);
+													$store.selectedText = synonym;
 												}}
 											>
 												{synonym}
@@ -82,7 +82,7 @@
 													cursor-pointer
 												"
 												on:click={() => {
-													dispatch('translateWord', synonym);
+													$store.selectedText = synonym;
 												}}
 											>
 												{synonym}
@@ -101,10 +101,9 @@
 
 <script>
 import { getMessage } from '~/common/browserApi';
-import { createEventDispatcher } from 'svelte';
-export let translate;
+import { store } from '~/content/store';
 
-const dispatch = createEventDispatcher();
+export let translate;
 
 const sortSynonyms = synonyms =>
 	synonyms.sort((a, b) => (a.label_info ? 1 : b.label_info ? -1 : 0));

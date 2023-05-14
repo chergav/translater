@@ -136,6 +136,12 @@
     "tooltip_go_back": {
         "message": "خلف"
     },
+    "tooltip_pin_window": {
+        "message": "تثبيت النافذة"
+    },
+    "tooltip_unpin_window": {
+        "message": "فك النافذة"
+    },
     "tooltip_go_forward": {
         "message": "إلى الأمام"
     },
@@ -164,19 +170,19 @@
         "message": "أرميني"
     },
     "supported_languages_az": {
-        "message": "أذربيجان"
+        "message": "الأذربيجانية"
     },
     "supported_languages_eu": {
         "message": "الباسك"
     },
     "supported_languages_be": {
-        "message": "بيلاروسيا"
+        "message": "البيلاروسية"
     },
     "supported_languages_bn": {
         "message": "البنغالية"
     },
     "supported_languages_bs": {
-        "message": "البوسني"
+        "message": "البوسنية"
     },
     "supported_languages_bg": {
         "message": "البلغارية"
@@ -185,19 +191,19 @@
         "message": "الكاتالونية"
     },
     "supported_languages_ceb": {
-        "message": "سيبيونو"
+        "message": "السيبيونو"
     },
     "supported_languages_ny": {
-        "message": "شوا"
+        "message": "شيوا"
     },
     "supported_languages_zh_CN": {
-        "message": "الصينية المبسطة)"
+        "message": "الصينية المبسطة"
     },
     "supported_languages_zh_TW": {
-        "message": "تقاليد صينية)"
+        "message": "تقاليد صينية"
     },
     "supported_languages_co": {
-        "message": "كورسيكان"
+        "message": "كورسيكا"
     },
     "supported_languages_hr": {
         "message": "الكرواتية"
@@ -245,10 +251,10 @@
         "message": "الغوجاراتية"
     },
     "supported_languages_ht": {
-        "message": "هايتي"
+        "message": "الهايتية"
     },
     "supported_languages_ha": {
-        "message": "هاوسا"
+        "message": "الهوسا"
     },
     "supported_languages_haw": {
         "message": "هاواي"
@@ -260,43 +266,43 @@
         "message": "اللغة العبرية"
     },
     "supported_languages_hi": {
-        "message": "الهندية"
+        "message": "هندي"
     },
     "supported_languages_hu": {
         "message": "المجرية"
     },
     "supported_languages_is": {
-        "message": "آيسلندي"
+        "message": "الآيسلندية"
     },
     "supported_languages_ig": {
-        "message": "igbo"
+        "message": "الإيغبو"
     },
     "supported_languages_id": {
-        "message": "إندونيسي"
+        "message": "الأندونيسية"
     },
     "supported_languages_ga": {
-        "message": "الأيرلندية"
+        "message": "إيرلندي"
     },
     "supported_languages_it": {
-        "message": "الايطالية"
+        "message": "إيطالي"
     },
     "supported_languages_ja": {
         "message": "اليابانية"
     },
     "supported_languages_jv": {
-        "message": "الجاوي"
+        "message": "الجاوية"
     },
     "supported_languages_kn": {
         "message": "الكانادا"
     },
     "supported_languages_kk": {
-        "message": "كازاخستان"
+        "message": "الكازاخستانية"
     },
     "supported_languages_km": {
         "message": "الخمير"
     },
     "supported_languages_ky": {
-        "message": "قرغيز"
+        "message": "قيرغيز"
     },
     "supported_languages_ko": {
         "message": "الكورية"
@@ -305,25 +311,25 @@
         "message": "كردي"
     },
     "supported_languages_lo": {
-        "message": "لاوسي"
+        "message": "اللاوسي"
     },
     "supported_languages_la": {
-        "message": "لاتينية"
+        "message": "لاتيني"
     },
     "supported_languages_lv": {
-        "message": "لاتفي"
+        "message": "لاتفيا"
     },
     "supported_languages_lt": {
-        "message": "الليتواني"
+        "message": "الليتوانية"
     },
     "supported_languages_lb": {
-        "message": "فاخر"
+        "message": "اللوكسمبرجية"
     },
     "supported_languages_mk": {
-        "message": "مقدونيا"
+        "message": "المقدونية"
     },
     "supported_languages_mg": {
-        "message": "الملغاشية"
+        "message": "مدغشقر"
     },
     "supported_languages_ms": {
         "message": "لغة الملايو"
@@ -338,7 +344,7 @@
         "message": "الماوري"
     },
     "supported_languages_mr": {
-        "message": "المهاراتية"
+        "message": "الماراثى"
     },
     "supported_languages_mn": {
         "message": "المنغولية"
@@ -377,10 +383,10 @@
         "message": "الروسية"
     },
     "supported_languages_sm": {
-        "message": "ساموان"
+        "message": "ساموا"
     },
     "supported_languages_gd": {
-        "message": "الاسكتلندي الجيلي"
+        "message": "الجايلي الاسكتلندي"
     },
     "supported_languages_sr": {
         "message": "الصربية"
@@ -395,13 +401,13 @@
         "message": "السنهالية"
     },
     "supported_languages_sk": {
-        "message": "سلوفاكي"
+        "message": "السلوفاكية"
     },
     "supported_languages_sl": {
         "message": "السلوفينية"
     },
     "supported_languages_so": {
-        "message": "الصومالية"
+        "message": "صومالي"
     },
     "supported_languages_sx": {
         "message": "سوتو"
@@ -410,7 +416,7 @@
         "message": "الأسبانية"
     },
     "supported_languages_su": {
-        "message": "سوندانيس"
+        "message": "السوندانيز"
     },
     "supported_languages_sw": {
         "message": "السواحيلية"
@@ -419,10 +425,10 @@
         "message": "السويدية"
     },
     "supported_languages_tl": {
-        "message": "تاجالوج"
+        "message": "تاغالوغ"
     },
     "supported_languages_tg": {
-        "message": "تاجيكي"
+        "message": "طاجيكي"
     },
     "supported_languages_ta": {
         "message": "التاميل"
@@ -437,13 +443,13 @@
         "message": "اللغة التركية"
     },
     "supported_languages_uk": {
-        "message": "اوكراني"
+        "message": "الأوكرانية"
     },
     "supported_languages_ur": {
         "message": "الأردية"
     },
     "supported_languages_uz": {
-        "message": "أوزبك"
+        "message": "أوزبكي"
     },
     "supported_languages_vi": {
         "message": "فيتنامي"
@@ -452,7 +458,7 @@
         "message": "تهرب من دفع الرهان"
     },
     "supported_languages_xh": {
-        "message": "اكسوسا"
+        "message": "خوسا"
     },
     "supported_languages_yi": {
         "message": "اليديشية"
@@ -464,12 +470,12 @@
         "message": "الزولو"
     },
     "supported_languages_qu": {
-        "message": "كيتشوا"
+        "message": "الكيتشوا"
     },
     "supported_languages_om": {
         "message": "أورومو"
     },
     "supported_languages_ilo": {
-        "message": "ilocano"
+        "message": "إيلوكانو"
     }
 }

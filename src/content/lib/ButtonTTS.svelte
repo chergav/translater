@@ -1,8 +1,4 @@
-<ButtonImage
-	disabled={error}
-	on:click={startTTS}
-	tooltip={{ title }}
->
+<ButtonImage disabled={error} on:click={startTTS} tooltip={{ title }}>
 	{#if error}
 		<svg
 			xmlns="http://www.w3.org/2000/svg"

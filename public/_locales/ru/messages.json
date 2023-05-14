@@ -128,13 +128,19 @@
         "message": "Прослушать текст"
     },
     "tooltip_listen_stop": {
-        "message": "Останавливаться"
+        "message": "Стоп"
     },
     "tooltip_listen_language_is_not_support": {
         "message": "Язык не поддерживается"
     },
     "tooltip_go_back": {
         "message": "Назад"
+    },
+    "tooltip_pin_window": {
+        "message": "Закрепить окно"
+    },
+    "tooltip_unpin_window": {
+        "message": "Открепить окно"
     },
     "tooltip_go_forward": {
         "message": "Вперед"
@@ -149,7 +155,7 @@
         "message": "определить язык"
     },
     "supported_languages_af": {
-        "message": "африканский"
+        "message": "Африканский"
     },
     "supported_languages_sq": {
         "message": "албанский"
@@ -161,10 +167,10 @@
         "message": "арабский"
     },
     "supported_languages_hy": {
-        "message": "армянин"
+        "message": "Армянский"
     },
     "supported_languages_az": {
-        "message": "азербайджанский"
+        "message": "Азербайджанский"
     },
     "supported_languages_eu": {
         "message": "баскский"
@@ -182,19 +188,19 @@
         "message": "болгарский"
     },
     "supported_languages_ca": {
-        "message": "каталонский"
+        "message": "Каталонский"
     },
     "supported_languages_ceb": {
         "message": "кебуано"
     },
     "supported_languages_ny": {
-        "message": "жева"
+        "message": "Чева"
     },
     "supported_languages_zh_CN": {
-        "message": "китайский упрощенный)"
+        "message": "китайский упрощенный"
     },
     "supported_languages_zh_TW": {
-        "message": "китайский традиционный)"
+        "message": "китайский традиционный"
     },
     "supported_languages_co": {
         "message": "корсиканский"
@@ -209,10 +215,10 @@
         "message": "датский"
     },
     "supported_languages_nl": {
-        "message": "голландский"
+        "message": "Голландский"
     },
     "supported_languages_en": {
-        "message": "английский"
+        "message": "Английский"
     },
     "supported_languages_eo": {
         "message": "эсперанто"
@@ -224,13 +230,13 @@
         "message": "финский"
     },
     "supported_languages_fr": {
-        "message": "французский"
+        "message": "Французский"
     },
     "supported_languages_fy": {
         "message": "фризский"
     },
     "supported_languages_gl": {
-        "message": "галицкий"
+        "message": "галисийский"
     },
     "supported_languages_ka": {
         "message": "грузинский"
@@ -242,16 +248,16 @@
         "message": "греческий"
     },
     "supported_languages_gu": {
-        "message": "гуджарати"
+        "message": "Гуджарати"
     },
     "supported_languages_ht": {
-        "message": "гаитянин"
+        "message": "гаитянский"
     },
     "supported_languages_ha": {
         "message": "хауса"
     },
     "supported_languages_haw": {
-        "message": "гавайский"
+        "message": "Гавайский"
     },
     "supported_languages_he": {
         "message": "иврит"
@@ -332,7 +338,7 @@
         "message": "малаялам"
     },
     "supported_languages_mt": {
-        "message": "мальтийский"
+        "message": "Мальтийский"
     },
     "supported_languages_mi": {
         "message": "маори"
@@ -344,13 +350,13 @@
         "message": "монгольский"
     },
     "supported_languages_hmn": {
-        "message": "монах"
+        "message": "Монах"
     },
     "supported_languages_my": {
         "message": "Мьянма"
     },
     "supported_languages_ne": {
-        "message": "мепали"
+        "message": "Мепали"
     },
     "supported_languages_no": {
         "message": "Норвежский"
@@ -359,7 +365,7 @@
         "message": "персидский"
     },
     "supported_languages_pl": {
-        "message": "полировать"
+        "message": "польский"
     },
     "supported_languages_pt": {
         "message": "португальский"
@@ -374,10 +380,10 @@
         "message": "румынский"
     },
     "supported_languages_ru": {
-        "message": "русский"
+        "message": "Русский"
     },
     "supported_languages_sm": {
-        "message": "самоанец"
+        "message": "самоанский"
     },
     "supported_languages_gd": {
         "message": "шотландский гэльский"
@@ -386,7 +392,7 @@
         "message": "сербский"
     },
     "supported_languages_sn": {
-        "message": "шона"
+        "message": "Шона"
     },
     "supported_languages_sd": {
         "message": "синдхи"
@@ -404,19 +410,19 @@
         "message": "сомалийский"
     },
     "supported_languages_sx": {
-        "message": "сото"
+        "message": "Сото"
     },
     "supported_languages_es": {
         "message": "испанский"
     },
     "supported_languages_su": {
-        "message": "суданский"
+        "message": "Суданский"
     },
     "supported_languages_sw": {
         "message": "суахили"
     },
     "supported_languages_sv": {
-        "message": "шведский"
+        "message": "Шведский"
     },
     "supported_languages_tl": {
         "message": "тагальский"
@@ -431,13 +437,13 @@
         "message": "телугу"
     },
     "supported_languages_th": {
-        "message": "тайский"
+        "message": "Тайский"
     },
     "supported_languages_tr": {
         "message": "турецкий"
     },
     "supported_languages_uk": {
-        "message": "украинец"
+        "message": "украинский"
     },
     "supported_languages_ur": {
         "message": "урду"
@@ -452,7 +458,7 @@
         "message": "валлийский"
     },
     "supported_languages_xh": {
-        "message": "коса"
+        "message": "Коса"
     },
     "supported_languages_yi": {
         "message": "идиш"
@@ -461,7 +467,7 @@
         "message": "йоруба"
     },
     "supported_languages_zu": {
-        "message": "зулу"
+        "message": "Зулу"
     },
     "supported_languages_qu": {
         "message": "кечуа"
@@ -470,6 +476,6 @@
         "message": "оромо"
     },
     "supported_languages_ilo": {
-        "message": "илокано"
+        "message": "Илокано"
     }
 }

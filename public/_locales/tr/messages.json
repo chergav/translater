@@ -3,7 +3,7 @@
         "message": "Translater - seçilen metnin çevirisi"
     },
     "app_description": {
-        "message": "Açık ve koyu temalı Google Çeviri ile seçilen metni çeviri"
+        "message": "Açık ve koyu temaya sahip Google Translate ile seçili metni tercüme edin"
     },
     "context_menus_title": {
         "message": "Seçili metni çevir"
@@ -136,6 +136,12 @@
     "tooltip_go_back": {
         "message": "Geri"
     },
+    "tooltip_pin_window": {
+        "message": "Pencereyi sabitle"
+    },
+    "tooltip_unpin_window": {
+        "message": "Pencerenin sabitlemesini kaldır"
+    },
     "tooltip_go_forward": {
         "message": "İleri"
     },
@@ -155,7 +161,7 @@
         "message": "Arnavut"
     },
     "supported_languages_am": {
-        "message": "amharca"
+        "message": "Amharca"
     },
     "supported_languages_ar": {
         "message": "Arapça"
@@ -164,37 +170,37 @@
         "message": "Ermeni"
     },
     "supported_languages_az": {
-        "message": "azerbaycanlı"
+        "message": "Azerice"
     },
     "supported_languages_eu": {
-        "message": "bask dili"
+        "message": "Bask"
     },
     "supported_languages_be": {
         "message": "Belarusça"
     },
     "supported_languages_bn": {
-        "message": "bengalce"
+        "message": "Bengalce"
     },
     "supported_languages_bs": {
-        "message": "boşnakça"
+        "message": "Boşnakça"
     },
     "supported_languages_bg": {
-        "message": "bulgarca"
+        "message": "Bulgarca"
     },
     "supported_languages_ca": {
-        "message": "katalanca"
+        "message": "Katalanca"
     },
     "supported_languages_ceb": {
-        "message": "cebuano"
+        "message": "Cebuano"
     },
     "supported_languages_ny": {
-        "message": "çiğnemek"
+        "message": "Cheva"
     },
     "supported_languages_zh_CN": {
-        "message": "basitleştirilmiş Çince)"
+        "message": "basitleştirilmiş Çince"
     },
     "supported_languages_zh_TW": {
-        "message": "Çin geleneği)"
+        "message": "Çin geleneği"
     },
     "supported_languages_co": {
         "message": "Korsikalı"
@@ -218,7 +224,7 @@
         "message": "Esperanto"
     },
     "supported_languages_et": {
-        "message": "estonyalı"
+        "message": "Estonyalı"
     },
     "supported_languages_fi": {
         "message": "Fince"
@@ -227,13 +233,13 @@
         "message": "Fransızca"
     },
     "supported_languages_fy": {
-        "message": "frizce"
+        "message": "Frizce"
     },
     "supported_languages_gl": {
         "message": "Galiçyaca"
     },
     "supported_languages_ka": {
-        "message": "gürcü"
+        "message": "Gürcü"
     },
     "supported_languages_de": {
         "message": "Almanca"
@@ -242,16 +248,16 @@
         "message": "Yunan"
     },
     "supported_languages_gu": {
-        "message": "gujarati"
+        "message": "Gujarati"
     },
     "supported_languages_ht": {
-        "message": "haitili"
+        "message": "Haitili"
     },
     "supported_languages_ha": {
-        "message": "ev"
+        "message": "Hausa"
     },
     "supported_languages_haw": {
-        "message": "hawaii"
+        "message": "Hawaii dili"
     },
     "supported_languages_he": {
         "message": "İbranice"
@@ -269,10 +275,10 @@
         "message": "İzlandaca"
     },
     "supported_languages_ig": {
-        "message": "ibo"
+        "message": "İbo"
     },
     "supported_languages_id": {
-        "message": "endonezya dili"
+        "message": "Endonezya dili"
     },
     "supported_languages_ga": {
         "message": "İrlandalı"
@@ -287,13 +293,13 @@
         "message": "Cava"
     },
     "supported_languages_kn": {
-        "message": "kannada"
+        "message": "Kannada"
     },
     "supported_languages_kk": {
         "message": "Kazak"
     },
     "supported_languages_km": {
-        "message": "khmer"
+        "message": "Khmer"
     },
     "supported_languages_ky": {
         "message": "Kırgız"
@@ -305,7 +311,7 @@
         "message": "Kürt"
     },
     "supported_languages_lo": {
-        "message": "laos dili"
+        "message": "Laos dili"
     },
     "supported_languages_la": {
         "message": "Latince"
@@ -314,31 +320,31 @@
         "message": "Letonca"
     },
     "supported_languages_lt": {
-        "message": "litvanyalı"
+        "message": "Litvanyalı"
     },
     "supported_languages_lb": {
-        "message": "lüksemburgca"
+        "message": "Lüksemburgca"
     },
     "supported_languages_mk": {
         "message": "makedonca"
     },
     "supported_languages_mg": {
-        "message": "madagaskar"
+        "message": "Madagaskar"
     },
     "supported_languages_ms": {
-        "message": "malayca"
+        "message": "Malayca"
     },
     "supported_languages_ml": {
         "message": "Malayalam"
     },
     "supported_languages_mt": {
-        "message": "malta dili"
+        "message": "Malta"
     },
     "supported_languages_mi": {
-        "message": "maori"
+        "message": "Maori"
     },
     "supported_languages_mr": {
-        "message": "marathi"
+        "message": "Marathi"
     },
     "supported_languages_mn": {
         "message": "Moğolca"
@@ -347,10 +353,10 @@
         "message": "keşiş"
     },
     "supported_languages_my": {
-        "message": "myanmar"
+        "message": "Myanmar"
     },
     "supported_languages_ne": {
-        "message": "mepali"
+        "message": "Mepali"
     },
     "supported_languages_no": {
         "message": "Norveççe"
@@ -365,19 +371,19 @@
         "message": "Portekizce"
     },
     "supported_languages_pa": {
-        "message": "punjabi"
+        "message": "Pencapça"
     },
     "supported_languages_ps": {
-        "message": "basmak"
+        "message": "Puşto"
     },
     "supported_languages_ro": {
-        "message": "romence"
+        "message": "Romence"
     },
     "supported_languages_ru": {
         "message": "Rusça"
     },
     "supported_languages_sm": {
-        "message": "samoalı"
+        "message": "Samoalı"
     },
     "supported_languages_gd": {
         "message": "İskoç Galcesi"
@@ -386,31 +392,31 @@
         "message": "Sırpça"
     },
     "supported_languages_sn": {
-        "message": "shona"
+        "message": "Shona"
     },
     "supported_languages_sd": {
-        "message": "sind dili"
+        "message": "Sintçe"
     },
     "supported_languages_si": {
-        "message": "şeylala"
+        "message": "Sinhala"
     },
     "supported_languages_sk": {
         "message": "Slovak"
     },
     "supported_languages_sl": {
-        "message": "slovence"
+        "message": "Slovence"
     },
     "supported_languages_so": {
-        "message": "somalı"
+        "message": "Somalili"
     },
     "supported_languages_sx": {
-        "message": "soto"
+        "message": "Soto"
     },
     "supported_languages_es": {
         "message": "İspanyol"
     },
     "supported_languages_su": {
-        "message": "sundan dili"
+        "message": "Sundan dili"
     },
     "supported_languages_sw": {
         "message": "Svahili"
@@ -419,19 +425,19 @@
         "message": "İsveççe"
     },
     "supported_languages_tl": {
-        "message": "tagalog"
+        "message": "Tagalogca"
     },
     "supported_languages_tg": {
-        "message": "taciki"
+        "message": "Tacikçe"
     },
     "supported_languages_ta": {
-        "message": "tamilce"
+        "message": "Tamilce"
     },
     "supported_languages_te": {
-        "message": "telugu"
+        "message": "Telugu"
     },
     "supported_languages_th": {
-        "message": "taylandlı"
+        "message": "Tayland"
     },
     "supported_languages_tr": {
         "message": "Türkçe"
@@ -449,27 +455,27 @@
         "message": "Vietnam"
     },
     "supported_languages_cy": {
-        "message": "galce"
+        "message": "Galce"
     },
     "supported_languages_xh": {
-        "message": "xosa"
+        "message": "Xosa"
     },
     "supported_languages_yi": {
-        "message": "yidiş"
+        "message": "Yidiş"
     },
     "supported_languages_yo": {
-        "message": "yoruba"
+        "message": "Yoruba"
     },
     "supported_languages_zu": {
-        "message": "zulu"
+        "message": "Zulu"
     },
     "supported_languages_qu": {
         "message": "keçuva"
     },
     "supported_languages_om": {
-        "message": "oromo"
+        "message": "Oromo"
     },
     "supported_languages_ilo": {
-        "message": "ilocano"
+        "message": "Ilocano"
     }
 }

@@ -1,7 +1,8 @@
 <div class={$themeClass}>
+	<!-- absolute -->
 	<div
 		class="
-			absolute
+			fixed
 			z-[99999]
 			flex
 			flex-row
@@ -24,7 +25,7 @@
 		bind:this={tooltip}
 		use:clickOutside
 		on:click_outside={() => {
-			destroyApp('popup');
+			if (!$persistentStore.pinWindow) destroyApp('popup');
 		}}
 		style="left: {left}px; top: {top}px;"
 	>
@@ -44,7 +45,6 @@
 				{moving ? 'cursor-grabbing' : 'cursor-move'}
 			"
 			on:mousedown={dragStart}
-			on:mouseup={dragEnd}
 		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@
 	</div>
 </div>
 
-<svelte:window on:mousemove={dragMove} />
+<svelte:window on:mousemove={dragMove} on:mouseup={dragEnd} />
 
 <script>
 import { destroyApp } from './utils/appsHandler';
@@ -99,7 +99,8 @@ const tooltipPosition = () => {
 		: 10;
 
 	computePosition(reference, tooltip, {
-		strategy: 'absolute',
+		// strategy: 'absolute',
+		strategy: 'fixed',
 		placement: 'bottom-start',
 		middleware: [
 			offset(({ rects, placement }) =>
@@ -111,6 +112,10 @@ const tooltipPosition = () => {
 			shift({ padding: 10 }),
 		],
 	}).then(({ x, y }) => {
+		// for fix position in large text fields
+		const { innerWidth, innerHeight } = window;
+		if (x < 0 || x > innerWidth) x = 10;
+		if (y < 0 || y > innerHeight) y = 10;
 		left = x;
 		top = y;
 	});

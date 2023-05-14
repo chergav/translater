@@ -136,6 +136,12 @@
     "tooltip_go_back": {
         "message": "戻る"
     },
+    "tooltip_pin_window": {
+        "message": "ピンウィンドウ"
+    },
+    "tooltip_unpin_window": {
+        "message": "ウィンドウの固定を解除する"
+    },
     "tooltip_go_forward": {
         "message": "前方"
     },
@@ -149,7 +155,7 @@
         "message": "言語を検出"
     },
     "supported_languages_af": {
-        "message": "アフリカの"
+        "message": "アフリカ人"
     },
     "supported_languages_sq": {
         "message": "アルバニア人"
@@ -161,7 +167,7 @@
         "message": "アラビア語"
     },
     "supported_languages_hy": {
-        "message": "アルメニア人"
+        "message": "アルメニア語"
     },
     "supported_languages_az": {
         "message": "アゼルバイジャン語"
@@ -176,28 +182,28 @@
         "message": "ベンガル語"
     },
     "supported_languages_bs": {
-        "message": "ボスニア人"
+        "message": "ボスニア語"
     },
     "supported_languages_bg": {
         "message": "ブルガリア語"
     },
     "supported_languages_ca": {
-        "message": "カタロニア語"
+        "message": "カタルーニャ語"
     },
     "supported_languages_ceb": {
-        "message": "セブアノ人"
+        "message": "セブアノ語"
     },
     "supported_languages_ny": {
-        "message": "チュワ"
+        "message": "チェワ"
     },
     "supported_languages_zh_CN": {
-        "message": "中国語（簡体字）"
+        "message": "中国語（簡体字"
     },
     "supported_languages_zh_TW": {
-        "message": "中国の伝統的な）"
+        "message": "中国の伝統的な"
     },
     "supported_languages_co": {
-        "message": "コルシカ島の"
+        "message": "コルシカ島"
     },
     "supported_languages_hr": {
         "message": "クロアチア語"
@@ -218,7 +224,7 @@
         "message": "エスペラント"
     },
     "supported_languages_et": {
-        "message": "エストニア人"
+        "message": "エストニア語"
     },
     "supported_languages_fi": {
         "message": "フィンランド語"
@@ -227,7 +233,7 @@
         "message": "フランス語"
     },
     "supported_languages_fy": {
-        "message": "フリジア人"
+        "message": "フリジア語"
     },
     "supported_languages_gl": {
         "message": "ガリシア語"
@@ -263,7 +269,7 @@
         "message": "ヒンディー語"
     },
     "supported_languages_hu": {
-        "message": "ハンガリー人"
+        "message": "ハンガリー語"
     },
     "supported_languages_is": {
         "message": "アイスランド語"
@@ -272,7 +278,7 @@
         "message": "イボ語"
     },
     "supported_languages_id": {
-        "message": "インドネシア人"
+        "message": "インドネシア語"
     },
     "supported_languages_ga": {
         "message": "アイルランド人"
@@ -323,7 +329,7 @@
         "message": "マケドニアの"
     },
     "supported_languages_mg": {
-        "message": "マダガスカル語"
+        "message": "マダガスカル"
     },
     "supported_languages_ms": {
         "message": "マレー語"
@@ -341,7 +347,7 @@
         "message": "マラーティー語"
     },
     "supported_languages_mn": {
-        "message": "モンゴル人"
+        "message": "モンゴル語"
     },
     "supported_languages_hmn": {
         "message": "モンク"
@@ -368,7 +374,7 @@
         "message": "パンジャブ語"
     },
     "supported_languages_ps": {
-        "message": "プッシュト"
+        "message": "プシュト"
     },
     "supported_languages_ro": {
         "message": "ルーマニア語"
@@ -380,7 +386,7 @@
         "message": "サモア語"
     },
     "supported_languages_gd": {
-        "message": "スコットランドゲール語"
+        "message": "スコットランドのゲール語"
     },
     "supported_languages_sr": {
         "message": "セルビア語"
@@ -410,7 +416,7 @@
         "message": "スペイン語"
     },
     "supported_languages_su": {
-        "message": "スンダ語"
+        "message": "スンダ人"
     },
     "supported_languages_sw": {
         "message": "スワヒリ語"
@@ -431,13 +437,13 @@
         "message": "テルグ語"
     },
     "supported_languages_th": {
-        "message": "タイ人"
+        "message": "タイ語"
     },
     "supported_languages_tr": {
         "message": "トルコ語"
     },
     "supported_languages_uk": {
-        "message": "ウクライナ人"
+        "message": "ウクライナ語"
     },
     "supported_languages_ur": {
         "message": "ウルドゥー語"
@@ -452,7 +458,7 @@
         "message": "ウェールズ語"
     },
     "supported_languages_xh": {
-        "message": "ソサ"
+        "message": "ソサ語"
     },
     "supported_languages_yi": {
         "message": "イディッシュ語"

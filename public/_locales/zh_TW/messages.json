@@ -136,6 +136,12 @@
     "tooltip_go_back": {
         "message": "後退"
     },
+    "tooltip_pin_window": {
+        "message": "釘窗"
+    },
+    "tooltip_unpin_window": {
+        "message": "取消固定窗口"
+    },
     "tooltip_go_forward": {
         "message": "向前"
     },
@@ -149,7 +155,7 @@
         "message": "檢測語言"
     },
     "supported_languages_af": {
-        "message": "非洲的"
+        "message": "非洲人"
     },
     "supported_languages_sq": {
         "message": "阿爾巴尼亞人"
@@ -161,7 +167,7 @@
         "message": "阿拉伯"
     },
     "supported_languages_hy": {
-        "message": "亞美尼亞人"
+        "message": "亞美尼亞語"
     },
     "supported_languages_az": {
         "message": "阿塞拜疆語"
@@ -170,13 +176,13 @@
         "message": "巴斯克"
     },
     "supported_languages_be": {
-        "message": "白俄羅斯人"
+        "message": "白俄羅斯語"
     },
     "supported_languages_bn": {
         "message": "孟加拉"
     },
     "supported_languages_bs": {
-        "message": "波斯尼亞"
+        "message": "波斯尼亞語"
     },
     "supported_languages_bg": {
         "message": "保加利亞語"
@@ -191,13 +197,13 @@
         "message": "切瓦"
     },
     "supported_languages_zh_CN": {
-        "message": "簡體中文）"
+        "message": "簡體中文"
     },
     "supported_languages_zh_TW": {
-        "message": "中國傳統的）"
+        "message": "中國傳統的"
     },
     "supported_languages_co": {
-        "message": "科西嘉"
+        "message": "科西嘉島"
     },
     "supported_languages_hr": {
         "message": "克羅地亞語"
@@ -251,7 +257,7 @@
         "message": "豪薩語"
     },
     "supported_languages_haw": {
-        "message": "夏威夷"
+        "message": "夏威夷語"
     },
     "supported_languages_he": {
         "message": "希伯來語"
@@ -275,7 +281,7 @@
         "message": "印度尼西亞"
     },
     "supported_languages_ga": {
-        "message": "愛爾蘭的"
+        "message": "愛爾蘭人"
     },
     "supported_languages_it": {
         "message": "意大利語"
@@ -305,7 +311,7 @@
         "message": "庫爾德"
     },
     "supported_languages_lo": {
-        "message": "老田"
+        "message": "老撾人"
     },
     "supported_languages_la": {
         "message": "拉丁"
@@ -368,7 +374,7 @@
         "message": "旁遮普語"
     },
     "supported_languages_ps": {
-        "message": "推動"
+        "message": "普什圖語"
     },
     "supported_languages_ro": {
         "message": "羅馬尼亞語"
@@ -386,10 +392,10 @@
         "message": "塞爾維亞"
     },
     "supported_languages_sn": {
-        "message": "紹納"
+        "message": "紹納語"
     },
     "supported_languages_sd": {
-        "message": "信德"
+        "message": "信德語"
     },
     "supported_languages_si": {
         "message": "僧伽羅語"
@@ -452,7 +458,7 @@
         "message": "威爾士語"
     },
     "supported_languages_xh": {
-        "message": "xosa"
+        "message": "索薩"
     },
     "supported_languages_yi": {
         "message": "意第緒語"
@@ -464,7 +470,7 @@
         "message": "祖魯語"
     },
     "supported_languages_qu": {
-        "message": "克丘亞語"
+        "message": "蓋丘亞語"
     },
     "supported_languages_om": {
         "message": "奧羅莫"

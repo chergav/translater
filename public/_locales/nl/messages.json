@@ -136,6 +136,12 @@
     "tooltip_go_back": {
         "message": "Rug"
     },
+    "tooltip_pin_window": {
+        "message": "Venster vastzetten"
+    },
+    "tooltip_unpin_window": {
+        "message": "Venster losmaken"
+    },
     "tooltip_go_forward": {
         "message": "Vooruit"
     },
@@ -155,7 +161,7 @@
         "message": "Albanees"
     },
     "supported_languages_am": {
-        "message": "amhaars"
+        "message": "Amhaars"
     },
     "supported_languages_ar": {
         "message": "Arabisch"
@@ -164,7 +170,7 @@
         "message": "Armeens"
     },
     "supported_languages_az": {
-        "message": "azerbeidzjaans"
+        "message": "Azerbeidzjaans"
     },
     "supported_languages_eu": {
         "message": "baskisch"
@@ -179,22 +185,22 @@
         "message": "Bosnisch"
     },
     "supported_languages_bg": {
-        "message": "bulgaars"
+        "message": "Bulgaars"
     },
     "supported_languages_ca": {
-        "message": "catalaans"
+        "message": "Catalaans"
     },
     "supported_languages_ceb": {
-        "message": "cebuano"
+        "message": "Cebuano"
     },
     "supported_languages_ny": {
-        "message": "kauw"
+        "message": "Chewa"
     },
     "supported_languages_zh_CN": {
-        "message": "versimpeld Chinees)"
+        "message": "versimpeld Chinees"
     },
     "supported_languages_zh_TW": {
-        "message": "Chinese traditionele)"
+        "message": "Chinese traditionele"
     },
     "supported_languages_co": {
         "message": "Corsicaans"
@@ -218,13 +224,13 @@
         "message": "Esperanto"
     },
     "supported_languages_et": {
-        "message": "ests"
+        "message": "Ests"
     },
     "supported_languages_fi": {
         "message": "Fins"
     },
     "supported_languages_fr": {
-        "message": "frans"
+        "message": "Frans"
     },
     "supported_languages_fy": {
         "message": "van Friesland afkomstige"
@@ -236,22 +242,22 @@
         "message": "Georgisch"
     },
     "supported_languages_de": {
-        "message": "duits"
+        "message": "Duits"
     },
     "supported_languages_el": {
         "message": "Grieks"
     },
     "supported_languages_gu": {
-        "message": "gujarati"
+        "message": "Gujarati"
     },
     "supported_languages_ht": {
-        "message": "Haïtiaan"
+        "message": "Haïtiaans"
     },
     "supported_languages_ha": {
         "message": "huis"
     },
     "supported_languages_haw": {
-        "message": "hawaiiaans"
+        "message": "Hawaiiaans"
     },
     "supported_languages_he": {
         "message": "Hebreeuws"
@@ -269,7 +275,7 @@
         "message": "IJslands"
     },
     "supported_languages_ig": {
-        "message": "igbo"
+        "message": "Igbo"
     },
     "supported_languages_id": {
         "message": "Indonesisch"
@@ -287,7 +293,7 @@
         "message": "Javaans"
     },
     "supported_languages_kn": {
-        "message": "kannada"
+        "message": "Kannada"
     },
     "supported_languages_kk": {
         "message": "Kazachs"
@@ -305,7 +311,7 @@
         "message": "Koerdisch"
     },
     "supported_languages_lo": {
-        "message": "laotiaans"
+        "message": "Laotiaans"
     },
     "supported_languages_la": {
         "message": "Latijns"
@@ -317,7 +323,7 @@
         "message": "Litouws"
     },
     "supported_languages_lb": {
-        "message": "luxemburgs"
+        "message": "Luxemburgs"
     },
     "supported_languages_mk": {
         "message": "Macedonisch"
@@ -329,7 +335,7 @@
         "message": "Maleis"
     },
     "supported_languages_ml": {
-        "message": "malayalam"
+        "message": "Malayalam"
     },
     "supported_languages_mt": {
         "message": "Maltees"
@@ -338,25 +344,25 @@
         "message": "Maori"
     },
     "supported_languages_mr": {
-        "message": "marathi"
+        "message": "Marathi"
     },
     "supported_languages_mn": {
-        "message": "mongools"
+        "message": "Mongools"
     },
     "supported_languages_hmn": {
-        "message": "monnik"
+        "message": "Monnik"
     },
     "supported_languages_my": {
         "message": "Myanmar"
     },
     "supported_languages_ne": {
-        "message": "mepali"
+        "message": "Mepali"
     },
     "supported_languages_no": {
         "message": "Noors"
     },
     "supported_languages_fa": {
-        "message": "perzisch"
+        "message": "Perzisch"
     },
     "supported_languages_pl": {
         "message": "Pools"
@@ -365,10 +371,10 @@
         "message": "Portugees"
     },
     "supported_languages_pa": {
-        "message": "punjabi"
+        "message": "Punjabi"
     },
     "supported_languages_ps": {
-        "message": "duwen naar"
+        "message": "Duwen naar"
     },
     "supported_languages_ro": {
         "message": "Roemeense"
@@ -377,7 +383,7 @@
         "message": "Russisch"
     },
     "supported_languages_sm": {
-        "message": "samoaans"
+        "message": "Samoaans"
     },
     "supported_languages_gd": {
         "message": "Schots-Gaelisch"
@@ -386,16 +392,16 @@
         "message": "Servisch"
     },
     "supported_languages_sn": {
-        "message": "shona"
+        "message": "Shona"
     },
     "supported_languages_sd": {
-        "message": "sindhi"
+        "message": "Sindhi"
     },
     "supported_languages_si": {
-        "message": "sinhala"
+        "message": "Singalees"
     },
     "supported_languages_sk": {
-        "message": "slovaaks"
+        "message": "Slowaaks"
     },
     "supported_languages_sl": {
         "message": "Sloveens"
@@ -404,13 +410,13 @@
         "message": "Somalisch"
     },
     "supported_languages_sx": {
-        "message": "zo"
+        "message": "Sotho"
     },
     "supported_languages_es": {
         "message": "Spaans"
     },
     "supported_languages_su": {
-        "message": "Sundanese"
+        "message": "Sundanees"
     },
     "supported_languages_sw": {
         "message": "Swahili"
@@ -422,13 +428,13 @@
         "message": "Tagalog"
     },
     "supported_languages_tg": {
-        "message": "tadzjiki"
+        "message": "Tadzjieks"
     },
     "supported_languages_ta": {
-        "message": "tamil"
+        "message": "Tamil"
     },
     "supported_languages_te": {
-        "message": "telugu"
+        "message": "Telugu"
     },
     "supported_languages_th": {
         "message": "Thais"
@@ -449,27 +455,27 @@
         "message": "Vietnamees"
     },
     "supported_languages_cy": {
-        "message": "wels"
+        "message": "Wels"
     },
     "supported_languages_xh": {
-        "message": "xosa"
+        "message": "Xosa"
     },
     "supported_languages_yi": {
         "message": "Jiddisch"
     },
     "supported_languages_yo": {
-        "message": "yoruba"
+        "message": "Joruba"
     },
     "supported_languages_zu": {
-        "message": "zulu"
+        "message": "Zoeloe"
     },
     "supported_languages_qu": {
-        "message": "quechua"
+        "message": "Quechua"
     },
     "supported_languages_om": {
-        "message": "oromo"
+        "message": "Oromo"
     },
     "supported_languages_ilo": {
-        "message": "ilocaan"
+        "message": "Ilocano"
     }
 }

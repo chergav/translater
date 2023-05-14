@@ -136,6 +136,12 @@
     "tooltip_go_back": {
         "message": "بازگشت"
     },
+    "tooltip_pin_window": {
+        "message": "پین کردن پنجره"
+    },
+    "tooltip_unpin_window": {
+        "message": "پین کردن پنجره"
+    },
     "tooltip_go_forward": {
         "message": "رو به جلو"
     },
@@ -167,10 +173,10 @@
         "message": "آذربایجانی"
     },
     "supported_languages_eu": {
-        "message": "باسک"
+        "message": "باسکی"
     },
     "supported_languages_be": {
-        "message": "بقولی"
+        "message": "بلاروسی"
     },
     "supported_languages_bn": {
         "message": "بنگالی"
@@ -188,19 +194,19 @@
         "message": "سبوانو"
     },
     "supported_languages_ny": {
-        "message": "جویدن"
+        "message": "چوا"
     },
     "supported_languages_zh_CN": {
-        "message": "زبان چینی ساده شده)"
+        "message": "زبان چینی ساده شده"
     },
     "supported_languages_zh_TW": {
-        "message": "چینی (سنتی)"
+        "message": "سنتی چینی"
     },
     "supported_languages_co": {
         "message": "کورسی"
     },
     "supported_languages_hr": {
-        "message": "کرواتی"
+        "message": "کروات"
     },
     "supported_languages_cs": {
         "message": "کشور چک"
@@ -227,10 +233,10 @@
         "message": "فرانسوی"
     },
     "supported_languages_fy": {
-        "message": "frisian"
+        "message": "فریزی"
     },
     "supported_languages_gl": {
-        "message": "گالینی"
+        "message": "گالیسیایی"
     },
     "supported_languages_ka": {
         "message": "گرجی"
@@ -245,7 +251,7 @@
         "message": "گجراتی"
     },
     "supported_languages_ht": {
-        "message": "هیل"
+        "message": "هائیتی"
     },
     "supported_languages_ha": {
         "message": "هاوسا"
@@ -269,7 +275,7 @@
         "message": "ایسلندی"
     },
     "supported_languages_ig": {
-        "message": "igbo"
+        "message": "ایگبو"
     },
     "supported_languages_id": {
         "message": "اندونزیایی"
@@ -284,7 +290,7 @@
         "message": "ژاپنی"
     },
     "supported_languages_jv": {
-        "message": "جاوانی"
+        "message": "جاوه ای"
     },
     "supported_languages_kn": {
         "message": "کانادا"
@@ -296,7 +302,7 @@
         "message": "خمر"
     },
     "supported_languages_ky": {
-        "message": "قرغیز"
+        "message": "قرقیزی"
     },
     "supported_languages_ko": {
         "message": "کره ای"
@@ -305,7 +311,7 @@
         "message": "کردی"
     },
     "supported_languages_lo": {
-        "message": "لائوسی"
+        "message": "لائوس"
     },
     "supported_languages_la": {
         "message": "لاتین"
@@ -317,7 +323,7 @@
         "message": "لیتوانیایی"
     },
     "supported_languages_lb": {
-        "message": "لوکزامبورژی"
+        "message": "لوگزامبورگی"
     },
     "supported_languages_mk": {
         "message": "مقدونی"
@@ -329,7 +335,7 @@
         "message": "مالایی"
     },
     "supported_languages_ml": {
-        "message": "مالایالام"
+        "message": "مالایایی"
     },
     "supported_languages_mt": {
         "message": "مالتی"
@@ -341,7 +347,7 @@
         "message": "مراتی"
     },
     "supported_languages_mn": {
-        "message": "مغولستانی"
+        "message": "مغولی"
     },
     "supported_languages_hmn": {
         "message": "راهب"
@@ -368,7 +374,7 @@
         "message": "پنجابی"
     },
     "supported_languages_ps": {
-        "message": "پوشتو"
+        "message": "پشتو"
     },
     "supported_languages_ro": {
         "message": "رومانیایی"
@@ -377,13 +383,13 @@
         "message": "روسی"
     },
     "supported_languages_sm": {
-        "message": "ساموئن"
+        "message": "ساموآ"
     },
     "supported_languages_gd": {
-        "message": "اسکاتلندی اسکاتلندی"
+        "message": "گیلیک اسکاتلندی"
     },
     "supported_languages_sr": {
-        "message": "صربستان"
+        "message": "صربی"
     },
     "supported_languages_sn": {
         "message": "شونا"
@@ -401,7 +407,7 @@
         "message": "اسلوونیایی"
     },
     "supported_languages_so": {
-        "message": "سومالیایی"
+        "message": "سومالی"
     },
     "supported_languages_sx": {
         "message": "سوتو"
@@ -410,10 +416,10 @@
         "message": "اسپانیایی"
     },
     "supported_languages_su": {
-        "message": "آفتابی"
+        "message": "ساندانی"
     },
     "supported_languages_sw": {
-        "message": "زبان سواحیلی"
+        "message": "سواحیلی"
     },
     "supported_languages_sv": {
         "message": "سوئدی"
@@ -443,19 +449,19 @@
         "message": "اردو"
     },
     "supported_languages_uz": {
-        "message": "ازبکی"
+        "message": "ازبکستان"
     },
     "supported_languages_vi": {
         "message": "ویتنامی"
     },
     "supported_languages_cy": {
-        "message": "ولش"
+        "message": "ولز"
     },
     "supported_languages_xh": {
-        "message": "xosa"
+        "message": "Xosa"
     },
     "supported_languages_yi": {
-        "message": "یدایی"
+        "message": "ییدیش"
     },
     "supported_languages_yo": {
         "message": "یوروبا"

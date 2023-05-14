@@ -136,6 +136,12 @@
     "tooltip_go_back": {
         "message": "뒤쪽에"
     },
+    "tooltip_pin_window": {
+        "message": "핀 창"
+    },
+    "tooltip_unpin_window": {
+        "message": "창 고정 해제"
+    },
     "tooltip_go_forward": {
         "message": "앞으로"
     },
@@ -170,13 +176,13 @@
         "message": "바스크 사람"
     },
     "supported_languages_be": {
-        "message": "벨로루시의"
+        "message": "벨라루스어"
     },
     "supported_languages_bn": {
         "message": "벵골 사람"
     },
     "supported_languages_bs": {
-        "message": "보스니아"
+        "message": "보스니아어"
     },
     "supported_languages_bg": {
         "message": "불가리아 사람"
@@ -185,22 +191,22 @@
         "message": "카탈로니아 사람"
     },
     "supported_languages_ceb": {
-        "message": "세부아노"
+        "message": "세부아노어"
     },
     "supported_languages_ny": {
-        "message": "츄와"
+        "message": "체와"
     },
     "supported_languages_zh_CN": {
-        "message": "중국어 (간체)"
+        "message": "중국어 (간체"
     },
     "supported_languages_zh_TW": {
-        "message": "중국 전통)"
+        "message": "중국 전통"
     },
     "supported_languages_co": {
-        "message": "코르시카"
+        "message": "코르시카어"
     },
     "supported_languages_hr": {
-        "message": "크로아티아"
+        "message": "크로아티아어"
     },
     "supported_languages_cs": {
         "message": "체코 사람"
@@ -227,10 +233,10 @@
         "message": "프랑스 국민"
     },
     "supported_languages_fy": {
-        "message": "프리지아"
+        "message": "프리지아어"
     },
     "supported_languages_gl": {
-        "message": "갈리시아인"
+        "message": "갈리시아어"
     },
     "supported_languages_ka": {
         "message": "그루지야 사람"
@@ -248,10 +254,10 @@
         "message": "아이티 섬 사람"
     },
     "supported_languages_ha": {
-        "message": "하우사"
+        "message": "하우사어"
     },
     "supported_languages_haw": {
-        "message": "하와이 사람"
+        "message": "하와이안"
     },
     "supported_languages_he": {
         "message": "헤브라이 사람"
@@ -269,7 +275,7 @@
         "message": "아이슬란드어"
     },
     "supported_languages_ig": {
-        "message": "이보"
+        "message": "이그보어"
     },
     "supported_languages_id": {
         "message": "인도네시아 인"
@@ -305,7 +311,7 @@
         "message": "쿠르드어"
     },
     "supported_languages_lo": {
-        "message": "라오스 사람"
+        "message": "라오스어"
     },
     "supported_languages_la": {
         "message": "라틴어"
@@ -317,7 +323,7 @@
         "message": "리투아니아 사람"
     },
     "supported_languages_lb": {
-        "message": "룩셈부르크"
+        "message": "룩셈부르크어"
     },
     "supported_languages_mk": {
         "message": "마케도니아 어"
@@ -365,10 +371,10 @@
         "message": "포르투갈 인"
     },
     "supported_languages_pa": {
-        "message": "펀자브어"
+        "message": "펀잡어"
     },
     "supported_languages_ps": {
-        "message": "푸시토"
+        "message": "푸쉬토"
     },
     "supported_languages_ro": {
         "message": "루마니아 사람"
@@ -377,7 +383,7 @@
         "message": "러시아인"
     },
     "supported_languages_sm": {
-        "message": "사모아 사람"
+        "message": "사모아어"
     },
     "supported_languages_gd": {
         "message": "스코틀랜드 게일어"
@@ -386,10 +392,10 @@
         "message": "세르비아 사람"
     },
     "supported_languages_sn": {
-        "message": "쇼나"
+        "message": "쇼나어"
     },
     "supported_languages_sd": {
-        "message": "신디"
+        "message": "신디어"
     },
     "supported_languages_si": {
         "message": "싱할라어"
@@ -401,10 +407,10 @@
         "message": "슬로베니아"
     },
     "supported_languages_so": {
-        "message": "소말리아"
+        "message": "소말리"
     },
     "supported_languages_sx": {
-        "message": "소토"
+        "message": "소토어"
     },
     "supported_languages_es": {
         "message": "스페인의"
@@ -422,7 +428,7 @@
         "message": "타갈로그어"
     },
     "supported_languages_tg": {
-        "message": "다지키"
+        "message": "다지키어"
     },
     "supported_languages_ta": {
         "message": "타밀 사람"
@@ -431,7 +437,7 @@
         "message": "텔루구어"
     },
     "supported_languages_th": {
-        "message": "타이어"
+        "message": "태국어"
     },
     "supported_languages_tr": {
         "message": "터키어"
@@ -467,9 +473,9 @@
         "message": "케추아어"
     },
     "supported_languages_om": {
-        "message": "오로모"
+        "message": "오로모어"
     },
     "supported_languages_ilo": {
-        "message": "일로카노"
+        "message": "일로카노어"
     }
 }

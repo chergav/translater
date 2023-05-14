@@ -28,7 +28,7 @@
 			</option>
 		{/if}
 		{#each sortI18nLanguages() as { key, value } (key)}
-			<option value={key}>{value}</option>
+			<option value={key}>{value.toLowerCase()}</option>
 		{/each}
 	</select>
 </label>
