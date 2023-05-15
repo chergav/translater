@@ -26,11 +26,14 @@
 	>
 		<div class="w-full">
 			<div class="p-2 flex justify-end">
-				<ButtonClose
+				<ButtonImage
+					round
 					on:click={() => {
 						destroyApp('settings');
 					}}
-				/>
+				>
+				<Icon d={heroXMark} />
+				</ButtonImage>
 			</div>
 			<ul>
 				<li class="p-2">
@@ -60,20 +63,7 @@
 				>
 					<span>{getMessage('popup_settings_options_link')}</span>
 					<span>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke-width="1.5"
-							stroke="currentColor"
-							class="ml-1 w-5 h-5"
-						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-							/>
-						</svg>
+						<Icon d={heroArrowTopRightOnSquare} class="ml-1" />
 					</span>
 				</button>
 			</div>
@@ -87,9 +77,11 @@ import { getMessage } from '~/common/browserApi';
 import { computePosition, offset, flip, shift } from '@floating-ui/dom';
 import { persistentStore, themeClass } from '~/common/store';
 import { store } from './store';
-import ButtonClose from '~/lib/ButtonClose.svelte';
+import ButtonImage from '~/lib/ButtonImage.svelte';
 import Checkbox from '~/lib/Checkbox.svelte';
 import { clickOutside } from './utils/clickOutside';
+import Icon from '~/lib/Icon.svelte';
+import { heroXMark, heroArrowTopRightOnSquare } from '@icons/heroicons';
 
 const reference = {
 	getBoundingClientRect: () => $store.selectedEndCoord,

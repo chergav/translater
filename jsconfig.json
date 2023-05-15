@@ -8,6 +8,9 @@
 		"paths": {
 			"~/*": [
 				"src/*"
+			],
+			"@icons/*": [
+				"src/icons/*"
 			]
 		},
 		"lib": [

@@ -44,8 +44,7 @@ export default defineManifest(() => ({
 		'contextMenus',
 		'tabs',
 		'activeTab',
-		'storage',
-		'clipboardWrite'
+		'storage'
 	],
 	host_permissions: ['<all_urls>', 'https://translate.googleapis.com/*'],
 	web_accessible_resources: [

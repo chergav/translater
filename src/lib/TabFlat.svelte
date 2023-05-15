@@ -19,16 +19,22 @@
 	on:click
 >
 	{#if icon}
-		<span class="mr-2">{@html icon}</span>
+		<span class="mr-2">
+			<Icon d={icon} />
+		</span>
 	{/if}
 	<span>{label}</span>
 	<slot />
 	{#if iconRight}
-		<span class="ml-2">{@html iconRight}</span>
+		<span class="ml-2">
+			<Icon d={icon} />
+		</span>
 	{/if}
 </button>
 
 <script>
+import Icon from '~/lib/Icon.svelte';
+
 export let label = '';
 export let className = '';
 export let active = false;

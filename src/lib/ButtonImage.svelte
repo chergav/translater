@@ -4,7 +4,6 @@
 		p-1
 		inline-flex
 		items-center
-		rounded-md
 		text-gray-900
 		dark:text-white
 		enabled:hover:bg-gray-200
@@ -12,6 +11,7 @@
 		disabled:opacity-30
 		transition-colors
 		[&>*]:pointer-events-none
+		{round ? 'rounded-full' : 'rounded-md'}
 	"
 	{disabled}
 	on:click
@@ -27,4 +27,5 @@ import { tooltip as action } from '~/lib/tooltip';
 
 export let tooltip = {};
 export let disabled = false;
+export let round = false;
 </script>

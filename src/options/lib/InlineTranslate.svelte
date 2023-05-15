@@ -31,20 +31,7 @@
 					deleteFromBlacklist(domain);
 				}}
 			>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					fill="none"
-					viewBox="0 0 24 24"
-					stroke-width="1.5"
-					stroke="currentColor"
-					class="w-5 h-5 ml-1"
-				>
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						d="M6 18L18 6M6 6l12 12"
-					/>
-				</svg>
+				<Icon d={heroXMark} class="ml-1" />
 			</button>
 		</span>
 	{:else}
@@ -58,6 +45,8 @@
 import { getMessage } from '~/common/browserApi';
 import { persistentStore } from '~/common/store';
 import Checkbox from '~/lib/Checkbox.svelte';
+import Icon from '~/lib/Icon.svelte';
+import { heroXMark } from '@icons/heroicons';
 
 const deleteFromBlacklist = domain => {
 	const { blacklistDomainForInline } = $persistentStore;
