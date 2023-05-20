@@ -1,17 +1,18 @@
 <div
 	class="
-		p-2
+		py-2
 		text-sm
 		border-b
 		border-gray-300
 		dark:border-gray-700
 		last:border-b-0
 	"
-	transition:slide|local={{ duration: 300 }}
+	transition:slide|local={{ duration: 250 }}
 >
 	<div class="mb-2 flex justify-between">
 		<span>{getLang(item.sourceLang)} -> {getLang(item.targetLang)}</span>
 		<ButtonImage
+			round
 			on:click={() => {
 				deleteHistoryItem(item.time);
 			}}
@@ -20,10 +21,10 @@
 			<Icon d={heroTrash} />
 		</ButtonImage>
 	</div>
-	<div class={truncateOrig ? 'line-clamp-1' : ''}>
+	<div bind:this={divOrig} class={truncateOrig ? 'line-clamp-1' : ''}>
 		{item.orig}
 	</div>
-	{#if item.orig.length > 45}
+	{#if isOrigCollapsed}
 		<button
 			class="
 				mb-1
@@ -39,10 +40,10 @@
 			{truncateOrig ? getMessage('text_expand') : getMessage('text_collapse')}
 		</button>
 	{/if}
-	<div class="{truncateTrans ? 'line-clamp-1' : ''} text-gray-500">
+	<div bind:this={divTrans} class="{truncateTrans ? 'line-clamp-1' : ''} text-gray-500">
 		{item.trans}
 	</div>
-	{#if item.trans.length > 45}
+	{#if isTransCollapsed}
 		<button
 			class="
 				text-xs
@@ -60,19 +61,29 @@
 </div>
 
 <script>
+import { onMount } from 'svelte';
 import { slide } from 'svelte/transition';
 import { persistentStore } from '~/common/store';
 import { getMessage } from '~/common/browserApi';
 import ButtonImage from '~/lib/ButtonImage.svelte';
 import Icon from '~/lib/Icon.svelte';
-import { heroTrash } from '@icons/heroicons';
+import { heroTrash } from '~/icons/heroicons';
 
 export let item;
 
 let truncateOrig = true,
-	truncateTrans = true;
+	truncateTrans = true,
+	divOrig,
+	divTrans,
+	isOrigCollapsed,
+	isTransCollapsed;
 
-const getLang = key => getMessage(`supported_languages_${key.replace('-', '_')}`);
+onMount(() => {
+	isOrigCollapsed = divOrig.scrollHeight > divOrig.clientHeight;
+	isTransCollapsed = divTrans.scrollHeight > divTrans.clientHeight;
+});
+	
+const getLang = key => getMessage(`supported_languages_${key.replace('-', '_')}`).toLowerCase();
 
 const deleteHistoryItem = time => {
 	$persistentStore.history = $persistentStore.history.filter(i => i.time !== time);

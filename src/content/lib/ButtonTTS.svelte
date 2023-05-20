@@ -1,4 +1,4 @@
-<ButtonImage disabled={error} on:click={startTTS} tooltip={{ title }}>
+<ButtonImage round disabled={error} on:click={startTTS} tooltip={{ title }}>
 	{#if error}
 		<Icon d={heroSpeakerXMark} />
 	{:else if waiting}
@@ -27,7 +27,7 @@ import { onMount, onDestroy } from 'svelte';
 import { getMessage } from '~/common/browserApi';
 import ButtonImage from '~/lib/ButtonImage.svelte';
 import Icon from '~/lib/Icon.svelte';
-import { heroSpeakerWave, heroSpeakerXMark, heroStop } from '@icons/heroicons';
+import { heroSpeakerWave, heroSpeakerXMark, heroStop } from '~/icons/heroicons';
 import getTTS from '~/content/scripts/TTS/tts';
 
 export let text;

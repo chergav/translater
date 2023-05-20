@@ -1,10 +1,10 @@
-<label class="text-gray-900 dark:text-white">
+<label class="text-gray-800 dark:text-white">
 	<span class="select-none {label ? 'mr-2' : ''}">{label}</span>
 	<select
 		class="
 			{small ? 'py-[3px] text-sm' : 'py-1.5 text-base' }
-			pl-2
-			rounded-md
+			pl-[14px]
+			rounded-[14px]
 			border-gray-300
 			focus:border-indigo-300
 			focus:ring

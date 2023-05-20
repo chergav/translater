@@ -6,10 +6,10 @@
 			left-0
 			px-2
 			py-1
-			rounded-md
+			rounded-lg
 			text-sm
 			bg-gray-200
-			text-gray-900
+			text-gray-800
 			dark:bg-gray-700
 			dark:text-white
 			shadow-md

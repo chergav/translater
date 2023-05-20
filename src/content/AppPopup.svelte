@@ -1,23 +1,20 @@
 <div class={$themeClass}>
-	<!-- absolute -->
 	<div
 		class="
 			fixed
+			p-1
 			z-[99999]
 			flex
 			flex-row
 			overflow-hidden
-			rounded-[6px]
+			rounded-[16px]
 			w-[550px]
 			h-fit
 			text-sm
-			bg-white
-			dark:bg-gray-800
-			shadow-xl
-			border
-			border-gray-300
-			dark:border-gray-700
-			text-gray-900
+			bg-gray-100
+			dark:bg-gray-900
+			shadow-lg
+			text-gray-800
 			dark:text-white
 			text-start
 			{moving ? 'select-none' : 'select-auto'}
@@ -29,37 +26,19 @@
 		}}
 		style="left: {left}px; top: {top}px;"
 	>
-		<div
-			class="
-				w-[16px]
-				flex
-				place-items-center
-				box-content
-				border-r
-				bg-gray-100
-				text-gray-900
-				border-gray-300
-				dark:bg-gray-800
-				dark:text-white
-				dark:border-gray-700
-				{moving ? 'cursor-grabbing' : 'cursor-move'}
-			"
-			on:mousedown={dragStart}
-		>
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				width="16px"
-				height="16px"
-				viewBox="0 0 24 24"
-				fill="currentColor"
-			>
-				<path d="M0 0h24v24H0V0z" fill="none" />
-				<path
-					d="M11 18c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
-				/>
-			</svg>
-		</div>
 		<div class="w-full">
+			<header
+				class="
+					mb-1
+					flex
+					justify-between
+					leading-[0]
+					{moving ? 'cursor-grabbing' : 'cursor-move'}
+				"
+				on:mousedown|self={dragStart}
+			>
+				<PopupNav />
+			</header>
 			<Popup on:update={tooltipPosition} />
 		</div>
 	</div>
@@ -69,6 +48,7 @@
 
 <script>
 import { destroyApp } from './utils/appsHandler';
+import PopupNav from './lib/PopupNav.svelte';
 import Popup from './lib/Popup.svelte';
 import { computePosition, offset, flip, shift } from '@floating-ui/dom';
 import { persistentStore, themeClass } from '~/common/store';
@@ -136,9 +116,7 @@ const dragMove = event => {
 		left += event.movementX;
 		top += event.movementY;
 
-		if (left < 1) {
-			left = 0;
-		}
+		if (top < 1) top = 0;
 	}
 };
 

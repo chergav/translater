@@ -6,8 +6,8 @@
 		inline-flex
 		items-center
 		whitespace-nowrap
-		rounded-md
-		text-gray-900
+		rounded-lg
+		text-gray-800
 		bg-transparent
 		dark:text-white
 		hover:bg-gray-200

@@ -1,19 +1,18 @@
 <button
 	type="button"
 	class="
-		px-2
-		{small ? 'py-1 text-sm' : 'py-1.5 text-base'}
+		px-3
+		py-1
 		inline-flex
 		items-center
 		whitespace-nowrap
-		rounded-md
-		hover:bg-gray-200
-		dark:hover:bg-gray-700
-		transition
+		rounded-full
 		select-none
-		{active
-		? 'text-blue-600'
-		: 'text-gray-500 dark:text-gray-400'}
+		{small ? 'text-sm' : 'text-base'}
+		text-gray-900
+		dark:text-white
+		{active ? 'bg-sky-200 dark:bg-sky-900' : 'hover:bg-gray-900/10 dark:hover:bg-white/10'}
+		transition-all
 		{className}
 	"
 	on:click

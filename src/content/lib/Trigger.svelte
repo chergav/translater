@@ -5,14 +5,10 @@
 			flex-row
 			w-[30px]
 			hover:w-max
-			rounded-lg
-			bg-gray-50
-			text-gray-900
-			dark:bg-gray-800
+			bg-white
+			text-gray-800
+			dark:bg-gray-900
 			dark:text-white
-			border
-			border-gray-300
-			dark:border-gray-700
 			{isSettingsOpen ? 'w-max' : ''}
 		"
 	>
@@ -52,7 +48,7 @@ import { store } from '~/content/store';
 import { tooltip } from '~/lib/tooltip';
 import { getMessage } from '~/common/browserApi';
 import Icon from '~/lib/Icon.svelte';
-import { heroCog8Tooth } from '@icons/heroicons';
+import { heroCog8Tooth } from '~/icons/heroicons';
 
 let isSettingsOpen = false;
 

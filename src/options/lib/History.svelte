@@ -1,12 +1,12 @@
-<div class="mb-4">
+<div class="p-4">
 	<Select
 		bind:value={$persistentStore.historyLength}
 		options={historyOptions}
 		label={getMessage('options_history_length')}
 	/>
 </div>
-
-<div class="py-4 flex justify-between items-center border-y border-gray-300 dark:border-gray-700">
+<hr class="mx-4 border-t border-gray-300 dark:border-gray-700" />
+<div class="p-4 flex justify-between items-center">
 	<span>{getMessage('options_records_in_history')} {$persistentStore.history.length}</span>
 	<ButtonFlat
 		label={getMessage('options_clear_history')}
@@ -15,9 +15,10 @@
 		}}
 	/>
 </div>
-<div class="w-full max-h-[60vh] overflow-y-auto scrollbar">
+<hr class="mx-4 border-t border-gray-300 dark:border-gray-700" />
+<div class="w-full h-[calc(100%-138px)] pl-4 pr-2 overflow-y-auto scrollbar">
 	{#each Object.entries(dateGroupedArray) as [key, value]}
-		<div class="p-2 text-sm text-blue-600">{getRelativeDate(key)}</div>
+		<div class="py-2 text-sm text-blue-600">{getRelativeDate(key)}</div>
 		{#each value as historyItem (historyItem.time)}
 			<HistoryItem item={historyItem} />
 		{/each}

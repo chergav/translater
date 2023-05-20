@@ -13,10 +13,10 @@
 			w-[18px]
 			h-[18px]
 			rounded-md
-			text-blue-500
+			text-blue-600
 			bg-transparent
 			focus:ring-1
-			focus:ring-blue-500
+			focus:ring-blue-600
 			border
 			border-gray-300
 			checked:border-none

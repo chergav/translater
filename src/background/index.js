@@ -17,8 +17,8 @@ chrome.runtime.onInstalled.addListener(() => {
 });
 
 chrome.contextMenus.onClicked.addListener((info, tab) => {
-	if (info.menuItemId === 'translaterMenu') {
-		sendMessage(tab.id, { action: 'showPopup' });
+	if (info.menuItemId === 'translaterMenu' && info.selectionText) {
+		sendMessage(tab.id, { action: 'createPopup', content: info.selectionText });
 	}
 });
 

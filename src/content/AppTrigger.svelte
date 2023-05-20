@@ -5,6 +5,13 @@
 			absolute
 			z-[99999]
 			leading-[0]
+			rounded-lg
+			shadow-lg
+			text-gray-800
+			dark:text-white
+			border
+			border-gray-200
+			dark:border-gray-800
 			overflow-hidden
 		"
 		use:triggerPosition

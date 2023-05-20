@@ -4,11 +4,13 @@
 		p-1
 		inline-flex
 		items-center
-		text-gray-900
+		text-gray-800
 		dark:text-white
-		enabled:hover:bg-gray-200
-		enabled:dark:hover:bg-gray-700
-		disabled:opacity-30
+		bg-transparent
+		enabled:hover:bg-gray-900/10
+		enabled:dark:hover:bg-white/10
+		disabled:text-gray-400
+		disabled:dark:text-gray-600
 		transition-colors
 		[&>*]:pointer-events-none
 		{round ? 'rounded-full' : 'rounded-md'}

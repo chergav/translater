@@ -1,7 +1,6 @@
-import { createShadowElem } from '~/content/utils/appsHandler';
 import Tooltip from './Tooltip.svelte';
 
-export const tooltip = (element, { title = '', placement = 'top', delay = 300 } = {}) => {
+export const tooltip = (element, { title = '', placement = 'top', delay = 500 } = {}) => {
 	let container,
 		tooltipComponent,
 		timeoutID;
@@ -12,12 +11,14 @@ export const tooltip = (element, { title = '', placement = 'top', delay = 300 } 
 		}
 
 		timeoutID = setTimeout(() => {
-			const { customElement, root } = createShadowElem('translater-shadow-tooltip');
+			container = document.createElement('div');
 
-			container = customElement;
+			const translaterShadowRoot = element.closest('.translater-shadow-root');
+
+			(translaterShadowRoot || document.body).append(container);
 
 			tooltipComponent = new Tooltip({
-				target: root,
+				target: container,
 				props: {
 					title,
 					placement,

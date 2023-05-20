@@ -20,7 +20,6 @@ const createTrigger = event => {
 
 	store.update(data => ({
 		...data,
-		// selectedText,
 		hostname: window.location.hostname,
 		isInTextField: isInTextField(),
 		selectedElemRect: getSelectedElemRect(),
@@ -34,12 +33,21 @@ const createTrigger = event => {
 	app.trigger.instance = new app.trigger.component({ target: root });
 };
 
+const createPopup = selectedText => {
+	store.update(data => ({
+		...data,
+		selectedText
+	}));
+
+	if (!app.popup.instance) createApp('popup');
+};
+
 document.addEventListener('mouseup', createTrigger);
 
 chrome.runtime.onMessage.addListener(message => {
 	switch (message.action) {
-	case 'showPopup':
-		createApp('popup');
+	case 'createPopup':
+		createPopup(message.content);
 		break;
 	default:
 		console.error(`Action "${message.action}" is not found.`);

@@ -1,24 +1,26 @@
-<div class="flex justify-center">
-	<div class="w-[700px]">
-		<div class="py-5 flex items-center">
-			<img src={getURL('/src/icons/128.png')} width="48" alt="" />
-			<span class="ml-5 text-xl">Translater</span>
-		</div>
-
-		<div class="py-4 border-y border-gray-300 dark:border-gray-700">
-			<SelectLang
-				bind:value={$persistentStore.targetLang}
-				label={getMessage('target_lang_label')}
-				{languages}
-			/>
-		</div>
-
-		<div class="flex flex-row py-4">
-			<div class="mr-6">
+<main class="
+		h-screen
+		p-4
+		flex
+		flex-col
+		items-center
+		text-gray-800
+		bg-gray-100
+		dark:text-white
+		dark:bg-gray-900
+		text-base
+	"
+>
+	<div class="w-[80%] h-full flex flex-row">
+		<div class="flex flex-col">
+			<div class="pb-4 flex items-center">
+				<img src={getURL('/src/icons/128.png')} width="48" alt="" />
+				<span class="ml-4 text-xl">Translater</span>
+			</div>
+			<div class="mr-4">
 				<div class="flex flex-col">
 					{#each tabs as item}
-						<TabFlat
-							className="mb-1"
+						<ButtonTab
 							active={activeTab === item.tab}
 							label={item.label}
 							icon={item.icon}
@@ -29,16 +31,16 @@
 					{/each}
 				</div>
 			</div>
-			<div class="w-full">
-				{#each tabs as item}
-					{#if activeTab === item.tab}
-						<svelte:component this={item.component} />
-					{/if}
-				{/each}
-			</div>
+		</div>
+		<div class="w-full overflow-hidden bg-white dark:bg-gray-800 rounded-[16px]">
+			{#each tabs as item}
+				{#if activeTab === item.tab}
+					<svelte:component this={item.component} />
+				{/if}
+			{/each}
 		</div>
 	</div>
-</div>
+</main>
 
 <svelte:head>
 	<title>{getMessage('options_title')}</title>
@@ -52,15 +54,13 @@ loadFont();
 
 <script>
 import { getMessage, getURL } from '~/common/browserApi';
-import { persistentStore, themeClass } from '~/common/store';
-import { languages } from '~/common/settings';
-import SelectLang from '~/lib/SelectLang.svelte';
-import TabFlat from '~/lib/TabFlat.svelte';
+import { themeClass } from '~/common/store';
+import ButtonTab from '~/lib/ButtonTab.svelte';
 import InlineTranslate from './lib/InlineTranslate.svelte';
 import PopupWindow from './lib/PopupWindow.svelte';
 import Appearance from './lib/Appearance.svelte';
 import History from './lib/History.svelte';
-import { heroDocumentText, heroWindow, heroPaintBrush, heroClock } from '@icons/heroicons';
+import { heroDocumentText, heroWindow, heroPaintBrush, heroClock } from '~/icons/heroicons';
 
 $: document.documentElement.className = $themeClass;
 

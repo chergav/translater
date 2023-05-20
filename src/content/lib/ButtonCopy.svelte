@@ -1,4 +1,5 @@
 <ButtonImage
+	round
 	disabled={!isClipboardSupport}
 	on:click={copyToClipboard}
 	on:mouseleave={() => {
@@ -18,7 +19,7 @@
 import { getMessage } from '~/common/browserApi';
 import ButtonImage from '~/lib/ButtonImage.svelte';
 import Icon from '~/lib/Icon.svelte';
-import { heroClipboard } from '@icons/heroicons';
+import { heroClipboard } from '~/icons/heroicons';
 
 export let text;
 

@@ -12,7 +12,7 @@
 			border
 			border-gray-300
 			dark:border-gray-700
-			text-gray-900
+			text-gray-800
 			dark:text-white
 			text-start
 			select-none
@@ -81,7 +81,7 @@ import ButtonImage from '~/lib/ButtonImage.svelte';
 import Checkbox from '~/lib/Checkbox.svelte';
 import { clickOutside } from './utils/clickOutside';
 import Icon from '~/lib/Icon.svelte';
-import { heroXMark, heroArrowTopRightOnSquare } from '@icons/heroicons';
+import { heroXMark, heroArrowTopRightOnSquare } from '~/icons/heroicons';
 
 const reference = {
 	getBoundingClientRect: () => $store.selectedEndCoord,

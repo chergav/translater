@@ -27,6 +27,7 @@ const app = {
 const createShadowElem = tag => {
 	const customElement = document.createElement(tag);
 	const root = document.createElement('div');
+	root.classList.add('translater-shadow-root');
 	const styleEl = document.createElement('style');
 	const shadowDOM = customElement.attachShadow({ mode: 'open' }) || customElement;
 	styleEl.textContent = css;
@@ -37,9 +38,7 @@ const createShadowElem = tag => {
 };
 
 const createApp = name => {
-	if (app[name].instance) {
-		return;
-	}
+	if (app[name].instance) return;
 
 	const { customElement, root } = createShadowElem(app[name].tag);
 
