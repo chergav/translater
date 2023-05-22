@@ -41,13 +41,19 @@
         "message": "إخفاء الزر في هذه المواقع:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "يمكنك إضافة مواقع باستخدام زر الإعدادات على الموقع الذي تريد استبعاده"
+        "message": "يمكنك إضافة مواقع باستخدام قائمة النافذة المنبثقة على الموقع الذي تريد استبعاده"
     },
     "options_show_original_text": {
         "message": "إظهار نص المصدر"
     },
     "options_show_transliteration": {
         "message": "إظهار التحويل الصوتي"
+    },
+    "options_lock_popup_window": {
+        "message": "قفل النافذة المنبثقة"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "إذا تم تمكين النافذة المنبثقة لن تغلق عند النقر بالخارج"
     },
     "options_history_length": {
         "message": "طول التاريخ"
@@ -88,13 +94,19 @@
     "popup_examples": {
         "message": "أمثلة"
     },
-    "popup_settings_disable_inline_button_for_site": {
-        "message": "تعطيل الزر لهذا الموقع"
+    "popup_menu_lock_window": {
+        "message": "قفل النافذة"
     },
-    "popup_settings_enable_inline_button_global": {
-        "message": "أظهر الزر لجميع المواقع"
+    "popup_menu_unlock_window": {
+        "message": "إلغاء قفل النافذة"
     },
-    "popup_settings_options_link": {
+    "popup_menu_show_translate_button": {
+        "message": "إظهار زر الترجمة"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "زر إخفاء الترجمة"
+    },
+    "popup_menu_options_link": {
         "message": "إعدادات إضافية"
     },
     "theme_light": {
@@ -108,9 +120,6 @@
     },
     "tooltip_translate_text": {
         "message": "ترجمة النص المحدد"
-    },
-    "tooltip_settings": {
-        "message": "إعدادات"
     },
     "tooltip_copy_to_clipboard": {
         "message": "نسخ إلى الحافظة"
@@ -135,12 +144,6 @@
     },
     "tooltip_go_back": {
         "message": "خلف"
-    },
-    "tooltip_pin_window": {
-        "message": "تثبيت النافذة"
-    },
-    "tooltip_unpin_window": {
-        "message": "فك النافذة"
     },
     "tooltip_go_forward": {
         "message": "إلى الأمام"

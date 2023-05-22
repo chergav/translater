@@ -16,8 +16,7 @@
 <hr class="border-gray-300 dark:border-gray-700" />
 
 <div class="p-3">
-	<ButtonFlat
-		small
+	<ButtonImage
 		label={getMessage('popup_menu_options')}
 		on:click={openOptionsPage}
 	/>
@@ -34,7 +33,7 @@ loadFont();
 import { persistentStore, themeClass } from '~/common/store';
 import { languages } from '~/common/settings';
 import SelectLang from '~/lib/SelectLang.svelte';
-import ButtonFlat from '~/lib/ButtonFlat.svelte';
+import ButtonImage from '~/lib/ButtonImage.svelte';
 
 const openOptionsPage = () => {
 	chrome.runtime.openOptionsPage();

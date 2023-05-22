@@ -41,13 +41,19 @@
         "message": "Oculte o botão nestes sites:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Você pode adicionar sites usando o botão de configurações no site que deseja excluir"
+        "message": "Você pode adicionar sites usando o menu da janela pop-up no site que deseja excluir"
     },
     "options_show_original_text": {
         "message": "Mostrar texto de origem"
     },
     "options_show_transliteration": {
         "message": "Mostrar transliteração"
+    },
+    "options_lock_popup_window": {
+        "message": "Bloquear janela pop-up"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "Se ativado, o pop-up não fechará ao clicar fora"
     },
     "options_history_length": {
         "message": "Duração da história"
@@ -88,13 +94,19 @@
     "popup_examples": {
         "message": "Exemplos"
     },
-    "popup_settings_disable_inline_button_for_site": {
-        "message": "Desative o botão para este site"
+    "popup_menu_lock_window": {
+        "message": "janela de bloqueio"
     },
-    "popup_settings_enable_inline_button_global": {
-        "message": "Mostrar o botão para todos os sites"
+    "popup_menu_unlock_window": {
+        "message": "Desbloquear janela"
     },
-    "popup_settings_options_link": {
+    "popup_menu_show_translate_button": {
+        "message": "Mostrar botão traduzir"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "Ocultar botão de tradução"
+    },
+    "popup_menu_options_link": {
         "message": "Configurações adicionais"
     },
     "theme_light": {
@@ -108,9 +120,6 @@
     },
     "tooltip_translate_text": {
         "message": "Traduzir o texto selecionado"
-    },
-    "tooltip_settings": {
-        "message": "Configurações"
     },
     "tooltip_copy_to_clipboard": {
         "message": "Copiar para área de transferência"
@@ -135,12 +144,6 @@
     },
     "tooltip_go_back": {
         "message": "Voltar"
-    },
-    "tooltip_pin_window": {
-        "message": "Fixar janela"
-    },
-    "tooltip_unpin_window": {
-        "message": "Soltar janela"
     },
     "tooltip_go_forward": {
         "message": "Avançar"

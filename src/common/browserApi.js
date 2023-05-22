@@ -29,4 +29,22 @@ const getMessage = msg => {
 
 const getURL = path => chrome.runtime.getURL(path);
 
-export { getUILanguage, detectLanguage, storageGet, storageSet, storageListener, getMessage, getURL };
+const openOptionsPage = () => {
+	chrome.runtime.sendMessage({
+		type: 'openOptionsPage',
+		content: {
+			hash: '#inline_translate'
+		}
+	});
+};
+
+export {
+	getUILanguage,
+	detectLanguage,
+	storageGet,
+	storageSet,
+	storageListener,
+	getMessage,
+	getURL,
+	openOptionsPage
+};

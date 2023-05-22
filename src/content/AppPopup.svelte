@@ -2,27 +2,27 @@
 	<div
 		class="
 			fixed
-			p-1
-			z-[99999]
-			flex
-			flex-row
-			overflow-hidden
-			rounded-[16px]
 			w-[550px]
 			h-fit
+			p-1
+			overflow-hidden
+			flex
+			flex-row
 			text-sm
-			bg-gray-100
-			dark:bg-gray-900
-			shadow-lg
 			text-gray-800
 			dark:text-white
 			text-start
+			bg-gray-100
+			dark:bg-gray-900
+			rounded-[16px]
+			shadow-xl
+			z-[9999999]
 			{moving ? 'select-none' : 'select-auto'}
 		"
 		bind:this={tooltip}
 		use:clickOutside
 		on:click_outside={() => {
-			if (!$persistentStore.pinWindow) destroyApp('popup');
+			if (!$persistentStore.lockWindow) destroyApp('popup');
 		}}
 		style="left: {left}px; top: {top}px;"
 	>
@@ -53,7 +53,7 @@ import Popup from './lib/Popup.svelte';
 import { computePosition, offset, flip, shift } from '@floating-ui/dom';
 import { persistentStore, themeClass } from '~/common/store';
 import { store } from './store';
-import { clickOutside } from './utils/clickOutside';
+import { clickOutside } from '~/lib/utils/clickOutside';
 
 const reference = {
 	getBoundingClientRect: () => $store.selectedElemRect,

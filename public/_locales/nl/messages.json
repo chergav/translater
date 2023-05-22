@@ -41,13 +41,19 @@
         "message": "Verberg de knop op deze sites:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "U kunt sites toevoegen met behulp van de instellingenknop op de site die u wilt uitsluiten"
+        "message": "U kunt sites toevoegen via het menu van het pop-upvenster op de site die u wilt uitsluiten"
     },
     "options_show_original_text": {
         "message": "Toon brontekst"
     },
     "options_show_transliteration": {
         "message": "Toon transliteratie"
+    },
+    "options_lock_popup_window": {
+        "message": "Pop-upvenster vergrendelen"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "Indien ingeschakeld, zal de pop-up niet sluiten als u buiten klikt"
     },
     "options_history_length": {
         "message": "Lengte van de geschiedenis"
@@ -88,13 +94,19 @@
     "popup_examples": {
         "message": "Voorbeelden"
     },
-    "popup_settings_disable_inline_button_for_site": {
-        "message": "Schakel de knop voor deze site uit"
+    "popup_menu_lock_window": {
+        "message": "Venster vergrendelen"
     },
-    "popup_settings_enable_inline_button_global": {
-        "message": "Toon de knop voor alle sites"
+    "popup_menu_unlock_window": {
+        "message": "Ontgrendel venster"
     },
-    "popup_settings_options_link": {
+    "popup_menu_show_translate_button": {
+        "message": "Toon vertaalknop"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "Knop Vertalen verbergen"
+    },
+    "popup_menu_options_link": {
         "message": "Aanvullende instellingen"
     },
     "theme_light": {
@@ -109,9 +121,6 @@
     "tooltip_translate_text": {
         "message": "Vertaal geselecteerde tekst"
     },
-    "tooltip_settings": {
-        "message": "Instellingen"
-    },
     "tooltip_copy_to_clipboard": {
         "message": "Kopieer naar klembord"
     },
@@ -122,7 +131,7 @@
         "message": "Gekopieerd!"
     },
     "tooltip_copy_error": {
-        "message": "Kopieerfout!"
+        "message": "Kopieer fout!"
     },
     "tooltip_listen_to_the_text": {
         "message": "Luister naar tekst"
@@ -135,12 +144,6 @@
     },
     "tooltip_go_back": {
         "message": "Rug"
-    },
-    "tooltip_pin_window": {
-        "message": "Venster vastzetten"
-    },
-    "tooltip_unpin_window": {
-        "message": "Venster losmaken"
     },
     "tooltip_go_forward": {
         "message": "Vooruit"

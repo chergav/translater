@@ -38,16 +38,22 @@
         "message": "Показати кнопку в текстовому полі"
     },
     "options_hide_button_on_sites": {
-        "message": "Сховати кнопку на цих сайтах:"
+        "message": "Приховати кнопку на цих сайтах:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Ви можете додавати сайти за допомогою кнопки налаштувань на сайті, який потрібно виключити"
+        "message": "Ви можете додавати сайти за допомогою меню спливаючого вікна на сайті, який потрібно виключити"
     },
     "options_show_original_text": {
         "message": "Показати вихідний текст"
     },
     "options_show_transliteration": {
         "message": "Показати транслітерацію"
+    },
+    "options_lock_popup_window": {
+        "message": "Блокування спливаючого вікна"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "Якщо ввімкнено, спливаюче вікно не закриватиметься після клацання ззовні"
     },
     "options_history_length": {
         "message": "Довжина історії"
@@ -88,13 +94,19 @@
     "popup_examples": {
         "message": "Приклади"
     },
-    "popup_settings_disable_inline_button_for_site": {
-        "message": "Вимкнути кнопку для цього сайту"
+    "popup_menu_lock_window": {
+        "message": "Блокування вікна"
     },
-    "popup_settings_enable_inline_button_global": {
-        "message": "Показати кнопку для всіх сайтів"
+    "popup_menu_unlock_window": {
+        "message": "Розблокувати вікно"
     },
-    "popup_settings_options_link": {
+    "popup_menu_show_translate_button": {
+        "message": "Показати кнопку перекладу"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "Сховати кнопку перекладу"
+    },
+    "popup_menu_options_link": {
         "message": "Додаткові налаштування"
     },
     "theme_light": {
@@ -108,9 +120,6 @@
     },
     "tooltip_translate_text": {
         "message": "Перекласти виділений текст"
-    },
-    "tooltip_settings": {
-        "message": "Налаштування"
     },
     "tooltip_copy_to_clipboard": {
         "message": "Копіювати в буфер обміну"
@@ -135,12 +144,6 @@
     },
     "tooltip_go_back": {
         "message": "Назад"
-    },
-    "tooltip_pin_window": {
-        "message": "Закріпити вікно"
-    },
-    "tooltip_unpin_window": {
-        "message": "Відкріпити вікно"
     },
     "tooltip_go_forward": {
         "message": "вперед"

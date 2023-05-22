@@ -28,8 +28,10 @@
 	/>
 	<span class="select-none">{label}</span>
 </label>
+<div class="ml-[30px] text-sm text-gray-500">{hint}</div>
 
 <script>
 export let checked;
 export let label = '';
+export let hint = '';
 </script>

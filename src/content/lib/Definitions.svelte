@@ -11,7 +11,7 @@
 		"
 		>
 			{#each addSynonymToDefinition() as definition}
-				<div class="mb-3">
+				<div class="mb-3 last:mb-0">
 					<div class="text-blue-600 capitalize">{definition.pos}</div>
 					<ul class="marker:text-gray-500 list-decimal pl-5 space-y-3">
 						{#each definition.entry as defEntry}

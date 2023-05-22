@@ -41,13 +41,19 @@
         "message": "Απόκρυψη του κουμπιού σε αυτούς τους ιστότοπους:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Μπορείτε να προσθέσετε ιστότοπους χρησιμοποιώντας το κουμπί ρυθμίσεων στον ιστότοπο που θέλετε να εξαιρέσετε"
+        "message": "Μπορείτε να προσθέσετε ιστότοπους χρησιμοποιώντας το μενού του αναδυόμενου παραθύρου στον ιστότοπο που θέλετε να εξαιρέσετε"
     },
     "options_show_original_text": {
         "message": "Εμφάνιση κειμένου πηγής"
     },
     "options_show_transliteration": {
         "message": "Εμφάνιση μεταγραφής"
+    },
+    "options_lock_popup_window": {
+        "message": "Κλείδωμα αναδυόμενου παραθύρου"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "Εάν είναι ενεργοποιημένο, το αναδυόμενο παράθυρο δεν θα κλείσει με κλικ έξω"
     },
     "options_history_length": {
         "message": "Διάρκεια ιστορίας"
@@ -88,13 +94,19 @@
     "popup_examples": {
         "message": "Παραδείγματα"
     },
-    "popup_settings_disable_inline_button_for_site": {
-        "message": "Απενεργοποιήστε το κουμπί για αυτόν τον ιστότοπο"
+    "popup_menu_lock_window": {
+        "message": "Κλείδωμα παραθύρου"
     },
-    "popup_settings_enable_inline_button_global": {
-        "message": "Εμφάνιση του κουμπιού για όλους τους ιστότοπους"
+    "popup_menu_unlock_window": {
+        "message": "Ξεκλείδωμα παραθύρου"
     },
-    "popup_settings_options_link": {
+    "popup_menu_show_translate_button": {
+        "message": "Εμφάνιση κουμπιού μετάφρασης"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "Απόκρυψη κουμπιού μετάφρασης"
+    },
+    "popup_menu_options_link": {
         "message": "Επιπρόσθετες ρυθμίσεις"
     },
     "theme_light": {
@@ -108,9 +120,6 @@
     },
     "tooltip_translate_text": {
         "message": "Μετάφραση επιλεγμένου κειμένου"
-    },
-    "tooltip_settings": {
-        "message": "Ρυθμίσεις"
     },
     "tooltip_copy_to_clipboard": {
         "message": "Αντιγραφή στο πρόχειρο"
@@ -135,12 +144,6 @@
     },
     "tooltip_go_back": {
         "message": "Πίσω"
-    },
-    "tooltip_pin_window": {
-        "message": "Καρφίτσα παράθυρο"
-    },
-    "tooltip_unpin_window": {
-        "message": "Ξεκαρφιτσώστε το παράθυρο"
     },
     "tooltip_go_forward": {
         "message": "Προς τα εμπρός"

@@ -41,13 +41,19 @@
         "message": "다음 사이트에서 버튼 숨기기:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "제외하고 싶은 사이트의 설정 버튼을 이용하여 사이트를 추가할 수 있습니다."
+        "message": "제외하고 싶은 사이트의 팝업창 메뉴를 이용하여 사이트를 추가할 수 있습니다."
     },
     "options_show_original_text": {
         "message": "원본 텍스트 표시"
     },
     "options_show_transliteration": {
         "message": "음역 표시"
+    },
+    "options_lock_popup_window": {
+        "message": "잠금 팝업 창"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "활성화된 경우 외부 클릭 시 팝업이 닫히지 않습니다."
     },
     "options_history_length": {
         "message": "역사의 길이"
@@ -88,13 +94,19 @@
     "popup_examples": {
         "message": "예"
     },
-    "popup_settings_disable_inline_button_for_site": {
-        "message": "이 사이트의 버튼 비활성화"
+    "popup_menu_lock_window": {
+        "message": "창 잠금"
     },
-    "popup_settings_enable_inline_button_global": {
-        "message": "모든 사이트에 대한 버튼 표시"
+    "popup_menu_unlock_window": {
+        "message": "잠금 해제 창"
     },
-    "popup_settings_options_link": {
+    "popup_menu_show_translate_button": {
+        "message": "번역 버튼 표시"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "번역 버튼 숨기기"
+    },
+    "popup_menu_options_link": {
         "message": "추가 세팅"
     },
     "theme_light": {
@@ -108,9 +120,6 @@
     },
     "tooltip_translate_text": {
         "message": "선택한 텍스트 번역"
-    },
-    "tooltip_settings": {
-        "message": "설정"
     },
     "tooltip_copy_to_clipboard": {
         "message": "클립 보드에 복사"
@@ -135,12 +144,6 @@
     },
     "tooltip_go_back": {
         "message": "뒤쪽에"
-    },
-    "tooltip_pin_window": {
-        "message": "핀 창"
-    },
-    "tooltip_unpin_window": {
-        "message": "창 고정 해제"
     },
     "tooltip_go_forward": {
         "message": "앞으로"

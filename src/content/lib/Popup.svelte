@@ -22,6 +22,7 @@
 					<div class="flex gap-1">
 						<SelectLang
 							small
+							round
 							auto
 							bind:value={$store.sourceLang}
 							on:change={handleTranslate}
@@ -59,6 +60,7 @@
 					<div class="flex gap-1">
 						<SelectLang
 							small
+							round
 							bind:value={$persistentStore.targetLang}
 							on:change={handleTranslate}
 							{languages}

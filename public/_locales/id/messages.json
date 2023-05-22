@@ -41,13 +41,19 @@
         "message": "Sembunyikan tombol di situs ini:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Anda dapat menambahkan situs menggunakan tombol pengaturan di situs yang ingin Anda kecualikan"
+        "message": "Anda dapat menambahkan situs menggunakan menu jendela popup di situs yang ingin Anda kecualikan"
     },
     "options_show_original_text": {
         "message": "Tampilkan teks sumber"
     },
     "options_show_transliteration": {
         "message": "Tampilkan transliterasi"
+    },
+    "options_lock_popup_window": {
+        "message": "Kunci jendela sembulan"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "Jika diaktifkan popup tidak akan menutup saat klik di luar"
     },
     "options_history_length": {
         "message": "Panjang sejarah"
@@ -88,13 +94,19 @@
     "popup_examples": {
         "message": "Contoh"
     },
-    "popup_settings_disable_inline_button_for_site": {
-        "message": "Nonaktifkan tombol untuk situs ini"
+    "popup_menu_lock_window": {
+        "message": "Kunci jendela"
     },
-    "popup_settings_enable_inline_button_global": {
-        "message": "Tampilkan tombol untuk semua situs"
+    "popup_menu_unlock_window": {
+        "message": "Buka kunci jendela"
     },
-    "popup_settings_options_link": {
+    "popup_menu_show_translate_button": {
+        "message": "Tampilkan tombol terjemahan"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "Sembunyikan tombol terjemahan"
+    },
+    "popup_menu_options_link": {
         "message": "Pengaturan tambahan"
     },
     "theme_light": {
@@ -108,9 +120,6 @@
     },
     "tooltip_translate_text": {
         "message": "Terjemahkan teks yang dipilih"
-    },
-    "tooltip_settings": {
-        "message": "Pengaturan"
     },
     "tooltip_copy_to_clipboard": {
         "message": "Menyalin ke clipboard"
@@ -135,12 +144,6 @@
     },
     "tooltip_go_back": {
         "message": "Kembali"
-    },
-    "tooltip_pin_window": {
-        "message": "Pin jendela"
-    },
-    "tooltip_unpin_window": {
-        "message": "Lepas sematan jendela"
     },
     "tooltip_go_forward": {
         "message": "Maju"

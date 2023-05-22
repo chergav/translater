@@ -41,13 +41,19 @@
         "message": "Oculte el botón en estos sitios:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Puede agregar sitios usando el botón de configuración en el sitio que desea excluir"
+        "message": "Puede agregar sitios usando el menú de la ventana emergente en el sitio que desea excluir"
     },
     "options_show_original_text": {
         "message": "Mostrar texto fuente"
     },
     "options_show_transliteration": {
         "message": "Mostrar transliteración"
+    },
+    "options_lock_popup_window": {
+        "message": "Bloquear ventana emergente"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "Si está habilitada, la ventana emergente no se cerrará al hacer clic fuera"
     },
     "options_history_length": {
         "message": "Longitud de la historia"
@@ -88,13 +94,19 @@
     "popup_examples": {
         "message": "Ejemplos"
     },
-    "popup_settings_disable_inline_button_for_site": {
-        "message": "Deshabilitar el botón para este sitio"
+    "popup_menu_lock_window": {
+        "message": "ventana de bloqueo"
     },
-    "popup_settings_enable_inline_button_global": {
-        "message": "Mostrar el botón para todos los sitios"
+    "popup_menu_unlock_window": {
+        "message": "Desbloquear ventana"
     },
-    "popup_settings_options_link": {
+    "popup_menu_show_translate_button": {
+        "message": "Mostrar botón de traducción"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "Ocultar botón de traducir"
+    },
+    "popup_menu_options_link": {
         "message": "Ajustes adicionales"
     },
     "theme_light": {
@@ -108,9 +120,6 @@
     },
     "tooltip_translate_text": {
         "message": "Traducir texto seleccionado"
-    },
-    "tooltip_settings": {
-        "message": "Ajustes"
     },
     "tooltip_copy_to_clipboard": {
         "message": "Copiar al portapapeles"
@@ -135,12 +144,6 @@
     },
     "tooltip_go_back": {
         "message": "Atrás"
-    },
-    "tooltip_pin_window": {
-        "message": "Pin ventana"
-    },
-    "tooltip_unpin_window": {
-        "message": "Desanclar ventana"
     },
     "tooltip_go_forward": {
         "message": "Adelante"

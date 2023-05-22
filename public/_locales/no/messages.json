@@ -41,13 +41,19 @@
         "message": "Skjul knappen på disse nettstedene:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Du kan legge til nettsteder ved å bruke innstillingsknappen på nettstedet du vil ekskludere"
+        "message": "Du kan legge til nettsteder ved å bruke menyen i popup-vinduet på nettstedet du vil ekskludere"
     },
     "options_show_original_text": {
         "message": "Vis kildetekst"
     },
     "options_show_transliteration": {
         "message": "Vis translitterasjon"
+    },
+    "options_lock_popup_window": {
+        "message": "Lås popup-vindu"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "Hvis aktivert, lukkes ikke popup ved klikk utenfor"
     },
     "options_history_length": {
         "message": "Lengden på historien"
@@ -88,13 +94,19 @@
     "popup_examples": {
         "message": "Eksempler"
     },
-    "popup_settings_disable_inline_button_for_site": {
-        "message": "Deaktiver knappen for dette nettstedet"
+    "popup_menu_lock_window": {
+        "message": "Lås vindu"
     },
-    "popup_settings_enable_inline_button_global": {
-        "message": "Vis knappen for alle nettsteder"
+    "popup_menu_unlock_window": {
+        "message": "Lås opp vinduet"
     },
-    "popup_settings_options_link": {
+    "popup_menu_show_translate_button": {
+        "message": "Vis oversettelsesknapp"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "Skjul oversett-knappen"
+    },
+    "popup_menu_options_link": {
         "message": "Tilleggsinnstillinger"
     },
     "theme_light": {
@@ -108,9 +120,6 @@
     },
     "tooltip_translate_text": {
         "message": "Oversett valgt tekst"
-    },
-    "tooltip_settings": {
-        "message": "Innstillinger"
     },
     "tooltip_copy_to_clipboard": {
         "message": "Kopiere til utklippstavle"
@@ -135,12 +144,6 @@
     },
     "tooltip_go_back": {
         "message": "Tilbake"
-    },
-    "tooltip_pin_window": {
-        "message": "Fest vindu"
-    },
-    "tooltip_unpin_window": {
-        "message": "Løsne vindu"
     },
     "tooltip_go_forward": {
         "message": "Framover"

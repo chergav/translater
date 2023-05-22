@@ -3,7 +3,7 @@
         "message": "Translater - seçilen metnin çevirisi"
     },
     "app_description": {
-        "message": "Açık ve koyu temaya sahip Google Translate ile seçili metni tercüme edin"
+        "message": "Açık ve koyu temalı Google Çeviri ile seçilen metni çeviri"
     },
     "context_menus_title": {
         "message": "Seçili metni çevir"
@@ -41,13 +41,19 @@
         "message": "Düğmeyi şu sitelerde gizle:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Hariç tutmak istediğiniz sitedeki ayarlar düğmesini kullanarak site ekleyebilirsiniz."
+        "message": "Hariç tutmak istediğiniz sitedeki açılır pencere menüsünü kullanarak site ekleyebilirsiniz."
     },
     "options_show_original_text": {
         "message": "Kaynak metni göster"
     },
     "options_show_transliteration": {
         "message": "Harf çevirisini göster"
+    },
+    "options_lock_popup_window": {
+        "message": "Açılır pencereyi kilitle"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "Etkinleştirilirse, açılır pencere dışarıdan tıklandığında kapanmaz"
     },
     "options_history_length": {
         "message": "tarihin uzunluğu"
@@ -88,13 +94,19 @@
     "popup_examples": {
         "message": "örnekler"
     },
-    "popup_settings_disable_inline_button_for_site": {
-        "message": "Bu site için düğmeyi devre dışı bırak"
+    "popup_menu_lock_window": {
+        "message": "Pencereyi kilitle"
     },
-    "popup_settings_enable_inline_button_global": {
-        "message": "Düğmeyi tüm siteler için göster"
+    "popup_menu_unlock_window": {
+        "message": "Pencerenin kilidini aç"
     },
-    "popup_settings_options_link": {
+    "popup_menu_show_translate_button": {
+        "message": "Çeviri düğmesini göster"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "Çevir düğmesini gizle"
+    },
+    "popup_menu_options_link": {
         "message": "Ek ayarlar"
     },
     "theme_light": {
@@ -108,9 +120,6 @@
     },
     "tooltip_translate_text": {
         "message": "Seçili metni çevir"
-    },
-    "tooltip_settings": {
-        "message": "Ayarlar"
     },
     "tooltip_copy_to_clipboard": {
         "message": "Panoya kopyala"
@@ -135,12 +144,6 @@
     },
     "tooltip_go_back": {
         "message": "Geri"
-    },
-    "tooltip_pin_window": {
-        "message": "Pencereyi sabitle"
-    },
-    "tooltip_unpin_window": {
-        "message": "Pencerenin sabitlemesini kaldır"
     },
     "tooltip_go_forward": {
         "message": "İleri"

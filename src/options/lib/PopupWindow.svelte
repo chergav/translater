@@ -1,6 +1,13 @@
 <div class="p-4">
 	<div class="mb-4">
 		<Checkbox
+			bind:checked={$persistentStore.lockWindow}
+			label={getMessage('options_lock_popup_window')}
+			hint={getMessage('options_lock_popup_window_hint')}
+		/>
+	</div>
+	<div class="mb-4">
+		<Checkbox
 			bind:checked={$persistentStore.showOriginalText}
 			label={getMessage('options_show_original_text')}
 		/>

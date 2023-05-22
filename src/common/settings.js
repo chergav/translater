@@ -9,7 +9,7 @@ const defaultSettings = {
 	blacklistDomainForText: [],
 	historyLength: 50,
 	history: [],
-	pinWindow: false
+	lockWindow: false
 };
 
 const themes = [

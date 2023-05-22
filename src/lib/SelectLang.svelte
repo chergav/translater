@@ -2,9 +2,10 @@
 	<span class="select-none {label ? 'mr-2' : ''}">{label}</span>
 	<select
 		class="
-			{small ? 'py-[3px] text-sm' : 'py-1.5 text-base' }
-			pl-[14px]
-			rounded-[14px]
+			py-[3px]
+			pl-3
+			{small ? 'text-sm' : 'text-base' }
+			{round ? 'rounded-full' : 'rounded-lg' }
 			border-gray-300
 			focus:border-indigo-300
 			focus:ring
@@ -41,6 +42,7 @@ export let label = '';
 export let languages = [];
 export let auto = false;
 export let small = false;
+export let round = false;
 
 const getI18nLanguages = () => languages.map(({ key }) => ({
 	key,

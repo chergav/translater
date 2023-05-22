@@ -5,6 +5,7 @@
 		py-1
 		inline-flex
 		items-center
+		justify-start
 		whitespace-nowrap
 		rounded-full
 		select-none

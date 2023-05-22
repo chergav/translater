@@ -41,13 +41,19 @@
         "message": "Piilota painike näillä sivustoilla:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Voit lisätä sivustoja käyttämällä poissuljettavan sivuston asetuspainiketta"
+        "message": "Voit lisätä sivustoja poissuljettavan sivuston ponnahdusikkunan valikon avulla"
     },
     "options_show_original_text": {
         "message": "Näytä lähdeteksti"
     },
     "options_show_transliteration": {
         "message": "Näytä translitterointi"
+    },
+    "options_lock_popup_window": {
+        "message": "Lukitse ponnahdusikkuna"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "Jos käytössä, ponnahdusikkuna ei sulkeudu, kun napsautat ulkopuolella"
     },
     "options_history_length": {
         "message": "Historian pituus"
@@ -88,13 +94,19 @@
     "popup_examples": {
         "message": "Esimerkkejä"
     },
-    "popup_settings_disable_inline_button_for_site": {
-        "message": "Poista tämän sivuston painike käytöstä"
+    "popup_menu_lock_window": {
+        "message": "Lukitse ikkuna"
     },
-    "popup_settings_enable_inline_button_global": {
-        "message": "Näytä painike kaikille sivustoille"
+    "popup_menu_unlock_window": {
+        "message": "Avaa ikkuna"
     },
-    "popup_settings_options_link": {
+    "popup_menu_show_translate_button": {
+        "message": "Näytä käännöspainike"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "Piilota käännöspainike"
+    },
+    "popup_menu_options_link": {
         "message": "Lisäasetukset"
     },
     "theme_light": {
@@ -108,9 +120,6 @@
     },
     "tooltip_translate_text": {
         "message": "Käännä valittu teksti"
-    },
-    "tooltip_settings": {
-        "message": "asetukset"
     },
     "tooltip_copy_to_clipboard": {
         "message": "Kopioi leikepöydälle"
@@ -135,12 +144,6 @@
     },
     "tooltip_go_back": {
         "message": "Takaisin"
-    },
-    "tooltip_pin_window": {
-        "message": "Kiinnitä ikkuna"
-    },
-    "tooltip_unpin_window": {
-        "message": "Irrota ikkuna"
     },
     "tooltip_go_forward": {
         "message": "Eteenpäin"
@@ -206,7 +209,7 @@
         "message": "Korsikalainen"
     },
     "supported_languages_hr": {
-        "message": "Kroatia"
+        "message": "kroatialainen"
     },
     "supported_languages_cs": {
         "message": "Tšekki"

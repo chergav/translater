@@ -41,13 +41,19 @@
         "message": "隐藏这些网站上的按钮："
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "您可以使用要排除的网站上的设置按钮添加网站"
+        "message": "您可以使用要排除的网站上的弹出窗口菜单添加网站"
     },
     "options_show_original_text": {
         "message": "显示源文本"
     },
     "options_show_transliteration": {
         "message": "显示音译"
+    },
+    "options_lock_popup_window": {
+        "message": "锁定弹出窗口"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "如果启用弹出窗口将不会在单击外部时关闭"
     },
     "options_history_length": {
         "message": "历史长度"
@@ -88,13 +94,19 @@
     "popup_examples": {
         "message": "例子"
     },
-    "popup_settings_disable_inline_button_for_site": {
-        "message": "禁用此站点的按钮"
+    "popup_menu_lock_window": {
+        "message": "锁定窗口"
     },
-    "popup_settings_enable_inline_button_global": {
-        "message": "显示所有站点的按钮"
+    "popup_menu_unlock_window": {
+        "message": "解锁窗口"
     },
-    "popup_settings_options_link": {
+    "popup_menu_show_translate_button": {
+        "message": "显示翻译按钮"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "隐藏翻译按钮"
+    },
+    "popup_menu_options_link": {
         "message": "其他设置"
     },
     "theme_light": {
@@ -108,9 +120,6 @@
     },
     "tooltip_translate_text": {
         "message": "翻译选定的文本"
-    },
-    "tooltip_settings": {
-        "message": "设置"
     },
     "tooltip_copy_to_clipboard": {
         "message": "复制到剪贴板"
@@ -135,12 +144,6 @@
     },
     "tooltip_go_back": {
         "message": "后退"
-    },
-    "tooltip_pin_window": {
-        "message": "钉窗"
-    },
-    "tooltip_unpin_window": {
-        "message": "取消固定窗口"
     },
     "tooltip_go_forward": {
         "message": "向前"

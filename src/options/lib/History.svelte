@@ -8,7 +8,7 @@
 <hr class="mx-4 border-t border-gray-300 dark:border-gray-700" />
 <div class="p-4 flex justify-between items-center">
 	<span>{getMessage('options_records_in_history')} {$persistentStore.history.length}</span>
-	<ButtonFlat
+	<ButtonImage
 		label={getMessage('options_clear_history')}
 		on:click={() => {
 			$persistentStore.history = [];
@@ -16,7 +16,7 @@
 	/>
 </div>
 <hr class="mx-4 border-t border-gray-300 dark:border-gray-700" />
-<div class="w-full h-[calc(100%-138px)] pl-4 pr-2 overflow-y-auto scrollbar">
+<div class="w-full h-[calc(100%-128px)] pl-4 pr-2 overflow-y-auto scrollbar">
 	{#each Object.entries(dateGroupedArray) as [key, value]}
 		<div class="py-2 text-sm text-blue-600">{getRelativeDate(key)}</div>
 		{#each value as historyItem (historyItem.time)}
@@ -29,7 +29,7 @@
 import { persistentStore } from '~/common/store';
 import { getUILanguage, getMessage } from '~/common/browserApi';
 import Select from '~/lib/Select.svelte';
-import ButtonFlat from '~/lib/ButtonFlat.svelte';
+import ButtonImage from '~/lib/ButtonImage.svelte';
 import HistoryItem from './HistoryItem.svelte';
 
 const historyOptions = [

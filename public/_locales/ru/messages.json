@@ -41,13 +41,19 @@
         "message": "Скрыть кнопку на этих сайтах:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Вы можете добавить сайты с помощью кнопки настроек на сайте, который хотите исключить"
+        "message": "Вы можете добавить сайты, используя меню всплывающего окна на сайте, который вы хотите исключить"
     },
     "options_show_original_text": {
         "message": "Показать исходный текст"
     },
     "options_show_transliteration": {
         "message": "Показать транслитерацию"
+    },
+    "options_lock_popup_window": {
+        "message": "Заблокировать всплывающее окно"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "Если включено, всплывающее окно не будет закрываться при нажатии снаружи"
     },
     "options_history_length": {
         "message": "Длина истории"
@@ -88,13 +94,19 @@
     "popup_examples": {
         "message": "Примеры"
     },
-    "popup_settings_disable_inline_button_for_site": {
-        "message": "Отключить кнопку для этого сайта"
+    "popup_menu_lock_window": {
+        "message": "Заблокировать окно"
     },
-    "popup_settings_enable_inline_button_global": {
-        "message": "Показать кнопку для всех сайтов"
+    "popup_menu_unlock_window": {
+        "message": "Разблокировать окно"
     },
-    "popup_settings_options_link": {
+    "popup_menu_show_translate_button": {
+        "message": "Показать кнопку перевода"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "Скрыть кнопку перевода"
+    },
+    "popup_menu_options_link": {
         "message": "Дополнительные настройки"
     },
     "theme_light": {
@@ -108,9 +120,6 @@
     },
     "tooltip_translate_text": {
         "message": "Перевести выделенный текст"
-    },
-    "tooltip_settings": {
-        "message": "Настройки"
     },
     "tooltip_copy_to_clipboard": {
         "message": "Скопировать в буфер обмена"
@@ -135,12 +144,6 @@
     },
     "tooltip_go_back": {
         "message": "Назад"
-    },
-    "tooltip_pin_window": {
-        "message": "Закрепить окно"
-    },
-    "tooltip_unpin_window": {
-        "message": "Открепить окно"
     },
     "tooltip_go_forward": {
         "message": "Вперед"

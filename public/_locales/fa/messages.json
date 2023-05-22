@@ -41,13 +41,19 @@
         "message": "پنهان کردن دکمه در این سایت ها:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "می‌توانید با استفاده از دکمه تنظیمات در سایتی که می‌خواهید حذف کنید، سایت‌ها را اضافه کنید"
+        "message": "می‌توانید با استفاده از منوی پنجره بازشو در سایتی که می‌خواهید حذف کنید، سایت‌ها را اضافه کنید"
     },
     "options_show_original_text": {
         "message": "نمایش متن منبع"
     },
     "options_show_transliteration": {
         "message": "نمایش نویسه‌گردانی"
+    },
+    "options_lock_popup_window": {
+        "message": "قفل کردن پنجره بازشو"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "اگر فعال باشد، پنجره بازشو با کلیک بیرون بسته نمی شود"
     },
     "options_history_length": {
         "message": "طول تاریخ"
@@ -88,13 +94,19 @@
     "popup_examples": {
         "message": "مثال ها"
     },
-    "popup_settings_disable_inline_button_for_site": {
-        "message": "دکمه این سایت را غیرفعال کنید"
+    "popup_menu_lock_window": {
+        "message": "قفل کردن پنجره"
     },
-    "popup_settings_enable_inline_button_global": {
-        "message": "نمایش دکمه برای همه سایت ها"
+    "popup_menu_unlock_window": {
+        "message": "باز کردن قفل پنجره"
     },
-    "popup_settings_options_link": {
+    "popup_menu_show_translate_button": {
+        "message": "نمایش دکمه ترجمه"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "پنهان کردن دکمه ترجمه"
+    },
+    "popup_menu_options_link": {
         "message": "تنظیمات اضافی"
     },
     "theme_light": {
@@ -108,9 +120,6 @@
     },
     "tooltip_translate_text": {
         "message": "ترجمه متن انتخاب شده"
-    },
-    "tooltip_settings": {
-        "message": "تنظیمات"
     },
     "tooltip_copy_to_clipboard": {
         "message": "کپی به کلیپ بورد"
@@ -135,12 +144,6 @@
     },
     "tooltip_go_back": {
         "message": "بازگشت"
-    },
-    "tooltip_pin_window": {
-        "message": "پین کردن پنجره"
-    },
-    "tooltip_unpin_window": {
-        "message": "پین کردن پنجره"
     },
     "tooltip_go_forward": {
         "message": "رو به جلو"
@@ -455,7 +458,7 @@
         "message": "ویتنامی"
     },
     "supported_languages_cy": {
-        "message": "ولز"
+        "message": "ولزی"
     },
     "supported_languages_xh": {
         "message": "Xosa"

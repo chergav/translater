@@ -3,7 +3,7 @@
         "message": "Translater - traduction du texte sélectionné"
     },
     "app_description": {
-        "message": "Traduction du texte sélectionné avec Google Translate avec un thème clair et foncé"
+        "message": "Traduction du texte sélectionné avec Google Translate avec un thème clair et sombre"
     },
     "context_menus_title": {
         "message": "Traduire le texte sélectionné"
@@ -41,13 +41,19 @@
         "message": "Masquez le bouton sur ces sites :"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Vous pouvez ajouter des sites en utilisant le bouton des paramètres sur le site que vous souhaitez exclure"
+        "message": "Vous pouvez ajouter des sites en utilisant le menu de la fenêtre contextuelle sur le site que vous souhaitez exclure"
     },
     "options_show_original_text": {
         "message": "Afficher le texte source"
     },
     "options_show_transliteration": {
         "message": "Afficher la translittération"
+    },
+    "options_lock_popup_window": {
+        "message": "Verrouiller la fenêtre contextuelle"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "Si activé, la fenêtre contextuelle ne se fermera pas en cliquant à l'extérieur"
     },
     "options_history_length": {
         "message": "Durée de l'histoire"
@@ -88,13 +94,19 @@
     "popup_examples": {
         "message": "Exemples"
     },
-    "popup_settings_disable_inline_button_for_site": {
-        "message": "Désactiver le bouton pour ce site"
+    "popup_menu_lock_window": {
+        "message": "Verrouiller la fenêtre"
     },
-    "popup_settings_enable_inline_button_global": {
-        "message": "Afficher le bouton pour tous les sites"
+    "popup_menu_unlock_window": {
+        "message": "Déverrouiller la fenêtre"
     },
-    "popup_settings_options_link": {
+    "popup_menu_show_translate_button": {
+        "message": "Afficher le bouton de traduction"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "Masquer le bouton de traduction"
+    },
+    "popup_menu_options_link": {
         "message": "Paramètres additionnels"
     },
     "theme_light": {
@@ -108,9 +120,6 @@
     },
     "tooltip_translate_text": {
         "message": "Traduire le texte sélectionné"
-    },
-    "tooltip_settings": {
-        "message": "Paramètres"
     },
     "tooltip_copy_to_clipboard": {
         "message": "Copier dans le presse-papier"
@@ -135,12 +144,6 @@
     },
     "tooltip_go_back": {
         "message": "Dos"
-    },
-    "tooltip_pin_window": {
-        "message": "Fenêtre d'épingle"
-    },
-    "tooltip_unpin_window": {
-        "message": "Détacher la fenêtre"
     },
     "tooltip_go_forward": {
         "message": "Avant"

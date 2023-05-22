@@ -1,18 +1,9 @@
 <div class={$themeClass}>
 	<div
-		id="trigger-contaner"
 		class="
 			absolute
-			z-[99999]
+			z-[9999999]
 			leading-[0]
-			rounded-lg
-			shadow-lg
-			text-gray-800
-			dark:text-white
-			border
-			border-gray-200
-			dark:border-gray-800
-			overflow-hidden
 		"
 		use:triggerPosition
 		use:clickOutside
@@ -40,7 +31,7 @@ import { computePosition, offset, flip } from '@floating-ui/dom';
 import { persistentStore, themeClass } from '~/common/store';
 import { store } from './store';
 import { detectLanguage } from '~/common/browserApi';
-import { clickOutside } from './utils/clickOutside';
+import { clickOutside } from '~/lib/utils/clickOutside';
 
 const reference = {
 	getBoundingClientRect: () => $store.selectedEndCoord,

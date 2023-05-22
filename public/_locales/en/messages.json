@@ -41,13 +41,19 @@
 		"message": "Hide the button on these sites:"
 	},
 	"options_hide_button_on_sites_empty_list": {
-		"message": "You can add sites using the settings button on the site you want to exclude"
+		"message": "You can add sites using the menu of popup window on the site you want to exclude"
 	},
 	"options_show_original_text": {
 		"message": "Show source text"
 	},
 	"options_show_transliteration": {
 		"message": "Show transliteration"
+	},
+	"options_lock_popup_window": {
+		"message": "Lock popup window"
+	},
+	"options_lock_popup_window_hint": {
+		"message": "If enabled popup will not close on click outside"
 	},
 	"options_history_length": {
 		"message": "Length of history"
@@ -88,13 +94,19 @@
 	"popup_examples": {
 		"message": "Examples"
 	},
-	"popup_settings_disable_inline_button_for_site": {
-		"message": "Disable the button for this site"
+	"popup_menu_lock_window": {
+		"message": "Lock window"
 	},
-	"popup_settings_enable_inline_button_global": {
-		"message": "Show the button for all sites"
+	"popup_menu_unlock_window": {
+		"message": "Unlock window"
 	},
-	"popup_settings_options_link": {
+	"popup_menu_show_translate_button": {
+		"message": "Show translate button"
+	},
+	"popup_menu_hide_translate_button": {
+		"message": "Hide translate button"
+	},
+	"popup_menu_options_link": {
 		"message": "Additional settings"
 	},
 	"theme_light": {
@@ -108,9 +120,6 @@
 	},
 	"tooltip_translate_text": {
 		"message": "Translate selected text"
-	},
-	"tooltip_settings": {
-		"message": "Settings"
 	},
 	"tooltip_copy_to_clipboard": {
 		"message": "Copy to clipboard"
@@ -135,12 +144,6 @@
 	},
 	"tooltip_go_back": {
 		"message": "Back"
-	},
-	"tooltip_pin_window": {
-		"message": "Pin window"
-	},
-	"tooltip_unpin_window": {
-		"message": "Unpin window"
 	},
 	"tooltip_go_forward": {
 		"message": "Forward"

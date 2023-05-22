@@ -41,13 +41,19 @@
         "message": "Dölj knappen på dessa webbplatser:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Du kan lägga till webbplatser med inställningsknappen på webbplatsen du vill utesluta"
+        "message": "Du kan lägga till webbplatser med hjälp av menyn i popup-fönstret på webbplatsen du vill utesluta"
     },
     "options_show_original_text": {
         "message": "Visa källtext"
     },
     "options_show_transliteration": {
         "message": "Visa translitterering"
+    },
+    "options_lock_popup_window": {
+        "message": "Lås popup-fönster"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "Om aktiverat stängs inte popup-fönstret när du klickar utanför"
     },
     "options_history_length": {
         "message": "Historiens längd"
@@ -88,13 +94,19 @@
     "popup_examples": {
         "message": "Exempel"
     },
-    "popup_settings_disable_inline_button_for_site": {
-        "message": "Inaktivera knappen för den här webbplatsen"
+    "popup_menu_lock_window": {
+        "message": "Lås fönster"
     },
-    "popup_settings_enable_inline_button_global": {
-        "message": "Visa knappen för alla webbplatser"
+    "popup_menu_unlock_window": {
+        "message": "Lås upp fönstret"
     },
-    "popup_settings_options_link": {
+    "popup_menu_show_translate_button": {
+        "message": "Visa översättningsknapp"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "Dölj översättningsknapp"
+    },
+    "popup_menu_options_link": {
         "message": "Ytterligare inställningar"
     },
     "theme_light": {
@@ -108,9 +120,6 @@
     },
     "tooltip_translate_text": {
         "message": "Översätt vald text"
-    },
-    "tooltip_settings": {
-        "message": "inställningar"
     },
     "tooltip_copy_to_clipboard": {
         "message": "Kopiera till urklipp"
@@ -135,12 +144,6 @@
     },
     "tooltip_go_back": {
         "message": "Tillbaka"
-    },
-    "tooltip_pin_window": {
-        "message": "Nåla fönster"
-    },
-    "tooltip_unpin_window": {
-        "message": "Lossa fönstret"
     },
     "tooltip_go_forward": {
         "message": "Fram"

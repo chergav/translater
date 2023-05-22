@@ -41,13 +41,19 @@
         "message": "Peida nupp nendel saitidel:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Saate saite lisada, kasutades välistatava saidi seadete nuppu"
+        "message": "Saate lisada saite, kasutades selle saidi hüpikakna menüüd, mille soovite välistada"
     },
     "options_show_original_text": {
         "message": "Kuva lähtetekst"
     },
     "options_show_transliteration": {
         "message": "Kuva transliteratsioon"
+    },
+    "options_lock_popup_window": {
+        "message": "Lukusta hüpikaken"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "Kui see on lubatud, ei sulgu hüpikaken väljapoole klõpsamisel"
     },
     "options_history_length": {
         "message": "Ajaloo pikkus"
@@ -88,13 +94,19 @@
     "popup_examples": {
         "message": "Näited"
     },
-    "popup_settings_disable_inline_button_for_site": {
-        "message": "Keela selle saidi nupp"
+    "popup_menu_lock_window": {
+        "message": "Lukusta aken"
     },
-    "popup_settings_enable_inline_button_global": {
-        "message": "Kuva kõigi saitide nupp"
+    "popup_menu_unlock_window": {
+        "message": "Avage aken"
     },
-    "popup_settings_options_link": {
+    "popup_menu_show_translate_button": {
+        "message": "Kuva tõlkenupp"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "Peida tõlkenupp"
+    },
+    "popup_menu_options_link": {
         "message": "Lisaseaded"
     },
     "theme_light": {
@@ -108,9 +120,6 @@
     },
     "tooltip_translate_text": {
         "message": "Tõlgi valitud tekst"
-    },
-    "tooltip_settings": {
-        "message": "Seaded"
     },
     "tooltip_copy_to_clipboard": {
         "message": "Kopeerida lõikelauale"
@@ -135,12 +144,6 @@
     },
     "tooltip_go_back": {
         "message": "tagasi"
-    },
-    "tooltip_pin_window": {
-        "message": "Kinnitage aken"
-    },
-    "tooltip_unpin_window": {
-        "message": "Vabastage aken"
     },
     "tooltip_go_forward": {
         "message": "Edasi"

@@ -41,13 +41,19 @@
         "message": "隱藏這些網站上的按鈕："
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "您可以使用要排除的網站上的設置按鈕添加網站"
+        "message": "您可以使用要排除的網站上的彈出窗口菜單添加網站"
     },
     "options_show_original_text": {
         "message": "顯示源文本"
     },
     "options_show_transliteration": {
         "message": "顯示音譯"
+    },
+    "options_lock_popup_window": {
+        "message": "鎖定彈出窗口"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "如果啟用彈出窗口將不會在單擊外部時關閉"
     },
     "options_history_length": {
         "message": "歷史長度"
@@ -88,13 +94,19 @@
     "popup_examples": {
         "message": "例子"
     },
-    "popup_settings_disable_inline_button_for_site": {
-        "message": "禁用此站點的按鈕"
+    "popup_menu_lock_window": {
+        "message": "鎖定窗口"
     },
-    "popup_settings_enable_inline_button_global": {
-        "message": "顯示所有站點的按鈕"
+    "popup_menu_unlock_window": {
+        "message": "解鎖窗口"
     },
-    "popup_settings_options_link": {
+    "popup_menu_show_translate_button": {
+        "message": "顯示翻譯按鈕"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "隱藏翻譯按鈕"
+    },
+    "popup_menu_options_link": {
         "message": "其他設置"
     },
     "theme_light": {
@@ -108,9 +120,6 @@
     },
     "tooltip_translate_text": {
         "message": "翻譯選定的文本"
-    },
-    "tooltip_settings": {
-        "message": "設置"
     },
     "tooltip_copy_to_clipboard": {
         "message": "複製到剪貼板"
@@ -135,12 +144,6 @@
     },
     "tooltip_go_back": {
         "message": "後退"
-    },
-    "tooltip_pin_window": {
-        "message": "釘窗"
-    },
-    "tooltip_unpin_window": {
-        "message": "取消固定窗口"
     },
     "tooltip_go_forward": {
         "message": "向前"

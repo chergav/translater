@@ -41,13 +41,19 @@
         "message": "次のサイトのボタンを非表示にします。"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "除外したいサイトの設定ボタンを使用してサイトを追加できます"
+        "message": "除外したいサイトのポップアップウィンドウのメニューを使用してサイトを追加できます"
     },
     "options_show_original_text": {
         "message": "ソーステキストを表示"
     },
     "options_show_transliteration": {
         "message": "音訳を表示"
+    },
+    "options_lock_popup_window": {
+        "message": "ポップアップウィンドウをロックする"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "有効にすると、外側をクリックしてもポップアップが閉じなくなります"
     },
     "options_history_length": {
         "message": "歴史の長さ"
@@ -88,13 +94,19 @@
     "popup_examples": {
         "message": "例"
     },
-    "popup_settings_disable_inline_button_for_site": {
-        "message": "このサイトのボタンを無効にする"
+    "popup_menu_lock_window": {
+        "message": "窓をロックする"
     },
-    "popup_settings_enable_inline_button_global": {
-        "message": "すべてのサイトのボタンを表示する"
+    "popup_menu_unlock_window": {
+        "message": "ウィンドウのロックを解除する"
     },
-    "popup_settings_options_link": {
+    "popup_menu_show_translate_button": {
+        "message": "翻訳ボタンを表示"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "翻訳ボタンを非表示にする"
+    },
+    "popup_menu_options_link": {
         "message": "追加の設定"
     },
     "theme_light": {
@@ -108,9 +120,6 @@
     },
     "tooltip_translate_text": {
         "message": "選択したテキストを翻訳する"
-    },
-    "tooltip_settings": {
-        "message": "設定"
     },
     "tooltip_copy_to_clipboard": {
         "message": "クリップボードにコピー"
@@ -135,12 +144,6 @@
     },
     "tooltip_go_back": {
         "message": "戻る"
-    },
-    "tooltip_pin_window": {
-        "message": "ピンウィンドウ"
-    },
-    "tooltip_unpin_window": {
-        "message": "ウィンドウの固定を解除する"
     },
     "tooltip_go_forward": {
         "message": "前方"

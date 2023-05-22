@@ -41,13 +41,19 @@
         "message": "Ukryj przycisk na tych stronach:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Możesz dodać witryny za pomocą przycisku ustawień w witrynie, którą chcesz wykluczyć"
+        "message": "Możesz dodać witryny za pomocą menu wyskakującego okienka w witrynie, którą chcesz wykluczyć"
     },
     "options_show_original_text": {
         "message": "Pokaż tekst źródłowy"
     },
     "options_show_transliteration": {
         "message": "Pokaż transliterację"
+    },
+    "options_lock_popup_window": {
+        "message": "Zablokuj wyskakujące okienko"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "Jeśli włączone, wyskakujące okienko nie zamknie się po kliknięciu na zewnątrz"
     },
     "options_history_length": {
         "message": "Długość historii"
@@ -88,13 +94,19 @@
     "popup_examples": {
         "message": "Przykłady"
     },
-    "popup_settings_disable_inline_button_for_site": {
-        "message": "Wyłącz przycisk dla tej witryny"
+    "popup_menu_lock_window": {
+        "message": "Zablokuj okno"
     },
-    "popup_settings_enable_inline_button_global": {
-        "message": "Pokaż przycisk dla wszystkich witryn"
+    "popup_menu_unlock_window": {
+        "message": "Odblokuj okno"
     },
-    "popup_settings_options_link": {
+    "popup_menu_show_translate_button": {
+        "message": "Pokaż przycisk tłumaczenia"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "Ukryj przycisk tłumaczenia"
+    },
+    "popup_menu_options_link": {
         "message": "Dodatkowe ustawienia"
     },
     "theme_light": {
@@ -108,9 +120,6 @@
     },
     "tooltip_translate_text": {
         "message": "Przetłumacz wybrany tekst"
-    },
-    "tooltip_settings": {
-        "message": "Ustawienia"
     },
     "tooltip_copy_to_clipboard": {
         "message": "Skopiuj do schowka"
@@ -135,12 +144,6 @@
     },
     "tooltip_go_back": {
         "message": "Z powrotem"
-    },
-    "tooltip_pin_window": {
-        "message": "Przypnij okno"
-    },
-    "tooltip_unpin_window": {
-        "message": "Odepnij okno"
     },
     "tooltip_go_forward": {
         "message": "Do przodu"

@@ -8,10 +8,7 @@ export const clickOutside = node => {
 
 		if (node && !event.composedPath().includes(node)) {
 			node.dispatchEvent(
-				new CustomEvent('click_outside', {
-					bubbles: true,
-					composed: true
-				})
+				new CustomEvent('click_outside', { composed: true })
 			);
 		}
 	};
@@ -24,6 +21,6 @@ export const clickOutside = node => {
 	return {
 		destroy() {
 			document.removeEventListener('mousedown', handleClick, true);
-		}
+		},
 	};
 };

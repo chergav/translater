@@ -1,6 +1,5 @@
-import AppTrigger from '../AppTrigger.svelte';
-import AppPopup from '../AppPopup.svelte';
-import AppSettings from '../AppSettings.svelte';
+import AppTrigger from '~/content/AppTrigger.svelte';
+import AppPopup from '~/content/AppPopup.svelte';
 import css from '~/common/global.css?inline';
 
 const app = {
@@ -13,12 +12,6 @@ const app = {
 	popup: {
 		component: AppPopup,
 		tag: 'translater-inline-popup',
-		instance: null,
-		customElement: null
-	},
-	settings: {
-		component: AppSettings,
-		tag: 'translater-inline-settings',
 		instance: null,
 		customElement: null
 	}

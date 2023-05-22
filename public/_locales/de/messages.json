@@ -41,13 +41,19 @@
         "message": "Blenden Sie die Schaltfläche auf diesen Seiten aus:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Sie können Websites hinzufügen, indem Sie auf der Website, die Sie ausschließen möchten, auf die Schaltfläche „Einstellungen“ klicken"
+        "message": "Sie können Websites hinzufügen, indem Sie das Menü des Popup-Fensters auf der Website verwenden, die Sie ausschließen möchten"
     },
     "options_show_original_text": {
         "message": "Quelltext anzeigen"
     },
     "options_show_transliteration": {
         "message": "Transliteration anzeigen"
+    },
+    "options_lock_popup_window": {
+        "message": "Popup-Fenster sperren"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "Wenn diese Option aktiviert ist, wird das Popup beim Klicken außerhalb nicht geschlossen"
     },
     "options_history_length": {
         "message": "Länge der Geschichte"
@@ -88,13 +94,19 @@
     "popup_examples": {
         "message": "Beispiele"
     },
-    "popup_settings_disable_inline_button_for_site": {
-        "message": "Deaktivieren Sie die Schaltfläche für diese Site"
+    "popup_menu_lock_window": {
+        "message": "Fenster sperren"
     },
-    "popup_settings_enable_inline_button_global": {
-        "message": "Zeigen Sie die Schaltfläche für alle Websites an"
+    "popup_menu_unlock_window": {
+        "message": "Fenster entriegeln"
     },
-    "popup_settings_options_link": {
+    "popup_menu_show_translate_button": {
+        "message": "Schaltfläche „Übersetzen“ anzeigen"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "Schaltfläche „Übersetzen“ ausblenden"
+    },
+    "popup_menu_options_link": {
         "message": "Zusätzliche Einstellungen"
     },
     "theme_light": {
@@ -108,9 +120,6 @@
     },
     "tooltip_translate_text": {
         "message": "Ausgewählten Text übersetzen"
-    },
-    "tooltip_settings": {
-        "message": "Einstellungen"
     },
     "tooltip_copy_to_clipboard": {
         "message": "In die Zwischenablage kopieren"
@@ -135,12 +144,6 @@
     },
     "tooltip_go_back": {
         "message": "Zurück"
-    },
-    "tooltip_pin_window": {
-        "message": "Fenster anpinnen"
-    },
-    "tooltip_unpin_window": {
-        "message": "Fenster lösen"
     },
     "tooltip_go_forward": {
         "message": "Nach vorne"

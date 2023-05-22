@@ -2,9 +2,10 @@
 	<span class="select-none {label ? 'mr-2' : ''}">{label}</span>
 	<select
 		class="
-			{small ? 'py-[3px] text-sm' : 'py-1.5 text-base' }
+			py-[3px]
 			pl-2
-			rounded-lg
+			{small ? 'text-sm' : 'text-base'}
+			{round ? 'rounded-full' : 'rounded-lg' }
 			border-gray-300
 			focus:border-indigo-300
 			focus:ring
@@ -33,4 +34,5 @@ export let value;
 export let label = '';
 export let options = [];
 export let small = false;
+export let round = false;
 </script>

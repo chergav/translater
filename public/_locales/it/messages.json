@@ -41,13 +41,19 @@
         "message": "Nascondi il pulsante su questi siti:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Puoi aggiungere siti utilizzando il pulsante delle impostazioni sul sito che desideri escludere"
+        "message": "È possibile aggiungere siti utilizzando il menu della finestra popup sul sito che si desidera escludere"
     },
     "options_show_original_text": {
         "message": "Mostra il testo di origine"
     },
     "options_show_transliteration": {
         "message": "Mostra traslitterazione"
+    },
+    "options_lock_popup_window": {
+        "message": "Blocca la finestra popup"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "Se abilitato il popup non si chiuderà al clic all'esterno"
     },
     "options_history_length": {
         "message": "Lunghezza della storia"
@@ -88,13 +94,19 @@
     "popup_examples": {
         "message": "Esempi"
     },
-    "popup_settings_disable_inline_button_for_site": {
-        "message": "Disabilita il pulsante per questo sito"
+    "popup_menu_lock_window": {
+        "message": "Blocca la finestra"
     },
-    "popup_settings_enable_inline_button_global": {
-        "message": "Mostra il pulsante per tutti i siti"
+    "popup_menu_unlock_window": {
+        "message": "Sblocca finestra"
     },
-    "popup_settings_options_link": {
+    "popup_menu_show_translate_button": {
+        "message": "Mostra pulsante di traduzione"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "Nascondi il pulsante di traduzione"
+    },
+    "popup_menu_options_link": {
         "message": "Altre impostazioni"
     },
     "theme_light": {
@@ -108,9 +120,6 @@
     },
     "tooltip_translate_text": {
         "message": "Traduci il testo selezionato"
-    },
-    "tooltip_settings": {
-        "message": "Impostazioni"
     },
     "tooltip_copy_to_clipboard": {
         "message": "Copia negli appunti"
@@ -135,12 +144,6 @@
     },
     "tooltip_go_back": {
         "message": "Indietro"
-    },
-    "tooltip_pin_window": {
-        "message": "Spilla finestra"
-    },
-    "tooltip_unpin_window": {
-        "message": "Sblocca la finestra"
     },
     "tooltip_go_forward": {
         "message": "Inoltrare"
@@ -449,7 +452,7 @@
         "message": "Urdu"
     },
     "supported_languages_uz": {
-        "message": "uzbeco"
+        "message": "uzbeko"
     },
     "supported_languages_vi": {
         "message": "vietnamita"

@@ -41,13 +41,19 @@
         "message": "הסתר את הכפתור באתרים הבאים:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "אתה יכול להוסיף אתרים באמצעות כפתור ההגדרות באתר שאתה רוצה לא לכלול"
+        "message": "אתה יכול להוסיף אתרים באמצעות התפריט של חלון קופץ באתר שאתה רוצה לא לכלול"
     },
     "options_show_original_text": {
         "message": "הצג טקסט מקור"
     },
     "options_show_transliteration": {
         "message": "הצג תעתיק"
+    },
+    "options_lock_popup_window": {
+        "message": "נעל חלון קופץ"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "אם מופעל חלון קופץ לא ייסגר בלחיצה בחוץ"
     },
     "options_history_length": {
         "message": "אורך ההיסטוריה"
@@ -88,13 +94,19 @@
     "popup_examples": {
         "message": "דוגמאות"
     },
-    "popup_settings_disable_inline_button_for_site": {
-        "message": "השבת את הכפתור עבור אתר זה"
+    "popup_menu_lock_window": {
+        "message": "נעילת חלון"
     },
-    "popup_settings_enable_inline_button_global": {
-        "message": "הצג את הכפתור עבור כל האתרים"
+    "popup_menu_unlock_window": {
+        "message": "בטל את נעילת החלון"
     },
-    "popup_settings_options_link": {
+    "popup_menu_show_translate_button": {
+        "message": "הצג כפתור תרגום"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "הסתר לחצן תרגום"
+    },
+    "popup_menu_options_link": {
         "message": "הגדרות נוספות"
     },
     "theme_light": {
@@ -108,9 +120,6 @@
     },
     "tooltip_translate_text": {
         "message": "תרגם טקסט נבחר"
-    },
-    "tooltip_settings": {
-        "message": "הגדרות"
     },
     "tooltip_copy_to_clipboard": {
         "message": "העתק ללוח"
@@ -135,12 +144,6 @@
     },
     "tooltip_go_back": {
         "message": "חזור"
-    },
-    "tooltip_pin_window": {
-        "message": "חלון סיכה"
-    },
-    "tooltip_unpin_window": {
-        "message": "בטל את הצמדת החלון"
     },
     "tooltip_go_forward": {
         "message": "קָדִימָה"
