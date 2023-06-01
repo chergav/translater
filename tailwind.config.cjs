@@ -1,7 +1,17 @@
 module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
-		extend: {},
+		extend: {
+			keyframes: {
+				circle_grow: {
+					'0%': { transform: 'scale(0)' },
+					'100%': { transform: 'scale(1)' }
+				}
+			},
+			animation: {
+				circle_grow: 'circle_grow 300ms cubic-bezier(0.05, 0.7, 0.1, 1) 0s 1 normal none running'
+			}
+		},
 		fontSize: {
 			xs: ['12px', '16px'],
 			sm: ['14px', '20px'],
@@ -24,7 +34,8 @@ module.exports = {
 			'8': '32px',
 
 			'64': '256px',
-
+			'72': '288px',
+			'80': '320px',
 			'96': '384px'
 		},
 		borderRadius: {

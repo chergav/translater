@@ -21,7 +21,7 @@
 			<Icon d={heroTrash} />
 		</ButtonImage>
 	</div>
-	<div bind:this={divOrig} class={truncateOrig ? 'line-clamp-1' : ''}>
+	<div bind:this={elemOrig} class:line-clamp-1={truncateOrig}>
 		{item.orig}
 	</div>
 	{#if isOrigCollapsed}
@@ -40,7 +40,7 @@
 			{truncateOrig ? getMessage('text_expand') : getMessage('text_collapse')}
 		</button>
 	{/if}
-	<div bind:this={divTrans} class="{truncateTrans ? 'line-clamp-1' : ''} text-gray-500">
+	<div bind:this={elemTrans} class="{truncateTrans ? 'line-clamp-1' : ''} text-gray-500">
 		{item.trans}
 	</div>
 	{#if isTransCollapsed}
@@ -73,14 +73,14 @@ export let item;
 
 let truncateOrig = true,
 	truncateTrans = true,
-	divOrig,
-	divTrans,
+	elemOrig,
+	elemTrans,
 	isOrigCollapsed,
 	isTransCollapsed;
 
 onMount(() => {
-	isOrigCollapsed = divOrig.scrollHeight > divOrig.clientHeight;
-	isTransCollapsed = divTrans.scrollHeight > divTrans.clientHeight;
+	isOrigCollapsed = elemOrig.scrollHeight > elemOrig.clientHeight;
+	isTransCollapsed = elemTrans.scrollHeight > elemTrans.clientHeight;
 });
 	
 const getLang = key => getMessage(`supported_languages_${key.replace('-', '_')}`).toLowerCase();

@@ -49,6 +49,8 @@ const genTranslatedObject = (origObject, translatedArray) => {
 const translateFile = async (inputFile, locales) => {
 	const fileContent = await readFile(inputFile, 'utf-8');
 	const origObject = JSON.parse(fileContent);
+	origObject.app_name.message = origObject.app_name.message.slice(11); // delete "Translater "
+
 	const messageArray = Object.values(origObject).map(value => value.message);
 
 	const translationsByLocale = await Promise.all(
@@ -74,6 +76,10 @@ const translateFile = async (inputFile, locales) => {
 			console.log(`Translation saved to ${fileName}`);
 		})
 	);
+
+	origObject.app_name.message = `Translater ${origObject.app_name.message}`;
+	await writeFile('public/_locales/en/messages.json', JSON.stringify(origObject, null, 4));
+	console.log('EN locale restored');
 };
 
 const locales = [

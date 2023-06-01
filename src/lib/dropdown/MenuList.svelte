@@ -17,11 +17,14 @@
 			rounded-xl
 			shadow-lg
 		"
+		transition:fly="{{ duration: 150, y: -10, easing: cubicInOut }}"
 	>
 		<slot />
 	</div>
 {/if}
 
 <script>
+import { fly } from 'svelte/transition';
+import { cubicInOut } from 'svelte/easing';
 import { menuOpen } from './store';
 </script>

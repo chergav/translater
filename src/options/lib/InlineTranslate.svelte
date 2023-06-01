@@ -7,13 +7,13 @@
 		/>
 	</div>
 	<div class="mb-4">
-		<Checkbox
+		<Switch
 			bind:checked={$persistentStore.inlineButtonShow}
 			label={getMessage('options_inline_button_show')}
 		/>
 	</div>
 	<div class="mb-4">
-		<Checkbox
+		<Switch
 			bind:checked={$persistentStore.textFieldButtonShow}
 			label={getMessage('options_text_field_button_show')}
 		/>
@@ -55,7 +55,7 @@ import { getMessage } from '~/common/browserApi';
 import { persistentStore } from '~/common/store';
 import { languages } from '~/common/settings';
 import SelectLang from '~/lib/SelectLang.svelte';
-import Checkbox from '~/lib/Checkbox.svelte';
+import Switch from '~/lib/Switch.svelte';
 import Icon from '~/lib/Icon.svelte';
 import { heroXMark } from '~/icons/heroicons';
 

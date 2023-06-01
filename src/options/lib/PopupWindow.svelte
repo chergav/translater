@@ -1,19 +1,19 @@
 <div class="p-4">
 	<div class="mb-4">
-		<Checkbox
+		<Switch
 			bind:checked={$persistentStore.lockWindow}
 			label={getMessage('options_lock_popup_window')}
 			hint={getMessage('options_lock_popup_window_hint')}
 		/>
 	</div>
 	<div class="mb-4">
-		<Checkbox
+		<Switch
 			bind:checked={$persistentStore.showOriginalText}
 			label={getMessage('options_show_original_text')}
 		/>
 	</div>
 	<div class="mb-4">
-		<Checkbox
+		<Switch
 			bind:checked={$persistentStore.showTransliteration}
 			label={getMessage('options_show_transliteration')}
 		/>
@@ -23,5 +23,5 @@
 <script>
 import { getMessage } from '~/common/browserApi';
 import { persistentStore } from '~/common/store';
-import Checkbox from '~/lib/Checkbox.svelte';
+import Switch from '~/lib/Switch.svelte';
 </script>

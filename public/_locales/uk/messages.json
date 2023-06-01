@@ -38,7 +38,7 @@
         "message": "Показати кнопку в текстовому полі"
     },
     "options_hide_button_on_sites": {
-        "message": "Приховати кнопку на цих сайтах:"
+        "message": "Сховати кнопку на цих сайтах:"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Ви можете додавати сайти за допомогою меню спливаючого вікна на сайті, який потрібно виключити"
@@ -260,7 +260,7 @@
         "message": "Хауса"
     },
     "supported_languages_haw": {
-        "message": "Гавайська"
+        "message": "гавайська"
     },
     "supported_languages_he": {
         "message": "іврит"

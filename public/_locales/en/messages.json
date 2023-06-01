@@ -1,484 +1,484 @@
 {
-	"app_name": {
-		"message": "Translater - translation of selected text"
-	},
-	"app_description": {
-		"message": "Translation selected text with Google Translate with light and dark theme"
-	},
-	"context_menus_title": {
-		"message": "Translate selected text"
-	},
-	"popup_menu_options": {
-		"message": "Settings"
-	},
-	"options_title": {
-		"message": "$APP_NAME$ - settings",
-		"placeholders": {
-			"app_name": {
-				"content": "Translater"
-			}
-		}
-	},
-	"options_tab_inline_translate": {
-		"message": "Reading and input"
-	},
-	"options_tab_popup_window": {
-		"message": "Popup window"
-	},
-	"options_tab_appearance": {
-		"message": "Outer appearance"
-	},
-	"options_tab_history": {
-		"message": "History"
-	},
-	"options_inline_button_show": {
-		"message": "Show button when text is selected"
-	},
-	"options_text_field_button_show": {
-		"message": "Show button in textfield"
-	},
-	"options_hide_button_on_sites": {
-		"message": "Hide the button on these sites:"
-	},
-	"options_hide_button_on_sites_empty_list": {
-		"message": "You can add sites using the menu of popup window on the site you want to exclude"
-	},
-	"options_show_original_text": {
-		"message": "Show source text"
-	},
-	"options_show_transliteration": {
-		"message": "Show transliteration"
-	},
-	"options_lock_popup_window": {
-		"message": "Lock popup window"
-	},
-	"options_lock_popup_window_hint": {
-		"message": "If enabled popup will not close on click outside"
-	},
-	"options_history_length": {
-		"message": "Length of history"
-	},
-	"options_records_in_history": {
-		"message": "Entries in history:"
-	},
-	"options_history_disable": {
-		"message": "Disable history"
-	},
-	"options_clear_history": {
-		"message": "Delete history"
-	},
-	"options_delete_history_item": {
-		"message": "Delete from history"
-	},
-	"text_expand": {
-		"message": "More"
-	},
-	"text_collapse": {
-		"message": "Сollapse"
-	},
-	"target_lang_label": {
-		"message": "Translate to:"
-	},
-	"popup_dictionary": {
-		"message": "Dictionary"
-	},
-	"popup_dictionary_frequency": {
-		"message": "Frequency"
-	},
-	"popup_definitions": {
-		"message": "Definitions"
-	},
-	"popup_definitions_synonyms": {
-		"message": "Synonyms:"
-	},
-	"popup_examples": {
-		"message": "Examples"
-	},
-	"popup_menu_lock_window": {
-		"message": "Lock window"
-	},
-	"popup_menu_unlock_window": {
-		"message": "Unlock window"
-	},
-	"popup_menu_show_translate_button": {
-		"message": "Show translate button"
-	},
-	"popup_menu_hide_translate_button": {
-		"message": "Hide translate button"
-	},
-	"popup_menu_options_link": {
-		"message": "Additional settings"
-	},
-	"theme_light": {
-		"message": "Light theme"
-	},
-	"theme_dark": {
-		"message": "Dark theme"
-	},
-	"theme_system": {
-		"message": "Default theme"
-	},
-	"tooltip_translate_text": {
-		"message": "Translate selected text"
-	},
-	"tooltip_copy_to_clipboard": {
-		"message": "Copy to clipboard"
-	},
-	"tooltip_copy_not_support_on_http": {
-		"message": "Copy is not support on HTTP sites"
-	},
-	"tooltip_copyed": {
-		"message": "Copyed!"
-	},
-	"tooltip_copy_error": {
-		"message": "Copy error!"
-	},
-	"tooltip_listen_to_the_text": {
-		"message": "Listen to text"
-	},
-	"tooltip_listen_stop": {
-		"message": "Stop"
-	},
-	"tooltip_listen_language_is_not_support": {
-		"message": "Language is not support"
-	},
-	"tooltip_go_back": {
-		"message": "Back"
-	},
-	"tooltip_go_forward": {
-		"message": "Forward"
-	},
-	"date_today": {
-		"message": "today"
-	},
-	"date_yesterday": {
-		"message": "yesterday"
-	},
-	"select_language_auto": {
-		"message": "detect language"
-	},
-	"supported_languages_af": {
-		"message": "African"
-	},
-	"supported_languages_sq": {
-		"message": "Albanian"
-	},
-	"supported_languages_am": {
-		"message": "Amharic"
-	},
-	"supported_languages_ar": {
-		"message": "Arabic"
-	},
-	"supported_languages_hy": {
-		"message": "Armenian"
-	},
-	"supported_languages_az": {
-		"message": "Azerbaijani"
-	},
-	"supported_languages_eu": {
-		"message": "Basque"
-	},
-	"supported_languages_be": {
-		"message": "Belarusian"
-	},
-	"supported_languages_bn": {
-		"message": "Bengali"
-	},
-	"supported_languages_bs": {
-		"message": "Bosnian"
-	},
-	"supported_languages_bg": {
-		"message": "Bulgarian"
-	},
-	"supported_languages_ca": {
-		"message": "Catalan"
-	},
-	"supported_languages_ceb": {
-		"message": "Cebuano"
-	},
-	"supported_languages_ny": {
-		"message": "Chewa"
-	},
-	"supported_languages_zh_CN": {
-		"message": "Chinese simplified"
-	},
-	"supported_languages_zh_TW": {
-		"message": "Chinese traditional"
-	},
-	"supported_languages_co": {
-		"message": "Corsican"
-	},
-	"supported_languages_hr": {
-		"message": "Croatian"
-	},
-	"supported_languages_cs": {
-		"message": "Czech"
-	},
-	"supported_languages_da": {
-		"message": "Danish"
-	},
-	"supported_languages_nl": {
-		"message": "Dutch"
-	},
-	"supported_languages_en": {
-		"message": "English"
-	},
-	"supported_languages_eo": {
-		"message": "Esperanto"
-	},
-	"supported_languages_et": {
-		"message": "Estonian"
-	},
-	"supported_languages_fi": {
-		"message": "Finnish"
-	},
-	"supported_languages_fr": {
-		"message": "French"
-	},
-	"supported_languages_fy": {
-		"message": "Frisian"
-	},
-	"supported_languages_gl": {
-		"message": "Galician"
-	},
-	"supported_languages_ka": {
-		"message": "Georgian"
-	},
-	"supported_languages_de": {
-		"message": "German"
-	},
-	"supported_languages_el": {
-		"message": "Greek"
-	},
-	"supported_languages_gu": {
-		"message": "Gujarati"
-	},
-	"supported_languages_ht": {
-		"message": "Haitian"
-	},
-	"supported_languages_ha": {
-		"message": "Hausa"
-	},
-	"supported_languages_haw": {
-		"message": "Hawaiian"
-	},
-	"supported_languages_he": {
-		"message": "Hebrew"
-	},
-	"supported_languages_iw": {
-		"message": "Hebrew"
-	},
-	"supported_languages_hi": {
-		"message": "Hindi"
-	},
-	"supported_languages_hu": {
-		"message": "Hungarian"
-	},
-	"supported_languages_is": {
-		"message": "Icelandic"
-	},
-	"supported_languages_ig": {
-		"message": "Igbo"
-	},
-	"supported_languages_id": {
-		"message": "Indonesian"
-	},
-	"supported_languages_ga": {
-		"message": "Irish"
-	},
-	"supported_languages_it": {
-		"message": "Italian"
-	},
-	"supported_languages_ja": {
-		"message": "Japanese"
-	},
-	"supported_languages_jv": {
-		"message": "Javanese"
-	},
-	"supported_languages_kn": {
-		"message": "Kannada"
-	},
-	"supported_languages_kk": {
-		"message": "Kazakh"
-	},
-	"supported_languages_km": {
-		"message": "Khmer"
-	},
-	"supported_languages_ky": {
-		"message": "Kirghiz"
-	},
-	"supported_languages_ko": {
-		"message": "Korean"
-	},
-	"supported_languages_ku": {
-		"message": "Kurdish"
-	},
-	"supported_languages_lo": {
-		"message": "Laotian"
-	},
-	"supported_languages_la": {
-		"message": "Latin"
-	},
-	"supported_languages_lv": {
-		"message": "Latvian"
-	},
-	"supported_languages_lt": {
-		"message": "Lithuanian"
-	},
-	"supported_languages_lb": {
-		"message": "Luxembourgish"
-	},
-	"supported_languages_mk": {
-		"message": "Macedonian"
-	},
-	"supported_languages_mg": {
-		"message": "Malagasy"
-	},
-	"supported_languages_ms": {
-		"message": "Malay"
-	},
-	"supported_languages_ml": {
-		"message": "Malayalam"
-	},
-	"supported_languages_mt": {
-		"message": "Maltese"
-	},
-	"supported_languages_mi": {
-		"message": "Maori"
-	},
-	"supported_languages_mr": {
-		"message": "Marathi"
-	},
-	"supported_languages_mn": {
-		"message": "Mongolian"
-	},
-	"supported_languages_hmn": {
-		"message": "Monk"
-	},
-	"supported_languages_my": {
-		"message": "Myanmar"
-	},
-	"supported_languages_ne": {
-		"message": "Mepali"
-	},
-	"supported_languages_no": {
-		"message": "Norwegian"
-	},
-	"supported_languages_fa": {
-		"message": "Persian"
-	},
-	"supported_languages_pl": {
-		"message": "Polish"
-	},
-	"supported_languages_pt": {
-		"message": "Portuguese"
-	},
-	"supported_languages_pa": {
-		"message": "Punjabi"
-	},
-	"supported_languages_ps": {
-		"message": "Pushto"
-	},
-	"supported_languages_ro": {
-		"message": "Romanian"
-	},
-	"supported_languages_ru": {
-		"message": "Russian"
-	},
-	"supported_languages_sm": {
-		"message": "Samoan"
-	},
-	"supported_languages_gd": {
-		"message": "Scottish gaelic"
-	},
-	"supported_languages_sr": {
-		"message": "Serbian"
-	},
-	"supported_languages_sn": {
-		"message": "Shona"
-	},
-	"supported_languages_sd": {
-		"message": "Sindhi"
-	},
-	"supported_languages_si": {
-		"message": "Sinhala"
-	},
-	"supported_languages_sk": {
-		"message": "Slovak"
-	},
-	"supported_languages_sl": {
-		"message": "Slovenian"
-	},
-	"supported_languages_so": {
-		"message": "Somali"
-	},
-	"supported_languages_sx": {
-		"message": "Sotho"
-	},
-	"supported_languages_es": {
-		"message": "Spanish"
-	},
-	"supported_languages_su": {
-		"message": "Sundanese"
-	},
-	"supported_languages_sw": {
-		"message": "Swahili"
-	},
-	"supported_languages_sv": {
-		"message": "Swedish"
-	},
-	"supported_languages_tl": {
-		"message": "Tagalog"
-	},
-	"supported_languages_tg": {
-		"message": "Tajiki"
-	},
-	"supported_languages_ta": {
-		"message": "Tamil"
-	},
-	"supported_languages_te": {
-		"message": "Telugu"
-	},
-	"supported_languages_th": {
-		"message": "Thai"
-	},
-	"supported_languages_tr": {
-		"message": "Turkish"
-	},
-	"supported_languages_uk": {
-		"message": "Ukrainian"
-	},
-	"supported_languages_ur": {
-		"message": "Urdu"
-	},
-	"supported_languages_uz": {
-		"message": "Uzbek"
-	},
-	"supported_languages_vi": {
-		"message": "Vietnamese"
-	},
-	"supported_languages_cy": {
-		"message": "Welsh"
-	},
-	"supported_languages_xh": {
-		"message": "Xosa"
-	},
-	"supported_languages_yi": {
-		"message": "Yiddish"
-	},
-	"supported_languages_yo": {
-		"message": "Yoruba"
-	},
-	"supported_languages_zu": {
-		"message": "Zulu"
-	},
-	"supported_languages_qu": {
-		"message": "Quechua"
-	},
-	"supported_languages_om": {
-		"message": "Oromo"
-	},
-	"supported_languages_ilo": {
-		"message": "Ilocano"
-	}
+    "app_name": {
+        "message": "Translater - translation of selected text"
+    },
+    "app_description": {
+        "message": "Translation selected text with Google Translate with light and dark theme"
+    },
+    "context_menus_title": {
+        "message": "Translate selected text"
+    },
+    "popup_menu_options": {
+        "message": "Settings"
+    },
+    "options_title": {
+        "message": "$APP_NAME$ - settings",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "options_tab_inline_translate": {
+        "message": "Reading and input"
+    },
+    "options_tab_popup_window": {
+        "message": "Popup window"
+    },
+    "options_tab_appearance": {
+        "message": "Outer appearance"
+    },
+    "options_tab_history": {
+        "message": "History"
+    },
+    "options_inline_button_show": {
+        "message": "Show button when text is selected"
+    },
+    "options_text_field_button_show": {
+        "message": "Show button in textfield"
+    },
+    "options_hide_button_on_sites": {
+        "message": "Hide the button on these sites:"
+    },
+    "options_hide_button_on_sites_empty_list": {
+        "message": "You can add sites using the menu of popup window on the site you want to exclude"
+    },
+    "options_show_original_text": {
+        "message": "Show source text"
+    },
+    "options_show_transliteration": {
+        "message": "Show transliteration"
+    },
+    "options_lock_popup_window": {
+        "message": "Lock popup window"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "If enabled popup will not close on click outside"
+    },
+    "options_history_length": {
+        "message": "Length of history"
+    },
+    "options_records_in_history": {
+        "message": "Entries in history:"
+    },
+    "options_history_disable": {
+        "message": "Disable history"
+    },
+    "options_clear_history": {
+        "message": "Delete history"
+    },
+    "options_delete_history_item": {
+        "message": "Delete from history"
+    },
+    "text_expand": {
+        "message": "More"
+    },
+    "text_collapse": {
+        "message": "Сollapse"
+    },
+    "target_lang_label": {
+        "message": "Translate to:"
+    },
+    "popup_dictionary": {
+        "message": "Dictionary"
+    },
+    "popup_dictionary_frequency": {
+        "message": "Frequency"
+    },
+    "popup_definitions": {
+        "message": "Definitions"
+    },
+    "popup_definitions_synonyms": {
+        "message": "Synonyms:"
+    },
+    "popup_examples": {
+        "message": "Examples"
+    },
+    "popup_menu_lock_window": {
+        "message": "Lock window"
+    },
+    "popup_menu_unlock_window": {
+        "message": "Unlock window"
+    },
+    "popup_menu_show_translate_button": {
+        "message": "Show translate button"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "Hide translate button"
+    },
+    "popup_menu_options_link": {
+        "message": "Additional settings"
+    },
+    "theme_light": {
+        "message": "Light theme"
+    },
+    "theme_dark": {
+        "message": "Dark theme"
+    },
+    "theme_system": {
+        "message": "Default theme"
+    },
+    "tooltip_translate_text": {
+        "message": "Translate selected text"
+    },
+    "tooltip_copy_to_clipboard": {
+        "message": "Copy to clipboard"
+    },
+    "tooltip_copy_not_support_on_http": {
+        "message": "Copy is not support on HTTP sites"
+    },
+    "tooltip_copyed": {
+        "message": "Copyed!"
+    },
+    "tooltip_copy_error": {
+        "message": "Copy error!"
+    },
+    "tooltip_listen_to_the_text": {
+        "message": "Listen to text"
+    },
+    "tooltip_listen_stop": {
+        "message": "Stop"
+    },
+    "tooltip_listen_language_is_not_support": {
+        "message": "Language is not support"
+    },
+    "tooltip_go_back": {
+        "message": "Back"
+    },
+    "tooltip_go_forward": {
+        "message": "Forward"
+    },
+    "date_today": {
+        "message": "today"
+    },
+    "date_yesterday": {
+        "message": "yesterday"
+    },
+    "select_language_auto": {
+        "message": "detect language"
+    },
+    "supported_languages_af": {
+        "message": "African"
+    },
+    "supported_languages_sq": {
+        "message": "Albanian"
+    },
+    "supported_languages_am": {
+        "message": "Amharic"
+    },
+    "supported_languages_ar": {
+        "message": "Arabic"
+    },
+    "supported_languages_hy": {
+        "message": "Armenian"
+    },
+    "supported_languages_az": {
+        "message": "Azerbaijani"
+    },
+    "supported_languages_eu": {
+        "message": "Basque"
+    },
+    "supported_languages_be": {
+        "message": "Belarusian"
+    },
+    "supported_languages_bn": {
+        "message": "Bengali"
+    },
+    "supported_languages_bs": {
+        "message": "Bosnian"
+    },
+    "supported_languages_bg": {
+        "message": "Bulgarian"
+    },
+    "supported_languages_ca": {
+        "message": "Catalan"
+    },
+    "supported_languages_ceb": {
+        "message": "Cebuano"
+    },
+    "supported_languages_ny": {
+        "message": "Chewa"
+    },
+    "supported_languages_zh_CN": {
+        "message": "Chinese simplified"
+    },
+    "supported_languages_zh_TW": {
+        "message": "Chinese traditional"
+    },
+    "supported_languages_co": {
+        "message": "Corsican"
+    },
+    "supported_languages_hr": {
+        "message": "Croatian"
+    },
+    "supported_languages_cs": {
+        "message": "Czech"
+    },
+    "supported_languages_da": {
+        "message": "Danish"
+    },
+    "supported_languages_nl": {
+        "message": "Dutch"
+    },
+    "supported_languages_en": {
+        "message": "English"
+    },
+    "supported_languages_eo": {
+        "message": "Esperanto"
+    },
+    "supported_languages_et": {
+        "message": "Estonian"
+    },
+    "supported_languages_fi": {
+        "message": "Finnish"
+    },
+    "supported_languages_fr": {
+        "message": "French"
+    },
+    "supported_languages_fy": {
+        "message": "Frisian"
+    },
+    "supported_languages_gl": {
+        "message": "Galician"
+    },
+    "supported_languages_ka": {
+        "message": "Georgian"
+    },
+    "supported_languages_de": {
+        "message": "German"
+    },
+    "supported_languages_el": {
+        "message": "Greek"
+    },
+    "supported_languages_gu": {
+        "message": "Gujarati"
+    },
+    "supported_languages_ht": {
+        "message": "Haitian"
+    },
+    "supported_languages_ha": {
+        "message": "Hausa"
+    },
+    "supported_languages_haw": {
+        "message": "Hawaiian"
+    },
+    "supported_languages_he": {
+        "message": "Hebrew"
+    },
+    "supported_languages_iw": {
+        "message": "Hebrew"
+    },
+    "supported_languages_hi": {
+        "message": "Hindi"
+    },
+    "supported_languages_hu": {
+        "message": "Hungarian"
+    },
+    "supported_languages_is": {
+        "message": "Icelandic"
+    },
+    "supported_languages_ig": {
+        "message": "Igbo"
+    },
+    "supported_languages_id": {
+        "message": "Indonesian"
+    },
+    "supported_languages_ga": {
+        "message": "Irish"
+    },
+    "supported_languages_it": {
+        "message": "Italian"
+    },
+    "supported_languages_ja": {
+        "message": "Japanese"
+    },
+    "supported_languages_jv": {
+        "message": "Javanese"
+    },
+    "supported_languages_kn": {
+        "message": "Kannada"
+    },
+    "supported_languages_kk": {
+        "message": "Kazakh"
+    },
+    "supported_languages_km": {
+        "message": "Khmer"
+    },
+    "supported_languages_ky": {
+        "message": "Kirghiz"
+    },
+    "supported_languages_ko": {
+        "message": "Korean"
+    },
+    "supported_languages_ku": {
+        "message": "Kurdish"
+    },
+    "supported_languages_lo": {
+        "message": "Laotian"
+    },
+    "supported_languages_la": {
+        "message": "Latin"
+    },
+    "supported_languages_lv": {
+        "message": "Latvian"
+    },
+    "supported_languages_lt": {
+        "message": "Lithuanian"
+    },
+    "supported_languages_lb": {
+        "message": "Luxembourgish"
+    },
+    "supported_languages_mk": {
+        "message": "Macedonian"
+    },
+    "supported_languages_mg": {
+        "message": "Malagasy"
+    },
+    "supported_languages_ms": {
+        "message": "Malay"
+    },
+    "supported_languages_ml": {
+        "message": "Malayalam"
+    },
+    "supported_languages_mt": {
+        "message": "Maltese"
+    },
+    "supported_languages_mi": {
+        "message": "Maori"
+    },
+    "supported_languages_mr": {
+        "message": "Marathi"
+    },
+    "supported_languages_mn": {
+        "message": "Mongolian"
+    },
+    "supported_languages_hmn": {
+        "message": "Monk"
+    },
+    "supported_languages_my": {
+        "message": "Myanmar"
+    },
+    "supported_languages_ne": {
+        "message": "Mepali"
+    },
+    "supported_languages_no": {
+        "message": "Norwegian"
+    },
+    "supported_languages_fa": {
+        "message": "Persian"
+    },
+    "supported_languages_pl": {
+        "message": "Polish"
+    },
+    "supported_languages_pt": {
+        "message": "Portuguese"
+    },
+    "supported_languages_pa": {
+        "message": "Punjabi"
+    },
+    "supported_languages_ps": {
+        "message": "Pushto"
+    },
+    "supported_languages_ro": {
+        "message": "Romanian"
+    },
+    "supported_languages_ru": {
+        "message": "Russian"
+    },
+    "supported_languages_sm": {
+        "message": "Samoan"
+    },
+    "supported_languages_gd": {
+        "message": "Scottish gaelic"
+    },
+    "supported_languages_sr": {
+        "message": "Serbian"
+    },
+    "supported_languages_sn": {
+        "message": "Shona"
+    },
+    "supported_languages_sd": {
+        "message": "Sindhi"
+    },
+    "supported_languages_si": {
+        "message": "Sinhala"
+    },
+    "supported_languages_sk": {
+        "message": "Slovak"
+    },
+    "supported_languages_sl": {
+        "message": "Slovenian"
+    },
+    "supported_languages_so": {
+        "message": "Somali"
+    },
+    "supported_languages_sx": {
+        "message": "Sotho"
+    },
+    "supported_languages_es": {
+        "message": "Spanish"
+    },
+    "supported_languages_su": {
+        "message": "Sundanese"
+    },
+    "supported_languages_sw": {
+        "message": "Swahili"
+    },
+    "supported_languages_sv": {
+        "message": "Swedish"
+    },
+    "supported_languages_tl": {
+        "message": "Tagalog"
+    },
+    "supported_languages_tg": {
+        "message": "Tajiki"
+    },
+    "supported_languages_ta": {
+        "message": "Tamil"
+    },
+    "supported_languages_te": {
+        "message": "Telugu"
+    },
+    "supported_languages_th": {
+        "message": "Thai"
+    },
+    "supported_languages_tr": {
+        "message": "Turkish"
+    },
+    "supported_languages_uk": {
+        "message": "Ukrainian"
+    },
+    "supported_languages_ur": {
+        "message": "Urdu"
+    },
+    "supported_languages_uz": {
+        "message": "Uzbek"
+    },
+    "supported_languages_vi": {
+        "message": "Vietnamese"
+    },
+    "supported_languages_cy": {
+        "message": "Welsh"
+    },
+    "supported_languages_xh": {
+        "message": "Xosa"
+    },
+    "supported_languages_yi": {
+        "message": "Yiddish"
+    },
+    "supported_languages_yo": {
+        "message": "Yoruba"
+    },
+    "supported_languages_zu": {
+        "message": "Zulu"
+    },
+    "supported_languages_qu": {
+        "message": "Quechua"
+    },
+    "supported_languages_om": {
+        "message": "Oromo"
+    },
+    "supported_languages_ilo": {
+        "message": "Ilocano"
+    }
 }

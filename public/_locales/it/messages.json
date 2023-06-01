@@ -311,7 +311,7 @@
         "message": "coreano"
     },
     "supported_languages_ku": {
-        "message": "Curdo"
+        "message": "curdo"
     },
     "supported_languages_lo": {
         "message": "laotiano"
@@ -374,7 +374,7 @@
         "message": "portoghese"
     },
     "supported_languages_pa": {
-        "message": "Punjabi"
+        "message": "Punjab"
     },
     "supported_languages_ps": {
         "message": "Pushto"
@@ -452,7 +452,7 @@
         "message": "Urdu"
     },
     "supported_languages_uz": {
-        "message": "uzbeko"
+        "message": "uzbeco"
     },
     "supported_languages_vi": {
         "message": "vietnamita"

@@ -43,8 +43,8 @@
 			</div>
 			{#if originalOpen}
 				<div
-					class="p-2 whitespace-pre-line max-h-64 overflow-y-auto scrollbar"
-					transition:slide|local={{ duration: 150 }}
+					class="p-2 whitespace-pre-line max-h-80 overflow-y-auto scrollbar"
+					transition:slide|local={{ duration: 150, easing: cubicInOut }}
 				>
 					<div class="text-base">{translate.sentences.orig}</div>
 					{#if translate.sentences.src_translit && $persistentStore.showTransliteration}
@@ -76,12 +76,12 @@
 							}}
 						/>
 					</div>
-				</div>			
+				</div>
 			</div>
 			{#if translateOpen}
 				<div
-					class="p-2 whitespace-pre-line max-h-64 overflow-y-auto scrollbar"
-					transition:slide|local={{ duration: 150 }}
+					class="p-2 whitespace-pre-line max-h-80 overflow-y-auto scrollbar"
+					transition:slide|local={{ duration: 150, easing: cubicInOut }}
 				>
 					<div class="text-base">{translate.sentences.trans}</div>
 					{#if translate.sentences.translit && $persistentStore.showTransliteration}
@@ -138,7 +138,7 @@
 		<div>
 			{#each tabs as item}
 				{#if activeTab === item.tab}
-					<div transition:slide|local={{ duration: 250 }}>
+					<div transition:slide|local={{ duration: 250, easing: cubicInOut }}>
 						<svelte:component this={item.component} {translate}	/>
 					</div>
 				{/if}
@@ -155,6 +155,7 @@
 <script>
 import { createEventDispatcher, onMount } from 'svelte';
 import { slide } from 'svelte/transition';
+import { cubicInOut } from 'svelte/easing';
 import { persistentStore } from '~/common/store';
 import { store, selectedText } from '../store';
 import { languages } from '~/common/settings';
@@ -172,10 +173,9 @@ import { heroChevronDown, heroArrowTopRightOnSquare } from '~/icons/heroicons';
 
 const dispatch = createEventDispatcher();
 
-let translateOpen = true,
+let originalOpen = $persistentStore.showOriginalText,
+	translateOpen = true,
 	activeTab = 0;
-
-$: originalOpen = $persistentStore.showOriginalText;
 
 const fetchTranslate = async (sourceLang, targetLang, selectedText) => {
 	try {

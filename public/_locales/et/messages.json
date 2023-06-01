@@ -53,7 +53,7 @@
         "message": "Lukusta hüpikaken"
     },
     "options_lock_popup_window_hint": {
-        "message": "Kui see on lubatud, ei sulgu hüpikaken väljapoole klõpsamisel"
+        "message": "Kui see on lubatud, hüpikaken väljapoole klõpsamisel ei sulgu"
     },
     "options_history_length": {
         "message": "Ajaloo pikkus"
@@ -452,7 +452,7 @@
         "message": "urdu"
     },
     "supported_languages_uz": {
-        "message": "usbeki"
+        "message": "usbeki keel"
     },
     "supported_languages_vi": {
         "message": "vietnamlane"
