@@ -14,10 +14,20 @@
 				class="
 					w-5
 					h-5
+					ring-[10px]
+					ring-transparent
+					rounded-full
 					fill-gray-600
 					dark:fill-gray-400
-					peer-checked:fill-blue-600
-					transition-colors
+					peer-checked:fill-blue-800
+					peer-checked:dark:fill-blue-200
+					
+					peer-focus-visible:outline
+					peer-focus-visible:outline-offset-8
+					peer-focus-visible:outline-gray-600
+					peer-focus-visible:dark:outline-gray-400
+
+					transition-all
 				"
 				viewBox="0 0 20 20"
 			>
@@ -33,17 +43,34 @@
 					absolute
 					w-5
 					h-5
-					fill-blue-600
+					fill-blue-800
+					dark:fill-blue-200
 					opacity-0
 					peer-checked:opacity-100
 					peer-checked:animate-circle_grow
 					transition-opacity
+					duration-[50ms]
 				"
 				viewBox="0 0 20 20"
 			>
 				<circle cx="10" cy="10" r="5" />
 			</svg>
-			<span class="ml-3 text-gray-900 dark:text-gray-300 select-none">{getMessage(value)}</span>
+			<!-- hover elem -->
+			<div
+				class="
+					absolute
+					w-10
+					h-10
+					-ml-[10px]
+					rounded-full
+					peer-hover:bg-gray-600/10
+					peer-hover:dark:bg-gray-400/10
+					peer-checked:peer-hover:bg-blue-800/10
+					peer-checked:peer-hover:dark:bg-blue-200/10
+					transition-colors
+				"
+			/>
+			<span class="ml-4 text-gray-900 dark:text-gray-300 select-none">{getMessage(value)}</span>
 		</label>
 	</div>
 {/each}
