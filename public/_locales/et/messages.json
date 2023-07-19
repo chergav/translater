@@ -53,7 +53,7 @@
         "message": "Lukusta hüpikaken"
     },
     "options_lock_popup_window_hint": {
-        "message": "Kui see on lubatud, hüpikaken väljapoole klõpsamisel ei sulgu"
+        "message": "Kui see on lubatud, ei sulgu hüpikaken väljapoole klõpsamisel"
     },
     "options_history_length": {
         "message": "Ajaloo pikkus"
@@ -61,8 +61,8 @@
     "options_records_in_history": {
         "message": "Sissekanded ajalukku:"
     },
-    "options_history_disable": {
-        "message": "Keela ajalugu"
+    "options_history_enable": {
+        "message": "Luba ajalugu"
     },
     "options_clear_history": {
         "message": "Kustuta ajalugu"
@@ -452,7 +452,7 @@
         "message": "urdu"
     },
     "supported_languages_uz": {
-        "message": "usbeki keel"
+        "message": "usbeki"
     },
     "supported_languages_vi": {
         "message": "vietnamlane"

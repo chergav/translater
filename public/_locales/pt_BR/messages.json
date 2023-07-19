@@ -61,8 +61,8 @@
     "options_records_in_history": {
         "message": "Entradas na história:"
     },
-    "options_history_disable": {
-        "message": "Desativar histórico"
+    "options_history_enable": {
+        "message": "Ativar histórico"
     },
     "options_clear_history": {
         "message": "Apagar histórico"

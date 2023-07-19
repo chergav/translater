@@ -61,8 +61,8 @@
     "options_records_in_history": {
         "message": "Einträge in der Geschichte:"
     },
-    "options_history_disable": {
-        "message": "Verlauf deaktivieren"
+    "options_history_enable": {
+        "message": "Verlauf aktivieren"
     },
     "options_clear_history": {
         "message": "Verlauf löschen"

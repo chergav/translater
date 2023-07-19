@@ -38,7 +38,7 @@
         "message": "Показати кнопку в текстовому полі"
     },
     "options_hide_button_on_sites": {
-        "message": "Сховати кнопку на цих сайтах:"
+        "message": "Приховати кнопку на цих сайтах:"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Ви можете додавати сайти за допомогою меню спливаючого вікна на сайті, який потрібно виключити"
@@ -61,8 +61,8 @@
     "options_records_in_history": {
         "message": "Записи в історії:"
     },
-    "options_history_disable": {
-        "message": "Вимкнути історію"
+    "options_history_enable": {
+        "message": "Увімкнути історію"
     },
     "options_clear_history": {
         "message": "Видалити історію"
@@ -260,7 +260,7 @@
         "message": "Хауса"
     },
     "supported_languages_haw": {
-        "message": "гавайська"
+        "message": "Гавайська"
     },
     "supported_languages_he": {
         "message": "іврит"

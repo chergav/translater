@@ -1,4 +1,4 @@
-<div class="p-4">
+<div class="p-6 flex flex-col gap-4">
 	<Radio bind:selected={$persistentStore.theme} options={themes} />
 </div>
 <script>

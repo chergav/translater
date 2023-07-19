@@ -1,24 +1,18 @@
-<div class="p-4">
-	<div class="mb-4">
-		<SelectLang
-			bind:value={$persistentStore.targetLang}
-			label={getMessage('target_lang_label')}
-			{languages}
-		/>
-	</div>
-	<div class="mb-4">
-		<Switch
-			bind:checked={$persistentStore.inlineButtonShow}
-			label={getMessage('options_inline_button_show')}
-		/>
-	</div>
-	<div class="mb-4">
-		<Switch
-			bind:checked={$persistentStore.textFieldButtonShow}
-			label={getMessage('options_text_field_button_show')}
-		/>
-	</div>
-	<div class="mb-4">
+<div class="p-6 flex flex-col gap-4">
+	<SelectLang
+		bind:value={$persistentStore.targetLang}
+		label={getMessage('target_lang_label')}
+		{languages}
+	/>
+	<Checkbox
+		bind:checked={$persistentStore.inlineButtonShow}
+		label={getMessage('options_inline_button_show')}
+	/>
+	<Checkbox
+		bind:checked={$persistentStore.textFieldButtonShow}
+		label={getMessage('options_text_field_button_show')}
+	/>
+	<div>
 		<p class="text-base mb-2">{getMessage('options_hide_button_on_sites')}</p>
 		{#each $persistentStore.blacklistDomainForInline as domain}
 			<span
@@ -55,7 +49,7 @@ import { getMessage } from '~/common/browserApi';
 import { persistentStore } from '~/common/store';
 import { languages } from '~/common/settings';
 import SelectLang from '~/lib/SelectLang.svelte';
-import Switch from '~/lib/Switch.svelte';
+import Checkbox from '~/lib/Checkbox.svelte';
 import Icon from '~/lib/Icon.svelte';
 import { heroXMark } from '~/icons/heroicons';
 

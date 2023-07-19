@@ -61,8 +61,8 @@
     "options_records_in_history": {
         "message": "Vermeldingen in de geschiedenis:"
     },
-    "options_history_disable": {
-        "message": "Geschiedenis uitschakelen"
+    "options_history_enable": {
+        "message": "Geschiedenis inschakelen"
     },
     "options_clear_history": {
         "message": "Verwijder geschiedenis"
@@ -131,7 +131,7 @@
         "message": "Gekopieerd!"
     },
     "tooltip_copy_error": {
-        "message": "Kopieerfout!"
+        "message": "Kopieer fout!"
     },
     "tooltip_listen_to_the_text": {
         "message": "Luister naar tekst"

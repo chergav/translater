@@ -7,8 +7,7 @@ persistentStore.subscribe(value => {
 });
 
 const historyAdd = ({ sourceLang, targetLang, orig, trans }) => {
-	// if history off
-	if (!store.historyLength) {
+	if (!store.historyEnable) {
 		return;
 	}
 

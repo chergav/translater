@@ -61,8 +61,8 @@
     "options_records_in_history": {
         "message": "Entri dalam sejarah:"
     },
-    "options_history_disable": {
-        "message": "Nonaktifkan riwayat"
+    "options_history_enable": {
+        "message": "Aktifkan sejarah"
     },
     "options_clear_history": {
         "message": "Hapus riwayat"
@@ -239,7 +239,7 @@
         "message": "Frisia"
     },
     "supported_languages_gl": {
-        "message": "Galisia"
+        "message": "Galicia"
     },
     "supported_languages_ka": {
         "message": "Georgia"

@@ -61,8 +61,8 @@
     "options_records_in_history": {
         "message": "Merkinnät historiaan:"
     },
-    "options_history_disable": {
-        "message": "Poista historia käytöstä"
+    "options_history_enable": {
+        "message": "Ota historia käyttöön"
     },
     "options_clear_history": {
         "message": "Poista historia"

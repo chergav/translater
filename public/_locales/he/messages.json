@@ -61,8 +61,8 @@
     "options_records_in_history": {
         "message": "ערכים בהיסטוריה:"
     },
-    "options_history_disable": {
-        "message": "השבת את ההיסטוריה"
+    "options_history_enable": {
+        "message": "אפשר היסטוריה"
     },
     "options_clear_history": {
         "message": "מחק היסטוריה"

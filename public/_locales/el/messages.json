@@ -3,7 +3,7 @@
         "message": "Translater - μετάφραση επιλεγμένου κειμένου"
     },
     "app_description": {
-        "message": "Μετάφραση επιλεγμένου κειμένου με το Google Translate με ανοιχτό και σκοτεινό θέμα"
+        "message": "Μετάφραση επιλεγμένου κειμένου με τη Μετάφραση Google με ανοιχτό και σκοτεινό θέμα"
     },
     "context_menus_title": {
         "message": "Μετάφραση επιλεγμένου κειμένου"
@@ -61,8 +61,8 @@
     "options_records_in_history": {
         "message": "Εγγραφές στην ιστορία:"
     },
-    "options_history_disable": {
-        "message": "Απενεργοποίηση ιστορικού"
+    "options_history_enable": {
+        "message": "Ενεργοποίηση ιστορικού"
     },
     "options_clear_history": {
         "message": "Διαγραφή ιστορικού"

@@ -61,8 +61,8 @@
     "options_records_in_history": {
         "message": "역사의 항목:"
     },
-    "options_history_disable": {
-        "message": "기록 비활성화"
+    "options_history_enable": {
+        "message": "기록 사용"
     },
     "options_clear_history": {
         "message": "기록 삭제"

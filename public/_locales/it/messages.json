@@ -61,8 +61,8 @@
     "options_records_in_history": {
         "message": "Voci nella storia:"
     },
-    "options_history_disable": {
-        "message": "Disabilita cronologia"
+    "options_history_enable": {
+        "message": "Abilita cronologia"
     },
     "options_clear_history": {
         "message": "Elimina cronologia"
@@ -311,7 +311,7 @@
         "message": "coreano"
     },
     "supported_languages_ku": {
-        "message": "curdo"
+        "message": "Curdo"
     },
     "supported_languages_lo": {
         "message": "laotiano"
@@ -374,7 +374,7 @@
         "message": "portoghese"
     },
     "supported_languages_pa": {
-        "message": "Punjab"
+        "message": "Punjabi"
     },
     "supported_languages_ps": {
         "message": "Pushto"
@@ -452,7 +452,7 @@
         "message": "Urdu"
     },
     "supported_languages_uz": {
-        "message": "uzbeco"
+        "message": "uzbeko"
     },
     "supported_languages_vi": {
         "message": "vietnamita"

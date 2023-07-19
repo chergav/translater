@@ -3,7 +3,7 @@
         "message": "Translater - 所選文本的翻譯"
     },
     "app_description": {
-        "message": "使用帶有淺色和深色主題的谷歌翻譯翻譯選定的文本"
+        "message": "使用具有淺色和深色主題的谷歌翻譯翻譯選定的文本"
     },
     "context_menus_title": {
         "message": "翻譯選定的文本"
@@ -61,8 +61,8 @@
     "options_records_in_history": {
         "message": "歷史條目："
     },
-    "options_history_disable": {
-        "message": "禁用歷史記錄"
+    "options_history_enable": {
+        "message": "啟用歷史記錄"
     },
     "options_clear_history": {
         "message": "刪除歷史記錄"

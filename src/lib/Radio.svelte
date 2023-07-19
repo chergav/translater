@@ -1,5 +1,5 @@
 {#each options as { key, value }}
-	<div class="mb-4">
+	<div>
 		<label
 			class="
 				relative

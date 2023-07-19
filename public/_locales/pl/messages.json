@@ -41,7 +41,7 @@
         "message": "Ukryj przycisk na tych stronach:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Możesz dodawać witryny za pomocą menu wyskakującego okienka w witrynie, którą chcesz wykluczyć"
+        "message": "Możesz dodać witryny za pomocą menu wyskakującego okienka w witrynie, którą chcesz wykluczyć"
     },
     "options_show_original_text": {
         "message": "Pokaż tekst źródłowy"
@@ -61,8 +61,8 @@
     "options_records_in_history": {
         "message": "Wpisy w historii:"
     },
-    "options_history_disable": {
-        "message": "Wyłącz historię"
+    "options_history_enable": {
+        "message": "Włącz historię"
     },
     "options_clear_history": {
         "message": "Usuń historię"

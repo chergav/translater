@@ -23,7 +23,7 @@
         "message": "خواندن و ورودی"
     },
     "options_tab_popup_window": {
-        "message": "پنجره پاپ آپ"
+        "message": "پنجره بازشو"
     },
     "options_tab_appearance": {
         "message": "ظاهر بیرونی"
@@ -61,14 +61,14 @@
     "options_records_in_history": {
         "message": "نوشته های تاریخ:"
     },
-    "options_history_disable": {
-        "message": "غیرفعال کردن سابقه"
+    "options_history_enable": {
+        "message": "فعال کردن سابقه"
     },
     "options_clear_history": {
         "message": "حذف تاریخچه"
     },
     "options_delete_history_item": {
-        "message": "حذف از تاریخچه"
+        "message": "حذف از تاریخ"
     },
     "text_expand": {
         "message": "بیشتر"

@@ -3,7 +3,7 @@
         "message": "Translater - traduction du texte sélectionné"
     },
     "app_description": {
-        "message": "Traduction du texte sélectionné avec Google Translate avec un thème clair et foncé"
+        "message": "Traduction du texte sélectionné avec Google Translate avec un thème clair et sombre"
     },
     "context_menus_title": {
         "message": "Traduire le texte sélectionné"
@@ -61,8 +61,8 @@
     "options_records_in_history": {
         "message": "Entrées dans l'histoire :"
     },
-    "options_history_disable": {
-        "message": "Désactiver l'historique"
+    "options_history_enable": {
+        "message": "Activer l'historique"
     },
     "options_clear_history": {
         "message": "Effacer l'historique"
@@ -467,7 +467,7 @@
         "message": "yiddish"
     },
     "supported_languages_yo": {
-        "message": "Yorouba"
+        "message": "Yoruba"
     },
     "supported_languages_zu": {
         "message": "zoulou"

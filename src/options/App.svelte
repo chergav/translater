@@ -11,25 +11,23 @@
 		text-base
 	"
 >
-	<div class="w-[80%] h-full flex flex-row">
+	<div class="lg:container lg:mx-auto h-full flex flex-row gap-4">
 		<div class="flex flex-col">
 			<div class="pb-4 flex items-center">
 				<img src={getURL('/src/icons/128.png')} width="48" alt="" />
 				<span class="ml-4 text-xl">Translater</span>
 			</div>
-			<div class="mr-4">
-				<div class="flex flex-col">
-					{#each tabs as item}
-						<ButtonTab
-							active={activeTab === item.tab}
-							label={item.label}
-							icon={item.icon}
-							on:click={() => {
-								activeTab = item.tab;
-							}}
-						/>
-					{/each}
-				</div>
+			<div class="flex flex-col">
+				{#each tabs as item}
+					<ButtonTab
+						active={activeTab === item.tab}
+						label={item.label}
+						icon={item.icon}
+						on:click={() => {
+							activeTab = item.tab;
+						}}
+					/>
+				{/each}
 			</div>
 		</div>
 		<div class="w-full overflow-hidden bg-white dark:bg-gray-800 rounded-[16px]">

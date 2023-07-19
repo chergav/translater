@@ -12,7 +12,9 @@
 	
 		{#await promise then isNotYourLang}
 			{#if showTrigger() && isNotYourLang}
-				<Trigger />
+				<div transition:fade={{ duration: 100 }}>
+					<Trigger />
+				</div>
 			{/if}
 		{/await}
 	</div>
@@ -25,6 +27,7 @@ loadFont();
 </script>
 
 <script>
+import { fade } from 'svelte/transition';
 import { destroyApp } from './utils/appsHandler';
 import Trigger from './lib/Trigger.svelte';
 import { computePosition, offset, flip } from '@floating-ui/dom';

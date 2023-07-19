@@ -61,8 +61,8 @@
     "options_records_in_history": {
         "message": "Записи в истории:"
     },
-    "options_history_disable": {
-        "message": "Отключить историю"
+    "options_history_enable": {
+        "message": "Включить историю"
     },
     "options_clear_history": {
         "message": "Удалить историю"
@@ -413,7 +413,7 @@
         "message": "сомалийский"
     },
     "supported_languages_sx": {
-        "message": "сото"
+        "message": "Сото"
     },
     "supported_languages_es": {
         "message": "испанский"

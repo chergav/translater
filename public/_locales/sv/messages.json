@@ -32,7 +32,7 @@
         "message": "Historia"
     },
     "options_inline_button_show": {
-        "message": "Visa knapp när text är markerad"
+        "message": "Visa knapp när text är vald"
     },
     "options_text_field_button_show": {
         "message": "Visa knapp i textfältet"
@@ -61,8 +61,8 @@
     "options_records_in_history": {
         "message": "Poster i historien:"
     },
-    "options_history_disable": {
-        "message": "Inaktivera historik"
+    "options_history_enable": {
+        "message": "Aktivera historik"
     },
     "options_clear_history": {
         "message": "Ta bort historik"

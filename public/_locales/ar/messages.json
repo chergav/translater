@@ -61,8 +61,8 @@
     "options_records_in_history": {
         "message": "إدخالات في التاريخ:"
     },
-    "options_history_disable": {
-        "message": "تعطيل المحفوظات"
+    "options_history_enable": {
+        "message": "تمكين السجل"
     },
     "options_clear_history": {
         "message": "حذف التاريخ"
@@ -275,7 +275,7 @@
         "message": "المجرية"
     },
     "supported_languages_is": {
-        "message": "الآيسلندية"
+        "message": "ايسلندي"
     },
     "supported_languages_ig": {
         "message": "الإيغبو"

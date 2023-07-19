@@ -1,13 +1,20 @@
-<div class="p-4">
-	<Select
-		bind:value={$persistentStore.historyLength}
-		options={historyOptions}
-		label={getMessage('options_history_length')}
+<div class="px-6 pt-6 pb-4 flex items-center">
+	<Switch
+		bind:checked={$persistentStore.historyEnable}
+		label={getMessage('options_history_enable')}
 	/>
 </div>
-<hr class="mx-4 border-t border-gray-300 dark:border-gray-700" />
-<div class="p-4 flex justify-between items-center">
-	<span>{getMessage('options_records_in_history')} {$persistentStore.history.length}</span>
+<hr class="mx-6 border-t border-gray-300 dark:border-gray-700" />
+<div class="px-6 py-4 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
+	<div class="flex items-center gap-4">
+		<Select
+			bind:value={$persistentStore.historyLength}
+			options={historyOptions}
+			label={getMessage('options_history_length')}
+		/>
+		<span>/</span>
+		<span>{getMessage('options_records_in_history')} {$persistentStore.history.length}</span>
+	</div>
 	<ButtonImage
 		label={getMessage('options_clear_history')}
 		on:click={() => {
@@ -15,8 +22,7 @@
 		}}
 	/>
 </div>
-<hr class="mx-4 border-t border-gray-300 dark:border-gray-700" />
-<div class="w-full h-[calc(100%-128px)] pl-4 pr-2 overflow-y-auto scrollbar">
+<div class="w-full h-[calc(100%-143px)] pl-6 pr-2 overflow-y-auto scrollbar">
 	{#each Object.entries(dateGroupedArray) as [key, value]}
 		<div class="py-2 text-sm text-blue-600">{getRelativeDate(key)}</div>
 		{#each value as historyItem (historyItem.time)}
@@ -29,11 +35,11 @@
 import { persistentStore } from '~/common/store';
 import { getUILanguage, getMessage } from '~/common/browserApi';
 import Select from '~/lib/Select.svelte';
+import Switch from '~/lib/Switch.svelte';
 import ButtonImage from '~/lib/ButtonImage.svelte';
 import HistoryItem from './HistoryItem.svelte';
 
 const historyOptions = [
-	{ key: 0, value: getMessage('options_history_disable') },
 	{ key: 25, value: '25' },
 	{ key: 50, value: '50' },
 	{ key: 100, value: '100' },

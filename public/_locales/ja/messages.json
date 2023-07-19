@@ -61,8 +61,8 @@
     "options_records_in_history": {
         "message": "履歴のエントリ:"
     },
-    "options_history_disable": {
-        "message": "履歴を無効にする"
+    "options_history_enable": {
+        "message": "履歴を有効にする"
     },
     "options_clear_history": {
         "message": "履歴の削除"

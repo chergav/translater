@@ -7,6 +7,7 @@ const defaultSettings = {
 	showTransliteration: true,
 	blacklistDomainForInline: [],
 	blacklistDomainForText: [],
+	historyEnable: true,
 	historyLength: 50,
 	history: [],
 	lockWindow: false

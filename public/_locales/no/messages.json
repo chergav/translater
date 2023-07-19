@@ -61,8 +61,8 @@
     "options_records_in_history": {
         "message": "Oppføringer i historien:"
     },
-    "options_history_disable": {
-        "message": "Deaktiver historikk"
+    "options_history_enable": {
+        "message": "Aktiver historikk"
     },
     "options_clear_history": {
         "message": "Slett historikk"
@@ -332,7 +332,7 @@
         "message": "makedonsk"
     },
     "supported_languages_mg": {
-        "message": "madagaskisk"
+        "message": "Madagaskar"
     },
     "supported_languages_ms": {
         "message": "malaysisk"
