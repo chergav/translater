@@ -3,7 +3,7 @@
         "message": "Translater - seçilen metnin çevirisi"
     },
     "app_description": {
-        "message": "Açık ve koyu temalı Google Çeviri ile seçilen metni çeviri"
+        "message": "Seçilen metni açık ve koyu temalı Google Çeviri ile çevirin"
     },
     "context_menus_title": {
         "message": "Seçili metni çevir"
@@ -35,13 +35,13 @@
         "message": "Metin seçildiğinde düğmeyi göster"
     },
     "options_text_field_button_show": {
-        "message": "Metin alanında düğmeyi göster"
+        "message": "Düğmeyi metin alanında göster"
     },
     "options_hide_button_on_sites": {
-        "message": "Düğmeyi şu sitelerde gizle:"
+        "message": "Bu sitelerdeki düğmeyi gizleyin:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Hariç tutmak istediğiniz sitedeki açılır pencere menüsünü kullanarak site ekleyebilirsiniz."
+        "message": "Hariç tutmak istediğiniz siteye açılır pencere menüsünü kullanarak site ekleyebilirsiniz."
     },
     "options_show_original_text": {
         "message": "Kaynak metni göster"
@@ -53,10 +53,10 @@
         "message": "Açılır pencereyi kilitle"
     },
     "options_lock_popup_window_hint": {
-        "message": "Etkinleştirilirse, açılır pencere dışarıdan tıklandığında kapanmaz"
+        "message": "Etkinleştirilirse açılır pencere dışarıya tıklandığında kapanmaz"
     },
     "options_history_length": {
-        "message": "tarihin uzunluğu"
+        "message": "Tarihin uzunluğu"
     },
     "options_records_in_history": {
         "message": "Tarihteki girişler:"
@@ -77,7 +77,7 @@
         "message": "Çöküş"
     },
     "target_lang_label": {
-        "message": "Çevir:"
+        "message": "Şu dile çevir:"
     },
     "popup_dictionary": {
         "message": "Sözlük"
@@ -92,7 +92,7 @@
         "message": "Eş anlamlı:"
     },
     "popup_examples": {
-        "message": "örnekler"
+        "message": "Örnekler"
     },
     "popup_menu_lock_window": {
         "message": "Pencereyi kilitle"
@@ -101,7 +101,7 @@
         "message": "Pencerenin kilidini aç"
     },
     "popup_menu_show_translate_button": {
-        "message": "Çeviri düğmesini göster"
+        "message": "Çevir düğmesini göster"
     },
     "popup_menu_hide_translate_button": {
         "message": "Çevir düğmesini gizle"
@@ -110,7 +110,7 @@
         "message": "Ek ayarlar"
     },
     "theme_light": {
-        "message": "Açık tema"
+        "message": "Işık teması"
     },
     "theme_dark": {
         "message": "Koyu tema"
@@ -125,7 +125,7 @@
         "message": "Panoya kopyala"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "HTTP sitelerinde kopyalama desteklenmez"
+        "message": "Kopyalama HTTP sitelerinde desteklenmez"
     },
     "tooltip_copyed": {
         "message": "Kopyalandı!"
@@ -134,7 +134,7 @@
         "message": "Kopyalama hatası!"
     },
     "tooltip_listen_to_the_text": {
-        "message": "metni dinle"
+        "message": "Metni dinle"
     },
     "tooltip_listen_stop": {
         "message": "Durmak"
@@ -148,6 +148,12 @@
     "tooltip_go_forward": {
         "message": "İleri"
     },
+    "tooltip_edit_text": {
+        "message": "Metni düzenle"
+    },
+    "tooltip_translate_again": {
+        "message": "Tekrar çevir"
+    },
     "date_today": {
         "message": "Bugün"
     },
@@ -155,7 +161,7 @@
         "message": "Dün"
     },
     "select_language_auto": {
-        "message": "dili algılamak"
+        "message": "dili tespit et"
     },
     "supported_languages_af": {
         "message": "Afrikalı"
@@ -197,7 +203,7 @@
         "message": "Cebuano"
     },
     "supported_languages_ny": {
-        "message": "Cheva"
+        "message": "Çiwa"
     },
     "supported_languages_zh_CN": {
         "message": "basitleştirilmiş Çince"
@@ -215,7 +221,7 @@
         "message": "Çek"
     },
     "supported_languages_da": {
-        "message": "Danimarkalı"
+        "message": "Danimarka"
     },
     "supported_languages_nl": {
         "message": "Flemenkçe"
@@ -251,10 +257,10 @@
         "message": "Yunan"
     },
     "supported_languages_gu": {
-        "message": "Gujarati"
+        "message": "Gujarati dili"
     },
     "supported_languages_ht": {
-        "message": "Haitili"
+        "message": "Haiti"
     },
     "supported_languages_ha": {
         "message": "Hausa"
@@ -296,13 +302,13 @@
         "message": "Cava"
     },
     "supported_languages_kn": {
-        "message": "Kannada"
+        "message": "Kannadaca"
     },
     "supported_languages_kk": {
         "message": "Kazak"
     },
     "supported_languages_km": {
-        "message": "Khmer"
+        "message": "Kmer"
     },
     "supported_languages_ky": {
         "message": "Kırgız"
@@ -329,22 +335,22 @@
         "message": "Lüksemburgca"
     },
     "supported_languages_mk": {
-        "message": "makedonca"
+        "message": "Makedonca"
     },
     "supported_languages_mg": {
-        "message": "Madagaskar"
+        "message": "Madagaskarca"
     },
     "supported_languages_ms": {
         "message": "Malayca"
     },
     "supported_languages_ml": {
-        "message": "Malayalam"
+        "message": "Malayalamca"
     },
     "supported_languages_mt": {
-        "message": "Malta"
+        "message": "Malta dili"
     },
     "supported_languages_mi": {
-        "message": "Maori"
+        "message": "Maori dili"
     },
     "supported_languages_mr": {
         "message": "Marathi"
@@ -353,7 +359,7 @@
         "message": "Moğolca"
     },
     "supported_languages_hmn": {
-        "message": "keşiş"
+        "message": "Keşiş"
     },
     "supported_languages_my": {
         "message": "Myanmar"
@@ -374,13 +380,13 @@
         "message": "Portekizce"
     },
     "supported_languages_pa": {
-        "message": "Pencapça"
+        "message": "Pencap"
     },
     "supported_languages_ps": {
         "message": "Puşto"
     },
     "supported_languages_ro": {
-        "message": "Romence"
+        "message": "Romen"
     },
     "supported_languages_ru": {
         "message": "Rusça"
@@ -395,10 +401,10 @@
         "message": "Sırpça"
     },
     "supported_languages_sn": {
-        "message": "Shona"
+        "message": "Şona"
     },
     "supported_languages_sd": {
-        "message": "Sintçe"
+        "message": "Sindhi"
     },
     "supported_languages_si": {
         "message": "Sinhala"
@@ -413,7 +419,7 @@
         "message": "Somalili"
     },
     "supported_languages_sx": {
-        "message": "Soto"
+        "message": "Sotho"
     },
     "supported_languages_es": {
         "message": "İspanyol"
@@ -431,16 +437,16 @@
         "message": "Tagalogca"
     },
     "supported_languages_tg": {
-        "message": "Tacikçe"
+        "message": "Tacik dili"
     },
     "supported_languages_ta": {
         "message": "Tamilce"
     },
     "supported_languages_te": {
-        "message": "Telugu"
+        "message": "Telugu dili"
     },
     "supported_languages_th": {
-        "message": "Tayland"
+        "message": "Tay dili"
     },
     "supported_languages_tr": {
         "message": "Türkçe"
@@ -461,7 +467,7 @@
         "message": "Galce"
     },
     "supported_languages_xh": {
-        "message": "Xosa"
+        "message": "Zosa"
     },
     "supported_languages_yi": {
         "message": "Yidiş"
@@ -470,10 +476,10 @@
         "message": "Yoruba"
     },
     "supported_languages_zu": {
-        "message": "Zulu"
+        "message": "Zuluca"
     },
     "supported_languages_qu": {
-        "message": "keçuva"
+        "message": "Keçuva"
     },
     "supported_languages_om": {
         "message": "Oromo"

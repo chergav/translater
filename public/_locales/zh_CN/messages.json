@@ -53,13 +53,13 @@
         "message": "锁定弹出窗口"
     },
     "options_lock_popup_window_hint": {
-        "message": "如果启用弹出窗口将不会在单击外部时关闭"
+        "message": "如果启用，弹出窗口在点击外部时不会关闭"
     },
     "options_history_length": {
-        "message": "历史长度"
+        "message": "历史的长度"
     },
     "options_records_in_history": {
-        "message": "历史条目："
+        "message": "历史记载："
     },
     "options_history_enable": {
         "message": "启用历史记录"
@@ -95,7 +95,7 @@
         "message": "例子"
     },
     "popup_menu_lock_window": {
-        "message": "锁定窗口"
+        "message": "锁窗"
     },
     "popup_menu_unlock_window": {
         "message": "解锁窗口"
@@ -128,7 +128,7 @@
         "message": "HTTP 站点不支持复制"
     },
     "tooltip_copyed": {
-        "message": "复制！"
+        "message": "复制了！"
     },
     "tooltip_copy_error": {
         "message": "复制错误！"
@@ -148,6 +148,12 @@
     "tooltip_go_forward": {
         "message": "向前"
     },
+    "tooltip_edit_text": {
+        "message": "编辑文字"
+    },
+    "tooltip_translate_again": {
+        "message": "再翻译一次"
+    },
     "date_today": {
         "message": "今天"
     },
@@ -161,7 +167,7 @@
         "message": "非洲人"
     },
     "supported_languages_sq": {
-        "message": "阿尔巴尼亚人"
+        "message": "阿尔巴尼亚语"
     },
     "supported_languages_am": {
         "message": "阿姆哈拉语"
@@ -194,7 +200,7 @@
         "message": "加泰罗尼亚语"
     },
     "supported_languages_ceb": {
-        "message": "宿雾语"
+        "message": "宿务语"
     },
     "supported_languages_ny": {
         "message": "切瓦"
@@ -284,7 +290,7 @@
         "message": "印度尼西亚"
     },
     "supported_languages_ga": {
-        "message": "爱尔兰人"
+        "message": "爱尔兰语"
     },
     "supported_languages_it": {
         "message": "意大利语"
@@ -305,7 +311,7 @@
         "message": "高棉语"
     },
     "supported_languages_ky": {
-        "message": "柯尔克孜语"
+        "message": "吉尔吉斯语"
     },
     "supported_languages_ko": {
         "message": "韩国人"
@@ -314,7 +320,7 @@
         "message": "库尔德"
     },
     "supported_languages_lo": {
-        "message": "老挝人"
+        "message": "老挝语"
     },
     "supported_languages_la": {
         "message": "拉丁"
@@ -386,7 +392,7 @@
         "message": "俄语"
     },
     "supported_languages_sm": {
-        "message": "萨摩亚语"
+        "message": "萨摩亚人"
     },
     "supported_languages_gd": {
         "message": "苏格兰盖尔语"
@@ -413,7 +419,7 @@
         "message": "索马里"
     },
     "supported_languages_sx": {
-        "message": "索托"
+        "message": "索托语"
     },
     "supported_languages_es": {
         "message": "西班牙语"
@@ -431,7 +437,7 @@
         "message": "他加禄语"
     },
     "supported_languages_tg": {
-        "message": "多治木"
+        "message": "田治"
     },
     "supported_languages_ta": {
         "message": "泰米尔语"
@@ -461,7 +467,7 @@
         "message": "威尔士语"
     },
     "supported_languages_xh": {
-        "message": "索萨"
+        "message": "科萨"
     },
     "supported_languages_yi": {
         "message": "意第绪语"
@@ -473,7 +479,7 @@
         "message": "祖鲁语"
     },
     "supported_languages_qu": {
-        "message": "盖丘亚语"
+        "message": "克丘亚语"
     },
     "supported_languages_om": {
         "message": "奥罗莫"

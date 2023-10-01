@@ -1,9 +1,9 @@
 {
     "app_name": {
-        "message": "Translater - ترجمة النص المختار"
+        "message": "Translater - ترجمة النص المحدد"
     },
     "app_description": {
-        "message": "ترجمة النص المحدد باستخدام Google Translate مع مظهر فاتح وداكن"
+        "message": "ترجمة النص المحدد باستخدام خدمة الترجمة من Google ذات المظهر الفاتح والداكن"
     },
     "context_menus_title": {
         "message": "ترجمة النص المحدد"
@@ -20,7 +20,7 @@
         }
     },
     "options_tab_inline_translate": {
-        "message": "القراءة والمدخلات"
+        "message": "القراءة والإدخال"
     },
     "options_tab_popup_window": {
         "message": "نافذة منبثقة"
@@ -32,10 +32,10 @@
         "message": "تاريخ"
     },
     "options_inline_button_show": {
-        "message": "زر \"إظهار\" عند تحديد النص"
+        "message": "زر إظهار عند تحديد النص"
     },
     "options_text_field_button_show": {
-        "message": "زر إظهار في textfield"
+        "message": "إظهار الزر في حقل النص"
     },
     "options_hide_button_on_sites": {
         "message": "إخفاء الزر في هذه المواقع:"
@@ -44,25 +44,25 @@
         "message": "يمكنك إضافة مواقع باستخدام قائمة النافذة المنبثقة على الموقع الذي تريد استبعاده"
     },
     "options_show_original_text": {
-        "message": "إظهار نص المصدر"
+        "message": "إظهار النص المصدر"
     },
     "options_show_transliteration": {
-        "message": "إظهار التحويل الصوتي"
+        "message": "عرض الترجمة الصوتية"
     },
     "options_lock_popup_window": {
         "message": "قفل النافذة المنبثقة"
     },
     "options_lock_popup_window_hint": {
-        "message": "إذا تم تمكين النافذة المنبثقة لن تغلق عند النقر بالخارج"
+        "message": "إذا تم تمكين النافذة المنبثقة فلن يتم إغلاقها عند النقر بالخارج"
     },
     "options_history_length": {
         "message": "طول التاريخ"
     },
     "options_records_in_history": {
-        "message": "إدخالات في التاريخ:"
+        "message": "الإدخالات في التاريخ:"
     },
     "options_history_enable": {
-        "message": "تمكين السجل"
+        "message": "تمكين التاريخ"
     },
     "options_clear_history": {
         "message": "حذف التاريخ"
@@ -74,7 +74,7 @@
         "message": "أكثر"
     },
     "text_collapse": {
-        "message": "انهيار"
+        "message": "طي"
     },
     "target_lang_label": {
         "message": "ترجمة الى:"
@@ -104,19 +104,19 @@
         "message": "إظهار زر الترجمة"
     },
     "popup_menu_hide_translate_button": {
-        "message": "زر إخفاء الترجمة"
+        "message": "إخفاء زر الترجمة"
     },
     "popup_menu_options_link": {
         "message": "إعدادات إضافية"
     },
     "theme_light": {
-        "message": "مظهر خفيف"
+        "message": "موضوع خفيف"
     },
     "theme_dark": {
-        "message": "مظهر داكن"
+        "message": "موضوع مظلم"
     },
     "theme_system": {
-        "message": "السمة الافتراضية"
+        "message": "الموضوع الافتراضي"
     },
     "tooltip_translate_text": {
         "message": "ترجمة النص المحدد"
@@ -125,10 +125,10 @@
         "message": "نسخ إلى الحافظة"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "لا يتم دعم النسخ على مواقع HTTP"
+        "message": "النسخ غير مدعوم على مواقع HTTP"
     },
     "tooltip_copyed": {
-        "message": "نسخ!"
+        "message": "منسوخ!"
     },
     "tooltip_copy_error": {
         "message": "خطأ في النسخ!"
@@ -147,6 +147,12 @@
     },
     "tooltip_go_forward": {
         "message": "إلى الأمام"
+    },
+    "tooltip_edit_text": {
+        "message": "تحرير النص"
+    },
+    "tooltip_translate_again": {
+        "message": "ترجم مرة أخرى"
     },
     "date_today": {
         "message": "اليوم"
@@ -170,10 +176,10 @@
         "message": "عربي"
     },
     "supported_languages_hy": {
-        "message": "أرميني"
+        "message": "الأرمينية"
     },
     "supported_languages_az": {
-        "message": "الأذربيجانية"
+        "message": "أذربيجاني"
     },
     "supported_languages_eu": {
         "message": "الباسك"
@@ -197,7 +203,7 @@
         "message": "السيبيونو"
     },
     "supported_languages_ny": {
-        "message": "شيوا"
+        "message": "تشيوا"
     },
     "supported_languages_zh_CN": {
         "message": "الصينية المبسطة"
@@ -206,7 +212,7 @@
         "message": "تقاليد صينية"
     },
     "supported_languages_co": {
-        "message": "كورسيكا"
+        "message": "كورسيكية"
     },
     "supported_languages_hr": {
         "message": "الكرواتية"
@@ -224,7 +230,7 @@
         "message": "إنجليزي"
     },
     "supported_languages_eo": {
-        "message": "اسبرانتو"
+        "message": "الاسبرانتو"
     },
     "supported_languages_et": {
         "message": "الإستونية"
@@ -236,7 +242,7 @@
         "message": "فرنسي"
     },
     "supported_languages_fy": {
-        "message": "الفريزيان"
+        "message": "الفريزية"
     },
     "supported_languages_gl": {
         "message": "الجاليكية"
@@ -254,7 +260,7 @@
         "message": "الغوجاراتية"
     },
     "supported_languages_ht": {
-        "message": "الهايتية"
+        "message": "هايتي"
     },
     "supported_languages_ha": {
         "message": "الهوسا"
@@ -269,25 +275,25 @@
         "message": "اللغة العبرية"
     },
     "supported_languages_hi": {
-        "message": "هندي"
+        "message": "الهندية"
     },
     "supported_languages_hu": {
         "message": "المجرية"
     },
     "supported_languages_is": {
-        "message": "ايسلندي"
+        "message": "الأيسلندية"
     },
     "supported_languages_ig": {
         "message": "الإيغبو"
     },
     "supported_languages_id": {
-        "message": "الأندونيسية"
+        "message": "الاندونيسية"
     },
     "supported_languages_ga": {
-        "message": "إيرلندي"
+        "message": "الأيرلندية"
     },
     "supported_languages_it": {
-        "message": "إيطالي"
+        "message": "ايطالي"
     },
     "supported_languages_ja": {
         "message": "اليابانية"
@@ -305,7 +311,7 @@
         "message": "الخمير"
     },
     "supported_languages_ky": {
-        "message": "قيرغيز"
+        "message": "القرغيز"
     },
     "supported_languages_ko": {
         "message": "الكورية"
@@ -314,10 +320,10 @@
         "message": "كردي"
     },
     "supported_languages_lo": {
-        "message": "اللاوسي"
+        "message": "لاوس"
     },
     "supported_languages_la": {
-        "message": "لاتيني"
+        "message": "اللاتينية"
     },
     "supported_languages_lv": {
         "message": "لاتفيا"
@@ -347,7 +353,7 @@
         "message": "الماوري"
     },
     "supported_languages_mr": {
-        "message": "الماراثى"
+        "message": "المهاراتية"
     },
     "supported_languages_mn": {
         "message": "المنغولية"
@@ -389,7 +395,7 @@
         "message": "ساموا"
     },
     "supported_languages_gd": {
-        "message": "الجايلي الاسكتلندي"
+        "message": "الغيلية الاسكتلندية"
     },
     "supported_languages_sr": {
         "message": "الصربية"
@@ -410,7 +416,7 @@
         "message": "السلوفينية"
     },
     "supported_languages_so": {
-        "message": "صومالي"
+        "message": "الصومالية"
     },
     "supported_languages_sx": {
         "message": "سوتو"
@@ -419,19 +425,19 @@
         "message": "الأسبانية"
     },
     "supported_languages_su": {
-        "message": "السوندانيز"
+        "message": "السودانية"
     },
     "supported_languages_sw": {
-        "message": "السواحيلية"
+        "message": "السواحلية"
     },
     "supported_languages_sv": {
         "message": "السويدية"
     },
     "supported_languages_tl": {
-        "message": "تاغالوغ"
+        "message": "التاغالوغية"
     },
     "supported_languages_tg": {
-        "message": "طاجيكي"
+        "message": "الطاجيكية"
     },
     "supported_languages_ta": {
         "message": "التاميل"
@@ -452,10 +458,10 @@
         "message": "الأردية"
     },
     "supported_languages_uz": {
-        "message": "أوزبكي"
+        "message": "الأوزبكية"
     },
     "supported_languages_vi": {
-        "message": "فيتنامي"
+        "message": "الفيتنامية"
     },
     "supported_languages_cy": {
         "message": "تهرب من دفع الرهان"
@@ -473,12 +479,12 @@
         "message": "الزولو"
     },
     "supported_languages_qu": {
-        "message": "الكيتشوا"
+        "message": "الكيشوا"
     },
     "supported_languages_om": {
-        "message": "أورومو"
+        "message": "الأورومو"
     },
     "supported_languages_ilo": {
-        "message": "إيلوكانو"
+        "message": "ايلوكانو"
     }
 }

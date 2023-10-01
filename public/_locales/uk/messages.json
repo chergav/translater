@@ -38,7 +38,7 @@
         "message": "Показати кнопку в текстовому полі"
     },
     "options_hide_button_on_sites": {
-        "message": "Приховати кнопку на цих сайтах:"
+        "message": "Сховати кнопку на цих сайтах:"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Ви можете додавати сайти за допомогою меню спливаючого вікна на сайті, який потрібно виключити"
@@ -147,6 +147,12 @@
     },
     "tooltip_go_forward": {
         "message": "вперед"
+    },
+    "tooltip_edit_text": {
+        "message": "Редагувати текст"
+    },
+    "tooltip_translate_again": {
+        "message": "Перекладіть ще раз"
     },
     "date_today": {
         "message": "сьогодні"

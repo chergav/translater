@@ -11,8 +11,8 @@
 			focus:ring
 			focus:ring-indigo-200
 			focus:ring-opacity-50
-			dark:bg-gray-800
-			dark:border-gray-700
+			dark:bg-gray-900
+			dark:border-gray-800
 			dark:placeholder-gray-400
 			dark:text-white
 			dark:focus:ring-gray-500

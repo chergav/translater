@@ -3,7 +3,7 @@
         "message": "Translater - μετάφραση επιλεγμένου κειμένου"
     },
     "app_description": {
-        "message": "Μετάφραση επιλεγμένου κειμένου με τη Μετάφραση Google με ανοιχτό και σκοτεινό θέμα"
+        "message": "Μετάφραση επιλεγμένου κειμένου με το Google Translate με ανοιχτό και σκοτεινό θέμα"
     },
     "context_menus_title": {
         "message": "Μετάφραση επιλεγμένου κειμένου"
@@ -147,6 +147,12 @@
     },
     "tooltip_go_forward": {
         "message": "Προς τα εμπρός"
+    },
+    "tooltip_edit_text": {
+        "message": "Επεξεργασία κειμένου"
+    },
+    "tooltip_translate_again": {
+        "message": "Μετάφρασε ξανά"
     },
     "date_today": {
         "message": "σήμερα"

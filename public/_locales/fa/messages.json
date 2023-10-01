@@ -23,7 +23,7 @@
         "message": "خواندن و ورودی"
     },
     "options_tab_popup_window": {
-        "message": "پنجره بازشو"
+        "message": "پنجره پاپ آپ"
     },
     "options_tab_appearance": {
         "message": "ظاهر بیرونی"
@@ -68,7 +68,7 @@
         "message": "حذف تاریخچه"
     },
     "options_delete_history_item": {
-        "message": "حذف از تاریخ"
+        "message": "حذف از تاریخچه"
     },
     "text_expand": {
         "message": "بیشتر"
@@ -147,6 +147,12 @@
     },
     "tooltip_go_forward": {
         "message": "رو به جلو"
+    },
+    "tooltip_edit_text": {
+        "message": "ویرایش متن"
+    },
+    "tooltip_translate_again": {
+        "message": "دوباره ترجمه کن"
     },
     "date_today": {
         "message": "امروز"
@@ -389,7 +395,7 @@
         "message": "ساموآ"
     },
     "supported_languages_gd": {
-        "message": "گیلیک اسکاتلندی"
+        "message": "گالیک اسکاتلندی"
     },
     "supported_languages_sr": {
         "message": "صربی"
@@ -458,7 +464,7 @@
         "message": "ویتنامی"
     },
     "supported_languages_cy": {
-        "message": "ولز"
+        "message": "ولزی"
     },
     "supported_languages_xh": {
         "message": "Xosa"

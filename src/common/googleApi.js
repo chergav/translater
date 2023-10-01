@@ -1,8 +1,4 @@
-const googleTranslateURL = ({
-	sourceLang = 'auto',
-	targetLang = 'auto',
-	selectedText = ''
-} = {}) => {
+const googleTranslateURL = ({ sourceLang = 'auto', targetLang = 'auto', selectedText = '' } = {}) => {
 	// https://stackoverflow.com/questions/26714426/what-is-the-meaning-of-google-translate-query-params
 	const searchParams = new URLSearchParams({
 		client: 'gtx',
@@ -53,7 +49,7 @@ const googleTTSURL = ({ lang = 'en', text = '' } = {}) => {
 
 const googleTTS = async params => {
 	const url = googleTTSURL(params);
-	console.log(params, url);
+	// console.log(params, url);
 
 	try {
 		const response = await fetch(url);
@@ -61,7 +57,7 @@ const googleTTS = async params => {
 		if (response.ok) {
 			const ab = await response.arrayBuffer();
 			const array = Array.from(new Uint8Array(ab));
-			console.log(array);
+			// console.log(array);
 			return { status: true, data: array };
 		} else {
 			return { status: false };

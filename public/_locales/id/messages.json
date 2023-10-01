@@ -12,7 +12,7 @@
         "message": "Pengaturan"
     },
     "options_title": {
-        "message": "$APP_NAME$ - pengaturan",
+        "message": "$APP_NAME$ - setelan",
         "placeholders": {
             "app_name": {
                 "content": "Translater"
@@ -20,7 +20,7 @@
         }
     },
     "options_tab_inline_translate": {
-        "message": "Membaca dan masukan"
+        "message": "Membaca dan memasukkan"
     },
     "options_tab_popup_window": {
         "message": "Jendela munculan"
@@ -32,16 +32,16 @@
         "message": "Sejarah"
     },
     "options_inline_button_show": {
-        "message": "Tampilkan tombol saat teks dipilih"
+        "message": "Tampilkan tombol ketika teks dipilih"
     },
     "options_text_field_button_show": {
         "message": "Tampilkan tombol di bidang teks"
     },
     "options_hide_button_on_sites": {
-        "message": "Sembunyikan tombol di situs ini:"
+        "message": "Sembunyikan tombol di situs berikut:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Anda dapat menambahkan situs menggunakan menu jendela popup di situs yang ingin Anda kecualikan"
+        "message": "Anda dapat menambahkan situs menggunakan menu jendela popup pada situs yang ingin Anda kecualikan"
     },
     "options_show_original_text": {
         "message": "Tampilkan teks sumber"
@@ -50,7 +50,7 @@
         "message": "Tampilkan transliterasi"
     },
     "options_lock_popup_window": {
-        "message": "Kunci jendela sembulan"
+        "message": "Kunci jendela pop-up"
     },
     "options_lock_popup_window_hint": {
         "message": "Jika diaktifkan popup tidak akan menutup saat klik di luar"
@@ -62,13 +62,13 @@
         "message": "Entri dalam sejarah:"
     },
     "options_history_enable": {
-        "message": "Aktifkan sejarah"
+        "message": "Aktifkan riwayat"
     },
     "options_clear_history": {
         "message": "Hapus riwayat"
     },
     "options_delete_history_item": {
-        "message": "Hapus dari sejarah"
+        "message": "Hapus dari riwayat"
     },
     "text_expand": {
         "message": "Lagi"
@@ -101,10 +101,10 @@
         "message": "Buka kunci jendela"
     },
     "popup_menu_show_translate_button": {
-        "message": "Tampilkan tombol terjemahan"
+        "message": "Tampilkan tombol terjemahkan"
     },
     "popup_menu_hide_translate_button": {
-        "message": "Sembunyikan tombol terjemahan"
+        "message": "Sembunyikan tombol terjemahkan"
     },
     "popup_menu_options_link": {
         "message": "Pengaturan tambahan"
@@ -131,7 +131,7 @@
         "message": "Disalin!"
     },
     "tooltip_copy_error": {
-        "message": "Salah salin!"
+        "message": "Kesalahan penyalinan!"
     },
     "tooltip_listen_to_the_text": {
         "message": "Dengarkan teks"
@@ -147,6 +147,12 @@
     },
     "tooltip_go_forward": {
         "message": "Maju"
+    },
+    "tooltip_edit_text": {
+        "message": "Sunting teks"
+    },
+    "tooltip_translate_again": {
+        "message": "Terjemahkan lagi"
     },
     "date_today": {
         "message": "Hari ini"
@@ -170,7 +176,7 @@
         "message": "Arab"
     },
     "supported_languages_hy": {
-        "message": "Armenia"
+        "message": "orang Armenia"
     },
     "supported_languages_az": {
         "message": "Azerbaijan"
@@ -197,7 +203,7 @@
         "message": "Cebuano"
     },
     "supported_languages_ny": {
-        "message": "Chewa"
+        "message": "mengunyah"
     },
     "supported_languages_zh_CN": {
         "message": "bahasa Tiongkok yang disederhanakan"
@@ -236,13 +242,13 @@
         "message": "Perancis"
     },
     "supported_languages_fy": {
-        "message": "Frisia"
+        "message": "Frisian"
     },
     "supported_languages_gl": {
-        "message": "Galicia"
+        "message": "Galisia"
     },
     "supported_languages_ka": {
-        "message": "Georgia"
+        "message": "orang Georgia"
     },
     "supported_languages_de": {
         "message": "Jerman"
@@ -257,7 +263,7 @@
         "message": "Haiti"
     },
     "supported_languages_ha": {
-        "message": "Hausa"
+        "message": "rumah"
     },
     "supported_languages_haw": {
         "message": "Hawaii"
@@ -428,7 +434,7 @@
         "message": "Orang Swedia"
     },
     "supported_languages_tl": {
-        "message": "Tagalog"
+        "message": "bahasa Tagalog"
     },
     "supported_languages_tg": {
         "message": "Tajiki"
@@ -449,16 +455,16 @@
         "message": "Orang Ukraina"
     },
     "supported_languages_ur": {
-        "message": "Urdu"
+        "message": "bahasa Urdu"
     },
     "supported_languages_uz": {
-        "message": "Uzbek"
+        "message": "Uzbekistan"
     },
     "supported_languages_vi": {
         "message": "Orang Vietnam"
     },
     "supported_languages_cy": {
-        "message": "Welsh"
+        "message": "bahasa Wales"
     },
     "supported_languages_xh": {
         "message": "Xosa"

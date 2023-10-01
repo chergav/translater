@@ -148,6 +148,12 @@
     "tooltip_go_forward": {
         "message": "Eteenpäin"
     },
+    "tooltip_edit_text": {
+        "message": "Muokkaa tekstiä"
+    },
+    "tooltip_translate_again": {
+        "message": "Käännä uudelleen"
+    },
     "date_today": {
         "message": "tänään"
     },

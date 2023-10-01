@@ -6,7 +6,7 @@
 			max-h-96
 			overflow-y-auto
 			bg-white
-			dark:bg-gray-800
+			dark:bg-gray-900
 			scrollbar
 		"
 		>

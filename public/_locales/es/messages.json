@@ -3,10 +3,10 @@
         "message": "Translater - traducción del texto seleccionado"
     },
     "app_description": {
-        "message": "Traducción de texto seleccionado con Google Translate con tema claro y oscuro"
+        "message": "Traducir texto seleccionado con Google Translate con tema claro y oscuro"
     },
     "context_menus_title": {
-        "message": "Traducir texto seleccionado"
+        "message": "Traducir el texto seleccionado"
     },
     "popup_menu_options": {
         "message": "Ajustes"
@@ -35,7 +35,7 @@
         "message": "Mostrar botón cuando se selecciona texto"
     },
     "options_text_field_button_show": {
-        "message": "Mostrar botón en campo de texto"
+        "message": "Mostrar botón en el campo de texto"
     },
     "options_hide_button_on_sites": {
         "message": "Oculte el botón en estos sitios:"
@@ -53,7 +53,7 @@
         "message": "Bloquear ventana emergente"
     },
     "options_lock_popup_window_hint": {
-        "message": "Si está habilitada, la ventana emergente no se cerrará al hacer clic fuera"
+        "message": "Si la ventana emergente habilitada no se cerrará al hacer clic afuera"
     },
     "options_history_length": {
         "message": "Longitud de la historia"
@@ -74,7 +74,7 @@
         "message": "Más"
     },
     "text_collapse": {
-        "message": "colapsar"
+        "message": "Colapso"
     },
     "target_lang_label": {
         "message": "Traducir a:"
@@ -95,7 +95,7 @@
         "message": "Ejemplos"
     },
     "popup_menu_lock_window": {
-        "message": "ventana de bloqueo"
+        "message": "Bloquear ventana"
     },
     "popup_menu_unlock_window": {
         "message": "Desbloquear ventana"
@@ -104,7 +104,7 @@
         "message": "Mostrar botón de traducción"
     },
     "popup_menu_hide_translate_button": {
-        "message": "Ocultar botón de traducir"
+        "message": "Ocultar botón de traducción"
     },
     "popup_menu_options_link": {
         "message": "Ajustes adicionales"
@@ -119,13 +119,13 @@
         "message": "Tema predeterminado"
     },
     "tooltip_translate_text": {
-        "message": "Traducir texto seleccionado"
+        "message": "Traducir el texto seleccionado"
     },
     "tooltip_copy_to_clipboard": {
         "message": "Copiar al portapapeles"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "La copia no es compatible con los sitios HTTP"
+        "message": "La copia no es compatible con sitios HTTP"
     },
     "tooltip_copyed": {
         "message": "¡Copiado!"
@@ -134,19 +134,25 @@
         "message": "¡Error de copia!"
     },
     "tooltip_listen_to_the_text": {
-        "message": "escuchar texto"
+        "message": "Escuchar texto"
     },
     "tooltip_listen_stop": {
         "message": "Detener"
     },
     "tooltip_listen_language_is_not_support": {
-        "message": "El idioma no es compatible"
+        "message": "El idioma no es compatible."
     },
     "tooltip_go_back": {
         "message": "Atrás"
     },
     "tooltip_go_forward": {
         "message": "Adelante"
+    },
+    "tooltip_edit_text": {
+        "message": "Editar texto"
+    },
+    "tooltip_translate_again": {
+        "message": "Traducir de nuevo"
     },
     "date_today": {
         "message": "hoy"
@@ -197,7 +203,7 @@
         "message": "cebuano"
     },
     "supported_languages_ny": {
-        "message": "Chewa"
+        "message": "masticar"
     },
     "supported_languages_zh_CN": {
         "message": "chino simplificado"
@@ -251,7 +257,7 @@
         "message": "Griego"
     },
     "supported_languages_gu": {
-        "message": "guyaratí"
+        "message": "gujarati"
     },
     "supported_languages_ht": {
         "message": "haitiano"
@@ -296,7 +302,7 @@
         "message": "javanés"
     },
     "supported_languages_kn": {
-        "message": "Canadá"
+        "message": "canarés"
     },
     "supported_languages_kk": {
         "message": "kazajo"
@@ -338,7 +344,7 @@
         "message": "malayo"
     },
     "supported_languages_ml": {
-        "message": "Malayalam"
+        "message": "malayalam"
     },
     "supported_languages_mt": {
         "message": "maltés"
@@ -359,7 +365,7 @@
         "message": "Birmania"
     },
     "supported_languages_ne": {
-        "message": "Mepali"
+        "message": "mepalí"
     },
     "supported_languages_no": {
         "message": "noruego"
@@ -377,7 +383,7 @@
         "message": "punjabi"
     },
     "supported_languages_ps": {
-        "message": "Pushto"
+        "message": "pastún"
     },
     "supported_languages_ro": {
         "message": "rumano"
@@ -398,7 +404,7 @@
         "message": "Shona"
     },
     "supported_languages_sd": {
-        "message": "Sindhi"
+        "message": "sindhi"
     },
     "supported_languages_si": {
         "message": "cingalés"
@@ -413,7 +419,7 @@
         "message": "somalí"
     },
     "supported_languages_sx": {
-        "message": "sesotho"
+        "message": "soto"
     },
     "supported_languages_es": {
         "message": "Español"
@@ -434,7 +440,7 @@
         "message": "Tayikistán"
     },
     "supported_languages_ta": {
-        "message": "tamil"
+        "message": "Tamil"
     },
     "supported_languages_te": {
         "message": "telugu"
@@ -452,7 +458,7 @@
         "message": "urdu"
     },
     "supported_languages_uz": {
-        "message": "uzbeco"
+        "message": "uzbeko"
     },
     "supported_languages_vi": {
         "message": "vietnamita"

@@ -26,7 +26,7 @@
         "message": "Finestra pop-up"
     },
     "options_tab_appearance": {
-        "message": "Aspetto esteriore"
+        "message": "Aspetto esterno"
     },
     "options_tab_history": {
         "message": "Storia"
@@ -41,7 +41,7 @@
         "message": "Nascondi il pulsante su questi siti:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "È possibile aggiungere siti utilizzando il menu della finestra popup sul sito che si desidera escludere"
+        "message": "Puoi aggiungere siti utilizzando il menu della finestra popup sul sito che desideri escludere"
     },
     "options_show_original_text": {
         "message": "Mostra il testo di origine"
@@ -53,7 +53,7 @@
         "message": "Blocca la finestra popup"
     },
     "options_lock_popup_window_hint": {
-        "message": "Se abilitato il popup non si chiuderà al clic all'esterno"
+        "message": "Se abilitato il popup non si chiuderà facendo clic all'esterno"
     },
     "options_history_length": {
         "message": "Lunghezza della storia"
@@ -62,10 +62,10 @@
         "message": "Voci nella storia:"
     },
     "options_history_enable": {
-        "message": "Abilita cronologia"
+        "message": "Abilita la cronologia"
     },
     "options_clear_history": {
-        "message": "Elimina cronologia"
+        "message": "Elimina la cronologia"
     },
     "options_delete_history_item": {
         "message": "Elimina dalla cronologia"
@@ -74,7 +74,7 @@
         "message": "Di più"
     },
     "text_collapse": {
-        "message": "Collapse"
+        "message": "Collasso"
     },
     "target_lang_label": {
         "message": "Traduci in:"
@@ -101,7 +101,7 @@
         "message": "Sblocca finestra"
     },
     "popup_menu_show_translate_button": {
-        "message": "Mostra pulsante di traduzione"
+        "message": "Mostra il pulsante di traduzione"
     },
     "popup_menu_hide_translate_button": {
         "message": "Nascondi il pulsante di traduzione"
@@ -110,7 +110,7 @@
         "message": "Altre impostazioni"
     },
     "theme_light": {
-        "message": "Tema chiaro"
+        "message": "Tema leggero"
     },
     "theme_dark": {
         "message": "Tema scuro"
@@ -148,6 +148,12 @@
     "tooltip_go_forward": {
         "message": "Inoltrare"
     },
+    "tooltip_edit_text": {
+        "message": "Modifica il testo"
+    },
+    "tooltip_translate_again": {
+        "message": "Traduci di nuovo"
+    },
     "date_today": {
         "message": "Oggi"
     },
@@ -164,7 +170,7 @@
         "message": "albanese"
     },
     "supported_languages_am": {
-        "message": "amarico"
+        "message": "Amarico"
     },
     "supported_languages_ar": {
         "message": "Arabo"
@@ -173,10 +179,10 @@
         "message": "armeno"
     },
     "supported_languages_az": {
-        "message": "azero"
+        "message": "Azero"
     },
     "supported_languages_eu": {
-        "message": "basco"
+        "message": "Basco"
     },
     "supported_languages_be": {
         "message": "bielorusso"
@@ -185,7 +191,7 @@
         "message": "bengalese"
     },
     "supported_languages_bs": {
-        "message": "bosniaco"
+        "message": "Bosniaco"
     },
     "supported_languages_bg": {
         "message": "bulgaro"
@@ -197,7 +203,7 @@
         "message": "Cebuano"
     },
     "supported_languages_ny": {
-        "message": "Cheva"
+        "message": "Chewa"
     },
     "supported_languages_zh_CN": {
         "message": "cinese semplificato"
@@ -227,7 +233,7 @@
         "message": "esperanto"
     },
     "supported_languages_et": {
-        "message": "estone"
+        "message": "Estone"
     },
     "supported_languages_fi": {
         "message": "finlandese"
@@ -251,10 +257,10 @@
         "message": "greco"
     },
     "supported_languages_gu": {
-        "message": "gujarati"
+        "message": "Gujarati"
     },
     "supported_languages_ht": {
-        "message": "haitiano"
+        "message": "Haitiano"
     },
     "supported_languages_ha": {
         "message": "Hausa"
@@ -278,7 +284,7 @@
         "message": "islandese"
     },
     "supported_languages_ig": {
-        "message": "Ibo"
+        "message": "Igbo"
     },
     "supported_languages_id": {
         "message": "indonesiano"
@@ -299,7 +305,7 @@
         "message": "Kannada"
     },
     "supported_languages_kk": {
-        "message": "kazako"
+        "message": "Kazakistan"
     },
     "supported_languages_km": {
         "message": "Khmer"
@@ -311,7 +317,7 @@
         "message": "coreano"
     },
     "supported_languages_ku": {
-        "message": "Curdo"
+        "message": "curdo"
     },
     "supported_languages_lo": {
         "message": "laotiano"
@@ -338,7 +344,7 @@
         "message": "malese"
     },
     "supported_languages_ml": {
-        "message": "malayalam"
+        "message": "Malayalam"
     },
     "supported_languages_mt": {
         "message": "maltese"
@@ -356,7 +362,7 @@
         "message": "Monaco"
     },
     "supported_languages_my": {
-        "message": "Birmania"
+        "message": "Myanmar"
     },
     "supported_languages_ne": {
         "message": "Mepali"
@@ -386,7 +392,7 @@
         "message": "russo"
     },
     "supported_languages_sm": {
-        "message": "samoano"
+        "message": "Samoano"
     },
     "supported_languages_gd": {
         "message": "Gaelico Scozzese"
@@ -401,7 +407,7 @@
         "message": "Sindhi"
     },
     "supported_languages_si": {
-        "message": "singalese"
+        "message": "Singalese"
     },
     "supported_languages_sk": {
         "message": "slovacco"
@@ -419,25 +425,25 @@
         "message": "spagnolo"
     },
     "supported_languages_su": {
-        "message": "sundanese"
+        "message": "Sundanese"
     },
     "supported_languages_sw": {
-        "message": "swahili"
+        "message": "Swahili"
     },
     "supported_languages_sv": {
         "message": "svedese"
     },
     "supported_languages_tl": {
-        "message": "Tagalo"
+        "message": "Tagalog"
     },
     "supported_languages_tg": {
-        "message": "Tagiki"
+        "message": "Tagikista"
     },
     "supported_languages_ta": {
         "message": "Tamil"
     },
     "supported_languages_te": {
-        "message": "telugu"
+        "message": "Telugu"
     },
     "supported_languages_th": {
         "message": "tailandese"
@@ -452,7 +458,7 @@
         "message": "Urdu"
     },
     "supported_languages_uz": {
-        "message": "uzbeko"
+        "message": "Uzbeco"
     },
     "supported_languages_vi": {
         "message": "vietnamita"

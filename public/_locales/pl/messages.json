@@ -3,10 +3,10 @@
         "message": "Translater - tłumaczenie wybranego tekstu"
     },
     "app_description": {
-        "message": "Przetłumacz zaznaczony tekst za pomocą Tłumacza Google z jasnym i ciemnym motywem"
+        "message": "Tłumaczenie wybranego tekstu za pomocą Tłumacza Google z jasnym i ciemnym motywem"
     },
     "context_menus_title": {
-        "message": "Przetłumacz wybrany tekst"
+        "message": "Przetłumacz zaznaczony tekst"
     },
     "popup_menu_options": {
         "message": "Ustawienia"
@@ -32,7 +32,7 @@
         "message": "Historia"
     },
     "options_inline_button_show": {
-        "message": "Pokaż przycisk, gdy tekst jest zaznaczony"
+        "message": "Pokaż przycisk, gdy zaznaczony jest tekst"
     },
     "options_text_field_button_show": {
         "message": "Pokaż przycisk w polu tekstowym"
@@ -41,7 +41,7 @@
         "message": "Ukryj przycisk na tych stronach:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Możesz dodać witryny za pomocą menu wyskakującego okienka w witrynie, którą chcesz wykluczyć"
+        "message": "Możesz dodać witryny, korzystając z menu wyskakującego okna witryny, którą chcesz wykluczyć"
     },
     "options_show_original_text": {
         "message": "Pokaż tekst źródłowy"
@@ -74,7 +74,7 @@
         "message": "Więcej"
     },
     "text_collapse": {
-        "message": "Upadek"
+        "message": "Zapaść"
     },
     "target_lang_label": {
         "message": "Przetłumacz na:"
@@ -119,7 +119,7 @@
         "message": "Domyślny motyw"
     },
     "tooltip_translate_text": {
-        "message": "Przetłumacz wybrany tekst"
+        "message": "Przetłumacz zaznaczony tekst"
     },
     "tooltip_copy_to_clipboard": {
         "message": "Skopiuj do schowka"
@@ -128,7 +128,7 @@
         "message": "Kopiowanie nie jest obsługiwane w witrynach HTTP"
     },
     "tooltip_copyed": {
-        "message": "Skopiowane!"
+        "message": "Skopiowano!"
     },
     "tooltip_copy_error": {
         "message": "Kopiuj błąd!"
@@ -147,6 +147,12 @@
     },
     "tooltip_go_forward": {
         "message": "Do przodu"
+    },
+    "tooltip_edit_text": {
+        "message": "Edytować tekst"
+    },
+    "tooltip_translate_again": {
+        "message": "Przetłumacz jeszcze raz"
     },
     "date_today": {
         "message": "Dzisiaj"
@@ -194,7 +200,7 @@
         "message": "kataloński"
     },
     "supported_languages_ceb": {
-        "message": "cebuański"
+        "message": "Cebuański"
     },
     "supported_languages_ny": {
         "message": "Chewa"
@@ -260,7 +266,7 @@
         "message": "Hausa"
     },
     "supported_languages_haw": {
-        "message": "hawajski"
+        "message": "Hawajski"
     },
     "supported_languages_he": {
         "message": "hebrajski"
@@ -278,7 +284,7 @@
         "message": "islandzki"
     },
     "supported_languages_ig": {
-        "message": "Igbo"
+        "message": "Ibo"
     },
     "supported_languages_id": {
         "message": "indonezyjski"
@@ -296,13 +302,13 @@
         "message": "jawajski"
     },
     "supported_languages_kn": {
-        "message": "kannada"
+        "message": "Kannada"
     },
     "supported_languages_kk": {
         "message": "kazachski"
     },
     "supported_languages_km": {
-        "message": "khmerski"
+        "message": "Khmer"
     },
     "supported_languages_ky": {
         "message": "Kirgiz"
@@ -314,7 +320,7 @@
         "message": "kurdyjski"
     },
     "supported_languages_lo": {
-        "message": "laotański"
+        "message": "Laotański"
     },
     "supported_languages_la": {
         "message": "łacina"
@@ -341,10 +347,10 @@
         "message": "malajalam"
     },
     "supported_languages_mt": {
-        "message": "maltański"
+        "message": "Maltański"
     },
     "supported_languages_mi": {
-        "message": "maoryski"
+        "message": "Maoryski"
     },
     "supported_languages_mr": {
         "message": "marathi"
@@ -386,7 +392,7 @@
         "message": "Rosyjski"
     },
     "supported_languages_sm": {
-        "message": "samoański"
+        "message": "Samoański"
     },
     "supported_languages_gd": {
         "message": "szkocki gaelicki"
@@ -413,16 +419,16 @@
         "message": "somalijski"
     },
     "supported_languages_sx": {
-        "message": "Soto"
+        "message": "Sotho"
     },
     "supported_languages_es": {
         "message": "hiszpański"
     },
     "supported_languages_su": {
-        "message": "Sundajski"
+        "message": "Sundajczyk"
     },
     "supported_languages_sw": {
-        "message": "suahili"
+        "message": "Suahili"
     },
     "supported_languages_sv": {
         "message": "szwedzki"
@@ -431,7 +437,7 @@
         "message": "tagalski"
     },
     "supported_languages_tg": {
-        "message": "tadżycki"
+        "message": "Tadżycki"
     },
     "supported_languages_ta": {
         "message": "Tamil"
@@ -473,7 +479,7 @@
         "message": "Zulus"
     },
     "supported_languages_qu": {
-        "message": "keczua"
+        "message": "Keczua"
     },
     "supported_languages_om": {
         "message": "Oromo"

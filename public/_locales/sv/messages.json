@@ -32,7 +32,7 @@
         "message": "Historia"
     },
     "options_inline_button_show": {
-        "message": "Visa knapp när text är vald"
+        "message": "Visa knapp när text är markerad"
     },
     "options_text_field_button_show": {
         "message": "Visa knapp i textfältet"
@@ -147,6 +147,12 @@
     },
     "tooltip_go_forward": {
         "message": "Fram"
+    },
+    "tooltip_edit_text": {
+        "message": "Redigera text"
+    },
+    "tooltip_translate_again": {
+        "message": "Översätt igen"
     },
     "date_today": {
         "message": "i dag"

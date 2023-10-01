@@ -148,6 +148,12 @@
     "tooltip_go_forward": {
         "message": "Framover"
     },
+    "tooltip_edit_text": {
+        "message": "Rediger tekst"
+    },
+    "tooltip_translate_again": {
+        "message": "Oversett igjen"
+    },
     "date_today": {
         "message": "i dag"
     },

@@ -53,7 +53,7 @@
         "message": "ポップアップウィンドウをロックする"
     },
     "options_lock_popup_window_hint": {
-        "message": "有効にすると、外側をクリックしてもポップアップが閉じなくなります"
+        "message": "有効にすると、外側をクリックしてもポップアップは閉じません。"
     },
     "options_history_length": {
         "message": "歴史の長さ"
@@ -83,7 +83,7 @@
         "message": "辞書"
     },
     "popup_dictionary_frequency": {
-        "message": "周波数"
+        "message": "頻度"
     },
     "popup_definitions": {
         "message": "定義"
@@ -137,7 +137,7 @@
         "message": "テキストを聞く"
     },
     "tooltip_listen_stop": {
-        "message": "ストップ"
+        "message": "停止"
     },
     "tooltip_listen_language_is_not_support": {
         "message": "言語はサポートされていません"
@@ -146,7 +146,13 @@
         "message": "戻る"
     },
     "tooltip_go_forward": {
-        "message": "前方"
+        "message": "フォワード"
+    },
+    "tooltip_edit_text": {
+        "message": "テキストを編集する"
+    },
+    "tooltip_translate_again": {
+        "message": "もう一度翻訳してください"
     },
     "date_today": {
         "message": "今日"
@@ -290,7 +296,7 @@
         "message": "イタリアの"
     },
     "supported_languages_ja": {
-        "message": "日本"
+        "message": "日本語"
     },
     "supported_languages_jv": {
         "message": "ジャワ語"

@@ -3,7 +3,7 @@
         "message": "Translater - vertaling van geselecteerde tekst"
     },
     "app_description": {
-        "message": "Vertaling geselecteerde tekst met Google Translate met licht en donker thema"
+        "message": "Vertaal geselecteerde tekst met Google Translate met licht en donker thema"
     },
     "context_menus_title": {
         "message": "Vertaal geselecteerde tekst"
@@ -32,10 +32,10 @@
         "message": "Geschiedenis"
     },
     "options_inline_button_show": {
-        "message": "Toon knop wanneer tekst is geselecteerd"
+        "message": "Knop weergeven wanneer tekst is geselecteerd"
     },
     "options_text_field_button_show": {
-        "message": "Toon knop in tekstveld"
+        "message": "Knop weergeven in tekstveld"
     },
     "options_hide_button_on_sites": {
         "message": "Verberg de knop op deze sites:"
@@ -44,16 +44,16 @@
         "message": "U kunt sites toevoegen via het menu van het pop-upvenster op de site die u wilt uitsluiten"
     },
     "options_show_original_text": {
-        "message": "Toon brontekst"
+        "message": "Brontekst weergeven"
     },
     "options_show_transliteration": {
-        "message": "Toon transliteratie"
+        "message": "Transliteratie weergeven"
     },
     "options_lock_popup_window": {
         "message": "Pop-upvenster vergrendelen"
     },
     "options_lock_popup_window_hint": {
-        "message": "Indien ingeschakeld, zal de pop-up niet sluiten als u buiten klikt"
+        "message": "Indien ingeschakeld, wordt de pop-up niet gesloten als u buiten klikt"
     },
     "options_history_length": {
         "message": "Lengte van de geschiedenis"
@@ -74,7 +74,7 @@
         "message": "Meer"
     },
     "text_collapse": {
-        "message": "Ineenstorting"
+        "message": "Сollapse"
     },
     "target_lang_label": {
         "message": "Vertalen naar:"
@@ -104,7 +104,7 @@
         "message": "Toon vertaalknop"
     },
     "popup_menu_hide_translate_button": {
-        "message": "Knop Vertalen verbergen"
+        "message": "Vertaalknop verbergen"
     },
     "popup_menu_options_link": {
         "message": "Aanvullende instellingen"
@@ -131,7 +131,7 @@
         "message": "Gekopieerd!"
     },
     "tooltip_copy_error": {
-        "message": "Kopieer fout!"
+        "message": "Kopieerfout!"
     },
     "tooltip_listen_to_the_text": {
         "message": "Luister naar tekst"
@@ -147,6 +147,12 @@
     },
     "tooltip_go_forward": {
         "message": "Vooruit"
+    },
+    "tooltip_edit_text": {
+        "message": "Tekst bewerken"
+    },
+    "tooltip_translate_again": {
+        "message": "Opnieuw vertalen"
     },
     "date_today": {
         "message": "Vandaag"
@@ -257,10 +263,10 @@
         "message": "Haïtiaans"
     },
     "supported_languages_ha": {
-        "message": "huis"
+        "message": "Hausa"
     },
     "supported_languages_haw": {
-        "message": "Hawaiiaans"
+        "message": "Hawaïaans"
     },
     "supported_languages_he": {
         "message": "Hebreeuws"
@@ -296,7 +302,7 @@
         "message": "Javaans"
     },
     "supported_languages_kn": {
-        "message": "Kannada"
+        "message": "Kanada"
     },
     "supported_languages_kk": {
         "message": "Kazachs"
@@ -419,7 +425,7 @@
         "message": "Spaans"
     },
     "supported_languages_su": {
-        "message": "Sundanees"
+        "message": "Soendanees"
     },
     "supported_languages_sw": {
         "message": "Swahili"
@@ -431,7 +437,7 @@
         "message": "Tagalog"
     },
     "supported_languages_tg": {
-        "message": "Tadzjieks"
+        "message": "Tadzjikistan"
     },
     "supported_languages_ta": {
         "message": "Tamil"
@@ -458,7 +464,7 @@
         "message": "Vietnamees"
     },
     "supported_languages_cy": {
-        "message": "Wels"
+        "message": "Welsh"
     },
     "supported_languages_xh": {
         "message": "Xosa"

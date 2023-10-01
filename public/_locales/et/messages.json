@@ -53,7 +53,7 @@
         "message": "Lukusta hüpikaken"
     },
     "options_lock_popup_window_hint": {
-        "message": "Kui see on lubatud, ei sulgu hüpikaken väljapoole klõpsamisel"
+        "message": "Kui see on lubatud, hüpikaken väljapoole klõpsamisel ei sulgu"
     },
     "options_history_length": {
         "message": "Ajaloo pikkus"
@@ -147,6 +147,12 @@
     },
     "tooltip_go_forward": {
         "message": "Edasi"
+    },
+    "tooltip_edit_text": {
+        "message": "Muuda teksti"
+    },
+    "tooltip_translate_again": {
+        "message": "Tõlgi uuesti"
     },
     "date_today": {
         "message": "täna"

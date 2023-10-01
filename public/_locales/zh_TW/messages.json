@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "Translater - 所選文本的翻譯"
+        "message": "Translater - 所選文字的翻譯"
     },
     "app_description": {
         "message": "使用具有淺色和深色主題的谷歌翻譯翻譯選定的文本"
@@ -9,10 +9,10 @@
         "message": "翻譯選定的文本"
     },
     "popup_menu_options": {
-        "message": "設置"
+        "message": "設定"
     },
     "options_title": {
-        "message": "$APP_NAME$ - 設置",
+        "message": "$APP_NAME$ - 設定",
         "placeholders": {
             "app_name": {
                 "content": "Translater"
@@ -23,7 +23,7 @@
         "message": "讀取和輸入"
     },
     "options_tab_popup_window": {
-        "message": "彈出窗口"
+        "message": "彈出視窗"
     },
     "options_tab_appearance": {
         "message": "外觀"
@@ -32,34 +32,34 @@
         "message": "歷史"
     },
     "options_inline_button_show": {
-        "message": "選擇文本時顯示按鈕"
+        "message": "選擇文字時顯示按鈕"
     },
     "options_text_field_button_show": {
-        "message": "在文本字段中顯示按鈕"
+        "message": "在文字欄位中顯示按鈕"
     },
     "options_hide_button_on_sites": {
         "message": "隱藏這些網站上的按鈕："
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "您可以使用要排除的網站上的彈出窗口菜單添加網站"
+        "message": "您可以使用要排除的網站上的彈出視窗選單新增網站"
     },
     "options_show_original_text": {
-        "message": "顯示源文本"
+        "message": "顯示來源文字"
     },
     "options_show_transliteration": {
         "message": "顯示音譯"
     },
     "options_lock_popup_window": {
-        "message": "鎖定彈出窗口"
+        "message": "鎖定彈出視窗"
     },
     "options_lock_popup_window_hint": {
-        "message": "如果啟用彈出窗口將不會在單擊外部時關閉"
+        "message": "如果啟用，彈出視窗在點擊外部時不會關閉"
     },
     "options_history_length": {
-        "message": "歷史長度"
+        "message": "歷史的長度"
     },
     "options_records_in_history": {
-        "message": "歷史條目："
+        "message": "歷史記載："
     },
     "options_history_enable": {
         "message": "啟用歷史記錄"
@@ -95,10 +95,10 @@
         "message": "例子"
     },
     "popup_menu_lock_window": {
-        "message": "鎖定窗口"
+        "message": "鎖窗"
     },
     "popup_menu_unlock_window": {
-        "message": "解鎖窗口"
+        "message": "解鎖視窗"
     },
     "popup_menu_show_translate_button": {
         "message": "顯示翻譯按鈕"
@@ -107,7 +107,7 @@
         "message": "隱藏翻譯按鈕"
     },
     "popup_menu_options_link": {
-        "message": "其他設置"
+        "message": "其他設定"
     },
     "theme_light": {
         "message": "淺色主題"
@@ -116,19 +116,19 @@
         "message": "深色主題"
     },
     "theme_system": {
-        "message": "默認主題"
+        "message": "預設主題"
     },
     "tooltip_translate_text": {
         "message": "翻譯選定的文本"
     },
     "tooltip_copy_to_clipboard": {
-        "message": "複製到剪貼板"
+        "message": "複製到剪貼簿"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "HTTP 站點不支持複製"
+        "message": "HTTP 網站不支援複製"
     },
     "tooltip_copyed": {
-        "message": "複製！"
+        "message": "複製了！"
     },
     "tooltip_copy_error": {
         "message": "複製錯誤！"
@@ -140,13 +140,19 @@
         "message": "停止"
     },
     "tooltip_listen_language_is_not_support": {
-        "message": "語言不支持"
+        "message": "語言不支援"
     },
     "tooltip_go_back": {
         "message": "後退"
     },
     "tooltip_go_forward": {
         "message": "向前"
+    },
+    "tooltip_edit_text": {
+        "message": "編輯文字"
+    },
+    "tooltip_translate_again": {
+        "message": "再翻譯一次"
     },
     "date_today": {
         "message": "今天"
@@ -161,7 +167,7 @@
         "message": "非洲人"
     },
     "supported_languages_sq": {
-        "message": "阿爾巴尼亞人"
+        "message": "阿爾巴尼亞語"
     },
     "supported_languages_am": {
         "message": "阿姆哈拉語"
@@ -173,7 +179,7 @@
         "message": "亞美尼亞語"
     },
     "supported_languages_az": {
-        "message": "阿塞拜疆語"
+        "message": "亞塞拜然語"
     },
     "supported_languages_eu": {
         "message": "巴斯克"
@@ -185,13 +191,13 @@
         "message": "孟加拉"
     },
     "supported_languages_bs": {
-        "message": "波斯尼亞語"
+        "message": "波士尼亞語"
     },
     "supported_languages_bg": {
         "message": "保加利亞語"
     },
     "supported_languages_ca": {
-        "message": "加泰羅尼亞語"
+        "message": "加泰隆尼亞語"
     },
     "supported_languages_ceb": {
         "message": "宿霧語"
@@ -209,7 +215,7 @@
         "message": "科西嘉島"
     },
     "supported_languages_hr": {
-        "message": "克羅地亞語"
+        "message": "克羅埃西亞語"
     },
     "supported_languages_cs": {
         "message": "捷克語"
@@ -242,13 +248,13 @@
         "message": "加利西亞語"
     },
     "supported_languages_ka": {
-        "message": "格魯吉亞語"
+        "message": "喬治亞語"
     },
     "supported_languages_de": {
-        "message": "德語"
+        "message": "德文"
     },
     "supported_languages_el": {
-        "message": "希臘語"
+        "message": "希臘文"
     },
     "supported_languages_gu": {
         "message": "古吉拉特語"
@@ -263,10 +269,10 @@
         "message": "夏威夷語"
     },
     "supported_languages_he": {
-        "message": "希伯來語"
+        "message": "希伯來文"
     },
     "supported_languages_iw": {
-        "message": "希伯來語"
+        "message": "希伯來文"
     },
     "supported_languages_hi": {
         "message": "印地語"
@@ -281,13 +287,13 @@
         "message": "伊博語"
     },
     "supported_languages_id": {
-        "message": "印度尼西亞"
+        "message": "印尼"
     },
     "supported_languages_ga": {
-        "message": "愛爾蘭人"
+        "message": "愛爾蘭語"
     },
     "supported_languages_it": {
-        "message": "意大利語"
+        "message": "義大利語"
     },
     "supported_languages_ja": {
         "message": "日本人"
@@ -305,16 +311,16 @@
         "message": "高棉語"
     },
     "supported_languages_ky": {
-        "message": "柯爾克孜語"
+        "message": "吉爾吉斯語"
     },
     "supported_languages_ko": {
         "message": "韓國人"
     },
     "supported_languages_ku": {
-        "message": "庫爾德"
+        "message": "庫德"
     },
     "supported_languages_lo": {
-        "message": "老撾人"
+        "message": "寮國語"
     },
     "supported_languages_la": {
         "message": "拉丁"
@@ -341,7 +347,7 @@
         "message": "馬拉雅拉姆語"
     },
     "supported_languages_mt": {
-        "message": "馬耳他語"
+        "message": "馬爾他語"
     },
     "supported_languages_mi": {
         "message": "毛利人"
@@ -353,7 +359,7 @@
         "message": "蒙"
     },
     "supported_languages_hmn": {
-        "message": "僧"
+        "message": "僧侶"
     },
     "supported_languages_my": {
         "message": "緬甸"
@@ -383,10 +389,10 @@
         "message": "羅馬尼亞語"
     },
     "supported_languages_ru": {
-        "message": "俄語"
+        "message": "俄文"
     },
     "supported_languages_sm": {
-        "message": "薩摩亞語"
+        "message": "薩摩亞人"
     },
     "supported_languages_gd": {
         "message": "蘇格蘭蓋爾語"
@@ -407,13 +413,13 @@
         "message": "斯洛伐克語"
     },
     "supported_languages_sl": {
-        "message": "斯洛文尼亞語"
+        "message": "斯洛維尼亞語"
     },
     "supported_languages_so": {
-        "message": "索馬里"
+        "message": "索馬利亞"
     },
     "supported_languages_sx": {
-        "message": "索托"
+        "message": "索托語"
     },
     "supported_languages_es": {
         "message": "西班牙語"
@@ -431,7 +437,7 @@
         "message": "他加祿語"
     },
     "supported_languages_tg": {
-        "message": "多治木"
+        "message": "田治"
     },
     "supported_languages_ta": {
         "message": "泰米爾語"
@@ -458,10 +464,10 @@
         "message": "越南語"
     },
     "supported_languages_cy": {
-        "message": "威爾士語"
+        "message": "威爾斯語"
     },
     "supported_languages_xh": {
-        "message": "索薩"
+        "message": "科薩"
     },
     "supported_languages_yi": {
         "message": "意第緒語"
@@ -473,7 +479,7 @@
         "message": "祖魯語"
     },
     "supported_languages_qu": {
-        "message": "蓋丘亞語"
+        "message": "克丘亞語"
     },
     "supported_languages_om": {
         "message": "奧羅莫"

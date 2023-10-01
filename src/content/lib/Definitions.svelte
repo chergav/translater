@@ -6,7 +6,7 @@
 			max-h-96
 			overflow-y-auto
 			bg-white
-			dark:bg-gray-800
+			dark:bg-gray-900
 			scrollbar
 		"
 		>
@@ -126,16 +126,23 @@ const sortSynonyms = synonyms =>
 const addSynonymToDefinition = () => {
 	const { definitions, synsets } = translate;
 
-	if (translate.synsets) {
-		for (const definition of definitions) {
-			for (const defEntry of definition.entry) {
-				for (const synset of synsets) {
-					for (const synEntry of synset.entry) {
-						if (defEntry.definition_id === synEntry.definition_id) {
-							defEntry.synsets = [...(defEntry.synsets || []), synEntry];
-						}
-					}
-				}
+	if (!Object.hasOwn(translate, 'synsets')) return definitions;
+
+	const synsetsById = {};
+
+	for (const synset of synsets) {
+		for (const synsetEntry of synset.entry) {
+			synsetsById[synsetEntry.definition_id] = [
+				...(synsetsById[synsetEntry.definition_id] || []),
+				synsetEntry,
+			];
+		}
+	}
+
+	for (const definition of definitions) {
+		for (const defEntry of definition.entry) {
+			if (synsetsById[defEntry.definition_id]) {
+				defEntry.synsets = synsetsById[defEntry.definition_id];
 			}
 		}
 	}
@@ -146,9 +153,9 @@ const addSynonymToDefinition = () => {
 };
 
 const getLabels = label =>
-	label.hasOwnProperty('subject')
+	Object.hasOwn(label, 'subject')
 		? label.subject
-		: label.hasOwnProperty('register')
+		: Object.hasOwn(label, 'register')
 		? label.register
 		: [];
 </script>

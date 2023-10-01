@@ -13,7 +13,7 @@
 			dark:text-white
 			text-start
 			bg-gray-100
-			dark:bg-gray-900
+			dark:bg-gray-950
 			rounded-[16px]
 			shadow-xl
 			z-[9999999]

@@ -16,7 +16,7 @@
 	</div>
 {:then translate}
 	<main>
-		<div class="mb-1 bg-white dark:bg-gray-800 rounded-[16px] overflow-hidden">
+		<div class="mb-1 bg-white dark:bg-gray-900 rounded-[16px] overflow-hidden">
 			<div class="p-1">
 				<div class="flex justify-between">
 					<div class="flex gap-1">
@@ -39,22 +39,44 @@
 							}}
 						/>
 					</div>
-				</div>			
+				</div>
 			</div>
 			{#if originalOpen}
 				<div
 					class="p-2 whitespace-pre-line max-h-80 overflow-y-auto scrollbar"
 					transition:slide|local={{ duration: 150, easing: cubicInOut }}
 				>
-					<div class="text-base">{translate.sentences.orig}</div>
+					<div class="w-full flex items-start justify-between">
+						<div
+							bind:this={elemOrig}
+							class={elemOrigLines > 3 ? 'text-sm' : 'text-base'}
+						>
+							{translate.sentences.orig}
+						</div>
+						<ButtonImage
+							round
+							class="-mr-1"
+							tooltip={{
+								title: `${
+									isOrigContenteditable
+										? getMessage('tooltip_translate_again')
+										: getMessage('tooltip_edit_text')
+								}`,
+							}}
+							icon={isOrigContenteditable ? heroCheck : heroPencilSquare}
+							on:click={origTextEdit}
+						/>
+					</div>
 					{#if translate.sentences.src_translit && $persistentStore.showTransliteration}
-						<div class="mt-2 text-sm text-gray-500">{translate.sentences.src_translit}</div>
+						<div class="mt-2 text-sm text-gray-500">
+							{translate.sentences.src_translit}
+						</div>
 					{/if}
 				</div>
 			{/if}
 		</div>
 
-		<div class="mb-1 bg-white dark:bg-gray-800 rounded-[16px] overflow-hidden">
+		<div class="mb-1 bg-white dark:bg-gray-900 rounded-[16px] overflow-hidden">
 			<div class="p-1">
 				<div class="flex justify-between">
 					<div class="flex gap-1">
@@ -66,7 +88,10 @@
 							{languages}
 						/>
 						<ButtonCopy text={translate.sentences.trans} />
-						<ButtonTTS text={translate.sentences.trans} lang={$persistentStore.targetLang} />
+						<ButtonTTS
+							text={translate.sentences.trans}
+							lang={$persistentStore.targetLang}
+						/>
 					</div>
 					<div class="flex gap-1">
 						<ButtonExpand
@@ -83,7 +108,9 @@
 					class="p-2 whitespace-pre-line max-h-80 overflow-y-auto scrollbar"
 					transition:slide|local={{ duration: 150, easing: cubicInOut }}
 				>
-					<div class="text-base">{translate.sentences.trans}</div>
+					<div bind:this={elemTrans} class={elemTransLines > 3 ? 'text-sm' : 'text-base'}>
+						{translate.sentences.trans}
+					</div>
 					{#if translate.sentences.translit && $persistentStore.showTransliteration}
 						<div class="mt-2 text-sm text-gray-500">{translate.sentences.translit}</div>
 					{/if}
@@ -139,7 +166,7 @@
 			{#each tabs as item}
 				{#if activeTab === item.tab}
 					<div transition:slide|local={{ duration: 250, easing: cubicInOut }}>
-						<svelte:component this={item.component} {translate}	/>
+						<svelte:component this={item.component} {translate} />
 					</div>
 				{/if}
 			{/each}
@@ -159,8 +186,10 @@ import { cubicInOut } from 'svelte/easing';
 import { persistentStore } from '~/common/store';
 import { store, selectedText } from '../store';
 import { languages } from '~/common/settings';
+import { getMessage } from '~/common/browserApi';
 import SelectLang from '~/lib/SelectLang.svelte';
 import ButtonTab from '~/lib/ButtonTab.svelte';
+import ButtonImage from '~/lib/ButtonImage.svelte';
 import Dictionary from './Dictionary.svelte';
 import Definitions from './Definitions.svelte';
 import Examples from './Examples.svelte';
@@ -169,25 +198,40 @@ import ButtonTTS from './ButtonTTS.svelte';
 import ButtonExpand from './ButtonExpand.svelte';
 import { historyAdd } from '~/common/history';
 import Icon from '~/lib/Icon.svelte';
-import { heroChevronDown, heroArrowTopRightOnSquare } from '~/icons/heroicons';
+import {
+	heroChevronDown,
+	heroArrowTopRightOnSquare,
+	heroPencilSquare,
+	heroCheck,
+} from '~/icons/heroicons';
 
 const dispatch = createEventDispatcher();
 
 let originalOpen = $persistentStore.showOriginalText,
 	translateOpen = true,
-	activeTab = 0;
+	activeTab = 0,
+	elemOrig,
+	elemTrans,
+	elemTransLines,
+	elemOrigLines,
+	isOrigContenteditable = false;
+
+const getElemLines = elem => elem.offsetHeight / parseInt(getComputedStyle(elem, null).lineHeight);
+
+$: if (elemOrig) elemOrigLines = getElemLines(elemOrig);
+$: if (elemTrans) elemTransLines = getElemLines(elemTrans);
 
 const fetchTranslate = async (sourceLang, targetLang, selectedText) => {
 	try {
 		const content = {
 			sourceLang,
 			targetLang,
-			selectedText
+			selectedText,
 		};
 
 		const response = await chrome.runtime.sendMessage({
 			type: 'getTranslate',
-			content
+			content,
 		});
 
 		return response;
@@ -199,14 +243,13 @@ const fetchTranslate = async (sourceLang, targetLang, selectedText) => {
 
 const getTranslate = async () => {
 	const sentences = {};
-    const targetLang = $persistentStore.targetLang;
-    const selectedText = $store.selectedText;
-    const sourceLang = $store.sourceLang;
+	const targetLang = $persistentStore.targetLang;
+	const selectedText = $store.selectedText;
+	const sourceLang = $store.sourceLang;
 
-	const cached = $store.cacheTranslate.find(i =>
-		i.sentences.orig === selectedText &&
-		i.targetLang === targetLang &&
-		i.src === sourceLang
+	const cached = $store.cacheTranslate.find(
+		i =>
+			i.sentences.orig === selectedText && i.targetLang === targetLang && i.src === sourceLang
 	);
 
 	let translate;
@@ -233,7 +276,7 @@ const getTranslate = async () => {
 			sourceLang: $store.sourceLang,
 			targetLang,
 			orig: sentences.orig,
-			trans: sentences.trans
+			trans: sentences.trans,
 		});
 	}
 
@@ -270,6 +313,21 @@ const tabs = [
 
 const tabHandler = tab => {
 	activeTab = activeTab === tab ? 0 : tab;
+};
+
+const origTextEdit = () => {
+	if (isOrigContenteditable) {
+		isOrigContenteditable = false;
+		elemOrig.removeAttribute('contenteditable');
+		elemOrig.innerText = elemOrig.innerText.trim();
+		if ($store.selectedText !== elemOrig.innerText) {
+			$store.selectedText = elemOrig.innerText;
+		}
+	} else {
+		isOrigContenteditable = true;
+		elemOrig.setAttribute('contenteditable', true);
+		elemOrig.focus();
+	}
 };
 
 onMount(() => {

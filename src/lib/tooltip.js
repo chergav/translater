@@ -52,6 +52,7 @@ export const tooltip = (element, { title = '', placement = 'top', delay = 500 } 
 		destroy() {
 			element.removeEventListener('pointerenter', createTooltip);
 			element.removeEventListener('pointerleave', removeTooltip);
+			removeTooltip();
 		}
 	};
 };

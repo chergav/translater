@@ -7,7 +7,7 @@
 		text-gray-800
 		bg-gray-100
 		dark:text-white
-		dark:bg-gray-900
+		dark:bg-gray-950
 		text-base
 	"
 >
@@ -30,7 +30,7 @@
 				{/each}
 			</div>
 		</div>
-		<div class="w-full overflow-hidden bg-white dark:bg-gray-800 rounded-[16px]">
+		<div class="w-full overflow-hidden bg-white dark:bg-gray-900 rounded-[16px]">
 			{#each tabs as item}
 				{#if activeTab === item.tab}
 					<svelte:component this={item.component} />

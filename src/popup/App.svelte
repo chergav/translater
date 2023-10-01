@@ -23,8 +23,6 @@
 	/>
 </div>
 
-<!-- <hr class="border-gray-300 dark:border-gray-700" /> -->
-
 <div class="p-3">
 	<a
 		href="https://github.com/chergav/translater"

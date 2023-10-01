@@ -3,7 +3,7 @@
         "message": "Translater - 선택한 텍스트 번역"
     },
     "app_description": {
-        "message": "밝고 어두운 테마로 Google 번역으로 선택한 텍스트 번역"
+        "message": "밝은 테마와 어두운 테마로 선택한 텍스트를 Google 번역으로 번역하세요"
     },
     "context_menus_title": {
         "message": "선택한 텍스트 번역"
@@ -32,16 +32,16 @@
         "message": "역사"
     },
     "options_inline_button_show": {
-        "message": "텍스트 선택 시 버튼 표시"
+        "message": "텍스트가 선택되면 버튼 표시"
     },
     "options_text_field_button_show": {
         "message": "텍스트 필드에 버튼 표시"
     },
     "options_hide_button_on_sites": {
-        "message": "다음 사이트에서 버튼 숨기기:"
+        "message": "다음 사이트에서 버튼을 숨기세요:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "제외하고 싶은 사이트의 팝업창 메뉴를 이용하여 사이트를 추가할 수 있습니다."
+        "message": "제외하려는 사이트의 팝업창 메뉴를 이용하여 사이트를 추가할 수 있습니다."
     },
     "options_show_original_text": {
         "message": "원본 텍스트 표시"
@@ -50,7 +50,7 @@
         "message": "음역 표시"
     },
     "options_lock_popup_window": {
-        "message": "잠금 팝업 창"
+        "message": "팝업창 잠금"
     },
     "options_lock_popup_window_hint": {
         "message": "활성화된 경우 외부 클릭 시 팝업이 닫히지 않습니다."
@@ -59,10 +59,10 @@
         "message": "역사의 길이"
     },
     "options_records_in_history": {
-        "message": "역사의 항목:"
+        "message": "역사 항목:"
     },
     "options_history_enable": {
-        "message": "기록 사용"
+        "message": "기록 활성화"
     },
     "options_clear_history": {
         "message": "기록 삭제"
@@ -74,7 +74,7 @@
         "message": "더"
     },
     "text_collapse": {
-        "message": "축소"
+        "message": "접기"
     },
     "target_lang_label": {
         "message": "다음으로 번역:"
@@ -98,7 +98,7 @@
         "message": "창 잠금"
     },
     "popup_menu_unlock_window": {
-        "message": "잠금 해제 창"
+        "message": "창 잠금 해제"
     },
     "popup_menu_show_translate_button": {
         "message": "번역 버튼 표시"
@@ -125,28 +125,34 @@
         "message": "클립 보드에 복사"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "복사는 HTTP 사이트에서 지원되지 않습니다."
+        "message": "HTTP 사이트에서는 복사가 지원되지 않습니다."
     },
     "tooltip_copyed": {
-        "message": "복사!"
+        "message": "복사되었습니다!"
     },
     "tooltip_copy_error": {
         "message": "복사 오류!"
     },
     "tooltip_listen_to_the_text": {
-        "message": "텍스트 듣기"
+        "message": "문자 듣기"
     },
     "tooltip_listen_stop": {
         "message": "멈추다"
     },
     "tooltip_listen_language_is_not_support": {
-        "message": "언어가 지원되지 않습니다"
+        "message": "언어는 지원되지 않습니다"
     },
     "tooltip_go_back": {
         "message": "뒤쪽에"
     },
     "tooltip_go_forward": {
         "message": "앞으로"
+    },
+    "tooltip_edit_text": {
+        "message": "텍스트 편집"
+    },
+    "tooltip_translate_again": {
+        "message": "다시 번역하다"
     },
     "date_today": {
         "message": "오늘"
@@ -179,7 +185,7 @@
         "message": "바스크 사람"
     },
     "supported_languages_be": {
-        "message": "벨라루스어"
+        "message": "벨로루시어"
     },
     "supported_languages_bn": {
         "message": "벵골 사람"
@@ -197,7 +203,7 @@
         "message": "세부아노어"
     },
     "supported_languages_ny": {
-        "message": "체와"
+        "message": "츄와"
     },
     "supported_languages_zh_CN": {
         "message": "중국어 (간체"
@@ -278,7 +284,7 @@
         "message": "아이슬란드어"
     },
     "supported_languages_ig": {
-        "message": "이그보어"
+        "message": "이보어"
     },
     "supported_languages_id": {
         "message": "인도네시아 인"
@@ -374,7 +380,7 @@
         "message": "포르투갈 인"
     },
     "supported_languages_pa": {
-        "message": "펀잡어"
+        "message": "펀자브어"
     },
     "supported_languages_ps": {
         "message": "푸쉬토"
@@ -395,13 +401,13 @@
         "message": "세르비아 사람"
     },
     "supported_languages_sn": {
-        "message": "쇼나어"
+        "message": "쇼나"
     },
     "supported_languages_sd": {
         "message": "신디어"
     },
     "supported_languages_si": {
-        "message": "싱할라어"
+        "message": "신할라어"
     },
     "supported_languages_sk": {
         "message": "슬로바키아 사람"
@@ -410,7 +416,7 @@
         "message": "슬로베니아"
     },
     "supported_languages_so": {
-        "message": "소말리"
+        "message": "소말리아어"
     },
     "supported_languages_sx": {
         "message": "소토어"
@@ -431,7 +437,7 @@
         "message": "타갈로그어"
     },
     "supported_languages_tg": {
-        "message": "다지키어"
+        "message": "타지키어"
     },
     "supported_languages_ta": {
         "message": "타밀 사람"
@@ -452,7 +458,7 @@
         "message": "우르두어"
     },
     "supported_languages_uz": {
-        "message": "우즈벡"
+        "message": "우즈벡어"
     },
     "supported_languages_vi": {
         "message": "베트남어"
