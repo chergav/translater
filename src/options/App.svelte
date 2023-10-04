@@ -6,7 +6,7 @@
 		items-center
 		text-gray-800
 		bg-gray-100
-		dark:text-white
+		dark:text-gray-200
 		dark:bg-gray-950
 		text-base
 	"

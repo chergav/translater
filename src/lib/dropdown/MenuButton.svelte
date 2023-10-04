@@ -1,7 +1,11 @@
-<!-- svelte-ignore a11y-click-events-have-key-events -->
-<div on:click={() => {
-	$menuOpen = !$menuOpen;
-}}>
+<div
+	role="button"
+	tabindex="0"
+	on:click={() => {
+		$menuOpen = !$menuOpen;
+	}}
+	on:keypress
+>
 	<slot />
 </div>
 

@@ -10,7 +10,7 @@
 			flex-row
 			text-sm
 			text-gray-800
-			dark:text-white
+			dark:text-gray-200
 			text-start
 			bg-gray-100
 			dark:bg-gray-950
@@ -28,6 +28,8 @@
 	>
 		<div class="w-full">
 			<header
+				role="toolbar"
+				tabindex="-1"
 				class="
 					mb-1
 					flex

@@ -11,7 +11,7 @@
 			bg-gray-200
 			text-gray-800
 			dark:bg-gray-700
-			dark:text-white
+			dark:text-gray-200
 			shadow-md
 			z-[9999999]
 		"

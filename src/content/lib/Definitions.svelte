@@ -58,6 +58,8 @@
 											{#each entry.synonym as synonym}
 												<!-- svelte-ignore a11y-click-events-have-key-events -->
 												<span
+													role="button"
+													tabindex="0"
 													class="
 													mr-1
 													mb-1
@@ -82,6 +84,8 @@
 											{#each entry.synonym as synonym}
 												<!-- svelte-ignore a11y-click-events-have-key-events -->
 												<span
+													role="button"
+													tabindex="0"
 													class="
 													mr-1
 													mb-1

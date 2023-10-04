@@ -1,4 +1,4 @@
-<label class="text-gray-800 dark:text-white">
+<label class="text-gray-800 dark:text-gray-200">
 	<span class="select-none {label ? 'mr-2' : ''}">{label}</span>
 	<select
 		class="
@@ -14,7 +14,7 @@
 			dark:bg-gray-900
 			dark:border-gray-800
 			dark:placeholder-gray-400
-			dark:text-white
+			dark:text-gray-200
 			dark:focus:ring-gray-500
 			dark:focus:ring-opacity-50
 			dark:focus:border-gray-500

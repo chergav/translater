@@ -4,7 +4,7 @@
 			bg-white
 			text-gray-800
 			dark:bg-gray-900
-			dark:text-white
+			dark:text-gray-200
 			border
 			border-gray-100
 			dark:border-gray-800

@@ -1,9 +1,10 @@
-<!-- svelte-ignore a11y-click-events-have-key-events -->
 <div
-	class=""
+	role="button"
+	tabindex="0"
 	on:click={() => {
 		if (menuClose) $menuOpen = false;
 	}}
+	on:keypress
 >
 	<slot />
 </div>

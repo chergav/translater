@@ -11,7 +11,7 @@
 		select-none
 		{small ? 'text-sm' : 'text-base'}
 		text-gray-900
-		dark:text-white
+		dark:text-gray-200
 		{active ? 'bg-sky-200 dark:bg-sky-900' : 'hover:bg-gray-900/10 dark:hover:bg-white/10'}
 		transition-all
 		{className}

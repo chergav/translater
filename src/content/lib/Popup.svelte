@@ -294,19 +294,19 @@ const tabs = [
 	{
 		tab: 1,
 		srcKey: 'dict',
-		label: chrome.i18n.getMessage('popup_dictionary'),
+		label: getMessage('popup_dictionary'),
 		component: Dictionary,
 	},
 	{
 		tab: 2,
 		srcKey: 'definitions',
-		label: chrome.i18n.getMessage('popup_definitions'),
+		label: getMessage('popup_definitions'),
 		component: Definitions,
 	},
 	{
 		tab: 3,
 		srcKey: 'examples',
-		label: chrome.i18n.getMessage('popup_examples'),
+		label: getMessage('popup_examples'),
 		component: Examples,
 	},
 ];

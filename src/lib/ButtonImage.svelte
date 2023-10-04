@@ -7,7 +7,7 @@
 		justify-start
 		{small ? 'text-sm' : 'text-base'}
 		text-gray-800
-		dark:text-white
+		dark:text-gray-200
 		bg-transparent
 		enabled:hover:bg-gray-900/10
 		enabled:dark:hover:bg-white/10

@@ -10,7 +10,7 @@
 				scrollbar
 			"
 		>
-			<table class="w-full text-sm text-gray-800 dark:text-white">
+			<table class="w-full text-sm text-gray-800 dark:text-gray-200">
 				<tbody>
 					{#each translate.dict as dict, index}
 						<tr>
@@ -33,9 +33,9 @@
 									{#each entry.reverse_translation as reverse_translation, i}
 										{@const lastIndex = entry.reverse_translation.length - 1}
 										<div class="inline-flex flex-wrap">
-											<!-- svelte-ignore a11y-click-events-have-key-events -->
-											<!-- svelte-ignore a11y-mouse-events-have-key-events -->
 											<span
+												role="button"
+												tabindex="0"
 												class="
 												cursor-pointer
 												rounded-md
@@ -55,6 +55,7 @@
 												on:click={() => {
 													$store.selectedText = reverse_translation;
 												}}
+												on:keypress
 												on:mouseenter={() => {
 													currentWord = reverse_translation;
 												}}
