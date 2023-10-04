@@ -1,4 +1,5 @@
-{#await getPermission() then isPerm}
+{#key update}
+	{#await getPermission() then isPerm}
 	{#if !isPerm}
 		<div class="p-3 flex items-center justify-between">
 			<div class="flex items-center">
@@ -65,9 +66,8 @@
 			</a>
 		</div>
 	{/if}
-{/await}
-
-
+	{/await}
+{/key}
 
 <script context="module">
 import { getMessage, getURL } from '~/common/browserApi';
@@ -84,6 +84,8 @@ import { languages } from '~/common/settings';
 import SelectLang from '~/lib/SelectLang.svelte';
 import ButtonImage from '~/lib/ButtonImage.svelte';
 
+let update = false;
+
 const openOptionsPage = () => {
 	chrome.runtime.openOptionsPage();
 };
@@ -93,7 +95,10 @@ $: document.documentElement.className = $themeClass;
 const optPerm = { origins: ['<all_urls>'] };
 
 const requestPermission = async () => {
-	await chrome.permissions.request(optPerm);
+	const allow = await chrome.permissions.request(optPerm);
+	if (allow) {
+		update = true;
+	}
 };
 
 const getPermission = async () => await chrome.permissions.contains(optPerm);
