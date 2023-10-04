@@ -53,7 +53,7 @@
         "message": "Lukusta hüpikaken"
     },
     "options_lock_popup_window_hint": {
-        "message": "Kui see on lubatud, hüpikaken väljapoole klõpsamisel ei sulgu"
+        "message": "Kui see on lubatud, ei sulgu hüpikaken väljapoole klõpsamisel"
     },
     "options_history_length": {
         "message": "Ajaloo pikkus"
@@ -159,6 +159,15 @@
     },
     "date_yesterday": {
         "message": "eile"
+    },
+    "forefox_perm_header": {
+        "message": "Luba käivitamine Firefoxis"
+    },
+    "forefox_perm_text": {
+        "message": "Laiendus nõuab veebisaitidele juurdepääsuks ja Firefoxi brauseris tõlkimiseks teie luba."
+    },
+    "forefox_perm_button": {
+        "message": "Lubade haldamine"
     },
     "select_language_auto": {
         "message": "Tuvasta keel"
@@ -269,10 +278,10 @@
         "message": "Havai"
     },
     "supported_languages_he": {
-        "message": "heebrea keel"
+        "message": "heebrea"
     },
     "supported_languages_iw": {
-        "message": "heebrea keel"
+        "message": "heebrea"
     },
     "supported_languages_hi": {
         "message": "hindi"
@@ -296,7 +305,7 @@
         "message": "itaalia keel"
     },
     "supported_languages_ja": {
-        "message": "Jaapani"
+        "message": "jaapanlane"
     },
     "supported_languages_jv": {
         "message": "jaava keel"
@@ -458,7 +467,7 @@
         "message": "urdu"
     },
     "supported_languages_uz": {
-        "message": "usbeki"
+        "message": "usbeki keel"
     },
     "supported_languages_vi": {
         "message": "vietnamlane"

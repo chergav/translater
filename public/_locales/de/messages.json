@@ -160,6 +160,15 @@
     "date_yesterday": {
         "message": "gestern"
     },
+    "forefox_perm_header": {
+        "message": "Start in Firefox zulassen"
+    },
+    "forefox_perm_text": {
+        "message": "Die Erweiterung erfordert Ihre Erlaubnis, auf Websites zuzugreifen und im Firefox-Browser zu übersetzen."
+    },
+    "forefox_perm_button": {
+        "message": "Berechtigungen verwalten"
+    },
     "select_language_auto": {
         "message": "Sprache erkennen"
     },

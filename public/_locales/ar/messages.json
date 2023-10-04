@@ -160,6 +160,15 @@
     "date_yesterday": {
         "message": "أمس"
     },
+    "forefox_perm_header": {
+        "message": "السماح بالتشغيل في Firefox"
+    },
+    "forefox_perm_text": {
+        "message": "يتطلب الامتداد إذنك للوصول إلى مواقع الويب والترجمة في متصفح Firefox."
+    },
+    "forefox_perm_button": {
+        "message": "إدارة الأذونات"
+    },
     "select_language_auto": {
         "message": "اكتشاف اللغة"
     },

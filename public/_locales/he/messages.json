@@ -160,6 +160,15 @@
     "date_yesterday": {
         "message": "אתמול"
     },
+    "forefox_perm_header": {
+        "message": "אפשר הפעלה בפיירפוקס"
+    },
+    "forefox_perm_text": {
+        "message": "התוסף דורש אישור ממך לגשת לאתרים ולתרגם בדפדפן Firefox."
+    },
+    "forefox_perm_button": {
+        "message": "נהל הרשאות"
+    },
     "select_language_auto": {
         "message": "איתור שפה"
     },

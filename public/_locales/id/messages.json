@@ -160,6 +160,15 @@
     "date_yesterday": {
         "message": "Kemarin"
     },
+    "forefox_perm_header": {
+        "message": "Izinkan peluncuran di Firefox"
+    },
+    "forefox_perm_text": {
+        "message": "Ekstensi ini memerlukan izin Anda untuk mengakses situs web dan menerjemahkan di browser Firefox."
+    },
+    "forefox_perm_button": {
+        "message": "Kelola izin"
+    },
     "select_language_auto": {
         "message": "mendeteksi bahasa"
     },

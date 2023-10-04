@@ -160,6 +160,15 @@
     "date_yesterday": {
         "message": "Ieri"
     },
+    "forefox_perm_header": {
+        "message": "Consenti l'avvio in Firefox"
+    },
+    "forefox_perm_text": {
+        "message": "L'estensione richiede la tua autorizzazione per accedere ai siti Web e tradurre nel browser Firefox."
+    },
+    "forefox_perm_button": {
+        "message": "Gestisci le autorizzazioni"
+    },
     "select_language_auto": {
         "message": "rileva lingua"
     },
@@ -332,7 +341,7 @@
         "message": "lituano"
     },
     "supported_languages_lb": {
-        "message": "lussemburghese"
+        "message": "Lussemburghese"
     },
     "supported_languages_mk": {
         "message": "macedone"

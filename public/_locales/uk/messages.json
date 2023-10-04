@@ -160,6 +160,15 @@
     "date_yesterday": {
         "message": "вчора"
     },
+    "forefox_perm_header": {
+        "message": "Дозволити запуск у Firefox"
+    },
+    "forefox_perm_text": {
+        "message": "Розширенню потрібен ваш дозвіл на доступ до веб-сайтів і переклад у браузері Firefox."
+    },
+    "forefox_perm_button": {
+        "message": "Керувати дозволами"
+    },
     "select_language_auto": {
         "message": "Визначити мову"
     },

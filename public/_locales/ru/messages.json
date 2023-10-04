@@ -56,10 +56,10 @@
         "message": "Если включено, всплывающее окно не закроется при нажатии снаружи."
     },
     "options_history_length": {
-        "message": "Продолжительность истории"
+        "message": "Длинна истории"
     },
     "options_records_in_history": {
-        "message": "Записи в истории:"
+        "message": "Записей в истории:"
     },
     "options_history_enable": {
         "message": "Включить историю"
@@ -159,6 +159,15 @@
     },
     "date_yesterday": {
         "message": "вчера"
+    },
+    "forefox_perm_header": {
+        "message": "Разрешить запуск в Firefox"
+    },
+    "forefox_perm_text": {
+        "message": "Расширению требуется ваше разрешение на доступ к веб-сайтам и перевод в браузере Firefox."
+    },
+    "forefox_perm_button": {
+        "message": "Управление разрешениями"
     },
     "select_language_auto": {
         "message": "определить язык"

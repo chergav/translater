@@ -3,7 +3,7 @@
         "message": "Translater - 所选文本的翻译"
     },
     "app_description": {
-        "message": "使用具有浅色和深色主题的谷歌翻译翻译选定的文本"
+        "message": "使用浅色和深色主题的谷歌翻译翻译选定的文本"
     },
     "context_menus_title": {
         "message": "翻译选定的文本"
@@ -152,13 +152,22 @@
         "message": "编辑文字"
     },
     "tooltip_translate_again": {
-        "message": "再翻译一次"
+        "message": "再次翻译"
     },
     "date_today": {
         "message": "今天"
     },
     "date_yesterday": {
         "message": "昨天"
+    },
+    "forefox_perm_header": {
+        "message": "允许在 Firefox 中启动"
+    },
+    "forefox_perm_text": {
+        "message": "该扩展程序需要您的许可才能访问网站并在 Firefox 浏览器中进行翻译。"
+    },
+    "forefox_perm_button": {
+        "message": "管理权限"
     },
     "select_language_auto": {
         "message": "检测语言"

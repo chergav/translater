@@ -160,6 +160,15 @@
     "date_yesterday": {
         "message": "hier"
     },
+    "forefox_perm_header": {
+        "message": "Autoriser le lancement dans Firefox"
+    },
+    "forefox_perm_text": {
+        "message": "L'extension nécessite votre autorisation pour accéder aux sites Web et traduire dans le navigateur Firefox."
+    },
+    "forefox_perm_button": {
+        "message": "Gérer les autorisations"
+    },
     "select_language_auto": {
         "message": "détecter la langue"
     },

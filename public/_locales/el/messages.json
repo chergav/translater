@@ -160,6 +160,15 @@
     "date_yesterday": {
         "message": "εχθές"
     },
+    "forefox_perm_header": {
+        "message": "Να επιτρέπεται η εκκίνηση στον Firefox"
+    },
+    "forefox_perm_text": {
+        "message": "Η επέκταση απαιτεί την άδειά σας για πρόσβαση σε ιστότοπους και μετάφραση στο πρόγραμμα περιήγησης Firefox."
+    },
+    "forefox_perm_button": {
+        "message": "Διαχείριση δικαιωμάτων"
+    },
     "select_language_auto": {
         "message": "εντοπισμός γλώσσας"
     },

@@ -53,7 +53,7 @@
         "message": "ポップアップウィンドウをロックする"
     },
     "options_lock_popup_window_hint": {
-        "message": "有効にすると、外側をクリックしてもポップアップは閉じません。"
+        "message": "有効にすると、外側をクリックしてもポップアップが閉じなくなります"
     },
     "options_history_length": {
         "message": "歴史の長さ"
@@ -159,6 +159,15 @@
     },
     "date_yesterday": {
         "message": "昨日"
+    },
+    "forefox_perm_header": {
+        "message": "Firefox での起動を許可する"
+    },
+    "forefox_perm_text": {
+        "message": "この拡張機能を使用するには、Web サイトにアクセスし、Firefox ブラウザーで翻訳するための許可が必要です。"
+    },
+    "forefox_perm_button": {
+        "message": "権限の管理"
     },
     "select_language_auto": {
         "message": "言語を検出"

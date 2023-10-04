@@ -61,7 +61,8 @@ export default defineManifest(() => ({
 					id: 'translater@chergav',
 					strict_min_version: '109.0'
 				}
-			}
+			},
+			optional_permissions: ['<all_urls>']
 		} :
 		{ update_url: 'https://raw.githubusercontent.com/chergav/translater/master/extension/translater.xml' }
 	)

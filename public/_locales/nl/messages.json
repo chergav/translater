@@ -160,6 +160,15 @@
     "date_yesterday": {
         "message": "gisteren"
     },
+    "forefox_perm_header": {
+        "message": "Starten in Firefox toestaan"
+    },
+    "forefox_perm_text": {
+        "message": "De extensie vereist uw toestemming om websites te openen en te vertalen in de Firefox-browser."
+    },
+    "forefox_perm_button": {
+        "message": "Machtigingen beheren"
+    },
     "select_language_auto": {
         "message": "taal detecteren"
     },

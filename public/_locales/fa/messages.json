@@ -160,6 +160,15 @@
     "date_yesterday": {
         "message": "دیروز"
     },
+    "forefox_perm_header": {
+        "message": "اجازه راه اندازی در فایرفاکس"
+    },
+    "forefox_perm_text": {
+        "message": "افزونه برای دسترسی به وب سایت ها و ترجمه در مرورگر فایرفاکس به اجازه شما نیاز دارد."
+    },
+    "forefox_perm_button": {
+        "message": "مجوزها را مدیریت کنید"
+    },
     "select_language_auto": {
         "message": "تشخیص زبان"
     },
@@ -395,7 +404,7 @@
         "message": "ساموآ"
     },
     "supported_languages_gd": {
-        "message": "گالیک اسکاتلندی"
+        "message": "گیلیک اسکاتلندی"
     },
     "supported_languages_sr": {
         "message": "صربی"
@@ -464,7 +473,7 @@
         "message": "ویتنامی"
     },
     "supported_languages_cy": {
-        "message": "ولزی"
+        "message": "ولز"
     },
     "supported_languages_xh": {
         "message": "Xosa"

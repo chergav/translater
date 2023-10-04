@@ -160,6 +160,15 @@
     "date_yesterday": {
         "message": "ontem"
     },
+    "forefox_perm_header": {
+        "message": "Permitir inicialização no Firefox"
+    },
+    "forefox_perm_text": {
+        "message": "A extensão requer sua permissão para acessar sites e traduzir no navegador Firefox."
+    },
+    "forefox_perm_button": {
+        "message": "Gerenciar Permissões"
+    },
     "select_language_auto": {
         "message": "detectar idioma"
     },
@@ -479,7 +488,7 @@
         "message": "zulu"
     },
     "supported_languages_qu": {
-        "message": "Quechua"
+        "message": "Quéchua"
     },
     "supported_languages_om": {
         "message": "Oromo"

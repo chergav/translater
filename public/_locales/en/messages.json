@@ -160,6 +160,15 @@
     "date_yesterday": {
         "message": "yesterday"
     },
+    "forefox_perm_header": {
+        "message": "Allow launch in Firefox"
+    },
+    "forefox_perm_text": {
+        "message": "The extension requires your permission to access websites and translate in the Firefox browser."
+    },
+    "forefox_perm_button": {
+        "message": "Manage permissions"
+    },
     "select_language_auto": {
         "message": "detect language"
     },

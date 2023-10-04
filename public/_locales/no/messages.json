@@ -160,6 +160,15 @@
     "date_yesterday": {
         "message": "i går"
     },
+    "forefox_perm_header": {
+        "message": "Tillat oppstart i Firefox"
+    },
+    "forefox_perm_text": {
+        "message": "Utvidelsen krever din tillatelse for å få tilgang til nettsteder og oversette i Firefox-nettleseren."
+    },
+    "forefox_perm_button": {
+        "message": "Administrer tillatelser"
+    },
     "select_language_auto": {
         "message": "oppdage språk"
     },
@@ -338,7 +347,7 @@
         "message": "makedonsk"
     },
     "supported_languages_mg": {
-        "message": "Madagaskar"
+        "message": "madagaskisk"
     },
     "supported_languages_ms": {
         "message": "malaysisk"

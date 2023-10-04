@@ -160,6 +160,15 @@
     "date_yesterday": {
         "message": "어제"
     },
+    "forefox_perm_header": {
+        "message": "Firefox에서 실행 허용"
+    },
+    "forefox_perm_text": {
+        "message": "확장 프로그램을 사용하려면 웹사이트에 액세스하고 Firefox 브라우저에서 번역할 수 있는 권한이 필요합니다."
+    },
+    "forefox_perm_button": {
+        "message": "권한 관리"
+    },
     "select_language_auto": {
         "message": "언어를 감지"
     },

@@ -160,6 +160,15 @@
     "date_yesterday": {
         "message": "i går"
     },
+    "forefox_perm_header": {
+        "message": "Tillåt start i Firefox"
+    },
+    "forefox_perm_text": {
+        "message": "Tillägget kräver ditt tillstånd för att komma åt webbplatser och översätta i webbläsaren Firefox."
+    },
+    "forefox_perm_button": {
+        "message": "Hantera behörigheter"
+    },
     "select_language_auto": {
         "message": "Upptäck språk"
     },

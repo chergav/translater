@@ -160,6 +160,15 @@
     "date_yesterday": {
         "message": "Dün"
     },
+    "forefox_perm_header": {
+        "message": "Firefox'ta başlatmaya izin ver"
+    },
+    "forefox_perm_text": {
+        "message": "Uzantı, web sitelerine erişmek ve Firefox tarayıcısında çeviri yapmak için izninizi gerektirir."
+    },
+    "forefox_perm_button": {
+        "message": "İzinleri yönet"
+    },
     "select_language_auto": {
         "message": "dili tespit et"
     },
@@ -248,7 +257,7 @@
         "message": "Galiçyaca"
     },
     "supported_languages_ka": {
-        "message": "Gürcü"
+        "message": "Gürcüce"
     },
     "supported_languages_de": {
         "message": "Almanca"
@@ -347,7 +356,7 @@
         "message": "Malayalamca"
     },
     "supported_languages_mt": {
-        "message": "Malta dili"
+        "message": "Malta"
     },
     "supported_languages_mi": {
         "message": "Maori dili"

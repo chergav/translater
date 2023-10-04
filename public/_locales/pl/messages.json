@@ -160,6 +160,15 @@
     "date_yesterday": {
         "message": "Wczoraj"
     },
+    "forefox_perm_header": {
+        "message": "Zezwól na uruchomienie w przeglądarce Firefox"
+    },
+    "forefox_perm_text": {
+        "message": "Rozszerzenie wymaga Twojej zgody na dostęp do stron internetowych i tłumaczenie w przeglądarce Firefox."
+    },
+    "forefox_perm_button": {
+        "message": "Zarządzaj uprawnieniami"
+    },
     "select_language_auto": {
         "message": "Wykryj język"
     },
@@ -347,7 +356,7 @@
         "message": "malajalam"
     },
     "supported_languages_mt": {
-        "message": "Maltański"
+        "message": "maltański"
     },
     "supported_languages_mi": {
         "message": "Maoryski"

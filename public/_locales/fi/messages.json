@@ -160,6 +160,15 @@
     "date_yesterday": {
         "message": "eilen"
     },
+    "forefox_perm_header": {
+        "message": "Salli käynnistäminen Firefoxissa"
+    },
+    "forefox_perm_text": {
+        "message": "Laajennus vaatii luvan päästäksesi verkkosivustoille ja kääntääksesi Firefox-selaimessa."
+    },
+    "forefox_perm_button": {
+        "message": "Hallinnoi käyttöoikeuksia"
+    },
     "select_language_auto": {
         "message": "Tunnista kieli"
     },

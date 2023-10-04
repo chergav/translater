@@ -152,13 +152,22 @@
         "message": "編輯文字"
     },
     "tooltip_translate_again": {
-        "message": "再翻譯一次"
+        "message": "再次翻譯"
     },
     "date_today": {
         "message": "今天"
     },
     "date_yesterday": {
         "message": "昨天"
+    },
+    "forefox_perm_header": {
+        "message": "允許在 Firefox 中啟動"
+    },
+    "forefox_perm_text": {
+        "message": "該擴充功能需要您的許可才能存取網站並在 Firefox 瀏覽器中進行翻譯。"
+    },
+    "forefox_perm_button": {
+        "message": "管理權限"
     },
     "select_language_auto": {
         "message": "檢測語言"

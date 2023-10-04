@@ -160,6 +160,15 @@
     "date_yesterday": {
         "message": "ayer"
     },
+    "forefox_perm_header": {
+        "message": "Permitir el inicio en Firefox"
+    },
+    "forefox_perm_text": {
+        "message": "La extensión requiere su permiso para acceder a sitios web y traducir en el navegador Firefox."
+    },
+    "forefox_perm_button": {
+        "message": "Administrar permisos"
+    },
     "select_language_auto": {
         "message": "detectar idioma"
     },
