@@ -8,7 +8,7 @@
 				cursor-pointer
 			"
 		>
-			<input type="radio" class="sr-only peer" value={key} bind:group={selected} />
+			<input class="sr-only peer" type="radio" value={key} bind:group={selected} />
 			<!-- outer circle -->
 			<svg
 				class="
@@ -21,7 +21,7 @@
 					dark:fill-gray-400
 					peer-checked:fill-blue-800
 					peer-checked:dark:fill-blue-200
-					
+
 					peer-focus-visible:outline
 					peer-focus-visible:outline-offset-8
 					peer-focus-visible:outline-gray-600
@@ -32,10 +32,10 @@
 				viewBox="0 0 20 20"
 			>
 				<mask id="cutout">
-					<rect width="100%" height="100%" fill="white" />
-					<circle cx="10" cy="10" r="8" fill="black" />
+					<rect fill="white" height="100%" width="100%" />
+					<circle cx="10" cy="10" fill="black" r="8" />
 				</mask>
-				<circle cx="10" cy="10" r="10" mask="url(#cutout)" />
+				<circle cx="10" cy="10" mask="url(#cutout)" r="10" />
 			</svg>
 			<!-- inner circle -->
 			<svg

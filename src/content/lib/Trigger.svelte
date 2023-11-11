@@ -14,10 +14,11 @@
 	>
 		<button
 			class="p-.5"
+			type="button"
 			on:click={createPopup}
 			use:tooltip={{ title: getMessage('tooltip_translate_text') }}
 		>
-			<Icon filled stroke="none" size="lg" d={customTranslate} />
+			<Icon d={customTranslate} filled size="lg" stroke="none" />
 		</button>
 	</div>
 </div>

@@ -7,7 +7,7 @@
 			cursor-pointer
 		"
 	>
-		<input type="checkbox" class="sr-only peer" bind:checked />
+		<input class="sr-only peer" type="checkbox" bind:checked />
 		<div
 			class="
 				w-[52px]
@@ -62,7 +62,7 @@
 				peer-checked:bg-blue-200
 				peer-checked:dark:bg-blue-800
 			"
-		/>		
+		/>
 		<span class="ml-4 text-gray-900 dark:text-gray-300 select-none">{label}</span>
 	</label>
 	<p class="ml-[68px] text-sm text-gray-500">{hint}</p>

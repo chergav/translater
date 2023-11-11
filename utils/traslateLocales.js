@@ -1,5 +1,4 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
-import fetch from 'node-fetch';
 
 const generateRequestURL = ({ sourceLang = 'en', targetLang = 'auto', text = '' } = {}) => {
 	const searchParams = new URLSearchParams({
@@ -13,7 +12,6 @@ const generateRequestURL = ({ sourceLang = 'en', targetLang = 'auto', text = '' 
 		q: text
 	});
 
-	// return `https://translate.google.com/translate_a/single?${searchParams}`;
 	return `https://translate.googleapis.com/translate_a/single?${searchParams}`;
 };
 

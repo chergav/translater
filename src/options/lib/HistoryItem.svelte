@@ -13,10 +13,10 @@
 		<span>{getLang(item.sourceLang)} -> {getLang(item.targetLang)}</span>
 		<ButtonImage
 			round
+			tooltip={{ title: getMessage('options_delete_history_item'), placement: 'left' }}
 			on:click={() => {
 				deleteHistoryItem(item.time);
 			}}
-			tooltip={{ title: getMessage('options_delete_history_item'), placement: 'left' }}
 		>
 			<Icon d={heroTrash} />
 		</ButtonImage>
@@ -33,6 +33,7 @@
 				underline
 				font-bold
 			"
+			type="button"
 			on:click={() => {
 				truncateOrig = !truncateOrig;
 			}}
@@ -51,6 +52,7 @@
 				underline
 				font-bold
 			"
+			type="button"
 			on:click={() => {
 				truncateTrans = !truncateTrans;
 			}}
@@ -82,7 +84,7 @@ onMount(() => {
 	isOrigCollapsed = elemOrig.scrollHeight > elemOrig.clientHeight;
 	isTransCollapsed = elemTrans.scrollHeight > elemTrans.clientHeight;
 });
-	
+
 const getLang = key => getMessage(`supported_languages_${key.replace('-', '_')}`).toLowerCase();
 
 const deleteHistoryItem = time => {

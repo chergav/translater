@@ -1,0 +1,136 @@
+{
+	"env": {
+		"browser": true,
+		"webextensions": true,
+		"node": true,
+		"es2022": true
+	},
+	"globals": {
+		"__DEV__": "readonly"
+	},
+	"extends": ["eslint:recommended", "plugin:svelte/recommended"],
+	"parserOptions": { "ecmaVersion": "latest", "sourceType": "module" },
+	"plugins": [],
+	"ignorePatterns": ["dist/*", "extension/*"],
+	"rules": {
+		"array-bracket-spacing": ["error", "never"],
+		"arrow-parens": ["error", "as-needed"],
+		"arrow-spacing": ["error", { "before": true, "after": true }],
+		"block-spacing": ["error", "always"],
+		"brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+		"camelcase": ["error", { "properties": "never", "ignoreDestructuring": true }],
+		"comma-dangle": ["error", "never"],
+		"comma-spacing": ["error", { "before": false, "after": true }],
+		"comma-style": ["error", "last"],
+		"computed-property-spacing": ["error", "never", { "enforceForClassMembers": true }],
+		"dot-location": ["error", "property"],
+		"dot-notation": "error",
+		"eol-last": ["error", "always"],
+		"eqeqeq": ["error", "always", { "null": "ignore" }],
+		"func-call-spacing": ["error", "never"],
+		"indent": ["error", "tab"],
+		"key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
+		"keyword-spacing": ["error", { "before": true, "after": true }],
+		"linebreak-style": ["error", "unix"],
+		"lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
+		"max-len": ["error", {
+			"code": 120,
+			"tabWidth": 4,
+			"ignoreUrls": true,
+			"ignoreStrings": true,
+			"ignoreTemplateLiterals": true
+		}],
+		"multiline-ternary": ["error", "always-multiline"],
+		"new-parens": ["error", "always"],
+		"no-multi-spaces": "error",
+		"no-multiple-empty-lines": ["error", { "max": 1 }],
+		"no-trailing-spaces": "error",
+		"no-whitespace-before-property": "error",
+		"object-curly-newline": ["error", { "multiline": true, "consistent": true }],
+		"object-curly-spacing": ["error", "always"],
+		"object-property-newline": ["error", { "allowMultiplePropertiesPerLine": true }],
+		"operator-linebreak": ["error", "after", { "overrides": { "?": "before", ":": "before" } }],
+		"quotes": ["error", "single"],
+		"rest-spread-spacing": ["error", "never"],
+		"semi": ["error", "always"],
+		"semi-spacing": ["error", { "before": false, "after": true }],
+		"semi-style": ["error", "last"],
+		"space-before-blocks": ["error", "always"],
+		"space-before-function-paren": ["error", { "anonymous": "always", "named": "never", "asyncArrow": "always" }],
+		"space-in-parens": ["error", "never"],
+		"space-infix-ops": "error",
+		"space-unary-ops": ["error", { "words": true, "nonwords": false }],
+		"template-curly-spacing": ["error", "never"],
+		"template-tag-spacing": ["error", "never"],
+
+		"svelte/sort-attributes": [
+			"error",
+			{
+				"order": [
+					"this",
+					"bind:this",
+					"id",
+					"name",
+					"slot",
+					{ "match": "/^--/u", "sort": "alphabetical" },
+					["style", "/^style:/u"],
+					"class",
+					{ "match": "/^class:/u", "sort": "alphabetical" },
+					{
+						"match": ["!/:/u", "!/^(?:this|id|name|style|class)$/u", "!/^--/u"],
+						"sort": "alphabetical"
+					},
+					["/^bind:/u", "!bind:this", "/^on:/u"],
+					{ "match": "/^use:/u", "sort": "alphabetical" },
+					{ "match": "/^transition:/u", "sort": "alphabetical" },
+					{ "match": "/^in:/u", "sort": "alphabetical" },
+					{ "match": "/^out:/u", "sort": "alphabetical" },
+					{ "match": "/^animate:/u", "sort": "alphabetical" },
+					{ "match": "/^let:/u", "sort": "alphabetical" }
+				]
+			}
+		],
+		"svelte/button-has-type": [
+			"error",
+			{
+				"button": true,
+				"submit": true,
+				"reset": true
+			}
+		],
+		"svelte/no-useless-mustaches": [
+			"error",
+			{
+				"ignoreIncludesComment": false,
+				"ignoreStringEscape": false
+			}
+		],
+		"svelte/html-quotes": [
+			"error",
+			{
+				"prefer": "double", // or "single"
+				"dynamic": {
+				"quoted": false,
+				"avoidInvalidUnquotedInHTML": false
+				}
+			}
+		],
+		"svelte/mustache-spacing": [
+			"error",
+			{
+				"textExpressions": "never", // or "always"
+				"attributesAndProps": "never", // or "always"
+				"directiveExpressions": "never", // or "always"
+				"tags": {
+					"openingBrace": "never", // or "always"
+					"closingBrace": "never" // or "always" or "always-after-expression"
+				}
+			}
+		],
+		"svelte/no-extra-reactive-curlies": "error",
+		"svelte/shorthand-attribute": ["error", { "prefer": "always" }],
+		"svelte/shorthand-directive": ["error", { "prefer": "always" }],
+		"svelte/spaced-html-comment": ["error", "always"]
+
+	}
+}

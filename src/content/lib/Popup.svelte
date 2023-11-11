@@ -21,15 +21,15 @@
 				<div class="flex justify-between">
 					<div class="flex gap-1">
 						<SelectLang
-							small
-							round
 							auto
+							{languages}
+							round
+							small
 							bind:value={$store.sourceLang}
 							on:change={handleTranslate}
-							{languages}
 						/>
 						<ButtonCopy text={translate.sentences.orig} />
-						<ButtonTTS text={translate.sentences.orig} lang={$store.sourceLang} />
+						<ButtonTTS lang={$store.sourceLang} text={translate.sentences.orig} />
 					</div>
 					<div class="flex gap-1">
 						<ButtonExpand
@@ -50,20 +50,21 @@
 						<div
 							bind:this={elemOrig}
 							class={elemOrigLines > 3 ? 'text-sm' : 'text-base'}
+							on:input={() => { console.log(elemOrig.innerText); }}
 						>
 							{translate.sentences.orig}
 						</div>
 						<ButtonImage
-							round
 							class="-mr-1"
+							icon={isOrigContenteditable ? heroCheck : heroPencilSquare}
+							round
 							tooltip={{
 								title: `${
 									isOrigContenteditable
 										? getMessage('tooltip_translate_again')
 										: getMessage('tooltip_edit_text')
-								}`,
+								}`
 							}}
-							icon={isOrigContenteditable ? heroCheck : heroPencilSquare}
 							on:click={origTextEdit}
 						/>
 					</div>
@@ -81,16 +82,16 @@
 				<div class="flex justify-between">
 					<div class="flex gap-1">
 						<SelectLang
-							small
+							{languages}
 							round
+							small
 							bind:value={$persistentStore.targetLang}
 							on:change={handleTranslate}
-							{languages}
 						/>
 						<ButtonCopy text={translate.sentences.trans} />
 						<ButtonTTS
-							text={translate.sentences.trans}
 							lang={$persistentStore.targetLang}
+							text={translate.sentences.trans}
 						/>
 					</div>
 					<div class="flex gap-1">
@@ -125,41 +126,41 @@
 				{#each tabs as item}
 					{#if item.component && translate[item.srcKey]}
 						<ButtonTab
-							small
 							active={activeTab === item.tab}
 							label={item.label}
+							small
 							on:click={() => {
 								tabHandler(item.tab);
 							}}
 						>
 							<Icon
-								d={heroChevronDown}
-								size="sm"
 								class="
 									ml-1
 									{activeTab === item.tab ? 'transform -scale-y-100' : ''}
 								"
+								d={heroChevronDown}
+								size="sm"
 							/>
 						</ButtonTab>
 					{/if}
 				{/each}
 			</div>
-			<div class="h-7 flex items-center">
+			<!-- <div class="h-7 flex items-center">
 				<a
+					class="text-blue-600 visited:text-purple-600 underline"
 					href={`https://translate.google.com/?
 						sl=${$store.sourceLang}&
 						tl=${$persistentStore.targetLang}&
 						text=${encodeURIComponent(translate.sentences.orig)}`}
-					target="_blank"
-					rel="noreferrer"
-					class="text-blue-600 visited:text-purple-600 underline"
+						rel="noreferrer"
+						target="_blank"
 				>
 					<div class="flex items-center">
 						<span>Google Translate</span>
-						<Icon d={heroArrowTopRightOnSquare} class="ml-1" />
+						<Icon class="ml-1" d={heroArrowTopRightOnSquare} />
 					</div>
 				</a>
-			</div>
+			</div> -->
 		</div>
 
 		<div>
@@ -176,6 +177,7 @@
 	<div class="p-2 whitespace-pre-line max-h-96 overflow-y-auto text-sm text-red-500">
 		Something went wrong: {error.message}
 	</div>
+	<!-- eslint-disable-next-line no-unused-vars -->
 	{@const l = console.log(error)}
 {/await}
 
@@ -202,7 +204,7 @@ import {
 	heroChevronDown,
 	heroArrowTopRightOnSquare,
 	heroPencilSquare,
-	heroCheck,
+	heroCheck
 } from '~/icons/heroicons';
 
 const dispatch = createEventDispatcher();
@@ -226,12 +228,12 @@ const fetchTranslate = async (sourceLang, targetLang, selectedText) => {
 		const content = {
 			sourceLang,
 			targetLang,
-			selectedText,
+			selectedText
 		};
 
 		const response = await chrome.runtime.sendMessage({
 			type: 'getTranslate',
-			content,
+			content
 		});
 
 		return response;
@@ -248,8 +250,7 @@ const getTranslate = async () => {
 	const sourceLang = $store.sourceLang;
 
 	const cached = $store.cacheTranslate.find(
-		i =>
-			i.sentences.orig === selectedText && i.targetLang === targetLang && i.src === sourceLang
+		i => i.sentences.orig === selectedText && i.targetLang === targetLang && i.src === sourceLang
 	);
 
 	let translate;
@@ -276,7 +277,7 @@ const getTranslate = async () => {
 			sourceLang: $store.sourceLang,
 			targetLang,
 			orig: sentences.orig,
-			trans: sentences.trans,
+			trans: sentences.trans
 		});
 	}
 
@@ -295,20 +296,20 @@ const tabs = [
 		tab: 1,
 		srcKey: 'dict',
 		label: getMessage('popup_dictionary'),
-		component: Dictionary,
+		component: Dictionary
 	},
 	{
 		tab: 2,
 		srcKey: 'definitions',
 		label: getMessage('popup_definitions'),
-		component: Definitions,
+		component: Definitions
 	},
 	{
 		tab: 3,
 		srcKey: 'examples',
 		label: getMessage('popup_examples'),
-		component: Examples,
-	},
+		component: Examples
+	}
 ];
 
 const tabHandler = tab => {

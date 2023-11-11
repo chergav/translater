@@ -1,6 +1,8 @@
 import { defineManifest } from '@crxjs/vite-plugin';
 import pkg from '../package.json';
 
+const isFirefox = process.env.BROWSER === 'firefox';
+
 export default defineManifest(() => ({
 	manifest_version: 3,
 	name: '__MSG_app_name__',
@@ -9,7 +11,7 @@ export default defineManifest(() => ({
 	author: pkg.author,
 	homepage_url: 'https://github.com/chergav/translater',
 	default_locale: 'en',
-	...(!process.env.FIREFOX && { minimum_chrome_version: '93' }),
+	...(!isFirefox && { minimum_chrome_version: '93' }),
 	icons: {
 		16: 'src/icons/16.png',
 		24: 'src/icons/24.png',
@@ -37,9 +39,9 @@ export default defineManifest(() => ({
 		run_at: 'document_idle',
 		js: ['src/content/index.js']
 	}],
-	background: process.env.FIREFOX ?
-		{ page: 'src/background/index.html' } :
-		{ service_worker: 'src/background/index.js', type: 'module' },
+	background: isFirefox
+		? { page: 'src/background/index.html' }
+		: { service_worker: 'src/background/index.js', type: 'module' },
 	permissions: [
 		'contextMenus',
 		'tabs',
@@ -54,8 +56,8 @@ export default defineManifest(() => ({
 			use_dynamic_url: true
 		}
 	],
-	...(process.env.FIREFOX ?
-		{
+	...(isFirefox
+		? {
 			browser_specific_settings: {
 				gecko: {
 					id: 'translater@chergav',
@@ -63,7 +65,9 @@ export default defineManifest(() => ({
 				}
 			},
 			optional_permissions: ['<all_urls>']
-		} :
-		{ update_url: 'https://raw.githubusercontent.com/chergav/translater/master/extension/translater.xml' }
+		}
+		: {
+			update_url: 'https://raw.githubusercontent.com/chergav/translater/master/extension/translater.xml'
+		}
 	)
 }));

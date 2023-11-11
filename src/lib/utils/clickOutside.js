@@ -21,6 +21,6 @@ export const clickOutside = node => {
 	return {
 		destroy() {
 			document.removeEventListener('mousedown', handleClick, true);
-		},
+		}
 	};
 };

@@ -5,7 +5,7 @@
 			py-[3px]
 			pl-2
 			{small ? 'text-sm' : 'text-base'}
-			{round ? 'rounded-full' : 'rounded-lg' }
+			{round ? 'rounded-full' : 'rounded-lg'}
 			border-gray-300
 			focus:border-indigo-300
 			focus:ring

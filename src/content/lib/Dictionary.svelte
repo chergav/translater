@@ -14,7 +14,7 @@
 				<tbody>
 					{#each translate.dict as dict, index}
 						<tr>
-							<td colspan="2" class="text-blue-600 capitalize pb-1">{dict.pos}</td>
+							<td class="text-blue-600 capitalize pb-1" colspan="2">{dict.pos}</td>
 							{#if index === 0}
 								<td>
 									<span class="text-gray-500 text-xs">
@@ -34,8 +34,6 @@
 										{@const lastIndex = entry.reverse_translation.length - 1}
 										<div class="inline-flex flex-wrap">
 											<span
-												role="button"
-												tabindex="0"
 												class="
 												cursor-pointer
 												rounded-md
@@ -52,6 +50,8 @@
 													? 'text-gray-800 bg-gray-200 dark:bg-gray-700 dark:text-gray-300'
 													: ''}
 											"
+												role="button"
+												tabindex="0"
 												on:click={() => {
 													$store.selectedText = reverse_translation;
 												}}
@@ -89,7 +89,7 @@
 						{/each}
 						{#if !last(translate.dict, index)}
 							<tr>
-								<td colspan="3" class="p-2" />
+								<td class="p-2" colspan="3" />
 							</tr>
 						{/if}
 					{/each}

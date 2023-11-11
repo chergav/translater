@@ -7,7 +7,7 @@
 			cursor-pointer
 		"
 	>
-		<input type="checkbox" class="sr-only peer" {name} bind:checked />
+		<input {name} class="sr-only peer" type="checkbox" bind:checked />
 		<!-- outline -->
 		<div
 			class="
@@ -57,8 +57,8 @@
 					transform: scaleY(-1) translate(7px, -14px) rotate(45deg);
 				}
 			</style>
-			<rect class="mark" width="2" height="6" />
-			<rect class="mark" width="11" height="2" />
+			<rect class="mark" height="6" width="2" />
+			<rect class="mark" height="2" width="11" />
 		</svg>
 		<!-- hover elem -->
 		<div
@@ -77,7 +77,7 @@
 			peer-focus-visible:outline-offset-0
 			peer-focus-visible:outline-gray-600
 			peer-focus-visible:dark:outline-gray-400
-			
+
 			transition-all
 		"
 	/>

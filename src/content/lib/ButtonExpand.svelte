@@ -1,7 +1,7 @@
-<ButtonImage on:click round>
+<ButtonImage round on:click>
 	<Icon
+		class={expand ? 'transform -scale-y-100' : ''}
 		d={heroChevronDown}
-		class="{expand ? 'transform -scale-y-100' : ''}"
 	/>
 </ButtonImage>
 

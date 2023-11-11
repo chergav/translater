@@ -1,5 +1,4 @@
 <button
-	type="button"
 	class="
 		p-1
 		inline-flex
@@ -19,6 +18,7 @@
 		{className}
 	"
 	{disabled}
+	type="button"
 	on:click
 	on:mouseleave
 	use:action={tooltip}

@@ -1,4 +1,9 @@
-<ButtonImage round disabled={error} on:click={startTTS} tooltip={{ title }}>
+<ButtonImage
+	disabled={error}
+	round
+	tooltip={{ title }}
+	on:click={startTTS}
+>
 	{#if error}
 		<Icon d={heroSpeakerXMark} />
 	{:else if waiting}
@@ -41,8 +46,8 @@ let tts,
 $: title = error
 	? getMessage('tooltip_listen_language_is_not_support')
 	: speaking
-	? getMessage('tooltip_listen_stop')
-	: getMessage('tooltip_listen_to_the_text');
+		? getMessage('tooltip_listen_stop')
+		: getMessage('tooltip_listen_to_the_text');
 
 onMount(async () => {
 	tts = await getTTS(lang);
@@ -58,7 +63,7 @@ const speak = () => {
 };
 
 const stop = () => {
-	if (tts) tts.stop();	
+	if (tts) tts.stop();
 };
 
 const startTTS = () => {

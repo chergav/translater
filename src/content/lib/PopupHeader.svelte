@@ -1,15 +1,15 @@
 <div class="flex gap-1">
 	<ButtonImage
-		round
-		icon={heroChevronLeft}
 		{disabled}
+		icon={heroChevronLeft}
+		round
 		tooltip={{ title: getMessage('tooltip_go_back') }}
 		on:click={cachePrev}
 	/>
 	<ButtonImage
-		round
-		icon={heroChevronRight}
 		disabled={disabledNext}
+		icon={heroChevronRight}
+		round
 		tooltip={{ title: getMessage('tooltip_go_forward') }}
 		on:click={cacheNext}
 	/>
@@ -18,8 +18,8 @@
 	<PopupMenu />
 
 	<ButtonImage
-		round
 		icon={heroXMark}
+		round
 		on:click={() => {
 			destroyApp('popup');
 		}}
@@ -30,7 +30,7 @@
 import { persistentStore } from '~/common/store';
 import { store } from '~/content/store';
 import { getMessage } from '~/common/browserApi';
-import PopupMenu from '~/content/lib/PopupMenu.svelte'
+import PopupMenu from '~/content/lib/PopupMenu.svelte';
 import ButtonImage from '~/lib/ButtonImage.svelte';
 import { destroyApp } from '~/content/utils/appsHandler';
 import { heroChevronLeft, heroChevronRight, heroXMark } from '~/icons/heroicons';
@@ -44,7 +44,7 @@ $: disabled = $store.cacheTranslate.length < 2 || disabledPrev;
 const historyItem = index => $store.cacheTranslate.at(index);
 
 const promise = data =>
-	new Promise((res, _) => {
+	new Promise(res => {
 		res(data);
 	});
 

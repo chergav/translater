@@ -58,8 +58,6 @@
 											{#each entry.synonym as synonym}
 												<!-- svelte-ignore a11y-click-events-have-key-events -->
 												<span
-													role="button"
-													tabindex="0"
 													class="
 													mr-1
 													mb-1
@@ -73,6 +71,8 @@
 													transition-colors
 													cursor-pointer
 												"
+													role="button"
+													tabindex="0"
 													on:click={() => {
 														$store.selectedText = synonym;
 													}}
@@ -84,8 +84,6 @@
 											{#each entry.synonym as synonym}
 												<!-- svelte-ignore a11y-click-events-have-key-events -->
 												<span
-													role="button"
-													tabindex="0"
 													class="
 													mr-1
 													mb-1
@@ -99,6 +97,8 @@
 													transition-colors
 													cursor-pointer
 												"
+													role="button"
+													tabindex="0"
 													on:click={() => {
 														$store.selectedText = synonym;
 													}}
@@ -138,7 +138,7 @@ const addSynonymToDefinition = () => {
 		for (const synsetEntry of synset.entry) {
 			synsetsById[synsetEntry.definition_id] = [
 				...(synsetsById[synsetEntry.definition_id] || []),
-				synsetEntry,
+				synsetEntry
 			];
 		}
 	}
@@ -160,6 +160,6 @@ const getLabels = label =>
 	Object.hasOwn(label, 'subject')
 		? label.subject
 		: Object.hasOwn(label, 'register')
-		? label.register
-		: [];
+			? label.register
+			: [];
 </script>

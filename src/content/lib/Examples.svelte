@@ -12,6 +12,7 @@
 		>
 			<ul class="marker:text-gray-500 list-disc pl-5 space-y-3">
 				{#each translate.examples.example as entry}
+					<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 					<li class="mb-2 last:mb-0">{@html entry.text}</li>
 				{/each}
 			</ul>

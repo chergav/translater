@@ -1,9 +1,9 @@
 <div
 	class="relative cursor-default"
-	use:clickOutside
 	on:click_outside={() => {
 		$menuOpen = false;
 	}}
+	use:clickOutside
 >
 	<slot />
 </div>

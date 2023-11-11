@@ -17,7 +17,7 @@
 			rounded-xl
 			shadow-lg
 		"
-		transition:fly="{{ duration: 150, y: -10, easing: cubicInOut }}"
+		transition:fly={{ duration: 150, y: -10, easing: cubicInOut }}
 	>
 		<slot />
 	</div>

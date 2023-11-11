@@ -1,17 +1,17 @@
 <ButtonImage
-	round
 	disabled={!isClipboardSupport}
+	round
+	tooltip={{ title }}
 	on:click={copyToClipboard}
 	on:mouseleave={() => {
 		copySuccess = false;
 		copyFailure = false;
 		title = getMessage('tooltip_copy_to_clipboard');
 	}}
-	tooltip={{ title }}
 >
 	<Icon
+		class={copySuccess ? 'stroke-green-500' : copyFailure ? 'stroke-red-500' : ''}
 		d={heroClipboard}
-		class="{copySuccess ? 'stroke-green-500' : copyFailure ? 'stroke-red-500' : ''}"
 	/>
 </ButtonImage>
 

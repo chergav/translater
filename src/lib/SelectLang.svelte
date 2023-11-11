@@ -4,8 +4,8 @@
 		class="
 			py-[3px]
 			pl-3
-			{small ? 'text-sm' : 'text-base' }
-			{round ? 'rounded-full' : 'rounded-lg' }
+			{small ? 'text-sm' : 'text-base'}
+			{round ? 'rounded-full' : 'rounded-lg'}
 			border-gray-300
 			focus:border-indigo-300
 			focus:ring

@@ -1,5 +1,4 @@
 <button
-	type="button"
 	class="
 		px-3
 		py-1
@@ -16,6 +15,7 @@
 		transition-all
 		{className}
 	"
+	type="button"
 	on:click
 >
 	{#if icon}

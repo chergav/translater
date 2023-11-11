@@ -1,16 +1,16 @@
 <div class="px-6 pt-6 pb-4 flex items-center">
 	<Switch
-		bind:checked={$persistentStore.historyEnable}
 		label={getMessage('options_history_enable')}
+		bind:checked={$persistentStore.historyEnable}
 	/>
 </div>
 <hr class="mx-6 border-t border-gray-300 dark:border-gray-700" />
 <div class="px-6 py-4 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
 	<div class="flex items-center gap-4">
 		<Select
-			bind:value={$persistentStore.historyLength}
-			options={historyOptions}
 			label={getMessage('options_history_length')}
+			options={historyOptions}
+			bind:value={$persistentStore.historyLength}
 		/>
 		<span>/</span>
 		<span>{getMessage('options_records_in_history')} {$persistentStore.history.length}</span>
@@ -42,7 +42,7 @@ import HistoryItem from './HistoryItem.svelte';
 const historyOptions = [
 	{ key: 25, value: '25' },
 	{ key: 50, value: '50' },
-	{ key: 100, value: '100' },
+	{ key: 100, value: '100' }
 ];
 
 const groupByDate = data => data.reduce((acc, obj) => {
@@ -75,5 +75,5 @@ const getRelativeDate = dateString => {
 	const options = { day: 'numeric', month: 'long', year: 'numeric' };
 
 	return date.toLocaleDateString(UILanguage, options);
-}
+};
 </script>

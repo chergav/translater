@@ -5,11 +5,11 @@
 			z-[9999999]
 			leading-[0]
 		"
-		use:triggerPosition
-		use:clickOutside
 		on:click_outside={destroyTrigger}
+		use:clickOutside
+		use:triggerPosition
 	>
-	
+
 		{#await promise then isNotYourLang}
 			{#if showTrigger() && isNotYourLang}
 				<div transition:fade={{ duration: 100 }}>
@@ -37,7 +37,7 @@ import { detectLanguage } from '~/common/browserApi';
 import { clickOutside } from '~/lib/utils/clickOutside';
 
 const reference = {
-	getBoundingClientRect: () => $store.selectedEndCoord,
+	getBoundingClientRect: () => $store.selectedEndCoord
 };
 
 const triggerPosition = trigger => {
@@ -46,19 +46,21 @@ const triggerPosition = trigger => {
 		placement: 'bottom-end',
 		middleware: [
 			offset({
-				alignmentAxis: 15, // half button width
+				alignmentAxis: 15 // half button width
 			}),
-			flip(),
-		],
+			flip()
+		]
 	}).then(({ x, y }) => {
 		Object.assign(trigger.style, {
 			left: `${x}px`,
-			top: `${y}px`,
+			top: `${y}px`
 		});
 	});
 };
 
-const isOptionShowButton = () => $store.isInTextField ? $persistentStore.textFieldButtonShow : $persistentStore.inlineButtonShow;
+const isOptionShowButton = () => $store.isInTextField
+	? $persistentStore.textFieldButtonShow
+	: $persistentStore.inlineButtonShow;
 
 const isDomainInBlacklist = () => $persistentStore.blacklistDomainForInline.includes($store.hostname);
 

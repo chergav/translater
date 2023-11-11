@@ -1,5 +1,6 @@
 <div class={$themeClass}>
 	<div
+		bind:this={tooltipElement}
 		class="
 			absolute
 			top-0
@@ -15,8 +16,8 @@
 			shadow-md
 			z-[9999999]
 		"
-		bind:this={tooltipElement}
 	>
+		<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 		{@html title}
 	</div>
 </div>
@@ -38,11 +39,11 @@ $: if (tooltipElement && title) tooltipPosition(tooltipElement);
 const tooltipPosition = tooltip => {
 	computePosition(element, tooltip, {
 		placement,
-		middleware: [offset(6), flip(), shift({ padding: 6 })],
+		middleware: [offset(6), flip(), shift({ padding: 6 })]
 	}).then(({ x, y }) => {
 		Object.assign(tooltip.style, {
 			left: `${x}px`,
-			top: `${y}px`,
+			top: `${y}px`
 		});
 	});
 };

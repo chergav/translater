@@ -1,16 +1,16 @@
 <div class="p-6 flex flex-col gap-4">
 	<SelectLang
-		bind:value={$persistentStore.targetLang}
 		label={getMessage('target_lang_label')}
 		{languages}
+		bind:value={$persistentStore.targetLang}
 	/>
 	<Checkbox
-		bind:checked={$persistentStore.inlineButtonShow}
 		label={getMessage('options_inline_button_show')}
+		bind:checked={$persistentStore.inlineButtonShow}
 	/>
 	<Checkbox
-		bind:checked={$persistentStore.textFieldButtonShow}
 		label={getMessage('options_text_field_button_show')}
+		bind:checked={$persistentStore.textFieldButtonShow}
 	/>
 	<div>
 		<p class="text-base mb-2">{getMessage('options_hide_button_on_sites')}</p>
@@ -29,11 +29,12 @@
 				"
 				>{domain}
 				<button
+					type="button"
 					on:click={() => {
 						deleteFromBlacklist(domain);
 					}}
 				>
-					<Icon d={heroXMark} class="ml-1" />
+					<Icon class="ml-1" d={heroXMark} />
 				</button>
 			</span>
 		{:else}

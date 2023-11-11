@@ -14,15 +14,15 @@
 	<div class="lg:container lg:mx-auto h-full flex flex-row gap-4">
 		<div class="flex flex-col">
 			<div class="pb-4 flex items-center">
-				<img src={getURL('/src/icons/128.png')} width="48" alt="" />
+				<img alt="" src={getURL('/src/icons/128.png')} width="48" />
 				<span class="ml-4 text-xl">Translater</span>
 			</div>
 			<div class="flex flex-col">
 				{#each tabs as item}
 					<ButtonTab
 						active={activeTab === item.tab}
-						label={item.label}
 						icon={item.icon}
+						label={item.label}
 						on:click={() => {
 							activeTab = item.tab;
 						}}
@@ -71,25 +71,25 @@ const tabs = [
 		tab: '#inline_translate',
 		label: getMessage('options_tab_inline_translate'),
 		icon: heroDocumentText,
-		component: InlineTranslate,
+		component: InlineTranslate
 	},
 	{
 		tab: '#popup_window',
 		label: getMessage('options_tab_popup_window'),
 		icon: heroWindow,
-		component: PopupWindow,
+		component: PopupWindow
 	},
 	{
 		tab: '#appearance',
 		label: getMessage('options_tab_appearance'),
 		icon: heroPaintBrush,
-		component: Appearance,
+		component: Appearance
 	},
 	{
 		tab: '#history',
 		label: getMessage('options_tab_history'),
 		icon: heroClock,
-		component: History,
-	},
+		component: History
+	}
 ];
 </script>

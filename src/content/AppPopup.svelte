@@ -1,5 +1,7 @@
 <div class={$themeClass}>
 	<div
+		bind:this={tooltip}
+		style="left: {left}px; top: {top}px;"
 		class="
 			fixed
 			w-[550px]
@@ -19,17 +21,13 @@
 			z-[9999999]
 			{moving ? 'select-none' : 'select-auto'}
 		"
-		bind:this={tooltip}
-		use:clickOutside
 		on:click_outside={() => {
 			if (!$persistentStore.lockWindow) destroyApp('popup');
 		}}
-		style="left: {left}px; top: {top}px;"
+		use:clickOutside
 	>
 		<div class="w-full">
 			<header
-				role="toolbar"
-				tabindex="-1"
 				class="
 					mb-1
 					flex
@@ -37,9 +35,11 @@
 					leading-[0]
 					{moving ? 'cursor-grabbing' : 'cursor-move'}
 				"
+				role="toolbar"
+				tabindex="-1"
 				on:mousedown|self={dragStart}
 			>
-				<PopupNav />
+				<PopupHeader />
 			</header>
 			<Popup on:update={tooltipPosition} />
 		</div>
@@ -50,7 +50,7 @@
 
 <script>
 import { destroyApp } from './utils/appsHandler';
-import PopupNav from './lib/PopupNav.svelte';
+import PopupHeader from './lib/PopupHeader.svelte';
 import Popup from './lib/Popup.svelte';
 import { computePosition, offset, flip, shift } from '@floating-ui/dom';
 import { persistentStore, themeClass } from '~/common/store';
@@ -58,7 +58,7 @@ import { store } from './store';
 import { clickOutside } from '~/lib/utils/clickOutside';
 
 const reference = {
-	getBoundingClientRect: () => $store.selectedElemRect,
+	getBoundingClientRect: () => $store.selectedElemRect
 };
 
 let tooltip,
@@ -77,8 +77,8 @@ const tooltipPosition = () => {
 			? 31
 			: 10
 		: $persistentStore.inlineButtonShow
-		? 31
-		: 10;
+			? 31
+			: 10;
 
 	computePosition(reference, tooltip, {
 		// strategy: 'absolute',
@@ -91,10 +91,10 @@ const tooltipPosition = () => {
 					: rects.floating.y + 10
 			),
 			flip({ flipAlignment: false }),
-			shift({ padding: 10 }),
-		],
+			shift({ padding: 10 })
+		]
 	}).then(({ x, y }) => {
-		// for fix position in large text fields
+		// fix position in large text fields
 		const { innerWidth, innerHeight } = window;
 		if (x < 0 || x > innerWidth) x = 10;
 		if (y < 0 || y > innerHeight) y = 10;
