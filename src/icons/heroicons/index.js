@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 export const heroArrowSmallLeft = 'M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75';
 export const heroArrowSmallRight = 'M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75';
+export const heroArrowsUpDown = 'M3 7.5L7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5';
 export const heroArrowTopRightOnSquare = 'M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25';
 export const heroCheck = 'M4.5 12.75l6 6 9-13.5';
 export const heroCheckCircle = 'M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z';

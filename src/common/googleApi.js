@@ -1,10 +1,12 @@
+import { getUILanguage } from '~/common/browserApi';
+
 const googleTranslateURL = ({ sourceLang = 'auto', targetLang = 'auto', selectedText = '' } = {}) => {
 	// https://stackoverflow.com/questions/26714426/what-is-the-meaning-of-google-translate-query-params
 	const searchParams = new URLSearchParams({
 		client: 'gtx',
 		sl: sourceLang,
 		tl: targetLang,
-		hl: targetLang,
+		hl: getUILanguage(),
 		ie: 'UTF-8',
 		oe: 'UTF-8',
 		otf: '1',

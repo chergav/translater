@@ -1,4 +1,4 @@
-{#if translate.dict}
+{#if $store.translated.dict}
 	<div class="mt-1 overflow-hidden rounded-[14px]">
 		<div
 			class="
@@ -12,7 +12,7 @@
 		>
 			<table class="w-full text-sm text-gray-800 dark:text-gray-200">
 				<tbody>
-					{#each translate.dict as dict, index}
+					{#each $store.translated.dict as dict, index}
 						<tr>
 							<td class="text-blue-600 capitalize pb-1" colspan="2">{dict.pos}</td>
 							{#if index === 0}
@@ -87,7 +87,7 @@
 								</td>
 							</tr>
 						{/each}
-						{#if !last(translate.dict, index)}
+						{#if !last($store.translated.dict, index)}
 							<tr>
 								<td class="p-2" colspan="3" />
 							</tr>
@@ -102,8 +102,6 @@
 <script>
 import { store } from '~/content/store';
 import { getMessage } from '~/common/browserApi';
-
-export let translate;
 
 let currentWord;
 

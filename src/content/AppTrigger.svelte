@@ -77,8 +77,7 @@ const isNotYourLang = async () => {
 let promise = isNotYourLang();
 
 const destroyTrigger = () => {
-	document.getSelection().removeAllRanges();
-
+	// document.getSelection().removeAllRanges();
 	destroyApp('trigger');
 };
 </script>

@@ -1,6 +1,6 @@
 <button
 	class="
-		p-1
+		{label ? 'px-[6px] py-1' : 'p-1'}
 		inline-flex
 		items-center
 		justify-start
@@ -28,7 +28,7 @@
 	{/if}
 	<slot />
 	{#if label}
-		<span class="px-2">{label}</span>
+		<span class={icon ? 'ml-2' : 'mr-2'}>{label}</span>
 	{/if}
 	{#if iconRight}
 		<Icon d={iconRight} />
@@ -44,8 +44,8 @@ export let label = '';
 export let small = false;
 export let disabled = false;
 export let round = false;
-export let icon = '';
-export let iconRight = '';
+export let icon = null;
+export let iconRight = null;
 export let tooltip = {};
 let className = '';
 export { className as class };

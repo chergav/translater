@@ -16,6 +16,7 @@
 			dark:border-gray-800
 			rounded-xl
 			shadow-lg
+			z-10
 		"
 		transition:fly={{ duration: 150, y: -10, easing: cubicInOut }}
 	>

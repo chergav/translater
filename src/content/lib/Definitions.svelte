@@ -1,4 +1,4 @@
-{#if translate.definitions}
+{#if $store.translated.definitions}
 	<div class="mt-1 overflow-hidden rounded-[14px]">
 		<div
 			class="
@@ -122,15 +122,13 @@
 import { getMessage } from '~/common/browserApi';
 import { store } from '~/content/store';
 
-export let translate;
-
 const sortSynonyms = synonyms =>
 	synonyms.sort((a, b) => (a.label_info ? 1 : b.label_info ? -1 : 0));
 
 const addSynonymToDefinition = () => {
-	const { definitions, synsets } = translate;
+	const { definitions, synsets } = $store.translated;
 
-	if (!Object.hasOwn(translate, 'synsets')) return definitions;
+	if (!Object.hasOwn($store.translated, 'synsets')) return definitions;
 
 	const synsetsById = {};
 
@@ -151,7 +149,7 @@ const addSynonymToDefinition = () => {
 		}
 	}
 
-	delete translate.synsets;
+	delete $store.translated.synsets;
 
 	return definitions;
 };

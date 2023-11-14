@@ -5,40 +5,47 @@
 	<MenuList>
 		<MenuItem menuClose>
 			<ButtonImage
-				class="w-full h-full"
-				iconRight={heroArrowTopRightOnSquare}
-				label="reverse traslate"
+				class="w-full"
+				icon={heroArrowsUpDown}
+				label="reverse translate"
 				small
-				on:click={() => {}}
+				on:click={handleReverseTranslate}
 			/>
 		</MenuItem>
 		<MenuItem menuClose>
-			<!-- <ButtonImage
-				class="w-full h-full"
-				iconRight={heroArrowTopRightOnSquare}
-				label="reverse traslate"
-				small
-				on:click={() => {}}
-			/> -->
 			<a
-				class="text-blue-600 visited:text-purple-600 underline"
+				class="
+					w-full
+					px-2 py-1
+					inline-flex
+					items-center
+					justify-start
+					text-sm
+					text-gray-800
+					dark:text-gray-200
+					bg-transparent
+					hover:bg-gray-900/10
+					dark:hover:bg-white/10
+					transition-colors
+					rounded-lg
+				"
 				href={`https://translate.google.com/?
 					sl=${$store.sourceLang}&
 					tl=${$persistentStore.targetLang}&
-					text=${encodeURIComponent($store.translated)}`}
+					text=${encodeURIComponent($store.selectedText)}`}
 					rel="noreferrer"
 					target="_blank"
 			>
 				<div class="flex items-center">
 					<span>Google Translate</span>
-					<Icon class="ml-1" d={heroArrowTopRightOnSquare} />
+					<Icon class="ml-2" d={heroArrowTopRightOnSquare} />
 				</div>
 			</a>
 		</MenuItem>
 		<MenuDivider />
 		<MenuItem>
 			<ButtonImage
-				class="w-full h-full"
+				class="w-full"
 				icon={$persistentStore.lockWindow ? heroLockOpen : heroLockClosed}
 				label={$persistentStore.lockWindow
 					? getMessage('popup_menu_unlock_window')
@@ -51,7 +58,7 @@
 		</MenuItem>
 		<MenuItem>
 			<ButtonImage
-				class="w-full h-full"
+				class="w-full"
 				label={isDomainInBlacklist
 					? getMessage('popup_menu_show_translate_button')
 					: getMessage('popup_menu_hide_translate_button')}
@@ -59,10 +66,10 @@
 				on:click={addDomainToBlacklist}
 			>
 				{#if isDomainInBlacklist}
-					<Icon d={customTranslate} filled stroke="none" />
+					<Icon class="mr-2" d={customTranslate} filled stroke="none" />
 				{:else}
 					<svg
-						class="w-5 h-5"
+						class="w-5 h-5 mr-2"
 						fill="currentColor"
 						viewBox="0 0 24 24"
 						xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +90,7 @@
 		<MenuDivider />
 		<MenuItem menuClose>
 			<ButtonImage
-				class="w-full h-full"
+				class="w-full"
 				iconRight={heroArrowTopRightOnSquare}
 				label={getMessage('popup_menu_options_link')}
 				small
@@ -104,7 +111,8 @@ import {
 	heroEllipsisVertical,
 	heroLockClosed,
 	heroLockOpen,
-	heroArrowTopRightOnSquare
+	heroArrowTopRightOnSquare,
+	heroArrowsUpDown
 } from '~/icons/heroicons';
 import { customTranslate } from '~/icons/custom';
 
@@ -117,5 +125,10 @@ const addDomainToBlacklist = () => {
 	$persistentStore.blacklistDomainForInline = isDomainInBlacklist
 		? blacklistDomainForInline.filter(i => i !== hostname)
 		: [...blacklistDomainForInline, hostname];
+};
+
+const handleReverseTranslate = () => {
+	[$store.sourceLang, $persistentStore.targetLang] = [$persistentStore.targetLang, $store.sourceLang];
+	$store.selectedText = $store.translated.sentences.trans;
 };
 </script>

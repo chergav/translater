@@ -43,16 +43,10 @@ $: disabled = $store.cacheTranslate.length < 2 || disabledPrev;
 
 const historyItem = index => $store.cacheTranslate.at(index);
 
-const promise = data =>
-	new Promise(res => {
-		res(data);
-	});
-
 const cacheItem = index => {
 	const item = historyItem(index);
 
-	$store.translated = promise(item);
-
+	$store.translated = item;
 	$store.sourceLang = item.src;
 	$persistentStore.targetLang = item.targetLang;
 

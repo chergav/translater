@@ -34,6 +34,8 @@ import { customTranslate } from '~/icons/custom';
 
 const createPopup = () => {
 	$store.selectedText = getSelectedText();
-	createApp('popup');
+	if ($store.selectedText) {
+		createApp('popup');
+	}
 };
 </script>

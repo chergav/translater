@@ -1,10 +1,10 @@
 export const clickOutside = node => {
 	const handleClick = event => {
-		const isLeftClick = event.button === 0;
+		// const isLeftClick = event.button === 0;
 
-		if (!event.target || !isLeftClick) {
-			return;
-		}
+		// if (!event.target || !isLeftClick) {
+		// 	return;
+		// }
 
 		if (node && !event.composedPath().includes(node)) {
 			node.dispatchEvent(

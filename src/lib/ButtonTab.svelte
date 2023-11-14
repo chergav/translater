@@ -36,9 +36,10 @@
 import Icon from '~/lib/Icon.svelte';
 
 export let label = '';
-export let className = '';
 export let active = false;
 export let small = false;
 export let icon = '';
 export let iconRight = '';
+let className = '';
+export { className as class };
 </script>

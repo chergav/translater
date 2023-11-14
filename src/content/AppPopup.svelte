@@ -7,7 +7,6 @@
 			w-[550px]
 			h-fit
 			p-1
-			overflow-hidden
 			flex
 			flex-row
 			text-sm
@@ -16,7 +15,7 @@
 			text-start
 			bg-gray-100
 			dark:bg-gray-950
-			rounded-[16px]
+			rounded-[18px]
 			shadow-xl
 			z-[9999999]
 			{moving ? 'select-none' : 'select-auto'}
@@ -41,7 +40,9 @@
 			>
 				<PopupHeader />
 			</header>
-			<Popup on:update={tooltipPosition} />
+			<!-- <PopupMain on:update={tooltipPosition} /> -->
+			<PopupMain />
+			<PopupFooter />
 		</div>
 	</div>
 </div>
@@ -49,9 +50,11 @@
 <svelte:window on:mousemove={dragMove} on:mouseup={dragEnd} />
 
 <script>
+import { onMount, onDestroy } from 'svelte';
 import { destroyApp } from './utils/appsHandler';
 import PopupHeader from './lib/PopupHeader.svelte';
-import Popup from './lib/Popup.svelte';
+import PopupMain from './lib/PopupMain.svelte';
+import PopupFooter from '~/content/lib/PopupFooter.svelte';
 import { computePosition, offset, flip, shift } from '@floating-ui/dom';
 import { persistentStore, themeClass } from '~/common/store';
 import { store } from './store';
@@ -126,4 +129,12 @@ const dragEnd = () => {
 	moving = false;
 	$store.selectedElemRect = null;
 };
+
+onMount(() => {
+	tooltipPosition();
+});
+
+onDestroy(() => {
+	$store.translated = null;
+});
 </script>

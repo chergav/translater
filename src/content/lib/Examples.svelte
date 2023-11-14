@@ -1,4 +1,4 @@
-{#if translate.examples}
+{#if $store.translated.examples}
 	<div class="mt-1 overflow-hidden rounded-[14px]">
 		<div
 			class="
@@ -11,7 +11,7 @@
 		"
 		>
 			<ul class="marker:text-gray-500 list-disc pl-5 space-y-3">
-				{#each translate.examples.example as entry}
+				{#each $store.translated.examples.example as entry}
 					<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 					<li class="mb-2 last:mb-0">{@html entry.text}</li>
 				{/each}
@@ -21,5 +21,5 @@
 {/if}
 
 <script>
-export let translate;
+import { store } from '~/content/store';
 </script>

@@ -1,6 +1,6 @@
 <div
 	role="button"
-	tabindex="0"
+	tabindex="-1"
 	on:click={() => {
 		$menuOpen = !$menuOpen;
 	}}
