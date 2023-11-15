@@ -25,6 +25,8 @@ const themeClass = derived(persistentStore, $persistentStore =>
 	$persistentStore.theme === 'system' ? prefersColorScheme() : $persistentStore.theme
 );
 
+const targetLang = derived(persistentStore, $persistentStore => $persistentStore.targetLang);
+
 storageListener(changes => {
 	for (const key in changes) {
 		persistentStore.update(value => ({
@@ -34,4 +36,4 @@ storageListener(changes => {
 	}
 });
 
-export { persistentStore, themeClass };
+export { persistentStore, themeClass, targetLang };

@@ -41,7 +41,7 @@
         "message": "Skjul knappen på disse nettstedene:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Du kan legge til nettsteder ved å bruke menyen i popup-vinduet på nettstedet du vil ekskludere"
+        "message": "Legg til domener ved å bruke menyen i popup-vinduet på nettstedet du vil ekskludere"
     },
     "options_show_original_text": {
         "message": "Vis kildetekst"
@@ -93,6 +93,9 @@
     },
     "popup_examples": {
         "message": "Eksempler"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "Omvendt oversett"
     },
     "popup_menu_lock_window": {
         "message": "Lås vindu"
@@ -347,7 +350,7 @@
         "message": "makedonsk"
     },
     "supported_languages_mg": {
-        "message": "madagaskisk"
+        "message": "Madagaskar"
     },
     "supported_languages_ms": {
         "message": "malaysisk"

@@ -22,6 +22,7 @@ const initData = {
 const store = writable(initData);
 
 const selectedText = derived(store, $store => $store.selectedText);
+const sourceLang = derived(store, $store => $store.sourceLang);
 
 const fetchTranslate = async (sourceLang, targetLang, selectedText) => {
 	try {
@@ -130,4 +131,4 @@ selectedText.subscribe(text => {
 	}
 });
 
-export { store, selectedText, getTranslate };
+export { store, selectedText, sourceLang, getTranslate };

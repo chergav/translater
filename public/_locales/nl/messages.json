@@ -41,7 +41,7 @@
         "message": "Verberg de knop op deze sites:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "U kunt sites toevoegen via het menu van het pop-upvenster op de site die u wilt uitsluiten"
+        "message": "Voeg domeinen toe via het menu van het pop-upvenster op de site die u wilt uitsluiten"
     },
     "options_show_original_text": {
         "message": "Brontekst weergeven"
@@ -93,6 +93,9 @@
     },
     "popup_examples": {
         "message": "Voorbeelden"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "Omgekeerd vertalen"
     },
     "popup_menu_lock_window": {
         "message": "Venster vergrendelen"

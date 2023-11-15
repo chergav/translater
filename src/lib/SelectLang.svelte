@@ -4,6 +4,7 @@
 		class="
 			py-[3px]
 			pl-3
+			max-w-[210px]
 			{small ? 'text-sm' : 'text-base'}
 			{round ? 'rounded-full' : 'rounded-lg'}
 			border-gray-300

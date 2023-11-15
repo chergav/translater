@@ -41,7 +41,7 @@
         "message": "隱藏這些網站上的按鈕："
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "您可以使用要排除的網站上的彈出視窗選單新增網站"
+        "message": "使用要排除的網站上的彈出視窗選單新增網域"
     },
     "options_show_original_text": {
         "message": "顯示來源文字"
@@ -93,6 +93,9 @@
     },
     "popup_examples": {
         "message": "例子"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "反向翻譯"
     },
     "popup_menu_lock_window": {
         "message": "鎖窗"

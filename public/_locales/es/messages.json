@@ -3,7 +3,7 @@
         "message": "Translater - traducción del texto seleccionado"
     },
     "app_description": {
-        "message": "Traducir texto seleccionado con Google Translate con tema claro y oscuro"
+        "message": "Traducción del texto seleccionado con Google Translate con tema claro y oscuro"
     },
     "context_menus_title": {
         "message": "Traducir el texto seleccionado"
@@ -41,7 +41,7 @@
         "message": "Oculte el botón en estos sitios:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Puede agregar sitios usando el menú de la ventana emergente en el sitio que desea excluir"
+        "message": "Agregue dominios usando el menú de la ventana emergente en el sitio que desea excluir"
     },
     "options_show_original_text": {
         "message": "Mostrar texto fuente"
@@ -93,6 +93,9 @@
     },
     "popup_examples": {
         "message": "Ejemplos"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "Traducción inversa"
     },
     "popup_menu_lock_window": {
         "message": "Bloquear ventana"

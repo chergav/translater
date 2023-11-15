@@ -41,7 +41,7 @@
         "message": "Скройте кнопку на этих сайтах:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Вы можете добавлять сайты, используя меню всплывающего окна на сайте, который хотите исключить."
+        "message": "Добавьте домены с помощью меню всплывающего окна на сайте, который вы хотите исключить."
     },
     "options_show_original_text": {
         "message": "Показать исходный текст"
@@ -56,10 +56,10 @@
         "message": "Если включено, всплывающее окно не закроется при нажатии снаружи."
     },
     "options_history_length": {
-        "message": "Длинна истории"
+        "message": "Продолжительность истории"
     },
     "options_records_in_history": {
-        "message": "Записей в истории:"
+        "message": "Записи в истории:"
     },
     "options_history_enable": {
         "message": "Включить историю"
@@ -93,6 +93,9 @@
     },
     "popup_examples": {
         "message": "Примеры"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "Обратный перевод"
     },
     "popup_menu_lock_window": {
         "message": "Заблокировать окно"
@@ -320,7 +323,7 @@
         "message": "кхмерский"
     },
     "supported_languages_ky": {
-        "message": "киргизский"
+        "message": "киргиз"
     },
     "supported_languages_ko": {
         "message": "Корейский"

@@ -57,12 +57,21 @@ class BrowserTTS {
 		return this.#voices ? this.#voices.find(v => v.lang.startsWith(lang)) : false;
 	}
 
+	async getVoicesByLang(lang) {
+		await this.#getVoices();
+		return this.#voices ? this.#voices.filter(i => i.lang.startsWith(lang)) : [];
+	}
+
 	#setLang(lang) {
 		const voice = this.#voices.find(v => v.lang.startsWith(lang));
 		if (!voice) {
 			throw new Error(`Language ${lang} is not supported.`);
 		}
 		this.#speech.lang = voice.lang;
+	}
+
+	#setVoice(voice) {
+		this.#speech.voice = voice;
 	}
 
 	stop() {
@@ -81,17 +90,19 @@ class BrowserTTS {
 		}
 	}
 
-	speak(text = '', lang = 'en') {
+	speak(text = '', lang = 'en', voice = null) {
 		this.status.update(data => ({
 			...data,
 			waiting: true
 		}));
 
 		this.#stopAllTTS();
-
 		this.#speech = new SpeechSynthesisUtterance(text);
-
 		this.#setLang(lang);
+
+		if (voice) {
+			this.#setVoice(voice);
+		}
 
 		this.#speech.onstart = () => {
 			this.status.update(data => ({

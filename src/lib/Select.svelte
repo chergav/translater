@@ -3,7 +3,8 @@
 	<select
 		class="
 			py-[3px]
-			pl-2
+			pl-3
+			max-w-[210px]
 			{small ? 'text-sm' : 'text-base'}
 			{round ? 'rounded-full' : 'rounded-lg'}
 			border-gray-300
@@ -20,16 +21,13 @@
 		bind:value
 		on:change
 	>
-		{#each options as { key, value }}
-			<option value={key}>{value}</option>
-		{/each}
+		<slot />
 	</select>
 </label>
 
 <script>
 export let value;
 export let label = '';
-export let options = [];
 export let small = false;
 export let round = false;
 </script>

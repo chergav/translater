@@ -7,8 +7,8 @@ import manifest from './src/manifest';
 export default defineConfig({
 	build: {
 		target: 'esnext',
-		outDir: process.env.FIREFOX ? 'dist/firefox' : 'dist/chrome',
-		...(process.env.FIREFOX && {
+		outDir: process.env.BROWSER === 'firefox' ? 'dist/firefox' : 'dist/chrome',
+		...(process.env.BROWSER === 'firefox' && {
 			rollupOptions: {
 				input: {
 					background: 'src/background/index.html'

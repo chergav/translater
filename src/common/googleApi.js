@@ -40,7 +40,7 @@ const googleTTSURL = ({ lang = 'en', text = '' } = {}) => {
 	const searchParams = new URLSearchParams({
 		// client: 'tw-ob',
 		client: 'gtx',
-		// ttsspeed: '0.8',
+		ttsspeed: '0.8',
 		ie: 'UTF-8',
 		tl: lang,
 		q: text.substring(0, 200) // text <= 200 character limit
@@ -51,7 +51,6 @@ const googleTTSURL = ({ lang = 'en', text = '' } = {}) => {
 
 const googleTTS = async params => {
 	const url = googleTTSURL(params);
-	// console.log(params, url);
 
 	try {
 		const response = await fetch(url);
@@ -59,13 +58,12 @@ const googleTTS = async params => {
 		if (response.ok) {
 			const ab = await response.arrayBuffer();
 			const array = Array.from(new Uint8Array(ab));
-			// console.log(array);
 			return { status: true, data: array };
 		} else {
 			return { status: false };
 		}
 	} catch (error) {
-		console.error(`Google Translate TTS api error: ${error}`);
+		console.error(`Google TTS api error: ${error}`);
 	}
 };
 

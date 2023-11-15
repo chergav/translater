@@ -41,7 +41,7 @@
         "message": "Peida nupp nendel saitidel:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Saate lisada saite, kasutades selle saidi hüpikakna menüüd, mille soovite välistada"
+        "message": "Lisage domeene selle saidi hüpikakna menüü abil, mille soovite välistada"
     },
     "options_show_original_text": {
         "message": "Kuva lähtetekst"
@@ -53,7 +53,7 @@
         "message": "Lukusta hüpikaken"
     },
     "options_lock_popup_window_hint": {
-        "message": "Kui see on lubatud, ei sulgu hüpikaken väljapoole klõpsamisel"
+        "message": "Kui see on lubatud, hüpikaken väljapoole klõpsamisel ei sulgu"
     },
     "options_history_length": {
         "message": "Ajaloo pikkus"
@@ -93,6 +93,9 @@
     },
     "popup_examples": {
         "message": "Näited"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "Pöördtõlge"
     },
     "popup_menu_lock_window": {
         "message": "Lukusta aken"
@@ -305,7 +308,7 @@
         "message": "itaalia keel"
     },
     "supported_languages_ja": {
-        "message": "jaapanlane"
+        "message": "Jaapani"
     },
     "supported_languages_jv": {
         "message": "jaava keel"
@@ -467,7 +470,7 @@
         "message": "urdu"
     },
     "supported_languages_uz": {
-        "message": "usbeki keel"
+        "message": "usbeki"
     },
     "supported_languages_vi": {
         "message": "vietnamlane"

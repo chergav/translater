@@ -3,7 +3,7 @@
         "message": "Translater - 所选文本的翻译"
     },
     "app_description": {
-        "message": "使用浅色和深色主题的谷歌翻译翻译选定的文本"
+        "message": "使用具有浅色和深色主题的谷歌翻译翻译选定的文本"
     },
     "context_menus_title": {
         "message": "翻译选定的文本"
@@ -41,7 +41,7 @@
         "message": "隐藏这些网站上的按钮："
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "您可以使用要排除的网站上的弹出窗口菜单添加网站"
+        "message": "使用要排除的网站上的弹出窗口菜单添加域"
     },
     "options_show_original_text": {
         "message": "显示源文本"
@@ -93,6 +93,9 @@
     },
     "popup_examples": {
         "message": "例子"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "反向翻译"
     },
     "popup_menu_lock_window": {
         "message": "锁窗"

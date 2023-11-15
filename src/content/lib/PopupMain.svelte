@@ -56,7 +56,7 @@
 						<TextareaOrig />
 					</div>
 					{#if $store.translated.sentences.src_translit && $persistentStore.showTransliteration}
-						<div class="mt-2 text-sm text-gray-500">
+						<div class="mt-2 px-1 text-sm text-gray-500">
 							{$store.translated.sentences.src_translit}
 						</div>
 					{/if}
@@ -93,18 +93,18 @@
 			</div>
 			{#if translateOpen}
 				<div
-					class="p-2 whitespace-pre-line max-h-80 overflow-y-auto scrollbar"
+					class="relative p-2 whitespace-pre-line max-h-80 overflow-y-auto scrollbar"
 					transition:slide|local={{ duration: 150, easing: cubicInOut }}
 				>
 					<div
 						bind:this={elemTrans}
 						class={isLongText ? 'text-sm' : 'text-base'}
 					>
-						{$store.pending
-							? $store.translated.sentences.trans + '...'
-							: $store.translated.sentences.trans}
-						<!-- {$store.translated.sentences.trans} -->
+						{$store.translated.sentences.trans}
 					</div>
+					{#if $store.pending}
+						<LoaderPing />
+					{/if}
 					{#if $store.translated.sentences.translit && $persistentStore.showTransliteration}
 						<div class="mt-2 text-sm text-gray-500">{$store.translated.sentences.translit}</div>
 					{/if}
@@ -123,9 +123,10 @@ import { store, getTranslate } from '~/content/store';
 import { languages } from '~/common/settings';
 import SelectLang from '~/lib/SelectLang.svelte';
 import TextareaOrig from '~/content/lib/TextareaOrig.svelte';
-import ButtonCopy from './ButtonCopy.svelte';
-import ButtonTTS from './ButtonTTS.svelte';
-import ButtonExpand from './ButtonExpand.svelte';
+import ButtonCopy from '~/content/lib/ButtonCopy.svelte';
+import ButtonTTS from '~/content/lib/ButtonTTS.svelte';
+import ButtonExpand from '~/content/lib/ButtonExpand.svelte';
+import LoaderPing from '~/content/lib/LoaderPing.svelte';
 
 let originalOpen = $persistentStore.showOriginalText,
 	translateOpen = true,

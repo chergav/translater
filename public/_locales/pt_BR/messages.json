@@ -41,7 +41,7 @@
         "message": "Oculte o botão nestes sites:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Você pode adicionar sites usando o menu da janela pop-up do site que deseja excluir"
+        "message": "Adicione domínios usando o menu da janela pop-up do site que deseja excluir"
     },
     "options_show_original_text": {
         "message": "Mostrar texto fonte"
@@ -93,6 +93,9 @@
     },
     "popup_examples": {
         "message": "Exemplos"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "Tradução reversa"
     },
     "popup_menu_lock_window": {
         "message": "Janela de bloqueio"

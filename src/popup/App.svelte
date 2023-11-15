@@ -55,13 +55,13 @@
 
 		<div class="p-3">
 			<a
-				class="text-xs text-blue-600 visited:text-purple-600 underline"
+				class="text-sm text-blue-600 underline"
 				href="https://github.com/chergav/translater"
 				rel="noopener noreferrer"
 				target="_blank"
 			>
 				<div class="flex items-center">
-					<span>Translater</span>
+					<span>Translater v{version}</span>
 					<Icon class="ml-1" d={heroArrowTopRightOnSquare} />
 				</div>
 			</a>
@@ -86,6 +86,8 @@ import ButtonImage from '~/lib/ButtonImage.svelte';
 
 let permPromise;
 const optPerm = { origins: ['<all_urls>'] };
+const version = chrome.runtime.getManifest().version;
+
 $: document.documentElement.className = $themeClass;
 
 const openOptionsPage = () => {

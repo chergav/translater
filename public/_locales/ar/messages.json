@@ -41,7 +41,7 @@
         "message": "إخفاء الزر في هذه المواقع:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "يمكنك إضافة مواقع باستخدام قائمة النافذة المنبثقة على الموقع الذي تريد استبعاده"
+        "message": "قم بإضافة النطاقات باستخدام قائمة النافذة المنبثقة على الموقع الذي تريد استبعاده"
     },
     "options_show_original_text": {
         "message": "إظهار النص المصدر"
@@ -93,6 +93,9 @@
     },
     "popup_examples": {
         "message": "أمثلة"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "ترجمة عكسية"
     },
     "popup_menu_lock_window": {
         "message": "قفل النافذة"

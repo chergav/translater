@@ -41,7 +41,7 @@
         "message": "Ukryj przycisk na tych stronach:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Możesz dodać witryny, korzystając z menu wyskakującego okna witryny, którą chcesz wykluczyć"
+        "message": "Dodaj domeny, korzystając z menu wyskakującego okienka w witrynie, którą chcesz wykluczyć"
     },
     "options_show_original_text": {
         "message": "Pokaż tekst źródłowy"
@@ -93,6 +93,9 @@
     },
     "popup_examples": {
         "message": "Przykłady"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "Odwrotne tłumaczenie"
     },
     "popup_menu_lock_window": {
         "message": "Zablokuj okno"
@@ -275,7 +278,7 @@
         "message": "Hausa"
     },
     "supported_languages_haw": {
-        "message": "Hawajski"
+        "message": "hawajski"
     },
     "supported_languages_he": {
         "message": "hebrajski"
@@ -356,7 +359,7 @@
         "message": "malajalam"
     },
     "supported_languages_mt": {
-        "message": "maltański"
+        "message": "Maltański"
     },
     "supported_languages_mi": {
         "message": "Maoryski"

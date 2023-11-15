@@ -41,7 +41,7 @@
         "message": "Bu sitelerdeki düğmeyi gizleyin:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Hariç tutmak istediğiniz siteye açılır pencere menüsünü kullanarak site ekleyebilirsiniz."
+        "message": "Hariç tutmak istediğiniz sitedeki açılır pencere menüsünü kullanarak alan adları ekleyin"
     },
     "options_show_original_text": {
         "message": "Kaynak metni göster"
@@ -93,6 +93,9 @@
     },
     "popup_examples": {
         "message": "Örnekler"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "Ters çeviri"
     },
     "popup_menu_lock_window": {
         "message": "Pencereyi kilitle"
@@ -257,7 +260,7 @@
         "message": "Galiçyaca"
     },
     "supported_languages_ka": {
-        "message": "Gürcüce"
+        "message": "Gürcü"
     },
     "supported_languages_de": {
         "message": "Almanca"
@@ -356,7 +359,7 @@
         "message": "Malayalamca"
     },
     "supported_languages_mt": {
-        "message": "Malta"
+        "message": "Malta dili"
     },
     "supported_languages_mi": {
         "message": "Maori dili"

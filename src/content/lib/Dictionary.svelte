@@ -35,27 +35,31 @@
 										<div class="inline-flex flex-wrap">
 											<span
 												class="
-												cursor-pointer
-												rounded-md
-												mx-[-5px]
-												my-[-1px]
-												px-[5px]
-												py-[1px]
-												hover:text-gray-800
-												hover:bg-gray-200
-												dark:hover:bg-gray-700
-												dark:hover:text-gray-300
-												transition-colors
-												{currentWord === reverse_translation
-													? 'text-gray-800 bg-gray-200 dark:bg-gray-700 dark:text-gray-300'
-													: ''}
-											"
+													cursor-pointer
+													rounded-md
+													mx-[-5px]
+													my-[-1px]
+													px-[5px]
+													py-[1px]
+													hover:text-gray-800
+													hover:bg-gray-200
+													dark:hover:bg-gray-700
+													dark:hover:text-gray-300
+													transition-colors
+													{currentWord === reverse_translation
+														? 'text-gray-800 bg-gray-200 dark:bg-gray-700 dark:text-gray-300'
+														: ''}
+												"
 												role="button"
 												tabindex="0"
 												on:click={() => {
 													$store.selectedText = reverse_translation;
 												}}
-												on:keypress
+												on:keypress={e => {
+													if (e.code === 'Enter') {
+														$store.selectedText = reverse_translation;
+													}
+												}}
 												on:mouseenter={() => {
 													currentWord = reverse_translation;
 												}}
@@ -111,5 +115,5 @@ const scoreHandler = n => {
 	return mark;
 };
 
-const last = (a, i) => i == a.length - 1;
+const last = (array, index) => index === (array.length - 1);
 </script>

@@ -136,5 +136,6 @@ onMount(() => {
 
 onDestroy(() => {
 	$store.translated = null;
+	$store.activeTab = 0;
 });
 </script>

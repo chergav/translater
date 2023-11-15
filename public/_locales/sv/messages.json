@@ -41,7 +41,7 @@
         "message": "Dölj knappen på dessa webbplatser:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Du kan lägga till webbplatser med hjälp av menyn i popup-fönstret på webbplatsen du vill utesluta"
+        "message": "Lägg till domäner med hjälp av menyn i popup-fönstret på webbplatsen du vill utesluta"
     },
     "options_show_original_text": {
         "message": "Visa källtext"
@@ -93,6 +93,9 @@
     },
     "popup_examples": {
         "message": "Exempel"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "Omvänd översättning"
     },
     "popup_menu_lock_window": {
         "message": "Lås fönster"

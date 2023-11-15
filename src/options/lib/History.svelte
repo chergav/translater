@@ -9,9 +9,12 @@
 	<div class="flex items-center gap-4">
 		<Select
 			label={getMessage('options_history_length')}
-			options={historyOptions}
 			bind:value={$persistentStore.historyLength}
-		/>
+		>
+			{#each historyOptions as { key, value }}
+				<option value={key}>{value}</option>
+			{/each}
+		</Select>
 		<span>/</span>
 		<span>{getMessage('options_records_in_history')} {$persistentStore.history.length}</span>
 	</div>

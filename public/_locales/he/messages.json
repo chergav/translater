@@ -41,7 +41,7 @@
         "message": "הסתר את הכפתור באתרים הבאים:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "אתה יכול להוסיף אתרים באמצעות התפריט של חלון קופץ באתר שאתה רוצה לא לכלול"
+        "message": "הוסף דומיינים באמצעות התפריט של חלון קופץ באתר שברצונך לא לכלול"
     },
     "options_show_original_text": {
         "message": "הצג טקסט מקור"
@@ -93,6 +93,9 @@
     },
     "popup_examples": {
         "message": "דוגמאות"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "תרגום לאחור"
     },
     "popup_menu_lock_window": {
         "message": "נעילת חלון"

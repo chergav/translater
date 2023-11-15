@@ -41,7 +41,7 @@
         "message": "Piilota painike näillä sivustoilla:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Voit lisätä sivustoja poissuljettavan sivuston ponnahdusikkunan valikon avulla"
+        "message": "Lisää verkkotunnuksia poissuljettavan sivuston ponnahdusikkunan valikon avulla"
     },
     "options_show_original_text": {
         "message": "Näytä lähdeteksti"
@@ -93,6 +93,9 @@
     },
     "popup_examples": {
         "message": "Esimerkkejä"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "Käänteinen käännös"
     },
     "popup_menu_lock_window": {
         "message": "Lukitse ikkuna"

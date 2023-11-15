@@ -10,7 +10,7 @@
 			scrollbar
 		"
 		>
-			{#each addSynonymToDefinition() as definition}
+			{#each definitions as definition}
 				<div class="mb-3 last:mb-0">
 					<div class="text-blue-600 capitalize">{definition.pos}</div>
 					<ul class="marker:text-gray-500 list-decimal pl-5 space-y-3">
@@ -56,7 +56,36 @@
 												{/if}
 											{/each}
 											{#each entry.synonym as synonym}
-												<!-- svelte-ignore a11y-click-events-have-key-events -->
+												<span
+													class="
+														mr-1
+														mb-1
+														px-2
+														inline-block
+														rounded-full
+														text-gray-500
+														border
+														border-gray-200
+														dark:border-gray-700
+														transition-colors
+														cursor-pointer
+													"
+													role="button"
+													tabindex="0"
+													on:click={() => {
+														$store.selectedText = synonym;
+													}}
+													on:keypress={e => {
+														if (e.code === 'Enter') {
+															$store.selectedText = synonym;
+														}
+													}}
+												>
+													{synonym}
+												</span>
+											{/each}
+										{:else}
+											{#each entry.synonym as synonym}
 												<span
 													class="
 													mr-1
@@ -76,31 +105,10 @@
 													on:click={() => {
 														$store.selectedText = synonym;
 													}}
-												>
-													{synonym}
-												</span>
-											{/each}
-										{:else}
-											{#each entry.synonym as synonym}
-												<!-- svelte-ignore a11y-click-events-have-key-events -->
-												<span
-													class="
-													mr-1
-													mb-1
-													px-2
-													inline-block
-													rounded-full
-													text-gray-500
-													border
-													border-gray-200
-													dark:border-gray-700
-													transition-colors
-													cursor-pointer
-												"
-													role="button"
-													tabindex="0"
-													on:click={() => {
-														$store.selectedText = synonym;
+													on:keypress={e => {
+														if (e.code === 'Enter') {
+															$store.selectedText = synonym;
+														}
 													}}
 												>
 													{synonym}
@@ -125,10 +133,12 @@ import { store } from '~/content/store';
 const sortSynonyms = synonyms =>
 	synonyms.sort((a, b) => (a.label_info ? 1 : b.label_info ? -1 : 0));
 
-const addSynonymToDefinition = () => {
-	const { definitions, synsets } = $store.translated;
+const addSynonymToDefinition = translated => {
+	const { definitions, synsets } = translated;
 
-	if (!Object.hasOwn($store.translated, 'synsets')) return definitions;
+	if (!Object.hasOwn($store.translated, 'synsets')) {
+		return definitions;
+	}
 
 	const synsetsById = {};
 
@@ -153,6 +163,8 @@ const addSynonymToDefinition = () => {
 
 	return definitions;
 };
+
+$: definitions = addSynonymToDefinition($store.translated);
 
 const getLabels = label =>
 	Object.hasOwn(label, 'subject')

@@ -41,7 +41,7 @@
         "message": "Nascondi il pulsante su questi siti:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Puoi aggiungere siti utilizzando il menu della finestra popup sul sito che desideri escludere"
+        "message": "Aggiungi domini utilizzando il menu della finestra popup sul sito che desideri escludere"
     },
     "options_show_original_text": {
         "message": "Mostra il testo di origine"
@@ -93,6 +93,9 @@
     },
     "popup_examples": {
         "message": "Esempi"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "Traduzione inversa"
     },
     "popup_menu_lock_window": {
         "message": "Blocca la finestra"
@@ -341,7 +344,7 @@
         "message": "lituano"
     },
     "supported_languages_lb": {
-        "message": "Lussemburghese"
+        "message": "lussemburghese"
     },
     "supported_languages_mk": {
         "message": "macedone"

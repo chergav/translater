@@ -7,7 +7,7 @@
 			<ButtonImage
 				class="w-full"
 				icon={heroArrowsUpDown}
-				label="reverse translate"
+				label={getMessage('popup_menu_reverse_translate')}
 				small
 				on:click={handleReverseTranslate}
 			/>

@@ -41,7 +41,7 @@
         "message": "Hide the button on these sites:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "You can add sites using the menu of popup window on the site you want to exclude"
+        "message": "Add domains using the menu of popup window on the site you want to exclude"
     },
     "options_show_original_text": {
         "message": "Show source text"
@@ -93,6 +93,9 @@
     },
     "popup_examples": {
         "message": "Examples"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "Reverse translate"
     },
     "popup_menu_lock_window": {
         "message": "Lock window"

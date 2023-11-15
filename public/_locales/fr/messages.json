@@ -41,7 +41,7 @@
         "message": "Masquer le bouton sur ces sites :"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Vous pouvez ajouter des sites en utilisant le menu de la fenêtre contextuelle du site que vous souhaitez exclure"
+        "message": "Ajoutez des domaines en utilisant le menu de la fenêtre contextuelle du site que vous souhaitez exclure"
     },
     "options_show_original_text": {
         "message": "Afficher le texte source"
@@ -93,6 +93,9 @@
     },
     "popup_examples": {
         "message": "Exemples"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "Traduction inversée"
     },
     "popup_menu_lock_window": {
         "message": "Verrouiller la fenêtre"

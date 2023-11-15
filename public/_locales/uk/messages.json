@@ -38,10 +38,10 @@
         "message": "Показати кнопку в текстовому полі"
     },
     "options_hide_button_on_sites": {
-        "message": "Сховати кнопку на цих сайтах:"
+        "message": "Приховати кнопку на цих сайтах:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Ви можете додавати сайти за допомогою меню спливаючого вікна на сайті, який потрібно виключити"
+        "message": "Додайте домени за допомогою меню спливаючого вікна на сайті, який потрібно виключити"
     },
     "options_show_original_text": {
         "message": "Показати вихідний текст"
@@ -93,6 +93,9 @@
     },
     "popup_examples": {
         "message": "Приклади"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "Зворотний переклад"
     },
     "popup_menu_lock_window": {
         "message": "Блокування вікна"

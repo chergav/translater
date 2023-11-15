@@ -41,7 +41,7 @@
         "message": "Sembunyikan tombol di situs berikut:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Anda dapat menambahkan situs menggunakan menu jendela popup pada situs yang ingin Anda kecualikan"
+        "message": "Tambahkan domain menggunakan menu jendela popup di situs yang ingin Anda kecualikan"
     },
     "options_show_original_text": {
         "message": "Tampilkan teks sumber"
@@ -93,6 +93,9 @@
     },
     "popup_examples": {
         "message": "Contoh"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "Terjemahan terbalik"
     },
     "popup_menu_lock_window": {
         "message": "Kunci jendela"

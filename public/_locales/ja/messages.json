@@ -41,7 +41,7 @@
         "message": "次のサイトのボタンを非表示にします。"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "除外したいサイトのポップアップウィンドウのメニューを使用してサイトを追加できます"
+        "message": "除外したいサイトのポップアップウィンドウのメニューを使用してドメインを追加します"
     },
     "options_show_original_text": {
         "message": "ソーステキストを表示"
@@ -53,7 +53,7 @@
         "message": "ポップアップウィンドウをロックする"
     },
     "options_lock_popup_window_hint": {
-        "message": "有効にすると、外側をクリックしてもポップアップが閉じなくなります"
+        "message": "有効にすると、外側をクリックしてもポップアップは閉じません。"
     },
     "options_history_length": {
         "message": "歴史の長さ"
@@ -93,6 +93,9 @@
     },
     "popup_examples": {
         "message": "例"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "逆翻訳"
     },
     "popup_menu_lock_window": {
         "message": "窓をロックする"

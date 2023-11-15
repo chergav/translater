@@ -38,10 +38,10 @@
         "message": "Schaltfläche im Textfeld anzeigen"
     },
     "options_hide_button_on_sites": {
-        "message": "Verstecken Sie die Schaltfläche auf diesen Seiten:"
+        "message": "Blenden Sie die Schaltfläche auf diesen Seiten aus:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Sie können Websites hinzufügen, indem Sie das Menü des Popup-Fensters auf der Website verwenden, die Sie ausschließen möchten"
+        "message": "Fügen Sie Domains über das Menü des Popup-Fensters auf der Site hinzu, die Sie ausschließen möchten"
     },
     "options_show_original_text": {
         "message": "Quelltext anzeigen"
@@ -93,6 +93,9 @@
     },
     "popup_examples": {
         "message": "Beispiele"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "Rückübersetzen"
     },
     "popup_menu_lock_window": {
         "message": "Fenster sperren"
