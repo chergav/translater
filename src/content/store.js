@@ -16,7 +16,8 @@ const initData = {
 	cacheTranslate: [],
 	cacheTTS: [],
 	audioContextSource: null,
-	activeTab: 0
+	activeTab: 0,
+	cacheIndex: -1
 };
 
 const store = writable(initData);
@@ -75,17 +76,19 @@ const getGTranslate = async () => {
 			sentences[i] = translated.sentences.reduce((a, v) => (a += v[i] ?? ''), '');
 		});
 
-		store.update(value => ({
-			...value,
-			sourceLang: value.sourceLang === 'auto' ? translated.src : value.sourceLang
-		}));
+		// store.update(value => ({
+		// 	...value,
+		// 	sourceLang: value.sourceLang === 'auto' ? translated.src : value.sourceLang
+		// }));
 
 		translated.sentences = sentences;
 		translated.targetLang = targetLang;
 
 		store.update(value => ({
 			...value,
-			cacheTranslate: [...value.cacheTranslate, translated]
+			cacheTranslate: [...value.cacheTranslate, translated],
+			sourceLang: value.sourceLang === 'auto' ? translated.src : value.sourceLang,
+			cacheIndex: -1
 		}));
 
 		historyAdd({

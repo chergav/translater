@@ -1,6 +1,6 @@
 <div class="flex gap-1">
 	<ButtonImage
-		{disabled}
+		disabled={disabledPrev}
 		icon={heroChevronLeft}
 		round
 		tooltip={{ title: getMessage('tooltip_go_back') }}
@@ -35,39 +35,22 @@ import ButtonImage from '~/lib/ButtonImage.svelte';
 import { destroyApp } from '~/content/utils/appsHandler';
 import { heroChevronLeft, heroChevronRight, heroXMark } from '~/icons/heroicons';
 
-let cacheIndex = -1,
-	disabledPrev = false,
-	disabledNext = true;
+$: disabledPrev = $store.cacheIndex <= -$store.cacheTranslate.length;
+$: disabledNext = $store.cacheIndex >= -1;
 
-$: disabled = $store.cacheTranslate.length < 2 || disabledPrev;
-
-const historyItem = index => $store.cacheTranslate.at(index);
-
-const cacheItem = index => {
-	const item = historyItem(index);
+const cacheNavigation = index => {
+	const item = $store.cacheTranslate.at(index);
 
 	$store.translated = item;
 	$store.sourceLang = item.src;
 	$persistentStore.targetLang = item.targetLang;
-
-	if (index <= -$store.cacheTranslate.length) {
-		disabledPrev = true;
-	} else {
-		disabledPrev = false;
-	}
-
-	if (index >= -1) {
-		disabledNext = true;
-	} else {
-		disabledNext = false;
-	}
 };
 
 const cachePrev = () => {
-	cacheItem(--cacheIndex);
+	cacheNavigation(--$store.cacheIndex);
 };
 
 const cacheNext = () => {
-	cacheItem(++cacheIndex);
+	cacheNavigation(++$store.cacheIndex);
 };
 </script>
