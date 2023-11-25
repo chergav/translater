@@ -5,6 +5,9 @@
     "app_description": {
         "message": "Перевод выделенного текста с помощью Google Translate со светлой и темной темой"
     },
+    "app_version": {
+        "message": "Версия"
+    },
     "context_menus_title": {
         "message": "Перевести выделенный текст"
     },
@@ -41,7 +44,7 @@
         "message": "Скройте кнопку на этих сайтах:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Добавьте домены с помощью меню всплывающего окна на сайте, который вы хотите исключить."
+        "message": "Добавьте домены, используя меню всплывающего окна на сайте, который вы хотите исключить."
     },
     "options_show_original_text": {
         "message": "Показать исходный текст"
@@ -70,6 +73,21 @@
     "options_delete_history_item": {
         "message": "Удалить из истории"
     },
+    "options_tts_language": {
+        "message": "Язык"
+    },
+    "options_tts_default_voice": {
+        "message": "Голос по умолчанию"
+    },
+    "options_tts_voices": {
+        "message": "Голоса"
+    },
+    "options_tts_table_caption": {
+        "message": "Для языков, не перечисленных в списке, будет использоваться внешняя служба преобразования текста в речь."
+    },
+    "options_tts_no_voices_found": {
+        "message": "В браузере голосов не найдено. Будет использоваться внешний сервис преобразования текста в речь."
+    },
     "text_expand": {
         "message": "Более"
     },
@@ -93,6 +111,12 @@
     },
     "popup_examples": {
         "message": "Примеры"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "Возможно, Вы имели в виду:"
+    },
+    "popup_original_language": {
+        "message": "Оригинальный язык:"
     },
     "popup_menu_reverse_translate": {
         "message": "Обратный перевод"
@@ -175,6 +199,12 @@
     "select_language_auto": {
         "message": "определить язык"
     },
+    "select_language_search_placeholder": {
+        "message": "Найти языки (код ISO или имя)"
+    },
+    "select_language_search_no_results": {
+        "message": "Без результатов"
+    },
     "supported_languages_af": {
         "message": "Африканский"
     },
@@ -209,7 +239,7 @@
         "message": "болгарский"
     },
     "supported_languages_ca": {
-        "message": "каталанский"
+        "message": "каталонский"
     },
     "supported_languages_ceb": {
         "message": "кебуано"
@@ -365,7 +395,7 @@
         "message": "маори"
     },
     "supported_languages_mr": {
-        "message": "Маратхи"
+        "message": "маратхи"
     },
     "supported_languages_mn": {
         "message": "Монгольский"
@@ -467,7 +497,7 @@
         "message": "украинский"
     },
     "supported_languages_ur": {
-        "message": "Урду"
+        "message": "урду"
     },
     "supported_languages_uz": {
         "message": "Узбекский"

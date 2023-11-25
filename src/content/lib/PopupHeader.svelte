@@ -38,7 +38,7 @@ import { heroChevronLeft, heroChevronRight, heroXMark } from '~/icons/heroicons'
 $: disabledPrev = $store.cacheIndex <= -$store.cacheTranslate.length;
 $: disabledNext = $store.cacheIndex >= -1;
 
-const cacheNavigation = index => {
+const getCacheItem = index => {
 	const item = $store.cacheTranslate.at(index);
 
 	$store.translated = item;
@@ -47,10 +47,10 @@ const cacheNavigation = index => {
 };
 
 const cachePrev = () => {
-	cacheNavigation(--$store.cacheIndex);
+	getCacheItem(--$store.cacheIndex);
 };
 
 const cacheNext = () => {
-	cacheNavigation(++$store.cacheIndex);
+	getCacheItem(++$store.cacheIndex);
 };
 </script>

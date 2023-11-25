@@ -5,6 +5,9 @@
     "app_description": {
         "message": "ترجمه متن انتخاب شده با Google Translate با تم روشن و تاریک"
     },
+    "app_version": {
+        "message": "نسخه"
+    },
     "context_menus_title": {
         "message": "ترجمه متن انتخاب شده"
     },
@@ -70,6 +73,21 @@
     "options_delete_history_item": {
         "message": "حذف از تاریخچه"
     },
+    "options_tts_language": {
+        "message": "زبان"
+    },
+    "options_tts_default_voice": {
+        "message": "صدای پیش فرض"
+    },
+    "options_tts_voices": {
+        "message": "صداها"
+    },
+    "options_tts_table_caption": {
+        "message": "برای زبان‌هایی که فهرست نشده‌اند، از سرویس تبدیل متن به گفتار خارجی استفاده می‌شود."
+    },
+    "options_tts_no_voices_found": {
+        "message": "هیچ صدایی در مرورگر یافت نشد. یک سرویس تبدیل متن به گفتار خارجی استفاده خواهد شد."
+    },
     "text_expand": {
         "message": "بیشتر"
     },
@@ -93,6 +111,12 @@
     },
     "popup_examples": {
         "message": "مثال ها"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "شاید منظورت این بود:"
+    },
+    "popup_original_language": {
+        "message": "زبان اصلی:"
     },
     "popup_menu_reverse_translate": {
         "message": "ترجمه معکوس"
@@ -174,6 +198,12 @@
     },
     "select_language_auto": {
         "message": "تشخیص زبان"
+    },
+    "select_language_search_placeholder": {
+        "message": "یافتن زبان ها (کد یا نام ISO)"
+    },
+    "select_language_search_no_results": {
+        "message": "هیچ نتیجه ای"
     },
     "supported_languages_af": {
         "message": "آفریقایی"

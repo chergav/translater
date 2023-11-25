@@ -5,6 +5,9 @@
     "app_description": {
         "message": "Перекладіть виділений текст за допомогою Google Translate зі світлою та темною темами"
     },
+    "app_version": {
+        "message": "Версія"
+    },
     "context_menus_title": {
         "message": "Перекласти виділений текст"
     },
@@ -70,6 +73,21 @@
     "options_delete_history_item": {
         "message": "Видалити з історії"
     },
+    "options_tts_language": {
+        "message": "Мова"
+    },
+    "options_tts_default_voice": {
+        "message": "Голос за умовчанням"
+    },
+    "options_tts_voices": {
+        "message": "Голоси"
+    },
+    "options_tts_table_caption": {
+        "message": "Для мов, яких немає в списку, використовуватиметься зовнішня служба синтезу мовлення."
+    },
+    "options_tts_no_voices_found": {
+        "message": "Немає голосів у браузері. Використовуватиметься зовнішня служба синтезу мовлення."
+    },
     "text_expand": {
         "message": "більше"
     },
@@ -93,6 +111,12 @@
     },
     "popup_examples": {
         "message": "Приклади"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "Можливо, ви мали на увазі:"
+    },
+    "popup_original_language": {
+        "message": "Мова оригіналу:"
     },
     "popup_menu_reverse_translate": {
         "message": "Зворотний переклад"
@@ -174,6 +198,12 @@
     },
     "select_language_auto": {
         "message": "Визначити мову"
+    },
+    "select_language_search_placeholder": {
+        "message": "Пошук мов (код або назва ISO)"
+    },
+    "select_language_search_no_results": {
+        "message": "Немає результатів"
     },
     "supported_languages_af": {
         "message": "африканський"

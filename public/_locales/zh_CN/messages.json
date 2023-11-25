@@ -5,6 +5,9 @@
     "app_description": {
         "message": "使用具有浅色和深色主题的谷歌翻译翻译选定的文本"
     },
+    "app_version": {
+        "message": "版本"
+    },
     "context_menus_title": {
         "message": "翻译选定的文本"
     },
@@ -70,6 +73,21 @@
     "options_delete_history_item": {
         "message": "从历史记录中删除"
     },
+    "options_tts_language": {
+        "message": "语言"
+    },
+    "options_tts_default_voice": {
+        "message": "默认语音"
+    },
+    "options_tts_voices": {
+        "message": "声音"
+    },
+    "options_tts_table_caption": {
+        "message": "对于未列出的语言，将使用外部文本转语音服务。"
+    },
+    "options_tts_no_voices_found": {
+        "message": "浏览器中找不到声音。将使用外部文本转语音服务。"
+    },
     "text_expand": {
         "message": "更多的"
     },
@@ -93,6 +111,12 @@
     },
     "popup_examples": {
         "message": "例子"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "也许你的意思是："
+    },
+    "popup_original_language": {
+        "message": "原文语言："
     },
     "popup_menu_reverse_translate": {
         "message": "反向翻译"
@@ -174,6 +198,12 @@
     },
     "select_language_auto": {
         "message": "检测语言"
+    },
+    "select_language_search_placeholder": {
+        "message": "查找语言（ISO 代码或名称）"
+    },
+    "select_language_search_no_results": {
+        "message": "没有结果"
     },
     "supported_languages_af": {
         "message": "非洲人"

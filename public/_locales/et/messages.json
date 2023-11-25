@@ -5,6 +5,9 @@
     "app_description": {
         "message": "Tõlkige valitud tekst heleda ja tumeda teemaga Google'i tõlkega"
     },
+    "app_version": {
+        "message": "Versioon"
+    },
     "context_menus_title": {
         "message": "Tõlgi valitud tekst"
     },
@@ -70,6 +73,21 @@
     "options_delete_history_item": {
         "message": "Kustuta ajaloost"
     },
+    "options_tts_language": {
+        "message": "Keel"
+    },
+    "options_tts_default_voice": {
+        "message": "Vaikehääl"
+    },
+    "options_tts_voices": {
+        "message": "Hääled"
+    },
+    "options_tts_table_caption": {
+        "message": "Loetlemata keelte puhul kasutatakse välist kõnesünteesi teenust."
+    },
+    "options_tts_no_voices_found": {
+        "message": "Brauserist hääli ei leitud. Kasutatakse välist kõnesünteesi teenust."
+    },
     "text_expand": {
         "message": "Rohkem"
     },
@@ -93,6 +111,12 @@
     },
     "popup_examples": {
         "message": "Näited"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "Võib-olla mõtlesite:"
+    },
+    "popup_original_language": {
+        "message": "Algkeel:"
     },
     "popup_menu_reverse_translate": {
         "message": "Pöördtõlge"
@@ -174,6 +198,12 @@
     },
     "select_language_auto": {
         "message": "Tuvasta keel"
+    },
+    "select_language_search_placeholder": {
+        "message": "Keelte otsimine (ISO-kood või nimi)"
+    },
+    "select_language_search_no_results": {
+        "message": "Tulemused puuduvad"
     },
     "supported_languages_af": {
         "message": "Aafrika"
@@ -281,10 +311,10 @@
         "message": "Havai"
     },
     "supported_languages_he": {
-        "message": "heebrea"
+        "message": "heebrea keel"
     },
     "supported_languages_iw": {
-        "message": "heebrea"
+        "message": "heebrea keel"
     },
     "supported_languages_hi": {
         "message": "hindi"
@@ -470,7 +500,7 @@
         "message": "urdu"
     },
     "supported_languages_uz": {
-        "message": "usbeki"
+        "message": "usbeki keel"
     },
     "supported_languages_vi": {
         "message": "vietnamlane"

@@ -26,36 +26,27 @@
 		<Icon d={heroSpeakerWave} />
 	{/if}
 </ButtonImage>
-{#if voices && voices.length}
-	<Select
-		round
-		small
-		bind:value={voice}
-	>
-		{#each voices as voice}
-			<option value={voice}>{voice.name}</option>
-		{/each}
-	</Select>
+{#if voices.length && selectLang}
+	<TTSVoices {lang} {voice} {voices} />
 {/if}
 
 <script>
-import { onMount, onDestroy } from 'svelte';
-import { sourceLang } from '~/content/store';
-import { targetLang } from '~/common/store';
+import { onDestroy } from 'svelte';
+import { persistentStore } from '~/common/store';
 import { getMessage } from '~/common/browserApi';
 import ButtonImage from '~/lib/ButtonImage.svelte';
-import Select from '~/lib/Select.svelte';
+import TTSVoices from '~/content/lib/TTSVoices.svelte';
 import Icon from '~/lib/Icon.svelte';
 import { heroSpeakerWave, heroSpeakerXMark, heroStop } from '~/icons/heroicons';
-import getTTS from '~/content/scripts/TTS/tts';
+import { getTTS } from '~/content/scripts/TTS/tts';
 
 export let text;
 export let lang;
+export let voices;
+export let selectLang = true;
 
-let tts,
-	voices,
-	voice,
-	status;
+let tts;
+let	status;
 
 $: title = $status?.error
 	? getMessage('tooltip_listen_language_is_not_support')
@@ -64,7 +55,7 @@ $: title = $status?.error
 		: getMessage('tooltip_listen_to_the_text');
 
 const speak = () => {
-	tts.speak(text, lang, voice);
+	tts.speak({ text, lang, voice });
 };
 
 const stop = () => {
@@ -72,25 +63,19 @@ const stop = () => {
 };
 
 const startTTS = () => {
-	if (!$status?.waiting) {
-		$status?.speaking ? stop() : speak();
+	if (!$status.waiting) {
+		$status.speaking ? stop() : speak();
 	}
 };
 
-const setTTS = async () => {
-	tts = await getTTS(lang);
+$: voice = $persistentStore.ttsVoiceByLang && $persistentStore.ttsVoiceByLang[lang]
+	? voices.find(i => i.name === $persistentStore.ttsVoiceByLang[lang])
+	: voices[0];
+
+$: if (lang) {
+	tts = getTTS(lang, voices);
 	status = tts.status;
-	voices = await tts.getVoicesByLang(lang);
-	voice = voices[0];
-};
-
-$: if ($sourceLang !== 'auto' || $targetLang) {
-	setTTS();
 }
-
-onMount(async () => {
-	setTTS();
-});
 
 onDestroy(stop);
 </script>

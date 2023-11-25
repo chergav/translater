@@ -30,8 +30,8 @@
 	{:else}
 		<div class="p-3 flex items-center justify-between">
 			<div class="flex items-center">
-				<img alt="" src={getURL('/src/icons/48.png')} width="24" />
-				<span class="ml-3">Translater</span>
+				<img alt="" src={getURL('/src/icons/48.png')} width="32" />
+				<span class="ml-3 text-lg">Translater</span>
 			</div>
 			<div>
 				<ButtonImage
@@ -53,18 +53,27 @@
 			/>
 		</div>
 
-		<div class="p-3">
-			<a
-				class="text-sm text-blue-600 underline"
-				href="https://github.com/chergav/translater"
-				rel="noopener noreferrer"
-				target="_blank"
-			>
-				<div class="flex items-center">
-					<span>Translater v{version}</span>
-					<Icon class="ml-1" d={heroArrowTopRightOnSquare} />
-				</div>
-			</a>
+		<div class="p-3 flex flex-col gap-1">
+			<div>
+				<a
+					class="text-sm text-blue-600 hover:underline"
+					href="https://github.com/chergav/translater"
+					rel="noopener noreferrer"
+					target="_blank"
+				>
+					Translater
+				</a>
+			</div>
+			<div>
+				<a
+					class="text-sm text-blue-600 hover:underline"
+					href="https://github.com/chergav/translater/releases"
+					rel="noopener noreferrer"
+					target="_blank"
+				>
+					{getMessage('app_version')} {version}
+				</a>
+			</div>
 		</div>
 	{/if}
 {/await}
@@ -72,8 +81,7 @@
 <script context="module">
 import { getMessage, getURL } from '~/common/browserApi';
 import { loadFont } from '~/common/fontLoader';
-import Icon from '~/lib/Icon.svelte';
-import { heroCog8Tooth, heroArrowTopRightOnSquare } from '~/icons/heroicons';
+import { heroCog8Tooth } from '~/icons/heroicons';
 
 loadFont();
 </script>

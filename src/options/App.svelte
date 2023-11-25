@@ -22,6 +22,7 @@
 					<ButtonTab
 						active={activeTab === item.tab}
 						icon={item.icon}
+						iconRaw={item.iconRaw}
 						label={item.label}
 						on:click={() => {
 							activeTab = item.tab;
@@ -57,8 +58,10 @@ import ButtonTab from '~/lib/ButtonTab.svelte';
 import InlineTranslate from './lib/InlineTranslate.svelte';
 import PopupWindow from './lib/PopupWindow.svelte';
 import Appearance from './lib/Appearance.svelte';
+import TTS from './lib/TTS.svelte';
 import History from './lib/History.svelte';
 import { heroDocumentText, heroWindow, heroPaintBrush, heroClock } from '~/icons/heroicons';
+import iconVoiceSelection from '~/icons/voice-selection-300.svg?raw';
 
 $: document.documentElement.className = $themeClass;
 
@@ -78,6 +81,12 @@ const tabs = [
 		label: getMessage('options_tab_popup_window'),
 		icon: heroWindow,
 		component: PopupWindow
+	},
+	{
+		tab: '#tts',
+		label: 'Text-to-Speech',
+		iconRaw: iconVoiceSelection,
+		component: TTS
 	},
 	{
 		tab: '#appearance',

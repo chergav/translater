@@ -8,7 +8,7 @@ export const clickOutside = node => {
 
 		if (node && !event.composedPath().includes(node)) {
 			node.dispatchEvent(
-				new CustomEvent('click_outside', { composed: true })
+				new CustomEvent('click_outside')
 			);
 		}
 	};

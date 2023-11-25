@@ -1,4 +1,11 @@
-<div class={$themeClass}>
+<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+<div
+	class={$themeClass}
+	role="dialog"
+	on:keypress|stopPropagation
+	on:keydown|stopPropagation
+	on:keyup|stopPropagation
+>
 	<div
 		bind:this={tooltip}
 		style="left: {left}px; top: {top}px;"
@@ -40,7 +47,6 @@
 			>
 				<PopupHeader />
 			</header>
-			<!-- <PopupMain on:update={tooltipPosition} /> -->
 			<PopupMain />
 			<PopupFooter />
 		</div>
@@ -136,6 +142,5 @@ onMount(() => {
 
 onDestroy(() => {
 	$store.translated = null;
-	$store.activeTab = 0;
 });
 </script>

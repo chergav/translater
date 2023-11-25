@@ -5,6 +5,9 @@
     "app_description": {
         "message": "밝은 테마와 어두운 테마로 선택한 텍스트를 Google 번역으로 번역하세요"
     },
+    "app_version": {
+        "message": "버전"
+    },
     "context_menus_title": {
         "message": "선택한 텍스트 번역"
     },
@@ -70,6 +73,21 @@
     "options_delete_history_item": {
         "message": "기록에서 삭제"
     },
+    "options_tts_language": {
+        "message": "언어"
+    },
+    "options_tts_default_voice": {
+        "message": "기본 음성"
+    },
+    "options_tts_voices": {
+        "message": "목소리"
+    },
+    "options_tts_table_caption": {
+        "message": "목록에 없는 언어의 경우 외부 텍스트 음성 변환 서비스가 사용됩니다."
+    },
+    "options_tts_no_voices_found": {
+        "message": "브라우저에서 음성을 찾을 수 없습니다. 외부 텍스트 음성 변환 서비스가 사용됩니다."
+    },
     "text_expand": {
         "message": "더"
     },
@@ -93,6 +111,12 @@
     },
     "popup_examples": {
         "message": "예"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "아마도 당신은 다음을 의미했을 것입니다 :"
+    },
+    "popup_original_language": {
+        "message": "원어:"
     },
     "popup_menu_reverse_translate": {
         "message": "역번역"
@@ -174,6 +198,12 @@
     },
     "select_language_auto": {
         "message": "언어를 감지"
+    },
+    "select_language_search_placeholder": {
+        "message": "언어 찾기(ISO 코드 또는 이름)"
+    },
+    "select_language_search_no_results": {
+        "message": "결과 없음"
     },
     "supported_languages_af": {
         "message": "아프리카 사람"

@@ -6,7 +6,7 @@
 					{#if item.component && $store.translated[item.srcKey]}
 						<ButtonTab
 							class="mt-1"
-							active={$store.activeTab === item.tab}
+							active={activeTab === item.tab}
 							label={item.label}
 							small
 							on:click={() => {
@@ -16,7 +16,7 @@
 							<Icon
 								class="
 									ml-1
-									{$store.activeTab === item.tab ? 'transform -scale-y-100' : ''}
+									{activeTab === item.tab ? 'transform -scale-y-100' : ''}
 								"
 								d={heroChevronDown}
 								size="sm"
@@ -29,7 +29,7 @@
 
 		<div>
 			{#each tabs as item}
-				{#if $store.activeTab === item.tab}
+				{#if activeTab === item.tab}
 					<div transition:slide|local={{ duration: 250, easing: cubicInOut }}>
 						<svelte:component this={item.component} />
 					</div>
@@ -41,15 +41,17 @@
 
 <script>
 import { slide } from 'svelte/transition';
-import { store } from '../store';
+import { store } from '~/content/store';
 import { cubicInOut } from 'svelte/easing';
 import { getMessage } from '~/common/browserApi';
 import ButtonTab from '~/lib/ButtonTab.svelte';
-import Dictionary from './Dictionary.svelte';
-import Definitions from './Definitions.svelte';
-import Examples from './Examples.svelte';
+import Dictionary from '~/content/lib/Dictionary.svelte';
+import Definitions from '~/content/lib/Definitions.svelte';
+import Examples from '~/content/lib/Examples.svelte';
 import Icon from '~/lib/Icon.svelte';
 import { heroChevronDown } from '~/icons/heroicons';
+
+let activeTab = 0;
 
 const tabs = [
 	{ tab: 0, srcKey: false, label: '', component: false },
@@ -74,6 +76,6 @@ const tabs = [
 ];
 
 const tabHandler = tab => {
-	$store.activeTab = $store.activeTab === tab ? 0 : tab;
+	activeTab = activeTab === tab ? 0 : tab;
 };
 </script>

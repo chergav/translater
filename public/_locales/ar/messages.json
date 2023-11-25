@@ -5,6 +5,9 @@
     "app_description": {
         "message": "ترجمة النص المحدد باستخدام خدمة الترجمة من Google ذات المظهر الفاتح والداكن"
     },
+    "app_version": {
+        "message": "إصدار"
+    },
     "context_menus_title": {
         "message": "ترجمة النص المحدد"
     },
@@ -70,6 +73,21 @@
     "options_delete_history_item": {
         "message": "حذف من التاريخ"
     },
+    "options_tts_language": {
+        "message": "لغة"
+    },
+    "options_tts_default_voice": {
+        "message": "الصوت الافتراضي"
+    },
+    "options_tts_voices": {
+        "message": "أصوات"
+    },
+    "options_tts_table_caption": {
+        "message": "بالنسبة للغات غير المدرجة، سيتم استخدام خدمة خارجية لتحويل النص إلى كلام."
+    },
+    "options_tts_no_voices_found": {
+        "message": "لم يتم العثور على أصوات في المتصفح. سيتم استخدام خدمة تحويل النص إلى كلام خارجية."
+    },
     "text_expand": {
         "message": "أكثر"
     },
@@ -93,6 +111,12 @@
     },
     "popup_examples": {
         "message": "أمثلة"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "ربما كنت تقصد:"
+    },
+    "popup_original_language": {
+        "message": "اللغة الأصلية:"
     },
     "popup_menu_reverse_translate": {
         "message": "ترجمة عكسية"
@@ -174,6 +198,12 @@
     },
     "select_language_auto": {
         "message": "اكتشاف اللغة"
+    },
+    "select_language_search_placeholder": {
+        "message": "البحث عن اللغات (رمز ISO أو الاسم)"
+    },
+    "select_language_search_no_results": {
+        "message": "لا نتائج"
     },
     "supported_languages_af": {
         "message": "الأفريقي"

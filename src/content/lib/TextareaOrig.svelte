@@ -13,14 +13,15 @@
 			dark:border-gray-800
 			focus:outline-none
 			focus:ring-0
-			focus:border-gray-500
-			focus:dark:border-gray-600
+			focus:border-gray-400
+			focus:dark:border-gray-700
 			scrollbar
 			rounded-xl
 			{isLongText ? 'text-sm' : 'text-base'}
 			transition-colors
 		"
 		rows="1"
+		spellcheck="false"
 		on:input={handleInput}
 	>{$store.translated.sentences.orig}</textarea>
 </div>

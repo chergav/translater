@@ -5,6 +5,9 @@
     "app_description": {
         "message": "Tradução do texto selecionado com o Google Translate com tema claro e escuro"
     },
+    "app_version": {
+        "message": "Versão"
+    },
     "context_menus_title": {
         "message": "Traduzir o texto selecionado"
     },
@@ -41,7 +44,7 @@
         "message": "Oculte o botão nestes sites:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Adicione domínios usando o menu da janela pop-up do site que deseja excluir"
+        "message": "Adicione domínios usando o menu da janela pop-up do site que você deseja excluir"
     },
     "options_show_original_text": {
         "message": "Mostrar texto fonte"
@@ -70,6 +73,21 @@
     "options_delete_history_item": {
         "message": "Excluir do histórico"
     },
+    "options_tts_language": {
+        "message": "Linguagem"
+    },
+    "options_tts_default_voice": {
+        "message": "Voz padrão"
+    },
+    "options_tts_voices": {
+        "message": "Vozes"
+    },
+    "options_tts_table_caption": {
+        "message": "Para idiomas não listados, será utilizado um serviço externo de conversão de texto em fala."
+    },
+    "options_tts_no_voices_found": {
+        "message": "Nenhuma voz encontrada no navegador. Um serviço externo de conversão de texto em fala será usado."
+    },
     "text_expand": {
         "message": "Mais"
     },
@@ -93,6 +111,12 @@
     },
     "popup_examples": {
         "message": "Exemplos"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "Talvez você quis dizer:"
+    },
+    "popup_original_language": {
+        "message": "Linguagem original:"
     },
     "popup_menu_reverse_translate": {
         "message": "Tradução reversa"
@@ -174,6 +198,12 @@
     },
     "select_language_auto": {
         "message": "detectar idioma"
+    },
+    "select_language_search_placeholder": {
+        "message": "Encontre idiomas (código ISO ou nome)"
+    },
+    "select_language_search_no_results": {
+        "message": "Nenhum resultado"
     },
     "supported_languages_af": {
         "message": "africano"
@@ -491,7 +521,7 @@
         "message": "zulu"
     },
     "supported_languages_qu": {
-        "message": "Quéchua"
+        "message": "Quechua"
     },
     "supported_languages_om": {
         "message": "Oromo"

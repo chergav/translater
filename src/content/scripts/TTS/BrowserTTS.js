@@ -3,76 +3,12 @@ import { store } from '~/content/store';
 
 class BrowserTTS {
 	#synth = window.speechSynthesis;
-	#voices = null;
 	#speech = null;
 	status = writable({
 		waiting: false,
 		speaking: false,
 		error: false
 	});
-
-	#setVoices(voices) {
-		this.#voices = voices;
-		store.update(data => ({
-			...data,
-			voices
-		}));
-	}
-
-	#getVoices() {
-		const { voices } = get(store);
-
-		if (voices) {
-			this.#voices = voices;
-			return;
-		}
-
-		return new Promise(resolve => {
-			let voices = this.#synth.getVoices();
-			if (voices.length > 0) {
-				this.#setVoices(voices);
-				resolve(true);
-			} else {
-				const interval = setInterval(() => {
-					voices = this.#synth.getVoices();
-					if (voices.length > 0) {
-						clearInterval(interval);
-						this.#setVoices(voices);
-						resolve(true);
-					}
-				}, 100);
-
-				setTimeout(() => {
-					if (voices.length === 0) {
-						clearInterval(interval);
-						resolve(false);
-					}
-				}, 1000);
-			}
-		});
-	}
-
-	async isLangAvailable(lang) {
-		await this.#getVoices();
-		return this.#voices ? this.#voices.find(v => v.lang.startsWith(lang)) : false;
-	}
-
-	async getVoicesByLang(lang) {
-		await this.#getVoices();
-		return this.#voices ? this.#voices.filter(i => i.lang.startsWith(lang)) : [];
-	}
-
-	#setLang(lang) {
-		const voice = this.#voices.find(v => v.lang.startsWith(lang));
-		if (!voice) {
-			throw new Error(`Language ${lang} is not supported.`);
-		}
-		this.#speech.lang = voice.lang;
-	}
-
-	#setVoice(voice) {
-		this.#speech.voice = voice;
-	}
 
 	stop() {
 		this.#synth.cancel();
@@ -81,16 +17,17 @@ class BrowserTTS {
 	#stopAllTTS() {
 		const { audioContextSource } = get(store);
 
+		if (audioContextSource) {
+			audioContextSource.stop();
+		}
+
 		if (this.#synth.speaking) {
 			this.stop();
 		}
 
-		if (audioContextSource) {
-			audioContextSource.stop();
-		}
 	}
 
-	speak(text = '', lang = 'en', voice = null) {
+	speak({ text = 'sample text-to-speech text', voice = null }) {
 		this.status.update(data => ({
 			...data,
 			waiting: true
@@ -98,11 +35,7 @@ class BrowserTTS {
 
 		this.#stopAllTTS();
 		this.#speech = new SpeechSynthesisUtterance(text);
-		this.#setLang(lang);
-
-		if (voice) {
-			this.#setVoice(voice);
-		}
+		this.#speech.voice = voice;
 
 		this.#speech.onstart = () => {
 			this.status.update(data => ({

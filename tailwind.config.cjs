@@ -1,5 +1,3 @@
-const plugin = require('tailwindcss/plugin');
-
 module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
@@ -37,6 +35,8 @@ module.exports = {
 			'9': '36px',
 			'10': '40px',
 
+			'52': '208px',
+
 			'64': '256px',
 			'72': '288px',
 			'80': '320px',
@@ -51,22 +51,6 @@ module.exports = {
 			'full': '9999px'
 		}
 	},
-	plugins: [
-		require('@tailwindcss/forms'),
-		plugin(({ matchUtilities, theme }) => {
-			matchUtilities(
-				{
-					'animation-delay': value => {
-						return {
-							'animation-delay': value
-						};
-					}
-				},
-				{
-					values: theme('transitionDelay')
-				}
-			);
-		})
-	],
+	plugins: [require('@tailwindcss/forms')],
 	darkMode: 'class'
 };

@@ -5,6 +5,9 @@
     "app_description": {
         "message": "Terjemahan teks yang dipilih dengan Google Terjemahan dengan tema terang dan gelap"
     },
+    "app_version": {
+        "message": "Versi: kapan"
+    },
     "context_menus_title": {
         "message": "Terjemahkan teks yang dipilih"
     },
@@ -70,6 +73,21 @@
     "options_delete_history_item": {
         "message": "Hapus dari riwayat"
     },
+    "options_tts_language": {
+        "message": "Bahasa"
+    },
+    "options_tts_default_voice": {
+        "message": "Suara bawaan"
+    },
+    "options_tts_voices": {
+        "message": "Suara"
+    },
+    "options_tts_table_caption": {
+        "message": "Untuk bahasa yang tidak tercantum, layanan text-to-speech eksternal akan digunakan."
+    },
+    "options_tts_no_voices_found": {
+        "message": "Tidak ada suara yang ditemukan di browser. Layanan text-to-speech eksternal akan digunakan."
+    },
     "text_expand": {
         "message": "Lagi"
     },
@@ -93,6 +111,12 @@
     },
     "popup_examples": {
         "message": "Contoh"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "Mungkin maksud Anda:"
+    },
+    "popup_original_language": {
+        "message": "Bahasa asli:"
     },
     "popup_menu_reverse_translate": {
         "message": "Terjemahan terbalik"
@@ -174,6 +198,12 @@
     },
     "select_language_auto": {
         "message": "mendeteksi bahasa"
+    },
+    "select_language_search_placeholder": {
+        "message": "Temukan bahasa (kode atau nama ISO)"
+    },
+    "select_language_search_no_results": {
+        "message": "Tidak ada hasil"
     },
     "supported_languages_af": {
         "message": "Afrika"

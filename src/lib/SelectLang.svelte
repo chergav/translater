@@ -7,14 +7,14 @@
 			max-w-[210px]
 			{small ? 'text-sm' : 'text-base'}
 			{round ? 'rounded-full' : 'rounded-lg'}
-			border-gray-300
-			focus:border-indigo-300
 			focus:ring-0
 			dark:bg-gray-900
+			border-gray-300
 			dark:border-gray-800
 			dark:placeholder-gray-400
 			dark:text-gray-200
-			dark:focus:border-gray-500
+			focus:border-gray-400
+			focus:dark:border-gray-700
 			transition-colors
 			cursor-pointer
 		"
@@ -26,8 +26,8 @@
 				{getMessage('select_language_auto')}
 			</option>
 		{/if}
-		{#each sortI18nLanguages() as { key, value } (key)}
-			<option value={key}>{value.toLowerCase()}</option>
+		{#each sortedI18nLanguages as { key, lang } (key)}
+			<option value={key}>{lang}</option>
 		{/each}
 	</select>
 </label>
@@ -37,15 +37,15 @@ import { getMessage } from '~/common/browserApi';
 
 export let value;
 export let label = '';
-export let languages = [];
+export let languages = {};
 export let auto = false;
 export let small = false;
 export let round = false;
 
-const getI18nLanguages = () => languages.map(({ key }) => ({
-	key,
-	value: getMessage(`supported_languages_${key.replace('-', '_')}`)
-}));
-
-const sortI18nLanguages = () => getI18nLanguages().sort((a, b) => a.value.localeCompare(b.value));
+const sortedI18nLanguages = Object.keys(languages)
+	.map(i => ({
+		key: i,
+		lang: getMessage(`supported_languages_${i.replace('-', '_')}`).toLowerCase()
+	}))
+	.sort((a, b) => a.lang.localeCompare(b.lang));
 </script>

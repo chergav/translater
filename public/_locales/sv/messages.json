@@ -5,6 +5,9 @@
     "app_description": {
         "message": "Översätt vald text med Google Translate med ljust och mörkt tema"
     },
+    "app_version": {
+        "message": "Version"
+    },
     "context_menus_title": {
         "message": "Översätt vald text"
     },
@@ -70,6 +73,21 @@
     "options_delete_history_item": {
         "message": "Ta bort från historiken"
     },
+    "options_tts_language": {
+        "message": "Språk"
+    },
+    "options_tts_default_voice": {
+        "message": "Standardröst"
+    },
+    "options_tts_voices": {
+        "message": "Röster"
+    },
+    "options_tts_table_caption": {
+        "message": "För språk som inte är listade kommer en extern text-till-tal-tjänst att användas."
+    },
+    "options_tts_no_voices_found": {
+        "message": "Inga röster hittades i webbläsaren. En extern text-till-tal-tjänst kommer att användas."
+    },
     "text_expand": {
         "message": "Mer"
     },
@@ -93,6 +111,12 @@
     },
     "popup_examples": {
         "message": "Exempel"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "Du kanske menade:"
+    },
+    "popup_original_language": {
+        "message": "Originalspråk:"
     },
     "popup_menu_reverse_translate": {
         "message": "Omvänd översättning"
@@ -167,13 +191,19 @@
         "message": "Tillåt start i Firefox"
     },
     "forefox_perm_text": {
-        "message": "Tillägget kräver ditt tillstånd för att komma åt webbplatser och översätta i webbläsaren Firefox."
+        "message": "Tillägget kräver din tillåtelse för att komma åt webbplatser och översätta i webbläsaren Firefox."
     },
     "forefox_perm_button": {
         "message": "Hantera behörigheter"
     },
     "select_language_auto": {
         "message": "Upptäck språk"
+    },
+    "select_language_search_placeholder": {
+        "message": "Hitta språk (ISO-kod eller namn)"
+    },
+    "select_language_search_no_results": {
+        "message": "Inga resultat"
     },
     "supported_languages_af": {
         "message": "afrikanska"

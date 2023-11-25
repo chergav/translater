@@ -5,6 +5,9 @@
     "app_description": {
         "message": "選択したテキストを Google 翻訳で明るいテーマと暗いテーマで翻訳します"
     },
+    "app_version": {
+        "message": "バージョン"
+    },
     "context_menus_title": {
         "message": "選択したテキストを翻訳する"
     },
@@ -70,6 +73,21 @@
     "options_delete_history_item": {
         "message": "履歴から削除"
     },
+    "options_tts_language": {
+        "message": "言語"
+    },
+    "options_tts_default_voice": {
+        "message": "デフォルトボイス"
+    },
+    "options_tts_voices": {
+        "message": "声"
+    },
+    "options_tts_table_caption": {
+        "message": "リストにない言語の場合は、外部の音声合成サービスが使用されます。"
+    },
+    "options_tts_no_voices_found": {
+        "message": "ブラウザに音声が見つかりませんでした。外部のテキスト読み上げサービスが使用されます。"
+    },
     "text_expand": {
         "message": "もっと"
     },
@@ -93,6 +111,12 @@
     },
     "popup_examples": {
         "message": "例"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "おそらく次のことを言いたかったのでしょう。"
+    },
+    "popup_original_language": {
+        "message": "元の言語:"
     },
     "popup_menu_reverse_translate": {
         "message": "逆翻訳"
@@ -174,6 +198,12 @@
     },
     "select_language_auto": {
         "message": "言語を検出"
+    },
+    "select_language_search_placeholder": {
+        "message": "言語の検索 (ISO コードまたは名前)"
+    },
+    "select_language_search_no_results": {
+        "message": "結果がありません"
     },
     "supported_languages_af": {
         "message": "アフリカ人"

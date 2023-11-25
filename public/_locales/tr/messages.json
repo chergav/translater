@@ -5,6 +5,9 @@
     "app_description": {
         "message": "Seçilen metni açık ve koyu temalı Google Çeviri ile çevirin"
     },
+    "app_version": {
+        "message": "Sürüm"
+    },
     "context_menus_title": {
         "message": "Seçili metni çevir"
     },
@@ -70,6 +73,21 @@
     "options_delete_history_item": {
         "message": "Geçmişten sil"
     },
+    "options_tts_language": {
+        "message": "Dil"
+    },
+    "options_tts_default_voice": {
+        "message": "Varsayılan ses"
+    },
+    "options_tts_voices": {
+        "message": "Sesler"
+    },
+    "options_tts_table_caption": {
+        "message": "Listelenmeyen diller için harici bir metinden konuşmaya hizmeti kullanılacaktır."
+    },
+    "options_tts_no_voices_found": {
+        "message": "Tarayıcıda ses bulunamadı. Harici bir metinden konuşmaya hizmeti kullanılacaktır."
+    },
     "text_expand": {
         "message": "Daha"
     },
@@ -93,6 +111,12 @@
     },
     "popup_examples": {
         "message": "Örnekler"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "Belki şunu demek istediniz:"
+    },
+    "popup_original_language": {
+        "message": "Orijinal dil:"
     },
     "popup_menu_reverse_translate": {
         "message": "Ters çeviri"
@@ -174,6 +198,12 @@
     },
     "select_language_auto": {
         "message": "dili tespit et"
+    },
+    "select_language_search_placeholder": {
+        "message": "Dilleri bulun (ISO kodu veya adı)"
+    },
+    "select_language_search_no_results": {
+        "message": "Sonuç yok"
     },
     "supported_languages_af": {
         "message": "Afrikalı"
@@ -260,7 +290,7 @@
         "message": "Galiçyaca"
     },
     "supported_languages_ka": {
-        "message": "Gürcü"
+        "message": "Gürcüce"
     },
     "supported_languages_de": {
         "message": "Almanca"
@@ -359,7 +389,7 @@
         "message": "Malayalamca"
     },
     "supported_languages_mt": {
-        "message": "Malta dili"
+        "message": "Malta"
     },
     "supported_languages_mi": {
         "message": "Maori dili"

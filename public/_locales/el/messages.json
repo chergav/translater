@@ -5,6 +5,9 @@
     "app_description": {
         "message": "Μετάφραση επιλεγμένου κειμένου με τη Μετάφραση Google με ανοιχτό και σκοτεινό θέμα"
     },
+    "app_version": {
+        "message": "Εκδοχή"
+    },
     "context_menus_title": {
         "message": "Μετάφραση επιλεγμένου κειμένου"
     },
@@ -70,6 +73,21 @@
     "options_delete_history_item": {
         "message": "Διαγραφή από το ιστορικό"
     },
+    "options_tts_language": {
+        "message": "Γλώσσα"
+    },
+    "options_tts_default_voice": {
+        "message": "Προεπιλεγμένη φωνή"
+    },
+    "options_tts_voices": {
+        "message": "Φωνές"
+    },
+    "options_tts_table_caption": {
+        "message": "Για γλώσσες που δεν αναφέρονται, θα χρησιμοποιηθεί εξωτερική υπηρεσία μετατροπής κειμένου σε ομιλία."
+    },
+    "options_tts_no_voices_found": {
+        "message": "Δεν βρέθηκαν φωνές στο πρόγραμμα περιήγησης. Θα χρησιμοποιηθεί εξωτερική υπηρεσία μετατροπής κειμένου σε ομιλία."
+    },
     "text_expand": {
         "message": "Περισσότερο"
     },
@@ -93,6 +111,12 @@
     },
     "popup_examples": {
         "message": "Παραδείγματα"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "Ίσως εννοούσες:"
+    },
+    "popup_original_language": {
+        "message": "Γλώσσα πρωτοτύπου:"
     },
     "popup_menu_reverse_translate": {
         "message": "Αντίστροφη μετάφραση"
@@ -174,6 +198,12 @@
     },
     "select_language_auto": {
         "message": "εντοπισμός γλώσσας"
+    },
+    "select_language_search_placeholder": {
+        "message": "Εύρεση γλωσσών (κωδικός ISO ή όνομα)"
+    },
+    "select_language_search_no_results": {
+        "message": "Χωρίς αποτέλεσμα"
     },
     "supported_languages_af": {
         "message": "αφρικανός"

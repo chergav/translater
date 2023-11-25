@@ -5,6 +5,9 @@
     "app_description": {
         "message": "Übersetzen Sie ausgewählten Text mit Google Translate mit hellem und dunklem Thema"
     },
+    "app_version": {
+        "message": "Ausführung"
+    },
     "context_menus_title": {
         "message": "Ausgewählten Text übersetzen"
     },
@@ -38,7 +41,7 @@
         "message": "Schaltfläche im Textfeld anzeigen"
     },
     "options_hide_button_on_sites": {
-        "message": "Blenden Sie die Schaltfläche auf diesen Seiten aus:"
+        "message": "Verstecken Sie die Schaltfläche auf diesen Seiten:"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Fügen Sie Domains über das Menü des Popup-Fensters auf der Site hinzu, die Sie ausschließen möchten"
@@ -70,6 +73,21 @@
     "options_delete_history_item": {
         "message": "Aus dem Verlauf löschen"
     },
+    "options_tts_language": {
+        "message": "Sprache"
+    },
+    "options_tts_default_voice": {
+        "message": "Standardstimme"
+    },
+    "options_tts_voices": {
+        "message": "Stimmen"
+    },
+    "options_tts_table_caption": {
+        "message": "Für nicht aufgeführte Sprachen wird ein externer Text-to-Speech-Dienst verwendet."
+    },
+    "options_tts_no_voices_found": {
+        "message": "Im Browser wurden keine Stimmen gefunden. Es wird ein externer Text-to-Speech-Dienst genutzt."
+    },
     "text_expand": {
         "message": "Mehr"
     },
@@ -93,6 +111,12 @@
     },
     "popup_examples": {
         "message": "Beispiele"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "Vielleicht meintest du:"
+    },
+    "popup_original_language": {
+        "message": "Ursprache:"
     },
     "popup_menu_reverse_translate": {
         "message": "Rückübersetzen"
@@ -174,6 +198,12 @@
     },
     "select_language_auto": {
         "message": "Sprache erkennen"
+    },
+    "select_language_search_placeholder": {
+        "message": "Sprachen suchen (ISO-Code oder Name)"
+    },
+    "select_language_search_no_results": {
+        "message": "Keine Ergebnisse"
     },
     "supported_languages_af": {
         "message": "afrikanisch"

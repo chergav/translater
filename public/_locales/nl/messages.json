@@ -5,6 +5,9 @@
     "app_description": {
         "message": "Vertaal geselecteerde tekst met Google Translate met licht en donker thema"
     },
+    "app_version": {
+        "message": "Versie"
+    },
     "context_menus_title": {
         "message": "Vertaal geselecteerde tekst"
     },
@@ -70,6 +73,21 @@
     "options_delete_history_item": {
         "message": "Verwijderen uit de geschiedenis"
     },
+    "options_tts_language": {
+        "message": "Taal"
+    },
+    "options_tts_default_voice": {
+        "message": "Standaardstem"
+    },
+    "options_tts_voices": {
+        "message": "Stemmen"
+    },
+    "options_tts_table_caption": {
+        "message": "Voor talen die niet in de lijst staan, wordt een externe tekst-naar-spraakservice gebruikt."
+    },
+    "options_tts_no_voices_found": {
+        "message": "Geen stemmen gevonden in de browser. Er zal gebruik worden gemaakt van een externe tekst-naar-spraakdienst."
+    },
     "text_expand": {
         "message": "Meer"
     },
@@ -93,6 +111,12 @@
     },
     "popup_examples": {
         "message": "Voorbeelden"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "Misschien bedoelde je:"
+    },
+    "popup_original_language": {
+        "message": "Originele taal:"
     },
     "popup_menu_reverse_translate": {
         "message": "Omgekeerd vertalen"
@@ -174,6 +198,12 @@
     },
     "select_language_auto": {
         "message": "taal detecteren"
+    },
+    "select_language_search_placeholder": {
+        "message": "Talen zoeken (ISO-code of naam)"
+    },
+    "select_language_search_no_results": {
+        "message": "Geen resultaten"
     },
     "supported_languages_af": {
         "message": "Afrikaanse"

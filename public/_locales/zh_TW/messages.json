@@ -5,6 +5,9 @@
     "app_description": {
         "message": "使用具有淺色和深色主題的谷歌翻譯翻譯選定的文本"
     },
+    "app_version": {
+        "message": "版本"
+    },
     "context_menus_title": {
         "message": "翻譯選定的文本"
     },
@@ -70,6 +73,21 @@
     "options_delete_history_item": {
         "message": "從歷史記錄中刪除"
     },
+    "options_tts_language": {
+        "message": "語言"
+    },
+    "options_tts_default_voice": {
+        "message": "預設語音"
+    },
+    "options_tts_voices": {
+        "message": "聲音"
+    },
+    "options_tts_table_caption": {
+        "message": "對於未列出的語言，將使用外部文字轉語音服務。"
+    },
+    "options_tts_no_voices_found": {
+        "message": "瀏覽器中找不到聲音。將使用外部文字轉語音服務。"
+    },
     "text_expand": {
         "message": "更多的"
     },
@@ -93,6 +111,12 @@
     },
     "popup_examples": {
         "message": "例子"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "也許你的意思是："
+    },
+    "popup_original_language": {
+        "message": "原文語言："
     },
     "popup_menu_reverse_translate": {
         "message": "反向翻譯"
@@ -174,6 +198,12 @@
     },
     "select_language_auto": {
         "message": "檢測語言"
+    },
+    "select_language_search_placeholder": {
+        "message": "尋找語言（ISO 代碼或名稱）"
+    },
+    "select_language_search_no_results": {
+        "message": "沒有結果"
     },
     "supported_languages_af": {
         "message": "非洲人"

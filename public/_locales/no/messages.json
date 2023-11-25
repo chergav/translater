@@ -3,7 +3,10 @@
         "message": "Translater - oversettelse av valgt tekst"
     },
     "app_description": {
-        "message": "Oversett valgt tekst med Google Translate med lyst og mørkt tema"
+        "message": "Oversettelse av valgt tekst med Google Translate med lyst og mørkt tema"
+    },
+    "app_version": {
+        "message": "Versjon"
     },
     "context_menus_title": {
         "message": "Oversett valgt tekst"
@@ -70,6 +73,21 @@
     "options_delete_history_item": {
         "message": "Slett fra loggen"
     },
+    "options_tts_language": {
+        "message": "Språk"
+    },
+    "options_tts_default_voice": {
+        "message": "Standard stemme"
+    },
+    "options_tts_voices": {
+        "message": "Stemmer"
+    },
+    "options_tts_table_caption": {
+        "message": "For språk som ikke er oppført, vil en ekstern tekst-til-tale-tjeneste bli brukt."
+    },
+    "options_tts_no_voices_found": {
+        "message": "Ingen stemmer funnet i nettleseren. En ekstern tekst-til-tale-tjeneste vil bli brukt."
+    },
     "text_expand": {
         "message": "Mer"
     },
@@ -93,6 +111,12 @@
     },
     "popup_examples": {
         "message": "Eksempler"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "Du mente kanskje:"
+    },
+    "popup_original_language": {
+        "message": "Originalspråk:"
     },
     "popup_menu_reverse_translate": {
         "message": "Omvendt oversett"
@@ -174,6 +198,12 @@
     },
     "select_language_auto": {
         "message": "oppdage språk"
+    },
+    "select_language_search_placeholder": {
+        "message": "Finn språk (ISO-kode eller navn)"
+    },
+    "select_language_search_no_results": {
+        "message": "Ingen resultater"
     },
     "supported_languages_af": {
         "message": "afrikansk"

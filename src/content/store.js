@@ -12,11 +12,9 @@ const initData = {
 	isInTextField: false,
 	selectedElemRect: null,
 	selectedEndCoord: null,
-	voices: null,
 	cacheTranslate: [],
 	cacheTTS: [],
 	audioContextSource: null,
-	activeTab: 0,
 	cacheIndex: -1
 };
 
@@ -76,11 +74,6 @@ const getGTranslate = async () => {
 			sentences[i] = translated.sentences.reduce((a, v) => (a += v[i] ?? ''), '');
 		});
 
-		// store.update(value => ({
-		// 	...value,
-		// 	sourceLang: value.sourceLang === 'auto' ? translated.src : value.sourceLang
-		// }));
-
 		translated.sentences = sentences;
 		translated.targetLang = targetLang;
 
@@ -92,7 +85,7 @@ const getGTranslate = async () => {
 		}));
 
 		historyAdd({
-			sourceLang: $store.sourceLang,
+			sourceLang: translated.src,
 			targetLang,
 			orig: sentences.orig,
 			trans: sentences.trans

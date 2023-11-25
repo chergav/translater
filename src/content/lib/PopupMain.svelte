@@ -22,20 +22,17 @@
 	{@const l = console.log($store.error)}
 {:else}
 	<main>
-		<div class="mb-1 bg-white dark:bg-gray-900 rounded-[16px] overflow-hidden">
+		<div class="mb-1 bg-white dark:bg-gray-900 rounded-[16px]">
 			<div class="p-1">
-				<div class="flex justify-between">
+				<div class="flex justify-between leading-[0]">
 					<div class="flex gap-1">
-						<SelectLang
+						<SelectLanguage
 							auto
-							{languages}
-							round
-							small
 							bind:value={$store.sourceLang}
 							on:change={getTranslate}
 						/>
 						<ButtonCopy text={$store.translated.sentences.orig} />
-						<ButtonTTS lang={$store.sourceLang} text={$store.translated.sentences.orig} />
+						<TTS lang={$store.sourceLang} text={$store.translated.sentences.orig} />
 					</div>
 					<div class="flex gap-1">
 						<ButtonExpand
@@ -52,9 +49,49 @@
 					class="p-1 whitespace-pre-line max-h-96 overflow-y-auto scrollbar"
 					transition:slide|local={{ duration: 150, easing: cubicInOut }}
 				>
-					<div class="w-full flex items-start justify-between">
+					<div class="w-full">
 						<TextareaOrig />
 					</div>
+					{#if $store.translated.spell.spell_html_res &&
+						$store.translated.sentences.orig !== $store.translated.spell.spell_res}
+						<div class="flex p-1">
+							{getMessage('popup_perhaps_you_meant')}
+							<span
+								class="ml-1 text-sm text-blue-600 cursor-pointer"
+								role="button"
+								tabindex="0"
+								on:click={() => {
+									$store.selectedText = $store.translated.spell.spell_res;
+								}}
+								on:keypress={e => {
+									if (e.code === 'Enter' || e.code === 'Space') {
+										$store.selectedText = $store.translated.spell.spell_res;
+									}
+								}}
+							><!-- eslint-disable-next-line svelte/no-at-html-tags -->
+							{@html $store.translated.spell.spell_html_res}</span>
+						</div>
+					{/if}
+					{#if $store.translated.ld_result.srclangs[0] !== $store.sourceLang}
+						<div class="flex p-1">
+							{getMessage('popup_original_language')}
+							<span
+								class="ml-1 text-sm text-blue-600 cursor-pointer"
+								role="button"
+								tabindex="0"
+								on:click={() => {
+									$store.sourceLang = $store.translated.ld_result.srclangs[0];
+									getTranslate();
+								}}
+								on:keypress={e => {
+									if (e.code === 'Enter' || e.code === 'Space') {
+										$store.sourceLang = $store.translated.ld_result.srclangs[0];
+										getTranslate();
+									}
+								}}
+							>{getMessage(`supported_languages_${$store.translated.ld_result.srclangs[0].replace('-', '_')}`).toLowerCase()}</span>
+						</div>
+					{/if}
 					{#if $store.translated.sentences.src_translit && $persistentStore.showTransliteration}
 						<div class="mt-2 px-1 text-sm text-gray-500">
 							{$store.translated.sentences.src_translit}
@@ -64,19 +101,16 @@
 			{/if}
 		</div>
 
-		<div class="bg-white dark:bg-gray-900 rounded-[16px] overflow-hidden">
+		<div class="bg-white dark:bg-gray-900 rounded-[16px]">
 			<div class="p-1">
-				<div class="flex justify-between">
+				<div class="flex justify-between leading-[0]">
 					<div class="flex gap-1">
-						<SelectLang
-							{languages}
-							round
-							small
+						<SelectLanguage
 							bind:value={$persistentStore.targetLang}
 							on:change={getTranslate}
 						/>
 						<ButtonCopy text={$store.translated.sentences.trans} />
-						<ButtonTTS
+						<TTS
 							lang={$persistentStore.targetLang}
 							text={$store.translated.sentences.trans}
 						/>
@@ -103,7 +137,32 @@
 						{$store.translated.sentences.trans}
 					</div>
 					{#if $store.pending}
-						<LoaderPing />
+						<div
+							class="
+								absolute
+								top-0
+								left-0
+								w-full
+								h-full
+								flex
+								justify-center
+								items-center
+							"
+						>
+							<div
+								class="
+									animate-spin
+									w-6
+									h-6
+									rounded-full
+									border-[2px]
+									border-gray-200
+									border-r-blue-600
+									dark:border-gray-600
+									dark:border-r-blue-600
+								"
+							/>
+						</div>
 					{/if}
 					{#if $store.translated.sentences.translit && $persistentStore.showTransliteration}
 						<div class="mt-2 text-sm text-gray-500">{$store.translated.sentences.translit}</div>
@@ -120,13 +179,12 @@ import { slide } from 'svelte/transition';
 import { cubicInOut } from 'svelte/easing';
 import { persistentStore } from '~/common/store';
 import { store, getTranslate } from '~/content/store';
-import { languages } from '~/common/settings';
-import SelectLang from '~/lib/SelectLang.svelte';
+import { getMessage } from '~/common/browserApi';
+import SelectLanguage from '~/lib/SelectLanguage.svelte';
 import TextareaOrig from '~/content/lib/TextareaOrig.svelte';
 import ButtonCopy from '~/content/lib/ButtonCopy.svelte';
-import ButtonTTS from '~/content/lib/ButtonTTS.svelte';
+import TTS from '~/content/lib/TTS.svelte';
 import ButtonExpand from '~/content/lib/ButtonExpand.svelte';
-import LoaderPing from '~/content/lib/LoaderPing.svelte';
 
 let originalOpen = $persistentStore.showOriginalText,
 	translateOpen = true,

@@ -71,12 +71,7 @@ class GoogleTTS {
 		}
 	}
 
-	// eslint-disable-next-line no-unused-vars
-	async getVoicesByLang(lang) {
-		return new Promise(resolve => resolve([]));
-	}
-
-	async speak(text = '', lang = 'en') {
+	async speak({ text = '', lang = 'en' }) {
 		this.status.update(data => ({
 			...data,
 			waiting: true

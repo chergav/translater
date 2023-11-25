@@ -5,6 +5,9 @@
     "app_description": {
         "message": "תרגום טקסט נבחר עם Google Translate עם נושא בהיר וכהה"
     },
+    "app_version": {
+        "message": "גִרְסָה"
+    },
     "context_menus_title": {
         "message": "תרגם טקסט נבחר"
     },
@@ -70,6 +73,21 @@
     "options_delete_history_item": {
         "message": "מחק מההיסטוריה"
     },
+    "options_tts_language": {
+        "message": "שפה"
+    },
+    "options_tts_default_voice": {
+        "message": "קול ברירת מחדל"
+    },
+    "options_tts_voices": {
+        "message": "קולות"
+    },
+    "options_tts_table_caption": {
+        "message": "עבור שפות שאינן מופיעות ברשימה, ייעשה שימוש בשירות טקסט לדיבור חיצוני."
+    },
+    "options_tts_no_voices_found": {
+        "message": "לא נמצאו קולות בדפדפן. ייעשה שימוש בשירות טקסט לדיבור חיצוני."
+    },
     "text_expand": {
         "message": "יותר"
     },
@@ -93,6 +111,12 @@
     },
     "popup_examples": {
         "message": "דוגמאות"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "אולי התכוונת ל:"
+    },
+    "popup_original_language": {
+        "message": "שפת מקור:"
     },
     "popup_menu_reverse_translate": {
         "message": "תרגום לאחור"
@@ -174,6 +198,12 @@
     },
     "select_language_auto": {
         "message": "איתור שפה"
+    },
+    "select_language_search_placeholder": {
+        "message": "מצא שפות (קוד ISO או שם)"
+    },
+    "select_language_search_no_results": {
+        "message": "אין תוצאות"
     },
     "supported_languages_af": {
         "message": "אַפְרִיקַנִי"
@@ -404,7 +434,7 @@
         "message": "רוּסִי"
     },
     "supported_languages_sm": {
-        "message": "סמואנית"
+        "message": "סמואי"
     },
     "supported_languages_gd": {
         "message": "גאלית סקוטית"

@@ -5,6 +5,9 @@
     "app_description": {
         "message": "Käännä valittu teksti Google-kääntäjällä vaalealla ja tummalla teemalla"
     },
+    "app_version": {
+        "message": "Versio"
+    },
     "context_menus_title": {
         "message": "Käännä valittu teksti"
     },
@@ -70,6 +73,21 @@
     "options_delete_history_item": {
         "message": "Poista historiasta"
     },
+    "options_tts_language": {
+        "message": "Kieli"
+    },
+    "options_tts_default_voice": {
+        "message": "Oletusääni"
+    },
+    "options_tts_voices": {
+        "message": "Äänet"
+    },
+    "options_tts_table_caption": {
+        "message": "Luetteloimattomilla kielillä käytetään ulkoista tekstistä puheeksi -palvelua."
+    },
+    "options_tts_no_voices_found": {
+        "message": "Selaimesta ei löytynyt ääniä. Ulkoista tekstistä puheeksi -palvelua käytetään."
+    },
     "text_expand": {
         "message": "Lisää"
     },
@@ -93,6 +111,12 @@
     },
     "popup_examples": {
         "message": "Esimerkkejä"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "Ehkä tarkoitit:"
+    },
+    "popup_original_language": {
+        "message": "Alkuperäinen kieli:"
     },
     "popup_menu_reverse_translate": {
         "message": "Käänteinen käännös"
@@ -175,6 +199,12 @@
     "select_language_auto": {
         "message": "Tunnista kieli"
     },
+    "select_language_search_placeholder": {
+        "message": "Etsi kieliä (ISO-koodi tai nimi)"
+    },
+    "select_language_search_no_results": {
+        "message": "Ei tuloksia"
+    },
     "supported_languages_af": {
         "message": "afrikkalainen"
     },
@@ -227,7 +257,7 @@
         "message": "Korsikalainen"
     },
     "supported_languages_hr": {
-        "message": "kroatialainen"
+        "message": "Kroatia"
     },
     "supported_languages_cs": {
         "message": "Tšekki"

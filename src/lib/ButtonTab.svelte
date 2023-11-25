@@ -23,6 +23,12 @@
 			<Icon d={icon} />
 		</span>
 	{/if}
+	{#if iconRaw}
+		<span class="mr-2">
+			<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+			{@html iconRaw}
+		</span>
+	{/if}
 	<span>{label}</span>
 	<slot />
 	{#if iconRight}
@@ -40,6 +46,8 @@ export let active = false;
 export let small = false;
 export let icon = '';
 export let iconRight = '';
+export let iconRaw = '';
+
 let className = '';
 export { className as class };
 </script>

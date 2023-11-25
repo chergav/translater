@@ -1,6 +1,6 @@
 import Tooltip from './Tooltip.svelte';
 
-export const tooltip = (element, { title = '', placement = 'top', delay = 500 } = {}) => {
+export const tooltip = (element, { title = '', placement = 'top', delay = 750 } = {}) => {
 	let container,
 		tooltipComponent,
 		timeoutID;

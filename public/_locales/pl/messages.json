@@ -5,6 +5,9 @@
     "app_description": {
         "message": "Tłumaczenie wybranego tekstu za pomocą Tłumacza Google z jasnym i ciemnym motywem"
     },
+    "app_version": {
+        "message": "Wersja"
+    },
     "context_menus_title": {
         "message": "Przetłumacz zaznaczony tekst"
     },
@@ -70,6 +73,21 @@
     "options_delete_history_item": {
         "message": "Usuń z historii"
     },
+    "options_tts_language": {
+        "message": "Język"
+    },
+    "options_tts_default_voice": {
+        "message": "Domyślny głos"
+    },
+    "options_tts_voices": {
+        "message": "Głosy"
+    },
+    "options_tts_table_caption": {
+        "message": "W przypadku języków niewymienionych na liście zostanie użyta zewnętrzna usługa zamiany tekstu na mowę."
+    },
+    "options_tts_no_voices_found": {
+        "message": "W przeglądarce nie znaleziono głosów. Wykorzystana zostanie zewnętrzna usługa zamiany tekstu na mowę."
+    },
     "text_expand": {
         "message": "Więcej"
     },
@@ -93,6 +111,12 @@
     },
     "popup_examples": {
         "message": "Przykłady"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "Być może miałeś na myśli:"
+    },
+    "popup_original_language": {
+        "message": "Oryginalny język:"
     },
     "popup_menu_reverse_translate": {
         "message": "Odwrotne tłumaczenie"
@@ -174,6 +198,12 @@
     },
     "select_language_auto": {
         "message": "Wykryj język"
+    },
+    "select_language_search_placeholder": {
+        "message": "Znajdź języki (kod ISO lub nazwa)"
+    },
+    "select_language_search_no_results": {
+        "message": "Brak wyników"
     },
     "supported_languages_af": {
         "message": "afrykanin"
@@ -359,7 +389,7 @@
         "message": "malajalam"
     },
     "supported_languages_mt": {
-        "message": "Maltański"
+        "message": "maltański"
     },
     "supported_languages_mi": {
         "message": "Maoryski"

@@ -5,6 +5,9 @@
     "app_description": {
         "message": "Traduzione del testo selezionato con Google Translate con tema chiaro e scuro"
     },
+    "app_version": {
+        "message": "Versione"
+    },
     "context_menus_title": {
         "message": "Traduci il testo selezionato"
     },
@@ -70,6 +73,21 @@
     "options_delete_history_item": {
         "message": "Elimina dalla cronologia"
     },
+    "options_tts_language": {
+        "message": "Lingua"
+    },
+    "options_tts_default_voice": {
+        "message": "Voce predefinita"
+    },
+    "options_tts_voices": {
+        "message": "Voci"
+    },
+    "options_tts_table_caption": {
+        "message": "Per le lingue non elencate verrà utilizzato un servizio di sintesi vocale esterno."
+    },
+    "options_tts_no_voices_found": {
+        "message": "Nessuna voce trovata nel browser. Verrà utilizzato un servizio di sintesi vocale esterno."
+    },
     "text_expand": {
         "message": "Di più"
     },
@@ -93,6 +111,12 @@
     },
     "popup_examples": {
         "message": "Esempi"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "Forse intendevi:"
+    },
+    "popup_original_language": {
+        "message": "Lingua originale:"
     },
     "popup_menu_reverse_translate": {
         "message": "Traduzione inversa"
@@ -174,6 +198,12 @@
     },
     "select_language_auto": {
         "message": "rileva lingua"
+    },
+    "select_language_search_placeholder": {
+        "message": "Trova lingue (codice ISO o nome)"
+    },
+    "select_language_search_no_results": {
+        "message": "Nessun risultato"
     },
     "supported_languages_af": {
         "message": "africano"
@@ -344,7 +374,7 @@
         "message": "lituano"
     },
     "supported_languages_lb": {
-        "message": "lussemburghese"
+        "message": "Lussemburghese"
     },
     "supported_languages_mk": {
         "message": "macedone"
@@ -449,7 +479,7 @@
         "message": "Tagalog"
     },
     "supported_languages_tg": {
-        "message": "Tagikista"
+        "message": "Tagikistan"
     },
     "supported_languages_ta": {
         "message": "Tamil"

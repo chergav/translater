@@ -5,6 +5,9 @@
     "app_description": {
         "message": "Traducción del texto seleccionado con Google Translate con tema claro y oscuro"
     },
+    "app_version": {
+        "message": "Versión"
+    },
     "context_menus_title": {
         "message": "Traducir el texto seleccionado"
     },
@@ -70,6 +73,21 @@
     "options_delete_history_item": {
         "message": "Eliminar del historial"
     },
+    "options_tts_language": {
+        "message": "Idioma"
+    },
+    "options_tts_default_voice": {
+        "message": "Voz predeterminada"
+    },
+    "options_tts_voices": {
+        "message": "Voces"
+    },
+    "options_tts_table_caption": {
+        "message": "Para los idiomas que no figuran en la lista, se utilizará un servicio externo de texto a voz."
+    },
+    "options_tts_no_voices_found": {
+        "message": "No se encontraron voces en el navegador. Se utilizará un servicio externo de texto a voz."
+    },
     "text_expand": {
         "message": "Más"
     },
@@ -93,6 +111,12 @@
     },
     "popup_examples": {
         "message": "Ejemplos"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "Quizás quisiste decir:"
+    },
+    "popup_original_language": {
+        "message": "Idioma original:"
     },
     "popup_menu_reverse_translate": {
         "message": "Traducción inversa"
@@ -174,6 +198,12 @@
     },
     "select_language_auto": {
         "message": "detectar idioma"
+    },
+    "select_language_search_placeholder": {
+        "message": "Buscar idiomas (código ISO o nombre)"
+    },
+    "select_language_search_no_results": {
+        "message": "No hay resultados"
     },
     "supported_languages_af": {
         "message": "africano"

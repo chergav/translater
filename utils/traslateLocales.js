@@ -12,7 +12,8 @@ const generateRequestURL = ({ sourceLang = 'en', targetLang = 'auto', text = '' 
 		q: text
 	});
 
-	return `https://translate.googleapis.com/translate_a/single?${searchParams}`;
+	return `https://translate.google.com/translate_a/single?${searchParams}`;
+	// return `https://translate.googleapis.com/translate_a/single?${searchParams}`;
 };
 
 const genTranslatedObject = (origObject, translatedArray) => {

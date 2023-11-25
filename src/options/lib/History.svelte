@@ -1,14 +1,20 @@
-<div class="px-6 pt-6 pb-4 flex items-center">
-	<Switch
-		label={getMessage('options_history_enable')}
-		bind:checked={$persistentStore.historyEnable}
-	/>
-</div>
-<hr class="mx-6 border-t border-gray-300 dark:border-gray-700" />
-<div class="px-6 py-4 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
-	<div class="flex items-center gap-4">
+<div class="px-6 py-4 flex flex-col gap-2 border-b border-gray-300 dark:border-gray-700">
+	<div class="flex justify-between">
+		<SwitchMini
+			label={getMessage('options_history_enable')}
+			bind:checked={$persistentStore.historyEnable}
+		/>
+		<ButtonImage
+			label={getMessage('options_clear_history')}
+			on:click={() => {
+				$persistentStore.history = [];
+			}}
+		/>
+	</div>
+	<div class="text-sm">
 		<Select
 			label={getMessage('options_history_length')}
+			small
 			bind:value={$persistentStore.historyLength}
 		>
 			{#each historyOptions as { key, value }}
@@ -16,16 +22,10 @@
 			{/each}
 		</Select>
 		<span>/</span>
-		<span>{getMessage('options_records_in_history')} {$persistentStore.history.length}</span>
+		<span class="whitespace-nowrap">{getMessage('options_records_in_history')} {$persistentStore.history.length}</span>
 	</div>
-	<ButtonImage
-		label={getMessage('options_clear_history')}
-		on:click={() => {
-			$persistentStore.history = [];
-		}}
-	/>
 </div>
-<div class="w-full h-[calc(100%-143px)] pl-6 pr-2 overflow-y-auto scrollbar">
+<div class="w-full h-[calc(100%-101px)] pl-6 pr-2 overflow-y-auto scrollbar">
 	{#each Object.entries(dateGroupedArray) as [key, value]}
 		<div class="py-2 text-sm text-blue-600">{getRelativeDate(key)}</div>
 		{#each value as historyItem (historyItem.time)}
@@ -38,7 +38,7 @@
 import { persistentStore } from '~/common/store';
 import { getUILanguage, getMessage } from '~/common/browserApi';
 import Select from '~/lib/Select.svelte';
-import Switch from '~/lib/Switch.svelte';
+import SwitchMini from '~/lib/SwitchMini.svelte';
 import ButtonImage from '~/lib/ButtonImage.svelte';
 import HistoryItem from './HistoryItem.svelte';
 
