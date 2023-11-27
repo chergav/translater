@@ -32,7 +32,7 @@ import { store } from '~/content/store';
 
 let textarea,
 	timer,
-	scrollOffset = 4,
+	scrollOffset = 2,
 	isLongText = false;
 
 const autoHeight = () => {

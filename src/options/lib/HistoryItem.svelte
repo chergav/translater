@@ -12,14 +12,13 @@
 	<div class="mb-2 flex justify-between">
 		<span>{getLang(item.sourceLang)} -> {getLang(item.targetLang)}</span>
 		<ButtonImage
+			icon={heroTrash}
 			round
 			tooltip={{ title: getMessage('options_delete_history_item'), placement: 'left' }}
 			on:click={() => {
 				deleteHistoryItem(item.time);
 			}}
-		>
-			<Icon d={heroTrash} />
-		</ButtonImage>
+		/>
 	</div>
 	<div bind:this={elemOrig} class:line-clamp-1={truncateOrig}>
 		{item.orig}
@@ -68,7 +67,6 @@ import { slide } from 'svelte/transition';
 import { persistentStore } from '~/common/store';
 import { getMessage } from '~/common/browserApi';
 import ButtonImage from '~/lib/ButtonImage.svelte';
-import Icon from '~/lib/Icon.svelte';
 import { heroTrash } from '~/icons/heroicons';
 
 export let item;

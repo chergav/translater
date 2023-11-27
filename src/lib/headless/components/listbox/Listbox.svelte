@@ -43,8 +43,8 @@ const listboxOpen = derived(store, $store => $store.listboxOpen);
 
 $: $store.value = value;
 
-$: if (!$listboxOpen) {
-	dispatch('listbox_closed');
+$: if ($listboxOpen) {
+	dispatch('listbox_open');
 }
 
 setContext(LISTBOX_CONTEXT_NAME, store);

@@ -1,7 +1,9 @@
 <Listbox
 	class="relative w-min h-min text-sm"
 	bind:value
-	on:listbox_closed={onListboxClosed}
+	on:listbox_open={() => {
+		search = '';
+	}}
 	on:change
 >
 	<ListboxButton
@@ -58,8 +60,9 @@
 			z-10
 		"
 	>
-		<div>
+		<div class="relative flex items-center">
 			<input
+				bind:this={inputSearch}
 				class="
 					w-full
 					h-8
@@ -81,6 +84,23 @@
 				bind:value={search}
 				use:inputFocus
 			>
+			{#if search}
+				<ButtonImage
+					class="
+						absolute
+						right-1
+						w-6
+						h-6
+					"
+					icon={heroXMark}
+					round
+					title="Clear search"
+					on:click={() => {
+						search = '';
+						inputSearch.focus();
+					}}
+				/>
+			{/if}
 		</div>
 		<div class="flex py-1">
 			{#each langColumns as langColumn}
@@ -108,6 +128,13 @@
 								<span class="absolute left-0 pl-3 text-blue-600">
 									<Icon d={heroCheck} />
 								</span>
+							{:else if UILanguage.startsWith(lang.key) && markUILang}
+								<span
+									class="absolute left-0 pl-3 text-gray-500"
+									title="Your UI language"
+								>
+									<Icon d={heroStar} />
+								</span>
 							{/if}
 							<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 							<span class={selected ? 'text-blue-600 font-medium' : ''}>{@html lang.name}</span>
@@ -123,19 +150,19 @@
 
 <script>
 import { Listbox, ListboxButton, ListboxOptions, ListboxOption } from '~/lib/headless';
+import ButtonImage from '~/lib/ButtonImage.svelte';
 import { languages } from '~/common/settings';
-import { getMessage } from '~/common/browserApi';
+import { getMessage, getUILanguage } from '~/common/browserApi';
 import Icon from '~/lib/Icon.svelte';
-import { heroCheck, heroChevronUpDown } from '~/icons/heroicons';
+import { heroCheck, heroChevronUpDown, heroXMark, heroStar } from '~/icons/heroicons';
 
 export let value;
 export let auto = false;
+export let markUILang = false;
 
+let inputSearch;
 let search = '';
-
-const onListboxClosed = () => {
-	search = '';
-};
+let UILanguage = getUILanguage();
 
 const inputFocus = elem => {
 	elem.focus();
@@ -160,7 +187,7 @@ if (auto) {
 $: filteredLangs = sortedI18nLanguages
 	.filter(i => {
 		const re = new RegExp(`${search}`, 'gi');
-		return re.test(i.name) || re.test(i.key);
+		return re.test(i.key) || re.test(i.name);
 	})
 	.map(({ key, name }) => {
 		if (search !== '') {

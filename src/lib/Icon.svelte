@@ -1,5 +1,5 @@
 <svg
-	class="{classSize} {className}"
+	class="{sizes[size]} {className}"
 	{fill}
 	{stroke}
 	stroke-linecap="round"
@@ -25,7 +25,6 @@ const sizes = {
 };
 
 let fill = filled ? color : 'none';
-let classSize = sizes[size] || sizes.md;
 let className = '';
 export { className as class };
 </script>

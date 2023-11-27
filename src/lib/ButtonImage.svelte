@@ -5,13 +5,10 @@
 		items-center
 		justify-start
 		{small ? 'text-sm' : 'text-base'}
-		text-gray-800
-		dark:text-gray-200
+		{colors[color]}
 		bg-transparent
-		enabled:hover:bg-gray-900/10
-		enabled:dark:hover:bg-white/10
-		disabled:text-gray-400
-		disabled:dark:text-gray-600
+		disabled:opacity-50
+		disabled:cursor-not-allowed
 		transition-colors
 		[&>*]:pointer-events-none
 		{round ? 'rounded-full' : 'rounded-lg'}
@@ -19,6 +16,7 @@
 	"
 	{disabled}
 	type="button"
+	{...$$restProps}
 	on:click
 	on:mouseleave
 	use:action={tooltip}
@@ -38,9 +36,9 @@
 <script>
 import Icon from '~/lib/Icon.svelte';
 import { tooltip as action } from '~/lib/tooltip';
-// import { longpress } from '~/content/utils/longpress';
 
 export let label = '';
+export let color = 'default';
 export let small = false;
 export let disabled = false;
 export let round = false;
@@ -49,4 +47,10 @@ export let iconRight = null;
 export let tooltip = {};
 let className = '';
 export { className as class };
+
+const colors = {
+	default: 'text-gray-800 dark:text-gray-200 enabled:hover:bg-gray-800/10 enabled:dark:hover:bg-gray-200/10',
+	warning: 'text-amber-600 dark:text-amber-400 enabled:hover:bg-amber-600/10 enabled:dark:hover:bg-amber-400/10',
+	danger: 'text-red-600 dark:text-red-400 enabled:hover:bg-red-600/10 enabled:dark:hover:bg-red-400/10'
+};
 </script>

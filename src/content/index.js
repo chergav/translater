@@ -39,7 +39,7 @@ const createPopup = selectedText => {
 		selectedText
 	}));
 
-	if (!app.popup.instance) createApp('popup');
+	createApp('popup');
 };
 
 document.addEventListener('mouseup', createTrigger);

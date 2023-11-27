@@ -2,8 +2,8 @@
 	<div
 		class="
 			animate-spin
-			w-5
-			h-5
+			w-7
+			h-7
 			rounded-full
 			border-[2px]
 			border-gray-200

@@ -106,6 +106,7 @@
 				<div class="flex justify-between leading-[0]">
 					<div class="flex gap-1">
 						<SelectLanguage
+							markUILang
 							bind:value={$persistentStore.targetLang}
 							on:change={getTranslate}
 						/>

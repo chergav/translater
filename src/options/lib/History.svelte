@@ -1,13 +1,17 @@
 <div class="px-6 py-4 flex flex-col gap-2 border-b border-gray-300 dark:border-gray-700">
-	<div class="flex justify-between">
+	<div class="flex items-center justify-between">
 		<SwitchMini
 			label={getMessage('options_history_enable')}
 			bind:checked={$persistentStore.historyEnable}
 		/>
 		<ButtonImage
+			color="danger"
+			icon={heroTrash}
 			label={getMessage('options_clear_history')}
 			on:click={() => {
-				$persistentStore.history = [];
+				if (confirm('Are you sure?')) {
+					$persistentStore.history = [];
+				}
 			}}
 		/>
 	</div>
@@ -17,11 +21,11 @@
 			small
 			bind:value={$persistentStore.historyLength}
 		>
-			{#each historyOptions as { key, value }}
-				<option value={key}>{value}</option>
+			{#each [25, 50, 100] as length}
+				<option value={length}>{length}</option>
 			{/each}
 		</Select>
-		<span>/</span>
+		<span class="mx-1">/</span>
 		<span class="whitespace-nowrap">{getMessage('options_records_in_history')} {$persistentStore.history.length}</span>
 	</div>
 </div>
@@ -41,12 +45,7 @@ import Select from '~/lib/Select.svelte';
 import SwitchMini from '~/lib/SwitchMini.svelte';
 import ButtonImage from '~/lib/ButtonImage.svelte';
 import HistoryItem from './HistoryItem.svelte';
-
-const historyOptions = [
-	{ key: 25, value: '25' },
-	{ key: 50, value: '50' },
-	{ key: 100, value: '100' }
-];
+import { heroTrash } from '~/icons/heroicons';
 
 const groupByDate = data => data.reduce((acc, obj) => {
 	const date = new Date(obj.time).toISOString().split('T')[0]; // 'yyyy-mm-dd'
