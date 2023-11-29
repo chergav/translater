@@ -22,6 +22,17 @@
             }
         }
     },
+    "commands_open_translater": {
+        "message": "Abra $APP_NAME$",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "ou pressione um atalho de teclado na página:"
+    },
     "options_tab_inline_translate": {
         "message": "Leitura e entrada"
     },
@@ -44,7 +55,7 @@
         "message": "Oculte o botão nestes sites:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Adicione domínios usando o menu da janela pop-up do site que deseja excluir"
+        "message": "Adicione domínios usando o menu da janela pop-up do site que você deseja excluir"
     },
     "options_show_original_text": {
         "message": "Mostrar texto fonte"
@@ -87,6 +98,15 @@
     },
     "options_tts_no_voices_found": {
         "message": "Nenhuma voz encontrada no navegador. Um serviço externo de conversão de texto em fala será usado."
+    },
+    "options_edit_keyboard_shortcut": {
+        "message": "Editar atalho de teclado"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "Atalho de teclado para abrir a janela pop-up:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "combinação de teclas não está definida"
     },
     "text_expand": {
         "message": "Mais"
@@ -136,6 +156,9 @@
     "popup_menu_options_link": {
         "message": "Configurações adicionais"
     },
+    "popup_placeholder_translation": {
+        "message": "Tradução"
+    },
     "theme_light": {
         "message": "Tema claro"
     },
@@ -175,12 +198,6 @@
     "tooltip_go_forward": {
         "message": "Avançar"
     },
-    "tooltip_edit_text": {
-        "message": "Editar texto"
-    },
-    "tooltip_translate_again": {
-        "message": "Traduzir novamente"
-    },
     "date_today": {
         "message": "hoje"
     },
@@ -196,14 +213,14 @@
     "forefox_perm_button": {
         "message": "Gerenciar Permissões"
     },
-    "select_language_auto": {
-        "message": "detectar idioma"
-    },
     "select_language_search_placeholder": {
         "message": "Encontre idiomas (código ISO ou nome)"
     },
     "select_language_search_no_results": {
         "message": "Nenhum resultado"
+    },
+    "supported_languages_auto": {
+        "message": "detectar idioma"
     },
     "supported_languages_af": {
         "message": "africano"
@@ -521,7 +538,7 @@
         "message": "zulu"
     },
     "supported_languages_qu": {
-        "message": "Quechua"
+        "message": "Quéchua"
     },
     "supported_languages_om": {
         "message": "Oromo"

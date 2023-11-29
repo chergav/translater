@@ -22,6 +22,17 @@
             }
         }
     },
+    "commands_open_translater": {
+        "message": "$APP_NAME$'ı açın",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "veya sayfadaki bir klavye kısayoluna basın:"
+    },
     "options_tab_inline_translate": {
         "message": "Okuma ve giriş"
     },
@@ -83,10 +94,19 @@
         "message": "Sesler"
     },
     "options_tts_table_caption": {
-        "message": "Listelenmeyen diller için harici bir metinden konuşmaya hizmeti kullanılacaktır."
+        "message": "Listelenmeyen diller için harici bir metin okuma hizmeti kullanılacaktır."
     },
     "options_tts_no_voices_found": {
         "message": "Tarayıcıda ses bulunamadı. Harici bir metinden konuşmaya hizmeti kullanılacaktır."
+    },
+    "options_edit_keyboard_shortcut": {
+        "message": "Klavye kısayolunu düzenle"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "Açılır pencereyi açmak için klavye kısayolu:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "tuş kombinasyonu ayarlanmamış"
     },
     "text_expand": {
         "message": "Daha"
@@ -136,6 +156,9 @@
     "popup_menu_options_link": {
         "message": "Ek ayarlar"
     },
+    "popup_placeholder_translation": {
+        "message": "Tercüme"
+    },
     "theme_light": {
         "message": "Işık teması"
     },
@@ -175,12 +198,6 @@
     "tooltip_go_forward": {
         "message": "İleri"
     },
-    "tooltip_edit_text": {
-        "message": "Metni düzenle"
-    },
-    "tooltip_translate_again": {
-        "message": "Tekrar çevir"
-    },
     "date_today": {
         "message": "Bugün"
     },
@@ -196,14 +213,14 @@
     "forefox_perm_button": {
         "message": "İzinleri yönet"
     },
-    "select_language_auto": {
-        "message": "dili tespit et"
-    },
     "select_language_search_placeholder": {
         "message": "Dilleri bulun (ISO kodu veya adı)"
     },
     "select_language_search_no_results": {
         "message": "Sonuç yok"
+    },
+    "supported_languages_auto": {
+        "message": "dili tespit et"
     },
     "supported_languages_af": {
         "message": "Afrikalı"
@@ -290,7 +307,7 @@
         "message": "Galiçyaca"
     },
     "supported_languages_ka": {
-        "message": "Gürcüce"
+        "message": "Gürcü"
     },
     "supported_languages_de": {
         "message": "Almanca"
@@ -389,7 +406,7 @@
         "message": "Malayalamca"
     },
     "supported_languages_mt": {
-        "message": "Malta"
+        "message": "Malta dili"
     },
     "supported_languages_mi": {
         "message": "Maori dili"

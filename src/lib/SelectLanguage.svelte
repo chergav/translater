@@ -131,7 +131,7 @@
 							{:else if UILanguage.startsWith(lang.key) && markUILang}
 								<span
 									class="absolute left-0 pl-3 text-gray-500"
-									title="Your UI language"
+									title="Your language"
 								>
 									<Icon d={heroStar} />
 								</span>
@@ -180,7 +180,7 @@ const sortedI18nLanguages = Object.entries(languages)
 if (auto) {
 	sortedI18nLanguages.unshift({
 		key: 'auto',
-		name: getMessage('select_language_auto')
+		name: getMessage('supported_languages_auto')
 	});
 }
 

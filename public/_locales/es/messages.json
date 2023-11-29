@@ -3,7 +3,7 @@
         "message": "Translater - traducción del texto seleccionado"
     },
     "app_description": {
-        "message": "Traducción del texto seleccionado con Google Translate con tema claro y oscuro"
+        "message": "Traducir texto seleccionado con Google Translate con tema claro y oscuro"
     },
     "app_version": {
         "message": "Versión"
@@ -21,6 +21,17 @@
                 "content": "Translater"
             }
         }
+    },
+    "commands_open_translater": {
+        "message": "Abrir $APP_NAME$",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "o presione un atajo de teclado en la página:"
     },
     "options_tab_inline_translate": {
         "message": "Lectura y entrada"
@@ -83,10 +94,19 @@
         "message": "Voces"
     },
     "options_tts_table_caption": {
-        "message": "Para los idiomas que no figuran en la lista, se utilizará un servicio externo de texto a voz."
+        "message": "Para los idiomas que no figuran en la lista, se utilizará un servicio externo de conversión de texto a voz."
     },
     "options_tts_no_voices_found": {
-        "message": "No se encontraron voces en el navegador. Se utilizará un servicio externo de texto a voz."
+        "message": "No se encontraron voces en el navegador. Se utilizará un servicio externo de conversión de texto a voz."
+    },
+    "options_edit_keyboard_shortcut": {
+        "message": "Editar atajo de teclado"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "Atajo de teclado para abrir la ventana emergente:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "la combinación de teclas no está configurada"
     },
     "text_expand": {
         "message": "Más"
@@ -136,6 +156,9 @@
     "popup_menu_options_link": {
         "message": "Ajustes adicionales"
     },
+    "popup_placeholder_translation": {
+        "message": "Traducción"
+    },
     "theme_light": {
         "message": "Tema ligero"
     },
@@ -175,12 +198,6 @@
     "tooltip_go_forward": {
         "message": "Adelante"
     },
-    "tooltip_edit_text": {
-        "message": "Editar texto"
-    },
-    "tooltip_translate_again": {
-        "message": "Traducir de nuevo"
-    },
     "date_today": {
         "message": "hoy"
     },
@@ -196,14 +213,14 @@
     "forefox_perm_button": {
         "message": "Administrar permisos"
     },
-    "select_language_auto": {
-        "message": "detectar idioma"
-    },
     "select_language_search_placeholder": {
         "message": "Buscar idiomas (código ISO o nombre)"
     },
     "select_language_search_no_results": {
         "message": "No hay resultados"
+    },
+    "supported_languages_auto": {
+        "message": "detectar idioma"
     },
     "supported_languages_af": {
         "message": "africano"
@@ -515,7 +532,7 @@
         "message": "yídish"
     },
     "supported_languages_yo": {
-        "message": "yoruba"
+        "message": "Yoruba"
     },
     "supported_languages_zu": {
         "message": "zulú"

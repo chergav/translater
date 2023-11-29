@@ -22,6 +22,17 @@
             }
         }
     },
+    "commands_open_translater": {
+        "message": "Avaa $APP_NAME$",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "tai paina pikanäppäintä sivulla:"
+    },
     "options_tab_inline_translate": {
         "message": "Lukeminen ja syöttäminen"
     },
@@ -88,6 +99,15 @@
     "options_tts_no_voices_found": {
         "message": "Selaimesta ei löytynyt ääniä. Ulkoista tekstistä puheeksi -palvelua käytetään."
     },
+    "options_edit_keyboard_shortcut": {
+        "message": "Muokkaa pikanäppäintä"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "Pikanäppäin avataksesi ponnahdusikkunan:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "näppäinyhdistelmää ei ole asetettu"
+    },
     "text_expand": {
         "message": "Lisää"
     },
@@ -136,6 +156,9 @@
     "popup_menu_options_link": {
         "message": "Lisäasetukset"
     },
+    "popup_placeholder_translation": {
+        "message": "Käännös"
+    },
     "theme_light": {
         "message": "Kevyt teema"
     },
@@ -175,12 +198,6 @@
     "tooltip_go_forward": {
         "message": "Eteenpäin"
     },
-    "tooltip_edit_text": {
-        "message": "Muokkaa tekstiä"
-    },
-    "tooltip_translate_again": {
-        "message": "Käännä uudelleen"
-    },
     "date_today": {
         "message": "tänään"
     },
@@ -196,14 +213,14 @@
     "forefox_perm_button": {
         "message": "Hallinnoi käyttöoikeuksia"
     },
-    "select_language_auto": {
-        "message": "Tunnista kieli"
-    },
     "select_language_search_placeholder": {
         "message": "Etsi kieliä (ISO-koodi tai nimi)"
     },
     "select_language_search_no_results": {
         "message": "Ei tuloksia"
+    },
+    "supported_languages_auto": {
+        "message": "Tunnista kieli"
     },
     "supported_languages_af": {
         "message": "afrikkalainen"
@@ -257,7 +274,7 @@
         "message": "Korsikalainen"
     },
     "supported_languages_hr": {
-        "message": "Kroatia"
+        "message": "kroatialainen"
     },
     "supported_languages_cs": {
         "message": "Tšekki"

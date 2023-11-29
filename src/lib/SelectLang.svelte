@@ -23,7 +23,7 @@
 	>
 		{#if auto}
 			<option value="auto">
-				{getMessage('select_language_auto')}
+				{getMessage('supported_languages_auto')}
 			</option>
 		{/if}
 		{#each sortedI18nLanguages as { key, lang } (key)}

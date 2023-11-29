@@ -30,12 +30,25 @@ const getMessage = msg => {
 const getURL = path => chrome.runtime.getURL(path);
 
 const openOptionsPage = () => {
-	chrome.runtime.sendMessage({
-		type: 'openOptionsPage',
-		content: {
-			hash: '#inline_translate'
-		}
-	});
+	chrome.runtime.openOptionsPage();
+};
+
+const sendMessage = msg => {
+	chrome.runtime.sendMessage(msg);
+};
+
+const isChrome = () => !chrome.runtime.getManifest().browser_specific_settings;
+
+const getShortcutByCommand = async command => {
+	const allCommands = await chrome.commands.getAll();
+	const findedCommand = allCommands.find(i => i.name === command);
+	return findedCommand
+		? findedCommand.shortcut.split(/\s*\+\s*/).filter(Boolean)
+		: null;
+};
+
+const tabCreate = createProperties => {
+	chrome.tabs.create(createProperties);
 };
 
 export {
@@ -46,5 +59,9 @@ export {
 	storageListener,
 	getMessage,
 	getURL,
-	openOptionsPage
+	openOptionsPage,
+	isChrome,
+	sendMessage,
+	getShortcutByCommand,
+	tabCreate
 };

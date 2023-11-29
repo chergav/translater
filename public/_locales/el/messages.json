@@ -3,7 +3,7 @@
         "message": "Translater - μετάφραση επιλεγμένου κειμένου"
     },
     "app_description": {
-        "message": "Μετάφραση επιλεγμένου κειμένου με τη Μετάφραση Google με ανοιχτό και σκοτεινό θέμα"
+        "message": "Μετάφραση επιλεγμένου κειμένου με το Google Translate με ανοιχτό και σκοτεινό θέμα"
     },
     "app_version": {
         "message": "Εκδοχή"
@@ -21,6 +21,17 @@
                 "content": "Translater"
             }
         }
+    },
+    "commands_open_translater": {
+        "message": "Ανοίξτε την εφαρμογή $APP_NAME$",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "ή πατήστε μια συντόμευση πληκτρολογίου στη σελίδα:"
     },
     "options_tab_inline_translate": {
         "message": "Ανάγνωση και εισαγωγή"
@@ -83,10 +94,19 @@
         "message": "Φωνές"
     },
     "options_tts_table_caption": {
-        "message": "Για γλώσσες που δεν αναφέρονται, θα χρησιμοποιηθεί εξωτερική υπηρεσία μετατροπής κειμένου σε ομιλία."
+        "message": "Για γλώσσες που δεν αναφέρονται, θα χρησιμοποιηθεί μια εξωτερική υπηρεσία μετατροπής κειμένου σε ομιλία."
     },
     "options_tts_no_voices_found": {
         "message": "Δεν βρέθηκαν φωνές στο πρόγραμμα περιήγησης. Θα χρησιμοποιηθεί εξωτερική υπηρεσία μετατροπής κειμένου σε ομιλία."
+    },
+    "options_edit_keyboard_shortcut": {
+        "message": "Επεξεργασία συντόμευσης πληκτρολογίου"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "Συντόμευση πληκτρολογίου για άνοιγμα αναδυόμενου παραθύρου:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "ο συνδυασμός πλήκτρων δεν έχει οριστεί"
     },
     "text_expand": {
         "message": "Περισσότερο"
@@ -136,6 +156,9 @@
     "popup_menu_options_link": {
         "message": "Επιπρόσθετες ρυθμίσεις"
     },
+    "popup_placeholder_translation": {
+        "message": "Μετάφραση"
+    },
     "theme_light": {
         "message": "Ελαφρύ θέμα"
     },
@@ -175,12 +198,6 @@
     "tooltip_go_forward": {
         "message": "Προς τα εμπρός"
     },
-    "tooltip_edit_text": {
-        "message": "Επεξεργασία κειμένου"
-    },
-    "tooltip_translate_again": {
-        "message": "Μετάφρασε ξανά"
-    },
     "date_today": {
         "message": "σήμερα"
     },
@@ -196,14 +213,14 @@
     "forefox_perm_button": {
         "message": "Διαχείριση δικαιωμάτων"
     },
-    "select_language_auto": {
-        "message": "εντοπισμός γλώσσας"
-    },
     "select_language_search_placeholder": {
         "message": "Εύρεση γλωσσών (κωδικός ISO ή όνομα)"
     },
     "select_language_search_no_results": {
         "message": "Χωρίς αποτέλεσμα"
+    },
+    "supported_languages_auto": {
+        "message": "εντοπισμός γλώσσας"
     },
     "supported_languages_af": {
         "message": "αφρικανός"
@@ -458,7 +475,7 @@
         "message": "Σλοβενική"
     },
     "supported_languages_so": {
-        "message": "Σομαλός"
+        "message": "Σομαλία"
     },
     "supported_languages_sx": {
         "message": "Σόθο"

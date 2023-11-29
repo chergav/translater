@@ -22,6 +22,17 @@
             }
         }
     },
+    "commands_open_translater": {
+        "message": "$APP_NAME$ 열기",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "또는 페이지에서 키보드 단축키를 누르세요."
+    },
     "options_tab_inline_translate": {
         "message": "읽기 및 입력"
     },
@@ -88,6 +99,15 @@
     "options_tts_no_voices_found": {
         "message": "브라우저에서 음성을 찾을 수 없습니다. 외부 텍스트 음성 변환 서비스가 사용됩니다."
     },
+    "options_edit_keyboard_shortcut": {
+        "message": "키보드 단축키 수정"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "팝업 창을 여는 키보드 단축키:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "키 조합이 설정되지 않았습니다"
+    },
     "text_expand": {
         "message": "더"
     },
@@ -136,6 +156,9 @@
     "popup_menu_options_link": {
         "message": "추가 세팅"
     },
+    "popup_placeholder_translation": {
+        "message": "번역"
+    },
     "theme_light": {
         "message": "밝은 테마"
     },
@@ -175,12 +198,6 @@
     "tooltip_go_forward": {
         "message": "앞으로"
     },
-    "tooltip_edit_text": {
-        "message": "텍스트 편집"
-    },
-    "tooltip_translate_again": {
-        "message": "다시 번역하다"
-    },
     "date_today": {
         "message": "오늘"
     },
@@ -196,14 +213,14 @@
     "forefox_perm_button": {
         "message": "권한 관리"
     },
-    "select_language_auto": {
-        "message": "언어를 감지"
-    },
     "select_language_search_placeholder": {
         "message": "언어 찾기(ISO 코드 또는 이름)"
     },
     "select_language_search_no_results": {
         "message": "결과 없음"
+    },
+    "supported_languages_auto": {
+        "message": "언어를 감지"
     },
     "supported_languages_af": {
         "message": "아프리카 사람"

@@ -22,6 +22,17 @@
             }
         }
     },
+    "commands_open_translater": {
+        "message": "Öffnen Sie $APP_NAME$",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "oder drücken Sie eine Tastenkombination auf der Seite:"
+    },
     "options_tab_inline_translate": {
         "message": "Lesen und Eingeben"
     },
@@ -88,6 +99,15 @@
     "options_tts_no_voices_found": {
         "message": "Im Browser wurden keine Stimmen gefunden. Es wird ein externer Text-to-Speech-Dienst genutzt."
     },
+    "options_edit_keyboard_shortcut": {
+        "message": "Tastaturkürzel bearbeiten"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "Tastenkombination zum Öffnen des Popup-Fensters:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "Tastenkombination ist nicht festgelegt"
+    },
     "text_expand": {
         "message": "Mehr"
     },
@@ -136,6 +156,9 @@
     "popup_menu_options_link": {
         "message": "Zusätzliche Einstellungen"
     },
+    "popup_placeholder_translation": {
+        "message": "Übersetzung"
+    },
     "theme_light": {
         "message": "Lichtthema"
     },
@@ -175,12 +198,6 @@
     "tooltip_go_forward": {
         "message": "Nach vorne"
     },
-    "tooltip_edit_text": {
-        "message": "Text bearbeiten"
-    },
-    "tooltip_translate_again": {
-        "message": "Nochmals übersetzen"
-    },
     "date_today": {
         "message": "Heute"
     },
@@ -196,14 +213,14 @@
     "forefox_perm_button": {
         "message": "Berechtigungen verwalten"
     },
-    "select_language_auto": {
-        "message": "Sprache erkennen"
-    },
     "select_language_search_placeholder": {
         "message": "Sprachen suchen (ISO-Code oder Name)"
     },
     "select_language_search_no_results": {
         "message": "Keine Ergebnisse"
+    },
+    "supported_languages_auto": {
+        "message": "Sprache erkennen"
     },
     "supported_languages_af": {
         "message": "afrikanisch"

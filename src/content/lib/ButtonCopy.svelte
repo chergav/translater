@@ -1,5 +1,5 @@
 <ButtonImage
-	disabled={!isClipboardSupport}
+	disabled={!isClipboardSupport || !text}
 	round
 	tooltip={{ title }}
 	on:click={copyToClipboard}

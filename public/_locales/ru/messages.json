@@ -22,6 +22,17 @@
             }
         }
     },
+    "commands_open_translater": {
+        "message": "Откройте $APP_NAME$",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "или нажмите сочетание клавиш на странице:"
+    },
     "options_tab_inline_translate": {
         "message": "Чтение и ввод"
     },
@@ -44,7 +55,7 @@
         "message": "Скройте кнопку на этих сайтах:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Добавьте домены, используя меню всплывающего окна на сайте, который вы хотите исключить."
+        "message": "Добавьте домены с помощью меню всплывающего окна на сайте, который вы хотите исключить."
     },
     "options_show_original_text": {
         "message": "Показать исходный текст"
@@ -87,6 +98,15 @@
     },
     "options_tts_no_voices_found": {
         "message": "В браузере голосов не найдено. Будет использоваться внешний сервис преобразования текста в речь."
+    },
+    "options_edit_keyboard_shortcut": {
+        "message": "Изменить сочетание клавиш"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "Сочетание клавиш для открытия всплывающего окна:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "комбинация клавиш не установлена"
     },
     "text_expand": {
         "message": "Более"
@@ -136,6 +156,9 @@
     "popup_menu_options_link": {
         "message": "Дополнительные настройки"
     },
+    "popup_placeholder_translation": {
+        "message": "Перевод"
+    },
     "theme_light": {
         "message": "Светлая тема"
     },
@@ -175,12 +198,6 @@
     "tooltip_go_forward": {
         "message": "Вперед"
     },
-    "tooltip_edit_text": {
-        "message": "Редактировать текст"
-    },
-    "tooltip_translate_again": {
-        "message": "Перевести еще раз"
-    },
     "date_today": {
         "message": "сегодня"
     },
@@ -196,14 +213,14 @@
     "forefox_perm_button": {
         "message": "Управление разрешениями"
     },
-    "select_language_auto": {
-        "message": "определить язык"
-    },
     "select_language_search_placeholder": {
-        "message": "Найти языки (код ISO или имя)"
+        "message": "Найти языки (код ISO или название)"
     },
     "select_language_search_no_results": {
         "message": "Без результатов"
+    },
+    "supported_languages_auto": {
+        "message": "определить язык"
     },
     "supported_languages_af": {
         "message": "Африканский"
@@ -254,7 +271,7 @@
         "message": "китайский традиционный"
     },
     "supported_languages_co": {
-        "message": "корсиканский"
+        "message": "корсиканец"
     },
     "supported_languages_hr": {
         "message": "хорватский"
@@ -395,7 +412,7 @@
         "message": "маори"
     },
     "supported_languages_mr": {
-        "message": "маратхи"
+        "message": "Маратхи"
     },
     "supported_languages_mn": {
         "message": "Монгольский"
@@ -497,7 +514,7 @@
         "message": "украинский"
     },
     "supported_languages_ur": {
-        "message": "урду"
+        "message": "Урду"
     },
     "supported_languages_uz": {
         "message": "Узбекский"

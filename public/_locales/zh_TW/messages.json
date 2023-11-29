@@ -22,6 +22,17 @@
             }
         }
     },
+    "commands_open_translater": {
+        "message": "開啟$APP_NAME$",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "或按頁面上的鍵盤快速鍵："
+    },
     "options_tab_inline_translate": {
         "message": "讀取和輸入"
     },
@@ -88,6 +99,15 @@
     "options_tts_no_voices_found": {
         "message": "瀏覽器中找不到聲音。將使用外部文字轉語音服務。"
     },
+    "options_edit_keyboard_shortcut": {
+        "message": "編輯鍵盤快速鍵"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "開啟彈出視窗的鍵盤快速鍵："
+    },
+    "options_key_combination_is_not_set": {
+        "message": "組合鍵未設定"
+    },
     "text_expand": {
         "message": "更多的"
     },
@@ -136,6 +156,9 @@
     "popup_menu_options_link": {
         "message": "其他設定"
     },
+    "popup_placeholder_translation": {
+        "message": "翻譯"
+    },
     "theme_light": {
         "message": "淺色主題"
     },
@@ -175,12 +198,6 @@
     "tooltip_go_forward": {
         "message": "向前"
     },
-    "tooltip_edit_text": {
-        "message": "編輯文字"
-    },
-    "tooltip_translate_again": {
-        "message": "再次翻譯"
-    },
     "date_today": {
         "message": "今天"
     },
@@ -196,14 +213,14 @@
     "forefox_perm_button": {
         "message": "管理權限"
     },
-    "select_language_auto": {
-        "message": "檢測語言"
-    },
     "select_language_search_placeholder": {
         "message": "尋找語言（ISO 代碼或名稱）"
     },
     "select_language_search_no_results": {
         "message": "沒有結果"
+    },
+    "supported_languages_auto": {
+        "message": "檢測語言"
     },
     "supported_languages_af": {
         "message": "非洲人"

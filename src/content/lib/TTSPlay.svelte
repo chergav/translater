@@ -1,5 +1,5 @@
 <ButtonImage
-	disabled={$status?.error}
+	disabled={$status?.error || !text}
 	round
 	tooltip={{ title }}
 	on:click={startTTS}

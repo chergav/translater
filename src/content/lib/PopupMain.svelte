@@ -135,7 +135,11 @@
 						bind:this={elemTrans}
 						class={isLongText ? 'text-sm' : 'text-base'}
 					>
-						{$store.translated.sentences.trans}
+						{#if $store.translated.sentences.trans}
+							{$store.translated.sentences.trans}
+						{:else}
+							<span class="text-sm text-gray-500">{getMessage('popup_placeholder_translation')}</span>
+						{/if}
 					</div>
 					{#if $store.pending}
 						<div

@@ -22,6 +22,17 @@
             }
         }
     },
+    "commands_open_translater": {
+        "message": "פתח את $APP_NAME$",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "או הקש על קיצור מקשים בעמוד:"
+    },
     "options_tab_inline_translate": {
         "message": "קריאה וקלט"
     },
@@ -88,6 +99,15 @@
     "options_tts_no_voices_found": {
         "message": "לא נמצאו קולות בדפדפן. ייעשה שימוש בשירות טקסט לדיבור חיצוני."
     },
+    "options_edit_keyboard_shortcut": {
+        "message": "ערוך קיצור מקלדת"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "קיצור מקלדת לפתיחת חלון קופץ:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "צירוף המקשים אינו מוגדר"
+    },
     "text_expand": {
         "message": "יותר"
     },
@@ -136,6 +156,9 @@
     "popup_menu_options_link": {
         "message": "הגדרות נוספות"
     },
+    "popup_placeholder_translation": {
+        "message": "תִרגוּם"
+    },
     "theme_light": {
         "message": "נושא קליל"
     },
@@ -175,12 +198,6 @@
     "tooltip_go_forward": {
         "message": "קָדִימָה"
     },
-    "tooltip_edit_text": {
-        "message": "ערוך טקסט"
-    },
-    "tooltip_translate_again": {
-        "message": "תרגם שוב"
-    },
     "date_today": {
         "message": "היום"
     },
@@ -196,14 +213,14 @@
     "forefox_perm_button": {
         "message": "נהל הרשאות"
     },
-    "select_language_auto": {
-        "message": "איתור שפה"
-    },
     "select_language_search_placeholder": {
         "message": "מצא שפות (קוד ISO או שם)"
     },
     "select_language_search_no_results": {
         "message": "אין תוצאות"
+    },
+    "supported_languages_auto": {
+        "message": "איתור שפה"
     },
     "supported_languages_af": {
         "message": "אַפְרִיקַנִי"
@@ -434,7 +451,7 @@
         "message": "רוּסִי"
     },
     "supported_languages_sm": {
-        "message": "סמואי"
+        "message": "סמואנית"
     },
     "supported_languages_gd": {
         "message": "גאלית סקוטית"

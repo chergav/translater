@@ -1,6 +1,7 @@
 import { writable, derived, get } from 'svelte/store';
 import { persistentStore } from '~/common/store';
 import { historyAdd } from '~/common/history';
+import { getUILanguage } from '~/common/browserApi';
 
 const initData = {
 	selectedText: null,
@@ -22,6 +23,18 @@ const store = writable(initData);
 
 const selectedText = derived(store, $store => $store.selectedText);
 const sourceLang = derived(store, $store => $store.sourceLang);
+
+const resetStore = () => {
+	store.update(data => ({
+		...data,
+		translated: null,
+		selectedText: null,
+		sourceLang: 'auto',
+		cacheIndex: 0, // to get last item on prev button when open empty popup
+		selectedElemRect: null,
+		selectedEndCoord: null
+	}));
+};
 
 const fetchTranslate = async (sourceLang, targetLang, selectedText) => {
 	try {
@@ -75,13 +88,13 @@ const getGTranslate = async () => {
 		});
 
 		translated.sentences = sentences;
-		translated.targetLang = targetLang;
+		translated.targetLang = targetLang; // for cache
 
 		store.update(value => ({
 			...value,
 			cacheTranslate: [...value.cacheTranslate, translated],
 			sourceLang: value.sourceLang === 'auto' ? translated.src : value.sourceLang,
-			cacheIndex: -1
+			cacheIndex: -1 // last item
 		}));
 
 		historyAdd({
@@ -95,7 +108,28 @@ const getGTranslate = async () => {
 	return translated;
 };
 
+const resetTranslate = () => {
+	store.update(value => ({
+		...value,
+		sourceLang: 'auto',
+		targetLang: getUILanguage(),
+		translated: {
+			sourceLang: 'auto',
+			spell: {},
+			ld_result: { srclangs: ['auto'] },
+			sentences: { orig: '', trans: '' }
+		}
+	}));
+};
+
 async function getTranslate() {
+	const $store = get(store);
+
+	if (!$store.selectedText) {
+		resetTranslate();
+		return;
+	}
+
 	store.update(value => ({
 		...value,
 		pending: true,
@@ -124,7 +158,9 @@ async function getTranslate() {
 selectedText.subscribe(text => {
 	if (text) {
 		getTranslate();
+	} else {
+		resetTranslate();
 	}
 });
 
-export { store, selectedText, sourceLang, getTranslate };
+export { store, resetStore, selectedText, sourceLang, getTranslate };

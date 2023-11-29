@@ -33,7 +33,7 @@ const genTranslatedObject = (origObject, translatedArray) => {
 			console.log(message);
 		}
 
-		if (key === 'options_title') {
+		if (key === 'options_title' || key === 'commands_open_translater' ) {
 			// $ APP_NAME $ -> $APP_NAME$
 			message = message.replace(/\$\s*(\w+)\s*\$/g, (match, p1) => `$${p1}$`);
 			console.log(message);

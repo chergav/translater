@@ -3,7 +3,7 @@
         "message": "Translater - oversettelse av valgt tekst"
     },
     "app_description": {
-        "message": "Oversettelse av valgt tekst med Google Translate med lyst og mørkt tema"
+        "message": "Oversett valgt tekst med Google Translate med lyst og mørkt tema"
     },
     "app_version": {
         "message": "Versjon"
@@ -21,6 +21,17 @@
                 "content": "Translater"
             }
         }
+    },
+    "commands_open_translater": {
+        "message": "Åpne $APP_NAME$",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "eller trykk på en hurtigtast på siden:"
     },
     "options_tab_inline_translate": {
         "message": "Lesing og innspill"
@@ -88,6 +99,15 @@
     "options_tts_no_voices_found": {
         "message": "Ingen stemmer funnet i nettleseren. En ekstern tekst-til-tale-tjeneste vil bli brukt."
     },
+    "options_edit_keyboard_shortcut": {
+        "message": "Rediger hurtigtast"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "Tastatursnarvei for å åpne popup-vindu:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "tastekombinasjonen er ikke angitt"
+    },
     "text_expand": {
         "message": "Mer"
     },
@@ -113,7 +133,7 @@
         "message": "Eksempler"
     },
     "popup_perhaps_you_meant": {
-        "message": "Du mente kanskje:"
+        "message": "Kanskje du mente:"
     },
     "popup_original_language": {
         "message": "Originalspråk:"
@@ -135,6 +155,9 @@
     },
     "popup_menu_options_link": {
         "message": "Tilleggsinnstillinger"
+    },
+    "popup_placeholder_translation": {
+        "message": "Oversettelse"
     },
     "theme_light": {
         "message": "Lett tema"
@@ -175,12 +198,6 @@
     "tooltip_go_forward": {
         "message": "Framover"
     },
-    "tooltip_edit_text": {
-        "message": "Rediger tekst"
-    },
-    "tooltip_translate_again": {
-        "message": "Oversett igjen"
-    },
     "date_today": {
         "message": "i dag"
     },
@@ -196,14 +213,14 @@
     "forefox_perm_button": {
         "message": "Administrer tillatelser"
     },
-    "select_language_auto": {
-        "message": "oppdage språk"
-    },
     "select_language_search_placeholder": {
         "message": "Finn språk (ISO-kode eller navn)"
     },
     "select_language_search_no_results": {
         "message": "Ingen resultater"
+    },
+    "supported_languages_auto": {
+        "message": "oppdage språk"
     },
     "supported_languages_af": {
         "message": "afrikansk"
@@ -380,7 +397,7 @@
         "message": "makedonsk"
     },
     "supported_languages_mg": {
-        "message": "Madagaskar"
+        "message": "madagaskisk"
     },
     "supported_languages_ms": {
         "message": "malaysisk"

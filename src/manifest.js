@@ -30,6 +30,15 @@ export default defineManifest(() => ({
 			128: 'src/icons/128.png'
 		}
 	},
+	commands: {
+		'open-translater': {
+			suggested_key: {
+				default: 'Ctrl+Shift+U',
+				mac: 'Command+Shift+U'
+			},
+			description: '__MSG_commands_open_translater__'
+		}
+	},
 	options_ui: {
 		page: 'src/options/index.html',
 		open_in_tab: true
@@ -46,7 +55,8 @@ export default defineManifest(() => ({
 		'contextMenus',
 		'tabs',
 		'activeTab',
-		'storage'
+		'storage',
+		'scripting'
 	],
 	host_permissions: ['<all_urls>'],
 	web_accessible_resources: [

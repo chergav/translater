@@ -33,10 +33,11 @@ const createTrigger = event => {
 	app.trigger.instance = new app.trigger.component({ target: root });
 };
 
-const createPopup = selectedText => {
+const createPopup = text => {
 	store.update(data => ({
 		...data,
-		selectedText
+		hostname: window.location.hostname,
+		selectedText: data.selectedText ?? text
 	}));
 
 	createApp('popup');

@@ -22,6 +22,17 @@
             }
         }
     },
+    "commands_open_translater": {
+        "message": "Відкрийте $APP_NAME$",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "або натисніть комбінацію клавіш на сторінці:"
+    },
     "options_tab_inline_translate": {
         "message": "Читання та введення"
     },
@@ -41,7 +52,7 @@
         "message": "Показати кнопку в текстовому полі"
     },
     "options_hide_button_on_sites": {
-        "message": "Приховати кнопку на цих сайтах:"
+        "message": "Сховати кнопку на цих сайтах:"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Додайте домени за допомогою меню спливаючого вікна на сайті, який потрібно виключити"
@@ -87,6 +98,15 @@
     },
     "options_tts_no_voices_found": {
         "message": "Немає голосів у браузері. Використовуватиметься зовнішня служба синтезу мовлення."
+    },
+    "options_edit_keyboard_shortcut": {
+        "message": "Редагувати комбінацію клавіш"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "Комбінація клавіш для відкриття спливаючого вікна:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "комбінація клавіш не встановлена"
     },
     "text_expand": {
         "message": "більше"
@@ -136,6 +156,9 @@
     "popup_menu_options_link": {
         "message": "Додаткові налаштування"
     },
+    "popup_placeholder_translation": {
+        "message": "Переклад"
+    },
     "theme_light": {
         "message": "Світла тема"
     },
@@ -175,12 +198,6 @@
     "tooltip_go_forward": {
         "message": "вперед"
     },
-    "tooltip_edit_text": {
-        "message": "Редагувати текст"
-    },
-    "tooltip_translate_again": {
-        "message": "Перекладіть ще раз"
-    },
     "date_today": {
         "message": "сьогодні"
     },
@@ -196,14 +213,14 @@
     "forefox_perm_button": {
         "message": "Керувати дозволами"
     },
-    "select_language_auto": {
-        "message": "Визначити мову"
-    },
     "select_language_search_placeholder": {
         "message": "Пошук мов (код або назва ISO)"
     },
     "select_language_search_no_results": {
         "message": "Немає результатів"
+    },
+    "supported_languages_auto": {
+        "message": "Визначити мову"
     },
     "supported_languages_af": {
         "message": "африканський"

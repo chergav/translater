@@ -22,6 +22,17 @@
             }
         }
     },
+    "commands_open_translater": {
+        "message": "Ouvrez $APP_NAME$",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "ou appuyez sur un raccourci clavier sur la page :"
+    },
     "options_tab_inline_translate": {
         "message": "Lecture et saisie"
     },
@@ -88,6 +99,15 @@
     "options_tts_no_voices_found": {
         "message": "Aucune voix trouvée dans le navigateur. Un service externe de synthèse vocale sera utilisé."
     },
+    "options_edit_keyboard_shortcut": {
+        "message": "Modifier le raccourci clavier"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "Raccourci clavier pour ouvrir la fenêtre contextuelle :"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "la combinaison de touches n'est pas définie"
+    },
     "text_expand": {
         "message": "Plus"
     },
@@ -136,6 +156,9 @@
     "popup_menu_options_link": {
         "message": "Paramètres additionnels"
     },
+    "popup_placeholder_translation": {
+        "message": "Traduction"
+    },
     "theme_light": {
         "message": "Thème lumière"
     },
@@ -175,12 +198,6 @@
     "tooltip_go_forward": {
         "message": "Avant"
     },
-    "tooltip_edit_text": {
-        "message": "Éditer le texte"
-    },
-    "tooltip_translate_again": {
-        "message": "Traduire à nouveau"
-    },
     "date_today": {
         "message": "aujourd'hui"
     },
@@ -196,14 +213,14 @@
     "forefox_perm_button": {
         "message": "Gérer les autorisations"
     },
-    "select_language_auto": {
-        "message": "détecter la langue"
-    },
     "select_language_search_placeholder": {
         "message": "Rechercher des langues (code ISO ou nom)"
     },
     "select_language_search_no_results": {
         "message": "Aucun résultat"
+    },
+    "supported_languages_auto": {
+        "message": "détecter la langue"
     },
     "supported_languages_af": {
         "message": "africain"

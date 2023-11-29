@@ -22,6 +22,17 @@
             }
         }
     },
+    "commands_open_translater": {
+        "message": "$APP_NAME$ を開く",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "または、ページ上のキーボード ショートカットを押します。"
+    },
     "options_tab_inline_translate": {
         "message": "読み取りと入力"
     },
@@ -88,6 +99,15 @@
     "options_tts_no_voices_found": {
         "message": "ブラウザに音声が見つかりませんでした。外部のテキスト読み上げサービスが使用されます。"
     },
+    "options_edit_keyboard_shortcut": {
+        "message": "キーボードショートカットを編集する"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "ポップアップ ウィンドウを開くためのキーボード ショートカット:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "キーの組み合わせが設定されていません"
+    },
     "text_expand": {
         "message": "もっと"
     },
@@ -136,6 +156,9 @@
     "popup_menu_options_link": {
         "message": "追加の設定"
     },
+    "popup_placeholder_translation": {
+        "message": "翻訳"
+    },
     "theme_light": {
         "message": "ライトテーマ"
     },
@@ -175,12 +198,6 @@
     "tooltip_go_forward": {
         "message": "フォワード"
     },
-    "tooltip_edit_text": {
-        "message": "テキストを編集する"
-    },
-    "tooltip_translate_again": {
-        "message": "もう一度翻訳してください"
-    },
     "date_today": {
         "message": "今日"
     },
@@ -196,14 +213,14 @@
     "forefox_perm_button": {
         "message": "権限の管理"
     },
-    "select_language_auto": {
-        "message": "言語を検出"
-    },
     "select_language_search_placeholder": {
         "message": "言語の検索 (ISO コードまたは名前)"
     },
     "select_language_search_no_results": {
         "message": "結果がありません"
+    },
+    "supported_languages_auto": {
+        "message": "言語を検出"
     },
     "supported_languages_af": {
         "message": "アフリカ人"

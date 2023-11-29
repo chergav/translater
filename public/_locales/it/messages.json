@@ -22,6 +22,17 @@
             }
         }
     },
+    "commands_open_translater": {
+        "message": "Apri $APP_NAME$",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "oppure premi una scorciatoia da tastiera nella pagina:"
+    },
     "options_tab_inline_translate": {
         "message": "Lettura e input"
     },
@@ -88,6 +99,15 @@
     "options_tts_no_voices_found": {
         "message": "Nessuna voce trovata nel browser. Verrà utilizzato un servizio di sintesi vocale esterno."
     },
+    "options_edit_keyboard_shortcut": {
+        "message": "Modifica la scorciatoia da tastiera"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "Scorciatoia da tastiera per aprire la finestra popup:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "la combinazione di tasti non è impostata"
+    },
     "text_expand": {
         "message": "Di più"
     },
@@ -136,6 +156,9 @@
     "popup_menu_options_link": {
         "message": "Altre impostazioni"
     },
+    "popup_placeholder_translation": {
+        "message": "Traduzione"
+    },
     "theme_light": {
         "message": "Tema leggero"
     },
@@ -175,12 +198,6 @@
     "tooltip_go_forward": {
         "message": "Inoltrare"
     },
-    "tooltip_edit_text": {
-        "message": "Modifica il testo"
-    },
-    "tooltip_translate_again": {
-        "message": "Traduci di nuovo"
-    },
     "date_today": {
         "message": "Oggi"
     },
@@ -196,14 +213,14 @@
     "forefox_perm_button": {
         "message": "Gestisci le autorizzazioni"
     },
-    "select_language_auto": {
-        "message": "rileva lingua"
-    },
     "select_language_search_placeholder": {
         "message": "Trova lingue (codice ISO o nome)"
     },
     "select_language_search_no_results": {
         "message": "Nessun risultato"
+    },
+    "supported_languages_auto": {
+        "message": "rileva lingua"
     },
     "supported_languages_af": {
         "message": "africano"
@@ -479,7 +496,7 @@
         "message": "Tagalog"
     },
     "supported_languages_tg": {
-        "message": "Tagikistan"
+        "message": "Tagikista"
     },
     "supported_languages_ta": {
         "message": "Tamil"

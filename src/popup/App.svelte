@@ -45,62 +45,64 @@
 
 		<hr class="border-gray-300 dark:border-gray-700" />
 
-		<div class="p-3 min-h-[150px]">
-			<SelectLang
-				label={getMessage('target_lang_label')}
-				{languages}
-				bind:value={$persistentStore.targetLang}
+		<div class="p-3 flex flex-col gap-3 min-h-[200px]">
+			<div>
+				<ButtonImage
+					icon={heroWindow}
+					label={getMessage('commands_open_translater')}
+					small
+					on:click={openTranslater}
 			/>
+			</div>
+			<p class="text-sm">
+				{getMessage('popup_or_press_keyboard_shortcut')}
+			</p>
+			{#await shortcutKeysPromise then shortcutKeys}
+				<KBD keys={shortcutKeys} />
+			{/await}
+			{#if isChrome()}
+				<p>
+					<button
+						class="text-sm text-blue-600 hover:underline"
+						type="button"
+						on:click={openExtensionsShortcuts}
+					>
+						{getMessage('options_edit_keyboard_shortcut')}
+					</button>
+				</p>
+			{/if}
 		</div>
 
-		<div class="p-3 flex flex-col gap-1">
-			<div>
-				<a
-					class="text-sm text-blue-600 hover:underline"
-					href="https://github.com/chergav/translater"
-					rel="noopener noreferrer"
-					target="_blank"
-				>
-					Translater
-				</a>
-			</div>
-			<div>
-				<a
-					class="text-sm text-blue-600 hover:underline"
-					href="https://github.com/chergav/translater/releases"
-					rel="noopener noreferrer"
-					target="_blank"
-				>
-					{getMessage('app_version')} {version}
-				</a>
-			</div>
-		</div>
+		<TranslaterVersion />
 	{/if}
 {/await}
 
 <script context="module">
-import { getMessage, getURL } from '~/common/browserApi';
 import { loadFont } from '~/common/fontLoader';
-import { heroCog8Tooth } from '~/icons/heroicons';
 
 loadFont();
 </script>
 
 <script>
-import { persistentStore, themeClass } from '~/common/store';
-import { languages } from '~/common/settings';
-import SelectLang from '~/lib/SelectLang.svelte';
+import {
+	getMessage,
+	getURL,
+	openOptionsPage,
+	isChrome,
+	getShortcutByCommand,
+	tabCreate,
+	sendMessage
+} from '~/common/browserApi';
+import { themeClass } from '~/common/store';
+import { heroCog8Tooth, heroWindow } from '~/icons/heroicons';
 import ButtonImage from '~/lib/ButtonImage.svelte';
+import TranslaterVersion from '~/lib/TranslaterVersion.svelte';
+import KBD from '~/lib/KBD.svelte';
 
-let permPromise;
+let shortcutKeysPromise = getShortcutByCommand('open-translater');
 const optPerm = { origins: ['<all_urls>'] };
-const version = chrome.runtime.getManifest().version;
 
 $: document.documentElement.className = $themeClass;
-
-const openOptionsPage = () => {
-	chrome.runtime.openOptionsPage();
-};
 
 const getPerm = async () => await chrome.permissions.contains(optPerm);
 
@@ -111,5 +113,13 @@ const requestPerm = async () => {
 	}
 };
 
-permPromise = getPerm();
+let permPromise = getPerm();
+
+const openExtensionsShortcuts = () => {
+	tabCreate({ url: 'chrome://extensions/shortcuts' });
+};
+
+const openTranslater = () => {
+	sendMessage({ type: 'openTranslater' });
+};
 </script>

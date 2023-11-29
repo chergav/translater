@@ -22,6 +22,17 @@
             }
         }
     },
+    "commands_open_translater": {
+        "message": "Otwórz $APP_NAME$",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "lub naciśnij skrót klawiaturowy na stronie:"
+    },
     "options_tab_inline_translate": {
         "message": "Czytanie i wprowadzanie"
     },
@@ -88,6 +99,15 @@
     "options_tts_no_voices_found": {
         "message": "W przeglądarce nie znaleziono głosów. Wykorzystana zostanie zewnętrzna usługa zamiany tekstu na mowę."
     },
+    "options_edit_keyboard_shortcut": {
+        "message": "Edytuj skrót klawiaturowy"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "Skrót klawiaturowy otwierający wyskakujące okienko:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "kombinacja klawiszy nie jest ustawiona"
+    },
     "text_expand": {
         "message": "Więcej"
     },
@@ -136,6 +156,9 @@
     "popup_menu_options_link": {
         "message": "Dodatkowe ustawienia"
     },
+    "popup_placeholder_translation": {
+        "message": "Tłumaczenie"
+    },
     "theme_light": {
         "message": "Lekki motyw"
     },
@@ -175,12 +198,6 @@
     "tooltip_go_forward": {
         "message": "Do przodu"
     },
-    "tooltip_edit_text": {
-        "message": "Edytować tekst"
-    },
-    "tooltip_translate_again": {
-        "message": "Przetłumacz jeszcze raz"
-    },
     "date_today": {
         "message": "Dzisiaj"
     },
@@ -196,14 +213,14 @@
     "forefox_perm_button": {
         "message": "Zarządzaj uprawnieniami"
     },
-    "select_language_auto": {
-        "message": "Wykryj język"
-    },
     "select_language_search_placeholder": {
         "message": "Znajdź języki (kod ISO lub nazwa)"
     },
     "select_language_search_no_results": {
         "message": "Brak wyników"
+    },
+    "supported_languages_auto": {
+        "message": "Wykryj język"
     },
     "supported_languages_af": {
         "message": "afrykanin"
@@ -308,7 +325,7 @@
         "message": "Hausa"
     },
     "supported_languages_haw": {
-        "message": "hawajski"
+        "message": "Hawajski"
     },
     "supported_languages_he": {
         "message": "hebrajski"

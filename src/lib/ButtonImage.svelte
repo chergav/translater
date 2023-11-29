@@ -8,7 +8,6 @@
 		{colors[color]}
 		bg-transparent
 		disabled:opacity-50
-		disabled:cursor-not-allowed
 		transition-colors
 		[&>*]:pointer-events-none
 		{round ? 'rounded-full' : 'rounded-lg'}

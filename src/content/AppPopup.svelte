@@ -63,7 +63,7 @@ import PopupMain from './lib/PopupMain.svelte';
 import PopupFooter from '~/content/lib/PopupFooter.svelte';
 import { computePosition, offset, flip, shift } from '@floating-ui/dom';
 import { persistentStore, themeClass } from '~/common/store';
-import { store } from './store';
+import { store, resetStore } from './store';
 import { clickOutside } from '~/lib/utils/clickOutside';
 
 const reference = {
@@ -71,8 +71,8 @@ const reference = {
 };
 
 let tooltip,
-	left = 0,
-	top = 0,
+	left = 10,
+	top = 10,
 	moving = false;
 
 const tooltipPosition = () => {
@@ -140,7 +140,5 @@ onMount(() => {
 	tooltipPosition();
 });
 
-onDestroy(() => {
-	$store.translated = null;
-});
+onDestroy(resetStore);
 </script>

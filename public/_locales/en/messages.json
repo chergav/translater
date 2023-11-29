@@ -22,6 +22,17 @@
             }
         }
     },
+    "commands_open_translater": {
+        "message": "Open $APP_NAME$",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "or press a keyboard shortcut on page:"
+    },
     "options_tab_inline_translate": {
         "message": "Reading and input"
     },
@@ -88,6 +99,15 @@
     "options_tts_no_voices_found": {
         "message": "No voices found in the browser. An external text-to-speech service will be used."
     },
+    "options_edit_keyboard_shortcut": {
+        "message": "Edit keyboard shortcut"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "Keyboard shortcut to open popup window:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "key combination is not set"
+    },
     "text_expand": {
         "message": "More"
     },
@@ -136,6 +156,9 @@
     "popup_menu_options_link": {
         "message": "Additional settings"
     },
+    "popup_placeholder_translation": {
+        "message": "Translation"
+    },
     "theme_light": {
         "message": "Light theme"
     },
@@ -175,12 +198,6 @@
     "tooltip_go_forward": {
         "message": "Forward"
     },
-    "tooltip_edit_text": {
-        "message": "Edit text"
-    },
-    "tooltip_translate_again": {
-        "message": "Translate again"
-    },
     "date_today": {
         "message": "today"
     },
@@ -196,14 +213,14 @@
     "forefox_perm_button": {
         "message": "Manage permissions"
     },
-    "select_language_auto": {
-        "message": "detect language"
-    },
     "select_language_search_placeholder": {
         "message": "Find languages (ISO code or name)"
     },
     "select_language_search_no_results": {
         "message": "No results"
+    },
+    "supported_languages_auto": {
+        "message": "detect language"
     },
     "supported_languages_af": {
         "message": "African"

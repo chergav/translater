@@ -22,6 +22,17 @@
             }
         }
     },
+    "commands_open_translater": {
+        "message": "Open $APP_NAME$",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "of druk op een sneltoets op pagina:"
+    },
     "options_tab_inline_translate": {
         "message": "Lezen en invoeren"
     },
@@ -88,6 +99,15 @@
     "options_tts_no_voices_found": {
         "message": "Geen stemmen gevonden in de browser. Er zal gebruik worden gemaakt van een externe tekst-naar-spraakdienst."
     },
+    "options_edit_keyboard_shortcut": {
+        "message": "Sneltoets bewerken"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "Sneltoets om een ​​pop-upvenster te openen:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "toetscombinatie is niet ingesteld"
+    },
     "text_expand": {
         "message": "Meer"
     },
@@ -136,6 +156,9 @@
     "popup_menu_options_link": {
         "message": "Aanvullende instellingen"
     },
+    "popup_placeholder_translation": {
+        "message": "Vertaling"
+    },
     "theme_light": {
         "message": "Licht thema"
     },
@@ -175,12 +198,6 @@
     "tooltip_go_forward": {
         "message": "Vooruit"
     },
-    "tooltip_edit_text": {
-        "message": "Tekst bewerken"
-    },
-    "tooltip_translate_again": {
-        "message": "Opnieuw vertalen"
-    },
     "date_today": {
         "message": "Vandaag"
     },
@@ -196,14 +213,14 @@
     "forefox_perm_button": {
         "message": "Machtigingen beheren"
     },
-    "select_language_auto": {
-        "message": "taal detecteren"
-    },
     "select_language_search_placeholder": {
         "message": "Talen zoeken (ISO-code of naam)"
     },
     "select_language_search_no_results": {
         "message": "Geen resultaten"
+    },
+    "supported_languages_auto": {
+        "message": "taal detecteren"
     },
     "supported_languages_af": {
         "message": "Afrikaanse"

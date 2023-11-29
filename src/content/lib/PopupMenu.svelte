@@ -79,6 +79,7 @@
 			<MenuItem class="whitespace-nowrap" noclose>
 				<ButtonImage
 					class="w-full"
+					disabled={$store.hostname === ''}
 					label={isDomainInBlacklist
 						? getMessage('popup_menu_show_translate_button')
 						: getMessage('popup_menu_hide_translate_button')}
@@ -111,7 +112,7 @@
 <script>
 import { persistentStore } from '~/common/store';
 import { store } from '~/content/store';
-import { getMessage, openOptionsPage } from '~/common/browserApi';
+import { getMessage, sendMessage } from '~/common/browserApi';
 import ButtonImage from '~/lib/ButtonImage.svelte';
 import {
 	Menu,
@@ -144,5 +145,9 @@ const addDomainToBlacklist = () => {
 const handleReverseTranslate = () => {
 	[$store.sourceLang, $persistentStore.targetLang] = [$persistentStore.targetLang, $store.sourceLang];
 	$store.selectedText = $store.translated.sentences.trans;
+};
+
+const openOptionsPage = () => {
+	sendMessage({ type: 'openOptionsPage' });
 };
 </script>

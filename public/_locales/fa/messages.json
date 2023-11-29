@@ -22,6 +22,17 @@
             }
         }
     },
+    "commands_open_translater": {
+        "message": "$APP_NAME$ را باز کنید",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "یا میانبر صفحه کلید را در صفحه فشار دهید:"
+    },
     "options_tab_inline_translate": {
         "message": "خواندن و ورودی"
     },
@@ -88,6 +99,15 @@
     "options_tts_no_voices_found": {
         "message": "هیچ صدایی در مرورگر یافت نشد. یک سرویس تبدیل متن به گفتار خارجی استفاده خواهد شد."
     },
+    "options_edit_keyboard_shortcut": {
+        "message": "ویرایش میانبر صفحه کلید"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "میانبر صفحه کلید برای باز کردن پنجره بازشو:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "ترکیب کلید تنظیم نشده است"
+    },
     "text_expand": {
         "message": "بیشتر"
     },
@@ -136,6 +156,9 @@
     "popup_menu_options_link": {
         "message": "تنظیمات اضافی"
     },
+    "popup_placeholder_translation": {
+        "message": "ترجمه"
+    },
     "theme_light": {
         "message": "تم سبک"
     },
@@ -175,12 +198,6 @@
     "tooltip_go_forward": {
         "message": "رو به جلو"
     },
-    "tooltip_edit_text": {
-        "message": "ویرایش متن"
-    },
-    "tooltip_translate_again": {
-        "message": "دوباره ترجمه کن"
-    },
     "date_today": {
         "message": "امروز"
     },
@@ -191,19 +208,19 @@
         "message": "اجازه راه اندازی در فایرفاکس"
     },
     "forefox_perm_text": {
-        "message": "برنامه افزودنی برای دسترسی به وب سایت ها و ترجمه در مرورگر فایرفاکس به اجازه شما نیاز دارد."
+        "message": "افزونه برای دسترسی به وب سایت ها و ترجمه در مرورگر فایرفاکس به اجازه شما نیاز دارد."
     },
     "forefox_perm_button": {
         "message": "مجوزها را مدیریت کنید"
-    },
-    "select_language_auto": {
-        "message": "تشخیص زبان"
     },
     "select_language_search_placeholder": {
         "message": "یافتن زبان ها (کد یا نام ISO)"
     },
     "select_language_search_no_results": {
         "message": "هیچ نتیجه ای"
+    },
+    "supported_languages_auto": {
+        "message": "تشخیص زبان"
     },
     "supported_languages_af": {
         "message": "آفریقایی"

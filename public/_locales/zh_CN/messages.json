@@ -22,6 +22,17 @@
             }
         }
     },
+    "commands_open_translater": {
+        "message": "打开$APP_NAME$",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "或按页面上的键盘快捷键："
+    },
     "options_tab_inline_translate": {
         "message": "读取和输入"
     },
@@ -88,6 +99,15 @@
     "options_tts_no_voices_found": {
         "message": "浏览器中找不到声音。将使用外部文本转语音服务。"
     },
+    "options_edit_keyboard_shortcut": {
+        "message": "编辑键盘快捷键"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "打开弹出窗口的键盘快捷键："
+    },
+    "options_key_combination_is_not_set": {
+        "message": "组合键未设置"
+    },
     "text_expand": {
         "message": "更多的"
     },
@@ -136,6 +156,9 @@
     "popup_menu_options_link": {
         "message": "其他设置"
     },
+    "popup_placeholder_translation": {
+        "message": "翻译"
+    },
     "theme_light": {
         "message": "浅色主题"
     },
@@ -175,12 +198,6 @@
     "tooltip_go_forward": {
         "message": "向前"
     },
-    "tooltip_edit_text": {
-        "message": "编辑文字"
-    },
-    "tooltip_translate_again": {
-        "message": "再次翻译"
-    },
     "date_today": {
         "message": "今天"
     },
@@ -196,14 +213,14 @@
     "forefox_perm_button": {
         "message": "管理权限"
     },
-    "select_language_auto": {
-        "message": "检测语言"
-    },
     "select_language_search_placeholder": {
         "message": "查找语言（ISO 代码或名称）"
     },
     "select_language_search_no_results": {
         "message": "没有结果"
+    },
+    "supported_languages_auto": {
+        "message": "检测语言"
     },
     "supported_languages_af": {
         "message": "非洲人"

@@ -12,24 +12,27 @@
 	"
 >
 	<div class="lg:container lg:mx-auto h-full flex flex-row gap-4">
-		<div class="flex flex-col">
-			<div class="pb-4 flex items-center">
-				<img alt="" src={getURL('/src/icons/128.png')} width="48" />
-				<span class="ml-4 text-xl">Translater</span>
-			</div>
+		<div class="flex flex-col justify-between">
 			<div class="flex flex-col">
-				{#each tabs as item}
-					<ButtonTab
-						active={activeTab === item.tab}
-						icon={item.icon}
-						iconRaw={item.iconRaw}
-						label={item.label}
-						on:click={() => {
-							activeTab = item.tab;
-						}}
-					/>
-				{/each}
+				<div class="pb-4 flex items-center">
+					<img alt="" src={getURL('/src/icons/128.png')} width="48" />
+					<span class="ml-4 text-xl">Translater</span>
+				</div>
+				<div class="flex flex-col">
+					{#each tabs as item}
+						<ButtonTab
+							active={activeTab === item.tab}
+							icon={item.icon}
+							iconRaw={item.iconRaw}
+							label={item.label}
+							on:click={() => {
+								activeTab = item.tab;
+							}}
+						/>
+					{/each}
+				</div>
 			</div>
+			<TranslaterVersion />
 		</div>
 		<div class="w-full overflow-hidden bg-white dark:bg-gray-900 rounded-[16px]">
 			{#each tabs as item}
@@ -60,6 +63,7 @@ import PopupWindow from './lib/PopupWindow.svelte';
 import Appearance from './lib/Appearance.svelte';
 import TTS from './lib/TTS.svelte';
 import History from './lib/History.svelte';
+import TranslaterVersion from '~/lib/TranslaterVersion.svelte';
 import { heroDocumentText, heroWindow, heroPaintBrush, heroClock } from '~/icons/heroicons';
 import iconVoiceSelection from '~/icons/voice-selection-300.svg?raw';
 

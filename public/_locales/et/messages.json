@@ -22,6 +22,17 @@
             }
         }
     },
+    "commands_open_translater": {
+        "message": "Avage $APP_NAME$",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "või vajutage lehel olevat kiirklahvi:"
+    },
     "options_tab_inline_translate": {
         "message": "Lugemine ja sisestamine"
     },
@@ -88,6 +99,15 @@
     "options_tts_no_voices_found": {
         "message": "Brauserist hääli ei leitud. Kasutatakse välist kõnesünteesi teenust."
     },
+    "options_edit_keyboard_shortcut": {
+        "message": "Muuda klaviatuuri otseteed"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "Klaviatuuri otsetee hüpikakna avamiseks:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "klahvikombinatsioon pole määratud"
+    },
     "text_expand": {
         "message": "Rohkem"
     },
@@ -136,6 +156,9 @@
     "popup_menu_options_link": {
         "message": "Lisaseaded"
     },
+    "popup_placeholder_translation": {
+        "message": "Tõlge"
+    },
     "theme_light": {
         "message": "Kerge teema"
     },
@@ -175,12 +198,6 @@
     "tooltip_go_forward": {
         "message": "Edasi"
     },
-    "tooltip_edit_text": {
-        "message": "Muuda teksti"
-    },
-    "tooltip_translate_again": {
-        "message": "Tõlgi uuesti"
-    },
     "date_today": {
         "message": "täna"
     },
@@ -196,14 +213,14 @@
     "forefox_perm_button": {
         "message": "Lubade haldamine"
     },
-    "select_language_auto": {
-        "message": "Tuvasta keel"
-    },
     "select_language_search_placeholder": {
         "message": "Keelte otsimine (ISO-kood või nimi)"
     },
     "select_language_search_no_results": {
         "message": "Tulemused puuduvad"
+    },
+    "supported_languages_auto": {
+        "message": "Tuvasta keel"
     },
     "supported_languages_af": {
         "message": "Aafrika"
@@ -500,7 +517,7 @@
         "message": "urdu"
     },
     "supported_languages_uz": {
-        "message": "usbeki keel"
+        "message": "usbeki"
     },
     "supported_languages_vi": {
         "message": "vietnamlane"

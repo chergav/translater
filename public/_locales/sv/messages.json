@@ -22,6 +22,17 @@
             }
         }
     },
+    "commands_open_translater": {
+        "message": "Öppna $APP_NAME$",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "eller tryck på ett kortkommando på sidan:"
+    },
     "options_tab_inline_translate": {
         "message": "Läsning och input"
     },
@@ -88,6 +99,15 @@
     "options_tts_no_voices_found": {
         "message": "Inga röster hittades i webbläsaren. En extern text-till-tal-tjänst kommer att användas."
     },
+    "options_edit_keyboard_shortcut": {
+        "message": "Redigera kortkommando"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "Kortkommando för att öppna popup-fönster:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "tangentkombinationen är inte inställd"
+    },
     "text_expand": {
         "message": "Mer"
     },
@@ -136,6 +156,9 @@
     "popup_menu_options_link": {
         "message": "Ytterligare inställningar"
     },
+    "popup_placeholder_translation": {
+        "message": "Översättning"
+    },
     "theme_light": {
         "message": "Lätt tema"
     },
@@ -175,12 +198,6 @@
     "tooltip_go_forward": {
         "message": "Fram"
     },
-    "tooltip_edit_text": {
-        "message": "Redigera text"
-    },
-    "tooltip_translate_again": {
-        "message": "Översätt igen"
-    },
     "date_today": {
         "message": "i dag"
     },
@@ -191,19 +208,19 @@
         "message": "Tillåt start i Firefox"
     },
     "forefox_perm_text": {
-        "message": "Tillägget kräver din tillåtelse för att komma åt webbplatser och översätta i webbläsaren Firefox."
+        "message": "Tillägget kräver ditt tillstånd för att komma åt webbplatser och översätta i webbläsaren Firefox."
     },
     "forefox_perm_button": {
         "message": "Hantera behörigheter"
-    },
-    "select_language_auto": {
-        "message": "Upptäck språk"
     },
     "select_language_search_placeholder": {
         "message": "Hitta språk (ISO-kod eller namn)"
     },
     "select_language_search_no_results": {
         "message": "Inga resultat"
+    },
+    "supported_languages_auto": {
+        "message": "Upptäck språk"
     },
     "supported_languages_af": {
         "message": "afrikanska"

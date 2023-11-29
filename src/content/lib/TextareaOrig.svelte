@@ -23,6 +23,7 @@
 		rows="1"
 		spellcheck="false"
 		on:input={handleInput}
+		use:textareaFocus
 	>{$store.translated.sentences.orig}</textarea>
 </div>
 
@@ -61,6 +62,12 @@ const handleInput = ({ target }) => {
 	const text = target.value.trim();
 	autoHeight();
 	handleAutoTranslate(text);
+};
+
+const textareaFocus = textarea => {
+	if ($store.selectedText === '') {
+		textarea.focus();
+	}
 };
 
 afterUpdate(() => {
