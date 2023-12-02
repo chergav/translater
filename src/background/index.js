@@ -48,7 +48,6 @@ const getSelectedText = async tabId => {
 
 const openTranslater = async () => {
 	const tab = await getCurrentTab();
-
 	if (tab) {
 		const selectedText = await getSelectedText(tab.id);
 
@@ -58,7 +57,7 @@ const openTranslater = async () => {
 	}
 };
 
-const handleMessage = (message, sender, sendResponse) => {
+const handleMessage = (message, _sender, sendResponse) => {
 	switch (message.type) {
 	case 'getTranslate':
 		googleTranslate(message.content).then(sendResponse);

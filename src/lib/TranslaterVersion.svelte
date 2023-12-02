@@ -1,4 +1,4 @@
-<div class="p-3 flex flex-col gap-1">
+<div class="p-3 flex gap-2">
 	<div>
 		<a
 			class="text-sm text-blue-600 hover:underline"

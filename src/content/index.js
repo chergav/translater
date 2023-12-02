@@ -37,7 +37,7 @@ const createPopup = text => {
 	store.update(data => ({
 		...data,
 		hostname: window.location.hostname,
-		selectedText: data.selectedText ?? text
+		selectedText: text.trim() !== '' ? text : data.selectedText
 	}));
 
 	createApp('popup');

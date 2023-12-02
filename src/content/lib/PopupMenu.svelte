@@ -51,7 +51,7 @@
 					href={`https://translate.google.com/?
 						sl=${$store.sourceLang}&
 						tl=${$persistentStore.targetLang}&
-						text=${encodeURIComponent($store.selectedText)}`}
+						text=${encodeURIComponent($store.translated.sentences.orig)}`}
 						rel="noreferrer"
 						target="_blank"
 				>

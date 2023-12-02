@@ -1,11 +1,9 @@
-{#if keys.length}
-	<p
-		class="
-			text-sm
-			[&>span]:inline-block
-		"
-		>
+{#if keys && keys.length}
+	<p class="text-sm inline-flex items-center">
 		{#each keys as key, index}
+			{#if index > 0}
+				<span class="mx-2">+</span>
+			{/if}
 			<span
 				class="
 					px-2
@@ -18,13 +16,12 @@
 					rounded-md
 				"
 			>{key}</span>
-			{#if index !== keys.length - 1}
-				<span>+&nbsp;</span>
-			{/if}
 		{/each}
 	</p>
 {:else}
-	<p class="text-sm text-amber-600 dark:text-amber-400">{getMessage('options_key_combination_is_not_set')}</p>
+	<p class="text-sm text-amber-600 dark:text-amber-400">
+		{getMessage('options_key_combination_is_not_set')}
+	</p>
 {/if}
 
 <script>

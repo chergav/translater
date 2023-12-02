@@ -43,11 +43,10 @@
 			absolute
 			left-0
 			max-h-64
-			overflow-x-hidden
-			overflow-y-auto
 			my-1
 			flex
 			flex-col
+			overflow-hidden
 			select-none
 			bg-white
 			dark:bg-gray-900
@@ -56,7 +55,6 @@
 			dark:border-gray-800
 			rounded-xl
 			shadow-lg
-			scrollbar
 			z-10
 		"
 	>
@@ -94,7 +92,7 @@
 					"
 					icon={heroXMark}
 					round
-					title="Clear search"
+					tooltip={{ title: 'Clear search' }}
 					on:click={() => {
 						search = '';
 						inputSearch.focus();
@@ -102,9 +100,17 @@
 				/>
 			{/if}
 		</div>
-		<div class="flex py-1">
+		<div
+			class="
+				flex
+				p-1
+				overflow-x-hidden
+				overflow-y-auto
+				scrollbar
+			"
+		>
 			{#each langColumns as langColumn}
-				<div class="flex flex-col w-full">
+				<div class="flex flex-col w-full h-full">
 					{#each langColumn as lang}
 						<ListboxOption
 							class="
@@ -118,9 +124,10 @@
 								select-none
 								hover:bg-gray-900/10
 								dark:hover:bg-white/10
-								rounded-sm
+								aria-selected:bg-blue-600/10
+								aria-selected:dark:bg-blue-400/10
+								rounded-full
 							"
-							focus={false}
 							value={lang.key}
 							let:selected
 						>

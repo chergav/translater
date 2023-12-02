@@ -29,18 +29,23 @@ export const tooltip = (element, { title = '', placement = 'top', delay = 750 } 
 		}, delay);
 	};
 
+	const _clearTimeout = () => {
+		clearTimeout(timeoutID);
+	};
+
 	const removeTooltip = () => {
+		_clearTimeout();
+
 		if (tooltipComponent) {
 			tooltipComponent.$destroy();
 			tooltipComponent = null;
 			container.remove();
 		}
-
-		clearTimeout(timeoutID);
 	};
 
 	element.addEventListener('pointerenter', createTooltip);
 	element.addEventListener('pointerleave', removeTooltip);
+	element.addEventListener('click', _clearTimeout);
 
 	return {
 		update(newOptions) {
@@ -50,9 +55,10 @@ export const tooltip = (element, { title = '', placement = 'top', delay = 750 } 
 			}
 		},
 		destroy() {
+			removeTooltip();
 			element.removeEventListener('pointerenter', createTooltip);
 			element.removeEventListener('pointerleave', removeTooltip);
-			removeTooltip();
+			element.removeEventListener('click', _clearTimeout);
 		}
 	};
 };
