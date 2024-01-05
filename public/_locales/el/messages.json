@@ -6,7 +6,7 @@
         "message": "Μετάφραση επιλεγμένου κειμένου με το Google Translate με ανοιχτό και σκοτεινό θέμα"
     },
     "app_version": {
-        "message": "Εκδοχή"
+        "message": "εκδοχή"
     },
     "context_menus_title": {
         "message": "Μετάφραση επιλεγμένου κειμένου"
@@ -198,6 +198,12 @@
     "tooltip_go_forward": {
         "message": "Προς τα εμπρός"
     },
+    "tooltip_clear_text": {
+        "message": "Καθαρό κείμενο"
+    },
+    "tooltip_clear_search": {
+        "message": "Εκκαθάριση αναζήτησης"
+    },
     "date_today": {
         "message": "σήμερα"
     },
@@ -292,7 +298,7 @@
         "message": "εσπεράντο"
     },
     "supported_languages_et": {
-        "message": "Εσθονικά"
+        "message": "Εσθονική"
     },
     "supported_languages_fi": {
         "message": "φινλανδικός"
@@ -475,7 +481,7 @@
         "message": "Σλοβενική"
     },
     "supported_languages_so": {
-        "message": "Σομαλία"
+        "message": "Σομαλός"
     },
     "supported_languages_sx": {
         "message": "Σόθο"
@@ -484,7 +490,7 @@
         "message": "Ισπανικά"
     },
     "supported_languages_su": {
-        "message": "Σουνδανή"
+        "message": "Σουνδανός"
     },
     "supported_languages_sw": {
         "message": "Σουαχίλι"

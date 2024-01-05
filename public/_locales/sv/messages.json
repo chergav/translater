@@ -6,7 +6,7 @@
         "message": "Översätt vald text med Google Translate med ljust och mörkt tema"
     },
     "app_version": {
-        "message": "Version"
+        "message": "version"
     },
     "context_menus_title": {
         "message": "Översätt vald text"
@@ -197,6 +197,12 @@
     },
     "tooltip_go_forward": {
         "message": "Fram"
+    },
+    "tooltip_clear_text": {
+        "message": "Klar text"
+    },
+    "tooltip_clear_search": {
+        "message": "Rensa sökning"
     },
     "date_today": {
         "message": "i dag"

@@ -2,6 +2,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 
 const generateRequestURL = ({ sourceLang = 'en', targetLang = 'auto', text = '' } = {}) => {
 	const searchParams = new URLSearchParams({
+		// client: 'tw-ob',
 		client: 'gtx',
 		sl: sourceLang,
 		tl: targetLang,
@@ -12,8 +13,8 @@ const generateRequestURL = ({ sourceLang = 'en', targetLang = 'auto', text = '' 
 		q: text
 	});
 
-	return `https://translate.google.com/translate_a/single?${searchParams}`;
-	// return `https://translate.googleapis.com/translate_a/single?${searchParams}`;
+	// return `https://translate.google.com/translate_a/single?${searchParams}`;
+	return `https://translate.googleapis.com/translate_a/single?${searchParams}`;
 };
 
 const genTranslatedObject = (origObject, translatedArray) => {
@@ -33,7 +34,7 @@ const genTranslatedObject = (origObject, translatedArray) => {
 			console.log(message);
 		}
 
-		if (key === 'options_title' || key === 'commands_open_translater' ) {
+		if (key === 'options_title' || key === 'commands_open_translater') {
 			// $ APP_NAME $ -> $APP_NAME$
 			message = message.replace(/\$\s*(\w+)\s*\$/g, (match, p1) => `$${p1}$`);
 			console.log(message);
@@ -54,7 +55,7 @@ const translateFile = async (inputFile, locales) => {
 
 	const translationsByLocale = await Promise.all(
 		locales.map(async locale => {
-			const delimiter = '\n';
+			const delimiter = '\n\n';
 			const response = await fetch(
 				generateRequestURL({ text: messageArray.join(delimiter), targetLang: locale })
 			);
@@ -82,30 +83,10 @@ const translateFile = async (inputFile, locales) => {
 };
 
 const locales = [
-	'ar', // Arabic
-	'de', // German
-	'el', // Greek
-	'es', // Spanish
-	'et', // Estonian
-	'fa', // Persian
-	'fi', // Finnish
-	'fr', // French
-	'he', // Hebrew
-	'id', // Indonesian
-	'it', // Italian
-	'ja', // Japanese
-	'ko', // Korean
-	'nl', // Dutch
-	'no', // Norwegian
-	'pl', // Polish
-	'pt_BR', // Portuguese (Brazil)
-	'pt_PT', // Portuguese (Portugal)
-	'ru', // Russian
-	'sv', // Swedish
-	'tr', // Turkish
-	'uk', // Ukrainian
-	'zh_CN', // Chinese (Simplified)
-	'zh_TW' // Chinese (Traditional)
+	'am', 'ar', 'bg', 'bn', 'ca', 'cs', 'da', 'de', 'el', 'en', 'es', 'es_419', 'et', 'fa', 'fi',
+	'fil', 'fr', 'gu', 'he', 'hi', 'hr', 'hu', 'id', 'it', 'ja', 'kn', 'ko', 'lt', 'lv', 'ml',
+	'mr', 'ms', 'nl', 'no', 'pl', 'pt_BR', 'pt_PT', 'ro', 'ru', 'sk', 'sl', 'sr', 'sv', 'sw', 'ta',
+	'te', 'th', 'tr', 'uk', 'vi', 'zh_CN', 'zh_TW'
 ];
 
 translateFile('public/_locales/en/messages.json', locales);

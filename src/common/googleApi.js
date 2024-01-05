@@ -17,7 +17,7 @@ const googleTranslateURL = ({ sourceLang = 'auto', targetLang = 'auto', selected
 		q: selectedText
 	});
 
-	['at', 'bd', 'ex', 'ld', 'md', 'qca', 'rw', 'rm', 'ss', 't'].forEach(i =>
+	['at', 'bd', 'ex', 'ld', 'md', 'qca', 'rw', 'rm', 'ss', 'sw', 't', 'sd'].forEach(i =>
 		searchParams.append('dt', i)
 	);
 
@@ -67,4 +67,10 @@ const googleTTS = async params => {
 	}
 };
 
-export { googleTranslate, googleTTS };
+const createLinkToGT = ({ sl = 'auto', tl = 'auto', text = '' }) => {
+	const host = 'https://translate.google.com';
+	const searchParams = new URLSearchParams({ sl, tl, text });
+	return `${host}/?${searchParams}`;
+};
+
+export { googleTranslate, googleTTS, createLinkToGT };

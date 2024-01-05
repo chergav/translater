@@ -1,0 +1,555 @@
+{
+    "app_name": {
+        "message": "Translater - የተመረጠው ጽሑፍ ትርጉም"
+    },
+    "app_description": {
+        "message": "በብርሃን እና ጨለማ ገጽታ የተመረጠውን ጽሑፍ በGoogle ትርጉም መተርጎም"
+    },
+    "app_version": {
+        "message": "ስሪት"
+    },
+    "context_menus_title": {
+        "message": "የተመረጠውን ጽሑፍ ተርጉም።"
+    },
+    "popup_menu_options": {
+        "message": "ቅንብሮች"
+    },
+    "options_title": {
+        "message": "$APP_NAME$ - ቅንብሮች",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "commands_open_translater": {
+        "message": "$APP_NAME$ን ክፈት",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "ወይም በገጽ ላይ የቁልፍ ሰሌዳ አቋራጭን ይጫኑ፡-"
+    },
+    "options_tab_inline_translate": {
+        "message": "ማንበብ እና ማስገባት"
+    },
+    "options_tab_popup_window": {
+        "message": "ብቅ ባይ መስኮት"
+    },
+    "options_tab_appearance": {
+        "message": "ውጫዊ ገጽታ"
+    },
+    "options_tab_history": {
+        "message": "ታሪክ"
+    },
+    "options_inline_button_show": {
+        "message": "ጽሑፍ ሲመረጥ አዝራሩን አሳይ"
+    },
+    "options_text_field_button_show": {
+        "message": "በጽሑፍ መስክ ውስጥ አዝራሩን አሳይ"
+    },
+    "options_hide_button_on_sites": {
+        "message": "በእነዚህ ጣቢያዎች ላይ ያለውን አዝራር ደብቅ፦"
+    },
+    "options_hide_button_on_sites_empty_list": {
+        "message": "ማግለል በሚፈልጉት ጣቢያ ላይ ብቅ ባይ መስኮትን በመጠቀም ጎራዎችን ያክሉ"
+    },
+    "options_show_original_text": {
+        "message": "የምንጭ ጽሑፍ አሳይ"
+    },
+    "options_show_transliteration": {
+        "message": "በቋንቋ ፊደል መጻፍ አሳይ"
+    },
+    "options_lock_popup_window": {
+        "message": "ብቅ ባይ መስኮትን ቆልፍ"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "የነቃ ብቅ ባይ አይዘጋም ውጭ ጠቅ ያድርጉ"
+    },
+    "options_history_length": {
+        "message": "የታሪክ ርዝመት"
+    },
+    "options_records_in_history": {
+        "message": "በታሪክ ውስጥ ግቤቶች;"
+    },
+    "options_history_enable": {
+        "message": "ታሪክን አንቃ"
+    },
+    "options_clear_history": {
+        "message": "ታሪክ ሰርዝ"
+    },
+    "options_delete_history_item": {
+        "message": "ከታሪክ ሰርዝ"
+    },
+    "options_tts_language": {
+        "message": "ቋንቋ"
+    },
+    "options_tts_default_voice": {
+        "message": "ነባሪ ድምጽ"
+    },
+    "options_tts_voices": {
+        "message": "ድምጾች"
+    },
+    "options_tts_table_caption": {
+        "message": "ላልተዘረዘሩ ቋንቋዎች የውጭ የጽሑፍ-ወደ-ንግግር አገልግሎት ጥቅም ላይ ይውላል።"
+    },
+    "options_tts_no_voices_found": {
+        "message": "በአሳሹ ውስጥ ምንም ድምፆች አልተገኙም። የውጪ የጽሑፍ-ወደ-ንግግር አገልግሎት ጥቅም ላይ ይውላል።"
+    },
+    "options_edit_keyboard_shortcut": {
+        "message": "የቁልፍ ሰሌዳ አቋራጭን ያርትዑ"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "ብቅ ባይ መስኮት ለመክፈት የቁልፍ ሰሌዳ አቋራጭ፡-"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "የቁልፍ ጥምር አልተዘጋጀም።"
+    },
+    "text_expand": {
+        "message": "ተጨማሪ"
+    },
+    "text_collapse": {
+        "message": "ሰብስብ"
+    },
+    "target_lang_label": {
+        "message": "ተርጉም ወደ፡"
+    },
+    "popup_dictionary": {
+        "message": "መዝገበ ቃላት"
+    },
+    "popup_dictionary_frequency": {
+        "message": "ድግግሞሽ"
+    },
+    "popup_definitions": {
+        "message": "ፍቺዎች"
+    },
+    "popup_definitions_synonyms": {
+        "message": "ተመሳሳይ ቃላት፡-"
+    },
+    "popup_examples": {
+        "message": "ምሳሌዎች"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "ምናልባት ይህን ለማለት ፈልገው ይሆናል፡-"
+    },
+    "popup_original_language": {
+        "message": "ኦሪጅናል ቋንቋ፡"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "ተገላቢጦሽ መተርጎም"
+    },
+    "popup_menu_lock_window": {
+        "message": "የመቆለፊያ መስኮት"
+    },
+    "popup_menu_unlock_window": {
+        "message": "መስኮት ክፈት"
+    },
+    "popup_menu_show_translate_button": {
+        "message": "የትርጉም ቁልፍ አሳይ"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "የትርጉም ቁልፍን ደብቅ"
+    },
+    "popup_menu_options_link": {
+        "message": "ተጨማሪ ቅንብሮች"
+    },
+    "popup_placeholder_translation": {
+        "message": "ትርጉም"
+    },
+    "theme_light": {
+        "message": "ፈካ ያለ ጭብጥ"
+    },
+    "theme_dark": {
+        "message": "ጨለማ ጭብጥ"
+    },
+    "theme_system": {
+        "message": "ነባሪ ገጽታ"
+    },
+    "tooltip_translate_text": {
+        "message": "የተመረጠውን ጽሑፍ ተርጉም።"
+    },
+    "tooltip_copy_to_clipboard": {
+        "message": "ወደ ቅንጥብ ሰሌዳ ቅዳ"
+    },
+    "tooltip_copy_not_support_on_http": {
+        "message": "መቅዳት በኤችቲቲፒ ጣቢያዎች ላይ አይደገፍም።"
+    },
+    "tooltip_copyed": {
+        "message": "ተቀድቷል!"
+    },
+    "tooltip_copy_error": {
+        "message": "ስህተት ቅጂ!"
+    },
+    "tooltip_listen_to_the_text": {
+        "message": "ጽሑፍ ያዳምጡ"
+    },
+    "tooltip_listen_stop": {
+        "message": "ተወ"
+    },
+    "tooltip_listen_language_is_not_support": {
+        "message": "ቋንቋ ድጋፍ አይደለም"
+    },
+    "tooltip_go_back": {
+        "message": "ተመለስ"
+    },
+    "tooltip_go_forward": {
+        "message": "ወደፊት"
+    },
+    "tooltip_clear_text": {
+        "message": "ጽሑፍ አጽዳ"
+    },
+    "tooltip_clear_search": {
+        "message": "ፍለጋን አጽዳ"
+    },
+    "date_today": {
+        "message": "ዛሬ"
+    },
+    "date_yesterday": {
+        "message": "ትናንት"
+    },
+    "forefox_perm_header": {
+        "message": "በፋየርፎክስ ማስጀመር ፍቀድ"
+    },
+    "forefox_perm_text": {
+        "message": "ቅጥያው ድር ጣቢያዎችን ለመድረስ እና በፋየርፎክስ ማሰሻ ውስጥ ለመተርጎም የእርስዎን ፍቃድ ይፈልጋል።"
+    },
+    "forefox_perm_button": {
+        "message": "ፈቃዶችን ያስተዳድሩ"
+    },
+    "select_language_search_placeholder": {
+        "message": "ቋንቋዎችን ያግኙ (አይኤስኦ ኮድ ወይም ስም)"
+    },
+    "select_language_search_no_results": {
+        "message": "ምንም ውጤት የለም።"
+    },
+    "supported_languages_auto": {
+        "message": "ቋንቋን መለየት"
+    },
+    "supported_languages_af": {
+        "message": "አፍሪካዊ"
+    },
+    "supported_languages_sq": {
+        "message": "አልበንያኛ"
+    },
+    "supported_languages_am": {
+        "message": "አማርኛ"
+    },
+    "supported_languages_ar": {
+        "message": "አረብኛ"
+    },
+    "supported_languages_hy": {
+        "message": "አርመንያኛ"
+    },
+    "supported_languages_az": {
+        "message": "አዘርባጃኒ"
+    },
+    "supported_languages_eu": {
+        "message": "ባስክ"
+    },
+    "supported_languages_be": {
+        "message": "ቤላሩሲያን"
+    },
+    "supported_languages_bn": {
+        "message": "ቤንጋሊ"
+    },
+    "supported_languages_bs": {
+        "message": "ቦስንያን"
+    },
+    "supported_languages_bg": {
+        "message": "ቡልጋርያኛ"
+    },
+    "supported_languages_ca": {
+        "message": "ካታሊያን"
+    },
+    "supported_languages_ceb": {
+        "message": "ሴቡአኖ"
+    },
+    "supported_languages_ny": {
+        "message": "Chewa"
+    },
+    "supported_languages_zh_CN": {
+        "message": "ቻይንኛ ቀለሉ"
+    },
+    "supported_languages_zh_TW": {
+        "message": "የቻይና ባህላዊ"
+    },
+    "supported_languages_co": {
+        "message": "ኮርሲካን"
+    },
+    "supported_languages_hr": {
+        "message": "ክሮኤሽያን"
+    },
+    "supported_languages_cs": {
+        "message": "ቼክ"
+    },
+    "supported_languages_da": {
+        "message": "ዳኒሽ"
+    },
+    "supported_languages_nl": {
+        "message": "ደች"
+    },
+    "supported_languages_en": {
+        "message": "እንግሊዝኛ"
+    },
+    "supported_languages_eo": {
+        "message": "እስፔራንቶ"
+    },
+    "supported_languages_et": {
+        "message": "ኢስቶኒያን"
+    },
+    "supported_languages_fi": {
+        "message": "ፊኒሽ"
+    },
+    "supported_languages_fr": {
+        "message": "ፈረንሳይኛ"
+    },
+    "supported_languages_fy": {
+        "message": "ፍሪሲያን"
+    },
+    "supported_languages_gl": {
+        "message": "ጋላሺያን"
+    },
+    "supported_languages_ka": {
+        "message": "ጆርጅያን"
+    },
+    "supported_languages_de": {
+        "message": "ጀርመንኛ"
+    },
+    "supported_languages_el": {
+        "message": "ግሪክኛ"
+    },
+    "supported_languages_gu": {
+        "message": "ጉጅራቲ"
+    },
+    "supported_languages_ht": {
+        "message": "ሄይቲ"
+    },
+    "supported_languages_ha": {
+        "message": "ሃውሳ"
+    },
+    "supported_languages_haw": {
+        "message": "ሐዋያን"
+    },
+    "supported_languages_he": {
+        "message": "ሂብሩ"
+    },
+    "supported_languages_iw": {
+        "message": "ሂብሩ"
+    },
+    "supported_languages_hi": {
+        "message": "ሂንዲ"
+    },
+    "supported_languages_hu": {
+        "message": "ሃንጋሪያን"
+    },
+    "supported_languages_is": {
+        "message": "አይስላንዲ ክ"
+    },
+    "supported_languages_ig": {
+        "message": "ኢግቦ"
+    },
+    "supported_languages_id": {
+        "message": "ኢንዶኔዥያን"
+    },
+    "supported_languages_ga": {
+        "message": "አይሪሽ"
+    },
+    "supported_languages_it": {
+        "message": "ጣሊያንኛ"
+    },
+    "supported_languages_ja": {
+        "message": "ጃፓንኛ"
+    },
+    "supported_languages_jv": {
+        "message": "ጃቫኒስ"
+    },
+    "supported_languages_kn": {
+        "message": "ካናዳ"
+    },
+    "supported_languages_kk": {
+        "message": "ካዛክሀ"
+    },
+    "supported_languages_km": {
+        "message": "ክመር"
+    },
+    "supported_languages_ky": {
+        "message": "ኪርጊዝ"
+    },
+    "supported_languages_ko": {
+        "message": "ኮሪያኛ"
+    },
+    "supported_languages_ku": {
+        "message": "ኩርዲሽ"
+    },
+    "supported_languages_lo": {
+        "message": "ላኦሺያን"
+    },
+    "supported_languages_la": {
+        "message": "ላቲን"
+    },
+    "supported_languages_lv": {
+        "message": "ላትቪያን"
+    },
+    "supported_languages_lt": {
+        "message": "ሊቱኒያን"
+    },
+    "supported_languages_lb": {
+        "message": "ሉክዜምብርጊሽ"
+    },
+    "supported_languages_mk": {
+        "message": "ማስዶንያን"
+    },
+    "supported_languages_mg": {
+        "message": "ማላጋሲያ"
+    },
+    "supported_languages_ms": {
+        "message": "ማላይ"
+    },
+    "supported_languages_ml": {
+        "message": "ማላያላም"
+    },
+    "supported_languages_mt": {
+        "message": "ማልትስ"
+    },
+    "supported_languages_mi": {
+        "message": "ማኦሪይ"
+    },
+    "supported_languages_mr": {
+        "message": "ማራቲ"
+    },
+    "supported_languages_mn": {
+        "message": "ሞኒጎሊያን"
+    },
+    "supported_languages_hmn": {
+        "message": "መነኩሴ"
+    },
+    "supported_languages_my": {
+        "message": "ማይንማር"
+    },
+    "supported_languages_ne": {
+        "message": "ሜፓሊ"
+    },
+    "supported_languages_no": {
+        "message": "ኖርወይኛ"
+    },
+    "supported_languages_fa": {
+        "message": "ፐርሽያን"
+    },
+    "supported_languages_pl": {
+        "message": "ፖሊሽ"
+    },
+    "supported_languages_pt": {
+        "message": "ፖርቹጋልኛ"
+    },
+    "supported_languages_pa": {
+        "message": "ፑንጃቢ"
+    },
+    "supported_languages_ps": {
+        "message": "ፑሽቶ"
+    },
+    "supported_languages_ro": {
+        "message": "ሮማንያን"
+    },
+    "supported_languages_ru": {
+        "message": "ራሺያኛ"
+    },
+    "supported_languages_sm": {
+        "message": "ሳሞአን"
+    },
+    "supported_languages_gd": {
+        "message": "ስኮትላንዳዊ ጋኢሊክ"
+    },
+    "supported_languages_sr": {
+        "message": "ሰሪቢያን"
+    },
+    "supported_languages_sn": {
+        "message": "ሾና"
+    },
+    "supported_languages_sd": {
+        "message": "ስንድሂ"
+    },
+    "supported_languages_si": {
+        "message": "ሲንሃላ"
+    },
+    "supported_languages_sk": {
+        "message": "ስሎቫክ"
+    },
+    "supported_languages_sl": {
+        "message": "ስሎቬንያን"
+    },
+    "supported_languages_so": {
+        "message": "ሶማሊ"
+    },
+    "supported_languages_sx": {
+        "message": "ሶቶ"
+    },
+    "supported_languages_es": {
+        "message": "ስፓንኛ"
+    },
+    "supported_languages_su": {
+        "message": "ሱዳናዊ"
+    },
+    "supported_languages_sw": {
+        "message": "ስዋሕሊ"
+    },
+    "supported_languages_sv": {
+        "message": "ስዊድንኛ"
+    },
+    "supported_languages_tl": {
+        "message": "ታንጋሎግ"
+    },
+    "supported_languages_tg": {
+        "message": "ታጂኪ"
+    },
+    "supported_languages_ta": {
+        "message": "ታሚል"
+    },
+    "supported_languages_te": {
+        "message": "ተሉጉ"
+    },
+    "supported_languages_th": {
+        "message": "ታይ"
+    },
+    "supported_languages_tr": {
+        "message": "ቱሪክሽ"
+    },
+    "supported_languages_uk": {
+        "message": "ዩክሬንያን"
+    },
+    "supported_languages_ur": {
+        "message": "ኡርዱ"
+    },
+    "supported_languages_uz": {
+        "message": "ኡዝቤክ"
+    },
+    "supported_languages_vi": {
+        "message": "ቪትናሜሴ"
+    },
+    "supported_languages_cy": {
+        "message": "ዋልሽ"
+    },
+    "supported_languages_xh": {
+        "message": "ፆሳ"
+    },
+    "supported_languages_yi": {
+        "message": "ዪዲሽ"
+    },
+    "supported_languages_yo": {
+        "message": "ዮሩባ"
+    },
+    "supported_languages_zu": {
+        "message": "ዙሉ"
+    },
+    "supported_languages_qu": {
+        "message": "ኬቹዋ"
+    },
+    "supported_languages_om": {
+        "message": "ኦሮሞ"
+    },
+    "supported_languages_ilo": {
+        "message": "ኢሎካኖ"
+    }
+}

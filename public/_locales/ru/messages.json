@@ -6,7 +6,7 @@
         "message": "Перевод выделенного текста с помощью Google Translate со светлой и темной темой"
     },
     "app_version": {
-        "message": "Версия"
+        "message": "версия"
     },
     "context_menus_title": {
         "message": "Перевести выделенный текст"
@@ -198,6 +198,12 @@
     "tooltip_go_forward": {
         "message": "Вперед"
     },
+    "tooltip_clear_text": {
+        "message": "Очистить текст"
+    },
+    "tooltip_clear_search": {
+        "message": "Очистить поиск"
+    },
     "date_today": {
         "message": "сегодня"
     },
@@ -256,7 +262,7 @@
         "message": "болгарский"
     },
     "supported_languages_ca": {
-        "message": "каталонский"
+        "message": "каталанский"
     },
     "supported_languages_ceb": {
         "message": "кебуано"

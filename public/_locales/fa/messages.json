@@ -82,7 +82,7 @@
         "message": "حذف تاریخچه"
     },
     "options_delete_history_item": {
-        "message": "حذف از تاریخچه"
+        "message": "حذف از تاریخ"
     },
     "options_tts_language": {
         "message": "زبان"
@@ -197,6 +197,12 @@
     },
     "tooltip_go_forward": {
         "message": "رو به جلو"
+    },
+    "tooltip_clear_text": {
+        "message": "متن را پاک کنید"
+    },
+    "tooltip_clear_search": {
+        "message": "جستجو را پاک کنید"
     },
     "date_today": {
         "message": "امروز"

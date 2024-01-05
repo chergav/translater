@@ -1,0 +1,555 @@
+{
+    "app_name": {
+        "message": "Translater - தேர்ந்தெடுக்கப்பட்ட உரையின் மொழிபெயர்ப்பு"
+    },
+    "app_description": {
+        "message": "லைட் மற்றும் டார்க் தீம் கொண்ட Google Translate மூலம் தேர்ந்தெடுக்கப்பட்ட உரையை மொழிபெயர்க்கவும்"
+    },
+    "app_version": {
+        "message": "பதிப்பு"
+    },
+    "context_menus_title": {
+        "message": "தேர்ந்தெடுக்கப்பட்ட உரையை மொழிபெயர்க்கவும்"
+    },
+    "popup_menu_options": {
+        "message": "அமைப்புகள்"
+    },
+    "options_title": {
+        "message": "$APP_NAME$ - அமைப்புகள்",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "commands_open_translater": {
+        "message": "$APP_NAME$ஐத் திறக்கவும்",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "அல்லது பக்கத்தில் கீபோர்டு ஷார்ட்கட்டை அழுத்தவும்:"
+    },
+    "options_tab_inline_translate": {
+        "message": "படித்தல் மற்றும் உள்ளீடு"
+    },
+    "options_tab_popup_window": {
+        "message": "பாப்அப் சாளரம்"
+    },
+    "options_tab_appearance": {
+        "message": "வெளிப்புற தோற்றம்"
+    },
+    "options_tab_history": {
+        "message": "வரலாறு"
+    },
+    "options_inline_button_show": {
+        "message": "உரை தேர்ந்தெடுக்கப்படும்போது பொத்தானைக் காட்டு"
+    },
+    "options_text_field_button_show": {
+        "message": "உரை புலத்தில் பொத்தானைக் காட்டு"
+    },
+    "options_hide_button_on_sites": {
+        "message": "இந்த தளங்களில் உள்ள பட்டனை மறை:"
+    },
+    "options_hide_button_on_sites_empty_list": {
+        "message": "நீங்கள் விலக்க விரும்பும் தளத்தில் பாப்அப் சாளரத்தின் மெனுவைப் பயன்படுத்தி டொமைன்களைச் சேர்க்கவும்"
+    },
+    "options_show_original_text": {
+        "message": "மூல உரையைக் காட்டு"
+    },
+    "options_show_transliteration": {
+        "message": "ஒலிபெயர்ப்பைக் காட்டு"
+    },
+    "options_lock_popup_window": {
+        "message": "பாப்அப் சாளரத்தை பூட்டு"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "இயக்கப்பட்டிருந்தால், பாப்அப் வெளியே கிளிக் செய்வதன் மூலம் மூடப்படாது"
+    },
+    "options_history_length": {
+        "message": "வரலாற்றின் நீளம்"
+    },
+    "options_records_in_history": {
+        "message": "வரலாற்றில் உள்ள பதிவுகள்:"
+    },
+    "options_history_enable": {
+        "message": "வரலாற்றை இயக்கு"
+    },
+    "options_clear_history": {
+        "message": "வரலாற்றை நீக்கு"
+    },
+    "options_delete_history_item": {
+        "message": "வரலாற்றிலிருந்து நீக்கு"
+    },
+    "options_tts_language": {
+        "message": "மொழி"
+    },
+    "options_tts_default_voice": {
+        "message": "இயல்புநிலை குரல்"
+    },
+    "options_tts_voices": {
+        "message": "குரல்கள்"
+    },
+    "options_tts_table_caption": {
+        "message": "பட்டியலிடப்படாத மொழிகளுக்கு, வெளிப்புற உரையிலிருந்து பேச்சு சேவை பயன்படுத்தப்படும்."
+    },
+    "options_tts_no_voices_found": {
+        "message": "உலாவியில் குரல்கள் எதுவும் இல்லை. வெளிப்புற உரையிலிருந்து பேச்சு சேவை பயன்படுத்தப்படும்."
+    },
+    "options_edit_keyboard_shortcut": {
+        "message": "விசைப்பலகை குறுக்குவழியைத் திருத்து"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "பாப்அப் சாளரத்தைத் திறக்க விசைப்பலகை குறுக்குவழி:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "முக்கிய கலவை அமைக்கப்படவில்லை"
+    },
+    "text_expand": {
+        "message": "மேலும்"
+    },
+    "text_collapse": {
+        "message": "சரிவு"
+    },
+    "target_lang_label": {
+        "message": "மொழிபெயர்:"
+    },
+    "popup_dictionary": {
+        "message": "அகராதி"
+    },
+    "popup_dictionary_frequency": {
+        "message": "அதிர்வெண்"
+    },
+    "popup_definitions": {
+        "message": "வரையறைகள்"
+    },
+    "popup_definitions_synonyms": {
+        "message": "ஒத்த சொற்கள்:"
+    },
+    "popup_examples": {
+        "message": "எடுத்துக்காட்டுகள்"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "ஒருவேளை நீங்கள் கூறியது:"
+    },
+    "popup_original_language": {
+        "message": "அசல் மொழி:"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "தலைகீழ் மொழிபெயர்ப்பு"
+    },
+    "popup_menu_lock_window": {
+        "message": "சாளரத்தை பூட்டு"
+    },
+    "popup_menu_unlock_window": {
+        "message": "சாளரத்தைத் திறக்கவும்"
+    },
+    "popup_menu_show_translate_button": {
+        "message": "மொழிபெயர்ப்பு பொத்தானைக் காட்டு"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "மொழிபெயர்ப்பு பொத்தானை மறை"
+    },
+    "popup_menu_options_link": {
+        "message": "கூடுதல் அமைப்புகள்"
+    },
+    "popup_placeholder_translation": {
+        "message": "மொழிபெயர்ப்பு"
+    },
+    "theme_light": {
+        "message": "ஒளி தீம்"
+    },
+    "theme_dark": {
+        "message": "இருண்ட தீம்"
+    },
+    "theme_system": {
+        "message": "இயல்புநிலை தீம்"
+    },
+    "tooltip_translate_text": {
+        "message": "தேர்ந்தெடுக்கப்பட்ட உரையை மொழிபெயர்க்கவும்"
+    },
+    "tooltip_copy_to_clipboard": {
+        "message": "கிளிப்போர்டுக்கு நகலெடுக்கவும்"
+    },
+    "tooltip_copy_not_support_on_http": {
+        "message": "HTTP தளங்களில் நகலுக்கு ஆதரவு இல்லை"
+    },
+    "tooltip_copyed": {
+        "message": "நகலெடுக்கப்பட்டது!"
+    },
+    "tooltip_copy_error": {
+        "message": "நகல் பிழை!"
+    },
+    "tooltip_listen_to_the_text": {
+        "message": "உரையைக் கேளுங்கள்"
+    },
+    "tooltip_listen_stop": {
+        "message": "நிறுத்து"
+    },
+    "tooltip_listen_language_is_not_support": {
+        "message": "மொழி ஆதரவு இல்லை"
+    },
+    "tooltip_go_back": {
+        "message": "மீண்டும்"
+    },
+    "tooltip_go_forward": {
+        "message": "முன்னோக்கி"
+    },
+    "tooltip_clear_text": {
+        "message": "தெளிவான உரை"
+    },
+    "tooltip_clear_search": {
+        "message": "தெளிவான தேடல்"
+    },
+    "date_today": {
+        "message": "இன்று"
+    },
+    "date_yesterday": {
+        "message": "நேற்று"
+    },
+    "forefox_perm_header": {
+        "message": "பயர்பாக்ஸில் தொடங்க அனுமதிக்கவும்"
+    },
+    "forefox_perm_text": {
+        "message": "இணையதளங்களை அணுகவும் Firefox உலாவியில் மொழிபெயர்க்கவும் நீட்டிப்புக்கு உங்கள் அனுமதி தேவை."
+    },
+    "forefox_perm_button": {
+        "message": "அனுமதிகளை நிர்வகிக்கவும்"
+    },
+    "select_language_search_placeholder": {
+        "message": "மொழிகளைக் கண்டறியவும் (ISO குறியீடு அல்லது பெயர்)"
+    },
+    "select_language_search_no_results": {
+        "message": "முடிவுகள் இல்லை"
+    },
+    "supported_languages_auto": {
+        "message": "மொழி கண்டறிய"
+    },
+    "supported_languages_af": {
+        "message": "ஆப்பிரிக்க"
+    },
+    "supported_languages_sq": {
+        "message": "அல்பேனியன்"
+    },
+    "supported_languages_am": {
+        "message": "அம்ஹாரிக்"
+    },
+    "supported_languages_ar": {
+        "message": "அரபு"
+    },
+    "supported_languages_hy": {
+        "message": "ஆர்மேனியன்"
+    },
+    "supported_languages_az": {
+        "message": "அஜர்பைஜானி"
+    },
+    "supported_languages_eu": {
+        "message": "பாஸ்க்"
+    },
+    "supported_languages_be": {
+        "message": "பெலாரசியன்"
+    },
+    "supported_languages_bn": {
+        "message": "பெங்காலி"
+    },
+    "supported_languages_bs": {
+        "message": "போஸ்னியன்"
+    },
+    "supported_languages_bg": {
+        "message": "பல்கேரியன்"
+    },
+    "supported_languages_ca": {
+        "message": "கற்றலான்"
+    },
+    "supported_languages_ceb": {
+        "message": "செபுவானோ"
+    },
+    "supported_languages_ny": {
+        "message": "சேவா"
+    },
+    "supported_languages_zh_CN": {
+        "message": "சீனம் எளிமைப்படுத்தப்பட்டது"
+    },
+    "supported_languages_zh_TW": {
+        "message": "சீன பாரம்பரியம்"
+    },
+    "supported_languages_co": {
+        "message": "கோர்சிகன்"
+    },
+    "supported_languages_hr": {
+        "message": "குரோஷியன்"
+    },
+    "supported_languages_cs": {
+        "message": "செக்"
+    },
+    "supported_languages_da": {
+        "message": "டேனிஷ்"
+    },
+    "supported_languages_nl": {
+        "message": "டச்சு"
+    },
+    "supported_languages_en": {
+        "message": "ஆங்கிலம்"
+    },
+    "supported_languages_eo": {
+        "message": "எஸ்பெராண்டோ"
+    },
+    "supported_languages_et": {
+        "message": "எஸ்டோனியன்"
+    },
+    "supported_languages_fi": {
+        "message": "ஃபின்னிஷ்"
+    },
+    "supported_languages_fr": {
+        "message": "பிரெஞ்சு"
+    },
+    "supported_languages_fy": {
+        "message": "ஃப்ரிஷியன்"
+    },
+    "supported_languages_gl": {
+        "message": "காலிசியன்"
+    },
+    "supported_languages_ka": {
+        "message": "ஜார்ஜியன்"
+    },
+    "supported_languages_de": {
+        "message": "ஜெர்மன்"
+    },
+    "supported_languages_el": {
+        "message": "கிரேக்கம்"
+    },
+    "supported_languages_gu": {
+        "message": "குஜராத்தி"
+    },
+    "supported_languages_ht": {
+        "message": "ஹைத்தியன்"
+    },
+    "supported_languages_ha": {
+        "message": "ஹௌசா"
+    },
+    "supported_languages_haw": {
+        "message": "ஹவாய்"
+    },
+    "supported_languages_he": {
+        "message": "ஹீப்ரு"
+    },
+    "supported_languages_iw": {
+        "message": "ஹீப்ரு"
+    },
+    "supported_languages_hi": {
+        "message": "ஹிந்தி"
+    },
+    "supported_languages_hu": {
+        "message": "ஹங்கேரிய"
+    },
+    "supported_languages_is": {
+        "message": "ஐஸ்லாந்து"
+    },
+    "supported_languages_ig": {
+        "message": "இக்போ"
+    },
+    "supported_languages_id": {
+        "message": "இந்தோனேசியன்"
+    },
+    "supported_languages_ga": {
+        "message": "ஐரிஷ்"
+    },
+    "supported_languages_it": {
+        "message": "இத்தாலிய"
+    },
+    "supported_languages_ja": {
+        "message": "ஜப்பானியர்"
+    },
+    "supported_languages_jv": {
+        "message": "ஜாவானியர்கள்"
+    },
+    "supported_languages_kn": {
+        "message": "கன்னடம்"
+    },
+    "supported_languages_kk": {
+        "message": "கசாக்"
+    },
+    "supported_languages_km": {
+        "message": "கெமர்"
+    },
+    "supported_languages_ky": {
+        "message": "கிர்கிஸ்"
+    },
+    "supported_languages_ko": {
+        "message": "கொரியன்"
+    },
+    "supported_languages_ku": {
+        "message": "குர்திஷ்"
+    },
+    "supported_languages_lo": {
+        "message": "லாவோஷியன்"
+    },
+    "supported_languages_la": {
+        "message": "லத்தீன்"
+    },
+    "supported_languages_lv": {
+        "message": "லாட்வியன்"
+    },
+    "supported_languages_lt": {
+        "message": "லிதுவேனியன்"
+    },
+    "supported_languages_lb": {
+        "message": "லக்சம்பர்கிஷ்"
+    },
+    "supported_languages_mk": {
+        "message": "மாசிடோனியன்"
+    },
+    "supported_languages_mg": {
+        "message": "மலகாசி"
+    },
+    "supported_languages_ms": {
+        "message": "மலாய்"
+    },
+    "supported_languages_ml": {
+        "message": "மலையாளம்"
+    },
+    "supported_languages_mt": {
+        "message": "மால்டிஸ்"
+    },
+    "supported_languages_mi": {
+        "message": "மௌரி"
+    },
+    "supported_languages_mr": {
+        "message": "மராத்தி"
+    },
+    "supported_languages_mn": {
+        "message": "மங்கோலியன்"
+    },
+    "supported_languages_hmn": {
+        "message": "துறவி"
+    },
+    "supported_languages_my": {
+        "message": "மியான்மர்"
+    },
+    "supported_languages_ne": {
+        "message": "மேபாலி"
+    },
+    "supported_languages_no": {
+        "message": "நார்வேஜியன்"
+    },
+    "supported_languages_fa": {
+        "message": "பாரசீக"
+    },
+    "supported_languages_pl": {
+        "message": "போலிஷ்"
+    },
+    "supported_languages_pt": {
+        "message": "போர்த்துகீசியம்"
+    },
+    "supported_languages_pa": {
+        "message": "பஞ்சாபி"
+    },
+    "supported_languages_ps": {
+        "message": "புஷ்டோ"
+    },
+    "supported_languages_ro": {
+        "message": "ரோமானியன்"
+    },
+    "supported_languages_ru": {
+        "message": "ரஷ்யன்"
+    },
+    "supported_languages_sm": {
+        "message": "சமோவான்"
+    },
+    "supported_languages_gd": {
+        "message": "ஸ்காட்டிஷ் கேலிக்"
+    },
+    "supported_languages_sr": {
+        "message": "செர்பியன்"
+    },
+    "supported_languages_sn": {
+        "message": "ஷோனா"
+    },
+    "supported_languages_sd": {
+        "message": "சிந்தி"
+    },
+    "supported_languages_si": {
+        "message": "சிங்களம்"
+    },
+    "supported_languages_sk": {
+        "message": "ஸ்லோவாக்"
+    },
+    "supported_languages_sl": {
+        "message": "ஸ்லோவேனியன்"
+    },
+    "supported_languages_so": {
+        "message": "சோமாலி"
+    },
+    "supported_languages_sx": {
+        "message": "சோதோ"
+    },
+    "supported_languages_es": {
+        "message": "ஸ்பானிஷ்"
+    },
+    "supported_languages_su": {
+        "message": "சுண்டனீஸ்"
+    },
+    "supported_languages_sw": {
+        "message": "சுவாஹிலி"
+    },
+    "supported_languages_sv": {
+        "message": "ஸ்வீடிஷ்"
+    },
+    "supported_languages_tl": {
+        "message": "தகலாக்"
+    },
+    "supported_languages_tg": {
+        "message": "தாஜிகி"
+    },
+    "supported_languages_ta": {
+        "message": "தமிழ்"
+    },
+    "supported_languages_te": {
+        "message": "தெலுங்கு"
+    },
+    "supported_languages_th": {
+        "message": "தாய்"
+    },
+    "supported_languages_tr": {
+        "message": "துருக்கிய"
+    },
+    "supported_languages_uk": {
+        "message": "உக்ரைனியன்"
+    },
+    "supported_languages_ur": {
+        "message": "உருது"
+    },
+    "supported_languages_uz": {
+        "message": "உஸ்பெக்"
+    },
+    "supported_languages_vi": {
+        "message": "வியட்நாமியர்"
+    },
+    "supported_languages_cy": {
+        "message": "வெல்ஷ்"
+    },
+    "supported_languages_xh": {
+        "message": "சோசா"
+    },
+    "supported_languages_yi": {
+        "message": "இத்திஷ்"
+    },
+    "supported_languages_yo": {
+        "message": "யாருப்பா"
+    },
+    "supported_languages_zu": {
+        "message": "ஜூலு"
+    },
+    "supported_languages_qu": {
+        "message": "கெச்சுவா"
+    },
+    "supported_languages_om": {
+        "message": "ஓரோமோ"
+    },
+    "supported_languages_ilo": {
+        "message": "இலோகானோ"
+    }
+}

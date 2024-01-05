@@ -6,7 +6,7 @@
         "message": "Tõlkige valitud tekst heleda ja tumeda teemaga Google'i tõlkega"
     },
     "app_version": {
-        "message": "Versioon"
+        "message": "versioon"
     },
     "context_menus_title": {
         "message": "Tõlgi valitud tekst"
@@ -197,6 +197,12 @@
     },
     "tooltip_go_forward": {
         "message": "Edasi"
+    },
+    "tooltip_clear_text": {
+        "message": "Selge tekst"
+    },
+    "tooltip_clear_search": {
+        "message": "Tühjenda otsing"
     },
     "date_today": {
         "message": "täna"
@@ -517,7 +523,7 @@
         "message": "urdu"
     },
     "supported_languages_uz": {
-        "message": "usbeki"
+        "message": "usbeki keel"
     },
     "supported_languages_vi": {
         "message": "vietnamlane"

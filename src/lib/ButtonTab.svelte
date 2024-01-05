@@ -11,8 +11,12 @@
 		{small ? 'text-sm' : 'text-base'}
 		text-gray-900
 		dark:text-gray-200
-		{active ? 'bg-sky-200 dark:bg-sky-900' : 'hover:bg-gray-900/10 dark:hover:bg-white/10'}
-		transition-all
+		{active ? 'bg-sky-200 dark:bg-sky-900' : 'hover:bg-gray-800/10 dark:hover:bg-gray-200/10'}
+		focus-visible:outline
+		focus-visible:outline-2
+		focus-visible:outline-gray-800/20
+		focus-visible:dark:outline-gray-200/20
+		transition-colors
 		{className}
 	"
 	type="button"

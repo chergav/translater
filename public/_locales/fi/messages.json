@@ -6,7 +6,7 @@
         "message": "Käännä valittu teksti Google-kääntäjällä vaalealla ja tummalla teemalla"
     },
     "app_version": {
-        "message": "Versio"
+        "message": "versio"
     },
     "context_menus_title": {
         "message": "Käännä valittu teksti"
@@ -197,6 +197,12 @@
     },
     "tooltip_go_forward": {
         "message": "Eteenpäin"
+    },
+    "tooltip_clear_text": {
+        "message": "Selkeä teksti"
+    },
+    "tooltip_clear_search": {
+        "message": "Tyhjennä haku"
     },
     "date_today": {
         "message": "tänään"

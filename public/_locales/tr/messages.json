@@ -6,7 +6,7 @@
         "message": "Seçilen metni açık ve koyu temalı Google Çeviri ile çevirin"
     },
     "app_version": {
-        "message": "Sürüm"
+        "message": "versiyon"
     },
     "context_menus_title": {
         "message": "Seçili metni çevir"
@@ -23,7 +23,7 @@
         }
     },
     "commands_open_translater": {
-        "message": "$APP_NAME$'ı açın",
+        "message": "$APP_NAME$ uygulamasını açın",
         "placeholders": {
             "app_name": {
                 "content": "Translater"
@@ -197,6 +197,12 @@
     },
     "tooltip_go_forward": {
         "message": "İleri"
+    },
+    "tooltip_clear_text": {
+        "message": "Metni temizle"
+    },
+    "tooltip_clear_search": {
+        "message": "Aramayı Temizle"
     },
     "date_today": {
         "message": "Bugün"

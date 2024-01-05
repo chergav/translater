@@ -1,0 +1,555 @@
+{
+    "app_name": {
+        "message": "Translater - Traducció del text seleccionat"
+    },
+    "app_description": {
+        "message": "Traducció de text seleccionat amb Google Translate amb tema clar i fosc"
+    },
+    "app_version": {
+        "message": "versió"
+    },
+    "context_menus_title": {
+        "message": "Tradueix el text seleccionat"
+    },
+    "popup_menu_options": {
+        "message": "Configuració"
+    },
+    "options_title": {
+        "message": "$APP_NAME$ - configuració",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "commands_open_translater": {
+        "message": "Obre $APP_NAME$",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "o premeu una drecera de teclat a la pàgina:"
+    },
+    "options_tab_inline_translate": {
+        "message": "Lectura i entrada"
+    },
+    "options_tab_popup_window": {
+        "message": "Finestra emergent"
+    },
+    "options_tab_appearance": {
+        "message": "Aspecte exterior"
+    },
+    "options_tab_history": {
+        "message": "Història"
+    },
+    "options_inline_button_show": {
+        "message": "Mostra el botó quan el text està seleccionat"
+    },
+    "options_text_field_button_show": {
+        "message": "Mostra el botó al camp de text"
+    },
+    "options_hide_button_on_sites": {
+        "message": "Amaga el botó en aquests llocs:"
+    },
+    "options_hide_button_on_sites_empty_list": {
+        "message": "Afegiu dominis mitjançant el menú de la finestra emergent del lloc que voleu excloure"
+    },
+    "options_show_original_text": {
+        "message": "Mostra el text d'origen"
+    },
+    "options_show_transliteration": {
+        "message": "Mostra la transliteració"
+    },
+    "options_lock_popup_window": {
+        "message": "Bloqueja la finestra emergent"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "Si està activat, la finestra emergent no es tancarà fent clic a l'exterior"
+    },
+    "options_history_length": {
+        "message": "Durada de la història"
+    },
+    "options_records_in_history": {
+        "message": "Entrades a la història:"
+    },
+    "options_history_enable": {
+        "message": "Activa l'historial"
+    },
+    "options_clear_history": {
+        "message": "Suprimeix l'historial"
+    },
+    "options_delete_history_item": {
+        "message": "Esborra de l'historial"
+    },
+    "options_tts_language": {
+        "message": "Llenguatge"
+    },
+    "options_tts_default_voice": {
+        "message": "Veu per defecte"
+    },
+    "options_tts_voices": {
+        "message": "Veus"
+    },
+    "options_tts_table_caption": {
+        "message": "Per als idiomes que no figuren a la llista, s'utilitzarà un servei extern de text a veu."
+    },
+    "options_tts_no_voices_found": {
+        "message": "No s'han trobat veus al navegador. S'utilitzarà un servei extern de text a veu."
+    },
+    "options_edit_keyboard_shortcut": {
+        "message": "Edita la drecera del teclat"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "Drecera de teclat per obrir una finestra emergent:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "la combinació de tecles no està establerta"
+    },
+    "text_expand": {
+        "message": "Més"
+    },
+    "text_collapse": {
+        "message": "Collapse"
+    },
+    "target_lang_label": {
+        "message": "Traduir a:"
+    },
+    "popup_dictionary": {
+        "message": "Diccionari"
+    },
+    "popup_dictionary_frequency": {
+        "message": "Freqüència"
+    },
+    "popup_definitions": {
+        "message": "Definicions"
+    },
+    "popup_definitions_synonyms": {
+        "message": "Sinònims:"
+    },
+    "popup_examples": {
+        "message": "Exemples"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "Potser volies dir:"
+    },
+    "popup_original_language": {
+        "message": "Idioma original:"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "Traducció inversa"
+    },
+    "popup_menu_lock_window": {
+        "message": "Finestra de bloqueig"
+    },
+    "popup_menu_unlock_window": {
+        "message": "Desbloqueja la finestra"
+    },
+    "popup_menu_show_translate_button": {
+        "message": "Mostra el botó de traducció"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "Amaga el botó de traducció"
+    },
+    "popup_menu_options_link": {
+        "message": "Configuracions addicionals"
+    },
+    "popup_placeholder_translation": {
+        "message": "Traducció"
+    },
+    "theme_light": {
+        "message": "Tema lleuger"
+    },
+    "theme_dark": {
+        "message": "Tema fosc"
+    },
+    "theme_system": {
+        "message": "Tema predeterminat"
+    },
+    "tooltip_translate_text": {
+        "message": "Tradueix el text seleccionat"
+    },
+    "tooltip_copy_to_clipboard": {
+        "message": "Copiar al portapapers"
+    },
+    "tooltip_copy_not_support_on_http": {
+        "message": "La còpia no és compatible als llocs HTTP"
+    },
+    "tooltip_copyed": {
+        "message": "Copiat!"
+    },
+    "tooltip_copy_error": {
+        "message": "Error de còpia!"
+    },
+    "tooltip_listen_to_the_text": {
+        "message": "Escolta el text"
+    },
+    "tooltip_listen_stop": {
+        "message": "Atura"
+    },
+    "tooltip_listen_language_is_not_support": {
+        "message": "La llengua no és compatible"
+    },
+    "tooltip_go_back": {
+        "message": "esquena"
+    },
+    "tooltip_go_forward": {
+        "message": "Endavant"
+    },
+    "tooltip_clear_text": {
+        "message": "Text clar"
+    },
+    "tooltip_clear_search": {
+        "message": "Esborra la cerca"
+    },
+    "date_today": {
+        "message": "avui"
+    },
+    "date_yesterday": {
+        "message": "ahir"
+    },
+    "forefox_perm_header": {
+        "message": "Permet el llançament al Firefox"
+    },
+    "forefox_perm_text": {
+        "message": "L'extensió requereix el vostre permís per accedir a llocs web i traduir al navegador Firefox."
+    },
+    "forefox_perm_button": {
+        "message": "Gestionar els permisos"
+    },
+    "select_language_search_placeholder": {
+        "message": "Cerca idiomes (codi ISO o nom)"
+    },
+    "select_language_search_no_results": {
+        "message": "Sense resultats"
+    },
+    "supported_languages_auto": {
+        "message": "detectar idioma"
+    },
+    "supported_languages_af": {
+        "message": "africana"
+    },
+    "supported_languages_sq": {
+        "message": "albanès"
+    },
+    "supported_languages_am": {
+        "message": "amàric"
+    },
+    "supported_languages_ar": {
+        "message": "àrab"
+    },
+    "supported_languages_hy": {
+        "message": "armeni"
+    },
+    "supported_languages_az": {
+        "message": "azerbaidjana"
+    },
+    "supported_languages_eu": {
+        "message": "basc"
+    },
+    "supported_languages_be": {
+        "message": "Bielorús"
+    },
+    "supported_languages_bn": {
+        "message": "bengalí"
+    },
+    "supported_languages_bs": {
+        "message": "bosnià"
+    },
+    "supported_languages_bg": {
+        "message": "búlgar"
+    },
+    "supported_languages_ca": {
+        "message": "català"
+    },
+    "supported_languages_ceb": {
+        "message": "Cebuà"
+    },
+    "supported_languages_ny": {
+        "message": "Chewa"
+    },
+    "supported_languages_zh_CN": {
+        "message": "Xinès simplificat"
+    },
+    "supported_languages_zh_TW": {
+        "message": "tradicional xinesa"
+    },
+    "supported_languages_co": {
+        "message": "Cors"
+    },
+    "supported_languages_hr": {
+        "message": "croat"
+    },
+    "supported_languages_cs": {
+        "message": "txec"
+    },
+    "supported_languages_da": {
+        "message": "danès"
+    },
+    "supported_languages_nl": {
+        "message": "holandès"
+    },
+    "supported_languages_en": {
+        "message": "Anglès"
+    },
+    "supported_languages_eo": {
+        "message": "esperanto"
+    },
+    "supported_languages_et": {
+        "message": "estonià"
+    },
+    "supported_languages_fi": {
+        "message": "finès"
+    },
+    "supported_languages_fr": {
+        "message": "francès"
+    },
+    "supported_languages_fy": {
+        "message": "frisó"
+    },
+    "supported_languages_gl": {
+        "message": "gallec"
+    },
+    "supported_languages_ka": {
+        "message": "georgiana"
+    },
+    "supported_languages_de": {
+        "message": "alemany"
+    },
+    "supported_languages_el": {
+        "message": "grec"
+    },
+    "supported_languages_gu": {
+        "message": "Gujarati"
+    },
+    "supported_languages_ht": {
+        "message": "haitià"
+    },
+    "supported_languages_ha": {
+        "message": "Hausa"
+    },
+    "supported_languages_haw": {
+        "message": "hawaiana"
+    },
+    "supported_languages_he": {
+        "message": "hebreu"
+    },
+    "supported_languages_iw": {
+        "message": "hebreu"
+    },
+    "supported_languages_hi": {
+        "message": "Hindi"
+    },
+    "supported_languages_hu": {
+        "message": "hongarès"
+    },
+    "supported_languages_is": {
+        "message": "islandès"
+    },
+    "supported_languages_ig": {
+        "message": "Igbo"
+    },
+    "supported_languages_id": {
+        "message": "indonesi"
+    },
+    "supported_languages_ga": {
+        "message": "irlandès"
+    },
+    "supported_languages_it": {
+        "message": "italià"
+    },
+    "supported_languages_ja": {
+        "message": "japonès"
+    },
+    "supported_languages_jv": {
+        "message": "javanès"
+    },
+    "supported_languages_kn": {
+        "message": "Kannada"
+    },
+    "supported_languages_kk": {
+        "message": "Kazakh"
+    },
+    "supported_languages_km": {
+        "message": "Khmer"
+    },
+    "supported_languages_ky": {
+        "message": "kirguiz"
+    },
+    "supported_languages_ko": {
+        "message": "coreà"
+    },
+    "supported_languages_ku": {
+        "message": "kurd"
+    },
+    "supported_languages_lo": {
+        "message": "laotià"
+    },
+    "supported_languages_la": {
+        "message": "llatí"
+    },
+    "supported_languages_lv": {
+        "message": "letó"
+    },
+    "supported_languages_lt": {
+        "message": "lituà"
+    },
+    "supported_languages_lb": {
+        "message": "luxemburguesa"
+    },
+    "supported_languages_mk": {
+        "message": "macedoni"
+    },
+    "supported_languages_mg": {
+        "message": "malgaxe"
+    },
+    "supported_languages_ms": {
+        "message": "Malai"
+    },
+    "supported_languages_ml": {
+        "message": "malayalam"
+    },
+    "supported_languages_mt": {
+        "message": "maltès"
+    },
+    "supported_languages_mi": {
+        "message": "Maori"
+    },
+    "supported_languages_mr": {
+        "message": "Marathi"
+    },
+    "supported_languages_mn": {
+        "message": "mongol"
+    },
+    "supported_languages_hmn": {
+        "message": "Monjo"
+    },
+    "supported_languages_my": {
+        "message": "Myanmar"
+    },
+    "supported_languages_ne": {
+        "message": "Mepali"
+    },
+    "supported_languages_no": {
+        "message": "noruec"
+    },
+    "supported_languages_fa": {
+        "message": "persa"
+    },
+    "supported_languages_pl": {
+        "message": "polonès"
+    },
+    "supported_languages_pt": {
+        "message": "portuguès"
+    },
+    "supported_languages_pa": {
+        "message": "panjabi"
+    },
+    "supported_languages_ps": {
+        "message": "Pushto"
+    },
+    "supported_languages_ro": {
+        "message": "romanès"
+    },
+    "supported_languages_ru": {
+        "message": "rus"
+    },
+    "supported_languages_sm": {
+        "message": "samoà"
+    },
+    "supported_languages_gd": {
+        "message": "gaèlic escocès"
+    },
+    "supported_languages_sr": {
+        "message": "serbi"
+    },
+    "supported_languages_sn": {
+        "message": "Shona"
+    },
+    "supported_languages_sd": {
+        "message": "Sindhi"
+    },
+    "supported_languages_si": {
+        "message": "Sinhala"
+    },
+    "supported_languages_sk": {
+        "message": "eslovac"
+    },
+    "supported_languages_sl": {
+        "message": "eslovè"
+    },
+    "supported_languages_so": {
+        "message": "Somali"
+    },
+    "supported_languages_sx": {
+        "message": "Sotho"
+    },
+    "supported_languages_es": {
+        "message": "espanyol"
+    },
+    "supported_languages_su": {
+        "message": "Sundanès"
+    },
+    "supported_languages_sw": {
+        "message": "suahili"
+    },
+    "supported_languages_sv": {
+        "message": "suec"
+    },
+    "supported_languages_tl": {
+        "message": "Tagalog"
+    },
+    "supported_languages_tg": {
+        "message": "Tadjiki"
+    },
+    "supported_languages_ta": {
+        "message": "Tamil"
+    },
+    "supported_languages_te": {
+        "message": "Telugu"
+    },
+    "supported_languages_th": {
+        "message": "tailandès"
+    },
+    "supported_languages_tr": {
+        "message": "turc"
+    },
+    "supported_languages_uk": {
+        "message": "Ucraïnès"
+    },
+    "supported_languages_ur": {
+        "message": "Urdú"
+    },
+    "supported_languages_uz": {
+        "message": "Uzbek"
+    },
+    "supported_languages_vi": {
+        "message": "vietnamita"
+    },
+    "supported_languages_cy": {
+        "message": "gal·lès"
+    },
+    "supported_languages_xh": {
+        "message": "Xosa"
+    },
+    "supported_languages_yi": {
+        "message": "Yiddish"
+    },
+    "supported_languages_yo": {
+        "message": "ioruba"
+    },
+    "supported_languages_zu": {
+        "message": "Zulu"
+    },
+    "supported_languages_qu": {
+        "message": "Quechua"
+    },
+    "supported_languages_om": {
+        "message": "Oromo"
+    },
+    "supported_languages_ilo": {
+        "message": "Ilocano"
+    }
+}

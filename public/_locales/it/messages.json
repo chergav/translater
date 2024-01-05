@@ -6,7 +6,7 @@
         "message": "Traduzione del testo selezionato con Google Translate con tema chiaro e scuro"
     },
     "app_version": {
-        "message": "Versione"
+        "message": "versione"
     },
     "context_menus_title": {
         "message": "Traduci il testo selezionato"
@@ -197,6 +197,12 @@
     },
     "tooltip_go_forward": {
         "message": "Inoltrare"
+    },
+    "tooltip_clear_text": {
+        "message": "Testo chiaro"
+    },
+    "tooltip_clear_search": {
+        "message": "Cancella ricerca"
     },
     "date_today": {
         "message": "Oggi"

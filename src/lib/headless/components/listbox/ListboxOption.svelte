@@ -3,20 +3,19 @@
 	bind:this={element}
 	aria-selected={selected === true ? selected : undefined}
 	role="option"
-	tabindex="0"
-	on:click={handleClick}
-	on:keypress={handlekeypress}
+	tabindex={active ? 0 : -1}
+	on:click={onClick}
+	on:keypress={onKeypress}
 	{...$$restProps}
 >
 	<slot {selected} />
 </svelte:element>
 
 <script>
-import { onMount } from 'svelte';
+import { onMount, onDestroy } from 'svelte';
 import { useListboxContext } from './Listbox.svelte';
 
 export let value;
-export let focus = true;
 
 let tag = 'li';
 let element;
@@ -25,25 +24,38 @@ const store = useListboxContext();
 
 $: selected = $store.value === value;
 
-const setSelectValue = value => {
+const setSelectValue = async value => {
 	$store.select(value);
 	$store.value = value;
 	$store.listboxOpen = false;
+	$store.buttonRef.focus({ preventScroll: true });
+	$store.activeOptionIndex = null;
 };
 
-const handleClick = () => {
+const onClick = () => {
 	setSelectValue(value);
 };
 
-const handlekeypress = e => {
+const onKeypress = e => {
 	if (e.code === 'Space' || e.code === 'Enter') {
 		setSelectValue(value);
 	}
 };
 
+$: active = $store.activeOptionIndex !== null
+	? $store.optionsRef[$store.activeOptionIndex] === element
+	: false;
+
 onMount(() => {
-	if (selected && focus) {
-		element.scrollIntoView({ block: 'end' });
+	$store.optionsRef = [...$store.optionsRef, element];
+	if (selected) {
+		$store.activeOptionIndex = $store.optionsRef.indexOf(element);
+		element.focus({ preventScroll: true });
+		element.scrollIntoView({ block: 'nearest' });
 	}
+});
+
+onDestroy(() => {
+	$store.optionsRef = $store.optionsRef.filter(i => i !== element);
 });
 </script>

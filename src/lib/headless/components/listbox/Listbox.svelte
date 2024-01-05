@@ -1,13 +1,7 @@
-<!-- svelte-ignore a11y-no-static-element-interactions -->
 <svelte:element
 	this={tag}
 	on:click_outside={() => {
 		$store.listboxOpen = false;
-	}}
-	on:keydown={e => {
-		if (e.code === 'Escape') {
-			$store.listboxOpen = false;
-		}
 	}}
 	use:clickOutside
 	{...$$restProps}
@@ -22,8 +16,8 @@ export const useListboxContext = () => getContext(LISTBOX_CONTEXT_NAME);
 
 <script>
 import { setContext, getContext, createEventDispatcher } from 'svelte';
-import { writable, derived } from 'svelte/store';
-import { clickOutside } from '../../utils/clickOutside';
+import { writable } from 'svelte/store';
+import { clickOutside } from '../../utils/click-outside';
 
 export let value;
 
@@ -32,6 +26,9 @@ const dispatch = createEventDispatcher();
 
 const store = writable({
 	listboxOpen: false,
+	activeOptionIndex: null,
+	buttonRef: null,
+	optionsRef: [],
 	value,
 	select(newValue) {
 		value = newValue;
@@ -39,13 +36,7 @@ const store = writable({
 	}
 });
 
-const listboxOpen = derived(store, $store => $store.listboxOpen);
-
 $: $store.value = value;
-
-$: if ($listboxOpen) {
-	dispatch('listbox_open');
-}
 
 setContext(LISTBOX_CONTEXT_NAME, store);
 </script>

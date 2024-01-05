@@ -38,10 +38,10 @@
 				"
 				icon={heroXMark}
 				round
-				tooltip={{ title: 'Clear text' }}
+				tooltip={{ title: getMessage('tooltip_clear_text') }}
 				on:click={() => {
 					textarea.value = '';
-					$store.selectedText = '';
+					resetTranslate();
 					textarea.focus();
 				}}
 			/>
@@ -52,7 +52,8 @@
 <script>
 import { afterUpdate } from 'svelte';
 import { fade } from 'svelte/transition';
-import { store } from '~/content/store';
+import { store, resetTranslate } from '~/content/store';
+import { getMessage } from '~/common/browserApi';
 import ButtonImage from '~/lib/ButtonImage.svelte';
 import { heroXMark } from '~/icons/heroicons';
 

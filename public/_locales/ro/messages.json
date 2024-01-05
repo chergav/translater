@@ -1,0 +1,555 @@
+{
+    "app_name": {
+        "message": "Translater - traducerea textului selectat"
+    },
+    "app_description": {
+        "message": "Traduceți textul selectat cu Google Translate cu temă deschisă și întunecată"
+    },
+    "app_version": {
+        "message": "versiune"
+    },
+    "context_menus_title": {
+        "message": "Traduceți textul selectat"
+    },
+    "popup_menu_options": {
+        "message": "Setări"
+    },
+    "options_title": {
+        "message": "$APP_NAME$ - setări",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "commands_open_translater": {
+        "message": "Deschide $APP_NAME$",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "sau apăsați pe o comandă rapidă de la tastatură de pe pagină:"
+    },
+    "options_tab_inline_translate": {
+        "message": "Citirea și introducerea"
+    },
+    "options_tab_popup_window": {
+        "message": "Fereastra pop-up"
+    },
+    "options_tab_appearance": {
+        "message": "Aspectul exterior"
+    },
+    "options_tab_history": {
+        "message": "Istorie"
+    },
+    "options_inline_button_show": {
+        "message": "Afișați butonul când este selectat text"
+    },
+    "options_text_field_button_show": {
+        "message": "Afișați butonul în câmpul de text"
+    },
+    "options_hide_button_on_sites": {
+        "message": "Ascundeți butonul de pe aceste site-uri:"
+    },
+    "options_hide_button_on_sites_empty_list": {
+        "message": "Adăugați domenii utilizând meniul ferestrei pop-up de pe site-ul pe care doriți să îl excludeți"
+    },
+    "options_show_original_text": {
+        "message": "Afișați textul sursă"
+    },
+    "options_show_transliteration": {
+        "message": "Afișați transliterația"
+    },
+    "options_lock_popup_window": {
+        "message": "Blocați fereastra pop-up"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "Dacă este activată, fereastra pop-up nu se va închide la clic afară"
+    },
+    "options_history_length": {
+        "message": "Lungimea istoriei"
+    },
+    "options_records_in_history": {
+        "message": "Intrări în istorie:"
+    },
+    "options_history_enable": {
+        "message": "Activați istoricul"
+    },
+    "options_clear_history": {
+        "message": "Ștergeți istoricul"
+    },
+    "options_delete_history_item": {
+        "message": "Ștergeți din istoric"
+    },
+    "options_tts_language": {
+        "message": "Limba"
+    },
+    "options_tts_default_voice": {
+        "message": "Voce implicită"
+    },
+    "options_tts_voices": {
+        "message": "Voci"
+    },
+    "options_tts_table_caption": {
+        "message": "Pentru limbile care nu sunt listate, va fi utilizat un serviciu extern de conversie text în vorbire."
+    },
+    "options_tts_no_voices_found": {
+        "message": "Nu s-au găsit voci în browser. Se va utiliza un serviciu extern de conversie text în vorbire."
+    },
+    "options_edit_keyboard_shortcut": {
+        "message": "Editați comanda rapidă de la tastatură"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "Comandă rapidă de la tastatură pentru a deschide fereastra pop-up:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "combinația de taste nu este setată"
+    },
+    "text_expand": {
+        "message": "Mai mult"
+    },
+    "text_collapse": {
+        "message": "prăbușire"
+    },
+    "target_lang_label": {
+        "message": "Tradu in:"
+    },
+    "popup_dictionary": {
+        "message": "Dicţionar"
+    },
+    "popup_dictionary_frequency": {
+        "message": "Frecvență"
+    },
+    "popup_definitions": {
+        "message": "Definiții"
+    },
+    "popup_definitions_synonyms": {
+        "message": "Sinonime:"
+    },
+    "popup_examples": {
+        "message": "Exemple"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "Poate ai vrut sa spui:"
+    },
+    "popup_original_language": {
+        "message": "Limba originală:"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "Traducere inversă"
+    },
+    "popup_menu_lock_window": {
+        "message": "Încuie fereastra"
+    },
+    "popup_menu_unlock_window": {
+        "message": "Deblocați fereastra"
+    },
+    "popup_menu_show_translate_button": {
+        "message": "Afișează butonul de traducere"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "Ascunde butonul de traducere"
+    },
+    "popup_menu_options_link": {
+        "message": "Setari aditionale"
+    },
+    "popup_placeholder_translation": {
+        "message": "Traducere"
+    },
+    "theme_light": {
+        "message": "Tema ușoară"
+    },
+    "theme_dark": {
+        "message": "Tema întunecată"
+    },
+    "theme_system": {
+        "message": "Tema implicită"
+    },
+    "tooltip_translate_text": {
+        "message": "Traduceți textul selectat"
+    },
+    "tooltip_copy_to_clipboard": {
+        "message": "Copiați în clipboard"
+    },
+    "tooltip_copy_not_support_on_http": {
+        "message": "Copierea nu este acceptată pe site-urile HTTP"
+    },
+    "tooltip_copyed": {
+        "message": "Copiat!"
+    },
+    "tooltip_copy_error": {
+        "message": "Eroare de copiere!"
+    },
+    "tooltip_listen_to_the_text": {
+        "message": "Ascultă textul"
+    },
+    "tooltip_listen_stop": {
+        "message": "Stop"
+    },
+    "tooltip_listen_language_is_not_support": {
+        "message": "Limba nu este suportată"
+    },
+    "tooltip_go_back": {
+        "message": "Înapoi"
+    },
+    "tooltip_go_forward": {
+        "message": "Redirecţiona"
+    },
+    "tooltip_clear_text": {
+        "message": "Text clar"
+    },
+    "tooltip_clear_search": {
+        "message": "Ștergeți căutarea"
+    },
+    "date_today": {
+        "message": "astăzi"
+    },
+    "date_yesterday": {
+        "message": "ieri"
+    },
+    "forefox_perm_header": {
+        "message": "Permite lansarea în Firefox"
+    },
+    "forefox_perm_text": {
+        "message": "Extensia necesită permisiunea dvs. pentru a accesa site-uri web și a traduce în browserul Firefox."
+    },
+    "forefox_perm_button": {
+        "message": "Gestionați permisiunile"
+    },
+    "select_language_search_placeholder": {
+        "message": "Găsiți limbi (cod ISO sau nume)"
+    },
+    "select_language_search_no_results": {
+        "message": "Fara rezultate"
+    },
+    "supported_languages_auto": {
+        "message": "Detecteaza limba"
+    },
+    "supported_languages_af": {
+        "message": "african"
+    },
+    "supported_languages_sq": {
+        "message": "albanez"
+    },
+    "supported_languages_am": {
+        "message": "amharică"
+    },
+    "supported_languages_ar": {
+        "message": "arabic"
+    },
+    "supported_languages_hy": {
+        "message": "armean"
+    },
+    "supported_languages_az": {
+        "message": "Azerbaidjan"
+    },
+    "supported_languages_eu": {
+        "message": "bască"
+    },
+    "supported_languages_be": {
+        "message": "Belarus"
+    },
+    "supported_languages_bn": {
+        "message": "bengaleză"
+    },
+    "supported_languages_bs": {
+        "message": "Bosniac"
+    },
+    "supported_languages_bg": {
+        "message": "bulgară"
+    },
+    "supported_languages_ca": {
+        "message": "catalan"
+    },
+    "supported_languages_ceb": {
+        "message": "Cebuano"
+    },
+    "supported_languages_ny": {
+        "message": "Chewa"
+    },
+    "supported_languages_zh_CN": {
+        "message": "chineză simplificată"
+    },
+    "supported_languages_zh_TW": {
+        "message": "tradițional chinezesc"
+    },
+    "supported_languages_co": {
+        "message": "corsicană"
+    },
+    "supported_languages_hr": {
+        "message": "croat"
+    },
+    "supported_languages_cs": {
+        "message": "ceh"
+    },
+    "supported_languages_da": {
+        "message": "danez"
+    },
+    "supported_languages_nl": {
+        "message": "olandeză"
+    },
+    "supported_languages_en": {
+        "message": "Engleză"
+    },
+    "supported_languages_eo": {
+        "message": "esperanto"
+    },
+    "supported_languages_et": {
+        "message": "estonă"
+    },
+    "supported_languages_fi": {
+        "message": "finlandeză"
+    },
+    "supported_languages_fr": {
+        "message": "limba franceza"
+    },
+    "supported_languages_fy": {
+        "message": "frizonă"
+    },
+    "supported_languages_gl": {
+        "message": "Galician"
+    },
+    "supported_languages_ka": {
+        "message": "georgian"
+    },
+    "supported_languages_de": {
+        "message": "limba germana"
+    },
+    "supported_languages_el": {
+        "message": "greacă"
+    },
+    "supported_languages_gu": {
+        "message": "Gujarati"
+    },
+    "supported_languages_ht": {
+        "message": "haitien"
+    },
+    "supported_languages_ha": {
+        "message": "Hausa"
+    },
+    "supported_languages_haw": {
+        "message": "Hawaiian"
+    },
+    "supported_languages_he": {
+        "message": "ebraică"
+    },
+    "supported_languages_iw": {
+        "message": "ebraică"
+    },
+    "supported_languages_hi": {
+        "message": "hindi"
+    },
+    "supported_languages_hu": {
+        "message": "maghiară"
+    },
+    "supported_languages_is": {
+        "message": "islandez"
+    },
+    "supported_languages_ig": {
+        "message": "Igbo"
+    },
+    "supported_languages_id": {
+        "message": "indoneziană"
+    },
+    "supported_languages_ga": {
+        "message": "irlandez"
+    },
+    "supported_languages_it": {
+        "message": "Italiană"
+    },
+    "supported_languages_ja": {
+        "message": "japonez"
+    },
+    "supported_languages_jv": {
+        "message": "javaneză"
+    },
+    "supported_languages_kn": {
+        "message": "Kannada"
+    },
+    "supported_languages_kk": {
+        "message": "kazah"
+    },
+    "supported_languages_km": {
+        "message": "Khmer"
+    },
+    "supported_languages_ky": {
+        "message": "kirghiz"
+    },
+    "supported_languages_ko": {
+        "message": "coreeană"
+    },
+    "supported_languages_ku": {
+        "message": "kurdă"
+    },
+    "supported_languages_lo": {
+        "message": "laotiana"
+    },
+    "supported_languages_la": {
+        "message": "latin"
+    },
+    "supported_languages_lv": {
+        "message": "letonă"
+    },
+    "supported_languages_lt": {
+        "message": "lituanian"
+    },
+    "supported_languages_lb": {
+        "message": "luxemburghez"
+    },
+    "supported_languages_mk": {
+        "message": "macedonean"
+    },
+    "supported_languages_mg": {
+        "message": "malgaș"
+    },
+    "supported_languages_ms": {
+        "message": "Malaeză"
+    },
+    "supported_languages_ml": {
+        "message": "Malayalam"
+    },
+    "supported_languages_mt": {
+        "message": "malteză"
+    },
+    "supported_languages_mi": {
+        "message": "maori"
+    },
+    "supported_languages_mr": {
+        "message": "marathi"
+    },
+    "supported_languages_mn": {
+        "message": "mongol"
+    },
+    "supported_languages_hmn": {
+        "message": "Călugăr"
+    },
+    "supported_languages_my": {
+        "message": "Myanmar"
+    },
+    "supported_languages_ne": {
+        "message": "Mepali"
+    },
+    "supported_languages_no": {
+        "message": "norvegian"
+    },
+    "supported_languages_fa": {
+        "message": "persană"
+    },
+    "supported_languages_pl": {
+        "message": "Lustrui"
+    },
+    "supported_languages_pt": {
+        "message": "portugheză"
+    },
+    "supported_languages_pa": {
+        "message": "punjabi"
+    },
+    "supported_languages_ps": {
+        "message": "Împingeți spre"
+    },
+    "supported_languages_ro": {
+        "message": "Română"
+    },
+    "supported_languages_ru": {
+        "message": "Rusă"
+    },
+    "supported_languages_sm": {
+        "message": "Samoan"
+    },
+    "supported_languages_gd": {
+        "message": "gaelic scoțian"
+    },
+    "supported_languages_sr": {
+        "message": "sârb"
+    },
+    "supported_languages_sn": {
+        "message": "Shona"
+    },
+    "supported_languages_sd": {
+        "message": "Sindhi"
+    },
+    "supported_languages_si": {
+        "message": "Sinhala"
+    },
+    "supported_languages_sk": {
+        "message": "slovacă"
+    },
+    "supported_languages_sl": {
+        "message": "slovenă"
+    },
+    "supported_languages_so": {
+        "message": "somalez"
+    },
+    "supported_languages_sx": {
+        "message": "Sotho"
+    },
+    "supported_languages_es": {
+        "message": "Spaniolă"
+    },
+    "supported_languages_su": {
+        "message": "Sundaneza"
+    },
+    "supported_languages_sw": {
+        "message": "Swahili"
+    },
+    "supported_languages_sv": {
+        "message": "suedez"
+    },
+    "supported_languages_tl": {
+        "message": "tagalog"
+    },
+    "supported_languages_tg": {
+        "message": "Tadjiki"
+    },
+    "supported_languages_ta": {
+        "message": "tamil"
+    },
+    "supported_languages_te": {
+        "message": "Telugu"
+    },
+    "supported_languages_th": {
+        "message": "thailandez"
+    },
+    "supported_languages_tr": {
+        "message": "turc"
+    },
+    "supported_languages_uk": {
+        "message": "ucrainean"
+    },
+    "supported_languages_ur": {
+        "message": "Urdu"
+    },
+    "supported_languages_uz": {
+        "message": "uzbec"
+    },
+    "supported_languages_vi": {
+        "message": "vietnamez"
+    },
+    "supported_languages_cy": {
+        "message": "galeză"
+    },
+    "supported_languages_xh": {
+        "message": "Xosa"
+    },
+    "supported_languages_yi": {
+        "message": "idiş"
+    },
+    "supported_languages_yo": {
+        "message": "Yoruba"
+    },
+    "supported_languages_zu": {
+        "message": "Zulu"
+    },
+    "supported_languages_qu": {
+        "message": "quechua"
+    },
+    "supported_languages_om": {
+        "message": "Oromo"
+    },
+    "supported_languages_ilo": {
+        "message": "Ilocano"
+    }
+}

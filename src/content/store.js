@@ -1,6 +1,6 @@
 import { writable, derived, get } from 'svelte/store';
 import { persistentStore } from '~/common/store';
-import { historyAdd } from '~/common/history';
+import { historyAppend } from '~/common/history';
 import { getUILanguage } from '~/common/browserApi';
 
 const initData = {
@@ -24,18 +24,6 @@ const store = writable(initData);
 const selectedText = derived(store, $store => $store.selectedText);
 const sourceLang = derived(store, $store => $store.sourceLang);
 
-const resetStore = () => {
-	store.update(data => ({
-		...data,
-		translated: null,
-		selectedText: null,
-		sourceLang: 'auto',
-		cacheIndex: 0, // to get last item on prev button when open empty popup
-		selectedElemRect: null,
-		selectedEndCoord: null
-	}));
-};
-
 const fetchTranslate = async (sourceLang, targetLang, selectedText) => {
 	try {
 		const content = {
@@ -57,17 +45,19 @@ const fetchTranslate = async (sourceLang, targetLang, selectedText) => {
 };
 
 const getGTranslate = async () => {
-	const $store = get(store);
-	const $persistentStore = get(persistentStore);
+	const _store = get(store);
+	const _persistentStore = get(persistentStore);
 
 	const sentences = {};
-	const targetLang = $persistentStore.targetLang;
-	const selectedText = $store.selectedText;
-	const sourceLang = $store.sourceLang;
+	const targetLang = _persistentStore.targetLang;
+	const selectedText = _store.selectedText;
+	const sourceLang = _store.sourceLang;
 	let translated;
 
-	const cached = $store.cacheTranslate.find(
-		i => i.sentences.orig === selectedText && i.targetLang === targetLang && i.src === sourceLang
+	const cached = _store.cacheTranslate.find(
+		i => i.sentences.orig === selectedText &&
+		i.targetLang === targetLang &&
+		i.sourceLang === sourceLang
 	);
 
 	if (cached) {
@@ -97,7 +87,7 @@ const getGTranslate = async () => {
 			cacheIndex: -1 // last item
 		}));
 
-		historyAdd({
+		historyAppend({
 			sourceLang: translated.src,
 			targetLang,
 			orig: sentences.orig,
@@ -111,6 +101,7 @@ const getGTranslate = async () => {
 const resetTranslate = () => {
 	store.update(value => ({
 		...value,
+		selectedText: null,
 		sourceLang: 'auto',
 		targetLang: getUILanguage(),
 		translated: {
@@ -118,14 +109,15 @@ const resetTranslate = () => {
 			spell: {},
 			ld_result: { srclangs: ['auto'] },
 			sentences: { orig: '', trans: '' }
-		}
+		},
+		cacheIndex: 0
 	}));
 };
 
 async function getTranslate() {
-	const $store = get(store);
+	const _store = get(store);
 
-	if (!$store.selectedText) {
+	if (!_store.selectedText) {
 		resetTranslate();
 		return;
 	}
@@ -163,4 +155,4 @@ selectedText.subscribe(text => {
 	}
 });
 
-export { store, resetStore, selectedText, sourceLang, getTranslate };
+export { store, selectedText, sourceLang, getTranslate, resetTranslate };

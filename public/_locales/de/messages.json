@@ -52,7 +52,7 @@
         "message": "Schaltfläche im Textfeld anzeigen"
     },
     "options_hide_button_on_sites": {
-        "message": "Verstecken Sie die Schaltfläche auf diesen Seiten:"
+        "message": "Blenden Sie die Schaltfläche auf diesen Seiten aus:"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Fügen Sie Domains über das Menü des Popup-Fensters auf der Site hinzu, die Sie ausschließen möchten"
@@ -106,7 +106,7 @@
         "message": "Tastenkombination zum Öffnen des Popup-Fensters:"
     },
     "options_key_combination_is_not_set": {
-        "message": "Tastenkombination ist nicht festgelegt"
+        "message": "Tastenkombination ist nicht eingestellt"
     },
     "text_expand": {
         "message": "Mehr"
@@ -197,6 +197,12 @@
     },
     "tooltip_go_forward": {
         "message": "Nach vorne"
+    },
+    "tooltip_clear_text": {
+        "message": "Klartext"
+    },
+    "tooltip_clear_search": {
+        "message": "Saubere Suche"
     },
     "date_today": {
         "message": "Heute"

@@ -6,7 +6,7 @@
         "message": "Vertaal geselecteerde tekst met Google Translate met licht en donker thema"
     },
     "app_version": {
-        "message": "Versie"
+        "message": "versie"
     },
     "context_menus_title": {
         "message": "Vertaal geselecteerde tekst"
@@ -88,7 +88,7 @@
         "message": "Taal"
     },
     "options_tts_default_voice": {
-        "message": "Standaardstem"
+        "message": "Standaard stem"
     },
     "options_tts_voices": {
         "message": "Stemmen"
@@ -197,6 +197,12 @@
     },
     "tooltip_go_forward": {
         "message": "Vooruit"
+    },
+    "tooltip_clear_text": {
+        "message": "Duidelijke tekst"
+    },
+    "tooltip_clear_search": {
+        "message": "Duidelijke zoek"
     },
     "date_today": {
         "message": "Vandaag"

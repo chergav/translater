@@ -11,12 +11,18 @@
 		transition-colors
 		[&>*]:pointer-events-none
 		{round ? 'rounded-full' : 'rounded-lg'}
+		focus-visible:outline
+		focus-visible:outline-2
+		focus-visible:outline-gray-800/20
+		focus-visible:dark:outline-gray-200/20
 		{className}
 	"
 	{disabled}
 	type="button"
 	{...$$restProps}
 	on:click
+	on:keydown
+	on:keypress
 	on:mouseleave
 	use:action={tooltip}
 >

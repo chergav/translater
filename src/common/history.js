@@ -1,13 +1,9 @@
+import { get } from 'svelte/store';
 import { persistentStore } from '~/common/store';
 
-let store;
-
-persistentStore.subscribe(value => {
-	store = value;
-});
-
-const historyAdd = ({ sourceLang, targetLang, orig, trans }) => {
-	if (!store.historyEnable) {
+const historyAppend = ({ sourceLang, targetLang, orig, trans }) => {
+	const _persistentStore = get(persistentStore);
+	if (!_persistentStore.historyEnable) {
 		return;
 	}
 
@@ -19,13 +15,13 @@ const historyAdd = ({ sourceLang, targetLang, orig, trans }) => {
 		time: Date.now()
 	};
 
-	store.history = [historyItem, ...store.history];
+	_persistentStore.history = [historyItem, ..._persistentStore.history];
 
-	if (store.history.length >= store.historyLength) {
-		store.history = store.history.slice(0, store.historyLength);
+	if (_persistentStore.history.length >= _persistentStore.historyLength) {
+		_persistentStore.history = _persistentStore.history.slice(0, _persistentStore.historyLength);
 	}
 
-	persistentStore.set(store);
+	persistentStore.set(_persistentStore);
 };
 
-export { historyAdd };
+export { historyAppend };

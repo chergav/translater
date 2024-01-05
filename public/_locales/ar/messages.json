@@ -198,6 +198,12 @@
     "tooltip_go_forward": {
         "message": "إلى الأمام"
     },
+    "tooltip_clear_text": {
+        "message": "مسح النص"
+    },
+    "tooltip_clear_search": {
+        "message": "مسح البحث"
+    },
     "date_today": {
         "message": "اليوم"
     },

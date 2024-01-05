@@ -10,7 +10,7 @@
 		"preview": "vite preview",
 		"prepack:crx": "pnpm build",
 		"pack:crx": "crx3 dist/chrome --crxURL https://raw.githubusercontent.com/chergav/translater/master/extension/translater-$npm_package_version.crx -p extension/translater.pem -x extension/translater.xml -o extension/translater-$npm_package_version.crx",
-		"postpack:crx": "node utils/delete-update_url-manifest.js && cd dist/chrome && zip -FSr ../../extension/translater-ms-$npm_package_version.zip ./",
+		"postpack:crx": "node utils/delete-update_url-manifest.js && cd dist/chrome && zip -FSr ../../extension/translater-$npm_package_version.zip ./",
 		"prepack:zip": "BROWSER=firefox pnpm build && node utils/clean-manifest-for-ff.js",
 		"pack:zip": "cd ./dist/firefox && zip -FSr ../../extension/translater-ff-$npm_package_version.zip ./",
 		"postpack:zip": "zip -FSr extension/translater-ff-src-$npm_package_version.zip ./ -x '.git/*' 'dist/*' 'docs/*' 'extension/*' 'node_modules/*'",

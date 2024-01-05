@@ -1,0 +1,555 @@
+{
+    "app_name": {
+        "message": "Translater - terjemahan teks yang dipilih"
+    },
+    "app_description": {
+        "message": "Terjemahan teks yang dipilih dengan Terjemahan Google dengan tema terang dan gelap"
+    },
+    "app_version": {
+        "message": "versi"
+    },
+    "context_menus_title": {
+        "message": "Terjemah teks yang dipilih"
+    },
+    "popup_menu_options": {
+        "message": "tetapan"
+    },
+    "options_title": {
+        "message": "$APP_NAME$ - tetapan",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "commands_open_translater": {
+        "message": "Buka $APP_NAME$",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "atau tekan pintasan papan kekunci pada halaman:"
+    },
+    "options_tab_inline_translate": {
+        "message": "Pembacaan dan input"
+    },
+    "options_tab_popup_window": {
+        "message": "Tetingkap timbul"
+    },
+    "options_tab_appearance": {
+        "message": "Penampilan luar"
+    },
+    "options_tab_history": {
+        "message": "Sejarah"
+    },
+    "options_inline_button_show": {
+        "message": "Tunjukkan butang apabila teks dipilih"
+    },
+    "options_text_field_button_show": {
+        "message": "Tunjukkan butang dalam medan teks"
+    },
+    "options_hide_button_on_sites": {
+        "message": "Sembunyikan butang pada tapak ini:"
+    },
+    "options_hide_button_on_sites_empty_list": {
+        "message": "Tambahkan domain menggunakan menu tetingkap timbul pada tapak yang anda ingin kecualikan"
+    },
+    "options_show_original_text": {
+        "message": "Tunjukkan teks sumber"
+    },
+    "options_show_transliteration": {
+        "message": "Tunjukkan transliterasi"
+    },
+    "options_lock_popup_window": {
+        "message": "Kunci tetingkap pop timbul"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "Jika didayakan pop timbul tidak akan ditutup pada klik di luar"
+    },
+    "options_history_length": {
+        "message": "Panjang sejarah"
+    },
+    "options_records_in_history": {
+        "message": "Catatan dalam sejarah:"
+    },
+    "options_history_enable": {
+        "message": "Dayakan sejarah"
+    },
+    "options_clear_history": {
+        "message": "Padam sejarah"
+    },
+    "options_delete_history_item": {
+        "message": "Padam daripada sejarah"
+    },
+    "options_tts_language": {
+        "message": "Bahasa"
+    },
+    "options_tts_default_voice": {
+        "message": "Suara lalai"
+    },
+    "options_tts_voices": {
+        "message": "Suara"
+    },
+    "options_tts_table_caption": {
+        "message": "Untuk bahasa yang tidak disenaraikan, perkhidmatan teks ke pertuturan luaran akan digunakan."
+    },
+    "options_tts_no_voices_found": {
+        "message": "Tiada suara ditemui dalam penyemak imbas. Perkhidmatan teks ke pertuturan luaran akan digunakan."
+    },
+    "options_edit_keyboard_shortcut": {
+        "message": "Edit pintasan papan kekunci"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "Pintasan papan kekunci untuk membuka tetingkap timbul:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "kombinasi kekunci tidak ditetapkan"
+    },
+    "text_expand": {
+        "message": "Lagi"
+    },
+    "text_collapse": {
+        "message": "runtuh"
+    },
+    "target_lang_label": {
+        "message": "Terjemah kepada:"
+    },
+    "popup_dictionary": {
+        "message": "Kamus"
+    },
+    "popup_dictionary_frequency": {
+        "message": "Kekerapan"
+    },
+    "popup_definitions": {
+        "message": "Definisi"
+    },
+    "popup_definitions_synonyms": {
+        "message": "sinonim:"
+    },
+    "popup_examples": {
+        "message": "Contoh"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "Mungkin maksud anda:"
+    },
+    "popup_original_language": {
+        "message": "Bahasa asal:"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "Terjemah terbalik"
+    },
+    "popup_menu_lock_window": {
+        "message": "Kunci tingkap"
+    },
+    "popup_menu_unlock_window": {
+        "message": "Buka kunci tetingkap"
+    },
+    "popup_menu_show_translate_button": {
+        "message": "Tunjukkan butang terjemah"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "Sembunyikan butang terjemah"
+    },
+    "popup_menu_options_link": {
+        "message": "Tetapan tambahan"
+    },
+    "popup_placeholder_translation": {
+        "message": "Terjemahan"
+    },
+    "theme_light": {
+        "message": "Tema ringan"
+    },
+    "theme_dark": {
+        "message": "Tema gelap"
+    },
+    "theme_system": {
+        "message": "Tema lalai"
+    },
+    "tooltip_translate_text": {
+        "message": "Terjemah teks yang dipilih"
+    },
+    "tooltip_copy_to_clipboard": {
+        "message": "Salin ke papan keratan"
+    },
+    "tooltip_copy_not_support_on_http": {
+        "message": "Salinan tidak disokong pada tapak HTTP"
+    },
+    "tooltip_copyed": {
+        "message": "Disalin!"
+    },
+    "tooltip_copy_error": {
+        "message": "Ralat salin!"
+    },
+    "tooltip_listen_to_the_text": {
+        "message": "Dengar teks"
+    },
+    "tooltip_listen_stop": {
+        "message": "Berhenti"
+    },
+    "tooltip_listen_language_is_not_support": {
+        "message": "Bahasa tidak disokong"
+    },
+    "tooltip_go_back": {
+        "message": "belakang"
+    },
+    "tooltip_go_forward": {
+        "message": "ke hadapan"
+    },
+    "tooltip_clear_text": {
+        "message": "Kosongkan teks"
+    },
+    "tooltip_clear_search": {
+        "message": "Kosongkan carian"
+    },
+    "date_today": {
+        "message": "hari ini"
+    },
+    "date_yesterday": {
+        "message": "semalam"
+    },
+    "forefox_perm_header": {
+        "message": "Benarkan pelancaran dalam Firefox"
+    },
+    "forefox_perm_text": {
+        "message": "Sambungan memerlukan kebenaran anda untuk mengakses tapak web dan menterjemah dalam penyemak imbas Firefox."
+    },
+    "forefox_perm_button": {
+        "message": "Urus kebenaran"
+    },
+    "select_language_search_placeholder": {
+        "message": "Cari bahasa (kod atau nama ISO)"
+    },
+    "select_language_search_no_results": {
+        "message": "Tiada keputusan"
+    },
+    "supported_languages_auto": {
+        "message": "mengesan Bahasa"
+    },
+    "supported_languages_af": {
+        "message": "Afrika"
+    },
+    "supported_languages_sq": {
+        "message": "bahasa Albania"
+    },
+    "supported_languages_am": {
+        "message": "Amharic"
+    },
+    "supported_languages_ar": {
+        "message": "bahasa arab"
+    },
+    "supported_languages_hy": {
+        "message": "bahasa Armenia"
+    },
+    "supported_languages_az": {
+        "message": "Azerbaijan"
+    },
+    "supported_languages_eu": {
+        "message": "Basque"
+    },
+    "supported_languages_be": {
+        "message": "Belarusia"
+    },
+    "supported_languages_bn": {
+        "message": "Benggali"
+    },
+    "supported_languages_bs": {
+        "message": "Bosnia"
+    },
+    "supported_languages_bg": {
+        "message": "bahasa Bulgaria"
+    },
+    "supported_languages_ca": {
+        "message": "Catalan"
+    },
+    "supported_languages_ceb": {
+        "message": "Cebuano"
+    },
+    "supported_languages_ny": {
+        "message": "Chewa"
+    },
+    "supported_languages_zh_CN": {
+        "message": "Cina dipermudahkan"
+    },
+    "supported_languages_zh_TW": {
+        "message": "tradisional cina"
+    },
+    "supported_languages_co": {
+        "message": "Korsika"
+    },
+    "supported_languages_hr": {
+        "message": "bahasa Croatia"
+    },
+    "supported_languages_cs": {
+        "message": "bahasa Czech"
+    },
+    "supported_languages_da": {
+        "message": "Danish"
+    },
+    "supported_languages_nl": {
+        "message": "Belanda"
+    },
+    "supported_languages_en": {
+        "message": "Inggeris"
+    },
+    "supported_languages_eo": {
+        "message": "bahasa Esperanto"
+    },
+    "supported_languages_et": {
+        "message": "bahasa Estonia"
+    },
+    "supported_languages_fi": {
+        "message": "bahasa Finland"
+    },
+    "supported_languages_fr": {
+        "message": "Perancis"
+    },
+    "supported_languages_fy": {
+        "message": "Frisian"
+    },
+    "supported_languages_gl": {
+        "message": "Galicia"
+    },
+    "supported_languages_ka": {
+        "message": "Georgian"
+    },
+    "supported_languages_de": {
+        "message": "Jerman"
+    },
+    "supported_languages_el": {
+        "message": "bahasa Yunani"
+    },
+    "supported_languages_gu": {
+        "message": "Gujerat"
+    },
+    "supported_languages_ht": {
+        "message": "Haiti"
+    },
+    "supported_languages_ha": {
+        "message": "Hausa"
+    },
+    "supported_languages_haw": {
+        "message": "Hawaii"
+    },
+    "supported_languages_he": {
+        "message": "bahasa Ibrani"
+    },
+    "supported_languages_iw": {
+        "message": "bahasa Ibrani"
+    },
+    "supported_languages_hi": {
+        "message": "Hindi"
+    },
+    "supported_languages_hu": {
+        "message": "bahasa Hungary"
+    },
+    "supported_languages_is": {
+        "message": "bahasa Iceland"
+    },
+    "supported_languages_ig": {
+        "message": "Igbo"
+    },
+    "supported_languages_id": {
+        "message": "Indonesia"
+    },
+    "supported_languages_ga": {
+        "message": "Irish"
+    },
+    "supported_languages_it": {
+        "message": "Itali"
+    },
+    "supported_languages_ja": {
+        "message": "Jepun"
+    },
+    "supported_languages_jv": {
+        "message": "bahasa jawa"
+    },
+    "supported_languages_kn": {
+        "message": "Kannada"
+    },
+    "supported_languages_kk": {
+        "message": "bahasa Kazakhstan"
+    },
+    "supported_languages_km": {
+        "message": "bahasa Khmer"
+    },
+    "supported_languages_ky": {
+        "message": "Kirghiz"
+    },
+    "supported_languages_ko": {
+        "message": "Korea"
+    },
+    "supported_languages_ku": {
+        "message": "Kurdish"
+    },
+    "supported_languages_lo": {
+        "message": "Laos"
+    },
+    "supported_languages_la": {
+        "message": "bahasa Latin"
+    },
+    "supported_languages_lv": {
+        "message": "bahasa Latvia"
+    },
+    "supported_languages_lt": {
+        "message": "bahasa Lithuania"
+    },
+    "supported_languages_lb": {
+        "message": "Luxembourgish"
+    },
+    "supported_languages_mk": {
+        "message": "Macedonia"
+    },
+    "supported_languages_mg": {
+        "message": "Malagasy"
+    },
+    "supported_languages_ms": {
+        "message": "Melayu"
+    },
+    "supported_languages_ml": {
+        "message": "Malayalam"
+    },
+    "supported_languages_mt": {
+        "message": "bahasa Malta"
+    },
+    "supported_languages_mi": {
+        "message": "Maori"
+    },
+    "supported_languages_mr": {
+        "message": "Marathi"
+    },
+    "supported_languages_mn": {
+        "message": "Mongolia"
+    },
+    "supported_languages_hmn": {
+        "message": "sami"
+    },
+    "supported_languages_my": {
+        "message": "Myanmar"
+    },
+    "supported_languages_ne": {
+        "message": "Mepali"
+    },
+    "supported_languages_no": {
+        "message": "bahasa Norway"
+    },
+    "supported_languages_fa": {
+        "message": "Parsi"
+    },
+    "supported_languages_pl": {
+        "message": "Poland"
+    },
+    "supported_languages_pt": {
+        "message": "Portugis"
+    },
+    "supported_languages_pa": {
+        "message": "Punjabi"
+    },
+    "supported_languages_ps": {
+        "message": "Pushto"
+    },
+    "supported_languages_ro": {
+        "message": "bahasa Romania"
+    },
+    "supported_languages_ru": {
+        "message": "bahasa Rusia"
+    },
+    "supported_languages_sm": {
+        "message": "bahasa Samoa"
+    },
+    "supported_languages_gd": {
+        "message": "Gaelik Scotland"
+    },
+    "supported_languages_sr": {
+        "message": "bahasa Serbia"
+    },
+    "supported_languages_sn": {
+        "message": "Shona"
+    },
+    "supported_languages_sd": {
+        "message": "Sindhi"
+    },
+    "supported_languages_si": {
+        "message": "Sinhala"
+    },
+    "supported_languages_sk": {
+        "message": "Bahasa Slovak"
+    },
+    "supported_languages_sl": {
+        "message": "Bahasa Slovenia"
+    },
+    "supported_languages_so": {
+        "message": "Somalia"
+    },
+    "supported_languages_sx": {
+        "message": "Sotho"
+    },
+    "supported_languages_es": {
+        "message": "bahasa Sepanyol"
+    },
+    "supported_languages_su": {
+        "message": "bahasa sunda"
+    },
+    "supported_languages_sw": {
+        "message": "bahasa Swahili"
+    },
+    "supported_languages_sv": {
+        "message": "bahasa Sweden"
+    },
+    "supported_languages_tl": {
+        "message": "bahasa Tagalog"
+    },
+    "supported_languages_tg": {
+        "message": "Tajiki"
+    },
+    "supported_languages_ta": {
+        "message": "bahasa Tamil"
+    },
+    "supported_languages_te": {
+        "message": "Telugu"
+    },
+    "supported_languages_th": {
+        "message": "Thai"
+    },
+    "supported_languages_tr": {
+        "message": "bahasa Turki"
+    },
+    "supported_languages_uk": {
+        "message": "Ukraine"
+    },
+    "supported_languages_ur": {
+        "message": "bahasa Urdu"
+    },
+    "supported_languages_uz": {
+        "message": "Uzbek"
+    },
+    "supported_languages_vi": {
+        "message": "bahasa Vietnam"
+    },
+    "supported_languages_cy": {
+        "message": "bahasa Wales"
+    },
+    "supported_languages_xh": {
+        "message": "Xosa"
+    },
+    "supported_languages_yi": {
+        "message": "Yiddish"
+    },
+    "supported_languages_yo": {
+        "message": "Yoruba"
+    },
+    "supported_languages_zu": {
+        "message": "Zulu"
+    },
+    "supported_languages_qu": {
+        "message": "Quechua"
+    },
+    "supported_languages_om": {
+        "message": "Oromo"
+    },
+    "supported_languages_ilo": {
+        "message": "Ilokano"
+    }
+}

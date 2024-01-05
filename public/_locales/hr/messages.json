@@ -1,0 +1,555 @@
+{
+    "app_name": {
+        "message": "Translater - prijevod odabranog teksta"
+    },
+    "app_description": {
+        "message": "Prijevod odabranog teksta s Google prevoditeljem sa svijetlom i tamnom temom"
+    },
+    "app_version": {
+        "message": "verzija"
+    },
+    "context_menus_title": {
+        "message": "Prevedite odabrani tekst"
+    },
+    "popup_menu_options": {
+        "message": "postavke"
+    },
+    "options_title": {
+        "message": "$APP_NAME$ - postavke",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "commands_open_translater": {
+        "message": "Otvorite $APP_NAME$",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "ili pritisnite tipkovni prečac na stranici:"
+    },
+    "options_tab_inline_translate": {
+        "message": "Čitanje i unos"
+    },
+    "options_tab_popup_window": {
+        "message": "Skočni prozor"
+    },
+    "options_tab_appearance": {
+        "message": "Vanjski izgled"
+    },
+    "options_tab_history": {
+        "message": "Povijest"
+    },
+    "options_inline_button_show": {
+        "message": "Prikaži gumb kada je tekst odabran"
+    },
+    "options_text_field_button_show": {
+        "message": "Prikaži gumb u tekstualnom polju"
+    },
+    "options_hide_button_on_sites": {
+        "message": "Sakrij gumb na ovim stranicama:"
+    },
+    "options_hide_button_on_sites_empty_list": {
+        "message": "Dodajte domene pomoću izbornika skočnog prozora na stranici koju želite izuzeti"
+    },
+    "options_show_original_text": {
+        "message": "Prikaži izvorni tekst"
+    },
+    "options_show_transliteration": {
+        "message": "Prikaži transliteraciju"
+    },
+    "options_lock_popup_window": {
+        "message": "Zaključaj skočni prozor"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "Ako je omogućeno, skočni prozor se neće zatvoriti kada kliknete izvana"
+    },
+    "options_history_length": {
+        "message": "Duljina povijesti"
+    },
+    "options_records_in_history": {
+        "message": "Upisi u povijest:"
+    },
+    "options_history_enable": {
+        "message": "Omogući povijest"
+    },
+    "options_clear_history": {
+        "message": "Brisanje povijesti"
+    },
+    "options_delete_history_item": {
+        "message": "Izbriši iz povijesti"
+    },
+    "options_tts_language": {
+        "message": "Jezik"
+    },
+    "options_tts_default_voice": {
+        "message": "Zadani glas"
+    },
+    "options_tts_voices": {
+        "message": "Glasovi"
+    },
+    "options_tts_table_caption": {
+        "message": "Za jezike koji nisu navedeni koristit će se vanjska usluga pretvaranja teksta u govor."
+    },
+    "options_tts_no_voices_found": {
+        "message": "Nema glasova u pregledniku. Koristit će se vanjska usluga pretvaranja teksta u govor."
+    },
+    "options_edit_keyboard_shortcut": {
+        "message": "Uredi tipkovni prečac"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "Tipkovnički prečac za otvaranje skočnog prozora:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "kombinacija tipki nije postavljena"
+    },
+    "text_expand": {
+        "message": "Više"
+    },
+    "text_collapse": {
+        "message": "Srušiti"
+    },
+    "target_lang_label": {
+        "message": "Prevedi na:"
+    },
+    "popup_dictionary": {
+        "message": "Rječnik"
+    },
+    "popup_dictionary_frequency": {
+        "message": "Frekvencija"
+    },
+    "popup_definitions": {
+        "message": "Definicije"
+    },
+    "popup_definitions_synonyms": {
+        "message": "Sinonimi:"
+    },
+    "popup_examples": {
+        "message": "Primjeri"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "Možda ste mislili:"
+    },
+    "popup_original_language": {
+        "message": "Izvorni jezik:"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "Obrnuti prijevod"
+    },
+    "popup_menu_lock_window": {
+        "message": "Zaključaj prozor"
+    },
+    "popup_menu_unlock_window": {
+        "message": "Otključaj prozor"
+    },
+    "popup_menu_show_translate_button": {
+        "message": "Prikaži gumb za prijevod"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "Sakrij gumb za prijevod"
+    },
+    "popup_menu_options_link": {
+        "message": "Dodatne postavke"
+    },
+    "popup_placeholder_translation": {
+        "message": "Prijevod"
+    },
+    "theme_light": {
+        "message": "Lagana tema"
+    },
+    "theme_dark": {
+        "message": "Tamna tema"
+    },
+    "theme_system": {
+        "message": "Zadana tema"
+    },
+    "tooltip_translate_text": {
+        "message": "Prevedite odabrani tekst"
+    },
+    "tooltip_copy_to_clipboard": {
+        "message": "Kopirati u međuspremnik"
+    },
+    "tooltip_copy_not_support_on_http": {
+        "message": "Kopiranje nije podržano na HTTP stranicama"
+    },
+    "tooltip_copyed": {
+        "message": "Kopirano!"
+    },
+    "tooltip_copy_error": {
+        "message": "Pogreška kopiranja!"
+    },
+    "tooltip_listen_to_the_text": {
+        "message": "Slušajte tekst"
+    },
+    "tooltip_listen_stop": {
+        "message": "Stop"
+    },
+    "tooltip_listen_language_is_not_support": {
+        "message": "Jezik nije podrška"
+    },
+    "tooltip_go_back": {
+        "message": "leđa"
+    },
+    "tooltip_go_forward": {
+        "message": "Naprijed"
+    },
+    "tooltip_clear_text": {
+        "message": "Jasan tekst"
+    },
+    "tooltip_clear_search": {
+        "message": "Očisti pretragu"
+    },
+    "date_today": {
+        "message": "danas"
+    },
+    "date_yesterday": {
+        "message": "jučer"
+    },
+    "forefox_perm_header": {
+        "message": "Dopusti pokretanje u Firefoxu"
+    },
+    "forefox_perm_text": {
+        "message": "Proširenje zahtijeva vaše dopuštenje za pristup web stranicama i prevođenje u pregledniku Firefox."
+    },
+    "forefox_perm_button": {
+        "message": "Upravljanje dopuštenjima"
+    },
+    "select_language_search_placeholder": {
+        "message": "Pronađite jezike (ISO kod ili naziv)"
+    },
+    "select_language_search_no_results": {
+        "message": "Nema rezultata"
+    },
+    "supported_languages_auto": {
+        "message": "Prepoznaj jezik"
+    },
+    "supported_languages_af": {
+        "message": "afrički"
+    },
+    "supported_languages_sq": {
+        "message": "albanski"
+    },
+    "supported_languages_am": {
+        "message": "amharski"
+    },
+    "supported_languages_ar": {
+        "message": "arapski"
+    },
+    "supported_languages_hy": {
+        "message": "Armenac"
+    },
+    "supported_languages_az": {
+        "message": "azerbajdžanski"
+    },
+    "supported_languages_eu": {
+        "message": "baskijski"
+    },
+    "supported_languages_be": {
+        "message": "bjeloruski"
+    },
+    "supported_languages_bn": {
+        "message": "bengalski"
+    },
+    "supported_languages_bs": {
+        "message": "bosanski"
+    },
+    "supported_languages_bg": {
+        "message": "bugarski"
+    },
+    "supported_languages_ca": {
+        "message": "katalonski"
+    },
+    "supported_languages_ceb": {
+        "message": "Cebuano"
+    },
+    "supported_languages_ny": {
+        "message": "Chewa"
+    },
+    "supported_languages_zh_CN": {
+        "message": "pojednostavljeni kineski"
+    },
+    "supported_languages_zh_TW": {
+        "message": "kinesko tradicionalno"
+    },
+    "supported_languages_co": {
+        "message": "Korzikanac"
+    },
+    "supported_languages_hr": {
+        "message": "Hrvatski"
+    },
+    "supported_languages_cs": {
+        "message": "češki"
+    },
+    "supported_languages_da": {
+        "message": "danski"
+    },
+    "supported_languages_nl": {
+        "message": "nizozemski"
+    },
+    "supported_languages_en": {
+        "message": "Engleski"
+    },
+    "supported_languages_eo": {
+        "message": "esperanto"
+    },
+    "supported_languages_et": {
+        "message": "estonski"
+    },
+    "supported_languages_fi": {
+        "message": "finski"
+    },
+    "supported_languages_fr": {
+        "message": "francuski"
+    },
+    "supported_languages_fy": {
+        "message": "frizijski"
+    },
+    "supported_languages_gl": {
+        "message": "galicijski"
+    },
+    "supported_languages_ka": {
+        "message": "gruzijski"
+    },
+    "supported_languages_de": {
+        "message": "njemački"
+    },
+    "supported_languages_el": {
+        "message": "grčki"
+    },
+    "supported_languages_gu": {
+        "message": "gudžarati"
+    },
+    "supported_languages_ht": {
+        "message": "haićanski"
+    },
+    "supported_languages_ha": {
+        "message": "hausa"
+    },
+    "supported_languages_haw": {
+        "message": "havajski"
+    },
+    "supported_languages_he": {
+        "message": "hebrejski"
+    },
+    "supported_languages_iw": {
+        "message": "hebrejski"
+    },
+    "supported_languages_hi": {
+        "message": "hindski"
+    },
+    "supported_languages_hu": {
+        "message": "mađarski"
+    },
+    "supported_languages_is": {
+        "message": "islandski"
+    },
+    "supported_languages_ig": {
+        "message": "Igbo"
+    },
+    "supported_languages_id": {
+        "message": "indonezijski"
+    },
+    "supported_languages_ga": {
+        "message": "irski"
+    },
+    "supported_languages_it": {
+        "message": "talijanski"
+    },
+    "supported_languages_ja": {
+        "message": "japanski"
+    },
+    "supported_languages_jv": {
+        "message": "javanski"
+    },
+    "supported_languages_kn": {
+        "message": "kannada"
+    },
+    "supported_languages_kk": {
+        "message": "kazahstanski"
+    },
+    "supported_languages_km": {
+        "message": "kmerski"
+    },
+    "supported_languages_ky": {
+        "message": "kirgiski"
+    },
+    "supported_languages_ko": {
+        "message": "korejski"
+    },
+    "supported_languages_ku": {
+        "message": "kurdski"
+    },
+    "supported_languages_lo": {
+        "message": "laoski"
+    },
+    "supported_languages_la": {
+        "message": "latinski"
+    },
+    "supported_languages_lv": {
+        "message": "latvijski"
+    },
+    "supported_languages_lt": {
+        "message": "litvanski"
+    },
+    "supported_languages_lb": {
+        "message": "luksemburški"
+    },
+    "supported_languages_mk": {
+        "message": "makedonski"
+    },
+    "supported_languages_mg": {
+        "message": "malgaški"
+    },
+    "supported_languages_ms": {
+        "message": "malajski"
+    },
+    "supported_languages_ml": {
+        "message": "malajalamski"
+    },
+    "supported_languages_mt": {
+        "message": "malteški"
+    },
+    "supported_languages_mi": {
+        "message": "maorski"
+    },
+    "supported_languages_mr": {
+        "message": "marati"
+    },
+    "supported_languages_mn": {
+        "message": "mongolski"
+    },
+    "supported_languages_hmn": {
+        "message": "Redovnik"
+    },
+    "supported_languages_my": {
+        "message": "Mianmar"
+    },
+    "supported_languages_ne": {
+        "message": "Mepali"
+    },
+    "supported_languages_no": {
+        "message": "norveški"
+    },
+    "supported_languages_fa": {
+        "message": "perzijski"
+    },
+    "supported_languages_pl": {
+        "message": "Polirati"
+    },
+    "supported_languages_pt": {
+        "message": "Portugalski"
+    },
+    "supported_languages_pa": {
+        "message": "pandžapski"
+    },
+    "supported_languages_ps": {
+        "message": "pušto"
+    },
+    "supported_languages_ro": {
+        "message": "rumunjski"
+    },
+    "supported_languages_ru": {
+        "message": "ruski"
+    },
+    "supported_languages_sm": {
+        "message": "Samoanac"
+    },
+    "supported_languages_gd": {
+        "message": "škotski galski"
+    },
+    "supported_languages_sr": {
+        "message": "srpski"
+    },
+    "supported_languages_sn": {
+        "message": "Shona"
+    },
+    "supported_languages_sd": {
+        "message": "sindhi"
+    },
+    "supported_languages_si": {
+        "message": "sinhalski"
+    },
+    "supported_languages_sk": {
+        "message": "slovački"
+    },
+    "supported_languages_sl": {
+        "message": "slovenski"
+    },
+    "supported_languages_so": {
+        "message": "somalijski"
+    },
+    "supported_languages_sx": {
+        "message": "Sotho"
+    },
+    "supported_languages_es": {
+        "message": "španjolski"
+    },
+    "supported_languages_su": {
+        "message": "sundanski"
+    },
+    "supported_languages_sw": {
+        "message": "svahili"
+    },
+    "supported_languages_sv": {
+        "message": "švedski"
+    },
+    "supported_languages_tl": {
+        "message": "tagalog"
+    },
+    "supported_languages_tg": {
+        "message": "tadžički"
+    },
+    "supported_languages_ta": {
+        "message": "Tamil"
+    },
+    "supported_languages_te": {
+        "message": "teluški"
+    },
+    "supported_languages_th": {
+        "message": "tajlandski"
+    },
+    "supported_languages_tr": {
+        "message": "turski"
+    },
+    "supported_languages_uk": {
+        "message": "ukrajinski"
+    },
+    "supported_languages_ur": {
+        "message": "urdu"
+    },
+    "supported_languages_uz": {
+        "message": "uzbečki"
+    },
+    "supported_languages_vi": {
+        "message": "vijetnamski"
+    },
+    "supported_languages_cy": {
+        "message": "velški"
+    },
+    "supported_languages_xh": {
+        "message": "Xosa"
+    },
+    "supported_languages_yi": {
+        "message": "jidiš"
+    },
+    "supported_languages_yo": {
+        "message": "joruba"
+    },
+    "supported_languages_zu": {
+        "message": "zulu"
+    },
+    "supported_languages_qu": {
+        "message": "kečua"
+    },
+    "supported_languages_om": {
+        "message": "oromo"
+    },
+    "supported_languages_ilo": {
+        "message": "Ilocano"
+    }
+}

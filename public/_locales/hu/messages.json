@@ -1,0 +1,555 @@
+{
+    "app_name": {
+        "message": "Translater - a kiválasztott szöveg fordítása"
+    },
+    "app_description": {
+        "message": "A kijelölt szöveg fordítása a Google Fordítóval világos és sötét témával"
+    },
+    "app_version": {
+        "message": "változat"
+    },
+    "context_menus_title": {
+        "message": "A kijelölt szöveg fordítása"
+    },
+    "popup_menu_options": {
+        "message": "Beállítások"
+    },
+    "options_title": {
+        "message": "$APP_NAME$ – beállítások",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "commands_open_translater": {
+        "message": "Nyissa meg a $APP_NAME$ alkalmazást",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "vagy nyomjon meg egy billentyűparancsot az oldalon:"
+    },
+    "options_tab_inline_translate": {
+        "message": "Olvasás és bevitel"
+    },
+    "options_tab_popup_window": {
+        "message": "Felugró ablak"
+    },
+    "options_tab_appearance": {
+        "message": "Külső megjelenés"
+    },
+    "options_tab_history": {
+        "message": "Történelem"
+    },
+    "options_inline_button_show": {
+        "message": "A gomb megjelenítése, ha szöveg van kiválasztva"
+    },
+    "options_text_field_button_show": {
+        "message": "A gomb megjelenítése a szövegmezőben"
+    },
+    "options_hide_button_on_sites": {
+        "message": "A gomb elrejtése ezeken a webhelyeken:"
+    },
+    "options_hide_button_on_sites_empty_list": {
+        "message": "Adjon hozzá domaineket a kizárni kívánt webhely felugró ablakának menüjével"
+    },
+    "options_show_original_text": {
+        "message": "Forrásszöveg megjelenítése"
+    },
+    "options_show_transliteration": {
+        "message": "Átírás megjelenítése"
+    },
+    "options_lock_popup_window": {
+        "message": "Felugró ablak zárolása"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "Ha engedélyezve van, a felugró ablak nem zár be, ha kívülre kattint"
+    },
+    "options_history_length": {
+        "message": "A történelem hossza"
+    },
+    "options_records_in_history": {
+        "message": "Bejegyzések a történelembe:"
+    },
+    "options_history_enable": {
+        "message": "Előzmények engedélyezése"
+    },
+    "options_clear_history": {
+        "message": "Törölje az előzményeket"
+    },
+    "options_delete_history_item": {
+        "message": "Törlés az előzményekből"
+    },
+    "options_tts_language": {
+        "message": "Nyelv"
+    },
+    "options_tts_default_voice": {
+        "message": "Alapértelmezett hang"
+    },
+    "options_tts_voices": {
+        "message": "Hangok"
+    },
+    "options_tts_table_caption": {
+        "message": "A listán nem szereplő nyelvek esetében külső szövegfelolvasó szolgáltatást használunk."
+    },
+    "options_tts_no_voices_found": {
+        "message": "Nem található hang a böngészőben. Külső szövegfelolvasó szolgáltatást fognak használni."
+    },
+    "options_edit_keyboard_shortcut": {
+        "message": "Billentyűparancs szerkesztése"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "Billentyűparancs a felugró ablak megnyitásához:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "billentyűkombináció nincs beállítva"
+    },
+    "text_expand": {
+        "message": "Több"
+    },
+    "text_collapse": {
+        "message": "Összeomlás"
+    },
+    "target_lang_label": {
+        "message": "Fordítás erre:"
+    },
+    "popup_dictionary": {
+        "message": "Szótár"
+    },
+    "popup_dictionary_frequency": {
+        "message": "Frekvencia"
+    },
+    "popup_definitions": {
+        "message": "Definíciók"
+    },
+    "popup_definitions_synonyms": {
+        "message": "Szinonimák:"
+    },
+    "popup_examples": {
+        "message": "Példák"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "Talán így értetted:"
+    },
+    "popup_original_language": {
+        "message": "Eredeti nyelv:"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "Fordított fordítás"
+    },
+    "popup_menu_lock_window": {
+        "message": "Zárja be az ablakot"
+    },
+    "popup_menu_unlock_window": {
+        "message": "Nyissa ki az ablakot"
+    },
+    "popup_menu_show_translate_button": {
+        "message": "Fordítás gomb megjelenítése"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "Fordítás gomb elrejtése"
+    },
+    "popup_menu_options_link": {
+        "message": "További beállítások"
+    },
+    "popup_placeholder_translation": {
+        "message": "Fordítás"
+    },
+    "theme_light": {
+        "message": "Világos téma"
+    },
+    "theme_dark": {
+        "message": "Sötét téma"
+    },
+    "theme_system": {
+        "message": "Alapértelmezett téma"
+    },
+    "tooltip_translate_text": {
+        "message": "A kijelölt szöveg fordítása"
+    },
+    "tooltip_copy_to_clipboard": {
+        "message": "Másolja a vágólapra"
+    },
+    "tooltip_copy_not_support_on_http": {
+        "message": "A másolás nem támogatott HTTP-webhelyeken"
+    },
+    "tooltip_copyed": {
+        "message": "Másolva!"
+    },
+    "tooltip_copy_error": {
+        "message": "Másolási hiba!"
+    },
+    "tooltip_listen_to_the_text": {
+        "message": "Hallgassa meg a szöveget"
+    },
+    "tooltip_listen_stop": {
+        "message": "Állj meg"
+    },
+    "tooltip_listen_language_is_not_support": {
+        "message": "A nyelv nem támogatott"
+    },
+    "tooltip_go_back": {
+        "message": "Vissza"
+    },
+    "tooltip_go_forward": {
+        "message": "Előre"
+    },
+    "tooltip_clear_text": {
+        "message": "Tiszta szöveg"
+    },
+    "tooltip_clear_search": {
+        "message": "Keresés törlése"
+    },
+    "date_today": {
+        "message": "Ma"
+    },
+    "date_yesterday": {
+        "message": "tegnap"
+    },
+    "forefox_perm_header": {
+        "message": "Indítás engedélyezése Firefoxban"
+    },
+    "forefox_perm_text": {
+        "message": "A bővítményhez az Ön engedélye szükséges a webhelyek eléréséhez és a Firefox böngészőben történő fordításához."
+    },
+    "forefox_perm_button": {
+        "message": "Engedélyek kezelése"
+    },
+    "select_language_search_placeholder": {
+        "message": "Nyelvek keresése (ISO kód vagy név)"
+    },
+    "select_language_search_no_results": {
+        "message": "Nincs eredmény"
+    },
+    "supported_languages_auto": {
+        "message": "Nyelvfelismerés"
+    },
+    "supported_languages_af": {
+        "message": "afrikai"
+    },
+    "supported_languages_sq": {
+        "message": "albán"
+    },
+    "supported_languages_am": {
+        "message": "amhara"
+    },
+    "supported_languages_ar": {
+        "message": "arab"
+    },
+    "supported_languages_hy": {
+        "message": "örmény"
+    },
+    "supported_languages_az": {
+        "message": "azerbajdzsáni"
+    },
+    "supported_languages_eu": {
+        "message": "baszk"
+    },
+    "supported_languages_be": {
+        "message": "fehérorosz"
+    },
+    "supported_languages_bn": {
+        "message": "bengáli"
+    },
+    "supported_languages_bs": {
+        "message": "bosnyák"
+    },
+    "supported_languages_bg": {
+        "message": "bolgár"
+    },
+    "supported_languages_ca": {
+        "message": "katalán"
+    },
+    "supported_languages_ceb": {
+        "message": "Cebuano"
+    },
+    "supported_languages_ny": {
+        "message": "Chewa"
+    },
+    "supported_languages_zh_CN": {
+        "message": "Kínai leegyszerűsítve"
+    },
+    "supported_languages_zh_TW": {
+        "message": "Kínai (hagyományos"
+    },
+    "supported_languages_co": {
+        "message": "korzikai"
+    },
+    "supported_languages_hr": {
+        "message": "horvát"
+    },
+    "supported_languages_cs": {
+        "message": "cseh"
+    },
+    "supported_languages_da": {
+        "message": "dán"
+    },
+    "supported_languages_nl": {
+        "message": "holland"
+    },
+    "supported_languages_en": {
+        "message": "angol"
+    },
+    "supported_languages_eo": {
+        "message": "eszperantó"
+    },
+    "supported_languages_et": {
+        "message": "észt"
+    },
+    "supported_languages_fi": {
+        "message": "finn"
+    },
+    "supported_languages_fr": {
+        "message": "Francia"
+    },
+    "supported_languages_fy": {
+        "message": "fríz"
+    },
+    "supported_languages_gl": {
+        "message": "galíciai"
+    },
+    "supported_languages_ka": {
+        "message": "grúz"
+    },
+    "supported_languages_de": {
+        "message": "német"
+    },
+    "supported_languages_el": {
+        "message": "görög"
+    },
+    "supported_languages_gu": {
+        "message": "gudzsaráti"
+    },
+    "supported_languages_ht": {
+        "message": "haiti"
+    },
+    "supported_languages_ha": {
+        "message": "Hausa"
+    },
+    "supported_languages_haw": {
+        "message": "hawaii"
+    },
+    "supported_languages_he": {
+        "message": "héber"
+    },
+    "supported_languages_iw": {
+        "message": "héber"
+    },
+    "supported_languages_hi": {
+        "message": "hindi"
+    },
+    "supported_languages_hu": {
+        "message": "Magyar"
+    },
+    "supported_languages_is": {
+        "message": "izlandi"
+    },
+    "supported_languages_ig": {
+        "message": "Igbo"
+    },
+    "supported_languages_id": {
+        "message": "indonéz"
+    },
+    "supported_languages_ga": {
+        "message": "ír"
+    },
+    "supported_languages_it": {
+        "message": "olasz"
+    },
+    "supported_languages_ja": {
+        "message": "japán"
+    },
+    "supported_languages_jv": {
+        "message": "jávai"
+    },
+    "supported_languages_kn": {
+        "message": "kannada"
+    },
+    "supported_languages_kk": {
+        "message": "kazah"
+    },
+    "supported_languages_km": {
+        "message": "khmer"
+    },
+    "supported_languages_ky": {
+        "message": "kirgiz"
+    },
+    "supported_languages_ko": {
+        "message": "koreai"
+    },
+    "supported_languages_ku": {
+        "message": "kurd"
+    },
+    "supported_languages_lo": {
+        "message": "laoszi"
+    },
+    "supported_languages_la": {
+        "message": "latin"
+    },
+    "supported_languages_lv": {
+        "message": "lett"
+    },
+    "supported_languages_lt": {
+        "message": "litván"
+    },
+    "supported_languages_lb": {
+        "message": "luxemburgi"
+    },
+    "supported_languages_mk": {
+        "message": "macedón"
+    },
+    "supported_languages_mg": {
+        "message": "madagaszkári"
+    },
+    "supported_languages_ms": {
+        "message": "maláj"
+    },
+    "supported_languages_ml": {
+        "message": "Malayalam"
+    },
+    "supported_languages_mt": {
+        "message": "máltai"
+    },
+    "supported_languages_mi": {
+        "message": "maori"
+    },
+    "supported_languages_mr": {
+        "message": "marathi"
+    },
+    "supported_languages_mn": {
+        "message": "mongol"
+    },
+    "supported_languages_hmn": {
+        "message": "Szerzetes"
+    },
+    "supported_languages_my": {
+        "message": "Mianmar"
+    },
+    "supported_languages_ne": {
+        "message": "Mepali"
+    },
+    "supported_languages_no": {
+        "message": "norvég"
+    },
+    "supported_languages_fa": {
+        "message": "perzsa"
+    },
+    "supported_languages_pl": {
+        "message": "fényesít"
+    },
+    "supported_languages_pt": {
+        "message": "portugál"
+    },
+    "supported_languages_pa": {
+        "message": "pandzsábi"
+    },
+    "supported_languages_ps": {
+        "message": "Pushto"
+    },
+    "supported_languages_ro": {
+        "message": "román"
+    },
+    "supported_languages_ru": {
+        "message": "orosz"
+    },
+    "supported_languages_sm": {
+        "message": "szamoai"
+    },
+    "supported_languages_gd": {
+        "message": "skót gael"
+    },
+    "supported_languages_sr": {
+        "message": "szerb"
+    },
+    "supported_languages_sn": {
+        "message": "Shona"
+    },
+    "supported_languages_sd": {
+        "message": "szindhi"
+    },
+    "supported_languages_si": {
+        "message": "szingaléz"
+    },
+    "supported_languages_sk": {
+        "message": "szlovák"
+    },
+    "supported_languages_sl": {
+        "message": "szlovén"
+    },
+    "supported_languages_so": {
+        "message": "szomáliai"
+    },
+    "supported_languages_sx": {
+        "message": "Sotho"
+    },
+    "supported_languages_es": {
+        "message": "spanyol"
+    },
+    "supported_languages_su": {
+        "message": "Szundai"
+    },
+    "supported_languages_sw": {
+        "message": "szuahéli"
+    },
+    "supported_languages_sv": {
+        "message": "svéd"
+    },
+    "supported_languages_tl": {
+        "message": "tagalog"
+    },
+    "supported_languages_tg": {
+        "message": "tadzsik"
+    },
+    "supported_languages_ta": {
+        "message": "tamil"
+    },
+    "supported_languages_te": {
+        "message": "telugu"
+    },
+    "supported_languages_th": {
+        "message": "thai"
+    },
+    "supported_languages_tr": {
+        "message": "török"
+    },
+    "supported_languages_uk": {
+        "message": "ukrán"
+    },
+    "supported_languages_ur": {
+        "message": "urdu"
+    },
+    "supported_languages_uz": {
+        "message": "üzbég"
+    },
+    "supported_languages_vi": {
+        "message": "vietnami"
+    },
+    "supported_languages_cy": {
+        "message": "walesi"
+    },
+    "supported_languages_xh": {
+        "message": "Xosa"
+    },
+    "supported_languages_yi": {
+        "message": "jiddis"
+    },
+    "supported_languages_yo": {
+        "message": "joruba"
+    },
+    "supported_languages_zu": {
+        "message": "zulu"
+    },
+    "supported_languages_qu": {
+        "message": "kecsua"
+    },
+    "supported_languages_om": {
+        "message": "Oromo"
+    },
+    "supported_languages_ilo": {
+        "message": "Ilocano"
+    }
+}

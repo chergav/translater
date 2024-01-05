@@ -5,7 +5,7 @@
 		$persistentStore.ttsVoiceByLang[lang] = voice.name;
 	}}
 >
-	<ListboxButton>
+	<ListboxButton as="div">
 		<ButtonImage
 			round
 			tooltip={{ title: voice.name }}
@@ -48,8 +48,13 @@
 					flex
 					items-center
 					whitespace-nowrap
-					hover:bg-gray-900/10
-					dark:hover:bg-white/10
+					hover:bg-gray-800/10
+					dark:hover:bg-gray-200/10
+					aria-selected:bg-blue-600/10
+					aria-selected:dark:bg-blue-400/10
+					focus:bg-gray-800/10
+					focus:dark:bg-gray-200/10
+					focus-within:outline-0
 					cursor-default
 				"
 				value={voice}

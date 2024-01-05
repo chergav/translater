@@ -92,7 +92,7 @@
 					"
 					icon={heroXMark}
 					round
-					tooltip={{ title: 'Clear search' }}
+					tooltip={{ title: getMessage('tooltip_clear_search') }}
 					on:click={() => {
 						search = '';
 						inputSearch.focus();
@@ -122,8 +122,8 @@
 								items-center
 								whitespace-nowrap
 								select-none
-								hover:bg-gray-900/10
-								dark:hover:bg-white/10
+								hover:bg-gray-800/10
+								dark:hover:bg-gray-200/10
 								aria-selected:bg-blue-600/10
 								aria-selected:dark:bg-blue-400/10
 								rounded-full

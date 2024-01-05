@@ -6,7 +6,7 @@
         "message": "Перекладіть виділений текст за допомогою Google Translate зі світлою та темною темами"
     },
     "app_version": {
-        "message": "Версія"
+        "message": "версія"
     },
     "context_menus_title": {
         "message": "Перекласти виділений текст"
@@ -198,6 +198,12 @@
     "tooltip_go_forward": {
         "message": "вперед"
     },
+    "tooltip_clear_text": {
+        "message": "Чистий текст"
+    },
+    "tooltip_clear_search": {
+        "message": "Очистити пошук"
+    },
     "date_today": {
         "message": "сьогодні"
     },
@@ -238,7 +244,7 @@
         "message": "вірменський"
     },
     "supported_languages_az": {
-        "message": "Азербайджанська"
+        "message": "Азербайджанський"
     },
     "supported_languages_eu": {
         "message": "Баскська"

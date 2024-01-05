@@ -6,7 +6,7 @@
         "message": "Translation selected text with Google Translate with light and dark theme"
     },
     "app_version": {
-        "message": "Version"
+        "message": "version"
     },
     "context_menus_title": {
         "message": "Translate selected text"
@@ -197,6 +197,12 @@
     },
     "tooltip_go_forward": {
         "message": "Forward"
+    },
+    "tooltip_clear_text": {
+        "message": "Clear text"
+    },
+    "tooltip_clear_search": {
+        "message": "Clear search"
     },
     "date_today": {
         "message": "today"

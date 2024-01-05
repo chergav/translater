@@ -1,0 +1,555 @@
+{
+    "app_name": {
+        "message": "Translater - pasirinkto teksto vertimas"
+    },
+    "app_description": {
+        "message": "Išverskite pasirinktą tekstą naudodami „Google“ vertėją šviesia ir tamsia tema"
+    },
+    "app_version": {
+        "message": "versija"
+    },
+    "context_menus_title": {
+        "message": "Išverskite pasirinktą tekstą"
+    },
+    "popup_menu_options": {
+        "message": "Nustatymai"
+    },
+    "options_title": {
+        "message": "$APP_NAME$ – nustatymai",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "commands_open_translater": {
+        "message": "Atidarykite $APP_NAME$",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "arba paspauskite spartųjį klavišą puslapyje:"
+    },
+    "options_tab_inline_translate": {
+        "message": "Skaitymas ir įvedimas"
+    },
+    "options_tab_popup_window": {
+        "message": "Iššokantis langas"
+    },
+    "options_tab_appearance": {
+        "message": "Išorinė išvaizda"
+    },
+    "options_tab_history": {
+        "message": "Istorija"
+    },
+    "options_inline_button_show": {
+        "message": "Rodyti mygtuką, kai pasirenkamas tekstas"
+    },
+    "options_text_field_button_show": {
+        "message": "Rodyti mygtuką teksto lauke"
+    },
+    "options_hide_button_on_sites": {
+        "message": "Slėpti mygtuką šiose svetainėse:"
+    },
+    "options_hide_button_on_sites_empty_list": {
+        "message": "Pridėkite domenus naudodami iššokančiojo lango meniu svetainėje, kurią norite išskirti"
+    },
+    "options_show_original_text": {
+        "message": "Rodyti šaltinio tekstą"
+    },
+    "options_show_transliteration": {
+        "message": "Rodyti transliteraciją"
+    },
+    "options_lock_popup_window": {
+        "message": "Užrakinti iškylantįjį langą"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "Jei įjungta, iššokantis langas nebus uždarytas spustelėjus lauke"
+    },
+    "options_history_length": {
+        "message": "Istorijos trukmė"
+    },
+    "options_records_in_history": {
+        "message": "Įrašai istorijoje:"
+    },
+    "options_history_enable": {
+        "message": "Įgalinti istoriją"
+    },
+    "options_clear_history": {
+        "message": "Ištrinti istoriją"
+    },
+    "options_delete_history_item": {
+        "message": "Ištrinti iš istorijos"
+    },
+    "options_tts_language": {
+        "message": "Kalba"
+    },
+    "options_tts_default_voice": {
+        "message": "Numatytasis balsas"
+    },
+    "options_tts_voices": {
+        "message": "Balsai"
+    },
+    "options_tts_table_caption": {
+        "message": "Išvardintoms kalboms bus naudojama išorinė teksto į kalbą paslauga."
+    },
+    "options_tts_no_voices_found": {
+        "message": "Naršyklėje nerasta jokių balsų. Bus naudojama išorinė teksto į kalbą paslauga."
+    },
+    "options_edit_keyboard_shortcut": {
+        "message": "Redaguoti spartųjį klavišą"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "Spartusis klavišas norint atidaryti iššokantį langą:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "klavišų kombinacija nenustatyta"
+    },
+    "text_expand": {
+        "message": "Daugiau"
+    },
+    "text_collapse": {
+        "message": "Sugriūti"
+    },
+    "target_lang_label": {
+        "message": "Išversti į:"
+    },
+    "popup_dictionary": {
+        "message": "Žodynas"
+    },
+    "popup_dictionary_frequency": {
+        "message": "Dažnis"
+    },
+    "popup_definitions": {
+        "message": "Apibrėžimai"
+    },
+    "popup_definitions_synonyms": {
+        "message": "Sinonimai:"
+    },
+    "popup_examples": {
+        "message": "Pavyzdžiai"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "Galbūt turėjote omenyje:"
+    },
+    "popup_original_language": {
+        "message": "Originalo kalba:"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "Atvirkštinis vertimas"
+    },
+    "popup_menu_lock_window": {
+        "message": "Užrakinti langą"
+    },
+    "popup_menu_unlock_window": {
+        "message": "Atrakinti langą"
+    },
+    "popup_menu_show_translate_button": {
+        "message": "Rodyti vertimo mygtuką"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "Slėpti vertimo mygtuką"
+    },
+    "popup_menu_options_link": {
+        "message": "Papildomi nustatymai"
+    },
+    "popup_placeholder_translation": {
+        "message": "Vertimas"
+    },
+    "theme_light": {
+        "message": "Šviesos tema"
+    },
+    "theme_dark": {
+        "message": "Tamsi tema"
+    },
+    "theme_system": {
+        "message": "Numatytoji tema"
+    },
+    "tooltip_translate_text": {
+        "message": "Išverskite pasirinktą tekstą"
+    },
+    "tooltip_copy_to_clipboard": {
+        "message": "Nukopijuoti į iškarpinę"
+    },
+    "tooltip_copy_not_support_on_http": {
+        "message": "Kopijavimas nepalaikomas HTTP svetainėse"
+    },
+    "tooltip_copyed": {
+        "message": "Nukopijuota!"
+    },
+    "tooltip_copy_error": {
+        "message": "Kopijavimo klaida!"
+    },
+    "tooltip_listen_to_the_text": {
+        "message": "Klausytis teksto"
+    },
+    "tooltip_listen_stop": {
+        "message": "Sustabdyti"
+    },
+    "tooltip_listen_language_is_not_support": {
+        "message": "Kalba nepalaikoma"
+    },
+    "tooltip_go_back": {
+        "message": "Atgal"
+    },
+    "tooltip_go_forward": {
+        "message": "Persiųsti"
+    },
+    "tooltip_clear_text": {
+        "message": "Aiškus tekstas"
+    },
+    "tooltip_clear_search": {
+        "message": "Išvalyti paiešką"
+    },
+    "date_today": {
+        "message": "šiandien"
+    },
+    "date_yesterday": {
+        "message": "vakar"
+    },
+    "forefox_perm_header": {
+        "message": "Leisti paleisti „Firefox“."
+    },
+    "forefox_perm_text": {
+        "message": "Plėtiniui reikalingas jūsų leidimas pasiekti svetaines ir versti „Firefox“ naršyklėje."
+    },
+    "forefox_perm_button": {
+        "message": "Tvarkyti leidimus"
+    },
+    "select_language_search_placeholder": {
+        "message": "Rasti kalbas (ISO kodas arba pavadinimas)"
+    },
+    "select_language_search_no_results": {
+        "message": "Jokių rezultatų"
+    },
+    "supported_languages_auto": {
+        "message": "aptikti kalbą"
+    },
+    "supported_languages_af": {
+        "message": "Afrikos"
+    },
+    "supported_languages_sq": {
+        "message": "albanų"
+    },
+    "supported_languages_am": {
+        "message": "amharų"
+    },
+    "supported_languages_ar": {
+        "message": "arabiškas"
+    },
+    "supported_languages_hy": {
+        "message": "armėnų"
+    },
+    "supported_languages_az": {
+        "message": "Azerbaidžaniečių"
+    },
+    "supported_languages_eu": {
+        "message": "baskų"
+    },
+    "supported_languages_be": {
+        "message": "baltarusių"
+    },
+    "supported_languages_bn": {
+        "message": "bengalų"
+    },
+    "supported_languages_bs": {
+        "message": "bosnių"
+    },
+    "supported_languages_bg": {
+        "message": "bulgarų"
+    },
+    "supported_languages_ca": {
+        "message": "katalonų"
+    },
+    "supported_languages_ceb": {
+        "message": "Cebuano"
+    },
+    "supported_languages_ny": {
+        "message": "Chewa"
+    },
+    "supported_languages_zh_CN": {
+        "message": "Kinų supaprastinta"
+    },
+    "supported_languages_zh_TW": {
+        "message": "kinų tradicinis"
+    },
+    "supported_languages_co": {
+        "message": "Korsikos"
+    },
+    "supported_languages_hr": {
+        "message": "kroatų"
+    },
+    "supported_languages_cs": {
+        "message": "čekų"
+    },
+    "supported_languages_da": {
+        "message": "danų"
+    },
+    "supported_languages_nl": {
+        "message": "olandų"
+    },
+    "supported_languages_en": {
+        "message": "Anglų"
+    },
+    "supported_languages_eo": {
+        "message": "Esperanto"
+    },
+    "supported_languages_et": {
+        "message": "Estų"
+    },
+    "supported_languages_fi": {
+        "message": "suomių"
+    },
+    "supported_languages_fr": {
+        "message": "Prancūzų kalba"
+    },
+    "supported_languages_fy": {
+        "message": "fryzų"
+    },
+    "supported_languages_gl": {
+        "message": "Galisų"
+    },
+    "supported_languages_ka": {
+        "message": "gruzinų"
+    },
+    "supported_languages_de": {
+        "message": "vokiečių"
+    },
+    "supported_languages_el": {
+        "message": "graikų"
+    },
+    "supported_languages_gu": {
+        "message": "gudžaratų"
+    },
+    "supported_languages_ht": {
+        "message": "Haičio"
+    },
+    "supported_languages_ha": {
+        "message": "Hausa"
+    },
+    "supported_languages_haw": {
+        "message": "Havajų"
+    },
+    "supported_languages_he": {
+        "message": "hebrajų"
+    },
+    "supported_languages_iw": {
+        "message": "hebrajų"
+    },
+    "supported_languages_hi": {
+        "message": "hindi"
+    },
+    "supported_languages_hu": {
+        "message": "vengrų"
+    },
+    "supported_languages_is": {
+        "message": "islandų"
+    },
+    "supported_languages_ig": {
+        "message": "Igbo"
+    },
+    "supported_languages_id": {
+        "message": "Indoneziečių"
+    },
+    "supported_languages_ga": {
+        "message": "airių"
+    },
+    "supported_languages_it": {
+        "message": "italų"
+    },
+    "supported_languages_ja": {
+        "message": "japonų"
+    },
+    "supported_languages_jv": {
+        "message": "javiečių"
+    },
+    "supported_languages_kn": {
+        "message": "kanada"
+    },
+    "supported_languages_kk": {
+        "message": "kazachų"
+    },
+    "supported_languages_km": {
+        "message": "khmerų"
+    },
+    "supported_languages_ky": {
+        "message": "Kirgizų"
+    },
+    "supported_languages_ko": {
+        "message": "korėjiečių"
+    },
+    "supported_languages_ku": {
+        "message": "kurdų"
+    },
+    "supported_languages_lo": {
+        "message": "laosietis"
+    },
+    "supported_languages_la": {
+        "message": "lotynų kalba"
+    },
+    "supported_languages_lv": {
+        "message": "latvių"
+    },
+    "supported_languages_lt": {
+        "message": "lietuvių"
+    },
+    "supported_languages_lb": {
+        "message": "liuksemburgiečių"
+    },
+    "supported_languages_mk": {
+        "message": "Makedonietis"
+    },
+    "supported_languages_mg": {
+        "message": "malagasų"
+    },
+    "supported_languages_ms": {
+        "message": "malajiečių"
+    },
+    "supported_languages_ml": {
+        "message": "malajalių"
+    },
+    "supported_languages_mt": {
+        "message": "maltiečių"
+    },
+    "supported_languages_mi": {
+        "message": "maorių"
+    },
+    "supported_languages_mr": {
+        "message": "marati"
+    },
+    "supported_languages_mn": {
+        "message": "mongolų"
+    },
+    "supported_languages_hmn": {
+        "message": "Vienuolis"
+    },
+    "supported_languages_my": {
+        "message": "Mianmaras"
+    },
+    "supported_languages_ne": {
+        "message": "Mepali"
+    },
+    "supported_languages_no": {
+        "message": "norvegų"
+    },
+    "supported_languages_fa": {
+        "message": "persų"
+    },
+    "supported_languages_pl": {
+        "message": "lenkas"
+    },
+    "supported_languages_pt": {
+        "message": "portugalų"
+    },
+    "supported_languages_pa": {
+        "message": "Pandžabų"
+    },
+    "supported_languages_ps": {
+        "message": "Pushto"
+    },
+    "supported_languages_ro": {
+        "message": "rumunų"
+    },
+    "supported_languages_ru": {
+        "message": "rusų"
+    },
+    "supported_languages_sm": {
+        "message": "samoiečių"
+    },
+    "supported_languages_gd": {
+        "message": "Škotijos gėlų kalba"
+    },
+    "supported_languages_sr": {
+        "message": "serbų"
+    },
+    "supported_languages_sn": {
+        "message": "Šona"
+    },
+    "supported_languages_sd": {
+        "message": "Sindų"
+    },
+    "supported_languages_si": {
+        "message": "sinhalų kalba"
+    },
+    "supported_languages_sk": {
+        "message": "slovakų"
+    },
+    "supported_languages_sl": {
+        "message": "slovėnų"
+    },
+    "supported_languages_so": {
+        "message": "Somalis"
+    },
+    "supported_languages_sx": {
+        "message": "Sotho"
+    },
+    "supported_languages_es": {
+        "message": "ispanų"
+    },
+    "supported_languages_su": {
+        "message": "Sundanai"
+    },
+    "supported_languages_sw": {
+        "message": "suahilių"
+    },
+    "supported_languages_sv": {
+        "message": "Švedijos"
+    },
+    "supported_languages_tl": {
+        "message": "tagalogų"
+    },
+    "supported_languages_tg": {
+        "message": "tadžiki"
+    },
+    "supported_languages_ta": {
+        "message": "tamilų"
+    },
+    "supported_languages_te": {
+        "message": "telugų"
+    },
+    "supported_languages_th": {
+        "message": "tajų"
+    },
+    "supported_languages_tr": {
+        "message": "turkų"
+    },
+    "supported_languages_uk": {
+        "message": "ukrainiečių"
+    },
+    "supported_languages_ur": {
+        "message": "urdu"
+    },
+    "supported_languages_uz": {
+        "message": "uzbekas"
+    },
+    "supported_languages_vi": {
+        "message": "vietnamiečių"
+    },
+    "supported_languages_cy": {
+        "message": "valų"
+    },
+    "supported_languages_xh": {
+        "message": "Xosa"
+    },
+    "supported_languages_yi": {
+        "message": "jidiš"
+    },
+    "supported_languages_yo": {
+        "message": "Joruba"
+    },
+    "supported_languages_zu": {
+        "message": "Zulu"
+    },
+    "supported_languages_qu": {
+        "message": "kečujų"
+    },
+    "supported_languages_om": {
+        "message": "Oromo"
+    },
+    "supported_languages_ilo": {
+        "message": "Ilocano"
+    }
+}

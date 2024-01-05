@@ -1,5 +1,5 @@
 import { googleTranslate, googleTTS } from '~/common/googleApi';
-import { openOptionsPage } from '~/common/browserApi';
+import { openOptionsPage, tabCreate } from '~/common/browserApi';
 
 const sendMessage = async (tabId, message) => {
 	try {
@@ -57,6 +57,10 @@ const openTranslater = async () => {
 	}
 };
 
+const openURL = createProperties => {
+	tabCreate(createProperties);
+};
+
 const handleMessage = (message, _sender, sendResponse) => {
 	switch (message.type) {
 	case 'getTranslate':
@@ -67,6 +71,9 @@ const handleMessage = (message, _sender, sendResponse) => {
 		break;
 	case 'openOptionsPage':
 		openOptionsPage();
+		break;
+	case 'openURL':
+		openURL(message.content);
 		break;
 	case 'openTranslater':
 		openTranslater();

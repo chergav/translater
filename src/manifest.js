@@ -53,7 +53,7 @@ export default defineManifest(() => ({
 		: { service_worker: 'src/background/index.js', type: 'module' },
 	permissions: [
 		'contextMenus',
-		'tabs',
+		// 'tabs',
 		'activeTab',
 		'storage',
 		'scripting'

@@ -6,7 +6,7 @@
         "message": "Oversett valgt tekst med Google Translate med lyst og mørkt tema"
     },
     "app_version": {
-        "message": "Versjon"
+        "message": "versjon"
     },
     "context_menus_title": {
         "message": "Oversett valgt tekst"
@@ -197,6 +197,12 @@
     },
     "tooltip_go_forward": {
         "message": "Framover"
+    },
+    "tooltip_clear_text": {
+        "message": "Klartekst"
+    },
+    "tooltip_clear_search": {
+        "message": "Tøm søk"
     },
     "date_today": {
         "message": "i dag"

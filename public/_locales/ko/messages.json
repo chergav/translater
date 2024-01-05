@@ -198,6 +198,12 @@
     "tooltip_go_forward": {
         "message": "앞으로"
     },
+    "tooltip_clear_text": {
+        "message": "명확한 문구"
+    },
+    "tooltip_clear_search": {
+        "message": "검색 지우기"
+    },
     "date_today": {
         "message": "오늘"
     },

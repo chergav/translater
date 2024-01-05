@@ -198,6 +198,12 @@
     "tooltip_go_forward": {
         "message": "Maju"
     },
+    "tooltip_clear_text": {
+        "message": "Teks bersih"
+    },
+    "tooltip_clear_search": {
+        "message": "Bersihkan pencarian"
+    },
     "date_today": {
         "message": "Hari ini"
     },
@@ -301,7 +307,7 @@
         "message": "Perancis"
     },
     "supported_languages_fy": {
-        "message": "Frisia"
+        "message": "Frisian"
     },
     "supported_languages_gl": {
         "message": "Galisia"

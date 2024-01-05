@@ -50,7 +50,6 @@
 				<ButtonImage
 					icon={heroWindow}
 					label={getMessage('commands_open_translater')}
-					small
 					on:click={openTranslater}
 			/>
 			</div>

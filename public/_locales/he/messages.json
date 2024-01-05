@@ -198,6 +198,12 @@
     "tooltip_go_forward": {
         "message": "קָדִימָה"
     },
+    "tooltip_clear_text": {
+        "message": "טקסט ברור"
+    },
+    "tooltip_clear_search": {
+        "message": "חיפוש נקי"
+    },
     "date_today": {
         "message": "היום"
     },

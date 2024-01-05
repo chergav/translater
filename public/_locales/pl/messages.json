@@ -6,7 +6,7 @@
         "message": "Tłumaczenie wybranego tekstu za pomocą Tłumacza Google z jasnym i ciemnym motywem"
     },
     "app_version": {
-        "message": "Wersja"
+        "message": "wersja"
     },
     "context_menus_title": {
         "message": "Przetłumacz zaznaczony tekst"
@@ -197,6 +197,12 @@
     },
     "tooltip_go_forward": {
         "message": "Do przodu"
+    },
+    "tooltip_clear_text": {
+        "message": "Czysty tekst"
+    },
+    "tooltip_clear_search": {
+        "message": "Wyczyść wyszukiwanie"
     },
     "date_today": {
         "message": "Dzisiaj"
@@ -406,13 +412,13 @@
         "message": "malajalam"
     },
     "supported_languages_mt": {
-        "message": "maltański"
+        "message": "Maltański"
     },
     "supported_languages_mi": {
         "message": "Maoryski"
     },
     "supported_languages_mr": {
-        "message": "marathi"
+        "message": "Marathi"
     },
     "supported_languages_mn": {
         "message": "mongolski"

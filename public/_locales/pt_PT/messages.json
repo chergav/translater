@@ -6,7 +6,7 @@
         "message": "Tradução do texto selecionado com o Google Translate com tema claro e escuro"
     },
     "app_version": {
-        "message": "Versão"
+        "message": "versão"
     },
     "context_menus_title": {
         "message": "Traduzir o texto selecionado"
@@ -197,6 +197,12 @@
     },
     "tooltip_go_forward": {
         "message": "Avançar"
+    },
+    "tooltip_clear_text": {
+        "message": "Texto claro"
+    },
+    "tooltip_clear_search": {
+        "message": "Limpar pesquisa"
     },
     "date_today": {
         "message": "hoje"
@@ -403,7 +409,7 @@
         "message": "malaio"
     },
     "supported_languages_ml": {
-        "message": "Malaiala"
+        "message": "malaiala"
     },
     "supported_languages_mt": {
         "message": "maltês"

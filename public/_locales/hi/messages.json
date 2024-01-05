@@ -1,0 +1,555 @@
+{
+    "app_name": {
+        "message": "Translater - चयनित पाठ का अनुवाद"
+    },
+    "app_description": {
+        "message": "प्रकाश और गहरे विषय के साथ Google Translate के साथ चयनित पाठ का अनुवाद करें"
+    },
+    "app_version": {
+        "message": "संस्करण"
+    },
+    "context_menus_title": {
+        "message": "चयनित पाठ का अनुवाद करें"
+    },
+    "popup_menu_options": {
+        "message": "समायोजन"
+    },
+    "options_title": {
+        "message": "$APP_NAME$ - सेटिंग्स",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "commands_open_translater": {
+        "message": "$APP_NAME$ खोलें",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "या पेज पर एक कीबोर्ड शॉर्टकट दबाएँ:"
+    },
+    "options_tab_inline_translate": {
+        "message": "पढ़ना और इनपुट"
+    },
+    "options_tab_popup_window": {
+        "message": "पॉप - अप विंडो"
+    },
+    "options_tab_appearance": {
+        "message": "बाहरी उपस्थिति"
+    },
+    "options_tab_history": {
+        "message": "इतिहास"
+    },
+    "options_inline_button_show": {
+        "message": "टेक्स्ट चयनित होने पर बटन दिखाएँ"
+    },
+    "options_text_field_button_show": {
+        "message": "टेक्स्टफ़ील्ड में बटन दिखाएँ"
+    },
+    "options_hide_button_on_sites": {
+        "message": "इन साइटों पर बटन छिपाएँ:"
+    },
+    "options_hide_button_on_sites_empty_list": {
+        "message": "जिस साइट को आप बाहर करना चाहते हैं उस साइट पर पॉपअप विंडो के मेनू का उपयोग करके डोमेन जोड़ें"
+    },
+    "options_show_original_text": {
+        "message": "स्रोत पाठ दिखाएँ"
+    },
+    "options_show_transliteration": {
+        "message": "लिप्यंतरण दिखाएँ"
+    },
+    "options_lock_popup_window": {
+        "message": "पॉपअप विंडो लॉक करें"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "यदि सक्षम किया गया है तो पॉपअप बाहर क्लिक करने पर बंद नहीं होगा"
+    },
+    "options_history_length": {
+        "message": "इतिहास की लंबाई"
+    },
+    "options_records_in_history": {
+        "message": "इतिहास में प्रविष्टियाँ:"
+    },
+    "options_history_enable": {
+        "message": "इतिहास सक्षम करें"
+    },
+    "options_clear_history": {
+        "message": "हिस्ट्री हटाएं"
+    },
+    "options_delete_history_item": {
+        "message": "इतिहास से हटाएँ"
+    },
+    "options_tts_language": {
+        "message": "भाषा"
+    },
+    "options_tts_default_voice": {
+        "message": "डिफ़ॉल्ट आवाज"
+    },
+    "options_tts_voices": {
+        "message": "आवाज़ें"
+    },
+    "options_tts_table_caption": {
+        "message": "सूचीबद्ध नहीं की गई भाषाओं के लिए, बाहरी टेक्स्ट-टू-स्पीच सेवा का उपयोग किया जाएगा।"
+    },
+    "options_tts_no_voices_found": {
+        "message": "ब्राउज़र में कोई आवाज़ नहीं मिली. एक बाहरी टेक्स्ट-टू-स्पीच सेवा का उपयोग किया जाएगा।"
+    },
+    "options_edit_keyboard_shortcut": {
+        "message": "कुंजीपटल शॉर्टकट संपादित करें"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "पॉपअप विंडो खोलने के लिए कीबोर्ड शॉर्टकट:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "कुंजी संयोजन सेट नहीं है"
+    },
+    "text_expand": {
+        "message": "अधिक"
+    },
+    "text_collapse": {
+        "message": "पतन"
+    },
+    "target_lang_label": {
+        "message": "अनुवाद करने के लिए:"
+    },
+    "popup_dictionary": {
+        "message": "शब्दकोष"
+    },
+    "popup_dictionary_frequency": {
+        "message": "आवृत्ति"
+    },
+    "popup_definitions": {
+        "message": "परिभाषाएं"
+    },
+    "popup_definitions_synonyms": {
+        "message": "समानार्थी शब्द:"
+    },
+    "popup_examples": {
+        "message": "उदाहरण"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "शायद आपका मतलब था:"
+    },
+    "popup_original_language": {
+        "message": "वास्तविक भाषा:"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "उल्टा अनुवाद करें"
+    },
+    "popup_menu_lock_window": {
+        "message": "खिड़की बंद करो"
+    },
+    "popup_menu_unlock_window": {
+        "message": "विंडो अनलॉक करें"
+    },
+    "popup_menu_show_translate_button": {
+        "message": "अनुवाद बटन दिखाएँ"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "अनुवाद बटन छिपाएँ"
+    },
+    "popup_menu_options_link": {
+        "message": "अतिरिक्त सेटिंग्स"
+    },
+    "popup_placeholder_translation": {
+        "message": "अनुवाद"
+    },
+    "theme_light": {
+        "message": "प्रकाश विषय"
+    },
+    "theme_dark": {
+        "message": "डार्क थीम"
+    },
+    "theme_system": {
+        "message": "पूर्व निर्धारित विषय"
+    },
+    "tooltip_translate_text": {
+        "message": "चयनित पाठ का अनुवाद करें"
+    },
+    "tooltip_copy_to_clipboard": {
+        "message": "क्लिपबोर्ड पर कॉपी करें"
+    },
+    "tooltip_copy_not_support_on_http": {
+        "message": "HTTP साइटों पर कॉपी का समर्थन नहीं है"
+    },
+    "tooltip_copyed": {
+        "message": "कॉपी किया गया!"
+    },
+    "tooltip_copy_error": {
+        "message": "त्रुटि कॉपी करें!"
+    },
+    "tooltip_listen_to_the_text": {
+        "message": "पाठ सुनें"
+    },
+    "tooltip_listen_stop": {
+        "message": "रुकना"
+    },
+    "tooltip_listen_language_is_not_support": {
+        "message": "भाषा सहारा नहीं है"
+    },
+    "tooltip_go_back": {
+        "message": "पीछे"
+    },
+    "tooltip_go_forward": {
+        "message": "आगे"
+    },
+    "tooltip_clear_text": {
+        "message": "स्पष्ट पाठ"
+    },
+    "tooltip_clear_search": {
+        "message": "स्पष्ट खोज"
+    },
+    "date_today": {
+        "message": "आज"
+    },
+    "date_yesterday": {
+        "message": "कल"
+    },
+    "forefox_perm_header": {
+        "message": "फ़ायरफ़ॉक्स में लॉन्च की अनुमति दें"
+    },
+    "forefox_perm_text": {
+        "message": "एक्सटेंशन को वेबसाइटों तक पहुंचने और फ़ायरफ़ॉक्स ब्राउज़र में अनुवाद करने के लिए आपकी अनुमति की आवश्यकता होती है।"
+    },
+    "forefox_perm_button": {
+        "message": "अनुमतियाँ प्रबंधित करें"
+    },
+    "select_language_search_placeholder": {
+        "message": "भाषाएं ढूंढें (आईएसओ कोड या नाम)"
+    },
+    "select_language_search_no_results": {
+        "message": "कोई परिणाम नहीं"
+    },
+    "supported_languages_auto": {
+        "message": "भाषा की जांच करो"
+    },
+    "supported_languages_af": {
+        "message": "अफ़्रीकी"
+    },
+    "supported_languages_sq": {
+        "message": "अल्बानियन"
+    },
+    "supported_languages_am": {
+        "message": "अम्हारिक्"
+    },
+    "supported_languages_ar": {
+        "message": "अरबी"
+    },
+    "supported_languages_hy": {
+        "message": "अर्मेनियाई"
+    },
+    "supported_languages_az": {
+        "message": "आज़रबाइजानी"
+    },
+    "supported_languages_eu": {
+        "message": "बस्क"
+    },
+    "supported_languages_be": {
+        "message": "बेलारूसी"
+    },
+    "supported_languages_bn": {
+        "message": "बंगाली"
+    },
+    "supported_languages_bs": {
+        "message": "बोस्नियाई"
+    },
+    "supported_languages_bg": {
+        "message": "बल्गेरियाई"
+    },
+    "supported_languages_ca": {
+        "message": "कातालान"
+    },
+    "supported_languages_ceb": {
+        "message": "सिबुआनो"
+    },
+    "supported_languages_ny": {
+        "message": "चेवा"
+    },
+    "supported_languages_zh_CN": {
+        "message": "सरलीकृत चीनी"
+    },
+    "supported_languages_zh_TW": {
+        "message": "चीनी पारंपरिक"
+    },
+    "supported_languages_co": {
+        "message": "कॉर्सिकन"
+    },
+    "supported_languages_hr": {
+        "message": "क्रोएशियाई"
+    },
+    "supported_languages_cs": {
+        "message": "चेक"
+    },
+    "supported_languages_da": {
+        "message": "दानिश"
+    },
+    "supported_languages_nl": {
+        "message": "डच"
+    },
+    "supported_languages_en": {
+        "message": "अंग्रेज़ी"
+    },
+    "supported_languages_eo": {
+        "message": "एस्पेरांतो"
+    },
+    "supported_languages_et": {
+        "message": "एस्तोनियावासी"
+    },
+    "supported_languages_fi": {
+        "message": "फिनिश"
+    },
+    "supported_languages_fr": {
+        "message": "फ़्रेंच"
+    },
+    "supported_languages_fy": {
+        "message": "फ़्रिसियाई"
+    },
+    "supported_languages_gl": {
+        "message": "गैलिशियन्"
+    },
+    "supported_languages_ka": {
+        "message": "जॉर्जीयन्"
+    },
+    "supported_languages_de": {
+        "message": "जर्मन"
+    },
+    "supported_languages_el": {
+        "message": "यूनानी"
+    },
+    "supported_languages_gu": {
+        "message": "गुजराती"
+    },
+    "supported_languages_ht": {
+        "message": "हाईटियन"
+    },
+    "supported_languages_ha": {
+        "message": "होउसा"
+    },
+    "supported_languages_haw": {
+        "message": "हवाई"
+    },
+    "supported_languages_he": {
+        "message": "यहूदी"
+    },
+    "supported_languages_iw": {
+        "message": "यहूदी"
+    },
+    "supported_languages_hi": {
+        "message": "हिंदी"
+    },
+    "supported_languages_hu": {
+        "message": "हंगेरी"
+    },
+    "supported_languages_is": {
+        "message": "आइसलैंड का"
+    },
+    "supported_languages_ig": {
+        "message": "ईग्बो"
+    },
+    "supported_languages_id": {
+        "message": "इन्डोनेशियाई"
+    },
+    "supported_languages_ga": {
+        "message": "आयरिश"
+    },
+    "supported_languages_it": {
+        "message": "इतालवी"
+    },
+    "supported_languages_ja": {
+        "message": "जापानी"
+    },
+    "supported_languages_jv": {
+        "message": "जावानीस"
+    },
+    "supported_languages_kn": {
+        "message": "कन्नडा"
+    },
+    "supported_languages_kk": {
+        "message": "कजाख"
+    },
+    "supported_languages_km": {
+        "message": "खमेर"
+    },
+    "supported_languages_ky": {
+        "message": "किरगिज़"
+    },
+    "supported_languages_ko": {
+        "message": "कोरियाई"
+    },
+    "supported_languages_ku": {
+        "message": "कुर्द"
+    },
+    "supported_languages_lo": {
+        "message": "Laotian"
+    },
+    "supported_languages_la": {
+        "message": "लैटिन"
+    },
+    "supported_languages_lv": {
+        "message": "लात्वीयावासी"
+    },
+    "supported_languages_lt": {
+        "message": "लिथुआनियाई"
+    },
+    "supported_languages_lb": {
+        "message": "लक्जमबर्गिश"
+    },
+    "supported_languages_mk": {
+        "message": "मेसीडोनियन"
+    },
+    "supported_languages_mg": {
+        "message": "मालागासी"
+    },
+    "supported_languages_ms": {
+        "message": "मलायी"
+    },
+    "supported_languages_ml": {
+        "message": "मलयालम"
+    },
+    "supported_languages_mt": {
+        "message": "मोलतिज़"
+    },
+    "supported_languages_mi": {
+        "message": "माओरी"
+    },
+    "supported_languages_mr": {
+        "message": "मराठी"
+    },
+    "supported_languages_mn": {
+        "message": "मंगोलियन"
+    },
+    "supported_languages_hmn": {
+        "message": "साधु"
+    },
+    "supported_languages_my": {
+        "message": "म्यांमार"
+    },
+    "supported_languages_ne": {
+        "message": "मेपाली"
+    },
+    "supported_languages_no": {
+        "message": "नार्वेजियन"
+    },
+    "supported_languages_fa": {
+        "message": "फ़ारसी"
+    },
+    "supported_languages_pl": {
+        "message": "पोलिश"
+    },
+    "supported_languages_pt": {
+        "message": "पुर्तगाली"
+    },
+    "supported_languages_pa": {
+        "message": "पंजाबी"
+    },
+    "supported_languages_ps": {
+        "message": "धकेलना"
+    },
+    "supported_languages_ro": {
+        "message": "रोमानियाई"
+    },
+    "supported_languages_ru": {
+        "message": "रूसी"
+    },
+    "supported_languages_sm": {
+        "message": "सामोन"
+    },
+    "supported_languages_gd": {
+        "message": "स्कॉटिश गेलिक"
+    },
+    "supported_languages_sr": {
+        "message": "सर्बियाई"
+    },
+    "supported_languages_sn": {
+        "message": "सोणा"
+    },
+    "supported_languages_sd": {
+        "message": "सिंधी"
+    },
+    "supported_languages_si": {
+        "message": "सिंहली"
+    },
+    "supported_languages_sk": {
+        "message": "स्लोवाक"
+    },
+    "supported_languages_sl": {
+        "message": "स्लोवेनियाई"
+    },
+    "supported_languages_so": {
+        "message": "सोमाली"
+    },
+    "supported_languages_sx": {
+        "message": "सोथो"
+    },
+    "supported_languages_es": {
+        "message": "स्पैनिश"
+    },
+    "supported_languages_su": {
+        "message": "सुंडानी"
+    },
+    "supported_languages_sw": {
+        "message": "swahili"
+    },
+    "supported_languages_sv": {
+        "message": "स्वीडिश"
+    },
+    "supported_languages_tl": {
+        "message": "तागालोग"
+    },
+    "supported_languages_tg": {
+        "message": "ताजिकि"
+    },
+    "supported_languages_ta": {
+        "message": "तामिल"
+    },
+    "supported_languages_te": {
+        "message": "तेलुगू"
+    },
+    "supported_languages_th": {
+        "message": "थाई"
+    },
+    "supported_languages_tr": {
+        "message": "तुर्की"
+    },
+    "supported_languages_uk": {
+        "message": "यूक्रेनी"
+    },
+    "supported_languages_ur": {
+        "message": "उर्दू"
+    },
+    "supported_languages_uz": {
+        "message": "उज़बेक"
+    },
+    "supported_languages_vi": {
+        "message": "वियतनामी"
+    },
+    "supported_languages_cy": {
+        "message": "वेल्श"
+    },
+    "supported_languages_xh": {
+        "message": "ज़ोसा"
+    },
+    "supported_languages_yi": {
+        "message": "यहूदी"
+    },
+    "supported_languages_yo": {
+        "message": "योरूबा"
+    },
+    "supported_languages_zu": {
+        "message": "ज़ुलु"
+    },
+    "supported_languages_qu": {
+        "message": "केचुआ"
+    },
+    "supported_languages_om": {
+        "message": "ओरोमो"
+    },
+    "supported_languages_ilo": {
+        "message": "इलोकानो"
+    }
+}

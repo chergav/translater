@@ -67,7 +67,7 @@
         "message": "ポップアップウィンドウをロックする"
     },
     "options_lock_popup_window_hint": {
-        "message": "有効にすると、外側をクリックしてもポップアップは閉じません。"
+        "message": "有効にすると、外側をクリックしてもポップアップが閉じなくなります"
     },
     "options_history_length": {
         "message": "歴史の長さ"
@@ -197,6 +197,12 @@
     },
     "tooltip_go_forward": {
         "message": "フォワード"
+    },
+    "tooltip_clear_text": {
+        "message": "クリアテキスト"
+    },
+    "tooltip_clear_search": {
+        "message": "検索をクリア"
     },
     "date_today": {
         "message": "今日"

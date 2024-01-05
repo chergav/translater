@@ -198,6 +198,12 @@
     "tooltip_go_forward": {
         "message": "向前"
     },
+    "tooltip_clear_text": {
+        "message": "清晰的文字"
+    },
+    "tooltip_clear_search": {
+        "message": "清除搜索"
+    },
     "date_today": {
         "message": "今天"
     },

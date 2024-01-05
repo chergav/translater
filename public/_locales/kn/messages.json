@@ -1,0 +1,555 @@
+{
+    "app_name": {
+        "message": "Translater - ಆಯ್ದ ಪಠ್ಯದ ಅನುವಾದ"
+    },
+    "app_description": {
+        "message": "ಲೈಟ್ ಮತ್ತು ಡಾರ್ಕ್ ಥೀಮ್‌ನೊಂದಿಗೆ Google ಅನುವಾದದೊಂದಿಗೆ ಆಯ್ದ ಪಠ್ಯವನ್ನು ಅನುವಾದಿಸಿ"
+    },
+    "app_version": {
+        "message": "ಆವೃತ್ತಿ"
+    },
+    "context_menus_title": {
+        "message": "ಆಯ್ದ ಪಠ್ಯವನ್ನು ಅನುವಾದಿಸಿ"
+    },
+    "popup_menu_options": {
+        "message": "ಸಂಯೋಜನೆಗಳು"
+    },
+    "options_title": {
+        "message": "$APP_NAME$ - ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "commands_open_translater": {
+        "message": "$APP_NAME$ ತೆರೆಯಿರಿ",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "ಅಥವಾ ಪುಟದಲ್ಲಿ ಕೀಬೋರ್ಡ್ ಶಾರ್ಟ್‌ಕಟ್ ಒತ್ತಿರಿ:"
+    },
+    "options_tab_inline_translate": {
+        "message": "ಓದುವಿಕೆ ಮತ್ತು ಇನ್ಪುಟ್"
+    },
+    "options_tab_popup_window": {
+        "message": "ಪಾಪ್ಅಪ್ ವಿಂಡೋ"
+    },
+    "options_tab_appearance": {
+        "message": "ಬಾಹ್ಯ ನೋಟ"
+    },
+    "options_tab_history": {
+        "message": "ಇತಿಹಾಸ"
+    },
+    "options_inline_button_show": {
+        "message": "ಪಠ್ಯವನ್ನು ಆಯ್ಕೆ ಮಾಡಿದಾಗ ಬಟನ್ ತೋರಿಸು"
+    },
+    "options_text_field_button_show": {
+        "message": "ಪಠ್ಯಕ್ಷೇತ್ರದಲ್ಲಿ ಬಟನ್ ತೋರಿಸು"
+    },
+    "options_hide_button_on_sites": {
+        "message": "ಈ ಸೈಟ್‌ಗಳಲ್ಲಿ ಬಟನ್ ಅನ್ನು ಮರೆಮಾಡಿ:"
+    },
+    "options_hide_button_on_sites_empty_list": {
+        "message": "ನೀವು ಹೊರಗಿಡಲು ಬಯಸುವ ಸೈಟ್‌ನಲ್ಲಿ ಪಾಪ್ಅಪ್ ವಿಂಡೋದ ಮೆನುವನ್ನು ಬಳಸಿಕೊಂಡು ಡೊಮೇನ್‌ಗಳನ್ನು ಸೇರಿಸಿ"
+    },
+    "options_show_original_text": {
+        "message": "ಮೂಲ ಪಠ್ಯವನ್ನು ತೋರಿಸಿ"
+    },
+    "options_show_transliteration": {
+        "message": "ಲಿಪ್ಯಂತರಣವನ್ನು ತೋರಿಸಿ"
+    },
+    "options_lock_popup_window": {
+        "message": "ಪಾಪ್ಅಪ್ ವಿಂಡೋವನ್ನು ಲಾಕ್ ಮಾಡಿ"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "ಸಕ್ರಿಯಗೊಳಿಸಿದರೆ ಪಾಪ್‌ಅಪ್ ಹೊರಗಿನ ಕ್ಲಿಕ್‌ನಲ್ಲಿ ಮುಚ್ಚುವುದಿಲ್ಲ"
+    },
+    "options_history_length": {
+        "message": "ಇತಿಹಾಸದ ಉದ್ದ"
+    },
+    "options_records_in_history": {
+        "message": "ಇತಿಹಾಸದಲ್ಲಿ ನಮೂದುಗಳು:"
+    },
+    "options_history_enable": {
+        "message": "ಇತಿಹಾಸವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ"
+    },
+    "options_clear_history": {
+        "message": "ಇತಿಹಾಸವನ್ನು ಅಳಿಸಿ"
+    },
+    "options_delete_history_item": {
+        "message": "ಇತಿಹಾಸದಿಂದ ಅಳಿಸಿ"
+    },
+    "options_tts_language": {
+        "message": "ಭಾಷೆ"
+    },
+    "options_tts_default_voice": {
+        "message": "ಡೀಫಾಲ್ಟ್ ಧ್ವನಿ"
+    },
+    "options_tts_voices": {
+        "message": "ಧ್ವನಿಗಳು"
+    },
+    "options_tts_table_caption": {
+        "message": "ಪಟ್ಟಿ ಮಾಡದ ಭಾಷೆಗಳಿಗೆ, ಬಾಹ್ಯ ಪಠ್ಯದಿಂದ ಭಾಷಣ ಸೇವೆಯನ್ನು ಬಳಸಲಾಗುತ್ತದೆ."
+    },
+    "options_tts_no_voices_found": {
+        "message": "ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಯಾವುದೇ ಧ್ವನಿಗಳು ಕಂಡುಬಂದಿಲ್ಲ. ಬಾಹ್ಯ ಪಠ್ಯದಿಂದ ಭಾಷಣ ಸೇವೆಯನ್ನು ಬಳಸಲಾಗುತ್ತದೆ."
+    },
+    "options_edit_keyboard_shortcut": {
+        "message": "ಕೀಬೋರ್ಡ್ ಶಾರ್ಟ್‌ಕಟ್ ಸಂಪಾದಿಸಿ"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "ಪಾಪ್ಅಪ್ ವಿಂಡೋವನ್ನು ತೆರೆಯಲು ಕೀಬೋರ್ಡ್ ಶಾರ್ಟ್‌ಕಟ್:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "ಕೀ ಸಂಯೋಜನೆಯನ್ನು ಹೊಂದಿಸಲಾಗಿಲ್ಲ"
+    },
+    "text_expand": {
+        "message": "ಇನ್ನಷ್ಟು"
+    },
+    "text_collapse": {
+        "message": "ಕುಸಿತ"
+    },
+    "target_lang_label": {
+        "message": "ಇದಕ್ಕೆ ಅನುವಾದಿಸಿ:"
+    },
+    "popup_dictionary": {
+        "message": "ನಿಘಂಟು"
+    },
+    "popup_dictionary_frequency": {
+        "message": "ಆವರ್ತನ"
+    },
+    "popup_definitions": {
+        "message": "ವ್ಯಾಖ್ಯಾನಗಳು"
+    },
+    "popup_definitions_synonyms": {
+        "message": "ಸಮಾನಾರ್ಥಕ ಪದಗಳು:"
+    },
+    "popup_examples": {
+        "message": "ಉದಾಹರಣೆಗಳು"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "ಬಹುಶಃ ನೀವು ಹೇಳಿದ್ದು:"
+    },
+    "popup_original_language": {
+        "message": "ಮೂಲ ಭಾಷೆ:"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "ಹಿಮ್ಮುಖ ಅನುವಾದ"
+    },
+    "popup_menu_lock_window": {
+        "message": "ಲಾಕ್ ವಿಂಡೋ"
+    },
+    "popup_menu_unlock_window": {
+        "message": "ವಿಂಡೋವನ್ನು ಅನ್ಲಾಕ್ ಮಾಡಿ"
+    },
+    "popup_menu_show_translate_button": {
+        "message": "ಅನುವಾದ ಬಟನ್ ತೋರಿಸಿ"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "ಅನುವಾದ ಬಟನ್ ಅನ್ನು ಮರೆಮಾಡಿ"
+    },
+    "popup_menu_options_link": {
+        "message": "ಹೆಚ್ಚುವರಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
+    },
+    "popup_placeholder_translation": {
+        "message": "ಅನುವಾದ"
+    },
+    "theme_light": {
+        "message": "ಲೈಟ್ ಥೀಮ್"
+    },
+    "theme_dark": {
+        "message": "ಡಾರ್ಕ್ ಥೀಮ್"
+    },
+    "theme_system": {
+        "message": "ಡೀಫಾಲ್ಟ್ ಥೀಮ್"
+    },
+    "tooltip_translate_text": {
+        "message": "ಆಯ್ದ ಪಠ್ಯವನ್ನು ಅನುವಾದಿಸಿ"
+    },
+    "tooltip_copy_to_clipboard": {
+        "message": "ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಿ"
+    },
+    "tooltip_copy_not_support_on_http": {
+        "message": "HTTP ಸೈಟ್‌ಗಳಲ್ಲಿ ನಕಲು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ"
+    },
+    "tooltip_copyed": {
+        "message": "ನಕಲು ಮಾಡಲಾಗಿದೆ!"
+    },
+    "tooltip_copy_error": {
+        "message": "ನಕಲು ದೋಷ!"
+    },
+    "tooltip_listen_to_the_text": {
+        "message": "ಪಠ್ಯವನ್ನು ಆಲಿಸಿ"
+    },
+    "tooltip_listen_stop": {
+        "message": "ನಿಲ್ಲಿಸು"
+    },
+    "tooltip_listen_language_is_not_support": {
+        "message": "ಭಾಷೆ ಬೆಂಬಲಿಸುವುದಿಲ್ಲ"
+    },
+    "tooltip_go_back": {
+        "message": "ಹಿಂದೆ"
+    },
+    "tooltip_go_forward": {
+        "message": "ಮುಂದೆ"
+    },
+    "tooltip_clear_text": {
+        "message": "ಪಠ್ಯವನ್ನು ತೆರವುಗೊಳಿಸಿ"
+    },
+    "tooltip_clear_search": {
+        "message": "ಹುಡುಕಾಟವನ್ನು ತೆರವುಗೊಳಿಸಿ"
+    },
+    "date_today": {
+        "message": "ಇಂದು"
+    },
+    "date_yesterday": {
+        "message": "ನಿನ್ನೆ"
+    },
+    "forefox_perm_header": {
+        "message": "Firefox ನಲ್ಲಿ ಪ್ರಾರಂಭಿಸಲು ಅನುಮತಿಸಿ"
+    },
+    "forefox_perm_text": {
+        "message": "ವಿಸ್ತರಣೆಗೆ ವೆಬ್‌ಸೈಟ್‌ಗಳನ್ನು ಪ್ರವೇಶಿಸಲು ಮತ್ತು Firefox ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಅನುವಾದಿಸಲು ನಿಮ್ಮ ಅನುಮತಿಯ ಅಗತ್ಯವಿದೆ."
+    },
+    "forefox_perm_button": {
+        "message": "ಅನುಮತಿಗಳನ್ನು ನಿರ್ವಹಿಸಿ"
+    },
+    "select_language_search_placeholder": {
+        "message": "ಭಾಷೆಗಳನ್ನು ಹುಡುಕಿ (ISO ಕೋಡ್ ಅಥವಾ ಹೆಸರು)"
+    },
+    "select_language_search_no_results": {
+        "message": "ಯಾವುದೇ ಫಲಿತಾಂಶಗಳಿಲ್ಲ"
+    },
+    "supported_languages_auto": {
+        "message": "ಭಾಷೆ ಪತ್ತೆ"
+    },
+    "supported_languages_af": {
+        "message": "ಆಫ್ರಿಕನ್"
+    },
+    "supported_languages_sq": {
+        "message": "ಅಲ್ಬೇನಿಯನ್"
+    },
+    "supported_languages_am": {
+        "message": "ಅಂಹರಿಕ್"
+    },
+    "supported_languages_ar": {
+        "message": "ಅರೇಬಿಕ್"
+    },
+    "supported_languages_hy": {
+        "message": "ಅರ್ಮೇನಿಯನ್"
+    },
+    "supported_languages_az": {
+        "message": "ಅಜೆರ್ಬೈಜಾನಿ"
+    },
+    "supported_languages_eu": {
+        "message": "ಬಾಸ್ಕ್"
+    },
+    "supported_languages_be": {
+        "message": "ಬೆಲರೂಸಿಯನ್"
+    },
+    "supported_languages_bn": {
+        "message": "ಬೆಂಗಾಲಿ"
+    },
+    "supported_languages_bs": {
+        "message": "ಬೋಸ್ನಿಯನ್"
+    },
+    "supported_languages_bg": {
+        "message": "ಬಲ್ಗೇರಿಯನ್"
+    },
+    "supported_languages_ca": {
+        "message": "ಕೆಟಲಾನ್"
+    },
+    "supported_languages_ceb": {
+        "message": "ಸೆಬುವಾನೋ"
+    },
+    "supported_languages_ny": {
+        "message": "ಚೇವಾ"
+    },
+    "supported_languages_zh_CN": {
+        "message": "ಚೈನೀಸ್ ಸರಳೀಕೃತ"
+    },
+    "supported_languages_zh_TW": {
+        "message": "ಚೀನೀ ಸಾಂಪ್ರದಾಯಿಕ"
+    },
+    "supported_languages_co": {
+        "message": "ಕಾರ್ಸಿಕನ್"
+    },
+    "supported_languages_hr": {
+        "message": "ಕ್ರೊಯೇಷಿಯನ್"
+    },
+    "supported_languages_cs": {
+        "message": "ಜೆಕ್"
+    },
+    "supported_languages_da": {
+        "message": "ಡ್ಯಾನಿಶ್"
+    },
+    "supported_languages_nl": {
+        "message": "ಡಚ್"
+    },
+    "supported_languages_en": {
+        "message": "ಆಂಗ್ಲ"
+    },
+    "supported_languages_eo": {
+        "message": "ಎಸ್ಪೆರಾಂಟೊ"
+    },
+    "supported_languages_et": {
+        "message": "ಎಸ್ಟೋನಿಯನ್"
+    },
+    "supported_languages_fi": {
+        "message": "ಫಿನ್ನಿಶ್"
+    },
+    "supported_languages_fr": {
+        "message": "ಫ್ರೆಂಚ್"
+    },
+    "supported_languages_fy": {
+        "message": "ಫ್ರಿಸಿಯನ್"
+    },
+    "supported_languages_gl": {
+        "message": "ಗ್ಯಾಲಿಷಿಯನ್"
+    },
+    "supported_languages_ka": {
+        "message": "ಜಾರ್ಜಿಯನ್"
+    },
+    "supported_languages_de": {
+        "message": "ಜರ್ಮನ್"
+    },
+    "supported_languages_el": {
+        "message": "ಗ್ರೀಕ್"
+    },
+    "supported_languages_gu": {
+        "message": "ಗುಜರಾತಿ"
+    },
+    "supported_languages_ht": {
+        "message": "ಹೈಟಿಯನ್"
+    },
+    "supported_languages_ha": {
+        "message": "ಹೌಸಾ"
+    },
+    "supported_languages_haw": {
+        "message": "ಹವಾಯಿಯನ್"
+    },
+    "supported_languages_he": {
+        "message": "ಹೀಬ್ರೂ"
+    },
+    "supported_languages_iw": {
+        "message": "ಹೀಬ್ರೂ"
+    },
+    "supported_languages_hi": {
+        "message": "ಹಿಂದಿ"
+    },
+    "supported_languages_hu": {
+        "message": "ಹಂಗೇರಿಯನ್"
+    },
+    "supported_languages_is": {
+        "message": "ಐಸ್ಲ್ಯಾಂಡಿಕ್"
+    },
+    "supported_languages_ig": {
+        "message": "ಇಗ್ಬೊ"
+    },
+    "supported_languages_id": {
+        "message": "ಇಂಡೋನೇಷಿಯನ್"
+    },
+    "supported_languages_ga": {
+        "message": "ಐರಿಷ್"
+    },
+    "supported_languages_it": {
+        "message": "ಇಟಾಲಿಯನ್"
+    },
+    "supported_languages_ja": {
+        "message": "ಜಪಾನೀಸ್"
+    },
+    "supported_languages_jv": {
+        "message": "ಜಾವಾನೀಸ್"
+    },
+    "supported_languages_kn": {
+        "message": "ಕನ್ನಡ"
+    },
+    "supported_languages_kk": {
+        "message": "ಕಝಕ್"
+    },
+    "supported_languages_km": {
+        "message": "ಖಮೇರ್"
+    },
+    "supported_languages_ky": {
+        "message": "ಕಿರ್ಗಿಜ್"
+    },
+    "supported_languages_ko": {
+        "message": "ಕೊರಿಯನ್"
+    },
+    "supported_languages_ku": {
+        "message": "ಕುರ್ದಿಷ್"
+    },
+    "supported_languages_lo": {
+        "message": "ಲಾವೋಷಿಯನ್"
+    },
+    "supported_languages_la": {
+        "message": "ಲ್ಯಾಟಿನ್"
+    },
+    "supported_languages_lv": {
+        "message": "ಲಟ್ವಿಯನ್"
+    },
+    "supported_languages_lt": {
+        "message": "ಲಿಥುವೇನಿಯನ್"
+    },
+    "supported_languages_lb": {
+        "message": "ಲಕ್ಸೆಂಬರ್ಗ್"
+    },
+    "supported_languages_mk": {
+        "message": "ಮೆಸಿಡೋನಿಯನ್"
+    },
+    "supported_languages_mg": {
+        "message": "ಮಲಗಾಸಿ"
+    },
+    "supported_languages_ms": {
+        "message": "ಮಲಯ"
+    },
+    "supported_languages_ml": {
+        "message": "ಮಲಯಾಳಂ"
+    },
+    "supported_languages_mt": {
+        "message": "ಮಾಲ್ಟೀಸ್"
+    },
+    "supported_languages_mi": {
+        "message": "ಮಾವೋರಿ"
+    },
+    "supported_languages_mr": {
+        "message": "ಮರಾಠಿ"
+    },
+    "supported_languages_mn": {
+        "message": "ಮಂಗೋಲಿಯನ್"
+    },
+    "supported_languages_hmn": {
+        "message": "ಸನ್ಯಾಸಿ"
+    },
+    "supported_languages_my": {
+        "message": "ಮ್ಯಾನ್ಮಾರ್"
+    },
+    "supported_languages_ne": {
+        "message": "ಮೇಪಾಲಿ"
+    },
+    "supported_languages_no": {
+        "message": "ನಾರ್ವೇಜಿಯನ್"
+    },
+    "supported_languages_fa": {
+        "message": "ಪರ್ಷಿಯನ್"
+    },
+    "supported_languages_pl": {
+        "message": "ಹೊಳಪು ಕೊಡು"
+    },
+    "supported_languages_pt": {
+        "message": "ಪೋರ್ಚುಗೀಸ್"
+    },
+    "supported_languages_pa": {
+        "message": "ಪಂಜಾಬಿ"
+    },
+    "supported_languages_ps": {
+        "message": "ಪುಷ್ತೋ"
+    },
+    "supported_languages_ro": {
+        "message": "ರೊಮೇನಿಯನ್"
+    },
+    "supported_languages_ru": {
+        "message": "ರಷ್ಯನ್"
+    },
+    "supported_languages_sm": {
+        "message": "ಸಮೋವನ್"
+    },
+    "supported_languages_gd": {
+        "message": "ಸ್ಕಾಟಿಷ್ ಗೇಲಿಕ್"
+    },
+    "supported_languages_sr": {
+        "message": "ಸರ್ಬಿಯನ್"
+    },
+    "supported_languages_sn": {
+        "message": "ಶೋನಾ"
+    },
+    "supported_languages_sd": {
+        "message": "ಸಿಂಧಿ"
+    },
+    "supported_languages_si": {
+        "message": "ಸಿಂಹಳೀಯ"
+    },
+    "supported_languages_sk": {
+        "message": "ಸ್ಲೋವಾಕ್"
+    },
+    "supported_languages_sl": {
+        "message": "ಸ್ಲೊವೇನಿಯನ್"
+    },
+    "supported_languages_so": {
+        "message": "ಸೊಮಾಲಿ"
+    },
+    "supported_languages_sx": {
+        "message": "ಸೋಥೋ"
+    },
+    "supported_languages_es": {
+        "message": "ಸ್ಪ್ಯಾನಿಷ್"
+    },
+    "supported_languages_su": {
+        "message": "ಸುಂದನೀಸ್"
+    },
+    "supported_languages_sw": {
+        "message": "ಸ್ವಾಹಿಲಿ"
+    },
+    "supported_languages_sv": {
+        "message": "ಸ್ವೀಡಿಷ್"
+    },
+    "supported_languages_tl": {
+        "message": "ಟ್ಯಾಗಲೋಗ್"
+    },
+    "supported_languages_tg": {
+        "message": "ತಾಜಿಕಿ"
+    },
+    "supported_languages_ta": {
+        "message": "ತಮಿಳು"
+    },
+    "supported_languages_te": {
+        "message": "ತೆಲುಗು"
+    },
+    "supported_languages_th": {
+        "message": "ಥಾಯ್"
+    },
+    "supported_languages_tr": {
+        "message": "ಟರ್ಕಿಶ್"
+    },
+    "supported_languages_uk": {
+        "message": "ಉಕ್ರೇನಿಯನ್"
+    },
+    "supported_languages_ur": {
+        "message": "ಉರ್ದು"
+    },
+    "supported_languages_uz": {
+        "message": "ಉಜ್ಬೆಕ್"
+    },
+    "supported_languages_vi": {
+        "message": "ವಿಯೆಟ್ನಾಮೀಸ್"
+    },
+    "supported_languages_cy": {
+        "message": "ವೆಲ್ಷ್"
+    },
+    "supported_languages_xh": {
+        "message": "ಕ್ಸೋಸಾ"
+    },
+    "supported_languages_yi": {
+        "message": "ಯಿಡ್ಡಿಷ್"
+    },
+    "supported_languages_yo": {
+        "message": "ಯೊರುಬಾ"
+    },
+    "supported_languages_zu": {
+        "message": "ಜುಲು"
+    },
+    "supported_languages_qu": {
+        "message": "ಕ್ವೆಚುವಾ"
+    },
+    "supported_languages_om": {
+        "message": "ಒರೊಮೊ"
+    },
+    "supported_languages_ilo": {
+        "message": "ಇಲೊಕಾನೊ"
+    }
+}

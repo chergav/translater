@@ -13,7 +13,7 @@
 		"
 	>
 		<button
-			class="p-.5"
+			class="p-0.5"
 			type="button"
 			on:click={createPopup}
 			use:tooltip={{ title: getMessage('tooltip_translate_text') }}

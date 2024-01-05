@@ -1,8 +1,6 @@
 <svelte:element
 	this={tag}
-	on:click_outside={() => {
-		$store.menuOpen = false;
-	}}
+	on:click_outside={closeMenu}
 	use:clickOutside
 	{...$$restProps}
 >
@@ -17,13 +15,22 @@ export const useMenuContext = () => getContext(MENU_CONTEXT_NAME);
 <script>
 import { setContext, getContext } from 'svelte';
 import { writable } from 'svelte/store';
-import { clickOutside } from '../../utils/clickOutside';
+import { clickOutside } from '../../utils/click-outside';
 
 let tag = 'div';
 
 const store = writable({
-	menuOpen: false
+	menuOpen: false,
+	activeItemIndex: null,
+	buttonRef: null,
+	menuItemsRef: null,
+	itemsRef: []
 });
+
+const closeMenu = () => {
+	$store.menuOpen = false;
+	$store.activeItemIndex = null;
+};
 
 setContext(MENU_CONTEXT_NAME, store);
 </script>

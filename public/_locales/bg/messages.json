@@ -1,0 +1,555 @@
+{
+    "app_name": {
+        "message": "Translater - превод на избран текст"
+    },
+    "app_description": {
+        "message": "Превод на избран текст с Google Translate със светла и тъмна тема"
+    },
+    "app_version": {
+        "message": "версия"
+    },
+    "context_menus_title": {
+        "message": "Преведете избрания текст"
+    },
+    "popup_menu_options": {
+        "message": "Настройки"
+    },
+    "options_title": {
+        "message": "$APP_NAME$ - настройки",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "commands_open_translater": {
+        "message": "Отворете $APP_NAME$",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
+    },
+    "popup_or_press_keyboard_shortcut": {
+        "message": "или натиснете клавишна комбинация на страницата:"
+    },
+    "options_tab_inline_translate": {
+        "message": "Четене и въвеждане"
+    },
+    "options_tab_popup_window": {
+        "message": "Изскачащ прозорец"
+    },
+    "options_tab_appearance": {
+        "message": "Външен вид"
+    },
+    "options_tab_history": {
+        "message": "История"
+    },
+    "options_inline_button_show": {
+        "message": "Показване на бутона, когато текстът е избран"
+    },
+    "options_text_field_button_show": {
+        "message": "Показване на бутона в текстовото поле"
+    },
+    "options_hide_button_on_sites": {
+        "message": "Скрийте бутона на тези сайтове:"
+    },
+    "options_hide_button_on_sites_empty_list": {
+        "message": "Добавете домейни, като използвате менюто на изскачащия прозорец на сайта, който искате да изключите"
+    },
+    "options_show_original_text": {
+        "message": "Показване на изходния текст"
+    },
+    "options_show_transliteration": {
+        "message": "Показване на транслитерация"
+    },
+    "options_lock_popup_window": {
+        "message": "Заключване на изскачащ прозорец"
+    },
+    "options_lock_popup_window_hint": {
+        "message": "Ако е активиран, изскачащият прозорец няма да се затвори при щракване отвън"
+    },
+    "options_history_length": {
+        "message": "Дължина на историята"
+    },
+    "options_records_in_history": {
+        "message": "Записи в историята:"
+    },
+    "options_history_enable": {
+        "message": "Активиране на историята"
+    },
+    "options_clear_history": {
+        "message": "Изтриване на историята"
+    },
+    "options_delete_history_item": {
+        "message": "Изтриване от историята"
+    },
+    "options_tts_language": {
+        "message": "език"
+    },
+    "options_tts_default_voice": {
+        "message": "Глас по подразбиране"
+    },
+    "options_tts_voices": {
+        "message": "Гласове"
+    },
+    "options_tts_table_caption": {
+        "message": "За езиците, които не са изброени, ще се използва външна услуга за синтез на реч."
+    },
+    "options_tts_no_voices_found": {
+        "message": "Няма намерени гласове в браузъра. Ще се използва външна услуга за преобразуване на текст в реч."
+    },
+    "options_edit_keyboard_shortcut": {
+        "message": "Редактиране на клавишна комбинация"
+    },
+    "options_keyboard_shortcut_open_popup": {
+        "message": "Клавишна комбинация за отваряне на изскачащ прозорец:"
+    },
+    "options_key_combination_is_not_set": {
+        "message": "клавишната комбинация не е зададена"
+    },
+    "text_expand": {
+        "message": "| Повече ▼"
+    },
+    "text_collapse": {
+        "message": "Колапс"
+    },
+    "target_lang_label": {
+        "message": "Превод на:"
+    },
+    "popup_dictionary": {
+        "message": "Речник"
+    },
+    "popup_dictionary_frequency": {
+        "message": "Честота"
+    },
+    "popup_definitions": {
+        "message": "Дефиниции"
+    },
+    "popup_definitions_synonyms": {
+        "message": "Синоними:"
+    },
+    "popup_examples": {
+        "message": "Примери"
+    },
+    "popup_perhaps_you_meant": {
+        "message": "Може би имахте предвид:"
+    },
+    "popup_original_language": {
+        "message": "Оригинален език:"
+    },
+    "popup_menu_reverse_translate": {
+        "message": "Обратен превод"
+    },
+    "popup_menu_lock_window": {
+        "message": "Заключване на прозореца"
+    },
+    "popup_menu_unlock_window": {
+        "message": "Отключване на прозореца"
+    },
+    "popup_menu_show_translate_button": {
+        "message": "Показване на бутона за превод"
+    },
+    "popup_menu_hide_translate_button": {
+        "message": "Скриване на бутона за превод"
+    },
+    "popup_menu_options_link": {
+        "message": "Допълнителни настройки"
+    },
+    "popup_placeholder_translation": {
+        "message": "Превод"
+    },
+    "theme_light": {
+        "message": "Лека тема"
+    },
+    "theme_dark": {
+        "message": "Тъмна тема"
+    },
+    "theme_system": {
+        "message": "Тема по подразбиране"
+    },
+    "tooltip_translate_text": {
+        "message": "Преведете избрания текст"
+    },
+    "tooltip_copy_to_clipboard": {
+        "message": "Копиране в клипборда"
+    },
+    "tooltip_copy_not_support_on_http": {
+        "message": "Копирането не се поддържа на HTTP сайтове"
+    },
+    "tooltip_copyed": {
+        "message": "Копирано!"
+    },
+    "tooltip_copy_error": {
+        "message": "Грешка при копиране!"
+    },
+    "tooltip_listen_to_the_text": {
+        "message": "Слушане на текст"
+    },
+    "tooltip_listen_stop": {
+        "message": "Спри се"
+    },
+    "tooltip_listen_language_is_not_support": {
+        "message": "Езикът не се поддържа"
+    },
+    "tooltip_go_back": {
+        "message": "обратно"
+    },
+    "tooltip_go_forward": {
+        "message": "Напред"
+    },
+    "tooltip_clear_text": {
+        "message": "Ясен текст"
+    },
+    "tooltip_clear_search": {
+        "message": "Изчистете търсенето"
+    },
+    "date_today": {
+        "message": "днес"
+    },
+    "date_yesterday": {
+        "message": "вчера"
+    },
+    "forefox_perm_header": {
+        "message": "Разрешете стартиране във Firefox"
+    },
+    "forefox_perm_text": {
+        "message": "Разширението изисква вашето разрешение за достъп до уебсайтове и превод в браузъра Firefox."
+    },
+    "forefox_perm_button": {
+        "message": "Управление на разрешенията"
+    },
+    "select_language_search_placeholder": {
+        "message": "Намерете езици (ISO код или име)"
+    },
+    "select_language_search_no_results": {
+        "message": "Няма резултати"
+    },
+    "supported_languages_auto": {
+        "message": "разпознаване на езика"
+    },
+    "supported_languages_af": {
+        "message": "африкански"
+    },
+    "supported_languages_sq": {
+        "message": "албански"
+    },
+    "supported_languages_am": {
+        "message": "амхарски"
+    },
+    "supported_languages_ar": {
+        "message": "арабски"
+    },
+    "supported_languages_hy": {
+        "message": "арменски"
+    },
+    "supported_languages_az": {
+        "message": "азербайджански"
+    },
+    "supported_languages_eu": {
+        "message": "баски"
+    },
+    "supported_languages_be": {
+        "message": "белоруски"
+    },
+    "supported_languages_bn": {
+        "message": "бенгалски"
+    },
+    "supported_languages_bs": {
+        "message": "босненски"
+    },
+    "supported_languages_bg": {
+        "message": "български"
+    },
+    "supported_languages_ca": {
+        "message": "каталонски"
+    },
+    "supported_languages_ceb": {
+        "message": "себуано"
+    },
+    "supported_languages_ny": {
+        "message": "Chewa"
+    },
+    "supported_languages_zh_CN": {
+        "message": "опростен китайски"
+    },
+    "supported_languages_zh_TW": {
+        "message": "традиционен китайски"
+    },
+    "supported_languages_co": {
+        "message": "корсикански"
+    },
+    "supported_languages_hr": {
+        "message": "хърватски"
+    },
+    "supported_languages_cs": {
+        "message": "чешки"
+    },
+    "supported_languages_da": {
+        "message": "датски"
+    },
+    "supported_languages_nl": {
+        "message": "холандски"
+    },
+    "supported_languages_en": {
+        "message": "Английски"
+    },
+    "supported_languages_eo": {
+        "message": "Есперанто"
+    },
+    "supported_languages_et": {
+        "message": "естонски"
+    },
+    "supported_languages_fi": {
+        "message": "финландски"
+    },
+    "supported_languages_fr": {
+        "message": "Френски"
+    },
+    "supported_languages_fy": {
+        "message": "фризийски"
+    },
+    "supported_languages_gl": {
+        "message": "галисийски"
+    },
+    "supported_languages_ka": {
+        "message": "грузински"
+    },
+    "supported_languages_de": {
+        "message": "Немски"
+    },
+    "supported_languages_el": {
+        "message": "Гръцки"
+    },
+    "supported_languages_gu": {
+        "message": "гуджарати"
+    },
+    "supported_languages_ht": {
+        "message": "хаитянски"
+    },
+    "supported_languages_ha": {
+        "message": "Хауса"
+    },
+    "supported_languages_haw": {
+        "message": "Хавайски"
+    },
+    "supported_languages_he": {
+        "message": "иврит"
+    },
+    "supported_languages_iw": {
+        "message": "иврит"
+    },
+    "supported_languages_hi": {
+        "message": "хинди"
+    },
+    "supported_languages_hu": {
+        "message": "унгарски"
+    },
+    "supported_languages_is": {
+        "message": "исландски"
+    },
+    "supported_languages_ig": {
+        "message": "Игбо"
+    },
+    "supported_languages_id": {
+        "message": "индонезийски"
+    },
+    "supported_languages_ga": {
+        "message": "ирландски"
+    },
+    "supported_languages_it": {
+        "message": "Италиански"
+    },
+    "supported_languages_ja": {
+        "message": "японски"
+    },
+    "supported_languages_jv": {
+        "message": "явански"
+    },
+    "supported_languages_kn": {
+        "message": "каннада"
+    },
+    "supported_languages_kk": {
+        "message": "казахски"
+    },
+    "supported_languages_km": {
+        "message": "кхмерски"
+    },
+    "supported_languages_ky": {
+        "message": "киргизки"
+    },
+    "supported_languages_ko": {
+        "message": "корейски"
+    },
+    "supported_languages_ku": {
+        "message": "кюрдски"
+    },
+    "supported_languages_lo": {
+        "message": "лаоски"
+    },
+    "supported_languages_la": {
+        "message": "латински"
+    },
+    "supported_languages_lv": {
+        "message": "латвийски"
+    },
+    "supported_languages_lt": {
+        "message": "литовски"
+    },
+    "supported_languages_lb": {
+        "message": "люксембургски"
+    },
+    "supported_languages_mk": {
+        "message": "македонски"
+    },
+    "supported_languages_mg": {
+        "message": "мадагаскарски"
+    },
+    "supported_languages_ms": {
+        "message": "малайски"
+    },
+    "supported_languages_ml": {
+        "message": "малаялам"
+    },
+    "supported_languages_mt": {
+        "message": "малтийски"
+    },
+    "supported_languages_mi": {
+        "message": "маори"
+    },
+    "supported_languages_mr": {
+        "message": "маратхи"
+    },
+    "supported_languages_mn": {
+        "message": "монголски"
+    },
+    "supported_languages_hmn": {
+        "message": "монах"
+    },
+    "supported_languages_my": {
+        "message": "Мианмар"
+    },
+    "supported_languages_ne": {
+        "message": "Мепали"
+    },
+    "supported_languages_no": {
+        "message": "норвежки"
+    },
+    "supported_languages_fa": {
+        "message": "персийски"
+    },
+    "supported_languages_pl": {
+        "message": "полски"
+    },
+    "supported_languages_pt": {
+        "message": "португалски"
+    },
+    "supported_languages_pa": {
+        "message": "пенджабски"
+    },
+    "supported_languages_ps": {
+        "message": "пущу"
+    },
+    "supported_languages_ro": {
+        "message": "румънски"
+    },
+    "supported_languages_ru": {
+        "message": "Руски"
+    },
+    "supported_languages_sm": {
+        "message": "самоанска"
+    },
+    "supported_languages_gd": {
+        "message": "шотландски галски"
+    },
+    "supported_languages_sr": {
+        "message": "сръбски"
+    },
+    "supported_languages_sn": {
+        "message": "Шона"
+    },
+    "supported_languages_sd": {
+        "message": "Синдхи"
+    },
+    "supported_languages_si": {
+        "message": "сингалски"
+    },
+    "supported_languages_sk": {
+        "message": "словашки"
+    },
+    "supported_languages_sl": {
+        "message": "словенски"
+    },
+    "supported_languages_so": {
+        "message": "сомалийски"
+    },
+    "supported_languages_sx": {
+        "message": "сото"
+    },
+    "supported_languages_es": {
+        "message": "испански"
+    },
+    "supported_languages_su": {
+        "message": "сундански"
+    },
+    "supported_languages_sw": {
+        "message": "суахили"
+    },
+    "supported_languages_sv": {
+        "message": "шведски"
+    },
+    "supported_languages_tl": {
+        "message": "тагалог"
+    },
+    "supported_languages_tg": {
+        "message": "Таджики"
+    },
+    "supported_languages_ta": {
+        "message": "тамилски"
+    },
+    "supported_languages_te": {
+        "message": "телугу"
+    },
+    "supported_languages_th": {
+        "message": "тайландски"
+    },
+    "supported_languages_tr": {
+        "message": "Турски"
+    },
+    "supported_languages_uk": {
+        "message": "украински"
+    },
+    "supported_languages_ur": {
+        "message": "урду"
+    },
+    "supported_languages_uz": {
+        "message": "узбекски"
+    },
+    "supported_languages_vi": {
+        "message": "виетнамски"
+    },
+    "supported_languages_cy": {
+        "message": "уелски"
+    },
+    "supported_languages_xh": {
+        "message": "Xosa"
+    },
+    "supported_languages_yi": {
+        "message": "идиш"
+    },
+    "supported_languages_yo": {
+        "message": "йоруба"
+    },
+    "supported_languages_zu": {
+        "message": "зулу"
+    },
+    "supported_languages_qu": {
+        "message": "кечуа"
+    },
+    "supported_languages_om": {
+        "message": "Оромо"
+    },
+    "supported_languages_ilo": {
+        "message": "Илокано"
+    }
+}
