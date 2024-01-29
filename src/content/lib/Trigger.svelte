@@ -25,7 +25,6 @@
 
 <script>
 import { createApp } from '~/content/utils/appsHandler';
-import { getSelectedText } from '~/content/utils/rectUtils';
 import { store } from '~/content/store';
 import { tooltip } from '~/lib/tooltip';
 import { getMessage } from '~/common/browserApi';
@@ -33,7 +32,8 @@ import Icon from '~/lib/Icon.svelte';
 import { customTranslate } from '~/icons/custom';
 
 const createPopup = () => {
-	$store.selectedText = getSelectedText();
+	$store.selectedText = $store.textToTranslate;
+
 	if ($store.selectedText) {
 		createApp('popup');
 	}

@@ -20,6 +20,7 @@ const createTrigger = event => {
 
 	store.update(data => ({
 		...data,
+		textToTranslate: selectedText,
 		hostname: window.location.hostname,
 		isInTextField: isInTextField(),
 		selectedElemRect: getSelectedElemRect(),

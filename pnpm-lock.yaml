@@ -11,8 +11,8 @@ dependencies:
 
 devDependencies:
   '@crxjs/vite-plugin':
-    specifier: 2.0.0-beta.21
-    version: 2.0.0-beta.21
+    specifier: 2.0.0-beta.23
+    version: 2.0.0-beta.23
   '@sveltejs/vite-plugin-svelte':
     specifier: ^2.5.2
     version: 2.5.2(svelte@4.2.3)(vite@4.5.0)
@@ -64,8 +64,8 @@ packages:
       '@jridgewell/trace-mapping': 0.3.20
     dev: true
 
-  /@crxjs/vite-plugin@2.0.0-beta.21:
-    resolution: {integrity: sha512-kSXgHHqCXASqJ8NmY94+KLGVwdtkJ0E7KsRQ+vbMpRliJ5ze0xnSk0l41p4txlUysmEoqaeo4Xb7rEFdcU2zjQ==}
+  /@crxjs/vite-plugin@2.0.0-beta.23:
+    resolution: {integrity: sha512-AO+VYhtNZ1fITq/sc54FZpTtFvHR+gJwFGiWTGKs07bwYzzZFdF0sYeiFgZiEjaNkddkAzuM4F4lgOmCm69YUw==}
     dependencies:
       '@rollup/pluginutils': 4.2.1
       '@webcomponents/custom-elements': 1.6.0

@@ -4,6 +4,7 @@ import { historyAppend } from '~/common/history';
 import { getUILanguage } from '~/common/browserApi';
 
 const initData = {
+	textToTranslate: null,
 	selectedText: null,
 	translated: null,
 	pending: false,

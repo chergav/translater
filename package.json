@@ -1,6 +1,6 @@
 {
 	"name": "translater",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"license": "MIT",
 	"author": "chergav",
 	"type": "module",
@@ -21,7 +21,7 @@
 		"@floating-ui/dom": "^1.5.3"
 	},
 	"devDependencies": {
-		"@crxjs/vite-plugin": "2.0.0-beta.21",
+		"@crxjs/vite-plugin": "2.0.0-beta.23",
 		"@sveltejs/vite-plugin-svelte": "^2.5.2",
 		"@tailwindcss/forms": "^0.5.7",
 		"autoprefixer": "^10.4.16",
