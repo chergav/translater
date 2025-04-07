@@ -2,14 +2,14 @@
 
 Translate selected text with Google Translate
 
-![translater screenshot](doc/screenshot.png)
+![translater screenshot](docs/screenshot.png)
 
 ***
 
 <p align="start">
-<a href="https://chrome.google.com/webstore/detail/abebconmjhhbcjofpchjkbbimgkhdmbe"><img src="doc/chrome-web-store.png" alt="Chrome web store" height="60"></a>
-<a href="https://microsoftedge.microsoft.com/addons/detail/ohcoejhlajaopflplmckddjcfecgleij"><img src="doc/egde-add-ons.svg" alt="Microsoft Edge Add-ons" height="60"></a>
-<a href="https://addons.mozilla.org/firefox/addon/translater-gt"><img src="doc/firefox-add-ons.svg" alt="FireFox Add-ons" height="60"></a>
+<a href="https://chrome.google.com/webstore/detail/abebconmjhhbcjofpchjkbbimgkhdmbe"><img src="docs/chrome-web-store.png" alt="Chrome web store" height="60"></a>
+<a href="https://microsoftedge.microsoft.com/addons/detail/ohcoejhlajaopflplmckddjcfecgleij"><img src="docs/egde-add-ons.svg" alt="Microsoft Edge Add-ons" height="60"></a>
+<a href="https://addons.mozilla.org/firefox/addon/translater-gt"><img src="docs/firefox-add-ons.svg" alt="FireFox Add-ons" height="60"></a>
 </p>
 
 <!-- [![Chrome web store](docs/chrome-web-store.png)](https://)
