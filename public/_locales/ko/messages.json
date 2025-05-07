@@ -1,21 +1,26 @@
 {
     "app_name": {
-        "message": "Translater - 선택한 텍스트 번역"
+        "message": "$app_name$ - 선택한 텍스트의 번역",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
     },
     "app_description": {
-        "message": "밝은 테마와 어두운 테마로 선택한 텍스트를 Google 번역으로 번역하세요"
+        "message": "Google 번역으로 선택한 텍스트를 번역하십시오"
     },
     "app_version": {
         "message": "버전"
     },
     "context_menus_title": {
-        "message": "선택한 텍스트 번역"
+        "message": "선택한 텍스트를 번역하십시오"
     },
     "popup_menu_options": {
         "message": "설정"
     },
     "options_title": {
-        "message": "$APP_NAME$ - 설정",
+        "message": "$app_name$ - 설정",
         "placeholders": {
             "app_name": {
                 "content": "Translater"
@@ -23,21 +28,21 @@
         }
     },
     "commands_open_translater": {
-        "message": "$APP_NAME$ 열기",
+        "message": "Open $app_name$",
         "placeholders": {
             "app_name": {
                 "content": "Translater"
             }
         }
     },
-    "popup_or_press_keyboard_shortcut": {
-        "message": "또는 페이지에서 키보드 단축키를 누르세요."
+    "popup_or": {
+        "message": "또는"
     },
     "options_tab_inline_translate": {
         "message": "읽기 및 입력"
     },
     "options_tab_popup_window": {
-        "message": "팝업창"
+        "message": "팝업 창"
     },
     "options_tab_appearance": {
         "message": "외관"
@@ -46,43 +51,43 @@
         "message": "역사"
     },
     "options_inline_button_show": {
-        "message": "텍스트가 선택되면 버튼 표시"
+        "message": "텍스트를 선택하면 표시 버튼"
     },
     "options_text_field_button_show": {
-        "message": "텍스트 필드에 버튼 표시"
+        "message": "Textfield의 표시 버튼"
     },
     "options_hide_button_on_sites": {
-        "message": "다음 사이트에서 버튼을 숨기세요:"
+        "message": "이 사이트의 버튼을 숨 깁니다."
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "제외하려는 사이트의 팝업창 메뉴를 이용하여 도메인을 추가하세요."
+        "message": "제외하려는 사이트에서 팝업 창의 메뉴를 사용하여 도메인 추가"
     },
     "options_show_original_text": {
-        "message": "원본 텍스트 표시"
+        "message": "소스 텍스트 표시"
     },
     "options_show_transliteration": {
-        "message": "음역 표시"
+        "message": "음역을 보여주십시오"
     },
     "options_lock_popup_window": {
-        "message": "팝업창 잠금"
+        "message": "팝업 창을 잠그십시오"
     },
     "options_lock_popup_window_hint": {
-        "message": "활성화된 경우 외부 클릭 시 팝업이 닫히지 않습니다."
+        "message": "활성화되면 외부를 클릭 할 때 팝업이 닫히지 않습니다."
     },
     "options_history_length": {
-        "message": "역사의 길이"
+        "message": "역사 항목 (Max.)"
     },
     "options_records_in_history": {
-        "message": "역사 항목:"
+        "message": "역사의 항목 :"
     },
     "options_history_enable": {
-        "message": "기록 활성화"
+        "message": "역사를 활성화하십시오"
     },
     "options_clear_history": {
-        "message": "기록 삭제"
+        "message": "역사를 삭제하십시오"
     },
     "options_delete_history_item": {
-        "message": "기록에서 삭제"
+        "message": "역사에서 삭제하십시오"
     },
     "options_tts_language": {
         "message": "언어"
@@ -94,28 +99,58 @@
         "message": "목소리"
     },
     "options_tts_table_caption": {
-        "message": "목록에 없는 언어의 경우 외부 텍스트 음성 변환 서비스가 사용됩니다."
+        "message": "언어가 나열되지 않으면 외부 텍스트 음성 서비스가 사용됩니다."
     },
     "options_tts_no_voices_found": {
-        "message": "브라우저에서 음성을 찾을 수 없습니다. 외부 텍스트 음성 변환 서비스가 사용됩니다."
+        "message": "브라우저는 음성 합성을 지원하지 않습니다. 대신 외부 서비스를 사용할 것입니다."
     },
     "options_edit_keyboard_shortcut": {
-        "message": "키보드 단축키 수정"
+        "message": "키보드 바로 가기 편집"
     },
     "options_keyboard_shortcut_open_popup": {
-        "message": "팝업 창을 여는 키보드 단축키:"
+        "message": "키보드 바로 가기 팝업 창을여십시오"
     },
     "options_key_combination_is_not_set": {
-        "message": "키 조합이 설정되지 않았습니다"
+        "message": "키보드 바로 가기가 설정되지 않았습니다"
+    },
+    "options_font_size": {
+        "message": "글꼴 크기"
+    },
+    "options_font_size_xs": {
+        "message": "여분의 작은 (12px)"
+    },
+    "options_font_size_sm": {
+        "message": "작은 (14px)"
+    },
+    "options_font_size_md": {
+        "message": "정상 (16px)"
+    },
+    "options_font_size_lg": {
+        "message": "큰 (18px)"
+    },
+    "options_font_size_xl": {
+        "message": "추가 대형 (20px)"
+    },
+    "options_support_msg": {
+        "message": "무언가가 작동하지 않거나 제안이 있으면 여기에 알려주십시오."
+    },
+    "options_support_donations": {
+        "message": "이 무료 소프트웨어를 지원하려면"
+    },
+    "options_address": {
+        "message": "주소"
+    },
+    "options_copy_address": {
+        "message": "주소를 복사하십시오"
     },
     "text_expand": {
         "message": "더"
     },
     "text_collapse": {
-        "message": "접기"
+        "message": "더 적은"
     },
     "target_lang_label": {
-        "message": "다음으로 번역:"
+        "message": "번역 :"
     },
     "popup_dictionary": {
         "message": "사전"
@@ -127,64 +162,64 @@
         "message": "정의"
     },
     "popup_definitions_synonyms": {
-        "message": "동의어:"
+        "message": "동의어 :"
     },
     "popup_examples": {
         "message": "예"
     },
     "popup_perhaps_you_meant": {
-        "message": "아마도 당신은 다음을 의미했을 것입니다 :"
+        "message": "아마도 당신은 다음을 의미했을 것입니다."
     },
     "popup_original_language": {
         "message": "원어:"
     },
     "popup_menu_reverse_translate": {
-        "message": "역번역"
+        "message": "리버스 번역"
     },
     "popup_menu_lock_window": {
-        "message": "창 잠금"
+        "message": "잠금 창"
     },
     "popup_menu_unlock_window": {
-        "message": "창 잠금 해제"
+        "message": "창을 잠금 해제하십시오"
     },
     "popup_menu_show_translate_button": {
         "message": "번역 버튼 표시"
     },
     "popup_menu_hide_translate_button": {
-        "message": "번역 버튼 숨기기"
+        "message": "번역 버튼을 숨기십시오"
     },
     "popup_menu_options_link": {
-        "message": "추가 세팅"
+        "message": "추가 설정"
     },
     "popup_placeholder_translation": {
         "message": "번역"
     },
     "theme_light": {
-        "message": "밝은 테마"
+        "message": "가벼운 테마"
     },
     "theme_dark": {
         "message": "어두운 테마"
     },
     "theme_system": {
-        "message": "기본 테마"
+        "message": "시스템 테마"
     },
     "tooltip_translate_text": {
-        "message": "선택한 텍스트 번역"
+        "message": "선택한 텍스트를 번역하십시오"
     },
     "tooltip_copy_to_clipboard": {
-        "message": "클립 보드에 복사"
+        "message": "클립 보드에 복사하십시오"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "HTTP 사이트에서는 복사가 지원되지 않습니다."
+        "message": "HTTP 사이트에서는 사본이 지원되지 않습니다"
     },
     "tooltip_copyed": {
-        "message": "복사되었습니다!"
+        "message": "복사"
     },
     "tooltip_copy_error": {
-        "message": "복사 오류!"
+        "message": "오류를 복사하십시오!"
     },
     "tooltip_listen_to_the_text": {
-        "message": "문자 듣기"
+        "message": "텍스트를 듣습니다"
     },
     "tooltip_listen_stop": {
         "message": "멈추다"
@@ -199,10 +234,10 @@
         "message": "앞으로"
     },
     "tooltip_clear_text": {
-        "message": "명확한 문구"
+        "message": "명확한 텍스트"
     },
     "tooltip_clear_search": {
-        "message": "검색 지우기"
+        "message": "명확한 검색"
     },
     "date_today": {
         "message": "오늘"
@@ -211,345 +246,612 @@
         "message": "어제"
     },
     "forefox_perm_header": {
-        "message": "Firefox에서 실행 허용"
+        "message": "Firefox에서 출시를 허용하십시오"
     },
     "forefox_perm_text": {
-        "message": "확장 프로그램을 사용하려면 웹사이트에 액세스하고 Firefox 브라우저에서 번역할 수 있는 권한이 필요합니다."
+        "message": "이 연장은 웹 사이트에 액세스하고 Firefox에서 웹 사이트에 액세스 할 수있는 권한이 필요합니다."
     },
     "forefox_perm_button": {
-        "message": "권한 관리"
+        "message": "권한을 관리합니다"
     },
     "select_language_search_placeholder": {
-        "message": "언어 찾기(ISO 코드 또는 이름)"
+        "message": "언어 찾기 (ISO 코드 또는 이름)"
     },
     "select_language_search_no_results": {
-        "message": "결과 없음"
+        "message": "결과가 없습니다"
     },
-    "supported_languages_auto": {
-        "message": "언어를 감지"
+    "try_my_extensions": {
+        "message": "🚀 다른 확장을 시도하십시오"
     },
-    "supported_languages_af": {
-        "message": "아프리카 사람"
+    "language_auto": {
+        "message": "언어를 감지하십시오"
     },
-    "supported_languages_sq": {
+    "language_ab": {
+        "message": "압크 하즈"
+    },
+    "language_ace": {
+        "message": "Acehnese"
+    },
+    "language_ach": {
+        "message": "아콜리"
+    },
+    "language_af": {
+        "message": "아프리카 어"
+    },
+    "language_sq": {
         "message": "알바니아"
     },
-    "supported_languages_am": {
-        "message": "암하라어"
+    "language_alz": {
+        "message": "알리르"
     },
-    "supported_languages_ar": {
+    "language_am": {
+        "message": "암하라"
+    },
+    "language_ar": {
         "message": "아라비아 말"
     },
-    "supported_languages_hy": {
+    "language_hy": {
         "message": "아르메니아 사람"
     },
-    "supported_languages_az": {
+    "language_as": {
+        "message": "아사 메스"
+    },
+    "language_awa": {
+        "message": "Awadhi"
+    },
+    "language_ay": {
+        "message": "Aymara"
+    },
+    "language_az": {
         "message": "아제르바이잔"
     },
-    "supported_languages_eu": {
+    "language_ban": {
+        "message": "발리"
+    },
+    "language_bm": {
+        "message": "밤바라"
+    },
+    "language_ba": {
+        "message": "바쉬 키르"
+    },
+    "language_eu": {
         "message": "바스크 사람"
     },
-    "supported_languages_be": {
-        "message": "벨로루시어"
+    "language_btx": {
+        "message": "바삭 카로"
     },
-    "supported_languages_bn": {
+    "language_bts": {
+        "message": "BATAK SIMALUNGUN"
+    },
+    "language_bbc": {
+        "message": "바삭 토바"
+    },
+    "language_be": {
+        "message": "벨로루시"
+    },
+    "language_bem": {
+        "message": "Bemba"
+    },
+    "language_bn": {
         "message": "벵골 사람"
     },
-    "supported_languages_bs": {
-        "message": "보스니아어"
+    "language_bew": {
+        "message": "베타 와이"
     },
-    "supported_languages_bg": {
+    "language_bho": {
+        "message": "Bhojpuri"
+    },
+    "language_bik": {
+        "message": "비콜라"
+    },
+    "language_bs": {
+        "message": "보스니아 인"
+    },
+    "language_br": {
+        "message": "브레튼"
+    },
+    "language_bg": {
         "message": "불가리아 사람"
     },
-    "supported_languages_ca": {
+    "language_bua": {
+        "message": "Buryat"
+    },
+    "language_yue": {
+        "message": "광동어"
+    },
+    "language_ca": {
         "message": "카탈로니아 사람"
     },
-    "supported_languages_ceb": {
-        "message": "세부아노어"
+    "language_ceb": {
+        "message": "세부 노"
     },
-    "supported_languages_ny": {
-        "message": "츄와"
+    "language_ny": {
+        "message": "Chichewa (Nyanja)"
     },
-    "supported_languages_zh_CN": {
-        "message": "중국어 (간체"
+    "language_zh_CN": {
+        "message": "중국어 (단순화)"
     },
-    "supported_languages_zh_TW": {
-        "message": "중국 전통"
+    "language_zh_TW": {
+        "message": "중국어 (전통)"
     },
-    "supported_languages_co": {
-        "message": "코르시카어"
+    "language_cv": {
+        "message": "Chuvash"
     },
-    "supported_languages_hr": {
-        "message": "크로아티아어"
+    "language_co": {
+        "message": "코르시칸"
     },
-    "supported_languages_cs": {
+    "language_crh": {
+        "message": "크림 타타르"
+    },
+    "language_hr": {
+        "message": "크로아티아"
+    },
+    "language_cs": {
         "message": "체코 사람"
     },
-    "supported_languages_da": {
+    "language_da": {
         "message": "덴마크 말"
     },
-    "supported_languages_nl": {
+    "language_din": {
+        "message": "Dinka"
+    },
+    "language_dv": {
+        "message": "디브 히"
+    },
+    "language_doi": {
+        "message": "도그리"
+    },
+    "language_dov": {
+        "message": "Dombe"
+    },
+    "language_nl": {
         "message": "네덜란드 사람"
     },
-    "supported_languages_en": {
+    "language_dz": {
+        "message": "dzongkha"
+    },
+    "language_en": {
         "message": "영어"
     },
-    "supported_languages_eo": {
+    "language_eo": {
         "message": "에스페란토 말"
     },
-    "supported_languages_et": {
+    "language_et": {
         "message": "에스토니아 사람"
     },
-    "supported_languages_fi": {
-        "message": "핀란드어"
+    "language_ee": {
+        "message": "암양"
     },
-    "supported_languages_fr": {
+    "language_fj": {
+        "message": "피지안"
+    },
+    "language_fil": {
+        "message": "필리핀 (Tagalog)"
+    },
+    "language_fi": {
+        "message": "핀란드"
+    },
+    "language_fr": {
         "message": "프랑스 국민"
     },
-    "supported_languages_fy": {
-        "message": "프리지아어"
+    "language_fr_FR": {
+        "message": "프랑스어 (프랑스어)"
     },
-    "supported_languages_gl": {
+    "language_fr_CA": {
+        "message": "프랑스어 (캐나다)"
+    },
+    "language_fy": {
+        "message": "프리 시안"
+    },
+    "language_ff": {
+        "message": "Fulfulde"
+    },
+    "language_gaa": {
+        "message": "GA"
+    },
+    "language_gl": {
         "message": "갈리시아어"
     },
-    "supported_languages_ka": {
+    "language_lg": {
+        "message": "간다 (Luganda)"
+    },
+    "language_ka": {
         "message": "그루지야 사람"
     },
-    "supported_languages_de": {
+    "language_de": {
         "message": "독일 사람"
     },
-    "supported_languages_el": {
-        "message": "그리스 어"
+    "language_el": {
+        "message": "그리스 사람"
     },
-    "supported_languages_gu": {
-        "message": "구자라트어"
+    "language_gn": {
+        "message": "Guarani"
     },
-    "supported_languages_ht": {
-        "message": "아이티 섬 사람"
+    "language_gu": {
+        "message": "구자라트"
     },
-    "supported_languages_ha": {
-        "message": "하우사어"
+    "language_ht": {
+        "message": "아이티 크리올"
     },
-    "supported_languages_haw": {
-        "message": "하와이안"
+    "language_cnh": {
+        "message": "하카 턱"
     },
-    "supported_languages_he": {
+    "language_ha": {
+        "message": "하우사"
+    },
+    "language_haw": {
+        "message": "하와이"
+    },
+    "language_iw": {
         "message": "헤브라이 사람"
     },
-    "supported_languages_iw": {
-        "message": "헤브라이 사람"
+    "language_hil": {
+        "message": "힐리 가이논"
     },
-    "supported_languages_hi": {
+    "language_hi": {
         "message": "힌디 어"
     },
-    "supported_languages_hu": {
+    "language_hmn": {
+        "message": "몽족"
+    },
+    "language_hu": {
         "message": "헝가리 인"
     },
-    "supported_languages_is": {
-        "message": "아이슬란드어"
+    "language_hrx": {
+        "message": "Hunsrik"
     },
-    "supported_languages_ig": {
-        "message": "이보어"
+    "language_is": {
+        "message": "아이슬란드"
     },
-    "supported_languages_id": {
+    "language_ig": {
+        "message": "Igbo"
+    },
+    "language_ilo": {
+        "message": "일로코"
+    },
+    "language_id": {
         "message": "인도네시아 인"
     },
-    "supported_languages_ga": {
-        "message": "아일랜드의"
+    "language_ga": {
+        "message": "아일랜드"
     },
-    "supported_languages_it": {
+    "language_it": {
         "message": "이탈리아 사람"
     },
-    "supported_languages_ja": {
+    "language_ja": {
         "message": "일본어"
     },
-    "supported_languages_jv": {
+    "language_jw": {
         "message": "자바어"
     },
-    "supported_languages_kn": {
+    "language_kn": {
         "message": "칸나다어"
     },
-    "supported_languages_kk": {
-        "message": "카자흐어"
+    "language_pam": {
+        "message": "카 팜 팡간"
     },
-    "supported_languages_km": {
-        "message": "크메르어"
+    "language_kk": {
+        "message": "카자흐"
     },
-    "supported_languages_ky": {
-        "message": "키르기즈 말"
+    "language_km": {
+        "message": "크메르"
     },
-    "supported_languages_ko": {
+    "language_cgg": {
+        "message": "키가"
+    },
+    "language_rw": {
+        "message": "Kinyarwanda"
+    },
+    "language_ktu": {
+        "message": "키투 바"
+    },
+    "language_gom": {
+        "message": "Konkani"
+    },
+    "language_ko": {
         "message": "한국인"
     },
-    "supported_languages_ku": {
-        "message": "쿠르드어"
+    "language_kri": {
+        "message": "크리오"
     },
-    "supported_languages_lo": {
-        "message": "라오스어"
+    "language_ku": {
+        "message": "쿠르드 (Kurdish) (쿠르 만지)"
     },
-    "supported_languages_la": {
+    "language_ckb": {
+        "message": "쿠르드족 (소니)"
+    },
+    "language_ky": {
+        "message": "키르기즈"
+    },
+    "language_lo": {
+        "message": "라오"
+    },
+    "language_ltg": {
+        "message": "Latgalian"
+    },
+    "language_la": {
         "message": "라틴어"
     },
-    "supported_languages_lv": {
+    "language_lv": {
         "message": "라트비아 사람"
     },
-    "supported_languages_lt": {
+    "language_lij": {
+        "message": "리구 리아"
+    },
+    "language_li": {
+        "message": "림버건"
+    },
+    "language_ln": {
+        "message": "링 갈라"
+    },
+    "language_lt": {
         "message": "리투아니아 사람"
     },
-    "supported_languages_lb": {
-        "message": "룩셈부르크어"
+    "language_lmo": {
+        "message": "롬바르드 사람"
     },
-    "supported_languages_mk": {
+    "language_luo": {
+        "message": "루오"
+    },
+    "language_lb": {
+        "message": "룩셈부르크"
+    },
+    "language_mk": {
         "message": "마케도니아 어"
     },
-    "supported_languages_mg": {
+    "language_mai": {
+        "message": "Maithili"
+    },
+    "language_mak": {
+        "message": "마카 사르"
+    },
+    "language_mg": {
         "message": "마다가스카르 사람"
     },
-    "supported_languages_ms": {
+    "language_ms": {
         "message": "말레이 사람"
     },
-    "supported_languages_ml": {
-        "message": "말라얄람어"
+    "language_ms_Arab": {
+        "message": "말레이어 (jawi)"
     },
-    "supported_languages_mt": {
+    "language_ml": {
+        "message": "말라 얄 람어"
+    },
+    "language_mt": {
         "message": "몰티즈"
     },
-    "supported_languages_mi": {
+    "language_mi": {
         "message": "마오리족"
     },
-    "supported_languages_mr": {
-        "message": "마라티어"
+    "language_mr": {
+        "message": "마라 티"
     },
-    "supported_languages_mn": {
+    "language_chm": {
+        "message": "메도우 마리"
+    },
+    "language_mni_Mtei": {
+        "message": "Meiteilon (Manipuri)"
+    },
+    "language_min": {
+        "message": "미낭"
+    },
+    "language_lus": {
+        "message": "미조"
+    },
+    "language_mn": {
         "message": "몽고 어"
     },
-    "supported_languages_hmn": {
-        "message": "수도사"
+    "language_my": {
+        "message": "미얀마 (버마어)"
     },
-    "supported_languages_my": {
-        "message": "미얀마"
+    "language_nr": {
+        "message": "Ndebele (남쪽)"
     },
-    "supported_languages_ne": {
-        "message": "메팔리"
+    "language_new": {
+        "message": "네팔 바사 (Newari)"
     },
-    "supported_languages_no": {
+    "language_ne": {
+        "message": "네팔"
+    },
+    "language_nso": {
+        "message": "북부 소토 (Sepedi)"
+    },
+    "language_no": {
         "message": "노르웨이 인"
     },
-    "supported_languages_fa": {
+    "language_nus": {
+        "message": "nuer"
+    },
+    "language_oc": {
+        "message": "Occitan"
+    },
+    "language_or": {
+        "message": "오디아 (오리 야)"
+    },
+    "language_om": {
+        "message": "오로모"
+    },
+    "language_pag": {
+        "message": "Pangasinan"
+    },
+    "language_pap": {
+        "message": "Papiamento"
+    },
+    "language_ps": {
+        "message": "파슈토"
+    },
+    "language_fa": {
         "message": "페르시아 인"
     },
-    "supported_languages_pl": {
+    "language_pl": {
         "message": "광택"
     },
-    "supported_languages_pt": {
+    "language_pt": {
         "message": "포르투갈 인"
     },
-    "supported_languages_pa": {
-        "message": "펀자브어"
+    "language_pt_PT": {
+        "message": "포르투갈어 (포르투갈)"
     },
-    "supported_languages_ps": {
-        "message": "푸쉬토"
+    "language_pt_BR": {
+        "message": "포르투갈어 (브라질)"
     },
-    "supported_languages_ro": {
+    "language_pa": {
+        "message": "펀 자브"
+    },
+    "language_pa_Arab": {
+        "message": "펀 자브 (Shahmukhi)"
+    },
+    "language_qu": {
+        "message": "케 체아"
+    },
+    "language_rom": {
+        "message": "로마니"
+    },
+    "language_ro": {
         "message": "루마니아 사람"
     },
-    "supported_languages_ru": {
+    "language_rn": {
+        "message": "런디"
+    },
+    "language_ru": {
         "message": "러시아인"
     },
-    "supported_languages_sm": {
-        "message": "사모아어"
+    "language_sm": {
+        "message": "사모아"
     },
-    "supported_languages_gd": {
-        "message": "스코틀랜드 게일어"
+    "language_sg": {
+        "message": "산고"
     },
-    "supported_languages_sr": {
+    "language_sa": {
+        "message": "산스크리트"
+    },
+    "language_gd": {
+        "message": "스코틀랜드 게 일어"
+    },
+    "language_sr": {
         "message": "세르비아 사람"
     },
-    "supported_languages_sn": {
+    "language_st": {
+        "message": "세소 토"
+    },
+    "language_crs": {
+        "message": "세이 첼로이 크리올"
+    },
+    "language_shn": {
+        "message": "샨"
+    },
+    "language_sn": {
         "message": "쇼나"
     },
-    "supported_languages_sd": {
-        "message": "신디어"
+    "language_scn": {
+        "message": "시칠리아"
     },
-    "supported_languages_si": {
-        "message": "신할라어"
+    "language_szl": {
+        "message": "실레 지안"
     },
-    "supported_languages_sk": {
+    "language_sd": {
+        "message": "신디"
+    },
+    "language_si": {
+        "message": "신 할라 (Sinhala) (Sinhalese)"
+    },
+    "language_sk": {
         "message": "슬로바키아 사람"
     },
-    "supported_languages_sl": {
+    "language_sl": {
         "message": "슬로베니아"
     },
-    "supported_languages_so": {
-        "message": "소말리아어"
+    "language_so": {
+        "message": "소말리아"
     },
-    "supported_languages_sx": {
-        "message": "소토어"
+    "language_es": {
+        "message": "스페인 사람"
     },
-    "supported_languages_es": {
-        "message": "스페인의"
+    "language_su": {
+        "message": "Sundanese"
     },
-    "supported_languages_su": {
-        "message": "순다어"
+    "language_sw": {
+        "message": "스와 할리"
     },
-    "supported_languages_sw": {
-        "message": "스와힐리어"
+    "language_ss": {
+        "message": "스와 티"
     },
-    "supported_languages_sv": {
+    "language_sv": {
         "message": "스웨덴어"
     },
-    "supported_languages_tl": {
-        "message": "타갈로그어"
+    "language_ber": {
+        "message": "Tamazight (Tifinagh)"
     },
-    "supported_languages_tg": {
-        "message": "타지키어"
+    "language_ber_latn": {
+        "message": "타자 조"
     },
-    "supported_languages_ta": {
+    "language_tg": {
+        "message": "태조"
+    },
+    "language_ta": {
         "message": "타밀 사람"
     },
-    "supported_languages_te": {
-        "message": "텔루구어"
+    "language_tt": {
+        "message": "타타르"
     },
-    "supported_languages_th": {
-        "message": "태국어"
+    "language_te": {
+        "message": "텔루구 어"
     },
-    "supported_languages_tr": {
-        "message": "터키어"
+    "language_tet": {
+        "message": "Tetum"
     },
-    "supported_languages_uk": {
-        "message": "우크라이나 인"
+    "language_th": {
+        "message": "태국"
     },
-    "supported_languages_ur": {
+    "language_ti": {
+        "message": "티 그린"
+    },
+    "language_ts": {
+        "message": "Tsonga"
+    },
+    "language_tn": {
+        "message": "TSWANA"
+    },
+    "language_tr": {
+        "message": "터키"
+    },
+    "language_tk": {
+        "message": "투르크멘 말"
+    },
+    "language_ak": {
+        "message": "Twi (Akan)"
+    },
+    "language_uk": {
+        "message": "우크라이나 말"
+    },
+    "language_ur": {
         "message": "우르두어"
     },
-    "supported_languages_uz": {
-        "message": "우즈벡어"
+    "language_ug": {
+        "message": "uyghur"
     },
-    "supported_languages_vi": {
-        "message": "베트남어"
+    "language_uz": {
+        "message": "우즈벡"
     },
-    "supported_languages_cy": {
+    "language_vi": {
+        "message": "베트남 사람"
+    },
+    "language_cy": {
         "message": "웨일스 말"
     },
-    "supported_languages_xh": {
-        "message": "소사"
+    "language_xh": {
+        "message": "Xhosa"
     },
-    "supported_languages_yi": {
+    "language_yi": {
         "message": "이디시어"
     },
-    "supported_languages_yo": {
-        "message": "요루바어"
+    "language_yo": {
+        "message": "요 루바"
     },
-    "supported_languages_zu": {
+    "language_yua": {
+        "message": "Yucatec Maya"
+    },
+    "language_zu": {
         "message": "줄루 족"
-    },
-    "supported_languages_qu": {
-        "message": "케추아어"
-    },
-    "supported_languages_om": {
-        "message": "오로모어"
-    },
-    "supported_languages_ilo": {
-        "message": "일로카노어"
     }
 }

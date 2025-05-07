@@ -1,42 +1,62 @@
 <svelte:element
-	this={tag}
-	on:click_outside={() => {
-		$store.listboxOpen = false;
+	this={'div'}
+	class={className}
+	onclickoutside={() => {
+		store.listboxOpen = false;
 	}}
 	use:clickOutside
-	{...$$restProps}
+	{...rest}
 >
-	<slot />
+	{@render children()}
 </svelte:element>
 
-<script context="module">
-const LISTBOX_CONTEXT_NAME = 'listbox-context';
-export const useListboxContext = () => getContext(LISTBOX_CONTEXT_NAME);
-</script>
-
-<script>
-import { setContext, getContext, createEventDispatcher } from 'svelte';
-import { writable } from 'svelte/store';
+<script lang="ts">
+import type { Snippet } from 'svelte';
 import { clickOutside } from '../../utils/click-outside';
+import { type IStore, setListboxContext } from './context';
 
-export let value;
+interface Props {
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	value: any
+	class: string
+	open?: boolean
+	change?: () => void
+	onopen?: () => void
+	children: Snippet
+}
 
-let tag = 'div';
-const dispatch = createEventDispatcher();
+let {
+	value = $bindable(),
+	class: className,
+	open = $bindable(),
+	change,
+	onopen,
+	children,
+	...rest
+}: Props = $props();
 
-const store = writable({
-	listboxOpen: false,
-	activeOptionIndex: null,
-	buttonRef: null,
-	optionsRef: [],
-	value,
-	select(newValue) {
+class Store {
+	listboxOpen = $state<IStore['listboxOpen']>(false);
+	activeOptionIndex = $state<IStore['activeOptionIndex']>(null);
+	buttonRef = $state<IStore['buttonRef']>(null);
+	optionsRef = $state<IStore['optionsRef']>([]);
+	value = $state<IStore['value']>('');
+
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	select(newValue: any) {
+		this.value = newValue;
 		value = newValue;
-		dispatch('change');
+		if (change) change();
 	}
+}
+
+const store = new Store();
+
+setListboxContext(store);
+
+$effect(() => {
+	store.value = value;
+	open = store.listboxOpen;
+	if (store.listboxOpen && onopen) onopen();
 });
-
-$: $store.value = value;
-
-setContext(LISTBOX_CONTEXT_NAME, store);
 </script>

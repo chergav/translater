@@ -1,30 +1,48 @@
 <svg
-	class="{sizes[size]} {className}"
-	{fill}
-	{stroke}
-	stroke-linecap="round"
-	stroke-linejoin="round"
-	stroke-width="1.5"
+	class={icon({
+		size,
+		class: className,
+	})}
 	viewBox="0 0 24 24"
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<path {d} />
 </svg>
 
-<script>
-export let color = 'currentColor';
-export let stroke = color;
-export let filled = false;
-export let size = 'md';
-export let d = '';
+<script lang="ts">
+import { tv, type VariantProps } from 'tailwind-variants';
 
-const sizes = {
-	sm: 'w-4 h-4',
-	md: 'w-5 h-5',
-	lg: 'w-6 h-6'
-};
+const icon = tv({
+	base: 'fill-current',
+	variants: {
+		size: {
+			'16': 'size-4',
+			'18': 'size-[18px]',
+			'20': 'size-5',
+			'24': 'size-6',
+			'28': 'size-7',
+			'32': 'size-8',
+			'36': 'size-9',
+			'40': 'size-10',
+			'44': 'size-11',
+			'48': 'size-12',
+			'128': 'size-32',
+		},
+	},
+	defaultVariants: {
+		size: '24',
+	},
+});
 
-let fill = filled ? color : 'none';
-let className = '';
-export { className as class };
+interface Props {
+	d: string
+	size?: VariantProps<typeof icon>['size']
+	class?: string
+}
+
+let {
+	d,
+	size = '24',
+	class: className,
+}: Props = $props();
 </script>

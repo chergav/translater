@@ -18,7 +18,7 @@
 				border-gray-600
 				dark:border-gray-400
 			"
-		/>
+		></div>
 		<!-- background -->
 		<div
 			class="
@@ -28,13 +28,13 @@
 				rounded-sm
 				scale-50
 				opacity-0
-				peer-checked:bg-blue-800
-				peer-checked:dark:bg-blue-200
+				peer-checked:bg-purple-800
+				peer-checked:dark:bg-purple-200
 				peer-checked:scale-100
 				peer-checked:opacity-100
 				transition-all
 			"
-		/>
+		></div>
 		<!-- mark -->
 		<svg
 			class="
@@ -62,33 +62,44 @@
 		</svg>
 		<!-- hover elem -->
 		<div
-		class="
-			absolute
-			w-10
-			h-10
-			-ml-[11px]
-			rounded-full
-			peer-hover:bg-gray-600/10
-			peer-hover:dark:bg-gray-400/10
-			peer-checked:peer-hover:bg-blue-800/10
-			peer-checked:peer-hover:dark:bg-blue-200/10
+			class="
+				absolute
+				w-10
+				h-10
+				-ml-[11px]
+				rounded-full
+				peer-hover:bg-gray-600/10
+				peer-hover:dark:bg-gray-400/10
+				peer-checked:peer-hover:bg-purple-800/10
+				peer-checked:peer-hover:dark:bg-purple-200/10
 
-			peer-focus-visible:outline
-			peer-focus-visible:outline-offset-0
-			peer-focus-visible:outline-gray-600
-			peer-focus-visible:dark:outline-gray-400
+				peer-focus-visible:outline
+				peer-focus-visible:outline-offset-0
+				peer-focus-visible:outline-gray-600
+				peer-focus-visible:dark:outline-gray-400
 
-			transition-all
-		"
-	/>
+				transition-all
+			"
+		></div>
 		<span class="ml-4 text-gray-900 dark:text-gray-300 select-none">{label}</span>
 	</label>
-	<p class="ml-[34px] text-sm text-gray-500">{hint}</p>
+	{#if hint}
+		<p class="ml-[34px] text-sm text-gray-500">{hint}</p>
+	{/if}
 </div>
 
-<script>
-export let checked;
-export let name = '';
-export let label = '';
-export let hint = '';
+<script lang="ts">
+interface Props {
+	checked: boolean
+	label: string
+	name?: string
+	hint?: string
+}
+
+let {
+	checked = $bindable(),
+	label,
+	name,
+	hint,
+}: Props = $props();
 </script>

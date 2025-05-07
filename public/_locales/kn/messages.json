@@ -1,9 +1,14 @@
 {
     "app_name": {
-        "message": "Translater - ಆಯ್ದ ಪಠ್ಯದ ಅನುವಾದ"
+        "message": "$App_name$ - ಆಯ್ದ ಪಠ್ಯದ ಅನುವಾದ",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
     },
     "app_description": {
-        "message": "ಲೈಟ್ ಮತ್ತು ಡಾರ್ಕ್ ಥೀಮ್‌ನೊಂದಿಗೆ Google ಅನುವಾದದೊಂದಿಗೆ ಆಯ್ದ ಪಠ್ಯವನ್ನು ಅನುವಾದಿಸಿ"
+        "message": "ಆಯ್ದ ಪಠ್ಯವನ್ನು Google ಅನುವಾದದೊಂದಿಗೆ ಅನುವಾದಿಸಿ"
     },
     "app_version": {
         "message": "ಆವೃತ್ತಿ"
@@ -12,10 +17,10 @@
         "message": "ಆಯ್ದ ಪಠ್ಯವನ್ನು ಅನುವಾದಿಸಿ"
     },
     "popup_menu_options": {
-        "message": "ಸಂಯೋಜನೆಗಳು"
+        "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
     },
     "options_title": {
-        "message": "$APP_NAME$ - ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+        "message": "$App_name$ - ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
         "placeholders": {
             "app_name": {
                 "content": "Translater"
@@ -23,54 +28,54 @@
         }
     },
     "commands_open_translater": {
-        "message": "$APP_NAME$ ತೆರೆಯಿರಿ",
+        "message": "$App_name$ ತೆರೆಯಿರಿ $",
         "placeholders": {
             "app_name": {
                 "content": "Translater"
             }
         }
     },
-    "popup_or_press_keyboard_shortcut": {
-        "message": "ಅಥವಾ ಪುಟದಲ್ಲಿ ಕೀಬೋರ್ಡ್ ಶಾರ್ಟ್‌ಕಟ್ ಒತ್ತಿರಿ:"
+    "popup_or": {
+        "message": "ಅಥವಾ"
     },
     "options_tab_inline_translate": {
         "message": "ಓದುವಿಕೆ ಮತ್ತು ಇನ್ಪುಟ್"
     },
     "options_tab_popup_window": {
-        "message": "ಪಾಪ್ಅಪ್ ವಿಂಡೋ"
+        "message": "ಪಾಪ್ಅಪ್ ಕಿಟಕಿ"
     },
     "options_tab_appearance": {
-        "message": "ಬಾಹ್ಯ ನೋಟ"
+        "message": "ಹೊರಗಿನ ಗೋಚರತೆ"
     },
     "options_tab_history": {
         "message": "ಇತಿಹಾಸ"
     },
     "options_inline_button_show": {
-        "message": "ಪಠ್ಯವನ್ನು ಆಯ್ಕೆ ಮಾಡಿದಾಗ ಬಟನ್ ತೋರಿಸು"
+        "message": "ಪಠ್ಯವನ್ನು ಆಯ್ಕೆ ಮಾಡಿದಾಗ ಬಟನ್ ತೋರಿಸಿ"
     },
     "options_text_field_button_show": {
-        "message": "ಪಠ್ಯಕ್ಷೇತ್ರದಲ್ಲಿ ಬಟನ್ ತೋರಿಸು"
+        "message": "ಪಠ್ಯ ಕ್ಷೇತ್ರದಲ್ಲಿ ಬಟನ್ ತೋರಿಸಿ"
     },
     "options_hide_button_on_sites": {
-        "message": "ಈ ಸೈಟ್‌ಗಳಲ್ಲಿ ಬಟನ್ ಅನ್ನು ಮರೆಮಾಡಿ:"
+        "message": "ಈ ಸೈಟ್‌ಗಳಲ್ಲಿನ ಗುಂಡಿಯನ್ನು ಮರೆಮಾಡಿ:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "ನೀವು ಹೊರಗಿಡಲು ಬಯಸುವ ಸೈಟ್‌ನಲ್ಲಿ ಪಾಪ್ಅಪ್ ವಿಂಡೋದ ಮೆನುವನ್ನು ಬಳಸಿಕೊಂಡು ಡೊಮೇನ್‌ಗಳನ್ನು ಸೇರಿಸಿ"
+        "message": "ನೀವು ಹೊರಗಿಡಲು ಬಯಸುವ ಸೈಟ್‌ನಲ್ಲಿ ಪಾಪ್ಅಪ್ ವಿಂಡೋದ ಮೆನು ಬಳಸಿ ಡೊಮೇನ್‌ಗಳನ್ನು ಸೇರಿಸಿ"
     },
     "options_show_original_text": {
         "message": "ಮೂಲ ಪಠ್ಯವನ್ನು ತೋರಿಸಿ"
     },
     "options_show_transliteration": {
-        "message": "ಲಿಪ್ಯಂತರಣವನ್ನು ತೋರಿಸಿ"
+        "message": "ಲಿಪ್ಯಂತರವನ್ನು ತೋರಿಸಿ"
     },
     "options_lock_popup_window": {
-        "message": "ಪಾಪ್ಅಪ್ ವಿಂಡೋವನ್ನು ಲಾಕ್ ಮಾಡಿ"
+        "message": "ಪಾಪ್ಅಪ್ ವಿಂಡೋ ಲಾಕ್"
     },
     "options_lock_popup_window_hint": {
-        "message": "ಸಕ್ರಿಯಗೊಳಿಸಿದರೆ ಪಾಪ್‌ಅಪ್ ಹೊರಗಿನ ಕ್ಲಿಕ್‌ನಲ್ಲಿ ಮುಚ್ಚುವುದಿಲ್ಲ"
+        "message": "ಸಕ್ರಿಯಗೊಳಿಸಿದರೆ, ಅದರ ಹೊರಗೆ ಕ್ಲಿಕ್ ಮಾಡುವಾಗ ಪಾಪ್ಅಪ್ ಮುಚ್ಚುವುದಿಲ್ಲ"
     },
     "options_history_length": {
-        "message": "ಇತಿಹಾಸದ ಉದ್ದ"
+        "message": "ಇತಿಹಾಸ ನಮೂದುಗಳು (ಗರಿಷ್ಠ.)"
     },
     "options_records_in_history": {
         "message": "ಇತಿಹಾಸದಲ್ಲಿ ನಮೂದುಗಳು:"
@@ -91,28 +96,58 @@
         "message": "ಡೀಫಾಲ್ಟ್ ಧ್ವನಿ"
     },
     "options_tts_voices": {
-        "message": "ಧ್ವನಿಗಳು"
+        "message": "ಗೀತೆ"
     },
     "options_tts_table_caption": {
-        "message": "ಪಟ್ಟಿ ಮಾಡದ ಭಾಷೆಗಳಿಗೆ, ಬಾಹ್ಯ ಪಠ್ಯದಿಂದ ಭಾಷಣ ಸೇವೆಯನ್ನು ಬಳಸಲಾಗುತ್ತದೆ."
+        "message": "ಭಾಷೆಯನ್ನು ಪಟ್ಟಿ ಮಾಡದಿದ್ದರೆ, ಬಾಹ್ಯ ಪಠ್ಯದಿಂದ ಭಾಷಣ ಸೇವೆಯನ್ನು ಬಳಸಲಾಗುತ್ತದೆ."
     },
     "options_tts_no_voices_found": {
-        "message": "ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಯಾವುದೇ ಧ್ವನಿಗಳು ಕಂಡುಬಂದಿಲ್ಲ. ಬಾಹ್ಯ ಪಠ್ಯದಿಂದ ಭಾಷಣ ಸೇವೆಯನ್ನು ಬಳಸಲಾಗುತ್ತದೆ."
+        "message": "ನಿಮ್ಮ ಬ್ರೌಸರ್ ಭಾಷಣ ಸಂಶ್ಲೇಷಣೆಯನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ. ನಾವು ಬಾಹ್ಯ ಸೇವೆಯನ್ನು ಬಳಸುತ್ತೇವೆ."
     },
     "options_edit_keyboard_shortcut": {
-        "message": "ಕೀಬೋರ್ಡ್ ಶಾರ್ಟ್‌ಕಟ್ ಸಂಪಾದಿಸಿ"
+        "message": "ಕೀಬೋರ್ಡ್ ಶಾರ್ಟ್‌ಕಟ್‌ಗಳನ್ನು ಸಂಪಾದಿಸಿ"
     },
     "options_keyboard_shortcut_open_popup": {
-        "message": "ಪಾಪ್ಅಪ್ ವಿಂಡೋವನ್ನು ತೆರೆಯಲು ಕೀಬೋರ್ಡ್ ಶಾರ್ಟ್‌ಕಟ್:"
+        "message": "ಪಾಪ್ಅಪ್ ವಿಂಡೋ ತೆರೆಯಲು ಕೀಬೋರ್ಡ್ ಶಾರ್ಟ್‌ಕಟ್"
     },
     "options_key_combination_is_not_set": {
-        "message": "ಕೀ ಸಂಯೋಜನೆಯನ್ನು ಹೊಂದಿಸಲಾಗಿಲ್ಲ"
+        "message": "ಕೀಬೋರ್ಡ್ ಶಾರ್ಟ್‌ಕಟ್ ಅನ್ನು ಹೊಂದಿಸಲಾಗಿಲ್ಲ"
+    },
+    "options_font_size": {
+        "message": "ಫಾಂಟ್ ಗಾತ್ರ"
+    },
+    "options_font_size_xs": {
+        "message": "ಹೆಚ್ಚುವರಿ ಸಣ್ಣ (12px)"
+    },
+    "options_font_size_sm": {
+        "message": "ಸಣ್ಣ (14px)"
+    },
+    "options_font_size_md": {
+        "message": "ಸಾಮಾನ್ಯ (16 ಪಿಎಕ್ಸ್)"
+    },
+    "options_font_size_lg": {
+        "message": "ದೊಡ್ಡ (18 ಪಿಎಕ್ಸ್)"
+    },
+    "options_font_size_xl": {
+        "message": "ಹೆಚ್ಚುವರಿ ದೊಡ್ಡದು (20 ಪಿಎಕ್ಸ್)"
+    },
+    "options_support_msg": {
+        "message": "ಏನಾದರೂ ಕಾರ್ಯನಿರ್ವಹಿಸದಿದ್ದರೆ, ಅಥವಾ ನಿಮಗೆ ಯಾವುದೇ ಸಲಹೆಗಳಿಲ್ಲದಿದ್ದರೆ, ದಯವಿಟ್ಟು ಇಲ್ಲಿ ನನಗೆ ತಿಳಿಸಿ"
+    },
+    "options_support_donations": {
+        "message": "ಈ ಉಚಿತ ಸಾಫ್ಟ್‌ವೇರ್ ಅನ್ನು ಬೆಂಬಲಿಸಲು ನೀವು ಬಯಸಿದರೆ"
+    },
+    "options_address": {
+        "message": "ಭಾಷಣ"
+    },
+    "options_copy_address": {
+        "message": "ನಕಲು ವಿಳಾಸ"
     },
     "text_expand": {
-        "message": "ಇನ್ನಷ್ಟು"
+        "message": "ಆಫ್"
     },
     "text_collapse": {
-        "message": "ಕುಸಿತ"
+        "message": "ಕಡಿಮೆ"
     },
     "target_lang_label": {
         "message": "ಇದಕ್ಕೆ ಅನುವಾದಿಸಿ:"
@@ -127,13 +162,13 @@
         "message": "ವ್ಯಾಖ್ಯಾನಗಳು"
     },
     "popup_definitions_synonyms": {
-        "message": "ಸಮಾನಾರ್ಥಕ ಪದಗಳು:"
+        "message": "ಸಮಾನಾರ್ಥಕ:"
     },
     "popup_examples": {
         "message": "ಉದಾಹರಣೆಗಳು"
     },
     "popup_perhaps_you_meant": {
-        "message": "ಬಹುಶಃ ನೀವು ಹೇಳಿದ್ದು:"
+        "message": "ಬಹುಶಃ ನೀವು ಅರ್ಥೈಸಿದ್ದೀರಿ:"
     },
     "popup_original_language": {
         "message": "ಮೂಲ ಭಾಷೆ:"
@@ -142,10 +177,10 @@
         "message": "ಹಿಮ್ಮುಖ ಅನುವಾದ"
     },
     "popup_menu_lock_window": {
-        "message": "ಲಾಕ್ ವಿಂಡೋ"
+        "message": "ಲಾಕ್ ಕಿಟಕಿ"
     },
     "popup_menu_unlock_window": {
-        "message": "ವಿಂಡೋವನ್ನು ಅನ್ಲಾಕ್ ಮಾಡಿ"
+        "message": "ವಿಂಡೋ ಅನ್ಲಾಕ್"
     },
     "popup_menu_show_translate_button": {
         "message": "ಅನುವಾದ ಬಟನ್ ತೋರಿಸಿ"
@@ -157,16 +192,16 @@
         "message": "ಹೆಚ್ಚುವರಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
     },
     "popup_placeholder_translation": {
-        "message": "ಅನುವಾದ"
+        "message": "ಭಾಷಾಂತರ"
     },
     "theme_light": {
-        "message": "ಲೈಟ್ ಥೀಮ್"
+        "message": "ಲಘು ವಿಷಯ"
     },
     "theme_dark": {
-        "message": "ಡಾರ್ಕ್ ಥೀಮ್"
+        "message": "ಡಾರ್ಕ್ ವಿಷಯ"
     },
     "theme_system": {
-        "message": "ಡೀಫಾಲ್ಟ್ ಥೀಮ್"
+        "message": "ಸಿಸ್ಟಮ್ ಥೀಮ್"
     },
     "tooltip_translate_text": {
         "message": "ಆಯ್ದ ಪಠ್ಯವನ್ನು ಅನುವಾದಿಸಿ"
@@ -175,13 +210,13 @@
         "message": "ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಿ"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "HTTP ಸೈಟ್‌ಗಳಲ್ಲಿ ನಕಲು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ"
+        "message": "ನಕಲು ಎಚ್‌ಟಿಟಿಪಿ ಸೈಟ್‌ಗಳಲ್ಲಿ ಬೆಂಬಲವಲ್ಲ"
     },
     "tooltip_copyed": {
-        "message": "ನಕಲು ಮಾಡಲಾಗಿದೆ!"
+        "message": "ನಕಲಿಸಿದ"
     },
     "tooltip_copy_error": {
-        "message": "ನಕಲು ದೋಷ!"
+        "message": "ದೋಷ ದೋಷ!"
     },
     "tooltip_listen_to_the_text": {
         "message": "ಪಠ್ಯವನ್ನು ಆಲಿಸಿ"
@@ -190,19 +225,19 @@
         "message": "ನಿಲ್ಲಿಸು"
     },
     "tooltip_listen_language_is_not_support": {
-        "message": "ಭಾಷೆ ಬೆಂಬಲಿಸುವುದಿಲ್ಲ"
+        "message": "ಭಾಷೆ ಬೆಂಬಲವಲ್ಲ"
     },
     "tooltip_go_back": {
-        "message": "ಹಿಂದೆ"
+        "message": "ಹಿ ೦ ದೆ"
     },
     "tooltip_go_forward": {
-        "message": "ಮುಂದೆ"
+        "message": "ಮುಂದಿರುವ"
     },
     "tooltip_clear_text": {
         "message": "ಪಠ್ಯವನ್ನು ತೆರವುಗೊಳಿಸಿ"
     },
     "tooltip_clear_search": {
-        "message": "ಹುಡುಕಾಟವನ್ನು ತೆರವುಗೊಳಿಸಿ"
+        "message": "ಸ್ಪಷ್ಟ ಹುಡುಕಾಟ"
     },
     "date_today": {
         "message": "ಇಂದು"
@@ -211,345 +246,612 @@
         "message": "ನಿನ್ನೆ"
     },
     "forefox_perm_header": {
-        "message": "Firefox ನಲ್ಲಿ ಪ್ರಾರಂಭಿಸಲು ಅನುಮತಿಸಿ"
+        "message": "ಫೈರ್‌ಫಾಕ್ಸ್‌ನಲ್ಲಿ ಪ್ರಾರಂಭಿಸಲು ಅನುಮತಿಸಿ"
     },
     "forefox_perm_text": {
-        "message": "ವಿಸ್ತರಣೆಗೆ ವೆಬ್‌ಸೈಟ್‌ಗಳನ್ನು ಪ್ರವೇಶಿಸಲು ಮತ್ತು Firefox ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಅನುವಾದಿಸಲು ನಿಮ್ಮ ಅನುಮತಿಯ ಅಗತ್ಯವಿದೆ."
+        "message": "ಈ ವಿಸ್ತರಣೆಗೆ ವೆಬ್‌ಸೈಟ್‌ಗಳನ್ನು ಪ್ರವೇಶಿಸಲು ಮತ್ತು ಅವುಗಳನ್ನು ಫೈರ್‌ಫಾಕ್ಸ್‌ನಲ್ಲಿ ಭಾಷಾಂತರಿಸಲು ನಿಮ್ಮ ಅನುಮತಿ ಅಗತ್ಯವಿದೆ"
     },
     "forefox_perm_button": {
         "message": "ಅನುಮತಿಗಳನ್ನು ನಿರ್ವಹಿಸಿ"
     },
     "select_language_search_placeholder": {
-        "message": "ಭಾಷೆಗಳನ್ನು ಹುಡುಕಿ (ISO ಕೋಡ್ ಅಥವಾ ಹೆಸರು)"
+        "message": "ಭಾಷೆಗಳನ್ನು ಹುಡುಕಿ (ಐಎಸ್ಒ ಕೋಡ್ ಅಥವಾ ಹೆಸರು)"
     },
     "select_language_search_no_results": {
-        "message": "ಯಾವುದೇ ಫಲಿತಾಂಶಗಳಿಲ್ಲ"
+        "message": "ಫಲಿತಾಂಶಗಳಿಲ್ಲ"
     },
-    "supported_languages_auto": {
-        "message": "ಭಾಷೆ ಪತ್ತೆ"
+    "try_my_extensions": {
+        "message": "My ನನ್ನ ಇತರ ವಿಸ್ತರಣೆಗಳನ್ನು ಪ್ರಯತ್ನಿಸಿ"
     },
-    "supported_languages_af": {
-        "message": "ಆಫ್ರಿಕನ್"
+    "language_auto": {
+        "message": "ಭಾಷೆಯನ್ನು ಪತ್ತೆ ಮಾಡಿ"
     },
-    "supported_languages_sq": {
-        "message": "ಅಲ್ಬೇನಿಯನ್"
+    "language_ab": {
+        "message": "ಅಬ್ಜಾಜ್"
     },
-    "supported_languages_am": {
-        "message": "ಅಂಹರಿಕ್"
+    "language_ace": {
+        "message": "ಅಕ್ಹೆನೀಸ್"
     },
-    "supported_languages_ar": {
-        "message": "ಅರೇಬಿಕ್"
+    "language_ach": {
+        "message": "ಪ್ರಚಾರಕ"
     },
-    "supported_languages_hy": {
-        "message": "ಅರ್ಮೇನಿಯನ್"
+    "language_af": {
+        "message": "ಆಫ್ರಿಕನ್ನರು"
     },
-    "supported_languages_az": {
+    "language_sq": {
+        "message": "ಆಲ್ಬೇನಿಯದ"
+    },
+    "language_alz": {
+        "message": "ಬಿರುದಿ"
+    },
+    "language_am": {
+        "message": "ಮಂಜು"
+    },
+    "language_ar": {
+        "message": "ಅರಬಿಕ್"
+    },
+    "language_hy": {
+        "message": "ಅರ್ಮೇನಿಯನ್ ಭಾಷೆಯ"
+    },
+    "language_as": {
+        "message": "ಅಸ್ವಾತಥ್ಯ"
+    },
+    "language_awa": {
+        "message": "ಅವಧಿ"
+    },
+    "language_ay": {
+        "message": "ಅಣಕ"
+    },
+    "language_az": {
         "message": "ಅಜೆರ್ಬೈಜಾನಿ"
     },
-    "supported_languages_eu": {
-        "message": "ಬಾಸ್ಕ್"
+    "language_ban": {
+        "message": "ಬಲಿನ"
     },
-    "supported_languages_be": {
-        "message": "ಬೆಲರೂಸಿಯನ್"
+    "language_bm": {
+        "message": "ಜರುಗೋಲು"
     },
-    "supported_languages_bn": {
-        "message": "ಬೆಂಗಾಲಿ"
+    "language_ba": {
+        "message": "ಕಸಾಯಿಖಾನೆ"
     },
-    "supported_languages_bs": {
-        "message": "ಬೋಸ್ನಿಯನ್"
+    "language_eu": {
+        "message": "ಬಂಡಿ"
     },
-    "supported_languages_bg": {
-        "message": "ಬಲ್ಗೇರಿಯನ್"
+    "language_btx": {
+        "message": "ಬಟಾಕ್ ಕರೋ"
     },
-    "supported_languages_ca": {
-        "message": "ಕೆಟಲಾನ್"
+    "language_bts": {
+        "message": "ಬಟಾಕ್ ಸಿಮಲುಂಗನ್"
     },
-    "supported_languages_ceb": {
-        "message": "ಸೆಬುವಾನೋ"
+    "language_bbc": {
+        "message": "ಬಟಾಕ್ ಟಾಬಾ"
     },
-    "supported_languages_ny": {
-        "message": "ಚೇವಾ"
+    "language_be": {
+        "message": "ಬೆಲರೂಸಿಯ"
     },
-    "supported_languages_zh_CN": {
-        "message": "ಚೈನೀಸ್ ಸರಳೀಕೃತ"
+    "language_bem": {
+        "message": "ಕಸಾಯಿಖಾನೆ"
     },
-    "supported_languages_zh_TW": {
-        "message": "ಚೀನೀ ಸಾಂಪ್ರದಾಯಿಕ"
+    "language_bn": {
+        "message": "ಪಂಗಾಲಿ"
     },
-    "supported_languages_co": {
-        "message": "ಕಾರ್ಸಿಕನ್"
+    "language_bew": {
+        "message": "ಬೆಟಾವಿ"
     },
-    "supported_languages_hr": {
-        "message": "ಕ್ರೊಯೇಷಿಯನ್"
+    "language_bho": {
+        "message": "ಭೋಗಪುರಿ"
     },
-    "supported_languages_cs": {
+    "language_bik": {
+        "message": "ಒಂದು ಬಗೆಯ ಉಣ್ಣೆಯಂಥ"
+    },
+    "language_bs": {
+        "message": "ಬೋಸ್ನ"
+    },
+    "language_br": {
+        "message": "ಕಟಾವು"
+    },
+    "language_bg": {
+        "message": "ಬಲ್ಗೇರಿಯ"
+    },
+    "language_bua": {
+        "message": "ಬರಿಯತ್"
+    },
+    "language_yue": {
+        "message": "ಆವರಣ"
+    },
+    "language_ca": {
+        "message": "ಕೆನ್ನೇರಿನ"
+    },
+    "language_ceb": {
+        "message": "ಸಿಬುವಾನೋ"
+    },
+    "language_ny": {
+        "message": "ಚಿಚೆವಾ (ನ್ಯಾನ್ಜಾ)"
+    },
+    "language_zh_CN": {
+        "message": "ಚೈನೀಸ್ (ಸರಳೀಕೃತ)"
+    },
+    "language_zh_TW": {
+        "message": "ಚೈನೀಸ್ (ಸಾಂಪ್ರದಾಯಿಕ)"
+    },
+    "language_cv": {
+        "message": "ಹಳ್ಳಿಯ"
+    },
+    "language_co": {
+        "message": "ಮರಿಹುಳು"
+    },
+    "language_crh": {
+        "message": "ಕ್ರಿಮಿಯನ್ ಟಾಟರ್"
+    },
+    "language_hr": {
+        "message": "ಕ್ರೊಯೇಷಿಯಾದ"
+    },
+    "language_cs": {
         "message": "ಜೆಕ್"
     },
-    "supported_languages_da": {
-        "message": "ಡ್ಯಾನಿಶ್"
+    "language_da": {
+        "message": "ಡಾನಿಶ್"
     },
-    "supported_languages_nl": {
-        "message": "ಡಚ್"
+    "language_din": {
+        "message": "ಒಂದು ಬಗೆಯ ಉಣ್ಣೆಯಂಥ"
     },
-    "supported_languages_en": {
-        "message": "ಆಂಗ್ಲ"
+    "language_dv": {
+        "message": "ದಿವೈಹಿ ಯೆಹೂದಿ"
     },
-    "supported_languages_eo": {
+    "language_doi": {
+        "message": "ಕಸಾಯಿಖಾನೆ"
+    },
+    "language_dov": {
+        "message": "ಡಾಂಬ್"
+    },
+    "language_nl": {
+        "message": "ಡಚ್ಚರ"
+    },
+    "language_dz": {
+        "message": "ಜಾರು"
+    },
+    "language_en": {
+        "message": "ಇಂಗ್ಲಿಷ್"
+    },
+    "language_eo": {
         "message": "ಎಸ್ಪೆರಾಂಟೊ"
     },
-    "supported_languages_et": {
-        "message": "ಎಸ್ಟೋನಿಯನ್"
+    "language_et": {
+        "message": "ಎಸ್ಟೋನನ"
     },
-    "supported_languages_fi": {
-        "message": "ಫಿನ್ನಿಶ್"
+    "language_ee": {
+        "message": "ಈವೆ"
     },
-    "supported_languages_fr": {
+    "language_fj": {
+        "message": "ಫಿಜಿಯದ"
+    },
+    "language_fil": {
+        "message": "ಫಿಲಿಪಿನೋ (ಟ್ಯಾಗಲೋಗ್)"
+    },
+    "language_fi": {
+        "message": "ಲೋಕದ"
+    },
+    "language_fr": {
         "message": "ಫ್ರೆಂಚ್"
     },
-    "supported_languages_fy": {
-        "message": "ಫ್ರಿಸಿಯನ್"
+    "language_fr_FR": {
+        "message": "ಫ್ರೆಂಚ್ (ಫ್ರೆಂಚ್)"
     },
-    "supported_languages_gl": {
-        "message": "ಗ್ಯಾಲಿಷಿಯನ್"
+    "language_fr_CA": {
+        "message": "ಫ್ರೆಂಚ್ (ಕೆನಡಿಯನ್)"
     },
-    "supported_languages_ka": {
-        "message": "ಜಾರ್ಜಿಯನ್"
+    "language_fy": {
+        "message": "ಮರ್ಯಾದಾರಿ"
     },
-    "supported_languages_de": {
-        "message": "ಜರ್ಮನ್"
+    "language_ff": {
+        "message": "ಫುಲ್ಫುಲ್ಡೆ"
     },
-    "supported_languages_el": {
-        "message": "ಗ್ರೀಕ್"
+    "language_gaa": {
+        "message": "ಗಾ"
     },
-    "supported_languages_gu": {
+    "language_gl": {
+        "message": "ಗಲಿಷಧಿ"
+    },
+    "language_lg": {
+        "message": "ಗಂಡಾ (ಲುಗಾಂಡಾ)"
+    },
+    "language_ka": {
+        "message": "ಜಾರ್ಜಿಯವರ"
+    },
+    "language_de": {
+        "message": "ಜರ್ಮನ್ ಭಾಷೆಯ"
+    },
+    "language_el": {
+        "message": "ಗ್ರೀಕ್"
+    },
+    "language_gn": {
+        "message": "ಗಾರ್ರಾನಿ"
+    },
+    "language_gu": {
         "message": "ಗುಜರಾತಿ"
     },
-    "supported_languages_ht": {
-        "message": "ಹೈಟಿಯನ್"
+    "language_ht": {
+        "message": "ಹೈಟಿಯನ್ ಕ್ರಿಯೋಲ್"
     },
-    "supported_languages_ha": {
-        "message": "ಹೌಸಾ"
+    "language_cnh": {
+        "message": "ಹಕ್ಕಾ ಗಲ್ಲ"
     },
-    "supported_languages_haw": {
-        "message": "ಹವಾಯಿಯನ್"
+    "language_ha": {
+        "message": "ಪಂಥಿ"
     },
-    "supported_languages_he": {
-        "message": "ಹೀಬ್ರೂ"
+    "language_haw": {
+        "message": "ಹವಾಯಿಯ"
     },
-    "supported_languages_iw": {
-        "message": "ಹೀಬ್ರೂ"
+    "language_iw": {
+        "message": "ಇಬ್ರರಿ"
     },
-    "supported_languages_hi": {
+    "language_hil": {
+        "message": "ಗಲಾಟೆ"
+    },
+    "language_hi": {
         "message": "ಹಿಂದಿ"
     },
-    "supported_languages_hu": {
-        "message": "ಹಂಗೇರಿಯನ್"
+    "language_hmn": {
+        "message": "ಹ್ಮಾಂಗ್"
     },
-    "supported_languages_is": {
-        "message": "ಐಸ್ಲ್ಯಾಂಡಿಕ್"
+    "language_hu": {
+        "message": "ಹಂಗೇರಿಯ"
     },
-    "supported_languages_ig": {
-        "message": "ಇಗ್ಬೊ"
+    "language_hrx": {
+        "message": "ಹನ್ಸ್‌ರಿಕ್"
     },
-    "supported_languages_id": {
-        "message": "ಇಂಡೋನೇಷಿಯನ್"
+    "language_is": {
+        "message": "ಐಸ್ಲಮಿಯ"
     },
-    "supported_languages_ga": {
+    "language_ig": {
+        "message": "ಇಂಪೊ"
+    },
+    "language_ilo": {
+        "message": "ಇಳಿಜಾರು"
+    },
+    "language_id": {
+        "message": "ಇಂಡೋನೀಷಿಯ"
+    },
+    "language_ga": {
         "message": "ಐರಿಷ್"
     },
-    "supported_languages_it": {
-        "message": "ಇಟಾಲಿಯನ್"
+    "language_it": {
+        "message": "ಇಟಲಿಯ"
     },
-    "supported_languages_ja": {
+    "language_ja": {
         "message": "ಜಪಾನೀಸ್"
     },
-    "supported_languages_jv": {
+    "language_jw": {
         "message": "ಜಾವಾನೀಸ್"
     },
-    "supported_languages_kn": {
-        "message": "ಕನ್ನಡ"
+    "language_kn": {
+        "message": "ಕನ್ನಡಿ"
     },
-    "supported_languages_kk": {
-        "message": "ಕಝಕ್"
+    "language_pam": {
+        "message": "ಕಪಂಪಂಗ"
     },
-    "supported_languages_km": {
+    "language_kk": {
+        "message": "ಕಜಾಖು"
+    },
+    "language_km": {
         "message": "ಖಮೇರ್"
     },
-    "supported_languages_ky": {
+    "language_cgg": {
+        "message": "ಗುದ್ದಾಟ"
+    },
+    "language_rw": {
+        "message": "ಕಿನ್ಯಾರ್ವಾಂಡ"
+    },
+    "language_ktu": {
+        "message": "ಹದಮುದಾಯಿ"
+    },
+    "language_gom": {
+        "message": "ಕಂಕಾನಿ"
+    },
+    "language_ko": {
+        "message": "ಕೊರಿಯಾದ"
+    },
+    "language_kri": {
+        "message": "ಹಳ್ಳ"
+    },
+    "language_ku": {
+        "message": "ಕುರ್ದಿಷ್ (ಕುರ್ಮಂಜಿ)"
+    },
+    "language_ckb": {
+        "message": "ಕುರ್ದಿಷ್ (ಸೊರಾನಿ)"
+    },
+    "language_ky": {
         "message": "ಕಿರ್ಗಿಜ್"
     },
-    "supported_languages_ko": {
-        "message": "ಕೊರಿಯನ್"
+    "language_lo": {
+        "message": "ಲಾವನ"
     },
-    "supported_languages_ku": {
-        "message": "ಕುರ್ದಿಷ್"
+    "language_ltg": {
+        "message": "ಲಾಟ್ಗಾಲಿಯನ್"
     },
-    "supported_languages_lo": {
-        "message": "ಲಾವೋಷಿಯನ್"
-    },
-    "supported_languages_la": {
+    "language_la": {
         "message": "ಲ್ಯಾಟಿನ್"
     },
-    "supported_languages_lv": {
-        "message": "ಲಟ್ವಿಯನ್"
+    "language_lv": {
+        "message": "ಲಾಟ್ವಿಯದ"
     },
-    "supported_languages_lt": {
-        "message": "ಲಿಥುವೇನಿಯನ್"
+    "language_lij": {
+        "message": "ಲಿಗುರಿಯದ"
     },
-    "supported_languages_lb": {
-        "message": "ಲಕ್ಸೆಂಬರ್ಗ್"
+    "language_li": {
+        "message": "ಬರ್ಗನ್"
     },
-    "supported_languages_mk": {
-        "message": "ಮೆಸಿಡೋನಿಯನ್"
+    "language_ln": {
+        "message": "ಲಿಂಗಾಲ"
     },
-    "supported_languages_mg": {
-        "message": "ಮಲಗಾಸಿ"
+    "language_lt": {
+        "message": "ಲಿತುವೇನದ"
     },
-    "supported_languages_ms": {
+    "language_lmo": {
+        "message": "ಲಂಬಾರ್ಡ್"
+    },
+    "language_luo": {
+        "message": "ಹಳ್ಳಿಗಾಡಿನ"
+    },
+    "language_lb": {
+        "message": "ಲಕ್ -ಸೆಂಬರ್‌ಗೀಶ್"
+    },
+    "language_mk": {
+        "message": "ಮಚ್ಚೆ"
+    },
+    "language_mai": {
+        "message": "ಮಧುರ"
+    },
+    "language_mak": {
+        "message": "ಮಡೂರಿ"
+    },
+    "language_mg": {
+        "message": "ಹಳ್ಳಿಗಾಸ"
+    },
+    "language_ms": {
         "message": "ಮಲಯ"
     },
-    "supported_languages_ml": {
+    "language_ms_Arab": {
+        "message": "ಮಲಯ (ಜಾವಿ)"
+    },
+    "language_ml": {
         "message": "ಮಲಯಾಳಂ"
     },
-    "supported_languages_mt": {
+    "language_mt": {
         "message": "ಮಾಲ್ಟೀಸ್"
     },
-    "supported_languages_mi": {
-        "message": "ಮಾವೋರಿ"
+    "language_mi": {
+        "message": "ಮಾವೊರಿ"
     },
-    "supported_languages_mr": {
-        "message": "ಮರಾಠಿ"
+    "language_mr": {
+        "message": "ಮರತಿ"
     },
-    "supported_languages_mn": {
-        "message": "ಮಂಗೋಲಿಯನ್"
+    "language_chm": {
+        "message": "ಹುಲ್ಲುಗಾವಲು"
     },
-    "supported_languages_hmn": {
-        "message": "ಸನ್ಯಾಸಿ"
+    "language_mni_Mtei": {
+        "message": "ಮೀಟಿಲಾನ್ (ಮಣಿಪುರಿ)"
     },
-    "supported_languages_my": {
-        "message": "ಮ್ಯಾನ್ಮಾರ್"
+    "language_min": {
+        "message": "ಮನಾಂಗ್"
     },
-    "supported_languages_ne": {
-        "message": "ಮೇಪಾಲಿ"
+    "language_lus": {
+        "message": "ಮಂಜುಗಡ್ಡ"
     },
-    "supported_languages_no": {
+    "language_mn": {
+        "message": "ಮಂಗೋಲಿಯ"
+    },
+    "language_my": {
+        "message": "ಮ್ಯಾನ್ಮಾರ್ (ಬರ್ಮೀಸ್)"
+    },
+    "language_nr": {
+        "message": "Ndebele (ದಕ್ಷಿಣ)"
+    },
+    "language_new": {
+        "message": "ನೇಪಲ್ಬಾಸಾ (ನೆವಾರಿ)"
+    },
+    "language_ne": {
+        "message": "ನೇಪಾರು"
+    },
+    "language_nso": {
+        "message": "ಉತ್ತರ ಸೋಥೊ (ಸೆಪೆಡಿ)"
+    },
+    "language_no": {
         "message": "ನಾರ್ವೇಜಿಯನ್"
     },
-    "supported_languages_fa": {
-        "message": "ಪರ್ಷಿಯನ್"
+    "language_nus": {
+        "message": "ತೂರಿಸು"
     },
-    "supported_languages_pl": {
-        "message": "ಹೊಳಪು ಕೊಡು"
+    "language_oc": {
+        "message": "ನಿವೇಶನ"
     },
-    "supported_languages_pt": {
-        "message": "ಪೋರ್ಚುಗೀಸ್"
+    "language_or": {
+        "message": "ಒಡಿಯಾ (ಒರಿಯಾ)"
     },
-    "supported_languages_pa": {
-        "message": "ಪಂಜಾಬಿ"
-    },
-    "supported_languages_ps": {
-        "message": "ಪುಷ್ತೋ"
-    },
-    "supported_languages_ro": {
-        "message": "ರೊಮೇನಿಯನ್"
-    },
-    "supported_languages_ru": {
-        "message": "ರಷ್ಯನ್"
-    },
-    "supported_languages_sm": {
-        "message": "ಸಮೋವನ್"
-    },
-    "supported_languages_gd": {
-        "message": "ಸ್ಕಾಟಿಷ್ ಗೇಲಿಕ್"
-    },
-    "supported_languages_sr": {
-        "message": "ಸರ್ಬಿಯನ್"
-    },
-    "supported_languages_sn": {
-        "message": "ಶೋನಾ"
-    },
-    "supported_languages_sd": {
-        "message": "ಸಿಂಧಿ"
-    },
-    "supported_languages_si": {
-        "message": "ಸಿಂಹಳೀಯ"
-    },
-    "supported_languages_sk": {
-        "message": "ಸ್ಲೋವಾಕ್"
-    },
-    "supported_languages_sl": {
-        "message": "ಸ್ಲೊವೇನಿಯನ್"
-    },
-    "supported_languages_so": {
-        "message": "ಸೊಮಾಲಿ"
-    },
-    "supported_languages_sx": {
-        "message": "ಸೋಥೋ"
-    },
-    "supported_languages_es": {
-        "message": "ಸ್ಪ್ಯಾನಿಷ್"
-    },
-    "supported_languages_su": {
-        "message": "ಸುಂದನೀಸ್"
-    },
-    "supported_languages_sw": {
-        "message": "ಸ್ವಾಹಿಲಿ"
-    },
-    "supported_languages_sv": {
-        "message": "ಸ್ವೀಡಿಷ್"
-    },
-    "supported_languages_tl": {
-        "message": "ಟ್ಯಾಗಲೋಗ್"
-    },
-    "supported_languages_tg": {
-        "message": "ತಾಜಿಕಿ"
-    },
-    "supported_languages_ta": {
-        "message": "ತಮಿಳು"
-    },
-    "supported_languages_te": {
-        "message": "ತೆಲುಗು"
-    },
-    "supported_languages_th": {
-        "message": "ಥಾಯ್"
-    },
-    "supported_languages_tr": {
-        "message": "ಟರ್ಕಿಶ್"
-    },
-    "supported_languages_uk": {
-        "message": "ಉಕ್ರೇನಿಯನ್"
-    },
-    "supported_languages_ur": {
-        "message": "ಉರ್ದು"
-    },
-    "supported_languages_uz": {
-        "message": "ಉಜ್ಬೆಕ್"
-    },
-    "supported_languages_vi": {
-        "message": "ವಿಯೆಟ್ನಾಮೀಸ್"
-    },
-    "supported_languages_cy": {
-        "message": "ವೆಲ್ಷ್"
-    },
-    "supported_languages_xh": {
-        "message": "ಕ್ಸೋಸಾ"
-    },
-    "supported_languages_yi": {
-        "message": "ಯಿಡ್ಡಿಷ್"
-    },
-    "supported_languages_yo": {
-        "message": "ಯೊರುಬಾ"
-    },
-    "supported_languages_zu": {
-        "message": "ಜುಲು"
-    },
-    "supported_languages_qu": {
-        "message": "ಕ್ವೆಚುವಾ"
-    },
-    "supported_languages_om": {
+    "language_om": {
         "message": "ಒರೊಮೊ"
     },
-    "supported_languages_ilo": {
-        "message": "ಇಲೊಕಾನೊ"
+    "language_pag": {
+        "message": "ಪಂಗಾಸಿನನ್"
+    },
+    "language_pap": {
+        "message": "ಪಟಿಯಾಮೆ"
+    },
+    "language_ps": {
+        "message": "ಹಳ್ಳಿಯ"
+    },
+    "language_fa": {
+        "message": "ಪರ್ಷಿಯ"
+    },
+    "language_pl": {
+        "message": "ಪೋಲಿಷ್"
+    },
+    "language_pt": {
+        "message": "ಪೋರ್ಚುಗೀಸ್"
+    },
+    "language_pt_PT": {
+        "message": "ಪೋರ್ಚುಗೀಸ್ (ಪೋರ್ಚುಗಲ್)"
+    },
+    "language_pt_BR": {
+        "message": "ಪೋರ್ಚುಗೀಸ್ (ಬ್ರೆಜಿಲ್)"
+    },
+    "language_pa": {
+        "message": "ಪಂಜಾಬಿ"
+    },
+    "language_pa_Arab": {
+        "message": "ಪಂಜಾಬಿ (ಶಾಹ್ಮುಖಿ)"
+    },
+    "language_qu": {
+        "message": "ಕನ್ನಡಕ"
+    },
+    "language_rom": {
+        "message": "ರೋಮನಿ"
+    },
+    "language_ro": {
+        "message": "ರೊಮೇನಿಯನ್ ಭಾಷೆಯ"
+    },
+    "language_rn": {
+        "message": "ಹಳ್ಳ"
+    },
+    "language_ru": {
+        "message": "ರಷ್ಯಾದ"
+    },
+    "language_sm": {
+        "message": "ಸಮೋವಾನ್"
+    },
+    "language_sg": {
+        "message": "ಕಬ್ಬಿಣದ"
+    },
+    "language_sa": {
+        "message": "ಸಂಸ್ಕೃತ"
+    },
+    "language_gd": {
+        "message": "ದನಗಳ"
+    },
+    "language_sr": {
+        "message": "ಸರ್ಬಿಯಾದ ಸರ್ಬಿಯಾದ"
+    },
+    "language_st": {
+        "message": "ಶಿರೋನಾಮೆ"
+    },
+    "language_crs": {
+        "message": "ಸೀಶೆಲ್ಲೊಯಿಸ್ ಕ್ರಿಯೋಲ್"
+    },
+    "language_shn": {
+        "message": "ಜರುಗೋಲು"
+    },
+    "language_sn": {
+        "message": "ಪೋಲಿ"
+    },
+    "language_scn": {
+        "message": "ಸಿಸಿಲಿಯ"
+    },
+    "language_szl": {
+        "message": "ಸಿಲಿಸಿಯ"
+    },
+    "language_sd": {
+        "message": "ಸಿಂಧಿ"
+    },
+    "language_si": {
+        "message": "ಸಿಂಹಳ (ಸಿಂಹಳೀಯರು)"
+    },
+    "language_sk": {
+        "message": "ಸ್ಲೋವಾಕ್"
+    },
+    "language_sl": {
+        "message": "ಸ್ಲವೇನಿಯದ"
+    },
+    "language_so": {
+        "message": "ಸೊಮಾಲಿ"
+    },
+    "language_es": {
+        "message": "ಸ್ಪೋರ್ಯ"
+    },
+    "language_su": {
+        "message": "ಸುಂದರ"
+    },
+    "language_sw": {
+        "message": "ಸ್ವಹಿಲಿ"
+    },
+    "language_ss": {
+        "message": "ಜ್ವಾಲಾಮುಖಿ"
+    },
+    "language_sv": {
+        "message": "ಸ್ವೀಡಿಷ್"
+    },
+    "language_ber": {
+        "message": "ತಮಾಜೈಟ್ (ಟಿಫಿನಾಗ್)"
+    },
+    "language_ber_latn": {
+        "message": "ತಾಮ್‌ಜೈಟ್"
+    },
+    "language_tg": {
+        "message": "ತಾಮಾರ"
+    },
+    "language_ta": {
+        "message": "ತಮಿಳು"
+    },
+    "language_tt": {
+        "message": "ತಟಾರ್ಣ"
+    },
+    "language_te": {
+        "message": "ನಲುದು"
+    },
+    "language_tet": {
+        "message": "ಲಿಂಗ"
+    },
+    "language_th": {
+        "message": "ದರ್ಜೆ"
+    },
+    "language_ti": {
+        "message": "ಹುಲ್ಲುಗಾವಲು"
+    },
+    "language_ts": {
+        "message": "TSONGA"
+    },
+    "language_tn": {
+        "message": "TSTANA"
+    },
+    "language_tr": {
+        "message": "ಟರ್ಕಿಯ"
+    },
+    "language_tk": {
+        "message": "ತುಂಡ"
+    },
+    "language_ak": {
+        "message": "ಟ್ವಿ (ಅಕಾನ್)"
+    },
+    "language_uk": {
+        "message": "ಯುಕೆರಿನ"
+    },
+    "language_ur": {
+        "message": "ಮರಿ"
+    },
+    "language_ug": {
+        "message": "ಉಚ್ಚೆಕಾಯಿ"
+    },
+    "language_uz": {
+        "message": "ಉಜ್ಬೆ"
+    },
+    "language_vi": {
+        "message": "ವಿಯೆಟ್ನಾಂ"
+    },
+    "language_cy": {
+        "message": "ಬೆನ್ನೆಲು"
+    },
+    "language_xh": {
+        "message": "ಶಾಪ"
+    },
+    "language_yi": {
+        "message": "ಯೆಡಿಷ್‌ನ"
+    },
+    "language_yo": {
+        "message": "ಯೊರುಬಾ"
+    },
+    "language_yua": {
+        "message": "ಯುಕಾಟೆಕ್ ಮಾಯಾ"
+    },
+    "language_zu": {
+        "message": "ಪತಂಗ"
     }
 }

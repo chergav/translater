@@ -1,5 +1,4 @@
 <!-- eslint-disable-next-line svelte/valid-compile -->
-<!-- svelte-ignore a11y-no-static-element-interactions -->
 <svelte:element
 	this={as}
 	bind:this={$store.buttonRef}
@@ -22,7 +21,7 @@ export let as = 'button';
 
 let props = {
 	tabindex: as === 'button' ? 0 : -1,
-	type: as === 'button' ? 'button' : undefined
+	type: as === 'button' ? 'button' : undefined,
 };
 
 const store = useMenuContext();
@@ -42,7 +41,7 @@ const goToItem = action => {
 	const nextItemIndex = getNextIndex({
 		action,
 		items: $store.itemsRef,
-		currentActiveIndex: $store.activeItemIndex
+		currentActiveIndex: $store.activeItemIndex,
 	});
 
 	$store.activeItemIndex = nextItemIndex;
@@ -50,22 +49,22 @@ const goToItem = action => {
 
 const onKeyDown = async e => {
 	switch (e.code) {
-	case Keys.Space:
-	case Keys.Enter:
-	case Keys.ArrowDown:
-		e.preventDefault();
-		e.stopPropagation();
-		$store.menuOpen = true;
-		await tick();
-		goToItem(Focus.First);
-		break;
-	case Keys.ArrowUp:
-		e.preventDefault();
-		e.stopPropagation();
-		$store.menuOpen = true;
-		await tick();
-		goToItem(Focus.Last);
-		break;
+		case Keys.Space:
+		case Keys.Enter:
+		case Keys.ArrowDown:
+			e.preventDefault();
+			e.stopPropagation();
+			$store.menuOpen = true;
+			await tick();
+			goToItem(Focus.First);
+			break;
+		case Keys.ArrowUp:
+			e.preventDefault();
+			e.stopPropagation();
+			$store.menuOpen = true;
+			await tick();
+			goToItem(Focus.Last);
+			break;
 	}
 };
 </script>

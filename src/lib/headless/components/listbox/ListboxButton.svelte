@@ -1,75 +1,87 @@
 <!-- eslint-disable-next-line svelte/valid-compile -->
-<!-- svelte-ignore a11y-no-static-element-interactions -->
 <svelte:element
 	this={as}
-	bind:this={$store.buttonRef}
+	bind:this={store.buttonRef}
+	class={className}
 	aria-haspopup="listbox"
-	{...props}
-	{...$$restProps}
-	on:click={onClick}
-	on:keydown={onKeyDown}
+	{...attrs}
+	{...rest}
+	onclick={onClick}
+	onkeydown={onKeyDown}
 >
-	<slot />
+	{@render children()}
 </svelte:element>
 
-<script>
+<script lang="ts">
+import type { Snippet } from 'svelte';
 import { tick } from 'svelte';
-import { useListboxContext } from './Listbox.svelte';
+import { getListboxContext } from './context';
 import { getNextIndex } from '../../utils/get-next-index';
 import { Keys, Focus } from '../../utils/enums';
 
-export let as = 'button';
+interface Props {
+	class: string
+	as?: string
+	children: Snippet
+}
 
-let props = {
+let {
+	class: className,
+	as = 'button',
+	children,
+	...rest
+}: Props = $props();
+
+let attrs = {
 	tabindex: as === 'button' ? 0 : -1,
-	type: as === 'button' ? 'button' : undefined
+	type: as === 'button' ? 'button' : undefined,
 };
 
-const store = useListboxContext();
+const store = getListboxContext();
 
 const onClick = () => {
-	$store.listboxOpen = !$store.listboxOpen;
+	store.listboxOpen = !store.listboxOpen;
 };
 
-const setActiveOption = index => {
-	$store.optionsRef[index].focus({ preventScroll: true });
-	$store.optionsRef[index].scrollIntoView({ block: 'nearest' });
+const setActiveOption = (index: number) => {
+	store.optionsRef[index].focus({ preventScroll: true });
+	store.optionsRef[index].scrollIntoView({ block: 'nearest' });
 };
 
-const goToOption = action => {
+const goToOption = (action: Focus) => {
 	const nextOptionIndex = getNextIndex({
 		action,
-		items: $store.optionsRef,
-		currentActiveIndex: $store.activeOptionIndex
+		items: store.optionsRef,
+		currentActiveIndex: store.activeOptionIndex,
 	});
 
-	setActiveOption(nextOptionIndex);
-	$store.activeOptionIndex = nextOptionIndex;
+	if (nextOptionIndex) setActiveOption(nextOptionIndex);
+	store.activeOptionIndex = nextOptionIndex;
 };
 
-const onKeyDown = async e => {
+const onKeyDown = async (e: KeyboardEvent) => {
 	switch (e.code) {
-	case Keys.Space:
-	case Keys.Enter:
-	case Keys.ArrowDown:
-		e.preventDefault();
-		e.stopPropagation();
-		$store.listboxOpen = true;
-		await tick();
-		if (!$store.value) {
-			goToOption(Focus.First);
-		}
-		break;
+		case Keys.Space:
+		case Keys.Enter:
+		case Keys.ArrowDown:
+			e.preventDefault();
+			e.stopPropagation();
+			store.listboxOpen = true;
+			await tick();
+			if (!store.value) {
+				goToOption(Focus.First);
+			}
+			break;
 
-	case Keys.ArrowUp:
-		e.preventDefault();
-		e.stopPropagation();
-		$store.listboxOpen = true;
-		await tick();
-		if (!$store.value) {
-			goToOption(Focus.Last);
-		}
-		break;
+		case Keys.ArrowUp:
+			e.preventDefault();
+			e.stopPropagation();
+			store.listboxOpen = true;
+			await tick();
+			if (!store.value) {
+				goToOption(Focus.Last);
+			}
+			break;
 	}
 };
 </script>

@@ -1,21 +1,26 @@
 {
     "app_name": {
-        "message": "Translater - tafsiri ya maandishi yaliyochaguliwa"
+        "message": "$APP_NAME$ - Tafsiri ya maandishi yaliyochaguliwa",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
     },
     "app_description": {
-        "message": "Tafsiri maandishi yaliyochaguliwa kwa kutumia Google Tafsiri yenye mandhari meusi na meusi"
+        "message": "Tafsiri maandishi yaliyochaguliwa na Google Tafsiri"
     },
     "app_version": {
         "message": "toleo"
     },
     "context_menus_title": {
-        "message": "Tafsiri maandishi uliyochagua"
+        "message": "Tafsiri maandishi yaliyochaguliwa"
     },
     "popup_menu_options": {
         "message": "Mipangilio"
     },
     "options_title": {
-        "message": "$APP_NAME$ - mipangilio",
+        "message": "$APP_NAME$ - Mipangilio",
         "placeholders": {
             "app_name": {
                 "content": "Translater"
@@ -23,21 +28,21 @@
         }
     },
     "commands_open_translater": {
-        "message": "Fungua $APP_NAME$",
+        "message": "Fungua $app_name$",
         "placeholders": {
             "app_name": {
                 "content": "Translater"
             }
         }
     },
-    "popup_or_press_keyboard_shortcut": {
-        "message": "au bonyeza njia ya mkato ya kibodi kwenye ukurasa:"
+    "popup_or": {
+        "message": "Au"
     },
     "options_tab_inline_translate": {
-        "message": "Kusoma na kuingiza"
+        "message": "Kusoma na Kuingiza"
     },
     "options_tab_popup_window": {
-        "message": "Dirisha ibukizi"
+        "message": "Dirisha la kidukizo"
     },
     "options_tab_appearance": {
         "message": "Muonekano wa nje"
@@ -49,34 +54,34 @@
         "message": "Onyesha kitufe wakati maandishi yamechaguliwa"
     },
     "options_text_field_button_show": {
-        "message": "Onyesha kitufe kwenye uwanja wa maandishi"
+        "message": "Onyesha kitufe katika Nakalafield"
     },
     "options_hide_button_on_sites": {
         "message": "Ficha kitufe kwenye tovuti hizi:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Ongeza vikoa kwa kutumia menyu ya kidirisha ibukizi kwenye tovuti unayotaka kutenga"
+        "message": "Ongeza vikoa kwa kutumia menyu ya kidirisha cha kidukizo kwenye wavuti unayotaka kuwatenga"
     },
     "options_show_original_text": {
-        "message": "Onyesha maandishi chanzo"
+        "message": "Onyesha maandishi ya chanzo"
     },
     "options_show_transliteration": {
-        "message": "Onyesha unukuzi"
+        "message": "Onyesha tafsiri"
     },
     "options_lock_popup_window": {
-        "message": "Funga dirisha ibukizi"
+        "message": "Funga kidude cha kidukizo"
     },
     "options_lock_popup_window_hint": {
-        "message": "Ikiwezeshwa dirisha ibukizi halitafungwa kwa kubofya nje"
+        "message": "Ikiwa imewezeshwa, dukizo haitafunga wakati wa kubonyeza nje yake"
     },
     "options_history_length": {
-        "message": "Urefu wa historia"
+        "message": "Viingilio vya Historia (Max.)"
     },
     "options_records_in_history": {
-        "message": "Maingizo katika historia:"
+        "message": "Viingilio katika historia:"
     },
     "options_history_enable": {
-        "message": "Washa historia"
+        "message": "Wezesha historia"
     },
     "options_clear_history": {
         "message": "Futa historia"
@@ -88,31 +93,61 @@
         "message": "Lugha"
     },
     "options_tts_default_voice": {
-        "message": "Sauti chaguomsingi"
+        "message": "Sauti ya chaguo -msingi"
     },
     "options_tts_voices": {
         "message": "Sauti"
     },
     "options_tts_table_caption": {
-        "message": "Kwa lugha ambazo hazijaorodheshwa, huduma ya nje ya matini-hadi-hotuba itatumika."
+        "message": "Ikiwa lugha haijaorodheshwa, huduma ya maandishi ya nje-kwa-hotuba itatumika."
     },
     "options_tts_no_voices_found": {
-        "message": "Hakuna sauti zilizopatikana kwenye kivinjari. Huduma ya nje ya maandishi kwa hotuba itatumika."
+        "message": "Kivinjari chako hakiungi mkono muundo wa hotuba. Tutatumia huduma ya nje badala yake."
     },
     "options_edit_keyboard_shortcut": {
-        "message": "Badilisha njia ya mkato ya kibodi"
+        "message": "Hariri njia za mkato za kibodi"
     },
     "options_keyboard_shortcut_open_popup": {
-        "message": "Njia ya mkato ya kibodi ili kufungua dirisha ibukizi:"
+        "message": "Njia ya mkato ya kibodi kufungua kidukizo"
     },
     "options_key_combination_is_not_set": {
-        "message": "mchanganyiko muhimu haujawekwa"
+        "message": "Njia ya mkato ya kibodi haijawekwa"
+    },
+    "options_font_size": {
+        "message": "Saizi ya fonti"
+    },
+    "options_font_size_xs": {
+        "message": "Kidogo kidogo (12px)"
+    },
+    "options_font_size_sm": {
+        "message": "Ndogo (14px)"
+    },
+    "options_font_size_md": {
+        "message": "Kawaida (16px)"
+    },
+    "options_font_size_lg": {
+        "message": "Kubwa (18px)"
+    },
+    "options_font_size_xl": {
+        "message": "Kubwa ya ziada (20px)"
+    },
+    "options_support_msg": {
+        "message": "Ikiwa kitu hakifanyi kazi, au una maoni yoyote, tafadhali nijulishe hapa"
+    },
+    "options_support_donations": {
+        "message": "Ikiwa unapenda kuunga mkono programu hii ya bure"
+    },
+    "options_address": {
+        "message": "Anwani"
+    },
+    "options_copy_address": {
+        "message": "Anwani ya nakala"
     },
     "text_expand": {
         "message": "Zaidi"
     },
     "text_collapse": {
-        "message": "Kuanguka"
+        "message": "Kidogo"
     },
     "target_lang_label": {
         "message": "Tafsiri kwa:"
@@ -121,7 +156,7 @@
         "message": "Kamusi"
     },
     "popup_dictionary_frequency": {
-        "message": "Mzunguko"
+        "message": "Mara kwa mara"
     },
     "popup_definitions": {
         "message": "Ufafanuzi"
@@ -136,10 +171,10 @@
         "message": "Labda ulimaanisha:"
     },
     "popup_original_language": {
-        "message": "Lugha asili:"
+        "message": "Lugha ya asili:"
     },
     "popup_menu_reverse_translate": {
-        "message": "Tafsiri kinyume"
+        "message": "Reverse Tafsiri"
     },
     "popup_menu_lock_window": {
         "message": "Funga dirisha"
@@ -163,25 +198,25 @@
         "message": "Mandhari nyepesi"
     },
     "theme_dark": {
-        "message": "Mandhari meusi"
+        "message": "Mandhari ya giza"
     },
     "theme_system": {
-        "message": "Mandhari chaguomsingi"
+        "message": "Mandhari ya mfumo"
     },
     "tooltip_translate_text": {
-        "message": "Tafsiri maandishi uliyochagua"
+        "message": "Tafsiri maandishi yaliyochaguliwa"
     },
     "tooltip_copy_to_clipboard": {
-        "message": "Nakili kwenye ubao wa kunakili"
+        "message": "Nakili kwa clipboard"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "Nakala haitumiki kwenye tovuti za HTTP"
+        "message": "Nakala sio msaada kwenye tovuti za HTTP"
     },
     "tooltip_copyed": {
-        "message": "Imenakiliwa!"
+        "message": "Kunakiliwa"
     },
     "tooltip_copy_error": {
-        "message": "Hitilafu ya kunakili!"
+        "message": "Nakili Kosa!"
     },
     "tooltip_listen_to_the_text": {
         "message": "Sikiliza maandishi"
@@ -190,7 +225,7 @@
         "message": "Acha"
     },
     "tooltip_listen_language_is_not_support": {
-        "message": "Lugha haitumiki"
+        "message": "Lugha sio msaada"
     },
     "tooltip_go_back": {
         "message": "Nyuma"
@@ -199,10 +234,10 @@
         "message": "Mbele"
     },
     "tooltip_clear_text": {
-        "message": "Nakala wazi"
+        "message": "Maandishi wazi"
     },
     "tooltip_clear_search": {
-        "message": "Futa utafutaji"
+        "message": "Utaftaji wazi"
     },
     "date_today": {
         "message": "leo"
@@ -214,342 +249,609 @@
         "message": "Ruhusu uzinduzi katika Firefox"
     },
     "forefox_perm_text": {
-        "message": "Kiendelezi kinahitaji ruhusa yako kufikia tovuti na kutafsiri katika kivinjari cha Firefox."
+        "message": "Ugani huu unahitaji ruhusa yako kupata tovuti na kuzitafsiri katika Firefox"
     },
     "forefox_perm_button": {
         "message": "Dhibiti ruhusa"
     },
     "select_language_search_placeholder": {
-        "message": "Tafuta lugha (msimbo wa ISO au jina)"
+        "message": "Pata lugha (nambari ya ISO au jina)"
     },
     "select_language_search_no_results": {
         "message": "Hakuna matokeo"
     },
-    "supported_languages_auto": {
-        "message": "kugundua lugha"
+    "try_my_extensions": {
+        "message": "Jaribu viongezeo vyangu vingine"
     },
-    "supported_languages_af": {
-        "message": "Mwafrika"
+    "language_auto": {
+        "message": "gundua lugha"
     },
-    "supported_languages_sq": {
-        "message": "Kialbeni"
+    "language_ab": {
+        "message": "Abkhaz"
     },
-    "supported_languages_am": {
-        "message": "Kiamhari"
+    "language_ace": {
+        "message": "Acehnese"
     },
-    "supported_languages_ar": {
+    "language_ach": {
+        "message": "Acholi"
+    },
+    "language_af": {
+        "message": "Kiafrika"
+    },
+    "language_sq": {
+        "message": "Albanian"
+    },
+    "language_alz": {
+        "message": "Alur"
+    },
+    "language_am": {
+        "message": "Amharic"
+    },
+    "language_ar": {
         "message": "Kiarabu"
     },
-    "supported_languages_hy": {
-        "message": "Kiarmenia"
+    "language_hy": {
+        "message": "Armenia"
     },
-    "supported_languages_az": {
-        "message": "Kiazabajani"
+    "language_as": {
+        "message": "Assamese"
     },
-    "supported_languages_eu": {
-        "message": "Kibasque"
+    "language_awa": {
+        "message": "Awadhi"
     },
-    "supported_languages_be": {
-        "message": "Kibelarusi"
+    "language_ay": {
+        "message": "Aimara"
     },
-    "supported_languages_bn": {
+    "language_az": {
+        "message": "Azerbaijani"
+    },
+    "language_ban": {
+        "message": "Balinese"
+    },
+    "language_bm": {
+        "message": "Bambara"
+    },
+    "language_ba": {
+        "message": "Bashkir"
+    },
+    "language_eu": {
+        "message": "Basque"
+    },
+    "language_btx": {
+        "message": "Batak Karo"
+    },
+    "language_bts": {
+        "message": "Batak Simalungun"
+    },
+    "language_bbc": {
+        "message": "Batak Toba"
+    },
+    "language_be": {
+        "message": "Belarusian"
+    },
+    "language_bem": {
+        "message": "Bemba"
+    },
+    "language_bn": {
         "message": "Kibengali"
     },
-    "supported_languages_bs": {
-        "message": "Kibosnia"
+    "language_bew": {
+        "message": "Betawi"
     },
-    "supported_languages_bg": {
+    "language_bho": {
+        "message": "Bhojpuri"
+    },
+    "language_bik": {
+        "message": "Bikol"
+    },
+    "language_bs": {
+        "message": "Bosnia"
+    },
+    "language_br": {
+        "message": "Breton"
+    },
+    "language_bg": {
         "message": "Kibulgaria"
     },
-    "supported_languages_ca": {
+    "language_bua": {
+        "message": "Buryat"
+    },
+    "language_yue": {
+        "message": "Cantonese"
+    },
+    "language_ca": {
         "message": "Kikatalani"
     },
-    "supported_languages_ceb": {
+    "language_ceb": {
         "message": "Cebuano"
     },
-    "supported_languages_ny": {
-        "message": "Chewa"
+    "language_ny": {
+        "message": "Chichewa (Nyanja)"
     },
-    "supported_languages_zh_CN": {
-        "message": "Kichina kilichorahisishwa"
+    "language_zh_CN": {
+        "message": "Kichina (Iliyorahisishwa)"
     },
-    "supported_languages_zh_TW": {
-        "message": "Kichina cha jadi"
+    "language_zh_TW": {
+        "message": "Kichina (jadi)"
     },
-    "supported_languages_co": {
-        "message": "Kikosikani"
+    "language_cv": {
+        "message": "Chuvash"
     },
-    "supported_languages_hr": {
+    "language_co": {
+        "message": "Corsican"
+    },
+    "language_crh": {
+        "message": "Crimean Tatar"
+    },
+    "language_hr": {
         "message": "Kikroeshia"
     },
-    "supported_languages_cs": {
+    "language_cs": {
         "message": "Kicheki"
     },
-    "supported_languages_da": {
+    "language_da": {
         "message": "Kideni"
     },
-    "supported_languages_nl": {
+    "language_din": {
+        "message": "Dinka"
+    },
+    "language_dv": {
+        "message": "Divehi"
+    },
+    "language_doi": {
+        "message": "Dogri"
+    },
+    "language_dov": {
+        "message": "DOMBE"
+    },
+    "language_nl": {
         "message": "Kiholanzi"
     },
-    "supported_languages_en": {
+    "language_dz": {
+        "message": "Dzongkha"
+    },
+    "language_en": {
         "message": "Kiingereza"
     },
-    "supported_languages_eo": {
-        "message": "Kiesperanto"
+    "language_eo": {
+        "message": "Esperanto"
     },
-    "supported_languages_et": {
-        "message": "Kiestonia"
+    "language_et": {
+        "message": "Estonia"
     },
-    "supported_languages_fi": {
+    "language_ee": {
+        "message": "Ewe"
+    },
+    "language_fj": {
+        "message": "Fijian"
+    },
+    "language_fil": {
+        "message": "Kifilipino (Tagalog)"
+    },
+    "language_fi": {
         "message": "Kifini"
     },
-    "supported_languages_fr": {
-        "message": "Kifaransa"
+    "language_fr": {
+        "message": "Mfaransa"
     },
-    "supported_languages_fy": {
-        "message": "Kifrisia"
+    "language_fr_FR": {
+        "message": "Mfaransa (Kifaransa)"
     },
-    "supported_languages_gl": {
-        "message": "Kigalisia"
+    "language_fr_CA": {
+        "message": "Mfaransa (Canada)"
     },
-    "supported_languages_ka": {
+    "language_fy": {
+        "message": "Frisian"
+    },
+    "language_ff": {
+        "message": "Fulfulde"
+    },
+    "language_gaa": {
+        "message": "Ga"
+    },
+    "language_gl": {
+        "message": "Galician"
+    },
+    "language_lg": {
+        "message": "Ganda (Luganda)"
+    },
+    "language_ka": {
         "message": "Kijojiajia"
     },
-    "supported_languages_de": {
+    "language_de": {
         "message": "Kijerumani"
     },
-    "supported_languages_el": {
+    "language_el": {
         "message": "Kigiriki"
     },
-    "supported_languages_gu": {
-        "message": "Kigujarati"
+    "language_gn": {
+        "message": "Guarani"
     },
-    "supported_languages_ht": {
-        "message": "Mhaiti"
+    "language_gu": {
+        "message": "Gujarati"
     },
-    "supported_languages_ha": {
-        "message": "Kihausa"
+    "language_ht": {
+        "message": "Haiti Creole"
     },
-    "supported_languages_haw": {
-        "message": "Kihawai"
+    "language_cnh": {
+        "message": "Hakha kidevu"
     },
-    "supported_languages_he": {
+    "language_ha": {
+        "message": "Hausa"
+    },
+    "language_haw": {
+        "message": "Hawaiian"
+    },
+    "language_iw": {
         "message": "Kiebrania"
     },
-    "supported_languages_iw": {
-        "message": "Kiebrania"
+    "language_hil": {
+        "message": "Hiligaynon"
     },
-    "supported_languages_hi": {
+    "language_hi": {
         "message": "Kihindi"
     },
-    "supported_languages_hu": {
-        "message": "Kihungaria"
+    "language_hmn": {
+        "message": "Hmong"
     },
-    "supported_languages_is": {
+    "language_hu": {
+        "message": "Kihungari"
+    },
+    "language_hrx": {
+        "message": "Hunsrik"
+    },
+    "language_is": {
         "message": "Kiaislandi"
     },
-    "supported_languages_ig": {
-        "message": "Kiigbo"
+    "language_ig": {
+        "message": "Igbo"
     },
-    "supported_languages_id": {
+    "language_ilo": {
+        "message": "Iloko"
+    },
+    "language_id": {
         "message": "Kiindonesia"
     },
-    "supported_languages_ga": {
-        "message": "Kiayalandi"
+    "language_ga": {
+        "message": "Ireland"
     },
-    "supported_languages_it": {
-        "message": "Kiitaliano"
+    "language_it": {
+        "message": "Italia"
     },
-    "supported_languages_ja": {
+    "language_ja": {
         "message": "Kijapani"
     },
-    "supported_languages_jv": {
-        "message": "Kijava"
+    "language_jw": {
+        "message": "Javanese"
     },
-    "supported_languages_kn": {
-        "message": "Kikanada"
+    "language_kn": {
+        "message": "Kannada"
     },
-    "supported_languages_kk": {
+    "language_pam": {
+        "message": "Kapampangan"
+    },
+    "language_kk": {
         "message": "Kazakh"
     },
-    "supported_languages_km": {
+    "language_km": {
         "message": "Khmer"
     },
-    "supported_languages_ky": {
-        "message": "Kirghiz"
+    "language_cgg": {
+        "message": "Kiga"
     },
-    "supported_languages_ko": {
+    "language_rw": {
+        "message": "Kinyarwanda"
+    },
+    "language_ktu": {
+        "message": "Kituba"
+    },
+    "language_gom": {
+        "message": "Konkani"
+    },
+    "language_ko": {
         "message": "Kikorea"
     },
-    "supported_languages_ku": {
-        "message": "Kikurdi"
+    "language_kri": {
+        "message": "Krio"
     },
-    "supported_languages_lo": {
-        "message": "Kilaoti"
+    "language_ku": {
+        "message": "Kikurdi (Kurmanji)"
     },
-    "supported_languages_la": {
+    "language_ckb": {
+        "message": "Kikurdi (Sorani)"
+    },
+    "language_ky": {
+        "message": "Kyrgyz"
+    },
+    "language_lo": {
+        "message": "Lao"
+    },
+    "language_ltg": {
+        "message": "Latgalian"
+    },
+    "language_la": {
         "message": "Kilatini"
     },
-    "supported_languages_lv": {
-        "message": "Kilatvia"
+    "language_lv": {
+        "message": "Latvian"
     },
-    "supported_languages_lt": {
+    "language_lij": {
+        "message": "Ligurian"
+    },
+    "language_li": {
+        "message": "Limburgan"
+    },
+    "language_ln": {
+        "message": "Lingala"
+    },
+    "language_lt": {
         "message": "Kilithuania"
     },
-    "supported_languages_lb": {
-        "message": "Kilasembagi"
+    "language_lmo": {
+        "message": "Lombard"
     },
-    "supported_languages_mk": {
+    "language_luo": {
+        "message": "LUO"
+    },
+    "language_lb": {
+        "message": "Luxembourgish"
+    },
+    "language_mk": {
         "message": "Kimasedonia"
     },
-    "supported_languages_mg": {
-        "message": "Kimalagasi"
+    "language_mai": {
+        "message": "Maithili"
     },
-    "supported_languages_ms": {
-        "message": "Kimalei"
+    "language_mak": {
+        "message": "Makassar"
     },
-    "supported_languages_ml": {
+    "language_mg": {
+        "message": "Malagasy"
+    },
+    "language_ms": {
+        "message": "Malay"
+    },
+    "language_ms_Arab": {
+        "message": "Kimalay (Jawi)"
+    },
+    "language_ml": {
         "message": "Kimalayalam"
     },
-    "supported_languages_mt": {
+    "language_mt": {
         "message": "Kimalta"
     },
-    "supported_languages_mi": {
-        "message": "Kimaori"
+    "language_mi": {
+        "message": "Maori"
     },
-    "supported_languages_mr": {
+    "language_mr": {
         "message": "Marathi"
     },
-    "supported_languages_mn": {
-        "message": "Kimongolia"
+    "language_chm": {
+        "message": "Meadow Mari"
     },
-    "supported_languages_hmn": {
-        "message": "Mtawa"
+    "language_mni_Mtei": {
+        "message": "Meiteilon (Manipuri)"
     },
-    "supported_languages_my": {
-        "message": "Myanmar"
+    "language_min": {
+        "message": "Minang"
     },
-    "supported_languages_ne": {
-        "message": "Mepali"
+    "language_lus": {
+        "message": "Mizo"
     },
-    "supported_languages_no": {
+    "language_mn": {
+        "message": "Mongolian"
+    },
+    "language_my": {
+        "message": "Myanmar (Burmese)"
+    },
+    "language_nr": {
+        "message": "Ndebele (Kusini)"
+    },
+    "language_new": {
+        "message": "Nepalbhasa (Newari)"
+    },
+    "language_ne": {
+        "message": "Nepali"
+    },
+    "language_nso": {
+        "message": "Sotho ya Kaskazini (Sepedi)"
+    },
+    "language_no": {
         "message": "Kinorwe"
     },
-    "supported_languages_fa": {
-        "message": "Kiajemi"
+    "language_nus": {
+        "message": "Nuer"
     },
-    "supported_languages_pl": {
-        "message": "Kipolandi"
+    "language_oc": {
+        "message": "Occitan"
     },
-    "supported_languages_pt": {
-        "message": "Kireno"
+    "language_or": {
+        "message": "Odia (Oriya)"
     },
-    "supported_languages_pa": {
-        "message": "Kipunjabi"
-    },
-    "supported_languages_ps": {
-        "message": "Pushto"
-    },
-    "supported_languages_ro": {
-        "message": "Kiromania"
-    },
-    "supported_languages_ru": {
-        "message": "Kirusi"
-    },
-    "supported_languages_sm": {
-        "message": "Kisamoa"
-    },
-    "supported_languages_gd": {
-        "message": "Kigaeli cha Scotland"
-    },
-    "supported_languages_sr": {
-        "message": "Kiserbia"
-    },
-    "supported_languages_sn": {
-        "message": "Kishona"
-    },
-    "supported_languages_sd": {
-        "message": "Kisindhi"
-    },
-    "supported_languages_si": {
-        "message": "Kisinhala"
-    },
-    "supported_languages_sk": {
-        "message": "Kislovakia"
-    },
-    "supported_languages_sl": {
-        "message": "Kislovenia"
-    },
-    "supported_languages_so": {
-        "message": "Msomali"
-    },
-    "supported_languages_sx": {
-        "message": "Kisotho"
-    },
-    "supported_languages_es": {
-        "message": "Kihispania"
-    },
-    "supported_languages_su": {
-        "message": "Kisunda"
-    },
-    "supported_languages_sw": {
-        "message": "kiswahili"
-    },
-    "supported_languages_sv": {
-        "message": "Kiswidi"
-    },
-    "supported_languages_tl": {
-        "message": "Kitagalogi"
-    },
-    "supported_languages_tg": {
-        "message": "Tajiki"
-    },
-    "supported_languages_ta": {
-        "message": "Kitamil"
-    },
-    "supported_languages_te": {
-        "message": "Kitelugu"
-    },
-    "supported_languages_th": {
-        "message": "Thai"
-    },
-    "supported_languages_tr": {
-        "message": "Kituruki"
-    },
-    "supported_languages_uk": {
-        "message": "Kiukreni"
-    },
-    "supported_languages_ur": {
-        "message": "Kiurdu"
-    },
-    "supported_languages_uz": {
-        "message": "Kiuzbeki"
-    },
-    "supported_languages_vi": {
-        "message": "Kivietinamu"
-    },
-    "supported_languages_cy": {
-        "message": "Kiwelisi"
-    },
-    "supported_languages_xh": {
-        "message": "Xosa"
-    },
-    "supported_languages_yi": {
-        "message": "Kiyidi"
-    },
-    "supported_languages_yo": {
-        "message": "Kiyoruba"
-    },
-    "supported_languages_zu": {
-        "message": "Kizulu"
-    },
-    "supported_languages_qu": {
-        "message": "Kiquechua"
-    },
-    "supported_languages_om": {
+    "language_om": {
         "message": "Oromo"
     },
-    "supported_languages_ilo": {
-        "message": "Ilocano"
+    "language_pag": {
+        "message": "Pangasinan"
+    },
+    "language_pap": {
+        "message": "Papiamento"
+    },
+    "language_ps": {
+        "message": "Pashto"
+    },
+    "language_fa": {
+        "message": "Kiajemi"
+    },
+    "language_pl": {
+        "message": "Kipolishi"
+    },
+    "language_pt": {
+        "message": "Kireno"
+    },
+    "language_pt_PT": {
+        "message": "Kireno (Ureno)"
+    },
+    "language_pt_BR": {
+        "message": "Kireno (Brazil)"
+    },
+    "language_pa": {
+        "message": "Kipunjabi"
+    },
+    "language_pa_Arab": {
+        "message": "Kipolishi (Shahmukhi)"
+    },
+    "language_qu": {
+        "message": "Quechua"
+    },
+    "language_rom": {
+        "message": "Romani"
+    },
+    "language_ro": {
+        "message": "Kiromania"
+    },
+    "language_rn": {
+        "message": "Rundi"
+    },
+    "language_ru": {
+        "message": "Kirusi"
+    },
+    "language_sm": {
+        "message": "Samoa"
+    },
+    "language_sg": {
+        "message": "Sango"
+    },
+    "language_sa": {
+        "message": "Sanskrit"
+    },
+    "language_gd": {
+        "message": "Scots Gaelic"
+    },
+    "language_sr": {
+        "message": "Serbia"
+    },
+    "language_st": {
+        "message": "Sesotho"
+    },
+    "language_crs": {
+        "message": "Seychellois Creole"
+    },
+    "language_shn": {
+        "message": "Shan"
+    },
+    "language_sn": {
+        "message": "Shirikisho"
+    },
+    "language_scn": {
+        "message": "Sicilian"
+    },
+    "language_szl": {
+        "message": "Silesian"
+    },
+    "language_sd": {
+        "message": "Sindhi"
+    },
+    "language_si": {
+        "message": "Sinhala (Sinhalese)"
+    },
+    "language_sk": {
+        "message": "Kislovak"
+    },
+    "language_sl": {
+        "message": "Kislovenia"
+    },
+    "language_so": {
+        "message": "Kisomali"
+    },
+    "language_es": {
+        "message": "Kihispania"
+    },
+    "language_su": {
+        "message": "Sundanese"
+    },
+    "language_sw": {
+        "message": "Kiswahili"
+    },
+    "language_ss": {
+        "message": "Swati"
+    },
+    "language_sv": {
+        "message": "Kiswidi"
+    },
+    "language_ber": {
+        "message": "Tamazight (Tifinagh)"
+    },
+    "language_ber_latn": {
+        "message": "Tamazight"
+    },
+    "language_tg": {
+        "message": "Tajik"
+    },
+    "language_ta": {
+        "message": "Kitamil"
+    },
+    "language_tt": {
+        "message": "Tatar"
+    },
+    "language_te": {
+        "message": "Telugu"
+    },
+    "language_tet": {
+        "message": "Tetum"
+    },
+    "language_th": {
+        "message": "Thai"
+    },
+    "language_ti": {
+        "message": "Tigrinya"
+    },
+    "language_ts": {
+        "message": "Tsonga"
+    },
+    "language_tn": {
+        "message": "Tswana"
+    },
+    "language_tr": {
+        "message": "Kituruki"
+    },
+    "language_tk": {
+        "message": "Turkmen"
+    },
+    "language_ak": {
+        "message": "TWI (Akan)"
+    },
+    "language_uk": {
+        "message": "Kiukreni"
+    },
+    "language_ur": {
+        "message": "Urdu"
+    },
+    "language_ug": {
+        "message": "Uyghur"
+    },
+    "language_uz": {
+        "message": "Uzbek"
+    },
+    "language_vi": {
+        "message": "Kivietinamu"
+    },
+    "language_cy": {
+        "message": "Wales"
+    },
+    "language_xh": {
+        "message": "Xhosa"
+    },
+    "language_yi": {
+        "message": "Yiddish"
+    },
+    "language_yo": {
+        "message": "Yoruba"
+    },
+    "language_yua": {
+        "message": "Yucatec Maya"
+    },
+    "language_zu": {
+        "message": "Zulu"
     }
 }

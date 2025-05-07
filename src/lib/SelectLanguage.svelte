@@ -1,10 +1,11 @@
 <Listbox
 	class="relative w-min h-min text-sm"
-	bind:value
-	on:listbox_open={() => {
+	change={onchange}
+	onopen={() => {
 		search = '';
 	}}
-	on:change
+	bind:value
+	bind:open
 >
 	<ListboxButton
 		class="
@@ -17,14 +18,16 @@
 			items-center
 			border
 			border-gray-300
-			dark:border-gray-800
+			dark:border-gray-700
 			text-start
 			overflow-hidden
 			whitespace-nowrap
 			rounded-full
 			hover:border-gray-400
-			hover:dark:border-gray-700
+			hover:dark:border-gray-600
 			transition-colors
+			cursor-pointer
+			{open ? 'bg-purple-900/10 dark:bg-purple-100/10' : ''}
 		"
 	>
 		<span class="block truncate">{getI18nLangName(value)}</span>
@@ -34,8 +37,9 @@
 				absolute
 				right-1
 				text-gray-500
+				{open ? 'text-purple-800 dark:text-purple-200' : ''}
 			"
-			d={heroChevronUpDown}
+			d={mdiUnfoldMoreHorizontal}
 		/>
 	</ListboxButton>
 	<ListboxOptions
@@ -63,6 +67,7 @@
 				bind:this={inputSearch}
 				class="
 					w-full
+					px-2
 					h-8
 					bg-white
 					dark:bg-gray-900
@@ -75,28 +80,25 @@
 					focus:ring-0
 					focus:border-gray-100
 					focus:dark:border-gray-800
+					outline-0
 				"
-				placeholder={getMessage('select_language_search_placeholder')}
+				placeholder={browser.i18n.getMessage('select_language_search_placeholder')}
 				spellcheck="false"
 				type="text"
 				bind:value={search}
 				use:inputFocus
 			>
 			{#if search}
-				<ButtonImage
-					class="
-						absolute
-						right-1
-						w-6
-						h-6
-					"
-					icon={heroXMark}
-					round
-					tooltip={{ title: getMessage('tooltip_clear_search') }}
-					on:click={() => {
+				<Button
+					class="absolute right-1"
+					icon={mdiClose}
+					iconSize="20"
+					onclick={() => {
 						search = '';
-						inputSearch.focus();
+						tick().then(() => inputSearch?.focus());
 					}}
+					small
+					title={browser.i18n.getMessage('tooltip_clear_search')}
 				/>
 			{/if}
 		</div>
@@ -109,9 +111,9 @@
 				scrollbar
 			"
 		>
-			{#each langColumns as langColumn}
+			{#each langColumns as langColumn, index (index)}
 				<div class="flex flex-col w-full h-full">
-					{#each langColumn as lang}
+					{#each langColumn as lang, index (index)}
 						<ListboxOption
 							class="
 								relative
@@ -122,98 +124,129 @@
 								items-center
 								whitespace-nowrap
 								select-none
-								hover:bg-gray-800/10
-								dark:hover:bg-gray-200/10
-								aria-selected:bg-blue-600/10
-								aria-selected:dark:bg-blue-400/10
+								hover:bg-purple-900/10
+								dark:hover:bg-purple-100/10
+								aria-selected:bg-purple-900/10
+								aria-selected:dark:bg-purple-100/10
 								rounded-full
 							"
-							value={lang.key}
-							let:selected
+							value={lang.code}
 						>
-							{#if selected}
-								<span class="absolute left-0 pl-3 text-blue-600">
-									<Icon d={heroCheck} />
-								</span>
-							{:else if UILanguage.startsWith(lang.key) && markUILang}
-								<span
-									class="absolute left-0 pl-3 text-gray-500"
-									title="Your language"
-								>
-									<Icon d={heroStar} />
-								</span>
-							{/if}
-							<!-- eslint-disable-next-line svelte/no-at-html-tags -->
-							<span class={selected ? 'text-blue-600 font-medium' : ''}>{@html lang.name}</span>
+							{#snippet children(selected)}
+								{#if selected}
+									<span class="absolute left-0 pl-3 text-purple-800 dark:text-purple-200">
+										<Icon d={mdiCheck} />
+									</span>
+								{:else if UILanguage.startsWith(lang.code) && markUILang}
+									<span
+										class="absolute left-0 pl-3 text-gray-500"
+										title="Your language"
+									>
+										<Icon d={mdiStarOutline} />
+									</span>
+								{/if}
+								<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+								<span class={selected ? 'text-purple-800 dark:text-purple-200 font-medium' : ''}>{@html lang.language}</span>
+							{/snippet}
 						</ListboxOption>
 					{/each}
 				</div>
 			{:else}
-				<p class="w-full py-1 text-center">{getMessage('select_language_search_no_results')}</p>
+				<p class="w-full py-1 text-center">{browser.i18n.getMessage('select_language_search_no_results')}</p>
 			{/each}
 		</div>
 	</ListboxOptions>
 </Listbox>
 
-<script>
+<script lang="ts">
+import type { Action } from 'svelte/action';
+import type { Language } from '~/shared/types';
+import { tick } from 'svelte';
 import { Listbox, ListboxButton, ListboxOptions, ListboxOption } from '~/lib/headless';
-import ButtonImage from '~/lib/ButtonImage.svelte';
-import { languages } from '~/common/settings';
-import { getMessage, getUILanguage } from '~/common/browserApi';
+import Button from '~/lib/Button.svelte';
+import { languages } from '~/shared/languages';
 import Icon from '~/lib/Icon.svelte';
-import { heroCheck, heroChevronUpDown, heroXMark, heroStar } from '~/icons/heroicons';
+import { mdiClose, mdiCheck, mdiStarOutline, mdiUnfoldMoreHorizontal } from '@mdi/js';
 
-export let value;
-export let auto = false;
-export let markUILang = false;
+interface Props {
+	value: string
+	auto?: boolean
+	markUILang?: boolean
+	onchange?: () => void
+}
 
-let inputSearch;
-let search = '';
-let UILanguage = getUILanguage();
+let {
+	value = $bindable(),
+	auto = false,
+	markUILang = false,
+	onchange,
+}: Props = $props();
 
-const inputFocus = elem => {
-	elem.focus();
+let inputSearch = $state<HTMLInputElement>();
+let search = $state<string>('');
+let open = $state<boolean>();
+const UILanguage = browser.i18n.getUILanguage();
+
+const inputFocus: Action<HTMLInputElement> = input => {
+	tick().then(() => input.focus());
 };
 
-const getI18nLangName = langCode => getMessage(`supported_languages_${langCode.replace('-', '_')}`).toLowerCase() || 'language not defined';
+const getI18nLangName = (langCode: string) =>
+	// @ts-expect-error ignore messageName
+	browser.i18n.getMessage(`language_${langCode.replace('-', '_')}`).toLowerCase() || 'language not defined';
 
-const sortedI18nLanguages = Object.entries(languages)
-	.map(([key]) => ({
-		key,
-		name: getI18nLangName(key)
+const sortedI18nLanguages = languages
+	.map(({ code }) => ({
+		code,
+		language: getI18nLangName(code),
 	}))
-	.sort((a, b) => a.name.localeCompare(b.name));
+	.sort((a, b) => a.language.localeCompare(b.language));
 
 if (auto) {
 	sortedI18nLanguages.unshift({
-		key: 'auto',
-		name: getMessage('supported_languages_auto')
+		code: 'auto',
+		language: browser.i18n.getMessage('language_auto'),
 	});
 }
 
-$: filteredLangs = sortedI18nLanguages
+let filteredLangs = $derived<Language[]>(sortedI18nLanguages
 	.filter(i => {
 		const re = new RegExp(`${search}`, 'gi');
-		return re.test(i.key) || re.test(i.name);
+		return re.test(i.code) || re.test(i.language);
 	})
-	.map(({ key, name }) => {
+	.map(({ code, language }) => {
 		if (search !== '') {
 			const re = new RegExp(`(${search})`, 'gi');
 			return {
-				key,
-				name: name.replace(re, '<span class="font-bold text-amber-500">$&</span>')
+				code,
+				language: language.replace(re, '<span class="font-bold text-amber-500">$&</span>'),
 			};
 		}
-		return { key, name };
-	});
+		return {
+			code,
+			language,
+		};
+	}),
+);
 
-const arrayTo2dArray = (array, columnElems) =>
-	array.reduce((rows, val, index) => (index % columnElems === 0
-		? rows.push([val])
-		: rows[rows.length - 1].push(val)) && rows, []);
+let columns = $derived<number>(search === '' ? 3 : 1);
+let langColumns = $derived(listToColumns(filteredLangs, columns));
 
-const listToColumns = (array, columns) => arrayTo2dArray(array, Math.ceil(array.length / columns));
+function arrayTo2dArray(
+	array: Language[],
+	columnElems: number,
+): Language[][] {
+	return array.reduce<Language[][]>((rows, val, index) => {
+		if (index % columnElems === 0) {
+			rows.push([val]);
+		} else {
+			rows[rows.length - 1].push(val);
+		}
+		return rows;
+	}, []);
+}
 
-$: columns = search === '' ? 3 : 1;
-$: langColumns = listToColumns(filteredLangs, columns);
+function listToColumns(array: Language[], columns: number) {
+	return arrayTo2dArray(array, Math.ceil(array.length / columns));
+}
 </script>

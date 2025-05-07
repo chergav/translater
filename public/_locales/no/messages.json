@@ -1,9 +1,14 @@
 {
     "app_name": {
-        "message": "Translater - oversettelse av valgt tekst"
+        "message": "$App_name$ - Oversettelse av valgt tekst",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
     },
     "app_description": {
-        "message": "Oversett valgt tekst med Google Translate med lyst og mørkt tema"
+        "message": "Oversett valgt tekst med Google Translate"
     },
     "app_version": {
         "message": "versjon"
@@ -15,7 +20,7 @@
         "message": "Innstillinger"
     },
     "options_title": {
-        "message": "$APP_NAME$ - innstillinger",
+        "message": "$App_name$ - Innstillinger",
         "placeholders": {
             "app_name": {
                 "content": "Translater"
@@ -23,21 +28,21 @@
         }
     },
     "commands_open_translater": {
-        "message": "Åpne $APP_NAME$",
+        "message": "Åpne $app_name$",
         "placeholders": {
             "app_name": {
                 "content": "Translater"
             }
         }
     },
-    "popup_or_press_keyboard_shortcut": {
-        "message": "eller trykk på en hurtigtast på siden:"
+    "popup_or": {
+        "message": "Eller"
     },
     "options_tab_inline_translate": {
-        "message": "Lesing og innspill"
+        "message": "Lesing og input"
     },
     "options_tab_popup_window": {
-        "message": "Pop-up vindu"
+        "message": "Popup -vindu"
     },
     "options_tab_appearance": {
         "message": "Ytre utseende"
@@ -49,13 +54,13 @@
         "message": "Vis knapp når tekst er valgt"
     },
     "options_text_field_button_show": {
-        "message": "Vis knapp i tekstfeltet"
+        "message": "Vis knapp i TextField"
     },
     "options_hide_button_on_sites": {
         "message": "Skjul knappen på disse nettstedene:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Legg til domener ved å bruke menyen i popup-vinduet på nettstedet du vil ekskludere"
+        "message": "Legg til domener ved hjelp av menyen med popup -vinduet på nettstedet du vil ekskludere"
     },
     "options_show_original_text": {
         "message": "Vis kildetekst"
@@ -64,25 +69,25 @@
         "message": "Vis translitterasjon"
     },
     "options_lock_popup_window": {
-        "message": "Lås popup-vindu"
+        "message": "Lås popup -vindu"
     },
     "options_lock_popup_window_hint": {
-        "message": "Hvis aktivert, lukkes ikke popup ved klikk utenfor"
+        "message": "Hvis aktivert, vil ikke popup -en lukkes når du klikker utenfor den"
     },
     "options_history_length": {
-        "message": "Lengden på historien"
+        "message": "Historieoppføringer (maks.)"
     },
     "options_records_in_history": {
         "message": "Oppføringer i historien:"
     },
     "options_history_enable": {
-        "message": "Aktiver historikk"
+        "message": "Aktiver historie"
     },
     "options_clear_history": {
-        "message": "Slett historikk"
+        "message": "Slett historie"
     },
     "options_delete_history_item": {
-        "message": "Slett fra loggen"
+        "message": "Slett fra historien"
     },
     "options_tts_language": {
         "message": "Språk"
@@ -94,25 +99,55 @@
         "message": "Stemmer"
     },
     "options_tts_table_caption": {
-        "message": "For språk som ikke er oppført, vil en ekstern tekst-til-tale-tjeneste bli brukt."
+        "message": "Hvis et språk ikke er oppført, vil en ekstern tekst-til-tale-tjeneste bli brukt."
     },
     "options_tts_no_voices_found": {
-        "message": "Ingen stemmer funnet i nettleseren. En ekstern tekst-til-tale-tjeneste vil bli brukt."
+        "message": "Nettleseren din støtter ikke talesyntese. Vi bruker en ekstern tjeneste i stedet."
     },
     "options_edit_keyboard_shortcut": {
-        "message": "Rediger hurtigtast"
+        "message": "Rediger tastatursnarveier"
     },
     "options_keyboard_shortcut_open_popup": {
-        "message": "Tastatursnarvei for å åpne popup-vindu:"
+        "message": "Tastatursnarvei til å åpne popup -vinduet"
     },
     "options_key_combination_is_not_set": {
-        "message": "tastekombinasjonen er ikke angitt"
+        "message": "tastatursnarvei er ikke angitt"
+    },
+    "options_font_size": {
+        "message": "Fontstørrelse"
+    },
+    "options_font_size_xs": {
+        "message": "Ekstra liten (12px)"
+    },
+    "options_font_size_sm": {
+        "message": "Liten (14px)"
+    },
+    "options_font_size_md": {
+        "message": "Normal (16px)"
+    },
+    "options_font_size_lg": {
+        "message": "Stor (18px)"
+    },
+    "options_font_size_xl": {
+        "message": "Ekstra stort (20px)"
+    },
+    "options_support_msg": {
+        "message": "Hvis noe ikke fungerer, eller du har noen forslag, vennligst gi meg beskjed her"
+    },
+    "options_support_donations": {
+        "message": "Hvis du vil støtte denne gratis programvaren"
+    },
+    "options_address": {
+        "message": "adresse"
+    },
+    "options_copy_address": {
+        "message": "Kopiadresse"
     },
     "text_expand": {
-        "message": "Mer"
+        "message": "Flere"
     },
     "text_collapse": {
-        "message": "Kollaps"
+        "message": "Mindre"
     },
     "target_lang_label": {
         "message": "Oversett til:"
@@ -121,7 +156,7 @@
         "message": "Ordbok"
     },
     "popup_dictionary_frequency": {
-        "message": "Frekvens"
+        "message": "Hyppighet"
     },
     "popup_definitions": {
         "message": "Definisjoner"
@@ -142,19 +177,19 @@
         "message": "Omvendt oversett"
     },
     "popup_menu_lock_window": {
-        "message": "Lås vindu"
+        "message": "Låsevindu"
     },
     "popup_menu_unlock_window": {
-        "message": "Lås opp vinduet"
+        "message": "Lås opp vindu"
     },
     "popup_menu_show_translate_button": {
         "message": "Vis oversettelsesknapp"
     },
     "popup_menu_hide_translate_button": {
-        "message": "Skjul oversett-knappen"
+        "message": "Skjul oversettelse -knappen"
     },
     "popup_menu_options_link": {
-        "message": "Tilleggsinnstillinger"
+        "message": "Ytterligere innstillinger"
     },
     "popup_placeholder_translation": {
         "message": "Oversettelse"
@@ -166,22 +201,22 @@
         "message": "Mørkt tema"
     },
     "theme_system": {
-        "message": "Standard tema"
+        "message": "Systemtema"
     },
     "tooltip_translate_text": {
         "message": "Oversett valgt tekst"
     },
     "tooltip_copy_to_clipboard": {
-        "message": "Kopiere til utklippstavle"
+        "message": "Kopier til utklippstavlen"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "Kopiering støttes ikke på HTTP-nettsteder"
+        "message": "Kopi er ikke støtte på HTTP -nettsteder"
     },
     "tooltip_copyed": {
-        "message": "Kopiert!"
+        "message": "Kopiert"
     },
     "tooltip_copy_error": {
-        "message": "Kopieringsfeil!"
+        "message": "Kopier feil!"
     },
     "tooltip_listen_to_the_text": {
         "message": "Lytt til tekst"
@@ -199,10 +234,10 @@
         "message": "Framover"
     },
     "tooltip_clear_text": {
-        "message": "Klartekst"
+        "message": "Klar tekst"
     },
     "tooltip_clear_search": {
-        "message": "Tøm søk"
+        "message": "Klart søk"
     },
     "date_today": {
         "message": "i dag"
@@ -211,345 +246,612 @@
         "message": "i går"
     },
     "forefox_perm_header": {
-        "message": "Tillat oppstart i Firefox"
+        "message": "Tillat lansering i Firefox"
     },
     "forefox_perm_text": {
-        "message": "Utvidelsen krever din tillatelse for å få tilgang til nettsteder og oversette i Firefox-nettleseren."
+        "message": "Denne utvidelsen trenger din tillatelse til å få tilgang til nettsteder og oversette dem i Firefox"
     },
     "forefox_perm_button": {
         "message": "Administrer tillatelser"
     },
     "select_language_search_placeholder": {
-        "message": "Finn språk (ISO-kode eller navn)"
+        "message": "Finn språk (ISO -kode eller navn)"
     },
     "select_language_search_no_results": {
         "message": "Ingen resultater"
     },
-    "supported_languages_auto": {
+    "try_my_extensions": {
+        "message": "🚀 Prøv de andre utvidelsene mine"
+    },
+    "language_auto": {
         "message": "oppdage språk"
     },
-    "supported_languages_af": {
-        "message": "afrikansk"
+    "language_ab": {
+        "message": "Abkhaz"
     },
-    "supported_languages_sq": {
-        "message": "albansk"
+    "language_ace": {
+        "message": "Acehnese"
     },
-    "supported_languages_am": {
-        "message": "amharisk"
+    "language_ach": {
+        "message": "Acholi"
     },
-    "supported_languages_ar": {
-        "message": "arabisk"
+    "language_af": {
+        "message": "Afrikaans"
     },
-    "supported_languages_hy": {
-        "message": "armensk"
+    "language_sq": {
+        "message": "Albansk"
     },
-    "supported_languages_az": {
-        "message": "aserbajdsjansk"
+    "language_alz": {
+        "message": "Alur"
     },
-    "supported_languages_eu": {
-        "message": "baskisk"
+    "language_am": {
+        "message": "Amharic"
     },
-    "supported_languages_be": {
-        "message": "hviterussisk"
+    "language_ar": {
+        "message": "Arabisk"
     },
-    "supported_languages_bn": {
-        "message": "bengali"
+    "language_hy": {
+        "message": "Armensk"
     },
-    "supported_languages_bs": {
-        "message": "bosnisk"
+    "language_as": {
+        "message": "Assamesisk"
     },
-    "supported_languages_bg": {
+    "language_awa": {
+        "message": "Awadhi"
+    },
+    "language_ay": {
+        "message": "Aymara"
+    },
+    "language_az": {
+        "message": "Aserbajdsjani"
+    },
+    "language_ban": {
+        "message": "Balinesisk"
+    },
+    "language_bm": {
+        "message": "Bambara"
+    },
+    "language_ba": {
+        "message": "Bashkir"
+    },
+    "language_eu": {
+        "message": "Baskisk"
+    },
+    "language_btx": {
+        "message": "Batak Karo"
+    },
+    "language_bts": {
+        "message": "Batak Simalungun"
+    },
+    "language_bbc": {
+        "message": "Batak Toba"
+    },
+    "language_be": {
+        "message": "Hviterussk"
+    },
+    "language_bem": {
+        "message": "Bemba"
+    },
+    "language_bn": {
+        "message": "Bengali"
+    },
+    "language_bew": {
+        "message": "Betawi"
+    },
+    "language_bho": {
+        "message": "Bhojpuri"
+    },
+    "language_bik": {
+        "message": "Bikol"
+    },
+    "language_bs": {
+        "message": "Bosnian"
+    },
+    "language_br": {
+        "message": "Breton"
+    },
+    "language_bg": {
         "message": "Bulgarsk"
     },
-    "supported_languages_ca": {
-        "message": "katalansk"
+    "language_bua": {
+        "message": "Buryat"
     },
-    "supported_languages_ceb": {
+    "language_yue": {
+        "message": "Kantonesisk"
+    },
+    "language_ca": {
+        "message": "Katalansk"
+    },
+    "language_ceb": {
         "message": "Cebuano"
     },
-    "supported_languages_ny": {
-        "message": "Chewa"
+    "language_ny": {
+        "message": "Chichewa (Nyanja)"
     },
-    "supported_languages_zh_CN": {
-        "message": "forenklet kinesisk"
+    "language_zh_CN": {
+        "message": "Kinesisk (forenklet)"
     },
-    "supported_languages_zh_TW": {
-        "message": "tradisjonell kinesisk"
+    "language_zh_TW": {
+        "message": "Kinesisk (tradisjonell)"
     },
-    "supported_languages_co": {
-        "message": "korsikansk"
+    "language_cv": {
+        "message": "Chuvash"
     },
-    "supported_languages_hr": {
+    "language_co": {
+        "message": "Korsikansk"
+    },
+    "language_crh": {
+        "message": "Krim Tatar"
+    },
+    "language_hr": {
         "message": "Kroatisk"
     },
-    "supported_languages_cs": {
-        "message": "tsjekkisk"
+    "language_cs": {
+        "message": "Tsjekkisk"
     },
-    "supported_languages_da": {
-        "message": "dansk"
+    "language_da": {
+        "message": "Dansk"
     },
-    "supported_languages_nl": {
-        "message": "nederlandsk"
+    "language_din": {
+        "message": "Dinka"
     },
-    "supported_languages_en": {
+    "language_dv": {
+        "message": "Divehi"
+    },
+    "language_doi": {
+        "message": "Dogri"
+    },
+    "language_dov": {
+        "message": "Dombe"
+    },
+    "language_nl": {
+        "message": "Nederlandsk"
+    },
+    "language_dz": {
+        "message": "Dzongkha"
+    },
+    "language_en": {
         "message": "Engelsk"
     },
-    "supported_languages_eo": {
+    "language_eo": {
         "message": "Esperanto"
     },
-    "supported_languages_et": {
-        "message": "estisk"
+    "language_et": {
+        "message": "Estisk"
     },
-    "supported_languages_fi": {
-        "message": "finsk"
+    "language_ee": {
+        "message": "Ewe"
     },
-    "supported_languages_fr": {
-        "message": "fransk"
+    "language_fj": {
+        "message": "Fijian"
     },
-    "supported_languages_fy": {
-        "message": "frisisk"
+    "language_fil": {
+        "message": "Filippino (Tagalog)"
     },
-    "supported_languages_gl": {
-        "message": "galisisk"
+    "language_fi": {
+        "message": "Finsk"
     },
-    "supported_languages_ka": {
-        "message": "georgisk"
+    "language_fr": {
+        "message": "Fransk"
     },
-    "supported_languages_de": {
-        "message": "tysk"
+    "language_fr_FR": {
+        "message": "Fransk (fransk)"
     },
-    "supported_languages_el": {
-        "message": "gresk"
+    "language_fr_CA": {
+        "message": "Fransk (kanadisk)"
     },
-    "supported_languages_gu": {
+    "language_fy": {
+        "message": "Frisisk"
+    },
+    "language_ff": {
+        "message": "Fulfulde"
+    },
+    "language_gaa": {
+        "message": "Ga"
+    },
+    "language_gl": {
+        "message": "Galiker"
+    },
+    "language_lg": {
+        "message": "Ganda (Luganda)"
+    },
+    "language_ka": {
+        "message": "Georgisk"
+    },
+    "language_de": {
+        "message": "Tysk"
+    },
+    "language_el": {
+        "message": "Gresk"
+    },
+    "language_gn": {
+        "message": "Guarani"
+    },
+    "language_gu": {
         "message": "Gujarati"
     },
-    "supported_languages_ht": {
-        "message": "haitisk"
+    "language_ht": {
+        "message": "Haitisk kreolsk"
     },
-    "supported_languages_ha": {
+    "language_cnh": {
+        "message": "Hakha Chin"
+    },
+    "language_ha": {
         "message": "Hausa"
     },
-    "supported_languages_haw": {
-        "message": "Hawaiisk"
+    "language_haw": {
+        "message": "Hawaiian"
     },
-    "supported_languages_he": {
+    "language_iw": {
         "message": "Hebraisk"
     },
-    "supported_languages_iw": {
-        "message": "Hebraisk"
+    "language_hil": {
+        "message": "Hiligaynon"
     },
-    "supported_languages_hi": {
+    "language_hi": {
         "message": "Hindi"
     },
-    "supported_languages_hu": {
-        "message": "ungarsk"
+    "language_hmn": {
+        "message": "Hmong"
     },
-    "supported_languages_is": {
-        "message": "islandsk"
+    "language_hu": {
+        "message": "Ungarsk"
     },
-    "supported_languages_ig": {
+    "language_hrx": {
+        "message": "Hunsrik"
+    },
+    "language_is": {
+        "message": "Islandsk"
+    },
+    "language_ig": {
         "message": "Igbo"
     },
-    "supported_languages_id": {
-        "message": "indonesisk"
+    "language_ilo": {
+        "message": "Iloko"
     },
-    "supported_languages_ga": {
-        "message": "irsk"
+    "language_id": {
+        "message": "Indonesisk"
     },
-    "supported_languages_it": {
-        "message": "italiensk"
+    "language_ga": {
+        "message": "Irsk"
     },
-    "supported_languages_ja": {
-        "message": "japansk"
+    "language_it": {
+        "message": "Italiensk"
     },
-    "supported_languages_jv": {
-        "message": "javanesisk"
+    "language_ja": {
+        "message": "Japansk"
     },
-    "supported_languages_kn": {
+    "language_jw": {
+        "message": "Javanesisk"
+    },
+    "language_kn": {
         "message": "Kannada"
     },
-    "supported_languages_kk": {
-        "message": "kasakhisk"
+    "language_pam": {
+        "message": "Kapampangan"
     },
-    "supported_languages_km": {
+    "language_kk": {
+        "message": "Kazakh"
+    },
+    "language_km": {
         "message": "Khmer"
     },
-    "supported_languages_ky": {
-        "message": "Kirgisisk"
+    "language_cgg": {
+        "message": "Kiga"
     },
-    "supported_languages_ko": {
-        "message": "koreansk"
+    "language_rw": {
+        "message": "Kinyarwanda"
     },
-    "supported_languages_ku": {
-        "message": "kurdisk"
+    "language_ktu": {
+        "message": "Kituba"
     },
-    "supported_languages_lo": {
-        "message": "laotisk"
+    "language_gom": {
+        "message": "Konkani"
     },
-    "supported_languages_la": {
-        "message": "latin"
+    "language_ko": {
+        "message": "Koreansk"
     },
-    "supported_languages_lv": {
-        "message": "latvisk"
+    "language_kri": {
+        "message": "Krio"
     },
-    "supported_languages_lt": {
-        "message": "litauisk"
+    "language_ku": {
+        "message": "Kurdish (Kurmanji)"
     },
-    "supported_languages_lb": {
-        "message": "luxemburgsk"
+    "language_ckb": {
+        "message": "Kurdish (Sorani)"
     },
-    "supported_languages_mk": {
-        "message": "makedonsk"
+    "language_ky": {
+        "message": "Kirgisis"
     },
-    "supported_languages_mg": {
-        "message": "madagaskisk"
+    "language_lo": {
+        "message": "Lao"
     },
-    "supported_languages_ms": {
-        "message": "malaysisk"
+    "language_ltg": {
+        "message": "Latgalian"
     },
-    "supported_languages_ml": {
+    "language_la": {
+        "message": "Latin"
+    },
+    "language_lv": {
+        "message": "Latvisk"
+    },
+    "language_lij": {
+        "message": "Ligurisk"
+    },
+    "language_li": {
+        "message": "Limburgan"
+    },
+    "language_ln": {
+        "message": "Lingala"
+    },
+    "language_lt": {
+        "message": "Litauisk"
+    },
+    "language_lmo": {
+        "message": "Lombard"
+    },
+    "language_luo": {
+        "message": "Luo"
+    },
+    "language_lb": {
+        "message": "Luxembourgish"
+    },
+    "language_mk": {
+        "message": "Makedonsk"
+    },
+    "language_mai": {
+        "message": "Maithili"
+    },
+    "language_mak": {
+        "message": "Makassar"
+    },
+    "language_mg": {
+        "message": "Malagasy"
+    },
+    "language_ms": {
+        "message": "Malay"
+    },
+    "language_ms_Arab": {
+        "message": "Malay (Jawi)"
+    },
+    "language_ml": {
         "message": "Malayalam"
     },
-    "supported_languages_mt": {
-        "message": "maltesisk"
+    "language_mt": {
+        "message": "Maltesisk"
     },
-    "supported_languages_mi": {
+    "language_mi": {
         "message": "Maori"
     },
-    "supported_languages_mr": {
+    "language_mr": {
         "message": "Marathi"
     },
-    "supported_languages_mn": {
-        "message": "mongolsk"
+    "language_chm": {
+        "message": "Meadow Mari"
     },
-    "supported_languages_hmn": {
-        "message": "Munk"
+    "language_mni_Mtei": {
+        "message": "Meiteilon (Manipuri)"
     },
-    "supported_languages_my": {
-        "message": "Myanmar"
+    "language_min": {
+        "message": "Minang"
     },
-    "supported_languages_ne": {
-        "message": "Mepali"
+    "language_lus": {
+        "message": "Mizo"
     },
-    "supported_languages_no": {
-        "message": "norsk"
+    "language_mn": {
+        "message": "Mongolsk"
     },
-    "supported_languages_fa": {
-        "message": "persisk"
+    "language_my": {
+        "message": "Myanmar (Burmese)"
     },
-    "supported_languages_pl": {
-        "message": "Pusse"
+    "language_nr": {
+        "message": "Ndebele (sør)"
     },
-    "supported_languages_pt": {
-        "message": "portugisisk"
+    "language_new": {
+        "message": "Nepalbhasa (Newari)"
     },
-    "supported_languages_pa": {
-        "message": "Punjabi"
+    "language_ne": {
+        "message": "Nepali"
     },
-    "supported_languages_ps": {
-        "message": "Pushto"
+    "language_nso": {
+        "message": "Nord -Sotho (Sepedi)"
     },
-    "supported_languages_ro": {
-        "message": "rumensk"
+    "language_no": {
+        "message": "Norsk"
     },
-    "supported_languages_ru": {
-        "message": "russisk"
+    "language_nus": {
+        "message": "Nuer"
     },
-    "supported_languages_sm": {
-        "message": "samoansk"
+    "language_oc": {
+        "message": "Occitan"
     },
-    "supported_languages_gd": {
-        "message": "skotsk gælisk"
+    "language_or": {
+        "message": "Odia (Oriya)"
     },
-    "supported_languages_sr": {
-        "message": "serbisk"
-    },
-    "supported_languages_sn": {
-        "message": "Shona"
-    },
-    "supported_languages_sd": {
-        "message": "Sindhi"
-    },
-    "supported_languages_si": {
-        "message": "singalesisk"
-    },
-    "supported_languages_sk": {
-        "message": "slovakisk"
-    },
-    "supported_languages_sl": {
-        "message": "slovensk"
-    },
-    "supported_languages_so": {
-        "message": "Somali"
-    },
-    "supported_languages_sx": {
-        "message": "Sotho"
-    },
-    "supported_languages_es": {
-        "message": "spansk"
-    },
-    "supported_languages_su": {
-        "message": "Sundanesisk"
-    },
-    "supported_languages_sw": {
-        "message": "Swahili"
-    },
-    "supported_languages_sv": {
-        "message": "svensk"
-    },
-    "supported_languages_tl": {
-        "message": "Tagalog"
-    },
-    "supported_languages_tg": {
-        "message": "Tadsjiki"
-    },
-    "supported_languages_ta": {
-        "message": "Tamil"
-    },
-    "supported_languages_te": {
-        "message": "Telugu"
-    },
-    "supported_languages_th": {
-        "message": "Thai"
-    },
-    "supported_languages_tr": {
-        "message": "tyrkisk"
-    },
-    "supported_languages_uk": {
-        "message": "ukrainsk"
-    },
-    "supported_languages_ur": {
-        "message": "Urdu"
-    },
-    "supported_languages_uz": {
-        "message": "usbekisk"
-    },
-    "supported_languages_vi": {
-        "message": "vietnamesisk"
-    },
-    "supported_languages_cy": {
-        "message": "walisisk"
-    },
-    "supported_languages_xh": {
-        "message": "Xosa"
-    },
-    "supported_languages_yi": {
-        "message": "Jiddisch"
-    },
-    "supported_languages_yo": {
-        "message": "Yoruba"
-    },
-    "supported_languages_zu": {
-        "message": "Zulu"
-    },
-    "supported_languages_qu": {
-        "message": "Quechua"
-    },
-    "supported_languages_om": {
+    "language_om": {
         "message": "Oromo"
     },
-    "supported_languages_ilo": {
-        "message": "Ilocano"
+    "language_pag": {
+        "message": "Pangasinan"
+    },
+    "language_pap": {
+        "message": "Papiamento"
+    },
+    "language_ps": {
+        "message": "Pashto"
+    },
+    "language_fa": {
+        "message": "Persisk"
+    },
+    "language_pl": {
+        "message": "Pusse"
+    },
+    "language_pt": {
+        "message": "Portugisisk"
+    },
+    "language_pt_PT": {
+        "message": "Portugisisk (Portugal)"
+    },
+    "language_pt_BR": {
+        "message": "Portugisisk (Brasil)"
+    },
+    "language_pa": {
+        "message": "Punjabi"
+    },
+    "language_pa_Arab": {
+        "message": "Punjabi (Shahmukhi)"
+    },
+    "language_qu": {
+        "message": "Quechua"
+    },
+    "language_rom": {
+        "message": "Romani"
+    },
+    "language_ro": {
+        "message": "Rumensk"
+    },
+    "language_rn": {
+        "message": "Rundi"
+    },
+    "language_ru": {
+        "message": "Russisk"
+    },
+    "language_sm": {
+        "message": "Samoan"
+    },
+    "language_sg": {
+        "message": "Sango"
+    },
+    "language_sa": {
+        "message": "Sanskrit"
+    },
+    "language_gd": {
+        "message": "Skotsk gælisk"
+    },
+    "language_sr": {
+        "message": "Serbisk"
+    },
+    "language_st": {
+        "message": "Sesotho"
+    },
+    "language_crs": {
+        "message": "Seychellois kreolsk"
+    },
+    "language_shn": {
+        "message": "Shan"
+    },
+    "language_sn": {
+        "message": "Shona"
+    },
+    "language_scn": {
+        "message": "Siciliansk"
+    },
+    "language_szl": {
+        "message": "Silesisk"
+    },
+    "language_sd": {
+        "message": "Sindhi"
+    },
+    "language_si": {
+        "message": "Sinhala (singalesisk)"
+    },
+    "language_sk": {
+        "message": "Slovakisk"
+    },
+    "language_sl": {
+        "message": "Slovenske"
+    },
+    "language_so": {
+        "message": "Somali"
+    },
+    "language_es": {
+        "message": "Spansk"
+    },
+    "language_su": {
+        "message": "Sundanese"
+    },
+    "language_sw": {
+        "message": "Swahili"
+    },
+    "language_ss": {
+        "message": "Swati"
+    },
+    "language_sv": {
+        "message": "Svensk"
+    },
+    "language_ber": {
+        "message": "Tamazight (Tifinagh)"
+    },
+    "language_ber_latn": {
+        "message": "Tamazight"
+    },
+    "language_tg": {
+        "message": "Tajik"
+    },
+    "language_ta": {
+        "message": "Tamil"
+    },
+    "language_tt": {
+        "message": "Tatar"
+    },
+    "language_te": {
+        "message": "Telugu"
+    },
+    "language_tet": {
+        "message": "Tetum"
+    },
+    "language_th": {
+        "message": "Thai"
+    },
+    "language_ti": {
+        "message": "Tigrinya"
+    },
+    "language_ts": {
+        "message": "Tsonga"
+    },
+    "language_tn": {
+        "message": "Tswana"
+    },
+    "language_tr": {
+        "message": "Tyrkisk"
+    },
+    "language_tk": {
+        "message": "Turkmen"
+    },
+    "language_ak": {
+        "message": "Twi (akan)"
+    },
+    "language_uk": {
+        "message": "Ukrainsk"
+    },
+    "language_ur": {
+        "message": "Urdu"
+    },
+    "language_ug": {
+        "message": "Uyghur"
+    },
+    "language_uz": {
+        "message": "Usbek"
+    },
+    "language_vi": {
+        "message": "Vietnamesisk"
+    },
+    "language_cy": {
+        "message": "Walisisk"
+    },
+    "language_xh": {
+        "message": "Xhosa"
+    },
+    "language_yi": {
+        "message": "Jiddisk"
+    },
+    "language_yo": {
+        "message": "Yoruba"
+    },
+    "language_yua": {
+        "message": "Yucatec Maya"
+    },
+    "language_zu": {
+        "message": "Zulu"
     }
 }

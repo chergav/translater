@@ -24,7 +24,7 @@ const store = writable({
 	activeItemIndex: null,
 	buttonRef: null,
 	menuItemsRef: null,
-	itemsRef: []
+	itemsRef: [],
 });
 
 const closeMenu = () => {

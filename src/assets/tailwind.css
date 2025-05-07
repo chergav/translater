@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+    --hem: 1rem; /* hem = Host rem */
+}
+
+:host {
+    --hem: 16px;
+}
+
+html {
+	color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		color-scheme: dark;
+	}
+}
+
+body {
+	font-family: 'Inter Variable', sans-serif;
+	font-optical-sizing: auto;
+	font-size: 1rem;
+	@apply min-h-screen min-w-[360px] bg-gray-100 dark:bg-gray-950 text-gray-900 dark:text-gray-100 text-base;
+}
+
+@utility scrollbar {
+	&::-webkit-scrollbar {
+		scrollbar-color: auto;
+		width: 7px;
+		height: 7px;
+	}
+
+	&::-webkit-scrollbar-corner {
+		display: none;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--color-gray-300);
+		border-radius: 4px;
+	}
+
+	&::-webkit-scrollbar-thumb:hover {
+		background-color: var(--color-gray-400);
+	}
+
+	@variant dark {
+		&::-webkit-scrollbar-thumb {
+			background-color: var(--color-gray-700);
+		}
+
+		&::-webkit-scrollbar-thumb:hover {
+			background-color: var(--color-gray-600);
+		}
+	}
+}
+
+@theme {
+    --spacing: calc(0.25 * var(--hem));
+
+    /* Font size */
+    --text-xs: calc(0.75 * var(--hem));
+    --text-sm: calc(0.875 * var(--hem));
+    --text-base: calc(1 * var(--hem));
+    --text-lg: calc(1.125 * var(--hem));
+    --text-xl: calc(1.25 * var(--hem));
+    --text-2xl: calc(1.5 * var(--hem));
+    --text-3xl: calc(1.875 * var(--hem));
+    --text-4xl: calc(2.25 * var(--hem));
+    --text-5xl: calc(3 * var(--hem));
+    --text-6xl: calc(3.75 * var(--hem));
+    --text-7xl: calc(4.5 * var(--hem));
+    --text-8xl: calc(6 * var(--hem));
+    --text-9xl: calc(8 * var(--hem));
+
+    /* Radius */
+    --radius-xs: calc(0.125 * var(--hem));
+    --radius-sm: calc(0.25 * var(--hem));
+    --radius-md: calc(0.375 * var(--hem));
+    --radius-lg: calc(0.5 * var(--hem));
+    --radius-xl: calc(0.75 * var(--hem));
+    --radius-2xl: calc(1 * var(--hem));
+    --radius-3xl: calc(1.5 * var(--hem));
+    --radius-4xl: calc(2 * var(--hem));
+
+    /* Breakpoint */
+    --breakpoint-sm: calc(40 * var(--hem));
+    --breakpoint-md: calc(48 * var(--hem));
+    --breakpoint-lg: calc(64 * var(--hem));
+    --breakpoint-xl: calc(80 * var(--hem));
+    --breakpoint-2xl: calc(96 * var(--hem));
+
+    /* Container */
+    --container-3xs: calc(16 * var(--hem));
+    --container-2xs: calc(18 * var(--hem));
+    --container-xs: calc(20 * var(--hem));
+    --container-sm: calc(24 * var(--hem));
+    --container-md: calc(28 * var(--hem));
+    --container-lg: calc(32 * var(--hem));
+    --container-xl: calc(36 * var(--hem));
+    --container-2xl: calc(42 * var(--hem));
+    --container-3xl: calc(48 * var(--hem));
+    --container-4xl: calc(56 * var(--hem));
+    --container-5xl: calc(64 * var(--hem));
+    --container-6xl: calc(72 * var(--hem));
+    --container-7xl: calc(80 * var(--hem));
+}

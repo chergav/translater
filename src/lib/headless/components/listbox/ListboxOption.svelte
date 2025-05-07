@@ -1,61 +1,77 @@
 <svelte:element
-	this={tag}
+	this={'li'}
 	bind:this={element}
+	class={className}
 	aria-selected={selected === true ? selected : undefined}
+	onclick={onClick}
+	onkeypress={onKeypress}
 	role="option"
 	tabindex={active ? 0 : -1}
-	on:click={onClick}
-	on:keypress={onKeypress}
-	{...$$restProps}
+	{...rest}
 >
-	<slot {selected} />
+	{@render children(selected)}
 </svelte:element>
 
-<script>
+<script lang="ts">
+import type { Snippet } from 'svelte';
 import { onMount, onDestroy } from 'svelte';
-import { useListboxContext } from './Listbox.svelte';
+import { getListboxContext } from './context';
 
-export let value;
+interface Props {
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	value: any
+	class: string
+	children: Snippet<[ selected: boolean ]>
+}
 
-let tag = 'li';
-let element;
+let {
+	value = $bindable(),
+	class: className,
+	children,
+	...rest
+}: Props = $props();
 
-const store = useListboxContext();
+const store = getListboxContext();
 
-$: selected = $store.value === value;
+let element = $state<HTMLLIElement>();
 
-const setSelectValue = async value => {
-	$store.select(value);
-	$store.value = value;
-	$store.listboxOpen = false;
-	$store.buttonRef.focus({ preventScroll: true });
-	$store.activeOptionIndex = null;
+let selected = $derived(store.value === value);
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const setSelectValue = (value: any) => {
+	store.select(value);
+	store.listboxOpen = false;
+	store.buttonRef?.focus({ preventScroll: true });
+	store.activeOptionIndex = null;
 };
 
 const onClick = () => {
 	setSelectValue(value);
 };
 
-const onKeypress = e => {
+const onKeypress = (e: KeyboardEvent) => {
 	if (e.code === 'Space' || e.code === 'Enter') {
 		setSelectValue(value);
 	}
 };
 
-$: active = $store.activeOptionIndex !== null
-	? $store.optionsRef[$store.activeOptionIndex] === element
-	: false;
+let active = $derived(store.activeOptionIndex !== null
+	? store.optionsRef[store.activeOptionIndex] === element
+	: false,
+);
 
 onMount(() => {
-	$store.optionsRef = [...$store.optionsRef, element];
-	if (selected) {
-		$store.activeOptionIndex = $store.optionsRef.indexOf(element);
+	if (element) {
+		store.optionsRef.push(element);
+	}
+	if (selected && element) {
+		store.activeOptionIndex = store.optionsRef.indexOf(element);
 		element.focus({ preventScroll: true });
 		element.scrollIntoView({ block: 'nearest' });
 	}
 });
 
 onDestroy(() => {
-	$store.optionsRef = $store.optionsRef.filter(i => i !== element);
+	store.optionsRef = store.optionsRef.filter(i => i !== element);
 });
 </script>

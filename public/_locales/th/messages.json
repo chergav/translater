@@ -1,9 +1,14 @@
 {
     "app_name": {
-        "message": "Translater - การแปลข้อความที่เลือก"
+        "message": "$app_name$ - การแปลข้อความที่เลือก",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
     },
     "app_description": {
-        "message": "แปลข้อความที่เลือกด้วย Google Translate ด้วยธีมสีอ่อนและสีเข้ม"
+        "message": "แปลข้อความที่เลือกด้วย Google Translate"
     },
     "app_version": {
         "message": "รุ่น"
@@ -15,7 +20,7 @@
         "message": "การตั้งค่า"
     },
     "options_title": {
-        "message": "$APP_NAME$ - การตั้งค่า",
+        "message": "$app_name$ - การตั้งค่า",
         "placeholders": {
             "app_name": {
                 "content": "Translater"
@@ -23,24 +28,24 @@
         }
     },
     "commands_open_translater": {
-        "message": "เปิด $APP_NAME$",
+        "message": "เปิด $app_name$",
         "placeholders": {
             "app_name": {
                 "content": "Translater"
             }
         }
     },
-    "popup_or_press_keyboard_shortcut": {
-        "message": "หรือกดแป้นพิมพ์ลัดบนเพจ:"
+    "popup_or": {
+        "message": "หรือ"
     },
     "options_tab_inline_translate": {
         "message": "การอ่านและการป้อนข้อมูล"
     },
     "options_tab_popup_window": {
-        "message": "หน้าต่างป๊อปอัพ"
+        "message": "หน้าต่างป๊อปอัป"
     },
     "options_tab_appearance": {
-        "message": "ลักษณะภายนอก"
+        "message": "รูปลักษณ์ภายนอก"
     },
     "options_tab_history": {
         "message": "ประวัติศาสตร์"
@@ -49,40 +54,40 @@
         "message": "ปุ่มแสดงเมื่อเลือกข้อความ"
     },
     "options_text_field_button_show": {
-        "message": "แสดงปุ่มในช่องข้อความ"
+        "message": "ปุ่มแสดงใน textfield"
     },
     "options_hide_button_on_sites": {
         "message": "ซ่อนปุ่มบนเว็บไซต์เหล่านี้:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "เพิ่มโดเมนโดยใช้เมนูหน้าต่างป๊อปอัปบนไซต์ที่คุณต้องการยกเว้น"
+        "message": "เพิ่มโดเมนโดยใช้เมนูหน้าต่างป๊อปอัปบนเว็บไซต์ที่คุณต้องการแยกออก"
     },
     "options_show_original_text": {
         "message": "แสดงข้อความต้นฉบับ"
     },
     "options_show_transliteration": {
-        "message": "แสดงการทับศัพท์"
+        "message": "แสดงการแปล"
     },
     "options_lock_popup_window": {
-        "message": "ล็อคหน้าต่างป๊อปอัป"
+        "message": "ล็อคหน้าต่างป๊อปอัพ"
     },
     "options_lock_popup_window_hint": {
-        "message": "หากเปิดใช้งานป๊อปอัปจะไม่ปิดเมื่อคลิกภายนอก"
+        "message": "หากเปิดใช้งานป๊อปอัปจะไม่ปิดเมื่อคลิกด้านนอก"
     },
     "options_history_length": {
-        "message": "ความยาวของประวัติศาสตร์"
+        "message": "รายการประวัติ (สูงสุด)"
     },
     "options_records_in_history": {
         "message": "รายการในประวัติศาสตร์:"
     },
     "options_history_enable": {
-        "message": "เปิดใช้งานประวัติ"
+        "message": "เปิดใช้งานประวัติศาสตร์"
     },
     "options_clear_history": {
         "message": "ลบประวัติ"
     },
     "options_delete_history_item": {
-        "message": "ลบออกจากประวัติ"
+        "message": "ลบออกจากประวัติศาสตร์"
     },
     "options_tts_language": {
         "message": "ภาษา"
@@ -94,25 +99,55 @@
         "message": "เสียง"
     },
     "options_tts_table_caption": {
-        "message": "สำหรับภาษาที่ไม่อยู่ในรายการ จะใช้บริการอ่านออกเสียงข้อความภายนอก"
+        "message": "หากไม่ได้อยู่ในรายการภาษาจะมีการใช้บริการข้อความภายนอกกับการพูด"
     },
     "options_tts_no_voices_found": {
-        "message": "ไม่พบเสียงในเบราว์เซอร์ ระบบจะใช้บริการแปลงข้อความเป็นคำพูดภายนอก"
+        "message": "เบราว์เซอร์ของคุณไม่สนับสนุนการสังเคราะห์คำพูด เราจะใช้บริการภายนอกแทน"
     },
     "options_edit_keyboard_shortcut": {
         "message": "แก้ไขแป้นพิมพ์ลัด"
     },
     "options_keyboard_shortcut_open_popup": {
-        "message": "แป้นพิมพ์ลัดเพื่อเปิดหน้าต่างป๊อปอัป:"
+        "message": "แป้นพิมพ์ลัดเพื่อเปิดหน้าต่างป๊อปอัพ"
     },
     "options_key_combination_is_not_set": {
-        "message": "ไม่ได้ตั้งค่าคีย์ผสม"
+        "message": "ไม่ได้ตั้งค่าคีย์บอร์ดทางลัด"
+    },
+    "options_font_size": {
+        "message": "ขนาดตัวอักษร"
+    },
+    "options_font_size_xs": {
+        "message": "เล็กพิเศษ (12px)"
+    },
+    "options_font_size_sm": {
+        "message": "เล็ก (14px)"
+    },
+    "options_font_size_md": {
+        "message": "ปกติ (16px)"
+    },
+    "options_font_size_lg": {
+        "message": "ใหญ่ (18px)"
+    },
+    "options_font_size_xl": {
+        "message": "ใหญ่พิเศษ (20px)"
+    },
+    "options_support_msg": {
+        "message": "หากสิ่งที่ไม่ทำงานหรือคุณมีคำแนะนำใด ๆ โปรดแจ้งให้เราทราบที่นี่"
+    },
+    "options_support_donations": {
+        "message": "หากคุณต้องการสนับสนุนซอฟต์แวร์ฟรีนี้"
+    },
+    "options_address": {
+        "message": "ที่อยู่"
+    },
+    "options_copy_address": {
+        "message": "ที่อยู่คัดลอก"
     },
     "text_expand": {
         "message": "มากกว่า"
     },
     "text_collapse": {
-        "message": "ยุบ"
+        "message": "น้อย"
     },
     "target_lang_label": {
         "message": "แปลเป็น:"
@@ -136,16 +171,16 @@
         "message": "บางทีคุณอาจหมายถึง:"
     },
     "popup_original_language": {
-        "message": "ภาษาต้นฉบับ:"
+        "message": "ภาษาดั้งเดิม:"
     },
     "popup_menu_reverse_translate": {
-        "message": "แปลกลับ"
+        "message": "แปลย้อนกลับ"
     },
     "popup_menu_lock_window": {
-        "message": "ล็อคหน้าต่าง"
+        "message": "หน้าต่างล็อค"
     },
     "popup_menu_unlock_window": {
-        "message": "ปลดล็อคหน้าต่าง"
+        "message": "ปลดล็อกหน้าต่าง"
     },
     "popup_menu_show_translate_button": {
         "message": "แสดงปุ่มแปล"
@@ -163,10 +198,10 @@
         "message": "ธีมแสง"
     },
     "theme_dark": {
-        "message": "ธีมสีเข้ม"
+        "message": "ธีมมืด"
     },
     "theme_system": {
-        "message": "ธีมเริ่มต้น"
+        "message": "ชุดรูปแบบระบบ"
     },
     "tooltip_translate_text": {
         "message": "แปลข้อความที่เลือก"
@@ -175,13 +210,13 @@
         "message": "คัดลอกไปยังคลิปบอร์ด"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "การคัดลอกไม่รองรับไซต์ HTTP"
+        "message": "การคัดลอกไม่รองรับในเว็บไซต์ HTTP"
     },
     "tooltip_copyed": {
-        "message": "คัดลอกแล้ว!"
+        "message": "คัดลอก"
     },
     "tooltip_copy_error": {
-        "message": "ข้อผิดพลาดในการคัดลอก!"
+        "message": "คัดลอกข้อผิดพลาด!"
     },
     "tooltip_listen_to_the_text": {
         "message": "ฟังข้อความ"
@@ -190,7 +225,7 @@
         "message": "หยุด"
     },
     "tooltip_listen_language_is_not_support": {
-        "message": "ภาษาไม่รองรับ"
+        "message": "ภาษาไม่สนับสนุน"
     },
     "tooltip_go_back": {
         "message": "กลับ"
@@ -214,342 +249,609 @@
         "message": "อนุญาตให้เปิดตัวใน Firefox"
     },
     "forefox_perm_text": {
-        "message": "ส่วนขยายต้องได้รับอนุญาตจากคุณในการเข้าถึงเว็บไซต์และแปลในเบราว์เซอร์ Firefox"
+        "message": "ส่วนขยายนี้ต้องการการอนุญาตของคุณในการเข้าถึงเว็บไซต์และแปลเป็น Firefox"
     },
     "forefox_perm_button": {
         "message": "จัดการสิทธิ์"
     },
     "select_language_search_placeholder": {
-        "message": "ค้นหาภาษา (รหัส ISO หรือชื่อ)"
+        "message": "ค้นหาภาษา (รหัสหรือชื่อ ISO)"
     },
     "select_language_search_no_results": {
         "message": "ไม่มีผลลัพธ์"
     },
-    "supported_languages_auto": {
+    "try_my_extensions": {
+        "message": "🚀ลองส่วนขยายอื่น ๆ ของฉัน"
+    },
+    "language_auto": {
         "message": "ตรวจจับภาษา"
     },
-    "supported_languages_af": {
-        "message": "แอฟริกัน"
+    "language_ab": {
+        "message": "Abkhaz"
     },
-    "supported_languages_sq": {
-        "message": "แอลเบเนีย"
+    "language_ace": {
+        "message": "ชาวอาเจห์น"
     },
-    "supported_languages_am": {
+    "language_ach": {
+        "message": "Acholi"
+    },
+    "language_af": {
+        "message": "ชาวแอฟริกัน"
+    },
+    "language_sq": {
+        "message": "ชาวแอลเบเนีย"
+    },
+    "language_alz": {
+        "message": "อลูร์"
+    },
+    "language_am": {
         "message": "อัมฮาริก"
     },
-    "supported_languages_ar": {
+    "language_ar": {
         "message": "ภาษาอาหรับ"
     },
-    "supported_languages_hy": {
-        "message": "อาร์เมเนีย"
+    "language_hy": {
+        "message": "เกี่ยวกับอาร์เมเนีย"
     },
-    "supported_languages_az": {
+    "language_as": {
+        "message": "อัสสัม"
+    },
+    "language_awa": {
+        "message": "Awadhi"
+    },
+    "language_ay": {
+        "message": "Aymara"
+    },
+    "language_az": {
         "message": "อาเซอร์ไบจัน"
     },
-    "supported_languages_eu": {
-        "message": "บาสก์"
+    "language_ban": {
+        "message": "ชาวบาหลี"
     },
-    "supported_languages_be": {
-        "message": "เบลารุส"
+    "language_bm": {
+        "message": "Bambara"
     },
-    "supported_languages_bn": {
-        "message": "เบงกาลี"
+    "language_ba": {
+        "message": "Bashkir"
     },
-    "supported_languages_bs": {
-        "message": "บอสเนีย"
+    "language_eu": {
+        "message": "เกี่ยวกับบาสก์"
     },
-    "supported_languages_bg": {
-        "message": "บัลแกเรีย"
+    "language_btx": {
+        "message": "Batak Karo"
     },
-    "supported_languages_ca": {
+    "language_bts": {
+        "message": "Batak Simalungun"
+    },
+    "language_bbc": {
+        "message": "Batak Toba"
+    },
+    "language_be": {
+        "message": "ชาวเบลารุส"
+    },
+    "language_bem": {
+        "message": "เบมบา"
+    },
+    "language_bn": {
+        "message": "เบงกอล"
+    },
+    "language_bew": {
+        "message": "Betawi"
+    },
+    "language_bho": {
+        "message": "Bhojpuri"
+    },
+    "language_bik": {
+        "message": "รถม้าชนิดหนึ่ง"
+    },
+    "language_bs": {
+        "message": "ชาวบอสเนีย"
+    },
+    "language_br": {
+        "message": "เบรตัน"
+    },
+    "language_bg": {
+        "message": "ชาวบัลแกเรีย"
+    },
+    "language_bua": {
+        "message": "ฝังศพ"
+    },
+    "language_yue": {
+        "message": "กวางตุ้ง"
+    },
+    "language_ca": {
         "message": "คาตาลัน"
     },
-    "supported_languages_ceb": {
-        "message": "เซบู"
+    "language_ceb": {
+        "message": "เซบูะ"
     },
-    "supported_languages_ny": {
-        "message": "ชีวา"
+    "language_ny": {
+        "message": "Chichewa (Nyanja)"
     },
-    "supported_languages_zh_CN": {
-        "message": "จีนตัวย่อ"
+    "language_zh_CN": {
+        "message": "ภาษาจีน (ง่าย)"
     },
-    "supported_languages_zh_TW": {
-        "message": "จีนดั้งเดิม"
+    "language_zh_TW": {
+        "message": "จีน (ดั้งเดิม)"
     },
-    "supported_languages_co": {
-        "message": "คอร์ซิกา"
+    "language_cv": {
+        "message": "แช่"
     },
-    "supported_languages_hr": {
-        "message": "โครเอเชีย"
+    "language_co": {
+        "message": "ชาวคอร์ซาน"
     },
-    "supported_languages_cs": {
-        "message": "เช็ก"
+    "language_crh": {
+        "message": "ไครเมีย Tatar"
     },
-    "supported_languages_da": {
-        "message": "ภาษาเดนมาร์ก"
+    "language_hr": {
+        "message": "เกี่ยวกับภาษาโครเอเชีย"
     },
-    "supported_languages_nl": {
-        "message": "ภาษาดัตช์"
+    "language_cs": {
+        "message": "ภาษาเช็ก"
     },
-    "supported_languages_en": {
+    "language_da": {
+        "message": "เกี่ยวกับเดนมาร์ก"
+    },
+    "language_din": {
+        "message": "Dinka"
+    },
+    "language_dv": {
+        "message": "ดำน้ำ"
+    },
+    "language_doi": {
+        "message": "คนโง่"
+    },
+    "language_dov": {
+        "message": "Dombe"
+    },
+    "language_nl": {
+        "message": "ชาวดัตช์"
+    },
+    "language_dz": {
+        "message": "Dzongkha"
+    },
+    "language_en": {
         "message": "ภาษาอังกฤษ"
     },
-    "supported_languages_eo": {
-        "message": "เอสเปรันโต"
+    "language_eo": {
+        "message": "ชาวเอสเปอร์รันโต"
     },
-    "supported_languages_et": {
+    "language_et": {
         "message": "เอสโตเนีย"
     },
-    "supported_languages_fi": {
+    "language_ee": {
+        "message": "อุย"
+    },
+    "language_fj": {
+        "message": "ชาวฟิจิ"
+    },
+    "language_fil": {
+        "message": "ฟิลิปปินส์ (ตากาล็อก)"
+    },
+    "language_fi": {
         "message": "ภาษาฟินแลนด์"
     },
-    "supported_languages_fr": {
+    "language_fr": {
         "message": "ภาษาฝรั่งเศส"
     },
-    "supported_languages_fy": {
-        "message": "ฟริเซียน"
+    "language_fr_FR": {
+        "message": "ฝรั่งเศส (ฝรั่งเศส)"
     },
-    "supported_languages_gl": {
+    "language_fr_CA": {
+        "message": "ฝรั่งเศส (แคนาดา)"
+    },
+    "language_fy": {
+        "message": "Frisian"
+    },
+    "language_ff": {
+        "message": "คนที่เต็มไปด้วยน้ำ"
+    },
+    "language_gaa": {
+        "message": "GA"
+    },
+    "language_gl": {
         "message": "กาลิเซีย"
     },
-    "supported_languages_ka": {
-        "message": "จอร์เจีย"
+    "language_lg": {
+        "message": "Ganda (Luganda)"
     },
-    "supported_languages_de": {
-        "message": "เยอรมัน"
+    "language_ka": {
+        "message": "ชาวจอร์เจีย"
     },
-    "supported_languages_el": {
+    "language_de": {
+        "message": "ชาวเยอรมัน"
+    },
+    "language_el": {
         "message": "กรีก"
     },
-    "supported_languages_gu": {
-        "message": "คุชราต"
+    "language_gn": {
+        "message": "Guarani"
     },
-    "supported_languages_ht": {
-        "message": "ชาวเฮติ"
+    "language_gu": {
+        "message": "รัฐคุชราต"
     },
-    "supported_languages_ha": {
+    "language_ht": {
+        "message": "ชาวเฮติครีโอล"
+    },
+    "language_cnh": {
+        "message": "Hakha Chin"
+    },
+    "language_ha": {
         "message": "เฮาซา"
     },
-    "supported_languages_haw": {
+    "language_haw": {
         "message": "ฮาวาย"
     },
-    "supported_languages_he": {
+    "language_iw": {
         "message": "ภาษาฮีบรู"
     },
-    "supported_languages_iw": {
-        "message": "ภาษาฮีบรู"
+    "language_hil": {
+        "message": "Hiligaynon"
     },
-    "supported_languages_hi": {
-        "message": "ฮินดี"
+    "language_hi": {
+        "message": "ภาษาฮินดี"
     },
-    "supported_languages_hu": {
-        "message": "ภาษาฮังการี"
+    "language_hmn": {
+        "message": "ม้ง"
     },
-    "supported_languages_is": {
-        "message": "ไอซ์แลนด์"
+    "language_hu": {
+        "message": "ชาวฮังการี"
     },
-    "supported_languages_ig": {
-        "message": "อิกโบ"
+    "language_hrx": {
+        "message": "ฮันซิก"
     },
-    "supported_languages_id": {
+    "language_is": {
+        "message": "เกี่ยวกับไอซ์แลนด์"
+    },
+    "language_ig": {
+        "message": "igbo"
+    },
+    "language_ilo": {
+        "message": "iloko"
+    },
+    "language_id": {
         "message": "ชาวอินโดนีเซีย"
     },
-    "supported_languages_ga": {
-        "message": "ไอริช"
+    "language_ga": {
+        "message": "เกี่ยวกับไอริช"
     },
-    "supported_languages_it": {
-        "message": "ภาษาอิตาลี"
+    "language_it": {
+        "message": "อิตาลี"
     },
-    "supported_languages_ja": {
+    "language_ja": {
         "message": "ญี่ปุ่น"
     },
-    "supported_languages_jv": {
-        "message": "ชวา"
+    "language_jw": {
+        "message": "ชาวชวา"
     },
-    "supported_languages_kn": {
-        "message": "กันนาดา"
+    "language_kn": {
+        "message": "ภาษากันนาดา"
     },
-    "supported_languages_kk": {
+    "language_pam": {
+        "message": "Kapampangan"
+    },
+    "language_kk": {
         "message": "คาซัค"
     },
-    "supported_languages_km": {
-        "message": "เขมร"
+    "language_km": {
+        "message": "เขมรตัว"
     },
-    "supported_languages_ky": {
-        "message": "คีร์กีซ"
+    "language_cgg": {
+        "message": "Kiga"
     },
-    "supported_languages_ko": {
+    "language_rw": {
+        "message": "Kinyarwanda"
+    },
+    "language_ktu": {
+        "message": "คิตลูบา"
+    },
+    "language_gom": {
+        "message": "Konkani"
+    },
+    "language_ko": {
         "message": "เกาหลี"
     },
-    "supported_languages_ku": {
-        "message": "เคิร์ด"
+    "language_kri": {
+        "message": "Krio"
     },
-    "supported_languages_lo": {
+    "language_ku": {
+        "message": "Kurdish (Kurmanji)"
+    },
+    "language_ckb": {
+        "message": "เคิร์ด (Sorani)"
+    },
+    "language_ky": {
+        "message": "คีร์กีซ"
+    },
+    "language_lo": {
         "message": "ลาว"
     },
-    "supported_languages_la": {
-        "message": "ละติน"
+    "language_ltg": {
+        "message": "Latgalian"
     },
-    "supported_languages_lv": {
-        "message": "ลัตเวีย"
+    "language_la": {
+        "message": "ภาษาละติน"
     },
-    "supported_languages_lt": {
-        "message": "ลิทัวเนีย"
+    "language_lv": {
+        "message": "เกี่ยวกับลัตเวีย"
     },
-    "supported_languages_lb": {
-        "message": "ภาษาลักเซมเบิร์ก"
+    "language_lij": {
+        "message": "Ligurian"
     },
-    "supported_languages_mk": {
-        "message": "มาซิโดเนีย"
+    "language_li": {
+        "message": "Limburgan"
     },
-    "supported_languages_mg": {
-        "message": "มาลากาซี"
+    "language_ln": {
+        "message": "Lingala"
     },
-    "supported_languages_ms": {
-        "message": "มาเลย์"
+    "language_lt": {
+        "message": "เกี่ยวกับลิทัวเนีย"
     },
-    "supported_languages_ml": {
+    "language_lmo": {
+        "message": "ลอมบาร์ด"
+    },
+    "language_luo": {
+        "message": "Luo"
+    },
+    "language_lb": {
+        "message": "ลักเซมเบิร์ก"
+    },
+    "language_mk": {
+        "message": "ชาวมาซิโดเนีย"
+    },
+    "language_mai": {
+        "message": "maithili"
+    },
+    "language_mak": {
+        "message": "มาสซาร์"
+    },
+    "language_mg": {
+        "message": "มาลากาเซ"
+    },
+    "language_ms": {
+        "message": "มลายู"
+    },
+    "language_ms_Arab": {
+        "message": "มาเลย์ (Jawi)"
+    },
+    "language_ml": {
         "message": "มาลายาลัม"
     },
-    "supported_languages_mt": {
+    "language_mt": {
         "message": "ภาษามอลตา"
     },
-    "supported_languages_mi": {
+    "language_mi": {
         "message": "ชาวเมารี"
     },
-    "supported_languages_mr": {
-        "message": "ภาษามราฐี"
+    "language_mr": {
+        "message": "มาราธี"
     },
-    "supported_languages_mn": {
-        "message": "มองโกเลีย"
+    "language_chm": {
+        "message": "ทุ่งหญ้ามารี"
     },
-    "supported_languages_hmn": {
-        "message": "พระ"
+    "language_mni_Mtei": {
+        "message": "Meiteilon (Manipuri)"
     },
-    "supported_languages_my": {
-        "message": "พม่า"
+    "language_min": {
+        "message": "มินัง"
     },
-    "supported_languages_ne": {
-        "message": "เมปาลี"
+    "language_lus": {
+        "message": "มิโซะ"
     },
-    "supported_languages_no": {
-        "message": "ภาษานอร์เวย์"
+    "language_mn": {
+        "message": "ชาวมองโกเลีย"
     },
-    "supported_languages_fa": {
-        "message": "เปอร์เซีย"
+    "language_my": {
+        "message": "พม่า (พม่า)"
     },
-    "supported_languages_pl": {
+    "language_nr": {
+        "message": "Ndebele (ใต้)"
+    },
+    "language_new": {
+        "message": "Nepalbhasa (Newari)"
+    },
+    "language_ne": {
+        "message": "เนปาล"
+    },
+    "language_nso": {
+        "message": "Northern Sotho (Sepedi)"
+    },
+    "language_no": {
+        "message": "นอร์เวย์"
+    },
+    "language_nus": {
+        "message": "คนขี้เกียจ"
+    },
+    "language_oc": {
+        "message": "เป็นหนึ่งเดียว"
+    },
+    "language_or": {
+        "message": "Odia (Oriya)"
+    },
+    "language_om": {
+        "message": "oromo"
+    },
+    "language_pag": {
+        "message": "ชาวปังานัน"
+    },
+    "language_pap": {
+        "message": "Papiamento"
+    },
+    "language_ps": {
+        "message": "Pashto"
+    },
+    "language_fa": {
+        "message": "ชาวเปอร์เซีย"
+    },
+    "language_pl": {
         "message": "ขัด"
     },
-    "supported_languages_pt": {
-        "message": "โปรตุเกส"
+    "language_pt": {
+        "message": "ชาวโปรตุเกส"
     },
-    "supported_languages_pa": {
+    "language_pt_PT": {
+        "message": "โปรตุเกส (โปรตุเกส)"
+    },
+    "language_pt_BR": {
+        "message": "โปรตุเกส (บราซิล)"
+    },
+    "language_pa": {
         "message": "ปัญจาบ"
     },
-    "supported_languages_ps": {
-        "message": "พุชโต"
+    "language_pa_Arab": {
+        "message": "ปัญจาบ (Shahmukhi)"
     },
-    "supported_languages_ro": {
-        "message": "โรมาเนีย"
+    "language_qu": {
+        "message": "คนขี้ขลาด"
     },
-    "supported_languages_ru": {
-        "message": "ภาษารัสเซีย"
+    "language_rom": {
+        "message": "ชาวโรมัน"
     },
-    "supported_languages_sm": {
-        "message": "ซามัว"
+    "language_ro": {
+        "message": "เกี่ยวกับโรมาเนีย"
     },
-    "supported_languages_gd": {
-        "message": "ภาษาเกลิคสกอตแลนด์"
+    "language_rn": {
+        "message": "Rundi"
     },
-    "supported_languages_sr": {
-        "message": "เซอร์เบีย"
+    "language_ru": {
+        "message": "ชาวรัสเซีย"
     },
-    "supported_languages_sn": {
+    "language_sm": {
+        "message": "ประเทศซามัว"
+    },
+    "language_sg": {
+        "message": "ซังโกะ"
+    },
+    "language_sa": {
+        "message": "ภาษาสันสกฤต"
+    },
+    "language_gd": {
+        "message": "สก็อตเกลิค"
+    },
+    "language_sr": {
+        "message": "ประเทศเซอร์เบีย"
+    },
+    "language_st": {
+        "message": "Sesotho"
+    },
+    "language_crs": {
+        "message": "เซเชลส์ครีโอล"
+    },
+    "language_shn": {
+        "message": "ชาน"
+    },
+    "language_sn": {
         "message": "โชนา"
     },
-    "supported_languages_sd": {
-        "message": "สินธี"
+    "language_scn": {
+        "message": "ชาวซิซิลี"
     },
-    "supported_languages_si": {
-        "message": "สิงหล"
+    "language_szl": {
+        "message": "เกี่ยวกับซิลีเซียน"
     },
-    "supported_languages_sk": {
-        "message": "สโลวัก"
+    "language_sd": {
+        "message": "ซินธี"
     },
-    "supported_languages_sl": {
-        "message": "ภาษาสโลเวเนีย"
+    "language_si": {
+        "message": "Sinhala (Sinhalese)"
     },
-    "supported_languages_so": {
+    "language_sk": {
+        "message": "ชาวสโลวะเกีย"
+    },
+    "language_sl": {
+        "message": "สโลวีเนีย"
+    },
+    "language_so": {
         "message": "โซมาเลีย"
     },
-    "supported_languages_sx": {
-        "message": "โซโท"
+    "language_es": {
+        "message": "เกี่ยวกับภาษาสเปน"
     },
-    "supported_languages_es": {
-        "message": "สเปน"
+    "language_su": {
+        "message": "ชาวซุนดา"
     },
-    "supported_languages_su": {
-        "message": "ซุนดา"
+    "language_sw": {
+        "message": "ภาษาสวาฮิลี"
     },
-    "supported_languages_sw": {
-        "message": "สวาฮีลี"
+    "language_ss": {
+        "message": "swati"
     },
-    "supported_languages_sv": {
+    "language_sv": {
         "message": "ภาษาสวีเดน"
     },
-    "supported_languages_tl": {
-        "message": "ตากาล็อก"
+    "language_ber": {
+        "message": "Tamazight (Tifinagh)"
     },
-    "supported_languages_tg": {
-        "message": "ทาจิกิ"
+    "language_ber_latn": {
+        "message": "Tamazight"
     },
-    "supported_languages_ta": {
+    "language_tg": {
+        "message": "ทาจิก"
+    },
+    "language_ta": {
         "message": "ทมิฬ"
     },
-    "supported_languages_te": {
+    "language_tt": {
+        "message": "ตาตาร์"
+    },
+    "language_te": {
         "message": "เตลูกู"
     },
-    "supported_languages_th": {
+    "language_tet": {
+        "message": "tetum"
+    },
+    "language_th": {
         "message": "แบบไทย"
     },
-    "supported_languages_tr": {
-        "message": "ภาษาตุรกี"
+    "language_ti": {
+        "message": "Tigrinya"
     },
-    "supported_languages_uk": {
-        "message": "ภาษายูเครน"
+    "language_ts": {
+        "message": "ซองกา"
     },
-    "supported_languages_ur": {
+    "language_tn": {
+        "message": "TSWANA"
+    },
+    "language_tr": {
+        "message": "ตุรกี"
+    },
+    "language_tk": {
+        "message": "ชาวเติร์กเมน"
+    },
+    "language_ak": {
+        "message": "Twi (Akan)"
+    },
+    "language_uk": {
+        "message": "ชาวยูเครน"
+    },
+    "language_ur": {
         "message": "ภาษาอูรดู"
     },
-    "supported_languages_uz": {
+    "language_ug": {
+        "message": "uyghur"
+    },
+    "language_uz": {
         "message": "อุซเบก"
     },
-    "supported_languages_vi": {
-        "message": "ภาษาเวียดนาม"
+    "language_vi": {
+        "message": "เวียดนาม"
     },
-    "supported_languages_cy": {
-        "message": "เวลส์"
+    "language_cy": {
+        "message": "ชาวเวลส์"
     },
-    "supported_languages_xh": {
+    "language_xh": {
         "message": "โซซา"
     },
-    "supported_languages_yi": {
+    "language_yi": {
         "message": "ภาษายิดดิช"
     },
-    "supported_languages_yo": {
+    "language_yo": {
         "message": "โยรูบา"
     },
-    "supported_languages_zu": {
+    "language_yua": {
+        "message": "Yucatec Maya"
+    },
+    "language_zu": {
         "message": "ซูลู"
-    },
-    "supported_languages_qu": {
-        "message": "เคชัว"
-    },
-    "supported_languages_om": {
-        "message": "โอโรโม"
-    },
-    "supported_languages_ilo": {
-        "message": "อิโลคาโน"
     }
 }

@@ -1,21 +1,26 @@
 {
     "app_name": {
-        "message": "Translater - переклад виділеного тексту"
+        "message": "$App_name$ - переклад вибраного тексту",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
     },
     "app_description": {
-        "message": "Перекладіть виділений текст за допомогою Google Translate зі світлою та темною темами"
+        "message": "Перекладіть вибраний текст за допомогою Google Translate"
     },
     "app_version": {
         "message": "версія"
     },
     "context_menus_title": {
-        "message": "Перекласти виділений текст"
+        "message": "Перекласти вибраний текст"
     },
     "popup_menu_options": {
         "message": "Налаштування"
     },
     "options_title": {
-        "message": "$APP_NAME$ - налаштування",
+        "message": "$App_name$ - Налаштування",
         "placeholders": {
             "app_name": {
                 "content": "Translater"
@@ -23,15 +28,15 @@
         }
     },
     "commands_open_translater": {
-        "message": "Відкрийте $APP_NAME$",
+        "message": "Відкрийте $app_name$",
         "placeholders": {
             "app_name": {
                 "content": "Translater"
             }
         }
     },
-    "popup_or_press_keyboard_shortcut": {
-        "message": "або натисніть комбінацію клавіш на сторінці:"
+    "popup_or": {
+        "message": "Або"
     },
     "options_tab_inline_translate": {
         "message": "Читання та введення"
@@ -43,34 +48,34 @@
         "message": "Зовнішній вигляд"
     },
     "options_tab_history": {
-        "message": "історія"
+        "message": "Історія"
     },
     "options_inline_button_show": {
-        "message": "Показувати кнопку, коли вибрано текст"
+        "message": "Показати кнопку, коли вибрано текст"
     },
     "options_text_field_button_show": {
-        "message": "Показати кнопку в текстовому полі"
+        "message": "Показати кнопку в TextField"
     },
     "options_hide_button_on_sites": {
         "message": "Сховати кнопку на цих сайтах:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Додайте домени за допомогою меню спливаючого вікна на сайті, який потрібно виключити"
+        "message": "Додайте домени за допомогою меню спливаючого вікна на сайті, який ви хочете виключити"
     },
     "options_show_original_text": {
-        "message": "Показати вихідний текст"
+        "message": "Показати текст джерела"
     },
     "options_show_transliteration": {
         "message": "Показати транслітерацію"
     },
     "options_lock_popup_window": {
-        "message": "Блокування спливаючого вікна"
+        "message": "Вікно блокування спливаючого вікна"
     },
     "options_lock_popup_window_hint": {
-        "message": "Якщо ввімкнено, спливаюче вікно не закриватиметься після клацання ззовні"
+        "message": "Якщо ввімкнено, спливаюче вікно не закриється, натиснувши поза ним"
     },
     "options_history_length": {
-        "message": "Довжина історії"
+        "message": "Записи історії (макс.)"
     },
     "options_records_in_history": {
         "message": "Записи в історії:"
@@ -88,31 +93,61 @@
         "message": "Мова"
     },
     "options_tts_default_voice": {
-        "message": "Голос за умовчанням"
+        "message": "Голос за замовчуванням"
     },
     "options_tts_voices": {
         "message": "Голоси"
     },
     "options_tts_table_caption": {
-        "message": "Для мов, яких немає в списку, використовуватиметься зовнішня служба синтезу мовлення."
+        "message": "Якщо мова не вказана, буде використана зовнішня служба тексту-мовлення."
     },
     "options_tts_no_voices_found": {
-        "message": "Немає голосів у браузері. Використовуватиметься зовнішня служба синтезу мовлення."
+        "message": "Ваш браузер не підтримує синтез мови. Натомість ми будемо використовувати зовнішню послугу."
     },
     "options_edit_keyboard_shortcut": {
-        "message": "Редагувати комбінацію клавіш"
+        "message": "Редагувати ярлики клавіатури"
     },
     "options_keyboard_shortcut_open_popup": {
-        "message": "Комбінація клавіш для відкриття спливаючого вікна:"
+        "message": "Ярлик клавіатури для відкриття спливаючого вікна"
     },
     "options_key_combination_is_not_set": {
-        "message": "комбінація клавіш не встановлена"
+        "message": "Ярлик клавіатури не встановлений"
+    },
+    "options_font_size": {
+        "message": "Розмір шрифту"
+    },
+    "options_font_size_xs": {
+        "message": "Зайвий невеликий (12px)"
+    },
+    "options_font_size_sm": {
+        "message": "Маленький (14px)"
+    },
+    "options_font_size_md": {
+        "message": "Нормальний (16px)"
+    },
+    "options_font_size_lg": {
+        "message": "Великий (18px)"
+    },
+    "options_font_size_xl": {
+        "message": "Надзвичайно великий (20px)"
+    },
+    "options_support_msg": {
+        "message": "Якщо щось не працює, або у вас є пропозиції, будь ласка, повідомте мене тут"
+    },
+    "options_support_donations": {
+        "message": "Якщо ви хочете підтримати це безкоштовне програмне забезпечення"
+    },
+    "options_address": {
+        "message": "адреса"
+    },
+    "options_copy_address": {
+        "message": "Адреса копії"
     },
     "text_expand": {
-        "message": "більше"
+        "message": "Більше"
     },
     "text_collapse": {
-        "message": "Колапс"
+        "message": "Менше"
     },
     "target_lang_label": {
         "message": "Перекласти на:"
@@ -124,7 +159,7 @@
         "message": "Частота"
     },
     "popup_definitions": {
-        "message": "визначення"
+        "message": "Визначення"
     },
     "popup_definitions_synonyms": {
         "message": "Синоніми:"
@@ -136,13 +171,13 @@
         "message": "Можливо, ви мали на увазі:"
     },
     "popup_original_language": {
-        "message": "Мова оригіналу:"
+        "message": "Оригінальна мова:"
     },
     "popup_menu_reverse_translate": {
         "message": "Зворотний переклад"
     },
     "popup_menu_lock_window": {
-        "message": "Блокування вікна"
+        "message": "Вікно блокування"
     },
     "popup_menu_unlock_window": {
         "message": "Розблокувати вікно"
@@ -160,49 +195,49 @@
         "message": "Переклад"
     },
     "theme_light": {
-        "message": "Світла тема"
+        "message": "Легка тема"
     },
     "theme_dark": {
         "message": "Темна тема"
     },
     "theme_system": {
-        "message": "Тема за замовчуванням"
+        "message": "Системна тема"
     },
     "tooltip_translate_text": {
-        "message": "Перекласти виділений текст"
+        "message": "Перекласти вибраний текст"
     },
     "tooltip_copy_to_clipboard": {
-        "message": "Копіювати в буфер обміну"
+        "message": "Скопіюйте в буфер обміну"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "Копіювання не підтримується на сайтах HTTP"
+        "message": "Копія не є підтримкою на HTTP -сайтах"
     },
     "tooltip_copyed": {
-        "message": "Скопійовано!"
+        "message": "Скопійований"
     },
     "tooltip_copy_error": {
         "message": "Помилка копіювання!"
     },
     "tooltip_listen_to_the_text": {
-        "message": "Прослухати текст"
+        "message": "Слухайте текст"
     },
     "tooltip_listen_stop": {
         "message": "СТІЙ"
     },
     "tooltip_listen_language_is_not_support": {
-        "message": "Мова не підтримується"
+        "message": "Мова не є підтримкою"
     },
     "tooltip_go_back": {
-        "message": "Назад"
+        "message": "Спинка"
     },
     "tooltip_go_forward": {
-        "message": "вперед"
+        "message": "Вперед"
     },
     "tooltip_clear_text": {
-        "message": "Чистий текст"
+        "message": "Чіткий текст"
     },
     "tooltip_clear_search": {
-        "message": "Очистити пошук"
+        "message": "Чіткий пошук"
     },
     "date_today": {
         "message": "сьогодні"
@@ -214,342 +249,609 @@
         "message": "Дозволити запуск у Firefox"
     },
     "forefox_perm_text": {
-        "message": "Розширенню потрібен ваш дозвіл на доступ до веб-сайтів і переклад у браузері Firefox."
+        "message": "Це розширення потребує вашого дозволу на доступ до веб -сайтів та перекладу їх у Firefox"
     },
     "forefox_perm_button": {
-        "message": "Керувати дозволами"
+        "message": "Керуйте дозволами"
     },
     "select_language_search_placeholder": {
-        "message": "Пошук мов (код або назва ISO)"
+        "message": "Знайти мови (ISO -код або ім'я)"
     },
     "select_language_search_no_results": {
         "message": "Немає результатів"
     },
-    "supported_languages_auto": {
-        "message": "Визначити мову"
+    "try_my_extensions": {
+        "message": "🚀 Спробуйте інші мої розширення"
     },
-    "supported_languages_af": {
-        "message": "африканський"
+    "language_auto": {
+        "message": "Виявити мову"
     },
-    "supported_languages_sq": {
-        "message": "албанець"
+    "language_ab": {
+        "message": "Абхаз"
     },
-    "supported_languages_am": {
-        "message": "амхарська"
+    "language_ace": {
+        "message": "Аценський"
     },
-    "supported_languages_ar": {
-        "message": "арабська"
+    "language_ach": {
+        "message": "Аколі"
     },
-    "supported_languages_hy": {
-        "message": "вірменський"
+    "language_af": {
+        "message": "Африкаани"
     },
-    "supported_languages_az": {
-        "message": "Азербайджанський"
+    "language_sq": {
+        "message": "Албанський"
     },
-    "supported_languages_eu": {
-        "message": "Баскська"
+    "language_alz": {
+        "message": "Аур"
     },
-    "supported_languages_be": {
-        "message": "білоруська"
+    "language_am": {
+        "message": "Амхарський"
     },
-    "supported_languages_bn": {
-        "message": "Бенгальська"
+    "language_ar": {
+        "message": "Арабський"
     },
-    "supported_languages_bs": {
-        "message": "боснійський"
+    "language_hy": {
+        "message": "Вірменський"
     },
-    "supported_languages_bg": {
-        "message": "Болгарська"
+    "language_as": {
+        "message": "Асамський"
     },
-    "supported_languages_ca": {
-        "message": "каталонська"
+    "language_awa": {
+        "message": "Авадхі"
     },
-    "supported_languages_ceb": {
+    "language_ay": {
+        "message": "Аймара"
+    },
+    "language_az": {
+        "message": "Азербайджані"
+    },
+    "language_ban": {
+        "message": "Балійський"
+    },
+    "language_bm": {
+        "message": "Бамбара"
+    },
+    "language_ba": {
+        "message": "Башкір"
+    },
+    "language_eu": {
+        "message": "Баска"
+    },
+    "language_btx": {
+        "message": "Батак Каро"
+    },
+    "language_bts": {
+        "message": "Батак Сімалунгун"
+    },
+    "language_bbc": {
+        "message": "Батак Тоба"
+    },
+    "language_be": {
+        "message": "Білоруський"
+    },
+    "language_bem": {
+        "message": "Бемба"
+    },
+    "language_bn": {
+        "message": "Бенгальський"
+    },
+    "language_bew": {
+        "message": "Бетаві"
+    },
+    "language_bho": {
+        "message": "Бхойпурі"
+    },
+    "language_bik": {
+        "message": "Бікол"
+    },
+    "language_bs": {
+        "message": "Боснійський"
+    },
+    "language_br": {
+        "message": "Бретон"
+    },
+    "language_bg": {
+        "message": "Болгарський"
+    },
+    "language_bua": {
+        "message": "Бурит"
+    },
+    "language_yue": {
+        "message": "Кантонський"
+    },
+    "language_ca": {
+        "message": "Каталонський"
+    },
+    "language_ceb": {
         "message": "Себуано"
     },
-    "supported_languages_ny": {
-        "message": "Chewa"
+    "language_ny": {
+        "message": "Chichewa (Nyanja)"
     },
-    "supported_languages_zh_CN": {
-        "message": "Китайська спрощена"
+    "language_zh_CN": {
+        "message": "Китайська (спрощена)"
     },
-    "supported_languages_zh_TW": {
-        "message": "Китайський традиційний"
+    "language_zh_TW": {
+        "message": "Китайський (традиційний)"
     },
-    "supported_languages_co": {
-        "message": "Корсиканець"
+    "language_cv": {
+        "message": "Чуваш"
     },
-    "supported_languages_hr": {
-        "message": "Хорватська"
+    "language_co": {
+        "message": "Корсикан"
     },
-    "supported_languages_cs": {
-        "message": "чеська"
+    "language_crh": {
+        "message": "Кримський татар"
     },
-    "supported_languages_da": {
-        "message": "датська"
+    "language_hr": {
+        "message": "Хорватський"
     },
-    "supported_languages_nl": {
-        "message": "голландська"
+    "language_cs": {
+        "message": "Чеський"
     },
-    "supported_languages_en": {
-        "message": "англійська"
+    "language_da": {
+        "message": "Датський"
     },
-    "supported_languages_eo": {
+    "language_din": {
+        "message": "Дінка"
+    },
+    "language_dv": {
+        "message": "Дайвхі"
+    },
+    "language_doi": {
+        "message": "Догрі"
+    },
+    "language_dov": {
+        "message": "Домінь"
+    },
+    "language_nl": {
+        "message": "Голландський"
+    },
+    "language_dz": {
+        "message": "Дзонгха"
+    },
+    "language_en": {
+        "message": "Англійська мова"
+    },
+    "language_eo": {
         "message": "Есперанто"
     },
-    "supported_languages_et": {
-        "message": "Естонська"
+    "language_et": {
+        "message": "Естонський"
     },
-    "supported_languages_fi": {
-        "message": "фінська"
+    "language_ee": {
+        "message": "Овець"
     },
-    "supported_languages_fr": {
-        "message": "французька"
+    "language_fj": {
+        "message": "Фіджіан"
     },
-    "supported_languages_fy": {
-        "message": "фризька"
+    "language_fil": {
+        "message": "Філіппін (Tagalog)"
     },
-    "supported_languages_gl": {
-        "message": "галицький"
+    "language_fi": {
+        "message": "Фінський"
     },
-    "supported_languages_ka": {
-        "message": "грузинський"
+    "language_fr": {
+        "message": "Французький"
     },
-    "supported_languages_de": {
+    "language_fr_FR": {
+        "message": "Французька (французька)"
+    },
+    "language_fr_CA": {
+        "message": "Французька (канадська)"
+    },
+    "language_fy": {
+        "message": "Фризький"
+    },
+    "language_ff": {
+        "message": "Фулфулд"
+    },
+    "language_gaa": {
+        "message": "Га"
+    },
+    "language_gl": {
+        "message": "Галійка"
+    },
+    "language_lg": {
+        "message": "Ганда (Луганда)"
+    },
+    "language_ka": {
+        "message": "Грузинський"
+    },
+    "language_de": {
         "message": "Німецький"
     },
-    "supported_languages_el": {
-        "message": "грецька"
+    "language_el": {
+        "message": "Грецький"
     },
-    "supported_languages_gu": {
+    "language_gn": {
+        "message": "Гуарані"
+    },
+    "language_gu": {
         "message": "Гуджараті"
     },
-    "supported_languages_ht": {
-        "message": "Гаїтянський"
+    "language_ht": {
+        "message": "Гаїтян Креоль"
     },
-    "supported_languages_ha": {
+    "language_cnh": {
+        "message": "Хаха Чін"
+    },
+    "language_ha": {
         "message": "Хауса"
     },
-    "supported_languages_haw": {
-        "message": "Гавайська"
+    "language_haw": {
+        "message": "Гавайський"
     },
-    "supported_languages_he": {
-        "message": "іврит"
+    "language_iw": {
+        "message": "Іврит"
     },
-    "supported_languages_iw": {
-        "message": "іврит"
+    "language_hil": {
+        "message": "Hiligaynon"
     },
-    "supported_languages_hi": {
+    "language_hi": {
         "message": "Хінді"
     },
-    "supported_languages_hu": {
-        "message": "угорська"
+    "language_hmn": {
+        "message": "Хмонг"
     },
-    "supported_languages_is": {
-        "message": "ісландська"
+    "language_hu": {
+        "message": "Угорський"
     },
-    "supported_languages_ig": {
-        "message": "Ігбо"
+    "language_hrx": {
+        "message": "Хунсрік"
     },
-    "supported_languages_id": {
-        "message": "індонезійська"
+    "language_is": {
+        "message": "Ісландський"
     },
-    "supported_languages_ga": {
-        "message": "ірландський"
+    "language_ig": {
+        "message": "Igbo"
     },
-    "supported_languages_it": {
-        "message": "італійська"
+    "language_ilo": {
+        "message": "Iloko"
     },
-    "supported_languages_ja": {
+    "language_id": {
+        "message": "Індонезійський"
+    },
+    "language_ga": {
+        "message": "Ірландський"
+    },
+    "language_it": {
+        "message": "Італійський"
+    },
+    "language_ja": {
         "message": "Японський"
     },
-    "supported_languages_jv": {
-        "message": "яванський"
+    "language_jw": {
+        "message": "Яванський"
     },
-    "supported_languages_kn": {
-        "message": "каннада"
+    "language_kn": {
+        "message": "Канада"
     },
-    "supported_languages_kk": {
-        "message": "казахська"
+    "language_pam": {
+        "message": "Капампанган"
     },
-    "supported_languages_km": {
-        "message": "кхмерська"
+    "language_kk": {
+        "message": "Казаха"
     },
-    "supported_languages_ky": {
-        "message": "киргизький"
+    "language_km": {
+        "message": "Кхмер"
     },
-    "supported_languages_ko": {
-        "message": "корейська"
+    "language_cgg": {
+        "message": "Кіга"
     },
-    "supported_languages_ku": {
-        "message": "курдська"
+    "language_rw": {
+        "message": "Kinyarwanda"
     },
-    "supported_languages_lo": {
-        "message": "Лаоський"
+    "language_ktu": {
+        "message": "Кібаба"
     },
-    "supported_languages_la": {
-        "message": "латинь"
+    "language_gom": {
+        "message": "Конкані"
     },
-    "supported_languages_lv": {
-        "message": "латиська"
+    "language_ko": {
+        "message": "Корейський"
     },
-    "supported_languages_lt": {
-        "message": "литовський"
+    "language_kri": {
+        "message": "Кріо"
     },
-    "supported_languages_lb": {
-        "message": "люксембурзький"
+    "language_ku": {
+        "message": "Курдський (Курманджі)"
     },
-    "supported_languages_mk": {
-        "message": "македонська"
+    "language_ckb": {
+        "message": "Курдський (Сорані)"
     },
-    "supported_languages_mg": {
-        "message": "малагасійська"
+    "language_ky": {
+        "message": "Киргиз"
     },
-    "supported_languages_ms": {
-        "message": "малайська"
+    "language_lo": {
+        "message": "Лао"
     },
-    "supported_languages_ml": {
-        "message": "малаялам"
+    "language_ltg": {
+        "message": "Латгальський"
     },
-    "supported_languages_mt": {
-        "message": "мальтійська"
+    "language_la": {
+        "message": "Латинський"
     },
-    "supported_languages_mi": {
+    "language_lv": {
+        "message": "Латвійський"
+    },
+    "language_lij": {
+        "message": "Лігуріан"
+    },
+    "language_li": {
+        "message": "Кінцівка"
+    },
+    "language_ln": {
+        "message": "Лінгала"
+    },
+    "language_lt": {
+        "message": "Литовський"
+    },
+    "language_lmo": {
+        "message": "Ламбард"
+    },
+    "language_luo": {
+        "message": "Луо"
+    },
+    "language_lb": {
+        "message": "Люксембургій"
+    },
+    "language_mk": {
+        "message": "Македонський"
+    },
+    "language_mai": {
+        "message": "Мейтілі"
+    },
+    "language_mak": {
+        "message": "Макассар"
+    },
+    "language_mg": {
+        "message": "Малагасійський"
+    },
+    "language_ms": {
+        "message": "Малайський"
+    },
+    "language_ms_Arab": {
+        "message": "Малай (jawi)"
+    },
+    "language_ml": {
+        "message": "Малаялам"
+    },
+    "language_mt": {
+        "message": "Мальтійський"
+    },
+    "language_mi": {
         "message": "Маорі"
     },
-    "supported_languages_mr": {
-        "message": "маратхі"
+    "language_mr": {
+        "message": "Маратхі"
     },
-    "supported_languages_mn": {
-        "message": "монгольська"
+    "language_chm": {
+        "message": "Луг Марі"
     },
-    "supported_languages_hmn": {
-        "message": "Чернець"
+    "language_mni_Mtei": {
+        "message": "Meiteilon (Manipuri)"
     },
-    "supported_languages_my": {
-        "message": "М'янма"
+    "language_min": {
+        "message": "Міняк"
     },
-    "supported_languages_ne": {
-        "message": "Мепалі"
+    "language_lus": {
+        "message": "Мізо"
     },
-    "supported_languages_no": {
-        "message": "норвезька"
+    "language_mn": {
+        "message": "Монгольський"
     },
-    "supported_languages_fa": {
-        "message": "перська"
+    "language_my": {
+        "message": "М'янма (бірманці)"
     },
-    "supported_languages_pl": {
-        "message": "польський"
+    "language_nr": {
+        "message": "Ndebele (південь)"
     },
-    "supported_languages_pt": {
-        "message": "португальська"
+    "language_new": {
+        "message": "Непальбхаса (Ньюарі)"
     },
-    "supported_languages_pa": {
-        "message": "Пенджабі"
+    "language_ne": {
+        "message": "Непальський"
     },
-    "supported_languages_ps": {
-        "message": "пушту"
+    "language_nso": {
+        "message": "Північний Сото (Сепеді)"
     },
-    "supported_languages_ro": {
-        "message": "румунська"
+    "language_no": {
+        "message": "Норвезький"
     },
-    "supported_languages_ru": {
-        "message": "російський"
+    "language_nus": {
+        "message": "Нюер"
     },
-    "supported_languages_sm": {
-        "message": "Самоанська"
+    "language_oc": {
+        "message": "Оцвітський"
     },
-    "supported_languages_gd": {
-        "message": "Шотландська гельська"
+    "language_or": {
+        "message": "Odia (Oriya)"
     },
-    "supported_languages_sr": {
-        "message": "сербська"
-    },
-    "supported_languages_sn": {
-        "message": "Шона"
-    },
-    "supported_languages_sd": {
-        "message": "Сіндхі"
-    },
-    "supported_languages_si": {
-        "message": "сингальська"
-    },
-    "supported_languages_sk": {
-        "message": "словацький"
-    },
-    "supported_languages_sl": {
-        "message": "словенська"
-    },
-    "supported_languages_so": {
-        "message": "сомалі"
-    },
-    "supported_languages_sx": {
-        "message": "сото"
-    },
-    "supported_languages_es": {
-        "message": "Іспанська"
-    },
-    "supported_languages_su": {
-        "message": "Сунданська"
-    },
-    "supported_languages_sw": {
-        "message": "Суахілі"
-    },
-    "supported_languages_sv": {
-        "message": "шведська"
-    },
-    "supported_languages_tl": {
-        "message": "тагальська"
-    },
-    "supported_languages_tg": {
-        "message": "таджицький"
-    },
-    "supported_languages_ta": {
-        "message": "тамільська"
-    },
-    "supported_languages_te": {
-        "message": "Телугу"
-    },
-    "supported_languages_th": {
-        "message": "тайська"
-    },
-    "supported_languages_tr": {
-        "message": "турецька"
-    },
-    "supported_languages_uk": {
-        "message": "українська"
-    },
-    "supported_languages_ur": {
-        "message": "урду"
-    },
-    "supported_languages_uz": {
-        "message": "узбецький"
-    },
-    "supported_languages_vi": {
-        "message": "в'єтнамська"
-    },
-    "supported_languages_cy": {
-        "message": "Валлійська"
-    },
-    "supported_languages_xh": {
-        "message": "Xosa"
-    },
-    "supported_languages_yi": {
-        "message": "ідиш"
-    },
-    "supported_languages_yo": {
-        "message": "йоруба"
-    },
-    "supported_languages_zu": {
-        "message": "Зулу"
-    },
-    "supported_languages_qu": {
-        "message": "Кечуа"
-    },
-    "supported_languages_om": {
+    "language_om": {
         "message": "Оромо"
     },
-    "supported_languages_ilo": {
-        "message": "Ілокано"
+    "language_pag": {
+        "message": "Пангасинан"
+    },
+    "language_pap": {
+        "message": "Папіменто"
+    },
+    "language_ps": {
+        "message": "Шпилька"
+    },
+    "language_fa": {
+        "message": "Перський"
+    },
+    "language_pl": {
+        "message": "Польський"
+    },
+    "language_pt": {
+        "message": "Португальський"
+    },
+    "language_pt_PT": {
+        "message": "Португальська (Португалія)"
+    },
+    "language_pt_BR": {
+        "message": "Португальська (Бразилія)"
+    },
+    "language_pa": {
+        "message": "Пенджабі"
+    },
+    "language_pa_Arab": {
+        "message": "Пенджабі (Шахмухі)"
+    },
+    "language_qu": {
+        "message": "Кечуа"
+    },
+    "language_rom": {
+        "message": "Роман"
+    },
+    "language_ro": {
+        "message": "Румунський"
+    },
+    "language_rn": {
+        "message": "Рунді"
+    },
+    "language_ru": {
+        "message": "Російський"
+    },
+    "language_sm": {
+        "message": "Самоанський"
+    },
+    "language_sg": {
+        "message": "Санго"
+    },
+    "language_sa": {
+        "message": "Санскрит"
+    },
+    "language_gd": {
+        "message": "Шотландські гельські"
+    },
+    "language_sr": {
+        "message": "Сербський"
+    },
+    "language_st": {
+        "message": "Сесото"
+    },
+    "language_crs": {
+        "message": "Сейшеллоа Креол"
+    },
+    "language_shn": {
+        "message": "Шань"
+    },
+    "language_sn": {
+        "message": "Шона"
+    },
+    "language_scn": {
+        "message": "Сицилійський"
+    },
+    "language_szl": {
+        "message": "Сілезький"
+    },
+    "language_sd": {
+        "message": "Сіндхі"
+    },
+    "language_si": {
+        "message": "Сингала (сингальці)"
+    },
+    "language_sk": {
+        "message": "Словак"
+    },
+    "language_sl": {
+        "message": "Словенський"
+    },
+    "language_so": {
+        "message": "Сомалі"
+    },
+    "language_es": {
+        "message": "Іспанська мова"
+    },
+    "language_su": {
+        "message": "Сундан"
+    },
+    "language_sw": {
+        "message": "Суахілі"
+    },
+    "language_ss": {
+        "message": "Суть"
+    },
+    "language_sv": {
+        "message": "Шведський"
+    },
+    "language_ber": {
+        "message": "Tamazight (Tifinagh)"
+    },
+    "language_ber_latn": {
+        "message": "Тамазайт"
+    },
+    "language_tg": {
+        "message": "Таджиць"
+    },
+    "language_ta": {
+        "message": "Тамільський"
+    },
+    "language_tt": {
+        "message": "Татар"
+    },
+    "language_te": {
+        "message": "Телугу"
+    },
+    "language_tet": {
+        "message": "Тетум"
+    },
+    "language_th": {
+        "message": "Тайський"
+    },
+    "language_ti": {
+        "message": "Тигрина"
+    },
+    "language_ts": {
+        "message": "Цонга"
+    },
+    "language_tn": {
+        "message": "Цвана"
+    },
+    "language_tr": {
+        "message": "Турецький"
+    },
+    "language_tk": {
+        "message": "Туркмен"
+    },
+    "language_ak": {
+        "message": "Twi (akan)"
+    },
+    "language_uk": {
+        "message": "Український"
+    },
+    "language_ur": {
+        "message": "Урду"
+    },
+    "language_ug": {
+        "message": "Уйгур"
+    },
+    "language_uz": {
+        "message": "Узбек"
+    },
+    "language_vi": {
+        "message": "В'єтнамський"
+    },
+    "language_cy": {
+        "message": "Валлійський"
+    },
+    "language_xh": {
+        "message": "Xhosa"
+    },
+    "language_yi": {
+        "message": "Ідиш"
+    },
+    "language_yo": {
+        "message": "Йоруба"
+    },
+    "language_yua": {
+        "message": "Юкатек Майя"
+    },
+    "language_zu": {
+        "message": "Зулу"
     }
 }

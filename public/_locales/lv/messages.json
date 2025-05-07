@@ -1,9 +1,14 @@
 {
     "app_name": {
-        "message": "Translater - atlasītā teksta tulkojums"
+        "message": "$App_name$ - atlasītā teksta tulkošana",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
     },
     "app_description": {
-        "message": "Tulko atlasīto tekstu, izmantojot Google tulkotāju ar gaišu un tumšu motīvu"
+        "message": "Tulkot atlasīto tekstu ar google tulkot"
     },
     "app_version": {
         "message": "versija"
@@ -15,7 +20,7 @@
         "message": "Iestatījumi"
     },
     "options_title": {
-        "message": "$APP_NAME$ — iestatījumi",
+        "message": "$App_name$ - Iestatījumi",
         "placeholders": {
             "app_name": {
                 "content": "Translater"
@@ -23,15 +28,15 @@
         }
     },
     "commands_open_translater": {
-        "message": "Atveriet $APP_NAME$",
+        "message": "Atver $app_name$",
         "placeholders": {
             "app_name": {
                 "content": "Translater"
             }
         }
     },
-    "popup_or_press_keyboard_shortcut": {
-        "message": "vai nospiediet īsinājumtaustiņu lapā:"
+    "popup_or": {
+        "message": "Vai"
     },
     "options_tab_inline_translate": {
         "message": "Lasīšana un ievade"
@@ -52,10 +57,10 @@
         "message": "Rādīt pogu teksta laukā"
     },
     "options_hide_button_on_sites": {
-        "message": "Paslēpt pogu šajās vietnēs:"
+        "message": "Slēpt pogu šajās vietnēs:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Pievienojiet domēnus, izmantojot uznirstošā loga izvēlni vietnē, kuru vēlaties izslēgt"
+        "message": "Pievienojiet domēnus, izmantojot uznirstošo loga izvēlni vietnē, kuru vēlaties izslēgt"
     },
     "options_show_original_text": {
         "message": "Rādīt avota tekstu"
@@ -64,13 +69,13 @@
         "message": "Rādīt transliterāciju"
     },
     "options_lock_popup_window": {
-        "message": "Bloķēt uznirstošo logu"
+        "message": "Aizslēdziet uznirstošo logu"
     },
     "options_lock_popup_window_hint": {
-        "message": "Ja iespējots, uznirstošais logs netiks aizvērts, noklikšķinot uz ārpuses"
+        "message": "Ja tas ir iespējots, uznirstošais logs netiks aizvērts, noklikšķinot uz ārpus tā"
     },
     "options_history_length": {
-        "message": "Vēstures garums"
+        "message": "Vēstures ieraksti (maks.)"
     },
     "options_records_in_history": {
         "message": "Ieraksti vēsturē:"
@@ -94,25 +99,55 @@
         "message": "Balsis"
     },
     "options_tts_table_caption": {
-        "message": "Valodām, kas nav norādītas sarakstā, tiks izmantots ārējs teksta pārvēršanas runā pakalpojums."
+        "message": "Ja valoda nav uzskaitīta, tiks izmantots ārējs teksta un runas pakalpojums."
     },
     "options_tts_no_voices_found": {
-        "message": "Pārlūkprogrammā nav atrasta neviena balss. Tiks izmantots ārējs teksta pārvēršanas runā pakalpojums."
+        "message": "Jūsu pārlūkprogramma neatbalsta runas sintēzi. Tā vietā mēs izmantosim ārēju pakalpojumu."
     },
     "options_edit_keyboard_shortcut": {
-        "message": "Rediģēt īsinājumtaustiņus"
+        "message": "rediģēt tastatūras saīsnes"
     },
     "options_keyboard_shortcut_open_popup": {
-        "message": "Tastatūras īsinājumtaustiņš, lai atvērtu uznirstošo logu:"
+        "message": "Tastatūras saīsne, lai atvērtu uznirstošo logu"
     },
     "options_key_combination_is_not_set": {
-        "message": "taustiņu kombinācija nav iestatīta"
+        "message": "tastatūras saīsne nav iestatīta"
+    },
+    "options_font_size": {
+        "message": "Fonta lielums"
+    },
+    "options_font_size_xs": {
+        "message": "Īpaši mazs (12 pikseļi)"
+    },
+    "options_font_size_sm": {
+        "message": "Mazs (14 pikseļi)"
+    },
+    "options_font_size_md": {
+        "message": "Normāls (16 pikseļi)"
+    },
+    "options_font_size_lg": {
+        "message": "Liels (18 pikseļi)"
+    },
+    "options_font_size_xl": {
+        "message": "Īpaši liels (20 pikseļi)"
+    },
+    "options_support_msg": {
+        "message": "Ja kaut kas nedarbojas vai jums ir kādi ieteikumi, lūdzu, paziņojiet man šeit"
+    },
+    "options_support_donations": {
+        "message": "Ja vēlaties atbalstīt šo bezmaksas programmatūru"
+    },
+    "options_address": {
+        "message": "uzruna"
+    },
+    "options_copy_address": {
+        "message": "Kopijas adrese"
     },
     "text_expand": {
         "message": "Vairāk"
     },
     "text_collapse": {
-        "message": "Sabrukums"
+        "message": "Mazāk"
     },
     "target_lang_label": {
         "message": "Tulkot uz:"
@@ -136,19 +171,19 @@
         "message": "Varbūt jūs domājāt:"
     },
     "popup_original_language": {
-        "message": "Oriģinālvaloda:"
+        "message": "Oriģinālā valoda:"
     },
     "popup_menu_reverse_translate": {
-        "message": "Apgrieztā tulkošana"
+        "message": "Reverss tulkot"
     },
     "popup_menu_lock_window": {
-        "message": "Aizslēgt logu"
+        "message": "Bloķēšanas logs"
     },
     "popup_menu_unlock_window": {
         "message": "Atbloķēt logu"
     },
     "popup_menu_show_translate_button": {
-        "message": "Rādīt tulkošanas pogu"
+        "message": "Parādīt tulkošanas pogu"
     },
     "popup_menu_hide_translate_button": {
         "message": "Paslēpt tulkošanas pogu"
@@ -157,43 +192,43 @@
         "message": "Papildu iestatījumi"
     },
     "popup_placeholder_translation": {
-        "message": "Tulkošana"
+        "message": "Translācija"
     },
     "theme_light": {
         "message": "Viegla tēma"
     },
     "theme_dark": {
-        "message": "Tumša tēma"
+        "message": "Tumšā tēma"
     },
     "theme_system": {
-        "message": "Noklusējuma motīvs"
+        "message": "Sistēmas tēma"
     },
     "tooltip_translate_text": {
         "message": "Tulkot atlasīto tekstu"
     },
     "tooltip_copy_to_clipboard": {
-        "message": "Kopēt starpliktuvē"
+        "message": "Kopēt uz starpliktuvi"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "HTTP vietnēs kopēšana netiek atbalstīta"
+        "message": "Kopija nav atbalsta HTTP vietnēs"
     },
     "tooltip_copyed": {
-        "message": "Kopēts!"
+        "message": "Kopēts"
     },
     "tooltip_copy_error": {
-        "message": "Kopēšanas kļūda!"
+        "message": "Kopēt kļūdu!"
     },
     "tooltip_listen_to_the_text": {
         "message": "Klausieties tekstu"
     },
     "tooltip_listen_stop": {
-        "message": "Stop"
+        "message": "Apturēt"
     },
     "tooltip_listen_language_is_not_support": {
-        "message": "Valoda netiek atbalstīta"
+        "message": "Valoda nav atbalsts"
     },
     "tooltip_go_back": {
-        "message": "Atpakaļ"
+        "message": "Aizmugure"
     },
     "tooltip_go_forward": {
         "message": "Uz priekšu"
@@ -202,7 +237,7 @@
         "message": "Skaidrs teksts"
     },
     "tooltip_clear_search": {
-        "message": "Notīrīt meklēšanu"
+        "message": "Skaidra meklēšana"
     },
     "date_today": {
         "message": "šodien"
@@ -211,345 +246,612 @@
         "message": "vakar"
     },
     "forefox_perm_header": {
-        "message": "Atļaut palaišanu pārlūkprogrammā Firefox"
+        "message": "Atļaut palaišanu Firefox"
     },
     "forefox_perm_text": {
-        "message": "Paplašinājumam ir nepieciešama jūsu atļauja, lai piekļūtu vietnēm un tulkotu pārlūkprogrammā Firefox."
+        "message": "Šim paplašinājumam ir nepieciešama jūsu atļauja piekļūt vietnēm un tulkot tās Firefox"
     },
     "forefox_perm_button": {
         "message": "Pārvaldīt atļaujas"
     },
     "select_language_search_placeholder": {
-        "message": "Atrodiet valodas (ISO kods vai nosaukums)"
+        "message": "Atrodiet valodas (ISO kods vai vārds)"
     },
     "select_language_search_no_results": {
         "message": "Nav rezultātu"
     },
-    "supported_languages_auto": {
-        "message": "Noteikt valodu"
+    "try_my_extensions": {
+        "message": "🚀 Izmēģiniet manus citus paplašinājumus"
     },
-    "supported_languages_af": {
-        "message": "Āfrikas"
+    "language_auto": {
+        "message": "noteikt valodu"
     },
-    "supported_languages_sq": {
-        "message": "albānis"
+    "language_ab": {
+        "message": "Abhazs"
     },
-    "supported_languages_am": {
-        "message": "amharu"
+    "language_ace": {
+        "message": "Acehnēze"
     },
-    "supported_languages_ar": {
-        "message": "arābu"
+    "language_ach": {
+        "message": "Acholi"
     },
-    "supported_languages_hy": {
-        "message": "armēņu"
+    "language_af": {
+        "message": "Afrikāņu iedzīvotāji"
     },
-    "supported_languages_az": {
-        "message": "Azerbaidžāņu"
+    "language_sq": {
+        "message": "Albānis"
     },
-    "supported_languages_eu": {
-        "message": "basku"
+    "language_alz": {
+        "message": "Alūrēt"
     },
-    "supported_languages_be": {
-        "message": "baltkrievu"
+    "language_am": {
+        "message": "Amharisks"
     },
-    "supported_languages_bn": {
-        "message": "bengāļu"
+    "language_ar": {
+        "message": "Arābu"
     },
-    "supported_languages_bs": {
-        "message": "bosniešu"
+    "language_hy": {
+        "message": "Armēnietis"
     },
-    "supported_languages_bg": {
-        "message": "bulgāru"
+    "language_as": {
+        "message": "Asamietis"
     },
-    "supported_languages_ca": {
-        "message": "katalāņu"
+    "language_awa": {
+        "message": "Awadhi"
     },
-    "supported_languages_ceb": {
+    "language_ay": {
+        "message": "Aimara"
+    },
+    "language_az": {
+        "message": "Azerbaidžāni"
+    },
+    "language_ban": {
+        "message": "Baliešu"
+    },
+    "language_bm": {
+        "message": "Bambara"
+    },
+    "language_ba": {
+        "message": "Bashkirs"
+    },
+    "language_eu": {
+        "message": "Basku"
+    },
+    "language_btx": {
+        "message": "Batak karo"
+    },
+    "language_bts": {
+        "message": "Batak Simalungun"
+    },
+    "language_bbc": {
+        "message": "Batak Toba"
+    },
+    "language_be": {
+        "message": "Baltkrievietis"
+    },
+    "language_bem": {
+        "message": "Bemba"
+    },
+    "language_bn": {
+        "message": "Bengāļu valoda"
+    },
+    "language_bew": {
+        "message": "Betawi"
+    },
+    "language_bho": {
+        "message": "Bhojpuri"
+    },
+    "language_bik": {
+        "message": "Bikols"
+    },
+    "language_bs": {
+        "message": "Bosnietis"
+    },
+    "language_br": {
+        "message": "Bretons"
+    },
+    "language_bg": {
+        "message": "Bulgārietis"
+    },
+    "language_bua": {
+        "message": "Apbedījums"
+    },
+    "language_yue": {
+        "message": "Kantoniešu valoda"
+    },
+    "language_ca": {
+        "message": "Katalāņu valoda"
+    },
+    "language_ceb": {
         "message": "Cebuano"
     },
-    "supported_languages_ny": {
-        "message": "Chewa"
+    "language_ny": {
+        "message": "Chichewa (Nyanja)"
     },
-    "supported_languages_zh_CN": {
-        "message": "Vienkāršotā ķīniešu valoda"
+    "language_zh_CN": {
+        "message": "Ķīnieši (vienkāršoti)"
     },
-    "supported_languages_zh_TW": {
-        "message": "Ķīniešu tradicionālā"
+    "language_zh_TW": {
+        "message": "Ķīnieši (tradicionāli)"
     },
-    "supported_languages_co": {
-        "message": "Korsikānis"
+    "language_cv": {
+        "message": "Čukstēšana"
     },
-    "supported_languages_hr": {
-        "message": "horvātu"
+    "language_co": {
+        "message": "Korsikas"
     },
-    "supported_languages_cs": {
-        "message": "čehu"
+    "language_crh": {
+        "message": "Krimas tatārs"
     },
-    "supported_languages_da": {
-        "message": "dāņu"
+    "language_hr": {
+        "message": "Horvātietis"
     },
-    "supported_languages_nl": {
-        "message": "holandiešu valoda"
+    "language_cs": {
+        "message": "Čehu"
     },
-    "supported_languages_en": {
-        "message": "Angļu"
+    "language_da": {
+        "message": "Dāņu valoda"
     },
-    "supported_languages_eo": {
+    "language_din": {
+        "message": "Dinka"
+    },
+    "language_dv": {
+        "message": "Divehi"
+    },
+    "language_doi": {
+        "message": "Degri"
+    },
+    "language_dov": {
+        "message": "Dombe"
+    },
+    "language_nl": {
+        "message": "Holandieši"
+    },
+    "language_dz": {
+        "message": "Dzongkha"
+    },
+    "language_en": {
+        "message": "Angļu valoda"
+    },
+    "language_eo": {
         "message": "Esperanto"
     },
-    "supported_languages_et": {
-        "message": "igauņu"
+    "language_et": {
+        "message": "Igauņu"
     },
-    "supported_languages_fi": {
-        "message": "somu"
+    "language_ee": {
+        "message": "Avis"
     },
-    "supported_languages_fr": {
-        "message": "franču valoda"
+    "language_fj": {
+        "message": "Fidži"
     },
-    "supported_languages_fy": {
-        "message": "frīzu valoda"
+    "language_fil": {
+        "message": "Filipīnietis (tagalogs)"
     },
-    "supported_languages_gl": {
-        "message": "Galisiešu"
+    "language_fi": {
+        "message": "Somu"
     },
-    "supported_languages_ka": {
-        "message": "gruzīnu"
+    "language_fr": {
+        "message": "Franču valoda"
     },
-    "supported_languages_de": {
-        "message": "vācu"
+    "language_fr_FR": {
+        "message": "Franču valoda (franču valoda)"
     },
-    "supported_languages_el": {
-        "message": "grieķu valoda"
+    "language_fr_CA": {
+        "message": "Franču valoda (kanādietis)"
     },
-    "supported_languages_gu": {
-        "message": "gudžaratu"
+    "language_fy": {
+        "message": "Frīzu"
     },
-    "supported_languages_ht": {
-        "message": "Haitietis"
+    "language_ff": {
+        "message": "Pilnīgs"
     },
-    "supported_languages_ha": {
+    "language_gaa": {
+        "message": "GA"
+    },
+    "language_gl": {
+        "message": "Galdance"
+    },
+    "language_lg": {
+        "message": "Ganda (Luganda)"
+    },
+    "language_ka": {
+        "message": "Gruzīnu"
+    },
+    "language_de": {
+        "message": "Vācu valoda"
+    },
+    "language_el": {
+        "message": "Grieķu valoda"
+    },
+    "language_gn": {
+        "message": "Garantārs"
+    },
+    "language_gu": {
+        "message": "Gudžarati"
+    },
+    "language_ht": {
+        "message": "Haiti kreols"
+    },
+    "language_cnh": {
+        "message": "Hakha zoda"
+    },
+    "language_ha": {
         "message": "Hausa"
     },
-    "supported_languages_haw": {
-        "message": "Havajiešu"
+    "language_haw": {
+        "message": "Havaju salu"
     },
-    "supported_languages_he": {
-        "message": "ebreju valoda"
+    "language_iw": {
+        "message": "Ebreju valoda"
     },
-    "supported_languages_iw": {
-        "message": "ebreju valoda"
+    "language_hil": {
+        "message": "Hiligaynon"
     },
-    "supported_languages_hi": {
-        "message": "hindi"
+    "language_hi": {
+        "message": "Hindu valoda"
     },
-    "supported_languages_hu": {
-        "message": "ungāru"
+    "language_hmn": {
+        "message": "Hmongs"
     },
-    "supported_languages_is": {
-        "message": "islandiešu"
+    "language_hu": {
+        "message": "Ungārs"
     },
-    "supported_languages_ig": {
+    "language_hrx": {
+        "message": "Hunsriks"
+    },
+    "language_is": {
+        "message": "Islandiešu"
+    },
+    "language_ig": {
         "message": "Igbo"
     },
-    "supported_languages_id": {
-        "message": "Indonēziešu"
+    "language_ilo": {
+        "message": "Iloko"
     },
-    "supported_languages_ga": {
-        "message": "īru"
+    "language_id": {
+        "message": "Indonēzietis"
     },
-    "supported_languages_it": {
-        "message": "itāļu valoda"
+    "language_ga": {
+        "message": "Īrijas"
     },
-    "supported_languages_ja": {
-        "message": "japāņi"
+    "language_it": {
+        "message": "Itālietis"
     },
-    "supported_languages_jv": {
-        "message": "javiešu"
+    "language_ja": {
+        "message": "Japānis"
     },
-    "supported_languages_kn": {
-        "message": "kannada"
+    "language_jw": {
+        "message": "Javānietis"
     },
-    "supported_languages_kk": {
-        "message": "kazahu"
+    "language_kn": {
+        "message": "Kannāda"
     },
-    "supported_languages_km": {
-        "message": "khmeru"
+    "language_pam": {
+        "message": "Kapampangan"
     },
-    "supported_languages_ky": {
-        "message": "Kirgīzu"
+    "language_kk": {
+        "message": "Kazahs"
     },
-    "supported_languages_ko": {
-        "message": "korejiešu"
+    "language_km": {
+        "message": "Khmers"
     },
-    "supported_languages_ku": {
-        "message": "kurdu"
+    "language_cgg": {
+        "message": "Kiga"
     },
-    "supported_languages_lo": {
-        "message": "laosietis"
+    "language_rw": {
+        "message": "Kinyarwanda"
     },
-    "supported_languages_la": {
-        "message": "latīņu valoda"
+    "language_ktu": {
+        "message": "Kituba"
     },
-    "supported_languages_lv": {
-        "message": "latviski"
+    "language_gom": {
+        "message": "Konkani"
     },
-    "supported_languages_lt": {
-        "message": "lietuviešu"
+    "language_ko": {
+        "message": "Korejiešu"
     },
-    "supported_languages_lb": {
-        "message": "luksemburgiešu"
+    "language_kri": {
+        "message": "Krio"
     },
-    "supported_languages_mk": {
-        "message": "maķedonietis"
+    "language_ku": {
+        "message": "Kurdu (Kurmanji)"
     },
-    "supported_languages_mg": {
-        "message": "malagasu"
+    "language_ckb": {
+        "message": "Kurdu (sorani)"
     },
-    "supported_languages_ms": {
-        "message": "malajiešu"
+    "language_ky": {
+        "message": "Kirgīzs"
     },
-    "supported_languages_ml": {
-        "message": "malajalu"
+    "language_lo": {
+        "message": "Lao"
     },
-    "supported_languages_mt": {
-        "message": "maltiešu"
+    "language_ltg": {
+        "message": "Latgāliešu"
     },
-    "supported_languages_mi": {
-        "message": "maori"
+    "language_la": {
+        "message": "Latīņu"
     },
-    "supported_languages_mr": {
-        "message": "maratu"
+    "language_lv": {
+        "message": "Latviešu"
     },
-    "supported_languages_mn": {
-        "message": "mongoļu valoda"
+    "language_lij": {
+        "message": "Ligūrietis"
     },
-    "supported_languages_hmn": {
-        "message": "Mūks"
+    "language_li": {
+        "message": "Limburgans"
     },
-    "supported_languages_my": {
-        "message": "Mjanma"
+    "language_ln": {
+        "message": "Laumiņa"
     },
-    "supported_languages_ne": {
-        "message": "Mepali"
+    "language_lt": {
+        "message": "Lietuvietis"
     },
-    "supported_languages_no": {
-        "message": "norvēģu"
+    "language_lmo": {
+        "message": "Lombards"
     },
-    "supported_languages_fa": {
-        "message": "persiešu"
+    "language_luo": {
+        "message": "Luo"
     },
-    "supported_languages_pl": {
-        "message": "poļu"
+    "language_lb": {
+        "message": "Luksemburgish"
     },
-    "supported_languages_pt": {
-        "message": "portugāļu"
+    "language_mk": {
+        "message": "Maķedonijas"
     },
-    "supported_languages_pa": {
-        "message": "pandžabu"
+    "language_mai": {
+        "message": "Maithili"
     },
-    "supported_languages_ps": {
-        "message": "Pushto"
+    "language_mak": {
+        "message": "Makassars"
     },
-    "supported_languages_ro": {
-        "message": "rumāņu valoda"
+    "language_mg": {
+        "message": "Malagasija"
     },
-    "supported_languages_ru": {
-        "message": "krievu valoda"
+    "language_ms": {
+        "message": "Malajiešu valoda"
     },
-    "supported_languages_sm": {
-        "message": "Samoa"
+    "language_ms_Arab": {
+        "message": "Malajieši (Jawi)"
     },
-    "supported_languages_gd": {
-        "message": "skotu gēlu valoda"
+    "language_ml": {
+        "message": "Malajalāms"
     },
-    "supported_languages_sr": {
-        "message": "serbu"
+    "language_mt": {
+        "message": "Malts"
     },
-    "supported_languages_sn": {
-        "message": "Šona"
+    "language_mi": {
+        "message": "Maori"
     },
-    "supported_languages_sd": {
-        "message": "Sindhi"
+    "language_mr": {
+        "message": "Marathi"
     },
-    "supported_languages_si": {
-        "message": "sinhalu"
+    "language_chm": {
+        "message": "Pļavu mari"
     },
-    "supported_languages_sk": {
-        "message": "slovāku"
+    "language_mni_Mtei": {
+        "message": "Meiteilon (Manipuri)"
     },
-    "supported_languages_sl": {
-        "message": "slovēņu"
+    "language_min": {
+        "message": "Minanga"
     },
-    "supported_languages_so": {
-        "message": "somāliešu"
+    "language_lus": {
+        "message": "Mizo"
     },
-    "supported_languages_sx": {
-        "message": "Soto"
+    "language_mn": {
+        "message": "Mongoļu"
     },
-    "supported_languages_es": {
-        "message": "spāņu valoda"
+    "language_my": {
+        "message": "Mjanma (Birmas)"
     },
-    "supported_languages_su": {
-        "message": "sundāņu"
+    "language_nr": {
+        "message": "Ndebele (dienvidi)"
     },
-    "supported_languages_sw": {
-        "message": "svahili"
+    "language_new": {
+        "message": "Nepalbhasa (newari)"
     },
-    "supported_languages_sv": {
-        "message": "zviedru"
+    "language_ne": {
+        "message": "Nepālas"
     },
-    "supported_languages_tl": {
-        "message": "tagalogs"
+    "language_nso": {
+        "message": "Ziemeļu Sotho (Sepedi)"
     },
-    "supported_languages_tg": {
-        "message": "tadžiki"
+    "language_no": {
+        "message": "Norvēģis"
     },
-    "supported_languages_ta": {
-        "message": "tamilu"
+    "language_nus": {
+        "message": "Nieks"
     },
-    "supported_languages_te": {
-        "message": "telugu"
+    "language_oc": {
+        "message": "Lietderīgs"
     },
-    "supported_languages_th": {
-        "message": "taju"
+    "language_or": {
+        "message": "Odia (Orija)"
     },
-    "supported_languages_tr": {
-        "message": "Turku"
-    },
-    "supported_languages_uk": {
-        "message": "ukraiņu"
-    },
-    "supported_languages_ur": {
-        "message": "urdu"
-    },
-    "supported_languages_uz": {
-        "message": "uzbeku"
-    },
-    "supported_languages_vi": {
-        "message": "vjetnamietis"
-    },
-    "supported_languages_cy": {
-        "message": "velsiešu"
-    },
-    "supported_languages_xh": {
-        "message": "Ksosa"
-    },
-    "supported_languages_yi": {
-        "message": "jidiša"
-    },
-    "supported_languages_yo": {
-        "message": "Joruba"
-    },
-    "supported_languages_zu": {
-        "message": "zulu"
-    },
-    "supported_languages_qu": {
-        "message": "kečua"
-    },
-    "supported_languages_om": {
+    "language_om": {
         "message": "Oromo"
     },
-    "supported_languages_ilo": {
-        "message": "Ilocano"
+    "language_pag": {
+        "message": "Panasināns"
+    },
+    "language_pap": {
+        "message": "Papamento"
+    },
+    "language_ps": {
+        "message": "Pušto"
+    },
+    "language_fa": {
+        "message": "Persietis"
+    },
+    "language_pl": {
+        "message": "Pulēt"
+    },
+    "language_pt": {
+        "message": "Portugāļu valoda"
+    },
+    "language_pt_PT": {
+        "message": "Portugāle (Portugāle)"
+    },
+    "language_pt_BR": {
+        "message": "Portugāle (Brazīlija)"
+    },
+    "language_pa": {
+        "message": "Pendžabi"
+    },
+    "language_pa_Arab": {
+        "message": "Pendžabi (Shahmukhi)"
+    },
+    "language_qu": {
+        "message": "Kveku"
+    },
+    "language_rom": {
+        "message": "Romu"
+    },
+    "language_ro": {
+        "message": "Rumāņu"
+    },
+    "language_rn": {
+        "message": "Rundi"
+    },
+    "language_ru": {
+        "message": "Krievs"
+    },
+    "language_sm": {
+        "message": "Samoāns"
+    },
+    "language_sg": {
+        "message": "Sango"
+    },
+    "language_sa": {
+        "message": "Sanskrits"
+    },
+    "language_gd": {
+        "message": "Skoti gēlu valodā"
+    },
+    "language_sr": {
+        "message": "Serbu"
+    },
+    "language_st": {
+        "message": "Sesoto"
+    },
+    "language_crs": {
+        "message": "Seišelu kreols"
+    },
+    "language_shn": {
+        "message": "Krans"
+    },
+    "language_sn": {
+        "message": "Šona"
+    },
+    "language_scn": {
+        "message": "Sicīlietis"
+    },
+    "language_szl": {
+        "message": "Silēzijas"
+    },
+    "language_sd": {
+        "message": "Sindijs"
+    },
+    "language_si": {
+        "message": "Sinhala (sinhalese)"
+    },
+    "language_sk": {
+        "message": "Slovāks"
+    },
+    "language_sl": {
+        "message": "Slovēņu"
+    },
+    "language_so": {
+        "message": "Somālija"
+    },
+    "language_es": {
+        "message": "Spāņu valoda"
+    },
+    "language_su": {
+        "message": "Sundanese"
+    },
+    "language_sw": {
+        "message": "Svahili"
+    },
+    "language_ss": {
+        "message": "Svati"
+    },
+    "language_sv": {
+        "message": "Zviedru"
+    },
+    "language_ber": {
+        "message": "Tamazight (Tifinagh)"
+    },
+    "language_ber_latn": {
+        "message": "Tamazight"
+    },
+    "language_tg": {
+        "message": "Tadžik"
+    },
+    "language_ta": {
+        "message": "Tamils"
+    },
+    "language_tt": {
+        "message": "Tatārs"
+    },
+    "language_te": {
+        "message": "Telugu"
+    },
+    "language_tet": {
+        "message": "Tetums"
+    },
+    "language_th": {
+        "message": "Taizemiete"
+    },
+    "language_ti": {
+        "message": "Tigrya"
+    },
+    "language_ts": {
+        "message": "Tsonga"
+    },
+    "language_tn": {
+        "message": "Tswana"
+    },
+    "language_tr": {
+        "message": "Turku"
+    },
+    "language_tk": {
+        "message": "Turkmenieši"
+    },
+    "language_ak": {
+        "message": "TWI (Akan)"
+    },
+    "language_uk": {
+        "message": "Ukraiņu"
+    },
+    "language_ur": {
+        "message": "Urdu valoda"
+    },
+    "language_ug": {
+        "message": "Uighur"
+    },
+    "language_uz": {
+        "message": "Uzbeka"
+    },
+    "language_vi": {
+        "message": "Vjetnamietis"
+    },
+    "language_cy": {
+        "message": "Velsiešu valoda"
+    },
+    "language_xh": {
+        "message": "Xhosa"
+    },
+    "language_yi": {
+        "message": "Jidisks"
+    },
+    "language_yo": {
+        "message": "Joruba"
+    },
+    "language_yua": {
+        "message": "Yucatec Maya"
+    },
+    "language_zu": {
+        "message": "Zulu"
     }
 }

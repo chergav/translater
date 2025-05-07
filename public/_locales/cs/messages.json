@@ -1,21 +1,26 @@
 {
     "app_name": {
-        "message": "Translater - překlad vybraného textu"
+        "message": "$App_name$ - překlad vybraného textu",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
     },
     "app_description": {
-        "message": "Překlad vybraného textu pomocí Překladače Google se světlým a tmavým motivem"
+        "message": "Přeložit vybraný text s překladem Google"
     },
     "app_version": {
         "message": "verze"
     },
     "context_menus_title": {
-        "message": "Přeložte vybraný text"
+        "message": "Přeložit vybraný text"
     },
     "popup_menu_options": {
         "message": "Nastavení"
     },
     "options_title": {
-        "message": "$APP_NAME$ - nastavení",
+        "message": "$App_name$ - Nastavení",
         "placeholders": {
             "app_name": {
                 "content": "Translater"
@@ -23,18 +28,18 @@
         }
     },
     "commands_open_translater": {
-        "message": "Otevřete $APP_NAME$",
+        "message": "Open $app_name$",
         "placeholders": {
             "app_name": {
                 "content": "Translater"
             }
         }
     },
-    "popup_or_press_keyboard_shortcut": {
-        "message": "nebo stiskněte klávesovou zkratku na stránce:"
+    "popup_or": {
+        "message": "Nebo"
     },
     "options_tab_inline_translate": {
-        "message": "Čtení a zadávání"
+        "message": "Čtení a vstup"
     },
     "options_tab_popup_window": {
         "message": "Vyskakovací okno"
@@ -46,16 +51,16 @@
         "message": "Dějiny"
     },
     "options_inline_button_show": {
-        "message": "Zobrazit tlačítko při výběru textu"
+        "message": "Zobrazit tlačítko, když je vybrán text"
     },
     "options_text_field_button_show": {
-        "message": "Zobrazit tlačítko v textovém poli"
+        "message": "Zobrazit tlačítko v Textfieldu"
     },
     "options_hide_button_on_sites": {
-        "message": "Skrýt tlačítko na těchto stránkách:"
+        "message": "Skryjte tlačítko na těchto stránkách:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Přidejte domény pomocí nabídky vyskakovacího okna na webu, který chcete vyloučit"
+        "message": "Přidejte domény pomocí nabídky vyskakovacího okna na webu, které chcete vyloučit"
     },
     "options_show_original_text": {
         "message": "Zobrazit zdrojový text"
@@ -64,25 +69,25 @@
         "message": "Zobrazit přepis"
     },
     "options_lock_popup_window": {
-        "message": "Uzamknout vyskakovací okno"
+        "message": "Zamkněte vyskakovací okno"
     },
     "options_lock_popup_window_hint": {
-        "message": "Pokud je povoleno, vyskakovací okno se nezavře po kliknutí mimo"
+        "message": "Pokud je povoleno, vyskakovací okno se při kliknutí mimo něj nezavře"
     },
     "options_history_length": {
-        "message": "Délka historie"
+        "message": "Položky historie (max.)"
     },
     "options_records_in_history": {
-        "message": "Záznamy v historii:"
+        "message": "Položky v historii:"
     },
     "options_history_enable": {
         "message": "Povolit historii"
     },
     "options_clear_history": {
-        "message": "Smazat historii"
+        "message": "Odstranit historii"
     },
     "options_delete_history_item": {
-        "message": "Smazat z historie"
+        "message": "Odstranit z historie"
     },
     "options_tts_language": {
         "message": "Jazyk"
@@ -94,28 +99,58 @@
         "message": "Hlasy"
     },
     "options_tts_table_caption": {
-        "message": "Pro jazyky, které nejsou uvedeny, bude použita externí služba převodu textu na řeč."
+        "message": "Pokud jazyk není uveden, bude použita externí služba textu na řeč."
     },
     "options_tts_no_voices_found": {
-        "message": "V prohlížeči nebyly nalezeny žádné hlasy. Bude použita externí služba převodu textu na řeč."
+        "message": "Váš prohlížeč nepodporuje syntézu řeči. Místo toho použijeme externí službu."
     },
     "options_edit_keyboard_shortcut": {
-        "message": "Upravit klávesovou zkratku"
+        "message": "Upravit klávesové zkratky"
     },
     "options_keyboard_shortcut_open_popup": {
-        "message": "Klávesová zkratka pro otevření vyskakovacího okna:"
+        "message": "Klávesová zkratka pro otevření vyskakovacího okna"
     },
     "options_key_combination_is_not_set": {
-        "message": "kombinace kláves není nastavena"
+        "message": "zkratka klávesnice není nastavena"
+    },
+    "options_font_size": {
+        "message": "Velikost písma"
+    },
+    "options_font_size_xs": {
+        "message": "Extra malý (12px)"
+    },
+    "options_font_size_sm": {
+        "message": "Malý (14px)"
+    },
+    "options_font_size_md": {
+        "message": "Normal (16px)"
+    },
+    "options_font_size_lg": {
+        "message": "Large (18px)"
+    },
+    "options_font_size_xl": {
+        "message": "Extra velký (20px)"
+    },
+    "options_support_msg": {
+        "message": "Pokud něco nefunguje nebo máte nějaké návrhy, dejte mi prosím vědět zde"
+    },
+    "options_support_donations": {
+        "message": "Pokud byste chtěli podporovat tento svobodný software"
+    },
+    "options_address": {
+        "message": "adresa"
+    },
+    "options_copy_address": {
+        "message": "Kopírovat adresu"
     },
     "text_expand": {
         "message": "Více"
     },
     "text_collapse": {
-        "message": "Сollapse"
+        "message": "Méně"
     },
     "target_lang_label": {
-        "message": "Přeložit do:"
+        "message": "Přeložit na:"
     },
     "popup_dictionary": {
         "message": "Slovník"
@@ -133,25 +168,25 @@
         "message": "Příklady"
     },
     "popup_perhaps_you_meant": {
-        "message": "Možná jsi měl na mysli:"
+        "message": "Možná jste mysleli:"
     },
     "popup_original_language": {
         "message": "Původní jazyk:"
     },
     "popup_menu_reverse_translate": {
-        "message": "Zpětný překlad"
+        "message": "Reverzní překlad"
     },
     "popup_menu_lock_window": {
-        "message": "Zamknout okno"
+        "message": "Okno zámku"
     },
     "popup_menu_unlock_window": {
         "message": "Odemknout okno"
     },
     "popup_menu_show_translate_button": {
-        "message": "Zobrazit tlačítko překladu"
+        "message": "Zobrazit tlačítko přeložit"
     },
     "popup_menu_hide_translate_button": {
-        "message": "Tlačítko Skrýt překlad"
+        "message": "Skrýt tlačítko přeložit"
     },
     "popup_menu_options_link": {
         "message": "Další nastavení"
@@ -160,37 +195,37 @@
         "message": "Překlad"
     },
     "theme_light": {
-        "message": "Světlé téma"
+        "message": "Světelné téma"
     },
     "theme_dark": {
-        "message": "Tmavé téma"
+        "message": "Temné téma"
     },
     "theme_system": {
-        "message": "Výchozí motiv"
+        "message": "Systémové téma"
     },
     "tooltip_translate_text": {
-        "message": "Přeložte vybraný text"
+        "message": "Přeložit vybraný text"
     },
     "tooltip_copy_to_clipboard": {
-        "message": "Zkopírovat do schránky"
+        "message": "Kopírovat do schránky"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "Kopírování není podporováno na stránkách HTTP"
+        "message": "Kopie není podporou na stránkách HTTP"
     },
     "tooltip_copyed": {
-        "message": "Zkopírováno!"
+        "message": "Zkopírováno"
     },
     "tooltip_copy_error": {
-        "message": "Chyba kopírování!"
+        "message": "Kopírovat chybu!"
     },
     "tooltip_listen_to_the_text": {
         "message": "Poslouchejte text"
     },
     "tooltip_listen_stop": {
-        "message": "Stop"
+        "message": "Zastávka"
     },
     "tooltip_listen_language_is_not_support": {
-        "message": "Jazyk není podporován"
+        "message": "Jazyk není podpora"
     },
     "tooltip_go_back": {
         "message": "Zadní"
@@ -202,7 +237,7 @@
         "message": "Jasný text"
     },
     "tooltip_clear_search": {
-        "message": "Vymazat vyhledávání"
+        "message": "Jasné vyhledávání"
     },
     "date_today": {
         "message": "dnes"
@@ -214,342 +249,609 @@
         "message": "Povolit spuštění ve Firefoxu"
     },
     "forefox_perm_text": {
-        "message": "Rozšíření vyžaduje vaše povolení k přístupu na webové stránky a překladu v prohlížeči Firefox."
+        "message": "Toto rozšíření potřebuje vaše povolení k přístupu k webovým stránkám a překládání je do Firefoxu"
     },
     "forefox_perm_button": {
-        "message": "Spravovat oprávnění"
+        "message": "Správa oprávnění"
     },
     "select_language_search_placeholder": {
-        "message": "Najít jazyky (kód ISO nebo název)"
+        "message": "Najít jazyky (kód nebo jméno ISO)"
     },
     "select_language_search_no_results": {
         "message": "Žádné výsledky"
     },
-    "supported_languages_auto": {
-        "message": "Rozpoznat jazyk"
+    "try_my_extensions": {
+        "message": "🚀 Zkuste moje další rozšíření"
     },
-    "supported_languages_af": {
-        "message": "Afričan"
+    "language_auto": {
+        "message": "detekovat jazyk"
     },
-    "supported_languages_sq": {
-        "message": "albánský"
+    "language_ab": {
+        "message": "Abcház"
     },
-    "supported_languages_am": {
-        "message": "amharština"
+    "language_ace": {
+        "message": "Acehnese"
     },
-    "supported_languages_ar": {
+    "language_ach": {
+        "message": "Acholi"
+    },
+    "language_af": {
+        "message": "afrikánština"
+    },
+    "language_sq": {
+        "message": "Albánština"
+    },
+    "language_alz": {
+        "message": "Alur"
+    },
+    "language_am": {
+        "message": "Amharic"
+    },
+    "language_ar": {
         "message": "arabština"
     },
-    "supported_languages_hy": {
-        "message": "arménský"
+    "language_hy": {
+        "message": "Arménština"
     },
-    "supported_languages_az": {
-        "message": "ázerbájdžánský"
+    "language_as": {
+        "message": "Assamese"
     },
-    "supported_languages_eu": {
-        "message": "baskický"
+    "language_awa": {
+        "message": "Awadhi"
     },
-    "supported_languages_be": {
-        "message": "běloruský"
+    "language_ay": {
+        "message": "Aymara"
     },
-    "supported_languages_bn": {
+    "language_az": {
+        "message": "Ázerbájdžán"
+    },
+    "language_ban": {
+        "message": "Balinese"
+    },
+    "language_bm": {
+        "message": "Bambara"
+    },
+    "language_ba": {
+        "message": "Bashkir"
+    },
+    "language_eu": {
+        "message": "Baskicka"
+    },
+    "language_btx": {
+        "message": "Batak Karo"
+    },
+    "language_bts": {
+        "message": "Batak Simalungun"
+    },
+    "language_bbc": {
+        "message": "Batak Toba"
+    },
+    "language_be": {
+        "message": "Běloruský"
+    },
+    "language_bem": {
+        "message": "Bemba"
+    },
+    "language_bn": {
         "message": "bengálský"
     },
-    "supported_languages_bs": {
-        "message": "bosenský"
+    "language_bew": {
+        "message": "Betawi"
     },
-    "supported_languages_bg": {
+    "language_bho": {
+        "message": "BHOJPURI"
+    },
+    "language_bik": {
+        "message": "Bikol"
+    },
+    "language_bs": {
+        "message": "Bosnian"
+    },
+    "language_br": {
+        "message": "Breton"
+    },
+    "language_bg": {
         "message": "bulharský"
     },
-    "supported_languages_ca": {
-        "message": "katalánština"
+    "language_bua": {
+        "message": "Buryat"
     },
-    "supported_languages_ceb": {
+    "language_yue": {
+        "message": "Cantonese"
+    },
+    "language_ca": {
+        "message": "Katalánsko"
+    },
+    "language_ceb": {
         "message": "Cebuano"
     },
-    "supported_languages_ny": {
-        "message": "Chewa"
+    "language_ny": {
+        "message": "Chichewa (Nyanja)"
     },
-    "supported_languages_zh_CN": {
-        "message": "zjednodušená čínština"
+    "language_zh_CN": {
+        "message": "Číňané (zjednodušené)"
     },
-    "supported_languages_zh_TW": {
-        "message": "Čínská tradiční"
+    "language_zh_TW": {
+        "message": "Číňan (tradiční)"
     },
-    "supported_languages_co": {
+    "language_cv": {
+        "message": "Chuvash"
+    },
+    "language_co": {
         "message": "Korsičan"
     },
-    "supported_languages_hr": {
+    "language_crh": {
+        "message": "Krymský tatar"
+    },
+    "language_hr": {
         "message": "chorvatský"
     },
-    "supported_languages_cs": {
+    "language_cs": {
         "message": "čeština"
     },
-    "supported_languages_da": {
+    "language_da": {
         "message": "dánština"
     },
-    "supported_languages_nl": {
+    "language_din": {
+        "message": "Dinka"
+    },
+    "language_dv": {
+        "message": "Divehi"
+    },
+    "language_doi": {
+        "message": "Dogri"
+    },
+    "language_dov": {
+        "message": "Dombe"
+    },
+    "language_nl": {
         "message": "holandský"
     },
-    "supported_languages_en": {
-        "message": "Angličtina"
+    "language_dz": {
+        "message": "Dzongkha"
     },
-    "supported_languages_eo": {
+    "language_en": {
+        "message": "angličtina"
+    },
+    "language_eo": {
         "message": "esperanto"
     },
-    "supported_languages_et": {
+    "language_et": {
         "message": "estonština"
     },
-    "supported_languages_fi": {
-        "message": "finština"
+    "language_ee": {
+        "message": "Ovce"
     },
-    "supported_languages_fr": {
+    "language_fj": {
+        "message": "Fidžian"
+    },
+    "language_fil": {
+        "message": "Filipín (Tagalog)"
+    },
+    "language_fi": {
+        "message": "Finský"
+    },
+    "language_fr": {
         "message": "francouzština"
     },
-    "supported_languages_fy": {
-        "message": "fríský"
+    "language_fr_FR": {
+        "message": "Francouzština (francouzština)"
     },
-    "supported_languages_gl": {
-        "message": "galicijský"
+    "language_fr_CA": {
+        "message": "Francouzština (Kanaďan)"
     },
-    "supported_languages_ka": {
-        "message": "gruzínský"
+    "language_fy": {
+        "message": "Frisian"
     },
-    "supported_languages_de": {
+    "language_ff": {
+        "message": "Fulfulde"
+    },
+    "language_gaa": {
+        "message": "Ga"
+    },
+    "language_gl": {
+        "message": "Galicijský"
+    },
+    "language_lg": {
+        "message": "Ganda (Luganda)"
+    },
+    "language_ka": {
+        "message": "Georgian"
+    },
+    "language_de": {
         "message": "Němec"
     },
-    "supported_languages_el": {
+    "language_el": {
         "message": "řecký"
     },
-    "supported_languages_gu": {
-        "message": "Gudžarátština"
+    "language_gn": {
+        "message": "Guarani"
     },
-    "supported_languages_ht": {
-        "message": "haitský"
+    "language_gu": {
+        "message": "Gujarati"
     },
-    "supported_languages_ha": {
+    "language_ht": {
+        "message": "Haitian Creole"
+    },
+    "language_cnh": {
+        "message": "Hakha Chin"
+    },
+    "language_ha": {
         "message": "Hausa"
     },
-    "supported_languages_haw": {
+    "language_haw": {
         "message": "havajský"
     },
-    "supported_languages_he": {
+    "language_iw": {
         "message": "hebrejština"
     },
-    "supported_languages_iw": {
-        "message": "hebrejština"
+    "language_hil": {
+        "message": "Hiligaynon"
     },
-    "supported_languages_hi": {
+    "language_hi": {
         "message": "hindština"
     },
-    "supported_languages_hu": {
+    "language_hmn": {
+        "message": "Hmong"
+    },
+    "language_hu": {
         "message": "maďarský"
     },
-    "supported_languages_is": {
+    "language_hrx": {
+        "message": "Husrik"
+    },
+    "language_is": {
         "message": "islandský"
     },
-    "supported_languages_ig": {
+    "language_ig": {
         "message": "Igbo"
     },
-    "supported_languages_id": {
+    "language_ilo": {
+        "message": "Iloko"
+    },
+    "language_id": {
         "message": "indonéština"
     },
-    "supported_languages_ga": {
+    "language_ga": {
         "message": "irština"
     },
-    "supported_languages_it": {
+    "language_it": {
         "message": "italština"
     },
-    "supported_languages_ja": {
+    "language_ja": {
         "message": "japonský"
     },
-    "supported_languages_jv": {
-        "message": "jávský"
+    "language_jw": {
+        "message": "Javanese"
     },
-    "supported_languages_kn": {
+    "language_kn": {
         "message": "Kannada"
     },
-    "supported_languages_kk": {
-        "message": "kazašský"
+    "language_pam": {
+        "message": "Kapampangan"
     },
-    "supported_languages_km": {
-        "message": "khmerské"
+    "language_kk": {
+        "message": "Kazakh"
     },
-    "supported_languages_ky": {
-        "message": "Kirgizština"
+    "language_km": {
+        "message": "Khmer"
     },
-    "supported_languages_ko": {
+    "language_cgg": {
+        "message": "Kiga"
+    },
+    "language_rw": {
+        "message": "Kinyarwanda"
+    },
+    "language_ktu": {
+        "message": "Kituba"
+    },
+    "language_gom": {
+        "message": "Konkani"
+    },
+    "language_ko": {
         "message": "korejština"
     },
-    "supported_languages_ku": {
-        "message": "kurdština"
+    "language_kri": {
+        "message": "Krio"
     },
-    "supported_languages_lo": {
-        "message": "laoský"
+    "language_ku": {
+        "message": "Kurdský (Kurmanji)"
     },
-    "supported_languages_la": {
+    "language_ckb": {
+        "message": "Kurdský (Sorani)"
+    },
+    "language_ky": {
+        "message": "Kyrgyz"
+    },
+    "language_lo": {
+        "message": "Lao"
+    },
+    "language_ltg": {
+        "message": "Latgalian"
+    },
+    "language_la": {
         "message": "latinský"
     },
-    "supported_languages_lv": {
+    "language_lv": {
         "message": "lotyšský"
     },
-    "supported_languages_lt": {
-        "message": "litevský"
+    "language_lij": {
+        "message": "Ligurian"
     },
-    "supported_languages_lb": {
-        "message": "lucemburský"
+    "language_li": {
+        "message": "Limburgan"
     },
-    "supported_languages_mk": {
-        "message": "makedonský"
+    "language_ln": {
+        "message": "Lingala"
     },
-    "supported_languages_mg": {
-        "message": "malgašský"
+    "language_lt": {
+        "message": "Litevský"
     },
-    "supported_languages_ms": {
-        "message": "malajština"
+    "language_lmo": {
+        "message": "Lombard"
     },
-    "supported_languages_ml": {
-        "message": "malajálamština"
+    "language_luo": {
+        "message": "Luo"
     },
-    "supported_languages_mt": {
+    "language_lb": {
+        "message": "Lucemburgické"
+    },
+    "language_mk": {
+        "message": "Makedonian"
+    },
+    "language_mai": {
+        "message": "Maithili"
+    },
+    "language_mak": {
+        "message": "Makassar"
+    },
+    "language_mg": {
+        "message": "Malagasy"
+    },
+    "language_ms": {
+        "message": "Malay"
+    },
+    "language_ms_Arab": {
+        "message": "Malay (Jawi)"
+    },
+    "language_ml": {
+        "message": "Malayalam"
+    },
+    "language_mt": {
         "message": "maltština"
     },
-    "supported_languages_mi": {
-        "message": "maorští"
+    "language_mi": {
+        "message": "Maori"
     },
-    "supported_languages_mr": {
-        "message": "maráthština"
+    "language_mr": {
+        "message": "Marathi"
     },
-    "supported_languages_mn": {
+    "language_chm": {
+        "message": "Meadow Mari"
+    },
+    "language_mni_Mtei": {
+        "message": "Meiteilon (Manipuri)"
+    },
+    "language_min": {
+        "message": "Minang"
+    },
+    "language_lus": {
+        "message": "Mizo"
+    },
+    "language_mn": {
         "message": "mongolský"
     },
-    "supported_languages_hmn": {
-        "message": "Mnich"
+    "language_my": {
+        "message": "Myanmar (Barmse)"
     },
-    "supported_languages_my": {
-        "message": "Myanmar"
+    "language_nr": {
+        "message": "Ndebele (jih)"
     },
-    "supported_languages_ne": {
-        "message": "Mepali"
+    "language_new": {
+        "message": "Nepalbhasa (Newari)"
     },
-    "supported_languages_no": {
-        "message": "norský"
+    "language_ne": {
+        "message": "Nepál"
     },
-    "supported_languages_fa": {
-        "message": "Peršan"
+    "language_nso": {
+        "message": "Northern Sotho (Sepedi)"
     },
-    "supported_languages_pl": {
-        "message": "polština"
+    "language_no": {
+        "message": "Norwegian"
     },
-    "supported_languages_pt": {
-        "message": "portugalština"
+    "language_nus": {
+        "message": "Nuer"
     },
-    "supported_languages_pa": {
-        "message": "pandžábština"
+    "language_oc": {
+        "message": "OcCitan"
     },
-    "supported_languages_ps": {
-        "message": "Pushto"
+    "language_or": {
+        "message": "Odia (Oriya)"
     },
-    "supported_languages_ro": {
-        "message": "rumunština"
-    },
-    "supported_languages_ru": {
-        "message": "ruština"
-    },
-    "supported_languages_sm": {
-        "message": "Samoan"
-    },
-    "supported_languages_gd": {
-        "message": "skotská gaelština"
-    },
-    "supported_languages_sr": {
-        "message": "srbština"
-    },
-    "supported_languages_sn": {
-        "message": "Shona"
-    },
-    "supported_languages_sd": {
-        "message": "Sindhi"
-    },
-    "supported_languages_si": {
-        "message": "sinhálština"
-    },
-    "supported_languages_sk": {
-        "message": "Slovák"
-    },
-    "supported_languages_sl": {
-        "message": "slovinský"
-    },
-    "supported_languages_so": {
-        "message": "somálský"
-    },
-    "supported_languages_sx": {
-        "message": "Sotho"
-    },
-    "supported_languages_es": {
-        "message": "španělština"
-    },
-    "supported_languages_su": {
-        "message": "sundánština"
-    },
-    "supported_languages_sw": {
-        "message": "svahilština"
-    },
-    "supported_languages_sv": {
-        "message": "švédský"
-    },
-    "supported_languages_tl": {
-        "message": "Tagalog"
-    },
-    "supported_languages_tg": {
-        "message": "tádžické"
-    },
-    "supported_languages_ta": {
-        "message": "tamilština"
-    },
-    "supported_languages_te": {
-        "message": "telugština"
-    },
-    "supported_languages_th": {
-        "message": "thajština"
-    },
-    "supported_languages_tr": {
-        "message": "turečtina"
-    },
-    "supported_languages_uk": {
-        "message": "ukrajinština"
-    },
-    "supported_languages_ur": {
-        "message": "Urdu"
-    },
-    "supported_languages_uz": {
-        "message": "uzbecký"
-    },
-    "supported_languages_vi": {
-        "message": "vietnamština"
-    },
-    "supported_languages_cy": {
-        "message": "velština"
-    },
-    "supported_languages_xh": {
-        "message": "Xosa"
-    },
-    "supported_languages_yi": {
-        "message": "jidiš"
-    },
-    "supported_languages_yo": {
-        "message": "jorubština"
-    },
-    "supported_languages_zu": {
-        "message": "Zulu"
-    },
-    "supported_languages_qu": {
-        "message": "kečuánština"
-    },
-    "supported_languages_om": {
+    "language_om": {
         "message": "Oromo"
     },
-    "supported_languages_ilo": {
-        "message": "Ilocano"
+    "language_pag": {
+        "message": "Pangasinan"
+    },
+    "language_pap": {
+        "message": "Papiamento"
+    },
+    "language_ps": {
+        "message": "Pašto"
+    },
+    "language_fa": {
+        "message": "Peršan"
+    },
+    "language_pl": {
+        "message": "polština"
+    },
+    "language_pt": {
+        "message": "portugalština"
+    },
+    "language_pt_PT": {
+        "message": "Portugalština (Portugalsko)"
+    },
+    "language_pt_BR": {
+        "message": "Portugalština (Brazílie)"
+    },
+    "language_pa": {
+        "message": "Punjabi"
+    },
+    "language_pa_Arab": {
+        "message": "Punjabi (Shahmukhi)"
+    },
+    "language_qu": {
+        "message": "Quechua"
+    },
+    "language_rom": {
+        "message": "Romani"
+    },
+    "language_ro": {
+        "message": "rumunština"
+    },
+    "language_rn": {
+        "message": "Rundi"
+    },
+    "language_ru": {
+        "message": "ruština"
+    },
+    "language_sm": {
+        "message": "Samoan"
+    },
+    "language_sg": {
+        "message": "Sango"
+    },
+    "language_sa": {
+        "message": "Sanskrit"
+    },
+    "language_gd": {
+        "message": "Scots Gaelic"
+    },
+    "language_sr": {
+        "message": "srbština"
+    },
+    "language_st": {
+        "message": "Sesotho"
+    },
+    "language_crs": {
+        "message": "Seychellois Creole"
+    },
+    "language_shn": {
+        "message": "Shan"
+    },
+    "language_sn": {
+        "message": "Shona"
+    },
+    "language_scn": {
+        "message": "sicilský"
+    },
+    "language_szl": {
+        "message": "Slezský"
+    },
+    "language_sd": {
+        "message": "Sindhi"
+    },
+    "language_si": {
+        "message": "Sinhala (Sinhalese)"
+    },
+    "language_sk": {
+        "message": "Slovák"
+    },
+    "language_sl": {
+        "message": "slovinský"
+    },
+    "language_so": {
+        "message": "Somálský"
+    },
+    "language_es": {
+        "message": "španělština"
+    },
+    "language_su": {
+        "message": "Sundanese"
+    },
+    "language_sw": {
+        "message": "Svahili"
+    },
+    "language_ss": {
+        "message": "Swati"
+    },
+    "language_sv": {
+        "message": "švédský"
+    },
+    "language_ber": {
+        "message": "Tamazight (Tifinagh)"
+    },
+    "language_ber_latn": {
+        "message": "Tamazight"
+    },
+    "language_tg": {
+        "message": "Tádžik"
+    },
+    "language_ta": {
+        "message": "Tamil"
+    },
+    "language_tt": {
+        "message": "Tatar"
+    },
+    "language_te": {
+        "message": "Telugu"
+    },
+    "language_tet": {
+        "message": "Tetum"
+    },
+    "language_th": {
+        "message": "Thai"
+    },
+    "language_ti": {
+        "message": "Tigrinya"
+    },
+    "language_ts": {
+        "message": "Tsonga"
+    },
+    "language_tn": {
+        "message": "Tswana"
+    },
+    "language_tr": {
+        "message": "turečtina"
+    },
+    "language_tk": {
+        "message": "Turkmen"
+    },
+    "language_ak": {
+        "message": "Twi (Akan)"
+    },
+    "language_uk": {
+        "message": "ukrajinština"
+    },
+    "language_ur": {
+        "message": "Urdu"
+    },
+    "language_ug": {
+        "message": "Uyghur"
+    },
+    "language_uz": {
+        "message": "Uzbek"
+    },
+    "language_vi": {
+        "message": "vietnamština"
+    },
+    "language_cy": {
+        "message": "velština"
+    },
+    "language_xh": {
+        "message": "Xhosa"
+    },
+    "language_yi": {
+        "message": "jidiš"
+    },
+    "language_yo": {
+        "message": "Yoruba"
+    },
+    "language_yua": {
+        "message": "Yucatec Maya"
+    },
+    "language_zu": {
+        "message": "Zulu"
     }
 }

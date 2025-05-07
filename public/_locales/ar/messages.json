@@ -1,9 +1,14 @@
 {
     "app_name": {
-        "message": "Translater - ترجمة النص المحدد"
+        "message": "$app_name$ - ترجمة النص المحدد",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
     },
     "app_description": {
-        "message": "ترجمة النص المحدد باستخدام خدمة الترجمة من Google ذات المظهر الفاتح والداكن"
+        "message": "ترجمة نص محدد بترجمة جوجل"
     },
     "app_version": {
         "message": "إصدار"
@@ -23,18 +28,18 @@
         }
     },
     "commands_open_translater": {
-        "message": "افتح $APP_NAME$",
+        "message": "افتح $app_name$",
         "placeholders": {
             "app_name": {
                 "content": "Translater"
             }
         }
     },
-    "popup_or_press_keyboard_shortcut": {
-        "message": "أو اضغط على اختصار لوحة المفاتيح في الصفحة:"
+    "popup_or": {
+        "message": "أو"
     },
     "options_tab_inline_translate": {
-        "message": "القراءة والإدخال"
+        "message": "القراءة والمدخلات"
     },
     "options_tab_popup_window": {
         "message": "نافذة منبثقة"
@@ -46,34 +51,34 @@
         "message": "تاريخ"
     },
     "options_inline_button_show": {
-        "message": "زر إظهار عند تحديد النص"
+        "message": "إظهار الزر عند تحديد النص"
     },
     "options_text_field_button_show": {
-        "message": "إظهار الزر في حقل النص"
+        "message": "إظهار زر في Textfield"
     },
     "options_hide_button_on_sites": {
-        "message": "إخفاء الزر في هذه المواقع:"
+        "message": "إخفاء الزر على هذه المواقع:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "قم بإضافة النطاقات باستخدام قائمة النافذة المنبثقة على الموقع الذي تريد استبعاده"
+        "message": "أضف مجالات باستخدام قائمة النافذة المنبثقة على الموقع الذي تريد استبعاده"
     },
     "options_show_original_text": {
-        "message": "إظهار النص المصدر"
+        "message": "عرض نص المصدر"
     },
     "options_show_transliteration": {
-        "message": "عرض الترجمة الصوتية"
+        "message": "عرض الترجمة"
     },
     "options_lock_popup_window": {
-        "message": "قفل النافذة المنبثقة"
+        "message": "قفل نافذة منبثقة"
     },
     "options_lock_popup_window_hint": {
-        "message": "إذا تم تمكين النافذة المنبثقة فلن يتم إغلاقها عند النقر بالخارج"
+        "message": "إذا تم تمكينه ، فلن يغلق المنبثقة عند النقر خارجها"
     },
     "options_history_length": {
-        "message": "طول التاريخ"
+        "message": "إدخالات التاريخ (كحد أقصى)"
     },
     "options_records_in_history": {
-        "message": "الإدخالات في التاريخ:"
+        "message": "إدخالات في التاريخ:"
     },
     "options_history_enable": {
         "message": "تمكين التاريخ"
@@ -94,28 +99,58 @@
         "message": "أصوات"
     },
     "options_tts_table_caption": {
-        "message": "بالنسبة للغات غير المدرجة، سيتم استخدام خدمة خارجية لتحويل النص إلى كلام."
+        "message": "إذا لم يتم إدراج لغة ما ، فسيتم استخدام خدمة نصية إلى كلام خارجية."
     },
     "options_tts_no_voices_found": {
-        "message": "لم يتم العثور على أصوات في المتصفح. سيتم استخدام خدمة تحويل النص إلى كلام خارجية."
+        "message": "لا يدعم متصفحك تخليق الكلام. سنستخدم خدمة خارجية بدلاً من ذلك."
     },
     "options_edit_keyboard_shortcut": {
-        "message": "تحرير اختصار لوحة المفاتيح"
+        "message": "تحرير اختصارات لوحة المفاتيح"
     },
     "options_keyboard_shortcut_open_popup": {
-        "message": "اختصار لوحة المفاتيح لفتح النافذة المنبثقة:"
+        "message": "اختصار لوحة المفاتيح لفتح نافذة منبثقة"
     },
     "options_key_combination_is_not_set": {
-        "message": "لم يتم تعيين مجموعة المفاتيح"
+        "message": "لم يتم تعيين اختصار لوحة المفاتيح"
+    },
+    "options_font_size": {
+        "message": "حجم الخط"
+    },
+    "options_font_size_xs": {
+        "message": "صغير جدًا (12 بكسل)"
+    },
+    "options_font_size_sm": {
+        "message": "صغير (14 بكسل)"
+    },
+    "options_font_size_md": {
+        "message": "طبيعي (16 بكسل)"
+    },
+    "options_font_size_lg": {
+        "message": "كبير (18 بكسل)"
+    },
+    "options_font_size_xl": {
+        "message": "كبير جدًا (20 بكسل)"
+    },
+    "options_support_msg": {
+        "message": "إذا كان هناك شيء لا يعمل ، أو لديك أي اقتراحات ، فيرجى إخبارنا هنا"
+    },
+    "options_support_donations": {
+        "message": "إذا كنت ترغب في دعم هذا البرنامج المجاني"
+    },
+    "options_address": {
+        "message": "عنوان"
+    },
+    "options_copy_address": {
+        "message": "عنوان النسخ"
     },
     "text_expand": {
         "message": "أكثر"
     },
     "text_collapse": {
-        "message": "طي"
+        "message": "أقل"
     },
     "target_lang_label": {
-        "message": "ترجمة الى:"
+        "message": "ترجمة إلى:"
     },
     "popup_dictionary": {
         "message": "قاموس"
@@ -124,7 +159,7 @@
         "message": "تكرار"
     },
     "popup_definitions": {
-        "message": "تعريفات"
+        "message": "التعريفات"
     },
     "popup_definitions_synonyms": {
         "message": "المرادفات:"
@@ -133,7 +168,7 @@
         "message": "أمثلة"
     },
     "popup_perhaps_you_meant": {
-        "message": "ربما كنت تقصد:"
+        "message": "ربما كنت تعني:"
     },
     "popup_original_language": {
         "message": "اللغة الأصلية:"
@@ -142,13 +177,13 @@
         "message": "ترجمة عكسية"
     },
     "popup_menu_lock_window": {
-        "message": "قفل النافذة"
+        "message": "قفل نافذة"
     },
     "popup_menu_unlock_window": {
-        "message": "إلغاء قفل النافذة"
+        "message": "فتح نافذة"
     },
     "popup_menu_show_translate_button": {
-        "message": "إظهار زر الترجمة"
+        "message": "عرض زر ترجمة"
     },
     "popup_menu_hide_translate_button": {
         "message": "إخفاء زر الترجمة"
@@ -160,13 +195,13 @@
         "message": "ترجمة"
     },
     "theme_light": {
-        "message": "موضوع خفيف"
+        "message": "موضوع الضوء"
     },
     "theme_dark": {
         "message": "موضوع مظلم"
     },
     "theme_system": {
-        "message": "الموضوع الافتراضي"
+        "message": "موضوع النظام"
     },
     "tooltip_translate_text": {
         "message": "ترجمة النص المحدد"
@@ -175,13 +210,13 @@
         "message": "نسخ إلى الحافظة"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "النسخ غير مدعوم على مواقع HTTP"
+        "message": "النسخة لا تدعم على مواقع HTTP"
     },
     "tooltip_copyed": {
-        "message": "منسوخ!"
+        "message": "نسخ"
     },
     "tooltip_copy_error": {
-        "message": "خطأ في النسخ!"
+        "message": "نسخ خطأ!"
     },
     "tooltip_listen_to_the_text": {
         "message": "استمع إلى النص"
@@ -199,10 +234,10 @@
         "message": "إلى الأمام"
     },
     "tooltip_clear_text": {
-        "message": "مسح النص"
+        "message": "نص واضح"
     },
     "tooltip_clear_search": {
-        "message": "مسح البحث"
+        "message": "بحث واضح"
     },
     "date_today": {
         "message": "اليوم"
@@ -211,345 +246,612 @@
         "message": "أمس"
     },
     "forefox_perm_header": {
-        "message": "السماح بالتشغيل في Firefox"
+        "message": "السماح الإطلاق في Firefox"
     },
     "forefox_perm_text": {
-        "message": "يتطلب الامتداد إذنك للوصول إلى مواقع الويب والترجمة في متصفح Firefox."
+        "message": "يحتاج هذا الملحق إلى إذنك للوصول إلى مواقع الويب وترجمتها في Firefox"
     },
     "forefox_perm_button": {
         "message": "إدارة الأذونات"
     },
     "select_language_search_placeholder": {
-        "message": "البحث عن اللغات (رمز ISO أو الاسم)"
+        "message": "ابحث عن اللغات (رمز ISO أو الاسم)"
     },
     "select_language_search_no_results": {
         "message": "لا نتائج"
     },
-    "supported_languages_auto": {
-        "message": "اكتشاف اللغة"
+    "try_my_extensions": {
+        "message": "🚀 جرب ملحقاتي الأخرى"
     },
-    "supported_languages_af": {
-        "message": "الأفريقي"
+    "language_auto": {
+        "message": "اكتشف اللغة"
     },
-    "supported_languages_sq": {
+    "language_ab": {
+        "message": "أبخاز"
+    },
+    "language_ace": {
+        "message": "Acehnese"
+    },
+    "language_ach": {
+        "message": "أشولي"
+    },
+    "language_af": {
+        "message": "أفريكانيين"
+    },
+    "language_sq": {
         "message": "الألبانية"
     },
-    "supported_languages_am": {
-        "message": "الأمهرية"
+    "language_alz": {
+        "message": "ألور"
     },
-    "supported_languages_ar": {
+    "language_am": {
+        "message": "أمهرية"
+    },
+    "language_ar": {
         "message": "عربي"
     },
-    "supported_languages_hy": {
-        "message": "الأرمينية"
+    "language_hy": {
+        "message": "أرمني"
     },
-    "supported_languages_az": {
+    "language_as": {
+        "message": "الأسامية"
+    },
+    "language_awa": {
+        "message": "عودي"
+    },
+    "language_ay": {
+        "message": "أيمارا"
+    },
+    "language_az": {
         "message": "أذربيجاني"
     },
-    "supported_languages_eu": {
+    "language_ban": {
+        "message": "بالي"
+    },
+    "language_bm": {
+        "message": "بامبارا"
+    },
+    "language_ba": {
+        "message": "باشكر"
+    },
+    "language_eu": {
         "message": "الباسك"
     },
-    "supported_languages_be": {
-        "message": "البيلاروسية"
+    "language_btx": {
+        "message": "باتاك كارو"
     },
-    "supported_languages_bn": {
+    "language_bts": {
+        "message": "باتاك Simalungun"
+    },
+    "language_bbc": {
+        "message": "باتاك توبا"
+    },
+    "language_be": {
+        "message": "البيلاروسي"
+    },
+    "language_bem": {
+        "message": "بيمبا"
+    },
+    "language_bn": {
         "message": "البنغالية"
     },
-    "supported_languages_bs": {
-        "message": "البوسنية"
+    "language_bew": {
+        "message": "بيتاوي"
     },
-    "supported_languages_bg": {
+    "language_bho": {
+        "message": "بوجبوري"
+    },
+    "language_bik": {
+        "message": "بيكول"
+    },
+    "language_bs": {
+        "message": "البوسني"
+    },
+    "language_br": {
+        "message": "بريتون"
+    },
+    "language_bg": {
         "message": "البلغارية"
     },
-    "supported_languages_ca": {
-        "message": "الكاتالونية"
+    "language_bua": {
+        "message": "دبوس"
     },
-    "supported_languages_ceb": {
-        "message": "السيبيونو"
+    "language_yue": {
+        "message": "الكانتونية"
     },
-    "supported_languages_ny": {
-        "message": "تشيوا"
+    "language_ca": {
+        "message": "كاتالونية"
     },
-    "supported_languages_zh_CN": {
-        "message": "الصينية المبسطة"
+    "language_ceb": {
+        "message": "سيبوانو"
     },
-    "supported_languages_zh_TW": {
-        "message": "تقاليد صينية"
+    "language_ny": {
+        "message": "تشيشيكا (نيانجا)"
     },
-    "supported_languages_co": {
-        "message": "كورسيكية"
+    "language_zh_CN": {
+        "message": "الصينية (مبسطة)"
     },
-    "supported_languages_hr": {
+    "language_zh_TW": {
+        "message": "الصينية (التقليدية)"
+    },
+    "language_cv": {
+        "message": "تشوفاش"
+    },
+    "language_co": {
+        "message": "كورسيكان"
+    },
+    "language_crh": {
+        "message": "القرم تاتار"
+    },
+    "language_hr": {
         "message": "الكرواتية"
     },
-    "supported_languages_cs": {
+    "language_cs": {
         "message": "التشيكية"
     },
-    "supported_languages_da": {
+    "language_da": {
         "message": "دانماركي"
     },
-    "supported_languages_nl": {
+    "language_din": {
+        "message": "دينكا"
+    },
+    "language_dv": {
+        "message": "Divehi"
+    },
+    "language_doi": {
+        "message": "دوغري"
+    },
+    "language_dov": {
+        "message": "دومبي"
+    },
+    "language_nl": {
         "message": "هولندي"
     },
-    "supported_languages_en": {
+    "language_dz": {
+        "message": "Dzongkha"
+    },
+    "language_en": {
         "message": "إنجليزي"
     },
-    "supported_languages_eo": {
-        "message": "الاسبرانتو"
+    "language_eo": {
+        "message": "إسبرانتو"
     },
-    "supported_languages_et": {
+    "language_et": {
         "message": "الإستونية"
     },
-    "supported_languages_fi": {
+    "language_ee": {
+        "message": "نعجة"
+    },
+    "language_fj": {
+        "message": "فيجي"
+    },
+    "language_fil": {
+        "message": "فلبيني (التاغالوغ)"
+    },
+    "language_fi": {
         "message": "الفنلندية"
     },
-    "supported_languages_fr": {
+    "language_fr": {
         "message": "فرنسي"
     },
-    "supported_languages_fy": {
-        "message": "الفريزية"
+    "language_fr_FR": {
+        "message": "الفرنسية (الفرنسية)"
     },
-    "supported_languages_gl": {
-        "message": "الجاليكية"
+    "language_fr_CA": {
+        "message": "الفرنسية (كندية)"
     },
-    "supported_languages_ka": {
-        "message": "الجورجية"
+    "language_fy": {
+        "message": "فريسيان"
     },
-    "supported_languages_de": {
-        "message": "ألمانية"
+    "language_ff": {
+        "message": "Fulfulde"
     },
-    "supported_languages_el": {
+    "language_gaa": {
+        "message": "جا"
+    },
+    "language_gl": {
+        "message": "جاليكيان"
+    },
+    "language_lg": {
+        "message": "غاندا (لوغاندا)"
+    },
+    "language_ka": {
+        "message": "الجورجي"
+    },
+    "language_de": {
+        "message": "الألمانية"
+    },
+    "language_el": {
         "message": "اليونانية"
     },
-    "supported_languages_gu": {
-        "message": "الغوجاراتية"
+    "language_gn": {
+        "message": "غواراني"
     },
-    "supported_languages_ht": {
-        "message": "هايتي"
+    "language_gu": {
+        "message": "غوجاراتية"
     },
-    "supported_languages_ha": {
+    "language_ht": {
+        "message": "الكريول الهايتي"
+    },
+    "language_cnh": {
+        "message": "ذقن هاكا"
+    },
+    "language_ha": {
         "message": "الهوسا"
     },
-    "supported_languages_haw": {
+    "language_haw": {
         "message": "هاواي"
     },
-    "supported_languages_he": {
-        "message": "اللغة العبرية"
+    "language_iw": {
+        "message": "العبرية"
     },
-    "supported_languages_iw": {
-        "message": "اللغة العبرية"
+    "language_hil": {
+        "message": "Hiligaynon"
     },
-    "supported_languages_hi": {
+    "language_hi": {
         "message": "الهندية"
     },
-    "supported_languages_hu": {
-        "message": "المجرية"
+    "language_hmn": {
+        "message": "همونغ"
     },
-    "supported_languages_is": {
+    "language_hu": {
+        "message": "المجري"
+    },
+    "language_hrx": {
+        "message": "هونسريك"
+    },
+    "language_is": {
         "message": "الأيسلندية"
     },
-    "supported_languages_ig": {
-        "message": "الإيغبو"
+    "language_ig": {
+        "message": "الإغبو"
     },
-    "supported_languages_id": {
-        "message": "الاندونيسية"
+    "language_ilo": {
+        "message": "إيلوكو"
     },
-    "supported_languages_ga": {
+    "language_id": {
+        "message": "إندونيسي"
+    },
+    "language_ga": {
         "message": "الأيرلندية"
     },
-    "supported_languages_it": {
-        "message": "ايطالي"
+    "language_it": {
+        "message": "إيطالي"
     },
-    "supported_languages_ja": {
+    "language_ja": {
         "message": "اليابانية"
     },
-    "supported_languages_jv": {
+    "language_jw": {
         "message": "الجاوية"
     },
-    "supported_languages_kn": {
+    "language_kn": {
         "message": "الكانادا"
     },
-    "supported_languages_kk": {
-        "message": "الكازاخستانية"
+    "language_pam": {
+        "message": "كابامبانجان"
     },
-    "supported_languages_km": {
+    "language_kk": {
+        "message": "كازاخاخية"
+    },
+    "language_km": {
         "message": "الخمير"
     },
-    "supported_languages_ky": {
-        "message": "القرغيز"
+    "language_cgg": {
+        "message": "كيغا"
     },
-    "supported_languages_ko": {
-        "message": "الكورية"
+    "language_rw": {
+        "message": "كينيارواندا"
     },
-    "supported_languages_ku": {
-        "message": "كردي"
+    "language_ktu": {
+        "message": "Kituba"
     },
-    "supported_languages_lo": {
-        "message": "لاوس"
+    "language_gom": {
+        "message": "كونكاني"
     },
-    "supported_languages_la": {
+    "language_ko": {
+        "message": "كوري"
+    },
+    "language_kri": {
+        "message": "كريو"
+    },
+    "language_ku": {
+        "message": "الكورديش (كورمانجي)"
+    },
+    "language_ckb": {
+        "message": "الكردي (سوراني)"
+    },
+    "language_ky": {
+        "message": "قيرغيز"
+    },
+    "language_lo": {
+        "message": "لاو"
+    },
+    "language_ltg": {
+        "message": "لاتجاليان"
+    },
+    "language_la": {
         "message": "اللاتينية"
     },
-    "supported_languages_lv": {
+    "language_lv": {
         "message": "لاتفيا"
     },
-    "supported_languages_lt": {
-        "message": "الليتوانية"
+    "language_lij": {
+        "message": "ليغوري"
     },
-    "supported_languages_lb": {
-        "message": "اللوكسمبرجية"
+    "language_li": {
+        "message": "ليمبورغان"
     },
-    "supported_languages_mk": {
-        "message": "المقدونية"
+    "language_ln": {
+        "message": "لينغالا"
     },
-    "supported_languages_mg": {
-        "message": "مدغشقر"
+    "language_lt": {
+        "message": "الليتواني"
     },
-    "supported_languages_ms": {
-        "message": "لغة الملايو"
+    "language_lmo": {
+        "message": "لومبارد"
     },
-    "supported_languages_ml": {
-        "message": "المالايالامية"
+    "language_luo": {
+        "message": "لوو"
     },
-    "supported_languages_mt": {
+    "language_lb": {
+        "message": "لوكسمبورجيش"
+    },
+    "language_mk": {
+        "message": "مقدوني"
+    },
+    "language_mai": {
+        "message": "Maithili"
+    },
+    "language_mak": {
+        "message": "ماكاسار"
+    },
+    "language_mg": {
+        "message": "الملغاشية"
+    },
+    "language_ms": {
+        "message": "الملايو"
+    },
+    "language_ms_Arab": {
+        "message": "الملايو (جاوي)"
+    },
+    "language_ml": {
+        "message": "الملايالام"
+    },
+    "language_mt": {
         "message": "المالطية"
     },
-    "supported_languages_mi": {
+    "language_mi": {
         "message": "الماوري"
     },
-    "supported_languages_mr": {
+    "language_mr": {
         "message": "المهاراتية"
     },
-    "supported_languages_mn": {
-        "message": "المنغولية"
+    "language_chm": {
+        "message": "مرج ماري"
     },
-    "supported_languages_hmn": {
-        "message": "راهب"
+    "language_mni_Mtei": {
+        "message": "ميتيلون (مانيبوري)"
     },
-    "supported_languages_my": {
-        "message": "ميانمار"
+    "language_min": {
+        "message": "مينانج"
     },
-    "supported_languages_ne": {
-        "message": "ميبالي"
+    "language_lus": {
+        "message": "ميزو"
     },
-    "supported_languages_no": {
+    "language_mn": {
+        "message": "المنغولي"
+    },
+    "language_my": {
+        "message": "ميانمار (بورمي)"
+    },
+    "language_nr": {
+        "message": "نديبيلي (الجنوب)"
+    },
+    "language_new": {
+        "message": "نيبالبهاسا (نياري)"
+    },
+    "language_ne": {
+        "message": "النيبالي"
+    },
+    "language_nso": {
+        "message": "شمال سوثو (Sepedi)"
+    },
+    "language_no": {
         "message": "النرويجية"
     },
-    "supported_languages_fa": {
-        "message": "اللغة الفارسية"
+    "language_nus": {
+        "message": "نوير"
     },
-    "supported_languages_pl": {
-        "message": "تلميع"
+    "language_oc": {
+        "message": "Occitan"
     },
-    "supported_languages_pt": {
+    "language_or": {
+        "message": "Odia (Oriya)"
+    },
+    "language_om": {
+        "message": "أورومو"
+    },
+    "language_pag": {
+        "message": "بانجاسينان"
+    },
+    "language_pap": {
+        "message": "Papiamento"
+    },
+    "language_ps": {
+        "message": "الباشتو"
+    },
+    "language_fa": {
+        "message": "فارسي"
+    },
+    "language_pl": {
+        "message": "بولندي"
+    },
+    "language_pt": {
         "message": "البرتغالية"
     },
-    "supported_languages_pa": {
+    "language_pt_PT": {
+        "message": "البرتغالية (البرتغال)"
+    },
+    "language_pt_BR": {
+        "message": "البرتغالية (البرازيل)"
+    },
+    "language_pa": {
         "message": "البنجابية"
     },
-    "supported_languages_ps": {
-        "message": "يدفع الى"
+    "language_pa_Arab": {
+        "message": "البنجابية (شاهموخي)"
     },
-    "supported_languages_ro": {
+    "language_qu": {
+        "message": "Quechua"
+    },
+    "language_rom": {
         "message": "روماني"
     },
-    "supported_languages_ru": {
+    "language_ro": {
+        "message": "روماني"
+    },
+    "language_rn": {
+        "message": "روندي"
+    },
+    "language_ru": {
         "message": "الروسية"
     },
-    "supported_languages_sm": {
+    "language_sm": {
         "message": "ساموا"
     },
-    "supported_languages_gd": {
-        "message": "الغيلية الاسكتلندية"
+    "language_sg": {
+        "message": "سانجو"
     },
-    "supported_languages_sr": {
-        "message": "الصربية"
+    "language_sa": {
+        "message": "السنسكريتية"
     },
-    "supported_languages_sn": {
+    "language_gd": {
+        "message": "الاسكتلنديين الغيليك"
+    },
+    "language_sr": {
+        "message": "الصربي"
+    },
+    "language_st": {
+        "message": "Sesotho"
+    },
+    "language_crs": {
+        "message": "سيشيلوا كريول"
+    },
+    "language_shn": {
+        "message": "شان"
+    },
+    "language_sn": {
         "message": "شونا"
     },
-    "supported_languages_sd": {
-        "message": "السندية"
+    "language_scn": {
+        "message": "صقلية"
     },
-    "supported_languages_si": {
-        "message": "السنهالية"
+    "language_szl": {
+        "message": "سيليزي"
     },
-    "supported_languages_sk": {
-        "message": "السلوفاكية"
+    "language_sd": {
+        "message": "السندي"
     },
-    "supported_languages_sl": {
-        "message": "السلوفينية"
+    "language_si": {
+        "message": "السنهالية (السنهالية)"
     },
-    "supported_languages_so": {
-        "message": "الصومالية"
+    "language_sk": {
+        "message": "سلوفاك"
     },
-    "supported_languages_sx": {
-        "message": "سوتو"
+    "language_sl": {
+        "message": "سلوفيني"
     },
-    "supported_languages_es": {
+    "language_so": {
+        "message": "صومالي"
+    },
+    "language_es": {
         "message": "الأسبانية"
     },
-    "supported_languages_su": {
-        "message": "السودانية"
+    "language_su": {
+        "message": "صنداني"
     },
-    "supported_languages_sw": {
-        "message": "السواحلية"
+    "language_sw": {
+        "message": "السواحيلية"
     },
-    "supported_languages_sv": {
+    "language_ss": {
+        "message": "سواتي"
+    },
+    "language_sv": {
         "message": "السويدية"
     },
-    "supported_languages_tl": {
-        "message": "التاغالوغية"
+    "language_ber": {
+        "message": "Tamazight (Tifinagh)"
     },
-    "supported_languages_tg": {
-        "message": "الطاجيكية"
+    "language_ber_latn": {
+        "message": "Tamazight"
     },
-    "supported_languages_ta": {
+    "language_tg": {
+        "message": "طاجيك"
+    },
+    "language_ta": {
         "message": "التاميل"
     },
-    "supported_languages_te": {
+    "language_tt": {
+        "message": "التتار"
+    },
+    "language_te": {
         "message": "التيلجو"
     },
-    "supported_languages_th": {
+    "language_tet": {
+        "message": "Tetum"
+    },
+    "language_th": {
         "message": "التايلاندية"
     },
-    "supported_languages_tr": {
-        "message": "اللغة التركية"
+    "language_ti": {
+        "message": "تيغنة"
     },
-    "supported_languages_uk": {
+    "language_ts": {
+        "message": "تسونجا"
+    },
+    "language_tn": {
+        "message": "Tswana"
+    },
+    "language_tr": {
+        "message": "التركية"
+    },
+    "language_tk": {
+        "message": "تركمان"
+    },
+    "language_ak": {
+        "message": "توي (أكان)"
+    },
+    "language_uk": {
         "message": "الأوكرانية"
     },
-    "supported_languages_ur": {
+    "language_ur": {
         "message": "الأردية"
     },
-    "supported_languages_uz": {
-        "message": "الأوزبكية"
+    "language_ug": {
+        "message": "أويغور"
     },
-    "supported_languages_vi": {
-        "message": "الفيتنامية"
+    "language_uz": {
+        "message": "أوزبك"
     },
-    "supported_languages_cy": {
-        "message": "تهرب من دفع الرهان"
+    "language_vi": {
+        "message": "الفيتنامي"
     },
-    "supported_languages_xh": {
-        "message": "خوسا"
+    "language_cy": {
+        "message": "الويلزية"
     },
-    "supported_languages_yi": {
+    "language_xh": {
+        "message": "Xhosa"
+    },
+    "language_yi": {
         "message": "اليديشية"
     },
-    "supported_languages_yo": {
-        "message": "اليوروبا"
+    "language_yo": {
+        "message": "يوروبا"
     },
-    "supported_languages_zu": {
-        "message": "الزولو"
+    "language_yua": {
+        "message": "يوكاتيك مايا"
     },
-    "supported_languages_qu": {
-        "message": "الكيشوا"
-    },
-    "supported_languages_om": {
-        "message": "الأورومو"
-    },
-    "supported_languages_ilo": {
-        "message": "ايلوكانو"
+    "language_zu": {
+        "message": "زولو"
     }
 }

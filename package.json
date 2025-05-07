@@ -1,36 +1,46 @@
 {
-	"name": "translater",
-	"version": "1.2.1",
-	"license": "MIT",
-	"author": "chergav",
-	"type": "module",
-	"scripts": {
-		"dev": "vite",
-		"build": "NODE_ENV=production vite build",
-		"preview": "vite preview",
-		"prepack:crx": "pnpm build",
-		"pack:crx": "crx3 dist/chrome --crxURL https://raw.githubusercontent.com/chergav/translater/master/extension/translater-$npm_package_version.crx -p extension/translater.pem -x extension/translater.xml -o extension/translater-$npm_package_version.crx",
-		"postpack:crx": "node utils/delete-update_url-manifest.js && cd dist/chrome && zip -FSr ../../extension/translater-$npm_package_version.zip ./",
-		"prepack:zip": "BROWSER=firefox pnpm build && node utils/clean-manifest-for-ff.js",
-		"pack:zip": "cd ./dist/firefox && zip -FSr ../../extension/translater-ff-$npm_package_version.zip ./",
-		"postpack:zip": "zip -FSr extension/translater-ff-src-$npm_package_version.zip ./ -x '.git/*' 'dist/*' 'docs/*' 'extension/*' 'node_modules/*'",
-		"pack:all": "pnpm pack:crx && pnpm pack:zip",
-		"lint": "eslint ."
-	},
-	"dependencies": {
-		"@floating-ui/dom": "^1.5.3"
-	},
-	"devDependencies": {
-		"@crxjs/vite-plugin": "2.0.0-beta.23",
-		"@sveltejs/vite-plugin-svelte": "^2.5.2",
-		"@tailwindcss/forms": "^0.5.7",
-		"autoprefixer": "^10.4.16",
-		"crx3": "^1.1.3",
-		"eslint": "^8.53.0",
-		"eslint-plugin-svelte": "^2.35.0",
-		"postcss": "^8.4.31",
-		"svelte": "^4.2.3",
-		"tailwindcss": "^3.3.5",
-		"vite": "^4.5.0"
-	}
+  "name": "translater",
+  "description": "manifest.json description",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox --mv3",
+    "build": "wxt build",
+    "build:firefox": "wxt build -b firefox --mv3",
+    "zip": "wxt zip",
+    "zip:firefox": "wxt zip -b firefox --mv3",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "postinstall": "wxt prepare",
+    "lint": "eslint . --fix",
+    "translate-locales": "node ./utils/translate-locales.ts"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1.2.9",
+    "@eslint/js": "^9.26.0",
+    "@mdi/js": "^7.4.47",
+    "@stylistic/eslint-plugin": "^4.2.0",
+    "@tsconfig/svelte": "^5.0.4",
+    "@wxt-dev/module-svelte": "^2.0.3",
+    "eslint": "^9.26.0",
+    "eslint-plugin-svelte": "^3.5.1",
+    "globals": "^16.0.0",
+    "svelte": "^5.28.2",
+    "svelte-check": "^4.1.7",
+    "tailwind-variants": "^1.0.0",
+    "tslib": "^2.8.1",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.31.1",
+    "vite": "^6.3.4",
+    "wxt": "^0.20.6"
+  },
+  "dependencies": {
+    "@floating-ui/dom": "^1.7.0",
+    "@fontsource-variable/inter": "^5.2.5",
+    "@tailwindcss/vite": "^4.1.5",
+    "fast-deep-equal": "^3.1.3",
+    "qr-code-styling": "^1.9.2",
+    "tailwindcss": "^4.1.5"
+  }
 }

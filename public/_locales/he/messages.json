@@ -1,9 +1,14 @@
 {
     "app_name": {
-        "message": "Translater - תרגום של טקסט נבחר"
+        "message": "$App_name$ - תרגום של טקסט נבחר",
+        "placeholders": {
+            "app_name": {
+                "content": "Translater"
+            }
+        }
     },
     "app_description": {
-        "message": "תרגום טקסט נבחר עם Google Translate עם נושא בהיר וכהה"
+        "message": "תרגם טקסט שנבחר עם Google Translate"
     },
     "app_version": {
         "message": "גִרְסָה"
@@ -23,15 +28,15 @@
         }
     },
     "commands_open_translater": {
-        "message": "פתח את $APP_NAME$",
+        "message": "פתח $app_name$",
         "placeholders": {
             "app_name": {
                 "content": "Translater"
             }
         }
     },
-    "popup_or_press_keyboard_shortcut": {
-        "message": "או הקש על קיצור מקשים בעמוד:"
+    "popup_or": {
+        "message": "אוֹ"
     },
     "options_tab_inline_translate": {
         "message": "קריאה וקלט"
@@ -40,22 +45,22 @@
         "message": "חלון קופץ"
     },
     "options_tab_appearance": {
-        "message": "הופעה חיצונית"
+        "message": "מראה חיצוני"
     },
     "options_tab_history": {
         "message": "הִיסטוֹרִיָה"
     },
     "options_inline_button_show": {
-        "message": "הצג כפתור כאשר טקסט נבחר"
+        "message": "כפתור הצג כאשר נבחר הטקסט"
     },
     "options_text_field_button_show": {
-        "message": "הצג כפתור בשדה הטקסט"
+        "message": "הצג כפתור ב- TextField"
     },
     "options_hide_button_on_sites": {
-        "message": "הסתר את הכפתור באתרים הבאים:"
+        "message": "הסתר את הכפתור באתרים אלה:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "הוסף דומיינים באמצעות התפריט של חלון קופץ באתר שברצונך לא לכלול"
+        "message": "הוסף דומיינים באמצעות תפריט חלון הקופץ באתר שברצונך לשלול"
     },
     "options_show_original_text": {
         "message": "הצג טקסט מקור"
@@ -67,10 +72,10 @@
         "message": "נעל חלון קופץ"
     },
     "options_lock_popup_window_hint": {
-        "message": "אם מופעל חלון קופץ לא ייסגר בלחיצה בחוץ"
+        "message": "אם יופעל, הקופץ לא ייסגר בעת לחיצה מחוץ לו"
     },
     "options_history_length": {
-        "message": "אורך ההיסטוריה"
+        "message": "ערכי היסטוריה (מקסימום)"
     },
     "options_records_in_history": {
         "message": "ערכים בהיסטוריה:"
@@ -79,13 +84,13 @@
         "message": "אפשר היסטוריה"
     },
     "options_clear_history": {
-        "message": "מחק היסטוריה"
+        "message": "מחק את ההיסטוריה"
     },
     "options_delete_history_item": {
         "message": "מחק מההיסטוריה"
     },
     "options_tts_language": {
-        "message": "שפה"
+        "message": "שָׂפָה"
     },
     "options_tts_default_voice": {
         "message": "קול ברירת מחדל"
@@ -94,34 +99,64 @@
         "message": "קולות"
     },
     "options_tts_table_caption": {
-        "message": "עבור שפות שאינן מופיעות ברשימה, ייעשה שימוש בשירות טקסט לדיבור חיצוני."
+        "message": "אם שפה אינה מופיעה, ישמש שירות חיצוני לדיבורת טקסט לדיבור."
     },
     "options_tts_no_voices_found": {
-        "message": "לא נמצאו קולות בדפדפן. ייעשה שימוש בשירות טקסט לדיבור חיצוני."
+        "message": "הדפדפן שלך אינו תומך בסינתזת דיבור. במקום זאת נשתמש בשירות חיצוני."
     },
     "options_edit_keyboard_shortcut": {
-        "message": "ערוך קיצור מקלדת"
+        "message": "ערוך קיצורי מקשים"
     },
     "options_keyboard_shortcut_open_popup": {
-        "message": "קיצור מקלדת לפתיחת חלון קופץ:"
+        "message": "קיצור דרך למקלדת לפתיחת חלון קופץ"
     },
     "options_key_combination_is_not_set": {
-        "message": "צירוף המקשים אינו מוגדר"
+        "message": "קיצור המקלדת אינו מוגדר"
+    },
+    "options_font_size": {
+        "message": "גודל גופן"
+    },
+    "options_font_size_xs": {
+        "message": "קטן במיוחד (12 פיקסלים)"
+    },
+    "options_font_size_sm": {
+        "message": "קטן (14 פיקסלים)"
+    },
+    "options_font_size_md": {
+        "message": "רגיל (16 פיקסלים)"
+    },
+    "options_font_size_lg": {
+        "message": "גדול (18 פיקסלים)"
+    },
+    "options_font_size_xl": {
+        "message": "גדול במיוחד (20 פיקסלים)"
+    },
+    "options_support_msg": {
+        "message": "אם משהו לא עובד, או שיש לך הצעות, אנא הודע לי כאן"
+    },
+    "options_support_donations": {
+        "message": "אם תרצה לתמוך בתוכנה חינמית זו"
+    },
+    "options_address": {
+        "message": "כְּתוֹבֶת"
+    },
+    "options_copy_address": {
+        "message": "כתובת העתק"
     },
     "text_expand": {
-        "message": "יותר"
+        "message": "יוֹתֵר"
     },
     "text_collapse": {
-        "message": "התמוטטות"
+        "message": "פָּחוֹת"
     },
     "target_lang_label": {
-        "message": "לתרגם ל:"
+        "message": "תרגם ל:"
     },
     "popup_dictionary": {
         "message": "מילון"
     },
     "popup_dictionary_frequency": {
-        "message": "תדירות"
+        "message": "תֶדֶר"
     },
     "popup_definitions": {
         "message": "הגדרות"
@@ -133,25 +168,25 @@
         "message": "דוגמאות"
     },
     "popup_perhaps_you_meant": {
-        "message": "אולי התכוונת ל:"
+        "message": "אולי התכוונת:"
     },
     "popup_original_language": {
-        "message": "שפת מקור:"
+        "message": "שפה מקורית:"
     },
     "popup_menu_reverse_translate": {
-        "message": "תרגום לאחור"
+        "message": "תרגום הפוך"
     },
     "popup_menu_lock_window": {
-        "message": "נעילת חלון"
+        "message": "חלון נעילה"
     },
     "popup_menu_unlock_window": {
-        "message": "בטל את נעילת החלון"
+        "message": "ביטול נעילת חלון"
     },
     "popup_menu_show_translate_button": {
         "message": "הצג כפתור תרגום"
     },
     "popup_menu_hide_translate_button": {
-        "message": "הסתר לחצן תרגום"
+        "message": "הסתר כפתור תרגום"
     },
     "popup_menu_options_link": {
         "message": "הגדרות נוספות"
@@ -160,13 +195,13 @@
         "message": "תִרגוּם"
     },
     "theme_light": {
-        "message": "נושא קליל"
+        "message": "נושא קל"
     },
     "theme_dark": {
-        "message": "ערכת נושא כהה"
+        "message": "נושא אפל"
     },
     "theme_system": {
-        "message": "ערכת נושא המוגדרת כברירת מחדל"
+        "message": "נושא מערכת"
     },
     "tooltip_translate_text": {
         "message": "תרגם טקסט נבחר"
@@ -175,25 +210,25 @@
         "message": "העתק ללוח"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "העתקה אינה נתמכת באתרי HTTP"
+        "message": "העתק אינו תמיכה באתרי HTTP"
     },
     "tooltip_copyed": {
-        "message": "הועתק!"
+        "message": "מוּעֲתָק"
     },
     "tooltip_copy_error": {
-        "message": "שגיאת העתקה!"
+        "message": "שגיאת העתק!"
     },
     "tooltip_listen_to_the_text": {
-        "message": "האזינו לטקסט"
+        "message": "האזן לטקסט"
     },
     "tooltip_listen_stop": {
-        "message": "תפסיק"
+        "message": "לְהַפְסִיק"
     },
     "tooltip_listen_language_is_not_support": {
-        "message": "השפה אינה תמיכה"
+        "message": "שפה אינה תמיכה"
     },
     "tooltip_go_back": {
-        "message": "חזור"
+        "message": "בְּחֲזָרָה"
     },
     "tooltip_go_forward": {
         "message": "קָדִימָה"
@@ -202,22 +237,22 @@
         "message": "טקסט ברור"
     },
     "tooltip_clear_search": {
-        "message": "חיפוש נקי"
+        "message": "חיפוש ברור"
     },
     "date_today": {
-        "message": "היום"
+        "message": "הַיוֹם"
     },
     "date_yesterday": {
-        "message": "אתמול"
+        "message": "אֶתמוֹל"
     },
     "forefox_perm_header": {
-        "message": "אפשר הפעלה בפיירפוקס"
+        "message": "אפשר את ההשקה ב Firefox"
     },
     "forefox_perm_text": {
-        "message": "התוסף דורש אישור ממך לגשת לאתרים ולתרגם בדפדפן Firefox."
+        "message": "סיומת זו זקוקה להרשאתך לגשת לאתרים ולתרגם אותם ב- Firefox"
     },
     "forefox_perm_button": {
-        "message": "נהל הרשאות"
+        "message": "לנהל הרשאות"
     },
     "select_language_search_placeholder": {
         "message": "מצא שפות (קוד ISO או שם)"
@@ -225,331 +260,598 @@
     "select_language_search_no_results": {
         "message": "אין תוצאות"
     },
-    "supported_languages_auto": {
-        "message": "איתור שפה"
+    "try_my_extensions": {
+        "message": "נסה את התוספים האחרים שלי"
     },
-    "supported_languages_af": {
-        "message": "אַפְרִיקַנִי"
+    "language_auto": {
+        "message": "לזהות שפה"
     },
-    "supported_languages_sq": {
+    "language_ab": {
+        "message": "אבקהז"
+    },
+    "language_ace": {
+        "message": "ACEHNESE"
+    },
+    "language_ach": {
+        "message": "Acholi"
+    },
+    "language_af": {
+        "message": "אפריקה"
+    },
+    "language_sq": {
         "message": "אלבני"
     },
-    "supported_languages_am": {
+    "language_alz": {
+        "message": "אלור"
+    },
+    "language_am": {
         "message": "אמהרית"
     },
-    "supported_languages_ar": {
+    "language_ar": {
         "message": "עֲרָבִית"
     },
-    "supported_languages_hy": {
+    "language_hy": {
         "message": "אַרְמֶנִי"
     },
-    "supported_languages_az": {
-        "message": "אזרבייג'נית"
+    "language_as": {
+        "message": "אסאמים"
     },
-    "supported_languages_eu": {
-        "message": "באסקית"
+    "language_awa": {
+        "message": "עוואדי"
     },
-    "supported_languages_be": {
-        "message": "בלארוסית"
+    "language_ay": {
+        "message": "איימרה"
     },
-    "supported_languages_bn": {
-        "message": "בנגלית"
+    "language_az": {
+        "message": "אזרבייג'ני"
     },
-    "supported_languages_bs": {
-        "message": "בוסנית"
+    "language_ban": {
+        "message": "באלינזה"
     },
-    "supported_languages_bg": {
-        "message": "בולגרית"
+    "language_bm": {
+        "message": "בבהרה"
     },
-    "supported_languages_ca": {
-        "message": "קטלאנית"
+    "language_ba": {
+        "message": "בשקיר"
     },
-    "supported_languages_ceb": {
+    "language_eu": {
+        "message": "בסק"
+    },
+    "language_btx": {
+        "message": "באטק קארו"
+    },
+    "language_bts": {
+        "message": "Batak Simalungun"
+    },
+    "language_bbc": {
+        "message": "בטק טובא"
+    },
+    "language_be": {
+        "message": "בלארוס"
+    },
+    "language_bem": {
+        "message": "BEMBA"
+    },
+    "language_bn": {
+        "message": "בנגלי"
+    },
+    "language_bew": {
+        "message": "בטאווי"
+    },
+    "language_bho": {
+        "message": "Bhojpuri"
+    },
+    "language_bik": {
+        "message": "ביקול"
+    },
+    "language_bs": {
+        "message": "בוסני"
+    },
+    "language_br": {
+        "message": "ברטון"
+    },
+    "language_bg": {
+        "message": "בולגרי"
+    },
+    "language_bua": {
+        "message": "בוריאט"
+    },
+    "language_yue": {
+        "message": "קנטונזית"
+    },
+    "language_ca": {
+        "message": "קטלנית"
+    },
+    "language_ceb": {
         "message": "סבואנו"
     },
-    "supported_languages_ny": {
-        "message": "צ'ווה"
+    "language_ny": {
+        "message": "Chichewa (Nyanja)"
     },
-    "supported_languages_zh_CN": {
-        "message": "סינית מופשטת"
+    "language_zh_CN": {
+        "message": "סינית (מפושטת)"
     },
-    "supported_languages_zh_TW": {
-        "message": "מסורת סינית"
+    "language_zh_TW": {
+        "message": "סיני (מסורתי)"
     },
-    "supported_languages_co": {
-        "message": "קורסיקאי"
+    "language_cv": {
+        "message": "צ'ובש"
     },
-    "supported_languages_hr": {
-        "message": "קרואטית"
+    "language_co": {
+        "message": "קורסיקני"
     },
-    "supported_languages_cs": {
-        "message": "צ'כית"
+    "language_crh": {
+        "message": "טטר קרים"
     },
-    "supported_languages_da": {
+    "language_hr": {
+        "message": "קרואטי"
+    },
+    "language_cs": {
+        "message": "צ'כיה"
+    },
+    "language_da": {
         "message": "דַנִי"
     },
-    "supported_languages_nl": {
+    "language_din": {
+        "message": "דינקה"
+    },
+    "language_dv": {
+        "message": "Divehi"
+    },
+    "language_doi": {
+        "message": "דוגרי"
+    },
+    "language_dov": {
+        "message": "דומי"
+    },
+    "language_nl": {
         "message": "הוֹלַנדִי"
     },
-    "supported_languages_en": {
-        "message": "אנגלית"
+    "language_dz": {
+        "message": "Dzongkha"
     },
-    "supported_languages_eo": {
+    "language_en": {
+        "message": "אַנגְלִית"
+    },
+    "language_eo": {
         "message": "אֶסְפֵּרַנְטוֹ"
     },
-    "supported_languages_et": {
-        "message": "אסטונית"
+    "language_et": {
+        "message": "אסטוני"
     },
-    "supported_languages_fi": {
+    "language_ee": {
+        "message": "כִּבשָׂה"
+    },
+    "language_fj": {
+        "message": "פיג'יאן"
+    },
+    "language_fil": {
+        "message": "פיליפיני (תגאלוג)"
+    },
+    "language_fi": {
         "message": "פִינִית"
     },
-    "supported_languages_fr": {
+    "language_fr": {
         "message": "צָרְפָתִית"
     },
-    "supported_languages_fy": {
-        "message": "פריזית"
+    "language_fr_FR": {
+        "message": "צרפתית (צרפתית)"
     },
-    "supported_languages_gl": {
-        "message": "גליציאנית"
+    "language_fr_CA": {
+        "message": "צרפתית (קנדית)"
     },
-    "supported_languages_ka": {
-        "message": "גרוזינית"
+    "language_fy": {
+        "message": "פריסיאן"
     },
-    "supported_languages_de": {
+    "language_ff": {
+        "message": "Fulfulde"
+    },
+    "language_gaa": {
+        "message": "GA"
+    },
+    "language_gl": {
+        "message": "גליציאני"
+    },
+    "language_lg": {
+        "message": "גנדה (לוגנדה)"
+    },
+    "language_ka": {
+        "message": "גרוזיני"
+    },
+    "language_de": {
         "message": "גֶרמָנִיָת"
     },
-    "supported_languages_el": {
-        "message": "יווני"
+    "language_el": {
+        "message": "יוונית"
     },
-    "supported_languages_gu": {
+    "language_gn": {
+        "message": "גוארני"
+    },
+    "language_gu": {
         "message": "גוג'ראטי"
     },
-    "supported_languages_ht": {
-        "message": "האיטי"
+    "language_ht": {
+        "message": "קריאולי האיטי"
     },
-    "supported_languages_ha": {
+    "language_cnh": {
+        "message": "חכה סנטר"
+    },
+    "language_ha": {
         "message": "האוסה"
     },
-    "supported_languages_haw": {
+    "language_haw": {
         "message": "הוואי"
     },
-    "supported_languages_he": {
+    "language_iw": {
         "message": "עִברִית"
     },
-    "supported_languages_iw": {
-        "message": "עִברִית"
+    "language_hil": {
+        "message": "HILIGAYNON"
     },
-    "supported_languages_hi": {
+    "language_hi": {
         "message": "הינדי"
     },
-    "supported_languages_hu": {
+    "language_hmn": {
+        "message": "המונג"
+    },
+    "language_hu": {
         "message": "הוּנגָרִי"
     },
-    "supported_languages_is": {
-        "message": "איסלנדית"
+    "language_hrx": {
+        "message": "Hunsrik"
     },
-    "supported_languages_ig": {
+    "language_is": {
+        "message": "איסלנדי"
+    },
+    "language_ig": {
         "message": "איגבו"
     },
-    "supported_languages_id": {
-        "message": "אינדונזית"
+    "language_ilo": {
+        "message": "אילוקו"
     },
-    "supported_languages_ga": {
+    "language_id": {
+        "message": "אינדונזי"
+    },
+    "language_ga": {
         "message": "אִירִית"
     },
-    "supported_languages_it": {
+    "language_it": {
         "message": "אִיטַלְקִית"
     },
-    "supported_languages_ja": {
+    "language_ja": {
         "message": "יַפָּנִית"
     },
-    "supported_languages_jv": {
-        "message": "ג'אוואנית"
+    "language_jw": {
+        "message": "ג'וואנים"
     },
-    "supported_languages_kn": {
+    "language_kn": {
         "message": "קנאדה"
     },
-    "supported_languages_kk": {
-        "message": "קזחית"
+    "language_pam": {
+        "message": "קפמפנגן"
     },
-    "supported_languages_km": {
+    "language_kk": {
+        "message": "קזח"
+    },
+    "language_km": {
         "message": "חמר"
     },
-    "supported_languages_ky": {
-        "message": "קירגיזי"
+    "language_cgg": {
+        "message": "קיגה"
     },
-    "supported_languages_ko": {
+    "language_rw": {
+        "message": "Kinyarwanda"
+    },
+    "language_ktu": {
+        "message": "קיטובה"
+    },
+    "language_gom": {
+        "message": "קונקני"
+    },
+    "language_ko": {
         "message": "קוריאנית"
     },
-    "supported_languages_ku": {
-        "message": "כּוּרדִי"
+    "language_kri": {
+        "message": "קריו"
     },
-    "supported_languages_lo": {
-        "message": "לאוטי"
+    "language_ku": {
+        "message": "כורדי (קורמנג'י)"
     },
-    "supported_languages_la": {
+    "language_ckb": {
+        "message": "כורדי (סוראני)"
+    },
+    "language_ky": {
+        "message": "קירגיז"
+    },
+    "language_lo": {
+        "message": "לאו"
+    },
+    "language_ltg": {
+        "message": "לטגאלי"
+    },
+    "language_la": {
         "message": "לָטִינִית"
     },
-    "supported_languages_lv": {
-        "message": "לטבית"
+    "language_lv": {
+        "message": "לטבי"
     },
-    "supported_languages_lt": {
-        "message": "ליטאית"
+    "language_lij": {
+        "message": "ליגוריאן"
     },
-    "supported_languages_lb": {
-        "message": "לוקסמבורג"
+    "language_li": {
+        "message": "לימבורגן"
     },
-    "supported_languages_mk": {
-        "message": "מקדונית"
+    "language_ln": {
+        "message": "לינגאלה"
     },
-    "supported_languages_mg": {
-        "message": "מלגזית"
+    "language_lt": {
+        "message": "ליטאי"
     },
-    "supported_languages_ms": {
+    "language_lmo": {
+        "message": "לומברד"
+    },
+    "language_luo": {
+        "message": "לואו"
+    },
+    "language_lb": {
+        "message": "Luxembourgish"
+    },
+    "language_mk": {
+        "message": "מקדוני"
+    },
+    "language_mai": {
+        "message": "מיתילי"
+    },
+    "language_mak": {
+        "message": "מקאסאר"
+    },
+    "language_mg": {
+        "message": "מלגסי"
+    },
+    "language_ms": {
         "message": "מלאית"
     },
-    "supported_languages_ml": {
-        "message": "מלאיאלאם"
+    "language_ms_Arab": {
+        "message": "מלאית (ג'אווי)"
     },
-    "supported_languages_mt": {
+    "language_ml": {
+        "message": "מליאלם"
+    },
+    "language_mt": {
         "message": "מלטזית"
     },
-    "supported_languages_mi": {
+    "language_mi": {
         "message": "מאורי"
     },
-    "supported_languages_mr": {
-        "message": "מראטי"
+    "language_mr": {
+        "message": "מרתי"
     },
-    "supported_languages_mn": {
+    "language_chm": {
+        "message": "אחו מארי"
+    },
+    "language_mni_Mtei": {
+        "message": "Meiteilon (מניפורי)"
+    },
+    "language_min": {
+        "message": "מינאנג"
+    },
+    "language_lus": {
+        "message": "מיזו"
+    },
+    "language_mn": {
         "message": "מוֹנגוֹלִי"
     },
-    "supported_languages_hmn": {
-        "message": "נָזִיר"
+    "language_my": {
+        "message": "מיאנמר (בורמזי)"
     },
-    "supported_languages_my": {
-        "message": "מיאנמר"
+    "language_nr": {
+        "message": "Ndebele (דרום)"
     },
-    "supported_languages_ne": {
-        "message": "מפאלי"
+    "language_new": {
+        "message": "Nepalbhasa (Newari)"
     },
-    "supported_languages_no": {
-        "message": "נורבגית"
+    "language_ne": {
+        "message": "נפאלי"
     },
-    "supported_languages_fa": {
-        "message": "פַּרסִית"
+    "language_nso": {
+        "message": "צפון סותו (ספדי)"
     },
-    "supported_languages_pl": {
-        "message": "פולני"
+    "language_no": {
+        "message": "נורווגי"
     },
-    "supported_languages_pt": {
-        "message": "פורטוגזית"
+    "language_nus": {
+        "message": "נואר"
     },
-    "supported_languages_pa": {
-        "message": "פנג'בי"
+    "language_oc": {
+        "message": "Occitan"
     },
-    "supported_languages_ps": {
-        "message": "לדחוף ל"
+    "language_or": {
+        "message": "אודיה (אוריה)"
     },
-    "supported_languages_ro": {
-        "message": "רומנית"
-    },
-    "supported_languages_ru": {
-        "message": "רוּסִי"
-    },
-    "supported_languages_sm": {
-        "message": "סמואנית"
-    },
-    "supported_languages_gd": {
-        "message": "גאלית סקוטית"
-    },
-    "supported_languages_sr": {
-        "message": "סרבית"
-    },
-    "supported_languages_sn": {
-        "message": "שונה"
-    },
-    "supported_languages_sd": {
-        "message": "סינדהי"
-    },
-    "supported_languages_si": {
-        "message": "סינהאלה"
-    },
-    "supported_languages_sk": {
-        "message": "סלובקית"
-    },
-    "supported_languages_sl": {
-        "message": "סלובנית"
-    },
-    "supported_languages_so": {
-        "message": "סומלי"
-    },
-    "supported_languages_sx": {
-        "message": "סוטו"
-    },
-    "supported_languages_es": {
-        "message": "ספרדית"
-    },
-    "supported_languages_su": {
-        "message": "סונדני"
-    },
-    "supported_languages_sw": {
-        "message": "סוואהילית"
-    },
-    "supported_languages_sv": {
-        "message": "שוודית"
-    },
-    "supported_languages_tl": {
-        "message": "טאגלוג"
-    },
-    "supported_languages_tg": {
-        "message": "טג'יקי"
-    },
-    "supported_languages_ta": {
-        "message": "טמילית"
-    },
-    "supported_languages_te": {
-        "message": "טלוגו"
-    },
-    "supported_languages_th": {
-        "message": "תאילנדית"
-    },
-    "supported_languages_tr": {
-        "message": "טורקי"
-    },
-    "supported_languages_uk": {
-        "message": "אוקראינית"
-    },
-    "supported_languages_ur": {
-        "message": "אורדו"
-    },
-    "supported_languages_uz": {
-        "message": "אוזבקית"
-    },
-    "supported_languages_vi": {
-        "message": "וייטנאמית"
-    },
-    "supported_languages_cy": {
-        "message": "וולשית"
-    },
-    "supported_languages_xh": {
-        "message": "קסוסה"
-    },
-    "supported_languages_yi": {
-        "message": "אִידִישׁ"
-    },
-    "supported_languages_yo": {
-        "message": "יורובה"
-    },
-    "supported_languages_zu": {
-        "message": "זולו"
-    },
-    "supported_languages_qu": {
-        "message": "קצ'ואה"
-    },
-    "supported_languages_om": {
+    "language_om": {
         "message": "אורומו"
     },
-    "supported_languages_ilo": {
-        "message": "אילוקנו"
+    "language_pag": {
+        "message": "פנגסינאן"
+    },
+    "language_pap": {
+        "message": "פפיאמנטו"
+    },
+    "language_ps": {
+        "message": "פשטו"
+    },
+    "language_fa": {
+        "message": "פַּרסִית"
+    },
+    "language_pl": {
+        "message": "פּוֹלָנִית"
+    },
+    "language_pt": {
+        "message": "פורטוגזית"
+    },
+    "language_pt_PT": {
+        "message": "פורטוגזית (פורטוגל)"
+    },
+    "language_pt_BR": {
+        "message": "פורטוגזית (ברזיל)"
+    },
+    "language_pa": {
+        "message": "פונג'אבי"
+    },
+    "language_pa_Arab": {
+        "message": "Punjabi (Shahmukhi)"
+    },
+    "language_qu": {
+        "message": "Quechua"
+    },
+    "language_rom": {
+        "message": "רומני"
+    },
+    "language_ro": {
+        "message": "רומנית"
+    },
+    "language_rn": {
+        "message": "Rundi"
+    },
+    "language_ru": {
+        "message": "רוּסִי"
+    },
+    "language_sm": {
+        "message": "סמואן"
+    },
+    "language_sg": {
+        "message": "סנגו"
+    },
+    "language_sa": {
+        "message": "סנסקריט"
+    },
+    "language_gd": {
+        "message": "סקוטים גאלי"
+    },
+    "language_sr": {
+        "message": "סרבי"
+    },
+    "language_st": {
+        "message": "ססוטו"
+    },
+    "language_crs": {
+        "message": "Seychellois Creole"
+    },
+    "language_shn": {
+        "message": "שאן"
+    },
+    "language_sn": {
+        "message": "שונה"
+    },
+    "language_scn": {
+        "message": "סיציליאני"
+    },
+    "language_szl": {
+        "message": "סילסיאן"
+    },
+    "language_sd": {
+        "message": "סינדי"
+    },
+    "language_si": {
+        "message": "סינהלה (סינהלה)"
+    },
+    "language_sk": {
+        "message": "סלובק"
+    },
+    "language_sl": {
+        "message": "סלובני"
+    },
+    "language_so": {
+        "message": "סומאלי"
+    },
+    "language_es": {
+        "message": "סְפָרַדִית"
+    },
+    "language_su": {
+        "message": "סנדאנים"
+    },
+    "language_sw": {
+        "message": "סוואהילי"
+    },
+    "language_ss": {
+        "message": "סוואטי"
+    },
+    "language_sv": {
+        "message": "שוודית"
+    },
+    "language_ber": {
+        "message": "Tamazight (Tifinagh)"
+    },
+    "language_ber_latn": {
+        "message": "Tamazight"
+    },
+    "language_tg": {
+        "message": "טג'יק"
+    },
+    "language_ta": {
+        "message": "טמיל"
+    },
+    "language_tt": {
+        "message": "טטר"
+    },
+    "language_te": {
+        "message": "טלוגו"
+    },
+    "language_tet": {
+        "message": "טטום"
+    },
+    "language_th": {
+        "message": "תאילנדי"
+    },
+    "language_ti": {
+        "message": "טיגריניה"
+    },
+    "language_ts": {
+        "message": "צונגה"
+    },
+    "language_tn": {
+        "message": "TSWANA"
+    },
+    "language_tr": {
+        "message": "טוּרקִית"
+    },
+    "language_tk": {
+        "message": "טורקמנים"
+    },
+    "language_ak": {
+        "message": "טווי (אקאן)"
+    },
+    "language_uk": {
+        "message": "אוקראיני"
+    },
+    "language_ur": {
+        "message": "אורדו"
+    },
+    "language_ug": {
+        "message": "Uyghur"
+    },
+    "language_uz": {
+        "message": "Uzbek"
+    },
+    "language_vi": {
+        "message": "וייטנאמי"
+    },
+    "language_cy": {
+        "message": "וולשי"
+    },
+    "language_xh": {
+        "message": "Xhosa"
+    },
+    "language_yi": {
+        "message": "אִידִישׁ"
+    },
+    "language_yo": {
+        "message": "יורובה"
+    },
+    "language_yua": {
+        "message": "יוקאטק מאיה"
+    },
+    "language_zu": {
+        "message": "זולו"
     }
 }

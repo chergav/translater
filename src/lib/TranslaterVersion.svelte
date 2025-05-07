@@ -1,28 +1,21 @@
-<div class="p-3 flex gap-2">
+<div class="p-3 flex gap-2 whitespace-nowrap">
 	<div>
-		<a
-			class="text-sm text-blue-600 hover:underline"
+		<Link
+			class="text-sm"
 			href="https://github.com/chergav/translater"
-			rel="noopener noreferrer"
-			target="_blank"
-		>
-			Translater
-		</a>
+			label="Translater v{version}"
+		/>
 	</div>
 	<div>
-		<a
-			class="text-sm text-blue-600 hover:underline"
+		<Link
+			class="text-sm"
 			href="https://github.com/chergav/translater/releases"
-			rel="noopener noreferrer"
-			target="_blank"
-		>
-			{getMessage('app_version')} {version}
-		</a>
+			label="Changelog"
+		/>
 	</div>
 </div>
 
-<script>
-import { getMessage } from '~/common/browserApi';
-
-const version = chrome.runtime.getManifest().version;
+<script lang="ts">
+import Link from '~/lib/Link.svelte';
+const version = browser.runtime.getManifest().version;
 </script>
