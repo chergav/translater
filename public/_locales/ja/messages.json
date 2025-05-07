@@ -1,11 +1,6 @@
 {
     "app_name": {
-        "message": "$app_name$  - 選択したテキストの翻訳",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - 選択したテキストの翻訳"
     },
     "app_description": {
         "message": "選択したテキストをGoogle翻訳で翻訳します"

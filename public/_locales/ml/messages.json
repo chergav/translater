@@ -1,11 +1,6 @@
 {
     "app_name": {
-        "message": "$App_name$ - തിരഞ്ഞെടുത്ത വാചകത്തിന്റെ വിവർത്തനം",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - തിരഞ്ഞെടുത്ത വാചകത്തിന്റെ വിവർത്തനം"
     },
     "app_description": {
         "message": "Google വിവർത്തനം ഉപയോഗിച്ച് തിരഞ്ഞെടുത്ത വാചകം വിവർത്തനം ചെയ്യുക"

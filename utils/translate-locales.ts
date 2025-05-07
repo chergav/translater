@@ -39,7 +39,12 @@ function genTranslatedObject(source: Messages, translatedArray: string[]) {
 		const key = sourceKeys[i];
 		let message = translatedArray[i].trim();
 
-		if (['app_name', 'options_title', 'commands_open_translater'].includes(key)) {
+		if (key === 'app_name') {
+			message = `Translater ${message}`;
+			console.log(message);
+		}
+
+		if (['options_title', 'commands_open_translater'].includes(key)) {
 			// $ APP_NAME $ -> $APP_NAME$
 			message = message.replace(/\$\s*(\w+)\s*\$/g, (_match, p1) => `$${p1}$`);
 			console.log(message);
@@ -54,6 +59,7 @@ function genTranslatedObject(source: Messages, translatedArray: string[]) {
 async function translateLocales(inputFile: string, locales: string[]) {
 	const fileContent = await readFile(inputFile, 'utf-8');
 	const source: Messages = JSON.parse(fileContent);
+	source.app_name.message = source.app_name.message.slice(11); // delete "Translater "
 	const messageArray = Object.values(source).map(value => value.message);
 
 	const translationsByLocale = await Promise.all(

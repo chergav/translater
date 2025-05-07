@@ -1,11 +1,6 @@
 {
     "app_name": {
-        "message": "$APP_NAME$ - Traducció del text seleccionat",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - Traducció del text seleccionat"
     },
     "app_description": {
         "message": "Traduir el text seleccionat amb Google Translate"

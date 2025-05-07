@@ -1,11 +1,6 @@
 {
     "app_name": {
-        "message": "$ Апп_наме $ - превод одабраног текста",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - превод одабраног текста"
     },
     "app_description": {
         "message": "Преведи изабрани текст са Гоогле преводилом"

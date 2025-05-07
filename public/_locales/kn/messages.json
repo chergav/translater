@@ -1,11 +1,6 @@
 {
     "app_name": {
-        "message": "$App_name$ - ಆಯ್ದ ಪಠ್ಯದ ಅನುವಾದ",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - ಆಯ್ದ ಪಠ್ಯದ ಅನುವಾದ"
     },
     "app_description": {
         "message": "ಆಯ್ದ ಪಠ್ಯವನ್ನು Google ಅನುವಾದದೊಂದಿಗೆ ಅನುವಾದಿಸಿ"

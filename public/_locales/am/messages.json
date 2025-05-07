@@ -1,11 +1,6 @@
 {
     "app_name": {
-        "message": "$app_name$ - የተመረጠ ጽሑፍ ትርጉም",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - የተመረጠው ጽሑፍ ትርጉም"
     },
     "app_description": {
         "message": "የተመረጠውን ጽሑፍ በ Google ትርጉም ይተረጉሙ"

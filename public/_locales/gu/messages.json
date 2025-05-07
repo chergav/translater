@@ -1,11 +1,6 @@
 {
     "app_name": {
-        "message": "$ એપ્લિકેશન_નામ $ - પસંદ કરેલા ટેક્સ્ટનું અનુવાદ",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - પસંદ કરેલા લખાણનો અનુવાદ"
     },
     "app_description": {
         "message": "ગૂગલ ટ્રાન્સલેટ સાથે પસંદ કરેલા ટેક્સ્ટનું ભાષાંતર કરો"

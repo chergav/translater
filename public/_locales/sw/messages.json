@@ -1,11 +1,6 @@
 {
     "app_name": {
-        "message": "$APP_NAME$ - Tafsiri ya maandishi yaliyochaguliwa",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - Tafsiri ya maandishi yaliyochaguliwa"
     },
     "app_description": {
         "message": "Tafsiri maandishi yaliyochaguliwa na Google Tafsiri"

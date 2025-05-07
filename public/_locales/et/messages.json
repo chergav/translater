@@ -1,11 +1,6 @@
 {
     "app_name": {
-        "message": "$App_name$ - valitud teksti tõlge",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - valitud teksti tõlge"
     },
     "app_description": {
         "message": "Tõlgi valitud tekst Google'i tõlkega"

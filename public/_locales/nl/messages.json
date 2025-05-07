@@ -1,11 +1,6 @@
 {
     "app_name": {
-        "message": "$App_name$ - vertaling van geselecteerde tekst",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - Vertaling van geselecteerde tekst"
     },
     "app_description": {
         "message": "Vertaal geselecteerde tekst met Google Translate"

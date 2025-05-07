@@ -1,11 +1,6 @@
 {
     "app_name": {
-        "message": "$App_name$ - নির্বাচিত পাঠ্যের অনুবাদ",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - নির্বাচিত পাঠ্যের অনুবাদ"
     },
     "app_description": {
         "message": "গুগল অনুবাদ সহ নির্বাচিত পাঠ্য অনুবাদ করুন"

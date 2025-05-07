@@ -1,11 +1,6 @@
 {
     "app_name": {
-        "message": "$App_name$ - seçilen metnin çevirisi",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - Seçilen metnin çevirisi"
     },
     "app_description": {
         "message": "Seçilen metni google çeviriyle çevirin"

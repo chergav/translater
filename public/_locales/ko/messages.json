@@ -1,11 +1,6 @@
 {
     "app_name": {
-        "message": "$app_name$ - 선택한 텍스트의 번역",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - 선택한 텍스트의 번역"
     },
     "app_description": {
         "message": "Google 번역으로 선택한 텍스트를 번역하십시오"

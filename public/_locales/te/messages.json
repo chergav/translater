@@ -1,11 +1,6 @@
 {
     "app_name": {
-        "message": "$App_name$ - ఎంచుకున్న వచనం యొక్క అనువాదం",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - ఎంచుకున్న వచనం యొక్క అనువాదం"
     },
     "app_description": {
         "message": "గూగుల్ అనువాదంతో ఎంచుకున్న వచనాన్ని అనువదించండి"

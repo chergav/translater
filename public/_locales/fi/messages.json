@@ -1,11 +1,6 @@
 {
     "app_name": {
-        "message": "$APP_NAME$ - VALITTAVAN TEKSTI",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - Valitun tekstin käännös"
     },
     "app_description": {
         "message": "Käännä valittu teksti Google Translate -sovelluksella"

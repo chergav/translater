@@ -1,11 +1,6 @@
 {
     "app_name": {
-        "message": "$app_name$ - ترجمة النص المحدد",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - ترجمة النص المحدد"
     },
     "app_description": {
         "message": "ترجمة نص محدد بترجمة جوجل"

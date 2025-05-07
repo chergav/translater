@@ -1,11 +1,6 @@
 {
     "app_name": {
-        "message": "$App_name$ - pasirinkto teksto vertimas",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - Pasirinkto teksto vertimas"
     },
     "app_description": {
         "message": "Išversti pasirinktą tekstą naudodami „Google Translate“"
@@ -384,7 +379,7 @@
         "message": "Krymo totaras"
     },
     "language_hr": {
-        "message": "Croatian"
+        "message": "Kroatijos"
     },
     "language_cs": {
         "message": "Čekija"

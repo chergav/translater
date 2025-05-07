@@ -1,11 +1,6 @@
 {
     "app_name": {
-        "message": "$App_name$ - atlasītā teksta tulkošana",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - atlasītā teksta tulkojums"
     },
     "app_description": {
         "message": "Tulkot atlasīto tekstu ar google tulkot"

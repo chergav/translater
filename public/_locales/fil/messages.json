@@ -1,11 +1,6 @@
 {
     "app_name": {
-        "message": "$App_name$ - Pagsasalin ng napiling teksto",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - Pagsasalin ng napiling teksto"
     },
     "app_description": {
         "message": "Isalin ang napiling teksto sa Google Translate"

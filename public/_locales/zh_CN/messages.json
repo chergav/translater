@@ -1,11 +1,6 @@
 {
     "app_name": {
-        "message": "$app_name$  - 选定文本的翻译",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - 选定文本的翻译"
     },
     "app_description": {
         "message": "用Google翻译翻译选定的文本"

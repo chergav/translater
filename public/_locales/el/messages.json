@@ -1,11 +1,6 @@
 {
     "app_name": {
-        "message": "$App_name$ - Μετάφραση επιλεγμένου κειμένου",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - Μετάφραση επιλεγμένου κειμένου"
     },
     "app_description": {
         "message": "Μεταφράστε επιλεγμένο κείμενο με το Google Translate"

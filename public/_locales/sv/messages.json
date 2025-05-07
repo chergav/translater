@@ -1,11 +1,6 @@
 {
     "app_name": {
-        "message": "$App_name$ - översättning av vald text",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - Översättning av vald text"
     },
     "app_description": {
         "message": "Översätt utvald text med Google Translate"
@@ -519,7 +514,7 @@
         "message": "Italienare"
     },
     "language_ja": {
-        "message": "Japansk"
+        "message": "Japanska"
     },
     "language_jw": {
         "message": "Javansk"

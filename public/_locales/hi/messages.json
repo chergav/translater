@@ -1,11 +1,6 @@
 {
     "app_name": {
-        "message": "$App_name$ - चयनित पाठ का अनुवाद",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translater - चयनित पाठ का अनुवाद"
     },
     "app_description": {
         "message": "Google अनुवाद के साथ चयनित पाठ का अनुवाद करें"
