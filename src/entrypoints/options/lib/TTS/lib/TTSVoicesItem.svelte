@@ -1,7 +1,8 @@
 <tr class="[&>td]:whitespace-nowrap">
 	<td>
-		<span>{// @ts-expect-error ignore messageName
-			browser.i18n.getMessage(`language_${lang.replace('-', '_')}`).toLowerCase()}</span>
+		<span>{browser.i18n
+			// @ts-expect-error ignore messageName
+			.getMessage(`language_${lang.replace('-', '_')}`).toLowerCase()}</span>
 	</td>
 	<td class="flex gap-2">
 		<Select

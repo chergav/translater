@@ -42,7 +42,6 @@ function onMouseup(event: MouseEvent) {
 	if (isInAppElem) return;
 
 	const selectedText = getSelectedText().trim();
-	// if (!selectedText.length) return;
 
 	store.selectedText = selectedText;
 	store.selectedElemRect = getSelectedElemRect();
@@ -63,6 +62,7 @@ function onMessage(message: Message) {
 	if (message.type !== 'createPopup') return;
 
 	store.showPopup = true;
+	store.cacheIndex = 0;
 
 	if (message.content.text) {
 		store.textToTranslate = message.content.text;

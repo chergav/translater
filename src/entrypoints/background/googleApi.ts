@@ -22,6 +22,7 @@ const googleTranslateURL = ({ sourceLang = 'auto', targetLang = 'auto', selected
 	// https://stackoverflow.com/questions/26714426/what-is-the-meaning-of-google-translate-query-params
 	const searchParams = new URLSearchParams({
 		client: 'gtx',
+		// client: 'dict-chrome-ex',
 		sl: sourceLang,
 		tl: targetLang,
 		hl: browser.i18n.getUILanguage(),
@@ -33,6 +34,7 @@ const googleTranslateURL = ({ sourceLang = 'auto', targetLang = 'auto', selected
 		kc: '7',
 		dj: '1',
 		q: selectedText,
+		model: 'nmt',
 	});
 
 	['at', 'bd', 'ex', 'ld', 'md', 'qca', 'rw', 'rm', 'ss', 'sw', 't', 'sd'].forEach(i =>

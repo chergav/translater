@@ -1,10 +1,10 @@
 import type { Settings } from '~/shared/types';
 
-export async function storageGet(keys: Settings | null = null) {
+export async function storageGet(keys?: Settings) {
 	return await browser.storage.local.get(keys) as Settings;
 }
 
-export async function storageSet(data: Partial<Settings>) {
+export async function storageSet(data: Settings) {
 	await browser.storage.local.set(data);
 }
 

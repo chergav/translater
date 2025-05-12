@@ -97,7 +97,7 @@ import {
 	mdiTranslate,
 	mdiTranslateOff,
 } from '@mdi/js';
-import { clickOutside } from '@/utils';
+import { clickOutside } from '~/utils';
 import { store } from '~/entrypoints/content/store.svelte';
 import { storage } from '~/shared/storage.svelte';
 import { createLinkToGT } from '~/entrypoints/background/googleApi';

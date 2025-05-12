@@ -16,6 +16,7 @@
 		shadow-xl
 		z-[9999999]
 		{dragging ? 'select-none' : 'select-auto'}
+		{POPUP_CLASS}
 	"
 	onclickoutside={onClickOutside}
 	use:clickOutside
@@ -62,7 +63,8 @@ import PopupMain from './lib/PopupMain.svelte';
 import PopupFooter from './lib/PopupFooter/PopupFooter.svelte';
 import { computePosition, offset, flip, shift, type VirtualElement } from '@floating-ui/dom';
 import { mdiClose } from '@mdi/js';
-import { clickOutside } from '~/utils/clickOutside.svelte';
+import { clickOutside } from '~/utils';
+import { POPUP_CLASS } from '~/shared/constants';
 
 let left = $state<number>(20);
 let top = $state<number>(20);

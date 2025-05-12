@@ -110,7 +110,7 @@ const tabs: Tabs = {
 	},
 };
 
-let CurrentComponent = $derived(tabs[activeTabHash].component);
+let CurrentComponent = $derived(tabs[activeTabHash]?.component);
 
 $effect(() => {
 	window.location.hash = activeTabHash;

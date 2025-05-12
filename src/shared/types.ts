@@ -71,3 +71,8 @@ export interface CacheTTS {
 	text: string
 	data: number[]
 }
+
+export interface TransSegment {
+	text: string;
+	alternatives: string[];
+}

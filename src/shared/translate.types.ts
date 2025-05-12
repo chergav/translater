@@ -41,7 +41,7 @@ export interface Entry {
 
 export interface AlternativeTranslation {
 	src_phrase: string
-	alternative: Alternative[]
+	alternative?: Alternative[]
 	srcunicodeoffsets: Srcunicodeoffset[]
 	raw_src_segment: string
 	start_pos: number

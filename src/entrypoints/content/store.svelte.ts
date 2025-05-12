@@ -52,7 +52,6 @@ class Store {
 		};
 
 		this.cacheTranslate.push(translatedObj);
-		// this.cacheIndex = this.cacheTranslate.length - 1;
 		this.cacheIndex = -1;
 		this.sourceLang = srcLang === 'auto' ? resp.src : srcLang;
 		storage.settings.targetLang = tgtLang;

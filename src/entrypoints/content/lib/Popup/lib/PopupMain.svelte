@@ -65,8 +65,9 @@
 								role="button"
 								tabindex="0"
 							>
-							{// @ts-expect-error ignore messageName
-								browser.i18n.getMessage(`language_${store.translated?.ld_result.srclangs[0].replace('-', '_')}`).toLowerCase()}
+							{browser.i18n
+								// @ts-expect-error ignore messageName
+								.getMessage(`language_${store.translated?.ld_result.srclangs[0].replace('-', '_')}`).toLowerCase()}
 							</span>
 						</div>
 					{/if}
@@ -105,7 +106,9 @@
 					transition:slide={{ duration: 150 }}
 				>
 					{#if store.translated}
-						<p style="font-size: {storage.settings.fontSize}px;">{store.translated.sentence.trans}</p>
+						<!-- <p style="font-size: {storage.settings.fontSize}px;">
+						 {store.translated.sentence.trans}</p> -->
+						<TranslatedText />
 						{#if storage.settings.showTransliteration}
 							<p class="text-gray-500 text-sm">{store.translated.sentence.translit}</p>
 						{/if}
@@ -135,6 +138,7 @@ import { storage } from '~/shared/storage.svelte';
 import Button from '~/lib/Button.svelte';
 import Loader from '~/lib/Loader.svelte';
 import TextareaOrig from './TextareaOrig.svelte';
+import TranslatedText from './TranslatedText/TranslatedText.svelte';
 import ButtonCopy from './ButtonCopy.svelte';
 import TTS from './TTS.svelte';
 import { mdiChevronDown } from '@mdi/js';

@@ -1,7 +1,7 @@
 <div class="relative w-full leading-[0] rounded-xl overflow-hidden">
 	<textarea
 		bind:this={textarea}
-		style="font-size: {storage.settings.fontSize}px;"
+		style="font-size: {storage.settings.fontSize}px; line-height: {storage.settings.fontSize * 1.6}px"
 		class="
 			w-full
 			max-h-80

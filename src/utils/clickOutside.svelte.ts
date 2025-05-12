@@ -1,17 +1,25 @@
 import type { Action } from 'svelte/action';
 
+export interface ActionParams<T = HTMLElement> {
+	exclude?: T
+}
+
 export const clickOutside: Action<
-	HTMLDivElement,
-	undefined,
+	HTMLElement,
+	ActionParams | undefined,
 	{
 		clickoutside: (e: CustomEvent) => void
 	}
-> = node => {
+> = (node, params) => {
 	$effect(() => {
 		const handleClick = (event: MouseEvent) => {
 			const isLeftClick = event.button === 0;
 
 			if (!event.target || !isLeftClick) {
+				return;
+			}
+
+			if (params?.exclude && event.composedPath().includes(params.exclude)) {
 				return;
 			}
 
