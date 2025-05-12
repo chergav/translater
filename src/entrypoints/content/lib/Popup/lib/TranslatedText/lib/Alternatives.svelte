@@ -7,7 +7,7 @@
 		flex
 		flex-col
 		bg-white
-		dark:bg-gray-950
+		dark:bg-gray-900
 		text-sm
 		rounded-lg
 		border

@@ -2,7 +2,7 @@ import { Focus } from './enums';
 
 interface Params {
 	action: Focus
-	items: HTMLLIElement[]
+	items: (HTMLLIElement & { disabled?: boolean })[];
 	currentActiveIndex: number | null
 }
 

@@ -34,3 +34,21 @@ Translate selected text with Google Translate
 1. [Chrome Web Store](https://chromewebstore.google.com/detail/abebconmjhhbcjofpchjkbbimgkhdmbe)
 2. [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/ohcoejhlajaopflplmckddjcfecgleij)
 3. [FireFox Add-ons](https://addons.mozilla.org/firefox/addon/translater-gt)
+
+## Build & Install
+
+- clone the project
+- run `pnpm i`
+
+- **For Chromium based browsers (Chrome, Edge, etc.)**
+	- run `pnpm zip`
+	- open `chrome://extensions`, enable *Developer mode*
+	- drag and drop the file `.output/translater-{version}-chrome.zip` onto the extensions page.
+
+- **For Firefox**
+	- run `pnpm zip:firefox`
+	- open `about:addons` -> ⚙️ *Settings* -> *Debug Add-ons* -> *Load Temporary Add-on…*
+	- select the file `.output/translater-{version}-firefox.zip`
+
+> [!NOTE]
+> In Firefox, temporary extensions remain active only until you close the browser.
