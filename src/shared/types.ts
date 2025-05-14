@@ -75,4 +75,5 @@ export interface CacheTTS {
 export interface TransSegment {
 	text: string;
 	alternatives: string[];
+	rawSegment: string
 }

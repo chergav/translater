@@ -14,18 +14,14 @@
 	{...rest}
 >
 	{#if icon}
-		<span class={iconClass}>
-			<Icon d={icon} size={iconSize} />
-		</span>
+		<Icon class={iconClass} d={icon} size={iconSize} />
 	{/if}
 	{#if label}
 		<span class="whitespace-nowrap first-letter:uppercase">{label}</span>
 	{/if}
 	{@render children?.()}
 	{#if iconRight}
-		<span class={iconRightClass}>
-			<Icon d={iconRight} size={iconSize} />
-		</span>
+		<Icon class={iconRightClass} d={iconRight} size={iconSize} />
 	{/if}
 	{#if variant === 'outlined'}
 		<div

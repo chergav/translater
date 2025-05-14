@@ -42,8 +42,8 @@ Translate selected text with Google Translate
 
 - **For Chromium based browsers (Chrome, Edge, etc.)**
 	- run `pnpm zip`
-	- open `chrome://extensions`, enable *Developer mode*
-	- drag and drop the file `.output/translater-{version}-chrome.zip` onto the extensions page.
+	- open `chrome://extensions` (`edge://extensions/`, ect.), enable *Developer mode*
+	- load unpacked from `.output/chrome-mv3` or drag and drop the file `.output/translater-{version}-chrome.zip` onto the extensions page
 
 - **For Firefox**
 	- run `pnpm zip:firefox`

@@ -20,6 +20,7 @@ class Store {
 	public isPending = $state<boolean>(false);
 	public audioContextSource = $state<AudioBufferSourceNode | null>(null);
 	public cacheTTS = $state<CacheTTS[]>([]);
+	public textToHighlight = $state<string>('');
 
 	public async getTranslate(): Promise<void> {
 		this.translated = null;

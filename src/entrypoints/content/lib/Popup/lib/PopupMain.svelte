@@ -106,8 +106,6 @@
 					transition:slide={{ duration: 150 }}
 				>
 					{#if store.translated}
-						<!-- <p style="font-size: {storage.settings.fontSize}px;">
-						 {store.translated.sentence.trans}</p> -->
 						<TranslatedText />
 						{#if storage.settings.showTransliteration}
 							<p class="text-gray-500 text-sm">{store.translated.sentence.translit}</p>

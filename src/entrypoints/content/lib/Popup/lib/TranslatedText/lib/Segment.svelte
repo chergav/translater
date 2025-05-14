@@ -3,12 +3,15 @@
 		class="
 			cursor-pointer
 			hover:bg-purple-900/10
-			dark:hover:bg-purple-100/10
-			{altsOpen ? 'bg-purple-900/10 dark:bg-purple-100/10' : ''}
+			dark:hover:bg-purple-100/15
+			{altsOpen ? 'bg-purple-900/10 dark:bg-purple-100/15' : ''}
+			rounded-xs
 		"
 		onclick={openAlts}
 		onclickoutside={closeAlts}
 		onkeypress={() => {}}
+		onmouseenter={highlightOrigText}
+		onmouseleave={highlightOrigTextOff}
 		role="button"
 		tabindex="0"
 		use:clickOutside={actionParams}
@@ -32,6 +35,7 @@
 import type { TransSegment } from '~/shared/types';
 import Alternatives from './Alternatives.svelte';
 import { type ActionParams, clickOutside } from '~/utils';
+import { store } from '~/entrypoints/content/store.svelte';
 
 interface Props  {
 	segment: TransSegment
@@ -51,6 +55,14 @@ function openAlts(event: Event) {
 
 function closeAlts() {
 	altsOpen = false;
+}
+
+function highlightOrigText() {
+	store.textToHighlight = segment.rawSegment;
+}
+
+function highlightOrigTextOff() {
+	store.textToHighlight = '';
 }
 
 $effect(() => {

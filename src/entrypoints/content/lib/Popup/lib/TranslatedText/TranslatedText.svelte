@@ -24,6 +24,7 @@ let segments: TransSegment[] = $derived.by(() => {
 			return {
 				text: seg.raw_src_segment,
 				alternatives: [],
+				rawSegment: '',
 			};
 		}
 
@@ -37,6 +38,7 @@ let segments: TransSegment[] = $derived.by(() => {
 		return {
 			text: main,
 			alternatives,
+			rawSegment: seg.raw_src_segment,
 		};
 	});
 });
