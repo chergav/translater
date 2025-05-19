@@ -49,7 +49,7 @@
 				transition-colors
 			"
 		>
-			<Icon d={mdiCheck} size="20" />
+			<Icon d={mdiCheck} size="18" />
 		</div>
 		<span>{label}</span>
 	</div>
