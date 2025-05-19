@@ -1,5 +1,7 @@
 export interface Settings {
 	theme: Theme
+	themeVariant: ThemeVariant
+	accentColor: AccentColor
 	fontSize: FontSize
 	targetLang: string
 	inlineButtonShow: boolean
@@ -21,6 +23,21 @@ export enum Theme {
 	Light = 'light',
 	Dark = 'dark',
 	System = 'system',
+}
+export enum ThemeVariant {
+	Slate = 'slate',
+	Gray = 'gray',
+	Zinc = 'zinc',
+	Neutral = 'neutral',
+	Stone = 'stone',
+}
+
+export enum AccentColor {
+	Amber = 'amber',
+	Green = 'green',
+	Blue = 'blue',
+	Purple = 'purple',
+	Pink = 'pink',
 }
 
 export enum FontSize {

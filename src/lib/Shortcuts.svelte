@@ -8,11 +8,9 @@
 				class="
 					px-2
 					py-1
-					bg-gray-100
-					dark:bg-gray-800
+					bg-secondary-hover
 					border
-					border-gray-200
-					dark:border-gray-700
+					border-variant-400-600
 					rounded-md
 				"
 			>{key}</span>

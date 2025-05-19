@@ -5,12 +5,11 @@
 				p-2
 				max-h-96
 				overflow-y-auto
-				bg-white
-				dark:bg-gray-900
+				bg-surface
 				scrollbar
 			"
 		>
-			<table class="w-full text-sm text-gray-800 dark:text-gray-200">
+			<table class="w-full text-sm text-primary">
 				<tbody>
 					{#each store.translated.dict as dict, index (index)}
 						<tr>
@@ -18,8 +17,7 @@
 								class="
 									w-full
 									pb-2
-									text-purple-700
-									dark:text-purple-300
+									text-accent
 									capitalize
 									font-medium
 								"
@@ -28,7 +26,7 @@
 							{#if index === 0}
 								<td>
 									<span
-										class="flex items-center gap-0.5 text-gray-500 text-xs"
+										class="flex items-center gap-0.5 text-secondary text-xs"
 										title="Indicates how often a translation appears in public documents"
 									>
 										{browser.i18n.getMessage('popup_dictionary_frequency')}
@@ -43,7 +41,7 @@
 								<td class="py-1 align-top whitespace-nowrap">
 									{entry.word}
 								</td>
-								<td class="px-2 py-1 text-gray-500">
+								<td class="px-2 py-1 text-secondary">
 									{#each entry.reverse_translation as reverse_translation, i (i)}
 										{@const lastIndex = entry.reverse_translation.length - 1}
 										<div class="inline-flex flex-wrap">
@@ -55,13 +53,11 @@
 													my-[-1px]
 													px-[5px]
 													py-[1px]
-													hover:text-purple-800
-													hover:bg-purple-900/10
-													dark:hover:bg-purple-100/10
-													dark:hover:text-purple-200
+													hover:text-accent
+													hover:bg-accent-primary/10
 													transition-colors
 													{currentWord === reverse_translation
-														? 'text-purple-800 bg-purple-900/10 dark:bg-purple-100/10 dark:text-purple-200'
+														? 'text-accent bg-accent-primary/10'
 														: ''}
 												"
 												onclick={() => {
@@ -93,11 +89,10 @@
 											w-fit
 											inline-flex
 											items-center
+											gap-[1px]
 											rounded-full
 											overflow-hidden
-											divide-x
-											divide-white
-											dark:divide-gray-900
+											whitespace-nowrap
 										"
 									>
 										{#each scoreHandler(entry.score) as item, index (index)}
@@ -105,7 +100,7 @@
 												class="
 													w-[12px]
 													h-[6px]
-													{item ? 'bg-purple-800 dark:bg-purple-200' : 'bg-purple-900/10 dark:bg-purple-100/10'}
+													{item ? 'bg-accent-primary' : 'bg-accent-primary/10'}
 												"
 											></div>
 										{/each}

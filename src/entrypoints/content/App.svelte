@@ -1,4 +1,8 @@
-<div class={storage.themeClass}>
+<div
+	data-accent={storage.settings.accentColor}
+	data-theme={storage.themeClass}
+	data-variant={storage.settings.themeVariant}
+>
 	{#await isTextInTargetLangPromice then isYourLang}
 		{#if !isYourLang && isShowTrigger}
 			<Trigger />

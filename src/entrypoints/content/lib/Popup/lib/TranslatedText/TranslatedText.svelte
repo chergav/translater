@@ -28,12 +28,8 @@ let segments: TransSegment[] = $derived.by(() => {
 			};
 		}
 
-		const main = seg?.alternative && seg.alternative[0]
-			? `${seg.alternative[0].has_preceding_space ? ' ' : ''}${seg.alternative[0].word_postproc}`
-			: '';
-		const alts = (seg.alternative || []).map(a => `${a.has_preceding_space ? ' ' : ''}${a.word_postproc}`);
-		const altsSet = [...new Set(alts)];
-		const alternatives = altsSet.length === 1 ? [] : altsSet;
+		const main = seg?.alternative && seg.alternative[0] ? seg.alternative[0].word_postproc : '';
+		const alternatives = (seg.alternative || []).map(a => a.word_postproc);
 
 		return {
 			text: main,

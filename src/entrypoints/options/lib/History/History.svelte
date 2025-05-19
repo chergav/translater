@@ -1,4 +1,14 @@
-<div class="px-6 py-4 flex flex-col gap-2 border-b border-gray-300 dark:border-gray-700">
+<div
+	class="
+		px-6
+		py-4
+		flex
+		flex-col
+		gap-2
+		border-b
+		border-variant-300-700
+	"
+>
 	<div class="flex items-center justify-between">
 		<Switch
 			label={browser.i18n.getMessage('options_history_enable')}
@@ -27,7 +37,13 @@
 </div>
 <div class="w-full h-[calc(100%-106px)] pl-6 pr-2 overflow-y-auto scrollbar">
 	{#each Object.entries(groupedHistory) as [date, historyItemArray] (date)}
-		<div class="py-2 text-sm text-purple-700 dark:text-purple-300">{getRelativeDate(date)}</div>
+		<div
+			class="
+				py-2
+				text-sm
+				text-accent
+			"
+		>{getRelativeDate(date)}</div>
 		{#each historyItemArray as historyItem (historyItem.time)}
 			<HistoryEntry {historyItem} />
 		{/each}

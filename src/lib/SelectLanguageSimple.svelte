@@ -1,4 +1,4 @@
-<label class="text-gray-800 dark:text-gray-200">
+<label class="text-primary">
 	<span class="select-none {label ? 'mr-2' : ''}">{label}</span>
 	<select
 		name="select"
@@ -9,14 +9,11 @@
 			rounded-lg
 			outline-0
 			focus:ring-0
-			dark:bg-gray-900
+			bg-surface
 			border
-			border-gray-300
-			dark:border-gray-700
-			dark:placeholder-gray-400
-			dark:text-gray-200
-			focus:border-gray-400
-			focus:dark:border-gray-600
+			border-variant-300-700
+			text-primary
+			focus-visible:border-variant-400-600
 			transition-colors
 			cursor-pointer
 		"

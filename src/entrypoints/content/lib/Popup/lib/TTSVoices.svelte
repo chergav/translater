@@ -1,12 +1,12 @@
 <Listbox
-	class="relative"
+	class="relative leading-0"
 	change={() => {
 		storage.settings.ttsVoiceByLang[lang] = voice.name;
 	}}
 	bind:value={voice}
 	bind:open
 >
-	<ListboxButton class="" as="div">
+	<ListboxButton as="div">
 		<Button
 			class="p-1"
 			active={open}
@@ -21,56 +21,45 @@
 	<ListboxOptions
 		class="
 			absolute
-			w-max
 			left-0
 			py-1
-			mt-1
 			max-h-72
-			overflow-auto
 			text-sm
-			select-none
-			bg-white
-			dark:bg-gray-900
+			bg-surface
 			border
-			border-gray-100
-			dark:border-gray-800
+			border-variant-200-800
 			rounded-xl
 			shadow-lg
-			z-10
-			scrollbar
 			list-none
+			select-none
+			overflow-y-auto
+			scrollbar
+			z-10
 		"
 	>
 		{#each voices as voice (voice)}
 			<ListboxOption
 				class="
-					relative
-					w-full
-					h-full
-					pl-10
+					pl-2
+					pr-2.5
 					py-1
-					pr-3
 					flex
 					items-center
-					whitespace-nowrap
-					hover:bg-purple-900/10
-					dark:hover:bg-purple-100/10
-					aria-selected:bg-purple-900/10
-					aria-selected:dark:bg-purple-100/10
-					focus:bg-gray-800/10
-					focus:dark:bg-gray-200/10
+					gap-2
+					not-aria-selected:hover:bg-accent-primary/5
+					aria-selected:bg-accent-primary/10
+					focus:bg-accent-primary/5
 					focus-within:outline-0
-					cursor-default
+					cursor-pointer
+					whitespace-nowrap
 				"
 				value={voice}
 			>
 				{#snippet children(selected)}
-					{#if selected}
-						<span class="absolute left-0 pl-3 text-purple-800 dark:text-purple-200">
-							<Icon d={mdiCheck} />
-						</span>
-					{/if}
-					<span class={selected ? 'text-purple-800 dark:text-purple-200 font-medium' : ''}>{voice.name}</span>
+					<span class="size-[18px] inline-flex">
+						<Icon class="{selected ? 'inline-flex' : 'hidden'} text-accent" d={mdiCheck} size="18" />
+					</span>
+					<span class={selected ? 'text-accent font-medium' : ''}>{voice.name}</span>
 				{/snippet}
 			</ListboxOption>
 		{/each}

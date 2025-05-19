@@ -1,4 +1,12 @@
-<main class="flex flex-col items-center gap-4 text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-900">
+<main
+	class="
+		flex
+		flex-col
+		items-center
+		gap-4
+		bg-surface
+	"
+>
 	<div class="w-full p-2 flex items-center justify-between">
 		<div class="flex items-center gap-3">
 			<img alt="" src="/icons/48.png" width="32" />
@@ -110,7 +118,9 @@ const requestPermissions = async () => {
 };
 
 $effect.pre(() => {
-	document.documentElement.className = storage.themeClass;
+	document.documentElement.dataset.theme = storage.themeClass;
 	document.documentElement.style.setProperty('color-scheme', storage.themeClass);
+	document.documentElement.dataset.variant = storage.settings.themeVariant;
+	document.documentElement.dataset.accent = storage.settings.accentColor;
 });
 </script>

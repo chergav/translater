@@ -13,21 +13,19 @@
 				w-[52px]
 				h-8
 				rounded-full
-				bg-gray-200
-				dark:bg-gray-800
+				bg-surface-level-1
 				border-2
-				border-gray-500
-				dark:border-gray-500
+				border-variant-600-400
 
-				peer-focus-visible:outline
-				peer-focus-visible:outline-offset-2
-				peer-focus-visible:outline-gray-600
-				peer-focus-visible:dark:outline-gray-400
+				ring-offset-white
+				dark:ring-offset-black
+				peer-focus-visible:outline-none
+				peer-focus-visible:ring-2
+				peer-focus-visible:ring-offset-2
+				peer-focus-visible:ring-accent
 
-				peer-checked:bg-purple-800
-				peer-checked:dark:bg-purple-200
-				peer-checked:border-purple-800
-				peer-checked:dark:border-purple-200
+				peer-checked:bg-accent-primary
+				peer-checked:border-accent-primary
 
 				transition-all
 			"
@@ -41,32 +39,30 @@
 				left-2
 				w-4
 				h-4
-				bg-gray-500
-				dark:bg-gray-500
+				bg-outline
+				peer-hover:bg-outline-hover
 				rounded-full
-				transition-all
+				transition-transform
 				duration-300
 				ease-[cubic-bezier(0.175,0.885,0.32,1.275)]
 
 				ring-[12px]
 				ring-transparent
-				peer-hover:ring-gray-600/10
-				peer-hover:dark:ring-gray-400/10
-				peer-checked:peer-hover:ring-purple-800/10
-				peer-checked:peer-hover:dark:ring-purple-200/10
+				peer-hover:ring-hover
+				peer-checked:peer-hover:ring-accent-hover
 
 				peer-checked:ring-8
 				peer-checked:w-6
 				peer-checked:h-6
 				peer-checked:translate-x-4
-				peer-checked:bg-purple-200
-				peer-checked:dark:bg-purple-800
+				peer-checked:bg-accent-inverse/80
+				peer-hover:peer-checked:bg-accent-inverse/100
 			"
 		></div>
-		<span class="ml-4 text-gray-900 dark:text-gray-300 select-none">{label}</span>
+		<span class="ml-4 text-primary select-none">{label}</span>
 	</label>
 	{#if hint}
-		<p class="ml-[68px] text-sm text-gray-500">{hint}</p>
+		<p class="ml-[68px] text-sm text-secondary select-none">{hint}</p>
 	{/if}
 </div>
 
@@ -74,7 +70,7 @@
 interface Props {
 	checked: boolean
 	label: string
-	hint?: boolean
+	hint?: string
 }
 
 let {

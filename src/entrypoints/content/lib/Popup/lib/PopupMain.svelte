@@ -1,5 +1,5 @@
 <main class="flex flex-col gap-1">
-	<div class="p-1 bg-white dark:bg-gray-900 rounded-[16px] whitespace-pre-line">
+	<div class="p-1 bg-surface rounded-[16px] whitespace-pre-line">
 		<div class="flex flex-col gap-1">
 			<div class="flex items-center justify-between">
 				<div class="flex items-center gap-1">
@@ -72,13 +72,13 @@
 						</div>
 					{/if}
 					{#if store.translated && storage.settings.showTransliteration}
-						<p class="px-1 text-gray-500 text-sm">{store.translated.sentence.src_translit}</p>
+						<p class="px-1 text-secondary text-sm">{store.translated.sentence.src_translit}</p>
 					{/if}
 				</div>
 			{/if}
 		</div>
 	</div>
-	<div class="p-1 bg-white dark:bg-gray-900 rounded-[16px]">
+	<div class="p-1 bg-surface rounded-[16px]">
 		<div class="flex flex-col gap-1">
 			<div class="flex items-center justify-between">
 				<div class="flex items-center gap-1">
@@ -108,7 +108,7 @@
 					{#if store.translated}
 						<TranslatedText />
 						{#if storage.settings.showTransliteration}
-							<p class="text-gray-500 text-sm">{store.translated.sentence.translit}</p>
+							<p class="text-secondary text-sm">{store.translated.sentence.translit}</p>
 						{/if}
 					{:else if store.errors.length}
 						<p class="text-red-600 dark:text-red-400">
@@ -119,7 +119,7 @@
 							<Loader />
 						</div>
 					{:else}
-						<p class="text-gray-400 dark:text-gray-600">
+						<p class="text-secondary">
 							{browser.i18n.getMessage('popup_placeholder_translation')}
 						</p>
 					{/if}

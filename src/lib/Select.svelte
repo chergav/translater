@@ -1,4 +1,4 @@
-<label class="text-gray-800 dark:text-gray-200" class:w-full={full}>
+<label class="text-primary" class:w-full={full}>
 	{#if label}
 		<span class="select-none {label ? 'mr-2' : ''}">{label}</span>
 	{/if}
@@ -8,14 +8,11 @@
 			rounded-lg
 			outline-0
 			focus:ring-0
-			dark:bg-gray-900
+			bg-surface
+			text-primary
 			border
-			border-gray-300
-			dark:border-gray-700
-			dark:placeholder-gray-400
-			dark:text-gray-200
-			focus-visible:border-gray-400
-			focus-visible:dark:border-gray-600
+			border-variant-300-700
+			focus-visible:border-variant-400-600
 			transition-colors
 			cursor-pointer
 			{className}

@@ -1,6 +1,6 @@
 <div class="p-6 flex flex-col gap-4">
 	<p>{browser.i18n.getMessage('options_support_msg')}:</p>
-	<ul class="flex flex-col gap-2 list-disc list-inside marker:text-gray-500">
+	<ul class="flex flex-col gap-2 list-disc list-inside marker:text-neutral-500">
 		<li>
 			<Link
 				href="https://chromewebstore.google.com/detail/abebconmjhhbcjofpchjkbbimgkhdmbe/support"
@@ -17,7 +17,7 @@
 		</li>
 	</ul>
 
-	<hr class="my-4 border-gray-300 dark:border-gray-700">
+	<hr class="my-4 border-variant-300-700">
 
 	<Donations />
 </div>

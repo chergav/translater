@@ -6,21 +6,20 @@
 		py-1
 		flex
 		flex-col
-		bg-white
-		dark:bg-gray-900
+		bg-surface
 		text-sm
 		rounded-lg
 		border
-		border-gray-100
-		dark:border-gray-800
-		divide-y-[1px]
-		divide-gray-100
-		dark:divide-gray-800
+		border-variant-200-800
 		shadow
 		overflow-y-auto
 		scrollbar
 	"
-	>
+	transition:fly={{
+		duration: 150,
+		y: 10,
+	}}
+>
 	{#each alternatives as alt, i (i)}
 		<button
 			class="
@@ -32,18 +31,24 @@
 				items-center
 				gap-2
 				cursor-pointer
-				{text === alt ? 'bg-purple-900/10 dark:bg-purple-100/10' : 'hover:bg-gray-900/10 dark:hover:bg-gray-100/10'}
+				border-b
+				border-variant-200-800
+				last:border-none
+				{text === alt ? 'bg-accent-primary/10' : 'hover:bg-accent-primary/5'}
 			"
 			onclick={() => setAlt(alt)}
 			type="button"
 		>
-			<Icon class="{text === alt ? 'visible' : 'invisible'} text-purple-900 dark:text-purple-100 shrink-0" d={mdiCheck} size="18" />
+			<span class="size-[18px] inline-flex">
+				<Icon class="{text === alt ? 'inline-flex' : 'hidden'} text-accent shrink-0" d={mdiCheck} size="18" />
+			</span>
 			<span class="text-start">{alt}</span>
 		</button>
 	{/each}
 </div>
 
 <script lang="ts">
+import { fly } from 'svelte/transition';
 import Icon from '~/lib/Icon.svelte';
 import { mdiCheck } from '@mdi/js';
 import { CUSTOM_ELEMENT_TAG, POPUP_CLASS } from '~/shared/constants';

@@ -1,75 +1,18 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
-:root {
-    --hem: 1rem; /* hem = Host rem */
-}
+@custom-variant variant-slate (&:is(.scoped[data-variant="slate"] *), &:where([data-variant="slate"] *));
+@custom-variant variant-gray (&:is(.scoped[data-variant="gray"] *), &:where([data-variant="gray"] * ));
+@custom-variant variant-zinc (&:is(.scoped[data-variant="zinc"] *), &:where([data-variant="zinc"] * ));
+@custom-variant variant-neutral (&:is(.scoped[data-variant="neutral"] *), &:where([data-variant="neutral"] * ));
+@custom-variant variant-stone (&:is(.scoped[data-variant="stone"] *), &:where([data-variant="stone"] *));
 
-:host {
-    --hem: 16px;
-}
-
-html {
-	color-scheme: light;
-}
-
-@media (prefers-color-scheme: dark) {
-	html {
-		color-scheme: dark;
-	}
-}
-
-body {
-	font-family: 'Inter Variable', sans-serif;
-	font-optical-sizing: auto;
-	font-size: 1rem;
-	@apply min-h-screen min-w-[360px] bg-gray-100 dark:bg-gray-950 text-gray-900 dark:text-gray-100 text-base;
-}
-
-@utility scrollbar {
-	&::-webkit-scrollbar {
-		width: 7px;
-		height: 7px;
-	}
-
-	&::-webkit-scrollbar-corner {
-		display: none;
-	}
-
-	&::-webkit-scrollbar-thumb {
-		background-color: var(--color-gray-300);
-		border-radius: 4px;
-	}
-
-	&::-webkit-scrollbar-thumb:hover {
-		background-color: var(--color-gray-400);
-	}
-
-	@variant dark {
-		&::-webkit-scrollbar-thumb {
-			background-color: var(--color-gray-700);
-		}
-
-		&::-webkit-scrollbar-thumb:hover {
-			background-color: var(--color-gray-600);
-		}
-	}
-}
-
-@utility scrollbar-hidden {
-	&::-webkit-scrollbar {
-		width: 7px;
-		height: 7px;
-	}
-	&::-webkit-scrollbar-corner {
-		display: none;
-	}
-
-	&::-webkit-scrollbar-thumb {
-		background-color: transparent;
-	}
-}
+@custom-variant accent-amber (&:is(.scoped[data-accent="amber"] *), &:where([data-accent="amber"] *));
+@custom-variant accent-green (&:is(.scoped[data-accent="green"] *), &:where([data-accent="green"] *));
+@custom-variant accent-blue (&:is(.scoped[data-accent="blue"] *), &:where([data-accent="blue"] *));
+@custom-variant accent-purple (&:is(.scoped[data-accent="purple"] *), &:where([data-accent="purple"] *));
+@custom-variant accent-pink (&:is(.scoped[data-accent="pink"] *), &:where([data-accent="pink"] *));
 
 @theme {
     --spacing: calc(0.25 * var(--hem));
@@ -120,4 +63,320 @@ body {
     --container-5xl: calc(64 * var(--hem));
     --container-6xl: calc(72 * var(--hem));
     --container-7xl: calc(80 * var(--hem));
+
+	--accent-amber-primary: var(--color-amber-800);
+	--accent-amber-dark-primary: var(--color-amber-200);
+	--accent-amber-inverse: var(--color-amber-200);
+	--accent-amber-dark-inverse: var(--color-amber-800);
+
+	--accent-green-primary: var(--color-green-800);
+	--accent-green-dark-primary: var(--color-green-200);
+	--accent-green-inverse: var(--color-green-200);
+	--accent-green-dark-inverse: var(--color-green-800);
+
+	--accent-blue-primary: var(--color-blue-800);
+	--accent-blue-dark-primary: var(--color-blue-200);
+	--accent-blue-inverse: var(--color-blue-200);
+	--accent-blue-dark-inverse: var(--color-blue-800);
+
+	--accent-purple-primary: var(--color-purple-800);
+	--accent-purple-dark-primary: var(--color-purple-200);
+	--accent-purple-inverse: var(--color-purple-200);
+	--accent-purple-dark-inverse: var(--color-purple-800);
+
+	--accent-pink-primary: var(--color-pink-800);
+	--accent-pink-dark-primary: var(--color-pink-200);
+	--accent-pink-inverse: var(--color-pink-200);
+	--accent-pink-dark-inverse: var(--color-pink-800);
+
+	--animate-circle-grow: circle-grow 300ms cubic-bezier(0.05, 0.7, 0.1, 1);
+
+	@keyframes circle-grow {
+		0% {
+			transform: scale(0);
+		},
+		100% {
+			transform: scale(1);
+		}
+	}
+}
+
+
+:root {
+	--hem: 1rem; /* hem = Host rem */
+}
+
+:host {
+	--hem: 16px;
+}
+
+html {
+	color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		color-scheme: dark;
+	}
+}
+
+body {
+	font-family: 'Inter Variable', sans-serif;
+	font-optical-sizing: auto;
+	font-size: 1rem;
+	@apply min-h-screen min-w-[360px] bg-base text-primary text-base;
+}
+
+@layer base {
+	button:not(:disabled),
+	[role="button"]:not(:disabled) {
+		cursor: pointer;
+	}
+}
+
+@utility bg-base {
+	@apply variant-slate:bg-slate-100 variant-gray:bg-gray-100 variant-zinc:bg-zinc-100 variant-neutral:bg-neutral-100 variant-stone:bg-stone-100;
+	@apply dark:variant-slate:bg-slate-950 dark:variant-gray:bg-gray-950 dark:variant-zinc:bg-zinc-950 dark:variant-neutral:bg-neutral-950 dark:variant-stone:bg-stone-950;
+}
+
+@utility bg-surface {
+	@apply bg-white dark:variant-slate:bg-slate-900 dark:variant-gray:bg-gray-900 dark:variant-zinc:bg-zinc-900 dark:variant-neutral:bg-neutral-900 dark:variant-stone:bg-stone-900;
+}
+
+@utility bg-surface-level-1 {
+	@apply variant-slate:bg-slate-200 variant-gray:bg-gray-200 variant-zinc:bg-zinc-200 variant-neutral:bg-neutral-200 variant-stone:bg-stone-200;
+	@apply dark:variant-slate:bg-slate-800 dark:variant-gray:bg-gray-800 dark:variant-zinc:bg-zinc-800 dark:variant-neutral:bg-neutral-800 dark:variant-stone:bg-stone-800;
+}
+
+@utility bg-secondary-hover {
+	@apply variant-slate:bg-slate-900/10 variant-gray:bg-gray-900/10 variant-zinc:bg-zinc-900/10 variant-neutral:bg-neutral-900/10 variant-stone:bg-stone-900/10;
+	@apply dark:variant-slate:bg-slate-100/10 dark:variant-gray:bg-gray-100/10 dark:variant-zinc:bg-zinc-100/10 dark:variant-neutral:bg-neutral-100/10 dark:variant-stone:bg-stone-100/10;
+}
+
+@utility bg-outline {
+	@apply variant-slate:bg-slate-500 variant-gray:bg-gray-500 variant-zinc:bg-zinc-500 variant-neutral:bg-neutral-500 variant-stone:bg-stone-500;
+}
+
+@utility bg-outline-hover {
+	@apply variant-slate:bg-slate-600 variant-gray:bg-gray-600 variant-zinc:bg-zinc-600 variant-neutral:bg-neutral-600 variant-stone:bg-stone-600;
+	@apply dark:variant-slate:bg-slate-400 variant-gray:bg-gray-400 variant-zinc:bg-zinc-400 variant-neutral:bg-neutral-400 variant-stone:bg-stone-400;
+}
+
+@utility bg-accent-* {
+	--alpha: calc(--modifier(integer) * 1%);
+	@variant accent-amber {
+		background-color: --alpha(--value(--accent-amber-*, [color]) / var(--alpha, 100%));
+		@variant dark {
+			background-color: --alpha(--value(--accent-amber-dark-*, [color]) / var(--alpha, 100%));
+		}
+	}
+
+	@variant accent-green {
+		background-color: --alpha(--value(--accent-green-*, [color]) / var(--alpha, 100%));
+		@variant dark {
+			background-color: --alpha(--value(--accent-green-dark-*, [color]) / var(--alpha, 100%));
+		}
+	}
+
+	@variant accent-blue {
+		background-color: --alpha(--value(--accent-blue-*, [color]) / var(--alpha, 100%));
+		@variant dark {
+			background-color: --alpha(--value(--accent-blue-dark-*, [color]) / var(--alpha, 100%));
+		}
+	}
+
+	@variant accent-purple {
+		background-color: --alpha(--value(--accent-purple-*, [color]) / var(--alpha, 100%));
+		@variant dark {
+			background-color: --alpha(--value(--accent-purple-dark-*, [color]) / var(--alpha, 100%));
+		}
+	}
+
+	@variant accent-pink {
+		background-color: --alpha(--value(--accent-pink-*, [color]) / var(--alpha, 100%));
+		@variant dark {
+			background-color: --alpha(--value(--accent-pink-dark-*, [color]) / var(--alpha, 100%));
+		}
+	}
+}
+
+@utility text-primary {
+	@apply variant-slate:text-slate-900 variant-gray:text-gray-900 variant-zinc:text-zinc-900 variant-neutral:text-neutral-900 variant-stone:text-stone-900;
+	@apply dark:variant-slate:text-slate-100 dark:variant-gray:text-gray-100 dark:variant-zinc:text-zinc-100 dark:variant-neutral:text-neutral-100 dark:variant-stone:text-stone-100;
+}
+
+@utility text-primary-inverse {
+	@apply variant-slate:text-slate-100 variant-gray:text-gray-100 variant-zinc:text-zinc-100 variant-neutral:text-neutral-100 variant-stone:text-stone-100;
+	@apply dark:variant-slate:text-slate-900 dark:variant-gray:text-gray-900 dark:variant-zinc:text-zinc-900 dark:variant-neutral:text-neutral-900 dark:variant-stone:text-stone-900;
+}
+
+@utility text-secondary {
+	@apply variant-slate:text-slate-500 variant-gray:text-gray-500 variant-zinc:text-zinc-500 variant-neutral:text-neutral-500 variant-stone:text-stone-500;
+}
+
+@utility text-accent {
+	@apply accent-amber:text-amber-800 accent-green:text-green-800 accent-blue:text-blue-800 accent-purple:text-purple-800 accent-pink:text-pink-800;
+	@apply dark:accent-amber:text-amber-200 dark:accent-green:text-green-200 dark:accent-blue:text-blue-200 dark:accent-purple:text-purple-200 dark:accent-pink:text-pink-200;
+}
+
+@utility border-accent-* {
+	--alpha: calc(--modifier(integer) * 1%);
+	@variant accent-amber {
+		border-color: --alpha(--value(--accent-amber-*, [color]) / var(--alpha, 100%));
+		@variant dark {
+			border-color: --alpha(--value(--accent-amber-dark-*, [color]) / var(--alpha, 100%));
+		}
+	}
+
+	@variant accent-green {
+		border-color: --alpha(--value(--accent-green-*, [color]) / var(--alpha, 100%));
+		@variant dark {
+			border-color: --alpha(--value(--accent-green-dark-*, [color]) / var(--alpha, 100%));
+		}
+	}
+
+	@variant accent-blue {
+		border-color: --alpha(--value(--accent-blue-*, [color]) / var(--alpha, 100%));
+		@variant dark {
+			border-color: --alpha(--value(--accent-blue-dark-*, [color]) / var(--alpha, 100%));
+		}
+	}
+
+	@variant accent-purple {
+		border-color: --alpha(--value(--accent-purple-*, [color]) / var(--alpha, 100%));
+		@variant dark {
+			border-color: --alpha(--value(--accent-purple-dark-*, [color]) / var(--alpha, 100%));
+		}
+	}
+
+	@variant accent-pink {
+		border-color: --alpha(--value(--accent-pink-*, [color]) / var(--alpha, 100%));
+		@variant dark {
+			border-color: --alpha(--value(--accent-pink-dark-*, [color]) / var(--alpha, 100%));
+		}
+	}
+}
+
+@utility border-variant-200-800 {
+	@apply variant-slate:border-slate-200 variant-gray:border-gray-200 variant-zinc:border-zinc-200 variant-neutral:border-neutral-200 variant-stone:border-stone-200;
+	@apply dark:variant-slate:border-slate-800 dark:variant-gray:border-gray-800 dark:variant-zinc:border-zinc-800 dark:variant-neutral:border-neutral-800 dark:variant-stone:border-stone-800;
+}
+
+@utility border-variant-300-700 {
+	@apply variant-slate:border-slate-300 variant-gray:border-gray-300 variant-zinc:border-zinc-300 variant-neutral:border-neutral-300 variant-stone:border-stone-300;
+	@apply dark:variant-slate:border-slate-700 dark:variant-gray:border-gray-700 dark:variant-zinc:border-zinc-700 dark:variant-neutral:border-neutral-700 dark:variant-stone:border-stone-700;
+}
+
+@utility border-variant-400-600 {
+	@apply variant-slate:border-slate-400 variant-gray:border-gray-400 variant-zinc:border-zinc-400 variant-neutral:border-neutral-400 variant-stone:border-stone-400;
+	@apply dark:variant-slate:border-slate-600 dark:variant-gray:border-gray-600 dark:variant-zinc:border-zinc-600 dark:variant-neutral:border-neutral-600 dark:variant-stone:border-stone-600;
+}
+
+@utility border-variant-600-400 {
+	@apply variant-slate:border-slate-600 variant-gray:border-gray-600 variant-zinc:border-zinc-600 variant-neutral:border-neutral-600 variant-stone:border-stone-600;
+	@apply dark:variant-slate:border-slate-400 dark:variant-gray:border-gray-400 dark:variant-zinc:border-zinc-400 dark:variant-neutral:border-neutral-400 dark:variant-stone:border-stone-400;
+}
+
+@utility ring-accent {
+	@apply accent-amber:ring-amber-950 accent-green:ring-green-950 accent-blue:ring-blue-950 accent-purple:ring-purple-950 dark:accent-blue:ring-blue-100 dark:accent-purple:ring-purple-100;
+}
+
+@utility ring-accent-hover {
+	@apply accent-amber:ring-amber-800/10 accent-green:ring-green-800/10 accent-blue:ring-blue-800/10 accent-purple:ring-purple-800/10 accent-pink:ring-pink-800/10;
+	@apply dark:accent-amber:ring-amber-200/10 dark:accent-green:ring-green-200/10 dark:accent-blue:ring-blue-200/10 dark:accent-purple:ring-purple-200/10 dark:accent-pink:ring-pink-200/10;
+}
+
+@utility ring-hover {
+	@apply variant-slate:ring-slate-800/10 variant-gray:ring-gray-800/10 variant-zinc:ring-zinc-800/10 variant-neutral:ring-neutral-800/10 variant-stone:ring-stone-800/10;
+	@apply dark:variant-slate:ring-slate-200/10 dark:variant-gray:ring-gray-200/10 dark:variant-zinc:ring-zinc-200/10 dark:variant-neutral:ring-neutral-200/10 dark:variant-stone:ring-stone-200/10;
+}
+
+@utility fill-accent {
+	@apply accent-amber:fill-amber-800 accent-green:fill-green-800 accent-blue:fill-blue-800 accent-purple:fill-purple-800 accent-pink:fill-pink-800;
+	@apply dark:accent-amber:fill-amber-200 dark:accent-green:fill-green-200 dark:accent-blue:fill-blue-200 dark:accent-purple:fill-purple-200 dark:accent-pink:fill-pink-200;
+}
+
+@utility fill-variant {
+	@apply variant-slate:fill-slate-600 variant-gray:fill-gray-600 variant-zinc:fill-zinc-600 variant-neutral:fill-neutral-600 variant-stone:fill-stone-600;
+	@apply dark:variant-slate:fill-slate-400 dark:variant-gray:fill-gray-400 dark:variant-zinc:fill-zinc-400 dark:variant-neutral:fill-neutral-400 dark:variant-stone:fill-stone-400;
+}
+
+@utility scrollbar {
+	&::-webkit-scrollbar {
+		width: 6px;
+		height: 6px;
+		background-color: transparent;
+	}
+
+	&::-webkit-scrollbar-corner {
+		display: none;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 3px;
+	}
+
+	@variant variant-slate {
+		&::-webkit-scrollbar-thumb {
+			background-color: --alpha(var(--color-slate-500) / 50%);
+		}
+
+		&::-webkit-scrollbar-thumb:hover {
+			background-color: --alpha(var(--color-slate-500) / 70%);
+		}
+	}
+
+	@variant variant-gray {
+		&::-webkit-scrollbar-thumb {
+			background-color: --alpha(var(--color-gray-500) / 50%);
+		}
+
+		&::-webkit-scrollbar-thumb:hover {
+			background-color: --alpha(var(--color-gray-500) / 70%);
+		}
+	}
+
+	@variant variant-zinc {
+		&::-webkit-scrollbar-thumb {
+			background-color: --alpha(var(--color-zinc-500) / 50%);
+		}
+
+		&::-webkit-scrollbar-thumb:hover {
+			background-color: --alpha(var(--color-zinc-500) / 70%);
+		}
+	}
+
+	@variant variant-neutral {
+		&::-webkit-scrollbar-thumb {
+			background-color: --alpha(var(--color-neutral-500) / 50%);
+		}
+
+		&::-webkit-scrollbar-thumb:hover {
+			background-color: --alpha(var(--color-neutral-500) / 70%);
+		}
+	}
+
+	@variant variant-stone {
+		&::-webkit-scrollbar-thumb {
+			background-color: --alpha(var(--color-stone-500) / 50%);
+		}
+
+		&::-webkit-scrollbar-thumb:hover {
+			background-color: --alpha(var(--color-stone-500) / 70%);
+		}
+	}
+}
+
+@utility scrollbar-hidden {
+	&::-webkit-scrollbar {
+		width: 6px;
+		height: 6px;
+	}
+	&::-webkit-scrollbar-corner {
+		display: none;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: transparent;
+	}
 }

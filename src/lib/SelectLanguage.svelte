@@ -17,17 +17,15 @@
 			flex
 			items-center
 			border
-			border-gray-300
-			dark:border-gray-700
+			border-variant-200-800
 			text-start
 			overflow-hidden
 			whitespace-nowrap
 			rounded-full
-			hover:border-gray-400
-			hover:dark:border-gray-600
+			hover:bg-accent-primary/10
 			transition-colors
 			cursor-pointer
-			{open ? 'bg-purple-900/10 dark:bg-purple-100/10' : ''}
+			{open ? 'bg-accent-primary/10' : ''}
 		"
 	>
 		<span class="block truncate">{getI18nLangName(value)}</span>
@@ -36,8 +34,7 @@
 				pointer-events-none
 				absolute
 				right-1
-				text-gray-500
-				{open ? 'text-purple-800 dark:text-purple-200' : ''}
+				{open ? 'text-accent' : 'text-secondary'}
 			"
 			d={mdiUnfoldMoreHorizontal}
 		/>
@@ -47,16 +44,13 @@
 			absolute
 			left-0
 			max-h-64
-			my-1
 			flex
 			flex-col
 			overflow-hidden
 			select-none
-			bg-white
-			dark:bg-gray-900
+			bg-surface
 			border
-			border-gray-100
-			dark:border-gray-800
+			border-variant-200-800
 			rounded-xl
 			shadow-lg
 			z-10
@@ -69,17 +63,13 @@
 					w-full
 					px-2
 					h-8
-					bg-white
-					dark:bg-gray-900
+					bg-surface
 					text-sm
 					border-t-0
 					border-x-0
 					border-b
-					border-gray-100
-					dark:border-gray-800
+					border-variant-200-800
 					focus:ring-0
-					focus:border-gray-100
-					focus:dark:border-gray-800
 					outline-0
 				"
 				placeholder={browser.i18n.getMessage('select_language_search_placeholder')}
@@ -112,47 +102,44 @@
 			"
 		>
 			{#each langColumns as langColumn, index (index)}
-				<div class="flex flex-col w-full h-full">
+				<div class="flex flex-col">
 					{#each langColumn as lang, index (index)}
 						<ListboxOption
 							class="
-								relative
-								pl-10
+								pl-2
+								pr-2.5
 								py-1
-								pr-3
 								flex
 								items-center
-								whitespace-nowrap
+								gap-2
 								select-none
-								hover:bg-purple-900/10
-								dark:hover:bg-purple-100/10
-								aria-selected:bg-purple-900/10
-								aria-selected:dark:bg-purple-100/10
+								not-aria-selected:hover:bg-accent-primary/5
+								aria-selected:bg-accent-primary/10
 								rounded-full
+								cursor-pointer
+								whitespace-nowrap
 							"
 							value={lang.code}
 						>
 							{#snippet children(selected)}
-								{#if selected}
-									<span class="absolute left-0 pl-3 text-purple-800 dark:text-purple-200">
-										<Icon d={mdiCheck} />
-									</span>
-								{:else if UILanguage.startsWith(lang.code) && markUILang}
-									<span
-										class="absolute left-0 pl-3 text-gray-500"
-										title="Your language"
-									>
-										<Icon d={mdiStarOutline} />
-									</span>
-								{/if}
+								{@const markYourLang = markUILang && UILanguage.startsWith(lang.code)}
+								<span class="size-[18px] inline-flex">
+									{#if selected}
+										<Icon class="text-accent" d={mdiCheck} size="18" />
+									{:else if markYourLang}
+										<span title="Your language">
+											<Icon class="text-secondary" d={mdiStarOutline} size="18" />
+										</span>
+									{/if}
+								</span>
 								<!-- eslint-disable-next-line svelte/no-at-html-tags -->
-								<span class={selected ? 'text-purple-800 dark:text-purple-200 font-medium' : ''}>{@html lang.language}</span>
+								<span class={selected ? 'text-accent font-medium' : ''}>{@html lang.language}</span>
 							{/snippet}
 						</ListboxOption>
 					{/each}
 				</div>
 			{:else}
-				<p class="w-full py-1 text-center">{browser.i18n.getMessage('select_language_search_no_results')}</p>
+				<p class="w-full p-1 text-secondary">{browser.i18n.getMessage('select_language_search_no_results')}</p>
 			{/each}
 		</div>
 	</ListboxOptions>
@@ -219,7 +206,7 @@ let filteredLangs = $derived<Language[]>(sortedI18nLanguages
 			const re = new RegExp(`(${search})`, 'gi');
 			return {
 				code,
-				language: language.replace(re, '<span class="font-bold text-amber-500">$&</span>'),
+				language: language.replace(re, '<span class="font-bold text-accent">$&</span>'),
 			};
 		}
 		return {

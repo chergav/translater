@@ -7,11 +7,9 @@
 		p-1
 		flex
 		text-sm
-		text-gray-800
-		dark:text-gray-200
+		text-primary
 		text-start
-		bg-gray-100
-		dark:bg-gray-950
+		bg-base
 		rounded-[18px]
 		shadow-xl
 		z-[9999999]

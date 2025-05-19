@@ -1,12 +1,5 @@
 {#if segment.alternatives.length}
 	<span
-		class="
-			cursor-pointer
-			hover:bg-purple-900/10
-			dark:hover:bg-purple-100/15
-			{altsOpen ? 'bg-purple-900/10 dark:bg-purple-100/15' : ''}
-			rounded-xs
-		"
 		onclick={openAlts}
 		onclickoutside={closeAlts}
 		onkeypress={() => {}}
@@ -16,7 +9,14 @@
 		tabindex="0"
 		use:clickOutside={actionParams}
 	>
-		{segmentText}
+		<span
+			class="
+				cursor-pointer
+				hover:bg-accent-primary/15
+				rounded-xs
+				{altsOpen ? 'bg-accent-primary/15' : ''}
+			"
+		>{segmentText}</span>
 		{#if altsOpen}
 			<Alternatives
 				alternatives={segment.alternatives}
@@ -33,6 +33,7 @@
 
 <script lang="ts">
 import type { TransSegment } from '~/shared/types';
+
 import Alternatives from './Alternatives.svelte';
 import { type ActionParams, clickOutside } from '~/utils';
 import { store } from '~/entrypoints/content/store.svelte';
@@ -42,7 +43,7 @@ interface Props  {
 }
 
 let { segment }: Props = $props();
-let segmentText: string = $state(segment.text);
+let segmentText: string = $derived(segment.text);
 let altsOpen: boolean = $state(false);
 let rect: DOMRect = $state(new DOMRect());
 let actionParams = $state<ActionParams<HTMLDivElement>>({ exclude: undefined });
@@ -64,8 +65,4 @@ function highlightOrigText() {
 function highlightOrigTextOff() {
 	store.textToHighlight = '';
 }
-
-$effect(() => {
-	segmentText = segment.text;
-});
 </script>

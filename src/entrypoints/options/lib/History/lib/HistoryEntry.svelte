@@ -3,8 +3,7 @@
 		py-2
 		text-sm
 		border-b
-		border-gray-300
-		dark:border-gray-700
+		border-variant-300-700
 		last:border-b-0
 	"
 	transition:slide={{ duration: 250 }}
@@ -30,7 +29,7 @@
 			class="
 				mb-1
 				text-xs
-				text-gray-500
+				text-secondary
 				underline
 				font-medium
 				cursor-pointer
@@ -43,14 +42,14 @@
 			{truncateOrig ? browser.i18n.getMessage('text_expand') : browser.i18n.getMessage('text_collapse')}
 		</button>
 	{/if}
-	<div bind:this={elemTrans} class="{truncateTrans ? 'line-clamp-1' : ''} text-gray-500">
+	<div bind:this={elemTrans} class="{truncateTrans ? 'line-clamp-1' : ''} text-secondary">
 		{historyItem.trans}
 	</div>
 	{#if isTransCollapsed}
 		<button
 			class="
 				text-xs
-				text-gray-500
+				text-secondary
 				underline
 				font-medium
 				cursor-pointer

@@ -39,12 +39,10 @@
 			resize-none
 			overflow-y-auto
 			border
-			border-gray-300
-			dark:border-gray-800
+			border-variant-200-800
 			focus:outline-none
 			focus:ring-0
-			focus:border-gray-400
-			focus:dark:border-gray-700
+			focus:border-variant-300-700
 			scrollbar
 			rounded-xl
 			transition-colors
@@ -89,8 +87,8 @@ let highlightedText = $derived.by<string>(() => {
 
 	if (store.textToHighlight) {
 		const escapedString = escapeRegExp(store.textToHighlight.trim());
-		const re = new RegExp(escapedString);
-		const replaceValue = '<span class="bg-purple-900/10 dark:bg-purple-100/15 rounded-xs">$&</span>';
+		const re = new RegExp(escapedString, 'g');
+		const replaceValue = '<span class="bg-accent-primary/15 rounded-xs">$&</span>';
 		return text.replace(re, replaceValue);
 	}
 

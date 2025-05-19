@@ -5,15 +5,14 @@
 				p-2
 				max-h-96
 				overflow-y-auto
-				bg-white
-				dark:bg-gray-900
+				bg-surface
 				scrollbar
 			"
 		>
-			<ul class="flex flex-col gap-2 list-none list-inside marker:text-gray-500">
+			<ul class="flex flex-col gap-2 list-none list-inside">
 				{#each store.translated?.examples?.example as example, index (index)}
 					<div class="flex gap-2">
-						<Icon class="self-start shrink-0" d={mdiFormatQuoteClose} size="20" />
+						<Icon class="self-start shrink-0 text-secondary" d={mdiFormatQuoteClose} size="20" />
 						<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 						<li>{@html example.text}</li>
 					</div>

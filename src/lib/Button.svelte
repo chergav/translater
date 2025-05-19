@@ -31,8 +31,7 @@
 				inset-0
 				rounded-full
 				border
-				border-purple-800/50
-				dark:border-purple-200/50
+				border-accent-primary/50
 			"
 		>
 		</div>
@@ -48,18 +47,17 @@ import Icon from './Icon.svelte';
 const button = tv({
 	base: [
 		'relative inline-flex items-center gap-2 whitespace-nowrap rounded-full text-sm/6 font-medium',
-		'ring-offset-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-2',
-		'dark:ring-offset-neutral-950 dark:focus-visible:ring-neutral-300',
+		'ring-offset-white dark:ring-offset-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent',
 		'transition-colors select-none cursor-pointer',
 		'[&_svg]:pointer-events-none [&_svg]:shrink-0',
 		'disabled:opacity-50 disabled:cursor-default',
 	],
 	variants: {
 		variant: {
-			text: 'text-purple-900 dark:text-purple-100 enabled:hover:bg-purple-900/10 enabled:dark:hover:bg-purple-100/10 enabled:active:bg-purple-900/20 dark:enabled:active:bg-purple-100/20',
-			filled: 'text-neutral-50 dark:text-neutral-900 bg-purple-800 enabled:hover:bg-purple-800/90 dark:bg-purple-200 enabled:dark:hover:bg-purple-200/90 enabled:active:bg-purple-800 dark:enabled:active:bg-purple-200',
-			outlined: 'text-purple-900 dark:text-purple-100 enabled:hover:bg-purple-900/10 enabled:dark:hover:bg-purple-100/10 enabled:active:bg-purple-900/20 dark:enabled:active:bg-purple-100/20',
-			danger: 'text-neutral-100 dark:text-neutral-900 bg-red-700 enabled:hover:bg-red-700/90 dark:bg-red-300 enabled:dark:hover:bg-red-300/90 enabled:active:bg-red-600 dark:enabled:active:bg-red-400',
+			text: 'text-accent enabled:hover:bg-accent-primary/10 enabled:active:bg-accent-primary/20',
+			filled: 'text-primary-inverse bg-accent-primary enabled:hover:bg-accent-primary/90 enabled:active:bg-accent-primary/80',
+			outlined: 'text-accent enabled:hover:bg-accent-primary/10 enabled:active:bg-accent-primary/20',
+			danger: 'text-primary-inverse bg-red-700 dark:bg-red-300 enabled:hover:bg-red-700/90 enabled:dark:hover:bg-red-300/90 enabled:active:bg-red-700/80 enabled:dark:active:bg-red-300/80',
 		},
 		isLabel: {
 			true: '',
@@ -82,7 +80,7 @@ const button = tv({
 			false: 'w-fit justify-center',
 		},
 		isActive: {
-			true: 'bg-purple-900/10 dark:bg-purple-100/10',
+			true: 'bg-accent-primary/10',
 			false: '',
 		},
 	},

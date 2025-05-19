@@ -21,8 +21,7 @@
 						mb-1
 						px-1.5
 						py-.5
-						bg-gray-200
-						dark:bg-gray-700
+						bg-surface-level-1
 						rounded-lg
 						inline-flex
 						items-center
@@ -30,7 +29,7 @@
 					"
 					>{domain}
 					<button
-						class="cursor-pointer"
+						class="cursor-pointer text-red-600 dark:text-red-400"
 						onclick={() => {
 							deleteFromBlacklist(domain);
 						}}
@@ -40,7 +39,7 @@
 					</button>
 				</span>
 			{:else}
-				<span class="text-sm text-gray-500">
+				<span class="text-sm text-secondary">
 					{browser.i18n.getMessage('options_hide_button_on_sites_empty_list')}
 				</span>
 			{/each}

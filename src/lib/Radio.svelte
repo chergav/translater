@@ -16,15 +16,15 @@
 				ring-[10px]
 				ring-transparent
 				rounded-full
-				fill-gray-600
-				dark:fill-gray-400
-				peer-checked:fill-purple-800
-				peer-checked:dark:fill-purple-200
+				fill-variant
+				peer-checked:fill-accent
 
-				peer-focus-visible:outline
-				peer-focus-visible:outline-offset-8
-				peer-focus-visible:outline-gray-600
-				peer-focus-visible:dark:outline-gray-400
+				ring-offset-white
+				dark:ring-offset-black
+				peer-focus-visible:outline-none
+				peer-focus-visible:ring-2
+				peer-focus-visible:ring-offset-2
+				peer-focus-visible:ring-accent
 
 				transition-all
 			"
@@ -42,11 +42,11 @@
 				absolute
 				w-5
 				h-5
-				fill-purple-800
-				dark:fill-purple-200
+				fill-accent
 				opacity-0
 				peer-checked:opacity-100
-				peer-checked:animate-circle_grow
+				peer-checked:animate-circle-grow
+				origin-center
 				transition-opacity
 				duration-[50ms]
 			"
@@ -62,14 +62,12 @@
 				h-10
 				-ml-[10px]
 				rounded-full
-				peer-hover:bg-gray-600/10
-				peer-hover:dark:bg-gray-400/10
-				peer-checked:peer-hover:bg-purple-800/10
-				peer-checked:peer-hover:dark:bg-purple-200/10
+				peer-hover:bg-secondary-hover
+				peer-checked:peer-hover:bg-accent-primary/10
 				transition-colors
 			"
 		></div>
-		<span class="ml-4 text-gray-900 dark:text-gray-300 select-none">{label}</span>
+		<span class="ml-4 text-primary select-none">{label}</span>
 	</label>
 </div>
 

@@ -20,7 +20,7 @@ import { getNextIndex } from '../../utils/get-next-index';
 import { Keys, Focus } from '../../utils/enums';
 
 interface Props {
-	class: string
+	class?: string
 	as?: string
 	children: Snippet
 }

@@ -3,7 +3,7 @@
 	onclickoutside={() => { isOpen = false; }}
 	use:clickOutside
 >
-	<div class="size-fit">
+	<div class="size-fit leading-0">
 		<Button
 			active={isOpen}
 			icon={mdiDotsVertical}
@@ -16,17 +16,15 @@
 		<div
 			class="
 				absolute
-				top-8
+				top-7
 				right-0
 				p-1
 				flex
 				flex-col
 				select-none
-				bg-white
-				dark:bg-gray-900
+				bg-surface
 				border
-				border-gray-100
-				dark:border-gray-800
+				border-variant-200-800
 				rounded-[20px]
 				shadow-lg
 				cursor-default
@@ -51,7 +49,7 @@
 				small
 				tab
 			/>
-			<div class="my-1 border-b border-gray-100 dark:border-gray-800"></div>
+			<div class="my-1 -mx-1 border-b border-variant-200-800"></div>
 			<Button
 				icon={storage.settings.lockWindow ? mdiLockOutline : mdiLockOpenVariantOutline}
 				label={storage.settings.lockWindow
@@ -72,7 +70,7 @@
 				small
 				tab
 			/>
-			<div class="my-1 border-b border-gray-100 dark:border-gray-800"></div>
+			<div class="my-1 -mx-1 border-b border-variant-200-800"></div>
 			<Button
 				icon={mdiOpenInNew}
 				label={browser.i18n.getMessage('popup_menu_options_link')}

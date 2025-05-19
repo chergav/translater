@@ -8,13 +8,10 @@
 			flex
 			items-center
 			justify-center
-			bg-white
-			text-gray-800
-			dark:bg-gray-900
-			dark:text-gray-200
+			bg-surface
+			text-primary
 			border
-			border-gray-100
-			dark:border-gray-800
+			border-variant-200-800
 			rounded-lg
 			shadow-lg
 			cursor-pointer

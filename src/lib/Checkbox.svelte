@@ -15,8 +15,7 @@
 				h-[18px]
 				rounded-sm
 				border-2
-				border-gray-600
-				dark:border-gray-400
+				border-variant-600-400
 			"
 		></div>
 		<!-- background -->
@@ -28,8 +27,7 @@
 				rounded-sm
 				scale-50
 				opacity-0
-				peer-checked:bg-purple-800
-				peer-checked:dark:bg-purple-200
+				peer-checked:bg-accent-primary
 				peer-checked:scale-100
 				peer-checked:opacity-100
 				transition-all
@@ -68,23 +66,23 @@
 				h-10
 				-ml-[11px]
 				rounded-full
-				peer-hover:bg-gray-600/10
-				peer-hover:dark:bg-gray-400/10
-				peer-checked:peer-hover:bg-purple-800/10
-				peer-checked:peer-hover:dark:bg-purple-200/10
+				peer-hover:bg-secondary-hover
+				peer-checked:peer-hover:bg-accent-primary/10
 
-				peer-focus-visible:outline
-				peer-focus-visible:outline-offset-0
-				peer-focus-visible:outline-gray-600
-				peer-focus-visible:dark:outline-gray-400
+				ring-offset-white
+				dark:ring-offset-black
+				peer-focus-visible:outline-none
+				peer-focus-visible:ring-2
+				peer-focus-visible:ring-offset-2
+				peer-focus-visible:ring-accent
 
 				transition-all
 			"
 		></div>
-		<span class="ml-4 text-gray-900 dark:text-gray-300 select-none">{label}</span>
+		<span class="ml-4 text-primary select-none">{label}</span>
 	</label>
 	{#if hint}
-		<p class="ml-[34px] text-sm text-gray-500">{hint}</p>
+		<p class="ml-[34px] text-sm text-secondary select-none">{hint}</p>
 	{/if}
 </div>
 

@@ -5,11 +5,6 @@
 		flex
 		flex-col
 		items-center
-		text-gray-800
-		bg-gray-100
-		dark:text-gray-200
-		dark:bg-gray-950
-		text-base
 	"
 >
 		<div class="size-full max-w-7xl flex flex-row gap-4">
@@ -35,7 +30,14 @@
 				</div>
 				<TranslaterVersion />
 			</div>
-			<div class="w-full overflow-hidden bg-white dark:bg-gray-900 rounded-[16px]">
+			<div
+				class="
+					w-full
+					overflow-hidden
+					bg-surface
+					rounded-[16px]
+				"
+			>
 				<CurrentComponent />
 			</div>
 		</div>
@@ -52,7 +54,7 @@ import Button from '~/lib/Button.svelte';
 import TranslaterVersion from '~/lib/TranslaterVersion.svelte';
 import ReadingAndInput from './lib/ReadingAndInput.svelte';
 import PopupWindow from './lib/PopupWindow.svelte';
-import Appearance from './lib/Appearance.svelte';
+import Appearance from './lib/Appearance/Appearance.svelte';
 import TTS from './lib/TTS/TTS.svelte';
 import History from './lib/History/History.svelte';
 import Support from './lib/Support/Support.svelte';
@@ -117,7 +119,9 @@ $effect(() => {
 });
 
 $effect.pre(() => {
-	document.documentElement.className = storage.themeClass;
+	document.documentElement.dataset.theme = storage.themeClass;
 	document.documentElement.style.setProperty('color-scheme', storage.themeClass);
+	document.documentElement.dataset.variant = storage.settings.themeVariant;
+	document.documentElement.dataset.accent = storage.settings.accentColor;
 });
 </script>

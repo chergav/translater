@@ -12,7 +12,14 @@
 				/>
 			</div> -->
 			<table class="table-auto">
-				<caption class="caption-bottom text-sm text-start text-gray-500">
+				<caption
+					class="
+						caption-bottom
+						text-sm
+						text-start
+						text-secondary
+					"
+				>
 					* {browser.i18n.getMessage('options_tts_table_caption')}
 				</caption>
 				<thead>
@@ -25,8 +32,7 @@
 				<tbody
 					class="
 						[&>tr]:border-t
-						[&>tr]:border-t-gray-300
-						[&>tr]:dark:border-t-gray-800
+						[&>tr]:border-variant-200-800
 						[&>tr>td]:p-1
 						[&>tr>td:nth-child(3)]:text-center
 					"
@@ -40,7 +46,9 @@
 				</tbody>
 			</table>
 		{:else if !voices?.length}
-			<p class="text-sm text-gray-500">{browser.i18n.getMessage('options_tts_no_voices_found')}</p>
+			<p class="text-sm text-secondary">
+				{browser.i18n.getMessage('options_tts_no_voices_found')}
+			</p>
 		{/if}
 	{:catch}
 			<p>Oops. something's wrong.</p>

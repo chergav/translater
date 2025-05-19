@@ -1,10 +1,12 @@
-import { type Settings, Theme, FontSize } from '~/shared/types';
+import { type Settings, Theme, ThemeVariant, AccentColor, FontSize } from '~/shared/types';
 import { storageGet, storageSet } from '~/shared/browser';
 import { isPreferredDark } from '~/utils';
 import deepEqual from 'fast-deep-equal';
 
 const initialSettings: Settings = {
 	theme: Theme.System,
+	themeVariant: ThemeVariant.Gray,
+	accentColor: AccentColor.Blue,
 	fontSize: FontSize.Normal,
 	targetLang: browser.i18n.getUILanguage(),
 	inlineButtonShow: true,
