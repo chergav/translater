@@ -39,7 +39,7 @@
 			onclick={() => setAlt(alt)}
 			type="button"
 		>
-			<span class="size-[18px] inline-flex">
+			<span class="size-[18px] inline-flex shrink-0">
 				<Icon class="{text === alt ? 'inline-flex' : 'hidden'} text-accent shrink-0" d={mdiCheck} size="18" />
 			</span>
 			<span class="text-start">{alt}</span>

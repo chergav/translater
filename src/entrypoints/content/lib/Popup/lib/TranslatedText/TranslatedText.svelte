@@ -17,9 +17,11 @@ import { store } from '~/entrypoints/content/store.svelte';
 import Segment from './lib/Segment.svelte';
 
 let segments: TransSegment[] = $derived.by(() => {
-	if (!store.translated?.alternative_translations?.length) return [];
+	const alternativeTranslations = store.translated?.alternative_translations;
 
-	return store.translated.alternative_translations.map(seg => {
+	if (!alternativeTranslations?.length) return [];
+
+	return alternativeTranslations.map(seg => {
 		if (seg.src_phrase.startsWith('\n') || seg.raw_src_segment.startsWith('\n')) {
 			return {
 				text: seg.raw_src_segment,
@@ -28,13 +30,14 @@ let segments: TransSegment[] = $derived.by(() => {
 			};
 		}
 
-		const main = seg?.alternative && seg.alternative[0] ? seg.alternative[0].word_postproc : '';
-		const alternatives = (seg.alternative || []).map(a => a.word_postproc);
+		const text = seg?.alternative && seg.alternative[0] ? seg.alternative[0].word_postproc : '';
+		const alts = (seg.alternative || []).map(a => a.word_postproc);
+		const alternatives = [...new Set(alts)]; // remove duplicates
 
 		return {
-			text: main,
+			text,
 			alternatives,
-			rawSegment: seg.raw_src_segment,
+			rawSegment: seg.raw_src_segment, // original text
 		};
 	});
 });

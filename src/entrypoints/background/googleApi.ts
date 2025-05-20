@@ -1,5 +1,5 @@
 import type { GoogleTranslate } from '~/shared/translate.types';
-import { mock } from './mock';
+// import { mock } from './mock';
 
 export interface TranslateParam {
 	sourceLang?: string
@@ -45,13 +45,13 @@ const googleTranslateURL = ({ sourceLang = 'auto', targetLang = 'auto', selected
 };
 
 export const googleTranslate = async (params: TranslateParam): Promise<GoogleTranslate> => {
-	if (import.meta.env.DEV) {
-		return new Promise(r => {
-			setTimeout(() => {
-				r(mock as GoogleTranslate);
-			}, 1000);
-		});
-	}
+	// if (import.meta.env.DEV) {
+	// 	return new Promise(r => {
+	// 		setTimeout(() => {
+	// 			r(mock as GoogleTranslate);
+	// 		}, 1000);
+	// 	});
+	// }
 
 	const url = googleTranslateURL(params);
 
