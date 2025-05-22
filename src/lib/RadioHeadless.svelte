@@ -15,7 +15,7 @@
 	"
 >
 	<input class="sr-only peer" type="radio" {value} bind:group />
-	<div>
+	<div class="pointer-events-none">
 		{@render children?.()}
 	</div>
 	<div

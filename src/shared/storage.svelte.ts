@@ -24,16 +24,12 @@ const initialSettings: Settings = {
 
 class Storage {
 	#cleanup: () => void;
-	public settings = $state<Settings>(initialSettings);
-	public themeClass = $derived.by(() => {
-		if (this.settings.theme === Theme.System) {
-			return isPreferredDark() ? Theme.Dark : Theme.Light;
-		}
-		return this.settings.theme;
-	});
+	public settings: Settings;
+	public themeClass: Theme.Light | Theme.Dark;
 
 	public constructor(settings: Settings) {
-		this.settings = settings;
+		this.settings = $state<Settings>(settings);
+		this.themeClass = $derived(this.#getThemeClass(this.settings.theme));
 		this.#cleanup = $effect.root(() => {
 			$effect(() => {
 				const stateSnapshot = $state.snapshot(this.settings);
@@ -41,6 +37,13 @@ class Storage {
 			});
 		});
 		browser.storage.onChanged.addListener(this.#onStorageChange);
+	}
+
+	#getThemeClass(theme: Theme) {
+		if (theme === Theme.System) {
+			return isPreferredDark() ? Theme.Dark : Theme.Light;
+		}
+		return theme;
 	}
 
 	async #sync(snapshot: Settings) {

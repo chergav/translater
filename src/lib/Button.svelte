@@ -46,7 +46,7 @@ import Icon from './Icon.svelte';
 
 const button = tv({
 	base: [
-		'relative inline-flex items-center gap-2 whitespace-nowrap rounded-full text-sm/6 font-medium',
+		'inline-flex items-center gap-2 whitespace-nowrap rounded-full text-sm/6 font-medium',
 		'ring-offset-white dark:ring-offset-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent',
 		'transition-colors select-none cursor-pointer',
 		'[&_svg]:pointer-events-none [&_svg]:shrink-0',

@@ -1,15 +1,13 @@
-<div class="p-6 h-full overflow-y-auto scrollbar">
-	<div class="flex flex-col gap-4">
-		<div class="flex flex-col gap-3">
-			{#each themes as { value, label } (value)}
-				<Radio {label} {value} bind:group={storage.settings.theme} />
-			{/each}
-		</div>
-
-		<Accent />
-
-		<Variants />
+<div class="p-6 h-full flex flex-col gap-4 overflow-y-auto scrollbar">
+	<div class="flex flex-col gap-3">
+		{#each themes as { value, label } (value)}
+			<Radio {label} {value} bind:group={storage.settings.theme} />
+		{/each}
 	</div>
+
+	<Accent />
+
+	<Variants />
 </div>
 
 <script lang="ts">

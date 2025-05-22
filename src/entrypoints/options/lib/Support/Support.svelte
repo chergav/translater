@@ -1,4 +1,4 @@
-<div class="p-6 flex flex-col gap-4">
+<div class="p-6 h-full flex flex-col gap-4 overflow-y-auto scrollbar">
 	<p>{browser.i18n.getMessage('options_support_msg')}:</p>
 	<ul class="flex flex-col gap-2 list-disc list-inside marker:text-neutral-500">
 		<li>

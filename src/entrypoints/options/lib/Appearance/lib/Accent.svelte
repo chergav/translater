@@ -1,12 +1,11 @@
 <div class="flex flex-wrap gap-4">
 	{#each accentColors as { value, label } (value)}
 		<RadioHeadless {label} {value} bind:group={storage.settings.accentColor}>
-			<div
-				class="scoped p-5 flex flex-col items-center gap-2 pointer-events-none"
-				data-accent={value}
-			>
-				<Button active={true} icon={mdiTranslate} label="button" onclick={() => {}} />
-				<p class="text-accent">Text accent</p>
+			<div class="scoped" data-accent={value}>
+				<div class="p-5 flex flex-col items-center gap-2">
+					<Button active={true} icon={mdiTranslate} label="button" onclick={() => {}} />
+					<p class="text-accent">Text accent</p>
+				</div>
 			</div>
 		</RadioHeadless>
 	{/each}
