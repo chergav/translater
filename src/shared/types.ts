@@ -24,6 +24,7 @@ export enum Theme {
 	Dark = 'dark',
 	System = 'system',
 }
+
 export enum ThemeVariant {
 	Slate = 'slate',
 	Gray = 'gray',
@@ -45,7 +46,7 @@ export enum FontSize {
 	Small = 14,
 	Normal = 16,
 	Large = 18,
-	ExstraLarge = 20,
+	ExtraLarge = 20,
 }
 
 export interface HistoryItem {

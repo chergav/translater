@@ -72,7 +72,7 @@ const fontSizes: {
 		label: browser.i18n.getMessage('options_font_size_lg'),
 	},
 	{
-		value: FontSize.ExstraLarge,
+		value: FontSize.ExtraLarge,
 		label: browser.i18n.getMessage('options_font_size_xl'),
 	},
 ];

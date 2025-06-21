@@ -1,12 +1,4 @@
-<main
-	class="
-		h-screen
-		p-4
-		flex
-		flex-col
-		items-center
-	"
->
+<main class="h-screen p-4 flex flex-col items-center">
 		<div class="size-full max-w-7xl flex flex-row gap-4">
 			<div class="flex flex-col justify-between">
 				<div class="flex flex-col">
@@ -28,16 +20,12 @@
 						{/each}
 					</div>
 				</div>
-				<TranslaterVersion />
+				<div class="flex flex-col items-center gap-2">
+					<RateUs />
+					<TranslaterVersion />
+				</div>
 			</div>
-			<div
-				class="
-					w-full
-					overflow-hidden
-					bg-surface
-					rounded-[16px]
-				"
-			>
+			<div class="w-full overflow-hidden bg-surface rounded-[16px]">
 				<CurrentComponent />
 			</div>
 		</div>
@@ -52,6 +40,7 @@ import type { Component } from 'svelte';
 import { storage } from '~/shared/storage.svelte';
 import Button from '~/lib/Button.svelte';
 import TranslaterVersion from '~/lib/TranslaterVersion.svelte';
+import RateUs from '~/lib/RateUs.svelte';
 import ReadingAndInput from './lib/ReadingAndInput.svelte';
 import PopupWindow from './lib/PopupWindow.svelte';
 import Appearance from './lib/Appearance/Appearance.svelte';

@@ -1,4 +1,4 @@
-<div class="p-3 flex gap-2 whitespace-nowrap">
+<div class="flex gap-2 whitespace-nowrap">
 	<div>
 		<Link
 			class="text-sm"

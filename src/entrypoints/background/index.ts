@@ -1,5 +1,6 @@
 import type { Message } from '~/shared/types';
 import { googleTranslate, googleTTS } from './googleApi';
+import { UNINSTALL_URL } from '~/shared/constants';
 
 export default defineBackground({
 	type: 'module',
@@ -72,14 +73,6 @@ export default defineBackground({
 
 		browser.runtime.onMessage.addListener(handleMessage);
 
-		browser.runtime.onInstalled.addListener(() => {
-			browser.contextMenus.create({
-				id: 'translaterMenu',
-				title: browser.i18n.getMessage('context_menus_title'),
-				contexts: ['selection'],
-			});
-		});
-
 		browser.contextMenus.onClicked.addListener((info, tab) => {
 			if (info.menuItemId === 'translaterMenu' && info.selectionText && tab?.id) {
 				browser.tabs.sendMessage<Message>(tab.id, {
@@ -99,6 +92,25 @@ export default defineBackground({
 				default:
 					console.error(`Command "${command}" not found.`);
 					break;
+			}
+		});
+
+		function createContextMenus() {
+			browser.contextMenus.create({
+				id: 'translaterMenu',
+				title: browser.i18n.getMessage('context_menus_title'),
+				contexts: ['selection'],
+			});
+		}
+
+		browser.runtime.onInstalled.addListener(details => {
+			switch (details.reason) {
+				case browser.runtime.OnInstalledReason.INSTALL:
+					createContextMenus();
+					browser.runtime.setUninstallURL(UNINSTALL_URL);
+					break;
+				// case browser.runtime.OnInstalledReason.UPDATE:
+				// 	break;
 			}
 		});
 	},

@@ -56,8 +56,14 @@ const button = tv({
 		variant: {
 			text: 'text-accent enabled:hover:bg-accent-primary/10 enabled:active:bg-accent-primary/20',
 			filled: 'text-primary-inverse bg-accent-primary enabled:hover:bg-accent-primary/90 enabled:active:bg-accent-primary/80',
-			outlined: 'text-accent enabled:hover:bg-accent-primary/10 enabled:active:bg-accent-primary/20',
-			danger: 'text-primary-inverse bg-red-700 dark:bg-red-300 enabled:hover:bg-red-700/90 enabled:dark:hover:bg-red-300/90 enabled:active:bg-red-700/80 enabled:dark:active:bg-red-300/80',
+			outlined: [
+				'relative text-accent enabled:hover:bg-accent-primary/10 enabled:active:bg-accent-primary/20',
+				// 'before:absolute before:inset-0 before:rounded-full before:border before:     border-accent-primary/50 before:pointer-events-none',
+			],
+			danger: [
+				'text-primary-inverse bg-red-700 dark:bg-red-300',
+				'enabled:hover:bg-red-700/90 enabled:dark:hover:bg-red-300/90 enabled:active:bg-red-700/80 enabled:dark:active:bg-red-300/80',
+			],
 		},
 		isLabel: {
 			true: '',
@@ -148,7 +154,7 @@ const button = tv({
 
 type ButtonVariants = VariantProps<typeof button>;
 
-interface Props extends HTMLButtonAttributes {
+interface Props extends ButtonVariants, HTMLButtonAttributes {
 	label?: string
 	tab?: boolean
 	active?: boolean
@@ -156,11 +162,10 @@ interface Props extends HTMLButtonAttributes {
 	iconRight?: string
 	iconSize?: ComponentProps<typeof Icon>['size']
 	class?: string
-	variant?: ButtonVariants['variant']
 	small?: boolean
 	iconClass?: string
 	iconRightClass?: string
-	onclick: MouseEventHandler<HTMLButtonElement>
+	onclick?: MouseEventHandler<HTMLButtonElement>
 	children?: Snippet
 }
 

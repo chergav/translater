@@ -3,7 +3,7 @@
 	data-theme={storage.themeClass}
 	data-variant={storage.settings.themeVariant}
 >
-	{#await isTextInTargetLangPromice then isYourLang}
+	{#await isTextInTargetLangPromise then isYourLang}
 		{#if !isYourLang && isShowTrigger}
 			<Trigger />
 		{/if}
@@ -26,7 +26,7 @@ import { getSelectedText, getSelectedElemRect, getSelectedEndCoord, isInTextFiel
 import { CUSTOM_ELEMENT_TAG } from '~/shared/constants';
 import { detectLanguage } from '~/shared/browser';
 
-let isTextInTargetLangPromice = $derived<Promise<boolean>>(isTextInTargetLang());
+let isTextInTargetLangPromise = $derived<Promise<boolean>>(isTextInTargetLang());
 let isSettingsShowButton = $derived<boolean>(store.isInTextField
 	? storage.settings.textFieldButtonShow
 	: storage.settings.inlineButtonShow,

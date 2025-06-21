@@ -48,6 +48,10 @@
 	</div>
 
 	<div>
+		<RateUs />
+	</div>
+
+	<div>
 		<Link
 			class="text-sm text-center"
 			href="https://chergav.github.io/extensions"
@@ -56,7 +60,7 @@
 		/>
 	</div>
 
-	<div class="w-full">
+	<div class="w-full px-2 pb-2">
 		<TranslaterVersion />
 	</div>
 
@@ -83,6 +87,7 @@ import Shortcuts from '@/lib/Shortcuts.svelte';
 import Divider from '~/lib/Divider.svelte';
 import Link from '~/lib/Link.svelte';
 import TranslaterVersion from '~/lib/TranslaterVersion.svelte';
+import RateUs from '~/lib/RateUs.svelte';
 import { mdiApplicationOutline, mdiCogOutline } from '@mdi/js';
 import { getShortcutByCommand } from '~/shared/browser';
 
