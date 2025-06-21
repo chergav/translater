@@ -51,6 +51,7 @@ export default defineConfig({
 				'activeTab',
 				'scripting',
 			],
+			host_permissions: ['<all_urls>'],
 		};
 	},
 });

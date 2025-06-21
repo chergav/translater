@@ -2,20 +2,19 @@
 	<p class="text-sm">Let us know your vibe:</p>
 	<div class="flex items-center gap-2">
 		{#each buttons as { label, handler } (label)}
-			<button
-				class={[
-					'px-4 py-0.5 inline-flex text-lg rounded-full select-none transition-colors',
-					'border border-variant-300-700 hover:bg-accent-primary/10',
-				]}
+			<Button
+				class="text-lg py-1 px-4"
+				{label}
 				onclick={handler}
-				type="button"
-			>{label}</button>
+				variant="outlined"
+			/>
 		{/each}
 	</div>
 </div>
 
 <script lang="ts">
-import { RATE_MAX_URL, RATE_LESS_URL } from '~/shared/constants';
+import Button from '~/lib/Button.svelte';
+import { RATE_MAX_URL, RATE_LESS_URL, RATE_MAX_URL_FIREFOX } from '~/shared/constants';
 
 interface Buttons {
 	label: string
@@ -42,6 +41,7 @@ function openGoogleForm() {
 }
 
 function openCWSReviews() {
-	browser.tabs.create({ url: RATE_MAX_URL });
+	const url = import.meta.env.FIREFOX ? RATE_MAX_URL_FIREFOX : RATE_MAX_URL;
+	browser.tabs.create({ url });
 }
 </script>

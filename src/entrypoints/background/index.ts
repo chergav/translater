@@ -95,7 +95,7 @@ export default defineBackground({
 			}
 		});
 
-		function createContextMenus() {
+		function createContextMenu() {
 			browser.contextMenus.create({
 				id: 'translaterMenu',
 				title: browser.i18n.getMessage('context_menus_title'),
@@ -103,14 +103,33 @@ export default defineBackground({
 			});
 		}
 
+		async function injectContentScriptIntoAllTabs() {
+			const tabs = await browser.tabs.query({});
+
+			for (const tab of tabs) {
+				if (!tab.url?.startsWith('http') || !tab.id) continue;
+
+				try {
+					await browser.scripting.executeScript({
+						target: { tabId: tab.id },
+						files: ['/content-scripts/content.js'],
+					});
+				} catch (error) {
+					console.log(`Failed to inject into tab ${tab.id}:`, error);
+				}
+			}
+		}
+
 		browser.runtime.onInstalled.addListener(details => {
 			switch (details.reason) {
 				case browser.runtime.OnInstalledReason.INSTALL:
-					createContextMenus();
+					createContextMenu();
+					injectContentScriptIntoAllTabs();
 					browser.runtime.setUninstallURL(UNINSTALL_URL);
 					break;
-				// case browser.runtime.OnInstalledReason.UPDATE:
-				// 	break;
+				case browser.runtime.OnInstalledReason.UPDATE:
+					injectContentScriptIntoAllTabs();
+					break;
 			}
 		});
 	},
