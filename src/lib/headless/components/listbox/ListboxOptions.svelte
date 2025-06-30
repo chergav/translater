@@ -17,13 +17,14 @@
 
 <script lang="ts">
 import type { Snippet } from 'svelte';
+import type { ClassValue } from 'svelte/elements';
 import { fly } from 'svelte/transition';
 import { getListboxContext } from './context';
 import { getNextIndex } from '../../utils/get-next-index';
 import { Keys, Focus } from '../../utils/enums';
 
 interface Props {
-	class: string
+	class: ClassValue
 	children: Snippet
 }
 

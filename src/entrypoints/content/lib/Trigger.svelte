@@ -3,19 +3,10 @@
 	use:triggerPosition
 >
 	<button
-		class="
-			p-0.5
-			flex
-			items-center
-			justify-center
-			bg-surface
-			text-primary
-			border
-			border-variant-200-800
-			rounded-lg
-			shadow-lg
-			cursor-pointer
-		"
+		class={[
+			'flex items-center justify-center rounded-lg p-0.5 shadow-lg',
+			'border border-color-surface-high bg-color-surface text-color-on-surface',
+		]}
 		onclick={openPopup}
 		title={browser.i18n.getMessage('tooltip_translate_text')}
 		type="button"
@@ -24,16 +15,6 @@
 		<Icon d={customTranslatePath} />
 	</button>
 </div>
-
-<!-- <div
-	class="absolute bg-red-500 z-[99999999]"
-	style="
-		width: {(store.selectedEndCoord?.width || 0) + 2}px;
-		height: {store.selectedEndCoord?.height}px;
-		top: {store.selectedEndCoord?.top}px;
-		left: {store.selectedEndCoord?.left}px;
-	"
-></div> -->
 
 <script lang="ts">
 import type { Action } from 'svelte/action';

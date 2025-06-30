@@ -1,26 +1,11 @@
-<div class="relative w-full leading-[0] rounded-xl overflow-hidden z-0">
+<div class="relative z-0 w-full overflow-hidden rounded-xl leading-[0]">
 	<div
-		bind:this={highlightContaner}
+		bind:this={highlightContainer}
 		style="font-size: {storage.settings.fontSize}px; line-height: {storage.settings.fontSize * 1.6}px"
-		class="
-			absolute
-			top-0
-			left-0
-			right-0
-			w-full
-			max-h-80
-			min-h-2.5
-			pl-1
-			py-1
-			pr-9
-			whitespace-pre-line
-			border
-			border-transparent
-			text-transparent
-			overflow-y-auto
-			scrollbar-hidden
-			-z-10
-		"
+		class={[
+			'absolute top-0 right-0 left-0 -z-10 scrollbar-hidden max-h-80 min-h-2.5 w-full overflow-y-auto py-1 pr-9 pl-1',
+			'border border-transparent whitespace-pre-line text-transparent',
+		]}
 	>
 		<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 		{@html highlightedText}
@@ -28,27 +13,11 @@
 	<textarea
 		bind:this={textarea}
 		style="font-size: {storage.settings.fontSize}px; line-height: {storage.settings.fontSize * 1.6}px"
-		class="
-			w-full
-			max-h-80
-			min-h-2.5
-			pl-1
-			py-1
-			pr-9
-			bg-transparent
-			resize-none
-			overflow-y-auto
-			border
-			border-variant-200-800
-			focus:outline-none
-			focus:ring-0
-			focus:border-variant-300-700
-			scrollbar
-			rounded-xl
-			transition-colors
-			text-base
-			z-10
-		"
+		class={[
+			'z-10 scrollbar max-h-80 min-h-2.5 w-full resize-none overflow-y-auto rounded-xl py-1 pr-9 pl-1 text-base',
+			'border border-color-surface-high bg-transparent transition-colors',
+			'focus:border-color-outline-variant focus:outline-none',
+		]}
 		oninput={onInput}
 		onscroll={onScroll}
 		rows="1"
@@ -59,11 +28,11 @@
 	{#if store.translated?.sentence.orig}
 		<div transition:fade={{ duration: 150 }}>
 			<Button
-				class="absolute top-1 right-1"
+				class="absolute top-0.5 right-0.5"
 				icon={mdiClose}
 				iconSize="20"
 				onclick={clearText}
-				small
+				size="xs"
 				title={browser.i18n.getMessage('tooltip_clear_text')}
 			/>
 		</div>
@@ -80,7 +49,7 @@ import { mdiClose } from '@mdi/js';
 import { escapeRegExp } from '~/utils';
 
 let textarea = $state<HTMLTextAreaElement>();
-let highlightContaner = $state<HTMLDivElement>();
+let highlightContainer = $state<HTMLDivElement>();
 let timer = $state<number>();
 let highlightedText = $derived.by<string>(() => {
 	let text = store.translated?.sentence.orig || store.textToTranslate;
@@ -88,7 +57,7 @@ let highlightedText = $derived.by<string>(() => {
 	if (store.textToHighlight) {
 		const escapedString = escapeRegExp(store.textToHighlight.trim());
 		const re = new RegExp(escapedString, 'g');
-		const replaceValue = '<span class="bg-accent-primary/15 rounded-xs">$&</span>';
+		const replaceValue = '<span class="bg-color-primary/15 rounded-xs">$&</span>';
 		return text.replace(re, replaceValue);
 	}
 
@@ -97,7 +66,7 @@ let highlightedText = $derived.by<string>(() => {
 
 function onScroll(event: Event) {
 	const target = event.target as HTMLTextAreaElement;
-	if (highlightContaner) highlightContaner.scrollTop = target.scrollTop;
+	if (highlightContainer) highlightContainer.scrollTop = target.scrollTop;
 }
 
 const resize: Action<HTMLTextAreaElement> = () => {

@@ -1,20 +1,10 @@
 <div
 	bind:this={portal}
-	class="
-		fixed
-		max-h-96
-		py-1
-		flex
-		flex-col
-		bg-surface
-		text-sm
-		rounded-lg
-		border
-		border-variant-200-800
-		shadow
-		overflow-y-auto
-		scrollbar
-	"
+	class={[
+		'fixed scrollbar flex max-h-96 flex-col overflow-y-auto rounded-lg py-1 text-sm shadow',
+		'border border-color-surface-high bg-color-surface',
+	]}
+
 	transition:fly={{
 		duration: 150,
 		y: 10,
@@ -22,25 +12,16 @@
 >
 	{#each alternatives as alt, i (i)}
 		<button
-			class="
-				pl-3
-				pr-4
-				py-2
-				max-w-xl
-				flex
-				items-center
-				gap-2
-				cursor-pointer
-				border-b
-				border-variant-200-800
-				last:border-none
-				{text === alt ? 'bg-accent-primary/10' : 'hover:bg-accent-primary/5'}
-			"
+			class={[
+				'flex max-w-xl cursor-pointer items-center gap-2 py-2 pr-4 pl-3',
+				'border-b border-color-surface-high last:border-none',
+				text === alt ? 'bg-color-primary/10' : 'hover:bg-color-primary/5',
+			]}
 			onclick={() => setAlt(alt)}
 			type="button"
 		>
-			<span class="size-[18px] inline-flex shrink-0">
-				<Icon class="{text === alt ? 'inline-flex' : 'hidden'} text-accent shrink-0" d={mdiCheck} size="18" />
+			<span class="inline-flex size-5">
+				<Icon class="{text === alt ? 'inline-flex' : 'hidden'} text-color-primary shrink-0" d={mdiCheck} size="20" />
 			</span>
 			<span class="text-start">{alt}</span>
 		</button>
@@ -57,7 +38,7 @@ interface Props {
 	rect: DOMRect
 	text: string
 	alternatives: string[]
-	onChangeAlt: () => void
+	altsOpen: boolean
 	portal?: HTMLDivElement
 }
 
@@ -65,13 +46,13 @@ let {
 	rect,
 	text = $bindable(),
 	alternatives,
-	onChangeAlt,
+	altsOpen = $bindable(),
 	portal = $bindable(),
 }: Props = $props();
 
 function setAlt(alt: string) {
 	text = alt;
-	onChangeAlt();
+	altsOpen = false;
 }
 
 $effect(() => {

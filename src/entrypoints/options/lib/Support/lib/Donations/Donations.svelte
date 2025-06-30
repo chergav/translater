@@ -7,7 +7,7 @@
 		{/each}
 	</Select>
 
-	<div class="border border-gray-300 dark:border-none rounded-3xl overflow-hidden" use:qrCode></div>
+	<div class="overflow-hidden rounded-3xl border border-gray-300 dark:border-none" use:qrCode></div>
 
 	<div class="flex flex-col items-center gap-1">
 		<p class="font-medium">{currentWallet.label} {browser.i18n.getMessage('options_address')}:</p>

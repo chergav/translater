@@ -1,53 +1,31 @@
-<div>
-	<label
-		class="
-			relative
-			inline-flex
-			items-center
-			cursor-pointer
-		"
-	>
-		<input {name} class="sr-only peer" type="checkbox" bind:checked />
+<label
+	class={[
+		'group/label inline-flex w-fit cursor-pointer items-center gap-2 select-none',
+		'has-disabled:pointer-events-none has-disabled:opacity-50',
+	]}
+>
+	<div class="group relative flex items-center justify-center">
+		<input {...rest} class="peer sr-only" type="checkbox" bind:checked />
 		<!-- outline -->
 		<div
-			class="
-				w-[18px]
-				h-[18px]
-				rounded-sm
-				border-2
-				border-variant-600-400
-			"
+			class={[
+				'm-3 size-[18px] rounded-xs border-2 transition-colors',
+				'border-color-on-surface-variant group-hover:border-color-on-surface group-hover/label:border-color-on-surface',
+			]}
 		></div>
 		<!-- background -->
 		<div
-			class="
-				absolute
-				w-[18px]
-				h-[18px]
-				rounded-sm
-				scale-50
-				opacity-0
-				peer-checked:bg-accent-primary
-				peer-checked:scale-100
-				peer-checked:opacity-100
-				transition-all
-			"
+			class={[
+				'absolute size-[18px] scale-50 rounded-xs opacity-0 transition-[background-color,_transform]',
+				'peer-checked:scale-100 peer-checked:bg-color-primary peer-checked:opacity-100',
+			]}
 		></div>
 		<!-- mark -->
 		<svg
-			class="
-				absolute
-				w-[18px]
-				h-[18px]
-				stroke-none
-				fill-none
-				peer-checked:fill-white
-				peer-checked:dark:fill-black
-				scale-50
-				peer-checked:scale-100
-				transition-transform
-				duration-300
-			"
+			class={[
+				'absolute size-[18px] scale-50 fill-none stroke-none transition-transform duration-300',
+				'peer-checked:scale-100 peer-checked:fill-color-on-primary',
+			]}
 			viewBox="0 0 18 18"
 		>
 			<style>
@@ -60,44 +38,35 @@
 		</svg>
 		<!-- hover elem -->
 		<div
-			class="
-				absolute
-				w-10
-				h-10
-				-ml-[11px]
-				rounded-full
-				peer-hover:bg-secondary-hover
-				peer-checked:peer-hover:bg-accent-primary/10
-
-				ring-offset-white
-				dark:ring-offset-black
-				peer-focus-visible:outline-none
-				peer-focus-visible:ring-2
-				peer-focus-visible:ring-offset-2
-				peer-focus-visible:ring-accent
-
-				transition-all
-			"
+			class={[
+				'absolute size-10 rounded-full transition-colors',
+				'group-hover:bg-color-on-surface-variant/15 peer-checked:group-hover:bg-color-primary/15',
+				'group-hover:peer-active:bg-color-on-surface-variant/25 peer-checked:peer-active:group-hover:bg-color-primary/25',
+				'peer-focus-visible:outline-custom peer-focus-visible:outline-color-primary',
+			]}
 		></div>
-		<span class="ml-4 text-primary select-none">{label}</span>
-	</label>
-	{#if hint}
-		<p class="ml-[34px] text-sm text-secondary select-none">{hint}</p>
-	{/if}
-</div>
+	</div>
+	<div class="flex flex-col gap-0.5">
+		<span>{label}</span>
+		{#if hint}
+			<span class="text-sm text-color-on-surface-variant">{hint}</span>
+		{/if}
+	</div>
+</label>
 
 <script lang="ts">
-interface Props {
+import type { HTMLInputAttributes } from 'svelte/elements';
+
+interface Props extends HTMLInputAttributes {
 	checked: boolean
 	label: string
-	name?: string
 	hint?: string
 }
 
 let {
 	checked = $bindable(),
 	label,
-	name,
 	hint,
+	...rest
 }: Props = $props();
 </script>

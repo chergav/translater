@@ -1,17 +1,19 @@
-<div class="p-6 flex flex-col gap-6">
-	<Checkbox
-		hint={browser.i18n.getMessage('options_lock_popup_window_hint')}
-		label={browser.i18n.getMessage('options_lock_popup_window')}
-		bind:checked={storage.settings.lockWindow}
-	/>
-	<Checkbox
-		label={browser.i18n.getMessage('options_show_original_text')}
-		bind:checked={storage.settings.showOriginalText}
-	/>
-	<Checkbox
-		label={browser.i18n.getMessage('options_show_transliteration')}
-		bind:checked={storage.settings.showTransliteration}
-	/>
+<div class="flex flex-col gap-6 p-6">
+	<div class="flex flex-col gap-1">
+		<Checkbox
+			hint={browser.i18n.getMessage('options_lock_popup_window_hint')}
+			label={browser.i18n.getMessage('options_lock_popup_window')}
+			bind:checked={storage.settings.lockWindow}
+		/>
+		<Checkbox
+			label={browser.i18n.getMessage('options_show_original_text')}
+			bind:checked={storage.settings.showOriginalText}
+		/>
+		<Checkbox
+			label={browser.i18n.getMessage('options_show_transliteration')}
+			bind:checked={storage.settings.showTransliteration}
+		/>
+	</div>
 	<Select
 		label="{browser.i18n.getMessage('options_font_size')}:"
 		bind:value={storage.settings.fontSize}
@@ -27,7 +29,7 @@
 		{/await}
 		{#if import.meta.env.CHROME}
 			<button
-				class="text-sm text-blue-600 dark:text-blue-400 hover:underline cursor-pointer"
+				class="cursor-pointer text-sm text-blue-600 hover:underline dark:text-blue-400"
 				onclick={openExtensionsShortcuts}
 				type="button"
 			>

@@ -1,19 +1,12 @@
 {#if keys && keys.length}
-	<p class="text-sm inline-flex items-center">
+	<p class="inline-flex items-center text-sm">
 		{#each keys as key, index (index)}
 			{#if index > 0}
 				<span class="mx-2">+</span>
 			{/if}
-			<span
-				class="
-					px-2
-					py-1
-					bg-secondary-hover
-					border
-					border-variant-400-600
-					rounded-md
-				"
-			>{key}</span>
+			<span class="rounded-md border border-color-outline-variant bg-color-surface-high px-2 py-1">
+				{key}
+			</span>
 		{/each}
 	</p>
 {:else}

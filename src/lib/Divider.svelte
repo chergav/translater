@@ -1,25 +1,12 @@
-<div class="relative w-full h-7 flex justify-center items-center {className}">
-	<div
-		class="
-			absolute
-			w-full
-			h-px
-			border
-			border-variant-400-600
-		"
-	></div>
-	<div
-		class="
-			absolute
-			h-7
-			px-2.5
-			flex
-			justify-center
-			items-center
-			bg-surface
-		"
-	>
-		<div class="text-secondary text-base">{label}</div>
+<div
+	class={[
+		'relative flex h-7 w-full items-center justify-center',
+		className,
+	]}
+>
+	<div class="absolute h-px w-full border border-color-outline-variant"></div>
+	<div class="absolute flex h-7 items-center justify-center bg-color-surface px-2.5">
+		<div class="text-base text-color-on-surface-variant">{label}</div>
 	</div>
 </div>
 

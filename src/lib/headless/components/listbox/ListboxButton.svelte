@@ -14,13 +14,14 @@
 
 <script lang="ts">
 import type { Snippet } from 'svelte';
+import type { ClassValue } from 'svelte/elements';
 import { tick } from 'svelte';
 import { getListboxContext } from './context';
 import { getNextIndex } from '../../utils/get-next-index';
 import { Keys, Focus } from '../../utils/enums';
 
 interface Props {
-	class?: string
+	class?: ClassValue
 	as?: string
 	children: Snippet
 }

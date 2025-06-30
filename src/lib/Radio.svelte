@@ -1,33 +1,18 @@
-<div>
-	<label
-		class="
-			relative
-			inline-flex
-			items-center
-			cursor-pointer
-		"
-	>
-		<input class="sr-only peer" type="radio" {value} bind:group />
+<label
+	class={[
+		'group/label inline-flex w-fit cursor-pointer items-center gap-1 select-none',
+		'has-disabled:pointer-events-none has-disabled:opacity-50',
+	]}
+>
+	<div class="group relative flex items-center justify-center">
+		<input class="peer sr-only"  {...rest} type="radio" {value} bind:group />
 		<!-- outer circle -->
 		<svg
-			class="
-				w-5
-				h-5
-				ring-[10px]
-				ring-transparent
-				rounded-full
-				fill-variant
-				peer-checked:fill-accent
-
-				ring-offset-white
-				dark:ring-offset-black
-				peer-focus-visible:outline-none
-				peer-focus-visible:ring-2
-				peer-focus-visible:ring-offset-2
-				peer-focus-visible:ring-accent
-
-				transition-all
-			"
+			class={[
+				'm-2.5 size-5 rounded-full transition-colors',
+				'fill-color-on-surface-variant group-hover:fill-color-on-surface group-hover/label:fill-color-on-surface',
+				'peer-checked:fill-color-primary peer-focus-visible:outline-custom peer-focus-visible:outline-color-primary',
+			]}
 			viewBox="0 0 20 20"
 		>
 			<mask id="cutout">
@@ -38,41 +23,30 @@
 		</svg>
 		<!-- inner circle -->
 		<svg
-			class="
-				absolute
-				w-5
-				h-5
-				fill-accent
-				opacity-0
-				peer-checked:opacity-100
-				peer-checked:animate-circle-grow
-				origin-center
-				transition-opacity
-				duration-[50ms]
-			"
+			class={[
+				'absolute inset-0 m-auto size-5 transition-opacity',
+				'fill-color-primary opacity-0 peer-checked:animate-circle-grow peer-checked:opacity-100',
+			]}
 			viewBox="0 0 20 20"
 		>
 			<circle cx="10" cy="10" r="5" />
 		</svg>
 		<!-- hover elem -->
 		<div
-			class="
-				absolute
-				w-10
-				h-10
-				-ml-[10px]
-				rounded-full
-				peer-hover:bg-secondary-hover
-				peer-checked:peer-hover:bg-accent-primary/10
-				transition-colors
-			"
+			class={[
+				'pointer-events-none absolute inset-0 m-auto size-10 rounded-full transition-colors',
+				'group-hover:bg-color-on-surface-variant/15 peer-checked:group-hover:bg-color-primary/15',
+				'group-hover:peer-active:bg-color-on-surface-variant/25 peer-checked:peer-active:group-hover:bg-color-primary/25',
+			]}
 		></div>
-		<span class="ml-4 text-primary select-none">{label}</span>
-	</label>
-</div>
+	</div>
+	<span>{label}</span>
+</label>
 
 <script lang="ts">
-interface Props {
+import type { HTMLInputAttributes } from 'svelte/elements';
+
+interface Props extends HTMLInputAttributes {
 	group: string
 	value: string
 	label: string
@@ -82,5 +56,6 @@ let {
 	group = $bindable(),
 	value,
 	label,
+	...rest
 }: Props = $props();
 </script>

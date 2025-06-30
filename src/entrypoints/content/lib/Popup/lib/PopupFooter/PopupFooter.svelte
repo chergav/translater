@@ -1,5 +1,5 @@
 {#if store.translated && showFooter}
-	<footer class="flex flex-col">
+	<footer class="flex flex-col p-1">
 		<div class="flex items-center gap-1">
 			{#each tabs as tab (tab.id)}
 				{#if tab.component && Object.hasOwn(store.translated, tab.srcKey)}
@@ -12,7 +12,7 @@
 						onclick={() => {
 							tabHandler(tab.id);
 						}}
-						small
+						size="xs"
 					/>
 				{/if}
 			{/each}

@@ -1,5 +1,5 @@
 <Listbox
-	class="relative w-min h-min text-sm"
+	class="relative h-min w-min text-sm"
 	change={onchange}
 	onopen={() => {
 		search = '';
@@ -8,70 +8,35 @@
 	bind:open
 >
 	<ListboxButton
-		class="
-			relative
-			pl-3
-			pr-10
-			w-52
-			h-7
-			flex
-			items-center
-			border
-			border-variant-200-800
-			text-start
-			overflow-hidden
-			whitespace-nowrap
-			rounded-full
-			hover:bg-accent-primary/10
-			transition-colors
-			cursor-pointer
-			{open ? 'bg-accent-primary/10' : ''}
-		"
+		class={[
+			'relative flex h-8 w-52 cursor-pointer items-center overflow-hidden rounded-full pr-10 pl-3',
+			'text-start whitespace-nowrap transition-colors',
+			'border border-color-surface-high hover:bg-color-primary/10',
+			open && 'bg-color-primary/10',
+		]}
 	>
 		<span class="block truncate">{getI18nLangName(value)}</span>
 		<Icon
-			class="
-				pointer-events-none
-				absolute
-				right-1
-				{open ? 'text-accent' : 'text-secondary'}
-			"
+			class={[
+				'pointer-events-none absolute right-1',
+				open ? 'text-color-primary' : 'text-color-on-surface-variant',
+			]}
 			d={mdiUnfoldMoreHorizontal}
 		/>
 	</ListboxButton>
 	<ListboxOptions
-		class="
-			absolute
-			left-0
-			max-h-64
-			flex
-			flex-col
-			overflow-hidden
-			select-none
-			bg-surface
-			border
-			border-variant-200-800
-			rounded-xl
-			shadow-lg
-			z-10
-		"
+		class={[
+			'absolute left-0 z-10 flex max-h-64 flex-col overflow-hidden rounded-xl shadow-lg select-none',
+			'border border-color-surface-high bg-color-surface',
+		]}
 	>
 		<div class="relative flex items-center">
 			<input
 				bind:this={inputSearch}
-				class="
-					w-full
-					px-2
-					h-8
-					bg-surface
-					text-sm
-					border-t-0
-					border-x-0
-					border-b
-					border-variant-200-800
-					focus:ring-0
-					outline-0
-				"
+				class={[
+					'h-10 w-full border-x-0 border-t-0 border-b px-2 text-sm outline-none',
+					'border-color-surface-high bg-color-surface',
+				]}
 				placeholder={browser.i18n.getMessage('select_language_search_placeholder')}
 				spellcheck="false"
 				type="text"
@@ -87,59 +52,41 @@
 						search = '';
 						tick().then(() => inputSearch?.focus());
 					}}
-					small
+					size="xs"
 					title={browser.i18n.getMessage('tooltip_clear_search')}
 				/>
 			{/if}
 		</div>
-		<div
-			class="
-				flex
-				p-1
-				overflow-x-hidden
-				overflow-y-auto
-				scrollbar
-			"
-		>
+		<div class="scrollbar flex overflow-x-hidden overflow-y-auto p-1">
 			{#each langColumns as langColumn, index (index)}
 				<div class="flex flex-col">
 					{#each langColumn as lang, index (index)}
 						<ListboxOption
-							class="
-								pl-2
-								pr-2.5
-								py-1
-								flex
-								items-center
-								gap-2
-								select-none
-								not-aria-selected:hover:bg-accent-primary/5
-								aria-selected:bg-accent-primary/10
-								rounded-full
-								cursor-pointer
-								whitespace-nowrap
-							"
+							class={[
+								'flex cursor-pointer items-center gap-2 rounded-full py-1.5 pr-2.5 pl-2 whitespace-nowrap select-none',
+								'not-aria-selected:hover:bg-color-primary/5 aria-selected:bg-color-primary/10',
+							]}
 							value={lang.code}
 						>
 							{#snippet children(selected)}
 								{@const markYourLang = markUILang && UILanguage.startsWith(lang.code)}
-								<span class="size-[18px] inline-flex">
+								<span class="inline-flex size-5">
 									{#if selected}
-										<Icon class="text-accent" d={mdiCheck} size="18" />
+										<Icon class="text-color-primary" d={mdiCheck} size="20" />
 									{:else if markYourLang}
 										<span title="Your language">
-											<Icon class="text-secondary" d={mdiStarOutline} size="18" />
+											<Icon class="text-color-on-surface-variant" d={mdiStarOutline} size="20" />
 										</span>
 									{/if}
 								</span>
 								<!-- eslint-disable-next-line svelte/no-at-html-tags -->
-								<span class={selected ? 'text-accent font-medium' : ''}>{@html lang.language}</span>
+								<span class={selected ? 'font-medium text-color-primary' : ''}>{@html lang.language}</span>
 							{/snippet}
 						</ListboxOption>
 					{/each}
 				</div>
 			{:else}
-				<p class="w-full p-1 text-secondary">{browser.i18n.getMessage('select_language_search_no_results')}</p>
+				<p class="w-full p-1 text-color-on-surface-variant">{browser.i18n.getMessage('select_language_search_no_results')}</p>
 			{/each}
 		</div>
 	</ListboxOptions>
@@ -221,10 +168,10 @@ let langColumns = $derived(listToColumns(filteredLangs, columns));
 
 function arrayTo2dArray(
 	array: Language[],
-	columnElems: number,
+	columnElements: number,
 ): Language[][] {
 	return array.reduce<Language[][]>((rows, val, index) => {
-		if (index % columnElems === 0) {
+		if (index % columnElements === 0) {
 			rows.push([val]);
 		} else {
 			rows[rows.length - 1].push(val);

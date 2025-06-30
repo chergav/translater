@@ -1,55 +1,28 @@
 <label
-	class="
-		flex
-		flex-col
-		items-center
-		cursor-pointer
-		border
-		border-variant-300-700
-		hover:border-variant-400-600
-		has-checked:border-accent-primary
-		rounded-2xl
-		overflow-hidden
-		select-none
-		transition-colors
-	"
+	class={[
+		'group flex cursor-pointer flex-col items-center overflow-hidden rounded-2xl transition-colors select-none',
+		'border border-color-surface-high hover:border-color-outline-variant has-checked:border-color-primary',
+		'has-focus-visible:outline-custom has-focus-visible:outline-color-primary',
+	]}
 >
-	<input class="sr-only peer" type="radio" {value} bind:group />
+	<input class="peer sr-only" type="radio" {value} bind:group />
 	<div class="pointer-events-none">
 		{@render children?.()}
 	</div>
 	<div
-		class="
-			p-2
-			w-full
-			flex
-			items-center
-			gap-2
-			bg-base
-			border-t
-			border-variant-300-700
-			[&>div>svg]:invisible
-			peer-checked:[&>div>svg]:visible
-			[&>div]:bg-surface
-			peer-checked:[&>div]:bg-accent-primary
-			peer-checked:[&>div]:border-accent-primary
-		"
+		class={[
+			'flex w-full items-center gap-2 p-2',
+			'border-t border-color-surface-high bg-color-surface-container',
+		]}
 	>
 		<div
-			class="
-				size-6
-				flex
-				items-center
-				justify-center
-				shrink-0
-				border-2
-				border-variant-300-700
-				text-primary-inverse
-				rounded-full
-				transition-colors
-			"
+			class={[
+				'flex size-6 shrink-0 items-center justify-center rounded-full transition-colors',
+				'border-2 border-color-outline bg-color-surface text-color-on-primary',
+				'group-has-checked:border-color-primary group-has-checked:bg-color-primary',
+			]}
 		>
-			<Icon d={mdiCheck} size="18" />
+			<Icon class="invisible group-has-checked:visible" d={mdiCheck} size="20" />
 		</div>
 		<span>{label}</span>
 	</div>

@@ -10,7 +10,7 @@
 </svg>
 
 <script lang="ts">
-import { tv, type VariantProps } from 'tailwind-variants';
+import { tv, type VariantProps, type ClassValue } from 'tailwind-variants';
 
 const icon = tv({
 	base: 'fill-current',
@@ -34,15 +34,16 @@ const icon = tv({
 	},
 });
 
-interface Props {
+type IconVariants = VariantProps<typeof icon>;
+
+interface Props extends IconVariants {
 	d: string
-	size?: VariantProps<typeof icon>['size']
-	class?: string
+	class?: ClassValue
 }
 
 let {
 	d,
-	size = '24',
+	size,
 	class: className,
 }: Props = $props();
 </script>

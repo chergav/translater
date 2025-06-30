@@ -1,23 +1,16 @@
-<label class="text-primary" class:w-full={full}>
+<label class={['flex w-fit items-center gap-2 select-none', full && 'w-full' ]}>
 	{#if label}
-		<span class="select-none {label ? 'mr-2' : ''}">{label}</span>
+		<span class={small ? 'text-sm' : 'text-base'}>{label}</span>
 	{/if}
 	<select
-		class="
-			{small ? 'py-1 px-2 text-sm' : 'p-2 text-base'}
-			rounded-lg
-			outline-0
-			focus:ring-0
-			bg-surface
-			text-primary
-			border
-			border-variant-300-700
-			focus-visible:border-variant-400-600
-			transition-colors
-			cursor-pointer
-			{className}
-		"
-		class:w-full={full}
+		class={[
+			'cursor-pointer rounded-md bg-color-surface transition-colors select-none',
+			'border border-color-outline-variant focus:border-color-outline',
+			'focus-visible:outline-custom focus-visible:outline-color-primary',
+			small ? 'p-1.5 text-sm' : 'p-2.5 text-base',
+			full && 'w-full',
+			className,
+		]}
 		{onchange}
 		bind:value
 	>

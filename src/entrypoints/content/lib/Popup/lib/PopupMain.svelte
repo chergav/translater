@@ -1,5 +1,5 @@
-<main class="flex flex-col gap-1">
-	<div class="p-1 bg-surface rounded-[16px] whitespace-pre-line">
+<main class="flex flex-col gap-1 px-1">
+	<div class="rounded-[16px] bg-color-surface p-1 whitespace-pre-line">
 		<div class="flex flex-col gap-1">
 			<div class="flex items-center justify-between">
 				<div class="flex items-center gap-1">
@@ -14,21 +14,21 @@
 					onclick={() => {
 						originalOpen = !originalOpen;
 					}}
-					small
+					size="xs"
 				/>
 			</div>
 			{#if originalOpen}
 				<div
-					class="whitespace-pre-line max-h-96 overflow-y-auto scrollbar"
+					class="scrollbar max-h-96 overflow-y-auto whitespace-pre-line"
 					transition:slide={{ duration: 150 }}
 				>
 					<TextareaOrig />
 					{#if store.translated?.spell?.spell_html_res &&
 						store.translated.sentence.orig !== store.translated.spell.spell_res}
-						<div class="p-1 flex items-center">
+						<div class="flex items-center p-1">
 							{browser.i18n.getMessage('popup_perhaps_you_meant')}
 							<span
-								class="ml-1 text-sm text-blue-600 cursor-pointer"
+								class="ml-1 cursor-pointer text-sm text-blue-600"
 								onclick={() => {
 									store.textToTranslate = store.translated?.spell.spell_res || '';
 									getTranslate();
@@ -48,10 +48,10 @@
 					{#if
 						store.translated?.ld_result.srclangs &&
 						store.translated?.ld_result.srclangs[0] !== store.sourceLang}
-						<div class="p-1 flex items-center">
+						<div class="flex items-center p-1">
 							{browser.i18n.getMessage('popup_original_language')}
 							<span
-								class="ml-1 text-sm text-blue-600 cursor-pointer"
+								class="ml-1 cursor-pointer text-sm text-blue-600"
 								onclick={() => {
 									store.sourceLang = store.translated?.ld_result.srclangs[0] || '';
 									getTranslate();
@@ -72,13 +72,13 @@
 						</div>
 					{/if}
 					{#if store.translated && storage.settings.showTransliteration}
-						<p class="px-1 text-secondary text-sm">{store.translated.sentence.src_translit}</p>
+						<p class="px-1 text-sm text-color-on-surface-variant">{store.translated.sentence.src_translit}</p>
 					{/if}
 				</div>
 			{/if}
 		</div>
 	</div>
-	<div class="p-1 bg-surface rounded-[16px]">
+	<div class="rounded-[16px] bg-color-surface p-1">
 		<div class="flex flex-col gap-1">
 			<div class="flex items-center justify-between">
 				<div class="flex items-center gap-1">
@@ -97,29 +97,29 @@
 					onclick={() => {
 						translateOpen = !translateOpen;
 					}}
-					small
+					size="xs"
 				/>
 			</div>
 			{#if translateOpen}
 				<div
-					class="p-1 whitespace-pre-line max-h-80 overflow-y-auto scrollbar"
+					class="scrollbar max-h-80 overflow-y-auto p-1 whitespace-pre-line"
 					transition:slide={{ duration: 150 }}
 				>
 					{#if store.translated}
 						<TranslatedText />
 						{#if storage.settings.showTransliteration}
-							<p class="text-secondary text-sm">{store.translated.sentence.translit}</p>
+							<p class="text-sm text-color-on-surface-variant">{store.translated.sentence.translit}</p>
 						{/if}
 					{:else if store.errors.length}
 						<p class="text-red-600 dark:text-red-400">
 							Something went wrong: {store.errors.join(' ')}
 						</p>
 					{:else if store.isPending}
-						<div class="py-2 w-full flex justify-center">
+						<div class="flex w-full justify-center py-2">
 							<Loader />
 						</div>
 					{:else}
-						<p class="text-secondary">
+						<p class="text-color-on-surface-variant">
 							{browser.i18n.getMessage('popup_placeholder_translation')}
 						</p>
 					{/if}

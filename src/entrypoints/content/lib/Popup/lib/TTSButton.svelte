@@ -4,7 +4,7 @@
 	iconClass={status?.waiting ? 'animate-spin' : ''}
 	iconSize="20"
 	onclick={startSpeak}
-	small
+	size="xs"
 	{title}
 />
 {#if voices.length && voice && showTTSVoices}

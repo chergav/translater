@@ -1,13 +1,5 @@
-<main
-	class="
-		flex
-		flex-col
-		items-center
-		gap-4
-		bg-surface
-	"
->
-	<div class="w-full p-2 flex items-center justify-between">
+<main class="flex flex-col items-center gap-4 bg-color-surface">
+	<div class="flex w-full items-center justify-between p-2">
 		<div class="flex items-center gap-3">
 			<img alt="" src="/icons/48.png" width="32" />
 			<span class="text-lg">Translater</span>
@@ -38,7 +30,7 @@
 		{/await}
 		{#if import.meta.env.CHROME}
 			<button
-				class="text-sm text-blue-600 dark:text-blue-400 hover:underline cursor-pointer"
+				class="cursor-pointer text-sm text-blue-600 hover:underline dark:text-blue-400"
 				onclick={openExtensionsShortcuts}
 				type="button"
 			>
@@ -53,7 +45,7 @@
 
 	<div>
 		<Link
-			class="text-sm text-center"
+			class="text-center text-sm"
 			href="https://chergav.github.io/extensions"
 			icon
 			label={browser.i18n.getMessage('try_my_extensions')}
@@ -66,7 +58,7 @@
 
 	{#await permissionsPromise then isPermissions}
 		{#if !isPermissions}
-			<div class="absolute inset-0 p-5 flex flex-col items-center justify-center gap-4 bg-white dark:bg-gray-900">
+			<div class="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-white p-5 dark:bg-gray-900">
 				<h1 class="text-lg font-medium">{browser.i18n.getMessage('forefox_perm_header')}</h1>
 				<p class="text-center">{browser.i18n.getMessage('forefox_perm_text')}</p>
 				<Button

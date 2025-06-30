@@ -10,25 +10,24 @@
 		use:clickOutside={actionParams}
 	>
 		<span
-			class="
-				cursor-pointer
-				hover:bg-accent-primary/15
-				rounded-xs
-				{altsOpen ? 'bg-accent-primary/15' : ''}
-			"
+			class={[
+				'cursor-pointer rounded-xs hover:bg-color-primary/15',
+				altsOpen && 'bg-color-primary/15',
+			]}
 		>{segmentText}</span>
-		{#if altsOpen}
-			<Alternatives
-				alternatives={segment.alternatives}
-				onChangeAlt={closeAlts}
-				{rect}
-				bind:text={segmentText}
-				bind:portal={actionParams.exclude}
-			/>
-		{/if}
 	</span>
 {:else}
 	<span>{segment.text}</span>
+{/if}
+
+{#if altsOpen}
+	<Alternatives
+		alternatives={segment.alternatives}
+		{rect}
+		bind:altsOpen
+		bind:text={segmentText}
+		bind:portal={actionParams.exclude}
+	/>
 {/if}
 
 <script lang="ts">

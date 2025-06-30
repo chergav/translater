@@ -3,7 +3,7 @@
 	icon={mdiChevronLeft}
 	iconSize="20"
 	onclick={cachePrev}
-	small
+	size="xs"
 	title={browser.i18n.getMessage('tooltip_go_back')}
 />
 <Button
@@ -11,7 +11,7 @@
 	icon={mdiChevronRight}
 	iconSize="20"
 	onclick={cacheNext}
-	small
+	size="xs"
 	title={browser.i18n.getMessage('tooltip_go_forward')}
 />
 

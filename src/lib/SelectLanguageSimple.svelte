@@ -1,22 +1,15 @@
-<label class="text-primary">
-	<span class="select-none {label ? 'mr-2' : ''}">{label}</span>
+<label class="inline-flex items-center gap-2 select-none">
+	{#if label}
+		<span>{label}</span>
+	{/if}
 	<select
 		name="select"
-		class="
-			{small ? 'p-1' : 'p-2'}
-			max-w-[210px]
-			{small ? 'text-sm' : 'text-base'}
-			rounded-lg
-			outline-0
-			focus:ring-0
-			bg-surface
-			border
-			border-variant-300-700
-			text-primary
-			focus-visible:border-variant-400-600
-			transition-colors
-			cursor-pointer
-		"
+		class={[
+			'max-w-[210px] cursor-pointer rounded-lg bg-color-surface text-color-on-surface transition-colors',
+			'border border-color-outline-variant focus:border-color-outline',
+			'focus-visible:outline-custom focus-visible:outline-color-primary',
+			small ? 'p-1.5 text-sm' : 'p-2.5 text-base',
+		]}
 		{onchange}
 		bind:value
 	>
@@ -37,7 +30,7 @@ import { languages } from '~/shared/languages';
 
 interface Props {
 	value: string
-	label: string
+	label?: string
 	auto?: boolean
 	small?: boolean
 	onchange?: ChangeEventHandler<HTMLSelectElement>

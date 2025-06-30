@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 import ts from 'typescript-eslint';
 // import svelteConfig from './svelte.config.js';
 import stylistic from '@stylistic/eslint-plugin';
+import eslintPluginBetterTailwindcss from 'eslint-plugin-better-tailwindcss';
 
 const gitignorePath = fileURLToPath(new URL('./.gitignore', import.meta.url));
 
@@ -23,11 +24,12 @@ export default ts.config(
 		},
 		plugins: {
 			'@stylistic': stylistic,
+			'better-tailwindcss': eslintPluginBetterTailwindcss,
 		},
 		rules: {
 			'no-undef': 'off',
 			'@stylistic/max-len': ['error', {
-				code: 120,
+				code: 150,
 				tabWidth: 4,
 				ignoreUrls: true,
 				ignoreStrings: true,
@@ -152,7 +154,14 @@ export default ts.config(
 			'svelte/shorthand-attribute': ['error', { prefer: 'always' }],
 			'svelte/shorthand-directive': ['error', { prefer: 'always' }],
 			'svelte/spaced-html-comment': ['error', 'always'],
+
+			...eslintPluginBetterTailwindcss.configs['recommended-error'].rules,
+			'better-tailwindcss/enforce-consistent-line-wrapping': 'off',
+			'better-tailwindcss/no-unregistered-classes': ['error', {
+				ignore: ['mark'],
+			}],
 		},
+		settings: { 'better-tailwindcss': { entryPoint: 'src/assets/tailwind.css' } },
 	},
 	{
 		files: [

@@ -1,5 +1,5 @@
-<div class="p-6 h-full flex flex-col gap-4 overflow-y-auto scrollbar">
-	<div class="flex flex-col gap-3">
+<div class="scrollbar flex h-full flex-col gap-6 overflow-y-auto p-6">
+	<div class="flex flex-col gap-1">
 		{#each themes as { value, label } (value)}
 			<Radio {label} {value} bind:group={storage.settings.theme} />
 		{/each}

@@ -1,32 +1,18 @@
 {#if store.translated?.dict}
 	<div class="mt-1 overflow-hidden rounded-[14px]">
-		<div
-			class="
-				p-2
-				max-h-96
-				overflow-y-auto
-				bg-surface
-				scrollbar
-			"
-		>
-			<table class="w-full text-sm text-primary">
+		<div class="scrollbar max-h-96 overflow-y-auto bg-color-surface p-2">
+			<table class="w-full text-sm">
 				<tbody>
 					{#each store.translated.dict as dict, index (index)}
 						<tr>
 							<td
-								class="
-									w-full
-									pb-2
-									text-accent
-									capitalize
-									font-medium
-								"
+								class="w-full pb-2 font-medium text-color-primary capitalize"
 								colspan="2"
 							>{dict.pos}</td>
 							{#if index === 0}
 								<td>
 									<span
-										class="flex items-center gap-0.5 text-secondary text-xs"
+										class="flex items-center gap-0.5 text-xs text-color-on-surface-variant"
 										title="Indicates how often a translation appears in public documents"
 									>
 										{browser.i18n.getMessage('popup_dictionary_frequency')}
@@ -41,25 +27,16 @@
 								<td class="py-1 align-top whitespace-nowrap">
 									{entry.word}
 								</td>
-								<td class="px-2 py-1 text-secondary">
+								<td class="px-2 py-1 text-color-on-surface-variant">
 									{#each entry.reverse_translation as reverse_translation, i (i)}
 										{@const lastIndex = entry.reverse_translation.length - 1}
 										<div class="inline-flex flex-wrap">
 											<span
-												class="
-													cursor-pointer
-													rounded-md
-													mx-[-5px]
-													my-[-1px]
-													px-[5px]
-													py-[1px]
-													hover:text-accent
-													hover:bg-accent-primary/10
-													transition-colors
-													{currentWord === reverse_translation
-														? 'text-accent bg-accent-primary/10'
-														: ''}
-												"
+												class={[
+													'mx-[-5px] my-[-1px] cursor-pointer rounded-md px-[5px] py-[1px] transition-colors',
+													'hover:bg-color-primary/10 hover:text-color-primary',
+													currentWord === reverse_translation && 'bg-color-primary/10 text-color-primary',
+												]}
 												onclick={() => {
 													getTranslate(reverse_translation);
 												}}
@@ -83,25 +60,14 @@
 										</div>
 									{/each}
 								</td>
-								<td class="py-1 align-top text-end">
-									<div
-										class="
-											w-fit
-											inline-flex
-											items-center
-											gap-[1px]
-											rounded-full
-											overflow-hidden
-											whitespace-nowrap
-										"
-									>
+								<td class="py-1 text-end align-top">
+									<div class="inline-flex w-fit items-center gap-[1px] overflow-hidden rounded-full whitespace-nowrap">
 										{#each scoreHandler(entry.score) as item, index (index)}
 											<div
-												class="
-													w-[12px]
-													h-[6px]
-													{item ? 'bg-accent-primary' : 'bg-accent-primary/10'}
-												"
+												class={[
+													'h-[6px] w-[12px]',
+													item ? 'bg-color-primary' : 'bg-color-primary/10',
+												]}
 											></div>
 										{/each}
 									</div>

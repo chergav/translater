@@ -11,7 +11,7 @@
 			class="p-1"
 			active={open}
 			onclick={() => {}}
-			small
+			size="xs"
 			title={voice.name}
 		>
 			<!-- eslint-disable-next-line svelte/no-at-html-tags -->
@@ -19,47 +19,24 @@
 		</Button>
 	</ListboxButton>
 	<ListboxOptions
-		class="
-			absolute
-			left-0
-			py-1
-			max-h-72
-			text-sm
-			bg-surface
-			border
-			border-variant-200-800
-			rounded-xl
-			shadow-lg
-			list-none
-			select-none
-			overflow-y-auto
-			scrollbar
-			z-10
-		"
+		class={[
+			'absolute left-0 z-10 scrollbar max-h-72 list-none overflow-y-auto rounded-xl py-1 text-sm shadow-lg select-none',
+			'border border-color-surface-high bg-color-surface',
+		]}
 	>
 		{#each voices as voice (voice)}
 			<ListboxOption
-				class="
-					pl-2
-					pr-2.5
-					py-1
-					flex
-					items-center
-					gap-2
-					not-aria-selected:hover:bg-accent-primary/5
-					aria-selected:bg-accent-primary/10
-					focus:bg-accent-primary/5
-					focus-within:outline-0
-					cursor-pointer
-					whitespace-nowrap
-				"
+				class={[
+					'flex cursor-pointer items-center gap-2 py-1.5 pr-2.5 pl-2 whitespace-nowrap',
+					'focus-within:outline-0 not-aria-selected:hover:bg-color-primary/5 focus:bg-color-primary/5 aria-selected:bg-color-primary/10',
+				]}
 				value={voice}
 			>
 				{#snippet children(selected)}
-					<span class="size-[18px] inline-flex">
-						<Icon class="{selected ? 'inline-flex' : 'hidden'} text-accent" d={mdiCheck} size="18" />
+					<span class="inline-flex size-5">
+						<Icon class="{selected ? 'inline-flex' : 'hidden'} text-color-primary shrink-0" d={mdiCheck} size="20" />
 					</span>
-					<span class={selected ? 'text-accent font-medium' : ''}>{voice.name}</span>
+					<span class={[selected && 'font-medium text-color-primary']}>{voice.name}</span>
 				{/snippet}
 			</ListboxOption>
 		{/each}

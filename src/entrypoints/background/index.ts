@@ -95,13 +95,13 @@ export default defineBackground({
 			}
 		});
 
-		function createContextMenu() {
+		browser.runtime.onInstalled.addListener(() => {
 			browser.contextMenus.create({
 				id: 'translaterMenu',
 				title: browser.i18n.getMessage('context_menus_title'),
 				contexts: ['selection'],
 			});
-		}
+		});
 
 		async function injectContentScriptIntoAllTabs() {
 			const tabs = await browser.tabs.query({});
@@ -123,7 +123,6 @@ export default defineBackground({
 		browser.runtime.onInstalled.addListener(details => {
 			switch (details.reason) {
 				case browser.runtime.OnInstalledReason.INSTALL:
-					createContextMenu();
 					injectContentScriptIntoAllTabs();
 					browser.runtime.setUninstallURL(UNINSTALL_URL);
 					break;

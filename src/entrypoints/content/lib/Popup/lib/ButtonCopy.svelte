@@ -2,9 +2,8 @@
 	disabled={!isClipboardSupport || !text}
 	icon={isCopySuccess ? mdiCheckCircleOutline : isCopyFailure ? mdiAlertCircleOutline : mdiContentCopy}
 	iconClass={isCopySuccess ? 'text-green-500' : isCopyFailure ? 'text-red-500' : ''}
-	iconSize="20"
 	onclick={copyToClipboard}
-	small
+	size="xs"
 	{title}
 />
 

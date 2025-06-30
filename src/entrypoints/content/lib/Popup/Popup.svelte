@@ -1,35 +1,22 @@
 <div
 	style="left: {left}px; top: {top}px;"
-	class="
-		fixed
-		w-[550px]
-		h-fit
-		p-1
-		flex
-		text-sm
-		text-primary
-		text-start
-		bg-base
-		rounded-[18px]
-		shadow-xl
-		z-[9999999]
-		{dragging ? 'select-none' : 'select-auto'}
-		{POPUP_CLASS}
-	"
+	class={[
+		'fixed z-[9999999] flex h-fit w-[550px] rounded-[18px]',
+		'bg-color-surface-container text-start text-sm text-color-on-surface shadow-xl',
+		dragging ? 'select-none' : 'select-auto',
+		POPUP_CLASS,
+	]}
 	onclickoutside={onClickOutside}
 	use:clickOutside
 	use:popupPosition
 	transition:fade={{ duration: 100 }}
 >
-	<div class="w-full flex flex-col gap-1">
+	<div class="flex w-full flex-col">
 		<header
-			class="
-				w-full
-				flex
-				items-center
-				justify-between
-				{dragging ? 'cursor-grabbing' : 'cursor-move'}
-			"
+			class={[
+				'flex w-full items-center justify-between p-1',
+				dragging ? 'cursor-grabbing' : 'cursor-move',
+			]}
 			onmousedown={onDragStart}
 			role="toolbar"
 			tabindex="-1"
@@ -39,7 +26,7 @@
 			</div>
 			<div class="flex items-center gap-1">
 				<Menu />
-				<Button icon={mdiClose} iconSize="20" onclick={closePopup} small />
+				<Button icon={mdiClose} iconSize="20" onclick={closePopup} size="xs" />
 			</div>
 		</header>
 

@@ -1,11 +1,5 @@
 <div
-	class="
-		py-2
-		text-sm
-		border-b
-		border-variant-300-700
-		last:border-b-0
-	"
+	class="border-b border-color-surface-high py-2 text-sm last:border-b-0"
 	transition:slide={{ duration: 250 }}
 >
 	<div class="mb-2 flex justify-between">
@@ -16,7 +10,7 @@
 			onclick={() => {
 				deleteHistoryItem(historyItem.time);
 			}}
-			small
+			size="xs"
 			title={browser.i18n.getMessage('options_delete_history_item')}
 			variant="danger"
 		/>
@@ -26,14 +20,7 @@
 	</div>
 	{#if isOrigCollapsed}
 		<button
-			class="
-				mb-1
-				text-xs
-				text-secondary
-				underline
-				font-medium
-				cursor-pointer
-			"
+			class="mb-1 cursor-pointer text-xs font-medium text-color-on-surface-variant underline"
 			onclick={() => {
 				truncateOrig = !truncateOrig;
 			}}
@@ -42,18 +29,12 @@
 			{truncateOrig ? browser.i18n.getMessage('text_expand') : browser.i18n.getMessage('text_collapse')}
 		</button>
 	{/if}
-	<div bind:this={elemTrans} class="{truncateTrans ? 'line-clamp-1' : ''} text-secondary">
+	<div bind:this={elemTrans} class={[truncateTrans && 'line-clamp-1', 'text-color-on-surface-variant']}>
 		{historyItem.trans}
 	</div>
 	{#if isTransCollapsed}
 		<button
-			class="
-				text-xs
-				text-secondary
-				underline
-				font-medium
-				cursor-pointer
-			"
+			class="mb-1 cursor-pointer text-xs font-medium text-color-on-surface-variant underline"
 			onclick={() => {
 				truncateTrans = !truncateTrans;
 			}}

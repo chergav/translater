@@ -1,4 +1,4 @@
-<div class="p-6 h-full overflow-y-auto scrollbar">
+<div class="scrollbar h-full overflow-y-auto p-6">
 	{#await store.voices}
 		<p>loading ...</p>
 	{:then voices}
@@ -12,18 +12,11 @@
 				/>
 			</div> -->
 			<table class="table-auto">
-				<caption
-					class="
-						caption-bottom
-						text-sm
-						text-start
-						text-secondary
-					"
-				>
+				<caption class="caption-bottom text-start text-sm text-color-on-surface-variant">
 					* {browser.i18n.getMessage('options_tts_table_caption')}
 				</caption>
 				<thead>
-					<tr class="[&>th]:text-start [&>th]:p-1">
+					<tr class="[&>th]:p-1 [&>th]:text-start">
 						<th>{browser.i18n.getMessage('options_tts_language')} *</th>
 						<th>{browser.i18n.getMessage('options_tts_default_voice')}</th>
 						<th>{browser.i18n.getMessage('options_tts_voices')}</th>
@@ -32,7 +25,7 @@
 				<tbody
 					class="
 						[&>tr]:border-t
-						[&>tr]:border-variant-200-800
+						[&>tr]:border-color-surface-high
 						[&>tr>td]:p-1
 						[&>tr>td:nth-child(3)]:text-center
 					"
@@ -46,7 +39,7 @@
 				</tbody>
 			</table>
 		{:else if !voices?.length}
-			<p class="text-sm text-secondary">
+			<p class="text-sm text-color-on-surface-variant">
 				{browser.i18n.getMessage('options_tts_no_voices_found')}
 			</p>
 		{/if}

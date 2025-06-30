@@ -14,13 +14,14 @@
 
 <script lang="ts">
 import type { Snippet } from 'svelte';
+import type { ClassValue } from 'svelte/elements';
 import { onMount, onDestroy } from 'svelte';
 import { getListboxContext } from './context';
 
 interface Props {
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	value: any
-	class: string
+	class: ClassValue
 	children: Snippet<[ selected: boolean ]>
 }
 

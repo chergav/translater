@@ -1,11 +1,12 @@
-<div class="w-fit flex flex-col gap-2 items-center">
+<div class="flex w-fit flex-col items-center gap-2">
 	<p class="text-sm">Let us know your vibe:</p>
 	<div class="flex items-center gap-2">
 		{#each buttons as { label, handler } (label)}
 			<Button
-				class="text-lg py-1 px-4"
+				class="text-lg"
 				{label}
 				onclick={handler}
+				size="xs"
 				variant="outlined"
 			/>
 		{/each}

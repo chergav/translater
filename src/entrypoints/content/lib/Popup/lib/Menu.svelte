@@ -9,27 +9,15 @@
 			icon={mdiDotsVertical}
 			iconSize="20"
 			onclick={() => { isOpen = !isOpen; }}
-			small
+			size="xs"
 		/>
 	</div>
 	{#if isOpen}
 		<div
-			class="
-				absolute
-				top-7
-				right-0
-				p-1
-				flex
-				flex-col
-				select-none
-				bg-surface
-				border
-				border-variant-200-800
-				rounded-[20px]
-				shadow-lg
-				cursor-default
-				z-10
-			"
+			class={[
+				'absolute top-8 right-0 z-10 flex cursor-default flex-col rounded-[20px] p-1 shadow-lg',
+				'border border-color-surface-high bg-color-surface select-none',
+			]}
 			transition:fly={{
 				duration: 150,
 				y: -10,
@@ -39,26 +27,24 @@
 				icon={mdiSwapVertical}
 				label={browser.i18n.getMessage('popup_menu_reverse_translate')}
 				onclick={handleReverseTranslate}
-				small
+				size="xs"
 				tab
 			/>
 			<Button
 				icon={mdiOpenInNew}
 				label="Google Translate"
 				onclick={toGoogleTranslate}
-				small
+				size="xs"
 				tab
 			/>
-			<div class="my-1 -mx-1 border-b border-variant-200-800"></div>
+			<div class="-mx-1 my-1 border-b border-color-surface-high"></div>
 			<Button
 				icon={storage.settings.lockWindow ? mdiLockOutline : mdiLockOpenVariantOutline}
 				label={storage.settings.lockWindow
 					? browser.i18n.getMessage('popup_menu_unlock_window')
 					: browser.i18n.getMessage('popup_menu_lock_window')}
-				onclick={() => {
-					storage.settings.lockWindow = !storage.settings.lockWindow;
-				}}
-				small
+				onclick={toggleLockWindow}
+				size="xs"
 				tab
 			/>
 			<Button
@@ -67,15 +53,15 @@
 					? browser.i18n.getMessage('popup_menu_show_translate_button')
 					: browser.i18n.getMessage('popup_menu_hide_translate_button')}
 				onclick={addDomainToBlacklist}
-				small
+				size="xs"
 				tab
 			/>
-			<div class="my-1 -mx-1 border-b border-variant-200-800"></div>
+			<div class="-mx-1 my-1 border-b border-color-surface-high"></div>
 			<Button
 				icon={mdiOpenInNew}
 				label={browser.i18n.getMessage('popup_menu_options_link')}
 				onclick={openOptionsPage}
-				small
+				size="xs"
 				tab
 			/>
 		</div>
@@ -138,5 +124,9 @@ function openOptionsPage() {
 	});
 
 	isOpen = false;
+}
+
+function toggleLockWindow() {
+	storage.settings.lockWindow = !storage.settings.lockWindow;
 }
 </script>

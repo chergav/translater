@@ -1,14 +1,8 @@
 <a
-	class="
-		inline-flex
-		items-center
-		gap-1
-		text-blue-600
-		dark:text-blue-400
-		hover:underline
-		cursor-pointer
-		{className}
-	"
+	class={[
+		'inline-flex cursor-pointer items-center gap-1 text-blue-600 hover:underline dark:text-blue-400',
+		className,
+	]}
 	{href}
 	rel="noopener noreferrer"
 	{target}

@@ -1,40 +1,27 @@
 <button
 	class={button({
 		variant,
+		size,
 		isLabel: !!label,
-		isIcon: !!icon,
-		isIconRight: !!iconRight,
-		isSmall: !!small,
 		isTab: !!tab,
 		isActive: !!active,
 		class: className,
 	})}
+	aria-label={ariaLabel || title}
 	{onclick}
+	{title}
 	{type}
 	{...rest}
 >
 	{#if icon}
-		<Icon class={iconClass} d={icon} size={iconSize} />
+		<Icon class={iconClass} d={icon} size={finalIconSize} />
 	{/if}
 	{#if label}
 		<span class="whitespace-nowrap first-letter:uppercase">{label}</span>
 	{/if}
 	{@render children?.()}
 	{#if iconRight}
-		<Icon class={iconRightClass} d={iconRight} size={iconSize} />
-	{/if}
-	{#if variant === 'outlined'}
-		<div
-			class="
-				pointer-events-none
-				absolute
-				inset-0
-				rounded-full
-				border
-				border-accent-primary/50
-			"
-		>
-		</div>
+		<Icon class={iconRightClass} d={iconRight} size={finalIconSize} />
 	{/if}
 </button>
 
@@ -46,128 +33,100 @@ import Icon from './Icon.svelte';
 
 const button = tv({
 	base: [
-		'inline-flex items-center gap-2 whitespace-nowrap rounded-full text-sm/6 font-medium',
-		'ring-offset-white dark:ring-offset-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent',
-		'transition-colors select-none cursor-pointer',
+		'inline-flex items-center rounded-full font-medium whitespace-nowrap',
+		'focus-visible:outline-custom',
+		'cursor-pointer transition-colors select-none',
 		'[&_svg]:pointer-events-none [&_svg]:shrink-0',
-		'disabled:opacity-50 disabled:cursor-default',
+		'disabled:cursor-default disabled:opacity-50',
 	],
 	variants: {
 		variant: {
-			text: 'text-accent enabled:hover:bg-accent-primary/10 enabled:active:bg-accent-primary/20',
-			filled: 'text-primary-inverse bg-accent-primary enabled:hover:bg-accent-primary/90 enabled:active:bg-accent-primary/80',
+			text: 'text-color-primary outline-color-primary enabled:hover:bg-color-primary/10 enabled:active:bg-color-primary/20',
+			filled: 'bg-color-primary/100 text-color-on-primary outline-color-primary enabled:hover:bg-color-primary/90 enabled:active:bg-color-primary/80',
 			outlined: [
-				'relative text-accent enabled:hover:bg-accent-primary/10 enabled:active:bg-accent-primary/20',
-				// 'before:absolute before:inset-0 before:rounded-full before:border before:     border-accent-primary/50 before:pointer-events-none',
+				'relative text-color-primary outline-color-primary enabled:hover:bg-color-primary/10 enabled:active:bg-color-primary/20',
+				'before:pointer-events-none before:absolute before:inset-0 before:rounded-full before:border before:border-color-primary/50',
 			],
-			danger: [
-				'text-primary-inverse bg-red-700 dark:bg-red-300',
-				'enabled:hover:bg-red-700/90 enabled:dark:hover:bg-red-300/90 enabled:active:bg-red-700/80 enabled:dark:active:bg-red-300/80',
-			],
+			danger: 'bg-color-error/100 text-color-on-error outline-color-error enabled:hover:bg-color-error/90 enabled:active:bg-color-error/80',
+		},
+		size: {
+			xs: 'h-8 gap-1 px-3 text-sm',
+			sm: 'h-10 gap-2 px-4 text-sm',
+			md: 'h-14 gap-2 px-6 text-base',
+			lg: 'h-24 gap-3 px-12 text-2xl',
 		},
 		isLabel: {
-			true: '',
-			false: '',
-		},
-		isIcon: {
-			true: '',
-			false: '',
-		},
-		isIconRight: {
-			true: '',
-			false: '',
-		},
-		isSmall: {
-			true: '',
 			false: '',
 		},
 		isTab: {
 			true: 'w-full justify-start',
-			false: 'w-fit justify-center',
+			false: 'justify-center',
 		},
 		isActive: {
-			true: 'bg-accent-primary/10',
-			false: '',
+			true: 'bg-color-primary/10',
 		},
 	},
 	compoundVariants: [
 		{
-			isLabel: true,
-			class: 'py-2',
-		},
-		{
-			isLabel: true,
-			isIcon: true,
-			isIconRight: true,
-			class: 'px-4',
-		},
-		{
-			isLabel: true,
-			isIcon: true,
-			isIconRight: false,
-			class: 'pl-4 pr-6',
-		},
-		{
-			isLabel: true,
-			isIcon: false,
-			isIconRight: true,
-			class: 'pr-4 pl-6',
-		},
-		{
-			isLabel: true,
-			isIcon: false,
-			isIconRight: false,
-			class: 'px-6',
+			isLabel: false,
+			class: 'p-0',
 		},
 		{
 			isLabel: false,
-			isIcon: true,
-			class: 'p-2 size-10',
-		},
-		{
-			isLabel: true,
-			isIcon: true,
-			isSmall: true,
-			class: 'px-3 py-1',
-		},
-		{
-			isLabel: true,
-			isIconRight: true,
-			isSmall: true,
-			class: 'px-3 py-1',
+			size: 'xs',
+			class: 'w-8',
 		},
 		{
 			isLabel: false,
-			isIcon: true,
-			isSmall: true,
-			class: 'p-1 size-7',
+			size: 'sm',
+			class: 'w-10',
+		},
+		{
+			isLabel: false,
+			size: 'md',
+			class: 'w-14',
+		},
+		{
+			isLabel: false,
+			size: 'lg',
+			class: 'w-24',
 		},
 	],
 	defaultVariants: {
 		variant: 'text',
-		isLabel: false,
-		isIcon: false,
-		isIconRight: false,
-		isSmall: false,
+		size: 'sm',
 	},
 });
 
 type ButtonVariants = VariantProps<typeof button>;
+type ButtonSize = 'xs' | 'sm' | 'md' | 'lg';
+type IconSize = ComponentProps<typeof Icon>['size'];
 
 interface Props extends ButtonVariants, HTMLButtonAttributes {
 	label?: string
 	tab?: boolean
 	active?: boolean
 	icon?: string
-	iconRight?: string
-	iconSize?: ComponentProps<typeof Icon>['size']
-	class?: string
-	small?: boolean
 	iconClass?: string
+	iconRight?: string
 	iconRightClass?: string
+	iconSize?: IconSize
+	class?: string
+	size?: ButtonSize
 	onclick?: MouseEventHandler<HTMLButtonElement>
 	children?: Snippet
 }
+
+const getIconSize = (buttonSize: ButtonSize, isIconOnly: boolean): IconSize => {
+	const sizeMap = {
+		xs: '20',
+		sm: isIconOnly ? '24' : '20',
+		md: '24',
+		lg: '32',
+	} as const;
+
+	return sizeMap[buttonSize] || '20';
+};
 
 let {
 	label = '',
@@ -175,15 +134,19 @@ let {
 	active = false,
 	type = 'button',
 	icon = '',
-	iconRight = '',
-	iconSize = label ? '18' : '24',
-	class: className = '',
-	variant = 'text',
-	small = false,
 	iconClass = '',
+	iconRight = '',
 	iconRightClass = '',
+	iconSize,
+	class: className = '',
+	size = 'sm',
+	variant,
+	title,
+	'aria-label': ariaLabel,
 	onclick,
 	children,
 	...rest
 }: Props = $props();
+
+const finalIconSize = $derived(iconSize || getIconSize(size, !label));
 </script>

@@ -1,6 +1,6 @@
-<div class="p-6 h-full flex flex-col gap-4 overflow-y-auto scrollbar">
+<div class="scrollbar flex h-full flex-col gap-4 overflow-y-auto p-6">
 	<p>{browser.i18n.getMessage('options_support_msg')}:</p>
-	<ul class="flex flex-col gap-2 list-disc list-inside marker:text-neutral-500">
+	<ul class="flex list-inside list-disc flex-col gap-2 marker:text-color-on-surface-variant">
 		<li>
 			<Link
 				href="https://chromewebstore.google.com/detail/abebconmjhhbcjofpchjkbbimgkhdmbe/support"
@@ -17,7 +17,7 @@
 		</li>
 	</ul>
 
-	<hr class="my-4 border-variant-300-700">
+	<hr class="my-4 border-color-surface-high">
 
 	<Donations />
 </div>
