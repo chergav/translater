@@ -7,7 +7,6 @@
 		<Button
 			active={isOpen}
 			icon={mdiDotsVertical}
-			iconSize="20"
 			onclick={() => { isOpen = !isOpen; }}
 			size="xs"
 		/>

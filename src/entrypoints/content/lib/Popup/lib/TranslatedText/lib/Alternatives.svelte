@@ -4,6 +4,7 @@
 		'fixed scrollbar flex max-h-96 flex-col overflow-y-auto rounded-lg py-1 text-sm shadow',
 		'border border-color-surface-high bg-color-surface',
 	]}
+	use:portalAction
 
 	transition:fly={{
 		duration: 150,
@@ -21,7 +22,14 @@
 			type="button"
 		>
 			<span class="inline-flex size-5">
-				<Icon class="{text === alt ? 'inline-flex' : 'hidden'} text-color-primary shrink-0" d={mdiCheck} size="20" />
+				<Icon
+					class={[
+						'shrink-0 text-color-primary',
+						text === alt ? 'inline-flex' : 'hidden',
+					]}
+					d={mdiCheck}
+					size="20"
+				/>
 			</span>
 			<span class="text-start">{alt}</span>
 		</button>
@@ -29,6 +37,7 @@
 </div>
 
 <script lang="ts">
+import type { Action } from 'svelte/action';
 import { fly } from 'svelte/transition';
 import Icon from '~/lib/Icon.svelte';
 import { mdiCheck } from '@mdi/js';
@@ -55,17 +64,22 @@ function setAlt(alt: string) {
 	altsOpen = false;
 }
 
-$effect(() => {
-	if (!portal) return;
-
+const portalAction: Action<HTMLDivElement> = node => {
 	const root = document
 		.querySelector(CUSTOM_ELEMENT_TAG)!
 		.shadowRoot!
 		.querySelector(`.${POPUP_CLASS}`);
 
-	portal.style.top = `${rect.bottom}px`;
-	portal.style.left = `${rect.left}px`;
+	if (root) {
+		node.style.top = `${rect.bottom}px`;
+		node.style.left = `${rect.left}px`;
+		root.append(node);
+	}
 
-	if (root) root.append(portal);
-});
+	$effect(() => {
+		return () => {
+			node.remove();
+		};
+	});
+};
 </script>

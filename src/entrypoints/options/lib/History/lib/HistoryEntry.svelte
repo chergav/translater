@@ -6,7 +6,6 @@
 		<span>{getLang(historyItem.sourceLang)} -> {getLang(historyItem.targetLang)}</span>
 		<Button
 			icon={mdiTrashCanOutline}
-			iconSize="20"
 			onclick={() => {
 				deleteHistoryItem(historyItem.time);
 			}}

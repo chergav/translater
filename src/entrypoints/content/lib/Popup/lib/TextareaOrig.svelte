@@ -30,7 +30,6 @@
 			<Button
 				class="absolute top-0.5 right-0.5"
 				icon={mdiClose}
-				iconSize="20"
 				onclick={clearText}
 				size="xs"
 				title={browser.i18n.getMessage('tooltip_clear_text')}

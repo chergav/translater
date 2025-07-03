@@ -26,7 +26,7 @@
 			</div>
 			<div class="flex items-center gap-1">
 				<Menu />
-				<Button icon={mdiClose} iconSize="20" onclick={closePopup} size="xs" />
+				<Button icon={mdiClose} onclick={closePopup} size="xs" />
 			</div>
 		</header>
 

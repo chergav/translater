@@ -47,7 +47,6 @@
 				<Button
 					class="absolute right-1"
 					icon={mdiClose}
-					iconSize="20"
 					onclick={() => {
 						search = '';
 						tick().then(() => inputSearch?.focus());

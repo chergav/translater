@@ -2,7 +2,6 @@
 	disabled={status?.error || !text}
 	{icon}
 	iconClass={status?.waiting ? 'animate-spin' : ''}
-	iconSize="20"
 	onclick={startSpeak}
 	size="xs"
 	{title}

@@ -1,7 +1,6 @@
 <Button
 	disabled={disabledPrev}
 	icon={mdiChevronLeft}
-	iconSize="20"
 	onclick={cachePrev}
 	size="xs"
 	title={browser.i18n.getMessage('tooltip_go_back')}
@@ -9,7 +8,6 @@
 <Button
 	disabled={disabledNext}
 	icon={mdiChevronRight}
-	iconSize="20"
 	onclick={cacheNext}
 	size="xs"
 	title={browser.i18n.getMessage('tooltip_go_forward')}

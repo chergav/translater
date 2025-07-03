@@ -16,18 +16,17 @@
 			]}
 		>{segmentText}</span>
 	</span>
+	{#if altsOpen}
+		<Alternatives
+			alternatives={segment.alternatives}
+			{rect}
+			bind:altsOpen
+			bind:text={segmentText}
+			bind:portal={actionParams.exclude}
+		/>
+	{/if}
 {:else}
 	<span>{segment.text}</span>
-{/if}
-
-{#if altsOpen}
-	<Alternatives
-		alternatives={segment.alternatives}
-		{rect}
-		bind:altsOpen
-		bind:text={segmentText}
-		bind:portal={actionParams.exclude}
-	/>
 {/if}
 
 <script lang="ts">
@@ -48,8 +47,10 @@ let rect: DOMRect = $state(new DOMRect());
 let actionParams = $state<ActionParams<HTMLDivElement>>({ exclude: undefined });
 
 function openAlts(event: Event) {
-	const target = event.currentTarget as HTMLSpanElement;
-	rect = target.getBoundingClientRect();
+	if (!altsOpen) {
+		const target = event.currentTarget as HTMLSpanElement;
+		rect = target.getBoundingClientRect();
+	}
 	altsOpen = !altsOpen;
 }
 

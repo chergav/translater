@@ -16,9 +16,10 @@ export function storageListener(callback: (changes: { [index: string]: Browser.s
 
 export async function getShortcutByCommand(command: string) {
 	const allCommands = await browser.commands.getAll();
-	const findedCommand = allCommands.find(i => i.name === command);
-	return findedCommand
-		? findedCommand.shortcut?.split(/\s*\+\s*/).filter(Boolean)
+	const foundCommand = allCommands.find(i => i.name === command);
+
+	return foundCommand
+		? foundCommand.shortcut?.split(/\s*\+\s*/).filter(Boolean)
 		: undefined;
 }
 

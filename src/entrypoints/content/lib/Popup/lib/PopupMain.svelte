@@ -1,4 +1,4 @@
-<main class="flex flex-col gap-1 px-1">
+<main class="flex flex-col gap-1 px-1 pb-1">
 	<div class="rounded-[16px] bg-color-surface p-1 whitespace-pre-line">
 		<div class="flex flex-col gap-1">
 			<div class="flex items-center justify-between">
@@ -10,7 +10,6 @@
 				<Button
 					icon={mdiChevronDown}
 					iconClass={originalOpen ? 'transform -scale-y-100' : ''}
-					iconSize="20"
 					onclick={() => {
 						originalOpen = !originalOpen;
 					}}
@@ -93,7 +92,6 @@
 				<Button
 					icon={mdiChevronDown}
 					iconClass={translateOpen ? 'transform -scale-y-100' : ''}
-					iconSize="20"
 					onclick={() => {
 						translateOpen = !translateOpen;
 					}}

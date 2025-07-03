@@ -1,5 +1,5 @@
 {#if store.translated && showFooter}
-	<footer class="flex flex-col p-1">
+	<footer class="flex flex-col px-1 pb-1">
 		<div class="flex items-center gap-1">
 			{#each tabs as tab (tab.id)}
 				{#if tab.component && Object.hasOwn(store.translated, tab.srcKey)}
@@ -7,7 +7,6 @@
 						active={activeTab === tab.id}
 						iconRight={mdiChevronDown}
 						iconRightClass={activeTab === tab.id ? 'transform -scale-y-100' : ''}
-						iconSize="18"
 						label={tab.label}
 						onclick={() => {
 							tabHandler(tab.id);
