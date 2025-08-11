@@ -33,8 +33,8 @@
     "popup_or": {
         "message": "Alebo"
     },
-    "options_tab_inline_translate": {
-        "message": "Čítanie"
+    "options_tab_general": {
+        "message": "Všeobecné nastavenia"
     },
     "options_tab_popup_window": {
         "message": "Okno"

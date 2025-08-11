@@ -33,8 +33,8 @@
     "popup_or": {
         "message": "లేదా"
     },
-    "options_tab_inline_translate": {
-        "message": "పఠనం మరియు ఇన్పుట్"
+    "options_tab_general": {
+        "message": "సాధారణ సెట్టింగులు"
     },
     "options_tab_popup_window": {
         "message": "పాపప్ విండో"

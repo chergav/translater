@@ -33,8 +33,8 @@
     "popup_or": {
         "message": "Tai"
     },
-    "options_tab_inline_translate": {
-        "message": "Lukeminen ja syöttö"
+    "options_tab_general": {
+        "message": "Yleiset asetukset"
     },
     "options_tab_popup_window": {
         "message": "Ponnahdusikkuna"

@@ -3,33 +3,33 @@
 		class="
 			relative
 			inline-flex
-			items-center
 			cursor-pointer
+			items-center
 		"
 	>
-		<input class="sr-only peer" type="checkbox" bind:checked />
+		<input class="peer sr-only" type="checkbox" bind:checked />
 		<div
 			class="
-				w-[26px]
 				h-4
+				w-[26px]
 				rounded-full
-				bg-gray-200
-				dark:bg-gray-800
 				border
 				border-gray-500
-				dark:border-gray-500
+				bg-gray-200
+				transition-all
+				peer-checked:border-purple-800
 
+				peer-checked:bg-purple-800
+				peer-checked:dark:border-purple-200
+				peer-checked:dark:bg-purple-200
 				peer-focus-visible:outline
+
 				peer-focus-visible:outline-offset-2
 				peer-focus-visible:outline-gray-600
 				peer-focus-visible:dark:outline-gray-400
+				dark:border-gray-500
 
-				peer-checked:bg-purple-800
-				peer-checked:dark:bg-purple-200
-				peer-checked:border-purple-800
-				peer-checked:dark:border-purple-200
-
-				transition-all
+				dark:bg-gray-800
 			"
 		></div>
 		<div
@@ -37,33 +37,33 @@
 				absolute
 				top-0
 				bottom-0
-				my-auto
 				left-1
-				w-2
+				my-auto
 				h-2
-				bg-gray-500
-				dark:bg-gray-500
+				w-2
 				rounded-full
-				transition-all
-				duration-300
-				ease-[cubic-bezier(0.175,0.885,0.32,1.275)]
-
+				bg-gray-500
 				ring-[6px]
 				ring-transparent
-				peer-hover:ring-gray-600/10
-				peer-hover:dark:ring-gray-400/10
-				peer-checked:peer-hover:ring-purple-800/10
-				peer-checked:peer-hover:dark:ring-purple-200/10
+				transition-all
+				duration-300
 
-				peer-checked:ring-4
-				peer-checked:w-3
+				ease-[cubic-bezier(0.175,0.885,0.32,1.275)]
 				peer-checked:h-3
+				peer-checked:w-3
 				peer-checked:translate-x-2
 				peer-checked:bg-purple-200
+				peer-checked:ring-4
+
+				peer-checked:peer-hover:ring-purple-800/10
 				peer-checked:dark:bg-purple-800
+				peer-checked:peer-hover:dark:ring-purple-200/10
+				peer-hover:ring-gray-600/10
+				peer-hover:dark:ring-gray-400/10
+				dark:bg-gray-500
 			"
 		></div>
-		<span class="ml-4 text-gray-900 dark:text-gray-300 whitespace-nowrap select-none">{label}</span>
+		<span class="ml-4 whitespace-nowrap text-gray-900 select-none dark:text-gray-300">{label}</span>
 	</label>
 	{#if hint}
 		<p class="ml-[42px] text-sm text-gray-500">{hint}</p>

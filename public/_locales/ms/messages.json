@@ -33,8 +33,8 @@
     "popup_or": {
         "message": "Atau"
     },
-    "options_tab_inline_translate": {
-        "message": "Membaca dan input"
+    "options_tab_general": {
+        "message": "Tetapan Umum"
     },
     "options_tab_popup_window": {
         "message": "Tetingkap pop timbul"

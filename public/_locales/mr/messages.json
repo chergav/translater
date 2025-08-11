@@ -33,8 +33,8 @@
     "popup_or": {
         "message": "किंवा"
     },
-    "options_tab_inline_translate": {
-        "message": "वाचन आणि इनपुट"
+    "options_tab_general": {
+        "message": "सामान्य सेटिंग्ज"
     },
     "options_tab_popup_window": {
         "message": "पॉपअप विंडो"
@@ -70,7 +70,7 @@
         "message": "सक्षम असल्यास, बाहेर क्लिक करताना पॉपअप बंद होणार नाही"
     },
     "options_history_length": {
-        "message": "इतिहास नोंदी (जास्तीत जास्त.)"
+        "message": "इतिहास नोंदी (कमाल.)"
     },
     "options_records_in_history": {
         "message": "इतिहासातील नोंदी:"

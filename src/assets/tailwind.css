@@ -83,6 +83,15 @@ body {
 	}
 }
 
+[data-accent="neutral"] {
+	--primary: var(--color-neutral-800);
+	--on-primary: var(--color-white);
+
+	&:where([data-theme="dark"]) {
+		--primary: var(--color-neutral-200);
+		--on-primary: var(--color-neutral-900);
+	}
+}
 
 [data-variant="slate"] {
 	--surface: var(--color-white);

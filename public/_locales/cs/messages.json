@@ -33,8 +33,8 @@
     "popup_or": {
         "message": "Nebo"
     },
-    "options_tab_inline_translate": {
-        "message": "Čtení a vstup"
+    "options_tab_general": {
+        "message": "Obecná nastavení"
     },
     "options_tab_popup_window": {
         "message": "Vyskakovací okno"

@@ -33,8 +33,8 @@
     "popup_or": {
         "message": "אוֹ"
     },
-    "options_tab_inline_translate": {
-        "message": "קריאה וקלט"
+    "options_tab_general": {
+        "message": "הגדרות כלליות"
     },
     "options_tab_popup_window": {
         "message": "חלון קופץ"

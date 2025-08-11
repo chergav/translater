@@ -33,8 +33,8 @@
     "popup_or": {
         "message": "അഥവാ"
     },
-    "options_tab_inline_translate": {
-        "message": "വായനയും ഇൻപുട്ടും"
+    "options_tab_general": {
+        "message": "പൊതു ക്രമീകരണങ്ങൾ"
     },
     "options_tab_popup_window": {
         "message": "പോപ്പ്അപ്പ് വിൻഡോ"
@@ -628,7 +628,7 @@
         "message": "മീറ്റിലോൺ (മണിപുരി)"
     },
     "language_min": {
-        "message": "മിനാങ്ങ്"
+        "message": "മിനാങ്"
     },
     "language_lus": {
         "message": "മിസോ"

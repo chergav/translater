@@ -33,8 +33,8 @@
     "popup_or": {
         "message": "বা"
     },
-    "options_tab_inline_translate": {
-        "message": "পড়া এবং ইনপুট"
+    "options_tab_general": {
+        "message": "সাধারণ সেটিংস"
     },
     "options_tab_popup_window": {
         "message": "পপআপ উইন্ডো"

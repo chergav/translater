@@ -33,8 +33,8 @@
     "popup_or": {
         "message": "または"
     },
-    "options_tab_inline_translate": {
-        "message": "読み取りと入力"
+    "options_tab_general": {
+        "message": "一般的な設定"
     },
     "options_tab_popup_window": {
         "message": "ポップアップウィンドウ"

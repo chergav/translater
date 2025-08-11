@@ -21,7 +21,7 @@
 			onclick={() => setAlt(alt)}
 			type="button"
 		>
-			<span class="inline-flex size-5">
+			<span class="inline-flex size-5 shrink-0">
 				<Icon
 					class={[
 						'shrink-0 text-color-primary',

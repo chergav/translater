@@ -22,12 +22,13 @@ class Store {
 	public cacheTTS = $state<CacheTTS[]>([]);
 	public textToHighlight = $state<string>('');
 
-	public async getTranslate(): Promise<void> {
+	public async getTranslate() {
 		this.translated = null;
-		const srcLang = this.sourceLang;
-		const tgtLang = storage.settings.targetLang;
 		const text = this.textToTranslate.trim();
 		if (!text) return;
+
+		const srcLang = this.sourceLang;
+		const tgtLang = storage.settings.targetLang;
 
 		this.isPending = true;
 
@@ -88,7 +89,7 @@ class Store {
 		);
 	}
 
-	private applyCached(cached: Translated): void {
+	private applyCached(cached: Translated) {
 		this.translated = cached;
 		this.sourceLang = cached.sourceLang;
 		storage.settings.targetLang = cached.targetLang;

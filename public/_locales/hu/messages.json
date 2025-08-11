@@ -33,8 +33,8 @@
     "popup_or": {
         "message": "Vagy"
     },
-    "options_tab_inline_translate": {
-        "message": "Olvasás és bemenet"
+    "options_tab_general": {
+        "message": "Általános beállítások"
     },
     "options_tab_popup_window": {
         "message": "Felbukkanó ablak"

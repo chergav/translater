@@ -33,8 +33,8 @@
     "popup_or": {
         "message": "Sau"
     },
-    "options_tab_inline_translate": {
-        "message": "Citire și intrare"
+    "options_tab_general": {
+        "message": "Setări generale"
     },
     "options_tab_popup_window": {
         "message": "Fereastră pop -up"

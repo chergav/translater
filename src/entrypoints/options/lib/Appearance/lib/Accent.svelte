@@ -3,7 +3,7 @@
 		<RadioHeadless {label} {value} bind:group={storage.settings.accentColor}>
 			<div data-accent={value} data-theme={storage.themeClass}>
 				<div class="flex flex-col items-center gap-2 p-5">
-					<Button active={true} icon={mdiTranslate} label="button" onclick={() => {}} />
+					<Button active={true} icon={mdiTranslate} label="button" />
 					<p class="text-color-primary">Text accent</p>
 				</div>
 			</div>
@@ -41,6 +41,10 @@ const accentColors: {
 	{
 		value: AccentColor.Pink,
 		label: 'Pink',
+	},
+	{
+		value: AccentColor.Neutral,
+		label: 'Neutral',
 	},
 ];
 </script>

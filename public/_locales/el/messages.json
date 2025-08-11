@@ -33,8 +33,8 @@
     "popup_or": {
         "message": "Ή"
     },
-    "options_tab_inline_translate": {
-        "message": "Ανάγνωση και εισροή"
+    "options_tab_general": {
+        "message": "Γενικές ρυθμίσεις"
     },
     "options_tab_popup_window": {
         "message": "Αναδυόμενο παράθυρο"
@@ -826,7 +826,7 @@
         "message": "Uyghur"
     },
     "language_uz": {
-        "message": "Ουζμπεκιστάν"
+        "message": "Ουζμπεκί"
     },
     "language_vi": {
         "message": "Βιετναμέζος"

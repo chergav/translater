@@ -33,8 +33,8 @@
     "popup_or": {
         "message": "Или"
     },
-    "options_tab_inline_translate": {
-        "message": "Четене и въвеждане"
+    "options_tab_general": {
+        "message": "Общи настройки"
     },
     "options_tab_popup_window": {
         "message": "Изскачащ прозорец"
@@ -796,7 +796,7 @@
         "message": "Тетум"
     },
     "language_th": {
-        "message": "Тайландски"
+        "message": "Тайланд"
     },
     "language_ti": {
         "message": "Тигриня"

@@ -33,8 +33,8 @@
     "popup_or": {
         "message": "Eller"
     },
-    "options_tab_inline_translate": {
-        "message": "Læsning og input"
+    "options_tab_general": {
+        "message": "Generelle indstillinger"
     },
     "options_tab_popup_window": {
         "message": "Popup -vindue"

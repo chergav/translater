@@ -33,7 +33,7 @@
 				value={voice}
 			>
 				{#snippet children(selected)}
-					<span class="inline-flex size-5">
+					<span class="inline-flex size-5 shrink-0">
 						<Icon class="{selected ? 'inline-flex' : 'hidden'} text-color-primary shrink-0" d={mdiCheck} size="20" />
 					</span>
 					<span class={[selected && 'font-medium text-color-primary']}>{voice.name}</span>

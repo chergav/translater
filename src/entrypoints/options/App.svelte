@@ -41,14 +41,14 @@ import { storage } from '~/shared/storage.svelte';
 import Button from '~/lib/Button.svelte';
 import TranslaterVersion from '~/lib/TranslaterVersion.svelte';
 import RateUs from '~/lib/RateUs.svelte';
-import ReadingAndInput from './lib/ReadingAndInput.svelte';
+import General from './lib/General.svelte';
 import PopupWindow from './lib/PopupWindow.svelte';
 import Appearance from './lib/Appearance/Appearance.svelte';
 import TTS from './lib/TTS/TTS.svelte';
 import History from './lib/History/History.svelte';
 import Support from './lib/Support/Support.svelte';
 import {
-	mdiTextBoxOutline,
+	mdiCogOutline,
 	mdiApplicationOutline,
 	mdiBrushOutline,
 	mdiVolumeHigh,
@@ -56,7 +56,7 @@ import {
 	mdiHelpCircleOutline,
 } from '@mdi/js';
 
-type TabsHash = '#inline' | '#popup' | '#appearance' | '#tts' | '#history' | '#support';
+type TabsHash = '#general' | '#popup' | '#appearance' | '#tts' | '#history' | '#support';
 
 type Tabs = {
 	[key in TabsHash]: {
@@ -66,13 +66,13 @@ type Tabs = {
 	}
 };
 
-let activeTabHash = $state<TabsHash>(window.location.hash as TabsHash || '#inline');
+let activeTabHash = $state<TabsHash>(window.location.hash as TabsHash || '#general');
 
 const tabs: Tabs = {
-	'#inline': {
-		label: browser.i18n.getMessage('options_tab_inline_translate'),
-		icon: mdiTextBoxOutline,
-		component: ReadingAndInput,
+	'#general': {
+		label: browser.i18n.getMessage('options_tab_general'),
+		icon: mdiCogOutline,
+		component: General,
 	},
 	'#popup': {
 		label: browser.i18n.getMessage('options_tab_popup_window'),

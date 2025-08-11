@@ -33,8 +33,8 @@
     "popup_or": {
         "message": "Lub"
     },
-    "options_tab_inline_translate": {
-        "message": "Czytanie i dane wejściowe"
+    "options_tab_general": {
+        "message": "Ustawienia ogólne"
     },
     "options_tab_popup_window": {
         "message": "Okno wyskakujące"

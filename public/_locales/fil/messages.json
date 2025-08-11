@@ -33,8 +33,8 @@
     "popup_or": {
         "message": "O"
     },
-    "options_tab_inline_translate": {
-        "message": "Pagbabasa at pag -input"
+    "options_tab_general": {
+        "message": "Pangkalahatang Mga Setting"
     },
     "options_tab_popup_window": {
         "message": "Popup window"
@@ -406,7 +406,7 @@
         "message": "Dzongkha"
     },
     "language_en": {
-        "message": "English"
+        "message": "Ingles"
     },
     "language_eo": {
         "message": "Esperanto"

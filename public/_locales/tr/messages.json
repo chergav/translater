@@ -33,8 +33,8 @@
     "popup_or": {
         "message": "Veya"
     },
-    "options_tab_inline_translate": {
-        "message": "Okuma ve girdi"
+    "options_tab_general": {
+        "message": "Genel Ayarlar"
     },
     "options_tab_popup_window": {
         "message": "Açılır pencere"

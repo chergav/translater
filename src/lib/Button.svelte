@@ -28,7 +28,7 @@
 <script lang="ts">
 import type { ComponentProps, Snippet } from 'svelte';
 import type { HTMLButtonAttributes, MouseEventHandler } from 'svelte/elements';
-import { tv, type VariantProps } from 'tailwind-variants';
+import { tv, type VariantProps, type ClassValue } from 'tailwind-variants';
 import Icon from './Icon.svelte';
 
 const button = tv({
@@ -102,7 +102,7 @@ type ButtonVariants = VariantProps<typeof button>;
 type ButtonSize = 'xs' | 'sm' | 'md' | 'lg';
 type IconSize = ComponentProps<typeof Icon>['size'];
 
-interface Props extends ButtonVariants, HTMLButtonAttributes {
+interface Props extends ButtonVariants, Omit<HTMLButtonAttributes, 'class'> {
 	label?: string
 	tab?: boolean
 	active?: boolean
@@ -111,7 +111,7 @@ interface Props extends ButtonVariants, HTMLButtonAttributes {
 	iconRight?: string
 	iconRightClass?: string
 	iconSize?: IconSize
-	class?: string
+	class?: ClassValue
 	size?: ButtonSize
 	onclick?: MouseEventHandler<HTMLButtonElement>
 	children?: Snippet

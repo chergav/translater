@@ -33,8 +33,8 @@
     "popup_or": {
         "message": "Ou"
     },
-    "options_tab_inline_translate": {
-        "message": "Lecture et entrée"
+    "options_tab_general": {
+        "message": "Paramètres généraux"
     },
     "options_tab_popup_window": {
         "message": "Fenêtre contextuelle"

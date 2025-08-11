@@ -39,6 +39,7 @@ export enum AccentColor {
 	Blue = 'blue',
 	Purple = 'purple',
 	Pink = 'pink',
+	Neutral = 'neutral',
 }
 
 export enum FontSize {

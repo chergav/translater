@@ -33,8 +33,8 @@
     "popup_or": {
         "message": "Või"
     },
-    "options_tab_inline_translate": {
-        "message": "Lugemine ja sisend"
+    "options_tab_general": {
+        "message": "Üldised sätted"
     },
     "options_tab_popup_window": {
         "message": "Hüpikaken"

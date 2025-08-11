@@ -84,10 +84,7 @@ const popupPosition: Action<HTMLDivElement> = popup => {
 };
 
 function onDragStart(event: MouseEvent) {
-	if (
-		event.button !== 0 ||
-		event.target !== event.currentTarget
-	) return;
+	if (event.button !== 0 || event.target !== event.currentTarget) return;
 
 	dragging = true;
 

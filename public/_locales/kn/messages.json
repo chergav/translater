@@ -33,8 +33,8 @@
     "popup_or": {
         "message": "ಅಥವಾ"
     },
-    "options_tab_inline_translate": {
-        "message": "ಓದುವಿಕೆ ಮತ್ತು ಇನ್ಪುಟ್"
+    "options_tab_general": {
+        "message": "ಸಾಮಾನ್ಯ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
     },
     "options_tab_popup_window": {
         "message": "ಪಾಪ್ಅಪ್ ಕಿಟಕಿ"

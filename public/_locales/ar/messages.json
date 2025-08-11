@@ -33,8 +33,8 @@
     "popup_or": {
         "message": "أو"
     },
-    "options_tab_inline_translate": {
-        "message": "القراءة والمدخلات"
+    "options_tab_general": {
+        "message": "الإعدادات العامة"
     },
     "options_tab_popup_window": {
         "message": "نافذة منبثقة"
@@ -568,7 +568,7 @@
         "message": "اللاتينية"
     },
     "language_lv": {
-        "message": "لاتفيا"
+        "message": "لاتفيان"
     },
     "language_lij": {
         "message": "ليغوري"

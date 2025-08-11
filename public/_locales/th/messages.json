@@ -33,8 +33,8 @@
     "popup_or": {
         "message": "หรือ"
     },
-    "options_tab_inline_translate": {
-        "message": "การอ่านและการป้อนข้อมูล"
+    "options_tab_general": {
+        "message": "การตั้งค่าทั่วไป"
     },
     "options_tab_popup_window": {
         "message": "หน้าต่างป๊อปอัป"

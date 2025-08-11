@@ -11,10 +11,11 @@ export default async (ctx: ContentScriptContext) => {
 	const stylesText = await fetch(
 		browser.runtime.getURL('/content-scripts/esm/content.css'),
 	).then(res => res.text());
+
 	const ui = await createShadowRootUi(ctx, {
 		name: CUSTOM_ELEMENT_TAG,
 		position: 'inline',
-		anchor: 'body',
+		anchor: () => document.body || document.documentElement || document.querySelector('html') || null,
 		isolateEvents: true,
 		onMount: (container, shadow) => {
 			const instanceId = Math.random().toString(36).substring(2, 15);

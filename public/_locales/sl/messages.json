@@ -33,8 +33,8 @@
     "popup_or": {
         "message": "Ali"
     },
-    "options_tab_inline_translate": {
-        "message": "Branje in vnos"
+    "options_tab_general": {
+        "message": "Splošne nastavitve"
     },
     "options_tab_popup_window": {
         "message": "Popup okno"
@@ -70,7 +70,7 @@
         "message": "Če je omogočeno, se pojavno okno ne bo zaprlo, ko kliknete zunaj njega"
     },
     "options_history_length": {
-        "message": "Vpisi zgodovine (največ"
+        "message": "Vpisi v zgodovino (največ"
     },
     "options_records_in_history": {
         "message": "Vpisi v zgodovini:"
