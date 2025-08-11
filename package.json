@@ -2,7 +2,7 @@
   "name": "translater",
   "description": "manifest.json description",
   "private": true,
-  "version": "2.2.2",
+  "version": "2.3.0",
   "type": "module",
   "scripts": {
     "dev": "wxt",
