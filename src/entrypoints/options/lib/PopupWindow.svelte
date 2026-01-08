@@ -40,7 +40,7 @@
 </div>
 
 <script lang="ts">
-import { FontSize } from '~/shared/types';
+import { FontSize } from '~/types';
 import { getShortcutByCommand } from '~/shared/browser';
 import { storage } from '~/shared/storage.svelte';
 import Checkbox from '~/lib/Checkbox.svelte';

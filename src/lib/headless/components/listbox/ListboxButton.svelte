@@ -14,13 +14,13 @@
 
 <script lang="ts">
 import type { Snippet } from 'svelte';
-import type { ClassValue } from 'svelte/elements';
+import type { ClassValue, HTMLButtonAttributes } from 'svelte/elements';
 import { tick } from 'svelte';
 import { getListboxContext } from './context';
 import { getNextIndex } from '../../utils/get-next-index';
 import { Keys, Focus } from '../../utils/enums';
 
-interface Props {
+interface Props extends HTMLButtonAttributes {
 	class?: ClassValue
 	as?: string
 	children: Snippet
@@ -33,10 +33,10 @@ let {
 	...rest
 }: Props = $props();
 
-let attrs = {
+let attrs = $derived({
 	tabindex: as === 'button' ? 0 : -1,
 	type: as === 'button' ? 'button' : undefined,
-};
+});
 
 const store = getListboxContext();
 

@@ -6,7 +6,7 @@
 					<Button
 						active={activeTab === tab.id}
 						iconRight={mdiChevronDown}
-						iconRightClass={activeTab === tab.id ? 'transform -scale-y-100' : ''}
+						iconRightClass={['transition-transform', activeTab === tab.id && '-scale-y-100']}
 						label={tab.label}
 						onclick={() => {
 							tabHandler(tab.id);

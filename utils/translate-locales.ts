@@ -1,4 +1,4 @@
-import type { GoogleTranslate } from '../src/shared/translate.types';
+import type { GoogleTranslate } from '../src/types/google';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 
 interface Messages {

@@ -2,6 +2,7 @@ export interface Translated extends GoogleTranslate {
 	sentence: Sentence
 	sourceLang: string
 	targetLang: string
+	model: string
 }
 
 export interface GoogleTranslate {

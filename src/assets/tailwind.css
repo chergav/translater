@@ -281,7 +281,7 @@ body {
 	--ui-color-surface-high: var(--surface-high, var(--color-gray-200));
 	--ui-color-surface-highest: var(--surface-high, var(--color-gray-300));
 	--ui-color-on-surface: var(--on-surface, var(--color-gray-900));
-	--ui-color-on-surface-variant: var(--on-surface-variant, var(--color-gray-500));
+	--ui-color-on-surface-variant: var(--on-surface-variant, var(--color-gray-600));
 
 	--ui-color-outline: var(--outline, var(--color-gray-500));
 	--ui-color-outline-variant: var(--outline-variant, var(--color-gray-400));

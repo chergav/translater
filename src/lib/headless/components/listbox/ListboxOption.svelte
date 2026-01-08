@@ -2,7 +2,8 @@
 	this={'li'}
 	bind:this={element}
 	class={className}
-	aria-selected={selected === true ? selected : undefined}
+	aria-disabled={disabled}
+	aria-selected={selected}
 	onclick={onClick}
 	onkeypress={onKeypress}
 	role="option"
@@ -23,12 +24,14 @@ interface Props {
 	value: any
 	class: ClassValue
 	children: Snippet<[ selected: boolean ]>
+	disabled?: boolean
 }
 
 let {
 	value = $bindable(),
 	class: className,
 	children,
+	disabled,
 	...rest
 }: Props = $props();
 

@@ -103,6 +103,6 @@ const last = (array: object[], index: number) => index === (array.length - 1);
 
 function getTranslate(text: string) {
 	store.textToTranslate = text;
-	store.getTranslate();
+	store.translate();
 }
 </script>

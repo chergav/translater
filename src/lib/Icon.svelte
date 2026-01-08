@@ -19,6 +19,7 @@ const icon = tv({
 			'16': 'size-4',
 			'18': 'size-[18px]',
 			'20': 'size-5',
+			'22': 'size-[22px]',
 			'24': 'size-6',
 			'28': 'size-7',
 			'32': 'size-8',

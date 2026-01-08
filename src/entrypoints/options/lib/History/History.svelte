@@ -35,7 +35,7 @@
 </div>
 
 <script lang="ts">
-import type { HistoryItem } from '~/shared/types';
+import type { HistoryItem } from '~/types';
 import { storage } from '~/shared/storage.svelte';
 import Select from '~/lib/Select.svelte';
 import Switch from '~/lib/Switch.svelte';

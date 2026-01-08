@@ -13,8 +13,8 @@ export interface BrowserSpeakOptions {
 }
 
 export interface GoogleSpeakOptions {
+	targetLang: string;
 	text: string;
-	lang: string;
 }
 
 export type SpeakOptions = BrowserSpeakOptions | GoogleSpeakOptions;
@@ -50,9 +50,9 @@ export const getVoices = async (): Promise<SpeechSynthesisVoice[]> => {
 };
 
 export const getVoicesByLang = (
-	lang: string,
+	targetLang: string,
 	voices: SpeechSynthesisVoice[],
-) => voices ? voices.filter(i => i.lang.startsWith(lang)) : [];
+) => voices ? voices.filter(i => i.lang.startsWith(targetLang)) : [];
 
 export const getTTS = (lang: string, voices: SpeechSynthesisVoice[]) => {
 	const isBrowserTTSAvailable = voices.find(v => v.lang.startsWith(lang));

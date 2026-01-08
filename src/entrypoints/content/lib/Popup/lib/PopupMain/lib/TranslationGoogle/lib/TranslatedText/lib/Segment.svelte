@@ -30,7 +30,7 @@
 {/if}
 
 <script lang="ts">
-import type { TransSegment } from '~/shared/types';
+import type { TransSegment } from '~/types';
 
 import Alternatives from './Alternatives.svelte';
 import { type ActionParams, clickOutside } from '~/utils';

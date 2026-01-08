@@ -7,34 +7,33 @@
 	{title}
 />
 {#if voices.length && voice && showTTSVoices}
-	<TTSVoices {lang} {voice} {voices} />
+	<TTSVoices {targetLang} {voice} {voices} />
 {/if}
 
 <script lang="ts">
-import { BrowserTTS } from '../utils/BrowserTTS.svelte';
-import { GoogleTTS } from '../utils/GoogleTTS.svelte';
+import { BrowserTTS } from './utils/BrowserTTS.svelte';
+import { GoogleTTS } from './utils/GoogleTTS.svelte';
 import { storage } from '~/shared/storage.svelte';
 import Button from '~/lib/Button.svelte';
 import TTSVoices from './TTSVoices.svelte';
-// import Icon from '~/lib/Icon.svelte';
 import { mdiVolumeHigh, mdiVolumeMute, mdiStop, mdiLoading } from '@mdi/js';
-import { type Status, getTTS } from '../utils/tts';
+import { type Status, getTTS } from './utils/tts';
 
 interface Props {
+	targetLang: string
 	text: string
-	lang: string
 	voices: SpeechSynthesisVoice[]
 	showTTSVoices?: boolean
 }
 
 let {
+	targetLang,
 	text,
-	lang,
 	voices,
 	showTTSVoices = true,
 }: Props = $props();
 
-let tts = $derived<BrowserTTS | GoogleTTS>(getTTS(lang, voices));
+let tts = $derived<BrowserTTS | GoogleTTS>(getTTS(targetLang, voices));
 let	status = $derived<Status>(tts.status);
 
 let title = $derived(status?.error
@@ -44,8 +43,8 @@ let title = $derived(status?.error
 		: browser.i18n.getMessage('tooltip_listen_to_the_text'),
 );
 
-let voice = $derived(storage.settings.ttsVoiceByLang && storage.settings.ttsVoiceByLang[lang]
-	? voices.find(i => i.name === storage.settings.ttsVoiceByLang[lang])
+let voice = $derived(storage.settings.ttsVoiceByLang && storage.settings.ttsVoiceByLang[targetLang]
+	? voices.find(i => i.name === storage.settings.ttsVoiceByLang[targetLang])
 	: voices[0],
 );
 
@@ -61,14 +60,14 @@ function speak() {
 		});
 	} else if (tts instanceof GoogleTTS) {
 		tts?.speak({
+			targetLang,
 			text,
-			lang,
 		});
 	}
 }
 
 function stop() {
-	if (tts) tts.stop();
+	tts?.stop();
 }
 
 function startSpeak() {

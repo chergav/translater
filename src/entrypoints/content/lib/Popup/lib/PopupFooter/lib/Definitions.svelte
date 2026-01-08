@@ -63,7 +63,7 @@
 {/if}
 
 <script lang="ts">
-import type { Translated, Entry2, LabelInfo } from '~/shared/translate.types';
+import type { Translated, Entry2, LabelInfo } from '~/types/google';
 import { store } from '~/entrypoints/content/store.svelte';
 
 let definitions = $derived(addSynonymToDefinition(store.translated));
@@ -111,6 +111,6 @@ function getLabels(label: LabelInfo) {
 
 function translate(text: string) {
 	store.textToTranslate = text;
-	store.getTranslate();
+	store.translate();
 }
 </script>

@@ -1,11 +1,13 @@
-import { type Settings, Theme, ThemeVariant, AccentColor, FontSize } from '~/shared/types';
+import { type Settings, Theme, ThemeVariant, AccentColor, FontSize } from '~/types';
+import { GOOGLE_TRANSLATE_MODEL_ID } from '~/types/providers';
+import { MediaQuery } from 'svelte/reactivity';
 import { storageGet, storageSet } from '~/shared/browser';
-import { isPreferredDark } from '~/utils';
+// import { isPreferredDark } from '~/utils';
 import deepEqual from 'fast-deep-equal';
 
 const initialSettings: Settings = {
 	theme: Theme.System,
-	themeVariant: ThemeVariant.Gray,
+	themeVariant: ThemeVariant.Slate,
 	accentColor: AccentColor.Blue,
 	fontSize: FontSize.Normal,
 	targetLang: browser.i18n.getUILanguage(),
@@ -20,10 +22,12 @@ const initialSettings: Settings = {
 	history: [],
 	lockWindow: false,
 	ttsVoiceByLang: {},
+	modelId: GOOGLE_TRANSLATE_MODEL_ID,
 };
 
 class Storage {
 	#cleanup: () => void;
+	#isPreferredDark = new MediaQuery('prefers-color-scheme: dark');
 	public settings: Settings;
 	public themeClass: Theme.Light | Theme.Dark;
 
@@ -41,7 +45,7 @@ class Storage {
 
 	#getThemeClass(theme: Theme) {
 		if (theme === Theme.System) {
-			return isPreferredDark() ? Theme.Dark : Theme.Light;
+			return this.#isPreferredDark.current ? Theme.Dark : Theme.Light;
 		}
 		return theme;
 	}
@@ -57,7 +61,12 @@ class Storage {
 	}
 
 	// arrow func to bind this class
-	#onStorageChange = (changes: { [key: string]: Browser.storage.StorageChange }) => {
+	#onStorageChange = (
+		changes: { [key: string]: Browser.storage.StorageChange },
+		areaName: Browser.storage.AreaName,
+	) => {
+		if (areaName !== 'local') return;
+
 		const stateSnapshot = $state.snapshot(this.settings);
 
 		for (const [keyString, {  newValue }] of Object.entries(changes)) {

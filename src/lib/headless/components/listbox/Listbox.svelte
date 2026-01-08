@@ -46,7 +46,7 @@ class Store {
 	select(newValue: any) {
 		this.value = newValue;
 		value = newValue;
-		if (change) change();
+		change?.();
 	}
 }
 

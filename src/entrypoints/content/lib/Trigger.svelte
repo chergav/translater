@@ -56,6 +56,6 @@ const triggerPosition: Action = trigger => {
 function openPopup() {
 	store.showPopup = true;
 	store.textToTranslate = store.selectedText;
-	store.getTranslate();
+	store.translate();
 }
 </script>

@@ -36,6 +36,9 @@
 			{/each}
 		</div>
 	</div>
+
+	<!-- <OAuth /> -->
+
 </div>
 
 <script lang="ts">
@@ -44,6 +47,8 @@ import SelectLanguageSimple from '~/lib/SelectLanguageSimple.svelte';
 import Checkbox from '~/lib/Checkbox.svelte';
 import Icon from '~/lib/Icon.svelte';
 import { mdiTrashCanOutline } from '@mdi/js';
+
+// import OAuth from './OAuth.svelte';
 
 const deleteFromBlacklist = (domain: string) => {
 	storage.settings.blacklistDomainForInline = storage.settings.blacklistDomainForInline.filter(i => i !== domain);

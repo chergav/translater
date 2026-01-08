@@ -49,7 +49,7 @@ import { escapeRegExp } from '~/utils';
 
 let textarea = $state<HTMLTextAreaElement>();
 let highlightContainer = $state<HTMLDivElement>();
-let timer = $state<number>();
+let timeoutId = $state<number>();
 let highlightedText = $derived.by<string>(() => {
 	let text = store.translated?.sentence.orig || store.textToTranslate;
 
@@ -85,11 +85,11 @@ function textareaResize() {
 }
 
 function debounceTranslate(text: string) {
-	clearTimeout(timer);
-	timer = window.setTimeout(() => {
+	clearTimeout(timeoutId);
+	timeoutId = window.setTimeout(() => {
 		if (store.textToTranslate !== text) {
 			store.textToTranslate = text;
-			store.getTranslate();
+			store.translate();
 		}
 	}, 1000);
 }
@@ -113,7 +113,7 @@ function clearText() {
 		textarea.focus();
 	}
 
-	store.resetTranslate();
+	store.resetTranslateStore();
 	textareaResize();
 }
 </script>

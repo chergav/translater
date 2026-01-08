@@ -12,7 +12,7 @@
 </div>
 
 <script lang="ts">
-import { AccentColor } from '~/shared/types';
+import { AccentColor } from '~/types';
 import { storage } from '~/shared/storage.svelte';
 import RadioHeadless from '~/lib/RadioHeadless.svelte';
 import Button from '~/lib/Button.svelte';

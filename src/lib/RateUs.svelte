@@ -15,7 +15,7 @@
 
 <script lang="ts">
 import Button from '~/lib/Button.svelte';
-import { RATE_MAX_URL, RATE_LESS_URL, RATE_MAX_URL_FIREFOX } from '~/shared/constants';
+import { RATE_MAX_URL, RATE_MAX_URL_FIREFOX, getUninstallUrl } from '~/shared/constants';
 
 interface Buttons {
 	label: string
@@ -38,7 +38,8 @@ const buttons: Buttons[] = [
 ];
 
 function openGoogleForm() {
-	browser.tabs.create({ url: RATE_LESS_URL });
+	const url = getUninstallUrl();
+	browser.tabs.create({ url });
 }
 
 function openCWSReviews() {

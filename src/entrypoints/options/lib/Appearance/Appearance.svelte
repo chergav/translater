@@ -11,7 +11,7 @@
 </div>
 
 <script lang="ts">
-import { Theme } from '~/shared/types';
+import { Theme } from '~/types';
 import { storage } from '~/shared/storage.svelte';
 import Radio from '~/lib/Radio.svelte';
 import Accent from './lib/Accent.svelte';

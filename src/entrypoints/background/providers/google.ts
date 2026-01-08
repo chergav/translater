@@ -1,23 +1,14 @@
-import type { GoogleTranslate } from '~/shared/translate.types';
+import type { GoogleTTSResponse } from '~/types';
+import type { GoogleTranslate } from '~/types/google';
 // import { mock } from './mock';
 
-export interface TranslateParam {
+export interface TranslateProps {
 	sourceLang?: string
 	targetLang?: string
-	selectedText?: string
-}
-
-export interface TTSParam {
-	lang?: string
 	text?: string
 }
 
-export interface GoogleTTSResponse {
-	status: boolean
-	data?: number[]
-}
-
-const googleTranslateURL = ({ sourceLang = 'auto', targetLang = 'auto', selectedText = '' }: TranslateParam) => {
+const googleTranslateURL = ({ sourceLang = 'auto', targetLang = 'auto', text = '' }: TranslateProps) => {
 	// https://stackoverflow.com/questions/26714426/what-is-the-meaning-of-google-translate-query-params
 	const searchParams = new URLSearchParams({
 		client: 'gtx',
@@ -32,7 +23,7 @@ const googleTranslateURL = ({ sourceLang = 'auto', targetLang = 'auto', selected
 		tsel: '0',
 		kc: '7',
 		dj: '1',
-		q: selectedText,
+		q: text,
 		model: 'nmt',
 	});
 
@@ -44,7 +35,7 @@ const googleTranslateURL = ({ sourceLang = 'auto', targetLang = 'auto', selected
 	return `https://translate.googleapis.com/translate_a/single?${searchParams}`;
 };
 
-export const googleTranslate = async (params: TranslateParam): Promise<GoogleTranslate> => {
+export const googleTranslate = async (params: TranslateProps): Promise<GoogleTranslate> => {
 	// if (import.meta.env.DEV) {
 	// 	return new Promise(r => {
 	// 		setTimeout(() => {
@@ -61,30 +52,31 @@ export const googleTranslate = async (params: TranslateParam): Promise<GoogleTra
 		});
 
 		if (!response.ok) {
-			return Promise.reject(response.statusText);
+			throw new Error(`${response.status} ${response.statusText}`);
 		}
 
 		return response.json();
 	} catch (error) {
-		console.error(`Google Translate api error: ${error}`);
-		return Promise.reject(error);
+		const msg = `Google Translate API error: ${error}`;
+		console.debug(msg);
+		throw new Error(msg);
 	}
 };
 
-const googleTTSURL = ({ lang = 'en', text = '' }: TTSParam): string => {
+const googleTTSURL = ({ targetLang = 'en', text = '' }: TranslateProps): string => {
 	const searchParams = new URLSearchParams({
 		// client: 'tw-ob',
 		client: 'gtx',
 		ttsspeed: '0.8',
 		ie: 'UTF-8',
-		tl: lang,
+		tl: targetLang,
 		q: text.substring(0, 200), // text <= 200 character limit
 	});
 
 	return `https://translate.googleapis.com/translate_tts?${searchParams}`;
 };
 
-export const googleTTS = async (param: TTSParam): Promise<GoogleTTSResponse> => {
+export const googleTTS = async (param: TranslateProps): Promise<GoogleTTSResponse> => {
 	const url = googleTTSURL(param);
 
 	try {

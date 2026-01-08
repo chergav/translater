@@ -1,5 +1,5 @@
 import type { TTS, GoogleSpeakOptions } from './tts';
-import type { GoogleTTSResponse } from '~/shared/types';
+import type { GoogleTTSResponse, Message } from '~/types';
 import { store } from '~/entrypoints/content/store.svelte';
 
 export class GoogleTTS implements TTS {
@@ -10,15 +10,15 @@ export class GoogleTTS implements TTS {
 		error: false,
 	});
 
-	async #fetchTTS({ lang, text }: {
-		lang: string,
+	async #fetchTTS({ targetLang, text }: {
+		targetLang: string,
 		text: string
 	}) {
 		try {
-			const response: GoogleTTSResponse = await browser.runtime.sendMessage({
+			const response: GoogleTTSResponse = await browser.runtime.sendMessage<Message>({
 				type: 'getTranslateTTS',
 				content: {
-					lang,
+					targetLang,
 					text,
 				},
 			});
@@ -56,12 +56,12 @@ export class GoogleTTS implements TTS {
 		}
 	}
 
-	async speak({ text = '', lang = 'en' }: GoogleSpeakOptions) {
+	async speak({ text = '', targetLang = 'en' }: GoogleSpeakOptions) {
 		this.status.waiting = true;
 
 		this.#stopAllTTS();
 
-		const cached = store.cacheTTS.find(i => i.lang === lang && i.text === text);
+		const cached = store.cacheTTS.find(i => i.targetLang === targetLang && i.text === text);
 
 		if (cached) {
 			this.#play(cached.data);
@@ -69,14 +69,14 @@ export class GoogleTTS implements TTS {
 		}
 
 		const tts = await this.#fetchTTS({
-			lang,
+			targetLang,
 			text,
 		});
 
 		if (tts && tts.status && tts.data) {
 			this.#play(tts.data);
 			store.cacheTTS.push({
-				lang,
+				targetLang,
 				text,
 				data: tts.data,
 			});

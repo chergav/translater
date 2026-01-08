@@ -14,7 +14,7 @@
 </div>
 
 <script lang="ts">
-import { ThemeVariant } from '~/shared/types';
+import { ThemeVariant } from '~/types';
 import { storage } from '~/shared/storage.svelte';
 import RadioHeadless from '~/lib/RadioHeadless.svelte';
 

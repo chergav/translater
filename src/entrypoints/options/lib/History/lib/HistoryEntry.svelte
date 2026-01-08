@@ -3,7 +3,14 @@
 	transition:slide={{ duration: 250 }}
 >
 	<div class="mb-2 flex justify-between">
-		<span>{getLang(historyItem.sourceLang)} -> {getLang(historyItem.targetLang)}</span>
+		<div class="flex items-center gap-2">
+			<span>{getLang(historyItem.sourceLang)} -> {getLang(historyItem.targetLang)}</span>
+			{#if historyItem.model}
+				<span class="text-color-on-surface-variant">
+					[{historyItem.model}]
+				</span>
+			{/if}
+		</div>
 		<Button
 			icon={mdiTrashCanOutline}
 			onclick={() => {
@@ -45,7 +52,7 @@
 </div>
 
 <script lang="ts">
-import type { HistoryItem } from '~/shared/types';
+import type { HistoryItem } from '~/types';
 import { slide } from 'svelte/transition';
 import { storage } from '~/shared/storage.svelte';
 import Button from '~/lib/Button.svelte';

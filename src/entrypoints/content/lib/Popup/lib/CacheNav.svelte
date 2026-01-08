@@ -19,24 +19,29 @@ import { storage } from '~/shared/storage.svelte';
 import Button from '~/lib/Button.svelte';
 import { mdiChevronLeft, mdiChevronRight } from '@mdi/js';
 
-let disabledPrev = $derived<boolean>(store.cacheIndex <= -store.cacheTranslate.length);
+let disabledPrev = $derived<boolean>(store.cacheIndex <= -store.cache.length);
 let disabledNext = $derived<boolean>(store.cacheIndex >= -1);
 
 function getCacheItem(index: number) {
-	const item = store.cacheTranslate.at(index);
+	const item = store.cache.at(index);
 
-	if (item) {
-		store.translated = item;
-		store.sourceLang = item.src;
-		storage.settings.targetLang = item.targetLang;
-	}
+	if (!item) return;
+
+	store.translated = item;
+	if (store.translationAi) store.translationAi.text = item.sentence.trans || '';
+	store.sourceLang = item.src;
+	storage.settings.targetLang = item.targetLang;
 }
 
 function cachePrev() {
+	if (disabledPrev) return;
+
 	getCacheItem(--store.cacheIndex);
 }
 
 function cacheNext() {
+	if (disabledNext) return;
+
 	getCacheItem(++store.cacheIndex);
 }
 </script>

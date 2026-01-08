@@ -1,4 +1,4 @@
-import type { Settings } from '~/shared/types';
+import type { Settings } from '~/types';
 
 export async function storageGet(keys?: Settings) {
 	return await browser.storage.local.get(keys) as Settings;

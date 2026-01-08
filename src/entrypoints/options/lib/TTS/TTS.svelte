@@ -49,11 +49,11 @@
 </div>
 
 <script lang="ts">
-import { store } from '../../store.svelte';
+import { store } from '~/entrypoints/options/store.svelte';
 import TTSVoicesItem from './lib/TTSVoicesItem.svelte';
 // import Button from '~/lib/Button.svelte';
 import { languages } from '~/shared/languages';
-import { getVoices } from '~/entrypoints/content/lib/Popup/utils/tts';
+import { getVoices } from '~/entrypoints/content/lib/Popup/lib/PopupMain/lib/TTS/utils/tts';
 
 if (!store.voices) {
 	store.voices = getVoices();

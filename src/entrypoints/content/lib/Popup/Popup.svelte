@@ -1,7 +1,7 @@
 <div
 	style="left: {left}px; top: {top}px;"
 	class={[
-		'fixed z-[9999999] flex h-fit w-[550px] rounded-[18px]',
+		'fixed z-9999999 flex h-fit w-[550px] rounded-[18px]',
 		'bg-color-surface-container text-start text-sm text-color-on-surface shadow-xl',
 		dragging ? 'select-none' : 'select-auto',
 		POPUP_CLASS,
@@ -23,6 +23,7 @@
 		>
 			<div class="flex items-center gap-1">
 				<CacheNav />
+				<SelectModel/>
 			</div>
 			<div class="flex items-center gap-1">
 				<Menu />
@@ -38,13 +39,15 @@
 
 <script lang="ts">
 import type { Action } from 'svelte/action';
+import { onDestroy } from 'svelte';
 import { fade } from 'svelte/transition';
 import { storage } from '~/shared/storage.svelte';
 import { store } from '~/entrypoints/content/store.svelte';
 import Button from '~/lib/Button.svelte';
 import Menu from './lib/Menu.svelte';
 import CacheNav from './lib/CacheNav.svelte';
-import PopupMain from './lib/PopupMain.svelte';
+import SelectModel from './lib/SelectModel.svelte';
+import PopupMain from './lib/PopupMain/PopupMain.svelte';
 import PopupFooter from './lib/PopupFooter/PopupFooter.svelte';
 import { computePosition, offset, flip, shift, type VirtualElement } from '@floating-ui/dom';
 import { mdiClose } from '@mdi/js';
@@ -61,10 +64,6 @@ let reference = $derived<VirtualElement>({
 });
 
 const popupPosition: Action<HTMLDivElement> = popup => {
-	if (!store.selectedElemRect) {
-		return;
-	}
-
 	computePosition(reference, popup, {
 		strategy: 'fixed',
 		placement: 'bottom-start',
@@ -128,9 +127,7 @@ function onClickOutside() {
 	}
 }
 
-$effect(() => {
-	return () => {
-		store.resetTranslate();
-	};
+onDestroy(() => {
+	store.resetTranslateStore();
 });
 </script>

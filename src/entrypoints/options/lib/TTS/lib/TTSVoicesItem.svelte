@@ -18,8 +18,8 @@
 			{/each}
 		</Select>
 		<TTSButton
-			{lang}
 			showTTSVoices={false}
+			targetLang={lang}
 			text={selectedVoice.name}
 			{voices}
 		/>
@@ -32,7 +32,7 @@
 <script lang="ts">
 import { storage } from '~/shared/storage.svelte';
 import Select from '~/lib/Select.svelte';
-import TTSButton from '~/entrypoints/content/lib/Popup/lib/TTSButton.svelte';
+import TTSButton from '~/entrypoints/content/lib/Popup/lib/PopupMain/lib/TTS/TTSButton.svelte';
 
 interface Props {
 	lang: string

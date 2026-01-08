@@ -20,16 +20,16 @@
 				peer-checked:border-purple-800
 
 				peer-checked:bg-purple-800
-				peer-checked:dark:border-purple-200
-				peer-checked:dark:bg-purple-200
 				peer-focus-visible:outline
-
 				peer-focus-visible:outline-offset-2
 				peer-focus-visible:outline-gray-600
-				peer-focus-visible:dark:outline-gray-400
-				dark:border-gray-500
 
+				dark:border-gray-500
 				dark:bg-gray-800
+				peer-checked:dark:border-purple-200
+				peer-checked:dark:bg-purple-200
+
+				peer-focus-visible:dark:outline-gray-400
 			"
 		></div>
 		<div
@@ -55,12 +55,12 @@
 				peer-checked:bg-purple-200
 				peer-checked:ring-4
 
-				peer-checked:peer-hover:ring-purple-800/10
-				peer-checked:dark:bg-purple-800
-				peer-checked:peer-hover:dark:ring-purple-200/10
 				peer-hover:ring-gray-600/10
-				peer-hover:dark:ring-gray-400/10
+				peer-checked:peer-hover:ring-purple-800/10
 				dark:bg-gray-500
+				peer-checked:dark:bg-purple-800
+				peer-hover:dark:ring-gray-400/10
+				peer-checked:peer-hover:dark:ring-purple-200/10
 			"
 		></div>
 		<span class="ml-4 whitespace-nowrap text-gray-900 select-none dark:text-gray-300">{label}</span>

@@ -1,15 +1,19 @@
-import type { Message } from '~/shared/types';
-import { googleTranslate, googleTTS } from './googleApi';
-import { UNINSTALL_URL } from '~/shared/constants';
+import type { Message } from '~/types';
+import { googleTranslate, googleTTS } from './providers/google';
+import { getUninstallUrl } from '~/shared/constants';
+import { TranslationService } from './services/TranslationService';
 
 export default defineBackground({
 	type: 'module',
 	main() {
+		const translationService = new TranslationService();
+		translationService.start();
+
 		async function getCurrentTab() {
 			const options = {
 				active: true,
 				lastFocusedWindow: true,
-				url: ['*://*/*'],
+				url: ['<all_urls>'],
 			};
 			const [tab] = await browser.tabs.query(options);
 			return tab;
@@ -30,6 +34,7 @@ export default defineBackground({
 
 		async function openTranslater() {
 			const tab = await getCurrentTab();
+
 			if (tab && tab.id) {
 				const selectedText = await getSelectedText(tab.id) || '';
 
@@ -45,11 +50,14 @@ export default defineBackground({
 		function handleMessage(
 			message: Message,
 			_sender: Browser.runtime.MessageSender,
-			sendResponse: () => void,
+			// eslint-disable-next-line @typescript-eslint/no-explicit-any
+			sendResponse: (response?: any) => void,
 		) {
 			switch (message.type) {
 				case 'getTranslate':
-					googleTranslate(message.content).then(sendResponse);
+					googleTranslate(message.content)
+						.then(sendResponse)
+						.catch(error => sendResponse({ error: error.message }));
 					break;
 				case 'getTranslateTTS':
 					googleTTS(message.content).then(sendResponse);
@@ -58,7 +66,7 @@ export default defineBackground({
 					browser.runtime.openOptionsPage();
 					break;
 				case 'openURL':
-					browser.tabs.create(message.content);
+					browser.tabs.create({ url: message.content.url });
 					break;
 				case 'openTranslater':
 					openTranslater();
@@ -75,6 +83,11 @@ export default defineBackground({
 
 		browser.contextMenus.onClicked.addListener((info, tab) => {
 			if (info.menuItemId === 'translaterMenu' && info.selectionText && tab?.id) {
+				if (tab.id < 0) {
+					console.error('Invalid tab ID (probably Edge PDF viewer bug):', tab?.id);
+					return;
+				}
+
 				browser.tabs.sendMessage<Message>(tab.id, {
 					type: 'createPopup',
 					content: {
@@ -103,33 +116,48 @@ export default defineBackground({
 			});
 		});
 
-		async function injectContentScriptIntoAllTabs() {
-			const tabs = await browser.tabs.query({});
-
-			for (const tab of tabs) {
-				if (!tab.url?.startsWith('http') || !tab.id) continue;
-
-				try {
-					await browser.scripting.executeScript({
-						target: { tabId: tab.id },
-						files: ['/content-scripts/content.js'],
-					});
-				} catch (error) {
-					console.log(`Failed to inject into tab ${tab.id}:`, error);
-				}
+		async function injectContentScript(tabId: number) {
+			try {
+				await browser.scripting.executeScript({
+					target: { tabId },
+					files: ['/content-scripts/content.js'],
+				});
+				console.debug(`Injected content script into tab ${tabId}`);
+			} catch (error) {
+				console.debug(`Failed to inject into tab ${tabId}:`, error);
 			}
 		}
 
-		browser.runtime.onInstalled.addListener(details => {
+		async function checkAndInjectIfNeeded(tabId?: number) {
+			if (!tabId) return;
+
+			try {
+				await browser.tabs.sendMessage<Message>(tabId, {
+					type: 'ping',
+					content: {},
+				});
+				console.debug(`Content script already active in tab ${tabId}`);
+			} catch (error) {
+				console.debug(`No response from content script in tab ${tabId} — injecting...`, error);
+				await injectContentScript(tabId);
+			}
+		}
+
+		async function ensureContentScriptInTabs() {
+			const tabs = await browser.tabs.query({});
+			await Promise.all(tabs.map(tab => checkAndInjectIfNeeded(tab.id)));
+		}
+
+		browser.runtime.onInstalled.addListener(async details => {
 			switch (details.reason) {
 				case browser.runtime.OnInstalledReason.INSTALL:
-					injectContentScriptIntoAllTabs();
-					browser.runtime.setUninstallURL(UNINSTALL_URL);
+					await ensureContentScriptInTabs();
 					break;
 				case browser.runtime.OnInstalledReason.UPDATE:
-					injectContentScriptIntoAllTabs();
+					await ensureContentScriptInTabs();
 					break;
 			}
+			await browser.runtime.setUninstallURL(getUninstallUrl());
 		});
 	},
 });

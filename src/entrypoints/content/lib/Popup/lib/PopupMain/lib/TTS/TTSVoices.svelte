@@ -1,7 +1,7 @@
 <Listbox
 	class="relative leading-0"
 	change={() => {
-		storage.settings.ttsVoiceByLang[lang] = voice.name;
+		storage.settings.ttsVoiceByLang[targetLang] = voice.name;
 	}}
 	bind:value={voice}
 	bind:open
@@ -34,7 +34,14 @@
 			>
 				{#snippet children(selected)}
 					<span class="inline-flex size-5 shrink-0">
-						<Icon class="{selected ? 'inline-flex' : 'hidden'} text-color-primary shrink-0" d={mdiCheck} size="20" />
+						<Icon
+							class={[
+								'shrink-0 text-color-primary',
+								selected ? 'inline-flex' : 'hidden',
+							]}
+							d={mdiCheck}
+							size="20"
+						/>
 					</span>
 					<span class={[selected && 'font-medium text-color-primary']}>{voice.name}</span>
 				{/snippet}
@@ -52,13 +59,13 @@ import { mdiCheck } from '@mdi/js';
 import iconVoiceSelection from '~/assets/icons/voice-selection-300.svg?raw';
 
 interface Props {
-	lang: string
+	targetLang: string
 	voice: SpeechSynthesisVoice
 	voices: SpeechSynthesisVoice[]
 }
 
 let {
-	lang,
+	targetLang,
 	voice,
 	voices ,
 }: Props = $props();

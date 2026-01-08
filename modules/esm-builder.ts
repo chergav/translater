@@ -73,8 +73,8 @@ export default defineWxtModule(wxt => {
 	wxt.hooks.hook('build:manifestGenerated', (_, manifest) => {
 		manifest.web_accessible_resources ??= [];
 		// Note, this also works when targetting MV2 - WXT automatically transforms it to the MV2 syntax
+		// @ts-expect-error: MV2 types are conflicting with MV3 declaration
 		manifest.web_accessible_resources.push({
-			// @ts-expect-error: MV2 types are conflicting with MV3 declaration
 			matches: contentScriptEntrypoint.options.matches,
 			resources: ['/content-scripts/esm/*'],
 		});

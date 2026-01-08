@@ -72,10 +72,10 @@
 </main>
 
 <script lang="ts">
-import type { Message } from '~/shared/types';
-import { storage } from '@/shared/storage.svelte';
+import type { Message } from '~/types';
+import { storage } from '~/shared/storage.svelte';
 import Button from '~/lib/Button.svelte';
-import Shortcuts from '@/lib/Shortcuts.svelte';
+import Shortcuts from '~/lib/Shortcuts.svelte';
 import Divider from '~/lib/Divider.svelte';
 import Link from '~/lib/Link.svelte';
 import TranslaterVersion from '~/lib/TranslaterVersion.svelte';

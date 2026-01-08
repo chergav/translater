@@ -1,3 +1,6 @@
+import type { GoogleTranslate, Sentence } from '~/types/google';
+import type { TranslationProvider } from '~/types/providers';
+
 export interface Settings {
 	theme: Theme
 	themeVariant: ThemeVariant
@@ -17,6 +20,12 @@ export interface Settings {
 	ttsVoiceByLang: {
 		[lang: string]: string
 	};
+	modelId: string
+	fakeUserEmail?: string
+}
+
+export interface SettingsSync {
+	customProviders: TranslationProvider[]
 }
 
 export enum Theme {
@@ -53,9 +62,10 @@ export enum FontSize {
 export interface HistoryItem {
 	sourceLang: string
 	targetLang: string
-	orig?: string
-	trans?: string
+	orig: string
+	trans: string
 	time: number
+	model?: string
 }
 
 export interface Message {
@@ -64,16 +74,47 @@ export interface Message {
 		| 'openOptionsPage'
 		| 'openURL'
 		| 'openTranslater'
-		| 'createPopup',
+		| 'createPopup'
+		| 'ping'
+		| 'loaded'
 	content: {
 		sourceLang?: string
 		targetLang?: string
-		selectedText?: string
-		lang?: string
 		text?: string
 		url?: string
 	}
 }
+
+export type MessageConnectRequest =
+	{
+		type: 'translate'
+		text: string
+		targetLang: string
+		currentModelId: string
+		sourceLang?: string
+	}
+	| { type: 'cancel' };
+
+export type MessageConnectResponse =
+	{ type: 'translation-start' }
+	| {
+		type: 'translation-chunk',
+		chunk: string
+		sourceLang?: string
+	}
+	| {
+		type: 'translation-complete'
+		finalText: string
+		sourceLang?: string
+	}
+	| { type: 'translation-cancel' }
+	| {
+		type: 'translation-error'
+		error: string
+	} | {
+		type: 'download-progress',
+		percent: number
+	};
 
 export interface Language {
 	language: string;
@@ -86,7 +127,7 @@ export interface GoogleTTSResponse {
 }
 
 export interface CacheTTS {
-	lang: string
+	targetLang: string
 	text: string
 	data: number[]
 }
@@ -95,4 +136,19 @@ export interface TransSegment {
 	text: string;
 	alternatives: string[];
 	rawSegment: string
+}
+
+export interface BaseTranslation {
+	sourceLang: string
+	targetLang: string
+}
+
+export interface TranslationGoogle extends GoogleTranslate {
+	sentence: Sentence
+}
+
+export interface TranslationAi {
+	text: string
+	// model: string
+	isStreaming: boolean
 }

@@ -17,7 +17,7 @@
 		<Icon class={iconClass} d={icon} size={finalIconSize} />
 	{/if}
 	{#if label}
-		<span class="whitespace-nowrap first-letter:uppercase">{label}</span>
+		<span class="truncate whitespace-nowrap first-letter:uppercase">{label}</span>
 	{/if}
 	{@render children?.()}
 	{#if iconRight}
@@ -56,6 +56,7 @@ const button = tv({
 			lg: 'h-24 gap-3 px-12 text-2xl',
 		},
 		isLabel: {
+			true: 'w-fit',
 			false: '',
 		},
 		isTab: {
@@ -107,9 +108,9 @@ interface Props extends ButtonVariants, Omit<HTMLButtonAttributes, 'class'> {
 	tab?: boolean
 	active?: boolean
 	icon?: string
-	iconClass?: string
+	iconClass?: ClassValue
 	iconRight?: string
-	iconRightClass?: string
+	iconRightClass?: ClassValue
 	iconSize?: IconSize
 	class?: ClassValue
 	size?: ButtonSize

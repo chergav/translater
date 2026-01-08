@@ -17,19 +17,22 @@
 <svelte:document onmouseup={onMouseup} />
 
 <script lang="ts">
-import type { Message } from '~/shared/types';
+import type { Message } from '~/types';
 import { storage } from '~/shared/storage.svelte';
 import { store } from './store.svelte';
+import { providerStore } from '~/entrypoints/options/lib/Providers/providerStore.svelte';
 import Trigger from './lib/Trigger.svelte';
 import Popup from './lib/Popup/Popup.svelte';
 import { getSelectedText, getSelectedElemRect, getSelectedEndCoord, isInTextField } from './utils/rect';
 import { CUSTOM_ELEMENT_TAG } from '~/shared/constants';
 import { detectLanguage } from '~/shared/browser';
+import { isBrowserTranslationAvailable } from '~/entrypoints/background/providers/browser';
 
 let isTextInTargetLangPromise = $derived<Promise<boolean>>(isTextInTargetLang());
-let isSettingsShowButton = $derived<boolean>(store.isInTextField
-	? storage.settings.textFieldButtonShow
-	: storage.settings.inlineButtonShow,
+let isSettingsShowButton = $derived<boolean>(
+	store.isInTextField
+		? storage.settings.textFieldButtonShow
+		: storage.settings.inlineButtonShow,
 );
 let isDomainInBlacklist = $derived<boolean>(storage.settings.blacklistDomainForInline.includes(store.hostname));
 let isShowTrigger = $derived<boolean>(
@@ -62,16 +65,29 @@ async function isTextInTargetLang() {
 	return storage.settings.targetLang.startsWith(detectedLanguage);
 }
 
-function onMessage(message: Message) {
-	if (message.type !== 'createPopup') return;
-
-	store.showPopup = true;
-	store.cacheIndex = 0;
-
-	if (message.content.text) {
-		store.textToTranslate = message.content.text;
-		store.getTranslate();
+function onMessage(
+	message: Message,
+	_sender: Browser.runtime.MessageSender,
+	sendResponse: (response?: Message) => void,
+) {
+	if (message.type === 'ping') {
+		sendResponse({
+			type: 'loaded',
+			content: {},
+		});
 	}
+
+	if (message.type === 'createPopup') {
+		store.showPopup = true;
+		store.cacheIndex = 0;
+
+		if (message.content.text) {
+			store.textToTranslate = message.content.text;
+			store.translate();
+		}
+	}
+
+	return true;
 }
 
 $effect(() => {
@@ -81,5 +97,9 @@ $effect(() => {
 		browser.runtime.onMessage.removeListener(onMessage);
 		storage.destroy();
 	};
+});
+
+onMount(async () => {
+	providerStore.isTranslationAPIAvailable = await isBrowserTranslationAvailable();
 });
 </script>

@@ -93,7 +93,7 @@
 
 <script lang="ts">
 import type { Action } from 'svelte/action';
-import type { Language } from '~/shared/types';
+import type { Language } from '~/types';
 import { tick } from 'svelte';
 import { Listbox, ListboxButton, ListboxOptions, ListboxOption } from '~/lib/headless';
 import Button from '~/lib/Button.svelte';
@@ -135,6 +135,7 @@ const sortedI18nLanguages = languages
 	}))
 	.sort((a, b) => a.language.localeCompare(b.language));
 
+// svelte-ignore state_referenced_locally
 if (auto) {
 	sortedI18nLanguages.unshift({
 		code: 'auto',

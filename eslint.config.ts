@@ -40,6 +40,7 @@ export default ts.config(
 			'@stylistic/brace-style': ['error', '1tbs', { allowSingleLine: true }],
 			'@stylistic/comma-dangle': ['error', 'always-multiline'],
 			'@stylistic/indent': ['error', 'tab'],
+			'@stylistic/indent-binary-ops': ['error', 'tab'],
 			'@stylistic/jsx-indent-props': [2, 'tab'],
 			'@stylistic/jsx-one-expression-per-line': ['error', { allow: 'single-line' }],
 			'@stylistic/multiline-ternary': ['error', 'always-multiline'],

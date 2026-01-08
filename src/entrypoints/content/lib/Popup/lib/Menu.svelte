@@ -68,7 +68,7 @@
 </div>
 
 <script lang="ts">
-import type { Message } from '~/shared/types';
+import type { Message } from '~/types';
 import { fly } from 'svelte/transition';
 import Button from '~/lib/Button.svelte';
 import {
@@ -83,7 +83,7 @@ import {
 import { clickOutside } from '~/utils';
 import { store } from '~/entrypoints/content/store.svelte';
 import { storage } from '~/shared/storage.svelte';
-import { createLinkToGT } from '~/entrypoints/background/googleApi';
+import { createLinkToGT } from '~/entrypoints/background/providers/google';
 
 let isOpen = $state<boolean>(false);
 let isDomainInBlacklist = $derived<boolean>(storage.settings.blacklistDomainForInline.includes(store.hostname));
@@ -91,7 +91,7 @@ let isDomainInBlacklist = $derived<boolean>(storage.settings.blacklistDomainForI
 function handleReverseTranslate() {
 	[store.sourceLang, storage.settings.targetLang] = [storage.settings.targetLang, store.sourceLang];
 	store.textToTranslate = store.translated?.sentence.trans || '';
-	store.getTranslate();
+	store.translate();
 	isOpen = false;
 }
 

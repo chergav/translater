@@ -1,23 +1,24 @@
-{#if store.translated}
-	<div style="font-size: {storage.settings.fontSize}px; line-height: {storage.settings.fontSize * 1.6}px">
-		{#if segments.length}
-			{#each segments as segment, index (index)}
-				<Segment {segment} />
-			{/each}
-		{:else}
-			<p>{store.translated.sentence.trans}</p>
-		{/if}
-	</div>
+{#if segments.length}
+	{#each segments as segment, index (index)}
+		<Segment {segment} />
+	{/each}
+{:else}
+	<p>{translated.sentence.trans}</p>
 {/if}
 
 <script lang="ts">
-import type { TransSegment } from '~/shared/types';
-import { storage } from '~/shared/storage.svelte';
-import { store } from '~/entrypoints/content/store.svelte';
+import type { TransSegment } from '~/types';
+import type { Translated } from '~/types/google';
 import Segment from './lib/Segment.svelte';
 
+interface Props {
+	translated: Translated
+}
+
+let { translated }: Props = $props();
+
 let segments: TransSegment[] = $derived.by(() => {
-	const alternativeTranslations = store.translated?.alternative_translations;
+	const alternativeTranslations = translated.alternative_translations;
 
 	if (!alternativeTranslations?.length) return [];
 
