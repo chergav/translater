@@ -1,5 +1,5 @@
 <div
-	class="absolute z-[9999999]"
+	class="absolute z-9999999"
 	use:triggerPosition
 >
 	<button

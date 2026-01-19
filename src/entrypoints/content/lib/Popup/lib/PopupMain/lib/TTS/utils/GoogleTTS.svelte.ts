@@ -61,12 +61,12 @@ export class GoogleTTS implements TTS {
 
 		this.#stopAllTTS();
 
-		const cached = store.cacheTTS.find(i => i.targetLang === targetLang && i.text === text);
+		// const cached = store.cacheTTS.find(i => i.targetLang === targetLang && i.text === text);
 
-		if (cached) {
-			this.#play(cached.data);
-			return;
-		}
+		// if (cached) {
+		// 	this.#play(cached.data);
+		// 	return;
+		// }
 
 		const tts = await this.#fetchTTS({
 			targetLang,
@@ -75,11 +75,11 @@ export class GoogleTTS implements TTS {
 
 		if (tts && tts.status && tts.data) {
 			this.#play(tts.data);
-			store.cacheTTS.push({
-				targetLang,
-				text,
-				data: tts.data,
-			});
+			// store.cacheTTS.push({
+			// 	targetLang,
+			// 	text,
+			// 	data: tts.data,
+			// });
 		} else {
 			this.status.waiting = false;
 			this.status.error = true;

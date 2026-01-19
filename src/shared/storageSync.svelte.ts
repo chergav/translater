@@ -7,36 +7,35 @@ const initialSettings: SettingsSync = {
 
 class StorageSync {
 	#cleanup: () => void;
+	#isWriting = false;
 	public settings: SettingsSync;
 
 	public constructor(settings: SettingsSync) {
 		this.settings = $state<SettingsSync>(settings);
 		this.#cleanup = $effect.root(() => {
 			$effect(() => {
+				if (this.#isWriting) return;
+
 				const stateSnapshot = $state.snapshot(this.settings);
 				this.#sync(stateSnapshot);
 			});
 		});
-		browser.storage.onChanged.addListener(this.#onStorageChange);
+		browser.storage.sync.onChanged.addListener(this.#onStorageChange);
 	}
 
 	async #sync(snapshot: SettingsSync) {
 		const external = await browser.storage.sync.get<SettingsSync>();
 
 		if (!deepEqual(external, snapshot)) {
-			browser.storage.onChanged.removeListener(this.#onStorageChange);
+			this.#isWriting = true;
 			await browser.storage.sync.set<SettingsSync>(snapshot);
-			browser.storage.onChanged.addListener(this.#onStorageChange);
+			this.#isWriting = false;
 		}
 	}
 
 	// arrow func to bind this class
-	#onStorageChange = (
-		changes: { [key: string]: Browser.storage.StorageChange },
-		areaName: Browser.storage.AreaName,
-	) => {
-		if (areaName !== 'sync') return;
-
+	#onStorageChange = (changes: { [key: string]: Browser.storage.StorageChange }) => {
+		this.#isWriting = true;
 		const stateSnapshot = $state.snapshot(this.settings);
 
 		for (const [keyString, { newValue }] of Object.entries(changes)) {
@@ -45,11 +44,13 @@ class StorageSync {
 				Object.assign(this.settings, { [key]: newValue });
 			}
 		}
+
+		this.#isWriting = false;
 	};
 
 	public destroy() {
 		this.#cleanup();
-		browser.storage.onChanged.removeListener(this.#onStorageChange);
+		browser.storage.sync.onChanged.removeListener(this.#onStorageChange);
 	}
 }
 

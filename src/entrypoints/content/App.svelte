@@ -23,7 +23,7 @@ import { store } from './store.svelte';
 import { providerStore } from '~/entrypoints/options/lib/Providers/providerStore.svelte';
 import Trigger from './lib/Trigger.svelte';
 import Popup from './lib/Popup/Popup.svelte';
-import { getSelectedText, getSelectedElemRect, getSelectedEndCoord, isInTextField } from './utils/rect';
+import { getSelectedText, getSelectedElemRect, getSelectedEndCoord, isInTextField } from './utils/coords';
 import { CUSTOM_ELEMENT_TAG } from '~/shared/constants';
 import { detectLanguage } from '~/shared/browser';
 import { isBrowserTranslationAvailable } from '~/entrypoints/background/providers/browser';
@@ -48,13 +48,16 @@ function onMouseup(event: MouseEvent) {
 	const isInAppElem = target.closest(CUSTOM_ELEMENT_TAG);
 	if (isInAppElem) return;
 
-	const selectedText = getSelectedText().trim();
+	const selectedText = getSelectedText();
 
 	store.selectedText = selectedText;
 	store.selectedElemRect = getSelectedElemRect();
 	store.selectedEndCoord = getSelectedEndCoord();
 	store.isInTextField = isInTextField();
 	store.hostname = window.location.hostname;
+
+	// console.debug('selectedElemRect', store.selectedElemRect);
+	// console.debug('selectedEndCoord', store.selectedEndCoord);
 }
 
 async function isTextInTargetLang() {

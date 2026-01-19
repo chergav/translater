@@ -60,6 +60,7 @@ export class TranslationService {
 					message.text,
 					message.targetLang,
 					message.currentModelId,
+					message.sourceLang,
 				);
 				break;
 			case 'cancel':

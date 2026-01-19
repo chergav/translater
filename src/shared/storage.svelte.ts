@@ -28,6 +28,7 @@ const initialSettings: Settings = {
 class Storage {
 	#cleanup: () => void;
 	#isPreferredDark = new MediaQuery('prefers-color-scheme: dark');
+	#isWriting = false;
 	public settings: Settings;
 	public themeClass: Theme.Light | Theme.Dark;
 
@@ -36,11 +37,13 @@ class Storage {
 		this.themeClass = $derived(this.#getThemeClass(this.settings.theme));
 		this.#cleanup = $effect.root(() => {
 			$effect(() => {
+				if (this.#isWriting) return;
+
 				const stateSnapshot = $state.snapshot(this.settings);
 				this.#sync(stateSnapshot);
 			});
 		});
-		browser.storage.onChanged.addListener(this.#onStorageChange);
+		browser.storage.local.onChanged.addListener(this.#onStorageChange);
 	}
 
 	#getThemeClass(theme: Theme) {
@@ -54,19 +57,15 @@ class Storage {
 		const external = await storageGet();
 
 		if (!deepEqual(external, snapshot)) {
-			browser.storage.onChanged.removeListener(this.#onStorageChange);
+			this.#isWriting = true;
 			await storageSet(snapshot);
-			browser.storage.onChanged.addListener(this.#onStorageChange);
+			this.#isWriting = false;
 		}
 	}
 
 	// arrow func to bind this class
-	#onStorageChange = (
-		changes: { [key: string]: Browser.storage.StorageChange },
-		areaName: Browser.storage.AreaName,
-	) => {
-		if (areaName !== 'local') return;
-
+	#onStorageChange = (changes: { [key: string]: Browser.storage.StorageChange }) => {
+		this.#isWriting = true;
 		const stateSnapshot = $state.snapshot(this.settings);
 
 		for (const [keyString, {  newValue }] of Object.entries(changes)) {
@@ -75,11 +74,13 @@ class Storage {
 				Object.assign(this.settings, { [key]: newValue });
 			}
 		}
+
+		this.#isWriting = false;
 	};
 
 	public destroy() {
 		this.#cleanup();
-		browser.storage.onChanged.removeListener(this.#onStorageChange);
+		browser.storage.local.onChanged.removeListener(this.#onStorageChange);
 	}
 }
 
