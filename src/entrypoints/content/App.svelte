@@ -55,9 +55,6 @@ function onMouseup(event: MouseEvent) {
 	store.selectedEndCoord = getSelectedEndCoord();
 	store.isInTextField = isInTextField();
 	store.hostname = window.location.hostname;
-
-	// console.debug('selectedElemRect', store.selectedElemRect);
-	// console.debug('selectedEndCoord', store.selectedEndCoord);
 }
 
 async function isTextInTargetLang() {
@@ -98,7 +95,7 @@ $effect(() => {
 
 	return () => {
 		browser.runtime.onMessage.removeListener(onMessage);
-		storage.destroy();
+		// storage.destroy();
 	};
 });
 

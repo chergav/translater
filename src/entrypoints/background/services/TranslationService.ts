@@ -144,7 +144,7 @@ export class TranslationService {
 
 			switch (provider.protocol) {
 				case 'simple-api':
-					await this.translateWithSimpleAPI(provider, model, truncatedText, tgtLang, controller, portData);
+					await this.translateWithSimpleAPI(provider, model, truncatedText, tgtLang, controller, portData, sourceLang);
 					break;
 				case 'browser-api':
 					await this.translateWithBrowserAPI(provider, model, truncatedText, tgtLang, controller, portData, sourceLang);
@@ -188,12 +188,13 @@ export class TranslationService {
 		tgtLang: Language,
 		controller: AbortController,
 		portData: TranslationPort,
+		sourceLanguage?: string,
 	) {
 		let translation: string;
 
 		switch (provider.id) {
 			case 'mymemory':
-				translation = await translateWithMyMemory(text, tgtLang.code, controller.signal);
+				translation = await translateWithMyMemory(text, tgtLang.code, controller.signal, sourceLanguage);
 				break;
 			default:
 				throw new Error(`Unknown simple API provider: ${provider.id}`);
@@ -214,7 +215,7 @@ export class TranslationService {
 		portData: TranslationPort,
 		sourceLanguage?: string,
 	) {
-		const { stream, sourceLang } = await translateWithTranslationAPI(
+		const { translation, sourceLang } = await translateWithTranslationAPI(
 			text,
 			tgtLang.code,
 			controller.signal,
@@ -226,21 +227,6 @@ export class TranslationService {
 			},
 			sourceLanguage,
 		);
-		let translated = '';
-
-		for await (const chunk of stream) {
-			if (controller.signal.aborted) {
-				break;
-			}
-
-			translated += chunk;
-
-			portData.port.postMessage({
-				type: 'translation-chunk',
-				chunk,
-				sourceLang,
-			} satisfies MessageConnectResponse);
-		}
 
 		if (controller.signal.aborted) {
 			portData.port.postMessage({
@@ -249,11 +235,86 @@ export class TranslationService {
 		} else {
 			portData.port.postMessage({
 				type: 'translation-complete',
-				finalText: translated,
+				finalText: translation,
 				sourceLang,
 			} satisfies MessageConnectResponse);
 		}
 	}
+
+	// private async translateWithSimpleAPI(
+	// 	provider: TranslationProvider,
+	// 	model: TranslationModel,
+	// 	text: string,
+	// 	tgtLang: Language,
+	// 	controller: AbortController,
+	// 	portData: TranslationPort,
+	// 	sourceLanguage?: string,
+	// ) {
+	// 	let translation: string;
+
+	// 	switch (provider.id) {
+	// 		case 'mymemory':
+	// 			translation = await translateWithMyMemory(text, tgtLang.code, controller.signal, sourceLanguage);
+	// 			break;
+	// 		default:
+	// 			throw new Error(`Unknown simple API provider: ${provider.id}`);
+	// 	}
+
+	// 	portData.port.postMessage({
+	// 		type: 'translation-complete',
+	// 		finalText: translation,
+	// 	} satisfies MessageConnectResponse);
+	// }
+
+	// private async translateWithBrowserAPI(
+	// 	provider: TranslationProvider,
+	// 	model: TranslationModel,
+	// 	text: string,
+	// 	tgtLang: Language,
+	// 	controller: AbortController,
+	// 	portData: TranslationPort,
+	// 	sourceLanguage?: string,
+	// ) {
+	// 	const { stream, sourceLang } = await translateWithTranslationAPI(
+	// 		text,
+	// 		tgtLang.code,
+	// 		controller.signal,
+	// 		(percent: number) => {
+	// 			portData.port.postMessage({
+	// 				type: 'download-progress',
+	// 				percent,
+	// 			} satisfies MessageConnectResponse);
+	// 		},
+	// 		sourceLanguage,
+	// 	);
+	// 	let translated = '';
+
+	// 	for await (const chunk of stream) {
+	// 		if (controller.signal.aborted) {
+	// 			break;
+	// 		}
+
+	// 		translated += chunk;
+
+	// 		portData.port.postMessage({
+	// 			type: 'translation-chunk',
+	// 			chunk,
+	// 			sourceLang,
+	// 		} satisfies MessageConnectResponse);
+	// 	}
+
+	// 	if (controller.signal.aborted) {
+	// 		portData.port.postMessage({
+	// 			type: 'translation-cancel',
+	// 		} satisfies MessageConnectResponse);
+	// 	} else {
+	// 		portData.port.postMessage({
+	// 			type: 'translation-complete',
+	// 			finalText: translated,
+	// 			sourceLang,
+	// 		} satisfies MessageConnectResponse);
+	// 	}
+	// }
 
 	private buildPrompt(text: string, targetLang: Language) {
 		return `You are a translator. Your only task is to translate the text provided below.

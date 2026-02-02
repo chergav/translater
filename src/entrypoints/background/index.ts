@@ -1,6 +1,6 @@
 import type { Message } from '~/types';
 import { googleTranslate, googleTTS } from './providers/google';
-import { getUninstallUrl } from '~/shared/constants';
+import { INSTALL_URL, getUninstallUrl } from '~/shared/constants';
 import { TranslationService } from './services/TranslationService';
 
 export default defineBackground({
@@ -151,6 +151,7 @@ export default defineBackground({
 		browser.runtime.onInstalled.addListener(async details => {
 			switch (details.reason) {
 				case browser.runtime.OnInstalledReason.INSTALL:
+					await browser.tabs.create({ url: INSTALL_URL });
 					await ensureContentScriptInTabs();
 					break;
 				case browser.runtime.OnInstalledReason.UPDATE:

@@ -100,6 +100,7 @@ class Store {
 					},
 					onComplete: (finalText, sourceLang) => {
 						if (this.translationAi) {
+							this.downloadProgress = null;
 							this.translationAi.text = finalText;
 							this.translationAi.isStreaming = false;
 						}
@@ -112,6 +113,7 @@ class Store {
 						console.log('Translation error:', error);
 						this.errors.push(error);
 						if (this.translationAi) {
+							this.downloadProgress = null;
 							this.translationAi.isStreaming = false;
 						}
 						resolve(null);
@@ -119,6 +121,7 @@ class Store {
 					onCancel: () => {
 						console.log('Translation canceled');
 						if (this.translationAi) {
+							this.downloadProgress = null;
 							this.translationAi.isStreaming = false;
 						}
 						resolve(null);
@@ -210,7 +213,7 @@ class Store {
 		storage.settings.history.push(historyItem);
 
 		if (storage.settings.history.length >= storage.settings.historyLength) {
-			storage.settings.history = storage.settings.history.slice(0, storage.settings.historyLength);
+			storage.settings.history = storage.settings.history.slice(-storage.settings.historyLength);
 		}
 	}
 

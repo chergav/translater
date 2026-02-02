@@ -1,6 +1,6 @@
 <div
 	class="border-b border-color-surface-high py-2 text-sm last:border-b-0"
-	transition:slide={{ duration: 250 }}
+	out:slide={{ duration: 250 }}
 >
 	<div class="mb-2 flex justify-between">
 		<div class="flex items-center gap-2">
@@ -24,7 +24,7 @@
 	<div bind:this={elemOrig} class:line-clamp-1={truncateOrig}>
 		{historyItem.orig}
 	</div>
-	{#if isOrigCollapsed}
+	{#if truncateOrig || historyItem.orig.length > 100}
 		<button
 			class="mb-1 cursor-pointer text-xs font-medium text-color-on-surface-variant underline"
 			onclick={() => {
@@ -38,7 +38,7 @@
 	<div bind:this={elemTrans} class={[truncateTrans && 'line-clamp-1', 'text-color-on-surface-variant']}>
 		{historyItem.trans}
 	</div>
-	{#if isTransCollapsed}
+	{#if truncateTrans || historyItem.trans.length > 100}
 		<button
 			class="mb-1 cursor-pointer text-xs font-medium text-color-on-surface-variant underline"
 			onclick={() => {
@@ -64,12 +64,12 @@ interface Props {
 
 let { historyItem }: Props = $props();
 
-let truncateOrig = $state<boolean>(true);
-let truncateTrans = $state<boolean>(true);
+// svelte-ignore state_referenced_locally
+let truncateOrig = $state<boolean>(historyItem.orig.length > 100);
+// svelte-ignore state_referenced_locally
+let truncateTrans = $state<boolean>(historyItem.trans.length > 100);
 let elemOrig = $state<HTMLDivElement>();
 let elemTrans = $state<HTMLDivElement>();
-let isOrigCollapsed = $derived(elemOrig && elemOrig.scrollHeight > elemOrig.clientHeight);
-let isTransCollapsed = $derived(elemTrans && elemTrans.scrollHeight > elemTrans.clientHeight);
 
 // @ts-expect-error ignore messageName
 const getLang = (lang: string) => browser.i18n.getMessage(`language_${lang.replace('-', '_')}`).toLowerCase();

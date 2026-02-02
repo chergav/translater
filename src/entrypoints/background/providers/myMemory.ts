@@ -31,8 +31,9 @@ export async function translateWithMyMemory(
 	text: string,
 	targetLang: string,
 	signal: AbortSignal,
+	sourceLanguage?: string,
 ): Promise<string> {
-	const sourceLang = await detectLanguage(text);
+	const sourceLang = sourceLanguage ?? await detectLanguage(text);
 	const userEmail = await getUserEmail();
 
 	const url = new URL('https://api.mymemory.translated.net/get');

@@ -27,24 +27,29 @@ export interface TTS {
 
 export const getVoices = async (): Promise<SpeechSynthesisVoice[]> => {
 	return new Promise(resolve => {
-		let voices = speechSynthesis.getVoices();
-		if (voices.length > 0) {
-			resolve(voices);
-		} else {
-			const interval = setInterval(() => {
-				voices = speechSynthesis.getVoices();
-				if (voices.length > 0) {
-					clearInterval(interval);
-					resolve(voices);
-				}
-			}, 100);
+		try {
+			let voices = speechSynthesis.getVoices();
+			if (voices.length > 0) {
+				resolve(voices);
+			} else {
+				const interval = setInterval(() => {
+					voices = speechSynthesis.getVoices();
+					if (voices.length > 0) {
+						clearInterval(interval);
+						resolve(voices);
+					}
+				}, 100);
 
-			setTimeout(() => {
-				if (voices.length === 0) {
-					clearInterval(interval);
-					resolve([]);
-				}
-			}, 1000);
+				setTimeout(() => {
+					if (voices.length === 0) {
+						clearInterval(interval);
+						resolve([]);
+					}
+				}, 1000);
+			}
+		} catch (error) {
+			console.debug(error);
+			resolve([]);
 		}
 	});
 };

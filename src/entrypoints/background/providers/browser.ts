@@ -1,25 +1,42 @@
 export const unavailableErrorMessage = 'Browser Translation API is not available.\nThis feature only works in Chrome 138+, and Opera 122+.\nAvailability may be subject to geographical restrictions.';
 
+async function checkLanguageDetector(): Promise<'available' | 'unavailable' | 'not-implemented'> {
+	if (typeof LanguageDetector === 'undefined') {
+		return 'not-implemented';
+	}
+
+	try {
+		const result = await LanguageDetector.availability({
+			expectedInputLanguages: ['en', 'es', 'fr', 'de', 'ru', 'zh', 'ja', 'ko'],
+		});
+		return result === 'unavailable' ? 'unavailable' : 'available';
+	} catch (error) {
+		// Opera: API exists but throws - treat as not implemented
+		console.debug(error);
+		return 'not-implemented';
+	}
+}
+
 export async function isBrowserTranslationAvailable(): Promise<boolean> {
-	if (typeof LanguageDetector === 'undefined' || typeof Translator === 'undefined') {
+	if (typeof Translator === 'undefined') {
 		return false;
 	}
 
 	try {
-		const detectorCheck = await LanguageDetector.availability({
-			expectedInputLanguages: ['en', 'es', 'fr', 'de', 'ru', 'zh', 'ja', 'ko'],
-		});
-
-		if (detectorCheck === 'unavailable') {
-			return false;
-		}
-
 		const translatorCheck = await Translator.availability({
 			sourceLanguage: 'en',
 			targetLanguage: 'es',
 		});
 
-		return translatorCheck !== 'unavailable';
+		if (translatorCheck === 'unavailable') {
+			return false;
+		}
+
+		const detectorStatus = await checkLanguageDetector();
+
+		// Reject only if explicitly unavailable (Edge)
+		// Accept if available (Chrome) or not-implemented (Opera)
+		return detectorStatus !== 'unavailable';
 	} catch (error) {
 		console.error('Error checking browser translation availability:', error);
 		return false;
@@ -67,9 +84,80 @@ async function detectLanguage(text: string, signal: AbortSignal): Promise<string
 }
 
 /**
- * Translate text using Browser Translation API (returns stream)
+ * Translate text using Browser Translation API
  */
 export async function translateWithTranslationAPI(
+	text: string,
+	targetLang: string,
+	signal: AbortSignal,
+	onDownloadProgress?: (percent: number) => void,
+	sourceLanguage?: string,
+): Promise<{
+	translation: string
+	sourceLang: string
+}> {
+	const isTranslationAPIAvailable = await isBrowserTranslationAvailable();
+
+	if (!isTranslationAPIAvailable) {
+		throw new Error(unavailableErrorMessage);
+	}
+
+	const sourceLang = sourceLanguage ?? await detectLanguage(text, signal);
+
+	const availability = await Translator.availability({
+		sourceLanguage: sourceLang,
+		targetLanguage: targetLang,
+	});
+
+	if (availability === 'unavailable') {
+		throw new Error(`Translation from ${sourceLang} to ${targetLang} is not supported`);
+	}
+
+	if (availability === 'downloadable' || availability === 'downloading') {
+		console.log(`Model for ${sourceLang} -> ${targetLang} needs to be downloaded...`);
+	}
+
+	if (signal.aborted) {
+		throw new DOMException('Translation cancelled', 'AbortError');
+	}
+
+	const translator = await Translator.create({
+		sourceLanguage: sourceLang,
+		targetLanguage: targetLang,
+		monitor: onDownloadProgress
+			? m => {
+				m.addEventListener('downloadprogress', e => {
+					onDownloadProgress(e.loaded);
+				});
+			}
+			: undefined,
+		signal,
+	});
+
+	if (signal.aborted) {
+		translator.destroy();
+		throw new DOMException('Translation cancelled', 'AbortError');
+	}
+
+	// Keep new line characters
+	const lines = text.split(/\r?\n/);
+	const translatedLines = await Promise.all(
+		lines.map(line =>
+			line.trim() ? translator.translate(line, { signal }) : '',
+		),
+	);
+	const translation = translatedLines.join('\n');
+
+	return {
+		translation,
+		sourceLang,
+	};
+}
+
+/**
+ * Translate text using Browser Translation API (returns stream)
+ */
+export async function translateWithTranslationAPIStream(
 	text: string,
 	targetLang: string,
 	signal: AbortSignal,

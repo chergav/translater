@@ -30,6 +30,7 @@
 		<div class="py-2 text-sm font-medium text-color-primary">{getRelativeDate(date)}</div>
 		{#each historyItemArray as historyItem (historyItem.time)}
 			<HistoryEntry {historyItem} />
+			<!-- <div>{historyItem.time}</div> -->
 		{/each}
 	{/each}
 </div>
@@ -49,11 +50,12 @@ interface GroupedHistory {
 }
 
 let groupedHistory = $derived.by(() => {
-	const history = $state.snapshot(storage.settings.history);
+	// const history = $state.snapshot(storage.settings.history);
 
-	history.sort((a, b) => b.time - a.time);
+	// history.sort((a, b) => b.time - a.time);
+	const sorted = storage.settings.history.toSorted((a, b) => b.time - a.time);
 
-	return history.reduce<GroupedHistory>((acc, item) => {
+	return sorted.reduce<GroupedHistory>((acc, item) => {
 		const date = formatDate(item.time);
 		(acc[date] ||= []).push(item);
 		return acc;

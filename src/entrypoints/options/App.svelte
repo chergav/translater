@@ -23,6 +23,11 @@
 			<div class="flex flex-col items-center gap-2">
 				<RateUs />
 				<TranslaterVersion />
+				<Link
+					class="text-sm"
+					href="https://chergav.github.io/extensions/translater/onboarding/"
+					label="Onboarding"
+				/>
 			</div>
 		</div>
 		<div class="w-full overflow-hidden rounded-[16px] bg-color-surface">
@@ -39,6 +44,7 @@
 import type { Component } from 'svelte';
 import { storage } from '~/shared/storage.svelte';
 import Button from '~/lib/Button.svelte';
+import Link from '~/lib/Link.svelte';
 import TranslaterVersion from '~/lib/TranslaterVersion.svelte';
 import RateUs from '~/lib/RateUs.svelte';
 import General from './lib/General.svelte';

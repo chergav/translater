@@ -47,7 +47,7 @@ export class GoogleTTS implements TTS {
 	}
 
 	#stopAllTTS() {
-		if (window.speechSynthesis.speaking) {
+		if (window?.speechSynthesis?.speaking) {
 			window.speechSynthesis.cancel();
 		}
 

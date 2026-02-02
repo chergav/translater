@@ -42,7 +42,9 @@ export default async (ctx: ContentScriptContext) => {
 		},
 		onRemove: app => {
 			if (app) unmount(app);
+			// console.debug('[Translater]: removing UI');
 		},
 	});
 	ui.mount();
+	// console.debug('[Translater]: Mounted successfully');
 };

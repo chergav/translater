@@ -9,8 +9,15 @@ export function getBrowserAndOS(): BrowserInfo {
 		const uaData = navigator.userAgentData;
 
 		const os = uaData.platform || '';
-		const browser = uaData.brands?.[0]?.brand || '';
-		const version = uaData.brands?.[0]?.version || '';
+
+		let brand = uaData.brands?.find(b => !b.brand.includes('Not') && b.brand !== 'Chromium');
+
+		if (!brand) {
+			brand = uaData.brands?.find(b => b.brand === 'Chromium');
+		}
+
+		const browser = brand?.brand || '';
+		const version = brand?.version || '';
 
 		return {
 			os,

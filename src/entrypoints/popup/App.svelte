@@ -52,8 +52,13 @@
 		/>
 	</div>
 
-	<div class="w-full px-2 pb-2">
+	<div class="flex w-full items-center gap-2 px-2 pb-2">
 		<TranslaterVersion />
+		<Link
+			class="text-sm"
+			href="https://chergav.github.io/extensions/translater/onboarding/"
+			label="Onboarding"
+		/>
 	</div>
 
 	{#await permissionsPromise then isPermissions}
