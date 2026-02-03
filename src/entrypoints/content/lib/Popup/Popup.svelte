@@ -9,7 +9,7 @@
 	onclickoutside={onClickOutside}
 	use:clickOutside
 	use:popupPosition
-	transition:fade={{ duration: 100 }}
+	in:fade={{ duration: 150 }}
 >
 	<div class="flex w-full flex-col">
 		<header

@@ -27,6 +27,7 @@ import { getSelectedText, getSelectedElemRect, getSelectedEndCoord, isInTextFiel
 import { CUSTOM_ELEMENT_TAG } from '~/shared/constants';
 import { detectLanguage } from '~/shared/browser';
 import { isBrowserTranslationAvailable } from '~/entrypoints/background/providers/browser';
+import { useDebounce } from 'runed';
 
 let isTextInTargetLangPromise = $derived<Promise<boolean>>(isTextInTargetLang());
 let isSettingsShowButton = $derived<boolean>(
@@ -42,7 +43,7 @@ let isShowTrigger = $derived<boolean>(
 	!isDomainInBlacklist,
 );
 
-function onMouseup(event: MouseEvent) {
+const debouncedMouseup = useDebounce((event: MouseEvent) => {
 	if (event.button !== 0) return; // is left click
 	const target = event.target as Element;
 	const isInAppElem = target.closest(CUSTOM_ELEMENT_TAG);
@@ -55,6 +56,10 @@ function onMouseup(event: MouseEvent) {
 	store.selectedEndCoord = getSelectedEndCoord();
 	store.isInTextField = isInTextField();
 	store.hostname = window.location.hostname;
+}, 200);
+
+function onMouseup(event: MouseEvent) {
+	debouncedMouseup(event);
 }
 
 async function isTextInTargetLang() {

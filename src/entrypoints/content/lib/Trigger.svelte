@@ -10,7 +10,7 @@
 		onclick={openPopup}
 		title={browser.i18n.getMessage('tooltip_translate_text')}
 		type="button"
-		transition:fade={{ duration: 100 }}
+		in:fade|global={{ duration: 150 }}
 	>
 		<Icon d={customTranslatePath} />
 	</button>
