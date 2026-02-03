@@ -81,14 +81,23 @@ export default defineBackground({
 
 		browser.runtime.onMessage.addListener(handleMessage);
 
-		browser.contextMenus.onClicked.addListener((info, tab) => {
-			if (info.menuItemId === 'translaterMenu' && info.selectionText && tab?.id) {
-				if (tab.id < 0) {
-					console.error('Invalid tab ID (probably Edge PDF viewer bug):', tab?.id);
+		browser.contextMenus.onClicked.addListener(async (info, tab) => {
+			if (info.menuItemId === 'translaterMenu' && info.selectionText) {
+				let tabId = tab?.id;
+
+				// Workaround for Edge, Opera PDF viewer bug with negative tab IDs
+				if (!tabId || tabId < 0) {
+					console.debug('Invalid tab ID (PDF viewer bug):', tabId);
+					const currentTab = await getCurrentTab();
+					tabId = currentTab?.id;
+				}
+
+				if (!tabId || tabId < 0) {
+					console.error('Could not determine valid tab ID');
 					return;
 				}
 
-				browser.tabs.sendMessage<Message>(tab.id, {
+				await browser.tabs.sendMessage<Message>(tabId, {
 					type: 'createPopup',
 					content: {
 						text: info.selectionText,

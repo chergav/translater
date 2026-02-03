@@ -21,7 +21,7 @@
 			variant="danger"
 		/>
 	</div>
-	<div bind:this={elemOrig} class:line-clamp-1={truncateOrig}>
+	<div class:line-clamp-1={truncateOrig}>
 		{historyItem.orig}
 	</div>
 	{#if truncateOrig || historyItem.orig.length > 100}
@@ -35,7 +35,7 @@
 			{truncateOrig ? browser.i18n.getMessage('text_expand') : browser.i18n.getMessage('text_collapse')}
 		</button>
 	{/if}
-	<div bind:this={elemTrans} class={[truncateTrans && 'line-clamp-1', 'text-color-on-surface-variant']}>
+	<div class={[truncateTrans && 'line-clamp-1', 'text-color-on-surface-variant']}>
 		{historyItem.trans}
 	</div>
 	{#if truncateTrans || historyItem.trans.length > 100}
@@ -68,8 +68,6 @@ let { historyItem }: Props = $props();
 let truncateOrig = $state<boolean>(historyItem.orig.length > 100);
 // svelte-ignore state_referenced_locally
 let truncateTrans = $state<boolean>(historyItem.trans.length > 100);
-let elemOrig = $state<HTMLDivElement>();
-let elemTrans = $state<HTMLDivElement>();
 
 // @ts-expect-error ignore messageName
 const getLang = (lang: string) => browser.i18n.getMessage(`language_${lang.replace('-', '_')}`).toLowerCase();
