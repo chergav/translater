@@ -32,7 +32,7 @@ export default defineBackground({
 			}
 		}
 
-		async function openTranslater() {
+		async function openTranslator() {
 			const tab = await getCurrentTab();
 
 			if (tab && tab.id) {
@@ -68,8 +68,8 @@ export default defineBackground({
 				case 'openURL':
 					browser.tabs.create({ url: message.content.url });
 					break;
-				case 'openTranslater':
-					openTranslater();
+				case 'openTranslator':
+					openTranslator();
 					break;
 				default:
 					console.error(`Message type "${message.type}" not found.`);
@@ -108,8 +108,8 @@ export default defineBackground({
 
 		browser.commands.onCommand.addListener(command => {
 			switch (command) {
-				case 'open-translater':
-					openTranslater();
+				case 'open-translator':
+					openTranslator();
 					break;
 				default:
 					console.error(`Command "${command}" not found.`);

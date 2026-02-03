@@ -2,7 +2,7 @@
 	<div class="flex w-full items-center justify-between p-2">
 		<div class="flex items-center gap-3">
 			<img alt="" src="/icons/48.png" width="32" />
-			<span class="text-lg">Translater</span>
+			<span class="text-lg">Translator</span>
 		</div>
 		<div>
 			<Button
@@ -15,8 +15,8 @@
 
 	<Button
 		icon={mdiApplicationOutline}
-		label={browser.i18n.getMessage('commands_open_translater')}
-		onclick={openTranslater}
+		label={browser.i18n.getMessage('commands_open_translator')}
+		onclick={openTranslator}
 		variant="filled"
 	/>
 
@@ -53,7 +53,7 @@
 	</div>
 
 	<div class="flex w-full items-center gap-2 px-2 pb-2">
-		<TranslaterVersion />
+		<TranslatorVersion />
 		<Link
 			class="text-sm"
 			href="https://chergav.github.io/extensions/translater/onboarding/"
@@ -83,7 +83,7 @@ import Button from '~/lib/Button.svelte';
 import Shortcuts from '~/lib/Shortcuts.svelte';
 import Divider from '~/lib/Divider.svelte';
 import Link from '~/lib/Link.svelte';
-import TranslaterVersion from '~/lib/TranslaterVersion.svelte';
+import TranslatorVersion from '~/lib/TranslatorVersion.svelte';
 import RateUs from '~/lib/RateUs.svelte';
 import { mdiApplicationOutline, mdiCogOutline } from '@mdi/js';
 import { getShortcutByCommand } from '~/shared/browser';
@@ -95,14 +95,14 @@ function openOptionsPage() {
 	browser.runtime.openOptionsPage();
 }
 
-function openTranslater() {
+function openTranslator() {
 	browser.runtime.sendMessage<Message>({
-		type: 'openTranslater',
+		type: 'openTranslator',
 		content: {},
 	});
 }
 
-let shortcutKeysPromise = getShortcutByCommand('open-translater');
+let shortcutKeysPromise = getShortcutByCommand('open-translator');
 
 const openExtensionsShortcuts = () => {
 	browser.tabs.create({ url: 'chrome://extensions/shortcuts' });

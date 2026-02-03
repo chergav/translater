@@ -1,9 +1,9 @@
 {
     "app_name": {
-        "message": "Translater - Bản dịch văn bản đã chọn"
+        "message": "Trình dịch - dịch văn bản đã chọn"
     },
     "app_description": {
-        "message": "Dịch văn bản đã chọn với google dịch"
+        "message": "Dịch văn bản đã chọn bằng Google Translate"
     },
     "app_version": {
         "message": "phiên bản"
@@ -15,20 +15,10 @@
         "message": "Cài đặt"
     },
     "options_title": {
-        "message": "$App_name$ - Cài đặt",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Trình dịch - cài đặt"
     },
-    "commands_open_translater": {
-        "message": "Mở $app_name$",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+    "commands_open_translator": {
+        "message": "Mở Trình dịch"
     },
     "popup_or": {
         "message": "Hoặc"
@@ -40,22 +30,22 @@
         "message": "Cửa sổ bật lên"
     },
     "options_tab_appearance": {
-        "message": "Ngoại hình bên ngoài"
+        "message": "Hình dáng bên ngoài"
     },
     "options_tab_history": {
         "message": "Lịch sử"
     },
     "options_inline_button_show": {
-        "message": "Hiển thị nút khi văn bản được chọn"
+        "message": "Nút hiển thị khi văn bản được chọn"
     },
     "options_text_field_button_show": {
-        "message": "Hiển thị nút trong Textfield"
+        "message": "Nút hiển thị trong trường văn bản"
     },
     "options_hide_button_on_sites": {
         "message": "Ẩn nút trên các trang web này:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Thêm tên miền bằng menu của cửa sổ bật lên trên trang web bạn muốn loại trừ"
+        "message": "Thêm tên miền bằng menu cửa sổ bật lên trên trang bạn muốn loại trừ"
     },
     "options_show_original_text": {
         "message": "Hiển thị văn bản nguồn"
@@ -67,16 +57,16 @@
         "message": "Khóa cửa sổ bật lên"
     },
     "options_lock_popup_window_hint": {
-        "message": "Nếu được bật, cửa sổ bật lên sẽ không đóng khi nhấp vào bên ngoài"
+        "message": "Nếu được bật, cửa sổ bật lên sẽ không đóng khi nhấp vào bên ngoài nó"
     },
     "options_history_length": {
-        "message": "Mục nhập lịch sử (Max.)"
+        "message": "Mục lịch sử (tối đa)"
     },
     "options_records_in_history": {
-        "message": "Bài dự thi trong lịch sử:"
+        "message": "Các mục trong lịch sử:"
     },
     "options_history_enable": {
-        "message": "Cho phép lịch sử"
+        "message": "Bật lịch sử"
     },
     "options_clear_history": {
         "message": "Xóa lịch sử"
@@ -94,25 +84,25 @@
         "message": "Tiếng nói"
     },
     "options_tts_table_caption": {
-        "message": "Nếu một ngôn ngữ được liệt kê, một dịch vụ văn bản thành giọng nói bên ngoài sẽ được sử dụng."
+        "message": "Nếu ngôn ngữ không được liệt kê, dịch vụ chuyển văn bản sang giọng nói bên ngoài sẽ được sử dụng."
     },
     "options_tts_no_voices_found": {
-        "message": "Trình duyệt của bạn không hỗ trợ tổng hợp lời nói. Thay vào đó, chúng tôi sẽ sử dụng một dịch vụ bên ngoài."
+        "message": "Trình duyệt của bạn không hỗ trợ tổng hợp giọng nói. Thay vào đó, chúng tôi sẽ sử dụng một dịch vụ bên ngoài."
     },
     "options_edit_keyboard_shortcut": {
-        "message": "Chỉnh sửa phím tắt"
+        "message": "chỉnh sửa phím tắt"
     },
     "options_keyboard_shortcut_open_popup": {
         "message": "Phím tắt để mở cửa sổ bật lên"
     },
     "options_key_combination_is_not_set": {
-        "message": "phím tắt không được đặt"
+        "message": "phím tắt chưa được đặt"
     },
     "options_font_size": {
-        "message": "Kích thước phông chữ"
+        "message": "Cỡ chữ"
     },
     "options_font_size_xs": {
-        "message": "Thêm nhỏ (12px)"
+        "message": "Cực nhỏ (12px)"
     },
     "options_font_size_sm": {
         "message": "Nhỏ (14px)"
@@ -127,19 +117,19 @@
         "message": "Cực lớn (20px)"
     },
     "options_support_msg": {
-        "message": "Nếu một cái gì đó không hoạt động, hoặc bạn có bất kỳ đề xuất nào, xin vui lòng cho tôi biết ở đây"
+        "message": "Nếu có điều gì đó không hiệu quả hoặc bạn có bất kỳ đề xuất nào, vui lòng cho tôi biết tại đây"
     },
     "options_support_donations": {
         "message": "Nếu bạn muốn hỗ trợ phần mềm miễn phí này"
     },
     "options_address": {
-        "message": "Địa chỉ"
+        "message": "địa chỉ"
     },
     "options_copy_address": {
-        "message": "Địa chỉ sao chép"
+        "message": "Sao chép địa chỉ"
     },
     "text_expand": {
-        "message": "Hơn"
+        "message": "Thêm"
     },
     "text_collapse": {
         "message": "Ít hơn"
@@ -148,16 +138,16 @@
         "message": "Dịch sang:"
     },
     "popup_dictionary": {
-        "message": "Từ điển"
+        "message": "từ điển"
     },
     "popup_dictionary_frequency": {
-        "message": "Tính thường xuyên"
+        "message": "Tần số"
     },
     "popup_definitions": {
-        "message": "Định nghĩa"
+        "message": "định nghĩa"
     },
     "popup_definitions_synonyms": {
-        "message": "Từ đồng nghĩa:"
+        "message": "từ đồng nghĩa:"
     },
     "popup_examples": {
         "message": "Ví dụ"
@@ -169,10 +159,10 @@
         "message": "Ngôn ngữ gốc:"
     },
     "popup_menu_reverse_translate": {
-        "message": "Đảo ngược dịch"
+        "message": "Dịch ngược"
     },
     "popup_menu_lock_window": {
-        "message": "Cửa sổ khóa"
+        "message": "Khóa cửa sổ"
     },
     "popup_menu_unlock_window": {
         "message": "Mở khóa cửa sổ"
@@ -187,10 +177,10 @@
         "message": "Cài đặt bổ sung"
     },
     "popup_placeholder_translation": {
-        "message": "Dịch"
+        "message": "Dịch thuật"
     },
     "theme_light": {
-        "message": "Chủ đề ánh sáng"
+        "message": "Chủ đề nhẹ nhàng"
     },
     "theme_dark": {
         "message": "Chủ đề tối"
@@ -202,10 +192,10 @@
         "message": "Dịch văn bản đã chọn"
     },
     "tooltip_copy_to_clipboard": {
-        "message": "Sao chép vào bảng tạm"
+        "message": "Sao chép vào khay nhớ tạm"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "Sao chép không hỗ trợ trên các trang web HTTP"
+        "message": "Sao chép không được hỗ trợ trên các trang HTTP"
     },
     "tooltip_copyed": {
         "message": "Đã sao chép"
@@ -220,25 +210,25 @@
         "message": "Dừng lại"
     },
     "tooltip_listen_language_is_not_support": {
-        "message": "Ngôn ngữ không hỗ trợ"
+        "message": "Ngôn ngữ không được hỗ trợ"
     },
     "tooltip_go_back": {
-        "message": "Mặt sau"
+        "message": "Quay lại"
     },
     "tooltip_go_forward": {
-        "message": "Phía trước"
+        "message": "Chuyển tiếp"
     },
     "tooltip_clear_text": {
-        "message": "Văn bản rõ ràng"
+        "message": "Xóa văn bản"
     },
     "tooltip_clear_search": {
-        "message": "Tìm kiếm rõ ràng"
+        "message": "Xóa tìm kiếm"
     },
     "date_today": {
-        "message": "Hôm nay"
+        "message": "hôm nay"
     },
     "date_yesterday": {
-        "message": "Hôm qua"
+        "message": "hôm qua"
     },
     "forefox_perm_header": {
         "message": "Cho phép khởi chạy trong Firefox"
@@ -250,58 +240,58 @@
         "message": "Quản lý quyền"
     },
     "select_language_search_placeholder": {
-        "message": "Tìm ngôn ngữ (Mã hoặc tên ISO)"
+        "message": "Tìm ngôn ngữ (mã ISO hoặc tên)"
     },
     "select_language_search_no_results": {
         "message": "Không có kết quả"
     },
     "try_my_extensions": {
-        "message": "🚀 Hãy thử các phần mở rộng khác của tôi"
+        "message": "🚀 Hãy thử các tiện ích mở rộng khác của tôi"
     },
     "language_auto": {
-        "message": "Phát hiện ngôn ngữ"
+        "message": "phát hiện ngôn ngữ"
     },
     "language_ab": {
         "message": "Abkhaz"
     },
     "language_ace": {
-        "message": "Acehnese"
+        "message": "Tiếng Aceh"
     },
     "language_ach": {
         "message": "Acholi"
     },
     "language_af": {
-        "message": "Người Afrika"
+        "message": "tiếng Afrikaans"
     },
     "language_sq": {
-        "message": "Albania"
+        "message": "tiếng Albania"
     },
     "language_alz": {
         "message": "Alur"
     },
     "language_am": {
-        "message": "Amharic"
+        "message": "tiếng Amharic"
     },
     "language_ar": {
-        "message": "Tiếng Ả Rập"
+        "message": "tiếng Ả Rập"
     },
     "language_hy": {
-        "message": "Armenia"
+        "message": "tiếng Armenia"
     },
     "language_as": {
-        "message": "Assamese"
+        "message": "Tiếng Assam"
     },
     "language_awa": {
-        "message": "Awadhi"
+        "message": "tiếng awadhi"
     },
     "language_ay": {
         "message": "Aymara"
     },
     "language_az": {
-        "message": "Azerbaijani"
+        "message": "Tiếng Azerbaijan"
     },
     "language_ban": {
-        "message": "Bali"
+        "message": "tiếng Bali"
     },
     "language_bm": {
         "message": "Bambara"
@@ -310,7 +300,7 @@
         "message": "Bashkir"
     },
     "language_eu": {
-        "message": "Basque"
+        "message": "Tiếng Basque"
     },
     "language_btx": {
         "message": "Batak Karo"
@@ -322,13 +312,13 @@
         "message": "Batak Toba"
     },
     "language_be": {
-        "message": "Người Bêlarut"
+        "message": "Tiếng Belarus"
     },
     "language_bem": {
-        "message": "Bemba"
+        "message": "bemba"
     },
     "language_bn": {
-        "message": "Tiếng Bengal"
+        "message": "tiếng Bengali"
     },
     "language_bew": {
         "message": "Betawi"
@@ -337,25 +327,25 @@
         "message": "Bhojpuri"
     },
     "language_bik": {
-        "message": "BIKOL"
+        "message": "bikol"
     },
     "language_bs": {
-        "message": "Bosnian"
+        "message": "tiếng Bosnia"
     },
     "language_br": {
-        "message": "Breton"
+        "message": "tiếng Breton"
     },
     "language_bg": {
-        "message": "Bulgaria"
+        "message": "tiếng Bungari"
     },
     "language_bua": {
         "message": "Buryat"
     },
     "language_yue": {
-        "message": "Tiếng Quảng Đông"
+        "message": "tiếng Quảng Đông"
     },
     "language_ca": {
-        "message": "Catalan"
+        "message": "tiếng Catalan"
     },
     "language_ceb": {
         "message": "Cebuano"
@@ -364,43 +354,43 @@
         "message": "Chichewa (Nyanja)"
     },
     "language_zh_CN": {
-        "message": "Trung Quốc (đơn giản hóa)"
+        "message": "Tiếng Trung (Giản thể)"
     },
     "language_zh_TW": {
-        "message": "Trung Quốc (truyền thống)"
+        "message": "Tiếng Trung (truyền thống)"
     },
     "language_cv": {
         "message": "Chuvash"
     },
     "language_co": {
-        "message": "Corsican"
+        "message": "tiếng Corse"
     },
     "language_crh": {
-        "message": "Crimean Tatar"
+        "message": "Người Tatar Krym"
     },
     "language_hr": {
-        "message": "Croatia"
+        "message": "tiếng Croatia"
     },
     "language_cs": {
-        "message": "Séc"
+        "message": "tiếng Séc"
     },
     "language_da": {
-        "message": "Đan Mạch"
+        "message": "tiếng Đan Mạch"
     },
     "language_din": {
         "message": "Dinka"
     },
     "language_dv": {
-        "message": "Divehi"
+        "message": "lặn"
     },
     "language_doi": {
         "message": "Dogri"
     },
     "language_dov": {
-        "message": "DOMBE"
+        "message": "mái vòm"
     },
     "language_nl": {
-        "message": "Hà Lan"
+        "message": "tiếng Hà Lan"
     },
     "language_dz": {
         "message": "Dzongkha"
@@ -409,34 +399,34 @@
         "message": "Tiếng Anh"
     },
     "language_eo": {
-        "message": "Esperanto"
+        "message": "Quốc tế ngữ"
     },
     "language_et": {
-        "message": "Estonia"
+        "message": "tiếng Estonia"
     },
     "language_ee": {
-        "message": "Ewe"
+        "message": "cừu cái"
     },
     "language_fj": {
-        "message": "Fijian"
+        "message": "tiếng Fiji"
     },
     "language_fil": {
-        "message": "Philippines (Tagalog)"
+        "message": "Tiếng Philippin (Tagalog)"
     },
     "language_fi": {
-        "message": "Tiếng Phần Lan"
+        "message": "tiếng Phần Lan"
     },
     "language_fr": {
-        "message": "Tiếng Pháp"
+        "message": "người Pháp"
     },
     "language_fr_FR": {
         "message": "Tiếng Pháp (tiếng Pháp)"
     },
     "language_fr_CA": {
-        "message": "Pháp (Canada)"
+        "message": "Tiếng Pháp (Canada)"
     },
     "language_fy": {
-        "message": "Frisian"
+        "message": "tiếng Frisia"
     },
     "language_ff": {
         "message": "Fulfulde"
@@ -445,40 +435,40 @@
         "message": "Ga"
     },
     "language_gl": {
-        "message": "Galician"
+        "message": "tiếng Galicia"
     },
     "language_lg": {
         "message": "Ganda (Luganda)"
     },
     "language_ka": {
-        "message": "Gruzia"
+        "message": "tiếng Gruzia"
     },
     "language_de": {
-        "message": "Đức"
+        "message": "tiếng Đức"
     },
     "language_el": {
-        "message": "Hy Lạp"
+        "message": "tiếng Hy Lạp"
     },
     "language_gn": {
         "message": "Guarani"
     },
     "language_gu": {
-        "message": "Gujarati"
+        "message": "tiếng Gujarati"
     },
     "language_ht": {
-        "message": "Haiti Creole"
+        "message": "Tiếng Creole Haiti"
     },
     "language_cnh": {
         "message": "Hakha Chin"
     },
     "language_ha": {
-        "message": "Hausa"
+        "message": "Tiếng Hausa"
     },
     "language_haw": {
-        "message": "Hawaii"
+        "message": "tiếng Hawaii"
     },
     "language_iw": {
-        "message": "Tiếng Do Thái"
+        "message": "tiếng Do Thái"
     },
     "language_hil": {
         "message": "Hiligaynon"
@@ -487,55 +477,55 @@
         "message": "Tiếng Hindi"
     },
     "language_hmn": {
-        "message": "Hmong"
+        "message": "người Mông"
     },
     "language_hu": {
-        "message": "Hungary"
+        "message": "tiếng Hungary"
     },
     "language_hrx": {
         "message": "Hunsrik"
     },
     "language_is": {
-        "message": "Iceland"
+        "message": "tiếng Iceland"
     },
     "language_ig": {
-        "message": "Igbo"
+        "message": "người Igbo"
     },
     "language_ilo": {
         "message": "Iloko"
     },
     "language_id": {
-        "message": "Indonesia"
+        "message": "tiếng Indonesia"
     },
     "language_ga": {
-        "message": "Ailen"
+        "message": "người Ireland"
     },
     "language_it": {
-        "message": "Ý"
+        "message": "người Ý"
     },
     "language_ja": {
-        "message": "Nhật Bản"
+        "message": "tiếng Nhật"
     },
     "language_jw": {
-        "message": "Java"
+        "message": "tiếng Java"
     },
     "language_kn": {
-        "message": "Kannada"
+        "message": "tiếng Kannada"
     },
     "language_pam": {
         "message": "Kapampangan"
     },
     "language_kk": {
-        "message": "Kazakh"
+        "message": "Kazakhstan"
     },
     "language_km": {
-        "message": "Khmer"
+        "message": "tiếng Khmer"
     },
     "language_cgg": {
         "message": "Kiga"
     },
     "language_rw": {
-        "message": "Kinyarwanda"
+        "message": "Tiếng Kinyarwanda"
     },
     "language_ktu": {
         "message": "Kituba"
@@ -544,55 +534,55 @@
         "message": "Konkani"
     },
     "language_ko": {
-        "message": "Hàn Quốc"
+        "message": "Tiếng Hàn"
     },
     "language_kri": {
         "message": "Krio"
     },
     "language_ku": {
-        "message": "Người Kurd (Kurmanji)"
+        "message": "Tiếng Kurd (Kurmanji)"
     },
     "language_ckb": {
-        "message": "Người Kurd (Sorani)"
+        "message": "Tiếng Kurd (Sorani)"
     },
     "language_ky": {
-        "message": "Kyrgyz"
+        "message": "Tiếng Kyrgyzstan"
     },
     "language_lo": {
-        "message": "Lào"
+        "message": "tiếng Lào"
     },
     "language_ltg": {
-        "message": "Latgalian"
+        "message": "tiếng latgal"
     },
     "language_la": {
-        "message": "Latin"
+        "message": "tiếng Latinh"
     },
     "language_lv": {
-        "message": "Latvia"
+        "message": "tiếng Latvia"
     },
     "language_lij": {
-        "message": "Ligurian"
+        "message": "tiếng Ligurian"
     },
     "language_li": {
-        "message": "Limburgan"
+        "message": "người Limburg"
     },
     "language_ln": {
-        "message": "Lingala"
+        "message": "lingala"
     },
     "language_lt": {
-        "message": "Litva"
+        "message": "tiếng Litva"
     },
     "language_lmo": {
-        "message": "BLOMBARD"
+        "message": "người Lombard"
     },
     "language_luo": {
-        "message": "Luo"
+        "message": "Lạc"
     },
     "language_lb": {
-        "message": "Luxembourgish"
+        "message": "Tiếng Luxembourg"
     },
     "language_mk": {
-        "message": "Macedonia"
+        "message": "Tiếng Macedonia"
     },
     "language_mai": {
         "message": "Maithili"
@@ -604,22 +594,22 @@
         "message": "Malagasy"
     },
     "language_ms": {
-        "message": "Malay"
+        "message": "Mã Lai"
     },
     "language_ms_Arab": {
-        "message": "Malay (Jawi)"
+        "message": "Mã Lai (Jawi)"
     },
     "language_ml": {
-        "message": "Malayalam"
+        "message": "Mã Lai"
     },
     "language_mt": {
-        "message": "Người Malta"
+        "message": "tiếng Malta"
     },
     "language_mi": {
-        "message": "Maori"
+        "message": "người Maori"
     },
     "language_mr": {
-        "message": "Marathi"
+        "message": "Tiếng Marathi"
     },
     "language_chm": {
         "message": "Đồng cỏ Mari"
@@ -631,34 +621,34 @@
         "message": "Minang"
     },
     "language_lus": {
-        "message": "Mizo"
+        "message": "mizo"
     },
     "language_mn": {
-        "message": "Mông Cổ"
+        "message": "tiếng Mông Cổ"
     },
     "language_my": {
         "message": "Myanmar (Miến Điện)"
     },
     "language_nr": {
-        "message": "Ndebele (Nam)"
+        "message": "Ndebele (Miền Nam)"
     },
     "language_new": {
         "message": "Nepalbhasa (Newari)"
     },
     "language_ne": {
-        "message": "Nepal"
+        "message": "tiếng Nepal"
     },
     "language_nso": {
-        "message": "Bắc Soto (Sepedi)"
+        "message": "Bắc Sotho (Sepedi)"
     },
     "language_no": {
-        "message": "Na Uy"
+        "message": "người Na Uy"
     },
     "language_nus": {
         "message": "Nuer"
     },
     "language_oc": {
-        "message": "Accitan"
+        "message": "tiếng Occitan"
     },
     "language_or": {
         "message": "Odia (Oriya)"
@@ -667,73 +657,73 @@
         "message": "Oromo"
     },
     "language_pag": {
-        "message": "Pangasinan"
+        "message": "cá tra"
     },
     "language_pap": {
         "message": "Papiamento"
     },
     "language_ps": {
-        "message": "Tiếng trống"
+        "message": "Tiếng Pa-tô"
     },
     "language_fa": {
-        "message": "Ba Tư"
+        "message": "tiếng Ba Tư"
     },
     "language_pl": {
-        "message": "Đánh bóng"
+        "message": "tiếng Ba Lan"
     },
     "language_pt": {
-        "message": "Bồ Đào Nha"
+        "message": "tiếng Bồ Đào Nha"
     },
     "language_pt_PT": {
-        "message": "Bồ Đào Nha (Bồ Đào Nha)"
+        "message": "Tiếng Bồ Đào Nha (Bồ Đào Nha)"
     },
     "language_pt_BR": {
-        "message": "Bồ Đào Nha (Brazil)"
+        "message": "Tiếng Bồ Đào Nha (Brazil)"
     },
     "language_pa": {
-        "message": "Punjabi"
+        "message": "Tiếng Punjab"
     },
     "language_pa_Arab": {
-        "message": "Punjabi (Shahmukhi)"
+        "message": "Tiếng Punjab (Shahmukhi)"
     },
     "language_qu": {
         "message": "Quechua"
     },
     "language_rom": {
-        "message": "Romani"
+        "message": "tiếng Rumani"
     },
     "language_ro": {
-        "message": "Rumani"
+        "message": "người Rumani"
     },
     "language_rn": {
-        "message": "RUNDI"
+        "message": "Rundi"
     },
     "language_ru": {
-        "message": "Tiếng Nga"
+        "message": "tiếng Nga"
     },
     "language_sm": {
-        "message": "Samoan"
+        "message": "Tiếng Samoa"
     },
     "language_sg": {
         "message": "Sango"
     },
     "language_sa": {
-        "message": "Phạn"
+        "message": "tiếng Phạn"
     },
     "language_gd": {
-        "message": "Scots Gaelic"
+        "message": "Tiếng Gaelic của Scotland"
     },
     "language_sr": {
-        "message": "Người Serbia"
+        "message": "tiếng Serbia"
     },
     "language_st": {
         "message": "Sesotho"
     },
     "language_crs": {
-        "message": "Seychellois Creole"
+        "message": "Tiếng Creole Seychellois"
     },
     "language_shn": {
-        "message": "Shan"
+        "message": "Sơn"
     },
     "language_sn": {
         "message": "Shona"
@@ -742,37 +732,37 @@
         "message": "Sicilia"
     },
     "language_szl": {
-        "message": "Silesian"
+        "message": "tiếng Silesia"
     },
     "language_sd": {
-        "message": "Sindhi"
+        "message": "tiếng Sindhi"
     },
     "language_si": {
-        "message": "Sinhala (Sinhalese)"
+        "message": "Sinhala (tiếng Sinhala)"
     },
     "language_sk": {
-        "message": "Slovak"
+        "message": "Tiếng Slovak"
     },
     "language_sl": {
-        "message": "Người Slovenia"
+        "message": "tiếng Slovenia"
     },
     "language_so": {
-        "message": "Somali"
+        "message": "tiếng Somali"
     },
     "language_es": {
-        "message": "Tiếng Tây Ban Nha"
+        "message": "tiếng Tây Ban Nha"
     },
     "language_su": {
-        "message": "Sundan"
+        "message": "Tiếng Sundan"
     },
     "language_sw": {
-        "message": "Swahili"
+        "message": "tiếng Swahili"
     },
     "language_ss": {
-        "message": "Swati"
+        "message": "tiếng Swati"
     },
     "language_sv": {
-        "message": "Thụy Điển"
+        "message": "tiếng Thụy Điển"
     },
     "language_ber": {
         "message": "Tamazight (Tifinagh)"
@@ -781,16 +771,16 @@
         "message": "Tamazight"
     },
     "language_tg": {
-        "message": "Tajik"
+        "message": "Tiếng Tajik"
     },
     "language_ta": {
-        "message": "Tamil"
+        "message": "Tiếng Tamil"
     },
     "language_tt": {
         "message": "Tatar"
     },
     "language_te": {
-        "message": "Telugu"
+        "message": "tiếng Telugu"
     },
     "language_tet": {
         "message": "Tetum"
@@ -808,45 +798,45 @@
         "message": "Tswana"
     },
     "language_tr": {
-        "message": "Thổ Nhĩ Kỳ"
+        "message": "tiếng Thổ Nhĩ Kỳ"
     },
     "language_tk": {
-        "message": "Turkmen"
+        "message": "người Thổ Nhĩ Kỳ"
     },
     "language_ak": {
         "message": "Twi (Akan)"
     },
     "language_uk": {
-        "message": "Ukraine"
+        "message": "tiếng Ukraina"
     },
     "language_ur": {
-        "message": "Tiếng Urdu"
+        "message": "tiếng Urdu"
     },
     "language_ug": {
-        "message": "Uyghur"
+        "message": "người Duy Ngô Nhĩ"
     },
     "language_uz": {
-        "message": "Uzbek"
+        "message": "tiếng Uzbek"
     },
     "language_vi": {
-        "message": "Việt Nam"
+        "message": "Tiếng Việt"
     },
     "language_cy": {
-        "message": "Xứ Wales"
+        "message": "tiếng xứ Wales"
     },
     "language_xh": {
         "message": "Xhosa"
     },
     "language_yi": {
-        "message": "Yiddish"
+        "message": "tiếng Yiddish"
     },
     "language_yo": {
-        "message": "Yoruba"
+        "message": "Tiếng Yoruba"
     },
     "language_yua": {
         "message": "Yucatec Maya"
     },
     "language_zu": {
-        "message": "Zulu"
+        "message": "Tiếng Zulu"
     }
 }

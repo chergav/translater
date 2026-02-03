@@ -1,34 +1,24 @@
 {
     "app_name": {
-        "message": "Translater - Pasirinkto teksto vertimas"
+        "message": "Vertėjas – pasirinkto teksto vertimas"
     },
     "app_description": {
-        "message": "Išversti pasirinktą tekstą naudodami „Google Translate“"
+        "message": "Išverskite pasirinktą tekstą naudodami „Google“ vertėją"
     },
     "app_version": {
         "message": "versija"
     },
     "context_menus_title": {
-        "message": "Išversti pasirinktą tekstą"
+        "message": "Išverskite pasirinktą tekstą"
     },
     "popup_menu_options": {
         "message": "Nustatymai"
     },
     "options_title": {
-        "message": "$App_name$ - nustatymai",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Vertėjas – nustatymai"
     },
-    "commands_open_translater": {
-        "message": "Atidarykite $app_name$",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+    "commands_open_translator": {
+        "message": "Atidarykite vertėją"
     },
     "popup_or": {
         "message": "Arba"
@@ -52,10 +42,10 @@
         "message": "Rodyti mygtuką teksto lauke"
     },
     "options_hide_button_on_sites": {
-        "message": "Paslėpkite mygtuką šiose svetainėse:"
+        "message": "Slėpti mygtuką šiose svetainėse:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Pridėkite domenus naudodamiesi iššokančiojo lango meniu svetainėje, kurią norite pašalinti"
+        "message": "Pridėkite domenus naudodami iššokančiojo lango meniu svetainėje, kurią norite išskirti"
     },
     "options_show_original_text": {
         "message": "Rodyti šaltinio tekstą"
@@ -64,10 +54,10 @@
         "message": "Rodyti transliteraciją"
     },
     "options_lock_popup_window": {
-        "message": "Užrakinkite iššokantį langą"
+        "message": "Užrakinti iškylantįjį langą"
     },
     "options_lock_popup_window_hint": {
-        "message": "Jei įjungta, iššokantis langas neuždarys spustelėjus jo ribų"
+        "message": "Jei įjungta, iššokantis langas nebus uždarytas spustelėjus už jo ribų"
     },
     "options_history_length": {
         "message": "Istorijos įrašai (maks.)"
@@ -82,7 +72,7 @@
         "message": "Ištrinti istoriją"
     },
     "options_delete_history_item": {
-        "message": "Ištrinkite iš istorijos"
+        "message": "Ištrinti iš istorijos"
     },
     "options_tts_language": {
         "message": "Kalba"
@@ -94,46 +84,46 @@
         "message": "Balsai"
     },
     "options_tts_table_caption": {
-        "message": "Jei kalba nenurodyta, bus naudojama išorinė teksto į kalbą paslauga."
+        "message": "Jei kalba nepateikta, bus naudojama išorinė teksto į kalbą paslauga."
     },
     "options_tts_no_voices_found": {
         "message": "Jūsų naršyklė nepalaiko kalbos sintezės. Vietoj to naudosime išorinę paslaugą."
     },
     "options_edit_keyboard_shortcut": {
-        "message": "Redaguoti klaviatūros nuorodas"
+        "message": "redaguoti sparčiuosius klavišus"
     },
     "options_keyboard_shortcut_open_popup": {
-        "message": "Klaviatūros nuoroda, skirta atidaryti iššokantį langą"
+        "message": "Spartusis klavišas, norint atidaryti iššokantįjį langą"
     },
     "options_key_combination_is_not_set": {
-        "message": "Klaviatūros nuoroda nenustatyta"
+        "message": "spartusis klavišas nenustatytas"
     },
     "options_font_size": {
         "message": "Šrifto dydis"
     },
     "options_font_size_xs": {
-        "message": "Ypač mažas (12 pikselių)"
+        "message": "Itin mažas (12 piks.)"
     },
     "options_font_size_sm": {
-        "message": "Mažas (14 pikselių)"
+        "message": "Mažas (14 piks.)"
     },
     "options_font_size_md": {
-        "message": "Normalus (16 pikselių)"
+        "message": "Įprasta (16 pikselių)"
     },
     "options_font_size_lg": {
-        "message": "Didelis (18 pikselių)"
+        "message": "Didelis (18 piks.)"
     },
     "options_font_size_xl": {
-        "message": "Ypač didelis (20 pikselių)"
+        "message": "Itin didelis (20 piks.)"
     },
     "options_support_msg": {
         "message": "Jei kažkas neveikia arba turite kokių nors pasiūlymų, praneškite man čia"
     },
     "options_support_donations": {
-        "message": "Jei norėtumėte palaikyti šią nemokamą programinę įrangą"
+        "message": "Jei norite palaikyti šią nemokamą programinę įrangą"
     },
     "options_address": {
-        "message": "adresas"
+        "message": "adresu"
     },
     "options_copy_address": {
         "message": "Kopijuoti adresą"
@@ -145,7 +135,7 @@
         "message": "Mažiau"
     },
     "target_lang_label": {
-        "message": "Išversti:"
+        "message": "Išversti į:"
     },
     "popup_dictionary": {
         "message": "Žodynas"
@@ -163,25 +153,25 @@
         "message": "Pavyzdžiai"
     },
     "popup_perhaps_you_meant": {
-        "message": "Galbūt jūs turėjote omenyje:"
+        "message": "Galbūt turėjote omenyje:"
     },
     "popup_original_language": {
-        "message": "Originali kalba:"
+        "message": "Originalo kalba:"
     },
     "popup_menu_reverse_translate": {
         "message": "Atvirkštinis vertimas"
     },
     "popup_menu_lock_window": {
-        "message": "Užrakto langas"
+        "message": "Užrakinti langą"
     },
     "popup_menu_unlock_window": {
-        "message": "Atrakinkite langą"
+        "message": "Atrakinti langą"
     },
     "popup_menu_show_translate_button": {
-        "message": "Rodyti išversti mygtuką"
+        "message": "Rodyti vertimo mygtuką"
     },
     "popup_menu_hide_translate_button": {
-        "message": "Slėpti mygtuką"
+        "message": "Slėpti vertimo mygtuką"
     },
     "popup_menu_options_link": {
         "message": "Papildomi nustatymai"
@@ -199,40 +189,40 @@
         "message": "Sistemos tema"
     },
     "tooltip_translate_text": {
-        "message": "Išversti pasirinktą tekstą"
+        "message": "Išverskite pasirinktą tekstą"
     },
     "tooltip_copy_to_clipboard": {
-        "message": "Kopijuokite į mainų sritį"
+        "message": "Kopijuoti į mainų sritį"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "Kopija nėra palaikymas HTTP svetainėse"
+        "message": "Kopijavimas nepalaikomas HTTP svetainėse"
     },
     "tooltip_copyed": {
         "message": "Nukopijuota"
     },
     "tooltip_copy_error": {
-        "message": "Kopijuokite klaidą!"
+        "message": "Kopijavimo klaida!"
     },
     "tooltip_listen_to_the_text": {
-        "message": "Klausykite teksto"
+        "message": "Klausytis teksto"
     },
     "tooltip_listen_stop": {
-        "message": "Sustoti"
+        "message": "Sustok"
     },
     "tooltip_listen_language_is_not_support": {
-        "message": "Kalba nepalaiko"
+        "message": "Kalba nepalaikoma"
     },
     "tooltip_go_back": {
         "message": "Atgal"
     },
     "tooltip_go_forward": {
-        "message": "Į priekį"
+        "message": "Pirmyn"
     },
     "tooltip_clear_text": {
         "message": "Aiškus tekstas"
     },
     "tooltip_clear_search": {
-        "message": "Aiški paieška"
+        "message": "Išvalyti paiešką"
     },
     "date_today": {
         "message": "šiandien"
@@ -241,16 +231,16 @@
         "message": "vakar"
     },
     "forefox_perm_header": {
-        "message": "Leiskite paleisti „Firefox“"
+        "message": "Leisti paleisti „Firefox“."
     },
     "forefox_perm_text": {
-        "message": "Šiam plėtiniui reikia jūsų leidimo pasiekti svetaines ir išversti jas į „Firefox“"
+        "message": "Šiam plėtiniui reikalingas jūsų leidimas pasiekti svetaines ir jas išversti „Firefox“."
     },
     "forefox_perm_button": {
-        "message": "Tvarkykite leidimus"
+        "message": "Tvarkyti leidimus"
     },
     "select_language_search_placeholder": {
-        "message": "Raskite kalbas (ISO kodas ar vardas)"
+        "message": "Rasti kalbas (ISO kodas arba pavadinimas)"
     },
     "select_language_search_no_results": {
         "message": "Jokių rezultatų"
@@ -262,7 +252,7 @@
         "message": "aptikti kalbą"
     },
     "language_ab": {
-        "message": "Abkhazas"
+        "message": "Abchazų"
     },
     "language_ace": {
         "message": "Acehnese"
@@ -271,46 +261,46 @@
         "message": "Acholi"
     },
     "language_af": {
-        "message": "Afrikanai"
+        "message": "afrikanų"
     },
     "language_sq": {
-        "message": "Albanai"
+        "message": "albanų"
     },
     "language_alz": {
         "message": "Alur"
     },
     "language_am": {
-        "message": "Amharic"
+        "message": "amharų"
     },
     "language_ar": {
-        "message": "Arabų kalba"
+        "message": "arabų"
     },
     "language_hy": {
-        "message": "Armėnijos"
+        "message": "armėnų"
     },
     "language_as": {
-        "message": "Asamų"
+        "message": "asamiečių"
     },
     "language_awa": {
         "message": "Awadhi"
     },
     "language_ay": {
-        "message": "Aymara"
+        "message": "Aimara"
     },
     "language_az": {
-        "message": "Azerbaidžani"
+        "message": "Azerbaidžaniečių"
     },
     "language_ban": {
-        "message": "Baliečiai"
+        "message": "baliečių"
     },
     "language_bm": {
         "message": "Bambara"
     },
     "language_ba": {
-        "message": "Baškirtas"
+        "message": "baškirų"
     },
     "language_eu": {
-        "message": "Baskai"
+        "message": "baskų"
     },
     "language_btx": {
         "message": "Batak Karo"
@@ -319,16 +309,16 @@
         "message": "Batak Simalungun"
     },
     "language_bbc": {
-        "message": "BATAK TOBA"
+        "message": "Batak Toba"
     },
     "language_be": {
-        "message": "Baltarusas"
+        "message": "baltarusių"
     },
     "language_bem": {
         "message": "Bemba"
     },
     "language_bn": {
-        "message": "Bengalų kalba"
+        "message": "bengalų"
     },
     "language_bew": {
         "message": "Betawi"
@@ -337,55 +327,55 @@
         "message": "Bhojpuri"
     },
     "language_bik": {
-        "message": "Bikolas"
+        "message": "Bikol"
     },
     "language_bs": {
-        "message": "Bosnijos"
+        "message": "bosnių"
     },
     "language_br": {
-        "message": "Bretonas"
+        "message": "bretonų"
     },
     "language_bg": {
-        "message": "Bulgarijos kalba"
+        "message": "bulgarų"
     },
     "language_bua": {
-        "message": "Buryat"
+        "message": "buriatų"
     },
     "language_yue": {
-        "message": "Kantoniečiai"
+        "message": "Kantono"
     },
     "language_ca": {
-        "message": "Katalonas"
+        "message": "katalonų"
     },
     "language_ceb": {
         "message": "Cebuano"
     },
     "language_ny": {
-        "message": "Chichewa (Nyanja)"
+        "message": "Čičeva (Nianja)"
     },
     "language_zh_CN": {
-        "message": "Kinai (supaprastinta)"
+        "message": "kinų (supaprastinta)"
     },
     "language_zh_TW": {
-        "message": "Kinai (tradiciniai)"
+        "message": "kinų (tradicinė)"
     },
     "language_cv": {
-        "message": "Chuvash"
+        "message": "čiuvašas"
     },
     "language_co": {
-        "message": "Korsikanas"
+        "message": "Korsikos"
     },
     "language_crh": {
-        "message": "Krymo totaras"
+        "message": "Krymo totorių"
     },
     "language_hr": {
-        "message": "Croatian"
+        "message": "kroatų"
     },
     "language_cs": {
-        "message": "Čekija"
+        "message": "čekų"
     },
     "language_da": {
-        "message": "Danai"
+        "message": "danų"
     },
     "language_din": {
         "message": "Dinka"
@@ -397,106 +387,106 @@
         "message": "Dogri"
     },
     "language_dov": {
-        "message": "Dombe"
+        "message": "Dombė"
     },
     "language_nl": {
-        "message": "Olandai"
+        "message": "olandų"
     },
     "language_dz": {
         "message": "Dzongkha"
     },
     "language_en": {
-        "message": "Anglų kalba"
+        "message": "anglų kalba"
     },
     "language_eo": {
         "message": "Esperanto"
     },
     "language_et": {
-        "message": "Estijos"
+        "message": "Estų"
     },
     "language_ee": {
         "message": "Ewe"
     },
     "language_fj": {
-        "message": "Fidžianas"
+        "message": "Fidžio"
     },
     "language_fil": {
-        "message": "Filipinų (tagalog)"
+        "message": "Filipinų (tagalogų)"
     },
     "language_fi": {
-        "message": "Suomija"
+        "message": "suomių"
     },
     "language_fr": {
-        "message": "Prancūzų kalba"
+        "message": "prancūzų"
     },
     "language_fr_FR": {
-        "message": "Prancūzų kalba (prancūzų kalba)"
+        "message": "prancūzų (prancūzų)"
     },
     "language_fr_CA": {
-        "message": "Prancūzų kalba (kanadietis)"
+        "message": "prancūzų (kanadiečių)"
     },
     "language_fy": {
-        "message": "FrySianas"
+        "message": "fryzų"
     },
     "language_ff": {
-        "message": "Fulfulde"
+        "message": "Fullfulde"
     },
     "language_gaa": {
         "message": "Ga"
     },
     "language_gl": {
-        "message": "GALIKAS"
+        "message": "Galisų"
     },
     "language_lg": {
         "message": "Ganda (Luganda)"
     },
     "language_ka": {
-        "message": "Gruzijos kalba"
+        "message": "gruzinų"
     },
     "language_de": {
-        "message": "Vokietis"
+        "message": "vokiečių kalba"
     },
     "language_el": {
-        "message": "Graikų kalba"
+        "message": "graikų"
     },
     "language_gn": {
         "message": "Guarani"
     },
     "language_gu": {
-        "message": "Gujarati"
+        "message": "gudžaratų"
     },
     "language_ht": {
-        "message": "Haičio kreolas"
+        "message": "Haičio kreolų"
     },
     "language_cnh": {
-        "message": "Hakha smakras"
+        "message": "Hakha Chin"
     },
     "language_ha": {
         "message": "Hausa"
     },
     "language_haw": {
-        "message": "Havajų kalba"
+        "message": "Havajų"
     },
     "language_iw": {
-        "message": "Hebrajų kalba"
+        "message": "hebrajų"
     },
     "language_hil": {
-        "message": "Hiligaynonas"
+        "message": "Hiligaynon"
     },
     "language_hi": {
-        "message": "Hindi"
+        "message": "hindi"
     },
     "language_hmn": {
-        "message": "Hmong"
+        "message": "hmong"
     },
     "language_hu": {
-        "message": "Vengrų"
+        "message": "vengrų"
     },
     "language_hrx": {
         "message": "Hunsrikas"
     },
     "language_is": {
-        "message": "Islandijos"
+        "message": "islandų"
     },
     "language_ig": {
         "message": "Igbo"
@@ -505,37 +495,37 @@
         "message": "Iloko"
     },
     "language_id": {
-        "message": "Indonezijos"
+        "message": "Indoneziečių"
     },
     "language_ga": {
-        "message": "Airis"
+        "message": "airių"
     },
     "language_it": {
-        "message": "Italų kalba"
+        "message": "italų"
     },
     "language_ja": {
-        "message": "Japonų kalba"
+        "message": "japonų"
     },
     "language_jw": {
-        "message": "Javanese"
+        "message": "javiečių"
     },
     "language_kn": {
-        "message": "Kannada"
+        "message": "kanada"
     },
     "language_pam": {
-        "message": "Kapampanganas"
+        "message": "Kapampangan"
     },
     "language_kk": {
-        "message": "Kazachas"
+        "message": "kazachų"
     },
     "language_km": {
-        "message": "Khmeris"
+        "message": "khmerų"
     },
     "language_cgg": {
         "message": "Kiga"
     },
     "language_rw": {
-        "message": "Kinyarwanda"
+        "message": "Kinijaruanda"
     },
     "language_ktu": {
         "message": "Kituba"
@@ -544,43 +534,43 @@
         "message": "Konkani"
     },
     "language_ko": {
-        "message": "Korėjietis"
+        "message": "korėjiečių"
     },
     "language_kri": {
         "message": "Krio"
     },
     "language_ku": {
-        "message": "Kurdų (Kurmanji)"
+        "message": "kurdų (kurmanji)"
     },
     "language_ckb": {
-        "message": "Kurdų (Sorani)"
+        "message": "kurdų (sorani)"
     },
     "language_ky": {
-        "message": "Kirgija"
+        "message": "Kirgizų"
     },
     "language_lo": {
-        "message": "Lao"
+        "message": "Laosas"
     },
     "language_ltg": {
-        "message": "Latgalianas"
+        "message": "latgališkas"
     },
     "language_la": {
-        "message": "Lotynų kalba"
+        "message": "lotynų kalba"
     },
     "language_lv": {
-        "message": "Latvijos"
+        "message": "latvių"
     },
     "language_lij": {
-        "message": "Ligurianas"
+        "message": "Ligūrijos"
     },
     "language_li": {
-        "message": "Limburganas"
+        "message": "Limburgietis"
     },
     "language_ln": {
         "message": "Lingala"
     },
     "language_lt": {
-        "message": "Lietuvos"
+        "message": "lietuvių"
     },
     "language_lmo": {
         "message": "Lombardas"
@@ -589,7 +579,7 @@
         "message": "Luo"
     },
     "language_lb": {
-        "message": "Liuksemburgas"
+        "message": "liuksemburgiečių"
     },
     "language_mk": {
         "message": "Makedonietis"
@@ -598,70 +588,70 @@
         "message": "Maithili"
     },
     "language_mak": {
-        "message": "Makassar"
+        "message": "Makasaras"
     },
     "language_mg": {
-        "message": "Madagasy"
+        "message": "malagasų"
     },
     "language_ms": {
-        "message": "Malajų"
+        "message": "malajiečių"
     },
     "language_ms_Arab": {
-        "message": "Malajų (Jawi)"
+        "message": "malajiečių (Jawi)"
     },
     "language_ml": {
-        "message": "Malajalamas"
+        "message": "malajalių"
     },
     "language_mt": {
-        "message": "Maltos"
+        "message": "maltiečių"
     },
     "language_mi": {
-        "message": "Maoriai"
+        "message": "maorių"
     },
     "language_mr": {
-        "message": "Marathi"
+        "message": "marati"
     },
     "language_chm": {
-        "message": "Meadow Mari"
+        "message": "Pieva Mari"
     },
     "language_mni_Mtei": {
-        "message": "Meiteneilonas (Manipuri)"
+        "message": "Meiteilon (Manipuri)"
     },
     "language_min": {
-        "message": "Minang"
+        "message": "Minangas"
     },
     "language_lus": {
         "message": "Mizo"
     },
     "language_mn": {
-        "message": "Mongolijos"
+        "message": "mongolų"
     },
     "language_my": {
-        "message": "Mianmaras (Birma)"
+        "message": "Mianmaras (Birmos k.)"
     },
     "language_nr": {
-        "message": "Ndebele (pietų)"
+        "message": "Ndebele (Pietų)"
     },
     "language_new": {
         "message": "Nepalbhasa (Newari)"
     },
     "language_ne": {
-        "message": "Nepalas"
+        "message": "Nepaliečių"
     },
     "language_nso": {
-        "message": "Šiaurės Sotho (SEPEDI)"
+        "message": "Šiaurės sotas (Sepedi)"
     },
     "language_no": {
-        "message": "Norvegas"
+        "message": "norvegų"
     },
     "language_nus": {
         "message": "Nuer"
     },
     "language_oc": {
-        "message": "Occitan"
+        "message": "oksitanų"
     },
     "language_or": {
-        "message": "Odia (Oriya)"
+        "message": "Odia (Orija)"
     },
     "language_om": {
         "message": "Oromo"
@@ -670,49 +660,49 @@
         "message": "Pangasinanas"
     },
     "language_pap": {
-        "message": "Papiatmento"
+        "message": "Papiamento"
     },
     "language_ps": {
-        "message": "PASHTO"
+        "message": "puštūnų"
     },
     "language_fa": {
-        "message": "Persų"
+        "message": "persų"
     },
     "language_pl": {
-        "message": "Poliravimas"
+        "message": "lenkų"
     },
     "language_pt": {
-        "message": "Portugalai"
+        "message": "portugalų"
     },
     "language_pt_PT": {
-        "message": "Portugalas (Portugalija)"
+        "message": "portugalų (Portugalija)"
     },
     "language_pt_BR": {
-        "message": "Portugalai (Brazilija)"
+        "message": "portugalų (Brazilija)"
     },
     "language_pa": {
-        "message": "Punjabi"
+        "message": "Pandžabų"
     },
     "language_pa_Arab": {
-        "message": "Punjabi (Shahmukhi)"
+        "message": "pandžabų (shahmukhi)"
     },
     "language_qu": {
-        "message": "Quechua"
+        "message": "kečujų"
     },
     "language_rom": {
-        "message": "Romanai"
+        "message": "romų"
     },
     "language_ro": {
-        "message": "Rumunietis"
+        "message": "rumunų"
     },
     "language_rn": {
-        "message": "Rundi"
+        "message": "Rundis"
     },
     "language_ru": {
-        "message": "Rusas"
+        "message": "rusų"
     },
     "language_sm": {
-        "message": "Samoan"
+        "message": "samoiečių"
     },
     "language_sg": {
         "message": "Sango"
@@ -721,58 +711,58 @@
         "message": "Sanskritas"
     },
     "language_gd": {
-        "message": "Škotai gėlų"
+        "message": "škotų gėlų kalba"
     },
     "language_sr": {
-        "message": "Serbas"
+        "message": "serbų"
     },
     "language_st": {
-        "message": "Sesoto"
+        "message": "Sesotas"
     },
     "language_crs": {
-        "message": "Seišellois kreolas"
+        "message": "Seišelių kreolų"
     },
     "language_shn": {
-        "message": "Šanas"
+        "message": "Shan"
     },
     "language_sn": {
         "message": "Šona"
     },
     "language_scn": {
-        "message": "Sicilijos"
+        "message": "Sicilietis"
     },
     "language_szl": {
-        "message": "Silezo"
+        "message": "Silezijos"
     },
     "language_sd": {
-        "message": "Sindhi"
+        "message": "Sindų"
     },
     "language_si": {
-        "message": "Sinhala (sinhalai)"
+        "message": "sinhalų (sinhalų)"
     },
     "language_sk": {
-        "message": "Slovakija"
+        "message": "slovakų"
     },
     "language_sl": {
-        "message": "Slovėnijos kalba"
+        "message": "slovėnų"
     },
     "language_so": {
         "message": "Somalis"
     },
     "language_es": {
-        "message": "Ispanų kalba"
+        "message": "ispanų"
     },
     "language_su": {
-        "message": "Sundanas"
+        "message": "Sundanai"
     },
     "language_sw": {
-        "message": "Svahili"
+        "message": "suahilių"
     },
     "language_ss": {
         "message": "Swati"
     },
     "language_sv": {
-        "message": "Švedijos"
+        "message": "švedų"
     },
     "language_ber": {
         "message": "Tamazight (Tifinagh)"
@@ -781,22 +771,22 @@
         "message": "Tamazight"
     },
     "language_tg": {
-        "message": "Tadžikas"
+        "message": "tadžikų"
     },
     "language_ta": {
-        "message": "Tamilų"
+        "message": "tamilų"
     },
     "language_tt": {
-        "message": "Tataras"
+        "message": "totorių"
     },
     "language_te": {
-        "message": "Telugu"
+        "message": "telugų"
     },
     "language_tet": {
-        "message": "Tetumas"
+        "message": "Tetum"
     },
     "language_th": {
-        "message": "Tailandas"
+        "message": "tajų"
     },
     "language_ti": {
         "message": "Tigrinya"
@@ -808,37 +798,37 @@
         "message": "Tswana"
     },
     "language_tr": {
-        "message": "Turkija"
+        "message": "turkų"
     },
     "language_tk": {
-        "message": "Turkmėnai"
+        "message": "turkmėnų"
     },
     "language_ak": {
-        "message": "TWI (Akanas)"
+        "message": "Dvi (Akan)"
     },
     "language_uk": {
-        "message": "Ukrainos"
+        "message": "ukrainiečių"
     },
     "language_ur": {
-        "message": "Urdu"
+        "message": "urdu"
     },
     "language_ug": {
-        "message": "Uyguras"
+        "message": "uigūras"
     },
     "language_uz": {
-        "message": "Uzbekas"
+        "message": "uzbekas"
     },
     "language_vi": {
-        "message": "Vietnamas"
+        "message": "vietnamiečių"
     },
     "language_cy": {
-        "message": "Velsas"
+        "message": "valų"
     },
     "language_xh": {
         "message": "Xhosa"
     },
     "language_yi": {
-        "message": "Jidiš"
+        "message": "jidiš"
     },
     "language_yo": {
         "message": "Joruba"

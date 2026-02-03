@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "Translater - valitud teksti tõlge"
+        "message": "Tõlkija – valitud teksti tõlge"
     },
     "app_description": {
         "message": "Tõlgi valitud tekst Google'i tõlkega"
@@ -12,68 +12,58 @@
         "message": "Tõlgi valitud tekst"
     },
     "popup_menu_options": {
-        "message": "Sätted"
+        "message": "Seaded"
     },
     "options_title": {
-        "message": "$App_name$ - sätted",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Tõlkija – seaded"
     },
-    "commands_open_translater": {
-        "message": "Avatud $app_name$",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+    "commands_open_translator": {
+        "message": "Avage Tõlkija"
     },
     "popup_or": {
         "message": "Või"
     },
     "options_tab_general": {
-        "message": "Üldised sätted"
+        "message": "Üldseaded"
     },
     "options_tab_popup_window": {
         "message": "Hüpikaken"
     },
     "options_tab_appearance": {
-        "message": "Välimine välimus"
+        "message": "Väline välimus"
     },
     "options_tab_history": {
         "message": "Ajalugu"
     },
     "options_inline_button_show": {
-        "message": "Kuva nupp, kui tekst on valitud"
+        "message": "Näita nuppu, kui tekst on valitud"
     },
     "options_text_field_button_show": {
-        "message": "Näita nuppu Textfieldis"
+        "message": "Kuva nupp tekstiväljal"
     },
     "options_hide_button_on_sites": {
-        "message": "Peida nende saitide nupp:"
+        "message": "Peida nupp nendel saitidel:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Lisage domeene, kasutades hüpikakna menüüd saidil, mida soovite välistada"
+        "message": "Lisage domeene selle saidi hüpikakna menüü abil, mille soovite välistada"
     },
     "options_show_original_text": {
-        "message": "Näidake lähteteksti"
+        "message": "Kuva lähtetekst"
     },
     "options_show_transliteration": {
-        "message": "Kuva transliteratsiooni"
+        "message": "Kuva transliteratsioon"
     },
     "options_lock_popup_window": {
-        "message": "Lukustage hüpikaken"
+        "message": "Lukusta hüpikaken"
     },
     "options_lock_popup_window_hint": {
-        "message": "Kui see on lubatud, siis hüpik ei sulgu, kui klõpsate väljaspool seda"
+        "message": "Kui see on lubatud, ei sulgu hüpikaken, kui klõpsate sellest väljaspool"
     },
     "options_history_length": {
-        "message": "Ajalookirjed (max.)"
+        "message": "Ajaloo kirjed (max.)"
     },
     "options_records_in_history": {
-        "message": "Sissekanded ajaloos:"
+        "message": "Sissekanded ajalukku:"
     },
     "options_history_enable": {
         "message": "Luba ajalugu"
@@ -94,31 +84,31 @@
         "message": "Hääled"
     },
     "options_tts_table_caption": {
-        "message": "Kui keelt ei ole loetletud, kasutatakse välist teksti kõnelevat teenust."
+        "message": "Kui keelt pole loendis, kasutatakse välist kõnesünteesi teenust."
     },
     "options_tts_no_voices_found": {
-        "message": "Teie brauser ei toeta kõne sünteesi. Kasutame selle asemel välist teenust."
+        "message": "Teie brauser ei toeta kõnesünteesi. Selle asemel kasutame välist teenust."
     },
     "options_edit_keyboard_shortcut": {
-        "message": "Redigeerige klaviatuuri otseteed"
+        "message": "muutke kiirklahve"
     },
     "options_keyboard_shortcut_open_popup": {
         "message": "Klaviatuuri otsetee hüpikakna avamiseks"
     },
     "options_key_combination_is_not_set": {
-        "message": "Klaviatuuri otsetee pole seatud"
+        "message": "klaviatuuri otsetee pole määratud"
     },
     "options_font_size": {
         "message": "Fondi suurus"
     },
     "options_font_size_xs": {
-        "message": "Eriti väike (12 px)"
+        "message": "Eriti väike (12 pikslit)"
     },
     "options_font_size_sm": {
         "message": "Väike (14 pikslit)"
     },
     "options_font_size_md": {
-        "message": "Normaalne (16 pikslit)"
+        "message": "Tavaline (16 pikslit)"
     },
     "options_font_size_lg": {
         "message": "Suur (18 pikslit)"
@@ -127,7 +117,7 @@
         "message": "Eriti suur (20 pikslit)"
     },
     "options_support_msg": {
-        "message": "Kui midagi ei tööta või kui teil on ettepanekuid, palun andke mulle siin teada"
+        "message": "Kui midagi ei tööta või teil on ettepanekuid, andke mulle siin teada"
     },
     "options_support_donations": {
         "message": "Kui soovite seda tasuta tarkvara toetada"
@@ -136,7 +126,7 @@
         "message": "aadress"
     },
     "options_copy_address": {
-        "message": "Koopiaadress"
+        "message": "Kopeeri aadress"
     },
     "text_expand": {
         "message": "Rohkem"
@@ -145,10 +135,10 @@
         "message": "Vähem"
     },
     "target_lang_label": {
-        "message": "Tõlgi:"
+        "message": "Tõlgi keelde:"
     },
     "popup_dictionary": {
-        "message": "Sõnaraamat"
+        "message": "Sõnastik"
     },
     "popup_dictionary_frequency": {
         "message": "Sagedus"
@@ -163,19 +153,19 @@
         "message": "Näited"
     },
     "popup_perhaps_you_meant": {
-        "message": "Võib -olla mõtlesite:"
+        "message": "Võib-olla mõtlesite:"
     },
     "popup_original_language": {
-        "message": "Algne keel:"
+        "message": "Algkeel:"
     },
     "popup_menu_reverse_translate": {
-        "message": "Tagurpidi tõlge"
+        "message": "Pöördtõlge"
     },
     "popup_menu_lock_window": {
-        "message": "Lukustusaken"
+        "message": "Lukusta aken"
     },
     "popup_menu_unlock_window": {
-        "message": "Avada aken"
+        "message": "Avage aken"
     },
     "popup_menu_show_translate_button": {
         "message": "Kuva tõlkenupp"
@@ -184,19 +174,19 @@
         "message": "Peida tõlkenupp"
     },
     "popup_menu_options_link": {
-        "message": "Täiendavad seaded"
+        "message": "Lisaseaded"
     },
     "popup_placeholder_translation": {
         "message": "Tõlge"
     },
     "theme_light": {
-        "message": "Valguse teema"
+        "message": "Kerge teema"
     },
     "theme_dark": {
         "message": "Tume teema"
     },
     "theme_system": {
-        "message": "Süsteemiteema"
+        "message": "Süsteemi teema"
     },
     "tooltip_translate_text": {
         "message": "Tõlgi valitud tekst"
@@ -205,13 +195,13 @@
         "message": "Kopeeri lõikelauale"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "Koopia ei ole HTTP saitide tugi"
+        "message": "HTTP-saitidel kopeerimist ei toetata"
     },
     "tooltip_copyed": {
         "message": "Kopeeritud"
     },
     "tooltip_copy_error": {
-        "message": "Kopeeri viga!"
+        "message": "Kopeerimise viga!"
     },
     "tooltip_listen_to_the_text": {
         "message": "Kuulake teksti"
@@ -220,10 +210,10 @@
         "message": "Peatus"
     },
     "tooltip_listen_language_is_not_support": {
-        "message": "Keel ei toeta"
+        "message": "Keelt ei toetata"
     },
     "tooltip_go_back": {
-        "message": "Tagurpidi"
+        "message": "Tagasi"
     },
     "tooltip_go_forward": {
         "message": "Edasi"
@@ -232,7 +222,7 @@
         "message": "Selge tekst"
     },
     "tooltip_clear_search": {
-        "message": "Selge otsing"
+        "message": "Tühjenda otsing"
     },
     "date_today": {
         "message": "täna"
@@ -244,13 +234,13 @@
         "message": "Luba käivitamine Firefoxis"
     },
     "forefox_perm_text": {
-        "message": "See laiendus vajab teie luba veebisaitidele juurdepääsu saamiseks ja nende tõlkimiseks Firefoxis"
+        "message": "See laiendus vajab veebisaitidele juurdepääsuks ja nende tõlkimiseks Firefoxis teie luba"
     },
     "forefox_perm_button": {
-        "message": "Õiguste haldama"
+        "message": "Lubade haldamine"
     },
     "select_language_search_placeholder": {
-        "message": "Leidke keeled (ISO -kood või nimi)"
+        "message": "Keelte otsimine (ISO-kood või nimi)"
     },
     "select_language_search_no_results": {
         "message": "Tulemusi pole"
@@ -259,58 +249,58 @@
         "message": "🚀 Proovige minu teisi laiendusi"
     },
     "language_auto": {
-        "message": "tuvastada keelt"
+        "message": "keelt tuvastada"
     },
     "language_ab": {
-        "message": "Abhaz"
+        "message": "Abhaas"
     },
     "language_ace": {
         "message": "Acehnese"
     },
     "language_ach": {
-        "message": "Aus"
+        "message": "Acholi"
     },
     "language_af": {
-        "message": "Afrikaanlased"
+        "message": "afrikaani"
     },
     "language_sq": {
-        "message": "Albaanlane"
+        "message": "albaanlane"
     },
     "language_alz": {
         "message": "Alur"
     },
     "language_am": {
-        "message": "Amhari-"
+        "message": "amhari"
     },
     "language_ar": {
-        "message": "Araabia"
+        "message": "araabia keel"
     },
     "language_hy": {
-        "message": "Armeenlane"
+        "message": "armeenlane"
     },
     "language_as": {
-        "message": "Assamelased"
+        "message": "Assami"
     },
     "language_awa": {
         "message": "Awadhi"
     },
     "language_ay": {
-        "message": "Aymara"
+        "message": "Aimara"
     },
     "language_az": {
-        "message": "Aserbaidžaani"
+        "message": "Aserbaidžaan"
     },
     "language_ban": {
-        "message": "Baliini"
+        "message": "Bali"
     },
     "language_bm": {
         "message": "Bambara"
     },
     "language_ba": {
-        "message": "Bashkir"
+        "message": "baškiiri"
     },
     "language_eu": {
-        "message": "Bask"
+        "message": "baski keel"
     },
     "language_btx": {
         "message": "Batak Karo"
@@ -322,13 +312,13 @@
         "message": "Batak Toba"
     },
     "language_be": {
-        "message": "Valgevenelane"
+        "message": "valgevenelane"
     },
     "language_bem": {
         "message": "Bemba"
     },
     "language_bn": {
-        "message": "Bengali"
+        "message": "bengali"
     },
     "language_bew": {
         "message": "Betawi"
@@ -337,25 +327,25 @@
         "message": "Bhojpuri"
     },
     "language_bik": {
-        "message": "Bikool"
+        "message": "Bikol"
     },
     "language_bs": {
-        "message": "Bosnia"
+        "message": "bosnia keel"
     },
     "language_br": {
-        "message": "Breton"
+        "message": "bretoon"
     },
     "language_bg": {
-        "message": "Bulgaaria"
+        "message": "bulgaaria keel"
     },
     "language_bua": {
-        "message": "Matt"
+        "message": "burjaadi"
     },
     "language_yue": {
-        "message": "Kantoni keel"
+        "message": "kantoni keel"
     },
     "language_ca": {
-        "message": "Kataloonia"
+        "message": "katalaani"
     },
     "language_ceb": {
         "message": "Cebuano"
@@ -364,28 +354,28 @@
         "message": "Chichewa (Nyanja)"
     },
     "language_zh_CN": {
-        "message": "Hiina (lihtsustatud)"
+        "message": "hiina (lihtsustatud)"
     },
     "language_zh_TW": {
-        "message": "Hiina (traditsiooniline)"
+        "message": "hiina keel (traditsiooniline)"
     },
     "language_cv": {
-        "message": "Chuvash"
+        "message": "tšuvašš"
     },
     "language_co": {
-        "message": "Korsican"
+        "message": "Korsika"
     },
     "language_crh": {
-        "message": "Krimmi tatar"
+        "message": "krimmitatarlane"
     },
     "language_hr": {
         "message": "Horvaatia"
     },
     "language_cs": {
-        "message": "Tšehhi"
+        "message": "tšehhi"
     },
     "language_da": {
-        "message": "Taani"
+        "message": "taani keel"
     },
     "language_din": {
         "message": "Dinka"
@@ -397,79 +387,79 @@
         "message": "Dogri"
     },
     "language_dov": {
-        "message": "DOMBE"
+        "message": "Dombe"
     },
     "language_nl": {
-        "message": "Hollandlane"
+        "message": "hollandi keel"
     },
     "language_dz": {
         "message": "Dzongkha"
     },
     "language_en": {
-        "message": "Inglise keel"
+        "message": "inglise keel"
     },
     "language_eo": {
-        "message": "Esperanto"
+        "message": "esperanto"
     },
     "language_et": {
-        "message": "Eesti"
+        "message": "eesti keel"
     },
     "language_ee": {
-        "message": "Ute"
+        "message": "Ewe"
     },
     "language_fj": {
         "message": "Fidži"
     },
     "language_fil": {
-        "message": "Filipino (Tagalog)"
+        "message": "filipino (tagalog)"
     },
     "language_fi": {
-        "message": "Soomlane"
+        "message": "soome keel"
     },
     "language_fr": {
-        "message": "Prantsuse"
+        "message": "prantsuse keel"
     },
     "language_fr_FR": {
-        "message": "Prantsuse (prantsuse keel)"
+        "message": "prantsuse (prantsuse)"
     },
     "language_fr_CA": {
-        "message": "Prantsuse (Kanada)"
+        "message": "prantsuse (Kanada)"
     },
     "language_fy": {
-        "message": "Friisiline"
+        "message": "friisi keel"
     },
     "language_ff": {
-        "message": "Täisväärtuslik"
+        "message": "Fullfulde"
     },
     "language_gaa": {
-        "message": "GA"
+        "message": "Ga"
     },
     "language_gl": {
-        "message": "Galiiklane"
+        "message": "Galicia"
     },
     "language_lg": {
         "message": "Ganda (Luganda)"
     },
     "language_ka": {
-        "message": "Grusiinne"
+        "message": "Gruusia keel"
     },
     "language_de": {
-        "message": "Sakslane"
+        "message": "saksa keel"
     },
     "language_el": {
-        "message": "Kreeka keel"
+        "message": "kreeka keel"
     },
     "language_gn": {
-        "message": "Garantii"
+        "message": "Guarani"
     },
     "language_gu": {
-        "message": "Gujarati"
+        "message": "gudžarati"
     },
     "language_ht": {
         "message": "Haiti kreool"
     },
     "language_cnh": {
-        "message": "Hakha lõug"
+        "message": "Hakha Chin"
     },
     "language_ha": {
         "message": "Hausa"
@@ -478,28 +468,28 @@
         "message": "Havai"
     },
     "language_iw": {
-        "message": "Heebrea"
+        "message": "heebrea keel"
     },
     "language_hil": {
         "message": "Hiligaynon"
     },
     "language_hi": {
-        "message": "Hindi keel"
+        "message": "hindi"
     },
     "language_hmn": {
-        "message": "Hmong"
+        "message": "hmong"
     },
     "language_hu": {
-        "message": "Ungari keel"
+        "message": "ungari"
     },
     "language_hrx": {
         "message": "Hunsrik"
     },
     "language_is": {
-        "message": "Islandi"
+        "message": "islandi"
     },
     "language_ig": {
-        "message": "Igbo"
+        "message": "igbo"
     },
     "language_ilo": {
         "message": "Iloko"
@@ -508,28 +498,28 @@
         "message": "Indoneesia"
     },
     "language_ga": {
-        "message": "Iiri"
+        "message": "iirlane"
     },
     "language_it": {
-        "message": "Itaalia keel"
+        "message": "itaalia keel"
     },
     "language_ja": {
-        "message": "Jaapanlased"
+        "message": "Jaapani"
     },
     "language_jw": {
-        "message": "Jaavalane"
+        "message": "jaava keel"
     },
     "language_kn": {
-        "message": "Kannada"
+        "message": "kannada"
     },
     "language_pam": {
         "message": "Kapampangan"
     },
     "language_kk": {
-        "message": "Kasah"
+        "message": "kasahhi"
     },
     "language_km": {
-        "message": "Khme"
+        "message": "khmeerid"
     },
     "language_cgg": {
         "message": "Kiga"
@@ -544,34 +534,34 @@
         "message": "Konkani"
     },
     "language_ko": {
-        "message": "Korea"
+        "message": "korea keel"
     },
     "language_kri": {
         "message": "Krio"
     },
     "language_ku": {
-        "message": "Kurdi (Kurmanji)"
+        "message": "kurdi (kurmanji)"
     },
     "language_ckb": {
-        "message": "Kurdi (Sorani)"
+        "message": "kurdi (sorani)"
     },
     "language_ky": {
-        "message": "Kõrgõz"
+        "message": "kirgiisi"
     },
     "language_lo": {
         "message": "Lao"
     },
     "language_ltg": {
-        "message": "Latgalia keel"
+        "message": "latgali keel"
     },
     "language_la": {
-        "message": "Ladinakeelne"
+        "message": "ladina keel"
     },
     "language_lv": {
-        "message": "Läti"
+        "message": "lätlane"
     },
     "language_lij": {
-        "message": "Liguria"
+        "message": "Liguuria"
     },
     "language_li": {
         "message": "Limburgan"
@@ -580,19 +570,19 @@
         "message": "Lingala"
     },
     "language_lt": {
-        "message": "Leedulane"
+        "message": "Leedu"
     },
     "language_lmo": {
-        "message": "Lombard"
+        "message": "langobard"
     },
     "language_luo": {
         "message": "Luo"
     },
     "language_lb": {
-        "message": "Luksuslik"
+        "message": "Luksemburgi keel"
     },
     "language_mk": {
-        "message": "Makedoonia"
+        "message": "makedoonlane"
     },
     "language_mai": {
         "message": "Maithili"
@@ -601,31 +591,31 @@
         "message": "Makassar"
     },
     "language_mg": {
-        "message": "Madalühi"
+        "message": "Madagaskari"
     },
     "language_ms": {
-        "message": "Malai"
+        "message": "malai"
     },
     "language_ms_Arab": {
-        "message": "Malai (Jawi)"
+        "message": "malai (jawi)"
     },
     "language_ml": {
-        "message": "Malajalam"
+        "message": "malajalami"
     },
     "language_mt": {
-        "message": "Malta"
+        "message": "malta keel"
     },
     "language_mi": {
-        "message": "Maoori"
+        "message": "maoorid"
     },
     "language_mr": {
-        "message": "Marathi"
+        "message": "marati"
     },
     "language_chm": {
-        "message": "Heinamaa mari"
+        "message": "Heinamaa Mari"
     },
     "language_mni_Mtei": {
-        "message": "Meiteilon (Manipuri)"
+        "message": "Meiteilon (manipuri)"
     },
     "language_min": {
         "message": "Minang"
@@ -634,7 +624,7 @@
         "message": "Mizo"
     },
     "language_mn": {
-        "message": "Mongoli"
+        "message": "mongoli keel"
     },
     "language_my": {
         "message": "Myanmar (Birma)"
@@ -643,22 +633,22 @@
         "message": "Ndebele (lõuna)"
     },
     "language_new": {
-        "message": "Nepalbhasa (Newari)"
+        "message": "nepalbhasa (newari)"
     },
     "language_ne": {
         "message": "Nepali"
     },
     "language_nso": {
-        "message": "Põhja -Sotho (Sepedi)"
+        "message": "Põhja-Sotho (Sepedi)"
     },
     "language_no": {
-        "message": "Norralane"
+        "message": "norra keel"
     },
     "language_nus": {
         "message": "Nuer"
     },
     "language_oc": {
-        "message": "Oksitaan"
+        "message": "oksitaan"
     },
     "language_or": {
         "message": "Odia (Oriya)"
@@ -673,73 +663,73 @@
         "message": "Papiamento"
     },
     "language_ps": {
-        "message": "Pasto"
+        "message": "puštu"
     },
     "language_fa": {
-        "message": "Pärsia keel"
+        "message": "pärslane"
     },
     "language_pl": {
-        "message": "Poola"
+        "message": "poola keel"
     },
     "language_pt": {
-        "message": "Portugali keel"
+        "message": "portugali keel"
     },
     "language_pt_PT": {
-        "message": "Portugali (Portugal)"
+        "message": "portugali keel (Portugal)"
     },
     "language_pt_BR": {
-        "message": "Portugali (Brasiilia)"
+        "message": "portugali keel (Brasiilia)"
     },
     "language_pa": {
-        "message": "Punjabi"
+        "message": "pandžabi"
     },
     "language_pa_Arab": {
-        "message": "Punjabi (Shahmukhi)"
+        "message": "pandžabi (shahmukhi)"
     },
     "language_qu": {
-        "message": "Quechua"
+        "message": "ketšua"
     },
     "language_rom": {
-        "message": "Romi"
+        "message": "romi"
     },
     "language_ro": {
-        "message": "Rumeenia keel"
+        "message": "rumeenlane"
     },
     "language_rn": {
         "message": "Rundi"
     },
     "language_ru": {
-        "message": "Vene"
+        "message": "vene keel"
     },
     "language_sm": {
-        "message": "Samoan"
+        "message": "Samoa"
     },
     "language_sg": {
         "message": "Sango"
     },
     "language_sa": {
-        "message": "Sanskriti keel"
+        "message": "sanskrit"
     },
     "language_gd": {
-        "message": "Šotlased gaelic"
+        "message": "šoti gaeli keel"
     },
     "language_sr": {
-        "message": "Serblane"
+        "message": "serblane"
     },
     "language_st": {
         "message": "Sesotho"
     },
     "language_crs": {
-        "message": "Seišellois kreool"
+        "message": "Seišelli kreool"
     },
     "language_shn": {
-        "message": "Šan"
+        "message": "Shan"
     },
     "language_sn": {
         "message": "Shona"
     },
     "language_scn": {
-        "message": "Sicilian"
+        "message": "Sitsiilia"
     },
     "language_szl": {
         "message": "Sileesia"
@@ -748,52 +738,52 @@
         "message": "Sindhi"
     },
     "language_si": {
-        "message": "Sinhala (sinhalese)"
+        "message": "singali (singali)"
     },
     "language_sk": {
-        "message": "Slovakk"
+        "message": "slovaki"
     },
     "language_sl": {
-        "message": "Sloveenlane"
+        "message": "Sloveenia"
     },
     "language_so": {
         "message": "Somaalia"
     },
     "language_es": {
-        "message": "Hispaania keel"
+        "message": "hispaania keel"
     },
     "language_su": {
-        "message": "Sundaanlane"
+        "message": "sundalane"
     },
     "language_sw": {
-        "message": "Suahiili"
+        "message": "suahiili keel"
     },
     "language_ss": {
         "message": "Swati"
     },
     "language_sv": {
-        "message": "Rootslane"
+        "message": "rootsi keel"
     },
     "language_ber": {
-        "message": "Tamazight (tifinagh)"
+        "message": "Tamazight (Tifinagh)"
     },
     "language_ber_latn": {
         "message": "Tamazight"
     },
     "language_tg": {
-        "message": "Tajik"
+        "message": "tadžiki"
     },
     "language_ta": {
-        "message": "Tamili"
+        "message": "tamili keel"
     },
     "language_tt": {
-        "message": "Tatar"
+        "message": "tatarlane"
     },
     "language_te": {
-        "message": "Telugu"
+        "message": "telugu"
     },
     "language_tet": {
-        "message": "Tettum"
+        "message": "Tetum"
     },
     "language_th": {
         "message": "Tai"
@@ -808,45 +798,45 @@
         "message": "Tswana"
     },
     "language_tr": {
-        "message": "Türgi"
+        "message": "türgi keel"
     },
     "language_tk": {
-        "message": "Türkmeenid"
+        "message": "türkmeen"
     },
     "language_ak": {
         "message": "Twi (Akan)"
     },
     "language_uk": {
-        "message": "Ukrainlane"
+        "message": "ukrainlane"
     },
     "language_ur": {
-        "message": "Urdu"
+        "message": "urdu"
     },
     "language_ug": {
-        "message": "Uyghur"
+        "message": "uiguurid"
     },
     "language_uz": {
-        "message": "Usbek"
+        "message": "usbeki"
     },
     "language_vi": {
-        "message": "Vietnamlane"
+        "message": "vietnamlane"
     },
     "language_cy": {
-        "message": "Kõmri"
+        "message": "kõmri"
     },
     "language_xh": {
         "message": "Xhosa"
     },
     "language_yi": {
-        "message": "Jidiš"
+        "message": "jidiš"
     },
     "language_yo": {
-        "message": "Joruba"
+        "message": "joruba"
     },
     "language_yua": {
         "message": "Yucatec Maya"
     },
     "language_zu": {
-        "message": "Zulu"
+        "message": "suulu"
     }
 }

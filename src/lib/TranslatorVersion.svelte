@@ -3,7 +3,7 @@
 		<Link
 			class="text-sm"
 			href="https://github.com/chergav/translater"
-			label="Translater v{version}"
+			label="Translator v{version}"
 		/>
 	</div>
 	<div>

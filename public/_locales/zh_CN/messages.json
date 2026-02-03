@@ -1,9 +1,9 @@
 {
     "app_name": {
-        "message": "Translater - 选定文本的翻译"
+        "message": "翻译器 - 翻译所选文本"
     },
     "app_description": {
-        "message": "用Google翻译翻译选定的文本"
+        "message": "使用 Google 翻译翻译所选文本"
     },
     "app_version": {
         "message": "版本"
@@ -15,26 +15,16 @@
         "message": "设置"
     },
     "options_title": {
-        "message": "$app_name$  - 设置",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "翻译器 - 设置"
     },
-    "commands_open_translater": {
-        "message": "打开$app_name$",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+    "commands_open_translator": {
+        "message": "打开翻译器"
     },
     "popup_or": {
         "message": "或者"
     },
     "options_tab_general": {
-        "message": "一般设置"
+        "message": "常规设置"
     },
     "options_tab_popup_window": {
         "message": "弹出窗口"
@@ -49,7 +39,7 @@
         "message": "选择文本时显示按钮"
     },
     "options_text_field_button_show": {
-        "message": "在Textfield中的显示按钮"
+        "message": "在文本字段中显示按钮"
     },
     "options_hide_button_on_sites": {
         "message": "隐藏这些网站上的按钮："
@@ -67,22 +57,22 @@
         "message": "锁定弹出窗口"
     },
     "options_lock_popup_window_hint": {
-        "message": "如果启用了，单击外部时弹出窗口将不会关闭"
+        "message": "如果启用，当单击弹出窗口外部时，弹出窗口将不会关闭"
     },
     "options_history_length": {
-        "message": "历史记录（最大）"
+        "message": "历史记录条目（最多）"
     },
     "options_records_in_history": {
-        "message": "历史上的条目："
+        "message": "历史记载："
     },
     "options_history_enable": {
-        "message": "启用历史"
+        "message": "启用历史记录"
     },
     "options_clear_history": {
         "message": "删除历史记录"
     },
     "options_delete_history_item": {
-        "message": "从历史上删除"
+        "message": "从历史记录中删除"
     },
     "options_tts_language": {
         "message": "语言"
@@ -94,16 +84,16 @@
         "message": "声音"
     },
     "options_tts_table_caption": {
-        "message": "如果未列出语言，将使用外部文本对语音服务。"
+        "message": "如果未列出语言，将使用外部文本转语音服务。"
     },
     "options_tts_no_voices_found": {
-        "message": "您的浏览器不支持语音综合。我们将使用外部服务。"
+        "message": "您的浏览器不支持语音合成。我们将改用外部服务。"
     },
     "options_edit_keyboard_shortcut": {
         "message": "编辑键盘快捷键"
     },
     "options_keyboard_shortcut_open_popup": {
-        "message": "键盘快捷键以打开弹出窗口"
+        "message": "打开弹出窗口的键盘快捷键"
     },
     "options_key_combination_is_not_set": {
         "message": "键盘快捷键未设置"
@@ -112,25 +102,25 @@
         "message": "字体大小"
     },
     "options_font_size_xs": {
-        "message": "超小（12px）"
+        "message": "超小（12 像素）"
     },
     "options_font_size_sm": {
-        "message": "小（14px）"
+        "message": "小（14 像素）"
     },
     "options_font_size_md": {
-        "message": "正常（16px）"
+        "message": "正常（16 像素）"
     },
     "options_font_size_lg": {
-        "message": "大（18px）"
+        "message": "大（18 像素）"
     },
     "options_font_size_xl": {
-        "message": "超大（20px）"
+        "message": "超大（20 像素）"
     },
     "options_support_msg": {
-        "message": "如果某件事不起作用，或者您有任何建议，请在这里告诉我"
+        "message": "如果出现问题，或者您有任何建议，请在此处告诉我"
     },
     "options_support_donations": {
-        "message": "如果您想支持此免费软件"
+        "message": "如果您想支持这个免费软件"
     },
     "options_address": {
         "message": "地址"
@@ -139,16 +129,16 @@
         "message": "复制地址"
     },
     "text_expand": {
-        "message": "更多的"
+        "message": "更多"
     },
     "text_collapse": {
-        "message": "较少的"
+        "message": "少"
     },
     "target_lang_label": {
-        "message": "转换为："
+        "message": "翻译为："
     },
     "popup_dictionary": {
-        "message": "字典"
+        "message": "词典"
     },
     "popup_dictionary_frequency": {
         "message": "频率"
@@ -160,13 +150,13 @@
         "message": "同义词："
     },
     "popup_examples": {
-        "message": "例子"
+        "message": "示例"
     },
     "popup_perhaps_you_meant": {
-        "message": "也许您的意思是："
+        "message": "也许你的意思是："
     },
     "popup_original_language": {
-        "message": "原始语言："
+        "message": "原文语言："
     },
     "popup_menu_reverse_translate": {
         "message": "反向翻译"
@@ -184,16 +174,16 @@
         "message": "隐藏翻译按钮"
     },
     "popup_menu_options_link": {
-        "message": "其他设置"
+        "message": "附加设置"
     },
     "popup_placeholder_translation": {
         "message": "翻译"
     },
     "theme_light": {
-        "message": "光主题"
+        "message": "浅色主题"
     },
     "theme_dark": {
-        "message": "黑暗主题"
+        "message": "深色主题"
     },
     "theme_system": {
         "message": "系统主题"
@@ -205,10 +195,10 @@
         "message": "复制到剪贴板"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "副本不支持HTTP网站"
+        "message": "HTTP 站点不支持复制"
     },
     "tooltip_copyed": {
-        "message": "复制"
+        "message": "已复制"
     },
     "tooltip_copy_error": {
         "message": "复制错误！"
@@ -223,10 +213,10 @@
         "message": "语言不支持"
     },
     "tooltip_go_back": {
-        "message": "后退"
+        "message": "返回"
     },
     "tooltip_go_forward": {
-        "message": "向前"
+        "message": "前进"
     },
     "tooltip_clear_text": {
         "message": "清晰的文字"
@@ -241,22 +231,22 @@
         "message": "昨天"
     },
     "forefox_perm_header": {
-        "message": "允许在Firefox发射"
+        "message": "允许在 Firefox 中启动"
     },
     "forefox_perm_text": {
-        "message": "此扩展名需要您允许访问网站并将其翻译成Firefox"
+        "message": "此扩展程序需要您的许可才能访问网站并在 Firefox 中进行翻译"
     },
     "forefox_perm_button": {
         "message": "管理权限"
     },
     "select_language_search_placeholder": {
-        "message": "查找语言（ISO代码或名称）"
+        "message": "查找语言（ISO 代码或名称）"
     },
     "select_language_search_no_results": {
         "message": "没有结果"
     },
     "try_my_extensions": {
-        "message": "🚀尝试我的其他扩展"
+        "message": "🚀 尝试我的其他扩展"
     },
     "language_auto": {
         "message": "检测语言"
@@ -265,145 +255,145 @@
         "message": "阿布哈兹"
     },
     "language_ace": {
-        "message": "Acehnese"
+        "message": "亚齐人"
     },
     "language_ach": {
-        "message": "Acholi"
+        "message": "阿乔利"
     },
     "language_af": {
         "message": "南非荷兰语"
     },
     "language_sq": {
-        "message": "阿尔巴尼亚人"
+        "message": "阿尔巴尼亚语"
     },
     "language_alz": {
-        "message": "Alur"
+        "message": "阿鲁尔"
     },
     "language_am": {
         "message": "阿姆哈拉语"
     },
     "language_ar": {
-        "message": "阿拉伯"
+        "message": "阿拉伯语"
     },
     "language_hy": {
-        "message": "亚美尼亚人"
+        "message": "亚美尼亚语"
     },
     "language_as": {
-        "message": "阿萨姆人"
+        "message": "阿萨姆语"
     },
     "language_awa": {
         "message": "阿瓦迪"
     },
     "language_ay": {
-        "message": "艾玛拉"
+        "message": "艾马拉"
     },
     "language_az": {
-        "message": "阿塞拜疆"
+        "message": "阿塞拜疆语"
     },
     "language_ban": {
-        "message": "巴厘岛"
+        "message": "巴厘岛人"
     },
     "language_bm": {
         "message": "班巴拉"
     },
     "language_ba": {
-        "message": "巴什基"
+        "message": "巴什基尔语"
     },
     "language_eu": {
-        "message": "巴斯克"
+        "message": "巴斯克语"
     },
     "language_btx": {
-        "message": "巴塔克·卡罗（Batak Karo）"
+        "message": "巴塔克卡罗"
     },
     "language_bts": {
-        "message": "Batak Simalungun"
+        "message": "巴塔克·西马伦贡"
     },
     "language_bbc": {
-        "message": "巴塔克·托巴（Batak Toba）"
+        "message": "巴塔克多巴"
     },
     "language_be": {
-        "message": "白俄罗斯人"
+        "message": "白俄罗斯语"
     },
     "language_bem": {
-        "message": "Bemba"
+        "message": "本巴"
     },
     "language_bn": {
-        "message": "孟加拉"
+        "message": "孟加拉语"
     },
     "language_bew": {
-        "message": "Betawi"
+        "message": "贝塔维"
     },
     "language_bho": {
-        "message": "bhojpuri"
+        "message": "博杰普尔"
     },
     "language_bik": {
-        "message": "比克尔"
+        "message": "比科尔"
     },
     "language_bs": {
-        "message": "波斯尼亚"
+        "message": "波斯尼亚语"
     },
     "language_br": {
-        "message": "布雷顿"
+        "message": "布列塔尼"
     },
     "language_bg": {
         "message": "保加利亚语"
     },
     "language_bua": {
-        "message": "布里亚特"
+        "message": "布里亚特语"
     },
     "language_yue": {
-        "message": "广东话"
+        "message": "粤语"
     },
     "language_ca": {
-        "message": "加泰罗尼亚"
+        "message": "加泰罗尼亚语"
     },
     "language_ceb": {
-        "message": "宿务"
+        "message": "宿务语"
     },
     "language_ny": {
-        "message": "Chichewa（Nyanja）"
+        "message": "奇切瓦语（尼亚尼亚语）"
     },
     "language_zh_CN": {
-        "message": "中文（简化）"
+        "message": "中文（简体）"
     },
     "language_zh_TW": {
-        "message": "中国（传统）"
+        "message": "中文（繁体）"
     },
     "language_cv": {
-        "message": "chuvash"
+        "message": "楚瓦什语"
     },
     "language_co": {
-        "message": "科西嘉"
+        "message": "科西嘉岛"
     },
     "language_crh": {
-        "message": "克里米亚塔塔尔"
+        "message": "克里米亚鞑靼人"
     },
     "language_hr": {
-        "message": "克罗地亚人"
+        "message": "克罗地亚语"
     },
     "language_cs": {
-        "message": "捷克"
+        "message": "捷克语"
     },
     "language_da": {
         "message": "丹麦语"
     },
     "language_din": {
-        "message": "丁卡"
+        "message": "丁卡人"
     },
     "language_dv": {
-        "message": "潜水"
+        "message": "迪维希语"
     },
     "language_doi": {
-        "message": "dogri"
+        "message": "多格里"
     },
     "language_dov": {
-        "message": "Dombe"
+        "message": "东贝"
     },
     "language_nl": {
-        "message": "荷兰"
+        "message": "荷兰语"
     },
     "language_dz": {
-        "message": "Dzongkha"
+        "message": "宗卡"
     },
     "language_en": {
         "message": "英语"
@@ -412,19 +402,19 @@
         "message": "世界语"
     },
     "language_et": {
-        "message": "爱沙尼亚人"
+        "message": "爱沙尼亚语"
     },
     "language_ee": {
         "message": "母羊"
     },
     "language_fj": {
-        "message": "斐济人"
+        "message": "斐济语"
     },
     "language_fil": {
-        "message": "菲律宾（他加禄语）"
+        "message": "菲律宾语（他加禄语）"
     },
     "language_fi": {
-        "message": "芬兰"
+        "message": "芬兰语"
     },
     "language_fr": {
         "message": "法语"
@@ -433,25 +423,25 @@
         "message": "法语（法语）"
     },
     "language_fr_CA": {
-        "message": "法国（加拿大）"
+        "message": "法语（加拿大）"
     },
     "language_fy": {
-        "message": "弗里斯安"
+        "message": "弗里斯兰语"
     },
     "language_ff": {
-        "message": "Fulfulde"
+        "message": "富尔富德"
     },
     "language_gaa": {
-        "message": "GA"
+        "message": "嘎"
     },
     "language_gl": {
-        "message": "加利西亚人"
+        "message": "加利西亚语"
     },
     "language_lg": {
-        "message": "甘达（卢甘达）"
+        "message": "甘达（卢干达）"
     },
     "language_ka": {
-        "message": "格鲁吉亚人"
+        "message": "格鲁吉亚语"
     },
     "language_de": {
         "message": "德语"
@@ -460,28 +450,28 @@
         "message": "希腊语"
     },
     "language_gn": {
-        "message": "瓜拉尼"
+        "message": "瓜拉尼语"
     },
     "language_gu": {
         "message": "古吉拉特语"
     },
     "language_ht": {
-        "message": "海地克里奥尔人"
+        "message": "海地克里奥尔语"
     },
     "language_cnh": {
-        "message": "哈卡下巴"
+        "message": "哈卡钦"
     },
     "language_ha": {
-        "message": "豪萨"
+        "message": "豪萨语"
     },
     "language_haw": {
-        "message": "夏威夷人"
+        "message": "夏威夷语"
     },
     "language_iw": {
         "message": "希伯来语"
     },
     "language_hil": {
-        "message": "Hiligaynon"
+        "message": "希利盖农"
     },
     "language_hi": {
         "message": "印地语"
@@ -490,94 +480,94 @@
         "message": "苗族"
     },
     "language_hu": {
-        "message": "匈牙利"
+        "message": "匈牙利语"
     },
     "language_hrx": {
-        "message": "亨斯里克"
+        "message": "洪斯里克"
     },
     "language_is": {
-        "message": "冰岛"
+        "message": "冰岛语"
     },
     "language_ig": {
-        "message": "伊博"
+        "message": "伊博语"
     },
     "language_ilo": {
         "message": "伊洛科"
     },
     "language_id": {
-        "message": "印度尼西亚"
+        "message": "印度尼西亚语"
     },
     "language_ga": {
-        "message": "爱尔兰人"
+        "message": "爱尔兰语"
     },
     "language_it": {
-        "message": "意大利人"
+        "message": "意大利语"
     },
     "language_ja": {
-        "message": "日本人"
+        "message": "日语"
     },
     "language_jw": {
-        "message": "爪哇人"
+        "message": "爪哇语"
     },
     "language_kn": {
         "message": "卡纳达语"
     },
     "language_pam": {
-        "message": "卡帕潘加安"
+        "message": "卡潘潘安"
     },
     "language_kk": {
-        "message": "哈萨克"
+        "message": "哈萨克语"
     },
     "language_km": {
-        "message": "高棉"
+        "message": "高棉语"
     },
     "language_cgg": {
         "message": "基加"
     },
     "language_rw": {
-        "message": "Kinyarwanda"
+        "message": "基尼亚卢旺达语"
     },
     "language_ktu": {
         "message": "基图巴"
     },
     "language_gom": {
-        "message": "康卡尼"
+        "message": "孔卡尼"
     },
     "language_ko": {
-        "message": "韩国人"
+        "message": "韩语"
     },
     "language_kri": {
         "message": "克里奥"
     },
     "language_ku": {
-        "message": "库尔德（库尔曼吉）"
+        "message": "库尔德语（库尔曼吉语）"
     },
     "language_ckb": {
-        "message": "库尔德（索拉尼）"
+        "message": "库尔德语（索拉尼语）"
     },
     "language_ky": {
-        "message": "吉尔吉斯"
+        "message": "吉尔吉斯斯坦"
     },
     "language_lo": {
         "message": "老挝"
     },
     "language_ltg": {
-        "message": "LATGALIAN"
+        "message": "拉特加利安"
     },
     "language_la": {
-        "message": "拉丁"
+        "message": "拉丁语"
     },
     "language_lv": {
-        "message": "拉脱维亚"
+        "message": "拉脱维亚语"
     },
     "language_lij": {
-        "message": "利古里安"
+        "message": "利古里亚"
     },
     "language_li": {
-        "message": "林堡"
+        "message": "林堡干"
     },
     "language_ln": {
-        "message": "林加拉"
+        "message": "林加拉语"
     },
     "language_lt": {
         "message": "立陶宛语"
@@ -589,31 +579,31 @@
         "message": "罗"
     },
     "language_lb": {
-        "message": "卢森堡"
+        "message": "卢森堡语"
     },
     "language_mk": {
-        "message": "马其顿"
+        "message": "马其顿语"
     },
     "language_mai": {
-        "message": "Maithili"
+        "message": "迈蒂利"
     },
     "language_mak": {
-        "message": "Makassar"
+        "message": "望加锡"
     },
     "language_mg": {
-        "message": "马尔加什"
+        "message": "马达加斯加语"
     },
     "language_ms": {
         "message": "马来语"
     },
     "language_ms_Arab": {
-        "message": "马来人（Jawi）"
+        "message": "马来语（爪夷文）"
     },
     "language_ml": {
         "message": "马拉雅拉姆语"
     },
     "language_mt": {
-        "message": "马耳他"
+        "message": "马耳他语"
     },
     "language_mi": {
         "message": "毛利人"
@@ -622,100 +612,100 @@
         "message": "马拉地语"
     },
     "language_chm": {
-        "message": "草地玛丽"
+        "message": "草甸马里"
     },
     "language_mni_Mtei": {
-        "message": "Meiteilon（Manipuri）"
+        "message": "梅泰隆（曼尼普里）"
     },
     "language_min": {
-        "message": "Minang"
+        "message": "米南"
     },
     "language_lus": {
         "message": "米佐"
     },
     "language_mn": {
-        "message": "蒙"
+        "message": "蒙古语"
     },
     "language_my": {
-        "message": "缅甸（缅甸）"
+        "message": "缅甸（缅语）"
     },
     "language_nr": {
-        "message": "Ndebele（南）"
+        "message": "恩德贝莱（南）"
     },
     "language_new": {
-        "message": "尼泊尔巴萨（Newari）"
+        "message": "尼泊尔巴萨（尼瓦尔语）"
     },
     "language_ne": {
-        "message": "尼泊尔"
+        "message": "尼泊尔语"
     },
     "language_nso": {
-        "message": "北索托（Sepedi）"
+        "message": "北索托语 (Sepedi)"
     },
     "language_no": {
-        "message": "挪威"
+        "message": "挪威语"
     },
     "language_nus": {
-        "message": "努尔"
+        "message": "努尔族"
     },
     "language_oc": {
-        "message": "Occitan"
+        "message": "奥克语"
     },
     "language_or": {
-        "message": "odia（oriya）"
+        "message": "奥里亚语（奥里亚语）"
     },
     "language_om": {
-        "message": "Oromo"
+        "message": "奥罗莫"
     },
     "language_pag": {
-        "message": "Pangasinan"
+        "message": "邦阿西南"
     },
     "language_pap": {
-        "message": "帕普利诺"
+        "message": "帕皮阿门托语"
     },
     "language_ps": {
-        "message": "Pashto"
+        "message": "普什图语"
     },
     "language_fa": {
         "message": "波斯语"
     },
     "language_pl": {
-        "message": "抛光"
+        "message": "波兰语"
     },
     "language_pt": {
         "message": "葡萄牙语"
     },
     "language_pt_PT": {
-        "message": "葡萄牙（葡萄牙）"
+        "message": "葡萄牙语（葡萄牙）"
     },
     "language_pt_BR": {
-        "message": "葡萄牙（巴西）"
+        "message": "葡萄牙语（巴西）"
     },
     "language_pa": {
-        "message": "旁遮普"
+        "message": "旁遮普语"
     },
     "language_pa_Arab": {
-        "message": "旁遮普（Shahmukhi）"
+        "message": "旁遮普语（沙穆基语）"
     },
     "language_qu": {
-        "message": "Quechua"
+        "message": "克丘亚语"
     },
     "language_rom": {
-        "message": "罗曼尼"
+        "message": "罗马尼人"
     },
     "language_ro": {
-        "message": "罗马尼亚人"
+        "message": "罗马尼亚语"
     },
     "language_rn": {
-        "message": "rundi"
+        "message": "伦迪"
     },
     "language_ru": {
         "message": "俄语"
     },
     "language_sm": {
-        "message": "萨摩亚"
+        "message": "萨摩亚人"
     },
     "language_sg": {
-        "message": "Sango"
+        "message": "三乡"
     },
     "language_sa": {
         "message": "梵文"
@@ -724,46 +714,46 @@
         "message": "苏格兰盖尔语"
     },
     "language_sr": {
-        "message": "塞尔维亚"
+        "message": "塞尔维亚语"
     },
     "language_st": {
-        "message": "塞索托"
+        "message": "塞索托语"
     },
     "language_crs": {
-        "message": "塞舌尔克里奥尔人"
+        "message": "塞舌尔克里奥尔语"
     },
     "language_shn": {
         "message": "山"
     },
     "language_sn": {
-        "message": "肖纳"
+        "message": "绍纳语"
     },
     "language_scn": {
-        "message": "西西里人"
+        "message": "西西里岛"
     },
     "language_szl": {
-        "message": "西里西安"
+        "message": "西里西亚语"
     },
     "language_sd": {
-        "message": "信德"
+        "message": "信德语"
     },
     "language_si": {
-        "message": "僧伽罗（僧伽罗人）"
+        "message": "僧伽罗语（僧伽罗语）"
     },
     "language_sk": {
-        "message": "斯洛伐克"
+        "message": "斯洛伐克语"
     },
     "language_sl": {
-        "message": "斯洛文尼亚人"
+        "message": "斯洛文尼亚语"
     },
     "language_so": {
-        "message": "索马里"
+        "message": "索马里语"
     },
     "language_es": {
         "message": "西班牙语"
     },
     "language_su": {
-        "message": "圣丹尼斯"
+        "message": "巽他语"
     },
     "language_sw": {
         "message": "斯瓦希里语"
@@ -772,81 +762,81 @@
         "message": "斯瓦蒂"
     },
     "language_sv": {
-        "message": "瑞典"
+        "message": "瑞典语"
     },
     "language_ber": {
-        "message": "Tamazight（Tifinagh）"
+        "message": "塔马塞特 (蒂菲纳)"
     },
     "language_ber_latn": {
-        "message": "Tamazight"
+        "message": "塔马齐特"
     },
     "language_tg": {
-        "message": "塔吉克"
+        "message": "塔吉克族"
     },
     "language_ta": {
-        "message": "泰米尔人"
+        "message": "泰米尔语"
     },
     "language_tt": {
-        "message": "塔塔尔"
+        "message": "鞑靼人"
     },
     "language_te": {
         "message": "泰卢固语"
     },
     "language_tet": {
-        "message": "破伤风"
+        "message": "德顿语"
     },
     "language_th": {
-        "message": "泰国"
+        "message": "泰语"
     },
     "language_ti": {
-        "message": "tigrinya"
+        "message": "提格里尼亚"
     },
     "language_ts": {
-        "message": "Tsonga"
+        "message": "特松加"
     },
     "language_tn": {
-        "message": "TSWANA"
+        "message": "茨瓦纳语"
     },
     "language_tr": {
-        "message": "土耳其"
+        "message": "土耳其语"
     },
     "language_tk": {
-        "message": "土库曼"
+        "message": "土库曼语"
     },
     "language_ak": {
-        "message": "TWI（akan）"
+        "message": "契维语（阿寒语）"
     },
     "language_uk": {
-        "message": "乌克兰"
+        "message": "乌克兰语"
     },
     "language_ur": {
         "message": "乌尔都语"
     },
     "language_ug": {
-        "message": "Uyghur"
+        "message": "维吾尔族"
     },
     "language_uz": {
-        "message": "乌兹别克"
+        "message": "乌兹别克语"
     },
     "language_vi": {
-        "message": "越南人"
+        "message": "越南语"
     },
     "language_cy": {
         "message": "威尔士语"
     },
     "language_xh": {
-        "message": "xhosa"
+        "message": "科萨语"
     },
     "language_yi": {
-        "message": "意第绪"
+        "message": "意第绪语"
     },
     "language_yo": {
-        "message": "约鲁巴"
+        "message": "约鲁巴语"
     },
     "language_yua": {
-        "message": "Yucatec Maya"
+        "message": "尤卡坦玛雅"
     },
     "language_zu": {
-        "message": "祖鲁"
+        "message": "祖鲁语"
     }
 }

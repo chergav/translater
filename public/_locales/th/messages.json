@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "Translater - การแปลข้อความที่เลือก"
+        "message": "นักแปล - การแปลข้อความที่เลือก"
     },
     "app_description": {
         "message": "แปลข้อความที่เลือกด้วย Google Translate"
@@ -15,20 +15,10 @@
         "message": "การตั้งค่า"
     },
     "options_title": {
-        "message": "$app_name$ - การตั้งค่า",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "นักแปล - การตั้งค่า"
     },
-    "commands_open_translater": {
-        "message": "เปิด $app_name$",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+    "commands_open_translator": {
+        "message": "เปิดตัวแปล"
     },
     "popup_or": {
         "message": "หรือ"
@@ -40,7 +30,7 @@
         "message": "หน้าต่างป๊อปอัป"
     },
     "options_tab_appearance": {
-        "message": "รูปลักษณ์ภายนอก"
+        "message": "ลักษณะภายนอก"
     },
     "options_tab_history": {
         "message": "ประวัติศาสตร์"
@@ -49,25 +39,25 @@
         "message": "ปุ่มแสดงเมื่อเลือกข้อความ"
     },
     "options_text_field_button_show": {
-        "message": "ปุ่มแสดงใน textfield"
+        "message": "แสดงปุ่มในช่องข้อความ"
     },
     "options_hide_button_on_sites": {
         "message": "ซ่อนปุ่มบนเว็บไซต์เหล่านี้:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "เพิ่มโดเมนโดยใช้เมนูหน้าต่างป๊อปอัปบนเว็บไซต์ที่คุณต้องการแยกออก"
+        "message": "เพิ่มโดเมนโดยใช้เมนูหน้าต่างป๊อปอัปบนไซต์ที่คุณต้องการยกเว้น"
     },
     "options_show_original_text": {
         "message": "แสดงข้อความต้นฉบับ"
     },
     "options_show_transliteration": {
-        "message": "แสดงการแปล"
+        "message": "แสดงการทับศัพท์"
     },
     "options_lock_popup_window": {
-        "message": "ล็อคหน้าต่างป๊อปอัพ"
+        "message": "ล็อคหน้าต่างป๊อปอัป"
     },
     "options_lock_popup_window_hint": {
-        "message": "หากเปิดใช้งานป๊อปอัปจะไม่ปิดเมื่อคลิกด้านนอก"
+        "message": "หากเปิดใช้งาน ป๊อปอัปจะไม่ปิดเมื่อคลิกด้านนอก"
     },
     "options_history_length": {
         "message": "รายการประวัติ (สูงสุด)"
@@ -76,13 +66,13 @@
         "message": "รายการในประวัติศาสตร์:"
     },
     "options_history_enable": {
-        "message": "เปิดใช้งานประวัติศาสตร์"
+        "message": "เปิดใช้งานประวัติ"
     },
     "options_clear_history": {
         "message": "ลบประวัติ"
     },
     "options_delete_history_item": {
-        "message": "ลบออกจากประวัติศาสตร์"
+        "message": "ลบออกจากประวัติ"
     },
     "options_tts_language": {
         "message": "ภาษา"
@@ -94,28 +84,28 @@
         "message": "เสียง"
     },
     "options_tts_table_caption": {
-        "message": "หากไม่ได้อยู่ในรายการภาษาจะมีการใช้บริการข้อความภายนอกกับการพูด"
+        "message": "หากไม่มีภาษาอยู่ในรายการ ระบบจะใช้บริการอ่านออกเสียงข้อความภายนอก"
     },
     "options_tts_no_voices_found": {
-        "message": "เบราว์เซอร์ของคุณไม่สนับสนุนการสังเคราะห์คำพูด เราจะใช้บริการภายนอกแทน"
+        "message": "เบราว์เซอร์ของคุณไม่รองรับการสังเคราะห์เสียงพูด เราจะใช้บริการภายนอกแทน"
     },
     "options_edit_keyboard_shortcut": {
         "message": "แก้ไขแป้นพิมพ์ลัด"
     },
     "options_keyboard_shortcut_open_popup": {
-        "message": "แป้นพิมพ์ลัดเพื่อเปิดหน้าต่างป๊อปอัพ"
+        "message": "แป้นพิมพ์ลัดเพื่อเปิดหน้าต่างป๊อปอัป"
     },
     "options_key_combination_is_not_set": {
-        "message": "ไม่ได้ตั้งค่าคีย์บอร์ดทางลัด"
+        "message": "ไม่ได้ตั้งค่าแป้นพิมพ์ลัด"
     },
     "options_font_size": {
         "message": "ขนาดตัวอักษร"
     },
     "options_font_size_xs": {
-        "message": "เล็กพิเศษ (12px)"
+        "message": "ขนาดเล็กพิเศษ (12px)"
     },
     "options_font_size_sm": {
-        "message": "เล็ก (14px)"
+        "message": "ขนาดเล็ก (14px)"
     },
     "options_font_size_md": {
         "message": "ปกติ (16px)"
@@ -127,7 +117,7 @@
         "message": "ใหญ่พิเศษ (20px)"
     },
     "options_support_msg": {
-        "message": "หากสิ่งที่ไม่ทำงานหรือคุณมีคำแนะนำใด ๆ โปรดแจ้งให้เราทราบที่นี่"
+        "message": "หากมีบางอย่างใช้งานไม่ได้หรือคุณมีข้อเสนอแนะ โปรดแจ้งให้เราทราบที่นี่"
     },
     "options_support_donations": {
         "message": "หากคุณต้องการสนับสนุนซอฟต์แวร์ฟรีนี้"
@@ -136,13 +126,13 @@
         "message": "ที่อยู่"
     },
     "options_copy_address": {
-        "message": "ที่อยู่คัดลอก"
+        "message": "คัดลอกที่อยู่"
     },
     "text_expand": {
-        "message": "มากกว่า"
+        "message": "เพิ่มเติม"
     },
     "text_collapse": {
-        "message": "น้อย"
+        "message": "น้อยลง"
     },
     "target_lang_label": {
         "message": "แปลเป็น:"
@@ -166,16 +156,16 @@
         "message": "บางทีคุณอาจหมายถึง:"
     },
     "popup_original_language": {
-        "message": "ภาษาดั้งเดิม:"
+        "message": "ภาษาต้นฉบับ:"
     },
     "popup_menu_reverse_translate": {
-        "message": "แปลย้อนกลับ"
+        "message": "แปลกลับ"
     },
     "popup_menu_lock_window": {
-        "message": "หน้าต่างล็อค"
+        "message": "ล็อคหน้าต่าง"
     },
     "popup_menu_unlock_window": {
-        "message": "ปลดล็อกหน้าต่าง"
+        "message": "ปลดล็อคหน้าต่าง"
     },
     "popup_menu_show_translate_button": {
         "message": "แสดงปุ่มแปล"
@@ -193,10 +183,10 @@
         "message": "ธีมแสง"
     },
     "theme_dark": {
-        "message": "ธีมมืด"
+        "message": "ธีมสีเข้ม"
     },
     "theme_system": {
-        "message": "ชุดรูปแบบระบบ"
+        "message": "ธีมของระบบ"
     },
     "tooltip_translate_text": {
         "message": "แปลข้อความที่เลือก"
@@ -205,13 +195,13 @@
         "message": "คัดลอกไปยังคลิปบอร์ด"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "การคัดลอกไม่รองรับในเว็บไซต์ HTTP"
+        "message": "การคัดลอกไม่รองรับไซต์ HTTP"
     },
     "tooltip_copyed": {
-        "message": "คัดลอก"
+        "message": "คัดลอกแล้ว"
     },
     "tooltip_copy_error": {
-        "message": "คัดลอกข้อผิดพลาด!"
+        "message": "ข้อผิดพลาดในการคัดลอก!"
     },
     "tooltip_listen_to_the_text": {
         "message": "ฟังข้อความ"
@@ -220,13 +210,13 @@
         "message": "หยุด"
     },
     "tooltip_listen_language_is_not_support": {
-        "message": "ภาษาไม่สนับสนุน"
+        "message": "ภาษาไม่รองรับ"
     },
     "tooltip_go_back": {
         "message": "กลับ"
     },
     "tooltip_go_forward": {
-        "message": "ซึ่งไปข้างหน้า"
+        "message": "ไปข้างหน้า"
     },
     "tooltip_clear_text": {
         "message": "ล้างข้อความ"
@@ -238,43 +228,43 @@
         "message": "วันนี้"
     },
     "date_yesterday": {
-        "message": "เมื่อวาน"
+        "message": "เมื่อวานนี้"
     },
     "forefox_perm_header": {
         "message": "อนุญาตให้เปิดตัวใน Firefox"
     },
     "forefox_perm_text": {
-        "message": "ส่วนขยายนี้ต้องการการอนุญาตของคุณในการเข้าถึงเว็บไซต์และแปลเป็น Firefox"
+        "message": "ส่วนขยายนี้ต้องได้รับอนุญาตจากคุณเพื่อเข้าถึงเว็บไซต์และแปลใน Firefox"
     },
     "forefox_perm_button": {
         "message": "จัดการสิทธิ์"
     },
     "select_language_search_placeholder": {
-        "message": "ค้นหาภาษา (รหัสหรือชื่อ ISO)"
+        "message": "ค้นหาภาษา (รหัส ISO หรือชื่อ)"
     },
     "select_language_search_no_results": {
         "message": "ไม่มีผลลัพธ์"
     },
     "try_my_extensions": {
-        "message": "🚀ลองส่วนขยายอื่น ๆ ของฉัน"
+        "message": "🚀 ลองใช้ส่วนขยายอื่นๆ ของฉัน"
     },
     "language_auto": {
         "message": "ตรวจจับภาษา"
     },
     "language_ab": {
-        "message": "Abkhaz"
+        "message": "อับฮาซ"
     },
     "language_ace": {
-        "message": "ชาวอาเจห์น"
+        "message": "อาเจะห์"
     },
     "language_ach": {
-        "message": "Acholi"
+        "message": "อโชลี"
     },
     "language_af": {
         "message": "ชาวแอฟริกัน"
     },
     "language_sq": {
-        "message": "ชาวแอลเบเนีย"
+        "message": "แอลเบเนีย"
     },
     "language_alz": {
         "message": "อลูร์"
@@ -286,16 +276,16 @@
         "message": "ภาษาอาหรับ"
     },
     "language_hy": {
-        "message": "เกี่ยวกับอาร์เมเนีย"
+        "message": "อาร์เมเนีย"
     },
     "language_as": {
         "message": "อัสสัม"
     },
     "language_awa": {
-        "message": "Awadhi"
+        "message": "อวาดี"
     },
     "language_ay": {
-        "message": "Aymara"
+        "message": "ไอมารา"
     },
     "language_az": {
         "message": "อาเซอร์ไบจัน"
@@ -304,52 +294,52 @@
         "message": "ชาวบาหลี"
     },
     "language_bm": {
-        "message": "Bambara"
+        "message": "บัมบารา"
     },
     "language_ba": {
-        "message": "Bashkir"
+        "message": "บัชคีร์"
     },
     "language_eu": {
-        "message": "เกี่ยวกับบาสก์"
+        "message": "บาสก์"
     },
     "language_btx": {
-        "message": "Batak Karo"
+        "message": "บาตัก คาโร"
     },
     "language_bts": {
-        "message": "Batak Simalungun"
+        "message": "บาตัก สิมาลุงกุน"
     },
     "language_bbc": {
-        "message": "Batak Toba"
+        "message": "บาตัก โตบา"
     },
     "language_be": {
-        "message": "ชาวเบลารุส"
+        "message": "เบลารุส"
     },
     "language_bem": {
-        "message": "เบมบา"
+        "message": "เบมบ้า"
     },
     "language_bn": {
-        "message": "เบงกอล"
+        "message": "เบงกาลี"
     },
     "language_bew": {
-        "message": "Betawi"
+        "message": "เบตาวี"
     },
     "language_bho": {
-        "message": "Bhojpuri"
+        "message": "โภชปุรี"
     },
     "language_bik": {
-        "message": "รถม้าชนิดหนึ่ง"
+        "message": "บีโกล"
     },
     "language_bs": {
-        "message": "ชาวบอสเนีย"
+        "message": "บอสเนีย"
     },
     "language_br": {
-        "message": "เบรตัน"
+        "message": "เบรอตง"
     },
     "language_bg": {
-        "message": "ชาวบัลแกเรีย"
+        "message": "บัลแกเรีย"
     },
     "language_bua": {
-        "message": "ฝังศพ"
+        "message": "บูร์ยัต"
     },
     "language_yue": {
         "message": "กวางตุ้ง"
@@ -358,67 +348,67 @@
         "message": "คาตาลัน"
     },
     "language_ceb": {
-        "message": "เซบูะ"
+        "message": "เซบู"
     },
     "language_ny": {
-        "message": "Chichewa (Nyanja)"
+        "message": "ชิเชวา (เนียนจา)"
     },
     "language_zh_CN": {
-        "message": "ภาษาจีน (ง่าย)"
+        "message": "จีน (ตัวย่อ)"
     },
     "language_zh_TW": {
-        "message": "จีน (ดั้งเดิม)"
+        "message": "จีน (ตัวเต็ม)"
     },
     "language_cv": {
-        "message": "แช่"
+        "message": "ชูวัช"
     },
     "language_co": {
-        "message": "ชาวคอร์ซาน"
+        "message": "คอร์ซิกา"
     },
     "language_crh": {
-        "message": "ไครเมีย Tatar"
+        "message": "ตาตาร์ไครเมีย"
     },
     "language_hr": {
-        "message": "เกี่ยวกับภาษาโครเอเชีย"
+        "message": "โครเอเชีย"
     },
     "language_cs": {
-        "message": "ภาษาเช็ก"
+        "message": "เช็ก"
     },
     "language_da": {
-        "message": "เกี่ยวกับเดนมาร์ก"
+        "message": "ภาษาเดนมาร์ก"
     },
     "language_din": {
-        "message": "Dinka"
+        "message": "ดินก้า"
     },
     "language_dv": {
-        "message": "ดำน้ำ"
+        "message": "ดิวิหิ"
     },
     "language_doi": {
-        "message": "คนโง่"
+        "message": "โดกรี"
     },
     "language_dov": {
-        "message": "Dombe"
+        "message": "ดอมเบ"
     },
     "language_nl": {
-        "message": "ชาวดัตช์"
+        "message": "ภาษาดัตช์"
     },
     "language_dz": {
-        "message": "Dzongkha"
+        "message": "ซองคา"
     },
     "language_en": {
-        "message": "ภาษาอังกฤษ"
+        "message": "อังกฤษ"
     },
     "language_eo": {
-        "message": "ชาวเอสเปอร์รันโต"
+        "message": "เอสเปรันโต"
     },
     "language_et": {
         "message": "เอสโตเนีย"
     },
     "language_ee": {
-        "message": "อุย"
+        "message": "อุรา"
     },
     "language_fj": {
-        "message": "ชาวฟิจิ"
+        "message": "ฟิจิ"
     },
     "language_fil": {
         "message": "ฟิลิปปินส์ (ตากาล็อก)"
@@ -427,7 +417,7 @@
         "message": "ภาษาฟินแลนด์"
     },
     "language_fr": {
-        "message": "ภาษาฝรั่งเศส"
+        "message": "ฝรั่งเศส"
     },
     "language_fr_FR": {
         "message": "ฝรั่งเศส (ฝรั่งเศส)"
@@ -436,40 +426,40 @@
         "message": "ฝรั่งเศส (แคนาดา)"
     },
     "language_fy": {
-        "message": "Frisian"
+        "message": "ฟริเซียน"
     },
     "language_ff": {
-        "message": "คนที่เต็มไปด้วยน้ำ"
+        "message": "ฟูลฟูลเด"
     },
     "language_gaa": {
-        "message": "GA"
+        "message": "กา"
     },
     "language_gl": {
         "message": "กาลิเซีย"
     },
     "language_lg": {
-        "message": "Ganda (Luganda)"
+        "message": "กานดา (ลูกันดา)"
     },
     "language_ka": {
-        "message": "ชาวจอร์เจีย"
+        "message": "จอร์เจีย"
     },
     "language_de": {
-        "message": "ชาวเยอรมัน"
+        "message": "เยอรมัน"
     },
     "language_el": {
-        "message": "กรีก"
+        "message": "ภาษากรีก"
     },
     "language_gn": {
-        "message": "Guarani"
+        "message": "กวารานี"
     },
     "language_gu": {
-        "message": "รัฐคุชราต"
+        "message": "คุชราต"
     },
     "language_ht": {
         "message": "ชาวเฮติครีโอล"
     },
     "language_cnh": {
-        "message": "Hakha Chin"
+        "message": "ฮาคาชิน"
     },
     "language_ha": {
         "message": "เฮาซา"
@@ -481,79 +471,79 @@
         "message": "ภาษาฮีบรู"
     },
     "language_hil": {
-        "message": "Hiligaynon"
+        "message": "ฮิลิกายนอน"
     },
     "language_hi": {
-        "message": "ภาษาฮินดี"
+        "message": "ฮินดี"
     },
     "language_hmn": {
         "message": "ม้ง"
     },
     "language_hu": {
-        "message": "ชาวฮังการี"
+        "message": "ภาษาฮังการี"
     },
     "language_hrx": {
-        "message": "ฮันซิก"
+        "message": "ฮุนสริก"
     },
     "language_is": {
-        "message": "เกี่ยวกับไอซ์แลนด์"
+        "message": "ไอซ์แลนด์"
     },
     "language_ig": {
-        "message": "igbo"
+        "message": "อิกโบ"
     },
     "language_ilo": {
-        "message": "iloko"
+        "message": "อิโลโก"
     },
     "language_id": {
         "message": "ชาวอินโดนีเซีย"
     },
     "language_ga": {
-        "message": "เกี่ยวกับไอริช"
+        "message": "ไอริช"
     },
     "language_it": {
-        "message": "อิตาลี"
+        "message": "ภาษาอิตาลี"
     },
     "language_ja": {
-        "message": "ญี่ปุ่น"
+        "message": "ภาษาญี่ปุ่น"
     },
     "language_jw": {
-        "message": "ชาวชวา"
+        "message": "ชวา"
     },
     "language_kn": {
-        "message": "ภาษากันนาดา"
+        "message": "กันนาดา"
     },
     "language_pam": {
-        "message": "Kapampangan"
+        "message": "กะปัมปังกัน"
     },
     "language_kk": {
         "message": "คาซัค"
     },
     "language_km": {
-        "message": "เขมรตัว"
+        "message": "เขมร"
     },
     "language_cgg": {
-        "message": "Kiga"
+        "message": "คิก้า"
     },
     "language_rw": {
-        "message": "Kinyarwanda"
+        "message": "กินยาวันดา"
     },
     "language_ktu": {
-        "message": "คิตลูบา"
+        "message": "คิตูบา"
     },
     "language_gom": {
-        "message": "Konkani"
+        "message": "กอนกานี"
     },
     "language_ko": {
         "message": "เกาหลี"
     },
     "language_kri": {
-        "message": "Krio"
+        "message": "คริโอ"
     },
     "language_ku": {
-        "message": "Kurdish (Kurmanji)"
+        "message": "เคิร์ด (Kurmanji)"
     },
     "language_ckb": {
-        "message": "เคิร์ด (Sorani)"
+        "message": "เคิร์ด (โซรานี)"
     },
     "language_ky": {
         "message": "คีร์กีซ"
@@ -562,52 +552,52 @@
         "message": "ลาว"
     },
     "language_ltg": {
-        "message": "Latgalian"
+        "message": "ภาษาลัตกาเลียน"
     },
     "language_la": {
-        "message": "ภาษาละติน"
+        "message": "ละติน"
     },
     "language_lv": {
-        "message": "เกี่ยวกับลัตเวีย"
+        "message": "ลัตเวีย"
     },
     "language_lij": {
-        "message": "Ligurian"
+        "message": "ลิกูเรียน"
     },
     "language_li": {
-        "message": "Limburgan"
+        "message": "ลิมเบอร์กัน"
     },
     "language_ln": {
-        "message": "Lingala"
+        "message": "ลิงกาลา"
     },
     "language_lt": {
-        "message": "เกี่ยวกับลิทัวเนีย"
+        "message": "ลิทัวเนีย"
     },
     "language_lmo": {
         "message": "ลอมบาร์ด"
     },
     "language_luo": {
-        "message": "Luo"
+        "message": "หลัว"
     },
     "language_lb": {
-        "message": "ลักเซมเบิร์ก"
+        "message": "ภาษาลักเซมเบิร์ก"
     },
     "language_mk": {
-        "message": "ชาวมาซิโดเนีย"
+        "message": "มาซิโดเนีย"
     },
     "language_mai": {
-        "message": "maithili"
+        "message": "ไมถิลี"
     },
     "language_mak": {
-        "message": "มาสซาร์"
+        "message": "มากัสซาร์"
     },
     "language_mg": {
-        "message": "มาลากาเซ"
+        "message": "มาลากาซี"
     },
     "language_ms": {
-        "message": "มลายู"
+        "message": "มาเลย์"
     },
     "language_ms_Arab": {
-        "message": "มาเลย์ (Jawi)"
+        "message": "มาเลย์ (ยาวี)"
     },
     "language_ml": {
         "message": "มาลายาลัม"
@@ -619,13 +609,13 @@
         "message": "ชาวเมารี"
     },
     "language_mr": {
-        "message": "มาราธี"
+        "message": "ภาษามราฐี"
     },
     "language_chm": {
         "message": "ทุ่งหญ้ามารี"
     },
     "language_mni_Mtei": {
-        "message": "Meiteilon (Manipuri)"
+        "message": "เมเตลอน (มณีปุรี)"
     },
     "language_min": {
         "message": "มินัง"
@@ -634,55 +624,55 @@
         "message": "มิโซะ"
     },
     "language_mn": {
-        "message": "ชาวมองโกเลีย"
+        "message": "มองโกเลีย"
     },
     "language_my": {
-        "message": "พม่า (พม่า)"
+        "message": "เมียนมาร์ (พม่า)"
     },
     "language_nr": {
-        "message": "Ndebele (ใต้)"
+        "message": "นเดเบเล (ใต้)"
     },
     "language_new": {
-        "message": "Nepalbhasa (Newari)"
+        "message": "เนปาลภาสะ (เนวารี)"
     },
     "language_ne": {
         "message": "เนปาล"
     },
     "language_nso": {
-        "message": "Northern Sotho (Sepedi)"
+        "message": "โซโทเหนือ (เซเปดี)"
     },
     "language_no": {
-        "message": "นอร์เวย์"
+        "message": "ภาษานอร์เวย์"
     },
     "language_nus": {
-        "message": "คนขี้เกียจ"
+        "message": "เนื้อ"
     },
     "language_oc": {
-        "message": "เป็นหนึ่งเดียว"
+        "message": "อ็อกซิตัน"
     },
     "language_or": {
-        "message": "Odia (Oriya)"
+        "message": "โอเดีย (โอริยา)"
     },
     "language_om": {
-        "message": "oromo"
+        "message": "โอโรโม"
     },
     "language_pag": {
-        "message": "ชาวปังานัน"
+        "message": "ปังกาสินัน"
     },
     "language_pap": {
-        "message": "Papiamento"
+        "message": "ปาเปียเมนโต"
     },
     "language_ps": {
-        "message": "Pashto"
+        "message": "ปาสโต้"
     },
     "language_fa": {
-        "message": "ชาวเปอร์เซีย"
+        "message": "เปอร์เซีย"
     },
     "language_pl": {
-        "message": "ขัด"
+        "message": "โปแลนด์"
     },
     "language_pt": {
-        "message": "ชาวโปรตุเกส"
+        "message": "โปรตุเกส"
     },
     "language_pt_PT": {
         "message": "โปรตุเกส (โปรตุเกส)"
@@ -694,25 +684,25 @@
         "message": "ปัญจาบ"
     },
     "language_pa_Arab": {
-        "message": "ปัญจาบ (Shahmukhi)"
+        "message": "ปัญจาบ (ชาห์มูกี)"
     },
     "language_qu": {
-        "message": "คนขี้ขลาด"
+        "message": "เคชัว"
     },
     "language_rom": {
-        "message": "ชาวโรมัน"
+        "message": "โรมานี่"
     },
     "language_ro": {
-        "message": "เกี่ยวกับโรมาเนีย"
+        "message": "โรมาเนีย"
     },
     "language_rn": {
-        "message": "Rundi"
+        "message": "รันดี"
     },
     "language_ru": {
-        "message": "ชาวรัสเซีย"
+        "message": "ภาษารัสเซีย"
     },
     "language_sm": {
-        "message": "ประเทศซามัว"
+        "message": "ซามัว"
     },
     "language_sg": {
         "message": "ซังโกะ"
@@ -721,64 +711,64 @@
         "message": "ภาษาสันสกฤต"
     },
     "language_gd": {
-        "message": "สก็อตเกลิค"
+        "message": "เกลิคสกอต"
     },
     "language_sr": {
-        "message": "ประเทศเซอร์เบีย"
+        "message": "เซอร์เบีย"
     },
     "language_st": {
-        "message": "Sesotho"
+        "message": "เซโซโท"
     },
     "language_crs": {
-        "message": "เซเชลส์ครีโอล"
+        "message": "เซเชลัวส์ครีโอล"
     },
     "language_shn": {
-        "message": "ชาน"
+        "message": "ฉาน"
     },
     "language_sn": {
         "message": "โชนา"
     },
     "language_scn": {
-        "message": "ชาวซิซิลี"
+        "message": "ซิซิลี"
     },
     "language_szl": {
-        "message": "เกี่ยวกับซิลีเซียน"
+        "message": "ซิลีเซียน"
     },
     "language_sd": {
-        "message": "ซินธี"
+        "message": "สินธี"
     },
     "language_si": {
-        "message": "Sinhala (Sinhalese)"
+        "message": "สิงหล (สิงหล)"
     },
     "language_sk": {
-        "message": "ชาวสโลวะเกีย"
+        "message": "สโลวัก"
     },
     "language_sl": {
-        "message": "สโลวีเนีย"
+        "message": "ภาษาสโลเวเนีย"
     },
     "language_so": {
         "message": "โซมาเลีย"
     },
     "language_es": {
-        "message": "เกี่ยวกับภาษาสเปน"
+        "message": "สเปน"
     },
     "language_su": {
-        "message": "ชาวซุนดา"
+        "message": "ซุนดา"
     },
     "language_sw": {
-        "message": "ภาษาสวาฮิลี"
+        "message": "สวาฮีลี"
     },
     "language_ss": {
-        "message": "swati"
+        "message": "สวาตี"
     },
     "language_sv": {
         "message": "ภาษาสวีเดน"
     },
     "language_ber": {
-        "message": "Tamazight (Tifinagh)"
+        "message": "ทามาไซท์ (ติฟินากห์)"
     },
     "language_ber_latn": {
-        "message": "Tamazight"
+        "message": "ทามาไซท์"
     },
     "language_tg": {
         "message": "ทาจิก"
@@ -793,49 +783,49 @@
         "message": "เตลูกู"
     },
     "language_tet": {
-        "message": "tetum"
+        "message": "เตตัม"
     },
     "language_th": {
-        "message": "แบบไทย"
+        "message": "ไทย"
     },
     "language_ti": {
-        "message": "Tigrinya"
+        "message": "ทิกริญญา"
     },
     "language_ts": {
-        "message": "ซองกา"
+        "message": "ซองก้า"
     },
     "language_tn": {
-        "message": "TSWANA"
+        "message": "ทสวานา"
     },
     "language_tr": {
-        "message": "ตุรกี"
+        "message": "ภาษาตุรกี"
     },
     "language_tk": {
-        "message": "ชาวเติร์กเมน"
+        "message": "เติร์กเมนิสถาน"
     },
     "language_ak": {
-        "message": "Twi (Akan)"
+        "message": "ทวิ (อาคัน)"
     },
     "language_uk": {
-        "message": "ชาวยูเครน"
+        "message": "ภาษายูเครน"
     },
     "language_ur": {
         "message": "ภาษาอูรดู"
     },
     "language_ug": {
-        "message": "uyghur"
+        "message": "ชาวอุยกูร์"
     },
     "language_uz": {
         "message": "อุซเบก"
     },
     "language_vi": {
-        "message": "เวียดนาม"
+        "message": "ภาษาเวียดนาม"
     },
     "language_cy": {
-        "message": "ชาวเวลส์"
+        "message": "เวลส์"
     },
     "language_xh": {
-        "message": "โซซา"
+        "message": "โคซา"
     },
     "language_yi": {
         "message": "ภาษายิดดิช"
@@ -844,7 +834,7 @@
         "message": "โยรูบา"
     },
     "language_yua": {
-        "message": "Yucatec Maya"
+        "message": "ยูคาเทค มายา"
     },
     "language_zu": {
         "message": "ซูลู"

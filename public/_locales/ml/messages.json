@@ -1,12 +1,12 @@
 {
     "app_name": {
-        "message": "Translater - തിരഞ്ഞെടുത്ത വാചകത്തിന്റെ വിവർത്തനം"
+        "message": "വിവർത്തകൻ - തിരഞ്ഞെടുത്ത വാചകത്തിൻ്റെ വിവർത്തനം"
     },
     "app_description": {
-        "message": "Google വിവർത്തനം ഉപയോഗിച്ച് തിരഞ്ഞെടുത്ത വാചകം വിവർത്തനം ചെയ്യുക"
+        "message": "തിരഞ്ഞെടുത്ത വാചകം Google വിവർത്തനം ഉപയോഗിച്ച് വിവർത്തനം ചെയ്യുക"
     },
     "app_version": {
-        "message": "ഭാഷം"
+        "message": "പതിപ്പ്"
     },
     "context_menus_title": {
         "message": "തിരഞ്ഞെടുത്ത വാചകം വിവർത്തനം ചെയ്യുക"
@@ -15,26 +15,16 @@
         "message": "ക്രമീകരണങ്ങൾ"
     },
     "options_title": {
-        "message": "$App_name$ - ക്രമീകരണങ്ങൾ",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "വിവർത്തകൻ - ക്രമീകരണങ്ങൾ"
     },
-    "commands_open_translater": {
-        "message": "App_name $ തുറക്കുക",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+    "commands_open_translator": {
+        "message": "വിവർത്തകൻ തുറക്കുക"
     },
     "popup_or": {
-        "message": "അഥവാ"
+        "message": "അല്ലെങ്കിൽ"
     },
     "options_tab_general": {
-        "message": "പൊതു ക്രമീകരണങ്ങൾ"
+        "message": "പൊതുവായ ക്രമീകരണങ്ങൾ"
     },
     "options_tab_popup_window": {
         "message": "പോപ്പ്അപ്പ് വിൻഡോ"
@@ -43,19 +33,19 @@
         "message": "ബാഹ്യ രൂപം"
     },
     "options_tab_history": {
-        "message": "ചരിതം"
+        "message": "ചരിത്രം"
     },
     "options_inline_button_show": {
-        "message": "വാചകം തിരഞ്ഞെടുക്കുമ്പോൾ ഷോ ബട്ടൺ കാണിക്കുക"
+        "message": "ടെക്സ്റ്റ് തിരഞ്ഞെടുക്കുമ്പോൾ ബട്ടൺ കാണിക്കുക"
     },
     "options_text_field_button_show": {
-        "message": "ടെക്സ്റ്റ്ഫീൽഡിലെ ബട്ടൺ കാണിക്കുക"
+        "message": "ടെക്സ്റ്റ്ഫീൽഡിൽ ബട്ടൺ കാണിക്കുക"
     },
     "options_hide_button_on_sites": {
         "message": "ഈ സൈറ്റുകളിലെ ബട്ടൺ മറയ്ക്കുക:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "നിങ്ങൾ ഒഴിവാക്കാൻ ആഗ്രഹിക്കുന്ന സൈറ്റിലെ പോപ്പ്അപ്പ് വിൻഡോയുടെ മെനു ഉപയോഗിച്ച് ഡൊമെയ്നുകൾ ചേർക്കുക"
+        "message": "നിങ്ങൾ ഒഴിവാക്കേണ്ട സൈറ്റിലെ പോപ്പ്അപ്പ് വിൻഡോയുടെ മെനു ഉപയോഗിച്ച് ഡൊമെയ്‌നുകൾ ചേർക്കുക"
     },
     "options_show_original_text": {
         "message": "ഉറവിട വാചകം കാണിക്കുക"
@@ -67,7 +57,7 @@
         "message": "പോപ്പ്അപ്പ് വിൻഡോ ലോക്ക് ചെയ്യുക"
     },
     "options_lock_popup_window_hint": {
-        "message": "പ്രവർത്തനക്ഷമമാക്കിയിട്ടുണ്ടെങ്കിൽ, അതിന് പുറത്ത് ക്ലിക്കുചെയ്യുമ്പോൾ പോപ്പ്അപ്പ് അടയ്ക്കില്ല"
+        "message": "പ്രവർത്തനക്ഷമമാക്കിയാൽ, പോപ്പ്അപ്പിന് പുറത്ത് ക്ലിക്ക് ചെയ്യുമ്പോൾ അത് അടയ്‌ക്കില്ല"
     },
     "options_history_length": {
         "message": "ചരിത്ര എൻട്രികൾ (പരമാവധി.)"
@@ -76,7 +66,7 @@
         "message": "ചരിത്രത്തിലെ എൻട്രികൾ:"
     },
     "options_history_enable": {
-        "message": "ചരിത്രം പ്രാപ്തമാക്കുക"
+        "message": "ചരിത്രം പ്രവർത്തനക്ഷമമാക്കുക"
     },
     "options_clear_history": {
         "message": "ചരിത്രം ഇല്ലാതാക്കുക"
@@ -88,52 +78,52 @@
         "message": "ഭാഷ"
     },
     "options_tts_default_voice": {
-        "message": "സ്ഥിരസ്ഥിതി ശബ്ദം"
+        "message": "ഡിഫോൾട്ട് ശബ്ദം"
     },
     "options_tts_voices": {
-        "message": "ശബ്ദ"
+        "message": "ശബ്ദങ്ങൾ"
     },
     "options_tts_table_caption": {
-        "message": "ഒരു ഭാഷ ലിസ്റ്റുചെയ്തിട്ടില്ലെങ്കിൽ, ഒരു ബാഹ്യ ടെക്സ്റ്റ്-ടു-സ്പീച്ച് സേവനം ഉപയോഗിക്കും."
+        "message": "ഒരു ഭാഷ ലിസ്‌റ്റ് ചെയ്‌തിട്ടില്ലെങ്കിൽ, ഒരു ബാഹ്യ ടെക്‌സ്‌റ്റ്-ടു-സ്‌പീച്ച് സേവനം ഉപയോഗിക്കും."
     },
     "options_tts_no_voices_found": {
-        "message": "നിങ്ങളുടെ ബ്ര browser സർ സംഭാഷണ സിന്തസിസിനെ പിന്തുണയ്ക്കുന്നില്ല. പകരം ഞങ്ങൾ ഒരു ബാഹ്യ സേവനം ഉപയോഗിക്കും."
+        "message": "നിങ്ങളുടെ ബ്രൗസർ സംഭാഷണ സമന്വയത്തെ പിന്തുണയ്ക്കുന്നില്ല. പകരം ഞങ്ങൾ ഒരു ബാഹ്യ സേവനം ഉപയോഗിക്കും."
     },
     "options_edit_keyboard_shortcut": {
-        "message": "കീബോർഡ് കുറുക്കുവഴികൾ എഡിറ്റുചെയ്യുക"
+        "message": "കീബോർഡ് കുറുക്കുവഴികൾ എഡിറ്റ് ചെയ്യുക"
     },
     "options_keyboard_shortcut_open_popup": {
         "message": "പോപ്പ്അപ്പ് വിൻഡോ തുറക്കുന്നതിനുള്ള കീബോർഡ് കുറുക്കുവഴി"
     },
     "options_key_combination_is_not_set": {
-        "message": "കീബോർഡ് കുറുക്കുവഴി സജ്ജമാക്കിയിട്ടില്ല"
+        "message": "കീബോർഡ് കുറുക്കുവഴി സജ്ജീകരിച്ചിട്ടില്ല"
     },
     "options_font_size": {
-        "message": "ഫോണ്ട് വലുപ്പം"
+        "message": "ഫോണ്ട് വലിപ്പം"
     },
     "options_font_size_xs": {
-        "message": "അധിക ചെറുത് (12px)"
+        "message": "വളരെ ചെറുത് (12px)"
     },
     "options_font_size_sm": {
-        "message": "ചെറുത് (14Px)"
+        "message": "ചെറുത് (14px)"
     },
     "options_font_size_md": {
-        "message": "സാധാരണ (16Px)"
+        "message": "സാധാരണ (16px)"
     },
     "options_font_size_lg": {
-        "message": "വലിയ (18Px)"
+        "message": "വലുത് (18px)"
     },
     "options_font_size_xl": {
-        "message": "അധിക വലുത് (20px)"
+        "message": "വളരെ വലുത് (20px)"
     },
     "options_support_msg": {
-        "message": "എന്തെങ്കിലും പ്രവർത്തിക്കുന്നില്ലെങ്കിൽ, അല്ലെങ്കിൽ നിങ്ങൾക്ക് എന്തെങ്കിലും നിർദ്ദേശങ്ങളുണ്ടെങ്കിൽ, ദയവായി എന്നെ ഇവിടെ അറിയിക്കുക"
+        "message": "എന്തെങ്കിലും പ്രവർത്തിക്കുന്നില്ലെങ്കിൽ, അല്ലെങ്കിൽ നിങ്ങൾക്ക് എന്തെങ്കിലും നിർദ്ദേശങ്ങൾ ഉണ്ടെങ്കിൽ, ദയവായി എന്നെ ഇവിടെ അറിയിക്കുക"
     },
     "options_support_donations": {
-        "message": "ഈ സ software ജന്യ സോഫ്റ്റ്വെയറിനെ പിന്തുണയ്ക്കാൻ നിങ്ങൾ ആഗ്രഹിക്കുന്നുവെങ്കിൽ"
+        "message": "ഈ സ്വതന്ത്ര സോഫ്റ്റ്‌വെയറിനെ പിന്തുണയ്ക്കാൻ നിങ്ങൾ ആഗ്രഹിക്കുന്നുവെങ്കിൽ"
     },
     "options_address": {
-        "message": "അഭിസംബോധന ചെയ്യുക"
+        "message": "വിലാസം"
     },
     "options_copy_address": {
         "message": "വിലാസം പകർത്തുക"
@@ -145,16 +135,16 @@
         "message": "കുറവ്"
     },
     "target_lang_label": {
-        "message": "വിവർത്തനം:"
+        "message": "ഇതിലേക്ക് വിവർത്തനം ചെയ്യുക:"
     },
     "popup_dictionary": {
         "message": "നിഘണ്ടു"
     },
     "popup_dictionary_frequency": {
-        "message": "ആവര്ത്തനം"
+        "message": "ആവൃത്തി"
     },
     "popup_definitions": {
-        "message": "നിര്വചനങ്ങൾ"
+        "message": "നിർവചനങ്ങൾ"
     },
     "popup_definitions_synonyms": {
         "message": "പര്യായങ്ങൾ:"
@@ -169,13 +159,13 @@
         "message": "യഥാർത്ഥ ഭാഷ:"
     },
     "popup_menu_reverse_translate": {
-        "message": "റിവേഴ്സ് വിവർത്തനം"
+        "message": "വിപരീത വിവർത്തനം"
     },
     "popup_menu_lock_window": {
-        "message": "ലോക്ക് വിൻഡോ"
+        "message": "വിൻഡോ ലോക്ക് ചെയ്യുക"
     },
     "popup_menu_unlock_window": {
-        "message": "വിൻഡോ അൺലോക്കുചെയ്യുക"
+        "message": "വിൻഡോ അൺലോക്ക് ചെയ്യുക"
     },
     "popup_menu_show_translate_button": {
         "message": "വിവർത്തനം ബട്ടൺ കാണിക്കുക"
@@ -187,10 +177,10 @@
         "message": "അധിക ക്രമീകരണങ്ങൾ"
     },
     "popup_placeholder_translation": {
-        "message": "വിവര്ത്തനം"
+        "message": "വിവർത്തനം"
     },
     "theme_light": {
-        "message": "ഇളം തീം"
+        "message": "ലൈറ്റ് തീം"
     },
     "theme_dark": {
         "message": "ഇരുണ്ട തീം"
@@ -205,97 +195,97 @@
         "message": "ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തുക"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "എച്ച്ടിടിപി സൈറ്റുകളിൽ പകർപ്പ് പിന്തുണയ്ക്കുന്നില്ല"
+        "message": "HTTP സൈറ്റുകളിൽ പകർപ്പ് പിന്തുണയ്ക്കുന്നില്ല"
     },
     "tooltip_copyed": {
-        "message": "പകർന്നു"
+        "message": "പകർത്തി"
     },
     "tooltip_copy_error": {
-        "message": "ക്ലോസ് പിശക്!"
+        "message": "പകർത്തൽ പിശക്!"
     },
     "tooltip_listen_to_the_text": {
-        "message": "വാചകം ശ്രദ്ധിക്കുക"
+        "message": "വാചകം കേൾക്കുക"
     },
     "tooltip_listen_stop": {
         "message": "നിർത്തുക"
     },
     "tooltip_listen_language_is_not_support": {
-        "message": "ഭാഷ പിന്തുണയല്ല"
+        "message": "ഭാഷ പിന്തുണയ്ക്കുന്നില്ല"
     },
     "tooltip_go_back": {
-        "message": "പിന്നിലുള്ള"
+        "message": "തിരികെ"
     },
     "tooltip_go_forward": {
         "message": "മുന്നോട്ട്"
     },
     "tooltip_clear_text": {
-        "message": "വാചകം മായ്ക്കുക"
+        "message": "ടെക്സ്റ്റ് മായ്‌ക്കുക"
     },
     "tooltip_clear_search": {
-        "message": "തിരയൽ മായ്ക്കുക"
+        "message": "തിരയൽ മായ്‌ക്കുക"
     },
     "date_today": {
-        "message": "ഇന്നേദിവസം"
+        "message": "ഇന്ന്"
     },
     "date_yesterday": {
-        "message": "തലേനാള്"
+        "message": "ഇന്നലെ"
     },
     "forefox_perm_header": {
-        "message": "ഫയർഫോക്സിൽ സമാരംഭം അനുവദിക്കുക"
+        "message": "Firefox-ൽ സമാരംഭം അനുവദിക്കുക"
     },
     "forefox_perm_text": {
-        "message": "വെബ്സൈറ്റുകൾ ആക്സസ് ചെയ്യുന്നതിനും ഫയർഫോക്സിൽ വിവർത്തനം ചെയ്യുന്നതിനും ഈ വിപുലീകരണത്തിന് അനുമതി ആവശ്യമാണ്"
+        "message": "ഈ വിപുലീകരണത്തിന് വെബ്‌സൈറ്റുകൾ ആക്‌സസ് ചെയ്യാനും ഫയർഫോക്‌സിൽ വിവർത്തനം ചെയ്യാനും നിങ്ങളുടെ അനുമതി ആവശ്യമാണ്"
     },
     "forefox_perm_button": {
         "message": "അനുമതികൾ നിയന്ത്രിക്കുക"
     },
     "select_language_search_placeholder": {
-        "message": "ഭാഷകൾ കണ്ടെത്തുക (ഐഎസ്ഒ കോഡ് അല്ലെങ്കിൽ പേര്)"
+        "message": "ഭാഷകൾ കണ്ടെത്തുക (ISO കോഡ് അല്ലെങ്കിൽ പേര്)"
     },
     "select_language_search_no_results": {
         "message": "ഫലങ്ങളൊന്നുമില്ല"
     },
     "try_my_extensions": {
-        "message": "Moday എന്റെ മറ്റ് വിപുലീകരണങ്ങൾ പരീക്ഷിക്കുക"
+        "message": "🚀 എൻ്റെ മറ്റ് വിപുലീകരണങ്ങൾ പരീക്ഷിക്കുക"
     },
     "language_auto": {
-        "message": "ഭാഷ കണ്ടെത്തുക"
+        "message": "ഭാഷ കണ്ടുപിടിക്കുക"
     },
     "language_ab": {
         "message": "അബ്ഖാസ്"
     },
     "language_ace": {
-        "message": "ACHNEENE"
+        "message": "അചെനീസ്"
     },
     "language_ach": {
-        "message": "അനോലി"
+        "message": "അച്ചോളി"
     },
     "language_af": {
-        "message": "അഫ്രീക്കാക്കാർ"
+        "message": "ആഫ്രിക്കൻസ്"
     },
     "language_sq": {
         "message": "അൽബേനിയൻ"
     },
     "language_alz": {
-        "message": "അസാൂരി"
+        "message": "ആളൂർ"
     },
     "language_am": {
         "message": "അംഹാരിക്"
     },
     "language_ar": {
-        "message": "അറബിക്"
+        "message": "അറബി"
     },
     "language_hy": {
         "message": "അർമേനിയൻ"
     },
     "language_as": {
-        "message": "ആസാമീസ്"
+        "message": "അസമീസ്"
     },
     "language_awa": {
-        "message": "അവദി"
+        "message": "കാലാവധി"
     },
     "language_ay": {
-        "message": "അയ്മര"
+        "message": "അയ്മാര"
     },
     "language_az": {
         "message": "അസർബൈജാനി"
@@ -304,7 +294,7 @@
         "message": "ബാലിനീസ്"
     },
     "language_bm": {
-        "message": "ബംബര"
+        "message": "ബംബാര"
     },
     "language_ba": {
         "message": "ബഷ്കീർ"
@@ -313,13 +303,13 @@
         "message": "ബാസ്ക്"
     },
     "language_btx": {
-        "message": "ബട്ടക് കരോ"
+        "message": "ബടക് കരോ"
     },
     "language_bts": {
-        "message": "ബതക് സിമലൂങ്കുൻ"
+        "message": "ബടക് സിമലുങ്കുൻ"
     },
     "language_bbc": {
-        "message": "ബട്ടക് തോബ"
+        "message": "ബടക് തോബ"
     },
     "language_be": {
         "message": "ബെലാറഷ്യൻ"
@@ -331,7 +321,7 @@
         "message": "ബംഗാളി"
     },
     "language_bew": {
-        "message": "ബെമാവി"
+        "message": "ബെറ്റാവി"
     },
     "language_bho": {
         "message": "ഭോജ്പുരി"
@@ -343,16 +333,16 @@
         "message": "ബോസ്നിയൻ"
     },
     "language_br": {
-        "message": "ബ്രെട്ടൻ"
+        "message": "ബ്രെട്ടൺ"
     },
     "language_bg": {
         "message": "ബൾഗേറിയൻ"
     },
     "language_bua": {
-        "message": "ബൂറോത്ത്"
+        "message": "ബുര്യത്"
     },
     "language_yue": {
-        "message": "കന്റോണീസ്"
+        "message": "കൻ്റോണീസ്"
     },
     "language_ca": {
         "message": "കറ്റാലൻ"
@@ -361,13 +351,13 @@
         "message": "സെബുവാനോ"
     },
     "language_ny": {
-        "message": "ചിചേവ (NYANJA)"
+        "message": "ചിച്ചേവ (ന്യഞ്ജ)"
     },
     "language_zh_CN": {
         "message": "ചൈനീസ് (ലളിതമാക്കിയത്)"
     },
     "language_zh_TW": {
-        "message": "ചൈനീസ് (പരമ്പരാഗത)"
+        "message": "ചൈനീസ് (പരമ്പരാഗതം)"
     },
     "language_cv": {
         "message": "ചുവാഷ്"
@@ -403,28 +393,28 @@
         "message": "ഡച്ച്"
     },
     "language_dz": {
-        "message": "സോങ്ഖ"
+        "message": "സോങ്ക"
     },
     "language_en": {
         "message": "ഇംഗ്ലീഷ്"
     },
     "language_eo": {
-        "message": "എസ്പെരാന്തോ"
+        "message": "എസ്പറാൻ്റോ"
     },
     "language_et": {
         "message": "എസ്റ്റോണിയൻ"
     },
     "language_ee": {
-        "message": "പണ്ടക്കൂട്"
+        "message": "ഈ"
     },
     "language_fj": {
         "message": "ഫിജിയൻ"
     },
     "language_fil": {
-        "message": "ഫിലിപ്പിനോ (തഗാലോഗ്)"
+        "message": "ഫിലിപ്പിനോ (ടഗാലോഗ്)"
     },
     "language_fi": {
-        "message": "ഫിനിഷ്"
+        "message": "ഫിന്നിഷ്"
     },
     "language_fr": {
         "message": "ഫ്രഞ്ച്"
@@ -439,16 +429,16 @@
         "message": "ഫ്രിസിയൻ"
     },
     "language_ff": {
-        "message": "ഫുൾഫുൾഡ്"
+        "message": "ഫുൾഫുൾഡെ"
     },
     "language_gaa": {
-        "message": "ഗാ"
+        "message": "ഗ"
     },
     "language_gl": {
         "message": "ഗലീഷ്യൻ"
     },
     "language_lg": {
-        "message": "ഗണ്ട (ലുഗന്ദ)"
+        "message": "ഗണ്ട (ലുഗാണ്ട)"
     },
     "language_ka": {
         "message": "ജോർജിയൻ"
@@ -469,10 +459,10 @@
         "message": "ഹെയ്തിയൻ ക്രിയോൾ"
     },
     "language_cnh": {
-        "message": "ഹഖാ താടി"
+        "message": "ഹഖ ചിൻ"
     },
     "language_ha": {
-        "message": "ഹ aus സ"
+        "message": "ഹൌസ"
     },
     "language_haw": {
         "message": "ഹവായിയൻ"
@@ -481,28 +471,28 @@
         "message": "ഹീബ്രു"
     },
     "language_hil": {
-        "message": "ഹിലിഗാനോൺ"
+        "message": "ഹിലിഗയ്നോൺ"
     },
     "language_hi": {
         "message": "ഹിന്ദി"
     },
     "language_hmn": {
-        "message": "ഹമോംഗ്"
+        "message": "മോങ്ങ്"
     },
     "language_hu": {
         "message": "ഹംഗേറിയൻ"
     },
     "language_hrx": {
-        "message": "ഹണ്ട്സ്രിക്"
+        "message": "ഹുൻസ്രിക്ക്"
     },
     "language_is": {
-        "message": "ഐസ്ലാൻഡിക്"
+        "message": "ഐസ്‌ലാൻഡിക്"
     },
     "language_ig": {
         "message": "ഇഗ്ബോ"
     },
     "language_ilo": {
-        "message": "ഇലോക്കോ"
+        "message": "ഇലോകോ"
     },
     "language_id": {
         "message": "ഇന്തോനേഷ്യൻ"
@@ -523,19 +513,19 @@
         "message": "കന്നഡ"
     },
     "language_pam": {
-        "message": "കപ്പാംപംഗൻ"
+        "message": "കപമ്പംഗൻ"
     },
     "language_kk": {
         "message": "കസാഖ്"
     },
     "language_km": {
-        "message": "ജർമൻ"
+        "message": "ഖെമർ"
     },
     "language_cgg": {
-        "message": "കെയ്ഗ"
+        "message": "കിഗാ"
     },
     "language_rw": {
-        "message": "കിന്യാർവാണ്ട"
+        "message": "കിനിയർവാണ്ട"
     },
     "language_ktu": {
         "message": "കിതുബ"
@@ -550,10 +540,10 @@
         "message": "ക്രിയോ"
     },
     "language_ku": {
-        "message": "കുർദിഷ് (കുർമാൻജി)"
+        "message": "കുർദിഷ് (കൂർമാൻജി)"
     },
     "language_ckb": {
-        "message": "കുർദിഷ് (സോറാനി)"
+        "message": "കുർദിഷ് (സൊറാനി)"
     },
     "language_ky": {
         "message": "കിർഗിസ്"
@@ -562,7 +552,7 @@
         "message": "ലാവോ"
     },
     "language_ltg": {
-        "message": "ലത്ഗാലിയൻ"
+        "message": "ലാറ്റ്ഗാലിയൻ"
     },
     "language_la": {
         "message": "ലാറ്റിൻ"
@@ -574,7 +564,7 @@
         "message": "ലിഗൂറിയൻ"
     },
     "language_li": {
-        "message": "ലിമാബർഗൻ"
+        "message": "ലിംബർഗൻ"
     },
     "language_ln": {
         "message": "ലിംഗാല"
@@ -598,13 +588,13 @@
         "message": "മൈഥിലി"
     },
     "language_mak": {
-        "message": "മകാസ്സർ"
+        "message": "മകാസർ"
     },
     "language_mg": {
         "message": "മലഗാസി"
     },
     "language_ms": {
-        "message": "മലായ്"
+        "message": "മലയാളി"
     },
     "language_ms_Arab": {
         "message": "മലായ് (ജാവി)"
@@ -616,16 +606,16 @@
         "message": "മാൾട്ടീസ്"
     },
     "language_mi": {
-        "message": "Moori"
+        "message": "മാവോറി"
     },
     "language_mr": {
         "message": "മറാത്തി"
     },
     "language_chm": {
-        "message": "പുൽമേവ് മാരി"
+        "message": "മേഡോ മാരി"
     },
     "language_mni_Mtei": {
-        "message": "മീറ്റിലോൺ (മണിപുരി)"
+        "message": "മെയ്റ്റിലോൺ (മണിപ്പൂരി)"
     },
     "language_min": {
         "message": "മിനാങ്"
@@ -640,46 +630,46 @@
         "message": "മ്യാൻമർ (ബർമീസ്)"
     },
     "language_nr": {
-        "message": "NDEBEE (തെക്ക്)"
+        "message": "എൻഡെബെലെ (തെക്ക്)"
     },
     "language_new": {
-        "message": "നേപ്പാൾഭസ (പുതിയത്)"
+        "message": "നേപ്പാൾഭാസ (നെവാരി)"
     },
     "language_ne": {
         "message": "നേപ്പാളി"
     },
     "language_nso": {
-        "message": "നോർത്തേൺ സോതോ (സെപെരി)"
+        "message": "വടക്കൻ സോത്തോ (സെപീഡി)"
     },
     "language_no": {
         "message": "നോർവീജിയൻ"
     },
     "language_nus": {
-        "message": "നൂല്"
+        "message": "ന്യൂയർ"
     },
     "language_oc": {
-        "message": "സിറ്റൻ"
+        "message": "ഓക്‌സിറ്റാൻ"
     },
     "language_or": {
-        "message": "ഒഡിയ (ORIYA)"
+        "message": "ഒഡിയ (ഒറിയ)"
     },
     "language_om": {
         "message": "ഒറോമോ"
     },
     "language_pag": {
-        "message": "പംഗസിനാൻ"
+        "message": "പംഗസിനൻ"
     },
     "language_pap": {
-        "message": "പാപ്പിയാമെന്റോ"
+        "message": "പാപ്പിയമെൻ്റോ"
     },
     "language_ps": {
-        "message": "പാഷ്ടോ"
+        "message": "പാഷ്തോ"
     },
     "language_fa": {
         "message": "പേർഷ്യൻ"
     },
     "language_pl": {
-        "message": "മിനുക്കുക"
+        "message": "പോളിഷ്"
     },
     "language_pt": {
         "message": "പോർച്ചുഗീസ്"
@@ -697,16 +687,16 @@
         "message": "പഞ്ചാബി (ഷാമുഖി)"
     },
     "language_qu": {
-        "message": "ക്വച്ചുവ"
+        "message": "കെച്ചുവ"
     },
     "language_rom": {
-        "message": "റോമാനി"
+        "message": "റൊമാനി"
     },
     "language_ro": {
         "message": "റൊമാനിയൻ"
     },
     "language_rn": {
-        "message": "ലുണ്ടി"
+        "message": "റുണ്ടി"
     },
     "language_ru": {
         "message": "റഷ്യൻ"
@@ -715,7 +705,7 @@
         "message": "സമോവൻ"
     },
     "language_sg": {
-        "message": "സാങ്കോ"
+        "message": "സാംഗോ"
     },
     "language_sa": {
         "message": "സംസ്കൃതം"
@@ -730,19 +720,19 @@
         "message": "സെസോതോ"
     },
     "language_crs": {
-        "message": "സീഷെല്ലോയിസ് ക്രൈൾ"
+        "message": "സെയ്ഷെല്ലോസ് ക്രിയോൾ"
     },
     "language_shn": {
         "message": "ഷാൻ"
     },
     "language_sn": {
-        "message": "തോമ"
+        "message": "ഷോണ"
     },
     "language_scn": {
         "message": "സിസിലിയൻ"
     },
     "language_szl": {
-        "message": "സൈലേഷ്യൻ"
+        "message": "സിലേഷ്യൻ"
     },
     "language_sd": {
         "message": "സിന്ധി"
@@ -751,13 +741,13 @@
         "message": "സിംഹള (സിംഹളീസ്)"
     },
     "language_sk": {
-        "message": "സ്ലൊവാക്"
+        "message": "സ്ലോവാക്"
     },
     "language_sl": {
-        "message": "സ്ലൊവേനിയൻ"
+        "message": "സ്ലോവേനിയൻ"
     },
     "language_so": {
-        "message": "സൊമാലി"
+        "message": "സോമാലി"
     },
     "language_es": {
         "message": "സ്പാനിഷ്"
@@ -775,19 +765,19 @@
         "message": "സ്വീഡിഷ്"
     },
     "language_ber": {
-        "message": "തമാസൈറ്റ് (TIFINAGH)"
+        "message": "തമസൈറ്റ് (ടിഫിനാഗ്)"
     },
     "language_ber_latn": {
-        "message": "തമാസൈറ്റ്"
+        "message": "താമസൈറ്റ്"
     },
     "language_tg": {
-        "message": "താജിക്"
+        "message": "താജിക്ക്"
     },
     "language_ta": {
         "message": "തമിഴ്"
     },
     "language_tt": {
-        "message": "താതാർ"
+        "message": "ടാറ്റർ"
     },
     "language_te": {
         "message": "തെലുങ്ക്"
@@ -799,31 +789,31 @@
         "message": "തായ്"
     },
     "language_ti": {
-        "message": "തിരിഞ്ഞ"
+        "message": "ടിഗ്രിന്യ"
     },
     "language_ts": {
-        "message": "Ssonga"
+        "message": "സോംഗ"
     },
     "language_tn": {
-        "message": "ടിഎസ്ഡാന"
+        "message": "സ്വാന"
     },
     "language_tr": {
         "message": "ടർക്കിഷ്"
     },
     "language_tk": {
-        "message": "തുർക്ക്മാൻ"
+        "message": "തുർക്ക്മെൻ"
     },
     "language_ak": {
-        "message": "Twi (akan)"
+        "message": "ട്വി (അകാൻ)"
     },
     "language_uk": {
         "message": "ഉക്രേനിയൻ"
     },
     "language_ur": {
-        "message": "ഉറുദു"
+        "message": "ഉർദു"
     },
     "language_ug": {
-        "message": "ഉയ്ഘൂർ"
+        "message": "ഉയ്ഗൂർ"
     },
     "language_uz": {
         "message": "ഉസ്ബെക്ക്"
@@ -832,19 +822,19 @@
         "message": "വിയറ്റ്നാമീസ്"
     },
     "language_cy": {
-        "message": "വെൽപ്പ്"
+        "message": "വെൽഷ്"
     },
     "language_xh": {
-        "message": "Xosa"
+        "message": "ഷോസ"
     },
     "language_yi": {
-        "message": "Yidishish"
+        "message": "യദിഷ്"
     },
     "language_yo": {
-        "message": "യൊറുബ"
+        "message": "യൊറൂബ"
     },
     "language_yua": {
-        "message": "യൂസടെക് മായ"
+        "message": "യുകാടെക് മായ"
     },
     "language_zu": {
         "message": "സുലു"

@@ -1,12 +1,12 @@
 {
     "app_name": {
-        "message": "Translater - Pagsasalin ng napiling teksto"
+        "message": "Tagasalin - pagsasalin ng napiling teksto"
     },
     "app_description": {
-        "message": "Isalin ang napiling teksto sa Google Translate"
+        "message": "Isalin ang napiling teksto gamit ang Google Translate"
     },
     "app_version": {
-        "message": "Bersyon"
+        "message": "bersyon"
     },
     "context_menus_title": {
         "message": "Isalin ang napiling teksto"
@@ -15,62 +15,52 @@
         "message": "Mga setting"
     },
     "options_title": {
-        "message": "$App_name$ - Mga Setting",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Tagasalin - mga setting"
     },
-    "commands_open_translater": {
-        "message": "Buksan ang $app_name$",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+    "commands_open_translator": {
+        "message": "Buksan ang Tagasalin"
     },
     "popup_or": {
-        "message": "O"
+        "message": "O kaya"
     },
     "options_tab_general": {
-        "message": "Pangkalahatang Mga Setting"
+        "message": "Pangkalahatang mga setting"
     },
     "options_tab_popup_window": {
         "message": "Popup window"
     },
     "options_tab_appearance": {
-        "message": "Panlabas na hitsura"
+        "message": "Panlabas na anyo"
     },
     "options_tab_history": {
         "message": "Kasaysayan"
     },
     "options_inline_button_show": {
-        "message": "Ipakita ang pindutan kapag napili ang teksto"
+        "message": "Ipakita ang pindutan kapag pinili ang teksto"
     },
     "options_text_field_button_show": {
         "message": "Ipakita ang pindutan sa textfield"
     },
     "options_hide_button_on_sites": {
-        "message": "Itago ang pindutan sa mga site na ito:"
+        "message": "Itago ang button sa mga site na ito:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Magdagdag ng mga domain gamit ang menu ng popup window sa site na nais mong ibukod"
+        "message": "Magdagdag ng mga domain gamit ang menu ng popup window sa site na gusto mong ibukod"
     },
     "options_show_original_text": {
-        "message": "Ipakita ang teksto ng mapagkukunan"
+        "message": "Ipakita ang pinagmulang text"
     },
     "options_show_transliteration": {
-        "message": "Magpakita ng pagsasalin"
+        "message": "Ipakita ang transliterasyon"
     },
     "options_lock_popup_window": {
-        "message": "I -lock ang window ng popup"
+        "message": "I-lock ang popup window"
     },
     "options_lock_popup_window_hint": {
-        "message": "Kung pinagana, ang popup ay hindi magsasara kapag nag -click sa labas nito"
+        "message": "Kung pinagana, hindi magsasara ang popup kapag nag-click sa labas nito"
     },
     "options_history_length": {
-        "message": "Mga entry sa kasaysayan (Max.)"
+        "message": "Mga entry sa kasaysayan (max.)"
     },
     "options_records_in_history": {
         "message": "Mga entry sa kasaysayan:"
@@ -91,28 +81,28 @@
         "message": "Default na boses"
     },
     "options_tts_voices": {
-        "message": "Tinig"
+        "message": "Mga boses"
     },
     "options_tts_table_caption": {
-        "message": "Kung ang isang wika ay hindi nakalista, gagamitin ang isang panlabas na serbisyo ng text-to-speech."
+        "message": "Kung ang isang wika ay hindi nakalista, isang panlabas na text-to-speech na serbisyo ang gagamitin."
     },
     "options_tts_no_voices_found": {
-        "message": "Hindi sinusuportahan ng iyong browser ang synthesis ng pagsasalita. Gumagamit kami ng isang panlabas na serbisyo sa halip."
+        "message": "Hindi sinusuportahan ng iyong browser ang speech synthesis. Gagamit na lang kami ng external na serbisyo."
     },
     "options_edit_keyboard_shortcut": {
-        "message": "I -edit ang mga shortcut sa keyboard"
+        "message": "i-edit ang mga keyboard shortcut"
     },
     "options_keyboard_shortcut_open_popup": {
-        "message": "Ang shortcut ng keyboard upang buksan ang window ng popup"
+        "message": "Keyboard shortcut para buksan ang popup window"
     },
     "options_key_combination_is_not_set": {
-        "message": "Ang shortcut ng keyboard ay hindi nakatakda"
+        "message": "hindi nakatakda ang keyboard shortcut"
     },
     "options_font_size": {
         "message": "Laki ng font"
     },
     "options_font_size_xs": {
-        "message": "Sobrang maliit (12px)"
+        "message": "Napakaliit (12px)"
     },
     "options_font_size_sm": {
         "message": "Maliit (14px)"
@@ -124,13 +114,13 @@
         "message": "Malaki (18px)"
     },
     "options_font_size_xl": {
-        "message": "Labis na malaki (20px)"
+        "message": "Sobrang laki (20px)"
     },
     "options_support_msg": {
-        "message": "Kung ang isang bagay ay hindi gumagana, o mayroon kang anumang mga mungkahi, mangyaring ipaalam sa akin dito"
+        "message": "Kung may hindi gumagana, o mayroon kang anumang mga mungkahi, mangyaring ipaalam sa akin dito"
     },
     "options_support_donations": {
-        "message": "Kung nais mong suportahan ang libreng software na ito"
+        "message": "Kung gusto mong suportahan ang libreng software na ito"
     },
     "options_address": {
         "message": "address"
@@ -148,49 +138,49 @@
         "message": "Isalin sa:"
     },
     "popup_dictionary": {
-        "message": "Diksiyonaryo"
+        "message": "Diksyunaryo"
     },
     "popup_dictionary_frequency": {
-        "message": "Kadalasan"
+        "message": "Dalas"
     },
     "popup_definitions": {
         "message": "Mga Kahulugan"
     },
     "popup_definitions_synonyms": {
-        "message": "Kasingkahulugan:"
+        "message": "kasingkahulugan:"
     },
     "popup_examples": {
         "message": "Mga halimbawa"
     },
     "popup_perhaps_you_meant": {
-        "message": "Marahil ay sinadya mo:"
+        "message": "Marahil ang ibig mong sabihin ay:"
     },
     "popup_original_language": {
         "message": "Orihinal na wika:"
     },
     "popup_menu_reverse_translate": {
-        "message": "Baligtad na isalin"
+        "message": "Baliktarin ang pagsasalin"
     },
     "popup_menu_lock_window": {
-        "message": "Lock window"
+        "message": "I-lock ang bintana"
     },
     "popup_menu_unlock_window": {
-        "message": "I -unlock ang window"
+        "message": "I-unlock ang window"
     },
     "popup_menu_show_translate_button": {
-        "message": "Ipakita ang pindutan ng Translate"
+        "message": "Ipakita ang pindutan ng pagsasalin"
     },
     "popup_menu_hide_translate_button": {
-        "message": "Itago ang pindutan ng translate"
+        "message": "Itago ang pindutan ng pagsasalin"
     },
     "popup_menu_options_link": {
-        "message": "Karagdagang mga setting"
+        "message": "Mga karagdagang setting"
     },
     "popup_placeholder_translation": {
         "message": "Pagsasalin"
     },
     "theme_light": {
-        "message": "Magaan na tema"
+        "message": "Banayad na tema"
     },
     "theme_dark": {
         "message": "Madilim na tema"
@@ -205,46 +195,46 @@
         "message": "Kopyahin sa clipboard"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "Ang kopya ay hindi suporta sa mga site ng HTTP"
+        "message": "Ang pagkopya ay hindi suportado sa mga HTTP na site"
     },
     "tooltip_copyed": {
         "message": "Kinopya"
     },
     "tooltip_copy_error": {
-        "message": "Kopyahin ang error!"
+        "message": "Error sa pagkopya!"
     },
     "tooltip_listen_to_the_text": {
-        "message": "Makinig sa teksto"
+        "message": "Makinig sa text"
     },
     "tooltip_listen_stop": {
-        "message": "Huminto"
+        "message": "Tumigil ka"
     },
     "tooltip_listen_language_is_not_support": {
-        "message": "Ang wika ay hindi suporta"
+        "message": "Hindi suportado ang wika"
     },
     "tooltip_go_back": {
-        "message": "Balik"
+        "message": "Bumalik"
     },
     "tooltip_go_forward": {
         "message": "Pasulong"
     },
     "tooltip_clear_text": {
-        "message": "Malinaw na teksto"
+        "message": "I-clear ang text"
     },
     "tooltip_clear_search": {
-        "message": "Malinaw na paghahanap"
+        "message": "I-clear ang paghahanap"
     },
     "date_today": {
-        "message": "Ngayon"
+        "message": "ngayon"
     },
     "date_yesterday": {
         "message": "kahapon"
     },
     "forefox_perm_header": {
-        "message": "Payagan ang paglulunsad sa Firefox"
+        "message": "Payagan ang paglunsad sa Firefox"
     },
     "forefox_perm_text": {
-        "message": "Ang extension na ito ay nangangailangan ng iyong pahintulot upang ma -access ang mga website at isalin ang mga ito sa Firefox"
+        "message": "Ang extension na ito ay nangangailangan ng iyong pahintulot upang ma-access ang mga website at isalin ang mga ito sa Firefox"
     },
     "forefox_perm_button": {
         "message": "Pamahalaan ang mga pahintulot"
@@ -253,13 +243,13 @@
         "message": "Maghanap ng mga wika (ISO code o pangalan)"
     },
     "select_language_search_no_results": {
-        "message": "Walang mga resulta"
+        "message": "Walang resulta"
     },
     "try_my_extensions": {
-        "message": "🚀 Subukan ang aking iba pang mga extension"
+        "message": "🚀 Subukan ang iba ko pang extension"
     },
     "language_auto": {
-        "message": "Makakita ng wika"
+        "message": "tuklasin ang wika"
     },
     "language_ab": {
         "message": "Abkhaz"
@@ -274,7 +264,7 @@
         "message": "Afrikaans"
     },
     "language_sq": {
-        "message": "Albanian"
+        "message": "Albaniano"
     },
     "language_alz": {
         "message": "Alur"
@@ -283,7 +273,7 @@
         "message": "Amharic"
     },
     "language_ar": {
-        "message": "Arabe"
+        "message": "Arabic"
     },
     "language_hy": {
         "message": "Armenian"
@@ -301,7 +291,7 @@
         "message": "Azerbaijani"
     },
     "language_ban": {
-        "message": "Bali"
+        "message": "Balinese"
     },
     "language_bm": {
         "message": "Bambara"
@@ -349,7 +339,7 @@
         "message": "Bulgarian"
     },
     "language_bua": {
-        "message": "Burye"
+        "message": "Buryat"
     },
     "language_yue": {
         "message": "Cantonese"
@@ -364,10 +354,10 @@
         "message": "Chichewa (Nyanja)"
     },
     "language_zh_CN": {
-        "message": "Intsik (pinasimple)"
+        "message": "Chinese (Pinasimple)"
     },
     "language_zh_TW": {
-        "message": "Intsik (tradisyonal)"
+        "message": "Chinese (Tradisyonal)"
     },
     "language_cv": {
         "message": "Chuvash"
@@ -433,7 +423,7 @@
         "message": "Pranses (Pranses)"
     },
     "language_fr_CA": {
-        "message": "Pranses (Canada)"
+        "message": "Pranses (Canadian)"
     },
     "language_fy": {
         "message": "Frisian"
@@ -478,10 +468,10 @@
         "message": "Hawaiian"
     },
     "language_iw": {
-        "message": "Hebreo"
+        "message": "Hebrew"
     },
     "language_hil": {
-        "message": "HILIGAYNON"
+        "message": "Hiligaynon"
     },
     "language_hi": {
         "message": "Hindi"
@@ -505,7 +495,7 @@
         "message": "Iloko"
     },
     "language_id": {
-        "message": "Indonesia"
+        "message": "Indonesian"
     },
     "language_ga": {
         "message": "Irish"
@@ -517,7 +507,7 @@
         "message": "Hapon"
     },
     "language_jw": {
-        "message": "Java"
+        "message": "Javanese"
     },
     "language_kn": {
         "message": "Kannada"
@@ -544,7 +534,7 @@
         "message": "Konkani"
     },
     "language_ko": {
-        "message": "Korean"
+        "message": "Koreano"
     },
     "language_kri": {
         "message": "Krio"
@@ -553,7 +543,7 @@
         "message": "Kurdish (Kurmanji)"
     },
     "language_ckb": {
-        "message": "Kurdish (sorani)"
+        "message": "Kurdish (Sorani)"
     },
     "language_ky": {
         "message": "Kyrgyz"
@@ -628,7 +618,7 @@
         "message": "Meiteilon (Manipuri)"
     },
     "language_min": {
-        "message": "MINANG"
+        "message": "Minang"
     },
     "language_lus": {
         "message": "Mizo"
@@ -649,7 +639,7 @@
         "message": "Nepali"
     },
     "language_nso": {
-        "message": "Hilagang Sotho (Sepedi)"
+        "message": "Northern Sotho (Sepedi)"
     },
     "language_no": {
         "message": "Norwegian"
@@ -673,7 +663,7 @@
         "message": "Papiamento"
     },
     "language_ps": {
-        "message": "PASHTO"
+        "message": "Pashto"
     },
     "language_fa": {
         "message": "Persian"
@@ -685,10 +675,10 @@
         "message": "Portuges"
     },
     "language_pt_PT": {
-        "message": "Portuguese (Portugal)"
+        "message": "Portuges (Portugal)"
     },
     "language_pt_BR": {
-        "message": "Portuguese (Brazil)"
+        "message": "Portuges (Brazil)"
     },
     "language_pa": {
         "message": "Punjabi"
@@ -709,7 +699,7 @@
         "message": "Rundi"
     },
     "language_ru": {
-        "message": "Russian"
+        "message": "Ruso"
     },
     "language_sm": {
         "message": "Samoan"
@@ -772,7 +762,7 @@
         "message": "Swati"
     },
     "language_sv": {
-        "message": "Suweko"
+        "message": "Swedish"
     },
     "language_ber": {
         "message": "Tamazight (Tifinagh)"
@@ -808,7 +798,7 @@
         "message": "Tswana"
     },
     "language_tr": {
-        "message": "Turko"
+        "message": "Turkish"
     },
     "language_tk": {
         "message": "Turkmen"

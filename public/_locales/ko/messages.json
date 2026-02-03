@@ -1,43 +1,33 @@
 {
     "app_name": {
-        "message": "Translater - 선택한 텍스트의 번역"
+        "message": "번역기 - 선택한 텍스트의 번역"
     },
     "app_description": {
-        "message": "Google 번역으로 선택한 텍스트를 번역하십시오"
+        "message": "Google 번역을 사용하여 선택한 텍스트 번역"
     },
     "app_version": {
         "message": "버전"
     },
     "context_menus_title": {
-        "message": "선택한 텍스트를 번역하십시오"
+        "message": "선택한 텍스트 번역"
     },
     "popup_menu_options": {
         "message": "설정"
     },
     "options_title": {
-        "message": "$app_name$ - 설정",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "번역기 - 설정"
     },
-    "commands_open_translater": {
-        "message": "Open $app_name$",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+    "commands_open_translator": {
+        "message": "번역기 열기"
     },
     "popup_or": {
-        "message": "또는"
+        "message": "아니면"
     },
     "options_tab_general": {
-        "message": "일반적인 설정"
+        "message": "일반 설정"
     },
     "options_tab_popup_window": {
-        "message": "팝업 창"
+        "message": "팝업창"
     },
     "options_tab_appearance": {
         "message": "외관"
@@ -46,43 +36,43 @@
         "message": "역사"
     },
     "options_inline_button_show": {
-        "message": "텍스트를 선택하면 표시 버튼"
+        "message": "텍스트가 선택되면 버튼 표시"
     },
     "options_text_field_button_show": {
-        "message": "Textfield의 표시 버튼"
+        "message": "텍스트 필드에 버튼 표시"
     },
     "options_hide_button_on_sites": {
-        "message": "이 사이트의 버튼을 숨 깁니다."
+        "message": "다음 사이트에서 버튼을 숨기세요:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "제외하려는 사이트에서 팝업 창의 메뉴를 사용하여 도메인 추가"
+        "message": "제외하려는 사이트의 팝업창 메뉴를 이용하여 도메인을 추가하세요."
     },
     "options_show_original_text": {
-        "message": "소스 텍스트 표시"
+        "message": "원본 텍스트 표시"
     },
     "options_show_transliteration": {
-        "message": "음역을 보여주십시오"
+        "message": "음역 표시"
     },
     "options_lock_popup_window": {
-        "message": "팝업 창을 잠그십시오"
+        "message": "팝업창 잠금"
     },
     "options_lock_popup_window_hint": {
-        "message": "활성화되면 외부를 클릭 할 때 팝업이 닫히지 않습니다."
+        "message": "활성화하면 팝업 외부를 클릭해도 팝업이 닫히지 않습니다."
     },
     "options_history_length": {
-        "message": "역사 항목 (Max.)"
+        "message": "기록 항목(최대)"
     },
     "options_records_in_history": {
-        "message": "역사의 항목 :"
+        "message": "역사 항목:"
     },
     "options_history_enable": {
-        "message": "역사를 활성화하십시오"
+        "message": "기록 활성화"
     },
     "options_clear_history": {
-        "message": "역사를 삭제하십시오"
+        "message": "기록 삭제"
     },
     "options_delete_history_item": {
-        "message": "역사에서 삭제하십시오"
+        "message": "기록에서 삭제"
     },
     "options_tts_language": {
         "message": "언어"
@@ -94,58 +84,58 @@
         "message": "목소리"
     },
     "options_tts_table_caption": {
-        "message": "언어가 나열되지 않으면 외부 텍스트 음성 서비스가 사용됩니다."
+        "message": "언어가 목록에 없으면 외부 텍스트 음성 변환 서비스가 사용됩니다."
     },
     "options_tts_no_voices_found": {
-        "message": "브라우저는 음성 합성을 지원하지 않습니다. 대신 외부 서비스를 사용할 것입니다."
+        "message": "귀하의 브라우저는 음성 합성을 지원하지 않습니다. 대신 외부 서비스를 사용하겠습니다."
     },
     "options_edit_keyboard_shortcut": {
-        "message": "키보드 바로 가기 편집"
+        "message": "키보드 단축키 편집"
     },
     "options_keyboard_shortcut_open_popup": {
-        "message": "키보드 바로 가기 팝업 창을여십시오"
+        "message": "팝업창을 여는 단축키"
     },
     "options_key_combination_is_not_set": {
-        "message": "키보드 바로 가기가 설정되지 않았습니다"
+        "message": "키보드 단축키가 설정되지 않았습니다"
     },
     "options_font_size": {
         "message": "글꼴 크기"
     },
     "options_font_size_xs": {
-        "message": "여분의 작은 (12px)"
+        "message": "아주 작게(12px)"
     },
     "options_font_size_sm": {
-        "message": "작은 (14px)"
+        "message": "작음(14px)"
     },
     "options_font_size_md": {
-        "message": "정상 (16px)"
+        "message": "일반(16px)"
     },
     "options_font_size_lg": {
-        "message": "큰 (18px)"
+        "message": "대형(18px)"
     },
     "options_font_size_xl": {
-        "message": "추가 대형 (20px)"
+        "message": "특대형(20px)"
     },
     "options_support_msg": {
-        "message": "무언가가 작동하지 않거나 제안이 있으면 여기에 알려주십시오."
+        "message": "문제가 발생하거나 제안 사항이 있으면 여기로 알려주시기 바랍니다."
     },
     "options_support_donations": {
-        "message": "이 무료 소프트웨어를 지원하려면"
+        "message": "이 무료 소프트웨어를 지원하고 싶다면"
     },
     "options_address": {
         "message": "주소"
     },
     "options_copy_address": {
-        "message": "주소를 복사하십시오"
+        "message": "주소 복사"
     },
     "text_expand": {
-        "message": "더"
+        "message": "더보기"
     },
     "text_collapse": {
-        "message": "더 적은"
+        "message": "덜"
     },
     "target_lang_label": {
-        "message": "번역 :"
+        "message": "다음으로 번역:"
     },
     "popup_dictionary": {
         "message": "사전"
@@ -157,31 +147,31 @@
         "message": "정의"
     },
     "popup_definitions_synonyms": {
-        "message": "동의어 :"
+        "message": "동의어:"
     },
     "popup_examples": {
         "message": "예"
     },
     "popup_perhaps_you_meant": {
-        "message": "아마도 당신은 다음을 의미했을 것입니다."
+        "message": "아마도 당신은 다음을 의미했을 것입니다 :"
     },
     "popup_original_language": {
-        "message": "원어:"
+        "message": "원래 언어:"
     },
     "popup_menu_reverse_translate": {
-        "message": "리버스 번역"
+        "message": "역번역"
     },
     "popup_menu_lock_window": {
-        "message": "잠금 창"
+        "message": "창 잠금"
     },
     "popup_menu_unlock_window": {
-        "message": "창을 잠금 해제하십시오"
+        "message": "창 잠금 해제"
     },
     "popup_menu_show_translate_button": {
         "message": "번역 버튼 표시"
     },
     "popup_menu_hide_translate_button": {
-        "message": "번역 버튼을 숨기십시오"
+        "message": "번역 버튼 숨기기"
     },
     "popup_menu_options_link": {
         "message": "추가 설정"
@@ -190,7 +180,7 @@
         "message": "번역"
     },
     "theme_light": {
-        "message": "가벼운 테마"
+        "message": "밝은 테마"
     },
     "theme_dark": {
         "message": "어두운 테마"
@@ -199,40 +189,40 @@
         "message": "시스템 테마"
     },
     "tooltip_translate_text": {
-        "message": "선택한 텍스트를 번역하십시오"
+        "message": "선택한 텍스트 번역"
     },
     "tooltip_copy_to_clipboard": {
-        "message": "클립 보드에 복사하십시오"
+        "message": "클립보드에 복사"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "HTTP 사이트에서는 사본이 지원되지 않습니다"
+        "message": "HTTP 사이트에서는 복사가 지원되지 않습니다."
     },
     "tooltip_copyed": {
-        "message": "복사"
+        "message": "복사됨"
     },
     "tooltip_copy_error": {
-        "message": "오류를 복사하십시오!"
+        "message": "복사 오류!"
     },
     "tooltip_listen_to_the_text": {
-        "message": "텍스트를 듣습니다"
+        "message": "문자 듣기"
     },
     "tooltip_listen_stop": {
-        "message": "멈추다"
+        "message": "중지"
     },
     "tooltip_listen_language_is_not_support": {
         "message": "언어는 지원되지 않습니다"
     },
     "tooltip_go_back": {
-        "message": "뒤쪽에"
+        "message": "뒤로"
     },
     "tooltip_go_forward": {
         "message": "앞으로"
     },
     "tooltip_clear_text": {
-        "message": "명확한 텍스트"
+        "message": "텍스트 지우기"
     },
     "tooltip_clear_search": {
-        "message": "명확한 검색"
+        "message": "검색 지우기"
     },
     "date_today": {
         "message": "오늘"
@@ -241,277 +231,277 @@
         "message": "어제"
     },
     "forefox_perm_header": {
-        "message": "Firefox에서 출시를 허용하십시오"
+        "message": "Firefox에서 실행 허용"
     },
     "forefox_perm_text": {
-        "message": "이 연장은 웹 사이트에 액세스하고 Firefox에서 웹 사이트에 액세스 할 수있는 권한이 필요합니다."
+        "message": "이 확장 프로그램을 사용하려면 웹사이트에 액세스하고 Firefox에서 번역할 수 있는 권한이 필요합니다."
     },
     "forefox_perm_button": {
-        "message": "권한을 관리합니다"
+        "message": "권한 관리"
     },
     "select_language_search_placeholder": {
-        "message": "언어 찾기 (ISO 코드 또는 이름)"
+        "message": "언어 찾기(ISO 코드 또는 이름)"
     },
     "select_language_search_no_results": {
-        "message": "결과가 없습니다"
+        "message": "결과 없음"
     },
     "try_my_extensions": {
-        "message": "🚀 다른 확장을 시도하십시오"
+        "message": "🚀 다른 확장 프로그램을 사용해 보세요"
     },
     "language_auto": {
-        "message": "언어를 감지하십시오"
+        "message": "언어 감지"
     },
     "language_ab": {
-        "message": "압크 하즈"
+        "message": "압하스어"
     },
     "language_ace": {
-        "message": "Acehnese"
+        "message": "아체어"
     },
     "language_ach": {
         "message": "아콜리"
     },
     "language_af": {
-        "message": "아프리카 어"
+        "message": "아프리칸스어"
     },
     "language_sq": {
-        "message": "알바니아"
+        "message": "알바니아어"
     },
     "language_alz": {
-        "message": "알리르"
+        "message": "알루르"
     },
     "language_am": {
-        "message": "암하라"
+        "message": "암하라어"
     },
     "language_ar": {
-        "message": "아라비아 말"
+        "message": "아랍어"
     },
     "language_hy": {
-        "message": "아르메니아 사람"
+        "message": "아르메니아어"
     },
     "language_as": {
-        "message": "아사 메스"
+        "message": "아삼어"
     },
     "language_awa": {
-        "message": "Awadhi"
+        "message": "아와디어"
     },
     "language_ay": {
-        "message": "Aymara"
+        "message": "아이마라어"
     },
     "language_az": {
-        "message": "아제르바이잔"
+        "message": "아제르바이잔어"
     },
     "language_ban": {
-        "message": "발리"
+        "message": "발리인"
     },
     "language_bm": {
         "message": "밤바라"
     },
     "language_ba": {
-        "message": "바쉬 키르"
+        "message": "바쉬르어"
     },
     "language_eu": {
-        "message": "바스크 사람"
+        "message": "바스크어"
     },
     "language_btx": {
-        "message": "바삭 카로"
+        "message": "바탁 카로"
     },
     "language_bts": {
-        "message": "BATAK SIMALUNGUN"
+        "message": "바탁 시말룬군"
     },
     "language_bbc": {
-        "message": "바삭 토바"
+        "message": "바탁 토바"
     },
     "language_be": {
-        "message": "벨로루시"
+        "message": "벨로루시어"
     },
     "language_bem": {
-        "message": "Bemba"
+        "message": "벰바"
     },
     "language_bn": {
-        "message": "벵골 사람"
+        "message": "벵골어"
     },
     "language_bew": {
-        "message": "베타 와이"
+        "message": "베타위"
     },
     "language_bho": {
-        "message": "Bhojpuri"
+        "message": "보지푸리"
     },
     "language_bik": {
-        "message": "비콜라"
+        "message": "비콜"
     },
     "language_bs": {
-        "message": "보스니아 인"
+        "message": "보스니아어"
     },
     "language_br": {
-        "message": "브레튼"
+        "message": "브르타뉴어"
     },
     "language_bg": {
-        "message": "불가리아 사람"
+        "message": "불가리아어"
     },
     "language_bua": {
-        "message": "Buryat"
+        "message": "부리아트"
     },
     "language_yue": {
-        "message": "광동어"
+        "message": "광둥어"
     },
     "language_ca": {
-        "message": "카탈로니아 사람"
+        "message": "카탈로니아어"
     },
     "language_ceb": {
-        "message": "세부 노"
+        "message": "세부아노어"
     },
     "language_ny": {
-        "message": "Chichewa (Nyanja)"
+        "message": "치체와어(냥자어)"
     },
     "language_zh_CN": {
-        "message": "중국어 (단순화)"
+        "message": "중국어(간체)"
     },
     "language_zh_TW": {
-        "message": "중국어 (전통)"
+        "message": "중국어(번체)"
     },
     "language_cv": {
-        "message": "Chuvash"
+        "message": "추바시어"
     },
     "language_co": {
-        "message": "코르시칸"
+        "message": "코르시카어"
     },
     "language_crh": {
-        "message": "크림 타타르"
+        "message": "크림 타타르어"
     },
     "language_hr": {
-        "message": "크로아티아"
+        "message": "크로아티아어"
     },
     "language_cs": {
-        "message": "체코 사람"
+        "message": "체코어"
     },
     "language_da": {
-        "message": "덴마크 말"
+        "message": "덴마크어"
     },
     "language_din": {
-        "message": "Dinka"
+        "message": "딩카"
     },
     "language_dv": {
-        "message": "디브 히"
+        "message": "디베히"
     },
     "language_doi": {
         "message": "도그리"
     },
     "language_dov": {
-        "message": "Dombe"
+        "message": "돔베"
     },
     "language_nl": {
-        "message": "네덜란드 사람"
+        "message": "네덜란드어"
     },
     "language_dz": {
-        "message": "dzongkha"
+        "message": "종카어"
     },
     "language_en": {
         "message": "영어"
     },
     "language_eo": {
-        "message": "에스페란토 말"
+        "message": "에스페란토"
     },
     "language_et": {
-        "message": "에스토니아 사람"
+        "message": "에스토니아어"
     },
     "language_ee": {
-        "message": "암양"
+        "message": "에웨"
     },
     "language_fj": {
-        "message": "피지안"
+        "message": "피지어"
     },
     "language_fil": {
-        "message": "필리핀 (Tagalog)"
+        "message": "필리핀어(타갈로그어)"
     },
     "language_fi": {
-        "message": "핀란드"
+        "message": "핀란드어"
     },
     "language_fr": {
-        "message": "프랑스 국민"
+        "message": "프랑스어"
     },
     "language_fr_FR": {
-        "message": "프랑스어 (프랑스어)"
+        "message": "프랑스어(프랑스어)"
     },
     "language_fr_CA": {
-        "message": "프랑스어 (캐나다)"
+        "message": "프랑스어(캐나다)"
     },
     "language_fy": {
-        "message": "프리 시안"
+        "message": "프리지아어"
     },
     "language_ff": {
-        "message": "Fulfulde"
+        "message": "풀풀드"
     },
     "language_gaa": {
-        "message": "GA"
+        "message": "가"
     },
     "language_gl": {
         "message": "갈리시아어"
     },
     "language_lg": {
-        "message": "간다 (Luganda)"
+        "message": "간다어(루간다어)"
     },
     "language_ka": {
-        "message": "그루지야 사람"
+        "message": "조지아어"
     },
     "language_de": {
-        "message": "독일 사람"
+        "message": "독일어"
     },
     "language_el": {
-        "message": "그리스 사람"
+        "message": "그리스어"
     },
     "language_gn": {
-        "message": "Guarani"
+        "message": "과라니어"
     },
     "language_gu": {
-        "message": "구자라트"
+        "message": "구자라트어"
     },
     "language_ht": {
-        "message": "아이티 크리올"
+        "message": "아이티 크리올어"
     },
     "language_cnh": {
-        "message": "하카 턱"
+        "message": "하카친"
     },
     "language_ha": {
-        "message": "하우사"
+        "message": "하우사어"
     },
     "language_haw": {
-        "message": "하와이"
+        "message": "하와이안"
     },
     "language_iw": {
-        "message": "헤브라이 사람"
+        "message": "히브리어"
     },
     "language_hil": {
-        "message": "힐리 가이논"
+        "message": "힐리가이논"
     },
     "language_hi": {
-        "message": "힌디 어"
+        "message": "힌디어"
     },
     "language_hmn": {
         "message": "몽족"
     },
     "language_hu": {
-        "message": "헝가리 인"
+        "message": "헝가리어"
     },
     "language_hrx": {
-        "message": "Hunsrik"
+        "message": "훈스릭"
     },
     "language_is": {
-        "message": "아이슬란드"
+        "message": "아이슬란드어"
     },
     "language_ig": {
-        "message": "Igbo"
+        "message": "이보어"
     },
     "language_ilo": {
         "message": "일로코"
     },
     "language_id": {
-        "message": "인도네시아 인"
+        "message": "인도네시아어"
     },
     "language_ga": {
-        "message": "아일랜드"
+        "message": "아일랜드어"
     },
     "language_it": {
-        "message": "이탈리아 사람"
+        "message": "이탈리아어"
     },
     "language_ja": {
         "message": "일본어"
@@ -523,109 +513,109 @@
         "message": "칸나다어"
     },
     "language_pam": {
-        "message": "카 팜 팡간"
+        "message": "카팜팡안"
     },
     "language_kk": {
-        "message": "카자흐"
+        "message": "카자흐어"
     },
     "language_km": {
-        "message": "크메르"
+        "message": "크메르어"
     },
     "language_cgg": {
         "message": "키가"
     },
     "language_rw": {
-        "message": "Kinyarwanda"
+        "message": "키냐르완다어"
     },
     "language_ktu": {
-        "message": "키투 바"
+        "message": "키투바"
     },
     "language_gom": {
-        "message": "Konkani"
+        "message": "콘카니"
     },
     "language_ko": {
-        "message": "한국인"
+        "message": "한국어"
     },
     "language_kri": {
         "message": "크리오"
     },
     "language_ku": {
-        "message": "쿠르드 (Kurdish) (쿠르 만지)"
+        "message": "쿠르드어(쿠르만지어)"
     },
     "language_ckb": {
-        "message": "쿠르드족 (소니)"
+        "message": "쿠르드어(소라니어)"
     },
     "language_ky": {
-        "message": "키르기즈"
+        "message": "키르기스어"
     },
     "language_lo": {
-        "message": "라오"
+        "message": "라오스"
     },
     "language_ltg": {
-        "message": "Latgalian"
+        "message": "라트갈리아어"
     },
     "language_la": {
         "message": "라틴어"
     },
     "language_lv": {
-        "message": "라트비아 사람"
+        "message": "라트비아어"
     },
     "language_lij": {
-        "message": "리구 리아"
+        "message": "리구리아어"
     },
     "language_li": {
-        "message": "림버건"
+        "message": "림부르간"
     },
     "language_ln": {
-        "message": "링 갈라"
+        "message": "링갈라"
     },
     "language_lt": {
-        "message": "리투아니아 사람"
+        "message": "리투아니아어"
     },
     "language_lmo": {
-        "message": "롬바르드 사람"
+        "message": "롬바르드어"
     },
     "language_luo": {
         "message": "루오"
     },
     "language_lb": {
-        "message": "룩셈부르크"
+        "message": "룩셈부르크어"
     },
     "language_mk": {
-        "message": "마케도니아 어"
+        "message": "마케도니아어"
     },
     "language_mai": {
-        "message": "Maithili"
+        "message": "마이틸리"
     },
     "language_mak": {
-        "message": "마카 사르"
+        "message": "마카사르"
     },
     "language_mg": {
-        "message": "마다가스카르 사람"
+        "message": "마다가스카르어"
     },
     "language_ms": {
-        "message": "말레이 사람"
+        "message": "말레이어"
     },
     "language_ms_Arab": {
-        "message": "말레이어 (jawi)"
+        "message": "말레이어(자위어)"
     },
     "language_ml": {
-        "message": "말라 얄 람어"
+        "message": "말라얄람어"
     },
     "language_mt": {
-        "message": "몰티즈"
+        "message": "몰타어"
     },
     "language_mi": {
-        "message": "마오리족"
+        "message": "마오리"
     },
     "language_mr": {
-        "message": "마라 티"
+        "message": "마라티어"
     },
     "language_chm": {
-        "message": "메도우 마리"
+        "message": "초원 마리"
     },
     "language_mni_Mtei": {
-        "message": "Meiteilon (Manipuri)"
+        "message": "메이테일론(마니푸리)"
     },
     "language_min": {
         "message": "미낭"
@@ -634,103 +624,103 @@
         "message": "미조"
     },
     "language_mn": {
-        "message": "몽고 어"
+        "message": "몽골어"
     },
     "language_my": {
-        "message": "미얀마 (버마어)"
+        "message": "미얀마(버마어)"
     },
     "language_nr": {
-        "message": "Ndebele (남쪽)"
+        "message": "은데벨레(남부)"
     },
     "language_new": {
-        "message": "네팔 바사 (Newari)"
+        "message": "네팔바사(네와리)"
     },
     "language_ne": {
-        "message": "네팔"
+        "message": "네팔어"
     },
     "language_nso": {
-        "message": "북부 소토 (Sepedi)"
+        "message": "북부 소토어(세페디)"
     },
     "language_no": {
-        "message": "노르웨이 인"
+        "message": "노르웨이어"
     },
     "language_nus": {
-        "message": "nuer"
+        "message": "누에르"
     },
     "language_oc": {
-        "message": "Occitan"
+        "message": "옥시탄"
     },
     "language_or": {
-        "message": "오디아 (오리 야)"
+        "message": "오디아(오리야어)"
     },
     "language_om": {
-        "message": "오로모"
+        "message": "오로모어"
     },
     "language_pag": {
-        "message": "Pangasinan"
+        "message": "팡가시난"
     },
     "language_pap": {
-        "message": "Papiamento"
+        "message": "파피아멘토"
     },
     "language_ps": {
-        "message": "파슈토"
+        "message": "파슈토어"
     },
     "language_fa": {
-        "message": "페르시아 인"
+        "message": "페르시아어"
     },
     "language_pl": {
-        "message": "광택"
+        "message": "폴란드어"
     },
     "language_pt": {
-        "message": "포르투갈 인"
+        "message": "포르투갈어"
     },
     "language_pt_PT": {
-        "message": "포르투갈어 (포르투갈)"
+        "message": "포르투갈어(포르투갈)"
     },
     "language_pt_BR": {
-        "message": "포르투갈어 (브라질)"
+        "message": "포르투갈어(브라질)"
     },
     "language_pa": {
-        "message": "펀 자브"
+        "message": "펀자브어"
     },
     "language_pa_Arab": {
-        "message": "펀 자브 (Shahmukhi)"
+        "message": "펀자브어(샤무키어)"
     },
     "language_qu": {
-        "message": "케 체아"
+        "message": "케추아어"
     },
     "language_rom": {
         "message": "로마니"
     },
     "language_ro": {
-        "message": "루마니아 사람"
+        "message": "루마니아어"
     },
     "language_rn": {
-        "message": "런디"
+        "message": "룬디어"
     },
     "language_ru": {
-        "message": "러시아인"
+        "message": "러시아어"
     },
     "language_sm": {
-        "message": "사모아"
+        "message": "사모아어"
     },
     "language_sg": {
         "message": "산고"
     },
     "language_sa": {
-        "message": "산스크리트"
+        "message": "산스크리트어"
     },
     "language_gd": {
-        "message": "스코틀랜드 게 일어"
+        "message": "스코틀랜드 게일어"
     },
     "language_sr": {
-        "message": "세르비아 사람"
+        "message": "세르비아어"
     },
     "language_st": {
-        "message": "세소 토"
+        "message": "세소토어"
     },
     "language_crs": {
-        "message": "세이 첼로이 크리올"
+        "message": "세이셸 크리올"
     },
     "language_shn": {
         "message": "샨"
@@ -739,114 +729,114 @@
         "message": "쇼나"
     },
     "language_scn": {
-        "message": "시칠리아"
+        "message": "시칠리아 사람"
     },
     "language_szl": {
-        "message": "실레 지안"
+        "message": "실레지아의"
     },
     "language_sd": {
-        "message": "신디"
+        "message": "신디어"
     },
     "language_si": {
-        "message": "신 할라 (Sinhala) (Sinhalese)"
+        "message": "싱할라어(신할라어)"
     },
     "language_sk": {
-        "message": "슬로바키아 사람"
+        "message": "슬로바키아어"
     },
     "language_sl": {
-        "message": "슬로베니아"
+        "message": "슬로베니아어"
     },
     "language_so": {
-        "message": "소말리아"
+        "message": "소말리아어"
     },
     "language_es": {
-        "message": "스페인 사람"
+        "message": "스페인어"
     },
     "language_su": {
-        "message": "Sundanese"
+        "message": "순다어"
     },
     "language_sw": {
-        "message": "스와 할리"
+        "message": "스와힐리어"
     },
     "language_ss": {
-        "message": "스와 티"
+        "message": "스와티어"
     },
     "language_sv": {
         "message": "스웨덴어"
     },
     "language_ber": {
-        "message": "Tamazight (Tifinagh)"
+        "message": "타마지트어(티피나그어)"
     },
     "language_ber_latn": {
-        "message": "타자 조"
+        "message": "타마지트"
     },
     "language_tg": {
-        "message": "태조"
+        "message": "타지크어"
     },
     "language_ta": {
-        "message": "타밀 사람"
+        "message": "타밀어"
     },
     "language_tt": {
-        "message": "타타르"
+        "message": "타타르어"
     },
     "language_te": {
-        "message": "텔루구 어"
+        "message": "텔루구어"
     },
     "language_tet": {
-        "message": "Tetum"
+        "message": "테툼"
     },
     "language_th": {
-        "message": "태국"
+        "message": "태국어"
     },
     "language_ti": {
-        "message": "티 그린"
+        "message": "티그리냐"
     },
     "language_ts": {
-        "message": "Tsonga"
+        "message": "총가어"
     },
     "language_tn": {
-        "message": "TSWANA"
+        "message": "츠와나어"
     },
     "language_tr": {
-        "message": "터키"
+        "message": "터키어"
     },
     "language_tk": {
-        "message": "투르크멘 말"
+        "message": "투르크멘어"
     },
     "language_ak": {
-        "message": "Twi (Akan)"
+        "message": "트위어(아칸어)"
     },
     "language_uk": {
-        "message": "우크라이나 말"
+        "message": "우크라이나어"
     },
     "language_ur": {
         "message": "우르두어"
     },
     "language_ug": {
-        "message": "uyghur"
+        "message": "위구르어"
     },
     "language_uz": {
-        "message": "우즈벡"
+        "message": "우즈벡어"
     },
     "language_vi": {
-        "message": "베트남 사람"
+        "message": "베트남어"
     },
     "language_cy": {
-        "message": "웨일스 말"
+        "message": "웨일스어"
     },
     "language_xh": {
-        "message": "Xhosa"
+        "message": "코사어"
     },
     "language_yi": {
         "message": "이디시어"
     },
     "language_yo": {
-        "message": "요 루바"
+        "message": "요루바어"
     },
     "language_yua": {
-        "message": "Yucatec Maya"
+        "message": "유카텍 마야"
     },
     "language_zu": {
-        "message": "줄루 족"
+        "message": "줄루어"
     }
 }

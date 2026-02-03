@@ -1,9 +1,9 @@
 {
     "app_name": {
-        "message": "Translater - தேர்ந்தெடுக்கப்பட்ட உரையின் மொழிபெயர்ப்பு"
+        "message": "மொழிபெயர்ப்பாளர் - தேர்ந்தெடுக்கப்பட்ட உரையின் மொழிபெயர்ப்பு"
     },
     "app_description": {
-        "message": "Google மொழிபெயர்ப்புடன் தேர்ந்தெடுக்கப்பட்ட உரையை மொழிபெயர்க்கவும்"
+        "message": "தேர்ந்தெடுக்கப்பட்ட உரையை Google மொழிபெயர்ப்புடன் மொழிபெயர்க்கவும்"
     },
     "app_version": {
         "message": "பதிப்பு"
@@ -15,20 +15,10 @@
         "message": "அமைப்புகள்"
     },
     "options_title": {
-        "message": "$App_name$ - அமைப்புகள்",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "மொழிபெயர்ப்பாளர் - அமைப்புகள்"
     },
-    "commands_open_translater": {
-        "message": "திறந்த $app_name$",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+    "commands_open_translator": {
+        "message": "மொழிபெயர்ப்பாளரைத் திறக்கவும்"
     },
     "popup_or": {
         "message": "அல்லது"
@@ -37,7 +27,7 @@
         "message": "பொது அமைப்புகள்"
     },
     "options_tab_popup_window": {
-        "message": "பாப் அப் சாளரம்"
+        "message": "பாப்அப் சாளரம்"
     },
     "options_tab_appearance": {
         "message": "வெளிப்புற தோற்றம்"
@@ -49,31 +39,31 @@
         "message": "உரை தேர்ந்தெடுக்கப்படும்போது பொத்தானைக் காட்டு"
     },
     "options_text_field_button_show": {
-        "message": "டெக்ஸ்டீல்டில் பொத்தானைக் காட்டு"
+        "message": "உரை புலத்தில் பொத்தானைக் காட்டு"
     },
     "options_hide_button_on_sites": {
-        "message": "இந்த தளங்களில் உள்ள பொத்தானை மறைக்கவும்:"
+        "message": "இந்த தளங்களில் உள்ள பட்டனை மறை:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "நீங்கள் விலக்க விரும்பும் தளத்தில் பாப்அப் சாளரத்தின் மெனுவைப் பயன்படுத்தி களங்களைச் சேர்க்கவும்"
+        "message": "நீங்கள் விலக்க விரும்பும் தளத்தில் பாப்அப் சாளரத்தின் மெனுவைப் பயன்படுத்தி டொமைன்களைச் சேர்க்கவும்"
     },
     "options_show_original_text": {
         "message": "மூல உரையைக் காட்டு"
     },
     "options_show_transliteration": {
-        "message": "மொழிபெயர்ப்பு காட்டு"
+        "message": "ஒலிபெயர்ப்பைக் காட்டு"
     },
     "options_lock_popup_window": {
         "message": "பாப்அப் சாளரத்தை பூட்டு"
     },
     "options_lock_popup_window_hint": {
-        "message": "இயக்கப்பட்டிருந்தால், அதற்கு வெளியே கிளிக் செய்யும் போது பாப்அப் மூடப்படாது"
+        "message": "இயக்கப்பட்டிருந்தால், அதன் வெளியே கிளிக் செய்யும் போது பாப்அப் மூடப்படாது"
     },
     "options_history_length": {
         "message": "வரலாற்று உள்ளீடுகள் (அதிகபட்சம்)"
     },
     "options_records_in_history": {
-        "message": "வரலாற்றில் உள்ளீடுகள்:"
+        "message": "வரலாற்றில் உள்ள பதிவுகள்:"
     },
     "options_history_enable": {
         "message": "வரலாற்றை இயக்கு"
@@ -94,10 +84,10 @@
         "message": "குரல்கள்"
     },
     "options_tts_table_caption": {
-        "message": "ஒரு மொழி பட்டியலிடப்படவில்லை என்றால், வெளிப்புற உரை-க்கு-பேச்சு சேவை பயன்படுத்தப்படும்."
+        "message": "ஒரு மொழி பட்டியலிடப்படவில்லை என்றால், வெளிப்புற உரை முதல் பேச்சு சேவை பயன்படுத்தப்படும்."
     },
     "options_tts_no_voices_found": {
-        "message": "உங்கள் உலாவி பேச்சு தொகுப்பை ஆதரிக்காது. அதற்கு பதிலாக வெளிப்புற சேவையைப் பயன்படுத்துவோம்."
+        "message": "உங்கள் உலாவி பேச்சுத் தொகுப்பை ஆதரிக்காது. அதற்குப் பதிலாக வெளிப்புறச் சேவையைப் பயன்படுத்துவோம்."
     },
     "options_edit_keyboard_shortcut": {
         "message": "விசைப்பலகை குறுக்குவழிகளைத் திருத்தவும்"
@@ -115,28 +105,28 @@
         "message": "கூடுதல் சிறியது (12px)"
     },
     "options_font_size_sm": {
-        "message": "சிறிய (14px)"
+        "message": "சிறியது (14px)"
     },
     "options_font_size_md": {
-        "message": "இயல்பானது (16px)"
+        "message": "இயல்பான (16px)"
     },
     "options_font_size_lg": {
-        "message": "பெரிய (18px)"
+        "message": "பெரியது (18px)"
     },
     "options_font_size_xl": {
-        "message": "கூடுதல் பெரிய (20px)"
+        "message": "கூடுதல் பெரியது (20px)"
     },
     "options_support_msg": {
-        "message": "ஏதாவது வேலை செய்யவில்லை, அல்லது உங்களுக்கு ஏதேனும் ஆலோசனைகள் இருந்தால், தயவுசெய்து இங்கே எனக்குத் தெரியப்படுத்துங்கள்"
+        "message": "ஏதாவது வேலை செய்யவில்லை என்றால், அல்லது உங்களுக்கு ஏதேனும் பரிந்துரைகள் இருந்தால், தயவுசெய்து எனக்கு இங்கே தெரிவிக்கவும்"
     },
     "options_support_donations": {
-        "message": "இந்த இலவச மென்பொருளை நீங்கள் ஆதரிக்க விரும்பினால்"
+        "message": "நீங்கள் இந்த இலவச மென்பொருளை ஆதரிக்க விரும்பினால்"
     },
     "options_address": {
         "message": "முகவரி"
     },
     "options_copy_address": {
-        "message": "முகவரி நகல்"
+        "message": "முகவரியை நகலெடுக்கவும்"
     },
     "text_expand": {
         "message": "மேலும்"
@@ -145,7 +135,7 @@
         "message": "குறைவாக"
     },
     "target_lang_label": {
-        "message": "மொழிபெயர்க்கவும்:"
+        "message": "மொழிபெயர்:"
     },
     "popup_dictionary": {
         "message": "அகராதி"
@@ -157,22 +147,22 @@
         "message": "வரையறைகள்"
     },
     "popup_definitions_synonyms": {
-        "message": "ஒத்த:"
+        "message": "ஒத்த சொற்கள்:"
     },
     "popup_examples": {
         "message": "எடுத்துக்காட்டுகள்"
     },
     "popup_perhaps_you_meant": {
-        "message": "ஒருவேளை நீங்கள் சொன்னீர்கள்:"
+        "message": "ஒருவேளை நீங்கள் கூறியது:"
     },
     "popup_original_language": {
         "message": "அசல் மொழி:"
     },
     "popup_menu_reverse_translate": {
-        "message": "தலைகீழ் மொழிபெயர்க்கவும்"
+        "message": "தலைகீழ் மொழிபெயர்ப்பு"
     },
     "popup_menu_lock_window": {
-        "message": "பூட்டு சாளரம்"
+        "message": "சாளரத்தை பூட்டு"
     },
     "popup_menu_unlock_window": {
         "message": "சாளரத்தைத் திறக்கவும்"
@@ -181,7 +171,7 @@
         "message": "மொழிபெயர்ப்பு பொத்தானைக் காட்டு"
     },
     "popup_menu_hide_translate_button": {
-        "message": "மொழிபெயர்ப்பு பொத்தானை மறைக்கவும்"
+        "message": "மொழிபெயர்ப்பு பொத்தானை மறை"
     },
     "popup_menu_options_link": {
         "message": "கூடுதல் அமைப்புகள்"
@@ -205,7 +195,7 @@
         "message": "கிளிப்போர்டுக்கு நகலெடுக்கவும்"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "நகல் HTTP தளங்களில் ஆதரவு இல்லை"
+        "message": "HTTP தளங்களில் நகலுக்கு ஆதரவு இல்லை"
     },
     "tooltip_copyed": {
         "message": "நகலெடுக்கப்பட்டது"
@@ -220,19 +210,19 @@
         "message": "நிறுத்து"
     },
     "tooltip_listen_language_is_not_support": {
-        "message": "மொழி ஆதரவு அல்ல"
+        "message": "மொழி ஆதரவு இல்லை"
     },
     "tooltip_go_back": {
-        "message": "பின்"
+        "message": "மீண்டும்"
     },
     "tooltip_go_forward": {
         "message": "முன்னோக்கி"
     },
     "tooltip_clear_text": {
-        "message": "உரையை அழிக்கவும்"
+        "message": "தெளிவான உரை"
     },
     "tooltip_clear_search": {
-        "message": "தேடலை அழிக்கவும்"
+        "message": "தெளிவான தேடல்"
     },
     "date_today": {
         "message": "இன்று"
@@ -244,19 +234,19 @@
         "message": "பயர்பாக்ஸில் தொடங்க அனுமதிக்கவும்"
     },
     "forefox_perm_text": {
-        "message": "இந்த நீட்டிப்புக்கு வலைத்தளங்களை அணுகவும் அவற்றை பயர்பாக்ஸில் மொழிபெயர்க்கவும் உங்கள் அனுமதி தேவை"
+        "message": "இந்த நீட்டிப்புக்கு இணையதளங்களை அணுகவும் அவற்றை Firefox இல் மொழிபெயர்க்கவும் உங்கள் அனுமதி தேவை"
     },
     "forefox_perm_button": {
         "message": "அனுமதிகளை நிர்வகிக்கவும்"
     },
     "select_language_search_placeholder": {
-        "message": "மொழிகளைக் கண்டறியவும் (ஐஎஸ்ஓ குறியீடு அல்லது பெயர்)"
+        "message": "மொழிகளைக் கண்டறியவும் (ISO குறியீடு அல்லது பெயர்)"
     },
     "select_language_search_no_results": {
         "message": "முடிவுகள் இல்லை"
     },
     "try_my_extensions": {
-        "message": "My எனது பிற நீட்டிப்புகளை முயற்சிக்கவும்"
+        "message": "🚀 எனது மற்ற நீட்டிப்புகளை முயற்சிக்கவும்"
     },
     "language_auto": {
         "message": "மொழியைக் கண்டறியவும்"
@@ -265,19 +255,19 @@
         "message": "அப்காஸ்"
     },
     "language_ace": {
-        "message": "அசென்னீஸ்"
+        "message": "அசெனீஸ்"
     },
     "language_ach": {
         "message": "அச்சோலி"
     },
     "language_af": {
-        "message": "ஆப்பிரிக்கா"
+        "message": "ஆஃப்ரிகான்ஸ்"
     },
     "language_sq": {
-        "message": "அல்பேனிய"
+        "message": "அல்பேனியன்"
     },
     "language_alz": {
-        "message": "அலூர்"
+        "message": "ஆளூர்"
     },
     "language_am": {
         "message": "அம்ஹாரிக்"
@@ -286,16 +276,16 @@
         "message": "அரபு"
     },
     "language_hy": {
-        "message": "ஆர்மீனியன்"
+        "message": "ஆர்மேனியன்"
     },
     "language_as": {
-        "message": "அசாமி"
+        "message": "ஆசாமிகள்"
     },
     "language_awa": {
         "message": "அவதி"
     },
     "language_ay": {
-        "message": "அய்மாரா"
+        "message": "அய்மரா"
     },
     "language_az": {
         "message": "அஜர்பைஜானி"
@@ -304,7 +294,7 @@
         "message": "பாலினீஸ்"
     },
     "language_bm": {
-        "message": "பாம்பாரா"
+        "message": "பம்பாரா"
     },
     "language_ba": {
         "message": "பாஷ்கிர்"
@@ -316,7 +306,7 @@
         "message": "படக் கரோ"
     },
     "language_bts": {
-        "message": "படக் சிமலுங்கு"
+        "message": "படக் சிமலுங்குன்"
     },
     "language_bbc": {
         "message": "படக் டோபா"
@@ -331,7 +321,7 @@
         "message": "பெங்காலி"
     },
     "language_bew": {
-        "message": "பீட்டாவி"
+        "message": "பெட்டாவி"
     },
     "language_bho": {
         "message": "போஜ்புரி"
@@ -340,7 +330,7 @@
         "message": "பிகோல்"
     },
     "language_bs": {
-        "message": "போஸ்னிய"
+        "message": "போஸ்னியன்"
     },
     "language_br": {
         "message": "பிரெட்டன்"
@@ -349,7 +339,7 @@
         "message": "பல்கேரியன்"
     },
     "language_bua": {
-        "message": "புயட்"
+        "message": "புரியாட்"
     },
     "language_yue": {
         "message": "கான்டோனீஸ்"
@@ -361,13 +351,13 @@
         "message": "செபுவானோ"
     },
     "language_ny": {
-        "message": "சிசேவா (நன்ஜா)"
+        "message": "சிச்சேவா (நயன்ஜா)"
     },
     "language_zh_CN": {
-        "message": "சீன (எளிமைப்படுத்தப்பட்ட)"
+        "message": "சீனம் (எளிமைப்படுத்தப்பட்டது)"
     },
     "language_zh_TW": {
-        "message": "சீன (பாரம்பரிய)"
+        "message": "சீன (பாரம்பரியம்)"
     },
     "language_cv": {
         "message": "சுவாஷ்"
@@ -391,7 +381,7 @@
         "message": "டிங்கா"
     },
     "language_dv": {
-        "message": "டிவி"
+        "message": "திவேஹி"
     },
     "language_doi": {
         "message": "டோக்ரி"
@@ -403,7 +393,7 @@
         "message": "டச்சு"
     },
     "language_dz": {
-        "message": "ஜொங்க்கா"
+        "message": "சோங்கா"
     },
     "language_en": {
         "message": "ஆங்கிலம்"
@@ -412,7 +402,7 @@
         "message": "எஸ்பெராண்டோ"
     },
     "language_et": {
-        "message": "எஸ்டோனிய"
+        "message": "எஸ்டோனியன்"
     },
     "language_ee": {
         "message": "ஈவ்"
@@ -421,25 +411,25 @@
         "message": "பிஜியன்"
     },
     "language_fil": {
-        "message": "பிலிப்பைன்ஸ் (டாக்லாக்)"
+        "message": "பிலிப்பினோ (டகாலாக்)"
     },
     "language_fi": {
-        "message": "பின்னிஷ்"
+        "message": "ஃபின்னிஷ்"
     },
     "language_fr": {
-        "message": "பிரஞ்சு"
+        "message": "பிரெஞ்சு"
     },
     "language_fr_FR": {
-        "message": "பிரஞ்சு (பிரஞ்சு)"
+        "message": "பிரஞ்சு (பிரெஞ்சு)"
     },
     "language_fr_CA": {
         "message": "பிரஞ்சு (கனடியன்)"
     },
     "language_fy": {
-        "message": "ஃபிரிஷியன்"
+        "message": "ஃப்ரிஷியன்"
     },
     "language_ff": {
-        "message": "ஃபுல்ஃபுல்"
+        "message": "ஃபுல்ஃபுல்டே"
     },
     "language_gaa": {
         "message": "கா"
@@ -448,7 +438,7 @@
         "message": "காலிசியன்"
     },
     "language_lg": {
-        "message": "கந்தா (லுகாண்டா)"
+        "message": "காண்டா (லுகாண்டா)"
     },
     "language_ka": {
         "message": "ஜார்ஜியன்"
@@ -466,7 +456,7 @@
         "message": "குஜராத்தி"
     },
     "language_ht": {
-        "message": "ஹைட்டிய கிரியோல்"
+        "message": "ஹைட்டியன் கிரியோல்"
     },
     "language_cnh": {
         "message": "ஹக்கா சின்"
@@ -478,34 +468,34 @@
         "message": "ஹவாய்"
     },
     "language_iw": {
-        "message": "எபிரேய"
+        "message": "ஹீப்ரு"
     },
     "language_hil": {
-        "message": "ஹிலிகாயன்"
+        "message": "ஹிலிகேனான்"
     },
     "language_hi": {
-        "message": "இந்தி"
+        "message": "ஹிந்தி"
     },
     "language_hmn": {
         "message": "ஹ்மாங்"
     },
     "language_hu": {
-        "message": "ஹங்கேரியன்"
+        "message": "ஹங்கேரிய"
     },
     "language_hrx": {
         "message": "ஹன்ஸ்ரிக்"
     },
     "language_is": {
-        "message": "ஐஸ்லாந்திய"
+        "message": "ஐஸ்லாந்து"
     },
     "language_ig": {
         "message": "இக்போ"
     },
     "language_ilo": {
-        "message": "Iloko"
+        "message": "இலோகோ"
     },
     "language_id": {
-        "message": "இந்தோனேசிய"
+        "message": "இந்தோனேசியன்"
     },
     "language_ga": {
         "message": "ஐரிஷ்"
@@ -514,16 +504,16 @@
         "message": "இத்தாலியன்"
     },
     "language_ja": {
-        "message": "ஜப்பானியர்கள்"
+        "message": "ஜப்பானியர்"
     },
     "language_jw": {
-        "message": "ஜாவானீஸ்"
+        "message": "ஜாவானியர்கள்"
     },
     "language_kn": {
-        "message": "கன்னடா"
+        "message": "கன்னடம்"
     },
     "language_pam": {
-        "message": "கபம்பங்கன்"
+        "message": "கபாம்பங்கன்"
     },
     "language_kk": {
         "message": "கசாக்"
@@ -535,7 +525,7 @@
         "message": "கிகா"
     },
     "language_rw": {
-        "message": "கின்யர்வாண்டா"
+        "message": "கிண்ணியா"
     },
     "language_ktu": {
         "message": "கிடுபா"
@@ -544,13 +534,13 @@
         "message": "கொங்கனி"
     },
     "language_ko": {
-        "message": "கொரிய"
+        "message": "கொரியன்"
     },
     "language_kri": {
         "message": "கிரியோ"
     },
     "language_ku": {
-        "message": "குர்திஷ் (குர்மன்ஜி)"
+        "message": "குர்திஷ் (குர்மான்ஜி)"
     },
     "language_ckb": {
         "message": "குர்திஷ் (சோரானி)"
@@ -562,7 +552,7 @@
         "message": "லாவோ"
     },
     "language_ltg": {
-        "message": "லாட்கலியன்"
+        "message": "லாட்காலியன்"
     },
     "language_la": {
         "message": "லத்தீன்"
@@ -586,7 +576,7 @@
         "message": "லோம்பார்ட்"
     },
     "language_luo": {
-        "message": "லூயோ"
+        "message": "லுவோ"
     },
     "language_lb": {
         "message": "லக்சம்பர்கிஷ்"
@@ -598,10 +588,10 @@
         "message": "மைதிலி"
     },
     "language_mak": {
-        "message": "மக்காசர்"
+        "message": "மகஸ்ஸர்"
     },
     "language_mg": {
-        "message": "மலகாஸி"
+        "message": "மலகாசி"
     },
     "language_ms": {
         "message": "மலாய்"
@@ -616,7 +606,7 @@
         "message": "மால்டிஸ்"
     },
     "language_mi": {
-        "message": "ம ori ரி"
+        "message": "மௌரி"
     },
     "language_mr": {
         "message": "மராத்தி"
@@ -637,31 +627,31 @@
         "message": "மங்கோலியன்"
     },
     "language_my": {
-        "message": "மியான்மர் (பர்மீஸ்)"
+        "message": "மியான்மர் (பர்மிய)"
     },
     "language_nr": {
         "message": "Ndebele (தெற்கு)"
     },
     "language_new": {
-        "message": "நேபால்பாசா (நியூரி)"
+        "message": "நேபால்பாசா (நெவாரி)"
     },
     "language_ne": {
         "message": "நேபாளி"
     },
     "language_nso": {
-        "message": "வடக்கு சோத்தோ (செபதி)"
+        "message": "வடக்கு சோதோ (செப்பேடி)"
     },
     "language_no": {
-        "message": "நோர்வே"
+        "message": "நார்வேஜியன்"
     },
     "language_nus": {
-        "message": "NUER"
+        "message": "நுயர்"
     },
     "language_oc": {
-        "message": "ஆக்ஸிடான்"
+        "message": "ஆக்ஸிடன்"
     },
     "language_or": {
-        "message": "ஓடியா (ஓரியா)"
+        "message": "ஒடியா (ஒரியா)"
     },
     "language_om": {
         "message": "ஓரோமோ"
@@ -670,7 +660,7 @@
         "message": "பங்கசினன்"
     },
     "language_pap": {
-        "message": "பாபியாமென்டோ"
+        "message": "பாபியமென்டோ"
     },
     "language_ps": {
         "message": "பாஷ்டோ"
@@ -679,7 +669,7 @@
         "message": "பாரசீக"
     },
     "language_pl": {
-        "message": "மெருகூட்டல்"
+        "message": "போலிஷ்"
     },
     "language_pt": {
         "message": "போர்த்துகீசியம்"
@@ -694,28 +684,28 @@
         "message": "பஞ்சாபி"
     },
     "language_pa_Arab": {
-        "message": "பஞ்சாபி (ஷாஹ்முகி)"
+        "message": "பஞ்சாபி (ஷாமுக்கி)"
     },
     "language_qu": {
-        "message": "Quechua"
+        "message": "கெச்சுவா"
     },
     "language_rom": {
         "message": "ரோமானி"
     },
     "language_ro": {
-        "message": "ருமேனிய"
+        "message": "ரோமானியன்"
     },
     "language_rn": {
         "message": "ருண்டி"
     },
     "language_ru": {
-        "message": "ரஷ்ய"
+        "message": "ரஷ்யன்"
     },
     "language_sm": {
         "message": "சமோவான்"
     },
     "language_sg": {
-        "message": "சாங்கோ"
+        "message": "சங்கோ"
     },
     "language_sa": {
         "message": "சமஸ்கிருதம்"
@@ -724,13 +714,13 @@
         "message": "ஸ்காட்ஸ் கேலிக்"
     },
     "language_sr": {
-        "message": "செர்பிய"
+        "message": "செர்பியன்"
     },
     "language_st": {
         "message": "செசோதோ"
     },
     "language_crs": {
-        "message": "சீஷெல்லோயிஸ் கிரியோல்"
+        "message": "சீசெல்லோயிஸ் கிரியோல்"
     },
     "language_shn": {
         "message": "ஷான்"
@@ -748,7 +738,7 @@
         "message": "சிந்தி"
     },
     "language_si": {
-        "message": "சிங்கள (சிங்கள)"
+        "message": "சிங்களம் (சிங்கள)"
     },
     "language_sk": {
         "message": "ஸ்லோவாக்"
@@ -763,22 +753,22 @@
         "message": "ஸ்பானிஷ்"
     },
     "language_su": {
-        "message": "சுந்தானியர்கள்"
+        "message": "சுண்டனீஸ்"
     },
     "language_sw": {
         "message": "சுவாஹிலி"
     },
     "language_ss": {
-        "message": "ஸ்வதி"
+        "message": "சுவாதி"
     },
     "language_sv": {
         "message": "ஸ்வீடிஷ்"
     },
     "language_ber": {
-        "message": "தமாசைட் (டிஃபினாக்)"
+        "message": "டமாசைட் (டிஃபினாக்)"
     },
     "language_ber_latn": {
-        "message": "தமாசைட்"
+        "message": "தாமசைட்"
     },
     "language_tg": {
         "message": "தாஜிக்"
@@ -787,19 +777,19 @@
         "message": "தமிழ்"
     },
     "language_tt": {
-        "message": "டடார்"
+        "message": "டாடர்"
     },
     "language_te": {
         "message": "தெலுங்கு"
     },
     "language_tet": {
-        "message": "டெரம்"
+        "message": "டெட்டம்"
     },
     "language_th": {
         "message": "தாய்"
     },
     "language_ti": {
-        "message": "டிகினியா"
+        "message": "திக்ரினியா"
     },
     "language_ts": {
         "message": "சோங்கா"
@@ -814,10 +804,10 @@
         "message": "துர்க்மென்"
     },
     "language_ak": {
-        "message": "ட்வி (அகான்)"
+        "message": "ட்வி (அகன்)"
     },
     "language_uk": {
-        "message": "உக்ரேனிய"
+        "message": "உக்ரைனியன்"
     },
     "language_ur": {
         "message": "உருது"
@@ -829,22 +819,22 @@
         "message": "உஸ்பெக்"
     },
     "language_vi": {
-        "message": "வியட்நாமிய"
+        "message": "வியட்நாமியர்"
     },
     "language_cy": {
         "message": "வெல்ஷ்"
     },
     "language_xh": {
-        "message": "எக்ஸோசா"
+        "message": "ஷோசா"
     },
     "language_yi": {
         "message": "இத்திஷ்"
     },
     "language_yo": {
-        "message": "யோருப்பா"
+        "message": "யாருப்பா"
     },
     "language_yua": {
-        "message": "யுகடெக் மாயா"
+        "message": "யுகாடெக் மாயா"
     },
     "language_zu": {
         "message": "ஜூலு"

@@ -1,12 +1,12 @@
 {
     "app_name": {
-        "message": "Translater - Превод на избран текст"
+        "message": "Преводач - превод на избран текст"
     },
     "app_description": {
-        "message": "Преведете избрания текст с Google Translate"
+        "message": "Преведете избран текст с Google Translate"
     },
     "app_version": {
-        "message": "Версия"
+        "message": "версия"
     },
     "context_menus_title": {
         "message": "Преведете избрания текст"
@@ -15,23 +15,13 @@
         "message": "Настройки"
     },
     "options_title": {
-        "message": "$App_name$ - Настройки",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Преводач - настройки"
     },
-    "commands_open_translater": {
-        "message": "Отворете $APP_NAME$",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+    "commands_open_translator": {
+        "message": "Отворете Преводача"
     },
     "popup_or": {
-        "message": "Или"
+        "message": "или"
     },
     "options_tab_general": {
         "message": "Общи настройки"
@@ -46,37 +36,37 @@
         "message": "История"
     },
     "options_inline_button_show": {
-        "message": "Показване на бутона, когато е избран текст"
+        "message": "Показване на бутона, когато текстът е избран"
     },
     "options_text_field_button_show": {
-        "message": "Бутон за показване в TextField"
+        "message": "Показване на бутона в текстовото поле"
     },
     "options_hide_button_on_sites": {
         "message": "Скрийте бутона на тези сайтове:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Добавете домейни, използвайки менюто на изскачащия прозорец на сайта, който искате да изключите"
+        "message": "Добавете домейни, като използвате менюто на изскачащия прозорец на сайта, който искате да изключите"
     },
     "options_show_original_text": {
-        "message": "Показване на текст на източника"
+        "message": "Показване на изходния текст"
     },
     "options_show_transliteration": {
-        "message": "Показват транслитерация"
+        "message": "Показване на транслитерация"
     },
     "options_lock_popup_window": {
-        "message": "Заключете изскачащ прозорец"
+        "message": "Заключване на изскачащ прозорец"
     },
     "options_lock_popup_window_hint": {
-        "message": "Ако бъде активирано, изскачащото меню няма да се затвори, когато щракнете извън него"
+        "message": "Ако е активирано, изскачащият прозорец няма да се затвори, когато щракнете извън него"
     },
     "options_history_length": {
-        "message": "Исторически записи (Max.)"
+        "message": "Записи в историята (макс.)"
     },
     "options_records_in_history": {
         "message": "Записи в историята:"
     },
     "options_history_enable": {
-        "message": "Активирайте историята"
+        "message": "Активиране на историята"
     },
     "options_clear_history": {
         "message": "Изтриване на историята"
@@ -85,7 +75,7 @@
         "message": "Изтриване от историята"
     },
     "options_tts_language": {
-        "message": "Език"
+        "message": "език"
     },
     "options_tts_default_voice": {
         "message": "Глас по подразбиране"
@@ -94,28 +84,28 @@
         "message": "Гласове"
     },
     "options_tts_table_caption": {
-        "message": "Ако език не е посочен, ще се използва външна услуга за текст в реч."
+        "message": "Ако езикът не е в списъка, ще се използва външна услуга за синтезиран говор."
     },
     "options_tts_no_voices_found": {
         "message": "Вашият браузър не поддържа синтез на реч. Вместо това ще използваме външна услуга."
     },
     "options_edit_keyboard_shortcut": {
-        "message": "Редактиране на клавишни комбинации"
+        "message": "редактиране на клавишни комбинации"
     },
     "options_keyboard_shortcut_open_popup": {
-        "message": "Клавиатура за отваряне на изскачащ прозорец"
+        "message": "Клавишна комбинация за отваряне на изскачащ прозорец"
     },
     "options_key_combination_is_not_set": {
-        "message": "Клавиатурата не е зададена"
+        "message": "клавишната комбинация не е зададена"
     },
     "options_font_size": {
         "message": "Размер на шрифта"
     },
     "options_font_size_xs": {
-        "message": "Допълнително малко (12px)"
+        "message": "Изключително малък (12px)"
     },
     "options_font_size_sm": {
-        "message": "Малко (14px)"
+        "message": "Малък (14px)"
     },
     "options_font_size_md": {
         "message": "Нормално (16px)"
@@ -124,7 +114,7 @@
         "message": "Голям (18px)"
     },
     "options_font_size_xl": {
-        "message": "Изключително големи (20px)"
+        "message": "Много голям (20px)"
     },
     "options_support_msg": {
         "message": "Ако нещо не работи или имате някакви предложения, моля, уведомете ме тук"
@@ -136,16 +126,16 @@
         "message": "адрес"
     },
     "options_copy_address": {
-        "message": "Копиращ адрес"
+        "message": "Копиране на адреса"
     },
     "text_expand": {
-        "message": "Още"
+        "message": "повече"
     },
     "text_collapse": {
-        "message": "По -малко"
+        "message": "По-малко"
     },
     "target_lang_label": {
-        "message": "Преведете на:"
+        "message": "Превод на:"
     },
     "popup_dictionary": {
         "message": "Речник"
@@ -154,7 +144,7 @@
         "message": "Честота"
     },
     "popup_definitions": {
-        "message": "Определения"
+        "message": "Дефиниции"
     },
     "popup_definitions_synonyms": {
         "message": "Синоними:"
@@ -163,19 +153,19 @@
         "message": "Примери"
     },
     "popup_perhaps_you_meant": {
-        "message": "Може би сте имали предвид:"
+        "message": "Може би имахте предвид:"
     },
     "popup_original_language": {
         "message": "Оригинален език:"
     },
     "popup_menu_reverse_translate": {
-        "message": "Обратно превод"
+        "message": "Обратен превод"
     },
     "popup_menu_lock_window": {
-        "message": "Заключен прозорец"
+        "message": "Заключване на прозореца"
     },
     "popup_menu_unlock_window": {
-        "message": "Прозорец за отключване"
+        "message": "Отключване на прозореца"
     },
     "popup_menu_show_translate_button": {
         "message": "Показване на бутона за превод"
@@ -196,7 +186,7 @@
         "message": "Тъмна тема"
     },
     "theme_system": {
-        "message": "Тема на системата"
+        "message": "Системна тема"
     },
     "tooltip_translate_text": {
         "message": "Преведете избрания текст"
@@ -205,22 +195,22 @@
         "message": "Копиране в клипборда"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "Копието не е поддръжка на HTTP сайтове"
+        "message": "Копирането не се поддържа на HTTP сайтове"
     },
     "tooltip_copyed": {
-        "message": "Копиран"
+        "message": "Копирано"
     },
     "tooltip_copy_error": {
-        "message": "Грешка в копирането!"
+        "message": "Грешка при копиране!"
     },
     "tooltip_listen_to_the_text": {
-        "message": "Слушайте текст"
+        "message": "Слушане на текст"
     },
     "tooltip_listen_stop": {
         "message": "Спрете"
     },
     "tooltip_listen_language_is_not_support": {
-        "message": "Езикът не е поддръжка"
+        "message": "Езикът не се поддържа"
     },
     "tooltip_go_back": {
         "message": "Назад"
@@ -232,7 +222,7 @@
         "message": "Ясен текст"
     },
     "tooltip_clear_search": {
-        "message": "Ясно търсене"
+        "message": "Изчистете търсенето"
     },
     "date_today": {
         "message": "днес"
@@ -241,13 +231,13 @@
         "message": "вчера"
     },
     "forefox_perm_header": {
-        "message": "Позволете старта в Firefox"
+        "message": "Разрешете стартиране във Firefox"
     },
     "forefox_perm_text": {
-        "message": "Това разширение се нуждае от вашето разрешение за достъп до уебсайтове и да ги превежда в Firefox"
+        "message": "Това разширение се нуждае от вашето разрешение за достъп до уебсайтове и превода им във Firefox"
     },
     "forefox_perm_button": {
-        "message": "Управление на разрешения"
+        "message": "Управление на разрешенията"
     },
     "select_language_search_placeholder": {
         "message": "Намерете езици (ISO код или име)"
@@ -259,58 +249,58 @@
         "message": "🚀 Опитайте другите ми разширения"
     },
     "language_auto": {
-        "message": "Открийте езика"
+        "message": "откриване на език"
     },
     "language_ab": {
-        "message": "Абхаз"
+        "message": "абхазки"
     },
     "language_ace": {
-        "message": "Асенезе"
+        "message": "ахенски"
     },
     "language_ach": {
-        "message": "Ахоли"
+        "message": "Ачоли"
     },
     "language_af": {
-        "message": "Африкаанс"
+        "message": "африкаанс"
     },
     "language_sq": {
-        "message": "Албанец"
+        "message": "албански"
     },
     "language_alz": {
         "message": "Алур"
     },
     "language_am": {
-        "message": "Амхарски"
+        "message": "амхарски"
     },
     "language_ar": {
-        "message": "Арабски"
+        "message": "арабски"
     },
     "language_hy": {
-        "message": "Арменски"
+        "message": "арменски"
     },
     "language_as": {
-        "message": "Асамски"
+        "message": "асамски"
     },
     "language_awa": {
-        "message": "Авади"
+        "message": "авадхи"
     },
     "language_ay": {
-        "message": "Аймара"
+        "message": "аймара"
     },
     "language_az": {
-        "message": "Азербайджани"
+        "message": "азербайджански"
     },
     "language_ban": {
-        "message": "Балийци"
+        "message": "балийски"
     },
     "language_bm": {
         "message": "Бамбара"
     },
     "language_ba": {
-        "message": "Башкир"
+        "message": "башкирски"
     },
     "language_eu": {
-        "message": "Баска"
+        "message": "баски"
     },
     "language_btx": {
         "message": "Батак Каро"
@@ -322,76 +312,76 @@
         "message": "Батак Тоба"
     },
     "language_be": {
-        "message": "Беларуски"
+        "message": "белоруски"
     },
     "language_bem": {
         "message": "Бемба"
     },
     "language_bn": {
-        "message": "Бенгалия"
+        "message": "бенгалски"
     },
     "language_bew": {
         "message": "Бетави"
     },
     "language_bho": {
-        "message": "Bhojpuri"
+        "message": "Бходжпури"
     },
     "language_bik": {
         "message": "Бикол"
     },
     "language_bs": {
-        "message": "Босненски"
+        "message": "босненски"
     },
     "language_br": {
-        "message": "Бретон"
+        "message": "бретонски"
     },
     "language_bg": {
-        "message": "Български"
+        "message": "български"
     },
     "language_bua": {
-        "message": "Buryat"
+        "message": "бурятски"
     },
     "language_yue": {
-        "message": "Кантонски"
+        "message": "кантонски"
     },
     "language_ca": {
-        "message": "Каталунски"
+        "message": "каталонски"
     },
     "language_ceb": {
-        "message": "Себуано"
+        "message": "себуано"
     },
     "language_ny": {
-        "message": "Чичева (Nyanja)"
+        "message": "чичева (нянджа)"
     },
     "language_zh_CN": {
-        "message": "Китайски (опростен)"
+        "message": "китайски (опростен)"
     },
     "language_zh_TW": {
-        "message": "Китайски (традиционен)"
+        "message": "китайски (традиционен)"
     },
     "language_cv": {
-        "message": "Чуваш"
+        "message": "чувашки"
     },
     "language_co": {
-        "message": "Корсикански"
+        "message": "корсикански"
     },
     "language_crh": {
-        "message": "Кримски татар"
+        "message": "кримски татарин"
     },
     "language_hr": {
-        "message": "Хърватски"
+        "message": "хърватски"
     },
     "language_cs": {
-        "message": "Чех"
+        "message": "чешки"
     },
     "language_da": {
-        "message": "Датски"
+        "message": "датски"
     },
     "language_din": {
-        "message": "ДИНА"
+        "message": "Динка"
     },
     "language_dv": {
-        "message": "Divehi"
+        "message": "Дивехи"
     },
     "language_doi": {
         "message": "Догри"
@@ -400,76 +390,76 @@
         "message": "Домбе"
     },
     "language_nl": {
-        "message": "Холандски"
+        "message": "холандски"
     },
     "language_dz": {
-        "message": "Dzongkha"
+        "message": "дзонгкха"
     },
     "language_en": {
-        "message": "Английски"
+        "message": "английски"
     },
     "language_eo": {
         "message": "Есперанто"
     },
     "language_et": {
-        "message": "Естонски"
+        "message": "естонски"
     },
     "language_ee": {
-        "message": "Ewe"
+        "message": "Еве"
     },
     "language_fj": {
-        "message": "Фиджиян"
+        "message": "фиджийски"
     },
     "language_fil": {
-        "message": "Филипинец (Tagalog)"
+        "message": "филипински (тагалог)"
     },
     "language_fi": {
-        "message": "Финландски"
+        "message": "финландски"
     },
     "language_fr": {
-        "message": "Френски"
+        "message": "френски"
     },
     "language_fr_FR": {
-        "message": "Френски (френски)"
+        "message": "френски (френски)"
     },
     "language_fr_CA": {
-        "message": "Френски (канадски)"
+        "message": "френски (канадски)"
     },
     "language_fy": {
-        "message": "Фризиан"
+        "message": "фризийски"
     },
     "language_ff": {
-        "message": "Fulfulde"
+        "message": "Фулфулде"
     },
     "language_gaa": {
-        "message": "GA"
+        "message": "Ga"
     },
     "language_gl": {
-        "message": "Галисий"
+        "message": "галисийски"
     },
     "language_lg": {
         "message": "Ганда (Луганда)"
     },
     "language_ka": {
-        "message": "Грузински"
+        "message": "грузински"
     },
     "language_de": {
-        "message": "Немски"
+        "message": "немски"
     },
     "language_el": {
-        "message": "Гръцки"
+        "message": "гръцки"
     },
     "language_gn": {
         "message": "Гуарани"
     },
     "language_gu": {
-        "message": "Гуджарати"
+        "message": "гуджарати"
     },
     "language_ht": {
-        "message": "Хаитянски креол"
+        "message": "хаитянски креолски"
     },
     "language_cnh": {
-        "message": "Хакха брадичка"
+        "message": "Хаха Чин"
     },
     "language_ha": {
         "message": "Хауса"
@@ -478,25 +468,25 @@
         "message": "Хавайски"
     },
     "language_iw": {
-        "message": "Иврит"
+        "message": "иврит"
     },
     "language_hil": {
         "message": "Хилигайнон"
     },
     "language_hi": {
-        "message": "Хинди"
+        "message": "хинди"
     },
     "language_hmn": {
         "message": "Хмонг"
     },
     "language_hu": {
-        "message": "Унгарски"
+        "message": "унгарски"
     },
     "language_hrx": {
-        "message": "Хънсрик"
+        "message": "Хунсрик"
     },
     "language_is": {
-        "message": "Исландски"
+        "message": "исландски"
     },
     "language_ig": {
         "message": "Игбо"
@@ -505,163 +495,163 @@
         "message": "Илоко"
     },
     "language_id": {
-        "message": "Индонезийски"
+        "message": "индонезийски"
     },
     "language_ga": {
-        "message": "Ирландски"
+        "message": "ирландски"
     },
     "language_it": {
-        "message": "Италиански"
+        "message": "италиански"
     },
     "language_ja": {
-        "message": "Японски"
+        "message": "японски"
     },
     "language_jw": {
-        "message": "Явански"
+        "message": "явански"
     },
     "language_kn": {
-        "message": "Канада"
+        "message": "каннада"
     },
     "language_pam": {
         "message": "Капампанган"
     },
     "language_kk": {
-        "message": "Казах"
+        "message": "казахски"
     },
     "language_km": {
-        "message": "Кхмерски"
+        "message": "кхмерски"
     },
     "language_cgg": {
         "message": "Кига"
     },
     "language_rw": {
-        "message": "Kinyarwanda"
+        "message": "киняруанда"
     },
     "language_ktu": {
-        "message": "Kituba"
+        "message": "Китуба"
     },
     "language_gom": {
         "message": "Конкани"
     },
     "language_ko": {
-        "message": "Корейски"
+        "message": "корейски"
     },
     "language_kri": {
         "message": "Крио"
     },
     "language_ku": {
-        "message": "Кюрдски (Курманджи)"
+        "message": "кюрдски (курманджи)"
     },
     "language_ckb": {
-        "message": "Кюрдски (Сорани)"
+        "message": "кюрдски (сорани)"
     },
     "language_ky": {
-        "message": "Киргиз"
+        "message": "киргизки"
     },
     "language_lo": {
-        "message": "Лао"
+        "message": "Лаос"
     },
     "language_ltg": {
-        "message": "Лагаличен"
+        "message": "латгалски"
     },
     "language_la": {
-        "message": "Латински"
+        "message": "латински"
     },
     "language_lv": {
-        "message": "Латвийски"
+        "message": "латвийски"
     },
     "language_lij": {
-        "message": "Лигурийски"
+        "message": "лигурски"
     },
     "language_li": {
-        "message": "Лимбурган"
+        "message": "лимбургски"
     },
     "language_ln": {
         "message": "Лингала"
     },
     "language_lt": {
-        "message": "Литовски"
+        "message": "литовски"
     },
     "language_lmo": {
-        "message": "Ломбард"
+        "message": "ломбард"
     },
     "language_luo": {
         "message": "Луо"
     },
     "language_lb": {
-        "message": "Люксембургиш"
+        "message": "люксембургски"
     },
     "language_mk": {
-        "message": "Македонски"
+        "message": "македонски"
     },
     "language_mai": {
-        "message": "Maithili"
+        "message": "Майтхили"
     },
     "language_mak": {
         "message": "Макасар"
     },
     "language_mg": {
-        "message": "Малагасий"
+        "message": "мадагаскарски"
     },
     "language_ms": {
-        "message": "Малайски"
+        "message": "малайски"
     },
     "language_ms_Arab": {
-        "message": "Малайски (Jawi)"
+        "message": "малайски (джави)"
     },
     "language_ml": {
-        "message": "Малаялам"
+        "message": "малаялам"
     },
     "language_mt": {
-        "message": "Малтийски"
+        "message": "малтийски"
     },
     "language_mi": {
-        "message": "Маори"
+        "message": "маори"
     },
     "language_mr": {
-        "message": "Маратхи"
+        "message": "маратхи"
     },
     "language_chm": {
-        "message": "Meadow Mari"
+        "message": "Ливада Мари"
     },
     "language_mni_Mtei": {
-        "message": "Meiteilon (Manipuri)"
+        "message": "мейтелон (манипури)"
     },
     "language_min": {
         "message": "Минанг"
     },
     "language_lus": {
-        "message": "Mizo"
+        "message": "Мизо"
     },
     "language_mn": {
-        "message": "Монголски"
+        "message": "монголски"
     },
     "language_my": {
         "message": "Мианмар (бирмански)"
     },
     "language_nr": {
-        "message": "Ndebele (на юг)"
+        "message": "Ндебеле (юг)"
     },
     "language_new": {
-        "message": "Непалбхаса (Newari)"
+        "message": "непалбхаса (невари)"
     },
     "language_ne": {
-        "message": "Непалия"
+        "message": "непалски"
     },
     "language_nso": {
-        "message": "Северно Сото (Сепи)"
+        "message": "северно сото (сепеди)"
     },
     "language_no": {
-        "message": "Норвежки"
+        "message": "норвежки"
     },
     "language_nus": {
-        "message": "Nuer"
+        "message": "Нуер"
     },
     "language_oc": {
-        "message": "ОКТИТАН"
+        "message": "окситански"
     },
     "language_or": {
-        "message": "Ория (Ория)"
+        "message": "Одия (Ория)"
     },
     "language_om": {
         "message": "Оромо"
@@ -670,67 +660,67 @@
         "message": "Пангасинан"
     },
     "language_pap": {
-        "message": "Papiamento"
+        "message": "Папиаменто"
     },
     "language_ps": {
-        "message": "Pashto"
+        "message": "пущу"
     },
     "language_fa": {
-        "message": "Персийски"
+        "message": "персийски"
     },
     "language_pl": {
-        "message": "Лак"
+        "message": "полски"
     },
     "language_pt": {
-        "message": "Португалски"
+        "message": "португалски"
     },
     "language_pt_PT": {
-        "message": "Португалски (Португалия)"
+        "message": "португалски (Португалия)"
     },
     "language_pt_BR": {
-        "message": "Португалски (Бразилия)"
+        "message": "португалски (Бразилия)"
     },
     "language_pa": {
-        "message": "Пенджаби"
+        "message": "пенджабски"
     },
     "language_pa_Arab": {
-        "message": "Пенджаби (Шахмухи)"
+        "message": "пенджабски (шахмукхи)"
     },
     "language_qu": {
-        "message": "Quechua"
+        "message": "кечуа"
     },
     "language_rom": {
-        "message": "Романи"
+        "message": "ромски"
     },
     "language_ro": {
-        "message": "Румънски"
+        "message": "румънски"
     },
     "language_rn": {
-        "message": "Руди"
+        "message": "Рунди"
     },
     "language_ru": {
-        "message": "Руски"
+        "message": "руски"
     },
     "language_sm": {
-        "message": "Самоан"
+        "message": "самоанска"
     },
     "language_sg": {
         "message": "Санго"
     },
     "language_sa": {
-        "message": "Санскрит"
+        "message": "санскрит"
     },
     "language_gd": {
-        "message": "Шотландски гелски"
+        "message": "шотландски галски"
     },
     "language_sr": {
-        "message": "Сръбски"
+        "message": "сръбски"
     },
     "language_st": {
-        "message": "Сесото"
+        "message": "сесото"
     },
     "language_crs": {
-        "message": "Креол Seychellois"
+        "message": "сейшелски креолски"
     },
     "language_shn": {
         "message": "Шан"
@@ -739,64 +729,64 @@
         "message": "Шона"
     },
     "language_scn": {
-        "message": "Сицилиан"
+        "message": "сицилиански"
     },
     "language_szl": {
-        "message": "Силезийски"
+        "message": "силезкия"
     },
     "language_sd": {
         "message": "Синдхи"
     },
     "language_si": {
-        "message": "Сингала (сингалци)"
+        "message": "сингалски (синхалски)"
     },
     "language_sk": {
-        "message": "Словашки"
+        "message": "словашки"
     },
     "language_sl": {
-        "message": "Словенски"
+        "message": "словенски"
     },
     "language_so": {
-        "message": "Сомалийски"
+        "message": "сомалийски"
     },
     "language_es": {
-        "message": "Испански"
+        "message": "испански"
     },
     "language_su": {
-        "message": "Сундански"
+        "message": "сундански"
     },
     "language_sw": {
-        "message": "Суахили"
+        "message": "суахили"
     },
     "language_ss": {
-        "message": "Свати"
+        "message": "свати"
     },
     "language_sv": {
-        "message": "Шведски"
+        "message": "шведски"
     },
     "language_ber": {
-        "message": "Tamazight (Tifinagh)"
+        "message": "тамазигт (тифина)"
     },
     "language_ber_latn": {
-        "message": "Tamazight"
+        "message": "тамазигхт"
     },
     "language_tg": {
-        "message": "Таджик"
+        "message": "таджикски"
     },
     "language_ta": {
-        "message": "Тамил"
+        "message": "тамилски"
     },
     "language_tt": {
-        "message": "Татар"
+        "message": "татарски"
     },
     "language_te": {
-        "message": "Телугу"
+        "message": "телугу"
     },
     "language_tet": {
         "message": "Тетум"
     },
     "language_th": {
-        "message": "Тайланд"
+        "message": "тайландски"
     },
     "language_ti": {
         "message": "Тигриня"
@@ -805,48 +795,48 @@
         "message": "Цонга"
     },
     "language_tn": {
-        "message": "Цвана"
+        "message": "тсвана"
     },
     "language_tr": {
-        "message": "Турски"
+        "message": "турски"
     },
     "language_tk": {
-        "message": "Туркмени"
+        "message": "туркменски"
     },
     "language_ak": {
-        "message": "TWI (Akan)"
+        "message": "туи (акан)"
     },
     "language_uk": {
-        "message": "Украински"
+        "message": "украински"
     },
     "language_ur": {
-        "message": "Урду"
+        "message": "урду"
     },
     "language_ug": {
-        "message": "Uyghur"
+        "message": "уйгурски"
     },
     "language_uz": {
-        "message": "Узбек"
+        "message": "узбекски"
     },
     "language_vi": {
-        "message": "Виетнамски"
+        "message": "виетнамски"
     },
     "language_cy": {
-        "message": "Уелски"
+        "message": "уелски"
     },
     "language_xh": {
-        "message": "Xhosa"
+        "message": "Коса"
     },
     "language_yi": {
-        "message": "Идиш"
+        "message": "идиш"
     },
     "language_yo": {
-        "message": "Йоруба"
+        "message": "йоруба"
     },
     "language_yua": {
         "message": "Юкатек Мая"
     },
     "language_zu": {
-        "message": "Зулу"
+        "message": "зулу"
     }
 }

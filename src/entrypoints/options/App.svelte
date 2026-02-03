@@ -4,7 +4,7 @@
 			<div class="flex flex-col">
 				<div class="flex items-center pb-4">
 					<img alt="logo" src="/icons/128.png" width="48" />
-					<span class="ml-4 text-xl">Translater</span>
+					<span class="ml-4 text-xl">Translator</span>
 				</div>
 				<div class="flex flex-col gap-1">
 					{#each Object.entries(tabs) as [hash, tab] (hash)}
@@ -22,7 +22,7 @@
 			</div>
 			<div class="flex flex-col items-center gap-2">
 				<RateUs />
-				<TranslaterVersion />
+				<TranslatorVersion />
 				<Link
 					class="text-sm"
 					href="https://chergav.github.io/extensions/translater/onboarding/"
@@ -45,7 +45,7 @@ import type { Component } from 'svelte';
 import { storage } from '~/shared/storage.svelte';
 import Button from '~/lib/Button.svelte';
 import Link from '~/lib/Link.svelte';
-import TranslaterVersion from '~/lib/TranslaterVersion.svelte';
+import TranslatorVersion from '~/lib/TranslatorVersion.svelte';
 import RateUs from '~/lib/RateUs.svelte';
 import General from './lib/General.svelte';
 import PopupWindow from './lib/PopupWindow.svelte';

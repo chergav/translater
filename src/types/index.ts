@@ -73,7 +73,7 @@ export interface Message {
 		| 'getTranslateTTS'
 		| 'openOptionsPage'
 		| 'openURL'
-		| 'openTranslater'
+		| 'openTranslator'
 		| 'createPopup'
 		| 'ping'
 		| 'loaded'

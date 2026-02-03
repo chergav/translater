@@ -1,34 +1,24 @@
 {
     "app_name": {
-        "message": "Translater - Μετάφραση επιλεγμένου κειμένου"
+        "message": "Μεταφραστής - μετάφραση επιλεγμένου κειμένου"
     },
     "app_description": {
-        "message": "Μεταφράστε επιλεγμένο κείμενο με το Google Translate"
+        "message": "Μεταφράστε επιλεγμένο κείμενο με τη Μετάφραση Google"
     },
     "app_version": {
-        "message": "εκδοχή"
+        "message": "έκδοση"
     },
     "context_menus_title": {
-        "message": "Μεταφράστε επιλεγμένο κείμενο"
+        "message": "Μετάφραση επιλεγμένου κειμένου"
     },
     "popup_menu_options": {
         "message": "Ρυθμίσεις"
     },
     "options_title": {
-        "message": "$App_name$ - Ρυθμίσεις",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Μεταφραστής - ρυθμίσεις"
     },
-    "commands_open_translater": {
-        "message": "Ανοίξτε $app_name$",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+    "commands_open_translator": {
+        "message": "Ανοίξτε τον Μεταφραστή"
     },
     "popup_or": {
         "message": "Ή"
@@ -46,31 +36,31 @@
         "message": "Ιστορία"
     },
     "options_inline_button_show": {
-        "message": "Κουμπί εμφάνισης όταν έχει επιλεγεί το κείμενο"
+        "message": "Εμφάνιση κουμπιού όταν είναι επιλεγμένο κείμενο"
     },
     "options_text_field_button_show": {
-        "message": "Κουμπί Εμφάνιση στο Textfield"
+        "message": "Εμφάνιση κουμπιού στο πεδίο κειμένου"
     },
     "options_hide_button_on_sites": {
         "message": "Απόκρυψη του κουμπιού σε αυτούς τους ιστότοπους:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Προσθέστε τομείς χρησιμοποιώντας το μενού του αναδυόμενου παραθύρου στον ιστότοπο που θέλετε να αποκλείσετε"
+        "message": "Προσθέστε τομείς χρησιμοποιώντας το μενού του αναδυόμενου παραθύρου στον ιστότοπο που θέλετε να εξαιρέσετε"
     },
     "options_show_original_text": {
-        "message": "Εμφάνιση κειμένου προέλευσης"
+        "message": "Εμφάνιση κειμένου πηγής"
     },
     "options_show_transliteration": {
         "message": "Εμφάνιση μεταγραφής"
     },
     "options_lock_popup_window": {
-        "message": "Αναδυόμενο παράθυρο κλειδώματος"
+        "message": "Κλείδωμα αναδυόμενου παραθύρου"
     },
     "options_lock_popup_window_hint": {
         "message": "Εάν είναι ενεργοποιημένο, το αναδυόμενο παράθυρο δεν θα κλείσει όταν κάνετε κλικ έξω από αυτό"
     },
     "options_history_length": {
-        "message": "Ιστορικές καταχωρήσεις (μέγιστο)"
+        "message": "Εγγραφές ιστορικού (μέγ.)"
     },
     "options_records_in_history": {
         "message": "Εγγραφές στην ιστορία:"
@@ -82,7 +72,7 @@
         "message": "Διαγραφή ιστορικού"
     },
     "options_delete_history_item": {
-        "message": "Διαγραφή από την ιστορία"
+        "message": "Διαγραφή από το ιστορικό"
     },
     "options_tts_language": {
         "message": "Γλώσσα"
@@ -94,58 +84,58 @@
         "message": "Φωνές"
     },
     "options_tts_table_caption": {
-        "message": "Εάν δεν αναφέρεται μια γλώσσα, θα χρησιμοποιηθεί μια εξωτερική υπηρεσία κειμένου σε ομιλία."
+        "message": "Εάν μια γλώσσα δεν περιλαμβάνεται στη λίστα, θα χρησιμοποιηθεί μια εξωτερική υπηρεσία μετατροπής κειμένου σε ομιλία."
     },
     "options_tts_no_voices_found": {
-        "message": "Το πρόγραμμα περιήγησής σας δεν υποστηρίζει τη σύνθεση ομιλίας. Θα χρησιμοποιήσουμε αντ 'αυτού μια εξωτερική υπηρεσία."
+        "message": "Το πρόγραμμα περιήγησής σας δεν υποστηρίζει σύνθεση ομιλίας. Αντ' αυτού θα χρησιμοποιήσουμε μια εξωτερική υπηρεσία."
     },
     "options_edit_keyboard_shortcut": {
-        "message": "Επεξεργασία συντομεύσεων πληκτρολογίου"
+        "message": "επεξεργασία συντομεύσεων πληκτρολογίου"
     },
     "options_keyboard_shortcut_open_popup": {
-        "message": "Συντόμευση πληκτρολογίου για να ανοίξετε αναδυόμενο παράθυρο"
+        "message": "Συντόμευση πληκτρολογίου για άνοιγμα αναδυόμενου παραθύρου"
     },
     "options_key_combination_is_not_set": {
-        "message": "Η συντόμευση πληκτρολογίου δεν έχει οριστεί"
+        "message": "η συντόμευση πληκτρολογίου δεν έχει οριστεί"
     },
     "options_font_size": {
         "message": "Μέγεθος γραμματοσειράς"
     },
     "options_font_size_xs": {
-        "message": "Επιπλέον μικρό (12px)"
+        "message": "Εξαιρετικά μικρό (12 px)"
     },
     "options_font_size_sm": {
-        "message": "Μικρό (14px)"
+        "message": "Μικρό (14 εικονοστοιχεία)"
     },
     "options_font_size_md": {
-        "message": "Κανονικό (16px)"
+        "message": "Κανονικό (16 εικονοστοιχεία)"
     },
     "options_font_size_lg": {
-        "message": "Μεγάλο (18px)"
+        "message": "Μεγάλο (18 εικονοστοιχεία)"
     },
     "options_font_size_xl": {
-        "message": "Πολύ μεγάλο (20px)"
+        "message": "Εξαιρετικά μεγάλο (20 εικονοστοιχεία)"
     },
     "options_support_msg": {
-        "message": "Εάν κάτι δεν λειτουργεί ή έχετε προτάσεις, παρακαλώ ενημερώστε με εδώ"
+        "message": "Εάν κάτι δεν λειτουργεί ή έχετε οποιεσδήποτε προτάσεις, ενημερώστε με εδώ"
     },
     "options_support_donations": {
-        "message": "Εάν θέλετε να υποστηρίξετε αυτό το ελεύθερο λογισμικό"
+        "message": "Εάν θέλετε να υποστηρίξετε αυτό το δωρεάν λογισμικό"
     },
     "options_address": {
         "message": "διεύθυνση"
     },
     "options_copy_address": {
-        "message": "Αντιγραφή"
+        "message": "Αντιγραφή διεύθυνσης"
     },
     "text_expand": {
-        "message": "Περισσότερο"
+        "message": "Περισσότερα"
     },
     "text_collapse": {
-        "message": "Μείον"
+        "message": "Λιγότερο"
     },
     "target_lang_label": {
-        "message": "Μεταφράστε σε:"
+        "message": "Μετάφραση σε:"
     },
     "popup_dictionary": {
         "message": "Λεξικό"
@@ -163,25 +153,25 @@
         "message": "Παραδείγματα"
     },
     "popup_perhaps_you_meant": {
-        "message": "Ίσως εννοούσατε:"
+        "message": "Ίσως εννοούσες:"
     },
     "popup_original_language": {
-        "message": "Αρχική γλώσσα:"
+        "message": "Γλώσσα πρωτοτύπου:"
     },
     "popup_menu_reverse_translate": {
         "message": "Αντίστροφη μετάφραση"
     },
     "popup_menu_lock_window": {
-        "message": "Παράθυρο κλειδώματος"
+        "message": "Κλείδωμα παραθύρου"
     },
     "popup_menu_unlock_window": {
-        "message": "Παράθυρο ξεκλειδώματος"
+        "message": "Ξεκλείδωμα παραθύρου"
     },
     "popup_menu_show_translate_button": {
         "message": "Εμφάνιση κουμπιού μετάφρασης"
     },
     "popup_menu_hide_translate_button": {
-        "message": "Απόκρυψη του κουμπιού μετάφρασης"
+        "message": "Απόκρυψη κουμπιού μετάφρασης"
     },
     "popup_menu_options_link": {
         "message": "Πρόσθετες ρυθμίσεις"
@@ -190,7 +180,7 @@
         "message": "Μετάφραση"
     },
     "theme_light": {
-        "message": "Φωτεινό θέμα"
+        "message": "Ελαφρύ θέμα"
     },
     "theme_dark": {
         "message": "Σκοτεινό θέμα"
@@ -199,133 +189,133 @@
         "message": "Θέμα συστήματος"
     },
     "tooltip_translate_text": {
-        "message": "Μεταφράστε επιλεγμένο κείμενο"
+        "message": "Μετάφραση επιλεγμένου κειμένου"
     },
     "tooltip_copy_to_clipboard": {
         "message": "Αντιγραφή στο πρόχειρο"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "Το αντίγραφο δεν υποστηρίζει τους ιστότοπους HTTP"
+        "message": "Η αντιγραφή δεν υποστηρίζεται σε ιστότοπους HTTP"
     },
     "tooltip_copyed": {
-        "message": "Αντιγραφεί"
+        "message": "Αντιγράφηκε"
     },
     "tooltip_copy_error": {
-        "message": "Αντιγραφή σφάλματος!"
+        "message": "Σφάλμα αντιγραφής!"
     },
     "tooltip_listen_to_the_text": {
         "message": "Ακούστε κείμενο"
     },
     "tooltip_listen_stop": {
-        "message": "Στάση"
+        "message": "Σταμάτα"
     },
     "tooltip_listen_language_is_not_support": {
-        "message": "Η γλώσσα δεν είναι υποστήριξη"
+        "message": "Η γλώσσα δεν υποστηρίζεται"
     },
     "tooltip_go_back": {
         "message": "Πίσω"
     },
     "tooltip_go_forward": {
-        "message": "Προς τα εμπρός"
+        "message": "Εμπρός"
     },
     "tooltip_clear_text": {
         "message": "Καθαρό κείμενο"
     },
     "tooltip_clear_search": {
-        "message": "Καθαρή αναζήτηση"
+        "message": "Εκκαθάριση αναζήτησης"
     },
     "date_today": {
         "message": "σήμερα"
     },
     "date_yesterday": {
-        "message": "εχθές"
+        "message": "χθες"
     },
     "forefox_perm_header": {
-        "message": "Επιτρέψτε την εκτόξευση στον Firefox"
+        "message": "Να επιτρέπεται η εκκίνηση στον Firefox"
     },
     "forefox_perm_text": {
-        "message": "Αυτή η επέκταση χρειάζεται την άδειά σας για πρόσβαση σε ιστότοπους και μεταφράστε τις στον Firefox"
+        "message": "Αυτή η επέκταση χρειάζεται την άδειά σας για να αποκτήσει πρόσβαση σε ιστότοπους και να τους μεταφράσει στον Firefox"
     },
     "forefox_perm_button": {
         "message": "Διαχείριση δικαιωμάτων"
     },
     "select_language_search_placeholder": {
-        "message": "Βρείτε γλώσσες (κωδικός ISO ή όνομα)"
+        "message": "Εύρεση γλωσσών (κωδικός ISO ή όνομα)"
     },
     "select_language_search_no_results": {
-        "message": "Χωρίς αποτελέσματα"
+        "message": "Κανένα αποτέλεσμα"
     },
     "try_my_extensions": {
         "message": "🚀 Δοκιμάστε τις άλλες επεκτάσεις μου"
     },
     "language_auto": {
-        "message": "εντοπισμός γλώσσας"
+        "message": "ανίχνευση γλώσσας"
     },
     "language_ab": {
-        "message": "Αβκαζάζ"
+        "message": "Αμπχαζ"
     },
     "language_ace": {
-        "message": "Ασεκής"
+        "message": "Ασενέζος"
     },
     "language_ach": {
-        "message": "Αχολί"
+        "message": "Αχόλη"
     },
     "language_af": {
-        "message": "Αφρική"
+        "message": "Αφρικάανς"
     },
     "language_sq": {
         "message": "Αλβανός"
     },
     "language_alz": {
-        "message": "Αλουριά"
+        "message": "Alur"
     },
     "language_am": {
-        "message": "Αμάχαρος"
+        "message": "Αμαρικά"
     },
     "language_ar": {
-        "message": "αραβικός"
+        "message": "αραβικά"
     },
     "language_hy": {
-        "message": "αρμενικός"
+        "message": "Αρμένιος"
     },
     "language_as": {
-        "message": "Ασαμικός"
+        "message": "Ασαμέζοι"
     },
     "language_awa": {
-        "message": "Κάνζι"
+        "message": "Awadhi"
     },
     "language_ay": {
-        "message": "Αμάρα"
+        "message": "Αϊμάρα"
     },
     "language_az": {
         "message": "Αζερμπαϊτζάν"
     },
     "language_ban": {
-        "message": "Μπαλινέζος"
+        "message": "Μπαλινέζικο"
     },
     "language_bm": {
-        "message": "Μπάμπαρα"
+        "message": "Μπαμπάρα"
     },
     "language_ba": {
         "message": "Μπασκίρ"
     },
     "language_eu": {
-        "message": "Βάσης"
+        "message": "Βάσκος"
     },
     "language_btx": {
-        "message": "Μπακ Κάρο"
+        "message": "Μπατάκ Κάρο"
     },
     "language_bts": {
         "message": "Batak Simalungun"
     },
     "language_bbc": {
-        "message": "Μπατάκ Τόμπα"
+        "message": "Μπατάκ Τομπά"
     },
     "language_be": {
-        "message": "Λευκορωσικός"
+        "message": "Λευκορωσική"
     },
     "language_bem": {
-        "message": "Μπάμπα"
+        "message": "Μπέμπα"
     },
     "language_bn": {
         "message": "Μπενγκάλι"
@@ -334,28 +324,28 @@
         "message": "Betawi"
     },
     "language_bho": {
-        "message": "Φουσκωτό"
+        "message": "Μποτζπουρί"
     },
     "language_bik": {
-        "message": "Ποδήλατο"
+        "message": "Bikol"
     },
     "language_bs": {
-        "message": "Βοσνιακός"
+        "message": "Βόσνιος"
     },
     "language_br": {
-        "message": "Γουρουνάκι"
+        "message": "Breton"
     },
     "language_bg": {
-        "message": "Βούλγαρος"
+        "message": "βουλγαρική"
     },
     "language_bua": {
-        "message": "Σκακιέρα"
+        "message": "Buryat"
     },
     "language_yue": {
-        "message": "Καντονέζος"
+        "message": "καντονέζικο"
     },
     "language_ca": {
-        "message": "Καταλανική"
+        "message": "καταλανικά"
     },
     "language_ceb": {
         "message": "Cebuano"
@@ -364,118 +354,118 @@
         "message": "Chichewa (Nyanja)"
     },
     "language_zh_CN": {
-        "message": "Κινέζοι (απλοποιημένοι)"
+        "message": "Κινεζικά (Απλοποιημένα)"
     },
     "language_zh_TW": {
-        "message": "Κινέζικα (παραδοσιακά)"
+        "message": "Κινέζικα (Παραδοσιακά)"
     },
     "language_cv": {
-        "message": "Καραμέλα"
+        "message": "Τσουβάς"
     },
     "language_co": {
         "message": "Κορσικανός"
     },
     "language_crh": {
-        "message": "Κριμαϊκός Τατάρ"
+        "message": "Τατάρ της Κριμαίας"
     },
     "language_hr": {
-        "message": "Κροατία"
+        "message": "κροατικά"
     },
     "language_cs": {
-        "message": "Τσέχος"
+        "message": "Τσέχικα"
     },
     "language_da": {
-        "message": "δανικός"
+        "message": "Δανέζικα"
     },
     "language_din": {
-        "message": "Δίνκα"
+        "message": "Ντίνκα"
     },
     "language_dv": {
-        "message": "Πύργος"
+        "message": "Divehi"
     },
     "language_doi": {
-        "message": "Dogri"
+        "message": "Ντόγκρι"
     },
     "language_dov": {
         "message": "Ντόμπε"
     },
     "language_nl": {
-        "message": "Ολλανδός"
+        "message": "Ολλανδικά"
     },
     "language_dz": {
         "message": "Dzongkha"
     },
     "language_en": {
-        "message": "αγγλικός"
+        "message": "Αγγλικά"
     },
     "language_eo": {
-        "message": "εσπεράντο"
+        "message": "Εσπεράντο"
     },
     "language_et": {
-        "message": "Εσθονικός"
+        "message": "Εσθονικά"
     },
     "language_ee": {
         "message": "Προβατίνα"
     },
     "language_fj": {
-        "message": "Φιτζιανός"
+        "message": "Φίτζι"
     },
     "language_fil": {
-        "message": "Φιλιππίνων (Tagalog)"
+        "message": "Φιλιππινέζικα (Tagalog)"
     },
     "language_fi": {
-        "message": "φινλανδικός"
+        "message": "φινλανδικά"
     },
     "language_fr": {
-        "message": "Γάλλος"
+        "message": "Γαλλικά"
     },
     "language_fr_FR": {
         "message": "Γαλλικά (Γαλλικά)"
     },
     "language_fr_CA": {
-        "message": "Γαλλικά (καναδικά)"
+        "message": "Γαλλικά (Καναδικά)"
     },
     "language_fy": {
-        "message": "Φρισός"
+        "message": "Φριζ"
     },
     "language_ff": {
-        "message": "Πλήρως"
+        "message": "Fulfulde"
     },
     "language_gaa": {
-        "message": "Κοφτερός"
+        "message": "Ga"
     },
     "language_gl": {
-        "message": "Γαλιανός"
+        "message": "Γαλικιανός"
     },
     "language_lg": {
-        "message": "Ganda (Luganda)"
+        "message": "Γκάντα (Λουγκάντα)"
     },
     "language_ka": {
-        "message": "Γεωργιανός"
+        "message": "Γεωργιανή"
     },
     "language_de": {
         "message": "Γερμανός"
     },
     "language_el": {
-        "message": "ελληνικά"
+        "message": "Έλληνας"
     },
     "language_gn": {
-        "message": "Γουράνι"
+        "message": "Γκουαρανί"
     },
     "language_gu": {
         "message": "Γκουτζαράτι"
     },
     "language_ht": {
-        "message": "Αϊτής κρεολού"
+        "message": "Κρεολική Αϊτής"
     },
     "language_cnh": {
-        "message": "Hakha Chin"
+        "message": "Χάχα Τσιν"
     },
     "language_ha": {
-        "message": "Χαζούλα"
+        "message": "Hausa"
     },
     "language_haw": {
-        "message": "Χαβάη"
+        "message": "Χαβάης"
     },
     "language_iw": {
         "message": "Εβραϊκά"
@@ -487,133 +477,133 @@
         "message": "Χίντι"
     },
     "language_hmn": {
-        "message": "Χυμώδης"
+        "message": "Χμονγκ"
     },
     "language_hu": {
         "message": "ουγγρικός"
     },
     "language_hrx": {
-        "message": "Ούσρικος"
+        "message": "Χουνσρίκ"
     },
     "language_is": {
-        "message": "ισλανδικός"
+        "message": "Ισλανδικά"
     },
     "language_ig": {
-        "message": "Ιγκμπού"
+        "message": "Igbo"
     },
     "language_ilo": {
         "message": "Iloko"
     },
     "language_id": {
-        "message": "Ινδονησιακός"
+        "message": "Ινδονησιακά"
     },
     "language_ga": {
-        "message": "ιρλανδικός"
+        "message": "Ιρλανδός"
     },
     "language_it": {
-        "message": "ιταλικά"
+        "message": "ιταλική"
     },
     "language_ja": {
         "message": "Ιαπωνικά"
     },
     "language_jw": {
-        "message": "Ιάβανος"
+        "message": "Ιάβας"
     },
     "language_kn": {
         "message": "Κανάντα"
     },
     "language_pam": {
-        "message": "Καπαμπανγκάν"
+        "message": "Kapampangan"
     },
     "language_kk": {
-        "message": "Καζάκ"
+        "message": "Καζακστάν"
     },
     "language_km": {
         "message": "Χμερ"
     },
     "language_cgg": {
-        "message": "Κίκα"
+        "message": "Κιγκα"
     },
     "language_rw": {
-        "message": "Κινιουβάντα"
+        "message": "Κινιαρβάντα"
     },
     "language_ktu": {
-        "message": "Κιγκούδα"
+        "message": "Κιτούμπα"
     },
     "language_gom": {
-        "message": "Κωνκάνι"
+        "message": "Κονκάνι"
     },
     "language_ko": {
-        "message": "κορεάτης"
+        "message": "κορεάτικα"
     },
     "language_kri": {
-        "message": "Κροή"
+        "message": "Κρίο"
     },
     "language_ku": {
-        "message": "Κουρδικός (Κουρμαντζί)"
+        "message": "Κουρδικά (κουρμαντζί)"
     },
     "language_ckb": {
-        "message": "Κουρδικό (Sorani)"
+        "message": "Κουρδικά (Σοράνι)"
     },
     "language_ky": {
-        "message": "Κιργιζία"
+        "message": "Κιργιζικά"
     },
     "language_lo": {
         "message": "Λάος"
     },
     "language_ltg": {
-        "message": "Λατογαλιανός"
+        "message": "Latgalian"
     },
     "language_la": {
         "message": "λατινικά"
     },
     "language_lv": {
-        "message": "Λετονική"
+        "message": "λετονική"
     },
     "language_lij": {
-        "message": "Λιγουριανός"
+        "message": "Λιγουρίας"
     },
     "language_li": {
-        "message": "Λιμβουργκάνη"
+        "message": "Λιμβούργος"
     },
     "language_ln": {
-        "message": "Λίνια"
+        "message": "Lingala"
     },
     "language_lt": {
-        "message": "Λιθουανικός"
+        "message": "Λιθουανικά"
     },
     "language_lmo": {
         "message": "Λομβαρδός"
     },
     "language_luo": {
-        "message": "Χούτα"
+        "message": "Luo"
     },
     "language_lb": {
-        "message": "Λουξεμβούργος"
+        "message": "Λουξεμβουργιανό"
     },
     "language_mk": {
-        "message": "Μακεδόνας"
+        "message": "Μακεδονική"
     },
     "language_mai": {
-        "message": "Μαϊίθλιος"
+        "message": "Μαϊθήλι"
     },
     "language_mak": {
-        "message": "Μακασάρ"
+        "message": "Μακασσάρ"
     },
     "language_mg": {
-        "message": "Μαδαγασκάρη"
+        "message": "Μαδαγασκάρης"
     },
     "language_ms": {
-        "message": "Μαλαισία"
+        "message": "Μαλαισίας"
     },
     "language_ms_Arab": {
-        "message": "Μαλαισία (jawi)"
+        "message": "Μαλαισία (Τζάουι)"
     },
     "language_ml": {
         "message": "Μαλαγιαλάμ"
     },
     "language_mt": {
-        "message": "μαλτέζος"
+        "message": "Μαλτέζος"
     },
     "language_mi": {
         "message": "Μαορί"
@@ -622,67 +612,67 @@
         "message": "Μαράθι"
     },
     "language_chm": {
-        "message": "Λιβάδι Μάρι"
+        "message": "Λιβάδι Μαρί"
     },
     "language_mni_Mtei": {
-        "message": "Meiteilon (Manipuri)"
+        "message": "Meiteilon (Μανιπουρί)"
     },
     "language_min": {
         "message": "Minang"
     },
     "language_lus": {
-        "message": "Μάζο"
+        "message": "Μίζο"
     },
     "language_mn": {
-        "message": "Μογγόλος"
+        "message": "Μογγολικά"
     },
     "language_my": {
-        "message": "Μυανμάρ (Βιρμανία)"
+        "message": "Μιανμάρ (Βιρμανία)"
     },
     "language_nr": {
-        "message": "Ndebele (νότια)"
+        "message": "Ndebele (Νότος)"
     },
     "language_new": {
-        "message": "Νεπάλμπασα (Newari)"
+        "message": "Νεπάλμπασα (Νεβάρι)"
     },
     "language_ne": {
         "message": "Νεπάλ"
     },
     "language_nso": {
-        "message": "Βόρειο Sotho (Sepedi)"
+        "message": "Βόρειο Σότο (Sepedi)"
     },
     "language_no": {
-        "message": "Νορβηγός"
+        "message": "Νορβηγικά"
     },
     "language_nus": {
-        "message": "Νουστούκι"
+        "message": "Nuer"
     },
     "language_oc": {
-        "message": "Περιθωριακός"
+        "message": "Οξιτανικός"
     },
     "language_or": {
-        "message": "Odia (Oriya)"
+        "message": "Odia (Ορίγια)"
     },
     "language_om": {
-        "message": "Ορόμο"
+        "message": "Oromo"
     },
     "language_pag": {
         "message": "Pangasinan"
     },
     "language_pap": {
-        "message": "Παπιάστατος"
+        "message": "Παπιμέντο"
     },
     "language_ps": {
         "message": "Πάστο"
     },
     "language_fa": {
-        "message": "περσικός"
+        "message": "περσικά"
     },
     "language_pl": {
-        "message": "Στίλβωση"
+        "message": "Πολωνικά"
     },
     "language_pt": {
-        "message": "Πορτογάλος"
+        "message": "Πορτογαλικά"
     },
     "language_pt_PT": {
         "message": "Πορτογαλικά (Πορτογαλία)"
@@ -691,88 +681,88 @@
         "message": "Πορτογαλικά (Βραζιλία)"
     },
     "language_pa": {
-        "message": "Πουντζάμπι"
+        "message": "Παντζάμπι"
     },
     "language_pa_Arab": {
-        "message": "Punjabi (Shahmukhi)"
+        "message": "Παντζάμπι (Σαχμούχι)"
     },
     "language_qu": {
-        "message": "Quechua"
+        "message": "Κέτσουα"
     },
     "language_rom": {
-        "message": "Ρωμαίος"
+        "message": "Ρομά"
     },
     "language_ro": {
-        "message": "ρουμανικός"
+        "message": "Ρουμάνικα"
     },
     "language_rn": {
-        "message": "Τρέξιμο"
+        "message": "Ρούντι"
     },
     "language_ru": {
-        "message": "ρωσικός"
+        "message": "Ρωσική"
     },
     "language_sm": {
         "message": "Σαμόα"
     },
     "language_sg": {
-        "message": "Σάνγκο"
+        "message": "Sango"
     },
     "language_sa": {
-        "message": "σανσκριτική"
+        "message": "σανσκριτικά"
     },
     "language_gd": {
-        "message": "Σκωτσέζος γαελικός"
+        "message": "Σκωτσέζικη Γαελική"
     },
     "language_sr": {
-        "message": "Σέρβος"
+        "message": "Σερβικά"
     },
     "language_st": {
-        "message": "Σέσο"
+        "message": "Σεσότο"
     },
     "language_crs": {
-        "message": "Creole Seychellois"
+        "message": "Κρεολικό Σεϋχελλ"
     },
     "language_shn": {
-        "message": "Σανοκάθαρτο"
+        "message": "Shan"
     },
     "language_sn": {
         "message": "Σόνα"
     },
     "language_scn": {
-        "message": "Σικελός"
+        "message": "Σικελιανός"
     },
     "language_szl": {
-        "message": "Σιλησιανός"
+        "message": "Σιλεσιανός"
     },
     "language_sd": {
         "message": "Σίντι"
     },
     "language_si": {
-        "message": "Sinhala (Sinhalese)"
+        "message": "Σινχαλικά (Σινχαλικά)"
     },
     "language_sk": {
         "message": "Σλοβάκος"
     },
     "language_sl": {
-        "message": "Σλοβενικός"
+        "message": "Σλοβενική"
     },
     "language_so": {
-        "message": "Σομαλοί"
+        "message": "Σομαλός"
     },
     "language_es": {
-        "message": "ισπανικά"
+        "message": "Ισπανικά"
     },
     "language_su": {
-        "message": "Σουντάν"
+        "message": "Σουνδανή"
     },
     "language_sw": {
         "message": "Σουαχίλι"
     },
     "language_ss": {
-        "message": "Swati"
+        "message": "Σουάτι"
     },
     "language_sv": {
-        "message": "σουηδικά"
+        "message": "Σουηδική"
     },
     "language_ber": {
         "message": "Tamazight (Tifinagh)"
@@ -781,40 +771,40 @@
         "message": "Tamazight"
     },
     "language_tg": {
-        "message": "Τατζίκος"
+        "message": "Τατζικιστάν"
     },
     "language_ta": {
         "message": "Ταμίλ"
     },
     "language_tt": {
-        "message": "Τατάρος"
+        "message": "Τατάρ"
     },
     "language_te": {
         "message": "Τελούγκου"
     },
     "language_tet": {
-        "message": "Τετάρι"
+        "message": "Tetum"
     },
     "language_th": {
-        "message": "Ταϊλάνδης"
+        "message": "Ταϊλανδός"
     },
     "language_ti": {
-        "message": "Τίγρτινγκ"
+        "message": "Tigrinya"
     },
     "language_ts": {
         "message": "Τσόνγκα"
     },
     "language_tn": {
-        "message": "Tswana"
+        "message": "Τσουάνα"
     },
     "language_tr": {
-        "message": "τούρκικος"
+        "message": "Τουρκικά"
     },
     "language_tk": {
-        "message": "Τούρκους"
+        "message": "Τουρκμενιστάν"
     },
     "language_ak": {
-        "message": "TWI (Akan)"
+        "message": "Twi (Akan)"
     },
     "language_uk": {
         "message": "Ουκρανός"
@@ -823,22 +813,22 @@
         "message": "Ουρντού"
     },
     "language_ug": {
-        "message": "Uyghur"
+        "message": "Ουιγούρης"
     },
     "language_uz": {
-        "message": "Ουζμπεκί"
+        "message": "Ουζμπεκιστάν"
     },
     "language_vi": {
-        "message": "Βιετναμέζος"
+        "message": "Βιετναμέζικο"
     },
     "language_cy": {
-        "message": "Δεν πληρώνω τα οφειλόμενα"
+        "message": "Ουαλίας"
     },
     "language_xh": {
-        "message": "Χόσα"
+        "message": "Xhosa"
     },
     "language_yi": {
-        "message": "γερμανοεβραϊκή διάλεκτος"
+        "message": "Γίντις"
     },
     "language_yo": {
         "message": "Γιορούμπα"

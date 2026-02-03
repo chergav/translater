@@ -37,12 +37,12 @@ export default defineConfig({
 				default_title: '__MSG_app_name__',
 			},
 			commands: {
-				'open-translater': {
+				'open-translator': {
 					suggested_key: {
 						default: 'Ctrl+Shift+U',
 						mac: 'Command+Shift+U',
 					},
-					description: '__MSG_commands_open_translater__',
+					description: '__MSG_commands_open_translator__',
 				},
 			},
 			permissions: [

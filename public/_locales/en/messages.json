@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "Translater - translation of selected text"
+        "message": "Translator - translation of selected text"
     },
     "app_description": {
         "message": "Translate selected text with Google Translate"
@@ -15,20 +15,10 @@
         "message": "Settings"
     },
     "options_title": {
-        "message": "$APP_NAME$ - settings",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Translator - settings"
     },
-    "commands_open_translater": {
-        "message": "Open $APP_NAME$",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+    "commands_open_translator": {
+        "message": "Open Translator"
     },
     "popup_or": {
         "message": "Or"

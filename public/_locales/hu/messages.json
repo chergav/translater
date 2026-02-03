@@ -1,43 +1,33 @@
 {
     "app_name": {
-        "message": "Translater - A kiválasztott szöveg fordítása"
+        "message": "Fordító - a kiválasztott szöveg fordítása"
     },
     "app_description": {
-        "message": "A kiválasztott szöveget a Google Translate fordítása"
+        "message": "A kiválasztott szöveg fordítása a Google Fordítóval"
     },
     "app_version": {
-        "message": "változat"
+        "message": "verziót"
     },
     "context_menus_title": {
-        "message": "A kiválasztott szöveg fordítása"
+        "message": "A kijelölt szöveg fordítása"
     },
     "popup_menu_options": {
-        "message": "Beállítások"
+        "message": "Beállítások elemre"
     },
     "options_title": {
-        "message": "$App_name$ - beállítások",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+        "message": "Fordító - beállítások"
     },
-    "commands_open_translater": {
-        "message": "Nyissa meg a $app_name$ -ot",
-        "placeholders": {
-            "app_name": {
-                "content": "Translater"
-            }
-        }
+    "commands_open_translator": {
+        "message": "Nyissa meg a Fordítót"
     },
     "popup_or": {
-        "message": "Vagy"
+        "message": "vagy"
     },
     "options_tab_general": {
         "message": "Általános beállítások"
     },
     "options_tab_popup_window": {
-        "message": "Felbukkanó ablak"
+        "message": "Felugró ablak"
     },
     "options_tab_appearance": {
         "message": "Külső megjelenés"
@@ -46,43 +36,43 @@
         "message": "Történelem"
     },
     "options_inline_button_show": {
-        "message": "Megjelenítse a gombot, amikor a szöveg kiválasztja"
+        "message": "A gomb megjelenítése, ha szöveg van kiválasztva"
     },
     "options_text_field_button_show": {
-        "message": "Megjelenítés gomb a TextField -ben"
+        "message": "A gomb megjelenítése a szövegmezőben"
     },
     "options_hide_button_on_sites": {
-        "message": "Elrejteni a gombot ezeken a webhelyeken:"
+        "message": "A gomb elrejtése ezeken a webhelyeken:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Domain hozzáadása a kizárni kívánt webhely felbukkanó ablak menüjével"
+        "message": "Adjon hozzá domaineket a kizárni kívánt webhely felugró ablakának menüjével"
     },
     "options_show_original_text": {
-        "message": "A forrás szövegének megjelenítése"
+        "message": "Forrásszöveg megjelenítése"
     },
     "options_show_transliteration": {
-        "message": "Mutasd a transzliterációt"
+        "message": "Átírás megjelenítése"
     },
     "options_lock_popup_window": {
-        "message": "Lezárás felbukkanó ablak"
+        "message": "Felugró ablak zárolása"
     },
     "options_lock_popup_window_hint": {
-        "message": "Ha engedélyezve van, a felbukkanás nem zárul be, amikor a rajta kívül kattint"
+        "message": "Ha engedélyezve van, az előugró ablak nem záródik be, ha kívülre kattint"
     },
     "options_history_length": {
-        "message": "Történelembejegyzések (max.)"
+        "message": "Előzmények bejegyzései (max.)"
     },
     "options_records_in_history": {
-        "message": "A történelem bejegyzései:"
+        "message": "Bejegyzések a történelembe:"
     },
     "options_history_enable": {
-        "message": "A történelem engedélyezése"
+        "message": "Előzmények engedélyezése"
     },
     "options_clear_history": {
         "message": "Törölje az előzményeket"
     },
     "options_delete_history_item": {
-        "message": "Törlés a történelemből"
+        "message": "Törlés az előzményekből"
     },
     "options_tts_language": {
         "message": "Nyelv"
@@ -91,61 +81,61 @@
         "message": "Alapértelmezett hang"
     },
     "options_tts_voices": {
-        "message": "Hang"
+        "message": "Hangok"
     },
     "options_tts_table_caption": {
-        "message": "Ha egy nyelvet nem sorolnak fel, akkor külső szöveg-beszéd szolgáltatást fog használni."
+        "message": "Ha egy nyelv nem szerepel a listában, külső szövegfelolvasó szolgáltatást használnak."
     },
     "options_tts_no_voices_found": {
-        "message": "A böngészője nem támogatja a beszédszintézist. Ehelyett külső szolgáltatást fogunk használni."
+        "message": "Az Ön böngészője nem támogatja a beszédszintézist. Ehelyett külső szolgáltatást fogunk igénybe venni."
     },
     "options_edit_keyboard_shortcut": {
-        "message": "A billentyűzet szerkesztése"
+        "message": "billentyűparancsok szerkesztése"
     },
     "options_keyboard_shortcut_open_popup": {
-        "message": "Billentyűs parancsikon a felbukkanó ablak megnyitásához"
+        "message": "Billentyűparancs a felugró ablak megnyitásához"
     },
     "options_key_combination_is_not_set": {
-        "message": "A billentyűzet nem van beállítva"
+        "message": "billentyűparancs nincs beállítva"
     },
     "options_font_size": {
-        "message": "Betűkészlet"
+        "message": "Betűméret"
     },
     "options_font_size_xs": {
-        "message": "Extra kicsi (12px)"
+        "message": "Extra kicsi (12 képpont)"
     },
     "options_font_size_sm": {
-        "message": "Kicsi (14px)"
+        "message": "Kicsi (14 képpont)"
     },
     "options_font_size_md": {
-        "message": "Normál (16px)"
+        "message": "Normál (16 képpont)"
     },
     "options_font_size_lg": {
         "message": "Nagy (18 képpont)"
     },
     "options_font_size_xl": {
-        "message": "Extra nagy (20px)"
+        "message": "Extra nagy (20 képpont)"
     },
     "options_support_msg": {
-        "message": "Ha valami nem működik, vagy van javaslata, kérjük, ossza meg itt"
+        "message": "Ha valami nem működik, vagy bármilyen javaslata van, kérjük, jelezze itt"
     },
     "options_support_donations": {
         "message": "Ha szeretné támogatni ezt az ingyenes szoftvert"
     },
     "options_address": {
-        "message": "cím"
+        "message": "címet"
     },
     "options_copy_address": {
-        "message": "Másoláscím"
+        "message": "Cím másolása"
     },
     "text_expand": {
-        "message": "Több"
+        "message": "Többet"
     },
     "text_collapse": {
-        "message": "Kevesebb"
+        "message": "Kevesebbet"
     },
     "target_lang_label": {
-        "message": "Fordítás:"
+        "message": "Fordítás erre:"
     },
     "popup_dictionary": {
         "message": "Szótár"
@@ -163,7 +153,7 @@
         "message": "Példák"
     },
     "popup_perhaps_you_meant": {
-        "message": "Talán azt értette:"
+        "message": "Talán erre gondoltál:"
     },
     "popup_original_language": {
         "message": "Eredeti nyelv:"
@@ -172,16 +162,16 @@
         "message": "Fordított fordítás"
     },
     "popup_menu_lock_window": {
-        "message": "Zárablak"
+        "message": "Zárja be az ablakot"
     },
     "popup_menu_unlock_window": {
-        "message": "Kinyitja az ablakot"
+        "message": "Nyissa ki az ablakot"
     },
     "popup_menu_show_translate_button": {
-        "message": "Megjelenítse a Fordítás gombot"
+        "message": "Fordítás gomb megjelenítése"
     },
     "popup_menu_hide_translate_button": {
-        "message": "Elrejteni a lefordítást gombot"
+        "message": "Fordítás gomb elrejtése"
     },
     "popup_menu_options_link": {
         "message": "További beállítások"
@@ -190,25 +180,25 @@
         "message": "Fordítás"
     },
     "theme_light": {
-        "message": "Könnyű téma"
+        "message": "Világos téma"
     },
     "theme_dark": {
         "message": "Sötét téma"
     },
     "theme_system": {
-        "message": "Rendszertéma"
+        "message": "Rendszer téma"
     },
     "tooltip_translate_text": {
-        "message": "A kiválasztott szöveg fordítása"
+        "message": "A kijelölt szöveg fordítása"
     },
     "tooltip_copy_to_clipboard": {
-        "message": "Másolja a vágólapra"
+        "message": "Másolás a vágólapra"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "A másolat nem támogatja a HTTP webhelyeket"
+        "message": "A másolás nem támogatott HTTP-webhelyeken"
     },
     "tooltip_copyed": {
-        "message": "Másolt"
+        "message": "Másolva"
     },
     "tooltip_copy_error": {
         "message": "Másolási hiba!"
@@ -217,10 +207,10 @@
         "message": "Hallgassa meg a szöveget"
     },
     "tooltip_listen_stop": {
-        "message": "Stop"
+        "message": "Állj"
     },
     "tooltip_listen_language_is_not_support": {
-        "message": "A nyelv nem támogat"
+        "message": "A nyelv nem támogatott"
     },
     "tooltip_go_back": {
         "message": "Vissza"
@@ -232,7 +222,7 @@
         "message": "Tiszta szöveg"
     },
     "tooltip_clear_search": {
-        "message": "Átkutatás"
+        "message": "Keresés törlése"
     },
     "date_today": {
         "message": "ma"
@@ -241,28 +231,28 @@
         "message": "tegnap"
     },
     "forefox_perm_header": {
-        "message": "Engedje meg az indítást a Firefoxban"
+        "message": "Indítás engedélyezése Firefoxban"
     },
     "forefox_perm_text": {
-        "message": "Ennek a kiterjesztésnek az engedélyére van szüksége a webhelyek eléréséhez és a Firefox -on történő lefordításhoz"
+        "message": "Ennek a bővítménynek szüksége van az Ön engedélyére a webhelyek eléréséhez és a Firefoxban való lefordításához"
     },
     "forefox_perm_button": {
-        "message": "Kezelje az engedélyeket"
+        "message": "Engedélyek kezelése"
     },
     "select_language_search_placeholder": {
-        "message": "Keressen nyelveket (ISO kód vagy név)"
+        "message": "Nyelvek keresése (ISO kód vagy név)"
     },
     "select_language_search_no_results": {
         "message": "Nincs eredmény"
     },
     "try_my_extensions": {
-        "message": "🚀 Próbálja ki a többi kiterjesztésemet"
+        "message": "🚀 Próbáld ki a többi bővítményem is"
     },
     "language_auto": {
-        "message": "felismeri a nyelvet"
+        "message": "észleli a nyelvet"
     },
     "language_ab": {
-        "message": "Abkol"
+        "message": "Abház"
     },
     "language_ace": {
         "message": "Acehnese"
@@ -271,7 +261,7 @@
         "message": "Acholi"
     },
     "language_af": {
-        "message": "Afrikaánok"
+        "message": "afrikaans"
     },
     "language_sq": {
         "message": "albán"
@@ -280,7 +270,7 @@
         "message": "Alur"
     },
     "language_am": {
-        "message": "Amhara"
+        "message": "amhara"
     },
     "language_ar": {
         "message": "arab"
@@ -289,25 +279,25 @@
         "message": "örmény"
     },
     "language_as": {
-        "message": "Asszámi"
+        "message": "asszámi"
     },
     "language_awa": {
         "message": "Awadhi"
     },
     "language_ay": {
-        "message": "Amara"
+        "message": "Aymara"
     },
     "language_az": {
         "message": "azerbajdzsáni"
     },
     "language_ban": {
-        "message": "Balinai"
+        "message": "balinéz"
     },
     "language_bm": {
-        "message": "Bambár"
+        "message": "Bambara"
     },
     "language_ba": {
-        "message": "Bashkir"
+        "message": "baskír"
     },
     "language_eu": {
         "message": "baszk"
@@ -322,7 +312,7 @@
         "message": "Batak Toba"
     },
     "language_be": {
-        "message": "Belarusz"
+        "message": "fehérorosz"
     },
     "language_bem": {
         "message": "Bemba"
@@ -331,7 +321,7 @@
         "message": "bengáli"
     },
     "language_bew": {
-        "message": "Béta"
+        "message": "Betawi"
     },
     "language_bho": {
         "message": "Bhojpuri"
@@ -340,19 +330,19 @@
         "message": "Bikol"
     },
     "language_bs": {
-        "message": "Boszniai"
+        "message": "bosnyák"
     },
     "language_br": {
-        "message": "Breton"
+        "message": "breton"
     },
     "language_bg": {
         "message": "bolgár"
     },
     "language_bua": {
-        "message": "Temetés"
+        "message": "burját"
     },
     "language_yue": {
-        "message": "Kantoni"
+        "message": "kantoni"
     },
     "language_ca": {
         "message": "katalán"
@@ -361,22 +351,22 @@
         "message": "Cebuano"
     },
     "language_ny": {
-        "message": "Chichewa (Nyanja)"
+        "message": "Chichewa (nyanja)"
     },
     "language_zh_CN": {
-        "message": "Kínai (egyszerűsített)"
+        "message": "kínai (egyszerűsített)"
     },
     "language_zh_TW": {
-        "message": "Kínai (hagyományos)"
+        "message": "kínai (hagyományos)"
     },
     "language_cv": {
-        "message": "Cugasz"
+        "message": "csuvas"
     },
     "language_co": {
-        "message": "Korzikai"
+        "message": "korzikai"
     },
     "language_crh": {
-        "message": "Krími tatár"
+        "message": "krími tatár"
     },
     "language_hr": {
         "message": "horvát"
@@ -397,7 +387,7 @@
         "message": "Dogri"
     },
     "language_dov": {
-        "message": "Domb"
+        "message": "Dombe"
     },
     "language_nl": {
         "message": "holland"
@@ -406,7 +396,7 @@
         "message": "Dzongkha"
     },
     "language_en": {
-        "message": "angol"
+        "message": "angolul"
     },
     "language_eo": {
         "message": "eszperantó"
@@ -415,13 +405,13 @@
         "message": "észt"
     },
     "language_ee": {
-        "message": "Anyajuh"
+        "message": "Ewe"
     },
     "language_fj": {
-        "message": "Fidzsi"
+        "message": "fidzsi"
     },
     "language_fil": {
-        "message": "Filippínó (tagalog)"
+        "message": "filippínó (tagalog)"
     },
     "language_fi": {
         "message": "finn"
@@ -430,22 +420,22 @@
         "message": "francia"
     },
     "language_fr_FR": {
-        "message": "Francia (francia)"
+        "message": "francia (francia)"
     },
     "language_fr_CA": {
-        "message": "Francia (kanadai)"
+        "message": "francia (kanadai)"
     },
     "language_fy": {
         "message": "fríz"
     },
     "language_ff": {
-        "message": "Teljesség"
+        "message": "Fullfulde"
     },
     "language_gaa": {
-        "message": "GA"
+        "message": "Ga"
     },
     "language_gl": {
-        "message": "Galéria"
+        "message": "galíciai"
     },
     "language_lg": {
         "message": "Ganda (Luganda)"
@@ -463,19 +453,19 @@
         "message": "Guarani"
     },
     "language_gu": {
-        "message": "Gudzsaráti"
+        "message": "gudzsaráti"
     },
     "language_ht": {
         "message": "Haiti kreol"
     },
     "language_cnh": {
-        "message": "Hakha álla"
+        "message": "Hakha Chin"
     },
     "language_ha": {
         "message": "Hausa"
     },
     "language_haw": {
-        "message": "Hawaii"
+        "message": "hawaii"
     },
     "language_iw": {
         "message": "héber"
@@ -487,7 +477,7 @@
         "message": "hindi"
     },
     "language_hmn": {
-        "message": "Hmong"
+        "message": "hmong"
     },
     "language_hu": {
         "message": "magyar"
@@ -520,16 +510,16 @@
         "message": "jávai"
     },
     "language_kn": {
-        "message": "Kannada"
+        "message": "kannada"
     },
     "language_pam": {
-        "message": "Kapampanga"
+        "message": "Kapampangan"
     },
     "language_kk": {
         "message": "kazah"
     },
     "language_km": {
-        "message": "Khmer"
+        "message": "khmer"
     },
     "language_cgg": {
         "message": "Kiga"
@@ -550,19 +540,19 @@
         "message": "Krio"
     },
     "language_ku": {
-        "message": "Kurd (Kurmanji)"
+        "message": "kurd (kurmandzsi)"
     },
     "language_ckb": {
-        "message": "Kurd (Sorani)"
+        "message": "kurd (sorani)"
     },
     "language_ky": {
-        "message": "Kirgia"
+        "message": "kirgiz"
     },
     "language_lo": {
         "message": "Lao"
     },
     "language_ltg": {
-        "message": "Latgaliai"
+        "message": "latgal"
     },
     "language_la": {
         "message": "latin"
@@ -571,7 +561,7 @@
         "message": "lett"
     },
     "language_lij": {
-        "message": "Liguriai"
+        "message": "ligur"
     },
     "language_li": {
         "message": "Limburgan"
@@ -583,16 +573,16 @@
         "message": "litván"
     },
     "language_lmo": {
-        "message": "Lombard"
+        "message": "lombard"
     },
     "language_luo": {
         "message": "Luo"
     },
     "language_lb": {
-        "message": "Luxemburgi"
+        "message": "luxemburgi"
     },
     "language_mk": {
-        "message": "Macedón"
+        "message": "macedón"
     },
     "language_mai": {
         "message": "Maithili"
@@ -607,25 +597,25 @@
         "message": "maláj"
     },
     "language_ms_Arab": {
-        "message": "Maláj (jawi)"
+        "message": "maláj (jawi)"
     },
     "language_ml": {
-        "message": "Malajálam"
+        "message": "Malayalam"
     },
     "language_mt": {
         "message": "máltai"
     },
     "language_mi": {
-        "message": "Maori"
+        "message": "maori"
     },
     "language_mr": {
-        "message": "Marathi"
+        "message": "marathi"
     },
     "language_chm": {
-        "message": "Meadow Mari"
+        "message": "Réti Mari"
     },
     "language_mni_Mtei": {
-        "message": "Meiteilon (Manipuri)"
+        "message": "Meiteilon (manipuri)"
     },
     "language_min": {
         "message": "Minang"
@@ -643,13 +633,13 @@
         "message": "Ndebele (dél)"
     },
     "language_new": {
-        "message": "Nepalbhasa (Newari)"
+        "message": "nepálbhásza (newari)"
     },
     "language_ne": {
-        "message": "Nepáli"
+        "message": "nepáli"
     },
     "language_nso": {
-        "message": "Észak -Sotho (SEPEDI)"
+        "message": "észak-sotho (Sepedi)"
     },
     "language_no": {
         "message": "norvég"
@@ -658,7 +648,7 @@
         "message": "Nuer"
     },
     "language_oc": {
-        "message": "Occitan"
+        "message": "okszitán"
     },
     "language_or": {
         "message": "Odia (Oriya)"
@@ -667,13 +657,13 @@
         "message": "Oromo"
     },
     "language_pag": {
-        "message": "Pangaszinán"
+        "message": "Pangasinan"
     },
     "language_pap": {
         "message": "Papiamento"
     },
     "language_ps": {
-        "message": "Pastu"
+        "message": "pastu"
     },
     "language_fa": {
         "message": "perzsa"
@@ -685,22 +675,22 @@
         "message": "portugál"
     },
     "language_pt_PT": {
-        "message": "Portugál (Portugália)"
+        "message": "portugál (Portugália)"
     },
     "language_pt_BR": {
-        "message": "Portugál (Brazília)"
+        "message": "portugál (Brazília)"
     },
     "language_pa": {
         "message": "pandzsábi"
     },
     "language_pa_Arab": {
-        "message": "Punjabi (Shahmukhi)"
+        "message": "pandzsábi (shahmukhi)"
     },
     "language_qu": {
-        "message": "Quechua"
+        "message": "kecsua"
     },
     "language_rom": {
-        "message": "Román"
+        "message": "romani"
     },
     "language_ro": {
         "message": "román"
@@ -712,7 +702,7 @@
         "message": "orosz"
     },
     "language_sm": {
-        "message": "Szamói"
+        "message": "szamoai"
     },
     "language_sg": {
         "message": "Sango"
@@ -721,7 +711,7 @@
         "message": "szanszkrit"
     },
     "language_gd": {
-        "message": "Skót gél"
+        "message": "skót gael"
     },
     "language_sr": {
         "message": "szerb"
@@ -742,13 +732,13 @@
         "message": "szicíliai"
     },
     "language_szl": {
-        "message": "Sziléziai"
+        "message": "sziléziai"
     },
     "language_sd": {
-        "message": "Szindhi"
+        "message": "szindhi"
     },
     "language_si": {
-        "message": "Szingaléz (szingaléz)"
+        "message": "szingaléz (szingaléz)"
     },
     "language_sk": {
         "message": "szlovák"
@@ -757,16 +747,16 @@
         "message": "szlovén"
     },
     "language_so": {
-        "message": "Szomáliai"
+        "message": "szomáliai"
     },
     "language_es": {
         "message": "spanyol"
     },
     "language_su": {
-        "message": "Szundáni"
+        "message": "szundanai"
     },
     "language_sw": {
-        "message": "Szuahéli"
+        "message": "szuahéli"
     },
     "language_ss": {
         "message": "Swati"
@@ -781,7 +771,7 @@
         "message": "Tamazight"
     },
     "language_tg": {
-        "message": "Tádzsik"
+        "message": "tadzsik"
     },
     "language_ta": {
         "message": "tamil"
@@ -790,16 +780,16 @@
         "message": "tatár"
     },
     "language_te": {
-        "message": "Telugu"
+        "message": "telugu"
     },
     "language_tet": {
         "message": "Tetum"
     },
     "language_th": {
-        "message": "Thaiföldi"
+        "message": "thai"
     },
     "language_ti": {
-        "message": "Tigrina"
+        "message": "Tigrinya"
     },
     "language_ts": {
         "message": "Tsonga"
@@ -811,7 +801,7 @@
         "message": "török"
     },
     "language_tk": {
-        "message": "Türkmén"
+        "message": "türkmén"
     },
     "language_ak": {
         "message": "Twi (Akan)"
@@ -823,7 +813,7 @@
         "message": "urdu"
     },
     "language_ug": {
-        "message": "Ujgur"
+        "message": "ujgur"
     },
     "language_uz": {
         "message": "üzbég"
@@ -841,12 +831,12 @@
         "message": "jiddis"
     },
     "language_yo": {
-        "message": "Joruba"
+        "message": "joruba"
     },
     "language_yua": {
         "message": "Yucatec Maya"
     },
     "language_zu": {
-        "message": "zulu"
+        "message": "Zulu"
     }
 }
