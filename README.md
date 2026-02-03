@@ -1,14 +1,14 @@
-# ![translater icon](docs/48.png) Translater
+# ![translator icon](docs/48.png) Translator
 
 Translate selected text with Google Translate
 
-![translater screenshot](docs/screenshot.png)
+![translator screenshot](docs/screenshot.png)
 
 ***
 
 <p align="start">
 <a href="https://chromewebstore.google.com/detail/abebconmjhhbcjofpchjkbbimgkhdmbe"><img src="docs/chrome-web-store.png" alt="Chrome web store" height="60"></a>
-<a href="https://microsoftedge.microsoft.com/addons/detail/ohcoejhlajaopflplmckddjcfecgleij"><img src="docs/egde-add-ons.svg" alt="Microsoft Edge Add-ons" height="60"></a>
+<a href="https://microsoftedge.microsoft.com/addons/detail/ohcoejhlajaopflplmckddjcfecgleij"><img src="docs/edge-add-ons.svg" alt="Microsoft Edge Add-ons" height="60"></a>
 <a href="https://addons.mozilla.org/firefox/addon/translater-gt"><img src="docs/firefox-add-ons.svg" alt="FireFox Add-ons" height="60"></a>
 </p>
 
@@ -43,12 +43,12 @@ Translate selected text with Google Translate
 - **For Chromium based browsers (Chrome, Edge, etc.)**
 	- run `pnpm zip`
 	- open `chrome://extensions` (`edge://extensions/`, ect.), enable *Developer mode*
-	- load unpacked from `.output/chrome-mv3` or drag and drop the file `.output/translater-{version}-chrome.zip` onto the extensions page
+	- load unpacked from `.output/chrome-mv3` or drag and drop the file `.output/translator-{version}-chrome.zip` onto the extensions page
 
 - **For Firefox**
 	- run `pnpm zip:firefox`
 	- open `about:addons` -> ⚙️ *Settings* -> *Debug Add-ons* -> *Load Temporary Add-on…*
-	- select the file `.output/translater-{version}-firefox.zip`
+	- select the file `.output/translator-{version}-firefox.zip`
 
 > [!NOTE]
 > In Firefox, temporary extensions remain active only until you close the browser.

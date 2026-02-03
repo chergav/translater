@@ -47,7 +47,7 @@ import Checkbox from '~/lib/Checkbox.svelte';
 import Select from '~/lib/Select.svelte';
 import Shortcuts from '~/lib/Shortcuts.svelte';
 
-let shortcutKeysPromise = getShortcutByCommand('open-translater');
+let shortcutKeysPromise = getShortcutByCommand('open-translator');
 
 const openExtensionsShortcuts = () => {
 	browser.tabs.create({ url: 'chrome://extensions/shortcuts' });
