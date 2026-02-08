@@ -1,6 +1,7 @@
 <div class="flex flex-col gap-2 border-b border-color-surface-high px-6 py-4">
 	<div class="flex items-center justify-between">
 		<Switch
+			class="max-w-96"
 			label={browser.i18n.getMessage('options_history_enable')}
 			bind:checked={storage.settings.historyEnable}
 		/>

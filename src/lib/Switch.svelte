@@ -1,6 +1,7 @@
 <label
 	class={[
-		'group inline-flex cursor-pointer items-center gap-4 select-none',
+		'group inline-flex cursor-pointer items-center justify-between gap-4 rounded-sm transition-colors select-none',
+		// 'bg-color-surface-container hover:bg-color-surface-high has-active:bg-color-surface-highest',
 		'has-disabled:pointer-events-none has-disabled:opacity-50',
 		className,
 	]}

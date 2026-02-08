@@ -22,6 +22,7 @@ export interface Settings {
 	};
 	modelId: string
 	fakeUserEmail?: string
+	hideButtonForUserLanguage: boolean
 }
 
 export interface SettingsSync {

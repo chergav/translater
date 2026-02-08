@@ -48,7 +48,6 @@ import Link from '~/lib/Link.svelte';
 import TranslatorVersion from '~/lib/TranslatorVersion.svelte';
 import RateUs from '~/lib/RateUs.svelte';
 import General from './lib/General.svelte';
-import PopupWindow from './lib/PopupWindow.svelte';
 import Appearance from './lib/Appearance/Appearance.svelte';
 import TTS from './lib/TTS/TTS.svelte';
 import History from './lib/History/History.svelte';
@@ -56,7 +55,6 @@ import Support from './lib/Support/Support.svelte';
 import Providers from './lib/Providers/Providers.svelte';
 import {
 	mdiCogOutline,
-	mdiApplicationOutline,
 	mdiBrushOutline,
 	mdiVolumeHigh,
 	mdiHistory,
@@ -64,7 +62,7 @@ import {
 	mdiCreationOutline,
 } from '@mdi/js';
 
-type TabsHash = '#general' | '#providers' | '#popup' | '#appearance' | '#tts' | '#history' | '#support';
+type TabsHash = '#general' | '#providers' | '#appearance' | '#tts' | '#history' | '#support';
 
 type Tabs = {
 	[key in TabsHash]: {
@@ -86,11 +84,6 @@ const tabs: Tabs = {
 		label: 'Providers',
 		icon: mdiCreationOutline,
 		component: Providers,
-	},
-	'#popup': {
-		label: browser.i18n.getMessage('options_tab_popup_window'),
-		icon: mdiApplicationOutline,
-		component: PopupWindow,
 	},
 	'#appearance': {
 		label: browser.i18n.getMessage('options_tab_appearance'),

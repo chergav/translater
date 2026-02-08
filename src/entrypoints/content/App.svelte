@@ -3,8 +3,9 @@
 	data-theme={storage.themeClass}
 	data-variant={storage.settings.themeVariant}
 >
-	{#await isTextInTargetLangPromise then isYourLang}
-		{#if !isYourLang && isShowTrigger}
+	{#await shouldShowButtonPromise then isUserLanguage}
+	{console.log('isUserLanguage', isUserLanguage)}
+		{#if isUserLanguage && isShowTrigger}
 			<Trigger />
 		{/if}
 	{/await}
@@ -29,7 +30,7 @@ import { detectLanguage } from '~/shared/browser';
 import { isBrowserTranslationAvailable } from '~/entrypoints/background/providers/browser';
 import { useDebounce } from 'runed';
 
-let isTextInTargetLangPromise = $derived<Promise<boolean>>(isTextInTargetLang());
+let shouldShowButtonPromise = $derived<Promise<boolean>>(shouldShowButton());
 let isSettingsShowButton = $derived<boolean>(
 	store.isInTextField
 		? storage.settings.textFieldButtonShow
@@ -62,12 +63,17 @@ function onMouseup(event: MouseEvent) {
 	debouncedMouseup(event);
 }
 
-async function isTextInTargetLang() {
+async function shouldShowButton() {
+	if (!storage.settings.hideButtonForUserLanguage) return true;
+
 	const detectedLanguage = await detectLanguage(store.selectedText);
+	console.debug('detectedLanguage', detectedLanguage);
 
-	if (!detectedLanguage) return false;
+	if (!detectedLanguage) return true;
+	const userLanguage = browser.i18n.getUILanguage();
+	console.debug('userLanguage', userLanguage);
 
-	return storage.settings.targetLang.startsWith(detectedLanguage);
+	return !userLanguage.startsWith(detectedLanguage);
 }
 
 function onMessage(

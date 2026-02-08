@@ -23,6 +23,7 @@ const initialSettings: Settings = {
 	lockWindow: false,
 	ttsVoiceByLang: {},
 	modelId: GOOGLE_TRANSLATE_MODEL_ID,
+	hideButtonForUserLanguage: false,
 };
 
 class Storage {

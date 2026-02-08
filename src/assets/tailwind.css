@@ -279,7 +279,7 @@ body {
 	--ui-color-surface: var(--surface, var(--color-white));
 	--ui-color-surface-container: var(--surface-container, var(--color-gray-100));
 	--ui-color-surface-high: var(--surface-high, var(--color-gray-200));
-	--ui-color-surface-highest: var(--surface-high, var(--color-gray-300));
+	--ui-color-surface-highest: var(--surface-highest, var(--color-gray-300));
 	--ui-color-on-surface: var(--on-surface, var(--color-gray-900));
 	--ui-color-on-surface-variant: var(--on-surface-variant, var(--color-gray-600));
 
