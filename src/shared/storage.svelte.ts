@@ -2,6 +2,8 @@ import { type Settings, Theme, ThemeVariant, AccentColor, FontSize } from '~/typ
 import { GOOGLE_TRANSLATE_MODEL_ID } from '~/types/providers';
 import { MediaQuery } from 'svelte/reactivity';
 import { storageGet, storageSet } from '~/shared/browser';
+import { languages } from '~/shared/languages';
+import { getTargetLanguage } from '~/utils/getTargetLanguage';
 // import { isPreferredDark } from '~/utils';
 import deepEqual from 'fast-deep-equal';
 
@@ -10,7 +12,7 @@ const initialSettings: Settings = {
 	themeVariant: ThemeVariant.Slate,
 	accentColor: AccentColor.Blue,
 	fontSize: FontSize.Normal,
-	targetLang: browser.i18n.getUILanguage(),
+	targetLang: getTargetLanguage(languages),
 	inlineButtonShow: true,
 	textFieldButtonShow: true,
 	showOriginalText: true,
