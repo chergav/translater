@@ -5,9 +5,6 @@
     "app_description": {
         "message": "Vertaal geselecteerde tekst met Google Translate"
     },
-    "app_version": {
-        "message": "versie"
-    },
     "context_menus_title": {
         "message": "Vertaal geselecteerde tekst"
     },
@@ -35,29 +32,86 @@
     "options_tab_history": {
         "message": "Geschiedenis"
     },
+    "options_general_translation_button": {
+        "message": "Vertaalknop"
+    },
+    "options_general_no_sites_selected": {
+        "message": "geen sites geselecteerd"
+    },
+    "options_general_show_on_selected": {
+        "message": "Pop-up weergeven wanneer tekst is geselecteerd"
+    },
+    "options_general_show_on_selected_hint": {
+        "message": "Pop-up verschijnt na tekstselectie (het beste in de eenvoudige modus)."
+    },
+    "options_general_mode_full": {
+        "message": "Volledige modus"
+    },
+    "options_general_mode_full_hint": {
+        "message": "Pop-upvenster met alle functies."
+    },
+    "options_general_mode_simple": {
+        "message": "Eenvoudige modus"
+    },
+    "options_general_mode_simple_hint": {
+        "message": "Toon alleen de vertaling, niets anders."
+    },
     "options_inline_button_show": {
         "message": "Knop weergeven wanneer tekst is geselecteerd"
+    },
+    "options_inline_button_show_hint": {
+        "message": "Er verschijnt een vertaalknop naast de geselecteerde tekst."
     },
     "options_text_field_button_show": {
         "message": "Knop weergeven in tekstveld"
     },
+    "options_text_field_button_show_hint": {
+        "message": "Knop Tonen wanneer tekst is geselecteerd in tekstinvoervelden."
+    },
+    "options_hide_translation_button": {
+        "message": "Verberg de vertaalknop voor uw taal"
+    },
+    "options_hide_translation_button_hint": {
+        "message": "De knop verschijnt niet wanneer u tekst in uw systeemtaal selecteert"
+    },
     "options_hide_button_on_sites": {
-        "message": "Verberg de knop op deze sites:"
+        "message": "Vertaalknop verbergen op specifieke websites:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Voeg domeinen toe via het menu van het pop-upvenster op de site die u wilt uitsluiten"
+        "message": "Voeg domeinen toe via het menu van het pop-upvenster op de site die u wilt uitsluiten."
     },
     "options_show_original_text": {
         "message": "Brontekst weergeven"
     },
+    "options_show_original_text_hint": {
+        "message": "Geef de originele tekst naast de vertaling weer (alleen in de volledige modus)."
+    },
     "options_show_transliteration": {
         "message": "Transliteratie weergeven"
+    },
+    "options_show_transliteration_hint": {
+        "message": "Toon transliteratie indien beschikbaar."
     },
     "options_lock_popup_window": {
         "message": "Pop-upvenster vergrendelen"
     },
     "options_lock_popup_window_hint": {
-        "message": "Indien ingeschakeld, wordt de pop-up niet gesloten als u erbuiten klikt"
+        "message": "Pop-up blijft open als u buiten klikt."
+    },
+    "options_providers_provider": {
+        "message": "Aanbieder"
+    },
+    "options_providers_model": {
+        "message": "Model"
+    },
+    "options_appearance_theme": {
+        "message": "Thema"
+    },
+    "options_appearance_accent_color": {
+        "message": "Accentkleur"
+    },
+    "options_appearance_bg_and_text": {
+        "message": "Achtergrond en platte tekst"
     },
     "options_history_length": {
         "message": "Geschiedenisinvoer (max.)"
@@ -78,7 +132,7 @@
         "message": "Taal"
     },
     "options_tts_default_voice": {
-        "message": "Standaardstem"
+        "message": "Standaard stem"
     },
     "options_tts_voices": {
         "message": "Stemmen"
@@ -121,12 +175,6 @@
     },
     "options_support_donations": {
         "message": "Als u deze gratis software wilt ondersteunen"
-    },
-    "options_address": {
-        "message": "adres"
-    },
-    "options_copy_address": {
-        "message": "Kopieer adres"
     },
     "text_expand": {
         "message": "Meer"
@@ -176,6 +224,12 @@
     "popup_menu_options_link": {
         "message": "Aanvullende instellingen"
     },
+    "popup_menu_switch_to_simple_mode": {
+        "message": "Schakel over naar de eenvoudige modus"
+    },
+    "popup_menu_switch_to_full_mode": {
+        "message": "Schakel over naar de volledige modus"
+    },
     "popup_placeholder_translation": {
         "message": "Vertaling"
     },
@@ -196,12 +250,6 @@
     },
     "tooltip_copy_not_support_on_http": {
         "message": "Kopiëren wordt niet ondersteund op HTTP-sites"
-    },
-    "tooltip_copyed": {
-        "message": "Gekopieerd"
-    },
-    "tooltip_copy_error": {
-        "message": "Kopieerfout!"
     },
     "tooltip_listen_to_the_text": {
         "message": "Luister naar tekst"
@@ -251,6 +299,9 @@
     "language_auto": {
         "message": "taal detecteren"
     },
+    "language_aa": {
+        "message": "Ver weg"
+    },
     "language_ab": {
         "message": "Abchazisch"
     },
@@ -263,8 +314,8 @@
     "language_af": {
         "message": "Afrikaans"
     },
-    "language_sq": {
-        "message": "Albanees"
+    "language_ak": {
+        "message": "Twi (Akan)"
     },
     "language_alz": {
         "message": "Alur"
@@ -275,11 +326,11 @@
     "language_ar": {
         "message": "Arabisch"
     },
-    "language_hy": {
-        "message": "Armeens"
-    },
     "language_as": {
         "message": "Assamees"
+    },
+    "language_av": {
+        "message": "Avar"
     },
     "language_awa": {
         "message": "Awadhi"
@@ -290,26 +341,20 @@
     "language_az": {
         "message": "Azerbeidzjaans"
     },
-    "language_ban": {
-        "message": "Balinees"
-    },
-    "language_bm": {
-        "message": "Bambara"
-    },
     "language_ba": {
         "message": "Basjkir"
     },
-    "language_eu": {
-        "message": "Baskisch"
+    "language_bal": {
+        "message": "Baluchi"
     },
-    "language_btx": {
-        "message": "Batak Karo"
-    },
-    "language_bts": {
-        "message": "Batak Simalungun"
+    "language_ban": {
+        "message": "Balinees"
     },
     "language_bbc": {
         "message": "Batak Toba"
+    },
+    "language_bci": {
+        "message": "Baoulé"
     },
     "language_be": {
         "message": "Wit-Russisch"
@@ -317,11 +362,17 @@
     "language_bem": {
         "message": "Bemba"
     },
-    "language_bn": {
-        "message": "Bengaals"
+    "language_ber": {
+        "message": "Tamazight (Tifinagh)"
+    },
+    "language_ber_Latn": {
+        "message": "Tamazight"
     },
     "language_bew": {
         "message": "Betawi"
+    },
+    "language_bg": {
+        "message": "Bulgaars"
     },
     "language_bho": {
         "message": "Bhojpuri"
@@ -329,59 +380,89 @@
     "language_bik": {
         "message": "Bikol"
     },
-    "language_bs": {
-        "message": "Bosnisch"
+    "language_bm": {
+        "message": "Bambara"
+    },
+    "language_bm_Nkoo": {
+        "message": "NKo"
+    },
+    "language_bn": {
+        "message": "Bengaals"
+    },
+    "language_bo": {
+        "message": "Tibetaans"
     },
     "language_br": {
         "message": "Bretons"
     },
-    "language_bg": {
-        "message": "Bulgaars"
+    "language_bs": {
+        "message": "Bosnisch"
+    },
+    "language_bts": {
+        "message": "Batak Simalungun"
+    },
+    "language_btx": {
+        "message": "Batak Karo"
     },
     "language_bua": {
         "message": "Burjat"
     },
-    "language_yue": {
-        "message": "Kantonees"
-    },
     "language_ca": {
         "message": "Catalaans"
+    },
+    "language_ce": {
+        "message": "Tsjetsjeens"
     },
     "language_ceb": {
         "message": "Cebuano"
     },
-    "language_ny": {
-        "message": "Chichewa (Nyanja)"
+    "language_cgg": {
+        "message": "Kiga"
     },
-    "language_zh_CN": {
-        "message": "Chinees (vereenvoudigd)"
+    "language_ch": {
+        "message": "Chamorro"
     },
-    "language_zh_TW": {
-        "message": "Chinees (traditioneel)"
+    "language_chk": {
+        "message": "Chuukees"
     },
-    "language_cv": {
-        "message": "Tsjoevasj"
+    "language_chm": {
+        "message": "Weide Mari"
+    },
+    "language_ckb": {
+        "message": "Koerdisch (Sorani)"
+    },
+    "language_cnh": {
+        "message": "Hakka Chin"
     },
     "language_co": {
         "message": "Corsicaans"
     },
     "language_crh": {
-        "message": "Krim-Tataars"
+        "message": "Krim-Tataars (Cyrillisch)"
     },
-    "language_hr": {
-        "message": "Kroatisch"
+    "language_crh_Latn": {
+        "message": "Krim-Tataars (Latijn)"
+    },
+    "language_crs": {
+        "message": "Seychelse Creools"
     },
     "language_cs": {
         "message": "Tsjechisch"
     },
+    "language_cv": {
+        "message": "Tsjoevasj"
+    },
+    "language_cy": {
+        "message": "Welsh"
+    },
     "language_da": {
         "message": "Deens"
     },
+    "language_de": {
+        "message": "Duits"
+    },
     "language_din": {
         "message": "Dina"
-    },
-    "language_dv": {
-        "message": "Duikhi"
     },
     "language_doi": {
         "message": "Dogri"
@@ -389,11 +470,20 @@
     "language_dov": {
         "message": "Dombe"
     },
-    "language_nl": {
-        "message": "Nederlands"
+    "language_dv": {
+        "message": "Divehi"
+    },
+    "language_dyu": {
+        "message": "Dyula"
     },
     "language_dz": {
         "message": "Dzongkha"
+    },
+    "language_ee": {
+        "message": "Ooi"
+    },
+    "language_el": {
+        "message": "Grieks"
     },
     "language_en": {
         "message": "Engels"
@@ -401,65 +491,77 @@
     "language_eo": {
         "message": "Esperanto"
     },
+    "language_es": {
+        "message": "Spaans"
+    },
     "language_et": {
         "message": "Ests"
     },
-    "language_ee": {
-        "message": "Ooi"
+    "language_eu": {
+        "message": "Baskisch"
     },
-    "language_fj": {
-        "message": "Fijisch"
+    "language_fa": {
+        "message": "Perzisch"
     },
-    "language_fil": {
-        "message": "Filipijns (Tagalog)"
+    "language_fa_AF": {
+        "message": "Dari"
+    },
+    "language_ff": {
+        "message": "Fulani"
     },
     "language_fi": {
         "message": "Fins"
     },
+    "language_fil": {
+        "message": "Filipijns (Tagalog)"
+    },
+    "language_fj": {
+        "message": "Fijisch"
+    },
+    "language_fo": {
+        "message": "Faeröer"
+    },
+    "language_fon": {
+        "message": "Fon"
+    },
     "language_fr": {
         "message": "Frans"
     },
-    "language_fr_FR": {
-        "message": "Frans (Frans)"
-    },
     "language_fr_CA": {
-        "message": "Frans (Canadees)"
+        "message": "Frans (Canada)"
+    },
+    "language_fr_FR": {
+        "message": "Frans (Frankrijk)"
+    },
+    "language_fur": {
+        "message": "Friulisch"
     },
     "language_fy": {
         "message": "Fries"
     },
-    "language_ff": {
-        "message": "Fulfulde"
+    "language_ga": {
+        "message": "Iers"
     },
     "language_gaa": {
         "message": "Ga"
     },
+    "language_gd": {
+        "message": "Schots-Gaelisch"
+    },
     "language_gl": {
         "message": "Galicisch"
-    },
-    "language_lg": {
-        "message": "Ganda (Luganda)"
-    },
-    "language_ka": {
-        "message": "Georgisch"
-    },
-    "language_de": {
-        "message": "Duits"
-    },
-    "language_el": {
-        "message": "Grieks"
     },
     "language_gn": {
         "message": "Guarani"
     },
+    "language_gom": {
+        "message": "Konkani"
+    },
     "language_gu": {
         "message": "Gujarati"
     },
-    "language_ht": {
-        "message": "Haïtiaans Creools"
-    },
-    "language_cnh": {
-        "message": "Hakka Chin"
+    "language_gv": {
+        "message": "Manx"
     },
     "language_ha": {
         "message": "Hausa"
@@ -467,122 +569,158 @@
     "language_haw": {
         "message": "Hawaïaans"
     },
-    "language_iw": {
-        "message": "Hebreeuws"
+    "language_hi": {
+        "message": "Hindi"
     },
     "language_hil": {
         "message": "Hiligaynon"
     },
-    "language_hi": {
-        "message": "Hindi"
-    },
     "language_hmn": {
         "message": "Hmong"
     },
-    "language_hu": {
-        "message": "Hongaars"
+    "language_hr": {
+        "message": "Kroatisch"
     },
     "language_hrx": {
         "message": "Hunsrik"
     },
-    "language_is": {
-        "message": "IJslands"
+    "language_ht": {
+        "message": "Haïtiaans Creools"
+    },
+    "language_hu": {
+        "message": "Hongaars"
+    },
+    "language_hy": {
+        "message": "Armeens"
+    },
+    "language_iba": {
+        "message": "Iban"
+    },
+    "language_id": {
+        "message": "Indonesisch"
     },
     "language_ig": {
         "message": "Igbo"
     },
     "language_ilo": {
-        "message": "Iloko"
+        "message": "Ilocano"
     },
-    "language_id": {
-        "message": "Indonesisch"
-    },
-    "language_ga": {
-        "message": "Iers"
+    "language_is": {
+        "message": "IJslands"
     },
     "language_it": {
         "message": "Italiaans"
     },
+    "language_iu": {
+        "message": "Inuktut (syllabische tekens)"
+    },
+    "language_iu_Latn": {
+        "message": "Inuktut (Latijn)"
+    },
+    "language_iw": {
+        "message": "Hebreeuws"
+    },
     "language_ja": {
         "message": "Japans"
+    },
+    "language_jam": {
+        "message": "Jamaicaanse Patois"
     },
     "language_jw": {
         "message": "Javaans"
     },
-    "language_kn": {
-        "message": "Kanada"
+    "language_ka": {
+        "message": "Georgisch"
     },
-    "language_pam": {
-        "message": "Kapampangan"
+    "language_kac": {
+        "message": "Jingpo"
+    },
+    "language_kek": {
+        "message": "Q'eqchi'"
+    },
+    "language_kg": {
+        "message": "Kikongo"
+    },
+    "language_kha": {
+        "message": "Khasi"
     },
     "language_kk": {
         "message": "Kazachs"
     },
+    "language_kl": {
+        "message": "Kalaallisut"
+    },
     "language_km": {
         "message": "Khmer"
     },
-    "language_cgg": {
-        "message": "Kiga"
-    },
-    "language_rw": {
-        "message": "Kinyarwanda"
-    },
-    "language_ktu": {
-        "message": "Kituba"
-    },
-    "language_gom": {
-        "message": "Konkani"
+    "language_kn": {
+        "message": "Kanada"
     },
     "language_ko": {
         "message": "Koreaans"
     },
+    "language_kr": {
+        "message": "Kanuri"
+    },
     "language_kri": {
         "message": "Krio"
+    },
+    "language_ktu": {
+        "message": "Kituba"
     },
     "language_ku": {
         "message": "Koerdisch (Kurmanji)"
     },
-    "language_ckb": {
-        "message": "Koerdisch (Sorani)"
+    "language_kv": {
+        "message": "Komi"
     },
     "language_ky": {
         "message": "Kirgizisch"
     },
-    "language_lo": {
-        "message": "Laos"
-    },
-    "language_ltg": {
-        "message": "Letgaals"
-    },
     "language_la": {
         "message": "Latijn"
-    },
-    "language_lv": {
-        "message": "Lets"
-    },
-    "language_lij": {
-        "message": "Ligurisch"
-    },
-    "language_li": {
-        "message": "Limburgs"
-    },
-    "language_ln": {
-        "message": "Lingala"
-    },
-    "language_lt": {
-        "message": "Litouws"
-    },
-    "language_lmo": {
-        "message": "Lombardisch"
-    },
-    "language_luo": {
-        "message": "Luo"
     },
     "language_lb": {
         "message": "Luxemburgs"
     },
-    "language_mk": {
-        "message": "Macedonisch"
+    "language_lg": {
+        "message": "Luganda"
+    },
+    "language_li": {
+        "message": "Limburgs"
+    },
+    "language_lij": {
+        "message": "Ligurisch"
+    },
+    "language_lmo": {
+        "message": "Lombardisch"
+    },
+    "language_ln": {
+        "message": "Lingala"
+    },
+    "language_lo": {
+        "message": "Laos"
+    },
+    "language_lt": {
+        "message": "Litouws"
+    },
+    "language_ltg": {
+        "message": "Letgaals"
+    },
+    "language_lua": {
+        "message": "Tshiluba"
+    },
+    "language_luo": {
+        "message": "Luo"
+    },
+    "language_lus": {
+        "message": "Mizo"
+    },
+    "language_lv": {
+        "message": "Lets"
+    },
+    "language_mad": {
+        "message": "Madurees"
     },
     "language_mai": {
         "message": "Maithili"
@@ -590,8 +728,38 @@
     "language_mak": {
         "message": "Makassar"
     },
+    "language_mam": {
+        "message": "Mam"
+    },
+    "language_mfe": {
+        "message": "Mauritiaans Creools"
+    },
     "language_mg": {
         "message": "Malagasi"
+    },
+    "language_mh": {
+        "message": "Marshallees"
+    },
+    "language_mi": {
+        "message": "Maori"
+    },
+    "language_min": {
+        "message": "Minang"
+    },
+    "language_mk": {
+        "message": "Macedonisch"
+    },
+    "language_ml": {
+        "message": "Malayalam"
+    },
+    "language_mn": {
+        "message": "Mongools"
+    },
+    "language_mni_Mtei": {
+        "message": "Meiteilon (Manipuri)"
+    },
+    "language_mr": {
+        "message": "Marathi"
     },
     "language_ms": {
         "message": "Maleis"
@@ -599,146 +767,134 @@
     "language_ms_Arab": {
         "message": "Maleis (Jawi)"
     },
-    "language_ml": {
-        "message": "Malayalam"
-    },
     "language_mt": {
         "message": "Maltees"
     },
-    "language_mi": {
-        "message": "Maori"
-    },
-    "language_mr": {
-        "message": "Marathi"
-    },
-    "language_chm": {
-        "message": "Weide Mari"
-    },
-    "language_mni_Mtei": {
-        "message": "Meiteilon (Manipuri)"
-    },
-    "language_min": {
-        "message": "Minang"
-    },
-    "language_lus": {
-        "message": "Mizo"
-    },
-    "language_mn": {
-        "message": "Mongools"
+    "language_mwr": {
+        "message": "Marwadi"
     },
     "language_my": {
         "message": "Myanmar (Birmees)"
     },
-    "language_nr": {
-        "message": "Ndebele (Zuid)"
-    },
-    "language_new": {
-        "message": "Nepalbhasa (Newari)"
+    "language_ndc_ZW": {
+        "message": "Ndau"
     },
     "language_ne": {
         "message": "Nepalees"
     },
-    "language_nso": {
-        "message": "Noord-Sotho (Sepedi)"
+    "language_new": {
+        "message": "Nepalbhasa (Newari)"
+    },
+    "language_nhe": {
+        "message": "Nahuatl (Oost-Huasteca)"
+    },
+    "language_nl": {
+        "message": "Nederlands"
     },
     "language_no": {
         "message": "Noors"
     },
+    "language_nr": {
+        "message": "Ndebele (Zuid)"
+    },
+    "language_nso": {
+        "message": "Sepedi"
+    },
     "language_nus": {
         "message": "Nuer"
+    },
+    "language_ny": {
+        "message": "Chichewa"
     },
     "language_oc": {
         "message": "Occitaans"
     },
-    "language_or": {
-        "message": "Odia (Oriya)"
-    },
     "language_om": {
         "message": "Oromo"
     },
-    "language_pag": {
-        "message": "Pangasinan"
+    "language_or": {
+        "message": "Odia (Oriya)"
     },
-    "language_pap": {
-        "message": "Papiaments"
-    },
-    "language_ps": {
-        "message": "Pasjto"
-    },
-    "language_fa": {
-        "message": "Perzisch"
-    },
-    "language_pl": {
-        "message": "Pools"
-    },
-    "language_pt": {
-        "message": "Portugees"
-    },
-    "language_pt_PT": {
-        "message": "Portugees (Portugal)"
-    },
-    "language_pt_BR": {
-        "message": "Portugees (Brazilië)"
+    "language_os": {
+        "message": "Ossetisch"
     },
     "language_pa": {
-        "message": "Punjabi"
+        "message": "Punjabi (Gurmukhi)"
     },
     "language_pa_Arab": {
         "message": "Punjabi (Shahmukhi)"
     },
+    "language_pag": {
+        "message": "Pangasinan"
+    },
+    "language_pam": {
+        "message": "Kapampangan"
+    },
+    "language_pap": {
+        "message": "Papiaments"
+    },
+    "language_pl": {
+        "message": "Pools"
+    },
+    "language_ps": {
+        "message": "Pasjto"
+    },
+    "language_pt": {
+        "message": "Portugees"
+    },
+    "language_pt_BR": {
+        "message": "Portugees (Brazilië)"
+    },
+    "language_pt_PT": {
+        "message": "Portugees (Portugal)"
+    },
     "language_qu": {
         "message": "Quechua"
-    },
-    "language_rom": {
-        "message": "Romani"
-    },
-    "language_ro": {
-        "message": "Roemeens"
     },
     "language_rn": {
         "message": "Rundi"
     },
+    "language_ro": {
+        "message": "Roemeens"
+    },
+    "language_rom": {
+        "message": "Romani"
+    },
     "language_ru": {
         "message": "Russisch"
     },
-    "language_sm": {
-        "message": "Samoaans"
-    },
-    "language_sg": {
-        "message": "Sango"
+    "language_rw": {
+        "message": "Kinyarwanda"
     },
     "language_sa": {
         "message": "Sanskriet"
     },
-    "language_gd": {
-        "message": "Schots-Gaelisch"
+    "language_sah": {
+        "message": "Jakut"
     },
-    "language_sr": {
-        "message": "Servisch"
+    "language_sat": {
+        "message": "Santali (Ol Chiki)"
     },
-    "language_st": {
-        "message": "Sesotho"
-    },
-    "language_crs": {
-        "message": "Seychelse Creools"
-    },
-    "language_shn": {
-        "message": "Shan"
-    },
-    "language_sn": {
-        "message": "Shona"
+    "language_sat_Latn": {
+        "message": "Santali (Latijn)"
     },
     "language_scn": {
         "message": "Siciliaans"
     },
-    "language_szl": {
-        "message": "Silezisch"
-    },
     "language_sd": {
         "message": "Sindhi"
     },
+    "language_se": {
+        "message": "Sami (Noord)"
+    },
+    "language_sg": {
+        "message": "Sango"
+    },
+    "language_shn": {
+        "message": "Shan"
+    },
     "language_si": {
-        "message": "Singalees (Singalees)"
+        "message": "Singalees"
     },
     "language_sk": {
         "message": "Slowaaks"
@@ -746,38 +902,47 @@
     "language_sl": {
         "message": "Sloveens"
     },
+    "language_sm": {
+        "message": "Samoaans"
+    },
+    "language_sn": {
+        "message": "Shona"
+    },
     "language_so": {
         "message": "Somalisch"
     },
-    "language_es": {
-        "message": "Spaans"
+    "language_sq": {
+        "message": "Albanees"
     },
-    "language_su": {
-        "message": "Soendanees"
-    },
-    "language_sw": {
-        "message": "Swahili"
+    "language_sr": {
+        "message": "Servisch"
     },
     "language_ss": {
         "message": "Swati"
     },
+    "language_st": {
+        "message": "Sesotho"
+    },
+    "language_su": {
+        "message": "Soendanees"
+    },
+    "language_sus": {
+        "message": "Susu"
+    },
     "language_sv": {
         "message": "Zweeds"
     },
-    "language_ber": {
-        "message": "Tamazight (Tifinagh)"
+    "language_sw": {
+        "message": "Swahili"
     },
-    "language_ber_latn": {
-        "message": "Tamazight"
-    },
-    "language_tg": {
-        "message": "Tadzjiekse"
+    "language_szl": {
+        "message": "Silezisch"
     },
     "language_ta": {
         "message": "Tamil"
     },
-    "language_tt": {
-        "message": "Tataars"
+    "language_tcy": {
+        "message": "Tulu"
     },
     "language_te": {
         "message": "Telugu"
@@ -785,26 +950,59 @@
     "language_tet": {
         "message": "Tetum"
     },
+    "language_tg": {
+        "message": "Tadzjiekse"
+    },
     "language_th": {
         "message": "Thais"
     },
     "language_ti": {
         "message": "Tigrinya"
     },
-    "language_ts": {
-        "message": "Tsonga"
-    },
-    "language_tn": {
-        "message": "Tswana"
-    },
-    "language_tr": {
-        "message": "Turks"
+    "language_tiv": {
+        "message": "Tiv"
     },
     "language_tk": {
         "message": "Turkmeens"
     },
-    "language_ak": {
-        "message": "Twi (Akan)"
+    "language_tl": {
+        "message": "Filipijns"
+    },
+    "language_tn": {
+        "message": "Tswana"
+    },
+    "language_to": {
+        "message": "Tongaans"
+    },
+    "language_tpi": {
+        "message": "Tok Pisin"
+    },
+    "language_tr": {
+        "message": "Turks"
+    },
+    "language_trp": {
+        "message": "Kokborok"
+    },
+    "language_ts": {
+        "message": "Tsonga"
+    },
+    "language_tt": {
+        "message": "Tataars"
+    },
+    "language_tum": {
+        "message": "Tumbuka"
+    },
+    "language_ty": {
+        "message": "Tahitiaans"
+    },
+    "language_tyv": {
+        "message": "Tuvan"
+    },
+    "language_udm": {
+        "message": "Udmurt"
+    },
+    "language_ug": {
+        "message": "Oeigoers"
     },
     "language_uk": {
         "message": "Oekraïens"
@@ -812,17 +1010,23 @@
     "language_ur": {
         "message": "Urdu"
     },
-    "language_ug": {
-        "message": "Oeigoers"
-    },
     "language_uz": {
         "message": "Oezbeeks"
+    },
+    "language_ve": {
+        "message": "Venda"
+    },
+    "language_vec": {
+        "message": "Venetiaans"
     },
     "language_vi": {
         "message": "Vietnamees"
     },
-    "language_cy": {
-        "message": "Welsh"
+    "language_war": {
+        "message": "Waray"
+    },
+    "language_wo": {
+        "message": "Wolof"
     },
     "language_xh": {
         "message": "Xhosa"
@@ -835,6 +1039,18 @@
     },
     "language_yua": {
         "message": "Yucateek Maya"
+    },
+    "language_yue": {
+        "message": "Kantonees"
+    },
+    "language_zap": {
+        "message": "Zapotec"
+    },
+    "language_zh_CN": {
+        "message": "Chinees (vereenvoudigd)"
+    },
+    "language_zh_TW": {
+        "message": "Chinees (traditioneel)"
     },
     "language_zu": {
         "message": "Zoeloe"

@@ -1,6 +1,6 @@
 <a
 	class={[
-		'inline-flex cursor-pointer items-center gap-1 text-blue-600 hover:underline dark:text-blue-400',
+		'inline-flex cursor-pointer items-center gap-1 text-color-link hover:underline',
 		className,
 	]}
 	{href}

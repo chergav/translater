@@ -23,6 +23,8 @@ export interface Settings {
 	modelId: string
 	fakeUserEmail?: string
 	hideButtonForUserLanguage: boolean
+	showPopupOnSelection: boolean
+	popupMode: PopupMode
 }
 
 export interface SettingsSync {
@@ -58,6 +60,12 @@ export enum FontSize {
 	Normal = 16,
 	Large = 18,
 	ExtraLarge = 20,
+}
+
+export enum PopupMode {
+	Full = 'full',
+	Simple = 'simple',
+	// Inline = 'inline',
 }
 
 export interface HistoryItem {

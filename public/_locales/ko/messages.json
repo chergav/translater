@@ -5,9 +5,6 @@
     "app_description": {
         "message": "Google 번역을 사용하여 선택한 텍스트 번역"
     },
-    "app_version": {
-        "message": "버전"
-    },
     "context_menus_title": {
         "message": "선택한 텍스트 번역"
     },
@@ -35,14 +32,50 @@
     "options_tab_history": {
         "message": "역사"
     },
+    "options_general_translation_button": {
+        "message": "번역 버튼"
+    },
+    "options_general_no_sites_selected": {
+        "message": "선택된 사이트가 없습니다"
+    },
+    "options_general_show_on_selected": {
+        "message": "텍스트 선택 시 팝업 표시"
+    },
+    "options_general_show_on_selected_hint": {
+        "message": "텍스트 선택 후 팝업이 나타납니다(단순 모드에서 가장 좋음)."
+    },
+    "options_general_mode_full": {
+        "message": "전체 모드"
+    },
+    "options_general_mode_full_hint": {
+        "message": "모든 기능이 포함된 팝업 창입니다."
+    },
+    "options_general_mode_simple": {
+        "message": "단순 모드"
+    },
+    "options_general_mode_simple_hint": {
+        "message": "번역만 표시하고 다른 내용은 표시하지 않습니다."
+    },
     "options_inline_button_show": {
         "message": "텍스트가 선택되면 버튼 표시"
+    },
+    "options_inline_button_show_hint": {
+        "message": "선택한 텍스트 옆에 번역 버튼이 나타납니다."
     },
     "options_text_field_button_show": {
         "message": "텍스트 필드에 버튼 표시"
     },
+    "options_text_field_button_show_hint": {
+        "message": "텍스트 입력 필드에서 텍스트를 선택한 경우 버튼을 표시합니다."
+    },
+    "options_hide_translation_button": {
+        "message": "해당 언어의 번역 버튼 숨기기"
+    },
+    "options_hide_translation_button_hint": {
+        "message": "시스템 언어로 텍스트를 선택할 때 버튼이 표시되지 않습니다."
+    },
     "options_hide_button_on_sites": {
-        "message": "다음 사이트에서 버튼을 숨기세요:"
+        "message": "특정 웹사이트에서 번역 버튼 숨기기:"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "제외하려는 사이트의 팝업창 메뉴를 이용하여 도메인을 추가하세요."
@@ -50,14 +83,35 @@
     "options_show_original_text": {
         "message": "원본 텍스트 표시"
     },
+    "options_show_original_text_hint": {
+        "message": "번역과 함께 원본 텍스트를 표시합니다(전체 모드에만 해당)."
+    },
     "options_show_transliteration": {
         "message": "음역 표시"
+    },
+    "options_show_transliteration_hint": {
+        "message": "가능한 경우 음역을 표시합니다."
     },
     "options_lock_popup_window": {
         "message": "팝업창 잠금"
     },
     "options_lock_popup_window_hint": {
-        "message": "활성화하면 팝업 외부를 클릭해도 팝업이 닫히지 않습니다."
+        "message": "외부를 클릭하면 팝업이 계속 열려 있습니다."
+    },
+    "options_providers_provider": {
+        "message": "공급자"
+    },
+    "options_providers_model": {
+        "message": "모델"
+    },
+    "options_appearance_theme": {
+        "message": "테마"
+    },
+    "options_appearance_accent_color": {
+        "message": "악센트 색상"
+    },
+    "options_appearance_bg_and_text": {
+        "message": "배경 및 일반 텍스트"
     },
     "options_history_length": {
         "message": "기록 항목(최대)"
@@ -122,12 +176,6 @@
     "options_support_donations": {
         "message": "이 무료 소프트웨어를 지원하고 싶다면"
     },
-    "options_address": {
-        "message": "주소"
-    },
-    "options_copy_address": {
-        "message": "주소 복사"
-    },
     "text_expand": {
         "message": "더보기"
     },
@@ -176,6 +224,12 @@
     "popup_menu_options_link": {
         "message": "추가 설정"
     },
+    "popup_menu_switch_to_simple_mode": {
+        "message": "단순 모드로 전환"
+    },
+    "popup_menu_switch_to_full_mode": {
+        "message": "전체 모드로 전환"
+    },
     "popup_placeholder_translation": {
         "message": "번역"
     },
@@ -196,12 +250,6 @@
     },
     "tooltip_copy_not_support_on_http": {
         "message": "HTTP 사이트에서는 복사가 지원되지 않습니다."
-    },
-    "tooltip_copyed": {
-        "message": "복사됨"
-    },
-    "tooltip_copy_error": {
-        "message": "복사 오류!"
     },
     "tooltip_listen_to_the_text": {
         "message": "문자 듣기"
@@ -251,6 +299,9 @@
     "language_auto": {
         "message": "언어 감지"
     },
+    "language_aa": {
+        "message": "아파르"
+    },
     "language_ab": {
         "message": "압하스어"
     },
@@ -263,8 +314,8 @@
     "language_af": {
         "message": "아프리칸스어"
     },
-    "language_sq": {
-        "message": "알바니아어"
+    "language_ak": {
+        "message": "트위어(아칸어)"
     },
     "language_alz": {
         "message": "알루르"
@@ -275,11 +326,11 @@
     "language_ar": {
         "message": "아랍어"
     },
-    "language_hy": {
-        "message": "아르메니아어"
-    },
     "language_as": {
         "message": "아삼어"
+    },
+    "language_av": {
+        "message": "아바르"
     },
     "language_awa": {
         "message": "아와디어"
@@ -290,26 +341,20 @@
     "language_az": {
         "message": "아제르바이잔어"
     },
-    "language_ban": {
-        "message": "발리인"
-    },
-    "language_bm": {
-        "message": "밤바라"
-    },
     "language_ba": {
         "message": "바쉬르어"
     },
-    "language_eu": {
-        "message": "바스크어"
+    "language_bal": {
+        "message": "발루치"
     },
-    "language_btx": {
-        "message": "바탁 카로"
-    },
-    "language_bts": {
-        "message": "바탁 시말룬군"
+    "language_ban": {
+        "message": "발리인"
     },
     "language_bbc": {
         "message": "바탁 토바"
+    },
+    "language_bci": {
+        "message": "바울레"
     },
     "language_be": {
         "message": "벨로루시어"
@@ -317,11 +362,17 @@
     "language_bem": {
         "message": "벰바"
     },
-    "language_bn": {
-        "message": "벵골어"
+    "language_ber": {
+        "message": "타마지트어(티피나그어)"
+    },
+    "language_ber_Latn": {
+        "message": "타마지트"
     },
     "language_bew": {
         "message": "베타위"
+    },
+    "language_bg": {
+        "message": "불가리아어"
     },
     "language_bho": {
         "message": "보지푸리"
@@ -329,59 +380,89 @@
     "language_bik": {
         "message": "비콜"
     },
-    "language_bs": {
-        "message": "보스니아어"
+    "language_bm": {
+        "message": "밤바라"
+    },
+    "language_bm_Nkoo": {
+        "message": "엔코"
+    },
+    "language_bn": {
+        "message": "벵골어"
+    },
+    "language_bo": {
+        "message": "티베트어"
     },
     "language_br": {
         "message": "브르타뉴어"
     },
-    "language_bg": {
-        "message": "불가리아어"
+    "language_bs": {
+        "message": "보스니아어"
+    },
+    "language_bts": {
+        "message": "바탁 시말룬군"
+    },
+    "language_btx": {
+        "message": "바탁 카로"
     },
     "language_bua": {
         "message": "부리아트"
     },
-    "language_yue": {
-        "message": "광둥어"
-    },
     "language_ca": {
         "message": "카탈로니아어"
+    },
+    "language_ce": {
+        "message": "체첸"
     },
     "language_ceb": {
         "message": "세부아노어"
     },
-    "language_ny": {
-        "message": "치체와어(냥자어)"
+    "language_cgg": {
+        "message": "키가"
     },
-    "language_zh_CN": {
-        "message": "중국어(간체)"
+    "language_ch": {
+        "message": "차모로어"
     },
-    "language_zh_TW": {
-        "message": "중국어(번체)"
+    "language_chk": {
+        "message": "추케어"
     },
-    "language_cv": {
-        "message": "추바시어"
+    "language_chm": {
+        "message": "초원 마리"
+    },
+    "language_ckb": {
+        "message": "쿠르드어(소라니어)"
+    },
+    "language_cnh": {
+        "message": "하카친"
     },
     "language_co": {
         "message": "코르시카어"
     },
     "language_crh": {
-        "message": "크림 타타르어"
+        "message": "크리미아 타타르어(키릴 문자)"
     },
-    "language_hr": {
-        "message": "크로아티아어"
+    "language_crh_Latn": {
+        "message": "크림 타타르어(라틴어)"
+    },
+    "language_crs": {
+        "message": "세이셸 크리올"
     },
     "language_cs": {
         "message": "체코어"
     },
+    "language_cv": {
+        "message": "추바시어"
+    },
+    "language_cy": {
+        "message": "웨일스어"
+    },
     "language_da": {
         "message": "덴마크어"
     },
+    "language_de": {
+        "message": "독일어"
+    },
     "language_din": {
         "message": "딩카"
-    },
-    "language_dv": {
-        "message": "디베히"
     },
     "language_doi": {
         "message": "도그리"
@@ -389,11 +470,20 @@
     "language_dov": {
         "message": "돔베"
     },
-    "language_nl": {
-        "message": "네덜란드어"
+    "language_dv": {
+        "message": "디베히어"
+    },
+    "language_dyu": {
+        "message": "듀라"
     },
     "language_dz": {
         "message": "종카어"
+    },
+    "language_ee": {
+        "message": "에웨"
+    },
+    "language_el": {
+        "message": "그리스어"
     },
     "language_en": {
         "message": "영어"
@@ -401,65 +491,77 @@
     "language_eo": {
         "message": "에스페란토"
     },
+    "language_es": {
+        "message": "스페인어"
+    },
     "language_et": {
         "message": "에스토니아어"
     },
-    "language_ee": {
-        "message": "에웨"
+    "language_eu": {
+        "message": "바스크어"
     },
-    "language_fj": {
-        "message": "피지어"
+    "language_fa": {
+        "message": "페르시아어"
     },
-    "language_fil": {
-        "message": "필리핀어(타갈로그어)"
+    "language_fa_AF": {
+        "message": "다리"
+    },
+    "language_ff": {
+        "message": "풀라니"
     },
     "language_fi": {
         "message": "핀란드어"
     },
+    "language_fil": {
+        "message": "필리핀어(타갈로그어)"
+    },
+    "language_fj": {
+        "message": "피지어"
+    },
+    "language_fo": {
+        "message": "페로어"
+    },
+    "language_fon": {
+        "message": "폰"
+    },
     "language_fr": {
         "message": "프랑스어"
-    },
-    "language_fr_FR": {
-        "message": "프랑스어(프랑스어)"
     },
     "language_fr_CA": {
         "message": "프랑스어(캐나다)"
     },
+    "language_fr_FR": {
+        "message": "프랑스어(프랑스)"
+    },
+    "language_fur": {
+        "message": "프리울리안"
+    },
     "language_fy": {
         "message": "프리지아어"
     },
-    "language_ff": {
-        "message": "풀풀드"
+    "language_ga": {
+        "message": "아일랜드어"
     },
     "language_gaa": {
         "message": "가"
     },
+    "language_gd": {
+        "message": "스코틀랜드 게일어"
+    },
     "language_gl": {
         "message": "갈리시아어"
-    },
-    "language_lg": {
-        "message": "간다어(루간다어)"
-    },
-    "language_ka": {
-        "message": "조지아어"
-    },
-    "language_de": {
-        "message": "독일어"
-    },
-    "language_el": {
-        "message": "그리스어"
     },
     "language_gn": {
         "message": "과라니어"
     },
+    "language_gom": {
+        "message": "콘카니"
+    },
     "language_gu": {
         "message": "구자라트어"
     },
-    "language_ht": {
-        "message": "아이티 크리올어"
-    },
-    "language_cnh": {
-        "message": "하카친"
+    "language_gv": {
+        "message": "맹크스"
     },
     "language_ha": {
         "message": "하우사어"
@@ -467,122 +569,158 @@
     "language_haw": {
         "message": "하와이안"
     },
-    "language_iw": {
-        "message": "히브리어"
+    "language_hi": {
+        "message": "힌디어"
     },
     "language_hil": {
         "message": "힐리가이논"
     },
-    "language_hi": {
-        "message": "힌디어"
-    },
     "language_hmn": {
         "message": "몽족"
     },
-    "language_hu": {
-        "message": "헝가리어"
+    "language_hr": {
+        "message": "크로아티아어"
     },
     "language_hrx": {
         "message": "훈스릭"
     },
-    "language_is": {
-        "message": "아이슬란드어"
+    "language_ht": {
+        "message": "아이티 크리올어"
+    },
+    "language_hu": {
+        "message": "헝가리어"
+    },
+    "language_hy": {
+        "message": "아르메니아어"
+    },
+    "language_iba": {
+        "message": "이반"
+    },
+    "language_id": {
+        "message": "인도네시아어"
     },
     "language_ig": {
         "message": "이보어"
     },
     "language_ilo": {
-        "message": "일로코"
+        "message": "일로카노어"
     },
-    "language_id": {
-        "message": "인도네시아어"
-    },
-    "language_ga": {
-        "message": "아일랜드어"
+    "language_is": {
+        "message": "아이슬란드어"
     },
     "language_it": {
         "message": "이탈리아어"
     },
+    "language_iu": {
+        "message": "이누크투트어(음절)"
+    },
+    "language_iu_Latn": {
+        "message": "이누크투트어(라틴어)"
+    },
+    "language_iw": {
+        "message": "히브리어"
+    },
     "language_ja": {
         "message": "일본어"
+    },
+    "language_jam": {
+        "message": "자메이카 파투아"
     },
     "language_jw": {
         "message": "자바어"
     },
-    "language_kn": {
-        "message": "칸나다어"
+    "language_ka": {
+        "message": "조지아어"
     },
-    "language_pam": {
-        "message": "카팜팡안"
+    "language_kac": {
+        "message": "징포"
+    },
+    "language_kek": {
+        "message": "케크치"
+    },
+    "language_kg": {
+        "message": "키콩고"
+    },
+    "language_kha": {
+        "message": "카시어"
     },
     "language_kk": {
         "message": "카자흐어"
     },
+    "language_kl": {
+        "message": "칼라알리수트"
+    },
     "language_km": {
         "message": "크메르어"
     },
-    "language_cgg": {
-        "message": "키가"
-    },
-    "language_rw": {
-        "message": "키냐르완다어"
-    },
-    "language_ktu": {
-        "message": "키투바"
-    },
-    "language_gom": {
-        "message": "콘카니"
+    "language_kn": {
+        "message": "칸나다어"
     },
     "language_ko": {
         "message": "한국어"
     },
+    "language_kr": {
+        "message": "카누리"
+    },
     "language_kri": {
         "message": "크리오"
+    },
+    "language_ktu": {
+        "message": "키투바"
     },
     "language_ku": {
         "message": "쿠르드어(쿠르만지어)"
     },
-    "language_ckb": {
-        "message": "쿠르드어(소라니어)"
+    "language_kv": {
+        "message": "코미"
     },
     "language_ky": {
         "message": "키르기스어"
     },
-    "language_lo": {
-        "message": "라오스"
-    },
-    "language_ltg": {
-        "message": "라트갈리아어"
-    },
     "language_la": {
         "message": "라틴어"
-    },
-    "language_lv": {
-        "message": "라트비아어"
-    },
-    "language_lij": {
-        "message": "리구리아어"
-    },
-    "language_li": {
-        "message": "림부르간"
-    },
-    "language_ln": {
-        "message": "링갈라"
-    },
-    "language_lt": {
-        "message": "리투아니아어"
-    },
-    "language_lmo": {
-        "message": "롬바르드어"
-    },
-    "language_luo": {
-        "message": "루오"
     },
     "language_lb": {
         "message": "룩셈부르크어"
     },
-    "language_mk": {
-        "message": "마케도니아어"
+    "language_lg": {
+        "message": "루간다어"
+    },
+    "language_li": {
+        "message": "림뷔르흐어"
+    },
+    "language_lij": {
+        "message": "리구리아어"
+    },
+    "language_lmo": {
+        "message": "롬바르드어"
+    },
+    "language_ln": {
+        "message": "링갈라"
+    },
+    "language_lo": {
+        "message": "라오스"
+    },
+    "language_lt": {
+        "message": "리투아니아어"
+    },
+    "language_ltg": {
+        "message": "라트갈리아어"
+    },
+    "language_lua": {
+        "message": "실루바"
+    },
+    "language_luo": {
+        "message": "루오"
+    },
+    "language_lus": {
+        "message": "미조"
+    },
+    "language_lv": {
+        "message": "라트비아어"
+    },
+    "language_mad": {
+        "message": "마두라어"
     },
     "language_mai": {
         "message": "마이틸리"
@@ -590,8 +728,38 @@
     "language_mak": {
         "message": "마카사르"
     },
+    "language_mam": {
+        "message": "맘"
+    },
+    "language_mfe": {
+        "message": "모리셔스 크리올어"
+    },
     "language_mg": {
         "message": "마다가스카르어"
+    },
+    "language_mh": {
+        "message": "마샬레스"
+    },
+    "language_mi": {
+        "message": "마오리"
+    },
+    "language_min": {
+        "message": "미낭"
+    },
+    "language_mk": {
+        "message": "마케도니아어"
+    },
+    "language_ml": {
+        "message": "말라얄람어"
+    },
+    "language_mn": {
+        "message": "몽골어"
+    },
+    "language_mni_Mtei": {
+        "message": "메이테일론(마니푸리)"
+    },
+    "language_mr": {
+        "message": "마라티어"
     },
     "language_ms": {
         "message": "말레이어"
@@ -599,146 +767,134 @@
     "language_ms_Arab": {
         "message": "말레이어(자위어)"
     },
-    "language_ml": {
-        "message": "말라얄람어"
-    },
     "language_mt": {
         "message": "몰타어"
     },
-    "language_mi": {
-        "message": "마오리"
-    },
-    "language_mr": {
-        "message": "마라티어"
-    },
-    "language_chm": {
-        "message": "초원 마리"
-    },
-    "language_mni_Mtei": {
-        "message": "메이테일론(마니푸리)"
-    },
-    "language_min": {
-        "message": "미낭"
-    },
-    "language_lus": {
-        "message": "미조"
-    },
-    "language_mn": {
-        "message": "몽골어"
+    "language_mwr": {
+        "message": "마르와디"
     },
     "language_my": {
         "message": "미얀마(버마어)"
     },
-    "language_nr": {
-        "message": "은데벨레(남부)"
-    },
-    "language_new": {
-        "message": "네팔바사(네와리)"
+    "language_ndc_ZW": {
+        "message": "은다우"
     },
     "language_ne": {
         "message": "네팔어"
     },
-    "language_nso": {
-        "message": "북부 소토어(세페디)"
+    "language_new": {
+        "message": "네팔바사(네와리)"
+    },
+    "language_nhe": {
+        "message": "나와틀어(동부 우아스테카)"
+    },
+    "language_nl": {
+        "message": "네덜란드어"
     },
     "language_no": {
         "message": "노르웨이어"
     },
+    "language_nr": {
+        "message": "은데벨레(남부)"
+    },
+    "language_nso": {
+        "message": "세페디"
+    },
     "language_nus": {
         "message": "누에르"
+    },
+    "language_ny": {
+        "message": "치체와어"
     },
     "language_oc": {
         "message": "옥시탄"
     },
-    "language_or": {
-        "message": "오디아(오리야어)"
-    },
     "language_om": {
         "message": "오로모어"
     },
-    "language_pag": {
-        "message": "팡가시난"
+    "language_or": {
+        "message": "오디아(오리야어)"
     },
-    "language_pap": {
-        "message": "파피아멘토"
-    },
-    "language_ps": {
-        "message": "파슈토어"
-    },
-    "language_fa": {
-        "message": "페르시아어"
-    },
-    "language_pl": {
-        "message": "폴란드어"
-    },
-    "language_pt": {
-        "message": "포르투갈어"
-    },
-    "language_pt_PT": {
-        "message": "포르투갈어(포르투갈)"
-    },
-    "language_pt_BR": {
-        "message": "포르투갈어(브라질)"
+    "language_os": {
+        "message": "오세트어"
     },
     "language_pa": {
-        "message": "펀자브어"
+        "message": "펀자브어(구르무키어)"
     },
     "language_pa_Arab": {
         "message": "펀자브어(샤무키어)"
     },
+    "language_pag": {
+        "message": "팡가시난"
+    },
+    "language_pam": {
+        "message": "카팜팡안"
+    },
+    "language_pap": {
+        "message": "파피아멘토"
+    },
+    "language_pl": {
+        "message": "폴란드어"
+    },
+    "language_ps": {
+        "message": "파슈토어"
+    },
+    "language_pt": {
+        "message": "포르투갈어"
+    },
+    "language_pt_BR": {
+        "message": "포르투갈어(브라질)"
+    },
+    "language_pt_PT": {
+        "message": "포르투갈어(포르투갈)"
+    },
     "language_qu": {
         "message": "케추아어"
-    },
-    "language_rom": {
-        "message": "로마니"
-    },
-    "language_ro": {
-        "message": "루마니아어"
     },
     "language_rn": {
         "message": "룬디어"
     },
+    "language_ro": {
+        "message": "루마니아어"
+    },
+    "language_rom": {
+        "message": "로마니"
+    },
     "language_ru": {
         "message": "러시아어"
     },
-    "language_sm": {
-        "message": "사모아어"
-    },
-    "language_sg": {
-        "message": "산고"
+    "language_rw": {
+        "message": "키냐르완다어"
     },
     "language_sa": {
         "message": "산스크리트어"
     },
-    "language_gd": {
-        "message": "스코틀랜드 게일어"
+    "language_sah": {
+        "message": "야쿠트어"
     },
-    "language_sr": {
-        "message": "세르비아어"
+    "language_sat": {
+        "message": "산타리(올 치키)"
     },
-    "language_st": {
-        "message": "세소토어"
-    },
-    "language_crs": {
-        "message": "세이셸 크리올"
-    },
-    "language_shn": {
-        "message": "샨"
-    },
-    "language_sn": {
-        "message": "쇼나"
+    "language_sat_Latn": {
+        "message": "산타리어(라틴어)"
     },
     "language_scn": {
         "message": "시칠리아 사람"
     },
-    "language_szl": {
-        "message": "실레지아의"
-    },
     "language_sd": {
         "message": "신디어"
     },
+    "language_se": {
+        "message": "사미어(북쪽)"
+    },
+    "language_sg": {
+        "message": "산고"
+    },
+    "language_shn": {
+        "message": "샨"
+    },
     "language_si": {
-        "message": "싱할라어(신할라어)"
+        "message": "신할라어"
     },
     "language_sk": {
         "message": "슬로바키아어"
@@ -746,38 +902,47 @@
     "language_sl": {
         "message": "슬로베니아어"
     },
+    "language_sm": {
+        "message": "사모아어"
+    },
+    "language_sn": {
+        "message": "쇼나"
+    },
     "language_so": {
         "message": "소말리아어"
     },
-    "language_es": {
-        "message": "스페인어"
+    "language_sq": {
+        "message": "알바니아어"
     },
-    "language_su": {
-        "message": "순다어"
-    },
-    "language_sw": {
-        "message": "스와힐리어"
+    "language_sr": {
+        "message": "세르비아어"
     },
     "language_ss": {
         "message": "스와티어"
     },
+    "language_st": {
+        "message": "세소토어"
+    },
+    "language_su": {
+        "message": "순다어"
+    },
+    "language_sus": {
+        "message": "수수"
+    },
     "language_sv": {
         "message": "스웨덴어"
     },
-    "language_ber": {
-        "message": "타마지트어(티피나그어)"
+    "language_sw": {
+        "message": "스와힐리어"
     },
-    "language_ber_latn": {
-        "message": "타마지트"
-    },
-    "language_tg": {
-        "message": "타지크어"
+    "language_szl": {
+        "message": "실레지아의"
     },
     "language_ta": {
         "message": "타밀어"
     },
-    "language_tt": {
-        "message": "타타르어"
+    "language_tcy": {
+        "message": "툴루"
     },
     "language_te": {
         "message": "텔루구어"
@@ -785,26 +950,59 @@
     "language_tet": {
         "message": "테툼"
     },
+    "language_tg": {
+        "message": "타직어"
+    },
     "language_th": {
         "message": "태국어"
     },
     "language_ti": {
         "message": "티그리냐"
     },
-    "language_ts": {
-        "message": "총가어"
-    },
-    "language_tn": {
-        "message": "츠와나어"
-    },
-    "language_tr": {
-        "message": "터키어"
+    "language_tiv": {
+        "message": "티브"
     },
     "language_tk": {
         "message": "투르크멘어"
     },
-    "language_ak": {
-        "message": "트위어(아칸어)"
+    "language_tl": {
+        "message": "필리핀 사람"
+    },
+    "language_tn": {
+        "message": "츠와나어"
+    },
+    "language_to": {
+        "message": "통가어"
+    },
+    "language_tpi": {
+        "message": "톡 피신"
+    },
+    "language_tr": {
+        "message": "터키어"
+    },
+    "language_trp": {
+        "message": "콕보록"
+    },
+    "language_ts": {
+        "message": "총가어"
+    },
+    "language_tt": {
+        "message": "타타르어"
+    },
+    "language_tum": {
+        "message": "툼부카"
+    },
+    "language_ty": {
+        "message": "타히티어"
+    },
+    "language_tyv": {
+        "message": "투바어"
+    },
+    "language_udm": {
+        "message": "우드무르트"
+    },
+    "language_ug": {
+        "message": "위구르어"
     },
     "language_uk": {
         "message": "우크라이나어"
@@ -812,17 +1010,23 @@
     "language_ur": {
         "message": "우르두어"
     },
-    "language_ug": {
-        "message": "위구르어"
-    },
     "language_uz": {
         "message": "우즈벡어"
+    },
+    "language_ve": {
+        "message": "벤다"
+    },
+    "language_vec": {
+        "message": "베네치아의"
     },
     "language_vi": {
         "message": "베트남어"
     },
-    "language_cy": {
-        "message": "웨일스어"
+    "language_war": {
+        "message": "와레이"
+    },
+    "language_wo": {
+        "message": "월로프"
     },
     "language_xh": {
         "message": "코사어"
@@ -835,6 +1039,18 @@
     },
     "language_yua": {
         "message": "유카텍 마야"
+    },
+    "language_yue": {
+        "message": "광둥어"
+    },
+    "language_zap": {
+        "message": "자포텍"
+    },
+    "language_zh_CN": {
+        "message": "중국어(간체)"
+    },
+    "language_zh_TW": {
+        "message": "중국어(번체)"
     },
     "language_zu": {
         "message": "줄루어"

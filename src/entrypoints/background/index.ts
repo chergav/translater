@@ -38,12 +38,16 @@ export default defineBackground({
 			if (tab && tab.id) {
 				const selectedText = await getSelectedText(tab.id) || '';
 
-				browser.tabs.sendMessage<Message>(tab.id, {
-					type: 'createPopup',
-					content: {
-						text: selectedText,
-					},
-				});
+				try {
+					await browser.tabs.sendMessage<Message>(tab.id, {
+						type: 'createPopup',
+						content: {
+							text: selectedText,
+						},
+					});
+				} catch (error) {
+					console.debug('Failed to send message. No content script.', error);
+				}
 			}
 		}
 
@@ -58,10 +62,10 @@ export default defineBackground({
 					googleTranslate(message.content)
 						.then(sendResponse)
 						.catch(error => sendResponse({ error: error.message }));
-					break;
+					return true;
 				case 'getTranslateTTS':
 					googleTTS(message.content).then(sendResponse);
-					break;
+					return true;
 				case 'openOptionsPage':
 					browser.runtime.openOptionsPage();
 					break;
@@ -75,8 +79,6 @@ export default defineBackground({
 					console.error(`Message type "${message.type}" not found.`);
 					break;
 			}
-
-			return true;
 		}
 
 		browser.runtime.onMessage.addListener(handleMessage);
@@ -97,12 +99,16 @@ export default defineBackground({
 					return;
 				}
 
-				await browser.tabs.sendMessage<Message>(tabId, {
-					type: 'createPopup',
-					content: {
-						text: info.selectionText,
-					},
-				});
+				try {
+					await browser.tabs.sendMessage<Message>(tabId, {
+						type: 'createPopup',
+						content: {
+							text: info.selectionText,
+						},
+					});
+				} catch (error) {
+					console.debug('Failed to send message. No content script.', error);
+				}
 			}
 		});
 
@@ -118,11 +124,15 @@ export default defineBackground({
 		});
 
 		browser.runtime.onInstalled.addListener(() => {
-			browser.contextMenus.create({
-				id: 'translaterMenu',
-				title: browser.i18n.getMessage('context_menus_title'),
-				contexts: ['selection'],
-			});
+			try {
+				browser.contextMenus.create({
+					id: 'translaterMenu',
+					title: browser.i18n.getMessage('context_menus_title'),
+					contexts: ['selection'],
+				});
+			} catch (error) {
+				console.debug('Failed create menu.', error);
+			}
 		});
 
 		async function injectContentScript(tabId: number) {

@@ -55,6 +55,13 @@
 				size="xs"
 				tab
 			/>
+			<Button
+				icon={mdiSwapHorizontal}
+				label={browser.i18n.getMessage('popup_menu_switch_to_simple_mode')}
+				onclick={switchToSimpleMode}
+				size="xs"
+				tab
+			/>
 			<div class="-mx-1 my-1 border-b border-color-surface-high"></div>
 			<Button
 				icon={mdiOpenInNew}
@@ -68,7 +75,7 @@
 </div>
 
 <script lang="ts">
-import type { Message } from '~/types';
+import { type Message, PopupMode } from '~/types';
 import { fly } from 'svelte/transition';
 import Button from '~/lib/Button.svelte';
 import {
@@ -79,6 +86,7 @@ import {
 	mdiLockOpenVariantOutline,
 	mdiTranslate,
 	mdiTranslateOff,
+	mdiSwapHorizontal,
 } from '@mdi/js';
 import { clickOutside } from '~/utils';
 import { store } from '~/entrypoints/content/store.svelte';
@@ -87,6 +95,10 @@ import { createLinkToGT } from '~/entrypoints/background/providers/google';
 
 let isOpen = $state<boolean>(false);
 let isDomainInBlacklist = $derived<boolean>(storage.settings.blacklistDomainForInline.includes(store.hostname));
+
+function switchToSimpleMode() {
+	storage.settings.popupMode = PopupMode.Simple;
+}
 
 function handleReverseTranslate() {
 	[store.sourceLang, storage.settings.targetLang] = [storage.settings.targetLang, store.sourceLang];

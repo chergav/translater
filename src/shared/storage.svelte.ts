@@ -1,9 +1,8 @@
-import { type Settings, Theme, ThemeVariant, AccentColor, FontSize } from '~/types';
+import { type Settings, Theme, ThemeVariant, AccentColor, FontSize, PopupMode } from '~/types';
 import { GOOGLE_TRANSLATE_MODEL_ID } from '~/types/providers';
 import { MediaQuery } from 'svelte/reactivity';
 import { storageGet, storageSet } from '~/shared/browser';
-import { languages } from '~/shared/languages';
-import { getTargetLanguage } from '~/utils/getTargetLanguage';
+import { getTargetLanguageCode } from '@/shared/languages';
 // import { isPreferredDark } from '~/utils';
 import deepEqual from 'fast-deep-equal';
 
@@ -12,7 +11,7 @@ const initialSettings: Settings = {
 	themeVariant: ThemeVariant.Slate,
 	accentColor: AccentColor.Blue,
 	fontSize: FontSize.Normal,
-	targetLang: getTargetLanguage(languages),
+	targetLang: getTargetLanguageCode(),
 	inlineButtonShow: true,
 	textFieldButtonShow: true,
 	showOriginalText: true,
@@ -26,6 +25,8 @@ const initialSettings: Settings = {
 	ttsVoiceByLang: {},
 	modelId: GOOGLE_TRANSLATE_MODEL_ID,
 	hideButtonForUserLanguage: false,
+	showPopupOnSelection: false,
+	popupMode: PopupMode.Full,
 };
 
 class Storage {

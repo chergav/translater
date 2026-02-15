@@ -5,7 +5,7 @@
 			error={modelError}
 			focus={!model.model}
 			hiddenHint={providerStore.isCustomProvider ? 'Make sure the model is a chat model' : undefined}
-			label="Model"
+			label={browser.i18n.getMessage('options_providers_model')}
 			onblur={setModel}
 			oninput={validateModel}
 			placeholder="e.g. deepseek-ai/DeepSeek-V3"

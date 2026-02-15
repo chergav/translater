@@ -5,10 +5,12 @@
 :root {
 	--error: var(--color-red-700);
 	--on-error: var(--color-white);
+	--link: var(--color-blue-600);
 
 	&:where([data-theme="dark"]) {
 		--error: var(--color-red-300);
 		--on-error: var(--color-red-950);
+		--link: var(--color-blue-400);
 	}
 }
 
@@ -275,6 +277,7 @@ body {
 
 	--ui-color-error: var(--error, var(--color-red-500));
 	--ui-color-on-error: var(--on-error, var(--color-white));
+	--ui-color-link: var(--link, var(--color-blue-500));
 
 	--ui-color-surface: var(--surface, var(--color-white));
 	--ui-color-surface-container: var(--surface-container, var(--color-gray-100));

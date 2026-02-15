@@ -5,9 +5,6 @@
     "app_description": {
         "message": "Tafsiri maandishi uliyochagua kwa kutumia Google Tafsiri"
     },
-    "app_version": {
-        "message": "toleo"
-    },
     "context_menus_title": {
         "message": "Tafsiri maandishi uliyochagua"
     },
@@ -35,29 +32,86 @@
     "options_tab_history": {
         "message": "Historia"
     },
+    "options_general_translation_button": {
+        "message": "Kitufe cha kutafsiri"
+    },
+    "options_general_no_sites_selected": {
+        "message": "hakuna tovuti zilizochaguliwa"
+    },
+    "options_general_show_on_selected": {
+        "message": "Onyesha dirisha ibukizi wakati maandishi yamechaguliwa"
+    },
+    "options_general_show_on_selected_hint": {
+        "message": "Dirisha ibukizi huonekana baada ya uteuzi wa maandishi (bora katika Hali Rahisi)."
+    },
+    "options_general_mode_full": {
+        "message": "Hali Kamili"
+    },
+    "options_general_mode_full_hint": {
+        "message": "Dirisha ibukizi na vipengele vyote."
+    },
+    "options_general_mode_simple": {
+        "message": "Modi Rahisi"
+    },
+    "options_general_mode_simple_hint": {
+        "message": "Onyesha tafsiri pekee, hakuna kingine."
+    },
     "options_inline_button_show": {
         "message": "Onyesha kitufe wakati maandishi yamechaguliwa"
+    },
+    "options_inline_button_show_hint": {
+        "message": "Kitufe cha kutafsiri kitaonekana karibu na maandishi uliyochagua."
     },
     "options_text_field_button_show": {
         "message": "Onyesha kitufe kwenye uwanja wa maandishi"
     },
+    "options_text_field_button_show_hint": {
+        "message": "Onyesha kitufe wakati maandishi yamechaguliwa katika sehemu za maandishi."
+    },
+    "options_hide_translation_button": {
+        "message": "Ficha kitufe cha kutafsiri kwa lugha yako"
+    },
+    "options_hide_translation_button_hint": {
+        "message": "Kitufe hakitaonekana wakati wa kuchagua maandishi katika lugha ya mfumo wako"
+    },
     "options_hide_button_on_sites": {
-        "message": "Ficha kitufe kwenye tovuti hizi:"
+        "message": "Ficha kitufe cha tafsiri kwenye tovuti mahususi:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Ongeza vikoa kwa kutumia menyu ya kidirisha ibukizi kwenye tovuti unayotaka kutenga"
+        "message": "Ongeza vikoa kwa kutumia menyu ya kidirisha ibukizi kwenye tovuti unayotaka kutenga."
     },
     "options_show_original_text": {
         "message": "Onyesha maandishi chanzo"
     },
+    "options_show_original_text_hint": {
+        "message": "Onyesha maandishi asili pamoja na tafsiri (Hali Kamili pekee)."
+    },
     "options_show_transliteration": {
         "message": "Onyesha unukuzi"
+    },
+    "options_show_transliteration_hint": {
+        "message": "Onyesha unukuzi kama unapatikana."
     },
     "options_lock_popup_window": {
         "message": "Funga dirisha ibukizi"
     },
     "options_lock_popup_window_hint": {
-        "message": "Ikiwashwa, dirisha ibukizi halitafungwa wakati wa kubofya nje yake"
+        "message": "Dirisha ibukizi husalia wazi unapobofya nje."
+    },
+    "options_providers_provider": {
+        "message": "Mtoa huduma"
+    },
+    "options_providers_model": {
+        "message": "Mfano"
+    },
+    "options_appearance_theme": {
+        "message": "Mandhari"
+    },
+    "options_appearance_accent_color": {
+        "message": "Rangi ya msisitizo"
+    },
+    "options_appearance_bg_and_text": {
+        "message": "Usuli na maandishi wazi"
     },
     "options_history_length": {
         "message": "Maingizo ya historia (max.)"
@@ -122,12 +176,6 @@
     "options_support_donations": {
         "message": "Ikiwa ungependa kuunga mkono programu hii ya bure"
     },
-    "options_address": {
-        "message": "anwani"
-    },
-    "options_copy_address": {
-        "message": "Nakili anwani"
-    },
     "text_expand": {
         "message": "Zaidi"
     },
@@ -176,6 +224,12 @@
     "popup_menu_options_link": {
         "message": "Mipangilio ya ziada"
     },
+    "popup_menu_switch_to_simple_mode": {
+        "message": "Badili hadi kwa Hali Rahisi"
+    },
+    "popup_menu_switch_to_full_mode": {
+        "message": "Badili hadi kwa Hali Kamili"
+    },
     "popup_placeholder_translation": {
         "message": "Tafsiri"
     },
@@ -196,12 +250,6 @@
     },
     "tooltip_copy_not_support_on_http": {
         "message": "Nakala haitumiki kwenye tovuti za HTTP"
-    },
-    "tooltip_copyed": {
-        "message": "Imenakiliwa"
-    },
-    "tooltip_copy_error": {
-        "message": "Hitilafu ya kunakili!"
     },
     "tooltip_listen_to_the_text": {
         "message": "Sikiliza maandishi"
@@ -251,6 +299,9 @@
     "language_auto": {
         "message": "kugundua lugha"
     },
+    "language_aa": {
+        "message": "Mbali"
+    },
     "language_ab": {
         "message": "Abkhaz"
     },
@@ -263,8 +314,8 @@
     "language_af": {
         "message": "Kiafrikana"
     },
-    "language_sq": {
-        "message": "Kialbeni"
+    "language_ak": {
+        "message": "Kitwi (Akan)"
     },
     "language_alz": {
         "message": "Alur"
@@ -275,11 +326,11 @@
     "language_ar": {
         "message": "Kiarabu"
     },
-    "language_hy": {
-        "message": "Kiarmenia"
-    },
     "language_as": {
         "message": "Kiassamese"
+    },
+    "language_av": {
+        "message": "Avar"
     },
     "language_awa": {
         "message": "Awadhi"
@@ -290,26 +341,20 @@
     "language_az": {
         "message": "Kiazabajani"
     },
-    "language_ban": {
-        "message": "Balinese"
-    },
-    "language_bm": {
-        "message": "Bambara"
-    },
     "language_ba": {
         "message": "Bashkir"
     },
-    "language_eu": {
-        "message": "Kibasque"
+    "language_bal": {
+        "message": "Baluchi"
     },
-    "language_btx": {
-        "message": "Batak Karo"
-    },
-    "language_bts": {
-        "message": "Batak Simalungun"
+    "language_ban": {
+        "message": "Balinese"
     },
     "language_bbc": {
         "message": "Batak Toba"
+    },
+    "language_bci": {
+        "message": "Baoule"
     },
     "language_be": {
         "message": "Kibelarusi"
@@ -317,11 +362,17 @@
     "language_bem": {
         "message": "Kibemba"
     },
-    "language_bn": {
-        "message": "Kibengali"
+    "language_ber": {
+        "message": "Tamazight (Tifinagh)"
+    },
+    "language_ber_Latn": {
+        "message": "Tamazight"
     },
     "language_bew": {
         "message": "Betawi"
+    },
+    "language_bg": {
+        "message": "Kibulgaria"
     },
     "language_bho": {
         "message": "Bhojpuri"
@@ -329,59 +380,89 @@
     "language_bik": {
         "message": "Bikol"
     },
-    "language_bs": {
-        "message": "Kibosnia"
+    "language_bm": {
+        "message": "Bambara"
+    },
+    "language_bm_Nkoo": {
+        "message": "NKO"
+    },
+    "language_bn": {
+        "message": "Kibengali"
+    },
+    "language_bo": {
+        "message": "Tibetani"
     },
     "language_br": {
         "message": "Kibretoni"
     },
-    "language_bg": {
-        "message": "Kibulgaria"
+    "language_bs": {
+        "message": "Kibosnia"
+    },
+    "language_bts": {
+        "message": "Batak Simalungun"
+    },
+    "language_btx": {
+        "message": "Batak Karo"
     },
     "language_bua": {
         "message": "Buryat"
     },
-    "language_yue": {
-        "message": "Kikantoni"
-    },
     "language_ca": {
         "message": "Kikatalani"
+    },
+    "language_ce": {
+        "message": "Chechen"
     },
     "language_ceb": {
         "message": "Cebuano"
     },
-    "language_ny": {
-        "message": "Chichewa (Nyanja)"
+    "language_cgg": {
+        "message": "Kiga"
     },
-    "language_zh_CN": {
-        "message": "Kichina (Kilichorahisishwa)"
+    "language_ch": {
+        "message": "Chamorro"
     },
-    "language_zh_TW": {
-        "message": "Kichina (cha Jadi)"
+    "language_chk": {
+        "message": "Chuukese"
     },
-    "language_cv": {
-        "message": "Chuvash"
+    "language_chm": {
+        "message": "Meadow Mari"
+    },
+    "language_ckb": {
+        "message": "Kikurdi (Sorani)"
+    },
+    "language_cnh": {
+        "message": "Hakha Kidevu"
     },
     "language_co": {
         "message": "Kikosikani"
     },
     "language_crh": {
-        "message": "Kitatari cha Crimea"
+        "message": "Kitatari cha Crimea (Kisiriliki)"
     },
-    "language_hr": {
-        "message": "Kikroeshia"
+    "language_crh_Latn": {
+        "message": "Kitatari cha Crimea (Kilatini)"
+    },
+    "language_crs": {
+        "message": "Krioli ya Ushelisheli"
     },
     "language_cs": {
         "message": "Kicheki"
     },
+    "language_cv": {
+        "message": "Chuvash"
+    },
+    "language_cy": {
+        "message": "Kiwelisi"
+    },
     "language_da": {
         "message": "Kideni"
     },
+    "language_de": {
+        "message": "Kijerumani"
+    },
     "language_din": {
         "message": "Dinka"
-    },
-    "language_dv": {
-        "message": "Divehi"
     },
     "language_doi": {
         "message": "Dogri"
@@ -389,11 +470,20 @@
     "language_dov": {
         "message": "Dombe"
     },
-    "language_nl": {
-        "message": "Kiholanzi"
+    "language_dv": {
+        "message": "Dhivehi"
+    },
+    "language_dyu": {
+        "message": "Dyula"
     },
     "language_dz": {
         "message": "Dzongkha"
+    },
+    "language_ee": {
+        "message": "Ewe"
+    },
+    "language_el": {
+        "message": "Kigiriki"
     },
     "language_en": {
         "message": "Kiingereza"
@@ -401,65 +491,77 @@
     "language_eo": {
         "message": "Kiesperanto"
     },
+    "language_es": {
+        "message": "Kihispania"
+    },
     "language_et": {
         "message": "Kiestonia"
     },
-    "language_ee": {
-        "message": "Ewe"
+    "language_eu": {
+        "message": "Kibasque"
     },
-    "language_fj": {
-        "message": "Kifiji"
+    "language_fa": {
+        "message": "Kiajemi"
     },
-    "language_fil": {
-        "message": "Kifilipino (Tagalog)"
+    "language_fa_AF": {
+        "message": "Dari"
+    },
+    "language_ff": {
+        "message": "Fulani"
     },
     "language_fi": {
         "message": "Kifini"
     },
+    "language_fil": {
+        "message": "Kifilipino (Tagalog)"
+    },
+    "language_fj": {
+        "message": "Kifiji"
+    },
+    "language_fo": {
+        "message": "Kifaroe"
+    },
+    "language_fon": {
+        "message": "Fon"
+    },
     "language_fr": {
         "message": "Kifaransa"
-    },
-    "language_fr_FR": {
-        "message": "Kifaransa (Kifaransa)"
     },
     "language_fr_CA": {
         "message": "Kifaransa (Kanada)"
     },
+    "language_fr_FR": {
+        "message": "Kifaransa (Ufaransa)"
+    },
+    "language_fur": {
+        "message": "Friulian"
+    },
     "language_fy": {
         "message": "Kifrisia"
     },
-    "language_ff": {
-        "message": "Fulfulde"
+    "language_ga": {
+        "message": "Kiayalandi"
     },
     "language_gaa": {
         "message": "Ga"
     },
+    "language_gd": {
+        "message": "Kigaeli cha Kiskoti"
+    },
     "language_gl": {
         "message": "Kigalisia"
-    },
-    "language_lg": {
-        "message": "Kiganda (Luganda)"
-    },
-    "language_ka": {
-        "message": "Kijojiajia"
-    },
-    "language_de": {
-        "message": "Kijerumani"
-    },
-    "language_el": {
-        "message": "Kigiriki"
     },
     "language_gn": {
         "message": "Guarani"
     },
+    "language_gom": {
+        "message": "Konkani"
+    },
     "language_gu": {
         "message": "Kigujarati"
     },
-    "language_ht": {
-        "message": "Krioli ya Haiti"
-    },
-    "language_cnh": {
-        "message": "Hakha Kidevu"
+    "language_gv": {
+        "message": "Manx"
     },
     "language_ha": {
         "message": "Kihausa"
@@ -467,122 +569,158 @@
     "language_haw": {
         "message": "Kihawai"
     },
-    "language_iw": {
-        "message": "Kiebrania"
+    "language_hi": {
+        "message": "Kihindi"
     },
     "language_hil": {
         "message": "Hiligaynon"
     },
-    "language_hi": {
-        "message": "Kihindi"
-    },
     "language_hmn": {
         "message": "Hmong"
     },
-    "language_hu": {
-        "message": "Kihungari"
+    "language_hr": {
+        "message": "Kikroeshia"
     },
     "language_hrx": {
         "message": "Hunsrik"
     },
-    "language_is": {
-        "message": "Kiaislandi"
+    "language_ht": {
+        "message": "Krioli ya Haiti"
+    },
+    "language_hu": {
+        "message": "Kihungaria"
+    },
+    "language_hy": {
+        "message": "Kiarmenia"
+    },
+    "language_iba": {
+        "message": "Iban"
+    },
+    "language_id": {
+        "message": "Kiindonesia"
     },
     "language_ig": {
         "message": "Kiigbo"
     },
     "language_ilo": {
-        "message": "Iloko"
+        "message": "Ilocano"
     },
-    "language_id": {
-        "message": "Kiindonesia"
-    },
-    "language_ga": {
-        "message": "Kiayalandi"
+    "language_is": {
+        "message": "Kiaislandi"
     },
     "language_it": {
         "message": "Kiitaliano"
     },
+    "language_iu": {
+        "message": "Inuktut (Silabi)"
+    },
+    "language_iu_Latn": {
+        "message": "Inuktut (Kilatini)"
+    },
+    "language_iw": {
+        "message": "Kiebrania"
+    },
     "language_ja": {
         "message": "Kijapani"
+    },
+    "language_jam": {
+        "message": "Patois wa Jamaika"
     },
     "language_jw": {
         "message": "Kijava"
     },
-    "language_kn": {
-        "message": "Kikanada"
+    "language_ka": {
+        "message": "Kijojiajia"
     },
-    "language_pam": {
-        "message": "Kapampangan"
+    "language_kac": {
+        "message": "Jingpo"
+    },
+    "language_kek": {
+        "message": "Qʼeqchiʼ"
+    },
+    "language_kg": {
+        "message": "Kikongo"
+    },
+    "language_kha": {
+        "message": "Khasi"
     },
     "language_kk": {
         "message": "Kazakh"
     },
+    "language_kl": {
+        "message": "Kalaallisut"
+    },
     "language_km": {
         "message": "Khmer"
     },
-    "language_cgg": {
-        "message": "Kiga"
-    },
-    "language_rw": {
-        "message": "Kinyarwanda"
-    },
-    "language_ktu": {
-        "message": "Kituba"
-    },
-    "language_gom": {
-        "message": "Konkani"
+    "language_kn": {
+        "message": "Kikanada"
     },
     "language_ko": {
         "message": "Kikorea"
     },
+    "language_kr": {
+        "message": "Kanuri"
+    },
     "language_kri": {
         "message": "Krio"
+    },
+    "language_ktu": {
+        "message": "Kituba"
     },
     "language_ku": {
         "message": "Kikurdi (Kurmanji)"
     },
-    "language_ckb": {
-        "message": "Kikurdi (Sorani)"
+    "language_kv": {
+        "message": "Komi"
     },
     "language_ky": {
         "message": "Kirigizi"
     },
-    "language_lo": {
-        "message": "Lao"
-    },
-    "language_ltg": {
-        "message": "Kilatgalian"
-    },
     "language_la": {
         "message": "Kilatini"
-    },
-    "language_lv": {
-        "message": "Kilatvia"
-    },
-    "language_lij": {
-        "message": "Ligurian"
-    },
-    "language_li": {
-        "message": "Limburgan"
-    },
-    "language_ln": {
-        "message": "Kilingala"
-    },
-    "language_lt": {
-        "message": "Kilithuania"
-    },
-    "language_lmo": {
-        "message": "Lombard"
-    },
-    "language_luo": {
-        "message": "Kijaluo"
     },
     "language_lb": {
         "message": "Kilasembagi"
     },
-    "language_mk": {
-        "message": "Kimasedonia"
+    "language_lg": {
+        "message": "Luganda"
+    },
+    "language_li": {
+        "message": "Kilimburgish"
+    },
+    "language_lij": {
+        "message": "Ligurian"
+    },
+    "language_lmo": {
+        "message": "Lombard"
+    },
+    "language_ln": {
+        "message": "Kilingala"
+    },
+    "language_lo": {
+        "message": "Lao"
+    },
+    "language_lt": {
+        "message": "Kilithuania"
+    },
+    "language_ltg": {
+        "message": "Kilatgalian"
+    },
+    "language_lua": {
+        "message": "Tshiluba"
+    },
+    "language_luo": {
+        "message": "Kijaluo"
+    },
+    "language_lus": {
+        "message": "Mizo"
+    },
+    "language_lv": {
+        "message": "Kilatvia"
+    },
+    "language_mad": {
+        "message": "Madurese"
     },
     "language_mai": {
         "message": "Maithili"
@@ -590,8 +728,38 @@
     "language_mak": {
         "message": "Makassar"
     },
+    "language_mam": {
+        "message": "Mama"
+    },
+    "language_mfe": {
+        "message": "Krioli ya Mauritius"
+    },
     "language_mg": {
         "message": "Kimalagasi"
+    },
+    "language_mh": {
+        "message": "Marshallese"
+    },
+    "language_mi": {
+        "message": "Kimaori"
+    },
+    "language_min": {
+        "message": "Minang"
+    },
+    "language_mk": {
+        "message": "Kimasedonia"
+    },
+    "language_ml": {
+        "message": "Kimalayalam"
+    },
+    "language_mn": {
+        "message": "Kimongolia"
+    },
+    "language_mni_Mtei": {
+        "message": "Meiteilon (Manipuri)"
+    },
+    "language_mr": {
+        "message": "Marathi"
     },
     "language_ms": {
         "message": "Kimalei"
@@ -599,146 +767,134 @@
     "language_ms_Arab": {
         "message": "Kimalei (Jawi)"
     },
-    "language_ml": {
-        "message": "Kimalayalam"
-    },
     "language_mt": {
         "message": "Kimalta"
     },
-    "language_mi": {
-        "message": "Kimaori"
-    },
-    "language_mr": {
-        "message": "Marathi"
-    },
-    "language_chm": {
-        "message": "Meadow Mari"
-    },
-    "language_mni_Mtei": {
-        "message": "Meiteilon (Manipuri)"
-    },
-    "language_min": {
-        "message": "Minang"
-    },
-    "language_lus": {
-        "message": "Mizo"
-    },
-    "language_mn": {
-        "message": "Kimongolia"
+    "language_mwr": {
+        "message": "Marwadi"
     },
     "language_my": {
         "message": "Myanmar (Kiburma)"
     },
-    "language_nr": {
-        "message": "Kindebele (Kusini)"
-    },
-    "language_new": {
-        "message": "Nepalbhasa (Newari)"
+    "language_ndc_ZW": {
+        "message": "Ndau"
     },
     "language_ne": {
         "message": "Kinepali"
     },
-    "language_nso": {
-        "message": "Kisotho cha Kaskazini (Sepedi)"
+    "language_new": {
+        "message": "Nepalbhasa (Newari)"
+    },
+    "language_nhe": {
+        "message": "Kinahuatl (Huasteca Mashariki)"
+    },
+    "language_nl": {
+        "message": "Kiholanzi"
     },
     "language_no": {
         "message": "Kinorwe"
     },
+    "language_nr": {
+        "message": "Kindebele (Kusini)"
+    },
+    "language_nso": {
+        "message": "Sepedi"
+    },
     "language_nus": {
         "message": "Nuer"
+    },
+    "language_ny": {
+        "message": "Chichewa"
     },
     "language_oc": {
         "message": "Oksitani"
     },
-    "language_or": {
-        "message": "Odia (Oriya)"
-    },
     "language_om": {
         "message": "Oromo"
     },
-    "language_pag": {
-        "message": "Kipangasinan"
+    "language_or": {
+        "message": "Odia (Oriya)"
     },
-    "language_pap": {
-        "message": "Papiamento"
-    },
-    "language_ps": {
-        "message": "Kipashto"
-    },
-    "language_fa": {
-        "message": "Kiajemi"
-    },
-    "language_pl": {
-        "message": "Kipolandi"
-    },
-    "language_pt": {
-        "message": "Kireno"
-    },
-    "language_pt_PT": {
-        "message": "Kireno (Ureno)"
-    },
-    "language_pt_BR": {
-        "message": "Kireno (Brazili)"
+    "language_os": {
+        "message": "Kiossetian"
     },
     "language_pa": {
-        "message": "Kipunjabi"
+        "message": "Kipunjabi (Gurmukhi)"
     },
     "language_pa_Arab": {
         "message": "Kipunjabi (Shahmukhi)"
     },
+    "language_pag": {
+        "message": "Kipangasinan"
+    },
+    "language_pam": {
+        "message": "Kapampangan"
+    },
+    "language_pap": {
+        "message": "Papiamento"
+    },
+    "language_pl": {
+        "message": "Kipolandi"
+    },
+    "language_ps": {
+        "message": "Kipashto"
+    },
+    "language_pt": {
+        "message": "Kireno"
+    },
+    "language_pt_BR": {
+        "message": "Kireno (Brazili)"
+    },
+    "language_pt_PT": {
+        "message": "Kireno (Ureno)"
+    },
     "language_qu": {
         "message": "Kiquechua"
-    },
-    "language_rom": {
-        "message": "Romani"
-    },
-    "language_ro": {
-        "message": "Kiromania"
     },
     "language_rn": {
         "message": "Kirundi"
     },
+    "language_ro": {
+        "message": "Kiromania"
+    },
+    "language_rom": {
+        "message": "Romani"
+    },
     "language_ru": {
         "message": "Kirusi"
     },
-    "language_sm": {
-        "message": "Kisamoa"
-    },
-    "language_sg": {
-        "message": "Sango"
+    "language_rw": {
+        "message": "Kinyarwanda"
     },
     "language_sa": {
         "message": "Sanskrit"
     },
-    "language_gd": {
-        "message": "Kigaeli cha Kiskoti"
+    "language_sah": {
+        "message": "Yakut"
     },
-    "language_sr": {
-        "message": "Kiserbia"
+    "language_sat": {
+        "message": "Santali (Ol Chiki)"
     },
-    "language_st": {
-        "message": "Kisotho"
-    },
-    "language_crs": {
-        "message": "Krioli ya Ushelisheli"
-    },
-    "language_shn": {
-        "message": "Shan"
-    },
-    "language_sn": {
-        "message": "Kishona"
+    "language_sat_Latn": {
+        "message": "Santali (Kilatini)"
     },
     "language_scn": {
         "message": "Sicilian"
     },
-    "language_szl": {
-        "message": "Kisilesia"
-    },
     "language_sd": {
         "message": "Kisindhi"
     },
+    "language_se": {
+        "message": "Kisami (Kaskazini)"
+    },
+    "language_sg": {
+        "message": "Sango"
+    },
+    "language_shn": {
+        "message": "Shan"
+    },
     "language_si": {
-        "message": "Kisinhala (Kisinhali)"
+        "message": "Kisinhala"
     },
     "language_sk": {
         "message": "Kislovakia"
@@ -746,38 +902,47 @@
     "language_sl": {
         "message": "Kislovenia"
     },
+    "language_sm": {
+        "message": "Kisamoa"
+    },
+    "language_sn": {
+        "message": "Kishona"
+    },
     "language_so": {
         "message": "Msomali"
     },
-    "language_es": {
-        "message": "Kihispania"
+    "language_sq": {
+        "message": "Kialbeni"
     },
-    "language_su": {
-        "message": "Kisunda"
-    },
-    "language_sw": {
-        "message": "kiswahili"
+    "language_sr": {
+        "message": "Kiserbia"
     },
     "language_ss": {
         "message": "Swati"
     },
+    "language_st": {
+        "message": "Kisotho"
+    },
+    "language_su": {
+        "message": "Kisunda"
+    },
+    "language_sus": {
+        "message": "Susu"
+    },
     "language_sv": {
         "message": "Kiswidi"
     },
-    "language_ber": {
-        "message": "Tamazight (Tifinagh)"
+    "language_sw": {
+        "message": "kiswahili"
     },
-    "language_ber_latn": {
-        "message": "Tamazight"
-    },
-    "language_tg": {
-        "message": "Tajiki"
+    "language_szl": {
+        "message": "Kisilesia"
     },
     "language_ta": {
         "message": "Kitamil"
     },
-    "language_tt": {
-        "message": "Kitatari"
+    "language_tcy": {
+        "message": "Tulu"
     },
     "language_te": {
         "message": "Kitelugu"
@@ -785,26 +950,59 @@
     "language_tet": {
         "message": "Tetum"
     },
+    "language_tg": {
+        "message": "Tajiki"
+    },
     "language_th": {
         "message": "Thai"
     },
     "language_ti": {
         "message": "Kitigrinya"
     },
-    "language_ts": {
-        "message": "Tsonga"
-    },
-    "language_tn": {
-        "message": "Kitswana"
-    },
-    "language_tr": {
-        "message": "Kituruki"
+    "language_tiv": {
+        "message": "Tiv"
     },
     "language_tk": {
         "message": "Waturukimeni"
     },
-    "language_ak": {
-        "message": "Kitwi (Akan)"
+    "language_tl": {
+        "message": "Kifilipino"
+    },
+    "language_tn": {
+        "message": "Kitswana"
+    },
+    "language_to": {
+        "message": "Kitonga"
+    },
+    "language_tpi": {
+        "message": "Tok Pisin"
+    },
+    "language_tr": {
+        "message": "Kituruki"
+    },
+    "language_trp": {
+        "message": "Kokborok"
+    },
+    "language_ts": {
+        "message": "Tsonga"
+    },
+    "language_tt": {
+        "message": "Kitatari"
+    },
+    "language_tum": {
+        "message": "Tumbuka"
+    },
+    "language_ty": {
+        "message": "Kitahiti"
+    },
+    "language_tyv": {
+        "message": "Tuvani"
+    },
+    "language_udm": {
+        "message": "Udmurt"
+    },
+    "language_ug": {
+        "message": "Uyghur"
     },
     "language_uk": {
         "message": "Kiukreni"
@@ -812,17 +1010,23 @@
     "language_ur": {
         "message": "Kiurdu"
     },
-    "language_ug": {
-        "message": "Uyghur"
-    },
     "language_uz": {
         "message": "Kiuzbeki"
+    },
+    "language_ve": {
+        "message": "Kivenda"
+    },
+    "language_vec": {
+        "message": "Kiveneti"
     },
     "language_vi": {
         "message": "Kivietinamu"
     },
-    "language_cy": {
-        "message": "Kiwelisi"
+    "language_war": {
+        "message": "Waray"
+    },
+    "language_wo": {
+        "message": "Kiwolof"
     },
     "language_xh": {
         "message": "Kixhosa"
@@ -835,6 +1039,18 @@
     },
     "language_yua": {
         "message": "Yucatec Maya"
+    },
+    "language_yue": {
+        "message": "Kikantoni"
+    },
+    "language_zap": {
+        "message": "Zapotec"
+    },
+    "language_zh_CN": {
+        "message": "Kichina (Kilichorahisishwa)"
+    },
+    "language_zh_TW": {
+        "message": "Kichina (cha Jadi)"
     },
     "language_zu": {
         "message": "Kizulu"

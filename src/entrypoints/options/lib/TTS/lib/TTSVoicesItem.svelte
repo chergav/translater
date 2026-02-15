@@ -4,7 +4,7 @@
 			// @ts-expect-error ignore messageName
 			.getMessage(`language_${lang.replace('-', '_')}`).toLowerCase()}</span>
 	</td>
-	<td class="flex gap-2">
+	<td class="flex items-center gap-2">
 		<Select
 			full
 			onchange={() => {
@@ -17,12 +17,14 @@
 				<option value={voice}>{voice.name} ({voice.lang})</option>
 			{/each}
 		</Select>
-		<TTSButton
-			showTTSVoices={false}
-			targetLang={lang}
-			text={selectedVoice.name}
-			{voices}
-		/>
+		<div>
+			<TTSButton
+				showTTSVoices={false}
+				targetLang={lang}
+				text={selectedVoice.name}
+				{voices}
+			/>
+		</div>
 	</td>
 	<td>
 		{voices.length}
@@ -32,7 +34,7 @@
 <script lang="ts">
 import { storage } from '~/shared/storage.svelte';
 import Select from '~/lib/Select.svelte';
-import TTSButton from '~/entrypoints/content/lib/Popup/lib/PopupMain/lib/TTS/TTSButton.svelte';
+import TTSButton from '~/entrypoints/content/lib/PopupFull/lib/PopupMain/lib/TTS/TTSButton.svelte';
 
 interface Props {
 	lang: string

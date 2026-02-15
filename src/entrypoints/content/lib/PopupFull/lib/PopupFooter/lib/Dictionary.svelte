@@ -33,7 +33,7 @@
 										<div class="inline-flex flex-wrap">
 											<span
 												class={[
-													'mx-[-5px] my-[-1px] cursor-pointer rounded-md px-[5px] py-[1px] transition-colors',
+													'mx-[-5px] -my-px cursor-pointer rounded-md px-[5px] py-px transition-colors',
 													'hover:bg-color-primary/10 hover:text-color-primary',
 													currentWord === reverse_translation && 'bg-color-primary/10 text-color-primary',
 												]}
@@ -61,7 +61,7 @@
 									{/each}
 								</td>
 								<td class="py-1 text-end align-top">
-									<div class="inline-flex w-fit items-center gap-[1px] overflow-hidden rounded-full whitespace-nowrap">
+									<div class="inline-flex w-fit items-center gap-px overflow-hidden rounded-full whitespace-nowrap">
 										{#each scoreHandler(entry.score) as item, index (index)}
 											<div
 												class={[

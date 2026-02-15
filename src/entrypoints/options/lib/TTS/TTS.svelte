@@ -53,14 +53,14 @@ import { store } from '~/entrypoints/options/store.svelte';
 import TTSVoicesItem from './lib/TTSVoicesItem.svelte';
 // import Button from '~/lib/Button.svelte';
 import { languages } from '~/shared/languages';
-import { getVoices } from '~/entrypoints/content/lib/Popup/lib/PopupMain/lib/TTS/utils/tts';
+import { getVoices } from '~/entrypoints/content/lib/PopupFull/lib/PopupMain/lib/TTS/utils/tts';
 
 if (!store.voices) {
 	store.voices = getVoices();
 }
 
-const sortedI18nLanguages = languages
-	.map(({ code }) => ({
+const sortedI18nLanguages = Object.keys(languages)
+	.map(code => ({
 		code,
 		// @ts-expect-error ignore messageName
 		language: browser.i18n.getMessage(`language_${code.replace('-', '_')}`),

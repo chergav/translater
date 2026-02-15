@@ -68,6 +68,12 @@ class Store {
 		this.errors = [];
 	}
 
+	public openPopup = () => {
+		store.showPopup = true;
+		store.textToTranslate = store.selectedText;
+		store.translate();
+	};
+
 	private async translateAi(text: string): Promise<string | null> {
 		const sourceLang = this.sourceLang !== 'auto' ?  this.sourceLang : undefined;
 		const targetLang = storage.settings.targetLang;

@@ -5,9 +5,6 @@
     "app_description": {
         "message": "Google অনুবাদের মাধ্যমে নির্বাচিত পাঠ্য অনুবাদ করুন"
     },
-    "app_version": {
-        "message": "সংস্করণ"
-    },
     "context_menus_title": {
         "message": "নির্বাচিত পাঠ্য অনুবাদ করুন"
     },
@@ -35,29 +32,86 @@
     "options_tab_history": {
         "message": "ইতিহাস"
     },
+    "options_general_translation_button": {
+        "message": "অনুবাদ বোতাম"
+    },
+    "options_general_no_sites_selected": {
+        "message": "কোন সাইট নির্বাচিত"
+    },
+    "options_general_show_on_selected": {
+        "message": "পাঠ্য নির্বাচন করা হলে পপআপ দেখান"
+    },
+    "options_general_show_on_selected_hint": {
+        "message": "পাঠ্য নির্বাচনের পরে পপআপ প্রদর্শিত হয় (সরল মোডে সেরা)।"
+    },
+    "options_general_mode_full": {
+        "message": "সম্পূর্ণ মোড"
+    },
+    "options_general_mode_full_hint": {
+        "message": "সমস্ত বৈশিষ্ট্য সহ পপআপ উইন্ডো।"
+    },
+    "options_general_mode_simple": {
+        "message": "সরল মোড"
+    },
+    "options_general_mode_simple_hint": {
+        "message": "শুধুমাত্র অনুবাদ দেখান, অন্য কিছু নয়।"
+    },
     "options_inline_button_show": {
         "message": "পাঠ্য নির্বাচন করা হলে বোতাম প্রদর্শন করুন"
+    },
+    "options_inline_button_show_hint": {
+        "message": "নির্বাচিত পাঠ্যের পাশে একটি অনুবাদ বোতাম উপস্থিত হবে।"
     },
     "options_text_field_button_show": {
         "message": "টেক্সটফিল্ডে বোতাম দেখান"
     },
+    "options_text_field_button_show_hint": {
+        "message": "টেক্সট ইনপুট ক্ষেত্রে টেক্সট নির্বাচন করা হলে বোতাম দেখান।"
+    },
+    "options_hide_translation_button": {
+        "message": "আপনার ভাষার জন্য অনুবাদ বোতামটি লুকান"
+    },
+    "options_hide_translation_button_hint": {
+        "message": "আপনার সিস্টেমের ভাষায় পাঠ্য নির্বাচন করার সময় বোতাম প্রদর্শিত হবে না"
+    },
     "options_hide_button_on_sites": {
-        "message": "এই সাইটগুলিতে বোতামটি লুকান:"
+        "message": "নির্দিষ্ট ওয়েবসাইটে অনুবাদ বোতাম লুকান:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "আপনি যে সাইটে বাদ দিতে চান তার পপআপ উইন্ডোর মেনু ব্যবহার করে ডোমেন যোগ করুন"
+        "message": "আপনি যে সাইটে বাদ দিতে চান তার পপআপ উইন্ডোর মেনু ব্যবহার করে ডোমেন যোগ করুন।"
     },
     "options_show_original_text": {
         "message": "উত্স পাঠ্য দেখান"
     },
+    "options_show_original_text_hint": {
+        "message": "অনুবাদের পাশাপাশি মূল পাঠ্য প্রদর্শন করুন (শুধুমাত্র সম্পূর্ণ মোড)।"
+    },
     "options_show_transliteration": {
         "message": "প্রতিবর্ণীকরণ দেখান"
+    },
+    "options_show_transliteration_hint": {
+        "message": "উপলব্ধ থাকলে প্রতিবর্ণীকরণ দেখান।"
     },
     "options_lock_popup_window": {
         "message": "পপআপ উইন্ডো লক করুন"
     },
     "options_lock_popup_window_hint": {
-        "message": "যদি সক্রিয় করা হয়, পপআপ এর বাইরে ক্লিক করার সময় বন্ধ হবে না"
+        "message": "বাইরে ক্লিক করার সময় পপআপ খোলা থাকে।"
+    },
+    "options_providers_provider": {
+        "message": "প্রদানকারী"
+    },
+    "options_providers_model": {
+        "message": "মডেল"
+    },
+    "options_appearance_theme": {
+        "message": "থিম"
+    },
+    "options_appearance_accent_color": {
+        "message": "অ্যাকসেন্ট রঙ"
+    },
+    "options_appearance_bg_and_text": {
+        "message": "ব্যাকগ্রাউন্ড এবং প্লেইন টেক্সট"
     },
     "options_history_length": {
         "message": "ইতিহাস এন্ট্রি (সর্বোচ্চ)"
@@ -122,12 +176,6 @@
     "options_support_donations": {
         "message": "আপনি যদি এই বিনামূল্যে সফ্টওয়্যার সমর্থন করতে চান"
     },
-    "options_address": {
-        "message": "ঠিকানা"
-    },
-    "options_copy_address": {
-        "message": "ঠিকানা কপি করুন"
-    },
     "text_expand": {
         "message": "আরও"
     },
@@ -176,6 +224,12 @@
     "popup_menu_options_link": {
         "message": "অতিরিক্ত সেটিংস"
     },
+    "popup_menu_switch_to_simple_mode": {
+        "message": "সরল মোডে স্যুইচ করুন"
+    },
+    "popup_menu_switch_to_full_mode": {
+        "message": "ফুল মোডে স্যুইচ করুন"
+    },
     "popup_placeholder_translation": {
         "message": "অনুবাদ"
     },
@@ -197,12 +251,6 @@
     "tooltip_copy_not_support_on_http": {
         "message": "কপি HTTP সাইটগুলিতে সমর্থন করে না"
     },
-    "tooltip_copyed": {
-        "message": "কপি করা হয়েছে"
-    },
-    "tooltip_copy_error": {
-        "message": "কপি ত্রুটি!"
-    },
     "tooltip_listen_to_the_text": {
         "message": "পাঠ্য শুনুন"
     },
@@ -213,7 +261,7 @@
         "message": "ভাষা সমর্থন নয়"
     },
     "tooltip_go_back": {
-        "message": "ফিরে"
+        "message": "ব্যাক"
     },
     "tooltip_go_forward": {
         "message": "ফরোয়ার্ড"
@@ -251,6 +299,9 @@
     "language_auto": {
         "message": "ভাষা সনাক্ত করা"
     },
+    "language_aa": {
+        "message": "আফার"
+    },
     "language_ab": {
         "message": "আবখাজ"
     },
@@ -263,8 +314,8 @@
     "language_af": {
         "message": "আফ্রিকান"
     },
-    "language_sq": {
-        "message": "আলবেনিয়ান"
+    "language_ak": {
+        "message": "টুই (আকান)"
     },
     "language_alz": {
         "message": "আলুর"
@@ -275,14 +326,14 @@
     "language_ar": {
         "message": "আরবি"
     },
-    "language_hy": {
-        "message": "আর্মেনিয়ান"
-    },
     "language_as": {
         "message": "অসমীয়া"
     },
+    "language_av": {
+        "message": "আভার"
+    },
     "language_awa": {
-        "message": "আওয়াধি"
+        "message": "অবধি"
     },
     "language_ay": {
         "message": "আয়মারা"
@@ -290,26 +341,20 @@
     "language_az": {
         "message": "আজারবাইজানি"
     },
-    "language_ban": {
-        "message": "বালিনিজ"
-    },
-    "language_bm": {
-        "message": "বামবারা"
-    },
     "language_ba": {
         "message": "বাশকির"
     },
-    "language_eu": {
-        "message": "বাস্ক"
+    "language_bal": {
+        "message": "বেলুচি"
     },
-    "language_btx": {
-        "message": "বাতাক করো"
-    },
-    "language_bts": {
-        "message": "বাতাক সিমালুনগুন"
+    "language_ban": {
+        "message": "বালিনিজ"
     },
     "language_bbc": {
         "message": "বাতাক তোবা"
+    },
+    "language_bci": {
+        "message": "বাউলে"
     },
     "language_be": {
         "message": "বেলারুশিয়ান"
@@ -317,11 +362,17 @@
     "language_bem": {
         "message": "বেম্বা"
     },
-    "language_bn": {
-        "message": "বাংলা"
+    "language_ber": {
+        "message": "Tamazight (টিফিনাঘ)"
+    },
+    "language_ber_Latn": {
+        "message": "তামাজাইট"
     },
     "language_bew": {
-        "message": "বেতাউই"
+        "message": "বেতাবি"
+    },
+    "language_bg": {
+        "message": "বুলগেরিয়ান"
     },
     "language_bho": {
         "message": "ভোজপুরি"
@@ -329,59 +380,89 @@
     "language_bik": {
         "message": "বিকোল"
     },
-    "language_bs": {
-        "message": "বসনিয়ান"
+    "language_bm": {
+        "message": "বামবারা"
+    },
+    "language_bm_Nkoo": {
+        "message": "NKo"
+    },
+    "language_bn": {
+        "message": "বাংলা"
+    },
+    "language_bo": {
+        "message": "তিব্বতি"
     },
     "language_br": {
         "message": "ব্রেটন"
     },
-    "language_bg": {
-        "message": "বুলগেরিয়ান"
+    "language_bs": {
+        "message": "বসনিয়ান"
+    },
+    "language_bts": {
+        "message": "বাতাক সিমালুনগুন"
+    },
+    "language_btx": {
+        "message": "বাতাক করো"
     },
     "language_bua": {
         "message": "বুরিয়াত"
     },
-    "language_yue": {
-        "message": "ক্যান্টোনিজ"
-    },
     "language_ca": {
         "message": "কাতালান"
+    },
+    "language_ce": {
+        "message": "চেচেন"
     },
     "language_ceb": {
         "message": "সেবুয়ানো"
     },
-    "language_ny": {
-        "message": "চিচেওয়া (ন্যাঞ্জা)"
+    "language_cgg": {
+        "message": "কিগা"
     },
-    "language_zh_CN": {
-        "message": "চীনা (সরলীকৃত)"
+    "language_ch": {
+        "message": "চামোরো"
     },
-    "language_zh_TW": {
-        "message": "চীনা (ঐতিহ্যগত)"
+    "language_chk": {
+        "message": "চুকেসে"
     },
-    "language_cv": {
-        "message": "চুভাশ"
+    "language_chm": {
+        "message": "মেডো মারি"
+    },
+    "language_ckb": {
+        "message": "কুর্দি (সোরানি)"
+    },
+    "language_cnh": {
+        "message": "হাকা চিন"
     },
     "language_co": {
         "message": "কর্সিকান"
     },
     "language_crh": {
-        "message": "ক্রিমিয়ান তাতার"
+        "message": "ক্রিমিয়ান তাতার (সিরিলিক)"
     },
-    "language_hr": {
-        "message": "ক্রোয়েশিয়ান"
+    "language_crh_Latn": {
+        "message": "ক্রিমিয়ান তাতার (ল্যাটিন)"
+    },
+    "language_crs": {
+        "message": "সেচেলোইস ক্রেওল"
     },
     "language_cs": {
         "message": "চেক"
     },
+    "language_cv": {
+        "message": "চুভাশ"
+    },
+    "language_cy": {
+        "message": "ওয়েলশ"
+    },
     "language_da": {
         "message": "ড্যানিশ"
     },
+    "language_de": {
+        "message": "জার্মান"
+    },
     "language_din": {
         "message": "ডিঙ্কা"
-    },
-    "language_dv": {
-        "message": "দিভেহি"
     },
     "language_doi": {
         "message": "ডগরি"
@@ -389,11 +470,20 @@
     "language_dov": {
         "message": "ডোম্বে"
     },
-    "language_nl": {
-        "message": "ডাচ"
+    "language_dv": {
+        "message": "দিভেহি"
+    },
+    "language_dyu": {
+        "message": "ডিউলা"
     },
     "language_dz": {
         "message": "জংখা"
+    },
+    "language_ee": {
+        "message": "ইউ"
+    },
+    "language_el": {
+        "message": "গ্রীক"
     },
     "language_en": {
         "message": "ইংরেজি"
@@ -401,65 +491,77 @@
     "language_eo": {
         "message": "এস্পেরান্তো"
     },
+    "language_es": {
+        "message": "স্প্যানিশ"
+    },
     "language_et": {
         "message": "এস্তোনিয়ান"
     },
-    "language_ee": {
-        "message": "ইউ"
+    "language_eu": {
+        "message": "বাস্ক"
     },
-    "language_fj": {
-        "message": "ফিজিয়ান"
+    "language_fa": {
+        "message": "ফারসি"
     },
-    "language_fil": {
-        "message": "ফিলিপিনো (তাগালগ)"
+    "language_fa_AF": {
+        "message": "দারি"
+    },
+    "language_ff": {
+        "message": "ফুলানি"
     },
     "language_fi": {
         "message": "ফিনিশ"
     },
+    "language_fil": {
+        "message": "ফিলিপিনো (তাগালগ)"
+    },
+    "language_fj": {
+        "message": "ফিজিয়ান"
+    },
+    "language_fo": {
+        "message": "ফারোইজ"
+    },
+    "language_fon": {
+        "message": "ফন"
+    },
     "language_fr": {
         "message": "ফরাসি"
     },
-    "language_fr_FR": {
-        "message": "ফরাসি (ফরাসি)"
-    },
     "language_fr_CA": {
-        "message": "ফরাসি (কানাডিয়ান)"
+        "message": "ফরাসি (কানাডা)"
+    },
+    "language_fr_FR": {
+        "message": "ফরাসি (ফ্রান্স)"
+    },
+    "language_fur": {
+        "message": "ফ্রিউলিয়ান"
     },
     "language_fy": {
         "message": "ফ্রিজিয়ান"
     },
-    "language_ff": {
-        "message": "ফুলফুলদে"
+    "language_ga": {
+        "message": "আইরিশ"
     },
     "language_gaa": {
         "message": "গা"
     },
+    "language_gd": {
+        "message": "স্কটস গেলিক"
+    },
     "language_gl": {
         "message": "গ্যালিসিয়ান"
-    },
-    "language_lg": {
-        "message": "গান্ডা (লুগান্ডা)"
-    },
-    "language_ka": {
-        "message": "জর্জিয়ান"
-    },
-    "language_de": {
-        "message": "জার্মান"
-    },
-    "language_el": {
-        "message": "গ্রীক"
     },
     "language_gn": {
         "message": "গুয়ারানি"
     },
+    "language_gom": {
+        "message": "কোঙ্কনি"
+    },
     "language_gu": {
         "message": "গুজরাটি"
     },
-    "language_ht": {
-        "message": "হাইতিয়ান ক্রেওল"
-    },
-    "language_cnh": {
-        "message": "হাকা চিন"
+    "language_gv": {
+        "message": "ম্যাঙ্কস"
     },
     "language_ha": {
         "message": "হাউসা"
@@ -467,122 +569,158 @@
     "language_haw": {
         "message": "হাওয়াইয়ান"
     },
-    "language_iw": {
-        "message": "হিব্রু"
+    "language_hi": {
+        "message": "হিন্দি"
     },
     "language_hil": {
         "message": "হিলিগেনন"
     },
-    "language_hi": {
-        "message": "হিন্দি"
-    },
     "language_hmn": {
         "message": "হমং"
     },
-    "language_hu": {
-        "message": "হাঙ্গেরিয়ান"
+    "language_hr": {
+        "message": "ক্রোয়েশিয়ান"
     },
     "language_hrx": {
         "message": "হুন্সরিক"
     },
-    "language_is": {
-        "message": "আইসল্যান্ডিক"
+    "language_ht": {
+        "message": "হাইতিয়ান ক্রেওল"
+    },
+    "language_hu": {
+        "message": "হাঙ্গেরিয়ান"
+    },
+    "language_hy": {
+        "message": "আর্মেনিয়ান"
+    },
+    "language_iba": {
+        "message": "ইবান"
+    },
+    "language_id": {
+        "message": "ইন্দোনেশিয়ান"
     },
     "language_ig": {
         "message": "ইগবো"
     },
     "language_ilo": {
-        "message": "ইলোকো"
+        "message": "ইলোকানো"
     },
-    "language_id": {
-        "message": "ইন্দোনেশিয়ান"
-    },
-    "language_ga": {
-        "message": "আইরিশ"
+    "language_is": {
+        "message": "আইসল্যান্ডিক"
     },
     "language_it": {
         "message": "ইতালীয়"
     },
+    "language_iu": {
+        "message": "ইনুক্টুট (সিলেবিক্স)"
+    },
+    "language_iu_Latn": {
+        "message": "ইনুক্টুট (ল্যাটিন)"
+    },
+    "language_iw": {
+        "message": "হিব্রু"
+    },
     "language_ja": {
         "message": "জাপানিজ"
+    },
+    "language_jam": {
+        "message": "জ্যামাইকান প্যাটোইস"
     },
     "language_jw": {
         "message": "জাভানিজ"
     },
-    "language_kn": {
-        "message": "কন্নড়"
+    "language_ka": {
+        "message": "জর্জিয়ান"
     },
-    "language_pam": {
-        "message": "কাপম্পানগান"
+    "language_kac": {
+        "message": "জিংপো"
+    },
+    "language_kek": {
+        "message": "কিউকিচি'"
+    },
+    "language_kg": {
+        "message": "কিকংগো"
+    },
+    "language_kha": {
+        "message": "খাসি"
     },
     "language_kk": {
         "message": "কাজাখ"
     },
+    "language_kl": {
+        "message": "কালাল্লিসুত"
+    },
     "language_km": {
         "message": "খমের"
     },
-    "language_cgg": {
-        "message": "কিগা"
-    },
-    "language_rw": {
-        "message": "কিনিয়ারওয়ান্ডা"
-    },
-    "language_ktu": {
-        "message": "কিতুবা"
-    },
-    "language_gom": {
-        "message": "কোঙ্কনি"
+    "language_kn": {
+        "message": "কন্নড়"
     },
     "language_ko": {
         "message": "কোরিয়ান"
     },
+    "language_kr": {
+        "message": "কানুরি"
+    },
     "language_kri": {
         "message": "ক্রিও"
+    },
+    "language_ktu": {
+        "message": "কিতুবা"
     },
     "language_ku": {
         "message": "কুর্দি (কুরমাঞ্জি)"
     },
-    "language_ckb": {
-        "message": "কুর্দি (সোরানি)"
+    "language_kv": {
+        "message": "কোমি"
     },
     "language_ky": {
         "message": "কিরগিজ"
     },
-    "language_lo": {
-        "message": "লাও"
-    },
-    "language_ltg": {
-        "message": "লাটগালিয়ান"
-    },
     "language_la": {
         "message": "ল্যাটিন"
-    },
-    "language_lv": {
-        "message": "লাটভিয়ান"
-    },
-    "language_lij": {
-        "message": "লিগুরিয়ান"
-    },
-    "language_li": {
-        "message": "লিম্বুরগান"
-    },
-    "language_ln": {
-        "message": "লিঙ্গালা"
-    },
-    "language_lt": {
-        "message": "লিথুয়ানিয়ান"
-    },
-    "language_lmo": {
-        "message": "লম্বার্ড"
-    },
-    "language_luo": {
-        "message": "লুও"
     },
     "language_lb": {
         "message": "লুক্সেমবার্গিশ"
     },
-    "language_mk": {
-        "message": "ম্যাসেডোনিয়ান"
+    "language_lg": {
+        "message": "লুগান্ডা"
+    },
+    "language_li": {
+        "message": "লিম্বার্জিশ"
+    },
+    "language_lij": {
+        "message": "লিগুরিয়ান"
+    },
+    "language_lmo": {
+        "message": "লম্বার্ড"
+    },
+    "language_ln": {
+        "message": "লিঙ্গালা"
+    },
+    "language_lo": {
+        "message": "লাও"
+    },
+    "language_lt": {
+        "message": "লিথুয়ানিয়ান"
+    },
+    "language_ltg": {
+        "message": "লাটগালিয়ান"
+    },
+    "language_lua": {
+        "message": "শিলুবা"
+    },
+    "language_luo": {
+        "message": "লুও"
+    },
+    "language_lus": {
+        "message": "মিজো"
+    },
+    "language_lv": {
+        "message": "লাটভিয়ান"
+    },
+    "language_mad": {
+        "message": "মাদুরেস"
     },
     "language_mai": {
         "message": "মৈথিলী"
@@ -590,8 +728,38 @@
     "language_mak": {
         "message": "মাকাসার"
     },
+    "language_mam": {
+        "message": "ম্যাম"
+    },
+    "language_mfe": {
+        "message": "মরিশিয়ান ক্রেওল"
+    },
     "language_mg": {
         "message": "মালাগাসি"
+    },
+    "language_mh": {
+        "message": "মার্শালিজ"
+    },
+    "language_mi": {
+        "message": "মাওরি"
+    },
+    "language_min": {
+        "message": "মিনাং"
+    },
+    "language_mk": {
+        "message": "ম্যাসেডোনিয়ান"
+    },
+    "language_ml": {
+        "message": "মালায়লাম"
+    },
+    "language_mn": {
+        "message": "মঙ্গোলীয়"
+    },
+    "language_mni_Mtei": {
+        "message": "মেইটেইলন (মণিপুরি)"
+    },
+    "language_mr": {
+        "message": "মারাঠি"
     },
     "language_ms": {
         "message": "মলয়"
@@ -599,146 +767,134 @@
     "language_ms_Arab": {
         "message": "মালয় (জাউই)"
     },
-    "language_ml": {
-        "message": "মালায়লাম"
-    },
     "language_mt": {
         "message": "মাল্টিজ"
     },
-    "language_mi": {
-        "message": "মাওরি"
-    },
-    "language_mr": {
-        "message": "মারাঠি"
-    },
-    "language_chm": {
-        "message": "মেডো মারি"
-    },
-    "language_mni_Mtei": {
-        "message": "মেইটেইলন (মণিপুরি)"
-    },
-    "language_min": {
-        "message": "মিনাং"
-    },
-    "language_lus": {
-        "message": "মিজো"
-    },
-    "language_mn": {
-        "message": "মঙ্গোলীয়"
+    "language_mwr": {
+        "message": "মারওয়াড়ি"
     },
     "language_my": {
         "message": "মায়ানমার (বর্মী)"
     },
-    "language_nr": {
-        "message": "এনদেবেলে (দক্ষিণ)"
-    },
-    "language_new": {
-        "message": "নেপালভাসা (নেওয়ারী)"
+    "language_ndc_ZW": {
+        "message": "এনডাউ"
     },
     "language_ne": {
         "message": "নেপালি"
     },
-    "language_nso": {
-        "message": "উত্তর সোথো (সেপেদি)"
+    "language_new": {
+        "message": "নেপালভাসা (নেওয়ারী)"
+    },
+    "language_nhe": {
+        "message": "নাহুয়াটল (পূর্ব হুয়াস্টেকা)"
+    },
+    "language_nl": {
+        "message": "ডাচ"
     },
     "language_no": {
         "message": "নরওয়েজিয়ান"
     },
+    "language_nr": {
+        "message": "এনদেবেলে (দক্ষিণ)"
+    },
+    "language_nso": {
+        "message": "সেপেদি"
+    },
     "language_nus": {
         "message": "নুয়ের"
+    },
+    "language_ny": {
+        "message": "চিচেওয়া"
     },
     "language_oc": {
         "message": "অক্সিটান"
     },
-    "language_or": {
-        "message": "ওড়িয়া (ওড়িয়া)"
-    },
     "language_om": {
         "message": "ওরোমো"
     },
-    "language_pag": {
-        "message": "পাঙ্গাসিনান"
+    "language_or": {
+        "message": "ওড়িয়া (ওড়িয়া)"
     },
-    "language_pap": {
-        "message": "পাপিয়ামেন্টো"
-    },
-    "language_ps": {
-        "message": "পশতু"
-    },
-    "language_fa": {
-        "message": "ফারসি"
-    },
-    "language_pl": {
-        "message": "পোলিশ"
-    },
-    "language_pt": {
-        "message": "পর্তুগিজ"
-    },
-    "language_pt_PT": {
-        "message": "পর্তুগিজ (পর্তুগাল)"
-    },
-    "language_pt_BR": {
-        "message": "পর্তুগিজ (ব্রাজিল)"
+    "language_os": {
+        "message": "ওসেশিয়ান"
     },
     "language_pa": {
-        "message": "পাঞ্জাবি"
+        "message": "পাঞ্জাবি (গুরুমুখী)"
     },
     "language_pa_Arab": {
         "message": "পাঞ্জাবি (শাহমুখী)"
     },
+    "language_pag": {
+        "message": "পাঙ্গাসিনান"
+    },
+    "language_pam": {
+        "message": "কাপম্পানগান"
+    },
+    "language_pap": {
+        "message": "পাপিয়ামেন্টো"
+    },
+    "language_pl": {
+        "message": "পোলিশ"
+    },
+    "language_ps": {
+        "message": "পশতু"
+    },
+    "language_pt": {
+        "message": "পর্তুগিজ"
+    },
+    "language_pt_BR": {
+        "message": "পর্তুগিজ (ব্রাজিল)"
+    },
+    "language_pt_PT": {
+        "message": "পর্তুগিজ (পর্তুগাল)"
+    },
     "language_qu": {
         "message": "কেচুয়া"
-    },
-    "language_rom": {
-        "message": "রোমানি"
-    },
-    "language_ro": {
-        "message": "রোমানিয়ান"
     },
     "language_rn": {
         "message": "রুন্ডি"
     },
+    "language_ro": {
+        "message": "রোমানিয়ান"
+    },
+    "language_rom": {
+        "message": "রোমানি"
+    },
     "language_ru": {
         "message": "রাশিয়ান"
     },
-    "language_sm": {
-        "message": "সামোয়ান"
-    },
-    "language_sg": {
-        "message": "সাঙ্গো"
+    "language_rw": {
+        "message": "কিনিয়ারওয়ান্ডা"
     },
     "language_sa": {
         "message": "সংস্কৃত"
     },
-    "language_gd": {
-        "message": "স্কটস গেলিক"
+    "language_sah": {
+        "message": "ইয়াকুত"
     },
-    "language_sr": {
-        "message": "সার্বিয়ান"
+    "language_sat": {
+        "message": "সাঁওতালি (ওল চিকি)"
     },
-    "language_st": {
-        "message": "সেসোথো"
-    },
-    "language_crs": {
-        "message": "সেচেলোইস ক্রেওল"
-    },
-    "language_shn": {
-        "message": "শান"
-    },
-    "language_sn": {
-        "message": "শোনা"
+    "language_sat_Latn": {
+        "message": "সাঁওতালি (ল্যাটিন)"
     },
     "language_scn": {
         "message": "সিসিলিয়ান"
     },
-    "language_szl": {
-        "message": "সাইলেসিয়ান"
-    },
     "language_sd": {
         "message": "সিন্ধি"
     },
+    "language_se": {
+        "message": "সামি (উত্তর)"
+    },
+    "language_sg": {
+        "message": "সাঙ্গো"
+    },
+    "language_shn": {
+        "message": "শান"
+    },
     "language_si": {
-        "message": "সিংহল (সিংহলি)"
+        "message": "সিংহল"
     },
     "language_sk": {
         "message": "স্লোভাক"
@@ -746,38 +902,47 @@
     "language_sl": {
         "message": "স্লোভেনীয়"
     },
+    "language_sm": {
+        "message": "সামোয়ান"
+    },
+    "language_sn": {
+        "message": "শোনা"
+    },
     "language_so": {
         "message": "সোমালি"
     },
-    "language_es": {
-        "message": "স্প্যানিশ"
+    "language_sq": {
+        "message": "আলবেনিয়ান"
     },
-    "language_su": {
-        "message": "সুন্দানিজ"
-    },
-    "language_sw": {
-        "message": "সোয়াহিলি"
+    "language_sr": {
+        "message": "সার্বিয়ান"
     },
     "language_ss": {
         "message": "স্বাতী"
     },
+    "language_st": {
+        "message": "সেসোথো"
+    },
+    "language_su": {
+        "message": "সুন্দানিজ"
+    },
+    "language_sus": {
+        "message": "সুসু"
+    },
     "language_sv": {
         "message": "সুইডিশ"
     },
-    "language_ber": {
-        "message": "Tamazight (টিফিনাঘ)"
+    "language_sw": {
+        "message": "সোয়াহিলি"
     },
-    "language_ber_latn": {
-        "message": "তামাজাইট"
-    },
-    "language_tg": {
-        "message": "তাজিক"
+    "language_szl": {
+        "message": "সাইলেসিয়ান"
     },
     "language_ta": {
         "message": "তামিল"
     },
-    "language_tt": {
-        "message": "তাতার"
+    "language_tcy": {
+        "message": "টুলু"
     },
     "language_te": {
         "message": "তেলেগু"
@@ -785,26 +950,59 @@
     "language_tet": {
         "message": "তেতুম"
     },
+    "language_tg": {
+        "message": "তাজিক"
+    },
     "language_th": {
         "message": "থাই"
     },
     "language_ti": {
         "message": "টাইগ্রিনিয়া"
     },
-    "language_ts": {
-        "message": "সোঙ্গা"
-    },
-    "language_tn": {
-        "message": "সোয়ানা"
-    },
-    "language_tr": {
-        "message": "তুর্কি"
+    "language_tiv": {
+        "message": "টিভ"
     },
     "language_tk": {
         "message": "তুর্কমেন"
     },
-    "language_ak": {
-        "message": "টুই (আকান)"
+    "language_tl": {
+        "message": "ফিলিপিনো"
+    },
+    "language_tn": {
+        "message": "সোয়ানা"
+    },
+    "language_to": {
+        "message": "টোঙ্গান"
+    },
+    "language_tpi": {
+        "message": "টোক পিসিন"
+    },
+    "language_tr": {
+        "message": "তুর্কি"
+    },
+    "language_trp": {
+        "message": "কোকবোরোক"
+    },
+    "language_ts": {
+        "message": "সোঙ্গা"
+    },
+    "language_tt": {
+        "message": "তাতার"
+    },
+    "language_tum": {
+        "message": "তুম্বুকা"
+    },
+    "language_ty": {
+        "message": "তাহিতিয়ান"
+    },
+    "language_tyv": {
+        "message": "টুভান"
+    },
+    "language_udm": {
+        "message": "উদমুর্ত"
+    },
+    "language_ug": {
+        "message": "উইঘুর"
     },
     "language_uk": {
         "message": "ইউক্রেনীয়"
@@ -812,17 +1010,23 @@
     "language_ur": {
         "message": "উর্দু"
     },
-    "language_ug": {
-        "message": "উইঘুর"
-    },
     "language_uz": {
         "message": "উজবেক"
+    },
+    "language_ve": {
+        "message": "ভেন্ডা"
+    },
+    "language_vec": {
+        "message": "ভিনিস্বাসী"
     },
     "language_vi": {
         "message": "ভিয়েতনামী"
     },
-    "language_cy": {
-        "message": "ওয়েলশ"
+    "language_war": {
+        "message": "ওয়ারে"
+    },
+    "language_wo": {
+        "message": "ওলোফ"
     },
     "language_xh": {
         "message": "জোসা"
@@ -835,6 +1039,18 @@
     },
     "language_yua": {
         "message": "ইউকাটেক মায়া"
+    },
+    "language_yue": {
+        "message": "ক্যান্টোনিজ"
+    },
+    "language_zap": {
+        "message": "জাপোটেক"
+    },
+    "language_zh_CN": {
+        "message": "চীনা (সরলীকৃত)"
+    },
+    "language_zh_TW": {
+        "message": "চীনা (ঐতিহ্যগত)"
     },
     "language_zu": {
         "message": "জুলু"

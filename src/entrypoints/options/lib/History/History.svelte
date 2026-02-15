@@ -9,7 +9,7 @@
 			icon={mdiTrashCanOutline}
 			label={browser.i18n.getMessage('options_clear_history')}
 			onclick={deleteHistory}
-			variant="danger"
+			variant="dangerText"
 		/>
 	</div>
 	<div class="flex items-center gap-2 text-sm">

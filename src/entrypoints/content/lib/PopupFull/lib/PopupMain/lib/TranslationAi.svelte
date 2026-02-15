@@ -9,7 +9,7 @@
 				title="Stop translation"
 			/>
 		</div>
-	{:else}
+	{:else if shouldShowRetry}
 		<Button
 			icon={mdiRefresh}
 			label="Retry"
@@ -25,6 +25,9 @@
 	<div style="font-size: {storage.settings.fontSize}px; line-height: {storage.settings.fontSize * 1.6}px">
 		{store.translationAi.text}
 	</div>
+	{#if storage.settings.showTransliteration}
+		<p class="text-sm text-color-on-surface-variant">{store.translated?.sentence.translit}</p>
+	{/if}
 {:else}
 	<p class="text-color-on-surface-variant">
 		{browser.i18n.getMessage('popup_placeholder_translation')}
@@ -43,6 +46,12 @@ import { store } from '~/entrypoints/content/store.svelte';
 import Button from '~/lib/Button.svelte';
 import Loader from '~/lib/Loader.svelte';
 import { mdiStop, mdiRefresh } from '@mdi/js';
+
+interface Props  {
+	shouldShowRetry?: boolean
+}
+
+let { shouldShowRetry = true }: Props = $props();
 
 function stopTranslation() {
 	store.stopTranslation();

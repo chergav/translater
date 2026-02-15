@@ -5,9 +5,6 @@
     "app_description": {
         "message": "متن انتخابی را با Google Translate ترجمه کنید"
     },
-    "app_version": {
-        "message": "نسخه"
-    },
     "context_menus_title": {
         "message": "ترجمه متن انتخاب شده"
     },
@@ -35,29 +32,86 @@
     "options_tab_history": {
         "message": "تاریخچه"
     },
+    "options_general_translation_button": {
+        "message": "دکمه ترجمه"
+    },
+    "options_general_no_sites_selected": {
+        "message": "هیچ سایتی انتخاب نشده است"
+    },
+    "options_general_show_on_selected": {
+        "message": "هنگامی که متن انتخاب شده است پنجره بازشو نمایش داده شود"
+    },
+    "options_general_show_on_selected_hint": {
+        "message": "پس از انتخاب متن ظاهر می شود (بهترین حالت در حالت ساده)."
+    },
+    "options_general_mode_full": {
+        "message": "حالت کامل"
+    },
+    "options_general_mode_full_hint": {
+        "message": "پنجره پاپ آپ با تمامی امکانات"
+    },
+    "options_general_mode_simple": {
+        "message": "حالت ساده"
+    },
+    "options_general_mode_simple_hint": {
+        "message": "فقط ترجمه را نشان دهید، هیچ چیز دیگری."
+    },
     "options_inline_button_show": {
         "message": "نمایش دکمه زمانی که متن انتخاب شده است"
+    },
+    "options_inline_button_show_hint": {
+        "message": "یک دکمه ترجمه در کنار متن انتخاب شده ظاهر می شود."
     },
     "options_text_field_button_show": {
         "message": "دکمه نمایش در فیلد متنی"
     },
+    "options_text_field_button_show_hint": {
+        "message": "هنگامی که متن در فیلدهای ورودی متن انتخاب شده است، دکمه نمایش داده شود."
+    },
+    "options_hide_translation_button": {
+        "message": "دکمه ترجمه زبان خود را پنهان کنید"
+    },
+    "options_hide_translation_button_hint": {
+        "message": "دکمه هنگام انتخاب متن به زبان سیستم شما ظاهر نمی شود"
+    },
     "options_hide_button_on_sites": {
-        "message": "پنهان کردن دکمه در این سایت ها:"
+        "message": "پنهان کردن دکمه ترجمه در وب سایت های خاص:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "دامنه ها را با استفاده از منوی پنجره بازشو در سایتی که می خواهید حذف کنید اضافه کنید"
+        "message": "دامنه ها را با استفاده از منوی پنجره بازشو در سایتی که می خواهید حذف کنید اضافه کنید."
     },
     "options_show_original_text": {
         "message": "نمایش متن منبع"
     },
+    "options_show_original_text_hint": {
+        "message": "نمایش متن اصلی در کنار ترجمه (فقط حالت کامل)."
+    },
     "options_show_transliteration": {
         "message": "نمایش نویسه‌گردانی"
+    },
+    "options_show_transliteration_hint": {
+        "message": "در صورت موجود بودن، نویسه‌گردانی را نشان دهید."
     },
     "options_lock_popup_window": {
         "message": "قفل کردن پنجره بازشو"
     },
     "options_lock_popup_window_hint": {
-        "message": "اگر فعال باشد، هنگام کلیک کردن در خارج از آن، پنجره بازشو بسته نخواهد شد"
+        "message": "هنگام کلیک کردن در خارج، پنجره بازشو باز می ماند."
+    },
+    "options_providers_provider": {
+        "message": "ارائه دهنده"
+    },
+    "options_providers_model": {
+        "message": "مدل"
+    },
+    "options_appearance_theme": {
+        "message": "تم"
+    },
+    "options_appearance_accent_color": {
+        "message": "رنگ تاکیدی"
+    },
+    "options_appearance_bg_and_text": {
+        "message": "پس زمینه و متن ساده"
     },
     "options_history_length": {
         "message": "ورودی های تاریخچه (حداکثر)"
@@ -122,12 +176,6 @@
     "options_support_donations": {
         "message": "اگر می خواهید از این نرم افزار رایگان پشتیبانی کنید"
     },
-    "options_address": {
-        "message": "آدرس"
-    },
-    "options_copy_address": {
-        "message": "آدرس را کپی کنید"
-    },
     "text_expand": {
         "message": "بیشتر"
     },
@@ -176,6 +224,12 @@
     "popup_menu_options_link": {
         "message": "تنظیمات اضافی"
     },
+    "popup_menu_switch_to_simple_mode": {
+        "message": "به حالت ساده بروید"
+    },
+    "popup_menu_switch_to_full_mode": {
+        "message": "به حالت کامل بروید"
+    },
     "popup_placeholder_translation": {
         "message": "ترجمه"
     },
@@ -196,12 +250,6 @@
     },
     "tooltip_copy_not_support_on_http": {
         "message": "کپی در سایت های HTTP پشتیبانی نمی شود"
-    },
-    "tooltip_copyed": {
-        "message": "کپی شده است"
-    },
-    "tooltip_copy_error": {
-        "message": "خطای کپی!"
     },
     "tooltip_listen_to_the_text": {
         "message": "به متن گوش کنید"
@@ -251,6 +299,9 @@
     "language_auto": {
         "message": "تشخیص زبان"
     },
+    "language_aa": {
+        "message": "آفر"
+    },
     "language_ab": {
         "message": "آبخاز"
     },
@@ -263,8 +314,8 @@
     "language_af": {
         "message": "آفریقایی"
     },
-    "language_sq": {
-        "message": "آلبانیایی"
+    "language_ak": {
+        "message": "توئی (آکان)"
     },
     "language_alz": {
         "message": "الور"
@@ -275,11 +326,11 @@
     "language_ar": {
         "message": "عربی"
     },
-    "language_hy": {
-        "message": "ارمنی"
-    },
     "language_as": {
         "message": "آسامی"
+    },
+    "language_av": {
+        "message": "آوار"
     },
     "language_awa": {
         "message": "آوادهی"
@@ -290,26 +341,20 @@
     "language_az": {
         "message": "آذربایجانی"
     },
-    "language_ban": {
-        "message": "بالیایی"
-    },
-    "language_bm": {
-        "message": "بامبارا"
-    },
     "language_ba": {
         "message": "باشقیر"
     },
-    "language_eu": {
-        "message": "باسکی"
+    "language_bal": {
+        "message": "بلوچی"
     },
-    "language_btx": {
-        "message": "باتاک کارو"
-    },
-    "language_bts": {
-        "message": "باتاک سیمالونگون"
+    "language_ban": {
+        "message": "بالیایی"
     },
     "language_bbc": {
         "message": "باتک توبا"
+    },
+    "language_bci": {
+        "message": "بائوله"
     },
     "language_be": {
         "message": "بلاروسی"
@@ -317,11 +362,17 @@
     "language_bem": {
         "message": "بمبا"
     },
-    "language_bn": {
-        "message": "بنگالی"
+    "language_ber": {
+        "message": "تمازیت (تیفینق)"
+    },
+    "language_ber_Latn": {
+        "message": "تمازیت"
     },
     "language_bew": {
         "message": "بتاوی"
+    },
+    "language_bg": {
+        "message": "بلغاری"
     },
     "language_bho": {
         "message": "بوجپوری"
@@ -329,59 +380,89 @@
     "language_bik": {
         "message": "بیکول"
     },
-    "language_bs": {
-        "message": "بوسنیایی"
+    "language_bm": {
+        "message": "بامبارا"
+    },
+    "language_bm_Nkoo": {
+        "message": "NKo"
+    },
+    "language_bn": {
+        "message": "بنگالی"
+    },
+    "language_bo": {
+        "message": "تبتی"
     },
     "language_br": {
         "message": "برتون"
     },
-    "language_bg": {
-        "message": "بلغاری"
+    "language_bs": {
+        "message": "بوسنیایی"
+    },
+    "language_bts": {
+        "message": "باتاک سیمالونگون"
+    },
+    "language_btx": {
+        "message": "باتاک کارو"
     },
     "language_bua": {
         "message": "بوریات"
     },
-    "language_yue": {
-        "message": "کانتونی"
-    },
     "language_ca": {
         "message": "کاتالان"
+    },
+    "language_ce": {
+        "message": "چچنی"
     },
     "language_ceb": {
         "message": "سبوانو"
     },
-    "language_ny": {
-        "message": "چیچوا (نیانجا)"
+    "language_cgg": {
+        "message": "کیگا"
     },
-    "language_zh_CN": {
-        "message": "چینی (ساده شده)"
+    "language_ch": {
+        "message": "چامورو"
     },
-    "language_zh_TW": {
-        "message": "چینی (سنتی)"
+    "language_chk": {
+        "message": "چوکی"
     },
-    "language_cv": {
-        "message": "چوواش"
+    "language_chm": {
+        "message": "میدو ماری"
+    },
+    "language_ckb": {
+        "message": "کردی (سورانی)"
+    },
+    "language_cnh": {
+        "message": "هاخا چین"
     },
     "language_co": {
         "message": "کورسی"
     },
     "language_crh": {
-        "message": "تاتار کریمه"
+        "message": "تاتاری کریمه (سیریلیک)"
     },
-    "language_hr": {
-        "message": "کروات"
+    "language_crh_Latn": {
+        "message": "تاتاری کریمه (لاتین)"
+    },
+    "language_crs": {
+        "message": "کریول سیشلو"
     },
     "language_cs": {
         "message": "چک"
     },
+    "language_cv": {
+        "message": "چوواش"
+    },
+    "language_cy": {
+        "message": "ولز"
+    },
     "language_da": {
         "message": "دانمارکی"
     },
+    "language_de": {
+        "message": "آلمانی"
+    },
     "language_din": {
         "message": "دینکا"
-    },
-    "language_dv": {
-        "message": "دیوه ای"
     },
     "language_doi": {
         "message": "دوگری"
@@ -389,11 +470,20 @@
     "language_dov": {
         "message": "دمبه"
     },
-    "language_nl": {
-        "message": "هلندی"
+    "language_dv": {
+        "message": "دیوهی"
+    },
+    "language_dyu": {
+        "message": "دیولا"
     },
     "language_dz": {
         "message": "Dzongkha"
+    },
+    "language_ee": {
+        "message": "میش"
+    },
+    "language_el": {
+        "message": "یونانی"
     },
     "language_en": {
         "message": "انگلیسی"
@@ -401,65 +491,77 @@
     "language_eo": {
         "message": "اسپرانتو"
     },
+    "language_es": {
+        "message": "اسپانیایی"
+    },
     "language_et": {
         "message": "استونیایی"
     },
-    "language_ee": {
-        "message": "میش"
+    "language_eu": {
+        "message": "باسکی"
     },
-    "language_fj": {
-        "message": "فیجیایی"
+    "language_fa": {
+        "message": "فارسی"
     },
-    "language_fil": {
-        "message": "فیلیپینی (تاگالوگ)"
+    "language_fa_AF": {
+        "message": "دری"
+    },
+    "language_ff": {
+        "message": "فولانی"
     },
     "language_fi": {
         "message": "فنلاندی"
     },
+    "language_fil": {
+        "message": "فیلیپینی (تاگالوگ)"
+    },
+    "language_fj": {
+        "message": "فیجیایی"
+    },
+    "language_fo": {
+        "message": "فاروئی"
+    },
+    "language_fon": {
+        "message": "فون"
+    },
     "language_fr": {
         "message": "فرانسوی"
     },
-    "language_fr_FR": {
-        "message": "فرانسوی (فرانسوی)"
-    },
     "language_fr_CA": {
-        "message": "فرانسوی (کانادایی)"
+        "message": "فرانسوی (کانادا)"
+    },
+    "language_fr_FR": {
+        "message": "فرانسوی (فرانسه)"
+    },
+    "language_fur": {
+        "message": "فریولی"
     },
     "language_fy": {
         "message": "فریزی"
     },
-    "language_ff": {
-        "message": "فولفولد"
+    "language_ga": {
+        "message": "ایرلندی"
     },
     "language_gaa": {
         "message": "گا"
     },
+    "language_gd": {
+        "message": "گیلیک اسکاتلندی"
+    },
     "language_gl": {
         "message": "گالیسیایی"
-    },
-    "language_lg": {
-        "message": "گاندا (لوگاندا)"
-    },
-    "language_ka": {
-        "message": "گرجی"
-    },
-    "language_de": {
-        "message": "آلمانی"
-    },
-    "language_el": {
-        "message": "یونانی"
     },
     "language_gn": {
         "message": "گوارانی"
     },
+    "language_gom": {
+        "message": "کنکانی"
+    },
     "language_gu": {
         "message": "گجراتی"
     },
-    "language_ht": {
-        "message": "کریول هائیتی"
-    },
-    "language_cnh": {
-        "message": "هاخا چین"
+    "language_gv": {
+        "message": "مانکس"
     },
     "language_ha": {
         "message": "هاوسا"
@@ -467,122 +569,158 @@
     "language_haw": {
         "message": "هاوایی"
     },
-    "language_iw": {
-        "message": "عبری"
+    "language_hi": {
+        "message": "هندی"
     },
     "language_hil": {
         "message": "هیلیگاینون"
     },
-    "language_hi": {
-        "message": "هندی"
-    },
     "language_hmn": {
         "message": "همونگ"
     },
-    "language_hu": {
-        "message": "مجارستانی"
+    "language_hr": {
+        "message": "کروات"
     },
     "language_hrx": {
         "message": "هونسریک"
     },
-    "language_is": {
-        "message": "ایسلندی"
+    "language_ht": {
+        "message": "کریول هائیتی"
+    },
+    "language_hu": {
+        "message": "مجارستانی"
+    },
+    "language_hy": {
+        "message": "ارمنی"
+    },
+    "language_iba": {
+        "message": "ایبان"
+    },
+    "language_id": {
+        "message": "اندونزیایی"
     },
     "language_ig": {
         "message": "ایگبو"
     },
     "language_ilo": {
-        "message": "ایلوکو"
+        "message": "ایلوکانو"
     },
-    "language_id": {
-        "message": "اندونزیایی"
-    },
-    "language_ga": {
-        "message": "ایرلندی"
+    "language_is": {
+        "message": "ایسلندی"
     },
     "language_it": {
         "message": "ایتالیایی"
     },
+    "language_iu": {
+        "message": "اینوکتوت (هجایی)"
+    },
+    "language_iu_Latn": {
+        "message": "اینوکتوت (لاتین)"
+    },
+    "language_iw": {
+        "message": "عبری"
+    },
     "language_ja": {
         "message": "ژاپنی"
+    },
+    "language_jam": {
+        "message": "پاتوی جامائیکایی"
     },
     "language_jw": {
         "message": "جاوه ای"
     },
-    "language_kn": {
-        "message": "کانادا"
+    "language_ka": {
+        "message": "گرجی"
     },
-    "language_pam": {
-        "message": "کاپاپانگان"
+    "language_kac": {
+        "message": "جینگپو"
+    },
+    "language_kek": {
+        "message": "قِقچی"
+    },
+    "language_kg": {
+        "message": "کیکونگو"
+    },
+    "language_kha": {
+        "message": "خسی"
     },
     "language_kk": {
         "message": "قزاقستان"
     },
+    "language_kl": {
+        "message": "کالاالیسوت"
+    },
     "language_km": {
         "message": "خمر"
     },
-    "language_cgg": {
-        "message": "کیگا"
-    },
-    "language_rw": {
-        "message": "کینیارواندا"
-    },
-    "language_ktu": {
-        "message": "کیتوبا"
-    },
-    "language_gom": {
-        "message": "کنکانی"
+    "language_kn": {
+        "message": "کانادا"
     },
     "language_ko": {
         "message": "کره ای"
     },
+    "language_kr": {
+        "message": "کانوری"
+    },
     "language_kri": {
         "message": "کریو"
+    },
+    "language_ktu": {
+        "message": "کیتوبا"
     },
     "language_ku": {
         "message": "کردی (کرمانجی)"
     },
-    "language_ckb": {
-        "message": "کردی (سورانی)"
+    "language_kv": {
+        "message": "کومی"
     },
     "language_ky": {
         "message": "قرقیزستان"
     },
-    "language_lo": {
-        "message": "لائوس"
-    },
-    "language_ltg": {
-        "message": "لاتگالیان"
-    },
     "language_la": {
         "message": "لاتین"
-    },
-    "language_lv": {
-        "message": "لتونی"
-    },
-    "language_lij": {
-        "message": "لیگوریایی"
-    },
-    "language_li": {
-        "message": "لیمبورگ"
-    },
-    "language_ln": {
-        "message": "لینگالا"
-    },
-    "language_lt": {
-        "message": "لیتوانیایی"
-    },
-    "language_lmo": {
-        "message": "لومبارد"
-    },
-    "language_luo": {
-        "message": "لو"
     },
     "language_lb": {
         "message": "لوگزامبورگی"
     },
-    "language_mk": {
-        "message": "مقدونی"
+    "language_lg": {
+        "message": "لوگاندا"
+    },
+    "language_li": {
+        "message": "لیمبورگ"
+    },
+    "language_lij": {
+        "message": "لیگوریایی"
+    },
+    "language_lmo": {
+        "message": "لومبارد"
+    },
+    "language_ln": {
+        "message": "لینگالا"
+    },
+    "language_lo": {
+        "message": "لائوس"
+    },
+    "language_lt": {
+        "message": "لیتوانیایی"
+    },
+    "language_ltg": {
+        "message": "لاتگالیان"
+    },
+    "language_lua": {
+        "message": "شیلوبا"
+    },
+    "language_luo": {
+        "message": "لو"
+    },
+    "language_lus": {
+        "message": "میزو"
+    },
+    "language_lv": {
+        "message": "لتونی"
+    },
+    "language_mad": {
+        "message": "مادورایی"
     },
     "language_mai": {
         "message": "مایتیلی"
@@ -590,8 +728,38 @@
     "language_mak": {
         "message": "ماکاسار"
     },
+    "language_mam": {
+        "message": "مامان"
+    },
+    "language_mfe": {
+        "message": "کریول موریس"
+    },
     "language_mg": {
         "message": "مالاگاسی"
+    },
+    "language_mh": {
+        "message": "مارشالی"
+    },
+    "language_mi": {
+        "message": "مائوری"
+    },
+    "language_min": {
+        "message": "مینانگ"
+    },
+    "language_mk": {
+        "message": "مقدونی"
+    },
+    "language_ml": {
+        "message": "مالایایی"
+    },
+    "language_mn": {
+        "message": "مغولی"
+    },
+    "language_mni_Mtei": {
+        "message": "Meiteilon (مانیپوری)"
+    },
+    "language_mr": {
+        "message": "مراتی"
     },
     "language_ms": {
         "message": "مالایی"
@@ -599,146 +767,134 @@
     "language_ms_Arab": {
         "message": "مالایی (جاوی)"
     },
-    "language_ml": {
-        "message": "مالایایی"
-    },
     "language_mt": {
         "message": "مالتی"
     },
-    "language_mi": {
-        "message": "مائوری"
-    },
-    "language_mr": {
-        "message": "مراتی"
-    },
-    "language_chm": {
-        "message": "میدو ماری"
-    },
-    "language_mni_Mtei": {
-        "message": "Meiteilon (مانیپوری)"
-    },
-    "language_min": {
-        "message": "مینانگ"
-    },
-    "language_lus": {
-        "message": "میزو"
-    },
-    "language_mn": {
-        "message": "مغولی"
+    "language_mwr": {
+        "message": "مرودی"
     },
     "language_my": {
         "message": "میانمار (برمه)"
     },
-    "language_nr": {
-        "message": "ندبله (جنوب)"
-    },
-    "language_new": {
-        "message": "نپالباسا (نواری)"
+    "language_ndc_ZW": {
+        "message": "نداو"
     },
     "language_ne": {
         "message": "نپالی"
     },
-    "language_nso": {
-        "message": "سوتو شمالی (سپدی)"
+    "language_new": {
+        "message": "نپالباسا (نواری)"
+    },
+    "language_nhe": {
+        "message": "ناهواتل (هواستکا شرقی)"
+    },
+    "language_nl": {
+        "message": "هلندی"
     },
     "language_no": {
         "message": "نروژی"
     },
+    "language_nr": {
+        "message": "ندبله (جنوب)"
+    },
+    "language_nso": {
+        "message": "سپدی"
+    },
     "language_nus": {
         "message": "Nuer"
+    },
+    "language_ny": {
+        "message": "چیچوا"
     },
     "language_oc": {
         "message": "اکسیتان"
     },
-    "language_or": {
-        "message": "اودیا (اوریا)"
-    },
     "language_om": {
         "message": "اورومو"
     },
-    "language_pag": {
-        "message": "پانگاسینان"
+    "language_or": {
+        "message": "اودیا (اوریا)"
     },
-    "language_pap": {
-        "message": "پاپیونه"
-    },
-    "language_ps": {
-        "message": "پشتو"
-    },
-    "language_fa": {
-        "message": "فارسی"
-    },
-    "language_pl": {
-        "message": "لهستانی"
-    },
-    "language_pt": {
-        "message": "پرتغالی"
-    },
-    "language_pt_PT": {
-        "message": "پرتغالی (پرتغال)"
-    },
-    "language_pt_BR": {
-        "message": "پرتغالی (برزیل)"
+    "language_os": {
+        "message": "اوستیایی"
     },
     "language_pa": {
-        "message": "پنجابی"
+        "message": "پنجابی (گورموکی)"
     },
     "language_pa_Arab": {
         "message": "پنجابی (شاهموخی)"
     },
+    "language_pag": {
+        "message": "پانگاسینان"
+    },
+    "language_pam": {
+        "message": "کاپاپانگان"
+    },
+    "language_pap": {
+        "message": "پاپیونه"
+    },
+    "language_pl": {
+        "message": "لهستانی"
+    },
+    "language_ps": {
+        "message": "پشتو"
+    },
+    "language_pt": {
+        "message": "پرتغالی"
+    },
+    "language_pt_BR": {
+        "message": "پرتغالی (برزیل)"
+    },
+    "language_pt_PT": {
+        "message": "پرتغالی (پرتغال)"
+    },
     "language_qu": {
         "message": "کچوا"
-    },
-    "language_rom": {
-        "message": "رومی"
-    },
-    "language_ro": {
-        "message": "رومانیایی"
     },
     "language_rn": {
         "message": "رودی"
     },
+    "language_ro": {
+        "message": "رومانیایی"
+    },
+    "language_rom": {
+        "message": "رومی"
+    },
     "language_ru": {
         "message": "روسی"
     },
-    "language_sm": {
-        "message": "ساموآ"
-    },
-    "language_sg": {
-        "message": "سانگو"
+    "language_rw": {
+        "message": "کینیارواندا"
     },
     "language_sa": {
         "message": "سانسکریت"
     },
-    "language_gd": {
-        "message": "گیلیک اسکاتلندی"
+    "language_sah": {
+        "message": "یاکوت"
     },
-    "language_sr": {
-        "message": "صربی"
+    "language_sat": {
+        "message": "سانتالی (اول چیکی)"
     },
-    "language_st": {
-        "message": "سسوتو"
-    },
-    "language_crs": {
-        "message": "کریول سیشلو"
-    },
-    "language_shn": {
-        "message": "شان"
-    },
-    "language_sn": {
-        "message": "شونا"
+    "language_sat_Latn": {
+        "message": "سانتالی (لاتین)"
     },
     "language_scn": {
         "message": "سیسیلی"
     },
-    "language_szl": {
-        "message": "سیلزی"
-    },
     "language_sd": {
         "message": "سندی"
     },
+    "language_se": {
+        "message": "سامی (شمال)"
+    },
+    "language_sg": {
+        "message": "سانگو"
+    },
+    "language_shn": {
+        "message": "شان"
+    },
     "language_si": {
-        "message": "سینهالی (سینهالی)"
+        "message": "سینهالی"
     },
     "language_sk": {
         "message": "اسلواکی"
@@ -746,38 +902,47 @@
     "language_sl": {
         "message": "اسلوونیایی"
     },
+    "language_sm": {
+        "message": "ساموآ"
+    },
+    "language_sn": {
+        "message": "شونا"
+    },
     "language_so": {
         "message": "سومالی"
     },
-    "language_es": {
-        "message": "اسپانیایی"
+    "language_sq": {
+        "message": "آلبانیایی"
     },
-    "language_su": {
-        "message": "ساندانی"
-    },
-    "language_sw": {
-        "message": "سواحیلی"
+    "language_sr": {
+        "message": "صربی"
     },
     "language_ss": {
         "message": "سواتی"
     },
+    "language_st": {
+        "message": "سسوتو"
+    },
+    "language_su": {
+        "message": "ساندانی"
+    },
+    "language_sus": {
+        "message": "سوسو"
+    },
     "language_sv": {
         "message": "سوئدی"
     },
-    "language_ber": {
-        "message": "تمازیت (تیفینق)"
+    "language_sw": {
+        "message": "سواحیلی"
     },
-    "language_ber_latn": {
-        "message": "تمازیت"
-    },
-    "language_tg": {
-        "message": "تاجیک"
+    "language_szl": {
+        "message": "سیلزی"
     },
     "language_ta": {
         "message": "تامیل"
     },
-    "language_tt": {
-        "message": "تاتاری"
+    "language_tcy": {
+        "message": "تولو"
     },
     "language_te": {
         "message": "تلوگو"
@@ -785,26 +950,59 @@
     "language_tet": {
         "message": "تتوم"
     },
+    "language_tg": {
+        "message": "تاجیک"
+    },
     "language_th": {
         "message": "تایلندی"
     },
     "language_ti": {
         "message": "تیگرینیا"
     },
-    "language_ts": {
-        "message": "سونگا"
-    },
-    "language_tn": {
-        "message": "تسوانا"
-    },
-    "language_tr": {
-        "message": "ترکی"
+    "language_tiv": {
+        "message": "تیو"
     },
     "language_tk": {
         "message": "ترکمن"
     },
-    "language_ak": {
-        "message": "توئی (آکان)"
+    "language_tl": {
+        "message": "فیلیپینی"
+    },
+    "language_tn": {
+        "message": "تسوانا"
+    },
+    "language_to": {
+        "message": "تونگان"
+    },
+    "language_tpi": {
+        "message": "توک پیسین"
+    },
+    "language_tr": {
+        "message": "ترکی"
+    },
+    "language_trp": {
+        "message": "کوکبوروک"
+    },
+    "language_ts": {
+        "message": "سونگا"
+    },
+    "language_tt": {
+        "message": "تاتاری"
+    },
+    "language_tum": {
+        "message": "تومبوکا"
+    },
+    "language_ty": {
+        "message": "تاهیتی"
+    },
+    "language_tyv": {
+        "message": "تووان"
+    },
+    "language_udm": {
+        "message": "اودمورت"
+    },
+    "language_ug": {
+        "message": "اویغور"
     },
     "language_uk": {
         "message": "اوکراینی"
@@ -812,17 +1010,23 @@
     "language_ur": {
         "message": "اردو"
     },
-    "language_ug": {
-        "message": "اویغور"
-    },
     "language_uz": {
         "message": "ازبکستان"
+    },
+    "language_ve": {
+        "message": "وندا"
+    },
+    "language_vec": {
+        "message": "ونیزی"
     },
     "language_vi": {
         "message": "ویتنامی"
     },
-    "language_cy": {
-        "message": "ولزی"
+    "language_war": {
+        "message": "وارای"
+    },
+    "language_wo": {
+        "message": "وولوف"
     },
     "language_xh": {
         "message": "خوسا"
@@ -835,6 +1039,18 @@
     },
     "language_yua": {
         "message": "یوکاتک مایا"
+    },
+    "language_yue": {
+        "message": "کانتونی"
+    },
+    "language_zap": {
+        "message": "Zapotec"
+    },
+    "language_zh_CN": {
+        "message": "چینی (ساده شده)"
+    },
+    "language_zh_TW": {
+        "message": "چینی (سنتی)"
     },
     "language_zu": {
         "message": "زولو"

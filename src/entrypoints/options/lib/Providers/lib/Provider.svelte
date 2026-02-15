@@ -20,7 +20,7 @@
 
 	<Input
 		disabled={!providerStore.isCustomProvider}
-		label="Provider"
+		label={browser.i18n.getMessage('options_providers_provider')}
 		onblur={setProviderName}
 		value={provider.name}
 	/>

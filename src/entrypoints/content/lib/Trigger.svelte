@@ -7,7 +7,7 @@
 			'flex items-center justify-center rounded-lg p-0.5 shadow-lg',
 			'border border-color-surface-high bg-color-surface text-color-on-surface',
 		]}
-		onclick={openPopup}
+		onclick={store.openPopup}
 		title={browser.i18n.getMessage('tooltip_translate_text')}
 		type="button"
 		in:fade|global={{ duration: 150 }}
@@ -52,10 +52,4 @@ const triggerPosition: Action = trigger => {
 		});
 	});
 };
-
-function openPopup() {
-	store.showPopup = true;
-	store.textToTranslate = store.selectedText;
-	store.translate();
-}
 </script>

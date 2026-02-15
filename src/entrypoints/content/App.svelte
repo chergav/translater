@@ -4,8 +4,7 @@
 	data-variant={storage.settings.themeVariant}
 >
 	{#await shouldShowButtonPromise then isUserLanguage}
-	{console.log('isUserLanguage', isUserLanguage)}
-		{#if isUserLanguage && isShowTrigger}
+		{#if isUserLanguage && shouldShowTrigger}
 			<Trigger />
 		{/if}
 	{/await}
@@ -18,12 +17,12 @@
 <svelte:document onmouseup={onMouseup} />
 
 <script lang="ts">
-import type { Message } from '~/types';
+import { type Message } from '~/types';
 import { storage } from '~/shared/storage.svelte';
 import { store } from './store.svelte';
 import { providerStore } from '~/entrypoints/options/lib/Providers/providerStore.svelte';
 import Trigger from './lib/Trigger.svelte';
-import Popup from './lib/Popup/Popup.svelte';
+import Popup from './lib/Popup.svelte';
 import { getSelectedText, getSelectedElemRect, getSelectedEndCoord, isInTextField } from './utils/coords';
 import { CUSTOM_ELEMENT_TAG } from '~/shared/constants';
 import { detectLanguage } from '~/shared/browser';
@@ -37,12 +36,14 @@ let isSettingsShowButton = $derived<boolean>(
 		: storage.settings.inlineButtonShow,
 );
 let isDomainInBlacklist = $derived<boolean>(storage.settings.blacklistDomainForInline.includes(store.hostname));
-let isShowTrigger = $derived<boolean>(
+let shouldShowTrigger = $derived<boolean>(
+	!storage.settings.showPopupOnSelection &&
 	!!store.selectedText &&
 	!!store.selectedEndCoord &&
 	isSettingsShowButton &&
 	!isDomainInBlacklist,
 );
+let debounceDuration = $derived<number>(storage.settings.showPopupOnSelection ? 400 : 200);
 
 const debouncedMouseup = useDebounce((event: MouseEvent) => {
 	if (event.button !== 0) return; // is left click
@@ -57,7 +58,11 @@ const debouncedMouseup = useDebounce((event: MouseEvent) => {
 	store.selectedEndCoord = getSelectedEndCoord();
 	store.isInTextField = isInTextField();
 	store.hostname = window.location.hostname;
-}, 200);
+
+	if (storage.settings.showPopupOnSelection && store.selectedText) {
+		store.openPopup();
+	}
+}, () => debounceDuration);
 
 function onMouseup(event: MouseEvent) {
 	debouncedMouseup(event);
@@ -67,11 +72,9 @@ async function shouldShowButton() {
 	if (!storage.settings.hideButtonForUserLanguage) return true;
 
 	const detectedLanguage = await detectLanguage(store.selectedText);
-	console.debug('detectedLanguage', detectedLanguage);
 
 	if (!detectedLanguage) return true;
 	const userLanguage = browser.i18n.getUILanguage();
-	console.debug('userLanguage', userLanguage);
 
 	return !userLanguage.startsWith(detectedLanguage);
 }
@@ -97,8 +100,6 @@ function onMessage(
 			store.translate();
 		}
 	}
-
-	return true;
 }
 
 $effect(() => {

@@ -1,12 +1,13 @@
-<div class="scrollbar flex h-full flex-col gap-6 overflow-y-auto p-6">
+<div class="scrollbar flex h-full flex-col gap-4 overflow-y-auto p-6">
+	<div class="text-xl">{browser.i18n.getMessage('options_appearance_theme')}</div>
 	<div class="flex flex-col gap-1">
 		{#each themes as { value, label } (value)}
 			<Radio {label} {value} bind:group={storage.settings.theme} />
 		{/each}
 	</div>
-
+	<div class="pt-2 text-xl">{browser.i18n.getMessage('options_appearance_accent_color')}</div>
 	<Accent />
-
+	<div class="pt-2 text-xl">{browser.i18n.getMessage('options_appearance_bg_and_text')}</div>
 	<Variants />
 </div>
 

@@ -14,8 +14,9 @@
 			'border border-color-surface-high hover:bg-color-primary/10',
 			open && 'bg-color-primary/10',
 		]}
+		title={getI18nLangName(value)}
 	>
-		<span class="block truncate">{getI18nLangName(value)}</span>
+		<span class="block truncate">{getI18nLangName(value, false)}</span>
 		<Icon
 			class={[
 				'pointer-events-none absolute right-1',
@@ -124,12 +125,15 @@ const inputFocus: Action<HTMLInputElement> = input => {
 	tick().then(() => input.focus());
 };
 
-const getI18nLangName = (langCode: string) =>
+function getI18nLangName(langCode: string, showCode: boolean = true) {
 	// @ts-expect-error ignore messageName
-	browser.i18n.getMessage(`language_${langCode.replace('-', '_')}`).toLowerCase() || 'language not defined';
+	const i18nLanguage = browser.i18n.getMessage(`language_${langCode.replace('-', '_')}`).toLowerCase() || 'language not defined';
 
-const sortedI18nLanguages = languages
-	.map(({ code }) => ({
+	return `${i18nLanguage}${showCode ? ` [${langCode}]`: ''}`;
+}
+
+const sortedI18nLanguages = Object.keys(languages)
+	.map(code => ({
 		code,
 		language: getI18nLangName(code),
 	}))
@@ -153,7 +157,7 @@ let filteredLangs = $derived<Language[]>(sortedI18nLanguages
 			const re = new RegExp(`(${search})`, 'gi');
 			return {
 				code,
-				language: language.replace(re, '<span class="font-bold text-accent">$&</span>'),
+				language: language.replace(re, '<mark>$&</mark>'),
 			};
 		}
 		return {
@@ -163,7 +167,7 @@ let filteredLangs = $derived<Language[]>(sortedI18nLanguages
 	}),
 );
 
-let columns = $derived<number>(search === '' ? 3 : 1);
+let columns = $derived<number>(search === '' ? 2 : 1);
 let langColumns = $derived(listToColumns(filteredLangs, columns));
 
 function arrayTo2dArray(

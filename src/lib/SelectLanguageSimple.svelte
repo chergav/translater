@@ -1,12 +1,12 @@
-<label class="inline-flex items-center gap-2 select-none">
+<label class="inline-flex items-center justify-between gap-2 select-none">
 	{#if label}
 		<span>{label}</span>
 	{/if}
 	<select
 		name="select"
 		class={[
-			'max-w-[210px] cursor-pointer rounded-lg bg-color-surface text-color-on-surface transition-colors',
-			'border border-color-outline-variant focus:border-color-outline',
+			'cursor-pointer rounded-lg bg-color-surface text-color-on-surface transition-colors',
+			'border border-color-surface-highest focus:border-color-outline-variant',
 			'focus-visible:outline-custom focus-visible:outline-color-primary',
 			small ? 'p-1.5 text-sm' : 'p-2.5 text-base',
 		]}
@@ -44,11 +44,11 @@ let {
 	onchange,
 }: Props = $props();
 
-const sortedI18nLanguages = languages
-	.map(({ code }) => ({
+const sortedI18nLanguages = Object.keys(languages)
+	.map(code => ({
 		code,
 		// @ts-expect-error ignore messageName
-		language: browser.i18n.getMessage(`language_${code.replace('-', '_')}`).toLowerCase(),
+		language: `${browser.i18n.getMessage(`language_${code.replace('-', '_')}`).toLowerCase()} [${code}]`,
 	}))
 	.sort((a, b) => a.language.localeCompare(b.language));
 </script>

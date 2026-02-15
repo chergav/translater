@@ -1,5 +1,5 @@
 <main class="flex h-screen flex-col items-center p-4">
-	<div class="flex size-full max-w-7xl flex-row gap-4">
+	<div class="flex size-full max-w-6xl flex-row gap-4">
 		<div class="flex flex-col justify-between">
 			<div class="flex flex-col">
 				<div class="flex items-center pb-4">
@@ -47,7 +47,7 @@ import Button from '~/lib/Button.svelte';
 import Link from '~/lib/Link.svelte';
 import TranslatorVersion from '~/lib/TranslatorVersion.svelte';
 import RateUs from '~/lib/RateUs.svelte';
-import General from './lib/General.svelte';
+import General from './lib/General/General.svelte';
 import Appearance from './lib/Appearance/Appearance.svelte';
 import TTS from './lib/TTS/TTS.svelte';
 import History from './lib/History/History.svelte';

@@ -37,19 +37,6 @@ function genTranslatedObject(source: Messages, translatedArray: string[]) {
 
 	for (let i = 0; i < sourceKeys.length; i++) {
 		const key = sourceKeys[i];
-		// let message = translatedArray[i].trim();
-
-		// if (key === 'app_name') {
-		// 	message = `Translator ${message}`;
-		// 	console.log(message);
-		// }
-
-		// if (['options_title', 'commands_open_translator'].includes(key)) {
-		// 	// $ APP_NAME $ -> $APP_NAME$
-		// 	message = message.replace(/\$\s*(\w+)\s*\$/g, (_match, p1) => `$${p1}$`);
-		// 	console.log(message);
-		// }
-
 		clonedSource[key].message = translatedArray[i].trim();
 	}
 
@@ -59,7 +46,6 @@ function genTranslatedObject(source: Messages, translatedArray: string[]) {
 async function translateLocales(inputFile: string, locales: string[]) {
 	const fileContent = await readFile(inputFile, 'utf-8');
 	const source: Messages = JSON.parse(fileContent);
-	// source.app_name.message = source.app_name.message.slice(11); // delete "Translator "
 	const messageArray = Object.values(source).map(value => value.message);
 
 	const translationsByLocale = await Promise.all(
@@ -87,7 +73,7 @@ async function translateLocales(inputFile: string, locales: string[]) {
 			const fileName = `${directory}messages.json`;
 			const fileContent = JSON.stringify(translatedObject, null, 4);
 			await writeFile(fileName, fileContent);
-			console.log(`Translation saved in ${fileName}`);
+			console.log(`${locale} - Done`);
 		}),
 	);
 }

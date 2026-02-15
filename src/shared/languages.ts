@@ -1,788 +1,289 @@
-import type { Language } from '~/types';
 
-export const languages: Language[] = [
-	{
-		language: 'Abkhaz',
-		code: 'ab',
-	},
-	{
-		language: 'Acehnese',
-		code: 'ace',
-	},
-	{
-		language: 'Acholi',
-		code: 'ach',
-	},
-	{
-		language: 'Afrikaans',
-		code: 'af',
-	},
-	{
-		language: 'Albanian',
-		code: 'sq',
-	},
-	{
-		language: 'Alur',
-		code: 'alz',
-	},
-	{
-		language: 'Amharic',
-		code: 'am',
-	},
-	{
-		language: 'Arabic',
-		code: 'ar',
-	},
-	{
-		language: 'Armenian',
-		code: 'hy',
-	},
-	{
-		language: 'Assamese',
-		code: 'as',
-	},
-	{
-		language: 'Awadhi',
-		code: 'awa',
-	},
-	{
-		language: 'Aymara',
-		code: 'ay',
-	},
-	{
-		language: 'Azerbaijani',
-		code: 'az',
-	},
-	{
-		language: 'Balinese',
-		code: 'ban',
-	},
-	{
-		language: 'Bambara',
-		code: 'bm',
-	},
-	{
-		language: 'Bashkir',
-		code: 'ba',
-	},
-	{
-		language: 'Basque',
-		code: 'eu',
-	},
-	{
-		language: 'Batak Karo',
-		code: 'btx',
-	},
-	{
-		language: 'Batak Simalungun',
-		code: 'bts',
-	},
-	{
-		language: 'Batak Toba',
-		code: 'bbc',
-	},
-	{
-		language: 'Belarusian',
-		code: 'be',
-	},
-	{
-		language: 'Bemba',
-		code: 'bem',
-	},
-	{
-		language: 'Bengali',
-		code: 'bn',
-	},
-	{
-		language: 'Betawi',
-		code: 'bew',
-	},
-	{
-		language: 'Bhojpuri',
-		code: 'bho',
-	},
-	{
-		language: 'Bikol',
-		code: 'bik',
-	},
-	{
-		language: 'Bosnian',
-		code: 'bs',
-	},
-	{
-		language: 'Breton',
-		code: 'br',
-	},
-	{
-		language: 'Bulgarian',
-		code: 'bg',
-	},
-	{
-		language: 'Buryat',
-		code: 'bua',
-	},
-	{
-		language: 'Cantonese',
-		code: 'yue',
-	},
-	{
-		language: 'Catalan',
-		code: 'ca',
-	},
-	{
-		language: 'Cebuano',
-		code: 'ceb',
-	},
-	{
-		language: 'Chichewa (Nyanja)',
-		code: 'ny',
-	},
-	{
-		language: 'Chinese (Simplified)',
-		code: 'zh-CN',
-	},
-	{
-		language: 'Chinese (Traditional)',
-		code: 'zh-TW',
-	},
-	{
-		language: 'Chuvash',
-		code: 'cv',
-	},
-	{
-		language: 'Corsican',
-		code: 'co',
-	},
-	{
-		language: 'Crimean Tatar',
-		code: 'crh',
-	},
-	{
-		language: 'Croatian',
-		code: 'hr',
-	},
-	{
-		language: 'Czech',
-		code: 'cs',
-	},
-	{
-		language: 'Danish',
-		code: 'da',
-	},
-	{
-		language: 'Dinka',
-		code: 'din',
-	},
-	{
-		language: 'Divehi',
-		code: 'dv',
-	},
-	{
-		language: 'Dogri',
-		code: 'doi',
-	},
-	{
-		language: 'Dombe',
-		code: 'dov',
-	},
-	{
-		language: 'Dutch',
-		code: 'nl',
-	},
-	{
-		language: 'Dzongkha',
-		code: 'dz',
-	},
-	{
-		language: 'English',
-		code: 'en',
-	},
-	{
-		language: 'Esperanto',
-		code: 'eo',
-	},
-	{
-		language: 'Estonian',
-		code: 'et',
-	},
-	{
-		language: 'Ewe',
-		code: 'ee',
-	},
-	{
-		language: 'Fijian',
-		code: 'fj',
-	},
-	{
-		language: 'Filipino (Tagalog)',
-		code: 'fil',
-	},
-	{
-		language: 'Finnish',
-		code: 'fi',
-	},
-	{
-		language: 'French',
-		code: 'fr',
-	},
-	{
-		language: 'French (French)',
-		code: 'fr-FR',
-	},
-	{
-		language: 'French (Canadian)',
-		code: 'fr-CA',
-	},
-	{
-		language: 'Frisian',
-		code: 'fy',
-	},
-	{
-		language: 'Fulfulde',
-		code: 'ff',
-	},
-	{
-		language: 'Ga',
-		code: 'gaa',
-	},
-	{
-		language: 'Galician',
-		code: 'gl',
-	},
-	{
-		language: 'Ganda (Luganda)',
-		code: 'lg',
-	},
-	{
-		language: 'Georgian',
-		code: 'ka',
-	},
-	{
-		language: 'German',
-		code: 'de',
-	},
-	{
-		language: 'Greek',
-		code: 'el',
-	},
-	{
-		language: 'Guarani',
-		code: 'gn',
-	},
-	{
-		language: 'Gujarati',
-		code: 'gu',
-	},
-	{
-		language: 'Haitian Creole',
-		code: 'ht',
-	},
-	{
-		language: 'Hakha Chin',
-		code: 'cnh',
-	},
-	{
-		language: 'Hausa',
-		code: 'ha',
-	},
-	{
-		language: 'Hawaiian',
-		code: 'haw',
-	},
-	{
-		language: 'Hebrew',
-		code: 'iw',
-	},
-	{
-		language: 'Hiligaynon',
-		code: 'hil',
-	},
-	{
-		language: 'Hindi',
-		code: 'hi',
-	},
-	{
-		language: 'Hmong',
-		code: 'hmn',
-	},
-	{
-		language: 'Hungarian',
-		code: 'hu',
-	},
-	{
-		language: 'Hunsrik',
-		code: 'hrx',
-	},
-	{
-		language: 'Icelandic',
-		code: 'is',
-	},
-	{
-		language: 'Igbo',
-		code: 'ig',
-	},
-	{
-		language: 'Iloko',
-		code: 'ilo',
-	},
-	{
-		language: 'Indonesian',
-		code: 'id',
-	},
-	{
-		language: 'Irish',
-		code: 'ga',
-	},
-	{
-		language: 'Italian',
-		code: 'it',
-	},
-	{
-		language: 'Japanese',
-		code: 'ja',
-	},
-	{
-		language: 'Javanese',
-		code: 'jw',
-	},
-	{
-		language: 'Kannada',
-		code: 'kn',
-	},
-	{
-		language: 'Kapampangan',
-		code: 'pam',
-	},
-	{
-		language: 'Kazakh',
-		code: 'kk',
-	},
-	{
-		language: 'Khmer',
-		code: 'km',
-	},
-	{
-		language: 'Kiga',
-		code: 'cgg',
-	},
-	{
-		language: 'Kinyarwanda',
-		code: 'rw',
-	},
-	{
-		language: 'Kituba',
-		code: 'ktu',
-	},
-	{
-		language: 'Konkani',
-		code: 'gom',
-	},
-	{
-		language: 'Korean',
-		code: 'ko',
-	},
-	{
-		language: 'Krio',
-		code: 'kri',
-	},
-	{
-		language: 'Kurdish (Kurmanji)',
-		code: 'ku',
-	},
-	{
-		language: 'Kurdish (Sorani)',
-		code: 'ckb',
-	},
-	{
-		language: 'Kyrgyz',
-		code: 'ky',
-	},
-	{
-		language: 'Lao',
-		code: 'lo',
-	},
-	{
-		language: 'Latgalian',
-		code: 'ltg',
-	},
-	{
-		language: 'Latin',
-		code: 'la',
-	},
-	{
-		language: 'Latvian',
-		code: 'lv',
-	},
-	{
-		language: 'Ligurian',
-		code: 'lij',
-	},
-	{
-		language: 'Limburgan',
-		code: 'li',
-	},
-	{
-		language: 'Lingala',
-		code: 'ln',
-	},
-	{
-		language: 'Lithuanian',
-		code: 'lt',
-	},
-	{
-		language: 'Lombard',
-		code: 'lmo',
-	},
-	{
-		language: 'Luo',
-		code: 'luo',
-	},
-	{
-		language: 'Luxembourgish',
-		code: 'lb',
-	},
-	{
-		language: 'Macedonian',
-		code: 'mk',
-	},
-	{
-		language: 'Maithili',
-		code: 'mai',
-	},
-	{
-		language: 'Makassar',
-		code: 'mak',
-	},
-	{
-		language: 'Malagasy',
-		code: 'mg',
-	},
-	{
-		language: 'Malay',
-		code: 'ms',
-	},
-	{
-		language: 'Malay (Jawi)',
-		code: 'ms-Arab',
-	},
-	{
-		language: 'Malayalam',
-		code: 'ml',
-	},
-	{
-		language: 'Maltese',
-		code: 'mt',
-	},
-	{
-		language: 'Maori',
-		code: 'mi',
-	},
-	{
-		language: 'Marathi',
-		code: 'mr',
-	},
-	{
-		language: 'Meadow Mari',
-		code: 'chm',
-	},
-	{
-		language: 'Meiteilon (Manipuri)',
-		code: 'mni-Mtei',
-	},
-	{
-		language: 'Minang',
-		code: 'min',
-	},
-	{
-		language: 'Mizo',
-		code: 'lus',
-	},
-	{
-		language: 'Mongolian',
-		code: 'mn',
-	},
-	{
-		language: 'Myanmar (Burmese)',
-		code: 'my',
-	},
-	{
-		language: 'Ndebele (South)',
-		code: 'nr',
-	},
-	{
-		language: 'Nepalbhasa (Newari)',
-		code: 'new',
-	},
-	{
-		language: 'Nepali',
-		code: 'ne',
-	},
-	{
-		language: 'Northern Sotho (Sepedi)',
-		code: 'nso',
-	},
-	{
-		language: 'Norwegian',
-		code: 'no',
-	},
-	{
-		language: 'Nuer',
-		code: 'nus',
-	},
-	{
-		language: 'Occitan',
-		code: 'oc',
-	},
-	{
-		language: 'Odia (Oriya)',
-		code: 'or',
-	},
-	{
-		language: 'Oromo',
-		code: 'om',
-	},
-	{
-		language: 'Pangasinan',
-		code: 'pag',
-	},
-	{
-		language: 'Papiamento',
-		code: 'pap',
-	},
-	{
-		language: 'Pashto',
-		code: 'ps',
-	},
-	{
-		language: 'Persian',
-		code: 'fa',
-	},
-	{
-		language: 'Polish',
-		code: 'pl',
-	},
-	{
-		language: 'Portuguese',
-		code: 'pt',
-	},
-	{
-		language: 'Portuguese (Portugal)',
-		code: 'pt-PT',
-	},
-	{
-		language: 'Portuguese (Brazil)',
-		code: 'pt-BR',
-	},
-	{
-		language: 'Punjabi',
-		code: 'pa',
-	},
-	{
-		language: 'Punjabi (Shahmukhi)',
-		code: 'pa-Arab',
-	},
-	{
-		language: 'Quechua',
-		code: 'qu',
-	},
-	{
-		language: 'Romani',
-		code: 'rom',
-	},
-	{
-		language: 'Romanian',
-		code: 'ro',
-	},
-	{
-		language: 'Rundi',
-		code: 'rn',
-	},
-	{
-		language: 'Russian',
-		code: 'ru',
-	},
-	{
-		language: 'Samoan',
-		code: 'sm',
-	},
-	{
-		language: 'Sango',
-		code: 'sg',
-	},
-	{
-		language: 'Sanskrit',
-		code: 'sa',
-	},
-	{
-		language: 'Scots Gaelic',
-		code: 'gd',
-	},
-	{
-		language: 'Serbian',
-		code: 'sr',
-	},
-	{
-		language: 'Sesotho',
-		code: 'st',
-	},
-	{
-		language: 'Seychellois Creole',
-		code: 'crs',
-	},
-	{
-		language: 'Shan',
-		code: 'shn',
-	},
-	{
-		language: 'Shona',
-		code: 'sn',
-	},
-	{
-		language: 'Sicilian',
-		code: 'scn',
-	},
-	{
-		language: 'Silesian',
-		code: 'szl',
-	},
-	{
-		language: 'Sindhi',
-		code: 'sd',
-	},
-	{
-		language: 'Sinhala (Sinhalese)',
-		code: 'si',
-	},
-	{
-		language: 'Slovak',
-		code: 'sk',
-	},
-	{
-		language: 'Slovenian',
-		code: 'sl',
-	},
-	{
-		language: 'Somali',
-		code: 'so',
-	},
-	{
-		language: 'Spanish',
-		code: 'es',
-	},
-	{
-		language: 'Sundanese',
-		code: 'su',
-	},
-	{
-		language: 'Swahili',
-		code: 'sw',
-	},
-	{
-		language: 'Swati',
-		code: 'ss',
-	},
-	{
-		language: 'Swedish',
-		code: 'sv',
-	},
-	{
-		language: 'Tamazight (Tifinagh)',
-		code: 'ber',
-	},
-	{
-		language: 'Tamazight',
-		code: 'ber-Latn',
-	},
-	{
-		language: 'Tajik',
-		code: 'tg',
-	},
-	{
-		language: 'Tamil',
-		code: 'ta',
-	},
-	{
-		language: 'Tatar',
-		code: 'tt',
-	},
-	{
-		language: 'Telugu',
-		code: 'te',
-	},
-	{
-		language: 'Tetum',
-		code: 'tet',
-	},
-	{
-		language: 'Thai',
-		code: 'th',
-	},
-	{
-		language: 'Tigrinya',
-		code: 'ti',
-	},
-	{
-		language: 'Tsonga',
-		code: 'ts',
-	},
-	{
-		language: 'Tswana',
-		code: 'tn',
-	},
-	{
-		language: 'Turkish',
-		code: 'tr',
-	},
-	{
-		language: 'Turkmen',
-		code: 'tk',
-	},
-	{
-		language: 'Twi (Akan)',
-		code: 'ak',
-	},
-	{
-		language: 'Ukrainian',
-		code: 'uk',
-	},
-	{
-		language: 'Urdu',
-		code: 'ur',
-	},
-	{
-		language: 'Uyghur',
-		code: 'ug',
-	},
-	{
-		language: 'Uzbek',
-		code: 'uz',
-	},
-	{
-		language: 'Vietnamese',
-		code: 'vi',
-	},
-	{
-		language: 'Welsh',
-		code: 'cy',
-	},
-	{
-		language: 'Xhosa',
-		code: 'xh',
-	},
-	{
-		language: 'Yiddish',
-		code: 'yi',
-	},
-	{
-		language: 'Yoruba',
-		code: 'yo',
-	},
-	{
-		language: 'Yucatec Maya',
-		code: 'yua',
-	},
-	{
-		language: 'Zulu',
-		code: 'zu',
-	},
-];
+export const languages: Record<string, string> = {
+	'aa': 'Afar',
+	'ab': 'Abkhaz',
+	'ace': 'Acehnese',
+	'ach': 'Acholi',
+	'af': 'Afrikaans',
+	'ak': 'Twi (Akan)',
+	'alz': 'Alur',
+	'am': 'Amharic',
+	'ar': 'Arabic',
+	'as': 'Assamese',
+	'av': 'Avar',
+	'awa': 'Awadhi',
+	'ay': 'Aymara',
+	'az': 'Azerbaijani',
+	'ba': 'Bashkir',
+	'bal': 'Baluchi',
+	'ban': 'Balinese',
+	'bbc': 'Batak Toba',
+	'bci': 'Baoulé',
+	'be': 'Belarusian',
+	'bem': 'Bemba',
+	'ber': 'Tamazight (Tifinagh)',
+	'ber-Latn': 'Tamazight',
+	'bew': 'Betawi',
+	'bg': 'Bulgarian',
+	'bho': 'Bhojpuri',
+	'bik': 'Bikol',
+	'bm': 'Bambara',
+	'bm-Nkoo': 'NKo',
+	'bn': 'Bengali',
+	'bo': 'Tibetan',
+	'br': 'Breton',
+	'bs': 'Bosnian',
+	'bts': 'Batak Simalungun',
+	'btx': 'Batak Karo',
+	'bua': 'Buryat',
+	'ca': 'Catalan',
+	'ce': 'Chechen',
+	'ceb': 'Cebuano',
+	'cgg': 'Kiga',
+	'ch': 'Chamorro',
+	'chk': 'Chuukese',
+	'chm': 'Meadow Mari',
+	'ckb': 'Kurdish (Sorani)',
+	'cnh': 'Hakha Chin',
+	'co': 'Corsican',
+	'crh': 'Crimean Tatar (Cyrillic)',
+	'crh-Latn': 'Crimean Tatar (Latin)',
+	'crs': 'Seychellois Creole',
+	'cs': 'Czech',
+	'cv': 'Chuvash',
+	'cy': 'Welsh',
+	'da': 'Danish',
+	'de': 'German',
+	'din': 'Dinka',
+	'doi': 'Dogri',
+	'dov': 'Dombe',
+	'dv': 'Dhivehi',
+	'dyu': 'Dyula',
+	'dz': 'Dzongkha',
+	'ee': 'Ewe',
+	'el': 'Greek',
+	'en': 'English',
+	'eo': 'Esperanto',
+	'es': 'Spanish',
+	'et': 'Estonian',
+	'eu': 'Basque',
+	'fa': 'Persian',
+	'fa-AF': 'Dari',
+	'ff': 'Fulani',
+	'fi': 'Finnish',
+	'fj': 'Fijian',
+	'fil': 'Filipino (Tagalog)',
+	'fo': 'Faroese',
+	'fon': 'Fon',
+	'fr': 'French',
+	'fr-CA': 'French (Canada)',
+	'fr-FR': 'French (France)',
+	'fur': 'Friulian',
+	'fy': 'Frisian',
+	'ga': 'Irish',
+	'gaa': 'Ga',
+	'gd': 'Scots Gaelic',
+	'gl': 'Galician',
+	'gn': 'Guarani',
+	'gom': 'Konkani',
+	'gu': 'Gujarati',
+	'gv': 'Manx',
+	'ha': 'Hausa',
+	'haw': 'Hawaiian',
+	'hi': 'Hindi',
+	'hil': 'Hiligaynon',
+	'hmn': 'Hmong',
+	'hr': 'Croatian',
+	'hrx': 'Hunsrik',
+	'ht': 'Haitian Creole',
+	'hu': 'Hungarian',
+	'hy': 'Armenian',
+	'iba': 'Iban',
+	'id': 'Indonesian',
+	'ig': 'Igbo',
+	'ilo': 'Ilocano',
+	'is': 'Icelandic',
+	'it': 'Italian',
+	'iu': 'Inuktut (Syllabics)',
+	'iu-Latn': 'Inuktut (Latin)',
+	'iw': 'Hebrew',
+	'ja': 'Japanese',
+	'jam': 'Jamaican Patois',
+	'jw': 'Javanese',
+	'ka': 'Georgian',
+	'kac': 'Jingpo',
+	'kek': 'Qʼeqchiʼ',
+	'kg': 'Kikongo',
+	'kha': 'Khasi',
+	'kk': 'Kazakh',
+	'kl': 'Kalaallisut',
+	'km': 'Khmer',
+	'kn': 'Kannada',
+	'ko': 'Korean',
+	'kr': 'Kanuri',
+	'kri': 'Krio',
+	'ktu': 'Kituba',
+	'ku': 'Kurdish (Kurmanji)',
+	'kv': 'Komi',
+	'ky': 'Kyrgyz',
+	'la': 'Latin',
+	'lb': 'Luxembourgish',
+	'lg': 'Luganda',
+	'li': 'Limburgish',
+	'lij': 'Ligurian',
+	'lmo': 'Lombard',
+	'ln': 'Lingala',
+	'lo': 'Lao',
+	'lt': 'Lithuanian',
+	'ltg': 'Latgalian',
+	'lua': 'Tshiluba',
+	'luo': 'Luo',
+	'lus': 'Mizo',
+	'lv': 'Latvian',
+	'mad': 'Madurese',
+	'mai': 'Maithili',
+	'mak': 'Makassar',
+	'mam': 'Mam',
+	'mfe': 'Mauritian Creole',
+	'mg': 'Malagasy',
+	'mh': 'Marshallese',
+	'mi': 'Maori',
+	'min': 'Minang',
+	'mk': 'Macedonian',
+	'ml': 'Malayalam',
+	'mn': 'Mongolian',
+	'mni-Mtei': 'Meiteilon (Manipuri)',
+	'mr': 'Marathi',
+	'ms': 'Malay',
+	'ms-Arab': 'Malay (Jawi)',
+	'mt': 'Maltese',
+	'mwr': 'Marwadi',
+	'my': 'Myanmar (Burmese)',
+	'ndc-ZW': 'Ndau',
+	'ne': 'Nepali',
+	'new': 'Nepalbhasa (Newari)',
+	'nhe': 'Nahuatl (Eastern Huasteca)',
+	'nl': 'Dutch',
+	'no': 'Norwegian',
+	'nr': 'Ndebele (South)',
+	'nso': 'Sepedi',
+	'nus': 'Nuer',
+	'ny': 'Chichewa',
+	'oc': 'Occitan',
+	'om': 'Oromo',
+	'or': 'Odia (Oriya)',
+	'os': 'Ossetian',
+	'pa': 'Punjabi (Gurmukhi)',
+	'pa-Arab': 'Punjabi (Shahmukhi)',
+	'pag': 'Pangasinan',
+	'pam': 'Kapampangan',
+	'pap': 'Papiamento',
+	'pl': 'Polish',
+	'ps': 'Pashto',
+	'pt': 'Portuguese',
+	'pt-BR': 'Portuguese (Brazil)',
+	'pt-PT': 'Portuguese (Portugal)',
+	'qu': 'Quechua',
+	'rn': 'Rundi',
+	'ro': 'Romanian',
+	'rom': 'Romani',
+	'ru': 'Russian',
+	'rw': 'Kinyarwanda',
+	'sa': 'Sanskrit',
+	'sah': 'Yakut',
+	'sat': 'Santali (Ol Chiki)',
+	'sat-Latn': 'Santali (Latin)',
+	'scn': 'Sicilian',
+	'sd': 'Sindhi',
+	'se': 'Sami (North)',
+	'sg': 'Sango',
+	'shn': 'Shan',
+	'si': 'Sinhala',
+	'sk': 'Slovak',
+	'sl': 'Slovenian',
+	'sm': 'Samoan',
+	'sn': 'Shona',
+	'so': 'Somali',
+	'sq': 'Albanian',
+	'sr': 'Serbian',
+	'ss': 'Swati',
+	'st': 'Sesotho',
+	'su': 'Sundanese',
+	'sus': 'Susu',
+	'sv': 'Swedish',
+	'sw': 'Swahili',
+	'szl': 'Silesian',
+	'ta': 'Tamil',
+	'tcy': 'Tulu',
+	'te': 'Telugu',
+	'tet': 'Tetum',
+	'tg': 'Tajik',
+	'th': 'Thai',
+	'ti': 'Tigrinya',
+	'tiv': 'Tiv',
+	'tk': 'Turkmen',
+	'tl': 'Filipino',
+	'tn': 'Tswana',
+	'to': 'Tongan',
+	'tpi': 'Tok Pisin',
+	'tr': 'Turkish',
+	'trp': 'Kokborok',
+	'ts': 'Tsonga',
+	'tt': 'Tatar',
+	'tum': 'Tumbuka',
+	'ty': 'Tahitian',
+	'tyv': 'Tuvan',
+	'udm': 'Udmurt',
+	'ug': 'Uyghur',
+	'uk': 'Ukrainian',
+	'ur': 'Urdu',
+	'uz': 'Uzbek',
+	've': 'Venda',
+	'vec': 'Venetian',
+	'vi': 'Vietnamese',
+	'war': 'Waray',
+	'wo': 'Wolof',
+	'xh': 'Xhosa',
+	'yi': 'Yiddish',
+	'yo': 'Yoruba',
+	'yua': 'Yucatec Maya',
+	'yue': 'Cantonese',
+	'zap': 'Zapotec',
+	'zh-CN': 'Chinese (Simplified)',
+	'zh-TW': 'Chinese (Traditional)',
+	'zu': 'Zulu',
+};
+
+export function normalizeLanguageCode(code: string): string {
+	if (languages[code]) {
+		return code;
+	}
+
+	const baseCode = code.split('-')[0];
+	return baseCode;
+}
+
+export function getLanguageName(code: string): string | undefined {
+	if (languages[code]) {
+		return languages[code];
+	}
+
+	const normalized = normalizeLanguageCode(code);
+	return languages[normalized];
+}
+
+export function getTargetLanguageCode(): string {
+	const browserLang = browser.i18n.getUILanguage();
+
+	if (languages[browserLang]) {
+		return browserLang;
+	}
+
+	const baseCode = browserLang.split('-')[0];
+
+	if (languages[baseCode]) {
+		return baseCode;
+	}
+
+	return 'en';
+}

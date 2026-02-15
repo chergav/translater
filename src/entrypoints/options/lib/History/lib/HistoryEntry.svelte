@@ -18,7 +18,7 @@
 			}}
 			size="xs"
 			title={browser.i18n.getMessage('options_delete_history_item')}
-			variant="danger"
+			variant="dangerText"
 		/>
 	</div>
 	<div class:line-clamp-1={truncateOrig}>

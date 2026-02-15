@@ -5,9 +5,6 @@
     "app_description": {
         "message": "Traduza o texto selecionado com o Google Tradutor"
     },
-    "app_version": {
-        "message": "versão"
-    },
     "context_menus_title": {
         "message": "Traduzir o texto selecionado"
     },
@@ -35,29 +32,86 @@
     "options_tab_history": {
         "message": "História"
     },
+    "options_general_translation_button": {
+        "message": "Botão de tradução"
+    },
+    "options_general_no_sites_selected": {
+        "message": "nenhum site selecionado"
+    },
+    "options_general_show_on_selected": {
+        "message": "Mostrar pop-up quando o texto for selecionado"
+    },
+    "options_general_show_on_selected_hint": {
+        "message": "O pop-up aparece após a seleção do texto (melhor no Modo Simples)."
+    },
+    "options_general_mode_full": {
+        "message": "Modo Completo"
+    },
+    "options_general_mode_full_hint": {
+        "message": "Janela pop-up com todos os recursos."
+    },
+    "options_general_mode_simple": {
+        "message": "Modo Simples"
+    },
+    "options_general_mode_simple_hint": {
+        "message": "Mostre apenas a tradução, nada mais."
+    },
     "options_inline_button_show": {
         "message": "Mostrar botão quando o texto é selecionado"
+    },
+    "options_inline_button_show_hint": {
+        "message": "Um botão de tradução aparecerá próximo ao texto selecionado."
     },
     "options_text_field_button_show": {
         "message": "Mostrar botão no campo de texto"
     },
+    "options_text_field_button_show_hint": {
+        "message": "Mostrar botão quando o texto é selecionado nos campos de entrada de texto."
+    },
+    "options_hide_translation_button": {
+        "message": "Oculte o botão de tradução para o seu idioma"
+    },
+    "options_hide_translation_button_hint": {
+        "message": "O botão não aparecerá ao selecionar texto no idioma do seu sistema"
+    },
     "options_hide_button_on_sites": {
-        "message": "Oculte o botão nestes sites:"
+        "message": "Ocultar botão de tradução em sites específicos:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Adicione domínios usando o menu da janela pop-up do site que você deseja excluir"
+        "message": "Adicione domínios usando o menu da janela pop-up do site que deseja excluir."
     },
     "options_show_original_text": {
         "message": "Mostrar texto fonte"
     },
+    "options_show_original_text_hint": {
+        "message": "Exiba o texto original junto com a tradução (apenas modo completo)."
+    },
     "options_show_transliteration": {
         "message": "Mostrar transliteração"
+    },
+    "options_show_transliteration_hint": {
+        "message": "Mostrar transliteração, se disponível."
     },
     "options_lock_popup_window": {
         "message": "Bloquear janela pop-up"
     },
     "options_lock_popup_window_hint": {
-        "message": "Se ativado, o pop-up não fechará ao clicar fora dele"
+        "message": "O pop-up permanece aberto ao clicar fora."
+    },
+    "options_providers_provider": {
+        "message": "Provedor"
+    },
+    "options_providers_model": {
+        "message": "Modelo"
+    },
+    "options_appearance_theme": {
+        "message": "Tema"
+    },
+    "options_appearance_accent_color": {
+        "message": "Cor de destaque"
+    },
+    "options_appearance_bg_and_text": {
+        "message": "Plano de fundo e texto simples"
     },
     "options_history_length": {
         "message": "Entradas do histórico (máx.)"
@@ -122,12 +176,6 @@
     "options_support_donations": {
         "message": "Se você gostaria de apoiar este software gratuito"
     },
-    "options_address": {
-        "message": "endereço"
-    },
-    "options_copy_address": {
-        "message": "Copiar endereço"
-    },
     "text_expand": {
         "message": "Mais"
     },
@@ -176,6 +224,12 @@
     "popup_menu_options_link": {
         "message": "Configurações adicionais"
     },
+    "popup_menu_switch_to_simple_mode": {
+        "message": "Mudar para o modo simples"
+    },
+    "popup_menu_switch_to_full_mode": {
+        "message": "Mudar para o modo completo"
+    },
     "popup_placeholder_translation": {
         "message": "Tradução"
     },
@@ -196,12 +250,6 @@
     },
     "tooltip_copy_not_support_on_http": {
         "message": "A cópia não é compatível com sites HTTP"
-    },
-    "tooltip_copyed": {
-        "message": "Copiado"
-    },
-    "tooltip_copy_error": {
-        "message": "Erro de cópia!"
     },
     "tooltip_listen_to_the_text": {
         "message": "Ouça o texto"
@@ -251,6 +299,9 @@
     "language_auto": {
         "message": "detectar idioma"
     },
+    "language_aa": {
+        "message": "Longe"
+    },
     "language_ab": {
         "message": "Abecásio"
     },
@@ -263,8 +314,8 @@
     "language_af": {
         "message": "Africâner"
     },
-    "language_sq": {
-        "message": "Albanês"
+    "language_ak": {
+        "message": "Twi (Akan)"
     },
     "language_alz": {
         "message": "Alur"
@@ -275,11 +326,11 @@
     "language_ar": {
         "message": "Árabe"
     },
-    "language_hy": {
-        "message": "Armênio"
-    },
     "language_as": {
         "message": "Assamês"
+    },
+    "language_av": {
+        "message": "Avar"
     },
     "language_awa": {
         "message": "Awadhi"
@@ -290,26 +341,20 @@
     "language_az": {
         "message": "Azerbaijano"
     },
-    "language_ban": {
-        "message": "Balinês"
-    },
-    "language_bm": {
-        "message": "Bambará"
-    },
     "language_ba": {
         "message": "Basquir"
     },
-    "language_eu": {
-        "message": "Basco"
+    "language_bal": {
+        "message": "Balúchi"
     },
-    "language_btx": {
-        "message": "Batak Karo"
-    },
-    "language_bts": {
-        "message": "Batak Simalungun"
+    "language_ban": {
+        "message": "Balinês"
     },
     "language_bbc": {
         "message": "Batak Toba"
+    },
+    "language_bci": {
+        "message": "Baoulé"
     },
     "language_be": {
         "message": "Bielorrusso"
@@ -317,11 +362,17 @@
     "language_bem": {
         "message": "Bemba"
     },
-    "language_bn": {
-        "message": "bengali"
+    "language_ber": {
+        "message": "Tamazight (Tifinagh)"
+    },
+    "language_ber_Latn": {
+        "message": "Tamazight"
     },
     "language_bew": {
         "message": "Betawi"
+    },
+    "language_bg": {
+        "message": "Búlgaro"
     },
     "language_bho": {
         "message": "Bhojpuri"
@@ -329,59 +380,89 @@
     "language_bik": {
         "message": "Bikol"
     },
-    "language_bs": {
-        "message": "Bósnio"
+    "language_bm": {
+        "message": "Bambará"
+    },
+    "language_bm_Nkoo": {
+        "message": "Nko"
+    },
+    "language_bn": {
+        "message": "bengali"
+    },
+    "language_bo": {
+        "message": "tibetano"
     },
     "language_br": {
         "message": "bretão"
     },
-    "language_bg": {
-        "message": "Búlgaro"
+    "language_bs": {
+        "message": "Bósnio"
+    },
+    "language_bts": {
+        "message": "Batak Simalungun"
+    },
+    "language_btx": {
+        "message": "Batak Karo"
     },
     "language_bua": {
         "message": "Buriate"
     },
-    "language_yue": {
-        "message": "cantonês"
-    },
     "language_ca": {
         "message": "Catalão"
+    },
+    "language_ce": {
+        "message": "Checheno"
     },
     "language_ceb": {
         "message": "Cebuano"
     },
-    "language_ny": {
-        "message": "Chichewa (Nyanja)"
+    "language_cgg": {
+        "message": "Kiga"
     },
-    "language_zh_CN": {
-        "message": "Chinês (simplificado)"
+    "language_ch": {
+        "message": "Chamorro"
     },
-    "language_zh_TW": {
-        "message": "Chinês (tradicional)"
+    "language_chk": {
+        "message": "Chuukês"
     },
-    "language_cv": {
-        "message": "chuvache"
+    "language_chm": {
+        "message": "Prado Mari"
+    },
+    "language_ckb": {
+        "message": "Curdo (Sorani)"
+    },
+    "language_cnh": {
+        "message": "Hakha Chin"
     },
     "language_co": {
         "message": "Córsega"
     },
     "language_crh": {
-        "message": "Tártaro da Crimeia"
+        "message": "Tártaro da Crimeia (cirílico)"
     },
-    "language_hr": {
-        "message": "Croata"
+    "language_crh_Latn": {
+        "message": "Tártaro da Crimeia (latim)"
+    },
+    "language_crs": {
+        "message": "crioulo seichelense"
     },
     "language_cs": {
         "message": "Tcheco"
     },
+    "language_cv": {
+        "message": "chuvache"
+    },
+    "language_cy": {
+        "message": "Galês"
+    },
     "language_da": {
         "message": "Dinamarquês"
     },
+    "language_de": {
+        "message": "Alemão"
+    },
     "language_din": {
         "message": "Dinka"
-    },
-    "language_dv": {
-        "message": "Divehi"
     },
     "language_doi": {
         "message": "Dogri"
@@ -389,11 +470,20 @@
     "language_dov": {
         "message": "Dombe"
     },
-    "language_nl": {
-        "message": "Holandês"
+    "language_dv": {
+        "message": "Divehi"
+    },
+    "language_dyu": {
+        "message": "Dyula"
     },
     "language_dz": {
         "message": "Dzongkha"
+    },
+    "language_ee": {
+        "message": "ovelha"
+    },
+    "language_el": {
+        "message": "Grego"
     },
     "language_en": {
         "message": "Inglês"
@@ -401,65 +491,77 @@
     "language_eo": {
         "message": "Esperanto"
     },
+    "language_es": {
+        "message": "Espanhol"
+    },
     "language_et": {
         "message": "Estónio"
     },
-    "language_ee": {
-        "message": "ovelha"
+    "language_eu": {
+        "message": "Basco"
     },
-    "language_fj": {
-        "message": "Fijiano"
+    "language_fa": {
+        "message": "Persa"
     },
-    "language_fil": {
-        "message": "Filipino (tagalo)"
+    "language_fa_AF": {
+        "message": "Dari"
+    },
+    "language_ff": {
+        "message": "Fulani"
     },
     "language_fi": {
         "message": "Finlandês"
     },
+    "language_fil": {
+        "message": "Filipino (tagalo)"
+    },
+    "language_fj": {
+        "message": "Fijiano"
+    },
+    "language_fo": {
+        "message": "Feroês"
+    },
+    "language_fon": {
+        "message": "Fon"
+    },
     "language_fr": {
         "message": "Francês"
     },
-    "language_fr_FR": {
-        "message": "Francês (francês)"
-    },
     "language_fr_CA": {
-        "message": "Francês (canadense)"
+        "message": "Francês (Canadá)"
+    },
+    "language_fr_FR": {
+        "message": "Francês (França)"
+    },
+    "language_fur": {
+        "message": "Friulano"
     },
     "language_fy": {
         "message": "Frísio"
     },
-    "language_ff": {
-        "message": "Fulfulde"
+    "language_ga": {
+        "message": "irlandês"
     },
     "language_gaa": {
         "message": "Gá"
     },
+    "language_gd": {
+        "message": "Gaélico escocês"
+    },
     "language_gl": {
         "message": "Galego"
-    },
-    "language_lg": {
-        "message": "Ganda (Luganda)"
-    },
-    "language_ka": {
-        "message": "Georgiano"
-    },
-    "language_de": {
-        "message": "Alemão"
-    },
-    "language_el": {
-        "message": "Grego"
     },
     "language_gn": {
         "message": "guarani"
     },
+    "language_gom": {
+        "message": "concani"
+    },
     "language_gu": {
         "message": "Guzerate"
     },
-    "language_ht": {
-        "message": "crioulo haitiano"
-    },
-    "language_cnh": {
-        "message": "Hakha Chin"
+    "language_gv": {
+        "message": "Manx"
     },
     "language_ha": {
         "message": "Hauçá"
@@ -467,122 +569,158 @@
     "language_haw": {
         "message": "Havaiano"
     },
-    "language_iw": {
-        "message": "Hebraico"
+    "language_hi": {
+        "message": "Hindi"
     },
     "language_hil": {
         "message": "Hiligaynon"
     },
-    "language_hi": {
-        "message": "Hindi"
-    },
     "language_hmn": {
         "message": "Hmong"
     },
-    "language_hu": {
-        "message": "Húngaro"
+    "language_hr": {
+        "message": "Croata"
     },
     "language_hrx": {
         "message": "Hunsrik"
     },
-    "language_is": {
-        "message": "islandês"
+    "language_ht": {
+        "message": "crioulo haitiano"
+    },
+    "language_hu": {
+        "message": "Húngaro"
+    },
+    "language_hy": {
+        "message": "Armênio"
+    },
+    "language_iba": {
+        "message": "Iban"
+    },
+    "language_id": {
+        "message": "Indonésio"
     },
     "language_ig": {
         "message": "Ibo"
     },
     "language_ilo": {
-        "message": "Iloko"
+        "message": "Ilocano"
     },
-    "language_id": {
-        "message": "Indonésio"
-    },
-    "language_ga": {
-        "message": "irlandês"
+    "language_is": {
+        "message": "islandês"
     },
     "language_it": {
         "message": "Italiano"
     },
+    "language_iu": {
+        "message": "Inuktut (Sílabas)"
+    },
+    "language_iu_Latn": {
+        "message": "Inuktut (latim)"
+    },
+    "language_iw": {
+        "message": "Hebraico"
+    },
     "language_ja": {
         "message": "Japonês"
+    },
+    "language_jam": {
+        "message": "Patois jamaicanos"
     },
     "language_jw": {
         "message": "Javanês"
     },
-    "language_kn": {
-        "message": "Kannada"
+    "language_ka": {
+        "message": "Georgiano"
     },
-    "language_pam": {
-        "message": "Kapampangan"
+    "language_kac": {
+        "message": "Jingpo"
+    },
+    "language_kek": {
+        "message": "Q'eqchi'"
+    },
+    "language_kg": {
+        "message": "Kikongo"
+    },
+    "language_kha": {
+        "message": "Khasi"
     },
     "language_kk": {
         "message": "Cazaque"
     },
+    "language_kl": {
+        "message": "Kalaallisut"
+    },
     "language_km": {
         "message": "Khmer"
     },
-    "language_cgg": {
-        "message": "Kiga"
-    },
-    "language_rw": {
-        "message": "Kinyarwanda"
-    },
-    "language_ktu": {
-        "message": "Kituba"
-    },
-    "language_gom": {
-        "message": "concani"
+    "language_kn": {
+        "message": "Kannada"
     },
     "language_ko": {
         "message": "Coreano"
     },
+    "language_kr": {
+        "message": "Kanuri"
+    },
     "language_kri": {
         "message": "Krio"
+    },
+    "language_ktu": {
+        "message": "Kituba"
     },
     "language_ku": {
         "message": "Curdo (Kurmanji)"
     },
-    "language_ckb": {
-        "message": "Curdo (Sorani)"
+    "language_kv": {
+        "message": "Komi"
     },
     "language_ky": {
         "message": "Quirguistão"
     },
-    "language_lo": {
-        "message": "Laos"
-    },
-    "language_ltg": {
-        "message": "Latgaliano"
-    },
     "language_la": {
         "message": "Latim"
-    },
-    "language_lv": {
-        "message": "Letão"
-    },
-    "language_lij": {
-        "message": "Ligúria"
-    },
-    "language_li": {
-        "message": "Limburguês"
-    },
-    "language_ln": {
-        "message": "Lingala"
-    },
-    "language_lt": {
-        "message": "Lituano"
-    },
-    "language_lmo": {
-        "message": "lombardo"
-    },
-    "language_luo": {
-        "message": "Luo"
     },
     "language_lb": {
         "message": "Luxemburguês"
     },
-    "language_mk": {
-        "message": "Macedônio"
+    "language_lg": {
+        "message": "Luganda"
+    },
+    "language_li": {
+        "message": "Limburguês"
+    },
+    "language_lij": {
+        "message": "Ligúria"
+    },
+    "language_lmo": {
+        "message": "lombardo"
+    },
+    "language_ln": {
+        "message": "Lingala"
+    },
+    "language_lo": {
+        "message": "Laos"
+    },
+    "language_lt": {
+        "message": "Lituano"
+    },
+    "language_ltg": {
+        "message": "Latgaliano"
+    },
+    "language_lua": {
+        "message": "Tshiluba"
+    },
+    "language_luo": {
+        "message": "Luo"
+    },
+    "language_lus": {
+        "message": "Mizo"
+    },
+    "language_lv": {
+        "message": "Letão"
+    },
+    "language_mad": {
+        "message": "Maduro"
     },
     "language_mai": {
         "message": "Maithili"
@@ -590,8 +728,38 @@
     "language_mak": {
         "message": "Macassar"
     },
+    "language_mam": {
+        "message": "Mãe"
+    },
+    "language_mfe": {
+        "message": "crioulo das Maurícias"
+    },
     "language_mg": {
-        "message": "malgaxe"
+        "message": "Malgaxe"
+    },
+    "language_mh": {
+        "message": "marshallês"
+    },
+    "language_mi": {
+        "message": "Maori"
+    },
+    "language_min": {
+        "message": "Minang"
+    },
+    "language_mk": {
+        "message": "Macedônio"
+    },
+    "language_ml": {
+        "message": "Malaiala"
+    },
+    "language_mn": {
+        "message": "Mongol"
+    },
+    "language_mni_Mtei": {
+        "message": "Meiteilon (Manipuri)"
+    },
+    "language_mr": {
+        "message": "Marathi"
     },
     "language_ms": {
         "message": "Malaio"
@@ -599,146 +767,134 @@
     "language_ms_Arab": {
         "message": "Malaio (Jawi)"
     },
-    "language_ml": {
-        "message": "Malaiala"
-    },
     "language_mt": {
-        "message": "Maltês"
+        "message": "maltês"
     },
-    "language_mi": {
-        "message": "Maori"
-    },
-    "language_mr": {
-        "message": "Marathi"
-    },
-    "language_chm": {
-        "message": "Prado Mari"
-    },
-    "language_mni_Mtei": {
-        "message": "Meiteilon (Manipuri)"
-    },
-    "language_min": {
-        "message": "Minang"
-    },
-    "language_lus": {
-        "message": "Mizo"
-    },
-    "language_mn": {
-        "message": "Mongol"
+    "language_mwr": {
+        "message": "Marwadi"
     },
     "language_my": {
         "message": "Mianmar (birmanês)"
     },
-    "language_nr": {
-        "message": "Ndebele (Sul)"
-    },
-    "language_new": {
-        "message": "Nepalbhasa (Newari)"
+    "language_ndc_ZW": {
+        "message": "Ndau"
     },
     "language_ne": {
         "message": "nepalês"
     },
-    "language_nso": {
-        "message": "Soto Norte (Sepedi)"
+    "language_new": {
+        "message": "Nepalbhasa (Newari)"
+    },
+    "language_nhe": {
+        "message": "Nahuatl (Huasteca Oriental)"
+    },
+    "language_nl": {
+        "message": "Holandês"
     },
     "language_no": {
         "message": "Norueguês"
     },
+    "language_nr": {
+        "message": "Ndebele (Sul)"
+    },
+    "language_nso": {
+        "message": "Sepedi"
+    },
     "language_nus": {
         "message": "Nuer"
+    },
+    "language_ny": {
+        "message": "Chichewa"
     },
     "language_oc": {
         "message": "Occitano"
     },
-    "language_or": {
-        "message": "Odia (Oriya)"
-    },
     "language_om": {
         "message": "Oromo"
     },
-    "language_pag": {
-        "message": "Pangasinan"
+    "language_or": {
+        "message": "Odia (Oriya)"
     },
-    "language_pap": {
-        "message": "papiamento"
-    },
-    "language_ps": {
-        "message": "pashto"
-    },
-    "language_fa": {
-        "message": "Persa"
-    },
-    "language_pl": {
-        "message": "Polonês"
-    },
-    "language_pt": {
-        "message": "Português"
-    },
-    "language_pt_PT": {
-        "message": "Português (Portugal)"
-    },
-    "language_pt_BR": {
-        "message": "Português (Brasil)"
+    "language_os": {
+        "message": "Ossétia"
     },
     "language_pa": {
-        "message": "punjabi"
+        "message": "Punjabi (Gurmukhi)"
     },
     "language_pa_Arab": {
         "message": "Punjabi (Shahmukhi)"
     },
+    "language_pag": {
+        "message": "Pangasinan"
+    },
+    "language_pam": {
+        "message": "Kapampangan"
+    },
+    "language_pap": {
+        "message": "papiamento"
+    },
+    "language_pl": {
+        "message": "Polonês"
+    },
+    "language_ps": {
+        "message": "pashto"
+    },
+    "language_pt": {
+        "message": "Português"
+    },
+    "language_pt_BR": {
+        "message": "Português (Brasil)"
+    },
+    "language_pt_PT": {
+        "message": "Português (Portugal)"
+    },
     "language_qu": {
         "message": "Quechua"
-    },
-    "language_rom": {
-        "message": "cigano"
-    },
-    "language_ro": {
-        "message": "Romeno"
     },
     "language_rn": {
         "message": "Rundi"
     },
+    "language_ro": {
+        "message": "Romeno"
+    },
+    "language_rom": {
+        "message": "cigano"
+    },
     "language_ru": {
         "message": "Russo"
     },
-    "language_sm": {
-        "message": "samoano"
-    },
-    "language_sg": {
-        "message": "Sango"
+    "language_rw": {
+        "message": "Kinyarwanda"
     },
     "language_sa": {
         "message": "Sânscrito"
     },
-    "language_gd": {
-        "message": "Gaélico escocês"
+    "language_sah": {
+        "message": "Iacut"
     },
-    "language_sr": {
-        "message": "Sérvio"
+    "language_sat": {
+        "message": "Santali (Ol Chiki)"
     },
-    "language_st": {
-        "message": "Sesoto"
-    },
-    "language_crs": {
-        "message": "crioulo seichelense"
-    },
-    "language_shn": {
-        "message": "Shan"
-    },
-    "language_sn": {
-        "message": "Shona"
+    "language_sat_Latn": {
+        "message": "Santali (latim)"
     },
     "language_scn": {
         "message": "Siciliano"
     },
-    "language_szl": {
-        "message": "Silésia"
-    },
     "language_sd": {
         "message": "Sindi"
     },
+    "language_se": {
+        "message": "Sami (Norte)"
+    },
+    "language_sg": {
+        "message": "Sango"
+    },
+    "language_shn": {
+        "message": "Shan"
+    },
     "language_si": {
-        "message": "Cingalês (cingalês)"
+        "message": "Cingalês"
     },
     "language_sk": {
         "message": "Eslovaco"
@@ -746,38 +902,47 @@
     "language_sl": {
         "message": "Esloveno"
     },
+    "language_sm": {
+        "message": "samoano"
+    },
+    "language_sn": {
+        "message": "Shona"
+    },
     "language_so": {
         "message": "somali"
     },
-    "language_es": {
-        "message": "Espanhol"
+    "language_sq": {
+        "message": "Albanês"
     },
-    "language_su": {
-        "message": "Sudanês"
-    },
-    "language_sw": {
-        "message": "suaíli"
+    "language_sr": {
+        "message": "Sérvio"
     },
     "language_ss": {
         "message": "Swati"
     },
+    "language_st": {
+        "message": "Sesoto"
+    },
+    "language_su": {
+        "message": "Sudanês"
+    },
+    "language_sus": {
+        "message": "Susu"
+    },
     "language_sv": {
         "message": "Sueco"
     },
-    "language_ber": {
-        "message": "Tamazight (Tifinagh)"
+    "language_sw": {
+        "message": "suaíli"
     },
-    "language_ber_latn": {
-        "message": "Tamazight"
-    },
-    "language_tg": {
-        "message": "tadjique"
+    "language_szl": {
+        "message": "Silésia"
     },
     "language_ta": {
         "message": "tâmil"
     },
-    "language_tt": {
-        "message": "Tártaro"
+    "language_tcy": {
+        "message": "Tulú"
     },
     "language_te": {
         "message": "Telugu"
@@ -785,26 +950,59 @@
     "language_tet": {
         "message": "Tétum"
     },
+    "language_tg": {
+        "message": "tadjique"
+    },
     "language_th": {
         "message": "Tailandês"
     },
     "language_ti": {
         "message": "Tigrínia"
     },
-    "language_ts": {
-        "message": "Tsonga"
-    },
-    "language_tn": {
-        "message": "Tsuana"
-    },
-    "language_tr": {
-        "message": "Turco"
+    "language_tiv": {
+        "message": "Tiv"
     },
     "language_tk": {
         "message": "turcomano"
     },
-    "language_ak": {
-        "message": "Twi (Akan)"
+    "language_tl": {
+        "message": "filipino"
+    },
+    "language_tn": {
+        "message": "Tsuana"
+    },
+    "language_to": {
+        "message": "tonganês"
+    },
+    "language_tpi": {
+        "message": "Tok Pisin"
+    },
+    "language_tr": {
+        "message": "Turco"
+    },
+    "language_trp": {
+        "message": "Kokborok"
+    },
+    "language_ts": {
+        "message": "Tsonga"
+    },
+    "language_tt": {
+        "message": "tártaro"
+    },
+    "language_tum": {
+        "message": "Tumbuka"
+    },
+    "language_ty": {
+        "message": "taitiano"
+    },
+    "language_tyv": {
+        "message": "tuvano"
+    },
+    "language_udm": {
+        "message": "Udmurte"
+    },
+    "language_ug": {
+        "message": "Uigur"
     },
     "language_uk": {
         "message": "Ucraniano"
@@ -812,17 +1010,23 @@
     "language_ur": {
         "message": "Urdu"
     },
-    "language_ug": {
-        "message": "Uigur"
-    },
     "language_uz": {
         "message": "Usbeque"
+    },
+    "language_ve": {
+        "message": "Venda"
+    },
+    "language_vec": {
+        "message": "Veneziano"
     },
     "language_vi": {
         "message": "Vietnamita"
     },
-    "language_cy": {
-        "message": "Galês"
+    "language_war": {
+        "message": "Waray"
+    },
+    "language_wo": {
+        "message": "Uolof"
     },
     "language_xh": {
         "message": "Xhosa"
@@ -834,7 +1038,19 @@
         "message": "Iorubá"
     },
     "language_yua": {
-        "message": "Yucateca maia"
+        "message": "Yucateca Maia"
+    },
+    "language_yue": {
+        "message": "cantonês"
+    },
+    "language_zap": {
+        "message": "Zapoteca"
+    },
+    "language_zh_CN": {
+        "message": "Chinês (simplificado)"
+    },
+    "language_zh_TW": {
+        "message": "Chinês (tradicional)"
     },
     "language_zu": {
         "message": "Zulu"

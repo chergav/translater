@@ -1,65 +1,81 @@
 <div class="scrollbar flex h-full flex-col gap-4 overflow-y-auto p-6">
+	<div class="text-xl">{browser.i18n.getMessage('options_tab_general')}</div>
+
 	<SelectLanguageSimple
 		label={browser.i18n.getMessage('target_lang_label')}
 		bind:value={storage.settings.targetLang}
 	/>
+
+	<div class="pt-2 text-xl">{browser.i18n.getMessage('options_general_translation_button')}</div>
+
 	<SwitchGroup>
 		<Switch
-			class="justify-between"
+			hint={browser.i18n.getMessage('options_inline_button_show_hint')}
 			label={browser.i18n.getMessage('options_inline_button_show')}
 			bind:checked={storage.settings.inlineButtonShow}
 		/>
 		<Switch
-			class="justify-between"
+			hint={browser.i18n.getMessage('options_text_field_button_show_hint')}
 			label={browser.i18n.getMessage('options_text_field_button_show')}
 			bind:checked={storage.settings.textFieldButtonShow}
 		/>
 		<Switch
-			class="justify-between"
 			disabled={!storage.settings.inlineButtonShow && !storage.settings.textFieldButtonShow}
-			hint="If enabled, the translate button will not appear when selecting text in your language: {userLanguage}."
-			label="Hide the translation button for your language"
+			hint="{browser.i18n.getMessage('options_hide_translation_button_hint')}: {userLanguage}."
+			label={browser.i18n.getMessage('options_hide_translation_button')}
 			bind:checked={storage.settings.hideButtonForUserLanguage}
 		/>
 	</SwitchGroup>
-	<div>
-		<p class="mb-2 text-sm">{browser.i18n.getMessage('options_hide_button_on_sites')}</p>
-		<div>
+	<div class="inline-flex flex-wrap items-center gap-2">
+		<p>{browser.i18n.getMessage('options_hide_button_on_sites')}</p>
 			{#each storage.settings.blacklistDomainForInline as domain, index (index)}
-				<span class="mr-2 mb-2 inline-flex items-center gap-1 rounded-lg bg-color-surface-high px-1.5 py-0.5">
-					{domain}
-					<button
-						class="text-color-error"
-						onclick={() => {
-							deleteFromBlacklist(domain);
-						}}
-						title="Delete"
-						type="button"
-					>
-						<Icon d={mdiTrashCanOutline} size="20" />
-					</button>
-				</span>
+				<Chip content={domain}>
+					{#snippet end()}
+						<Button
+							class="size-6"
+							icon={mdiClose}
+							iconSize="18"
+							onclick={() => {
+								deleteFromBlacklist(domain);
+							}}
+							size="xs"
+							title="Delete"
+							variant="dangerText"
+						/>
+					{/snippet}
+				</Chip>
 			{:else}
+				<span class="text-sm text-color-on-surface-variant">
+					{browser.i18n.getMessage('options_general_no_sites_selected')}
+				</span>
 				<span class="text-sm text-color-on-surface-variant">
 					{browser.i18n.getMessage('options_hide_button_on_sites_empty_list')}
 				</span>
 			{/each}
-		</div>
 	</div>
 
-	<div class="pt-2 text-lg">Popup window</div>
+	<div class="pt-2 text-xl">{browser.i18n.getMessage('options_tab_popup_window')}</div>
+
+	<PopupModeSwitch />
 
 	<SwitchGroup>
+		<Switch
+			hint={browser.i18n.getMessage('options_general_show_on_selected_hint')}
+			label={browser.i18n.getMessage('options_general_show_on_selected')}
+			bind:checked={storage.settings.showPopupOnSelection}
+		/>
 		<Switch
 			hint={browser.i18n.getMessage('options_lock_popup_window_hint')}
 			label={browser.i18n.getMessage('options_lock_popup_window')}
 			bind:checked={storage.settings.lockWindow}
 		/>
 		<Switch
+			hint={browser.i18n.getMessage('options_show_original_text_hint')}
 			label={browser.i18n.getMessage('options_show_original_text')}
 			bind:checked={storage.settings.showOriginalText}
 		/>
 		<Switch
+			hint={browser.i18n.getMessage('options_show_transliteration_hint')}
 			label={browser.i18n.getMessage('options_show_transliteration')}
 			bind:checked={storage.settings.showTransliteration}
 		/>
@@ -74,13 +90,15 @@
 		{/each}
 	</Select>
 	<div class="flex flex-col items-start gap-2">
-		<p class="text-sm">{browser.i18n.getMessage('options_keyboard_shortcut_open_popup')}:</p>
-		{#await shortcutKeysPromise then shortcutKeys}
-			<Shortcuts keys={shortcutKeys} />
-		{/await}
+		<div class="flex w-full items-center justify-between">
+			<p>{browser.i18n.getMessage('options_keyboard_shortcut_open_popup')}:</p>
+			{#await shortcutKeysPromise then shortcutKeys}
+				<Shortcuts keys={shortcutKeys} />
+			{/await}
+		</div>
 		{#if import.meta.env.CHROME}
 			<button
-				class="cursor-pointer text-sm text-blue-600 hover:underline dark:text-blue-400"
+				class="cursor-pointer self-end text-sm text-color-link hover:underline"
 				onclick={openExtensionsShortcuts}
 				type="button"
 			>
@@ -90,20 +108,21 @@
 	</div>
 
 	<!-- <OAuth /> -->
-
 </div>
 
 <script lang="ts">
 import { FontSize } from '~/types';
 import { storage } from '~/shared/storage.svelte';
 import SelectLanguageSimple from '~/lib/SelectLanguageSimple.svelte';
-import Icon from '~/lib/Icon.svelte';
+import Button from '~/lib/Button.svelte';
 import Select from '~/lib/Select.svelte';
 import Switch from '~/lib/Switch.svelte';
 import SwitchGroup from '~/lib/SwitchGroup.svelte';
+import Chip from '~/lib/Chip.svelte';
 import Shortcuts from '~/lib/Shortcuts.svelte';
+import PopupModeSwitch from './lib/PopupModeSwitch.svelte';
 import { getShortcutByCommand } from '~/shared/browser';
-import { mdiTrashCanOutline } from '@mdi/js';
+import { mdiClose } from '@mdi/js';
 // import OAuth from './OAuth.svelte';
 
 let userLanguage = $state<string>(getUserLanguage());

@@ -48,6 +48,7 @@ const button = tv({
 				'before:pointer-events-none before:absolute before:inset-0 before:rounded-full before:border before:border-color-primary/50',
 			],
 			danger: 'bg-color-error/100 text-color-on-error outline-color-error enabled:hover:bg-color-error/90 enabled:active:bg-color-error/80',
+			dangerText: 'text-color-error outline-color-error enabled:hover:bg-color-error/10 enabled:active:bg-color-error/20',
 		},
 		size: {
 			xs: 'h-8 gap-1 px-3 text-sm',

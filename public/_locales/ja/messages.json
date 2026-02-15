@@ -5,9 +5,6 @@
     "app_description": {
         "message": "選択したテキストを Google 翻訳で翻訳する"
     },
-    "app_version": {
-        "message": "バージョン"
-    },
     "context_menus_title": {
         "message": "選択したテキストを翻訳する"
     },
@@ -35,29 +32,86 @@
     "options_tab_history": {
         "message": "歴史"
     },
+    "options_general_translation_button": {
+        "message": "翻訳ボタン"
+    },
+    "options_general_no_sites_selected": {
+        "message": "サイトが選択されていません"
+    },
+    "options_general_show_on_selected": {
+        "message": "テキストが選択されているときにポップアップを表示する"
+    },
+    "options_general_show_on_selected_hint": {
+        "message": "テキストの選択後にポップアップが表示されます (シンプル モードで最適)。"
+    },
+    "options_general_mode_full": {
+        "message": "フルモード"
+    },
+    "options_general_mode_full_hint": {
+        "message": "すべての機能を含むポップアップ ウィンドウ。"
+    },
+    "options_general_mode_simple": {
+        "message": "シンプルモード"
+    },
+    "options_general_mode_simple_hint": {
+        "message": "翻訳のみを表示し、他には何も表示しません。"
+    },
     "options_inline_button_show": {
         "message": "テキストが選択されているときにボタンを表示する"
+    },
+    "options_inline_button_show_hint": {
+        "message": "選択したテキストの横に翻訳ボタンが表示されます。"
     },
     "options_text_field_button_show": {
         "message": "テキストフィールドにボタンを表示"
     },
+    "options_text_field_button_show_hint": {
+        "message": "テキスト入力フィールドでテキストが選択されているときにボタンを表示します。"
+    },
+    "options_hide_translation_button": {
+        "message": "あなたの言語の翻訳ボタンを非表示にする"
+    },
+    "options_hide_translation_button_hint": {
+        "message": "システム言語でテキストを選択するとボタンが表示されない"
+    },
     "options_hide_button_on_sites": {
-        "message": "次のサイトのボタンを非表示にします。"
+        "message": "特定の Web サイトで翻訳ボタンを非表示にする:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "除外したいサイトのポップアップウィンドウのメニューを使用してドメインを追加します"
+        "message": "除外したいサイトのポップアップウィンドウのメニューを使用してドメインを追加します。"
     },
     "options_show_original_text": {
         "message": "ソーステキストを表示"
     },
+    "options_show_original_text_hint": {
+        "message": "翻訳とともに元のテキストを表示します (フル モードのみ)。"
+    },
     "options_show_transliteration": {
         "message": "音訳を表示"
+    },
+    "options_show_transliteration_hint": {
+        "message": "可能な場合は音訳を表示します。"
     },
     "options_lock_popup_window": {
         "message": "ポップアップウィンドウをロックする"
     },
     "options_lock_popup_window_hint": {
-        "message": "有効にすると、ポップアップの外側をクリックしてもポップアップは閉じなくなります。"
+        "message": "外側をクリックしてもポップアップは開いたままになります。"
+    },
+    "options_providers_provider": {
+        "message": "プロバイダー"
+    },
+    "options_providers_model": {
+        "message": "モデル"
+    },
+    "options_appearance_theme": {
+        "message": "テーマ"
+    },
+    "options_appearance_accent_color": {
+        "message": "アクセントカラー"
+    },
+    "options_appearance_bg_and_text": {
+        "message": "背景とプレーンテキスト"
     },
     "options_history_length": {
         "message": "履歴エントリ (最大)"
@@ -122,12 +176,6 @@
     "options_support_donations": {
         "message": "この無料ソフトウェアをサポートしたい場合は、"
     },
-    "options_address": {
-        "message": "住所"
-    },
-    "options_copy_address": {
-        "message": "アドレスをコピーする"
-    },
     "text_expand": {
         "message": "もっと見る"
     },
@@ -153,7 +201,7 @@
         "message": "例"
     },
     "popup_perhaps_you_meant": {
-        "message": "おそらく次のことを言いたかったのでしょう："
+        "message": "おそらく次のことを言いたかったのでしょう。"
     },
     "popup_original_language": {
         "message": "元の言語:"
@@ -176,6 +224,12 @@
     "popup_menu_options_link": {
         "message": "追加設定"
     },
+    "popup_menu_switch_to_simple_mode": {
+        "message": "シンプルモードに切り替える"
+    },
+    "popup_menu_switch_to_full_mode": {
+        "message": "フルモードに切り替える"
+    },
     "popup_placeholder_translation": {
         "message": "翻訳"
     },
@@ -196,12 +250,6 @@
     },
     "tooltip_copy_not_support_on_http": {
         "message": "コピーは HTTP サイトではサポートされていません"
-    },
-    "tooltip_copyed": {
-        "message": "コピーされました"
-    },
-    "tooltip_copy_error": {
-        "message": "コピーエラーです！"
     },
     "tooltip_listen_to_the_text": {
         "message": "テキストを聞く"
@@ -251,6 +299,9 @@
     "language_auto": {
         "message": "言語を検出する"
     },
+    "language_aa": {
+        "message": "遠くまで"
+    },
     "language_ab": {
         "message": "アブハズ語"
     },
@@ -263,8 +314,8 @@
     "language_af": {
         "message": "アフリカーンス語"
     },
-    "language_sq": {
-        "message": "アルバニア人"
+    "language_ak": {
+        "message": "トゥイ（阿寒）"
     },
     "language_alz": {
         "message": "アルール"
@@ -275,11 +326,11 @@
     "language_ar": {
         "message": "アラビア語"
     },
-    "language_hy": {
-        "message": "アルメニア語"
-    },
     "language_as": {
         "message": "アッサム語"
+    },
+    "language_av": {
+        "message": "アヴァール"
     },
     "language_awa": {
         "message": "アワディ"
@@ -290,26 +341,20 @@
     "language_az": {
         "message": "アゼルバイジャン語"
     },
-    "language_ban": {
-        "message": "バリ人"
-    },
-    "language_bm": {
-        "message": "バンバラ"
-    },
     "language_ba": {
         "message": "バシキール語"
     },
-    "language_eu": {
-        "message": "バスク語"
+    "language_bal": {
+        "message": "バルーチ"
     },
-    "language_btx": {
-        "message": "バタク・カロ"
-    },
-    "language_bts": {
-        "message": "バタク・シマルングン"
+    "language_ban": {
+        "message": "バリ人"
     },
     "language_bbc": {
         "message": "バタク・トバ"
+    },
+    "language_bci": {
+        "message": "バオレ"
     },
     "language_be": {
         "message": "ベラルーシ語"
@@ -317,11 +362,17 @@
     "language_bem": {
         "message": "ベンバ"
     },
-    "language_bn": {
-        "message": "ベンガル語"
+    "language_ber": {
+        "message": "タマジト (ティフィナグ)"
+    },
+    "language_ber_Latn": {
+        "message": "タマジト"
     },
     "language_bew": {
         "message": "ベタウィ"
+    },
+    "language_bg": {
+        "message": "ブルガリア語"
     },
     "language_bho": {
         "message": "ボージプリ"
@@ -329,59 +380,89 @@
     "language_bik": {
         "message": "ビコル"
     },
-    "language_bs": {
-        "message": "ボスニア語"
+    "language_bm": {
+        "message": "バンバラ"
+    },
+    "language_bm_Nkoo": {
+        "message": "NKo"
+    },
+    "language_bn": {
+        "message": "ベンガル語"
+    },
+    "language_bo": {
+        "message": "チベット語"
     },
     "language_br": {
         "message": "ブルトン語"
     },
-    "language_bg": {
-        "message": "ブルガリア語"
+    "language_bs": {
+        "message": "ボスニア語"
+    },
+    "language_bts": {
+        "message": "バタク・シマルングン"
+    },
+    "language_btx": {
+        "message": "バタク・カロ"
     },
     "language_bua": {
         "message": "ブリヤート語"
     },
-    "language_yue": {
-        "message": "広東語"
-    },
     "language_ca": {
         "message": "カタルーニャ語"
+    },
+    "language_ce": {
+        "message": "チェチェン"
     },
     "language_ceb": {
         "message": "セブアノ語"
     },
-    "language_ny": {
-        "message": "チチェワ（ニャンジャ）"
+    "language_cgg": {
+        "message": "気賀"
     },
-    "language_zh_CN": {
-        "message": "中国語（簡体字）"
+    "language_ch": {
+        "message": "チャモロ"
     },
-    "language_zh_TW": {
-        "message": "中国語（繁体字）"
+    "language_chk": {
+        "message": "チューケ人"
     },
-    "language_cv": {
-        "message": "チュヴァシ語"
+    "language_chm": {
+        "message": "メドウマリ"
+    },
+    "language_ckb": {
+        "message": "クルド語 (ソラニ)"
+    },
+    "language_cnh": {
+        "message": "ハカ・チン"
     },
     "language_co": {
         "message": "コルシカ島"
     },
     "language_crh": {
-        "message": "クリミア・タタール人"
+        "message": "クリミア タタール語 (キリル文字)"
     },
-    "language_hr": {
-        "message": "クロアチア語"
+    "language_crh_Latn": {
+        "message": "クリミア・タタール語 (ラテン語)"
+    },
+    "language_crs": {
+        "message": "セーシェル クレオール"
     },
     "language_cs": {
         "message": "チェコ語"
     },
+    "language_cv": {
+        "message": "チュヴァシ語"
+    },
+    "language_cy": {
+        "message": "ウェールズ語"
+    },
     "language_da": {
         "message": "デンマーク語"
     },
+    "language_de": {
+        "message": "ドイツ語"
+    },
     "language_din": {
         "message": "ディンカ語"
-    },
-    "language_dv": {
-        "message": "ディベヒ"
     },
     "language_doi": {
         "message": "ドグリ"
@@ -389,11 +470,20 @@
     "language_dov": {
         "message": "ドンベ"
     },
-    "language_nl": {
-        "message": "オランダ語"
+    "language_dv": {
+        "message": "ディベヒ語"
+    },
+    "language_dyu": {
+        "message": "デュラ"
     },
     "language_dz": {
         "message": "ゾンカ語"
+    },
+    "language_ee": {
+        "message": "エウェ"
+    },
+    "language_el": {
+        "message": "ギリシャ語"
     },
     "language_en": {
         "message": "英語"
@@ -401,65 +491,77 @@
     "language_eo": {
         "message": "エスペラント語"
     },
+    "language_es": {
+        "message": "スペイン語"
+    },
     "language_et": {
         "message": "エストニア語"
     },
-    "language_ee": {
-        "message": "エウェ"
+    "language_eu": {
+        "message": "バスク語"
     },
-    "language_fj": {
-        "message": "フィジー語"
+    "language_fa": {
+        "message": "ペルシア語"
     },
-    "language_fil": {
-        "message": "フィリピン語(タガログ語)"
+    "language_fa_AF": {
+        "message": "ダリ"
+    },
+    "language_ff": {
+        "message": "フラニ語"
     },
     "language_fi": {
         "message": "フィンランド語"
     },
+    "language_fil": {
+        "message": "フィリピン語(タガログ語)"
+    },
+    "language_fj": {
+        "message": "フィジー語"
+    },
+    "language_fo": {
+        "message": "フェロー語"
+    },
+    "language_fon": {
+        "message": "フォン"
+    },
     "language_fr": {
         "message": "フランス語"
-    },
-    "language_fr_FR": {
-        "message": "フランス語 (フランス語)"
     },
     "language_fr_CA": {
         "message": "フランス語 (カナダ)"
     },
+    "language_fr_FR": {
+        "message": "フランス語 (フランス)"
+    },
+    "language_fur": {
+        "message": "フリウリ語"
+    },
     "language_fy": {
         "message": "フリジア語"
     },
-    "language_ff": {
-        "message": "フルフルデ"
+    "language_ga": {
+        "message": "アイルランド人"
     },
     "language_gaa": {
         "message": "ガ"
     },
+    "language_gd": {
+        "message": "スコットランドゲール語"
+    },
     "language_gl": {
         "message": "ガリシア語"
-    },
-    "language_lg": {
-        "message": "ガンダ (ルガンダ)"
-    },
-    "language_ka": {
-        "message": "グルジア語"
-    },
-    "language_de": {
-        "message": "ドイツ語"
-    },
-    "language_el": {
-        "message": "ギリシャ語"
     },
     "language_gn": {
         "message": "グアラニー語"
     },
+    "language_gom": {
+        "message": "コンカニ"
+    },
     "language_gu": {
         "message": "グジャラート語"
     },
-    "language_ht": {
-        "message": "ハイチ クレオール"
-    },
-    "language_cnh": {
-        "message": "ハカ・チン"
+    "language_gv": {
+        "message": "マンクス"
     },
     "language_ha": {
         "message": "ハウサ語"
@@ -467,122 +569,158 @@
     "language_haw": {
         "message": "ハワイアン"
     },
-    "language_iw": {
-        "message": "ヘブライ語"
+    "language_hi": {
+        "message": "ヒンディー語"
     },
     "language_hil": {
         "message": "ヒリガイノン"
     },
-    "language_hi": {
-        "message": "ヒンディー語"
-    },
     "language_hmn": {
         "message": "モン族"
     },
-    "language_hu": {
-        "message": "ハンガリー語"
+    "language_hr": {
+        "message": "クロアチア語"
     },
     "language_hrx": {
         "message": "フンスリック"
     },
-    "language_is": {
-        "message": "アイスランド語"
+    "language_ht": {
+        "message": "ハイチ クレオール"
+    },
+    "language_hu": {
+        "message": "ハンガリー語"
+    },
+    "language_hy": {
+        "message": "アルメニア語"
+    },
+    "language_iba": {
+        "message": "イバン"
+    },
+    "language_id": {
+        "message": "インドネシア語"
     },
     "language_ig": {
         "message": "イボ語"
     },
     "language_ilo": {
-        "message": "イロコ"
+        "message": "イロカノ"
     },
-    "language_id": {
-        "message": "インドネシア語"
-    },
-    "language_ga": {
-        "message": "アイルランド人"
+    "language_is": {
+        "message": "アイスランド語"
     },
     "language_it": {
         "message": "イタリア語"
     },
+    "language_iu": {
+        "message": "イヌクトゥット語 (音節)"
+    },
+    "language_iu_Latn": {
+        "message": "イヌクトゥット語 (ラテン語)"
+    },
+    "language_iw": {
+        "message": "ヘブライ語"
+    },
     "language_ja": {
         "message": "日本語"
+    },
+    "language_jam": {
+        "message": "ジャマイカのパトワ"
     },
     "language_jw": {
         "message": "ジャワ語"
     },
-    "language_kn": {
-        "message": "カンナダ語"
+    "language_ka": {
+        "message": "グルジア語"
     },
-    "language_pam": {
-        "message": "カパンパンガン"
+    "language_kac": {
+        "message": "京浦"
+    },
+    "language_kek": {
+        "message": "クエクチ"
+    },
+    "language_kg": {
+        "message": "キコンゴ"
+    },
+    "language_kha": {
+        "message": "カシ"
     },
     "language_kk": {
         "message": "カザフ語"
     },
+    "language_kl": {
+        "message": "カラリスト"
+    },
     "language_km": {
         "message": "クメール語"
     },
-    "language_cgg": {
-        "message": "気賀"
-    },
-    "language_rw": {
-        "message": "ルワンダ"
-    },
-    "language_ktu": {
-        "message": "キツバ"
-    },
-    "language_gom": {
-        "message": "コンカニ"
+    "language_kn": {
+        "message": "カンナダ語"
     },
     "language_ko": {
-        "message": "韓国語"
+        "message": "韓国人"
+    },
+    "language_kr": {
+        "message": "カヌリ"
     },
     "language_kri": {
         "message": "クリオ"
     },
+    "language_ktu": {
+        "message": "キトゥバ"
+    },
     "language_ku": {
         "message": "クルド語 (クルマンジ)"
     },
-    "language_ckb": {
-        "message": "クルド語 (ソラニ)"
+    "language_kv": {
+        "message": "コミ"
     },
     "language_ky": {
         "message": "キルギス"
     },
-    "language_lo": {
-        "message": "ラオ語"
-    },
-    "language_ltg": {
-        "message": "ラトガリアン"
-    },
     "language_la": {
         "message": "ラテン語"
-    },
-    "language_lv": {
-        "message": "ラトビア語"
-    },
-    "language_lij": {
-        "message": "リグーリア語"
-    },
-    "language_li": {
-        "message": "リンブルガン"
-    },
-    "language_ln": {
-        "message": "リンガラ"
-    },
-    "language_lt": {
-        "message": "リトアニア語"
-    },
-    "language_lmo": {
-        "message": "ロンバード"
-    },
-    "language_luo": {
-        "message": "ルオ"
     },
     "language_lb": {
         "message": "ルクセンブルク語"
     },
-    "language_mk": {
-        "message": "マケドニア語"
+    "language_lg": {
+        "message": "ルガンダ"
+    },
+    "language_li": {
+        "message": "リンブルフ語"
+    },
+    "language_lij": {
+        "message": "リグーリア語"
+    },
+    "language_lmo": {
+        "message": "ロンバード"
+    },
+    "language_ln": {
+        "message": "リンガラ"
+    },
+    "language_lo": {
+        "message": "ラオ語"
+    },
+    "language_lt": {
+        "message": "リトアニア語"
+    },
+    "language_ltg": {
+        "message": "ラトガリアン"
+    },
+    "language_lua": {
+        "message": "ツィルバ"
+    },
+    "language_luo": {
+        "message": "ルオ"
+    },
+    "language_lus": {
+        "message": "ミゾ"
+    },
+    "language_lv": {
+        "message": "ラトビア語"
+    },
+    "language_mad": {
+        "message": "マドゥラ人"
     },
     "language_mai": {
         "message": "マイティリ語"
@@ -590,8 +728,38 @@
     "language_mak": {
         "message": "マカッサル"
     },
+    "language_mam": {
+        "message": "ママ"
+    },
+    "language_mfe": {
+        "message": "モーリシャス・クレオール語"
+    },
     "language_mg": {
         "message": "マダガスカル"
+    },
+    "language_mh": {
+        "message": "マーシャル人"
+    },
+    "language_mi": {
+        "message": "マオリ語"
+    },
+    "language_min": {
+        "message": "ミナン"
+    },
+    "language_mk": {
+        "message": "マケドニア語"
+    },
+    "language_ml": {
+        "message": "マラヤーラム語"
+    },
+    "language_mn": {
+        "message": "モンゴル語"
+    },
+    "language_mni_Mtei": {
+        "message": "メイテイロン (マニプリ)"
+    },
+    "language_mr": {
+        "message": "マラーティー語"
     },
     "language_ms": {
         "message": "マレー語"
@@ -599,146 +767,134 @@
     "language_ms_Arab": {
         "message": "マレー語（ジャウィ語）"
     },
-    "language_ml": {
-        "message": "マラヤーラム語"
-    },
     "language_mt": {
         "message": "マルタ語"
     },
-    "language_mi": {
-        "message": "マオリ語"
-    },
-    "language_mr": {
-        "message": "マラーティー語"
-    },
-    "language_chm": {
-        "message": "メドウマリ"
-    },
-    "language_mni_Mtei": {
-        "message": "メイテイロン (マニプリ)"
-    },
-    "language_min": {
-        "message": "ミナン"
-    },
-    "language_lus": {
-        "message": "ミゾ"
-    },
-    "language_mn": {
-        "message": "モンゴル語"
+    "language_mwr": {
+        "message": "マルワディ"
     },
     "language_my": {
         "message": "ミャンマー（ビルマ語）"
     },
-    "language_nr": {
-        "message": "ンデベレ (南)"
-    },
-    "language_new": {
-        "message": "ネパールバサ (ネワール)"
+    "language_ndc_ZW": {
+        "message": "ンダウ"
     },
     "language_ne": {
         "message": "ネパール語"
     },
-    "language_nso": {
-        "message": "北ソト語 (セペディ)"
+    "language_new": {
+        "message": "ネパールバサ (ネワール)"
+    },
+    "language_nhe": {
+        "message": "ナワトル語 (東ワステカ)"
+    },
+    "language_nl": {
+        "message": "オランダ語"
     },
     "language_no": {
         "message": "ノルウェー語"
     },
+    "language_nr": {
+        "message": "ンデベレ (南)"
+    },
+    "language_nso": {
+        "message": "セペディ"
+    },
     "language_nus": {
         "message": "ヌエル"
+    },
+    "language_ny": {
+        "message": "チチェワ"
     },
     "language_oc": {
         "message": "オック語"
     },
-    "language_or": {
-        "message": "オディア（織谷）"
-    },
     "language_om": {
         "message": "オロモ"
     },
-    "language_pag": {
-        "message": "パンガシナン"
+    "language_or": {
+        "message": "オディア（織谷）"
     },
-    "language_pap": {
-        "message": "パピアメント"
-    },
-    "language_ps": {
-        "message": "パシュトゥー語"
-    },
-    "language_fa": {
-        "message": "ペルシア語"
-    },
-    "language_pl": {
-        "message": "ポーランド語"
-    },
-    "language_pt": {
-        "message": "ポルトガル語"
-    },
-    "language_pt_PT": {
-        "message": "ポルトガル語 (ポルトガル)"
-    },
-    "language_pt_BR": {
-        "message": "ポルトガル語 (ブラジル)"
+    "language_os": {
+        "message": "オセチア人"
     },
     "language_pa": {
-        "message": "パンジャブ語"
+        "message": "パンジャブ語 (グルムキ語)"
     },
     "language_pa_Arab": {
         "message": "パンジャブ語 (シャームキー語)"
     },
+    "language_pag": {
+        "message": "パンガシナン"
+    },
+    "language_pam": {
+        "message": "カパンパンガン"
+    },
+    "language_pap": {
+        "message": "パピアメント"
+    },
+    "language_pl": {
+        "message": "ポーランド語"
+    },
+    "language_ps": {
+        "message": "パシュトゥー語"
+    },
+    "language_pt": {
+        "message": "ポルトガル語"
+    },
+    "language_pt_BR": {
+        "message": "ポルトガル語 (ブラジル)"
+    },
+    "language_pt_PT": {
+        "message": "ポルトガル語 (ポルトガル)"
+    },
     "language_qu": {
         "message": "ケチュア語"
-    },
-    "language_rom": {
-        "message": "ロマ語"
-    },
-    "language_ro": {
-        "message": "ルーマニア語"
     },
     "language_rn": {
         "message": "ルンディ"
     },
+    "language_ro": {
+        "message": "ルーマニア語"
+    },
+    "language_rom": {
+        "message": "ロマ語"
+    },
     "language_ru": {
         "message": "ロシア語"
     },
-    "language_sm": {
-        "message": "サモア語"
-    },
-    "language_sg": {
-        "message": "サンゴ"
+    "language_rw": {
+        "message": "ルワンダ"
     },
     "language_sa": {
         "message": "サンスクリット語"
     },
-    "language_gd": {
-        "message": "スコットランドゲール語"
+    "language_sah": {
+        "message": "ヤクート"
     },
-    "language_sr": {
-        "message": "セルビア語"
+    "language_sat": {
+        "message": "サンタリ（オル・チキ）"
     },
-    "language_st": {
-        "message": "セソト"
-    },
-    "language_crs": {
-        "message": "セーシェル クレオール"
-    },
-    "language_shn": {
-        "message": "シャン"
-    },
-    "language_sn": {
-        "message": "ショナ"
+    "language_sat_Latn": {
+        "message": "サンタリ語 (ラテン語)"
     },
     "language_scn": {
-        "message": "シチリア語"
-    },
-    "language_szl": {
-        "message": "シレジア"
+        "message": "シチリア人"
     },
     "language_sd": {
         "message": "シンド語"
     },
+    "language_se": {
+        "message": "サーミ語（北部）"
+    },
+    "language_sg": {
+        "message": "サンゴ"
+    },
+    "language_shn": {
+        "message": "シャン"
+    },
     "language_si": {
-        "message": "シンハラ語 (シンハラ語)"
+        "message": "シンハラ語"
     },
     "language_sk": {
         "message": "スロバキア語"
@@ -746,38 +902,47 @@
     "language_sl": {
         "message": "スロベニア語"
     },
+    "language_sm": {
+        "message": "サモア語"
+    },
+    "language_sn": {
+        "message": "ショナ"
+    },
     "language_so": {
         "message": "ソマリ語"
     },
-    "language_es": {
-        "message": "スペイン語"
+    "language_sq": {
+        "message": "アルバニア人"
     },
-    "language_su": {
-        "message": "スンダ人"
-    },
-    "language_sw": {
-        "message": "スワヒリ語"
+    "language_sr": {
+        "message": "セルビア語"
     },
     "language_ss": {
         "message": "スワティ"
     },
+    "language_st": {
+        "message": "セソト"
+    },
+    "language_su": {
+        "message": "スンダ人"
+    },
+    "language_sus": {
+        "message": "スス"
+    },
     "language_sv": {
         "message": "スウェーデン語"
     },
-    "language_ber": {
-        "message": "タマジト (ティフィナグ)"
+    "language_sw": {
+        "message": "スワヒリ語"
     },
-    "language_ber_latn": {
-        "message": "タマジト"
-    },
-    "language_tg": {
-        "message": "タジク語"
+    "language_szl": {
+        "message": "シレジア"
     },
     "language_ta": {
         "message": "タミル語"
     },
-    "language_tt": {
-        "message": "タタール語"
+    "language_tcy": {
+        "message": "トゥル"
     },
     "language_te": {
         "message": "テルグ語"
@@ -785,26 +950,59 @@
     "language_tet": {
         "message": "テトゥム"
     },
+    "language_tg": {
+        "message": "タジク語"
+    },
     "language_th": {
         "message": "タイ語"
     },
     "language_ti": {
         "message": "ティグリニャ"
     },
-    "language_ts": {
-        "message": "ツォンガ"
-    },
-    "language_tn": {
-        "message": "ツワナ"
-    },
-    "language_tr": {
-        "message": "トルコ語"
+    "language_tiv": {
+        "message": "ティヴ"
     },
     "language_tk": {
         "message": "トルクメン語"
     },
-    "language_ak": {
-        "message": "トゥイ（阿寒）"
+    "language_tl": {
+        "message": "フィリピン人"
+    },
+    "language_tn": {
+        "message": "ツワナ"
+    },
+    "language_to": {
+        "message": "トンガ語"
+    },
+    "language_tpi": {
+        "message": "トク・ピシン"
+    },
+    "language_tr": {
+        "message": "トルコ語"
+    },
+    "language_trp": {
+        "message": "コックボロク"
+    },
+    "language_ts": {
+        "message": "ツォンガ"
+    },
+    "language_tt": {
+        "message": "タタール語"
+    },
+    "language_tum": {
+        "message": "トゥンブカ"
+    },
+    "language_ty": {
+        "message": "タヒチ語"
+    },
+    "language_tyv": {
+        "message": "トゥバ"
+    },
+    "language_udm": {
+        "message": "ウドムルト語"
+    },
+    "language_ug": {
+        "message": "ウイグル語"
     },
     "language_uk": {
         "message": "ウクライナ語"
@@ -812,17 +1010,23 @@
     "language_ur": {
         "message": "ウルドゥー語"
     },
-    "language_ug": {
-        "message": "ウイグル語"
-    },
     "language_uz": {
         "message": "ウズベク語"
+    },
+    "language_ve": {
+        "message": "ヴェンダ"
+    },
+    "language_vec": {
+        "message": "ベネチアン"
     },
     "language_vi": {
         "message": "ベトナム語"
     },
-    "language_cy": {
-        "message": "ウェールズ語"
+    "language_war": {
+        "message": "ワライ"
+    },
+    "language_wo": {
+        "message": "ウォロフ"
     },
     "language_xh": {
         "message": "コサ語"
@@ -835,6 +1039,18 @@
     },
     "language_yua": {
         "message": "ユカテック マヤ"
+    },
+    "language_yue": {
+        "message": "広東語"
+    },
+    "language_zap": {
+        "message": "サポテカ"
+    },
+    "language_zh_CN": {
+        "message": "中国語（簡体字）"
+    },
+    "language_zh_TW": {
+        "message": "中国語（繁体字）"
     },
     "language_zu": {
         "message": "ズールー語"

@@ -2,7 +2,7 @@
 
 Translate selected text with Google Translate
 
-![translator screenshot](docs/screenshot.png)
+![translator screenshot](docs/screen.png)
 
 ***
 

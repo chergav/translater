@@ -1,9 +1,10 @@
 <div
 	style="left: {left}px; top: {top}px;"
 	class={[
-		'fixed z-9999999 flex h-fit w-[550px] rounded-[18px]',
+		'fixed z-9999999 flex h-fit rounded-[18px]',
 		'bg-color-surface-container text-start text-sm text-color-on-surface shadow-xl',
-		dragging ? 'select-none' : 'select-auto',
+		isFullMode ? 'w-xl' : 'w-fit max-w-sm min-w-64',
+		popupStore.dragging ? 'select-none' : 'select-auto',
 		POPUP_CLASS,
 	]}
 	onclickoutside={onClickOutside}
@@ -11,57 +12,35 @@
 	use:popupPosition
 	in:fade={{ duration: 150 }}
 >
-	<div class="flex w-full flex-col">
-		<header
-			class={[
-				'flex w-full items-center justify-between p-1',
-				dragging ? 'cursor-grabbing' : 'cursor-move',
-			]}
-			onmousedown={onDragStart}
-			role="toolbar"
-			tabindex="-1"
-		>
-			<div class="flex items-center gap-1">
-				<CacheNav />
-				<SelectModel/>
-			</div>
-			<div class="flex items-center gap-1">
-				<Menu />
-				<Button icon={mdiClose} onclick={closePopup} size="xs" />
-			</div>
-		</header>
-
-		<PopupMain />
-
-		<PopupFooter />
-	</div>
+	{#if isFullMode}
+		<PopupFull {onDragStart} />
+	{:else}
+		<PopupSimple {onDragStart} />
+	{/if}
 </div>
 
 <script lang="ts">
 import type { Action } from 'svelte/action';
+import { PopupMode } from '~/types';
 import { onDestroy } from 'svelte';
 import { fade } from 'svelte/transition';
 import { storage } from '~/shared/storage.svelte';
 import { store } from '~/entrypoints/content/store.svelte';
-import Button from '~/lib/Button.svelte';
-import Menu from './lib/Menu.svelte';
-import CacheNav from './lib/CacheNav.svelte';
-import SelectModel from './lib/SelectModel.svelte';
-import PopupMain from './lib/PopupMain/PopupMain.svelte';
-import PopupFooter from './lib/PopupFooter/PopupFooter.svelte';
+import { popupStore } from '~/entrypoints/content/lib/popupStore.svelte';
+import PopupFull from './PopupFull/PopupFull.svelte';
+import PopupSimple from './PopupSimple/PopupSimple.svelte';
 import { computePosition, offset, flip, shift, type VirtualElement } from '@floating-ui/dom';
-import { mdiClose } from '@mdi/js';
 import { clickOutside } from '~/utils';
 import { POPUP_CLASS } from '~/shared/constants';
 
 let left = $state<number>(20);
 let top = $state<number>(20);
-let dragging = $state<boolean>(false);
 let prevX = $state<number | null>(null);
 let prevY = $state<number | null>(null);
 let reference = $derived<VirtualElement>({
 	getBoundingClientRect: () => store.selectedElemRect || new DOMRect(20, 20, 0, 0),
 });
+const isFullMode = $derived<boolean>(storage.settings.popupMode === PopupMode.Full);
 
 const popupPosition: Action<HTMLDivElement> = popup => {
 	computePosition(reference, popup, {
@@ -85,19 +64,19 @@ const popupPosition: Action<HTMLDivElement> = popup => {
 function onDragStart(event: MouseEvent) {
 	if (event.button !== 0 || event.target !== event.currentTarget) return;
 
-	dragging = true;
+	popupStore.dragging = true;
 
 	window.addEventListener('mousemove', onDragMove);
 	window.addEventListener('mouseup', () => {
 		window.removeEventListener('mousemove', onDragMove);
 		prevX = null;
 		prevY = null;
-		dragging = false;
+		popupStore.dragging = false;
 	}, { once: true });
 }
 
 function onDragMove(event: MouseEvent) {
-	if (!dragging) return;
+	if (!popupStore.dragging) return;
 
 	if (prevX === null || prevY === null) {
 		prevX = event.clientX;
@@ -115,10 +94,6 @@ function onDragMove(event: MouseEvent) {
 
 	prevX = event.clientX;
 	prevY = event.clientY;
-}
-
-function closePopup() {
-	store.showPopup = false;
 }
 
 function onClickOutside() {
