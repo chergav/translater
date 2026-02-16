@@ -1,0 +1,40 @@
+name: Feature Request
+description: Suggest a new feature for the extension
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature!
+
+  - type: textarea
+    attributes:
+      label: Problem description
+      description: What problem does this feature solve? What's missing?
+      placeholder: I'm always frustrated when...
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Proposed solution
+      description: Describe how you'd like this feature to work.
+      placeholder: I'd like the extension to...
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Alternatives considered
+      description: Have you thought about other ways to solve this?
+      placeholder: I also considered...
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Any mockups, examples, or other relevant info.
+    validations:
+      required: false

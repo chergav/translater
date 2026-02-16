@@ -1,5 +1,6 @@
 name: Bug Report
 description: Report a bug in the extension
+title: "[BUG] "
 labels: ["bug"]
 body:
   - type: markdown
