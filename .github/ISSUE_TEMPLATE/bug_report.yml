@@ -1,0 +1,70 @@
+name: Bug Report
+description: Report a bug in the extension
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this bug!
+
+  - type: textarea
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+      placeholder: The extension crashes when...
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: To Reproduce
+      description: Describe how to reproduce the issue.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      description: What you expected to happen.
+    validations:
+      required: false
+
+  - type: input
+    attributes:
+      label: Operating System
+      placeholder: e.g. Windows 11, macOS 14.1, Ubuntu 22.04
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Browser
+      placeholder: e.g. Chrome 120, Firefox 121, Edge 120
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Extension version
+      placeholder: e.g. 1.2.3
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Console errors
+      description: If there are errors in the browser console (F12), paste them here
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Any other relevant information
+    validations:
+      required: false
