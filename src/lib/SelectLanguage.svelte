@@ -10,24 +10,24 @@
 	<ListboxButton
 		class={[
 			'relative flex h-8 w-52 cursor-pointer items-center overflow-hidden rounded-full pr-10 pl-3',
-			'text-start whitespace-nowrap transition-colors',
-			'border border-color-surface-high hover:bg-color-primary/10',
-			open && 'bg-color-primary/10',
+			'text-start whitespace-nowrap transition-colors active:bg-color-primary/20',
+			open ? 'bg-color-primary/10' : 'bg-color-surface-container hover:bg-color-primary/10',
 		]}
 		title={getI18nLangName(value)}
 	>
 		<span class="block truncate">{getI18nLangName(value, false)}</span>
 		<Icon
 			class={[
-				'pointer-events-none absolute right-1',
-				open ? 'text-color-primary' : 'text-color-on-surface-variant',
+				'pointer-events-none absolute right-1 text-color-on-surface-variant transition-transform',
+				open && '-scale-y-100',
 			]}
-			d={mdiUnfoldMoreHorizontal}
+			d={mdiChevronDown}
+			size="20"
 		/>
 	</ListboxButton>
 	<ListboxOptions
 		class={[
-			'absolute left-0 z-10 flex max-h-64 flex-col overflow-hidden rounded-xl shadow-lg select-none',
+			'absolute left-0 z-10 flex max-h-80 flex-col overflow-hidden rounded-xl shadow-lg select-none',
 			'border border-color-surface-high bg-color-surface',
 		]}
 	>
@@ -100,7 +100,7 @@ import { Listbox, ListboxButton, ListboxOptions, ListboxOption } from '~/lib/hea
 import Button from '~/lib/Button.svelte';
 import { languages } from '~/shared/languages';
 import Icon from '~/lib/Icon.svelte';
-import { mdiClose, mdiCheck, mdiStarOutline, mdiUnfoldMoreHorizontal } from '@mdi/js';
+import { mdiClose, mdiCheck, mdiStarOutline, mdiChevronDown } from '@mdi/js';
 
 interface Props {
 	value: string

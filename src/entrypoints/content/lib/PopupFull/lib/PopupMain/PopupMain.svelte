@@ -9,14 +9,16 @@
 				</div>
 				<Button
 					icon={mdiChevronDown}
-					iconClass={['transition-transform', originalOpen && '-scale-y-100']}
-					onclick={() => {
-						originalOpen = !originalOpen;
-					}}
+					iconClass={[
+						'transition-transform',
+						storage.settings.showOriginalText && 'rotate-180',
+					]}
+					onclick={toggleOriginalText}
 					size="xs"
+					title={browser.i18n.getMessage('options_show_original_text')}
 				/>
 			</div>
-			{#if originalOpen}
+			{#if storage.settings.showOriginalText}
 				<div
 					class="scrollbar max-h-96 overflow-y-auto whitespace-pre-line"
 					transition:slide={{ duration: 150 }}
@@ -77,27 +79,34 @@
 					<ButtonCopy text={translatedText} />
 					<TTS targetLang={storage.settings.targetLang} text={translatedText} />
 				</div>
-				<Button
-					icon={mdiChevronDown}
-					iconClass={['transition-transform', translationOpen && '-scale-y-100']}
-					onclick={() => {
-						translationOpen = !translationOpen;
-					}}
-					size="xs"
-				/>
-			</div>
-			{#if translationOpen}
-				<div
-					class="scrollbar max-h-80 overflow-y-auto p-1 whitespace-pre-line"
-					transition:slide={{ duration: 150 }}
-				>
-					{#if providerStore.isSelectedProviderGoogle}
-						<TranslationGoogle />
+				{#if !providerStore.isSelectedProviderGoogle && store.translationAi}
+					{#if store.translationAi.isStreaming}
+						<div class="flex items-center gap-1">
+							<Loader />
+							<Button
+								icon={mdiStop}
+								onclick={stopTranslation}
+								size="xs"
+								title="Stop translation"
+							/>
+						</div>
 					{:else}
-						<TranslationAi />
+						<Button
+							icon={mdiRefresh}
+							onclick={reTranslate}
+							size="xs"
+							title="Retry translation"
+						/>
 					{/if}
-				</div>
-			{/if}
+				{/if}
+			</div>
+			<div class="scrollbar max-h-80 overflow-y-auto p-1 whitespace-pre-line">
+				{#if providerStore.isSelectedProviderGoogle}
+					<TranslationGoogle />
+				{:else}
+					<TranslationAi />
+				{/if}
+			</div>
 		</div>
 	</div>
 </main>
@@ -108,21 +117,28 @@ import { store } from '~/entrypoints/content/store.svelte';
 import { storage } from '~/shared/storage.svelte';
 import { providerStore } from '~/entrypoints/options/lib/Providers/providerStore.svelte';
 import Button from '~/lib/Button.svelte';
+import Loader from '~/lib/Loader.svelte';
 import TextareaOrig from './lib/TextareaOrig.svelte';
 import TranslationGoogle from './lib/TranslationGoogle/TranslationGoogle.svelte';
 import TranslationAi from './lib/TranslationAi.svelte';
 import ButtonCopy from './lib/ButtonCopy.svelte';
 import TTS from './lib/TTS/TTS.svelte';
-import { mdiChevronDown } from '@mdi/js';
+import { mdiChevronDown, mdiRefresh, mdiStop } from '@mdi/js';
 import SelectLanguage from '~/lib/SelectLanguage.svelte';
 
-let	translationOpen = $state<boolean>(true);
-let originalOpen = $derived<boolean>(storage.settings.showOriginalText);
 const translatedText = $derived<string>(
 	providerStore.isSelectedProviderGoogle
 		? store.translated?.sentence.trans || ''
 		:  store.translationAi?.text || '',
 );
+
+function toggleOriginalText() {
+	storage.settings.showOriginalText = !storage.settings.showOriginalText;
+}
+
+function stopTranslation() {
+	store.stopTranslation();
+}
 
 function reTranslate() {
 	if (store.textToTranslate) {

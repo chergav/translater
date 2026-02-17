@@ -12,11 +12,49 @@
 	use:popupPosition
 	in:fade={{ duration: 150 }}
 >
-	{#if isFullMode}
-		<PopupFull {onDragStart} />
-	{:else}
-		<PopupSimple {onDragStart} />
-	{/if}
+	<div class="flex w-full flex-col">
+		<header
+			class={[
+				'flex w-full items-center justify-between p-1',
+				popupStore.dragging ? 'cursor-grabbing' : 'cursor-move',
+			]}
+			onmousedown={onDragStart}
+			role="toolbar"
+			tabindex="-1"
+		>
+			<div class="flex items-center gap-1">
+				<CacheNav />
+				{#if isFullMode}
+					<SelectModel/>
+				{/if}
+			</div>
+			<div class="flex items-center gap-1">
+				{#if isFullMode}
+					<Menu />
+				{:else}
+					<Button
+						icon={mdiSwapHorizontal}
+						onclick={switchToFullMode}
+						size="xs"
+						title={browser.i18n.getMessage('popup_menu_switch_to_full_mode')}
+					/>
+				{/if}
+
+				<Button
+					icon={mdiClose}
+					onclick={closePopup}
+					size="xs"
+					title="Close"
+				/>
+			</div>
+		</header>
+
+		{#if isFullMode}
+			<PopupFull />
+		{:else}
+			<PopupSimple />
+		{/if}
+	</div>
 </div>
 
 <script lang="ts">
@@ -27,11 +65,16 @@ import { fade } from 'svelte/transition';
 import { storage } from '~/shared/storage.svelte';
 import { store } from '~/entrypoints/content/store.svelte';
 import { popupStore } from '~/entrypoints/content/lib/popupStore.svelte';
+import Button from '~/lib/Button.svelte';
+import Menu from './PopupFull/lib/Menu.svelte';
+import CacheNav from './PopupFull/lib/CacheNav.svelte';
+import SelectModel from './PopupFull/lib/SelectModel.svelte';
 import PopupFull from './PopupFull/PopupFull.svelte';
 import PopupSimple from './PopupSimple/PopupSimple.svelte';
 import { computePosition, offset, flip, shift, type VirtualElement } from '@floating-ui/dom';
 import { clickOutside } from '~/utils';
 import { POPUP_CLASS } from '~/shared/constants';
+import { mdiClose, mdiSwapHorizontal } from '@mdi/js';
 
 let left = $state<number>(20);
 let top = $state<number>(20);
@@ -100,6 +143,14 @@ function onClickOutside() {
 	if (!storage.settings.lockWindow) {
 		store.showPopup = false;
 	}
+}
+
+function switchToFullMode() {
+	storage.settings.popupMode = PopupMode.Full;
+}
+
+function closePopup() {
+	store.showPopup = false;
 }
 
 onDestroy(() => {

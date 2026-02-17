@@ -1,22 +1,4 @@
 {#if store.translationAi}
-	{#if store.translationAi.isStreaming}
-		<div class="flex items-center gap-1">
-			<Loader />
-			<Button
-				icon={mdiStop}
-				onclick={stopTranslation}
-				size="xs"
-				title="Stop translation"
-			/>
-		</div>
-	{:else if shouldShowRetry}
-		<Button
-			icon={mdiRefresh}
-			label="Retry"
-			onclick={reTranslate}
-			size="xs"
-		/>
-	{/if}
 	{#if store.downloadProgress !== null}
 		<p class="text-sm text-color-on-surface-variant">
 			Downloading model: {store.downloadProgress}%
@@ -43,21 +25,4 @@
 <script lang="ts">
 import { storage } from '~/shared/storage.svelte';
 import { store } from '~/entrypoints/content/store.svelte';
-import Button from '~/lib/Button.svelte';
-import Loader from '~/lib/Loader.svelte';
-import { mdiStop, mdiRefresh } from '@mdi/js';
-
-interface Props  {
-	shouldShowRetry?: boolean
-}
-
-let { shouldShowRetry = true }: Props = $props();
-
-function stopTranslation() {
-	store.stopTranslation();
-}
-
-function reTranslate() {
-	store.translate();
-}
 </script>

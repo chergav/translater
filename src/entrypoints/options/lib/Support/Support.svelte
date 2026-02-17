@@ -18,11 +18,8 @@
 	</ul>
 
 	<hr class="my-4 border-color-surface-high">
-
-	<!-- <Donations /> -->
 </div>
 
 <script lang="ts">
 import Link from '~/lib/Link.svelte';
-// import Donations from './lib/Donations/Donations.svelte';
 </script>

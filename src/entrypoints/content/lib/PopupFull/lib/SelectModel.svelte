@@ -7,19 +7,21 @@
 	<ListboxButton
 		class={[
 			'relative flex h-8 w-52 cursor-pointer items-center overflow-hidden rounded-full pr-10 pl-3',
-			'text-start whitespace-nowrap transition-colors',
-			'border border-color-surface-high hover:bg-color-primary/10',
-			open ? 'bg-color-primary/10' : 'bg-color-surface',
+			'text-start whitespace-nowrap transition-colors active:bg-color-primary/20',
+			open ? 'bg-color-primary/10' : 'bg-color-surface hover:bg-color-primary/10',
 		]}
 		title="{providerStore.selectedProvider.name}/{providerStore.selectedModel.model}"
 	>
-		<span class="block truncate">{providerStore.selectedProvider.name}/{providerStore.selectedModel.model}</span>
+		<span class="block truncate">
+			{providerStore.selectedProvider.name}/{providerStore.selectedModel.model}
+		</span>
 		<Icon
 			class={[
-				'pointer-events-none absolute right-1',
-				open ? 'text-color-primary' : 'text-color-on-surface-variant',
+				'pointer-events-none absolute right-1 text-color-on-surface-variant transition-transform',
+				open && '-scale-y-100',
 			]}
-			d={mdiUnfoldMoreHorizontal}
+			d={mdiChevronDown}
+			size="20"
 		/>
 	</ListboxButton>
 	<ListboxOptions
@@ -75,7 +77,7 @@ import { providerStore } from '~/entrypoints/options/lib/Providers/providerStore
 import { Listbox, ListboxButton, ListboxOptions, ListboxOption } from '~/lib/headless';
 import Icon from '~/lib/Icon.svelte';
 import Button from '~/lib/Button.svelte';
-import { mdiCheck, mdiUnfoldMoreHorizontal, mdiOpenInNew } from '@mdi/js';
+import { mdiCheck, mdiChevronDown, mdiOpenInNew } from '@mdi/js';
 
 let open = $state<boolean>();
 

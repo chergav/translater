@@ -1,6 +1,7 @@
 <div
 	class="absolute z-9999999"
 	use:triggerPosition
+	in:fade={{ duration: 150 }}
 >
 	<button
 		class={[
@@ -10,7 +11,6 @@
 		onclick={store.openPopup}
 		title={browser.i18n.getMessage('tooltip_translate_text')}
 		type="button"
-		in:fade|global={{ duration: 150 }}
 	>
 		<Icon d={customTranslatePath} />
 	</button>
