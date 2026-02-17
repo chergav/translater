@@ -1,13 +1,16 @@
 <div class="flex w-full flex-col">
 	<header
 		class={[
-			'flex w-full items-center justify-end p-1',
+			'flex w-full items-center justify-between p-1',
 			popupStore.dragging ? 'cursor-grabbing' : 'cursor-move',
 		]}
 		onmousedown={onDragStart}
 		role="toolbar"
 		tabindex="-1"
 	>
+		<div class="flex items-center gap-1">
+			<CacheNav />
+		</div>
 
 		<div class="flex items-center gap-1">
 			<Button
@@ -57,6 +60,7 @@ import { providerStore } from '~/entrypoints/options/lib/Providers/providerStore
 import Button from '~/lib/Button.svelte';
 import TranslationGoogle from '~/entrypoints/content/lib/PopupFull/lib/PopupMain/lib/TranslationGoogle/TranslationGoogle.svelte';
 import TranslationAi from '~/entrypoints/content/lib/PopupFull/lib/PopupMain/lib/TranslationAi.svelte';
+import CacheNav from '~/entrypoints/content/lib/PopupFull/lib/CacheNav.svelte';
 import { mdiSwapHorizontal, mdiClose } from '@mdi/js';
 
 interface Props  {
