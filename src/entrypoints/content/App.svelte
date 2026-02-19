@@ -14,16 +14,20 @@
 	{/if}
 </div>
 
-<svelte:document onmouseup={onMouseup} />
+<svelte:document
+	onkeyup={onKeyup}
+	onmouseup={onMouseup}
+/>
 
 <script lang="ts">
 import { type Message } from '~/types';
+import { onMount, onDestroy } from 'svelte';
 import { storage } from '~/shared/storage.svelte';
 import { store } from './store.svelte';
 import { providerStore } from '~/entrypoints/options/lib/Providers/providerStore.svelte';
 import Trigger from './lib/Trigger.svelte';
 import Popup from './lib/Popup.svelte';
-import { getSelectedText, getSelectedElemRect, getSelectedEndCoord, isInTextField } from './utils/coords';
+import { getSelectedText, getSelectedElemRect, getSelectedEndCoord, isInTextField } from './utils';
 import { CUSTOM_ELEMENT_TAG } from '~/shared/constants';
 import { detectLanguage } from '~/shared/browser';
 import { isBrowserTranslationAvailable } from '~/entrypoints/background/providers/browser';
@@ -45,18 +49,16 @@ let shouldShowTrigger = $derived<boolean>(
 );
 let debounceDuration = $derived<number>(storage.settings.showPopupOnSelection ? 400 : 200);
 
-const debouncedMouseup = useDebounce((event: MouseEvent) => {
-	if (event.button !== 0) return; // is left click
-	const target = event.target as Element;
+const debouncedSetup = useDebounce((target: Element) => {
 	const isInAppElem = target.closest(CUSTOM_ELEMENT_TAG);
 	if (isInAppElem) return;
 
-	const selectedText = getSelectedText();
+	const selectedText = getSelectedText(target);
 
 	store.selectedText = selectedText;
-	store.selectedElemRect = getSelectedElemRect();
-	store.selectedEndCoord = getSelectedEndCoord();
-	store.isInTextField = isInTextField();
+	store.selectedElemRect = getSelectedElemRect(target);
+	store.selectedEndCoord = getSelectedEndCoord(target);
+	store.isInTextField = isInTextField(target);
 	store.hostname = window.location.hostname;
 
 	if (storage.settings.showPopupOnSelection && store.selectedText) {
@@ -65,7 +67,22 @@ const debouncedMouseup = useDebounce((event: MouseEvent) => {
 }, () => debounceDuration);
 
 function onMouseup(event: MouseEvent) {
-	debouncedMouseup(event);
+	if (event.button !== 0) return; // is left click
+	const target = event.target as Element;
+	debouncedSetup(target);
+}
+
+function onKeyup(event: KeyboardEvent) {
+	const target = event.target as Element;
+	const isTextField = isInTextField(target);
+	if (!isTextField) return;
+
+	const isSelectAll = (event.ctrlKey || event.metaKey) && event.code === 'KeyA';
+	const isShiftSelection = event.shiftKey && ['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home', 'End'].includes(event.key);
+
+	if (!isSelectAll && !isShiftSelection) return;
+
+	debouncedSetup(target);
 }
 
 async function shouldShowButton() {
@@ -102,16 +119,12 @@ function onMessage(
 	}
 }
 
-$effect(() => {
+onMount(async () => {
 	browser.runtime.onMessage.addListener(onMessage);
-
-	return () => {
-		browser.runtime.onMessage.removeListener(onMessage);
-		// storage.destroy();
-	};
+	providerStore.isTranslationAPIAvailable = await isBrowserTranslationAvailable();
 });
 
-onMount(async () => {
-	providerStore.isTranslationAPIAvailable = await isBrowserTranslationAvailable();
+onDestroy(() => {
+	browser.runtime.onMessage.removeListener(onMessage);
 });
 </script>
