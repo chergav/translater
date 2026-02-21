@@ -75,6 +75,9 @@ export default defineBackground({
 				case 'openTranslator':
 					openTranslator();
 					break;
+				case 'pingContentScript':
+					ensureContentScriptInActiveTab().then(sendResponse);
+					return true;
 				default:
 					console.error(`Message type "${message.type}" not found.`);
 					break;
@@ -135,6 +138,11 @@ export default defineBackground({
 			}
 		});
 
+		async function ensureContentScriptInActiveTab() {
+			const tab = await getCurrentTab();
+			return await pingContentScript(tab.id);
+		}
+
 		async function injectContentScript(tabId: number) {
 			try {
 				await browser.scripting.executeScript({
@@ -147,19 +155,44 @@ export default defineBackground({
 			}
 		}
 
-		async function checkAndInjectIfNeeded(tabId?: number) {
-			if (!tabId) return;
+		async function pingContentScript(tabId?: number): Promise<boolean> {
+			if (!tabId) return false;
 
 			try {
 				await browser.tabs.sendMessage<Message>(tabId, {
 					type: 'ping',
 					content: {},
 				});
-				console.debug(`Content script already active in tab ${tabId}`);
+				console.debug(`Content script exist in tab: ${tabId}`);
+				return true;
 			} catch (error) {
-				console.debug(`No response from content script in tab ${tabId} — injecting...`, error);
+				console.debug(`No response from content script in tab ${tabId}`, error);
+				return false;
+			}
+		}
+
+		async function checkAndInjectIfNeeded(tabId?: number) {
+			if (!tabId) return;
+
+			const isContentScriptExist = await pingContentScript(tabId);
+
+			if (isContentScriptExist) {
+				console.debug(`Content script already active in tab ${tabId}`);
+			} else {
+				console.debug(`No response from content script in tab ${tabId} — injecting...`);
 				await injectContentScript(tabId);
 			}
+
+			// try {
+			// 	await browser.tabs.sendMessage<Message>(tabId, {
+			// 		type: 'ping',
+			// 		content: {},
+			// 	});
+			// 	console.debug(`Content script already active in tab ${tabId}`);
+			// } catch (error) {
+			// 	console.debug(`No response from content script in tab ${tabId} — injecting...`, error);
+			// 	await injectContentScript(tabId);
+			// }
 		}
 
 		async function ensureContentScriptInTabs() {

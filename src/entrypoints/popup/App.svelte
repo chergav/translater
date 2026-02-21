@@ -1,4 +1,4 @@
-<main class="flex flex-col items-center gap-4 bg-color-surface">
+<main class="flex flex-col items-center gap-6 bg-color-surface">
 	<div class="flex w-full items-center justify-between p-2">
 		<div class="flex items-center gap-3">
 			<img alt="" src="/icons/48.png" width="32" />
@@ -13,52 +13,60 @@
 		</div>
 	</div>
 
-	<Button
-		icon={mdiApplicationOutline}
-		label={browser.i18n.getMessage('commands_open_translator')}
-		onclick={openTranslator}
-		variant="filled"
-	/>
+	{#await isContentScriptExistPromise then isContentScriptExist}
+		{#if isContentScriptExist}
+			<div class="flex flex-col items-center gap-2">
+				<Button
+					icon={mdiApplicationOutline}
+					label={browser.i18n.getMessage('commands_open_translator')}
+					onclick={openTranslator}
+					variant="filled"
+				/>
 
-	<div class="w-44">
-		<Divider label={browser.i18n.getMessage('popup_or')} />
-	</div>
+				<div class="w-44">
+					<Divider label={browser.i18n.getMessage('popup_or')} />
+				</div>
 
-	<div class="flex flex-col items-center gap-2">
-		{#await shortcutKeysPromise then shortcutKeys}
-			<Shortcuts keys={shortcutKeys} />
-		{/await}
-		{#if import.meta.env.CHROME}
-			<button
-				class="cursor-pointer text-sm text-blue-600 hover:underline dark:text-blue-400"
-				onclick={openExtensionsShortcuts}
-				type="button"
-			>
-				{browser.i18n.getMessage('options_edit_keyboard_shortcut')}
-			</button>
+				<div class="flex flex-col items-center gap-2">
+					{#await shortcutKeysPromise then shortcutKeys}
+						<Shortcuts keys={shortcutKeys} />
+					{/await}
+					{#if import.meta.env.CHROME}
+						<button
+							class="cursor-pointer text-sm text-blue-600 hover:underline dark:text-blue-400"
+							onclick={openExtensionsShortcuts}
+							type="button"
+						>
+							{browser.i18n.getMessage('options_edit_keyboard_shortcut')}
+						</button>
+					{/if}
+				</div>
+			</div>
 		{/if}
-	</div>
+	{/await}
 
 	<div>
 		<RateUs />
 	</div>
 
-	<div>
-		<Link
-			class="text-center text-sm"
-			href="https://chergav.github.io/extensions"
-			icon
-			label={browser.i18n.getMessage('try_my_extensions')}
-		/>
-	</div>
+	<div class="flex flex-col items-center gap-2">
+		<div>
+			<Link
+				class="text-center text-sm"
+				href="https://chergav.github.io/extensions"
+				icon
+				label={browser.i18n.getMessage('try_my_extensions')}
+			/>
+		</div>
 
-	<div class="flex w-full items-center gap-2 px-2 pb-2">
-		<TranslatorVersion />
-		<Link
-			class="text-sm"
-			href="https://chergav.github.io/extensions/translater/onboarding/"
-			label="Onboarding"
-		/>
+		<div class="flex w-full items-center justify-center gap-2 px-2 pb-2">
+			<TranslatorVersion />
+			<Link
+				class="text-sm"
+				href="https://chergav.github.io/extensions/translater/onboarding/"
+				label="Onboarding"
+			/>
+		</div>
 	</div>
 
 	{#await permissionsPromise then isPermissions}
@@ -90,6 +98,7 @@ import { getShortcutByCommand } from '~/shared/browser';
 
 const permissions = { origins: ['<all_urls>'] };
 let permissionsPromise = $state<Promise<boolean>>(getPermissions());
+let isContentScriptExistPromise = $state<Promise<boolean>>(ensureContentScriptInActiveTab());
 
 function openOptionsPage() {
 	browser.runtime.openOptionsPage();
@@ -104,20 +113,27 @@ function openTranslator() {
 
 let shortcutKeysPromise = getShortcutByCommand('open-translator');
 
-const openExtensionsShortcuts = () => {
+function openExtensionsShortcuts() {
 	browser.tabs.create({ url: 'chrome://extensions/shortcuts' });
-};
+}
 
 function getPermissions() {
 	return browser.permissions.contains(permissions);
 }
 
-const requestPermissions = async () => {
+async function requestPermissions() {
 	const isAllow = await browser.permissions.request(permissions);
 	if (isAllow) {
 		permissionsPromise = getPermissions();
 	}
-};
+}
+
+async function ensureContentScriptInActiveTab() {
+	return await browser.runtime.sendMessage<Message>({
+		type: 'pingContentScript',
+		content: {},
+	});
+}
 
 $effect.pre(() => {
 	document.documentElement.dataset.theme = storage.themeClass;

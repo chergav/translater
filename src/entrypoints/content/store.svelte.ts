@@ -4,7 +4,6 @@ import { ProviderId, GOOGLE_TRANSLATE_MODEL_ID } from '~/types/providers';
 import { storage } from '~/shared/storage.svelte';
 import { providerStore } from '~/entrypoints/options/lib/Providers/providerStore.svelte';
 import { translator } from './utils/TranslationClient';
-import { getSelectedElemRect } from './utils';
 
 class Store {
 	public errors = $state<string[]>([]);
@@ -70,7 +69,6 @@ class Store {
 	}
 
 	public openPopup = () => {
-		store.selectedElemRect = getSelectedElemRect();
 		store.showPopup = true;
 		store.textToTranslate = store.selectedText;
 		store.translate();

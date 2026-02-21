@@ -86,6 +86,7 @@ export interface Message {
 		| 'createPopup'
 		| 'ping'
 		| 'loaded'
+		| 'pingContentScript'
 	content: {
 		sourceLang?: string
 		targetLang?: string

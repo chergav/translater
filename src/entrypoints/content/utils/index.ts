@@ -14,25 +14,30 @@ export const getSelectedElemRect = (target: Element | null = document.activeElem
 	if (!target) return null;
 
 	if (isInTextField(target)) {
-		return target.getBoundingClientRect();
+		return DOMRect.fromRect(target.getBoundingClientRect());
 	}
 
 	const selection = document.getSelection();
 	if (!selection?.rangeCount || !selection.toString()) return null;
-	return selection.getRangeAt(0).getBoundingClientRect();
+	return DOMRect.fromRect(selection.getRangeAt(0).getBoundingClientRect());
 };
 
 export const getSelectedEndCoord = (target: Element): DOMRect | null => {
 	if (isInTextField(target)) {
-		return target.getBoundingClientRect();
+		return DOMRect.fromRect(target.getBoundingClientRect());
 	}
 
 	const selection = document.getSelection();
 	if (!selection?.rangeCount || selection.isCollapsed) return null;
 
 	const range = selection.getRangeAt(0).cloneRange();
-	range.collapse(false);
-
 	const rects = range.getClientRects();
-	return rects.length > 0 ? DOMRect.fromRect(range.getBoundingClientRect()) : null;
+	if (!rects.length) return null;
+
+	const lastRect = rects[rects.length - 1]; // fallback if collapsed range has no rects
+
+	range.collapse(false);
+	const collapsedRects = range.getClientRects();
+
+	return DOMRect.fromRect(collapsedRects.length > 0 ? range.getBoundingClientRect() : lastRect);
 };
