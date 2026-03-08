@@ -48,7 +48,7 @@
         "message": "Plný režim"
     },
     "options_general_mode_full_hint": {
-        "message": "Popup okno se všemi funkcemi."
+        "message": "Vyskakovací okno se všemi funkcemi."
     },
     "options_general_mode_simple": {
         "message": "Jednoduchý režim"
@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Méně"
     },
-    "target_lang_label": {
-        "message": "Přeložit do:"
+    "select_lang_source": {
+        "message": "Přeložit z"
+    },
+    "select_lang_target": {
+        "message": "Přeložit do"
     },
     "popup_dictionary": {
         "message": "Slovník"
@@ -297,6 +300,9 @@
         "message": "🚀 Vyzkoušejte moje další rozšíření"
     },
     "language_auto": {
+        "message": "auto"
+    },
+    "language_detect": {
         "message": "detekovat jazyk"
     },
     "language_aa": {
@@ -1005,7 +1011,7 @@
         "message": "ujgurské"
     },
     "language_uk": {
-        "message": "ukrajinský"
+        "message": "Ukrajinština"
     },
     "language_ur": {
         "message": "urdština"

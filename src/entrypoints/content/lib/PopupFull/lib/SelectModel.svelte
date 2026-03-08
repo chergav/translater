@@ -6,7 +6,7 @@
 >
 	<ListboxButton
 		class={[
-			'relative flex h-8 w-52 cursor-pointer items-center overflow-hidden rounded-full pr-10 pl-3',
+			'relative flex h-8 w-52 cursor-pointer items-center overflow-hidden rounded-full pr-8 pl-3',
 			'text-start whitespace-nowrap transition-colors active:bg-color-primary/20',
 			open ? 'bg-color-primary/10' : 'bg-color-surface hover:bg-color-primary/10',
 		]}

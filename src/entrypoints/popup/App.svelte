@@ -27,18 +27,19 @@
 					<Divider label={browser.i18n.getMessage('popup_or')} />
 				</div>
 
-				<div class="flex flex-col items-center gap-2">
+				<div class="flex items-center gap-2">
 					{#await shortcutKeysPromise then shortcutKeys}
 						<Shortcuts keys={shortcutKeys} />
 					{/await}
 					{#if import.meta.env.CHROME}
-						<button
-							class="cursor-pointer text-sm text-blue-600 hover:underline dark:text-blue-400"
-							onclick={openExtensionsShortcuts}
-							type="button"
-						>
-							{browser.i18n.getMessage('options_edit_keyboard_shortcut')}
-						</button>
+						<div>
+							<Button
+								icon={mdiPencilOutline}
+								onclick={openExtensionsShortcuts}
+								size="xs"
+								title={browser.i18n.getMessage('options_edit_keyboard_shortcut')}
+							/>
+						</div>
 					{/if}
 				</div>
 			</div>
@@ -93,7 +94,7 @@ import Divider from '~/lib/Divider.svelte';
 import Link from '~/lib/Link.svelte';
 import TranslatorVersion from '~/lib/TranslatorVersion.svelte';
 import RateUs from '~/lib/RateUs.svelte';
-import { mdiApplicationOutline, mdiCogOutline } from '@mdi/js';
+import { mdiApplicationOutline, mdiCogOutline, mdiPencilOutline } from '@mdi/js';
 import { getShortcutByCommand } from '~/shared/browser';
 
 const permissions = { origins: ['<all_urls>'] };

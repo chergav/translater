@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "কম"
     },
-    "target_lang_label": {
-        "message": "এতে অনুবাদ করুন:"
+    "select_lang_source": {
+        "message": "থেকে অনুবাদ করুন"
+    },
+    "select_lang_target": {
+        "message": "অনুবাদ করুন"
     },
     "popup_dictionary": {
         "message": "অভিধান"
@@ -297,6 +300,9 @@
         "message": "🚀 আমার অন্যান্য এক্সটেনশন চেষ্টা করুন"
     },
     "language_auto": {
+        "message": "স্বয়ংক্রিয়"
+    },
+    "language_detect": {
         "message": "ভাষা সনাক্ত করা"
     },
     "language_aa": {
@@ -615,7 +621,7 @@
         "message": "ইনুক্টুট (সিলেবিক্স)"
     },
     "language_iu_Latn": {
-        "message": "ইনুক্টুট (ল্যাটিন)"
+        "message": "ইনুকটুট (ল্যাটিন)"
     },
     "language_iw": {
         "message": "হিব্রু"
@@ -639,7 +645,7 @@
         "message": "কিউকিচি'"
     },
     "language_kg": {
-        "message": "কিকংগো"
+        "message": "কিকঙ্গো"
     },
     "language_kha": {
         "message": "খাসি"
@@ -681,7 +687,7 @@
         "message": "ল্যাটিন"
     },
     "language_lb": {
-        "message": "লুক্সেমবার্গিশ"
+        "message": "লাক্সেমবার্গিশ"
     },
     "language_lg": {
         "message": "লুগান্ডা"

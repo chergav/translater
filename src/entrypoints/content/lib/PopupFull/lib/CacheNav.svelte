@@ -29,7 +29,8 @@ function getCacheItem(index: number) {
 
 	store.translated = item;
 	if (store.translationAi) store.translationAi.text = item.sentence.trans || '';
-	store.sourceLang = item.src;
+	// store.sourceLang = item.src;
+	store.detectedLang = item.src;
 	storage.settings.targetLang = item.targetLang;
 }
 

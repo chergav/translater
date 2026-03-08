@@ -186,11 +186,14 @@ export class TranslationService {
 		portData: TranslationPort,
 		sourceLanguage?: string,
 	) {
-		let translation: string;
+		let response: {
+			translation: string
+			sourceLang: string
+		};
 
 		switch (provider.id) {
 			case 'mymemory':
-				translation = await translateWithMyMemory(text, tgtLang, controller.signal, sourceLanguage);
+				response = await translateWithMyMemory(text, tgtLang, controller.signal, sourceLanguage);
 				break;
 			default:
 				throw new Error(`Unknown simple API provider: ${provider.id}`);
@@ -198,7 +201,8 @@ export class TranslationService {
 
 		portData.port.postMessage({
 			type: 'translation-complete',
-			finalText: translation,
+			finalText: response.translation,
+			sourceLang: response.sourceLang,
 		} satisfies MessageConnectResponse);
 	}
 

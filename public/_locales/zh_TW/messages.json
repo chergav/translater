@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "少"
     },
-    "target_lang_label": {
-        "message": "翻譯為："
+    "select_lang_source": {
+        "message": "翻譯自"
+    },
+    "select_lang_target": {
+        "message": "翻譯為"
     },
     "popup_dictionary": {
         "message": "字典"
@@ -297,6 +300,9 @@
         "message": "🚀 嘗試我的其他擴展"
     },
     "language_auto": {
+        "message": "汽車"
+    },
+    "language_detect": {
         "message": "檢測語言"
     },
     "language_aa": {
@@ -417,7 +423,7 @@
         "message": "宿霧語"
     },
     "language_cgg": {
-        "message": "基加"
+        "message": "基賀"
     },
     "language_ch": {
         "message": "查莫羅語"

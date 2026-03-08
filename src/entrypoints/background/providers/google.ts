@@ -57,7 +57,7 @@ export const googleTranslate = async (params: TranslateProps): Promise<GoogleTra
 
 		return response.json();
 	} catch (error) {
-		const msg = `Google Translate API error: ${error}`;
+		const msg = `Google Translate API error: ${error}.\nTry another provider.`;
 		console.debug(msg);
 		throw new Error(msg);
 	}

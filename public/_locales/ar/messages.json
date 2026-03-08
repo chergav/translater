@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "أقل"
     },
-    "target_lang_label": {
-        "message": "ترجمة إلى:"
+    "select_lang_source": {
+        "message": "ترجمة من"
+    },
+    "select_lang_target": {
+        "message": "ترجمة ل"
     },
     "popup_dictionary": {
         "message": "قاموس"
@@ -297,6 +300,9 @@
         "message": "🚀 جرب ملحقاتي الأخرى"
     },
     "language_auto": {
+        "message": "تلقائي"
+    },
+    "language_detect": {
         "message": "كشف اللغة"
     },
     "language_aa": {

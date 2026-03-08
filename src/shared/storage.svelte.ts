@@ -1,9 +1,7 @@
 import { type Settings, Theme, ThemeVariant, AccentColor, FontSize, PopupMode } from '~/types';
 import { GOOGLE_TRANSLATE_MODEL_ID } from '~/types/providers';
 import { MediaQuery } from 'svelte/reactivity';
-import { storageGet, storageSet } from '~/shared/browser';
-import { getTargetLanguageCode } from '@/shared/languages';
-// import { isPreferredDark } from '~/utils';
+import { getUILanguageCode } from '~/shared/languages';
 import deepEqual from 'fast-deep-equal';
 
 const initialSettings: Settings = {
@@ -11,7 +9,8 @@ const initialSettings: Settings = {
 	themeVariant: ThemeVariant.Slate,
 	accentColor: AccentColor.Blue,
 	fontSize: FontSize.Normal,
-	targetLang: getTargetLanguageCode(),
+	sourceLang: 'auto',
+	targetLang: getUILanguageCode(),
 	inlineButtonShow: true,
 	textFieldButtonShow: true,
 	showOriginalText: true,
@@ -32,17 +31,17 @@ const initialSettings: Settings = {
 class Storage {
 	#cleanup: () => void;
 	#isPreferredDark = new MediaQuery('prefers-color-scheme: dark');
-	#isWriting = false;
+	#lastExternalSnapshot: Partial<Settings> = {};
+	#prevSnapshot: Settings;
 	public settings: Settings;
 	public themeClass: Theme.Light | Theme.Dark;
 
 	public constructor(settings: Settings) {
 		this.settings = $state<Settings>(settings);
+		this.#prevSnapshot = settings;
 		this.themeClass = $derived(this.#getThemeClass(this.settings.theme));
 		this.#cleanup = $effect.root(() => {
 			$effect(() => {
-				if (this.#isWriting) return;
-
 				const stateSnapshot = $state.snapshot(this.settings);
 				this.#sync(stateSnapshot);
 			});
@@ -58,28 +57,36 @@ class Storage {
 	}
 
 	async #sync(snapshot: Settings) {
-		const external = await storageGet();
+		for (const key of Object.keys(snapshot) as (keyof Settings)[]) {
+			// Skip keys that came from external storage
+			if (deepEqual(this.#lastExternalSnapshot[key], snapshot[key])) continue;
 
-		if (!deepEqual(external, snapshot)) {
-			this.#isWriting = true;
-			await storageSet(snapshot);
-			this.#isWriting = false;
+			// Write only keys that changed from previous local snapshot
+			if (deepEqual(this.#prevSnapshot[key], snapshot[key])) continue;
+
+			// console.log('#sync', { [key]: snapshot[key] });
+			await browser.storage.local.set({ [key]: snapshot[key] });
 		}
+
+		// console.debug($state.snapshot(this.settings));
+		this.#prevSnapshot = snapshot;
 	}
 
 	// arrow func to bind this class
 	#onStorageChange = (changes: { [key: string]: Browser.storage.StorageChange }) => {
-		this.#isWriting = true;
 		const stateSnapshot = $state.snapshot(this.settings);
 
 		for (const [keyString, {  newValue }] of Object.entries(changes)) {
 			const key = keyString as keyof Settings;
+
+			if (!(key in initialSettings)) continue;
+
 			if (!deepEqual(stateSnapshot[key], newValue)) {
+				// eslint-disable-next-line @typescript-eslint/no-explicit-any
+				this.#lastExternalSnapshot[key] = newValue as any;
 				Object.assign(this.settings, { [key]: newValue });
 			}
 		}
-
-		this.#isWriting = false;
 	};
 
 	public destroy() {
@@ -88,6 +95,6 @@ class Storage {
 	}
 }
 
-const settings = await storageGet(initialSettings);
+const settings = await browser.storage.local.get<Settings>(initialSettings);
 
 export const storage = new Storage(settings);

@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "менше"
     },
-    "target_lang_label": {
-        "message": "Перекласти на:"
+    "select_lang_source": {
+        "message": "Перекласти з"
+    },
+    "select_lang_target": {
+        "message": "Перекласти на"
     },
     "popup_dictionary": {
         "message": "Словник"
@@ -297,6 +300,9 @@
         "message": "🚀 Спробуйте інші мої розширення"
     },
     "language_auto": {
+        "message": "авто"
+    },
+    "language_detect": {
         "message": "виявити мову"
     },
     "language_aa": {
@@ -339,7 +345,7 @@
         "message": "аймара"
     },
     "language_az": {
-        "message": "Азербайджанська"
+        "message": "Азербайджанський"
     },
     "language_ba": {
         "message": "башкирська"
@@ -777,10 +783,10 @@
         "message": "М'янма (бірманська)"
     },
     "language_ndc_ZW": {
-        "message": "Ndau"
+        "message": "Ндау"
     },
     "language_ne": {
-        "message": "Непальська"
+        "message": "непальська"
     },
     "language_new": {
         "message": "непалбхаса (неварі)"
@@ -999,7 +1005,7 @@
         "message": "Тувинська"
     },
     "language_udm": {
-        "message": "удмуртська"
+        "message": "удмурт"
     },
     "language_ug": {
         "message": "уйгурський"

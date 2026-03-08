@@ -4,7 +4,7 @@
 >
 	<div class="mb-2 flex justify-between">
 		<div class="flex items-center gap-2">
-			<span>{getLang(historyItem.sourceLang)} -> {getLang(historyItem.targetLang)}</span>
+			<span>{getDisplayedLanguageName(historyItem.sourceLang)} -> {getDisplayedLanguageName(historyItem.targetLang)}</span>
 			{#if historyItem.model}
 				<span class="text-color-on-surface-variant">
 					[{historyItem.model}]
@@ -57,6 +57,7 @@ import { slide } from 'svelte/transition';
 import { storage } from '~/shared/storage.svelte';
 import Button from '~/lib/Button.svelte';
 import { mdiTrashCanOutline } from '@mdi/js';
+import { getDisplayedLanguageName } from '~/shared/languages';
 
 interface Props {
 	historyItem: HistoryItem
@@ -68,9 +69,6 @@ let { historyItem }: Props = $props();
 let truncateOrig = $state<boolean>(historyItem.orig.length > 100);
 // svelte-ignore state_referenced_locally
 let truncateTrans = $state<boolean>(historyItem.trans.length > 100);
-
-// @ts-expect-error ignore messageName
-const getLang = (lang: string) => browser.i18n.getMessage(`language_${lang.replace('-', '_')}`).toLowerCase();
 
 function deleteHistoryItem(time: number) {
 	storage.settings.history = storage.settings.history.filter(i => i.time !== time);

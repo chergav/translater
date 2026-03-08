@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Меньше"
     },
-    "target_lang_label": {
-        "message": "Перевести на:"
+    "select_lang_source": {
+        "message": "Перевести с"
+    },
+    "select_lang_target": {
+        "message": "Перевести на"
     },
     "popup_dictionary": {
         "message": "Словарь"
@@ -297,6 +300,9 @@
         "message": "🚀 Попробуйте другие мои расширения"
     },
     "language_auto": {
+        "message": "авто"
+    },
+    "language_detect": {
         "message": "обнаружить язык"
     },
     "language_aa": {
@@ -405,7 +411,7 @@
         "message": "Батак Каро"
     },
     "language_bua": {
-        "message": "Бурятский"
+        "message": "бурятский"
     },
     "language_ca": {
         "message": "каталонский"
@@ -657,7 +663,7 @@
         "message": "Каннада"
     },
     "language_ko": {
-        "message": "Корейский"
+        "message": "корейский"
     },
     "language_kr": {
         "message": "Канури"
@@ -1029,7 +1035,7 @@
         "message": "Волоф"
     },
     "language_xh": {
-        "message": "Коса"
+        "message": "коса"
     },
     "language_yi": {
         "message": "идиш"

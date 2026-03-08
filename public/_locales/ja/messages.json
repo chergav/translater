@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "少ない"
     },
-    "target_lang_label": {
-        "message": "翻訳先:"
+    "select_lang_source": {
+        "message": "から翻訳"
+    },
+    "select_lang_target": {
+        "message": "に翻訳する"
     },
     "popup_dictionary": {
         "message": "辞書"
@@ -201,7 +204,7 @@
         "message": "例"
     },
     "popup_perhaps_you_meant": {
-        "message": "おそらく次のことを言いたかったのでしょう。"
+        "message": "おそらく次のことを言いたかったのでしょう："
     },
     "popup_original_language": {
         "message": "元の言語:"
@@ -297,6 +300,9 @@
         "message": "🚀 他の拡張機能を試してみる"
     },
     "language_auto": {
+        "message": "自動"
+    },
+    "language_detect": {
         "message": "言語を検出する"
     },
     "language_aa": {
@@ -657,7 +663,7 @@
         "message": "カンナダ語"
     },
     "language_ko": {
-        "message": "韓国人"
+        "message": "韓国語"
     },
     "language_kr": {
         "message": "カヌリ"

@@ -182,17 +182,6 @@ export default defineBackground({
 				console.debug(`No response from content script in tab ${tabId} — injecting...`);
 				await injectContentScript(tabId);
 			}
-
-			// try {
-			// 	await browser.tabs.sendMessage<Message>(tabId, {
-			// 		type: 'ping',
-			// 		content: {},
-			// 	});
-			// 	console.debug(`Content script already active in tab ${tabId}`);
-			// } catch (error) {
-			// 	console.debug(`No response from content script in tab ${tabId} — injecting...`, error);
-			// 	await injectContentScript(tabId);
-			// }
 		}
 
 		async function ensureContentScriptInTabs() {

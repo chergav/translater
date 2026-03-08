@@ -2,13 +2,14 @@ import type { CacheTTS, TranslationAi, Message, HistoryItem } from '~/types';
 import type { GoogleTranslate, Translated, Sentence } from '~/types/google';
 import { ProviderId, GOOGLE_TRANSLATE_MODEL_ID } from '~/types/providers';
 import { storage } from '~/shared/storage.svelte';
+import { normalizeLanguageCode } from '~/shared/languages';
 import { providerStore } from '~/entrypoints/options/lib/Providers/providerStore.svelte';
 import { translator } from './utils/TranslationClient';
 
 class Store {
 	public errors = $state<string[]>([]);
 	public hostname = $state<string>('');
-	public sourceLang = $state<string>('auto');
+	public detectedLang = $state<string>();
 	public selectedText = $state<string>('');
 	public textToTranslate = $state<string>('');
 	public showPopup = $state<boolean>(false);
@@ -24,6 +25,7 @@ class Store {
 	public cacheTTS = $state<CacheTTS[]>([]);
 	public textToHighlight = $state<string>('');
 	public downloadProgress = $state<number | null>(null);
+	private isProviderGoogle = $derived<boolean>(storage.settings.modelId === GOOGLE_TRANSLATE_MODEL_ID);
 
 	public async translate() {
 		const textToTranslate = this.textToTranslate.trim();
@@ -31,23 +33,22 @@ class Store {
 
 		this.translated = null;
 		this.translationAi = null;
+		this.detectedLang = undefined;
 		this.errors = [];
-
-		const useAi = storage.settings.modelId !== GOOGLE_TRANSLATE_MODEL_ID;
 
 		const [googleResult, aiResult] = await Promise.all([
 			this.translateGoogle(textToTranslate),
-			useAi ? this.translateAi(textToTranslate) : Promise.resolve(null),
+			!this.isProviderGoogle ? this.translateAi(textToTranslate) : Promise.resolve(null),
 		]);
 
-		if (!useAi && !googleResult) {
+		if (this.isProviderGoogle && !googleResult) {
 			this.errors.push('Google Translate service error');
 			return;
 		}
 
-		if (useAi && !aiResult) return;
+		if (!this.isProviderGoogle && !aiResult) return;
 
-		const finalTranslatedText = useAi && aiResult
+		const finalTranslatedText = !this.isProviderGoogle && aiResult
 			? aiResult
 			: googleResult?.sentence.trans || '';
 
@@ -55,27 +56,52 @@ class Store {
 		if (googleResult) this.addToCache(googleResult, finalTranslatedText);
 	}
 
-	public stopTranslation() {
+	public stopTranslation = () => {
 		translator.cancelTranslation();
-	}
+	};
 
-	public resetTranslateStore() {
+	public resetTranslateStore = () => {
 		this.selectedText = '';
 		this.textToTranslate = '';
-		this.sourceLang = 'auto';
+		this.detectedLang = '';
 		this.translated = null;
 		this.translationAi = null;
 		this.errors = [];
-	}
+	};
 
 	public openPopup = () => {
-		store.showPopup = true;
-		store.textToTranslate = store.selectedText;
-		store.translate();
+		this.showPopup = true;
+		this.textToTranslate = this.selectedText;
+		this.translate();
+	};
+
+	public reTranslate = () => {
+		if (this.textToTranslate) {
+			this.translate();
+		}
+	};
+
+	public reverseTranslation = () => {
+		if (!this.detectedLang) return;
+
+		const normalizedDetected = normalizeLanguageCode(this.detectedLang);
+		if (!normalizedDetected) return;
+
+		if (storage.settings.sourceLang !== 'auto') {
+			storage.settings.sourceLang = storage.settings.targetLang;
+		}
+
+		storage.settings.targetLang = normalizedDetected;
+
+		this.textToTranslate = this.isProviderGoogle
+			? this.translated?.sentence.trans || ''
+			: this.translationAi?.text || '';
+
+		this.translate();
 	};
 
 	private async translateAi(text: string): Promise<string | null> {
-		const sourceLang = this.sourceLang !== 'auto' ?  this.sourceLang : undefined;
+		const sourceLang = storage.settings.sourceLang !== 'auto' ? storage.settings.sourceLang : undefined;
 		const targetLang = storage.settings.targetLang;
 		const modelId = storage.settings.modelId;
 
@@ -101,7 +127,7 @@ class Store {
 							this.translationAi.text += chunk;
 						}
 						if (sourceLang) {
-							this.sourceLang = sourceLang;
+							this.detectedLang ??= sourceLang;
 						}
 					},
 					onComplete: (finalText, sourceLang) => {
@@ -111,7 +137,7 @@ class Store {
 							this.translationAi.isStreaming = false;
 						}
 						if (sourceLang) {
-							this.sourceLang = sourceLang;
+							this.detectedLang ??= sourceLang;
 						}
 						resolve(finalText);
 					},
@@ -141,16 +167,18 @@ class Store {
 	private async translateGoogle(text: string): Promise<Translated | null> {
 		this.isPending = true;
 
-		const sourceLang = this.sourceLang;
+		const sourceLang =  storage.settings.sourceLang;
 		const targetLang = storage.settings.targetLang;
 		const model = `${providerStore.selectedProvider.id}/${providerStore.selectedModel.id}`;
 
 		const fromCache = this.findInCache(
 			text,
-			sourceLang,
+			this.detectedLang || sourceLang,
 			targetLang,
 			`${ProviderId.GoogleTranslate}/${GOOGLE_TRANSLATE_MODEL_ID}`,
 		);
+		// console.debug('fromCache', $state.snapshot(fromCache));
+
 		if (fromCache) {
 			this.applyCached(fromCache);
 			return fromCache;
@@ -164,14 +192,13 @@ class Store {
 			return null;
 		}
 
-		this.sourceLang = sourceLang === 'auto' ? response.src : sourceLang;
-		storage.settings.targetLang = targetLang;
+		this.detectedLang = response.src;
 
 		const sentence = this.buildSentence(response);
 		const translated: Translated = {
 			...response,
 			sentence,
-			sourceLang: this.sourceLang,
+			sourceLang: this.detectedLang,
 			targetLang,
 			model,
 		};
@@ -203,7 +230,7 @@ class Store {
 		if (!storage.settings.historyEnable) return;
 		if (!orig || !trans) return;
 
-		const sourceLang = this.sourceLang;
+		const sourceLang = this.detectedLang || storage.settings.sourceLang;
 		const targetLang = storage.settings.targetLang;
 		const model = `${providerStore.selectedProvider.name}/${providerStore.selectedModel.model}`;
 
@@ -234,7 +261,7 @@ class Store {
 
 		this.cache.push(cached);
 		this.cacheIndex = -1; // last elem
-		// console.log($state.snapshot(this.cache));
+		// console.debug('addToCache', $state.snapshot(this.cache));
 	}
 
 	private findInCache(
@@ -243,6 +270,8 @@ class Store {
 		targetLang: string,
 		model: string,
 	): Translated | undefined {
+		// console.debug('findInCache: this.cache', $state.snapshot(this.cache));
+		// console.debug('findInCache', text, sourceLang, targetLang, model);
 		return this.cache.find(translated =>
 			translated.sentence.orig === text &&
 			translated.sourceLang === sourceLang &&
@@ -253,7 +282,7 @@ class Store {
 
 	private applyCached(cached: Translated) {
 		this.translated = cached;
-		this.sourceLang = cached.sourceLang;
+		this.detectedLang = cached.sourceLang;
 		storage.settings.targetLang = cached.targetLang;
 	}
 

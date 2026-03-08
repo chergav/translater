@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Ít hơn"
     },
-    "target_lang_label": {
-        "message": "Dịch sang:"
+    "select_lang_source": {
+        "message": "Dịch từ"
+    },
+    "select_lang_target": {
+        "message": "Dịch sang"
     },
     "popup_dictionary": {
         "message": "từ điển"
@@ -297,6 +300,9 @@
         "message": "🚀 Hãy thử các tiện ích mở rộng khác của tôi"
     },
     "language_auto": {
+        "message": "tự động"
+    },
+    "language_detect": {
         "message": "phát hiện ngôn ngữ"
     },
     "language_aa": {
@@ -441,7 +447,7 @@
         "message": "Tiếng Tatar Krym (chữ Cyrillic)"
     },
     "language_crh_Latn": {
-        "message": "Tiếng Tatar Krym (tiếng Latin)"
+        "message": "Tiếng Tatar Krym (tiếng Latinh)"
     },
     "language_crs": {
         "message": "Tiếng Creole Seychellois"
@@ -1050,7 +1056,7 @@
         "message": "Tiếng Trung (Giản thể)"
     },
     "language_zh_TW": {
-        "message": "Tiếng Trung (Phồn thể)"
+        "message": "Tiếng Trung (truyền thống)"
     },
     "language_zu": {
         "message": "Tiếng Zulu"

@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Chini"
     },
-    "target_lang_label": {
-        "message": "Tafsiri kwa:"
+    "select_lang_source": {
+        "message": "Tafsiri kutoka"
+    },
+    "select_lang_target": {
+        "message": "Tafsiri kwa"
     },
     "popup_dictionary": {
         "message": "Kamusi"
@@ -297,6 +300,9 @@
         "message": "🚀 Jaribu viendelezi vyangu vingine"
     },
     "language_auto": {
+        "message": "kiotomatiki"
+    },
+    "language_detect": {
         "message": "kugundua lugha"
     },
     "language_aa": {
@@ -588,7 +594,7 @@
         "message": "Krioli ya Haiti"
     },
     "language_hu": {
-        "message": "Kihungaria"
+        "message": "Kihungari"
     },
     "language_hy": {
         "message": "Kiarmenia"

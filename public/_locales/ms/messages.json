@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Kurang"
     },
-    "target_lang_label": {
-        "message": "Terjemah kepada:"
+    "select_lang_source": {
+        "message": "Terjemah dari"
+    },
+    "select_lang_target": {
+        "message": "Terjemah ke"
     },
     "popup_dictionary": {
         "message": "Kamus"
@@ -297,6 +300,9 @@
         "message": "🚀 Cuba sambungan saya yang lain"
     },
     "language_auto": {
+        "message": "auto"
+    },
+    "language_detect": {
         "message": "mengesan bahasa"
     },
     "language_aa": {
@@ -489,7 +495,7 @@
         "message": "Inggeris"
     },
     "language_eo": {
-        "message": "Esperanto"
+        "message": "bahasa Esperanto"
     },
     "language_es": {
         "message": "bahasa Sepanyol"
@@ -897,7 +903,7 @@
         "message": "Sinhala"
     },
     "language_sk": {
-        "message": "bahasa Slovak"
+        "message": "Bahasa Slovak"
     },
     "language_sl": {
         "message": "Bahasa Slovenia"
@@ -930,7 +936,7 @@
         "message": "Susu"
     },
     "language_sv": {
-        "message": "Bahasa Sweden"
+        "message": "bahasa Sweden"
     },
     "language_sw": {
         "message": "bahasa Swahili"

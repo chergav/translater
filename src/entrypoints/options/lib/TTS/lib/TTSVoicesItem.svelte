@@ -1,14 +1,12 @@
 <tr class="[&>td]:whitespace-nowrap">
 	<td>
-		<span>{browser.i18n
-			// @ts-expect-error ignore messageName
-			.getMessage(`language_${lang.replace('-', '_')}`).toLowerCase()}</span>
+		<span>{language.language}</span>
 	</td>
 	<td class="flex items-center gap-2">
 		<Select
 			full
 			onchange={() => {
-				storage.settings.ttsVoiceByLang[lang] = selectedVoice.name;
+				storage.settings.ttsVoiceByLang[language.code] = selectedVoice.name;
 			}}
 			small
 			bind:value={selectedVoice}
@@ -20,7 +18,7 @@
 		<div>
 			<TTSButton
 				showTTSVoices={false}
-				targetLang={lang}
+				targetLang={language.code}
 				text={selectedVoice.name}
 				{voices}
 			/>
@@ -32,19 +30,20 @@
 </tr>
 
 <script lang="ts">
+import type { Language } from '~/types';
 import { storage } from '~/shared/storage.svelte';
 import Select from '~/lib/Select.svelte';
 import TTSButton from '~/entrypoints/content/lib/PopupFull/lib/PopupMain/lib/TTS/TTSButton.svelte';
 
 interface Props {
-	lang: string
+	language: Language
 	voices: SpeechSynthesisVoice[]
 }
 
 let {
-	lang,
+	language,
 	voices,
 }: Props = $props();
 
-let selectedVoice = $derived(voices.find(i => i.name === storage.settings.ttsVoiceByLang[lang]) || voices[0]);
+let selectedVoice = $derived(voices.find(i => i.name === storage.settings.ttsVoiceByLang[language.code]) || voices[0]);
 </script>

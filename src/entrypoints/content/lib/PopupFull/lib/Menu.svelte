@@ -56,7 +56,7 @@
 				tab
 			/>
 			<Button
-				icon={mdiSwapHorizontal}
+				icon={mdiArrowCollapse}
 				label={browser.i18n.getMessage('popup_menu_switch_to_simple_mode')}
 				onclick={switchToSimpleMode}
 				size="xs"
@@ -86,7 +86,7 @@ import {
 	mdiLockOpenVariantOutline,
 	mdiTranslate,
 	mdiTranslateOff,
-	mdiSwapHorizontal,
+	mdiArrowCollapse,
 } from '@mdi/js';
 import { clickOutside } from '~/utils';
 import { store } from '~/entrypoints/content/store.svelte';
@@ -101,15 +101,13 @@ function switchToSimpleMode() {
 }
 
 function handleReverseTranslate() {
-	[store.sourceLang, storage.settings.targetLang] = [storage.settings.targetLang, store.sourceLang];
-	store.textToTranslate = store.translated?.sentence.trans || '';
-	store.translate();
+	store.reverseTranslation();
 	isOpen = false;
 }
 
 function toGoogleTranslate() {
 	const url = createLinkToGT({
-		sl: store.sourceLang,
+		sl: storage.settings.sourceLang,
 		tl: storage.settings.targetLang,
 		text: store.translated?.sentence.orig,
 	});

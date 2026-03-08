@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Menos"
     },
-    "target_lang_label": {
-        "message": "Traduzir para:"
+    "select_lang_source": {
+        "message": "Traduzir de"
+    },
+    "select_lang_target": {
+        "message": "Traduzir para"
     },
     "popup_dictionary": {
         "message": "Dicionário"
@@ -297,6 +300,9 @@
         "message": "🚀 Experimente minhas outras extensões"
     },
     "language_auto": {
+        "message": "automático"
+    },
+    "language_detect": {
         "message": "detectar idioma"
     },
     "language_aa": {
@@ -735,7 +741,7 @@
         "message": "crioulo das Maurícias"
     },
     "language_mg": {
-        "message": "Malgaxe"
+        "message": "malgaxe"
     },
     "language_mh": {
         "message": "marshallês"
@@ -1038,7 +1044,7 @@
         "message": "Iorubá"
     },
     "language_yua": {
-        "message": "Yucateca Maia"
+        "message": "Yucateca maia"
     },
     "language_yue": {
         "message": "cantonês"

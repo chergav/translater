@@ -3,14 +3,6 @@
 		<p>loading ...</p>
 	{:then voices}
 		{#if voices?.length}
-			<!-- <div class="flex justify-end">
-				<Button
-					label="restore all"
-					onclick={() => {
-						storage.settings.ttsVoiceByLang = {};
-					}}
-				/>
-			</div> -->
 			<table class="table-auto">
 				<caption class="caption-bottom text-start text-sm text-color-on-surface-variant">
 					* {browser.i18n.getMessage('options_tts_table_caption')}
@@ -22,18 +14,11 @@
 						<th>{browser.i18n.getMessage('options_tts_voices')}</th>
 					</tr>
 				</thead>
-				<tbody
-					class="
-						[&>tr]:border-t
-						[&>tr]:border-color-surface-high
-						[&>tr>td]:p-1
-						[&>tr>td:nth-child(3)]:text-center
-					"
-				>
-					{#each sortedI18nLanguages as { code: lang } (lang)}
-						{@const filteredVoices = voicesForLang(lang, voices)}
+				<tbody class="[&>tr]:border-t [&>tr]:border-color-surface-high [&>tr>td]:p-1 [&>tr>td:nth-child(3)]:text-center">
+					{#each languages as language (language.code)}
+						{@const filteredVoices = voicesForLang(language.code, voices)}
 						{#if filteredVoices.length}
-							<TTSVoicesItem {lang} voices={filteredVoices} />
+							<TTSVoicesItem {language} voices={filteredVoices} />
 						{/if}
 					{/each}
 				</tbody>
@@ -49,23 +34,22 @@
 </div>
 
 <script lang="ts">
+import type { Language } from '~/types';
 import { store } from '~/entrypoints/options/store.svelte';
 import TTSVoicesItem from './lib/TTSVoicesItem.svelte';
-// import Button from '~/lib/Button.svelte';
-import { languages } from '~/shared/languages';
+import { languagesLocalArray, getDisplayedLanguageName } from '~/shared/languages';
 import { getVoices } from '~/entrypoints/content/lib/PopupFull/lib/PopupMain/lib/TTS/utils/tts';
 
 if (!store.voices) {
 	store.voices = getVoices();
 }
 
-const sortedI18nLanguages = Object.keys(languages)
-	.map(code => ({
+const languages = $derived<Language[]>([
+	...languagesLocalArray.map(({ code }) => ({
 		code,
-		// @ts-expect-error ignore messageName
-		language: browser.i18n.getMessage(`language_${code.replace('-', '_')}`),
-	}))
-	.sort((a, b) => a.language.localeCompare(b.language));
+		language: getDisplayedLanguageName(code),
+	})),
+]);
 
 const voicesForLang = (lang: string, voices: SpeechSynthesisVoice[]) => voices.filter(i => i.lang.startsWith(lang));
 </script>

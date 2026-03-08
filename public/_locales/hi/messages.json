@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "कम"
     },
-    "target_lang_label": {
-        "message": "इसका अनुवाद करें:"
+    "select_lang_source": {
+        "message": "से अनुवाद करें"
+    },
+    "select_lang_target": {
+        "message": "में अनुवाद करें"
     },
     "popup_dictionary": {
         "message": "शब्दकोश"
@@ -297,6 +300,9 @@
         "message": "🚀 मेरे अन्य एक्सटेंशन आज़माएं"
     },
     "language_auto": {
+        "message": "ऑटो"
+    },
+    "language_detect": {
         "message": "भाषा का पता लगाएं"
     },
     "language_aa": {

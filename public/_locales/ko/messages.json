@@ -42,7 +42,7 @@
         "message": "텍스트 선택 시 팝업 표시"
     },
     "options_general_show_on_selected_hint": {
-        "message": "텍스트 선택 후 팝업이 나타납니다(단순 모드에서 가장 좋음)."
+        "message": "텍스트 선택 후 팝업이 나타납니다(단순 모드에 가장 적합)."
     },
     "options_general_mode_full": {
         "message": "전체 모드"
@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "덜"
     },
-    "target_lang_label": {
-        "message": "다음으로 번역:"
+    "select_lang_source": {
+        "message": "번역:"
+    },
+    "select_lang_target": {
+        "message": "다음으로 번역하다"
     },
     "popup_dictionary": {
         "message": "사전"
@@ -297,6 +300,9 @@
         "message": "🚀 다른 확장 프로그램을 사용해 보세요"
     },
     "language_auto": {
+        "message": "자동"
+    },
+    "language_detect": {
         "message": "언어 감지"
     },
     "language_aa": {
@@ -951,7 +957,7 @@
         "message": "테툼"
     },
     "language_tg": {
-        "message": "타직어"
+        "message": "타지크어"
     },
     "language_th": {
         "message": "태국어"

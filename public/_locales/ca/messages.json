@@ -96,7 +96,7 @@
         "message": "Bloqueja la finestra emergent"
     },
     "options_lock_popup_window_hint": {
-        "message": "La finestra emergent es manté oberta quan feu clic a l'exterior."
+        "message": "La finestra emergent es manté oberta quan feu clic a fora."
     },
     "options_providers_provider": {
         "message": "Proveïdor"
@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Menys"
     },
-    "target_lang_label": {
-        "message": "Traduir a:"
+    "select_lang_source": {
+        "message": "Traduir de"
+    },
+    "select_lang_target": {
+        "message": "Traduir a"
     },
     "popup_dictionary": {
         "message": "Diccionari"
@@ -297,6 +300,9 @@
         "message": "🚀 Prova les meves altres extensions"
     },
     "language_auto": {
+        "message": "automàtic"
+    },
+    "language_detect": {
         "message": "detectar el llenguatge"
     },
     "language_aa": {

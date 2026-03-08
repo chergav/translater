@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Mazāk"
     },
-    "target_lang_label": {
-        "message": "Tulkot uz:"
+    "select_lang_source": {
+        "message": "Tulkot no"
+    },
+    "select_lang_target": {
+        "message": "Tulkot uz"
     },
     "popup_dictionary": {
         "message": "Vārdnīca"
@@ -297,6 +300,9 @@
         "message": "🚀 Izmēģiniet citus manus paplašinājumus"
     },
     "language_auto": {
+        "message": "auto"
+    },
+    "language_detect": {
         "message": "noteikt valodu"
     },
     "language_aa": {
@@ -618,7 +624,7 @@
         "message": "inuktut (latīņu)"
     },
     "language_iw": {
-        "message": "ebreju valoda"
+        "message": "ivrits"
     },
     "language_ja": {
         "message": "japāņi"
@@ -894,7 +900,7 @@
         "message": "Shan"
     },
     "language_si": {
-        "message": "sinhalu"
+        "message": "singalu valoda"
     },
     "language_sk": {
         "message": "slovāku"

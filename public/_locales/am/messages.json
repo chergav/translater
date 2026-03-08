@@ -42,7 +42,7 @@
         "message": "ጽሑፍ ሲመረጥ ብቅ ባይ አሳይ"
     },
     "options_general_show_on_selected_hint": {
-        "message": "ብቅ-ባይ ከጽሑፍ ምርጫ በኋላ ይታያል (ምርጥ በቀላል ሁነታ)።"
+        "message": "ብቅ ባይ ከጽሑፍ ምርጫ በኋላ ይታያል (ምርጥ በቀላል ሁነታ)።"
     },
     "options_general_mode_full": {
         "message": "ሙሉ ሁነታ"
@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "ያነሰ"
     },
-    "target_lang_label": {
-        "message": "ተርጉም ወደ፡"
+    "select_lang_source": {
+        "message": "ከ ተርጉም።"
+    },
+    "select_lang_target": {
+        "message": "ተርጉም ወደ"
     },
     "popup_dictionary": {
         "message": "መዝገበ ቃላት"
@@ -297,6 +300,9 @@
         "message": "🚀 ሌሎች ቅጥያዎቼን ይሞክሩ"
     },
     "language_auto": {
+        "message": "አውቶማቲክ"
+    },
+    "language_detect": {
         "message": "ቋንቋን መለየት"
     },
     "language_aa": {

@@ -1,14 +1,22 @@
 <div class="scrollbar flex h-full flex-col gap-4 overflow-y-auto p-6">
 	<div class="text-xl">{browser.i18n.getMessage('options_tab_general')}</div>
 
-	<SelectLanguageSimple
-		label={browser.i18n.getMessage('target_lang_label')}
-		bind:value={storage.settings.targetLang}
-	/>
+	<SettingsGroup>
+		<SelectLanguageSimple
+			autoLang
+			label={browser.i18n.getMessage('select_lang_source')}
+			bind:value={storage.settings.sourceLang}
+		/>
+
+		<SelectLanguageSimple
+			label={browser.i18n.getMessage('select_lang_target')}
+			bind:value={storage.settings.targetLang}
+		/>
+	</SettingsGroup>
 
 	<div class="pt-2 text-xl">{browser.i18n.getMessage('options_general_translation_button')}</div>
 
-	<SwitchGroup>
+	<SettingsGroup>
 		<Switch
 			hint={browser.i18n.getMessage('options_inline_button_show_hint')}
 			label={browser.i18n.getMessage('options_inline_button_show')}
@@ -25,11 +33,11 @@
 			label={browser.i18n.getMessage('options_hide_translation_button')}
 			bind:checked={storage.settings.hideButtonForUserLanguage}
 		/>
-	</SwitchGroup>
-	<div class="inline-flex flex-wrap items-center gap-2">
-		<p>{browser.i18n.getMessage('options_hide_button_on_sites')}</p>
+
+		<div class="inline-flex flex-wrap items-center gap-2 p-3">
+			<p>{browser.i18n.getMessage('options_hide_button_on_sites')}</p>
 			{#each storage.settings.blacklistDomainForInline as domain, index (index)}
-				<Chip content={domain}>
+				<Chip class="bg-color-surface" content={domain}>
 					{#snippet end()}
 						<Button
 							class="size-6"
@@ -52,13 +60,14 @@
 					{browser.i18n.getMessage('options_hide_button_on_sites_empty_list')}
 				</span>
 			{/each}
-	</div>
+		</div>
+	</SettingsGroup>
 
 	<div class="pt-2 text-xl">{browser.i18n.getMessage('options_tab_popup_window')}</div>
 
 	<PopupModeSwitch />
 
-	<SwitchGroup>
+	<SettingsGroup>
 		<Switch
 			hint={browser.i18n.getMessage('options_general_show_on_selected_hint')}
 			label={browser.i18n.getMessage('options_general_show_on_selected')}
@@ -79,33 +88,34 @@
 			label={browser.i18n.getMessage('options_show_transliteration')}
 			bind:checked={storage.settings.showTransliteration}
 		/>
-	</SwitchGroup>
 
-	<Select
-		label="{browser.i18n.getMessage('options_font_size')}:"
-		bind:value={storage.settings.fontSize}
-	>
-		{#each fontSizes as { value, label } (value)}
-			<option {value}>{label}</option>
-		{/each}
-	</Select>
-	<div class="flex flex-col items-start gap-2">
-		<div class="flex w-full items-center justify-between">
-			<p>{browser.i18n.getMessage('options_keyboard_shortcut_open_popup')}:</p>
-			{#await shortcutKeysPromise then shortcutKeys}
-				<Shortcuts keys={shortcutKeys} />
-			{/await}
+		<Select
+			label="{browser.i18n.getMessage('options_font_size')}:"
+			bind:value={storage.settings.fontSize}
+		>
+			{#each fontSizes as { value, label } (value)}
+				<option {value}>{label}</option>
+			{/each}
+		</Select>
+		<div class="flex items-center gap-2 p-3">
+			<div class="flex w-full items-center justify-between">
+				<p>{browser.i18n.getMessage('options_keyboard_shortcut_open_popup')}:</p>
+				{#await shortcutKeysPromise then shortcutKeys}
+					<Shortcuts keys={shortcutKeys} />
+				{/await}
+			</div>
+			{#if import.meta.env.CHROME}
+				<div>
+					<Button
+						icon={mdiPencilOutline}
+						onclick={openExtensionsShortcuts}
+						size="xs"
+						title={browser.i18n.getMessage('options_edit_keyboard_shortcut')}
+					/>
+				</div>
+			{/if}
 		</div>
-		{#if import.meta.env.CHROME}
-			<button
-				class="cursor-pointer self-end text-sm text-color-link hover:underline"
-				onclick={openExtensionsShortcuts}
-				type="button"
-			>
-				{browser.i18n.getMessage('options_edit_keyboard_shortcut')}
-			</button>
-		{/if}
-	</div>
+	</SettingsGroup>
 
 	<!-- <OAuth /> -->
 </div>
@@ -117,12 +127,13 @@ import SelectLanguageSimple from '~/lib/SelectLanguageSimple.svelte';
 import Button from '~/lib/Button.svelte';
 import Select from '~/lib/Select.svelte';
 import Switch from '~/lib/Switch.svelte';
-import SwitchGroup from '~/lib/SwitchGroup.svelte';
+import SettingsGroup from '~/lib/SettingsGroup.svelte';
 import Chip from '~/lib/Chip.svelte';
 import Shortcuts from '~/lib/Shortcuts.svelte';
 import PopupModeSwitch from './lib/PopupModeSwitch.svelte';
 import { getShortcutByCommand } from '~/shared/browser';
-import { mdiClose } from '@mdi/js';
+import { getUILanguageCode, getDisplayedLanguageName } from '~/shared/languages';
+import { mdiClose, mdiPencilOutline } from '@mdi/js';
 // import OAuth from './OAuth.svelte';
 
 let userLanguage = $state<string>(getUserLanguage());
@@ -138,17 +149,8 @@ const openExtensionsShortcuts = () => {
 };
 
 function getUserLanguage(){
-	const userUILanguage = browser.i18n.getUILanguage();
-	let i18nLanguage: string;
-	// @ts-expect-error ignore messageName
-	i18nLanguage = browser.i18n.getMessage(`language_${userUILanguage.replace('-', '_')}`);
-
-	if (!i18nLanguage) {
-		// @ts-expect-error ignore messageName
-		i18nLanguage = browser.i18n.getMessage(`language_${userUILanguage.split('-')[0]}`);
-	}
-
-	return `${userUILanguage}${i18nLanguage ? ` (${i18nLanguage.toLowerCase()})`: ''}`;
+	const userUILanguageCode = getUILanguageCode();
+	return getDisplayedLanguageName(userUILanguageCode, 'name+code');
 }
 
 const fontSizes: {

@@ -33,7 +33,7 @@
 					<Menu />
 				{:else}
 					<Button
-						icon={mdiSwapHorizontal}
+						icon={mdiArrowExpand}
 						onclick={switchToFullMode}
 						size="xs"
 						title={browser.i18n.getMessage('popup_menu_switch_to_full_mode')}
@@ -74,7 +74,7 @@ import PopupSimple from './PopupSimple/PopupSimple.svelte';
 import { computePosition, offset, flip, shift, type VirtualElement } from '@floating-ui/dom';
 import { clickOutside } from '~/utils';
 import { POPUP_CLASS } from '~/shared/constants';
-import { mdiClose, mdiSwapHorizontal } from '@mdi/js';
+import { mdiClose, mdiArrowExpand } from '@mdi/js';
 
 let left = $state<number>(20);
 let top = $state<number>(20);
@@ -152,7 +152,6 @@ function switchToFullMode() {
 function closePopup() {
 	store.showPopup = false;
 }
-
 onDestroy(() => {
 	store.resetTranslateStore();
 });

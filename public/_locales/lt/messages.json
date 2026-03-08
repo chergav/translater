@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Mažiau"
     },
-    "target_lang_label": {
-        "message": "Išversti į:"
+    "select_lang_source": {
+        "message": "Išversti iš"
+    },
+    "select_lang_target": {
+        "message": "Išversti į"
     },
     "popup_dictionary": {
         "message": "Žodynas"
@@ -297,6 +300,9 @@
         "message": "🚀 Išbandykite kitus mano plėtinius"
     },
     "language_auto": {
+        "message": "auto"
+    },
+    "language_detect": {
         "message": "aptikti kalbą"
     },
     "language_aa": {
@@ -894,7 +900,7 @@
         "message": "Shan"
     },
     "language_si": {
-        "message": "Sinhala"
+        "message": "sinhalų kalba"
     },
     "language_sk": {
         "message": "slovakų"

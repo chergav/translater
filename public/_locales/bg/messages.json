@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "По-малко"
     },
-    "target_lang_label": {
-        "message": "Превод на:"
+    "select_lang_source": {
+        "message": "Превеждай от"
+    },
+    "select_lang_target": {
+        "message": "Превод на"
     },
     "popup_dictionary": {
         "message": "Речник"
@@ -297,6 +300,9 @@
         "message": "🚀 Опитайте другите ми разширения"
     },
     "language_auto": {
+        "message": "авто"
+    },
+    "language_detect": {
         "message": "откриване на език"
     },
     "language_aa": {

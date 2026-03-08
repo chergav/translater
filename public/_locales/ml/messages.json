@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "കുറവ്"
     },
-    "target_lang_label": {
-        "message": "ഇതിലേക്ക് വിവർത്തനം ചെയ്യുക:"
+    "select_lang_source": {
+        "message": "എന്നതിൽ നിന്ന് വിവർത്തനം ചെയ്യുക"
+    },
+    "select_lang_target": {
+        "message": "എന്നതിലേക്ക് വിവർത്തനം ചെയ്യുക"
     },
     "popup_dictionary": {
         "message": "നിഘണ്ടു"
@@ -297,6 +300,9 @@
         "message": "🚀 എൻ്റെ മറ്റ് വിപുലീകരണങ്ങൾ പരീക്ഷിക്കുക"
     },
     "language_auto": {
+        "message": "ഓട്ടോ"
+    },
+    "language_detect": {
         "message": "ഭാഷ കണ്ടുപിടിക്കുക"
     },
     "language_aa": {
@@ -336,7 +342,7 @@
         "message": "കാലാവധി"
     },
     "language_ay": {
-        "message": "അയ്മര"
+        "message": "അയ്മാര"
     },
     "language_az": {
         "message": "അസർബൈജാനി"
@@ -417,13 +423,13 @@
         "message": "സെബുവാനോ"
     },
     "language_cgg": {
-        "message": "കിഗ"
+        "message": "കിഗാ"
     },
     "language_ch": {
         "message": "ചമോറോ"
     },
     "language_chk": {
-        "message": "ചുക്കീസ്"
+        "message": "ചുകീസ്"
     },
     "language_chm": {
         "message": "മേഡോ മാരി"
@@ -798,7 +804,7 @@
         "message": "എൻഡെബെലെ (തെക്ക്)"
     },
     "language_nso": {
-        "message": "സെപ്പേഡി"
+        "message": "സെപീഡി"
     },
     "language_nus": {
         "message": "ന്യൂയർ"

@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "कमी"
     },
-    "target_lang_label": {
-        "message": "यामध्ये भाषांतर करा:"
+    "select_lang_source": {
+        "message": "वरून भाषांतर करा"
+    },
+    "select_lang_target": {
+        "message": "मध्ये भाषांतर करा"
     },
     "popup_dictionary": {
         "message": "शब्दकोश"
@@ -297,6 +300,9 @@
         "message": "🚀 माझे इतर विस्तार वापरून पहा"
     },
     "language_auto": {
+        "message": "ऑटो"
+    },
+    "language_detect": {
         "message": "भाषा ओळखा"
     },
     "language_aa": {

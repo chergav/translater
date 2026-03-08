@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "ಕಡಿಮೆ"
     },
-    "target_lang_label": {
-        "message": "ಇದಕ್ಕೆ ಅನುವಾದಿಸಿ:"
+    "select_lang_source": {
+        "message": "ನಿಂದ ಅನುವಾದಿಸಿ"
+    },
+    "select_lang_target": {
+        "message": "ಗೆ ಅನುವಾದಿಸಿ"
     },
     "popup_dictionary": {
         "message": "ನಿಘಂಟು"
@@ -297,6 +300,9 @@
         "message": "🚀 ನನ್ನ ಇತರ ವಿಸ್ತರಣೆಗಳನ್ನು ಪ್ರಯತ್ನಿಸಿ"
     },
     "language_auto": {
+        "message": "ಸ್ವಯಂ"
+    },
+    "language_detect": {
         "message": "ಭಾಷೆಯನ್ನು ಪತ್ತೆ ಮಾಡಿ"
     },
     "language_aa": {
@@ -540,7 +546,7 @@
         "message": "ಫ್ರಿಸಿಯನ್"
     },
     "language_ga": {
-        "message": "ಐರಿಶ್"
+        "message": "ಐರಿಷ್"
     },
     "language_gaa": {
         "message": "ಗಾ"
@@ -858,7 +864,7 @@
         "message": "ರೊಮೇನಿಯನ್"
     },
     "language_rom": {
-        "message": "ರೋಮಾನಿ"
+        "message": "ರೊಮಾನಿ"
     },
     "language_ru": {
         "message": "ರಷ್ಯನ್"
@@ -960,7 +966,7 @@
         "message": "ಟಿಗ್ರಿನ್ಯಾ"
     },
     "language_tiv": {
-        "message": "ಟಿವಿ"
+        "message": "ಟಿವ್"
     },
     "language_tk": {
         "message": "ತುರ್ಕಮೆನ್"

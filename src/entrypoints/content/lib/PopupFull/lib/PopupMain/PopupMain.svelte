@@ -3,15 +3,23 @@
 		<div class="flex flex-col gap-1">
 			<div class="flex items-center justify-between">
 				<div class="flex items-center gap-1">
-					<SelectLanguage auto onchange={reTranslate} bind:value={store.sourceLang} />
+					<SelectLanguage
+						autoLang
+						detectedLang={store.detectedLang}
+						onchange={store.reTranslate}
+						bind:value={storage.settings.sourceLang}
+					/>
 					<ButtonCopy text={store.textToTranslate} />
-					<TTS targetLang={store.sourceLang} text={store.textToTranslate} />
+					<TTS
+						targetLang={sourceTTSLang}
+						text={store.textToTranslate}
+					/>
 				</div>
 				<Button
 					icon={mdiChevronDown}
 					iconClass={[
 						'transition-transform',
-						storage.settings.showOriginalText && 'rotate-180',
+						storage.settings.showOriginalText && '-scale-y-100',
 					]}
 					onclick={toggleOriginalText}
 					size="xs"
@@ -30,10 +38,7 @@
 							<span>{browser.i18n.getMessage('popup_perhaps_you_meant')}</span>
 							<button
 								class="inline-flex flex-wrap gap-x-1 text-sm text-blue-600"
-								onclick={() => {
-									store.textToTranslate = store.translated?.spell.spell_res || '';
-									reTranslate();
-								}}
+								onclick={() => setCorrectText(store.translated?.spell.spell_res)}
 								type="button"
 							>
 								<!-- eslint-disable-next-line svelte/no-at-html-tags -->
@@ -42,21 +47,17 @@
 						</div>
 					{/if}
 					{#if
+						storage.settings.sourceLang !== 'auto' &&
 						store.translated?.ld_result.srclangs &&
-						store.translated?.ld_result.srclangs[0] !== store.sourceLang}
+						store.translated?.ld_result.srclangs[0] !== storage.settings.sourceLang}
 						<div class="flex items-center gap-1 p-1">
 							<span>{browser.i18n.getMessage('popup_original_language')}</span>
 							<button
 								class="inline-flex text-sm text-blue-600"
-								onclick={() => {
-									store.sourceLang = store.translated?.ld_result.srclangs[0] || '';
-									reTranslate();
-								}}
+								onclick={() => setCorrectSourceLang(store.translated?.ld_result.srclangs[0])}
 								type="button"
 							>
-								{browser.i18n
-									// @ts-expect-error ignore messageName
-									.getMessage(`language_${store.translated?.ld_result.srclangs[0].replace('-', '_')}`).toLowerCase()}
+								{getDisplayedLanguageName(store.translated?.ld_result.srclangs[0])}
 							</button>
 						</div>
 					{/if}
@@ -73,7 +74,7 @@
 				<div class="flex items-center gap-1">
 					<SelectLanguage
 						markUILang
-						onchange={reTranslate}
+						onchange={store.reTranslate}
 						bind:value={storage.settings.targetLang}
 					/>
 					<ButtonCopy text={translatedText} />
@@ -85,7 +86,7 @@
 							<Loader />
 							<Button
 								icon={mdiStop}
-								onclick={stopTranslation}
+								onclick={store.stopTranslation}
 								size="xs"
 								title="Stop translation"
 							/>
@@ -93,7 +94,7 @@
 					{:else}
 						<Button
 							icon={mdiRefresh}
-							onclick={reTranslate}
+							onclick={store.reTranslate}
 							size="xs"
 							title="Retry translation"
 						/>
@@ -125,6 +126,7 @@ import ButtonCopy from './lib/ButtonCopy.svelte';
 import TTS from './lib/TTS/TTS.svelte';
 import { mdiChevronDown, mdiRefresh, mdiStop } from '@mdi/js';
 import SelectLanguage from '~/lib/SelectLanguage.svelte';
+import { getDisplayedLanguageName } from '~/shared/languages';
 
 const translatedText = $derived<string>(
 	providerStore.isSelectedProviderGoogle
@@ -132,17 +134,23 @@ const translatedText = $derived<string>(
 		:  store.translationAi?.text || '',
 );
 
+const sourceTTSLang = $derived<string>(
+	storage.settings.sourceLang === 'auto' && store.detectedLang ?
+		store.detectedLang :
+		storage.settings.sourceLang,
+);
+
 function toggleOriginalText() {
 	storage.settings.showOriginalText = !storage.settings.showOriginalText;
 }
 
-function stopTranslation() {
-	store.stopTranslation();
+function setCorrectText(suggestedText?: string) {
+	store.textToTranslate = suggestedText || '';
+	store.reTranslate();
 }
 
-function reTranslate() {
-	if (store.textToTranslate) {
-		store.translate();
-	}
+function setCorrectSourceLang(sourceLang?: string) {
+	storage.settings.sourceLang = sourceLang || 'auto';
+	store.reTranslate();
 }
 </script>

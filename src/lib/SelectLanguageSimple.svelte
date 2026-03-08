@@ -1,4 +1,4 @@
-<label class="inline-flex items-center justify-between gap-2 select-none">
+<label class="ignore-active inline-flex items-center justify-between gap-2 select-none">
 	{#if label}
 		<span>{label}</span>
 	{/if}
@@ -13,12 +13,7 @@
 		{onchange}
 		bind:value
 	>
-		{#if auto}
-			<option value="auto">
-				{browser.i18n.getMessage('language_auto')}
-			</option>
-		{/if}
-		{#each sortedI18nLanguages as { code, language } (code)}
+		{#each languages as { code, language } (code)}
 			<option value={code}>{language}</option>
 		{/each}
 	</select>
@@ -26,12 +21,13 @@
 
 <script lang="ts">
 import type { ChangeEventHandler } from 'svelte/elements';
-import { languages } from '~/shared/languages';
+import type { Language } from '~/types';
+import { languagesLocalArray, sourceLanguageAuto, getDisplayedLanguageName } from '~/shared/languages';
 
 interface Props {
 	value: string
 	label?: string
-	auto?: boolean
+	autoLang?: boolean
 	small?: boolean
 	onchange?: ChangeEventHandler<HTMLSelectElement>
 }
@@ -39,16 +35,16 @@ interface Props {
 let {
 	value = $bindable(),
 	label,
-	auto = false,
+	autoLang = false,
 	small = false,
 	onchange,
 }: Props = $props();
 
-const sortedI18nLanguages = Object.keys(languages)
-	.map(code => ({
+const languages = $derived<Language[]>([
+	...(autoLang ? [sourceLanguageAuto] : []),
+	...languagesLocalArray.map(({ code }) => ({
 		code,
-		// @ts-expect-error ignore messageName
-		language: `${browser.i18n.getMessage(`language_${code.replace('-', '_')}`).toLowerCase()} [${code}]`,
-	}))
-	.sort((a, b) => a.language.localeCompare(b.language));
+		language: getDisplayedLanguageName(code, 'name+code'),
+	})),
+]);
 </script>

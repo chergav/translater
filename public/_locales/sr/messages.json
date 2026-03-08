@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Мање"
     },
-    "target_lang_label": {
-        "message": "Преведи на:"
+    "select_lang_source": {
+        "message": "Преведи са"
+    },
+    "select_lang_target": {
+        "message": "Преведи на"
     },
     "popup_dictionary": {
         "message": "Речник"
@@ -297,6 +300,9 @@
         "message": "🚀 Испробајте моја друга проширења"
     },
     "language_auto": {
+        "message": "ауто"
+    },
+    "language_detect": {
         "message": "детектовати језик"
     },
     "language_aa": {
@@ -906,7 +912,7 @@
         "message": "Самоан"
     },
     "language_sn": {
-        "message": "Шона"
+        "message": "Схона"
     },
     "language_so": {
         "message": "сомалијски"
@@ -987,7 +993,7 @@
         "message": "Тсонга"
     },
     "language_tt": {
-        "message": "Татар"
+        "message": "татарски"
     },
     "language_tum": {
         "message": "Тумбука"

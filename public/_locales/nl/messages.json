@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Minder"
     },
-    "target_lang_label": {
-        "message": "Vertalen naar:"
+    "select_lang_source": {
+        "message": "Vertalen van"
+    },
+    "select_lang_target": {
+        "message": "Vertalen naar"
     },
     "popup_dictionary": {
         "message": "Woordenboek"
@@ -297,6 +300,9 @@
         "message": "🚀 Probeer mijn andere extensies"
     },
     "language_auto": {
+        "message": "auto"
+    },
+    "language_detect": {
         "message": "taal detecteren"
     },
     "language_aa": {
@@ -423,7 +429,7 @@
         "message": "Chamorro"
     },
     "language_chk": {
-        "message": "Chuukees"
+        "message": "Chuukese"
     },
     "language_chm": {
         "message": "Weide Mari"

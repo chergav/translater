@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Kevesebbet"
     },
-    "target_lang_label": {
-        "message": "Fordítás erre:"
+    "select_lang_source": {
+        "message": "Fordítás innen"
+    },
+    "select_lang_target": {
+        "message": "Fordítás nyelvre"
     },
     "popup_dictionary": {
         "message": "Szótár"
@@ -294,9 +297,12 @@
         "message": "Nincs eredmény"
     },
     "try_my_extensions": {
-        "message": "🚀 Próbáld ki a többi kiterjesztésemet is"
+        "message": "🚀 Próbáld ki a többi bővítményem is"
     },
     "language_auto": {
+        "message": "auto"
+    },
+    "language_detect": {
         "message": "észleli a nyelvet"
     },
     "language_aa": {

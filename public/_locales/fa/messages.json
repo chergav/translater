@@ -3,7 +3,7 @@
         "message": "مترجم - ترجمه متن انتخاب شده"
     },
     "app_description": {
-        "message": "متن انتخابی را با Google Translate ترجمه کنید"
+        "message": "متن انتخاب شده را با Google Translate ترجمه کنید"
     },
     "context_menus_title": {
         "message": "ترجمه متن انتخاب شده"
@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "کمتر"
     },
-    "target_lang_label": {
-        "message": "ترجمه به:"
+    "select_lang_source": {
+        "message": "ترجمه از"
+    },
+    "select_lang_target": {
+        "message": "ترجمه به"
     },
     "popup_dictionary": {
         "message": "فرهنگ لغت"
@@ -297,6 +300,9 @@
         "message": "🚀 افزونه های دیگر من را امتحان کنید"
     },
     "language_auto": {
+        "message": "خودکار"
+    },
+    "language_detect": {
         "message": "تشخیص زبان"
     },
     "language_aa": {
@@ -453,7 +459,7 @@
         "message": "چوواش"
     },
     "language_cy": {
-        "message": "ولز"
+        "message": "ولزی"
     },
     "language_da": {
         "message": "دانمارکی"

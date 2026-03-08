@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Meno"
     },
-    "target_lang_label": {
-        "message": "Traduci in:"
+    "select_lang_source": {
+        "message": "Traduci da"
+    },
+    "select_lang_target": {
+        "message": "Traduci in"
     },
     "popup_dictionary": {
         "message": "Dizionario"
@@ -297,6 +300,9 @@
         "message": "🚀 Prova le mie altre estensioni"
     },
     "language_auto": {
+        "message": "automatico"
+    },
+    "language_detect": {
         "message": "rilevare la lingua"
     },
     "language_aa": {
@@ -840,7 +846,7 @@
         "message": "Pashtu"
     },
     "language_pt": {
-        "message": "portoghese"
+        "message": "Portoghese"
     },
     "language_pt_BR": {
         "message": "Portoghese (Brasile)"
@@ -888,7 +894,7 @@
         "message": "Sami (Nord)"
     },
     "language_sg": {
-        "message": "Sangò"
+        "message": "Sango"
     },
     "language_shn": {
         "message": "Shan"

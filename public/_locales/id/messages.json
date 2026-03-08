@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Kurang"
     },
-    "target_lang_label": {
-        "message": "Terjemahkan ke:"
+    "select_lang_source": {
+        "message": "Terjemahkan dari"
+    },
+    "select_lang_target": {
+        "message": "Terjemahkan ke"
     },
     "popup_dictionary": {
         "message": "Kamus"
@@ -297,6 +300,9 @@
         "message": "🚀 Coba ekstensi saya yang lain"
     },
     "language_auto": {
+        "message": "otomatis"
+    },
+    "language_detect": {
         "message": "mendeteksi bahasa"
     },
     "language_aa": {
@@ -921,7 +927,7 @@
         "message": "Swati"
     },
     "language_st": {
-        "message": "Sesotho"
+        "message": "Sesoto"
     },
     "language_su": {
         "message": "Sunda"
@@ -948,7 +954,7 @@
         "message": "Telugu"
     },
     "language_tet": {
-        "message": "bahasa Tetun"
+        "message": "bahasa Tetum"
     },
     "language_tg": {
         "message": "Tajik"

@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Mindre"
     },
-    "target_lang_label": {
-        "message": "Oversett til:"
+    "select_lang_source": {
+        "message": "Oversett fra"
+    },
+    "select_lang_target": {
+        "message": "Oversett til"
     },
     "popup_dictionary": {
         "message": "Ordbok"
@@ -297,6 +300,9 @@
         "message": "🚀 Prøv mine andre utvidelser"
     },
     "language_auto": {
+        "message": "auto"
+    },
+    "language_detect": {
         "message": "oppdage språk"
     },
     "language_aa": {
@@ -735,7 +741,7 @@
         "message": "mauritisk kreolsk"
     },
     "language_mg": {
-        "message": "Madagaskar"
+        "message": "madagaskisk"
     },
     "language_mh": {
         "message": "Marshalleser"

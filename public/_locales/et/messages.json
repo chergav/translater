@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Vähem"
     },
-    "target_lang_label": {
-        "message": "Tõlgi keelde:"
+    "select_lang_source": {
+        "message": "Tõlgi keelest"
+    },
+    "select_lang_target": {
+        "message": "Tõlgi keelde"
     },
     "popup_dictionary": {
         "message": "Sõnastik"
@@ -297,6 +300,9 @@
         "message": "🚀 Proovige minu teisi laiendusi"
     },
     "language_auto": {
+        "message": "auto"
+    },
+    "language_detect": {
         "message": "keelt tuvastada"
     },
     "language_aa": {
@@ -336,7 +342,7 @@
         "message": "Awadhi"
     },
     "language_ay": {
-        "message": "Aymara"
+        "message": "Aimara"
     },
     "language_az": {
         "message": "Aserbaidžaan"

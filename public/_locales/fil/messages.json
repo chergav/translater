@@ -102,7 +102,7 @@
         "message": "Provider"
     },
     "options_providers_model": {
-        "message": "modelo"
+        "message": "Modelo"
     },
     "options_appearance_theme": {
         "message": "Tema"
@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Mas kaunti"
     },
-    "target_lang_label": {
-        "message": "Isalin sa:"
+    "select_lang_source": {
+        "message": "Isalin mula sa"
+    },
+    "select_lang_target": {
+        "message": "Isalin sa"
     },
     "popup_dictionary": {
         "message": "Diksyunaryo"
@@ -297,6 +300,9 @@
         "message": "🚀 Subukan ang iba ko pang extension"
     },
     "language_auto": {
+        "message": "sasakyan"
+    },
+    "language_detect": {
         "message": "tuklasin ang wika"
     },
     "language_aa": {

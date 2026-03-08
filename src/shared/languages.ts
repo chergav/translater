@@ -1,3 +1,4 @@
+import type { Language } from '~/types';
 
 export const languages: Record<string, string> = {
 	'aa': 'Afar',
@@ -254,36 +255,56 @@ export const languages: Record<string, string> = {
 	'zu': 'Zulu',
 };
 
-export function normalizeLanguageCode(code: string): string {
-	if (languages[code]) {
-		return code;
-	}
+export const languagesLocal: Record<string, string> = Object.keys(languages).reduce((acc, key) => {
+	// @ts-expect-error ignore messageName
+	acc[key] = browser.i18n.getMessage(`language_${key.replace('-', '_')}`).toLowerCase();
+	return acc;
+}, {});
+
+export const languagesLocalArray: Language[] = Object.entries(languagesLocal)
+	.map(([code, language]) =>
+		({
+			code,
+			language,
+		}))
+	.sort((a, b) => a.language.localeCompare(b.language));
+
+export const sourceLanguageAuto: Language = {
+	code: 'auto',
+	language: browser.i18n.getMessage('language_detect'),
+};
+
+export function normalizeLanguageCode(code: string): string | undefined {
+	if (languages[code]) return code;
 
 	const baseCode = code.split('-')[0];
-	return baseCode;
+	if (languages[baseCode]) return baseCode;
+
+	return undefined;
 }
 
 export function getLanguageName(code: string): string | undefined {
-	if (languages[code]) {
-		return languages[code];
-	}
-
 	const normalized = normalizeLanguageCode(code);
-	return languages[normalized];
+	return normalized ? languages[normalized] : undefined;
 }
 
-export function getTargetLanguageCode(): string {
+export function getUILanguageCode(): string {
 	const browserLang = browser.i18n.getUILanguage();
+	return normalizeLanguageCode(browserLang) ?? 'en';
+}
 
-	if (languages[browserLang]) {
-		return browserLang;
+export function getDisplayedLanguageName(
+	langCode: string,
+	displayMode: 'name' | 'name+code' | 'code' = 'name',
+): string {
+	if (displayMode === 'code') return langCode;
+
+	const normalizedCode = normalizeLanguageCode(langCode);
+
+	if (normalizedCode) {
+		const name = languagesLocal[normalizedCode];
+		return displayMode === 'name+code' ? `${name} [${normalizedCode}]` : name;
 	}
 
-	const baseCode = browserLang.split('-')[0];
-
-	if (languages[baseCode]) {
-		return baseCode;
-	}
-
-	return 'en';
+	return langCode;
 }

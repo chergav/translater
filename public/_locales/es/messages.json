@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "menos"
     },
-    "target_lang_label": {
-        "message": "Traducir a:"
+    "select_lang_source": {
+        "message": "Traducir de"
+    },
+    "select_lang_target": {
+        "message": "Traducir a"
     },
     "popup_dictionary": {
         "message": "Diccionario"
@@ -297,6 +300,9 @@
         "message": "🚀 Prueba mis otras extensiones"
     },
     "language_auto": {
+        "message": "automático"
+    },
+    "language_detect": {
         "message": "detectar idioma"
     },
     "language_aa": {

@@ -84,7 +84,7 @@
         "message": "Visa källtext"
     },
     "options_show_original_text_hint": {
-        "message": "Visa originaltext vid sidan av översättningen (endast i fullständigt läge)."
+        "message": "Visa originaltext vid sidan av översättningen (endast helt läge)."
     },
     "options_show_transliteration": {
         "message": "Visa translitterering"
@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Mindre"
     },
-    "target_lang_label": {
-        "message": "Översätt till:"
+    "select_lang_source": {
+        "message": "Översätt från"
+    },
+    "select_lang_target": {
+        "message": "Översätt till"
     },
     "popup_dictionary": {
         "message": "Ordbok"
@@ -297,6 +300,9 @@
         "message": "🚀 Testa mina andra tillägg"
     },
     "language_auto": {
+        "message": "auto"
+    },
+    "language_detect": {
         "message": "upptäcka språk"
     },
     "language_aa": {

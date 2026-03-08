@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "తక్కువ"
     },
-    "target_lang_label": {
-        "message": "దీనికి అనువదించు:"
+    "select_lang_source": {
+        "message": "నుండి అనువదించండి"
+    },
+    "select_lang_target": {
+        "message": "అనువదించండి"
     },
     "popup_dictionary": {
         "message": "నిఘంటువు"
@@ -297,6 +300,9 @@
         "message": "🚀 నా ఇతర పొడిగింపులను ప్రయత్నించండి"
     },
     "language_auto": {
+        "message": "ఆటో"
+    },
+    "language_detect": {
         "message": "భాషను గుర్తించండి"
     },
     "language_aa": {
@@ -798,7 +804,7 @@
         "message": "Ndebele (దక్షిణం)"
     },
     "language_nso": {
-        "message": "సెపెడి"
+        "message": "సెపెడీ"
     },
     "language_nus": {
         "message": "న్యూర్"

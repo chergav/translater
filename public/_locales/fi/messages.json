@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Vähemmän"
     },
-    "target_lang_label": {
-        "message": "Käännä kielelle:"
+    "select_lang_source": {
+        "message": "Käännä kielestä"
+    },
+    "select_lang_target": {
+        "message": "Käännä kielelle"
     },
     "popup_dictionary": {
         "message": "Sanakirja"
@@ -297,6 +300,9 @@
         "message": "🚀 Kokeile muita laajennuksiani"
     },
     "language_auto": {
+        "message": "auto"
+    },
+    "language_detect": {
         "message": "tunnistaa kieltä"
     },
     "language_aa": {
@@ -519,7 +525,7 @@
         "message": "Fidži"
     },
     "language_fo": {
-        "message": "färsaarten"
+        "message": "Färsaaret"
     },
     "language_fon": {
         "message": "Fon"

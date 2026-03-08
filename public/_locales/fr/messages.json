@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Moins"
     },
-    "target_lang_label": {
-        "message": "Traduire en :"
+    "select_lang_source": {
+        "message": "Traduire de"
+    },
+    "select_lang_target": {
+        "message": "Traduire en"
     },
     "popup_dictionary": {
         "message": "Dictionnaire"
@@ -297,6 +300,9 @@
         "message": "🚀 Essayez mes autres extensions"
     },
     "language_auto": {
+        "message": "automobile"
+    },
+    "language_detect": {
         "message": "détecter la langue"
     },
     "language_aa": {
@@ -357,7 +363,7 @@
         "message": "Baoulé"
     },
     "language_be": {
-        "message": "biélorusse"
+        "message": "Biélorusse"
     },
     "language_bem": {
         "message": "Bemba"

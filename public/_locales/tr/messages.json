@@ -27,7 +27,7 @@
         "message": "Açılır pencere"
     },
     "options_tab_appearance": {
-        "message": "Dış görünüş"
+        "message": "Dış görünüm"
     },
     "options_tab_history": {
         "message": "Tarih"
@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Daha az"
     },
-    "target_lang_label": {
-        "message": "Şu dile çevir:"
+    "select_lang_source": {
+        "message": "Şuradan tercüme et:"
+    },
+    "select_lang_target": {
+        "message": "Çevir"
     },
     "popup_dictionary": {
         "message": "Sözlük"
@@ -297,6 +300,9 @@
         "message": "🚀 Diğer uzantılarımı dene"
     },
     "language_auto": {
+        "message": "oto"
+    },
+    "language_detect": {
         "message": "dili tespit et"
     },
     "language_aa": {
@@ -609,7 +615,7 @@
         "message": "İzlandaca"
     },
     "language_it": {
-        "message": "İtalyanca"
+        "message": "İtalyan"
     },
     "language_iu": {
         "message": "İnuktuca (Heceler)"

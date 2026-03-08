@@ -168,7 +168,7 @@
         "message": "Groß (18px)"
     },
     "options_font_size_xl": {
-        "message": "Extra groß (20px)"
+        "message": "Extra groß (20 Pixel)"
     },
     "options_support_msg": {
         "message": "Wenn etwas nicht funktioniert oder Sie Vorschläge haben, lassen Sie es mich bitte hier wissen"
@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Weniger"
     },
-    "target_lang_label": {
-        "message": "Übersetzen in:"
+    "select_lang_source": {
+        "message": "Übersetzen von"
+    },
+    "select_lang_target": {
+        "message": "Übersetzen nach"
     },
     "popup_dictionary": {
         "message": "Wörterbuch"
@@ -297,6 +300,9 @@
         "message": "🚀 Probieren Sie meine anderen Erweiterungen aus"
     },
     "language_auto": {
+        "message": "auto"
+    },
+    "language_detect": {
         "message": "Sprache erkennen"
     },
     "language_aa": {

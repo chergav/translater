@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Manj"
     },
-    "target_lang_label": {
-        "message": "Prevedi v:"
+    "select_lang_source": {
+        "message": "Prevedi iz"
+    },
+    "select_lang_target": {
+        "message": "Prevedi v"
     },
     "popup_dictionary": {
         "message": "Slovar"
@@ -297,6 +300,9 @@
         "message": "🚀 Preizkusite moje druge razširitve"
     },
     "language_auto": {
+        "message": "avto"
+    },
+    "language_detect": {
         "message": "zaznati jezik"
     },
     "language_aa": {

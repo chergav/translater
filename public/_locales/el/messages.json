@@ -150,7 +150,7 @@
         "message": "Συντόμευση πληκτρολογίου για άνοιγμα αναδυόμενου παραθύρου"
     },
     "options_key_combination_is_not_set": {
-        "message": "η συντόμευση πληκτρολογίου δεν έχει οριστεί"
+        "message": "δεν έχει οριστεί η συντόμευση πληκτρολογίου"
     },
     "options_font_size": {
         "message": "Μέγεθος γραμματοσειράς"
@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Λιγότερο"
     },
-    "target_lang_label": {
-        "message": "Μετάφραση σε:"
+    "select_lang_source": {
+        "message": "Μετάφραση από"
+    },
+    "select_lang_target": {
+        "message": "Μετάφραση σε"
     },
     "popup_dictionary": {
         "message": "Λεξικό"
@@ -297,6 +300,9 @@
         "message": "🚀 Δοκιμάστε τις άλλες επεκτάσεις μου"
     },
     "language_auto": {
+        "message": "αυτόματο"
+    },
+    "language_detect": {
         "message": "ανίχνευση γλώσσας"
     },
     "language_aa": {
@@ -495,7 +501,7 @@
         "message": "Ισπανικά"
     },
     "language_et": {
-        "message": "Εσθονικά"
+        "message": "Εσθονική"
     },
     "language_eu": {
         "message": "Βάσκος"

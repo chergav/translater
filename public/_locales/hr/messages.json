@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Manje"
     },
-    "target_lang_label": {
-        "message": "Prevedi na:"
+    "select_lang_source": {
+        "message": "Prevedi s"
+    },
+    "select_lang_target": {
+        "message": "Prevedi na"
     },
     "popup_dictionary": {
         "message": "Rječnik"
@@ -255,7 +258,7 @@
         "message": "Slušajte tekst"
     },
     "tooltip_listen_stop": {
-        "message": "stani"
+        "message": "Stani"
     },
     "tooltip_listen_language_is_not_support": {
         "message": "Jezik nije podrška"
@@ -297,6 +300,9 @@
         "message": "🚀 Isprobajte moja druga proširenja"
     },
     "language_auto": {
+        "message": "auto"
+    },
+    "language_detect": {
         "message": "otkriti jezik"
     },
     "language_aa": {
@@ -564,7 +570,7 @@
         "message": "Manx"
     },
     "language_ha": {
-        "message": "Hausa"
+        "message": "hausa"
     },
     "language_haw": {
         "message": "Havajski"

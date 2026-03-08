@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Mniej"
     },
-    "target_lang_label": {
-        "message": "Przetłumacz na:"
+    "select_lang_source": {
+        "message": "Tłumacz z"
+    },
+    "select_lang_target": {
+        "message": "Przetłumacz na"
     },
     "popup_dictionary": {
         "message": "Słownik"
@@ -297,6 +300,9 @@
         "message": "🚀 Wypróbuj moje inne rozszerzenia"
     },
     "language_auto": {
+        "message": "auto"
+    },
+    "language_detect": {
         "message": "wykryć język"
     },
     "language_aa": {
@@ -360,7 +366,7 @@
         "message": "białoruski"
     },
     "language_bem": {
-        "message": "Bemba"
+        "message": "Bembę"
     },
     "language_ber": {
         "message": "Tamazight (Tifinagh)"
@@ -768,7 +774,7 @@
         "message": "Malajski (Jawi)"
     },
     "language_mt": {
-        "message": "Maltański"
+        "message": "maltański"
     },
     "language_mwr": {
         "message": "Marwadi"
@@ -798,7 +804,7 @@
         "message": "Ndebele (południe)"
     },
     "language_nso": {
-        "message": "Sepediego"
+        "message": "Sepedi"
     },
     "language_nus": {
         "message": "Nuer"
@@ -879,7 +885,7 @@
         "message": "Santali (łac.)"
     },
     "language_scn": {
-        "message": "Sycylijski"
+        "message": "Sycylijczyk"
     },
     "language_sd": {
         "message": "Sindhi"
@@ -975,7 +981,7 @@
         "message": "Tongijski"
     },
     "language_tpi": {
-        "message": "Tok Pisan"
+        "message": "Tok Pisin"
     },
     "language_tr": {
         "message": "turecki"
@@ -996,7 +1002,7 @@
         "message": "Tahitański"
     },
     "language_tyv": {
-        "message": "Tuwan"
+        "message": "Tuvan"
     },
     "language_udm": {
         "message": "Udmurt"

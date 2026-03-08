@@ -1,5 +1,5 @@
 <Listbox
-	class="relative h-min w-min text-sm"
+	class="relative text-sm"
 	change={onchange}
 	onopen={() => {
 		search = '';
@@ -9,13 +9,14 @@
 >
 	<ListboxButton
 		class={[
-			'relative flex h-8 w-52 cursor-pointer items-center overflow-hidden rounded-full pr-10 pl-3',
+			'relative flex h-8 cursor-pointer items-center overflow-hidden rounded-full pr-8 pl-3',
 			'text-start whitespace-nowrap transition-colors active:bg-color-primary/20',
 			open ? 'bg-color-primary/10' : 'bg-color-surface-container hover:bg-color-primary/10',
+			mode === 'full' && 'w-52',
 		]}
-		title={getI18nLangName(value)}
+		title={button.title}
 	>
-		<span class="block truncate">{getI18nLangName(value, false)}</span>
+		<span class="block truncate">{button.label}</span>
 		<Icon
 			class={[
 				'pointer-events-none absolute right-1 text-color-on-surface-variant transition-transform',
@@ -27,8 +28,9 @@
 	</ListboxButton>
 	<ListboxOptions
 		class={[
-			'absolute left-0 z-10 flex max-h-80 flex-col overflow-hidden rounded-xl shadow-lg select-none',
+			'absolute z-10 flex max-h-80 flex-col overflow-hidden rounded-xl shadow-lg select-none',
 			'border border-color-surface-high bg-color-surface',
+			alignClass,
 		]}
 	>
 		<div class="relative flex items-center">
@@ -98,56 +100,63 @@ import type { Language } from '~/types';
 import { tick } from 'svelte';
 import { Listbox, ListboxButton, ListboxOptions, ListboxOption } from '~/lib/headless';
 import Button from '~/lib/Button.svelte';
-import { languages } from '~/shared/languages';
+import { languagesLocalArray, sourceLanguageAuto, getDisplayedLanguageName } from '~/shared/languages';
 import Icon from '~/lib/Icon.svelte';
 import { mdiClose, mdiCheck, mdiStarOutline, mdiChevronDown } from '@mdi/js';
 
+type Mode = 'full' | 'simple';
+
 interface Props {
 	value: string
-	auto?: boolean
+	alignment?: 'left' | 'center' | 'right'
+	autoLang?: boolean
 	markUILang?: boolean
+	detectedLang?: string
+	mode?: Mode
 	onchange?: () => void
 }
 
 let {
 	value = $bindable(),
-	auto = false,
+	alignment = 'left',
+	autoLang = false,
 	markUILang = false,
+	detectedLang,
+	mode =  'full',
 	onchange,
 }: Props = $props();
 
+const UILanguage = browser.i18n.getUILanguage();
 let inputSearch = $state<HTMLInputElement>();
 let search = $state<string>('');
 let open = $state<boolean>();
-const UILanguage = browser.i18n.getUILanguage();
-
-const inputFocus: Action<HTMLInputElement> = input => {
-	tick().then(() => input.focus());
-};
-
-function getI18nLangName(langCode: string, showCode: boolean = true) {
-	// @ts-expect-error ignore messageName
-	const i18nLanguage = browser.i18n.getMessage(`language_${langCode.replace('-', '_')}`).toLowerCase() || 'language not defined';
-
-	return `${i18nLanguage}${showCode ? ` [${langCode}]`: ''}`;
-}
-
-const sortedI18nLanguages = Object.keys(languages)
-	.map(code => ({
+const alignClass = $derived<string>(
+	alignment === 'left' ?
+		'left-0' :
+		alignment === 'right' ?
+			'right-0' :
+			'left-1/2 -translate-x-1/2',
+);
+const languages = $derived<Language[]>([
+	...(autoLang ? [sourceLanguageAuto] : []),
+	...languagesLocalArray.map(({ code }) => ({
 		code,
-		language: getI18nLangName(code),
-	}))
-	.sort((a, b) => a.language.localeCompare(b.language));
+		language: getDisplayedLanguageName(code, 'name+code'),
+	})),
+]);
+const button = $derived.by(() => {
+	const isAuto = value === 'auto' && detectedLang;
+	const langCode = isAuto ? detectedLang : value;
+	const suffix = isAuto ? ` (${browser.i18n.getMessage('language_auto')})` : '';
+	const displayMode = mode === 'full' ? 'name' : 'code';
 
-// svelte-ignore state_referenced_locally
-if (auto) {
-	sortedI18nLanguages.unshift({
-		code: 'auto',
-		language: browser.i18n.getMessage('language_auto'),
-	});
-}
+	return {
+		title: getDisplayedLanguageName(langCode, 'name+code') + suffix,
+		label: getDisplayedLanguageName(langCode, displayMode) + suffix,
+	};
+});
 
-let filteredLangs = $derived<Language[]>(sortedI18nLanguages
+let filteredLangs = $derived<Language[]>(languages
 	.filter(i => {
 		const re = new RegExp(`${search}`, 'gi');
 		return re.test(i.code) || re.test(i.language);
@@ -187,4 +196,8 @@ function arrayTo2dArray(
 function listToColumns(array: Language[], columns: number) {
 	return arrayTo2dArray(array, Math.ceil(array.length / columns));
 }
+
+const inputFocus: Action<HTMLInputElement> = input => {
+	tick().then(() => input.focus());
+};
 </script>

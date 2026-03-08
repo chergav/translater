@@ -6,6 +6,7 @@ export interface Settings {
 	themeVariant: ThemeVariant
 	accentColor: AccentColor
 	fontSize: FontSize
+	sourceLang: string
 	targetLang: string
 	inlineButtonShow: boolean
 	textFieldButtonShow: boolean

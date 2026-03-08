@@ -66,7 +66,7 @@
         "message": "Afișați butonul în câmpul de text"
     },
     "options_text_field_button_show_hint": {
-        "message": "Afișați butonul când este selectat text în câmpurile de introducere a textului."
+        "message": "Afișați butonul când textul este selectat în câmpurile de introducere a textului."
     },
     "options_hide_translation_button": {
         "message": "Ascundeți butonul de traducere pentru limba dvs"
@@ -141,7 +141,7 @@
         "message": "Dacă o limbă nu este listată, va fi utilizat un serviciu extern de conversie a textului în vorbire."
     },
     "options_tts_no_voices_found": {
-        "message": "Browserul dvs. nu acceptă sinteza vorbirii. În schimb, vom folosi un serviciu extern."
+        "message": "Browserul dvs. nu acceptă sinteza vorbirii. Vom folosi în schimb un serviciu extern."
     },
     "options_edit_keyboard_shortcut": {
         "message": "editați comenzile rapide de la tastatură"
@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Mai puțin"
     },
-    "target_lang_label": {
-        "message": "Traduceți în:"
+    "select_lang_source": {
+        "message": "Traduceți din"
+    },
+    "select_lang_target": {
+        "message": "Traduceți în"
     },
     "popup_dictionary": {
         "message": "Dicţionar"
@@ -297,6 +300,9 @@
         "message": "🚀 Încearcă celelalte extensii ale mele"
     },
     "language_auto": {
+        "message": "auto"
+    },
+    "language_detect": {
         "message": "detectează limbajul"
     },
     "language_aa": {
@@ -816,7 +822,7 @@
         "message": "Odia (Oriya)"
     },
     "language_os": {
-        "message": "osetian"
+        "message": "osetă"
     },
     "language_pa": {
         "message": "Punjabi (Gurmukhi)"

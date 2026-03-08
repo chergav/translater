@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "פחות"
     },
-    "target_lang_label": {
-        "message": "תרגם ל:"
+    "select_lang_source": {
+        "message": "תרגם מ"
+    },
+    "select_lang_target": {
+        "message": "תרגם ל"
     },
     "popup_dictionary": {
         "message": "מילון"
@@ -297,6 +300,9 @@
         "message": "🚀 נסה את ההרחבות האחרות שלי"
     },
     "language_auto": {
+        "message": "אוטומטי"
+    },
+    "language_detect": {
         "message": "לזהות שפה"
     },
     "language_aa": {
@@ -786,7 +792,7 @@
         "message": "נפאלבהסה (ניוארי)"
     },
     "language_nhe": {
-        "message": "Nahuatl (Eastern Huasteca)"
+        "message": "נאוואטל (מזרח הואסטקה)"
     },
     "language_nl": {
         "message": "הולנדית"

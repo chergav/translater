@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "Less"
     },
-    "target_lang_label": {
-        "message": "Translate to:"
+    "select_lang_source": {
+        "message": "Translate from"
+    },
+    "select_lang_target": {
+        "message": "Translate to"
     },
     "popup_dictionary": {
         "message": "Dictionary"
@@ -297,6 +300,9 @@
         "message": "🚀 Try my other extensions"
     },
     "language_auto": {
+        "message": "auto"
+    },
+    "language_detect": {
         "message": "detect language"
     },
     "language_aa": {

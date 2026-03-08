@@ -4,7 +4,7 @@
 			{#if index > 0}
 				<span class="mx-2">+</span>
 			{/if}
-			<span class="rounded-lg border border-color-surface-highest bg-color-surface-container px-2 py-1 font-medium">
+			<span class="rounded-lg border border-color-surface-highest bg-color-surface px-2 py-1 font-medium">
 				{key}
 			</span>
 		{/each}

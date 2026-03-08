@@ -182,8 +182,11 @@
     "text_collapse": {
         "message": "ઓછા"
     },
-    "target_lang_label": {
-        "message": "આમાં અનુવાદ કરો:"
+    "select_lang_source": {
+        "message": "થી અનુવાદ કરો"
+    },
+    "select_lang_target": {
+        "message": "માં અનુવાદ કરો"
     },
     "popup_dictionary": {
         "message": "શબ્દકોશ"
@@ -297,6 +300,9 @@
         "message": "🚀 મારા અન્ય એક્સ્ટેંશન અજમાવી જુઓ"
     },
     "language_auto": {
+        "message": "ઓટો"
+    },
+    "language_detect": {
         "message": "ભાષા શોધો"
     },
     "language_aa": {
@@ -582,7 +588,7 @@
         "message": "ક્રોએશિયન"
     },
     "language_hrx": {
-        "message": "હંસરિક"
+        "message": "હંસરીક"
     },
     "language_ht": {
         "message": "હૈતીયન ક્રેઓલ"
@@ -795,7 +801,7 @@
         "message": "નોર્વેજીયન"
     },
     "language_nr": {
-        "message": "નેડેબેલે (દક્ષિણ)"
+        "message": "Ndebele (દક્ષિણ)"
     },
     "language_nso": {
         "message": "સેપેડી"

@@ -32,7 +32,10 @@ export async function translateWithMyMemory(
 	targetLang: string,
 	signal: AbortSignal,
 	sourceLanguage?: string,
-): Promise<string> {
+): Promise<{
+	translation: string
+	sourceLang: string
+}> {
 	const sourceLang = sourceLanguage ?? await detectLanguage(text);
 	const userEmail = await getUserEmail();
 
@@ -61,5 +64,8 @@ export async function translateWithMyMemory(
 		throw new Error('MyMemory daily quota exceeded');
 	}
 
-	return data.responseData.translatedText;
+	return {
+		translation: data.responseData.translatedText,
+		sourceLang,
+	};
 }

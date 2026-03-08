@@ -28,6 +28,7 @@ export default ts.config(
 		},
 		rules: {
 			'no-undef': 'off',
+			'eqeqeq': ['error', 'always'],
 			'@stylistic/max-len': ['error', {
 				code: 150,
 				tabWidth: 4,
@@ -159,7 +160,7 @@ export default ts.config(
 			...eslintPluginBetterTailwindcss.configs['recommended-error'].rules,
 			'better-tailwindcss/enforce-consistent-line-wrapping': 'off',
 			'better-tailwindcss/no-unregistered-classes': ['error', {
-				ignore: ['mark'],
+				ignore: ['mark', 'ignore-active'],
 			}],
 		},
 		settings: { 'better-tailwindcss': { entryPoint: 'src/assets/tailwind.css' } },
