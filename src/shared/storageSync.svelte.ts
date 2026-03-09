@@ -54,6 +54,15 @@ class StorageSync {
 	}
 }
 
-const settings = await browser.storage.sync.get<SettingsSync>(initialSettings);
+async function getSettings(initialSettings: SettingsSync): Promise<SettingsSync> {
+	try {
+		return await browser.storage.sync.get<SettingsSync>(initialSettings);
+	} catch {
+		return initialSettings;
+	}
+}
+
+// const settings = await browser.storage.sync.get<SettingsSync>(initialSettings);
+const settings = await getSettings(initialSettings);
 
 export const storageSync = new StorageSync(settings);
