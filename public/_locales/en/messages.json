@@ -42,7 +42,7 @@
         "message": "Show popup when text is selected"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Popup appears after text selection (best in Simple Mode)."
+        "message": "Popup window will appear immediately after selecting text."
     },
     "options_general_mode_full": {
         "message": "Full Mode"

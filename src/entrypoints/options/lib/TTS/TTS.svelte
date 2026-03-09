@@ -47,7 +47,7 @@ if (!store.voices) {
 const languages = $derived<Language[]>([
 	...languagesLocalArray.map(({ code }) => ({
 		code,
-		language: getDisplayedLanguageName(code),
+		language: getDisplayedLanguageName(code, 'name+code'),
 	})),
 ]);
 

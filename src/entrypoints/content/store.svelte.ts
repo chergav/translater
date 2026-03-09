@@ -1,4 +1,4 @@
-import type { CacheTTS, TranslationAi, Message, HistoryItem } from '~/types';
+import type { CacheTTS, TranslationAi, Message, HistoryItem, SettingsHistory } from '~/types';
 import type { GoogleTranslate, Translated, Sentence } from '~/types/google';
 import { ProviderId, GOOGLE_TRANSLATE_MODEL_ID } from '~/types/providers';
 import { storage } from '~/shared/storage.svelte';
@@ -226,7 +226,7 @@ class Store {
 		}
 	}
 
-	private addToHistory(orig: string = '', trans: string = '') {
+	private async addToHistory(orig: string = '', trans: string = '') {
 		if (!storage.settings.historyEnable) return;
 		if (!orig || !trans) return;
 
@@ -243,11 +243,15 @@ class Store {
 			model,
 		};
 
-		storage.settings.history.push(historyItem);
+		const { history = [] } = await browser.storage.local.get<SettingsHistory>(['history']);
+		// console.debug(history);
+		history.push(historyItem);
 
-		if (storage.settings.history.length >= storage.settings.historyLength) {
-			storage.settings.history = storage.settings.history.slice(-storage.settings.historyLength);
-		}
+		const trimmed = history.length > storage.settings.historyLength
+			? history.slice(-storage.settings.historyLength)
+			: history;
+
+		await browser.storage.local.set({ history: trimmed });
 	}
 
 	private addToCache(googleResult: Translated, finalTranslatedText: string) {

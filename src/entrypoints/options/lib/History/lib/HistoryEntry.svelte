@@ -14,7 +14,7 @@
 		<Button
 			icon={mdiTrashCanOutline}
 			onclick={() => {
-				deleteHistoryItem(historyItem.time);
+				storageHistory.delete(historyItem.time);
 			}}
 			size="xs"
 			title={browser.i18n.getMessage('options_delete_history_item')}
@@ -54,7 +54,7 @@
 <script lang="ts">
 import type { HistoryItem } from '~/types';
 import { slide } from 'svelte/transition';
-import { storage } from '~/shared/storage.svelte';
+import { storageHistory } from '../storageHistory.svelte';
 import Button from '~/lib/Button.svelte';
 import { mdiTrashCanOutline } from '@mdi/js';
 import { getDisplayedLanguageName } from '~/shared/languages';
@@ -69,8 +69,4 @@ let { historyItem }: Props = $props();
 let truncateOrig = $state<boolean>(historyItem.orig.length > 100);
 // svelte-ignore state_referenced_locally
 let truncateTrans = $state<boolean>(historyItem.trans.length > 100);
-
-function deleteHistoryItem(time: number) {
-	storage.settings.history = storage.settings.history.filter(i => i.time !== time);
-}
 </script>

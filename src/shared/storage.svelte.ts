@@ -19,7 +19,6 @@ const initialSettings: Settings = {
 	blacklistDomainForText: [],
 	historyEnable: true,
 	historyLength: 50,
-	history: [],
 	lockWindow: false,
 	ttsVoiceByLang: {},
 	modelId: GOOGLE_TRANSLATE_MODEL_ID,

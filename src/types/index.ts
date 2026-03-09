@@ -16,7 +16,6 @@ export interface Settings {
 	blacklistDomainForText: string[]
 	historyEnable: boolean
 	historyLength: number
-	history: HistoryItem[],
 	lockWindow: boolean
 	ttsVoiceByLang: {
 		[lang: string]: string
@@ -30,6 +29,10 @@ export interface Settings {
 
 export interface SettingsSync {
 	customProviders: TranslationProvider[]
+}
+
+export interface SettingsHistory {
+	history: HistoryItem[]
 }
 
 export enum Theme {

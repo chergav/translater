@@ -81,8 +81,11 @@
 										</span>
 									{/if}
 								</span>
-								<!-- eslint-disable-next-line svelte/no-at-html-tags -->
-								<span class={selected ? 'font-medium text-color-primary' : ''}>{@html lang.language}</span>
+								<span class={selected ? 'font-medium text-color-primary' : ''}>
+									<!-- @html to show <mark></mark> -->
+									<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+									{@html lang.language}
+								</span>
 							{/snippet}
 						</ListboxOption>
 					{/each}
@@ -100,8 +103,8 @@ import type { Language } from '~/types';
 import { tick } from 'svelte';
 import { Listbox, ListboxButton, ListboxOptions, ListboxOption } from '~/lib/headless';
 import Button from '~/lib/Button.svelte';
-import { languagesLocalArray, sourceLanguageAuto, getDisplayedLanguageName } from '~/shared/languages';
 import Icon from '~/lib/Icon.svelte';
+import { languagesLocalArray, sourceLanguageAuto, getDisplayedLanguageName } from '~/shared/languages';
 import { mdiClose, mdiCheck, mdiStarOutline, mdiChevronDown } from '@mdi/js';
 
 type Mode = 'full' | 'simple';

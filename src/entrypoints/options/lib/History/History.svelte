@@ -8,7 +8,7 @@
 		<Button
 			icon={mdiTrashCanOutline}
 			label={browser.i18n.getMessage('options_clear_history')}
-			onclick={deleteHistory}
+			onclick={clearHistory}
 			variant="dangerText"
 		/>
 	</div>
@@ -23,11 +23,11 @@
 			{/each}
 		</Select>
 		<span>/</span>
-		<span class="whitespace-nowrap">{browser.i18n.getMessage('options_records_in_history')} {storage.settings.history.length}</span>
+		<span class="whitespace-nowrap">{browser.i18n.getMessage('options_records_in_history')} {storageHistory.settings.history.length}</span>
 	</div>
 </div>
 <div class="scrollbar h-[calc(100%-106px)] w-full overflow-y-auto pr-2 pl-6">
-	{#each Object.entries(groupedHistory) as [date, historyItemArray] (date)}
+	{#each Object.entries(storageHistory.groupedHistory) as [date, historyItemArray] (date)}
 		<div class="py-2 text-sm font-medium text-color-primary">{getRelativeDate(date)}</div>
 		{#each historyItemArray as historyItem (historyItem.time)}
 			<HistoryEntry {historyItem} />
@@ -36,32 +36,18 @@
 </div>
 
 <script lang="ts">
-import type { HistoryItem } from '~/types';
 import { storage } from '~/shared/storage.svelte';
+import { storageHistory } from './storageHistory.svelte';
 import Select from '~/lib/Select.svelte';
 import Switch from '~/lib/Switch.svelte';
 import Button from '~/lib/Button.svelte';
 import HistoryEntry from './lib/HistoryEntry.svelte';
 import { mdiTrashCanOutline } from '@mdi/js';
-import { formatDate, getRelativeDate } from '~/utils';
+import { getRelativeDate } from '~/utils';
 
-interface GroupedHistory {
-	[date: string]: HistoryItem[]
-}
-
-let groupedHistory = $derived.by(() => {
-	const sorted = storage.settings.history.toSorted((a, b) => b.time - a.time);
-
-	return sorted.reduce<GroupedHistory>((acc, item) => {
-		const date = formatDate(item.time);
-		(acc[date] ||= []).push(item);
-		return acc;
-	}, {});
-});
-
-function deleteHistory() {
+function clearHistory() {
 	if (confirm('Are you sure?')) {
-		storage.settings.history = [];
+		storageHistory.clear();
 	}
 }
 </script>
