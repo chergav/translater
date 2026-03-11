@@ -1,5 +1,5 @@
 <Listbox
-	class="relative h-min w-min text-sm"
+	class="relative h-min w-min text-sm select-none"
 	change={onSelectModel}
 	bind:value={storage.settings.modelId}
 	bind:open
@@ -26,17 +26,20 @@
 	</ListboxButton>
 	<ListboxOptions
 		class={[
-			'absolute left-0 z-10 flex max-h-64 flex-col overflow-hidden rounded-xl shadow-lg select-none',
+			'absolute left-0 z-10 flex max-h-64 flex-col overflow-hidden rounded-xl shadow-lg',
 			'cursor-default border border-color-surface-high bg-color-surface',
 		]}
 	>
-		<div class="scrollbar flex flex-col overflow-y-auto p-1">
+		<div
+			class="scrollbar flex flex-col overflow-y-auto p-1"
+			onpointerdown={e => e.stopPropagation()}
+		>
 			{#each providerStore.providers as provider (provider.id)}
 				{@const isTranslationAPIUnAvailable = provider.id === ProviderId.TranslatorApi && !providerStore.isTranslationAPIAvailable}
 				{#each provider.models as model (model.id)}
 					<ListboxOption
 						class={[
-							'flex cursor-pointer items-center gap-2 rounded-full py-1.5 pr-2.5 pl-2 whitespace-nowrap select-none',
+							'flex cursor-pointer items-center gap-2 rounded-full py-1.5 pr-2.5 pl-2 whitespace-nowrap',
 							'not-aria-selected:hover:bg-color-primary/5 aria-selected:bg-color-primary/10',
 							'aria-disabled:pointer-events-none aria-disabled:opacity-50',
 						]}

@@ -1,5 +1,5 @@
 <Listbox
-	class="relative text-sm"
+	class="relative text-sm select-none"
 	change={onchange}
 	onopen={() => {
 		search = '';
@@ -28,7 +28,7 @@
 	</ListboxButton>
 	<ListboxOptions
 		class={[
-			'absolute z-10 flex max-h-80 flex-col overflow-hidden rounded-xl shadow-lg select-none',
+			'absolute z-10 flex max-h-80 flex-col overflow-hidden rounded-xl shadow-lg',
 			'border border-color-surface-high bg-color-surface',
 			alignClass,
 		]}
@@ -65,7 +65,7 @@
 					{#each langColumn as lang, index (index)}
 						<ListboxOption
 							class={[
-								'flex cursor-pointer items-center gap-2 rounded-full py-1.5 pr-2.5 pl-2 whitespace-nowrap select-none',
+								'flex cursor-pointer items-center gap-2 rounded-full py-1.5 pr-2.5 pl-2 whitespace-nowrap',
 								'not-aria-selected:hover:bg-color-primary/5 aria-selected:bg-color-primary/10',
 							]}
 							value={lang.code}

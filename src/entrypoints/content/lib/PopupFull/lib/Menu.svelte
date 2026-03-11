@@ -17,6 +17,7 @@
 				'absolute top-8 right-0 z-10 flex cursor-default flex-col rounded-[20px] p-1 shadow-lg',
 				'border border-color-surface-high bg-color-surface select-none',
 			]}
+			onpointerdown={e => e.stopPropagation()}
 			transition:fly={{
 				duration: 150,
 				y: -10,

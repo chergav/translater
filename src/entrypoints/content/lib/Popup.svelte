@@ -15,10 +15,10 @@
 	<div class="flex w-full flex-col">
 		<header
 			class={[
-				'flex w-full items-center justify-between p-1',
+				'flex w-full items-center justify-between gap-1 p-1',
 				popupStore.dragging ? 'cursor-grabbing' : 'cursor-move',
 			]}
-			onmousedown={onDragStart}
+			onpointerdown={onDragStart}
 			role="toolbar"
 			tabindex="-1"
 		>
@@ -26,6 +26,33 @@
 				<CacheNav />
 				{#if isFullMode}
 					<SelectModel/>
+				{:else}
+					{#if storage.settings.simpleModeShowLangs}
+						<div class="flex items-center gap-1">
+							<SelectLanguage
+								alignment="center"
+								autoLang
+								detectedLang={store.detectedLang}
+								mode="simple"
+								onchange={store.reTranslate}
+								bind:value={storage.settings.sourceLang}
+							/>
+							<Button
+								disabled={!store.detectedLang}
+								icon={mdiSwapHorizontal}
+								onclick={store.reverseTranslation}
+								size="xs"
+								title={browser.i18n.getMessage('popup_menu_reverse_translate')}
+							/>
+							<SelectLanguage
+								alignment="center"
+								markUILang
+								mode="simple"
+								onchange={store.reTranslate}
+								bind:value={storage.settings.targetLang}
+							/>
+						</div>
+					{/if}
 				{/if}
 			</div>
 			<div class="flex items-center gap-1">
@@ -71,10 +98,11 @@ import CacheNav from './PopupFull/lib/CacheNav.svelte';
 import SelectModel from './PopupFull/lib/SelectModel.svelte';
 import PopupFull from './PopupFull/PopupFull.svelte';
 import PopupSimple from './PopupSimple/PopupSimple.svelte';
+import SelectLanguage from '~/lib/SelectLanguage.svelte';
 import { computePosition, offset, flip, shift, type VirtualElement } from '@floating-ui/dom';
 import { clickOutside } from '~/utils';
 import { POPUP_CLASS } from '~/shared/constants';
-import { mdiClose, mdiArrowExpand } from '@mdi/js';
+import { mdiClose, mdiArrowExpand, mdiSwapHorizontal } from '@mdi/js';
 
 let left = $state<number>(20);
 let top = $state<number>(20);
@@ -84,6 +112,12 @@ let reference = $derived<VirtualElement>({
 	getBoundingClientRect: () => store.selectedElemRect || new DOMRect(20, 20, 0, 0),
 });
 const isFullMode = $derived<boolean>(storage.settings.popupMode === PopupMode.Full);
+
+const DRAG_THRESHOLD = 5;
+
+let dragStartX = $state<number | null>(null);
+let dragStartY = $state<number | null>(null);
+let dragInitialized = $state<boolean>(false);
 
 const popupPosition: Action<HTMLDivElement> = popup => {
 	computePosition(reference, popup, {
@@ -104,39 +138,52 @@ const popupPosition: Action<HTMLDivElement> = popup => {
 	});
 };
 
-function onDragStart(event: MouseEvent) {
-	if (event.button !== 0 || event.target !== event.currentTarget) return;
+function onDragStart(event: PointerEvent) {
+	if (event.button !== 0) return;
 
-	popupStore.dragging = true;
+	dragStartX = event.clientX;
+	dragStartY = event.clientY;
+	dragInitialized = false;
 
-	window.addEventListener('mousemove', onDragMove);
-	window.addEventListener('mouseup', () => {
-		window.removeEventListener('mousemove', onDragMove);
-		prevX = null;
-		prevY = null;
-		popupStore.dragging = false;
-	}, { once: true });
+	window.addEventListener('pointermove', onDragMove);
+	window.addEventListener('pointerup', onDragEnd, { once: true });
 }
 
-function onDragMove(event: MouseEvent) {
-	if (!popupStore.dragging) return;
+function onDragMove(event: PointerEvent) {
+	if (dragStartX === null || dragStartY === null) return;
 
-	if (prevX === null || prevY === null) {
+	if (!dragInitialized) {
+		const dx = Math.abs(event.clientX - dragStartX);
+		const dy = Math.abs(event.clientY - dragStartY);
+		if (dx < DRAG_THRESHOLD && dy < DRAG_THRESHOLD) return;
+		dragInitialized = true;
+		popupStore.dragging = true;
 		prevX = event.clientX;
 		prevY = event.clientY;
-		return;
 	}
 
-	const deltaX = event.clientX - prevX;
-	const deltaY = event.clientY - prevY;
-
-	left += deltaX;
-	top += deltaY;
-
-	if (top < 1) top = 0;
-
+	if (prevX === null || prevY === null) return;
+	left += event.clientX - prevX;
+	top += event.clientY - prevY;
+	if (top < 0) top = 0;
 	prevX = event.clientX;
 	prevY = event.clientY;
+}
+
+function onDragEnd() {
+	window.removeEventListener('pointermove', onDragMove);
+	prevX = null;
+	prevY = null;
+	popupStore.dragging = false;
+
+	if (dragInitialized) {
+		// Block the click that fires right after pointerup
+		window.addEventListener('click', e => e.stopPropagation(), {
+			once: true,
+			capture: true,
+		});
+	}
+	dragInitialized = false;
 }
 
 function onClickOutside() {
