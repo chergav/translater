@@ -1,6 +1,6 @@
 import type { SettingsHistory, HistoryItem } from '~/types';
 import deepEqual from 'fast-deep-equal';
-import { formatDate } from '~/utils';
+import { getRelativeDate } from '~/utils';
 
 interface GroupedHistory {
 	[date: string]: HistoryItem[]
@@ -16,7 +16,7 @@ export class StorageHistory {
 		const sorted = this.settings.history.toSorted((a, b) => b.time - a.time);
 
 		return sorted.reduce<GroupedHistory>((acc, item) => {
-			const date = formatDate(item.time);
+			const date = getRelativeDate(item.time);
 			(acc[date] ||= []).push(item);
 			return acc;
 		}, {});
@@ -46,7 +46,6 @@ export class StorageHistory {
 			if (!(key in initialSettings)) continue;
 
 			if (!deepEqual(stateSnapshot[key], newValue)) {
-				console.log('#onStorageChange key:', key, 'newValue', JSON.stringify(newValue));
 				Object.assign(this.settings, { [key]: newValue });
 			}
 		}
@@ -54,7 +53,6 @@ export class StorageHistory {
 
 	async #save() {
 		const history = $state.snapshot(this.settings.history);
-		console.debug('history', history);
 		await browser.storage.local.set<SettingsHistory>({ history });
 	}
 

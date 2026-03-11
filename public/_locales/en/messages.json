@@ -113,11 +113,8 @@
     "options_appearance_bg_and_text": {
         "message": "Background and plain text"
     },
-    "options_history_length": {
-        "message": "History entries (max.)"
-    },
     "options_records_in_history": {
-        "message": "Entries in history:"
+        "message": "Entries in history"
     },
     "options_history_enable": {
         "message": "Enable history"

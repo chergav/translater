@@ -30,7 +30,7 @@
 				/>
 			</div>
 		</div>
-		<div class="w-full overflow-hidden rounded-[16px] bg-color-surface">
+		<div class="flex size-full flex-col overflow-hidden rounded-[16px] bg-color-surface">
 			<CurrentComponent />
 		</div>
 	</div>

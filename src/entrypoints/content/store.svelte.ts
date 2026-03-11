@@ -1,6 +1,6 @@
 import type { CacheTTS, TranslationAi, Message, HistoryItem, SettingsHistory } from '~/types';
 import type { GoogleTranslate, Translated, Sentence } from '~/types/google';
-import { ProviderId, GOOGLE_TRANSLATE_MODEL_ID } from '~/types/providers';
+import { GOOGLE_TRANSLATE_MODEL_ID } from '~/types/providers';
 import { storage } from '~/shared/storage.svelte';
 import { normalizeLanguageCode } from '~/shared/languages';
 import { providerStore } from '~/entrypoints/options/lib/Providers/providerStore.svelte';
@@ -33,7 +33,7 @@ class Store {
 
 		this.translated = null;
 		this.translationAi = null;
-		this.detectedLang = undefined;
+		// this.detectedLang = undefined;
 		this.errors = [];
 
 		const [googleResult, aiResult] = await Promise.all([
@@ -63,7 +63,7 @@ class Store {
 	public resetTranslateStore = () => {
 		this.selectedText = '';
 		this.textToTranslate = '';
-		this.detectedLang = '';
+		this.detectedLang = undefined;
 		this.translated = null;
 		this.translationAi = null;
 		this.errors = [];
@@ -99,6 +99,17 @@ class Store {
 
 		this.translate();
 	};
+
+	public setCacheItem(index: number) {
+		this.cacheIndex = index;
+		const item = this.cache.at(this.cacheIndex);
+		if (!item) return;
+
+		this.translated = item;
+		if (this.translationAi) this.translationAi.text = item.sentence.trans || '';
+		this.detectedLang = item.src;
+		storage.settings.targetLang = item.targetLang;
+	}
 
 	private async translateAi(text: string): Promise<string | null> {
 		const sourceLang = storage.settings.sourceLang !== 'auto' ? storage.settings.sourceLang : undefined;
@@ -169,15 +180,14 @@ class Store {
 
 		const sourceLang =  storage.settings.sourceLang;
 		const targetLang = storage.settings.targetLang;
-		const model = `${providerStore.selectedProvider.id}/${providerStore.selectedModel.id}`;
 
 		const fromCache = this.findInCache(
 			text,
 			this.detectedLang || sourceLang,
 			targetLang,
-			`${ProviderId.GoogleTranslate}/${GOOGLE_TRANSLATE_MODEL_ID}`,
 		);
-		// console.debug('fromCache', $state.snapshot(fromCache));
+		console.debug('cache', $state.snapshot(this.cache));
+		console.debug('fromCache', $state.snapshot(fromCache));
 
 		if (fromCache) {
 			this.applyCached(fromCache);
@@ -200,7 +210,6 @@ class Store {
 			sentence,
 			sourceLang: this.detectedLang,
 			targetLang,
-			model,
 		};
 
 		this.translated = translated;
@@ -244,7 +253,6 @@ class Store {
 		};
 
 		const { history = [] } = await browser.storage.local.get<SettingsHistory>(['history']);
-		// console.debug(history);
 		history.push(historyItem);
 
 		const trimmed = history.length > storage.settings.historyLength
@@ -252,6 +260,18 @@ class Store {
 			: history;
 
 		await browser.storage.local.set({ history: trimmed });
+	}
+
+	private isDuplicateOfLastCached(item: Translated): boolean {
+		const last = this.cache.at(-1);
+		if (!last) return false;
+
+		return (
+			last.sourceLang === item.sourceLang &&
+			last.targetLang === item.targetLang &&
+			last.sentence.orig === item.sentence.orig &&
+			last.sentence.trans === item.sentence.trans
+		);
 	}
 
 	private addToCache(googleResult: Translated, finalTranslatedText: string) {
@@ -263,24 +283,23 @@ class Store {
 			},
 		};
 
-		this.cache.push(cached);
-		this.cacheIndex = -1; // last elem
-		// console.debug('addToCache', $state.snapshot(this.cache));
+		if (!this.isDuplicateOfLastCached(cached)) {
+			this.cache.push(cached);
+		}
+
+		this.cacheIndex = -1; // reset to last element
 	}
 
 	private findInCache(
 		text: string,
 		sourceLang: string,
 		targetLang: string,
-		model: string,
 	): Translated | undefined {
-		// console.debug('findInCache: this.cache', $state.snapshot(this.cache));
-		// console.debug('findInCache', text, sourceLang, targetLang, model);
+		console.debug('findInCache', text, sourceLang, targetLang);
 		return this.cache.find(translated =>
 			translated.sentence.orig === text &&
 			translated.sourceLang === sourceLang &&
-			translated.targetLang === targetLang &&
-			translated.model === model,
+			translated.targetLang === targetLang,
 		);
 	}
 
