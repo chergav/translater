@@ -42,7 +42,7 @@
         "message": "ಪಠ್ಯವನ್ನು ಆಯ್ಕೆ ಮಾಡಿದಾಗ ಪಾಪ್ಅಪ್ ಅನ್ನು ತೋರಿಸಿ"
     },
     "options_general_show_on_selected_hint": {
-        "message": "ಪಠ್ಯ ಆಯ್ಕೆಯ ನಂತರ ಪಾಪ್ಅಪ್ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ (ಸರಳ ಮೋಡ್‌ನಲ್ಲಿ ಉತ್ತಮವಾಗಿದೆ)."
+        "message": "ಪಠ್ಯವನ್ನು ಆಯ್ಕೆ ಮಾಡಿದ ತಕ್ಷಣ ಪಾಪ್ಅಪ್ ವಿಂಡೋ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ."
     },
     "options_general_mode_full": {
         "message": "ಪೂರ್ಣ ಮೋಡ್"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "ಅನುವಾದದ ಜೊತೆಗೆ ಮೂಲ ಪಠ್ಯವನ್ನು ಪ್ರದರ್ಶಿಸಿ (ಪೂರ್ಣ ಮೋಡ್ ಮಾತ್ರ)."
     },
+    "options_show_langs_simple": {
+        "message": "ಭಾಷಾ ಜೋಡಿಯನ್ನು ತೋರಿಸಿ"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "ಮೂಲ ಮತ್ತು ಗುರಿ ಭಾಷೆಗಳನ್ನು ಪ್ರದರ್ಶಿಸಿ (ಸರಳ ಮೋಡ್ ಮಾತ್ರ)."
+    },
     "options_show_transliteration": {
         "message": "ಲಿಪ್ಯಂತರಣವನ್ನು ತೋರಿಸಿ"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "ಹಿನ್ನೆಲೆ ಮತ್ತು ಸರಳ ಪಠ್ಯ"
     },
-    "options_history_length": {
-        "message": "ಇತಿಹಾಸ ನಮೂದುಗಳು (ಗರಿಷ್ಠ.)"
-    },
     "options_records_in_history": {
-        "message": "ಇತಿಹಾಸದಲ್ಲಿ ನಮೂದುಗಳು:"
+        "message": "ಇತಿಹಾಸದಲ್ಲಿ ನಮೂದುಗಳು"
     },
     "options_history_enable": {
         "message": "ಇತಿಹಾಸವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ"
@@ -546,7 +549,7 @@
         "message": "ಫ್ರಿಸಿಯನ್"
     },
     "language_ga": {
-        "message": "ಐರಿಷ್"
+        "message": "ಐರಿಶ್"
     },
     "language_gaa": {
         "message": "ಗಾ"
@@ -966,7 +969,7 @@
         "message": "ಟಿಗ್ರಿನ್ಯಾ"
     },
     "language_tiv": {
-        "message": "ಟಿವ್"
+        "message": "ಟಿವಿ"
     },
     "language_tk": {
         "message": "ತುರ್ಕಮೆನ್"

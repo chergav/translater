@@ -42,7 +42,7 @@
         "message": "Прикажи искачући прозор када је текст изабран"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Попуп се појављује након одабира текста (најбоље у једноставном режиму)."
+        "message": "Искачући прозор ће се појавити одмах након одабира текста."
     },
     "options_general_mode_full": {
         "message": "Фулл Моде"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Прикажи оригинални текст уз превод (само у пуном режиму)."
     },
+    "options_show_langs_simple": {
+        "message": "Прикажи језички пар"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Прикажите изворне и циљне језике (само у једноставном режиму)."
+    },
     "options_show_transliteration": {
         "message": "Прикажи транслитерацију"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Позадина и обичан текст"
     },
-    "options_history_length": {
-        "message": "Уноси историје (макс.)"
-    },
     "options_records_in_history": {
-        "message": "Уноси у историју:"
+        "message": "Уноси у историју"
     },
     "options_history_enable": {
         "message": "Омогући историју"

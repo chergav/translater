@@ -42,7 +42,7 @@
         "message": "Näytä ponnahdusikkuna, kun teksti on valittuna"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Ponnahdusikkuna tulee näkyviin tekstin valinnan jälkeen (paras yksinkertaisessa tilassa)."
+        "message": "Ponnahdusikkuna tulee näkyviin heti tekstin valinnan jälkeen."
     },
     "options_general_mode_full": {
         "message": "Täysi tila"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Näytä alkuperäinen teksti käännöksen rinnalla (vain täysi tila)."
     },
+    "options_show_langs_simple": {
+        "message": "Näytä kielipari"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Näytä lähde- ja kohdekielet (vain yksinkertainen tila)."
+    },
     "options_show_transliteration": {
         "message": "Näytä translitterointi"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Tausta ja pelkkää tekstiä"
     },
-    "options_history_length": {
-        "message": "Historiamerkinnät (max.)"
-    },
     "options_records_in_history": {
-        "message": "Merkinnät historiaan:"
+        "message": "Merkinnät historiaan"
     },
     "options_history_enable": {
         "message": "Ota historia käyttöön"
@@ -417,7 +420,7 @@
         "message": "katalaani"
     },
     "language_ce": {
-        "message": "Tšetšeeni"
+        "message": "tšetšeeni"
     },
     "language_ceb": {
         "message": "Cebuano"
@@ -525,7 +528,7 @@
         "message": "Fidži"
     },
     "language_fo": {
-        "message": "Färsaaret"
+        "message": "färsaarten"
     },
     "language_fon": {
         "message": "Fon"
@@ -585,7 +588,7 @@
         "message": "hmong"
     },
     "language_hr": {
-        "message": "Kroatia"
+        "message": "kroatialainen"
     },
     "language_hrx": {
         "message": "Hunsrik"

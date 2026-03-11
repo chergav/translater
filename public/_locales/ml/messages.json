@@ -42,7 +42,7 @@
         "message": "ടെക്സ്റ്റ് തിരഞ്ഞെടുക്കുമ്പോൾ പോപ്പ്അപ്പ് കാണിക്കുക"
     },
     "options_general_show_on_selected_hint": {
-        "message": "ടെക്സ്റ്റ് തിരഞ്ഞെടുത്തതിന് ശേഷം പോപ്പ്അപ്പ് ദൃശ്യമാകുന്നു (ലളിതമായ മോഡിൽ മികച്ചത്)."
+        "message": "ടെക്സ്റ്റ് തിരഞ്ഞെടുത്ത് ഉടൻ തന്നെ പോപ്പ്അപ്പ് വിൻഡോ ദൃശ്യമാകും."
     },
     "options_general_mode_full": {
         "message": "പൂർണ്ണ മോഡ്"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "വിവർത്തനത്തിനൊപ്പം യഥാർത്ഥ വാചകം പ്രദർശിപ്പിക്കുക (പൂർണ്ണ മോഡ് മാത്രം)."
     },
+    "options_show_langs_simple": {
+        "message": "ഭാഷാ ജോടി കാണിക്കുക"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "ഉറവിടവും ലക്ഷ്യ ഭാഷകളും പ്രദർശിപ്പിക്കുക (ലളിതമായ മോഡ് മാത്രം)."
+    },
     "options_show_transliteration": {
         "message": "ലിപ്യന്തരണം കാണിക്കുക"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "പശ്ചാത്തലവും പ്ലെയിൻ ടെക്സ്റ്റും"
     },
-    "options_history_length": {
-        "message": "ചരിത്ര എൻട്രികൾ (പരമാവധി.)"
-    },
     "options_records_in_history": {
-        "message": "ചരിത്രത്തിലെ എൻട്രികൾ:"
+        "message": "ചരിത്രത്തിലെ എൻട്രികൾ"
     },
     "options_history_enable": {
         "message": "ചരിത്രം പ്രവർത്തനക്ഷമമാക്കുക"
@@ -231,7 +234,7 @@
         "message": "ലളിതമായ മോഡിലേക്ക് മാറുക"
     },
     "popup_menu_switch_to_full_mode": {
-        "message": "പൂർണ്ണ മോഡിലേക്ക് മാറുക"
+        "message": "ഫുൾ മോഡിലേക്ക് മാറുക"
     },
     "popup_placeholder_translation": {
         "message": "വിവർത്തനം"
@@ -282,7 +285,7 @@
         "message": "ഇന്നലെ"
     },
     "forefox_perm_header": {
-        "message": "Firefox-ൽ സമാരംഭം അനുവദിക്കുക"
+        "message": "ഫയർഫോക്സിൽ ലോഞ്ച് അനുവദിക്കുക"
     },
     "forefox_perm_text": {
         "message": "ഈ വിപുലീകരണത്തിന് വെബ്‌സൈറ്റുകൾ ആക്‌സസ് ചെയ്യാനും ഫയർഫോക്‌സിൽ വിവർത്തനം ചെയ്യാനും നിങ്ങളുടെ അനുമതി ആവശ്യമാണ്"
@@ -303,7 +306,7 @@
         "message": "ഓട്ടോ"
     },
     "language_detect": {
-        "message": "ഭാഷ കണ്ടുപിടിക്കുക"
+        "message": "ഭാഷ കണ്ടെത്തുക"
     },
     "language_aa": {
         "message": "അകലെ"
@@ -618,7 +621,7 @@
         "message": "ഇറ്റാലിയൻ"
     },
     "language_iu": {
-        "message": "Inuktut (സിലബിക്സ്)"
+        "message": "ഇനുക്തുട്ട് (സിലബിക്സ്)"
     },
     "language_iu_Latn": {
         "message": "ഇനുക്തുട്ട് (ലാറ്റിൻ)"

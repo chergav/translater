@@ -39,10 +39,10 @@
         "message": "هیچ سایتی انتخاب نشده است"
     },
     "options_general_show_on_selected": {
-        "message": "هنگامی که متن انتخاب شده است پنجره بازشو نمایش داده شود"
+        "message": "هنگام انتخاب متن، پنجره بازشو نمایش داده شود"
     },
     "options_general_show_on_selected_hint": {
-        "message": "پس از انتخاب متن ظاهر می شود (بهترین حالت در حالت ساده)."
+        "message": "پنجره پاپ آپ بلافاصله پس از انتخاب متن ظاهر می شود."
     },
     "options_general_mode_full": {
         "message": "حالت کامل"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "نمایش متن اصلی در کنار ترجمه (فقط حالت کامل)."
     },
+    "options_show_langs_simple": {
+        "message": "نمایش جفت زبان"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "نمایش زبان های مبدأ و مقصد (فقط حالت ساده)."
+    },
     "options_show_transliteration": {
         "message": "نمایش نویسه‌گردانی"
     },
@@ -105,7 +111,7 @@
         "message": "مدل"
     },
     "options_appearance_theme": {
-        "message": "تم"
+        "message": "موضوع"
     },
     "options_appearance_accent_color": {
         "message": "رنگ تاکیدی"
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "پس زمینه و متن ساده"
     },
-    "options_history_length": {
-        "message": "ورودی های تاریخچه (حداکثر)"
-    },
     "options_records_in_history": {
-        "message": "نوشته های تاریخ:"
+        "message": "نوشته های تاریخ"
     },
     "options_history_enable": {
         "message": "فعال کردن سابقه"
@@ -459,7 +462,7 @@
         "message": "چوواش"
     },
     "language_cy": {
-        "message": "ولزی"
+        "message": "ولز"
     },
     "language_da": {
         "message": "دانمارکی"

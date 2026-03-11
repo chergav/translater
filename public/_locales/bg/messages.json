@@ -42,7 +42,7 @@
         "message": "Показване на изскачащ прозорец, когато текстът е избран"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Изскачащ прозорец се появява след избор на текст (най-добре в опростен режим)."
+        "message": "Изскачащ прозорец ще се появи веднага след избиране на текст."
     },
     "options_general_mode_full": {
         "message": "Пълен режим"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Показване на оригиналния текст заедно с превода (само в пълен режим)."
     },
+    "options_show_langs_simple": {
+        "message": "Показване на езикова двойка"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Показване на изходния и целевия език (само опростен режим)."
+    },
     "options_show_transliteration": {
         "message": "Показване на транслитерация"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Фон и обикновен текст"
     },
-    "options_history_length": {
-        "message": "Записи в историята (макс.)"
-    },
     "options_records_in_history": {
-        "message": "Записи в историята:"
+        "message": "Записи в историята"
     },
     "options_history_enable": {
         "message": "Активиране на историята"

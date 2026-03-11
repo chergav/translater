@@ -42,7 +42,7 @@
         "message": "Tunjukkan pop timbul apabila teks dipilih"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Pop timbul muncul selepas pemilihan teks (terbaik dalam Mod Mudah)."
+        "message": "Tetingkap pop timbul akan muncul serta-merta selepas memilih teks."
     },
     "options_general_mode_full": {
         "message": "Mod Penuh"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Paparkan teks asal bersama terjemahan (Mod Penuh sahaja)."
     },
+    "options_show_langs_simple": {
+        "message": "Tunjukkan pasangan bahasa"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Paparkan bahasa sumber dan sasaran (Mod ringkas sahaja)."
+    },
     "options_show_transliteration": {
         "message": "Tunjukkan transliterasi"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Latar belakang dan teks biasa"
     },
-    "options_history_length": {
-        "message": "Catatan sejarah (maks.)"
-    },
     "options_records_in_history": {
-        "message": "Catatan dalam sejarah:"
+        "message": "Entri dalam sejarah"
     },
     "options_history_enable": {
         "message": "Dayakan sejarah"
@@ -657,7 +660,7 @@
         "message": "Kalaallisut"
     },
     "language_km": {
-        "message": "bahasa Khmer"
+        "message": "Khmer"
     },
     "language_kn": {
         "message": "Kannada"

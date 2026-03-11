@@ -42,7 +42,7 @@
         "message": "选择文本时显示弹出窗口"
     },
     "options_general_show_on_selected_hint": {
-        "message": "选择文本后会出现弹出窗口（最好在简单模式下）。"
+        "message": "选择文本后将立即出现弹出窗口。"
     },
     "options_general_mode_full": {
         "message": "完整模式"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "在翻译旁边显示原始文本（仅限完整模式）。"
     },
+    "options_show_langs_simple": {
+        "message": "显示语言对"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "显示源语言和目标语言（仅限简单模式）。"
+    },
     "options_show_transliteration": {
         "message": "显示音译"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "背景和纯文本"
     },
-    "options_history_length": {
-        "message": "历史记录条目（最多）"
-    },
     "options_records_in_history": {
-        "message": "历史记载："
+        "message": "历史记载"
     },
     "options_history_enable": {
         "message": "启用历史记录"
@@ -423,7 +426,7 @@
         "message": "宿务语"
     },
     "language_cgg": {
-        "message": "基贺"
+        "message": "基加"
     },
     "language_ch": {
         "message": "查莫罗语"

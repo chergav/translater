@@ -42,7 +42,7 @@
         "message": "แสดงป๊อปอัปเมื่อมีการเลือกข้อความ"
     },
     "options_general_show_on_selected_hint": {
-        "message": "ป๊อปอัปจะปรากฏขึ้นหลังจากเลือกข้อความ (ดีที่สุดในโหมดธรรมดา)"
+        "message": "หน้าต่างป๊อปอัปจะปรากฏขึ้นทันทีหลังจากเลือกข้อความ"
     },
     "options_general_mode_full": {
         "message": "โหมดเต็ม"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "แสดงข้อความต้นฉบับควบคู่ไปกับการแปล (โหมดเต็มเท่านั้น)"
     },
+    "options_show_langs_simple": {
+        "message": "แสดงคู่ภาษา"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "แสดงภาษาต้นทางและภาษาเป้าหมาย (โหมดธรรมดาเท่านั้น)"
+    },
     "options_show_transliteration": {
         "message": "แสดงการทับศัพท์"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "พื้นหลังและข้อความธรรมดา"
     },
-    "options_history_length": {
-        "message": "รายการประวัติ (สูงสุด)"
-    },
     "options_records_in_history": {
-        "message": "รายการในประวัติศาสตร์:"
+        "message": "รายการในประวัติศาสตร์"
     },
     "options_history_enable": {
         "message": "เปิดใช้งานประวัติ"

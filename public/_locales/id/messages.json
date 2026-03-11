@@ -42,7 +42,7 @@
         "message": "Tampilkan popup ketika teks dipilih"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Popup muncul setelah pemilihan teks (paling baik dalam Mode Sederhana)."
+        "message": "Jendela popup akan muncul segera setelah memilih teks."
     },
     "options_general_mode_full": {
         "message": "Modus Penuh"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Menampilkan teks asli bersama terjemahan (hanya Mode Penuh)."
     },
+    "options_show_langs_simple": {
+        "message": "Tampilkan pasangan bahasa"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Menampilkan bahasa sumber dan target (hanya mode Sederhana)."
+    },
     "options_show_transliteration": {
         "message": "Tampilkan transliterasi"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Latar belakang dan teks biasa"
     },
-    "options_history_length": {
-        "message": "Entri riwayat (maks.)"
-    },
     "options_records_in_history": {
-        "message": "Entri dalam sejarah:"
+        "message": "Entri dalam sejarah"
     },
     "options_history_enable": {
         "message": "Aktifkan riwayat"
@@ -543,7 +546,7 @@
         "message": "Friulian"
     },
     "language_fy": {
-        "message": "Frisian"
+        "message": "Frisia"
     },
     "language_ga": {
         "message": "Irlandia"

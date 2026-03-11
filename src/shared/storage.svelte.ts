@@ -25,6 +25,7 @@ const initialSettings: Settings = {
 	hideButtonForUserLanguage: false,
 	showPopupOnSelection: false,
 	popupMode: PopupMode.Full,
+	simpleModeShowLangs: true,
 };
 
 class Storage {

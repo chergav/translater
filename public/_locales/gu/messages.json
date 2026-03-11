@@ -42,7 +42,7 @@
         "message": "જ્યારે ટેક્સ્ટ પસંદ કરવામાં આવે ત્યારે પોપઅપ બતાવો"
     },
     "options_general_show_on_selected_hint": {
-        "message": "ટેક્સ્ટ પસંદગી પછી પોપઅપ દેખાય છે (સરળ મોડમાં શ્રેષ્ઠ)."
+        "message": "ટેક્સ્ટ પસંદ કર્યા પછી તરત જ પોપઅપ વિન્ડો દેખાશે."
     },
     "options_general_mode_full": {
         "message": "પૂર્ણ મોડ"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "અનુવાદની સાથે મૂળ ટેક્સ્ટ પ્રદર્શિત કરો (ફક્ત સંપૂર્ણ મોડ)."
     },
+    "options_show_langs_simple": {
+        "message": "ભાષા જોડી બતાવો"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "ડિસ્પ્લે સ્ત્રોત અને લક્ષ્ય ભાષાઓ (ફક્ત સરળ મોડ)."
+    },
     "options_show_transliteration": {
         "message": "લિવ્યંતરણ બતાવો"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "પૃષ્ઠભૂમિ અને સાદો ટેક્સ્ટ"
     },
-    "options_history_length": {
-        "message": "ઇતિહાસની એન્ટ્રીઓ (મહત્તમ)"
-    },
     "options_records_in_history": {
-        "message": "ઇતિહાસમાં પ્રવેશો:"
+        "message": "ઇતિહાસમાં પ્રવેશો"
     },
     "options_history_enable": {
         "message": "ઇતિહાસ સક્ષમ કરો"
@@ -525,7 +528,7 @@
         "message": "ફિજિયન"
     },
     "language_fo": {
-        "message": "ફેરોઝ"
+        "message": "ફરોઝ"
     },
     "language_fon": {
         "message": "ફોન"
@@ -588,7 +591,7 @@
         "message": "ક્રોએશિયન"
     },
     "language_hrx": {
-        "message": "હંસરીક"
+        "message": "હંસરિક"
     },
     "language_ht": {
         "message": "હૈતીયન ક્રેઓલ"
@@ -801,7 +804,7 @@
         "message": "નોર્વેજીયન"
     },
     "language_nr": {
-        "message": "Ndebele (દક્ષિણ)"
+        "message": "નેડેબેલે (દક્ષિણ)"
     },
     "language_nso": {
         "message": "સેપેડી"

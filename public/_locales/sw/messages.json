@@ -42,7 +42,7 @@
         "message": "Onyesha dirisha ibukizi wakati maandishi yamechaguliwa"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Dirisha ibukizi huonekana baada ya uteuzi wa maandishi (bora katika Hali Rahisi)."
+        "message": "Dirisha ibukizi itaonekana mara baada ya kuchagua maandishi."
     },
     "options_general_mode_full": {
         "message": "Hali Kamili"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Onyesha maandishi asili pamoja na tafsiri (Hali Kamili pekee)."
     },
+    "options_show_langs_simple": {
+        "message": "Onyesha jozi ya lugha"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Onyesha lugha chanzo na lengwa (Modi rahisi pekee)."
+    },
     "options_show_transliteration": {
         "message": "Onyesha unukuzi"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Usuli na maandishi wazi"
     },
-    "options_history_length": {
-        "message": "Maingizo ya historia (max.)"
-    },
     "options_records_in_history": {
-        "message": "Maingizo katika historia:"
+        "message": "Maingizo katika historia"
     },
     "options_history_enable": {
         "message": "Washa historia"

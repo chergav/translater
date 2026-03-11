@@ -42,7 +42,7 @@
         "message": "Rodyti iššokantįjį langą, kai pasirenkamas tekstas"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Iššokantis langas pasirodo pasirinkus tekstą (geriausia paprastame režime)."
+        "message": "Pasirinkus tekstą iš karto pasirodys iššokantis langas."
     },
     "options_general_mode_full": {
         "message": "Visas režimas"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Rodyti originalų tekstą kartu su vertimu (tik visu režimu)."
     },
+    "options_show_langs_simple": {
+        "message": "Rodyti kalbų porą"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Pateikti šaltinio ir tikslinės kalbos (tik paprastas režimas)."
+    },
     "options_show_transliteration": {
         "message": "Rodyti transliteraciją"
     },
@@ -105,7 +111,7 @@
         "message": "Modelis"
     },
     "options_appearance_theme": {
-        "message": "tema"
+        "message": "Tema"
     },
     "options_appearance_accent_color": {
         "message": "Akcentinė spalva"
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Fonas ir paprastas tekstas"
     },
-    "options_history_length": {
-        "message": "Istorijos įrašai (maks.)"
-    },
     "options_records_in_history": {
-        "message": "Įrašai istorijoje:"
+        "message": "Įrašai istorijoje"
     },
     "options_history_enable": {
         "message": "Įgalinti istoriją"

@@ -42,7 +42,7 @@
         "message": "मजकूर निवडल्यावर पॉपअप दाखवा"
     },
     "options_general_show_on_selected_hint": {
-        "message": "मजकूर निवडीनंतर पॉपअप दिसते (साध्या मोडमध्ये सर्वोत्तम)."
+        "message": "मजकूर निवडल्यानंतर लगेच पॉपअप विंडो दिसेल."
     },
     "options_general_mode_full": {
         "message": "पूर्ण मोड"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "भाषांतरासोबत मूळ मजकूर प्रदर्शित करा (फक्त पूर्ण मोड)."
     },
+    "options_show_langs_simple": {
+        "message": "भाषा जोडी दाखवा"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "प्रदर्शन स्रोत आणि लक्ष्य भाषा (केवळ साधे मोड)."
+    },
     "options_show_transliteration": {
         "message": "लिप्यंतरण दर्शवा"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "पार्श्वभूमी आणि साधा मजकूर"
     },
-    "options_history_length": {
-        "message": "इतिहास नोंदी (कमाल)"
-    },
     "options_records_in_history": {
-        "message": "इतिहासातील नोंदी:"
+        "message": "इतिहासातील नोंदी"
     },
     "options_history_enable": {
         "message": "इतिहास सक्षम करा"
@@ -486,7 +489,7 @@
         "message": "झोंगखा"
     },
     "language_ee": {
-        "message": "इव"
+        "message": "इवे"
     },
     "language_el": {
         "message": "ग्रीक"

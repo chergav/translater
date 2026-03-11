@@ -42,7 +42,7 @@
         "message": "Vis popup når tekst er valgt"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Popup vises etter tekstvalg (best i enkel modus)."
+        "message": "Popup-vindu vises umiddelbart etter at du har valgt tekst."
     },
     "options_general_mode_full": {
         "message": "Full modus"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Vis originaltekst ved siden av oversettelsen (kun fullmodus)."
     },
+    "options_show_langs_simple": {
+        "message": "Vis språkpar"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Vis kilde- og målspråk (kun enkel modus)."
+    },
     "options_show_transliteration": {
         "message": "Vis translitterasjon"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Bakgrunn og ren tekst"
     },
-    "options_history_length": {
-        "message": "Loggoppføringer (maks.)"
-    },
     "options_records_in_history": {
-        "message": "Oppføringer i historien:"
+        "message": "Oppføringer i historien"
     },
     "options_history_enable": {
         "message": "Aktiver historikk"
@@ -138,7 +141,7 @@
         "message": "Stemmer"
     },
     "options_tts_table_caption": {
-        "message": "Hvis et språk ikke er oppført, vil en ekstern tekst-til-tale-tjeneste brukes."
+        "message": "Hvis et språk ikke er oppført, vil en ekstern tekst-til-tale-tjeneste bli brukt."
     },
     "options_tts_no_voices_found": {
         "message": "Nettleseren din støtter ikke talesyntese. Vi bruker en ekstern tjeneste i stedet."
@@ -741,7 +744,7 @@
         "message": "mauritisk kreolsk"
     },
     "language_mg": {
-        "message": "madagaskisk"
+        "message": "Madagaskar"
     },
     "language_mh": {
         "message": "Marshalleser"

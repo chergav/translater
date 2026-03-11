@@ -42,7 +42,7 @@
         "message": "ጽሑፍ ሲመረጥ ብቅ ባይ አሳይ"
     },
     "options_general_show_on_selected_hint": {
-        "message": "ብቅ ባይ ከጽሑፍ ምርጫ በኋላ ይታያል (ምርጥ በቀላል ሁነታ)።"
+        "message": "ጽሑፍ ከመረጡ በኋላ ብቅ ባይ መስኮት ወዲያውኑ ይታያል."
     },
     "options_general_mode_full": {
         "message": "ሙሉ ሁነታ"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "ዋናውን ጽሑፍ ከትርጉም ጋር አሳይ (ሙሉ ሁነታ ብቻ)።"
     },
+    "options_show_langs_simple": {
+        "message": "የቋንቋ ጥንድ አሳይ"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "ምንጭ እና ዒላማ ቋንቋዎችን አሳይ (ቀላል ሁነታ ብቻ)።"
+    },
     "options_show_transliteration": {
         "message": "በቋንቋ ፊደል መጻፍ አሳይ"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "ዳራ እና ግልጽ ጽሑፍ"
     },
-    "options_history_length": {
-        "message": "የታሪክ ግቤቶች (ከፍተኛ)"
-    },
     "options_records_in_history": {
-        "message": "በታሪክ ውስጥ ግቤቶች;"
+        "message": "በታሪክ ውስጥ ግቤቶች"
     },
     "options_history_enable": {
         "message": "ታሪክን አንቃ"
@@ -1032,7 +1035,7 @@
         "message": "ዋራይ"
     },
     "language_wo": {
-        "message": "ወሎየ"
+        "message": "ወላፈን"
     },
     "language_xh": {
         "message": "ፆሳ"

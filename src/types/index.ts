@@ -25,6 +25,7 @@ export interface Settings {
 	hideButtonForUserLanguage: boolean
 	showPopupOnSelection: boolean
 	popupMode: PopupMode
+	simpleModeShowLangs: boolean
 }
 
 export interface SettingsSync {

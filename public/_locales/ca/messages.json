@@ -42,7 +42,7 @@
         "message": "Mostra la finestra emergent quan se selecciona el text"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Una finestra emergent apareix després de la selecció de text (millor en mode simple)."
+        "message": "La finestra emergent apareixerà immediatament després de seleccionar el text."
     },
     "options_general_mode_full": {
         "message": "Mode complet"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Mostra el text original juntament amb la traducció (només en mode complet)."
     },
+    "options_show_langs_simple": {
+        "message": "Mostra la parella d'idiomes"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Mostra els idiomes d'origen i de destinació (només en mode senzill)."
+    },
     "options_show_transliteration": {
         "message": "Mostra la transliteració"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Fons i text pla"
     },
-    "options_history_length": {
-        "message": "Entrades de l'historial (màx.)"
-    },
     "options_records_in_history": {
-        "message": "Entrades a la història:"
+        "message": "Entrades a la història"
     },
     "options_history_enable": {
         "message": "Activa l'historial"

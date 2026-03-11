@@ -42,7 +42,7 @@
         "message": "テキストが選択されているときにポップアップを表示する"
     },
     "options_general_show_on_selected_hint": {
-        "message": "テキストの選択後にポップアップが表示されます (シンプル モードで最適)。"
+        "message": "テキストを選択するとすぐにポップアップウィンドウが表示されます。"
     },
     "options_general_mode_full": {
         "message": "フルモード"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "翻訳とともに元のテキストを表示します (フル モードのみ)。"
     },
+    "options_show_langs_simple": {
+        "message": "言語ペアを表示"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "ソース言語とターゲット言語を表示します (シンプル モードのみ)。"
+    },
     "options_show_transliteration": {
         "message": "音訳を表示"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "背景とプレーンテキスト"
     },
-    "options_history_length": {
-        "message": "履歴エントリ (最大)"
-    },
     "options_records_in_history": {
-        "message": "履歴のエントリ:"
+        "message": "履歴のエントリ"
     },
     "options_history_enable": {
         "message": "履歴を有効にする"
@@ -204,7 +207,7 @@
         "message": "例"
     },
     "popup_perhaps_you_meant": {
-        "message": "おそらく次のことを言いたかったのでしょう："
+        "message": "おそらく次のことを言いたかったのでしょう。"
     },
     "popup_original_language": {
         "message": "元の言語:"
@@ -672,7 +675,7 @@
         "message": "クリオ"
     },
     "language_ktu": {
-        "message": "キトゥバ"
+        "message": "キツバ"
     },
     "language_ku": {
         "message": "クルド語 (クルマンジ)"

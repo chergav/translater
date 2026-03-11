@@ -42,7 +42,7 @@
         "message": "Показывать всплывающее окно при выделении текста"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Всплывающее окно появляется после выделения текста (лучше всего в простом режиме)."
+        "message": "Всплывающее окно появится сразу после выделения текста."
     },
     "options_general_mode_full": {
         "message": "Полный режим"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Отображать исходный текст вместе с переводом (только в полном режиме)."
     },
+    "options_show_langs_simple": {
+        "message": "Показать языковую пару"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Отображать исходный и целевой языки (только в простом режиме)."
+    },
     "options_show_transliteration": {
         "message": "Показать транслитерацию"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Фон и простой текст"
     },
-    "options_history_length": {
-        "message": "Записи истории (макс.)"
-    },
     "options_records_in_history": {
-        "message": "Записи в истории:"
+        "message": "Записи в истории"
     },
     "options_history_enable": {
         "message": "Включить историю"
@@ -663,7 +666,7 @@
         "message": "Каннада"
     },
     "language_ko": {
-        "message": "корейский"
+        "message": "Корейский"
     },
     "language_kr": {
         "message": "Канури"

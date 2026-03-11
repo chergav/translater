@@ -1,6 +1,6 @@
 <div class="rounded-[16px] bg-color-surface p-1">
 	<div class="flex flex-col gap-1">
-		{#if 1}
+		{#if storage.settings.simpleModeShowLangs}
 			<div class="flex items-center gap-1">
 				<SelectLanguage
 					alignment="center"

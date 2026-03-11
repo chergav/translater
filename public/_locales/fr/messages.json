@@ -42,7 +42,7 @@
         "message": "Afficher une fenêtre contextuelle lorsque le texte est sélectionné"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Une fenêtre contextuelle apparaît après la sélection de texte (meilleur en mode simple)."
+        "message": "Une fenêtre contextuelle apparaîtra immédiatement après la sélection du texte."
     },
     "options_general_mode_full": {
         "message": "Mode complet"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Afficher le texte original à côté de la traduction (mode complet uniquement)."
     },
+    "options_show_langs_simple": {
+        "message": "Afficher la paire de langues"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Afficher les langues source et cible (mode simple uniquement)."
+    },
     "options_show_transliteration": {
         "message": "Afficher la translittération"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Contexte et texte brut"
     },
-    "options_history_length": {
-        "message": "Entrées d'historique (max.)"
-    },
     "options_records_in_history": {
-        "message": "Entrées dans l'histoire :"
+        "message": "Entrées dans l'histoire"
     },
     "options_history_enable": {
         "message": "Activer l'historique"
@@ -759,7 +762,7 @@
         "message": "Malayalam"
     },
     "language_mn": {
-        "message": "mongol"
+        "message": "Mongol"
     },
     "language_mni_Mtei": {
         "message": "Meiteilon (Manipuri)"
@@ -957,7 +960,7 @@
         "message": "Tétum"
     },
     "language_tg": {
-        "message": "tadjik"
+        "message": "Tadjik"
     },
     "language_th": {
         "message": "Thaï"
@@ -993,7 +996,7 @@
         "message": "Tsonga"
     },
     "language_tt": {
-        "message": "Tatar"
+        "message": "tatare"
     },
     "language_tum": {
         "message": "Tumbuka"

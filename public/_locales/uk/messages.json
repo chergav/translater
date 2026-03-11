@@ -42,7 +42,7 @@
         "message": "Показувати спливаюче вікно, коли вибрано текст"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Спливаюче вікно з’являється після виділення тексту (найкраще в простому режимі)."
+        "message": "Спливаюче вікно з'явиться одразу після виділення тексту."
     },
     "options_general_mode_full": {
         "message": "Повний режим"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Відображати оригінальний текст поруч із перекладом (лише повний режим)."
     },
+    "options_show_langs_simple": {
+        "message": "Показати мовну пару"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Відображення вихідної та цільової мов (лише простий режим)."
+    },
     "options_show_transliteration": {
         "message": "Показати транслітерацію"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Фон і звичайний текст"
     },
-    "options_history_length": {
-        "message": "Записи в історії (макс.)"
-    },
     "options_records_in_history": {
-        "message": "Записи в історії:"
+        "message": "Записи в історії"
     },
     "options_history_enable": {
         "message": "Увімкнути історію"
@@ -705,7 +708,7 @@
         "message": "Лінгала"
     },
     "language_lo": {
-        "message": "лаоський"
+        "message": "лаоська"
     },
     "language_lt": {
         "message": "литовський"
@@ -1005,7 +1008,7 @@
         "message": "Тувинська"
     },
     "language_udm": {
-        "message": "удмурт"
+        "message": "удмуртська"
     },
     "language_ug": {
         "message": "уйгурський"

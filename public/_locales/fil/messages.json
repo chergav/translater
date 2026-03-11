@@ -42,7 +42,7 @@
         "message": "Ipakita ang popup kapag napili ang teksto"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Lumilitaw ang popup pagkatapos ng pagpili ng teksto (pinakamahusay sa Simple Mode)."
+        "message": "Ang popup window ay lilitaw kaagad pagkatapos pumili ng teksto."
     },
     "options_general_mode_full": {
         "message": "Buong Mode"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Ipakita ang orihinal na teksto sa tabi ng pagsasalin (Buong Mode lamang)."
     },
+    "options_show_langs_simple": {
+        "message": "Ipakita ang pares ng wika"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Ipakita ang pinagmulan at target na mga wika (Simple mode lang)."
+    },
     "options_show_transliteration": {
         "message": "Ipakita ang transliterasyon"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Background at plain text"
     },
-    "options_history_length": {
-        "message": "Mga entry sa kasaysayan (max.)"
-    },
     "options_records_in_history": {
-        "message": "Mga entry sa kasaysayan:"
+        "message": "Mga entry sa kasaysayan"
     },
     "options_history_enable": {
         "message": "Paganahin ang kasaysayan"

@@ -42,7 +42,7 @@
         "message": "Visa popup när text är markerad"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Popup visas efter textval (bäst i enkelt läge)."
+        "message": "Popup-fönster visas omedelbart efter att du har valt text."
     },
     "options_general_mode_full": {
         "message": "Fullt läge"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Visa originaltext vid sidan av översättningen (endast helt läge)."
     },
+    "options_show_langs_simple": {
+        "message": "Visa språkpar"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Visa käll- och målspråk (endast enkelt läge)."
+    },
     "options_show_transliteration": {
         "message": "Visa translitterering"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Bakgrund och vanlig text"
     },
-    "options_history_length": {
-        "message": "Historikposter (max.)"
-    },
     "options_records_in_history": {
-        "message": "Poster i historien:"
+        "message": "Poster i historien"
     },
     "options_history_enable": {
         "message": "Aktivera historik"
@@ -630,7 +633,7 @@
         "message": "japanska"
     },
     "language_jam": {
-        "message": "Jamaicanska Patois"
+        "message": "Jamaican Patois"
     },
     "language_jw": {
         "message": "javanesiska"

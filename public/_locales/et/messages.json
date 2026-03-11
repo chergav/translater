@@ -42,7 +42,7 @@
         "message": "Kui tekst on valitud, kuvatakse hüpikaken"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Pärast teksti valimist ilmub hüpikaken (parim lihtrežiimis)."
+        "message": "Hüpikaken ilmub kohe pärast teksti valimist."
     },
     "options_general_mode_full": {
         "message": "Täisrežiim"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Kuva originaaltekst koos tõlkega (ainult täisrežiimis)."
     },
+    "options_show_langs_simple": {
+        "message": "Kuva keelepaar"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Kuva lähte- ja sihtkeeled (ainult lihtrežiimis)."
+    },
     "options_show_transliteration": {
         "message": "Kuva transliteratsioon"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Taust ja lihttekst"
     },
-    "options_history_length": {
-        "message": "Ajaloo kirjed (max.)"
-    },
     "options_records_in_history": {
-        "message": "Sissekanded ajalukku:"
+        "message": "Sissekanded ajalukku"
     },
     "options_history_enable": {
         "message": "Luba ajalugu"

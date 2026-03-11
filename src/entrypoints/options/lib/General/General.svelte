@@ -79,6 +79,11 @@
 			bind:checked={storage.settings.lockWindow}
 		/>
 		<Switch
+			hint={browser.i18n.getMessage('options_show_langs_simple_hint')}
+			label={browser.i18n.getMessage('options_show_langs_simple')}
+			bind:checked={storage.settings.simpleModeShowLangs}
+		/>
+		<Switch
 			hint={browser.i18n.getMessage('options_show_original_text_hint')}
 			label={browser.i18n.getMessage('options_show_original_text')}
 			bind:checked={storage.settings.showOriginalText}

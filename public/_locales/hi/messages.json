@@ -42,7 +42,7 @@
         "message": "टेक्स्ट चयनित होने पर पॉपअप दिखाएं"
     },
     "options_general_show_on_selected_hint": {
-        "message": "पाठ चयन के बाद पॉपअप दिखाई देता है (सरल मोड में सर्वोत्तम)।"
+        "message": "टेक्स्ट का चयन करने के तुरंत बाद पॉपअप विंडो दिखाई देगी।"
     },
     "options_general_mode_full": {
         "message": "पूर्ण मोड"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "अनुवाद के साथ मूल पाठ प्रदर्शित करें (केवल पूर्ण मोड)।"
     },
+    "options_show_langs_simple": {
+        "message": "भाषा युग्म दिखाएँ"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "स्रोत और लक्ष्य भाषाएँ प्रदर्शित करें (केवल सरल मोड)।"
+    },
     "options_show_transliteration": {
         "message": "लिप्यंतरण दिखाएँ"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "पृष्ठभूमि और सादा पाठ"
     },
-    "options_history_length": {
-        "message": "इतिहास प्रविष्टियाँ (अधिकतम)"
-    },
     "options_records_in_history": {
-        "message": "इतिहास में प्रविष्टियाँ:"
+        "message": "इतिहास में प्रविष्टियाँ"
     },
     "options_history_enable": {
         "message": "इतिहास सक्षम करें"

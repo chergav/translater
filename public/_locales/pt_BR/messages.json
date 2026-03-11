@@ -42,7 +42,7 @@
         "message": "Mostrar pop-up quando o texto for selecionado"
     },
     "options_general_show_on_selected_hint": {
-        "message": "O pop-up aparece após a seleção do texto (melhor no Modo Simples)."
+        "message": "A janela pop-up aparecerá imediatamente após a seleção do texto."
     },
     "options_general_mode_full": {
         "message": "Modo Completo"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Exiba o texto original junto com a tradução (apenas modo completo)."
     },
+    "options_show_langs_simple": {
+        "message": "Mostrar par de idiomas"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Exibir idiomas de origem e de destino (apenas modo Simples)."
+    },
     "options_show_transliteration": {
         "message": "Mostrar transliteração"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Plano de fundo e texto simples"
     },
-    "options_history_length": {
-        "message": "Entradas do histórico (máx.)"
-    },
     "options_records_in_history": {
-        "message": "Entradas na história:"
+        "message": "Entradas na história"
     },
     "options_history_enable": {
         "message": "Ativar histórico"
@@ -633,7 +636,7 @@
         "message": "Patois jamaicanos"
     },
     "language_jw": {
-        "message": "Javanês"
+        "message": "javanês"
     },
     "language_ka": {
         "message": "Georgiano"
@@ -741,7 +744,7 @@
         "message": "crioulo das Maurícias"
     },
     "language_mg": {
-        "message": "malgaxe"
+        "message": "Malgaxe"
     },
     "language_mh": {
         "message": "marshallês"
@@ -756,7 +759,7 @@
         "message": "Macedônio"
     },
     "language_ml": {
-        "message": "Malaiala"
+        "message": "malaiala"
     },
     "language_mn": {
         "message": "Mongol"
@@ -774,7 +777,7 @@
         "message": "Malaio (Jawi)"
     },
     "language_mt": {
-        "message": "Maltês"
+        "message": "maltês"
     },
     "language_mwr": {
         "message": "Marwadi"
@@ -945,7 +948,7 @@
         "message": "Silésia"
     },
     "language_ta": {
-        "message": "tâmil"
+        "message": "Tâmil"
     },
     "language_tcy": {
         "message": "Tulú"

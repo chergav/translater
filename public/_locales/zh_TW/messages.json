@@ -42,7 +42,7 @@
         "message": "選擇文字時顯示彈出視窗"
     },
     "options_general_show_on_selected_hint": {
-        "message": "選擇文字後會出現彈出視窗（最好在簡單模式下）。"
+        "message": "選擇文字後將立即出現彈出視窗。"
     },
     "options_general_mode_full": {
         "message": "完整模式"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "在翻譯旁邊顯示原始文字（僅限完整模式）。"
     },
+    "options_show_langs_simple": {
+        "message": "顯示語言對"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "顯示來源語言和目標語言（僅限簡單模式）。"
+    },
     "options_show_transliteration": {
         "message": "顯示音譯"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "背景和純文字"
     },
-    "options_history_length": {
-        "message": "歷史記錄條目（最多）"
-    },
     "options_records_in_history": {
-        "message": "歷史記載："
+        "message": "歷史記載"
     },
     "options_history_enable": {
         "message": "啟用歷史記錄"
@@ -423,7 +426,7 @@
         "message": "宿霧語"
     },
     "language_cgg": {
-        "message": "基賀"
+        "message": "基加"
     },
     "language_ch": {
         "message": "查莫羅語"

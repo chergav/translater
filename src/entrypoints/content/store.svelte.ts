@@ -186,8 +186,6 @@ class Store {
 			this.detectedLang || sourceLang,
 			targetLang,
 		);
-		console.debug('cache', $state.snapshot(this.cache));
-		console.debug('fromCache', $state.snapshot(fromCache));
 
 		if (fromCache) {
 			this.applyCached(fromCache);
@@ -295,7 +293,6 @@ class Store {
 		sourceLang: string,
 		targetLang: string,
 	): Translated | undefined {
-		console.debug('findInCache', text, sourceLang, targetLang);
 		return this.cache.find(translated =>
 			translated.sentence.orig === text &&
 			translated.sourceLang === sourceLang &&

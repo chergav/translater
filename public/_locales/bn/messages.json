@@ -42,7 +42,7 @@
         "message": "পাঠ্য নির্বাচন করা হলে পপআপ দেখান"
     },
     "options_general_show_on_selected_hint": {
-        "message": "পাঠ্য নির্বাচনের পরে পপআপ প্রদর্শিত হয় (সরল মোডে সেরা)।"
+        "message": "পাঠ্য নির্বাচন করার সাথে সাথে পপআপ উইন্ডো প্রদর্শিত হবে।"
     },
     "options_general_mode_full": {
         "message": "সম্পূর্ণ মোড"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "অনুবাদের পাশাপাশি মূল পাঠ্য প্রদর্শন করুন (শুধুমাত্র সম্পূর্ণ মোড)।"
     },
+    "options_show_langs_simple": {
+        "message": "ভাষা যুগল দেখান"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "প্রদর্শন উত্স এবং লক্ষ্য ভাষা (কেবল সহজ মোড)।"
+    },
     "options_show_transliteration": {
         "message": "প্রতিবর্ণীকরণ দেখান"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "ব্যাকগ্রাউন্ড এবং প্লেইন টেক্সট"
     },
-    "options_history_length": {
-        "message": "ইতিহাস এন্ট্রি (সর্বোচ্চ)"
-    },
     "options_records_in_history": {
-        "message": "ইতিহাসে এন্ট্রি:"
+        "message": "ইতিহাসে এন্ট্রি"
     },
     "options_history_enable": {
         "message": "ইতিহাস সক্ষম করুন"
@@ -507,7 +510,7 @@
         "message": "বাস্ক"
     },
     "language_fa": {
-        "message": "ফারসি"
+        "message": "ফার্সি"
     },
     "language_fa_AF": {
         "message": "দারি"
@@ -645,7 +648,7 @@
         "message": "কিউকিচি'"
     },
     "language_kg": {
-        "message": "কিকঙ্গো"
+        "message": "কিকংগো"
     },
     "language_kha": {
         "message": "খাসি"
@@ -687,7 +690,7 @@
         "message": "ল্যাটিন"
     },
     "language_lb": {
-        "message": "লাক্সেমবার্গিশ"
+        "message": "লুক্সেমবার্গিশ"
     },
     "language_lg": {
         "message": "লুগান্ডা"
@@ -759,7 +762,7 @@
         "message": "মালায়লাম"
     },
     "language_mn": {
-        "message": "মঙ্গোলীয়"
+        "message": "মঙ্গোলিয়ান"
     },
     "language_mni_Mtei": {
         "message": "মেইটেইলন (মণিপুরি)"

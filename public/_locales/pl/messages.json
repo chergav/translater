@@ -42,7 +42,7 @@
         "message": "Pokaż wyskakujące okienko po zaznaczeniu tekstu"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Wyskakujące okienko pojawia się po zaznaczeniu tekstu (najlepiej w trybie prostym)."
+        "message": "Wyskakujące okienko pojawi się natychmiast po zaznaczeniu tekstu."
     },
     "options_general_mode_full": {
         "message": "Tryb pełny"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Wyświetlaj oryginalny tekst obok tłumaczenia (tylko w trybie pełnym)."
     },
+    "options_show_langs_simple": {
+        "message": "Pokaż parę językową"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Wyświetl języki źródłowe i docelowe (tylko tryb prosty)."
+    },
     "options_show_transliteration": {
         "message": "Pokaż transliterację"
     },
@@ -105,7 +111,7 @@
         "message": "Modelka"
     },
     "options_appearance_theme": {
-        "message": "Temat"
+        "message": "Motyw"
     },
     "options_appearance_accent_color": {
         "message": "Kolor akcentujący"
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Tło i zwykły tekst"
     },
-    "options_history_length": {
-        "message": "Wpisy historii (maks.)"
-    },
     "options_records_in_history": {
-        "message": "Wpisy w historii:"
+        "message": "Wpisy w historii"
     },
     "options_history_enable": {
         "message": "Włącz historię"
@@ -366,7 +369,7 @@
         "message": "białoruski"
     },
     "language_bem": {
-        "message": "Bembę"
+        "message": "Bemba"
     },
     "language_ber": {
         "message": "Tamazight (Tifinagh)"
@@ -774,7 +777,7 @@
         "message": "Malajski (Jawi)"
     },
     "language_mt": {
-        "message": "maltański"
+        "message": "Maltański"
     },
     "language_mwr": {
         "message": "Marwadi"
@@ -804,7 +807,7 @@
         "message": "Ndebele (południe)"
     },
     "language_nso": {
-        "message": "Sepedi"
+        "message": "Sepediego"
     },
     "language_nus": {
         "message": "Nuer"
@@ -981,7 +984,7 @@
         "message": "Tongijski"
     },
     "language_tpi": {
-        "message": "Tok Pisin"
+        "message": "Tok Pisan"
     },
     "language_tr": {
         "message": "turecki"
@@ -1002,7 +1005,7 @@
         "message": "Tahitański"
     },
     "language_tyv": {
-        "message": "Tuvan"
+        "message": "Tuwan"
     },
     "language_udm": {
         "message": "Udmurt"

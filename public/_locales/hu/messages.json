@@ -42,7 +42,7 @@
         "message": "Szöveg kijelölése esetén felugró ablak megjelenítése"
     },
     "options_general_show_on_selected_hint": {
-        "message": "A szöveg kijelölése után felugró ablak jelenik meg (a legjobb egyszerű módban)."
+        "message": "A szöveg kiválasztása után azonnal megjelenik a felugró ablak."
     },
     "options_general_mode_full": {
         "message": "Teljes mód"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Az eredeti szöveg megjelenítése a fordítás mellett (csak a teljes módban)."
     },
+    "options_show_langs_simple": {
+        "message": "Nyelvpár megjelenítése"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Forrás- és célnyelvek megjelenítése (csak egyszerű módban)."
+    },
     "options_show_transliteration": {
         "message": "Átírás megjelenítése"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Háttér és egyszerű szöveg"
     },
-    "options_history_length": {
-        "message": "Előzmények bejegyzései (max.)"
-    },
     "options_records_in_history": {
-        "message": "Bejegyzések a történelembe:"
+        "message": "Bejegyzések a történelembe"
     },
     "options_history_enable": {
         "message": "Előzmények engedélyezése"

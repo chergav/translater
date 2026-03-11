@@ -42,7 +42,7 @@
         "message": "Pokaži pojavno okno, ko je izbrano besedilo"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Po izbiri besedila se prikaže pojavno okno (najbolje v preprostem načinu)."
+        "message": "Pojavno okno se prikaže takoj po izbiri besedila."
     },
     "options_general_mode_full": {
         "message": "Polni način"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Prikaži izvirno besedilo poleg prevoda (samo polni način)."
     },
+    "options_show_langs_simple": {
+        "message": "Pokaži jezikovni par"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Prikaži izvorni in ciljni jezik (samo preprost način)."
+    },
     "options_show_transliteration": {
         "message": "Pokaži prečrkovanje"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Ozadje in golo besedilo"
     },
-    "options_history_length": {
-        "message": "Vnosi v zgodovino (maks.)"
-    },
     "options_records_in_history": {
-        "message": "Vpisi v zgodovino:"
+        "message": "Vpisi v zgodovino"
     },
     "options_history_enable": {
         "message": "Omogoči zgodovino"

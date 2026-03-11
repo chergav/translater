@@ -42,7 +42,7 @@
         "message": "உரை தேர்ந்தெடுக்கப்படும்போது பாப்அப்பைக் காட்டு"
     },
     "options_general_show_on_selected_hint": {
-        "message": "உரை தேர்வுக்குப் பிறகு பாப்அப் தோன்றும் (எளிய பயன்முறையில் சிறந்தது)."
+        "message": "உரையைத் தேர்ந்தெடுத்த உடனேயே பாப்அப் சாளரம் தோன்றும்."
     },
     "options_general_mode_full": {
         "message": "முழு பயன்முறை"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "மொழிபெயர்ப்புடன் அசல் உரையைக் காண்பி (முழு பயன்முறை மட்டும்)."
     },
+    "options_show_langs_simple": {
+        "message": "மொழி ஜோடியைக் காட்டு"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "மூல மற்றும் இலக்கு மொழிகளைக் காண்பி (எளிய பயன்முறை மட்டும்)."
+    },
     "options_show_transliteration": {
         "message": "ஒலிபெயர்ப்பைக் காட்டு"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "பின்னணி மற்றும் எளிய உரை"
     },
-    "options_history_length": {
-        "message": "வரலாற்று உள்ளீடுகள் (அதிகபட்சம்)"
-    },
     "options_records_in_history": {
-        "message": "வரலாற்றில் உள்ள பதிவுகள்:"
+        "message": "வரலாற்றில் உள்ளீடுகள்"
     },
     "options_history_enable": {
         "message": "வரலாற்றை இயக்கு"
@@ -522,7 +525,7 @@
         "message": "பிலிப்பினோ (டகாலாக்)"
     },
     "language_fj": {
-        "message": "பிஜியன்"
+        "message": "ஃபிஜியன்"
     },
     "language_fo": {
         "message": "ஃபரோஸ்"
@@ -603,7 +606,7 @@
         "message": "இபன்"
     },
     "language_id": {
-        "message": "இந்தோனேசியன்"
+        "message": "இந்தோனேஷியன்"
     },
     "language_ig": {
         "message": "இக்போ"

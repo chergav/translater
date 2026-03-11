@@ -42,7 +42,7 @@
         "message": "Afișează pop-up când este selectat text"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Popup apare după selectarea textului (cel mai bine în Modul simplu)."
+        "message": "Fereastra pop-up va apărea imediat după selectarea textului."
     },
     "options_general_mode_full": {
         "message": "Modul complet"
@@ -66,7 +66,7 @@
         "message": "Afișați butonul în câmpul de text"
     },
     "options_text_field_button_show_hint": {
-        "message": "Afișați butonul când textul este selectat în câmpurile de introducere a textului."
+        "message": "Afișați butonul când este selectat text în câmpurile de introducere a textului."
     },
     "options_hide_translation_button": {
         "message": "Ascundeți butonul de traducere pentru limba dvs"
@@ -84,7 +84,13 @@
         "message": "Afișați textul sursă"
     },
     "options_show_original_text_hint": {
-        "message": "Afișați textul original alături de traducere (numai în modul complet)."
+        "message": "Afișează textul original alături de traducere (numai în modul complet)."
+    },
+    "options_show_langs_simple": {
+        "message": "Afișați perechea de limbi"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Afișați limbile sursă și țintă (numai în modul simplu)."
     },
     "options_show_transliteration": {
         "message": "Afișați transliterația"
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Fundal și text simplu"
     },
-    "options_history_length": {
-        "message": "Intrări din istoric (max.)"
-    },
     "options_records_in_history": {
-        "message": "Intrări în istorie:"
+        "message": "Intrări în istorie"
     },
     "options_history_enable": {
         "message": "Activați istoricul"
@@ -138,10 +141,10 @@
         "message": "Voci"
     },
     "options_tts_table_caption": {
-        "message": "Dacă o limbă nu este listată, va fi utilizat un serviciu extern de conversie a textului în vorbire."
+        "message": "Dacă o limbă nu este listată, va fi utilizat un serviciu extern de conversie text în vorbire."
     },
     "options_tts_no_voices_found": {
-        "message": "Browserul dvs. nu acceptă sinteza vorbirii. Vom folosi în schimb un serviciu extern."
+        "message": "Browserul dvs. nu acceptă sinteza vorbirii. În schimb, vom folosi un serviciu extern."
     },
     "options_edit_keyboard_shortcut": {
         "message": "editați comenzile rapide de la tastatură"
@@ -822,7 +825,7 @@
         "message": "Odia (Oriya)"
     },
     "language_os": {
-        "message": "osetă"
+        "message": "osetian"
     },
     "language_pa": {
         "message": "Punjabi (Gurmukhi)"

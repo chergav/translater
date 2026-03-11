@@ -42,7 +42,7 @@
         "message": "הצג קופץ כאשר טקסט נבחר"
     },
     "options_general_show_on_selected_hint": {
-        "message": "חלון קופץ מופיע לאחר בחירת טקסט (הכי טוב במצב פשוט)."
+        "message": "חלון קופץ יופיע מיד לאחר בחירת הטקסט."
     },
     "options_general_mode_full": {
         "message": "מצב מלא"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "הצג טקסט מקורי לצד תרגום (מצב מלא בלבד)."
     },
+    "options_show_langs_simple": {
+        "message": "הצג צמד שפות"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "הצגת שפות מקור ושפות יעד (מצב פשוט בלבד)."
+    },
     "options_show_transliteration": {
         "message": "הצג תעתיק"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "רקע וטקסט רגיל"
     },
-    "options_history_length": {
-        "message": "ערכים בהיסטוריה (מקסימום)"
-    },
     "options_records_in_history": {
-        "message": "ערכים בהיסטוריה:"
+        "message": "ערכים בהיסטוריה"
     },
     "options_history_enable": {
         "message": "אפשר היסטוריה"

@@ -42,7 +42,7 @@
         "message": "Mostrar ventana emergente cuando se selecciona texto"
     },
     "options_general_show_on_selected_hint": {
-        "message": "La ventana emergente aparece después de la selección de texto (mejor en modo simple)."
+        "message": "La ventana emergente aparecerá inmediatamente después de seleccionar el texto."
     },
     "options_general_mode_full": {
         "message": "Modo completo"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Muestra el texto original junto con la traducción (solo modo completo)."
     },
+    "options_show_langs_simple": {
+        "message": "Mostrar par de idiomas"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Mostrar los idiomas de origen y de destino (solo modo simple)."
+    },
     "options_show_transliteration": {
         "message": "Mostrar transliteración"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Fondo y texto sin formato"
     },
-    "options_history_length": {
-        "message": "Entradas del historial (máx.)"
-    },
     "options_records_in_history": {
-        "message": "Entradas en la historia:"
+        "message": "Entradas en la historia"
     },
     "options_history_enable": {
         "message": "Habilitar historial"
@@ -1041,7 +1044,7 @@
         "message": "yídish"
     },
     "language_yo": {
-        "message": "yoruba"
+        "message": "Yoruba"
     },
     "language_yua": {
         "message": "Maya yucateco"

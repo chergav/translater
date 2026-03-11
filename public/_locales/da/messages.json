@@ -42,7 +42,7 @@
         "message": "Vis pop op, når tekst er valgt"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Popup vises efter tekstvalg (bedst i Simple Mode)."
+        "message": "Popup-vindue vises umiddelbart efter valg af tekst."
     },
     "options_general_mode_full": {
         "message": "Fuld tilstand"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Vis original tekst sammen med oversættelse (kun fuld tilstand)."
     },
+    "options_show_langs_simple": {
+        "message": "Vis sprogpar"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Vis kilde- og målsprog (kun simpel tilstand)."
+    },
     "options_show_transliteration": {
         "message": "Vis translitteration"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Baggrund og almindelig tekst"
     },
-    "options_history_length": {
-        "message": "Historieposter (maks.)"
-    },
     "options_records_in_history": {
-        "message": "Indgange i historien:"
+        "message": "Indgange i historien"
     },
     "options_history_enable": {
         "message": "Aktiver historik"

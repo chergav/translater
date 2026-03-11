@@ -42,7 +42,7 @@
         "message": "Pop-up weergeven wanneer tekst is geselecteerd"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Pop-up verschijnt na tekstselectie (het beste in de eenvoudige modus)."
+        "message": "Een pop-upvenster verschijnt onmiddellijk na het selecteren van tekst."
     },
     "options_general_mode_full": {
         "message": "Volledige modus"
@@ -72,7 +72,7 @@
         "message": "Verberg de vertaalknop voor uw taal"
     },
     "options_hide_translation_button_hint": {
-        "message": "De knop verschijnt niet wanneer u tekst in uw systeemtaal selecteert"
+        "message": "De knop verschijnt niet wanneer u tekst selecteert in uw systeemtaal"
     },
     "options_hide_button_on_sites": {
         "message": "Vertaalknop verbergen op specifieke websites:"
@@ -85,6 +85,12 @@
     },
     "options_show_original_text_hint": {
         "message": "Geef de originele tekst naast de vertaling weer (alleen in de volledige modus)."
+    },
+    "options_show_langs_simple": {
+        "message": "Toon talenpaar"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Bron- en doeltalen weergeven (alleen in de eenvoudige modus)."
     },
     "options_show_transliteration": {
         "message": "Transliteratie weergeven"
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Achtergrond en platte tekst"
     },
-    "options_history_length": {
-        "message": "Geschiedenisinvoer (max.)"
-    },
     "options_records_in_history": {
-        "message": "Vermeldingen in de geschiedenis:"
+        "message": "Inzendingen in de geschiedenis"
     },
     "options_history_enable": {
         "message": "Geschiedenis inschakelen"

@@ -42,7 +42,7 @@
         "message": "వచనాన్ని ఎంచుకున్నప్పుడు పాప్‌అప్‌ని చూపండి"
     },
     "options_general_show_on_selected_hint": {
-        "message": "పాప్అప్ టెక్స్ట్ ఎంపిక తర్వాత కనిపిస్తుంది (సింపుల్ మోడ్‌లో ఉత్తమం)."
+        "message": "వచనాన్ని ఎంచుకున్న వెంటనే పాప్అప్ విండో కనిపిస్తుంది."
     },
     "options_general_mode_full": {
         "message": "పూర్తి మోడ్"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "అనువాదంతో పాటు అసలు వచనాన్ని ప్రదర్శించు (పూర్తి మోడ్ మాత్రమే)."
     },
+    "options_show_langs_simple": {
+        "message": "భాషా జతని చూపు"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "మూలం మరియు లక్ష్య భాషలను ప్రదర్శించు (సింపుల్ మోడ్ మాత్రమే)."
+    },
     "options_show_transliteration": {
         "message": "లిప్యంతరీకరణను చూపు"
     },
@@ -93,7 +99,7 @@
         "message": "లిప్యంతరీకరణ అందుబాటులో ఉంటే చూపించు."
     },
     "options_lock_popup_window": {
-        "message": "పాపప్ విండోను లాక్ చేయండి"
+        "message": "పాప్అప్ విండోను లాక్ చేయండి"
     },
     "options_lock_popup_window_hint": {
         "message": "బయట క్లిక్ చేసినప్పుడు పాప్అప్ తెరిచి ఉంటుంది."
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "నేపథ్యం మరియు సాదా వచనం"
     },
-    "options_history_length": {
-        "message": "చరిత్ర నమోదులు (గరిష్టంగా)"
-    },
     "options_records_in_history": {
-        "message": "చరిత్రలో నమోదులు:"
+        "message": "చరిత్రలో ప్రవేశాలు"
     },
     "options_history_enable": {
         "message": "చరిత్రను ప్రారంభించండి"
@@ -312,7 +315,7 @@
         "message": "అబ్ఖాజ్"
     },
     "language_ace": {
-        "message": "అచెనీస్"
+        "message": "అచెనెస్"
     },
     "language_ach": {
         "message": "అచోలి"
@@ -804,7 +807,7 @@
         "message": "Ndebele (దక్షిణం)"
     },
     "language_nso": {
-        "message": "సెపెడీ"
+        "message": "సెపెడి"
     },
     "language_nus": {
         "message": "న్యూర్"

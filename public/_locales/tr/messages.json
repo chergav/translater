@@ -42,7 +42,7 @@
         "message": "Metin seçildiğinde açılır pencereyi göster"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Metin seçiminden sonra açılır pencere görüntülenir (Basit Modda en iyisi)."
+        "message": "Metni seçtikten hemen sonra açılır pencere görünecektir."
     },
     "options_general_mode_full": {
         "message": "Tam Mod"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Orijinal metni çevirinin yanında görüntüleyin (yalnızca Tam Mod)."
     },
+    "options_show_langs_simple": {
+        "message": "Dil çiftini göster"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Kaynak ve hedef dilleri görüntüleyin (Yalnızca Basit mod)."
+    },
     "options_show_transliteration": {
         "message": "Harf çevirisini göster"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Arka plan ve düz metin"
     },
-    "options_history_length": {
-        "message": "Geçmiş girişleri (maks.)"
-    },
     "options_records_in_history": {
-        "message": "Tarihteki girişler:"
+        "message": "Tarihteki girişler"
     },
     "options_history_enable": {
         "message": "Geçmişi etkinleştir"
@@ -138,7 +141,7 @@
         "message": "Sesler"
     },
     "options_tts_table_caption": {
-        "message": "Bir dil listelenmiyorsa harici bir metin okuma hizmeti kullanılacaktır."
+        "message": "Bir dil listelenmiyorsa harici bir metin-konuşma hizmeti kullanılacaktır."
     },
     "options_tts_no_voices_found": {
         "message": "Tarayıcınız konuşma sentezini desteklemiyor. Bunun yerine harici bir hizmet kullanacağız."
@@ -300,7 +303,7 @@
         "message": "🚀 Diğer uzantılarımı dene"
     },
     "language_auto": {
-        "message": "oto"
+        "message": "otomatik"
     },
     "language_detect": {
         "message": "dili tespit et"
@@ -615,7 +618,7 @@
         "message": "İzlandaca"
     },
     "language_it": {
-        "message": "İtalyan"
+        "message": "İtalyanca"
     },
     "language_iu": {
         "message": "İnuktuca (Heceler)"
@@ -822,7 +825,7 @@
         "message": "Odia (Oriya)"
     },
     "language_os": {
-        "message": "Osetçe"
+        "message": "Osetyalı"
     },
     "language_pa": {
         "message": "Pencapça (Gurmukhi)"

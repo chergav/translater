@@ -42,7 +42,7 @@
         "message": "Prikaži skočni prozor kada je tekst odabran"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Skočni prozor se pojavljuje nakon odabira teksta (najbolje u jednostavnom načinu)."
+        "message": "Skočni prozor će se pojaviti odmah nakon odabira teksta."
     },
     "options_general_mode_full": {
         "message": "Puni način rada"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Prikaz originalnog teksta uz prijevod (samo puni način rada)."
     },
+    "options_show_langs_simple": {
+        "message": "Prikaži jezični par"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Prikaz izvornog i ciljnog jezika (samo jednostavan način)."
+    },
     "options_show_transliteration": {
         "message": "Prikaži transliteraciju"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Pozadina i čisti tekst"
     },
-    "options_history_length": {
-        "message": "Unosi u povijest (maks.)"
-    },
     "options_records_in_history": {
-        "message": "Upisi u povijest:"
+        "message": "Upisi u povijest"
     },
     "options_history_enable": {
         "message": "Omogući povijest"

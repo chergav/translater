@@ -42,7 +42,7 @@
         "message": "Rādīt uznirstošo logu, kad ir atlasīts teksts"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Uznirstošais logs parādās pēc teksta atlases (vislabāk vienkāršajā režīmā)."
+        "message": "Uznirstošais logs parādīsies uzreiz pēc teksta atlasīšanas."
     },
     "options_general_mode_full": {
         "message": "Pilns režīms"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Parādīt oriģinālo tekstu kopā ar tulkojumu (tikai pilnajā režīmā)."
     },
+    "options_show_langs_simple": {
+        "message": "Rādīt valodu pāri"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Rādīt avota un mērķa valodas (tikai vienkāršajā režīmā)."
+    },
     "options_show_transliteration": {
         "message": "Rādīt transliterāciju"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Fons un vienkāršs teksts"
     },
-    "options_history_length": {
-        "message": "Vēstures ieraksti (maks.)"
-    },
     "options_records_in_history": {
-        "message": "Ieraksti vēsturē:"
+        "message": "Ieraksti vēsturē"
     },
     "options_history_enable": {
         "message": "Iespējot vēsturi"
@@ -624,7 +627,7 @@
         "message": "inuktut (latīņu)"
     },
     "language_iw": {
-        "message": "ivrits"
+        "message": "ebreju valoda"
     },
     "language_ja": {
         "message": "japāņi"
@@ -900,7 +903,7 @@
         "message": "Shan"
     },
     "language_si": {
-        "message": "singalu valoda"
+        "message": "sinhalu"
     },
     "language_sk": {
         "message": "slovāku"

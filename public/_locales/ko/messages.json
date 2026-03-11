@@ -42,7 +42,7 @@
         "message": "텍스트 선택 시 팝업 표시"
     },
     "options_general_show_on_selected_hint": {
-        "message": "텍스트 선택 후 팝업이 나타납니다(단순 모드에 가장 적합)."
+        "message": "텍스트를 선택하면 즉시 팝업창이 나타납니다."
     },
     "options_general_mode_full": {
         "message": "전체 모드"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "번역과 함께 원본 텍스트를 표시합니다(전체 모드에만 해당)."
     },
+    "options_show_langs_simple": {
+        "message": "언어 쌍 표시"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "소스 및 타겟 언어를 표시합니다(단순 모드에만 해당)."
+    },
     "options_show_transliteration": {
         "message": "음역 표시"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "배경 및 일반 텍스트"
     },
-    "options_history_length": {
-        "message": "기록 항목(최대)"
-    },
     "options_records_in_history": {
-        "message": "역사 항목:"
+        "message": "역사 항목"
     },
     "options_history_enable": {
         "message": "기록 활성화"
@@ -621,7 +624,7 @@
         "message": "이누크투트어(음절)"
     },
     "language_iu_Latn": {
-        "message": "이누크투트어(라틴어)"
+        "message": "이누크투트어(라틴 문자)"
     },
     "language_iw": {
         "message": "히브리어"

@@ -42,13 +42,13 @@
         "message": "Při výběru textu zobrazit vyskakovací okno"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Po výběru textu se zobrazí vyskakovací okno (nejlépe v jednoduchém režimu)."
+        "message": "Vyskakovací okno se zobrazí ihned po výběru textu."
     },
     "options_general_mode_full": {
         "message": "Plný režim"
     },
     "options_general_mode_full_hint": {
-        "message": "Vyskakovací okno se všemi funkcemi."
+        "message": "Popup okno se všemi funkcemi."
     },
     "options_general_mode_simple": {
         "message": "Jednoduchý režim"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Zobrazte původní text vedle překladu (pouze v plném režimu)."
     },
+    "options_show_langs_simple": {
+        "message": "Zobrazit jazykový pár"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Zobrazit zdrojový a cílový jazyk (pouze jednoduchý režim)."
+    },
     "options_show_transliteration": {
         "message": "Zobrazit přepis"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Pozadí a prostý text"
     },
-    "options_history_length": {
-        "message": "Záznamy historie (max.)"
-    },
     "options_records_in_history": {
-        "message": "Záznamy v historii:"
+        "message": "Zápisy do historie"
     },
     "options_history_enable": {
         "message": "Povolit historii"
@@ -1011,7 +1014,7 @@
         "message": "ujgurské"
     },
     "language_uk": {
-        "message": "Ukrajinština"
+        "message": "ukrajinský"
     },
     "language_ur": {
         "message": "urdština"

@@ -42,7 +42,7 @@
         "message": "Hiển thị cửa sổ bật lên khi văn bản được chọn"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Cửa sổ bật lên xuất hiện sau khi chọn văn bản (tốt nhất ở Chế độ đơn giản)."
+        "message": "Cửa sổ Popup sẽ xuất hiện ngay sau khi chọn văn bản."
     },
     "options_general_mode_full": {
         "message": "Chế độ đầy đủ"
@@ -78,13 +78,19 @@
         "message": "Ẩn nút dịch trên các trang web cụ thể:"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Thêm tên miền bằng menu cửa sổ bật lên trên trang bạn muốn loại trừ."
+        "message": "Thêm tên miền bằng menu cửa sổ bật lên trên trang web bạn muốn loại trừ."
     },
     "options_show_original_text": {
         "message": "Hiển thị văn bản nguồn"
     },
     "options_show_original_text_hint": {
         "message": "Hiển thị văn bản gốc cùng với bản dịch (Chỉ ở Chế độ đầy đủ)."
+    },
+    "options_show_langs_simple": {
+        "message": "Hiển thị cặp ngôn ngữ"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Hiển thị ngôn ngữ nguồn và đích (Chỉ ở chế độ Đơn giản)."
     },
     "options_show_transliteration": {
         "message": "Hiển thị phiên âm"
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Nền và văn bản thuần túy"
     },
-    "options_history_length": {
-        "message": "Mục lịch sử (tối đa)"
-    },
     "options_records_in_history": {
-        "message": "Các mục trong lịch sử:"
+        "message": "Mục nhập trong lịch sử"
     },
     "options_history_enable": {
         "message": "Bật lịch sử"
@@ -447,7 +450,7 @@
         "message": "Tiếng Tatar Krym (chữ Cyrillic)"
     },
     "language_crh_Latn": {
-        "message": "Tiếng Tatar Krym (tiếng Latinh)"
+        "message": "Tiếng Tatar Krym (tiếng Latin)"
     },
     "language_crs": {
         "message": "Tiếng Creole Seychellois"

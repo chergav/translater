@@ -42,7 +42,7 @@
         "message": "Popup anzeigen, wenn Text ausgewählt ist"
     },
     "options_general_show_on_selected_hint": {
-        "message": "Nach der Textauswahl erscheint ein Popup (am besten im einfachen Modus)."
+        "message": "Unmittelbar nach der Textauswahl erscheint ein Popup-Fenster."
     },
     "options_general_mode_full": {
         "message": "Vollmodus"
@@ -86,6 +86,12 @@
     "options_show_original_text_hint": {
         "message": "Originaltext neben der Übersetzung anzeigen (nur Vollmodus)."
     },
+    "options_show_langs_simple": {
+        "message": "Sprachpaar anzeigen"
+    },
+    "options_show_langs_simple_hint": {
+        "message": "Quell- und Zielsprachen anzeigen (nur einfacher Modus)."
+    },
     "options_show_transliteration": {
         "message": "Transliteration anzeigen"
     },
@@ -113,11 +119,8 @@
     "options_appearance_bg_and_text": {
         "message": "Hintergrund und Klartext"
     },
-    "options_history_length": {
-        "message": "Historieneinträge (max.)"
-    },
     "options_records_in_history": {
-        "message": "Einträge in der Geschichte:"
+        "message": "Einträge in der Geschichte"
     },
     "options_history_enable": {
         "message": "Verlauf aktivieren"
@@ -168,7 +171,7 @@
         "message": "Groß (18px)"
     },
     "options_font_size_xl": {
-        "message": "Extra groß (20 Pixel)"
+        "message": "Extra groß (20px)"
     },
     "options_support_msg": {
         "message": "Wenn etwas nicht funktioniert oder Sie Vorschläge haben, lassen Sie es mich bitte hier wissen"
