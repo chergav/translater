@@ -1,7 +1,14 @@
 <label class="ignore-active inline-flex items-center justify-between gap-2 select-none">
-	{#if label}
-		<span>{label}</span>
-	{/if}
+	<div class="flex items-center gap-4">
+		{#if icon}
+			<div>
+				<Icon d={icon} />
+			</div>
+		{/if}
+		{#if label}
+			<span>{label}</span>
+		{/if}
+	</div>
 	<select
 		name="select"
 		class={[
@@ -23,12 +30,14 @@
 import type { ChangeEventHandler } from 'svelte/elements';
 import type { Language } from '~/types';
 import { languagesLocalArray, sourceLanguageAuto, getDisplayedLanguageName } from '~/shared/languages';
+import Icon from './Icon.svelte';
 
 interface Props {
 	value: string
 	label?: string
 	autoLang?: boolean
 	small?: boolean
+	icon?: string
 	onchange?: ChangeEventHandler<HTMLSelectElement>
 }
 
@@ -37,6 +46,7 @@ let {
 	label,
 	autoLang = false,
 	small = false,
+	icon,
 	onchange,
 }: Props = $props();
 

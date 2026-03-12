@@ -1,6 +1,7 @@
 <div class="flex flex-col gap-2 border-b border-color-surface-high px-6 py-4">
 	<SettingsGroup>
 		<Switch
+			icon={mdiHistory}
 			label={browser.i18n.getMessage('options_history_enable')}
 			bind:checked={storage.settings.historyEnable}
 		/>
@@ -45,7 +46,7 @@ import Switch from '~/lib/Switch.svelte';
 import Button from '~/lib/Button.svelte';
 import SettingsGroup from '~/lib/SettingsGroup.svelte';
 import HistoryEntry from './lib/HistoryEntry.svelte';
-import { mdiTrashCanOutline } from '@mdi/js';
+import { mdiTrashCanOutline, mdiHistory } from '@mdi/js';
 
 function clearHistory() {
 	if (confirm('Are you sure?')) {

@@ -46,6 +46,9 @@
 							</button>
 						</div>
 					{/if}
+					{#if store.translated && storage.settings.showTransliteration}
+						<p class="px-1 text-sm text-color-on-surface-variant">{store.translated.sentence.src_translit}</p>
+					{/if}
 					{#if
 						storage.settings.sourceLang !== 'auto' &&
 						store.translated?.ld_result.srclangs &&
@@ -60,9 +63,6 @@
 								{getDisplayedLanguageName(store.translated?.ld_result.srclangs[0])}
 							</button>
 						</div>
-					{/if}
-					{#if store.translated && storage.settings.showTransliteration}
-						<p class="px-1 text-sm text-color-on-surface-variant">{store.translated.sentence.src_translit}</p>
 					{/if}
 				</div>
 			{/if}

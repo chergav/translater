@@ -1,7 +1,14 @@
 <label class={['ignore-active flex items-center justify-between gap-2 select-none', full && 'w-full' ]}>
-	{#if label}
-		<span class={small ? 'text-sm' : 'text-base'}>{label}</span>
-	{/if}
+	<div class="flex items-center gap-4">
+		{#if icon}
+			<div>
+				<Icon d={icon} />
+			</div>
+		{/if}
+		{#if label}
+			<span class={small ? 'text-sm' : 'text-base'}>{label}</span>
+		{/if}
+	</div>
 	<select
 		class={[
 			'cursor-pointer rounded-lg bg-color-surface transition-colors select-none',
@@ -20,6 +27,7 @@
 
 <script lang="ts">
 import type { Snippet } from 'svelte';
+import Icon from './Icon.svelte';
 
 interface Props {
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -29,6 +37,7 @@ interface Props {
 	small?: boolean
 	class?: string
 	full?: boolean
+	icon?: string
 	onchange?: () => void
 }
 
@@ -39,6 +48,7 @@ let {
 	small = false,
 	class: className = '',
 	full = false,
+	icon,
 	onchange,
 }: Props = $props();
 </script>

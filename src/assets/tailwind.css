@@ -38,60 +38,72 @@ body {
 [data-accent="amber"] {
 	--primary: var(--color-amber-800);
 	--on-primary: var(--color-white);
+	--on-primary-variant: var(--color-amber-200);
 
 	&:where([data-theme="dark"]) {
 		--primary: var(--color-amber-200);
 		--on-primary: var(--color-amber-900);
+		--on-primary-variant: var(--color-amber-800);
 	}
 }
 
 [data-accent="green"] {
 	--primary: var(--color-green-800);
 	--on-primary: var(--color-white);
+	--on-primary-variant: var(--color-green-200);
 
 	&:where([data-theme="dark"]) {
 		--primary: var(--color-green-200);
 		--on-primary: var(--color-green-900);
+		--on-primary-variant: var(--color-green-800);
 	}
 }
 
 [data-accent="blue"] {
 	--primary: var(--color-blue-800);
 	--on-primary: var(--color-white);
+	--on-primary-variant: var(--color-blue-200);
 
 	&:where([data-theme="dark"]) {
 		--primary: var(--color-blue-200);
 		--on-primary: var(--color-blue-900);
+		--on-primary-variant: var(--color-blue-800);
 	}
 }
 
 [data-accent="purple"] {
 	--primary: var(--color-purple-800);
 	--on-primary: var(--color-white);
+	--on-primary-variant: var(--color-purple-200);
 
 	&:where([data-theme="dark"]) {
 		--primary: var(--color-purple-200);
 		--on-primary: var(--color-purple-900);
+		--on-primary-variant: var(--color-purple-800);
 	}
 }
 
 [data-accent="pink"] {
 	--primary: var(--color-pink-800);
 	--on-primary: var(--color-white);
+	--on-primary-variant: var(--color-pink-200);
 
 	&:where([data-theme="dark"]) {
 		--primary: var(--color-pink-200);
 		--on-primary: var(--color-pink-900);
+		--on-primary-variant: var(--color-pink-800);
 	}
 }
 
 [data-accent="neutral"] {
 	--primary: var(--color-neutral-800);
 	--on-primary: var(--color-white);
+	--on-primary-variant: var(--color-neutral-200);
 
 	&:where([data-theme="dark"]) {
 		--primary: var(--color-neutral-200);
 		--on-primary: var(--color-neutral-900);
+		--on-primary-variant: var(--color-neutral-800);
 	}
 }
 
@@ -274,6 +286,7 @@ body {
 	/* Colors */
 	--ui-color-primary: var(--primary, var(--color-blue-800));
 	--ui-color-on-primary: var(--on-primary, var(--color-white));
+	--ui-color-on-primary-variant: var(--on-primary-variant, var(--color-neutral-200));
 
 	--ui-color-error: var(--error, var(--color-red-500));
 	--ui-color-on-error: var(--on-error, var(--color-white));

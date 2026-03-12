@@ -16,7 +16,7 @@
 		<header
 			class={[
 				'flex w-full items-center justify-between gap-1 p-1',
-				popupStore.dragging ? 'cursor-grabbing' : 'cursor-move',
+				popupStore.dragging ? 'cursor-grabbing' : 'cursor-grab',
 			]}
 			onpointerdown={onDragStart}
 			role="toolbar"
@@ -26,33 +26,29 @@
 				<CacheNav />
 				{#if isFullMode}
 					<SelectModel/>
-				{:else}
-					{#if storage.settings.simpleModeShowLangs}
-						<div class="flex items-center gap-1">
-							<SelectLanguage
-								alignment="center"
-								autoLang
-								detectedLang={store.detectedLang}
-								mode="simple"
-								onchange={store.reTranslate}
-								bind:value={storage.settings.sourceLang}
-							/>
-							<Button
-								disabled={!store.detectedLang}
-								icon={mdiSwapHorizontal}
-								onclick={store.reverseTranslation}
-								size="xs"
-								title={browser.i18n.getMessage('popup_menu_reverse_translate')}
-							/>
-							<SelectLanguage
-								alignment="center"
-								markUILang
-								mode="simple"
-								onchange={store.reTranslate}
-								bind:value={storage.settings.targetLang}
-							/>
-						</div>
-					{/if}
+				{:else if storage.settings.simpleModeShowLangs}
+					<SelectLanguage
+						alignment="center"
+						autoLang
+						detectedLang={store.detectedLang}
+						mode="simple"
+						onchange={store.reTranslate}
+						bind:value={storage.settings.sourceLang}
+					/>
+					<Button
+						disabled={!store.detectedLang}
+						icon={mdiSwapHorizontal}
+						onclick={store.reverseTranslation}
+						size="xs"
+						title={browser.i18n.getMessage('popup_menu_reverse_translate')}
+					/>
+					<SelectLanguage
+						alignment="center"
+						markUILang
+						mode="simple"
+						onchange={store.reTranslate}
+						bind:value={storage.settings.targetLang}
+					/>
 				{/if}
 			</div>
 			<div class="flex items-center gap-1">
@@ -114,7 +110,6 @@ let reference = $derived<VirtualElement>({
 const isFullMode = $derived<boolean>(storage.settings.popupMode === PopupMode.Full);
 
 const DRAG_THRESHOLD = 5;
-
 let dragStartX = $state<number | null>(null);
 let dragStartY = $state<number | null>(null);
 let dragInitialized = $state<boolean>(false);

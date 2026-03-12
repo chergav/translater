@@ -5,11 +5,18 @@
 		className,
 	]}
 >
-	<div class="flex flex-col gap-0.5">
-		<span>{label}</span>
-		{#if hint}
-			<span class="text-sm text-color-on-surface-variant">{hint}</span>
+	<div class="flex items-center gap-4">
+		{#if icon}
+			<div>
+				<Icon d={icon} />
+			</div>
 		{/if}
+		<div class="flex flex-col gap-0.5">
+			<span>{label}</span>
+			{#if hint}
+				<span class="text-sm text-color-on-surface-variant">{hint}</span>
+			{/if}
+		</div>
 	</div>
 	<div class="group/track relative flex items-center justify-center">
 		<input class="peer sr-only" {...rest} type="checkbox" bind:checked />
@@ -49,11 +56,13 @@
 
 <script lang="ts">
 import type { HTMLInputAttributes, ClassValue } from 'svelte/elements';
+import Icon from './Icon.svelte';
 
 interface Props extends HTMLInputAttributes {
 	checked: boolean
 	label: string
 	hint?: string
+	icon?: string
 	class?: ClassValue
 }
 
@@ -61,6 +70,7 @@ let {
 	checked = $bindable(),
 	label,
 	hint,
+	icon,
 	class: className,
 	...rest
 }: Props = $props();

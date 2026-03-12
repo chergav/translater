@@ -31,6 +31,11 @@ class Store {
 		const textToTranslate = this.textToTranslate.trim();
 		if (!textToTranslate) return;
 
+		if (storage.settings.sourceLang === storage.settings.targetLang) {
+			this.errors.push('Source and target languages must be different');
+			return;
+		}
+
 		this.translated = null;
 		this.translationAi = null;
 		// this.detectedLang = undefined;
