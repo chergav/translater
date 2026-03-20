@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "История"
     },
+    "options_tab_support": {
+        "message": "Поддержка"
+    },
     "options_general_translation_button": {
         "message": "Кнопка перевода"
     },
@@ -75,7 +78,7 @@
         "message": "Кнопка не появится при выборе текста на языке вашей системы."
     },
     "options_hide_button_on_sites": {
-        "message": "Скрыть кнопку перевода на определенных сайтах:"
+        "message": "Скрыто на сайтах"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Добавьте домены с помощью меню всплывающего окна на сайте, который вы хотите исключить."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "Меньше"
     },
+    "options_select_langs_title": {
+        "message": "Языки"
+    },
     "select_lang_source": {
         "message": "Перевести с"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "Скрыть кнопку перевода"
     },
-    "popup_menu_options_link": {
-        "message": "Дополнительные настройки"
+    "popup_menu_options_all_settings": {
+        "message": "Все настройки"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "Переключиться в простой режим"
@@ -417,7 +423,7 @@
         "message": "бурятский"
     },
     "language_ca": {
-        "message": "каталонский"
+        "message": "каталанский"
     },
     "language_ce": {
         "message": "Чеченский"

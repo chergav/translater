@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "Història"
     },
+    "options_tab_support": {
+        "message": "Suport"
+    },
     "options_general_translation_button": {
         "message": "Botó de traducció"
     },
@@ -75,7 +78,7 @@
         "message": "El botó no apareixerà quan seleccioneu text en l'idioma del vostre sistema"
     },
     "options_hide_button_on_sites": {
-        "message": "Amaga el botó de traducció en llocs web específics:"
+        "message": "Ocult als llocs"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Afegiu dominis mitjançant el menú de la finestra emergent del lloc que voleu excloure."
@@ -90,7 +93,7 @@
         "message": "Mostra la parella d'idiomes"
     },
     "options_show_langs_simple_hint": {
-        "message": "Mostra els idiomes d'origen i de destinació (només en mode senzill)."
+        "message": "Mostra els idiomes d'origen i de destinació (només en mode simple)."
     },
     "options_show_transliteration": {
         "message": "Mostra la transliteració"
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "Menys"
     },
+    "options_select_langs_title": {
+        "message": "Idiomes"
+    },
     "select_lang_source": {
         "message": "Traduir de"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "Amaga el botó de traducció"
     },
-    "popup_menu_options_link": {
-        "message": "Configuracions addicionals"
+    "popup_menu_options_all_settings": {
+        "message": "Totes les configuracions"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "Canvia al mode simple"

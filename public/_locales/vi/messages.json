@@ -3,7 +3,7 @@
         "message": "Trình dịch - dịch văn bản đã chọn"
     },
     "app_description": {
-        "message": "Dịch văn bản đã chọn bằng Google Translate"
+        "message": "Dịch văn bản đã chọn bằng Google Dịch"
     },
     "context_menus_title": {
         "message": "Dịch văn bản đã chọn"
@@ -31,6 +31,9 @@
     },
     "options_tab_history": {
         "message": "Lịch sử"
+    },
+    "options_tab_support": {
+        "message": "Hỗ trợ"
     },
     "options_general_translation_button": {
         "message": "Nút dịch"
@@ -75,7 +78,7 @@
         "message": "Nút sẽ không xuất hiện khi chọn văn bản bằng ngôn ngữ hệ thống của bạn"
     },
     "options_hide_button_on_sites": {
-        "message": "Ẩn nút dịch trên các trang web cụ thể:"
+        "message": "Ẩn trên các trang web"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Thêm tên miền bằng menu cửa sổ bật lên trên trang web bạn muốn loại trừ."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "Ít hơn"
     },
+    "options_select_langs_title": {
+        "message": "Ngôn ngữ"
+    },
     "select_lang_source": {
         "message": "Dịch từ"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "Ẩn nút dịch"
     },
-    "popup_menu_options_link": {
-        "message": "Cài đặt bổ sung"
+    "popup_menu_options_all_settings": {
+        "message": "Tất cả cài đặt"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "Chuyển sang chế độ đơn giản"
@@ -450,7 +456,7 @@
         "message": "Tiếng Tatar Krym (chữ Cyrillic)"
     },
     "language_crh_Latn": {
-        "message": "Tiếng Tatar Krym (tiếng Latin)"
+        "message": "Tiếng Tatar Krym (tiếng Latinh)"
     },
     "language_crs": {
         "message": "Tiếng Creole Seychellois"
@@ -963,7 +969,7 @@
         "message": "Tiếng Tajik"
     },
     "language_th": {
-        "message": "tiếng Thái"
+        "message": "Thái"
     },
     "language_ti": {
         "message": "Tigrinya"

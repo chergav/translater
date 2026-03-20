@@ -20,33 +20,36 @@
 	</ListboxButton>
 	<ListboxOptions
 		class={[
-			'absolute left-0 z-10 scrollbar max-h-72 list-none overflow-y-auto rounded-xl py-1 text-sm shadow-lg select-none',
-			'border border-color-surface-high bg-color-surface',
+			'absolute left-1/2 z-10 -translate-x-1/2 overflow-hidden',
+			'rounded-2xl bg-color-surface-container-low shadow-sm',
 		]}
 	>
-		{#each voices as voice (voice)}
-			<ListboxOption
-				class={[
-					'flex cursor-pointer items-center gap-2 py-1.5 pr-2.5 pl-2 whitespace-nowrap',
-					'focus-within:outline-0 not-aria-selected:hover:bg-color-primary/5 focus:bg-color-primary/5 aria-selected:bg-color-primary/10',
-				]}
-				value={voice}
-			>
-				{#snippet children(selected)}
-					<span class="inline-flex size-5 shrink-0">
-						<Icon
-							class={[
-								'shrink-0 text-color-primary',
-								selected ? 'inline-flex' : 'hidden',
-							]}
-							d={mdiCheck}
-							size="20"
-						/>
-					</span>
-					<span class={[selected && 'font-medium text-color-primary']}>{voice.name}</span>
-				{/snippet}
-			</ListboxOption>
-		{/each}
+		<div class="scrollbar max-h-72 overflow-y-auto p-1 text-sm select-none">
+			{#each voices as voice (voice)}
+				<ListboxOption
+					class={[
+						'flex cursor-pointer items-center gap-2 py-1.5 pr-2.5 pl-2 whitespace-nowrap transition-colors',
+						'focus-within:outline-0 not-aria-selected:hover:bg-color-primary/5 focus:bg-color-primary/5 aria-selected:bg-color-primary/10',
+						'rounded-sm first:rounded-t-xl last:rounded-b-xl',
+					]}
+					value={voice}
+				>
+					{#snippet children(selected)}
+						<span class="inline-flex size-5 shrink-0">
+							<Icon
+								class={[
+									'shrink-0 text-color-primary',
+									selected ? 'inline-flex' : 'hidden',
+								]}
+								d={mdiCheck}
+								size="18"
+							/>
+						</span>
+						<span class={[selected && 'text-color-primary']}>{voice.name}</span>
+					{/snippet}
+				</ListboxOption>
+			{/each}
+		</div>
 	</ListboxOptions>
 </Listbox>
 

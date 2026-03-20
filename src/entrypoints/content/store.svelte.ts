@@ -26,6 +26,11 @@ class Store {
 	public textToHighlight = $state<string>('');
 	public downloadProgress = $state<number | null>(null);
 	private isProviderGoogle = $derived<boolean>(storage.settings.modelId === GOOGLE_TRANSLATE_MODEL_ID);
+	public showFooter = $derived<boolean>(
+		!!this.translated?.dict ||
+		!!this.translated?.definitions ||
+		!!this.translated?.examples,
+	);
 
 	public async translate() {
 		const textToTranslate = this.textToTranslate.trim();

@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "История"
     },
+    "options_tab_support": {
+        "message": "поддръжка"
+    },
     "options_general_translation_button": {
         "message": "Бутон за превод"
     },
@@ -75,7 +78,7 @@
         "message": "Бутонът няма да се появи, когато изберете текст на системния си език"
     },
     "options_hide_button_on_sites": {
-        "message": "Скриване на бутона за превод на определени уебсайтове:"
+        "message": "Скрити в сайтове"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Добавете домейни, като използвате менюто на изскачащия прозорец на сайта, който искате да изключите."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "По-малко"
     },
+    "options_select_langs_title": {
+        "message": "Езици"
+    },
     "select_lang_source": {
         "message": "Превеждай от"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "Скриване на бутона за превод"
     },
-    "popup_menu_options_link": {
-        "message": "Допълнителни настройки"
+    "popup_menu_options_all_settings": {
+        "message": "Всички настройки"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "Превключете към прост режим"

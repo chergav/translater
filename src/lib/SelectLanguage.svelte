@@ -9,9 +9,9 @@
 >
 	<ListboxButton
 		class={[
-			'relative flex h-8 cursor-pointer items-center overflow-hidden rounded-full pr-8 pl-3',
+			'relative flex h-8 cursor-pointer items-center overflow-hidden rounded-sm pr-8 pl-2',
 			'text-start whitespace-nowrap transition-colors active:bg-color-primary/20',
-			open ? 'bg-color-primary/10' : 'bg-color-surface-container hover:bg-color-primary/10',
+			open ? 'bg-color-primary/10' : 'bg-color-surface-container-low hover:bg-color-primary/10',
 			mode === 'full' && 'w-52',
 		]}
 		title={button.title}
@@ -23,23 +23,24 @@
 				open && '-scale-y-100',
 			]}
 			d={mdiChevronDown}
-			size="20"
+			size="18"
 		/>
 	</ListboxButton>
 	<ListboxOptions
 		class={[
-			'absolute z-10 flex max-h-80 flex-col overflow-hidden rounded-xl shadow-lg',
-			'border border-color-surface-high bg-color-surface',
+			'absolute z-10 flex cursor-default flex-col',
+			'overflow-hidden rounded-2xl bg-color-surface-container-low shadow-sm',
 			alignClass,
 		]}
 	>
-		<div class="relative flex items-center">
+		<div
+			class="relative flex items-center p-1"
+			onpointerdown={e => e.stopPropagation()}
+			role="presentation"
+		>
 			<input
 				bind:this={inputSearch}
-				class={[
-					'h-10 w-full border-x-0 border-t-0 border-b px-2 text-sm outline-none',
-					'border-color-surface-high bg-color-surface',
-				]}
+				class="h-8 w-full px-2 text-sm outline-none"
 				placeholder={browser.i18n.getMessage('select_language_search_placeholder')}
 				spellcheck="false"
 				type="text"
@@ -59,29 +60,34 @@
 				/>
 			{/if}
 		</div>
-		<div class="scrollbar flex overflow-x-hidden overflow-y-auto p-1">
+		<div class="mx-1 h-px bg-color-surface-high"></div>
+		<div
+			class="scrollbar flex max-h-80 overflow-x-hidden overflow-y-auto p-1"
+			onpointerdown={e => e.stopPropagation()}
+			role="presentation"
+		>
 			{#each langColumns as langColumn, index (index)}
 				<div class="flex flex-col">
 					{#each langColumn as lang, index (index)}
 						<ListboxOption
 							class={[
-								'flex cursor-pointer items-center gap-2 rounded-full py-1.5 pr-2.5 pl-2 whitespace-nowrap',
+								'flex cursor-pointer items-center gap-2 rounded-sm py-1.5 pr-2.5 pl-2 whitespace-nowrap transition-colors',
 								'not-aria-selected:hover:bg-color-primary/5 aria-selected:bg-color-primary/10',
 							]}
 							value={lang.code}
 						>
 							{#snippet children(selected)}
 								{@const markYourLang = markUILang && UILanguage.startsWith(lang.code)}
-								<span class="inline-flex size-5">
+								<span class="inline-flex size-[18px]">
 									{#if selected}
-										<Icon class="text-color-primary" d={mdiCheck} size="20" />
+										<Icon class="text-color-primary" d={mdiCheck} size="18" />
 									{:else if markYourLang}
-										<span title="Your language">
-											<Icon class="text-color-on-surface-variant" d={mdiStarOutline} size="20" />
+										<span class="size-[18px]" title="Your language">
+											<Icon class="text-color-on-surface-variant" d={mdiStarOutline} size="18" />
 										</span>
 									{/if}
 								</span>
-								<span class={selected ? 'font-medium text-color-primary' : ''}>
+								<span class={[selected && 'text-color-primary']}>
 									<!-- @html to show <mark></mark> -->
 									<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 									{@html lang.language}

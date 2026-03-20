@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "Historia"
     },
+    "options_tab_support": {
+        "message": "Wsparcie"
+    },
     "options_general_translation_button": {
         "message": "Przycisk tłumaczenia"
     },
@@ -75,7 +78,7 @@
         "message": "Przycisk nie pojawi się podczas wybierania tekstu w języku systemu"
     },
     "options_hide_button_on_sites": {
-        "message": "Ukryj przycisk tłumaczenia na określonych stronach internetowych:"
+        "message": "Ukryte na stronach"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Dodaj domeny, korzystając z menu wyskakującego okienka w witrynie, którą chcesz wykluczyć."
@@ -111,7 +114,7 @@
         "message": "Modelka"
     },
     "options_appearance_theme": {
-        "message": "Motyw"
+        "message": "Temat"
     },
     "options_appearance_accent_color": {
         "message": "Kolor akcentujący"
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "Mniej"
     },
+    "options_select_langs_title": {
+        "message": "Języki"
+    },
     "select_lang_source": {
         "message": "Tłumacz z"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "Ukryj przycisk tłumaczenia"
     },
-    "popup_menu_options_link": {
-        "message": "Dodatkowe ustawienia"
+    "popup_menu_options_all_settings": {
+        "message": "Wszystkie ustawienia"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "Przełącz na tryb prosty"
@@ -768,7 +774,7 @@
         "message": "Meiteilon (Manipuri)"
     },
     "language_mr": {
-        "message": "Marathi"
+        "message": "marathi"
     },
     "language_ms": {
         "message": "Malajski"
@@ -777,7 +783,7 @@
         "message": "Malajski (Jawi)"
     },
     "language_mt": {
-        "message": "Maltański"
+        "message": "maltański"
     },
     "language_mwr": {
         "message": "Marwadi"
@@ -984,7 +990,7 @@
         "message": "Tongijski"
     },
     "language_tpi": {
-        "message": "Tok Pisan"
+        "message": "Tok Pisin"
     },
     "language_tr": {
         "message": "turecki"
@@ -1056,7 +1062,7 @@
         "message": "Zapotek"
     },
     "language_zh_CN": {
-        "message": "chiński (uproszczony)"
+        "message": "Chiński (uproszczony)"
     },
     "language_zh_TW": {
         "message": "chiński (tradycyjny)"

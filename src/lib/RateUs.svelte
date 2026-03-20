@@ -1,5 +1,5 @@
 <div class="flex w-fit flex-col items-center gap-2">
-	<p class="text-sm">Let us know your vibe:</p>
+	<p class="text-sm text-color-on-surface-variant">Let us know your vibe:</p>
 	<div class="flex items-center gap-2">
 		{#each buttons as { label, handler } (label)}
 			<Button

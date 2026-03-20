@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "Historie"
     },
+    "options_tab_support": {
+        "message": "Støtte"
+    },
     "options_general_translation_button": {
         "message": "Oversettelsesknapp"
     },
@@ -75,7 +78,7 @@
         "message": "Knappen vises ikke når du velger tekst på systemspråket ditt"
     },
     "options_hide_button_on_sites": {
-        "message": "Skjul oversettelsesknapp på bestemte nettsteder:"
+        "message": "Skjult på nettsteder"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Legg til domener ved å bruke menyen i popup-vinduet på nettstedet du vil ekskludere."
@@ -141,7 +144,7 @@
         "message": "Stemmer"
     },
     "options_tts_table_caption": {
-        "message": "Hvis et språk ikke er oppført, vil en ekstern tekst-til-tale-tjeneste bli brukt."
+        "message": "Hvis et språk ikke er oppført, vil en ekstern tekst-til-tale-tjeneste brukes."
     },
     "options_tts_no_voices_found": {
         "message": "Nettleseren din støtter ikke talesyntese. Vi bruker en ekstern tjeneste i stedet."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "Mindre"
     },
+    "options_select_langs_title": {
+        "message": "Språk"
+    },
     "select_lang_source": {
         "message": "Oversett fra"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "Skjul oversett-knappen"
     },
-    "popup_menu_options_link": {
-        "message": "Ytterligere innstillinger"
+    "popup_menu_options_all_settings": {
+        "message": "Alle innstillinger"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "Bytt til enkel modus"

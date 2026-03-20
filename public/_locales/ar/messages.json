@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "التاريخ"
     },
+    "options_tab_support": {
+        "message": "الدعم"
+    },
     "options_general_translation_button": {
         "message": "زر الترجمة"
     },
@@ -75,7 +78,7 @@
         "message": "لن يظهر الزر عند تحديد النص بلغة النظام لديك"
     },
     "options_hide_button_on_sites": {
-        "message": "إخفاء زر الترجمة في مواقع محددة:"
+        "message": "مخفي في المواقع"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "قم بإضافة النطاقات باستخدام قائمة النافذة المنبثقة على الموقع الذي تريد استبعاده."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "أقل"
     },
+    "options_select_langs_title": {
+        "message": "اللغات"
+    },
     "select_lang_source": {
         "message": "ترجمة من"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "إخفاء زر الترجمة"
     },
-    "popup_menu_options_link": {
-        "message": "إعدادات إضافية"
+    "popup_menu_options_all_settings": {
+        "message": "جميع الإعدادات"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "قم بالتبديل إلى الوضع البسيط"
@@ -813,7 +819,7 @@
         "message": "النوير"
     },
     "language_ny": {
-        "message": "تشيشيوا"
+        "message": "تشيتشيوا"
     },
     "language_oc": {
         "message": "الأوكيتانية"

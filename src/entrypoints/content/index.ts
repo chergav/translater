@@ -7,16 +7,16 @@ export default defineContentScript({
 
 	async main(ctx) {
 		if (window.top !== window && !window.frameElement) {
-			console.debug('[Translater]: skip iframe');
+			console.debug('[Translator]: skip iframe');
 			return;
 		}
 
 		if (!document.body || !document.documentElement) {
-			console.debug('[Translater]: document has no body');
+			console.debug('[Translator]: document has no body');
 			return;
 		}
 
-		// console.debug('[Translater]: main');
+		// console.debug('[Translator]: main');
 
 		/* @vite-ignore */
 		const mod = await import(

@@ -56,6 +56,7 @@
 				class="text-center text-sm"
 				href="https://chergav.github.io/extensions"
 				icon
+				iconSize="16"
 				label={browser.i18n.getMessage('try_my_extensions')}
 			/>
 		</div>

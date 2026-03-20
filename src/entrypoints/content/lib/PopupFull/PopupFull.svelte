@@ -1,6 +1,8 @@
-<PopupMain />
+<main class="flex flex-col rounded-xl bg-color-surface">
+	<PopupMain />
 
-<PopupFooter />
+	<PopupFooter />
+</main>
 
 <script lang="ts">
 import PopupMain from './lib/PopupMain/PopupMain.svelte';

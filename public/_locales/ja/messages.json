@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "歴史"
     },
+    "options_tab_support": {
+        "message": "サポート"
+    },
     "options_general_translation_button": {
         "message": "翻訳ボタン"
     },
@@ -75,7 +78,7 @@
         "message": "システム言語でテキストを選択するとボタンが表示されない"
     },
     "options_hide_button_on_sites": {
-        "message": "特定の Web サイトで翻訳ボタンを非表示にする:"
+        "message": "サイトに隠されている"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "除外したいサイトのポップアップウィンドウのメニューを使用してドメインを追加します。"
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "少ない"
     },
+    "options_select_langs_title": {
+        "message": "言語"
+    },
     "select_lang_source": {
         "message": "から翻訳"
     },
@@ -207,7 +213,7 @@
         "message": "例"
     },
     "popup_perhaps_you_meant": {
-        "message": "おそらく次のことを言いたかったのでしょう。"
+        "message": "おそらく次のことを言いたかったのでしょう："
     },
     "popup_original_language": {
         "message": "元の言語:"
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "翻訳ボタンを非表示にする"
     },
-    "popup_menu_options_link": {
-        "message": "追加設定"
+    "popup_menu_options_all_settings": {
+        "message": "すべての設定"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "シンプルモードに切り替える"
@@ -666,7 +672,7 @@
         "message": "カンナダ語"
     },
     "language_ko": {
-        "message": "韓国語"
+        "message": "韓国人"
     },
     "language_kr": {
         "message": "カヌリ"
@@ -675,7 +681,7 @@
         "message": "クリオ"
     },
     "language_ktu": {
-        "message": "キツバ"
+        "message": "キトゥバ"
     },
     "language_ku": {
         "message": "クルド語 (クルマンジ)"

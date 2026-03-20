@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "Ajalugu"
     },
+    "options_tab_support": {
+        "message": "Toetus"
+    },
     "options_general_translation_button": {
         "message": "Tõlke nupp"
     },
@@ -75,7 +78,7 @@
         "message": "Süsteemi keeles teksti valimisel nuppu ei kuvata"
     },
     "options_hide_button_on_sites": {
-        "message": "Peida tõlkenupp konkreetsetel veebisaitidel:"
+        "message": "Saitidel peidetud"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Lisage domeene selle saidi hüpikakna menüü abil, mille soovite välistada."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "Vähem"
     },
+    "options_select_langs_title": {
+        "message": "Keeled"
+    },
     "select_lang_source": {
         "message": "Tõlgi keelest"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "Peida tõlkenupp"
     },
-    "popup_menu_options_link": {
-        "message": "Lisaseaded"
+    "popup_menu_options_all_settings": {
+        "message": "Kõik seaded"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "Lülituge lihtrežiimile"

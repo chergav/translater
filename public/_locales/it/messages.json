@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "Storia"
     },
+    "options_tab_support": {
+        "message": "Supporto"
+    },
     "options_general_translation_button": {
         "message": "Pulsante di traduzione"
     },
@@ -75,7 +78,7 @@
         "message": "Il pulsante non verrà visualizzato quando selezioni il testo nella lingua del tuo sistema"
     },
     "options_hide_button_on_sites": {
-        "message": "Nascondi il pulsante di traduzione su siti Web specifici:"
+        "message": "Nascosto sui siti"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Aggiungi domini utilizzando il menu della finestra popup sul sito che desideri escludere."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "Meno"
     },
+    "options_select_langs_title": {
+        "message": "Lingue"
+    },
     "select_lang_source": {
         "message": "Traduci da"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "Nascondi il pulsante di traduzione"
     },
-    "popup_menu_options_link": {
-        "message": "Impostazioni aggiuntive"
+    "popup_menu_options_all_settings": {
+        "message": "Tutte le impostazioni"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "Passa alla modalità semplice"
@@ -339,7 +345,7 @@
         "message": "Assamese"
     },
     "language_av": {
-        "message": "Avar"
+        "message": "Avaro"
     },
     "language_awa": {
         "message": "Awadhi"
@@ -417,7 +423,7 @@
         "message": "Buriato"
     },
     "language_ca": {
-        "message": "catalano"
+        "message": "Catalano"
     },
     "language_ce": {
         "message": "Ceceno"
@@ -465,7 +471,7 @@
         "message": "Gallese"
     },
     "language_da": {
-        "message": "Danese"
+        "message": "danese"
     },
     "language_de": {
         "message": "tedesco"
@@ -1050,7 +1056,7 @@
         "message": "Maya yucatechi"
     },
     "language_yue": {
-        "message": "cantonese"
+        "message": "Cantonese"
     },
     "language_zap": {
         "message": "Zapoteco"

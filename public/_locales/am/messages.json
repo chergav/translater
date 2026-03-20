@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "ታሪክ"
     },
+    "options_tab_support": {
+        "message": "ድጋፍ"
+    },
     "options_general_translation_button": {
         "message": "የትርጉም ቁልፍ"
     },
@@ -75,7 +78,7 @@
         "message": "በስርዓት ቋንቋህ ጽሑፍ ስትመርጥ አዝራሩ አይታይም።"
     },
     "options_hide_button_on_sites": {
-        "message": "በተወሰኑ ድር ጣቢያዎች ላይ የትርጉም ቁልፍን ደብቅ፡-"
+        "message": "በጣቢያዎች ላይ ተደብቋል"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "ማግለል በሚፈልጉት ጣቢያ ላይ ብቅ ባይ መስኮትን በመጠቀም ጎራዎችን ያክሉ።"
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "ያነሰ"
     },
+    "options_select_langs_title": {
+        "message": "ቋንቋዎች"
+    },
     "select_lang_source": {
         "message": "ከ ተርጉም።"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "የትርጉም ቁልፍን ደብቅ"
     },
-    "popup_menu_options_link": {
-        "message": "ተጨማሪ ቅንብሮች"
+    "popup_menu_options_all_settings": {
+        "message": "ሁሉም ቅንብሮች"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "ወደ ቀላል ሁነታ ቀይር"
@@ -1035,7 +1041,7 @@
         "message": "ዋራይ"
     },
     "language_wo": {
-        "message": "ወላፈን"
+        "message": "ወሎየ"
     },
     "language_xh": {
         "message": "ፆሳ"

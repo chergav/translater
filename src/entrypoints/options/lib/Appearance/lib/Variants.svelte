@@ -1,9 +1,9 @@
-<div class="flex flex-wrap gap-4">
+<div class="flex flex-wrap gap-2">
 	{#each themeVariants as { value, label } (value)}
 		<RadioHeadless {label} {value} bind:group={storage.settings.themeVariant}>
 			<div data-theme={storage.themeClass} data-variant={value}>
-				<div class="bg-color-surface-container p-5">
-					<div class="rounded-2xl bg-color-surface px-3 py-1.5 text-center whitespace-nowrap">
+				<div class="overflow-hidden rounded-xl bg-color-surface-container px-3 py-4">
+					<div class="rounded-xl bg-color-surface p-1 text-center text-sm whitespace-nowrap">
 						<p class="text-color-on-surface">Text primary</p>
 						<p class="text-color-on-surface-variant">Text secondary</p>
 					</div>
@@ -41,6 +41,10 @@ const themeVariants: {
 	{
 		value: ThemeVariant.Stone,
 		label: 'Stone',
+	},
+	{
+		value: ThemeVariant.Mauve,
+		label: 'Mauve',
 	},
 ];
 </script>

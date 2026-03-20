@@ -27,10 +27,13 @@
         "message": "Açılır pencere"
     },
     "options_tab_appearance": {
-        "message": "Dış görünüm"
+        "message": "Dış görünüş"
     },
     "options_tab_history": {
         "message": "Tarih"
+    },
+    "options_tab_support": {
+        "message": "Destek"
     },
     "options_general_translation_button": {
         "message": "Çeviri düğmesi"
@@ -75,7 +78,7 @@
         "message": "Sistem dilinizde metin seçerken düğme görünmeyecek"
     },
     "options_hide_button_on_sites": {
-        "message": "Belirli web sitelerinde çeviri düğmesini gizle:"
+        "message": "Sitelerde gizli"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Hariç tutmak istediğiniz sitedeki açılır pencere menüsünü kullanarak alan adlarını ekleyin."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "Daha az"
     },
+    "options_select_langs_title": {
+        "message": "Diller"
+    },
     "select_lang_source": {
         "message": "Şuradan tercüme et:"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "Çevir düğmesini gizle"
     },
-    "popup_menu_options_link": {
-        "message": "Ek ayarlar"
+    "popup_menu_options_all_settings": {
+        "message": "Tüm ayarlar"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "Basit Moda Geç"
@@ -618,7 +624,7 @@
         "message": "İzlandaca"
     },
     "language_it": {
-        "message": "İtalyanca"
+        "message": "İtalyan"
     },
     "language_iu": {
         "message": "İnuktuca (Heceler)"

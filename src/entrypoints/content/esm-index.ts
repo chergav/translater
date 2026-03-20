@@ -42,9 +42,14 @@ export default async (ctx: ContentScriptContext) => {
 		},
 		onRemove: app => {
 			if (app) unmount(app);
-			// console.debug('[Translater]: removing UI');
+			// console.debug('[Translator]: removing UI');
 		},
 	});
+
+	if (import.meta.env.DEV) {
+		document.querySelector(CUSTOM_ELEMENT_TAG)?.remove();
+	}
+
 	ui.mount();
-	// console.debug('[Translater]: Mounted successfully');
+	// console.debug('[Translator]: Mounted successfully');
 };

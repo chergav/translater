@@ -1,12 +1,13 @@
 <main class="flex h-screen flex-col items-center p-4">
-	<div class="flex size-full max-w-6xl flex-row gap-4">
+<!-- max-w-6xl -->
+	<div class="flex size-full flex-row gap-4">
 		<div class="flex flex-col justify-between">
-			<div class="flex flex-col">
-				<div class="flex items-center pb-4">
+			<div class="flex flex-col gap-4">
+				<div class="flex items-center">
 					<img alt="logo" src="/icons/128.png" width="48" />
 					<span class="ml-4 text-xl">Translator</span>
 				</div>
-				<div class="flex flex-col gap-1">
+				<div class="flex flex-col">
 					{#each Object.entries(tabs) as [hash, tab] (hash)}
 						<Button
 							active={activeTabHash === hash}
@@ -15,6 +16,7 @@
 							onclick={() => {
 								activeTabHash = hash as TabsHash;
 							}}
+							size="md"
 							tab
 						/>
 					{/each}
@@ -30,7 +32,7 @@
 				/>
 			</div>
 		</div>
-		<div class="flex size-full flex-col overflow-hidden rounded-[16px] bg-color-surface">
+		<div class="flex size-full flex-col overflow-hidden rounded-3xl bg-color-surface *:p-6">
 			<CurrentComponent />
 		</div>
 	</div>
@@ -101,7 +103,7 @@ const tabs: Tabs = {
 		component: History,
 	},
 	'#support': {
-		label: 'Support',
+		label: browser.i18n.getMessage('options_tab_support'),
 		icon: mdiHelpCircleOutline,
 		component: Support,
 	},

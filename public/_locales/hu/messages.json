@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "Történelem"
     },
+    "options_tab_support": {
+        "message": "Támogatás"
+    },
     "options_general_translation_button": {
         "message": "Fordítás gomb"
     },
@@ -75,7 +78,7 @@
         "message": "A gomb nem jelenik meg, amikor szöveget választ ki a rendszer nyelvén"
     },
     "options_hide_button_on_sites": {
-        "message": "Fordítás gomb elrejtése bizonyos webhelyeken:"
+        "message": "Rejtett webhelyeken"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Adjon hozzá domaineket a kizárni kívánt webhely felugró ablakának menüjével."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "Kevesebbet"
     },
+    "options_select_langs_title": {
+        "message": "Nyelvek"
+    },
     "select_lang_source": {
         "message": "Fordítás innen"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "Fordítás gomb elrejtése"
     },
-    "popup_menu_options_link": {
-        "message": "További beállítások"
+    "popup_menu_options_all_settings": {
+        "message": "Minden beállítás"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "Váltson egyszerű módra"

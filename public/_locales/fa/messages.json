@@ -3,7 +3,7 @@
         "message": "مترجم - ترجمه متن انتخاب شده"
     },
     "app_description": {
-        "message": "متن انتخاب شده را با Google Translate ترجمه کنید"
+        "message": "متن انتخابی را با Google Translate ترجمه کنید"
     },
     "context_menus_title": {
         "message": "ترجمه متن انتخاب شده"
@@ -31,6 +31,9 @@
     },
     "options_tab_history": {
         "message": "تاریخچه"
+    },
+    "options_tab_support": {
+        "message": "پشتیبانی کنید"
     },
     "options_general_translation_button": {
         "message": "دکمه ترجمه"
@@ -75,7 +78,7 @@
         "message": "دکمه هنگام انتخاب متن به زبان سیستم شما ظاهر نمی شود"
     },
     "options_hide_button_on_sites": {
-        "message": "پنهان کردن دکمه ترجمه در وب سایت های خاص:"
+        "message": "در سایت ها پنهان شده است"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "دامنه ها را با استفاده از منوی پنجره بازشو در سایتی که می خواهید حذف کنید اضافه کنید."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "کمتر"
     },
+    "options_select_langs_title": {
+        "message": "زبان ها"
+    },
     "select_lang_source": {
         "message": "ترجمه از"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "پنهان کردن دکمه ترجمه"
     },
-    "popup_menu_options_link": {
-        "message": "تنظیمات اضافی"
+    "popup_menu_options_all_settings": {
+        "message": "تمام تنظیمات"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "به حالت ساده بروید"

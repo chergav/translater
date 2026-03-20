@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "வரலாறு"
     },
+    "options_tab_support": {
+        "message": "ஆதரவு"
+    },
     "options_general_translation_button": {
         "message": "மொழிபெயர்ப்பு பொத்தான்"
     },
@@ -75,7 +78,7 @@
         "message": "உங்கள் கணினி மொழியில் உரையைத் தேர்ந்தெடுக்கும்போது பட்டன் தோன்றாது"
     },
     "options_hide_button_on_sites": {
-        "message": "குறிப்பிட்ட இணையதளங்களில் மொழிபெயர்ப்பு பொத்தானை மறை:"
+        "message": "தளங்களில் மறைக்கப்பட்டுள்ளது"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "நீங்கள் விலக்க விரும்பும் தளத்தில் பாப்அப் சாளரத்தின் மெனுவைப் பயன்படுத்தி டொமைன்களைச் சேர்க்கவும்."
@@ -174,7 +177,7 @@
         "message": "கூடுதல் பெரியது (20px)"
     },
     "options_support_msg": {
-        "message": "ஏதாவது வேலை செய்யவில்லை என்றால், அல்லது உங்களுக்கு ஏதேனும் பரிந்துரைகள் இருந்தால், தயவுசெய்து எனக்கு இங்கே தெரிவிக்கவும்"
+        "message": "ஏதாவது வேலை செய்யவில்லை என்றால் அல்லது உங்களுக்கு ஏதேனும் பரிந்துரைகள் இருந்தால், தயவுசெய்து எனக்கு இங்கே தெரியப்படுத்தவும்"
     },
     "options_support_donations": {
         "message": "நீங்கள் இந்த இலவச மென்பொருளை ஆதரிக்க விரும்பினால்"
@@ -184,6 +187,9 @@
     },
     "text_collapse": {
         "message": "குறைவாக"
+    },
+    "options_select_langs_title": {
+        "message": "மொழிகள்"
     },
     "select_lang_source": {
         "message": "இலிருந்து மொழிபெயர்க்கவும்"
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "மொழிபெயர்ப்பு பொத்தானை மறை"
     },
-    "popup_menu_options_link": {
-        "message": "கூடுதல் அமைப்புகள்"
+    "popup_menu_options_all_settings": {
+        "message": "அனைத்து அமைப்புகளும்"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "எளிய பயன்முறைக்கு மாறவும்"
@@ -525,7 +531,7 @@
         "message": "பிலிப்பினோ (டகாலாக்)"
     },
     "language_fj": {
-        "message": "ஃபிஜியன்"
+        "message": "பிஜியன்"
     },
     "language_fo": {
         "message": "ஃபரோஸ்"
@@ -573,7 +579,7 @@
         "message": "மேங்க்ஸ்"
     },
     "language_ha": {
-        "message": "ஹௌசா"
+        "message": "ஹவுசா"
     },
     "language_haw": {
         "message": "ஹவாய்"

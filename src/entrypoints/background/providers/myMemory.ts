@@ -51,17 +51,17 @@ export async function translateWithMyMemory(
 	});
 
 	if (!response.ok) {
-		throw new Error(`MyMemory API error: ${response.status} ${response.statusText}`);
+		throw new Error(`[MyMemory API]: Error: ${response.status} ${response.statusText}`);
 	}
 
 	const data: MyMemoryResponse = await response.json();
 
 	if (data.responseStatus !== 200) {
-		throw new Error(`MyMemory error: ${data.responseStatus}`);
+		throw new Error(`[MyMemory API]: Error: ${data.responseStatus}`);
 	}
 
 	if (data.quotaFinished) {
-		throw new Error('MyMemory daily quota exceeded');
+		throw new Error('[MyMemory API]: Daily quota exceeded');
 	}
 
 	return {

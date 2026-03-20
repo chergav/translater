@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "Historia"
     },
+    "options_tab_support": {
+        "message": "Soporte"
+    },
     "options_general_translation_button": {
         "message": "Botón de traducción"
     },
@@ -75,7 +78,7 @@
         "message": "El botón no aparecerá al seleccionar texto en el idioma de su sistema"
     },
     "options_hide_button_on_sites": {
-        "message": "Ocultar el botón de traducción en sitios web específicos:"
+        "message": "Oculto en sitios"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Agregue dominios usando el menú de la ventana emergente en el sitio que desea excluir."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "menos"
     },
+    "options_select_langs_title": {
+        "message": "Idiomas"
+    },
     "select_lang_source": {
         "message": "Traducir de"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "Ocultar botón de traducción"
     },
-    "popup_menu_options_link": {
-        "message": "Configuraciones adicionales"
+    "popup_menu_options_all_settings": {
+        "message": "Todas las configuraciones"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "Cambiar al modo simple"

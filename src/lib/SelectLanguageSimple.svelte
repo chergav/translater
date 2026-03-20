@@ -1,9 +1,9 @@
 <label class="ignore-active inline-flex items-center justify-between gap-2 select-none">
-	<div class="flex items-center gap-4">
+	<div class="flex items-center gap-3">
 		{#if icon}
-			<div>
-				<Icon d={icon} />
-			</div>
+			<span class="text-color-on-surface-variant">
+				<Icon d={icon} size="20" />
+			</span>
 		{/if}
 		{#if label}
 			<span>{label}</span>
@@ -12,7 +12,7 @@
 	<select
 		name="select"
 		class={[
-			'cursor-pointer rounded-lg bg-color-surface text-color-on-surface transition-colors',
+			'cursor-pointer rounded-sm bg-color-surface text-color-on-surface transition-colors',
 			'border border-color-surface-highest focus:border-color-outline-variant',
 			'focus-visible:outline-custom focus-visible:outline-color-primary',
 			small ? 'p-1.5 text-sm' : 'p-2.5 text-base',

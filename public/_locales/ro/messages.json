@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "istorie"
     },
+    "options_tab_support": {
+        "message": "Sprijin"
+    },
     "options_general_translation_button": {
         "message": "Butonul de traducere"
     },
@@ -75,7 +78,7 @@
         "message": "Butonul nu va apărea la selectarea textului în limba sistemului"
     },
     "options_hide_button_on_sites": {
-        "message": "Ascundeți butonul de traducere pe anumite site-uri web:"
+        "message": "Ascuns pe site-uri"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Adăugați domenii utilizând meniul ferestrei pop-up de pe site-ul pe care doriți să îl excludeți."
@@ -84,7 +87,7 @@
         "message": "Afișați textul sursă"
     },
     "options_show_original_text_hint": {
-        "message": "Afișează textul original alături de traducere (numai în modul complet)."
+        "message": "Afișați textul original alături de traducere (numai în modul complet)."
     },
     "options_show_langs_simple": {
         "message": "Afișați perechea de limbi"
@@ -144,7 +147,7 @@
         "message": "Dacă o limbă nu este listată, va fi utilizat un serviciu extern de conversie text în vorbire."
     },
     "options_tts_no_voices_found": {
-        "message": "Browserul dvs. nu acceptă sinteza vorbirii. În schimb, vom folosi un serviciu extern."
+        "message": "Browserul dvs. nu acceptă sinteza vorbirii. Vom folosi în schimb un serviciu extern."
     },
     "options_edit_keyboard_shortcut": {
         "message": "editați comenzile rapide de la tastatură"
@@ -184,6 +187,9 @@
     },
     "text_collapse": {
         "message": "Mai puțin"
+    },
+    "options_select_langs_title": {
+        "message": "Limbi"
     },
     "select_lang_source": {
         "message": "Traduceți din"
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "Ascunde butonul de traducere"
     },
-    "popup_menu_options_link": {
-        "message": "Setări suplimentare"
+    "popup_menu_options_all_settings": {
+        "message": "Toate setările"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "Comutați la modul simplu"
@@ -366,7 +372,7 @@
         "message": "Baoulé"
     },
     "language_be": {
-        "message": "Belarus"
+        "message": "belarusă"
     },
     "language_bem": {
         "message": "Bemba"
@@ -912,7 +918,7 @@
         "message": "slovenă"
     },
     "language_sm": {
-        "message": "samoană"
+        "message": "Samoan"
     },
     "language_sn": {
         "message": "Shona"
@@ -963,7 +969,7 @@
         "message": "Tadjik"
     },
     "language_th": {
-        "message": "thailandez"
+        "message": "thailandeză"
     },
     "language_ti": {
         "message": "Tigrinya"

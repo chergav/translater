@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "ประวัติศาสตร์"
     },
+    "options_tab_support": {
+        "message": "สนับสนุน"
+    },
     "options_general_translation_button": {
         "message": "ปุ่มแปล"
     },
@@ -75,7 +78,7 @@
         "message": "ปุ่มจะไม่ปรากฏขึ้นเมื่อเลือกข้อความในภาษาระบบของคุณ"
     },
     "options_hide_button_on_sites": {
-        "message": "ซ่อนปุ่มการแปลบนเว็บไซต์เฉพาะ:"
+        "message": "ซ่อนอยู่ในไซต์"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "เพิ่มโดเมนโดยใช้เมนูหน้าต่างป๊อปอัปบนไซต์ที่คุณต้องการยกเว้น"
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "น้อยลง"
     },
+    "options_select_langs_title": {
+        "message": "ภาษา"
+    },
     "select_lang_source": {
         "message": "แปลจาก."
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "ซ่อนปุ่มแปล"
     },
-    "popup_menu_options_link": {
-        "message": "การตั้งค่าเพิ่มเติม"
+    "popup_menu_options_all_settings": {
+        "message": "การตั้งค่าทั้งหมด"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "สลับไปที่โหมดธรรมดา"
@@ -792,7 +798,7 @@
         "message": "เนปาล"
     },
     "language_new": {
-        "message": "เนปาลภาสะ (เนวารี)"
+        "message": "เนปาลภาสะ (เนวาริ)"
     },
     "language_nhe": {
         "message": "Nahuatl (ฮัวสเตกาตะวันออก)"

@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "ചരിത്രം"
     },
+    "options_tab_support": {
+        "message": "പിന്തുണ"
+    },
     "options_general_translation_button": {
         "message": "വിവർത്തന ബട്ടൺ"
     },
@@ -75,7 +78,7 @@
         "message": "നിങ്ങളുടെ സിസ്റ്റം ഭാഷയിൽ ടെക്സ്റ്റ് തിരഞ്ഞെടുക്കുമ്പോൾ ബട്ടൺ ദൃശ്യമാകില്ല"
     },
     "options_hide_button_on_sites": {
-        "message": "നിർദ്ദിഷ്‌ട വെബ്‌സൈറ്റുകളിലെ വിവർത്തന ബട്ടൺ മറയ്‌ക്കുക:"
+        "message": "സൈറ്റുകളിൽ മറച്ചിരിക്കുന്നു"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "നിങ്ങൾ ഒഴിവാക്കേണ്ട സൈറ്റിലെ പോപ്പ്അപ്പ് വിൻഡോയുടെ മെനു ഉപയോഗിച്ച് ഡൊമെയ്‌നുകൾ ചേർക്കുക."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "കുറവ്"
     },
+    "options_select_langs_title": {
+        "message": "ഭാഷകൾ"
+    },
     "select_lang_source": {
         "message": "എന്നതിൽ നിന്ന് വിവർത്തനം ചെയ്യുക"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "വിവർത്തനം ബട്ടൺ മറയ്ക്കുക"
     },
-    "popup_menu_options_link": {
-        "message": "അധിക ക്രമീകരണങ്ങൾ"
+    "popup_menu_options_all_settings": {
+        "message": "എല്ലാ ക്രമീകരണങ്ങളും"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "ലളിതമായ മോഡിലേക്ക് മാറുക"
@@ -426,7 +432,7 @@
         "message": "സെബുവാനോ"
     },
     "language_cgg": {
-        "message": "കിഗാ"
+        "message": "കിഗ"
     },
     "language_ch": {
         "message": "ചമോറോ"
@@ -807,7 +813,7 @@
         "message": "എൻഡെബെലെ (തെക്ക്)"
     },
     "language_nso": {
-        "message": "സെപീഡി"
+        "message": "സെപ്പേഡി"
     },
     "language_nus": {
         "message": "ന്യൂയർ"

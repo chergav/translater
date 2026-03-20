@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "歷史"
     },
+    "options_tab_support": {
+        "message": "支援"
+    },
     "options_general_translation_button": {
         "message": "翻譯按鈕"
     },
@@ -75,7 +78,7 @@
         "message": "選擇系統語言的文字時不會出現按鈕"
     },
     "options_hide_button_on_sites": {
-        "message": "隱藏特定網站上的翻譯按鈕："
+        "message": "隱藏在網站上"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "使用要排除的網站上的彈出視窗選單新增網域。"
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "少"
     },
+    "options_select_langs_title": {
+        "message": "語言"
+    },
     "select_lang_source": {
         "message": "翻譯自"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "隱藏翻譯按鈕"
     },
-    "popup_menu_options_link": {
-        "message": "附加設定"
+    "popup_menu_options_all_settings": {
+        "message": "所有設定"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "切換到簡單模式"

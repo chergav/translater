@@ -1,17 +1,17 @@
 <label class={['ignore-active flex items-center justify-between gap-2 select-none', full && 'w-full' ]}>
-	<div class="flex items-center gap-4">
-		{#if icon}
-			<div>
-				<Icon d={icon} />
-			</div>
-		{/if}
-		{#if label}
-			<span class={small ? 'text-sm' : 'text-base'}>{label}</span>
-		{/if}
-	</div>
+	{#if label}
+		<div class="flex items-center gap-3">
+			{#if icon}
+				<span class="text-color-on-surface-variant">
+					<Icon d={icon} size="20" />
+				</span>
+			{/if}
+			<span class="text-base">{label}</span>
+		</div>
+	{/if}
 	<select
 		class={[
-			'cursor-pointer rounded-lg bg-color-surface transition-colors select-none',
+			'cursor-pointer rounded-sm bg-color-surface transition-colors select-none',
 			'border border-color-surface-highest focus:border-color-outline-variant',
 			'focus-visible:outline-custom focus-visible:outline-color-primary',
 			small ? 'p-1.5 text-sm' : 'p-2.5 text-base',

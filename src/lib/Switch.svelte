@@ -1,18 +1,18 @@
 <label
 	class={[
-		'group inline-flex cursor-pointer items-center justify-between gap-4 rounded-sm transition-colors select-none',
+		'group inline-flex cursor-pointer items-center justify-between gap-3 rounded-sm transition-colors select-none',
 		'has-disabled:pointer-events-none has-disabled:opacity-50',
 		className,
 	]}
 >
-	<div class="flex items-center gap-4">
+	<div class="flex items-center gap-3">
 		{#if icon}
-			<div>
-				<Icon d={icon} />
-			</div>
+			<span class="text-color-on-surface-variant">
+				<Icon d={icon} size="20" />
+			</span>
 		{/if}
-		<div class="flex flex-col gap-0.5">
-			<span>{label}</span>
+		<div class="flex flex-col">
+			<span class="text-color-on-surface">{label}</span>
 			{#if hint}
 				<span class="text-sm text-color-on-surface-variant">{hint}</span>
 			{/if}

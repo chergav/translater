@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "História"
     },
+    "options_tab_support": {
+        "message": "Suporte"
+    },
     "options_general_translation_button": {
         "message": "Botão de tradução"
     },
@@ -75,7 +78,7 @@
         "message": "O botão não aparecerá ao selecionar texto no idioma do seu sistema"
     },
     "options_hide_button_on_sites": {
-        "message": "Ocultar botão de tradução em sites específicos:"
+        "message": "Escondido em sites"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Adicione domínios usando o menu da janela pop-up do site que deseja excluir."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "Menos"
     },
+    "options_select_langs_title": {
+        "message": "Idiomas"
+    },
     "select_lang_source": {
         "message": "Traduzir de"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "Ocultar botão de tradução"
     },
-    "popup_menu_options_link": {
-        "message": "Configurações adicionais"
+    "popup_menu_options_all_settings": {
+        "message": "Todas as configurações"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "Mudar para o modo simples"
@@ -417,7 +423,7 @@
         "message": "Buriate"
     },
     "language_ca": {
-        "message": "Catalão"
+        "message": "catalão"
     },
     "language_ce": {
         "message": "Checheno"
@@ -1047,7 +1053,7 @@
         "message": "Iorubá"
     },
     "language_yua": {
-        "message": "Yucateca Maia"
+        "message": "Yucateca maia"
     },
     "language_yue": {
         "message": "cantonês"

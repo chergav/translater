@@ -1,9 +1,9 @@
-<div class="relative z-0 w-full overflow-hidden rounded-xl leading-[0]">
+<div class="relative z-0 w-full overflow-hidden rounded-sm leading-0">
 	<div
 		bind:this={highlightContainer}
 		style="font-size: {storage.settings.fontSize}px; line-height: {storage.settings.fontSize * 1.6}px"
 		class={[
-			'absolute top-0 right-0 left-0 -z-10 scrollbar-hidden max-h-80 min-h-2.5 w-full overflow-y-auto py-1 pr-9 pl-1',
+			'absolute top-0 right-0 left-0 -z-10 scrollbar-hidden max-h-80 min-h-8 w-full overflow-y-auto py-1 pr-9 pl-1',
 			'border border-transparent whitespace-pre-line text-transparent',
 		]}
 	>
@@ -14,9 +14,9 @@
 		bind:this={textarea}
 		style="font-size: {storage.settings.fontSize}px; line-height: {storage.settings.fontSize * 1.6}px"
 		class={[
-			'z-10 scrollbar max-h-80 min-h-2.5 w-full resize-none overflow-y-auto rounded-xl py-1 pr-9 pl-1 text-base',
-			'border border-color-surface-high bg-transparent transition-colors',
-			'focus:border-color-outline-variant focus:outline-none',
+			'z-10 scrollbar max-h-80 min-h-8 w-full resize-none overflow-y-auto rounded-sm py-1 pr-9 pl-1 text-base',
+			'border border-color-surface-high bg-transparent transition-colors hover:border-color-surface-highest',
+			'focus:border-color-primary focus:outline-none',
 		]}
 		oninput={onInput}
 		onscroll={onScroll}

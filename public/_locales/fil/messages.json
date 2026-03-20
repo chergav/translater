@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "Kasaysayan"
     },
+    "options_tab_support": {
+        "message": "Suporta"
+    },
     "options_general_translation_button": {
         "message": "Button ng pagsasalin"
     },
@@ -75,7 +78,7 @@
         "message": "Hindi lalabas ang button kapag pumipili ng text sa iyong system language"
     },
     "options_hide_button_on_sites": {
-        "message": "Itago ang button ng pagsasalin sa mga partikular na website:"
+        "message": "Nakatago sa mga site"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Magdagdag ng mga domain gamit ang menu ng popup window sa site na gusto mong ibukod."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "Mas kaunti"
     },
+    "options_select_langs_title": {
+        "message": "Mga wika"
+    },
     "select_lang_source": {
         "message": "Isalin mula sa"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "Itago ang pindutan ng pagsasalin"
     },
-    "popup_menu_options_link": {
-        "message": "Mga karagdagang setting"
+    "popup_menu_options_all_settings": {
+        "message": "Lahat ng mga setting"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "Lumipat sa Simple Mode"

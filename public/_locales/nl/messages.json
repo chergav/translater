@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "Geschiedenis"
     },
+    "options_tab_support": {
+        "message": "Ondersteuning"
+    },
     "options_general_translation_button": {
         "message": "Vertaalknop"
     },
@@ -72,10 +75,10 @@
         "message": "Verberg de vertaalknop voor uw taal"
     },
     "options_hide_translation_button_hint": {
-        "message": "De knop verschijnt niet wanneer u tekst selecteert in uw systeemtaal"
+        "message": "De knop verschijnt niet wanneer u tekst in uw systeemtaal selecteert"
     },
     "options_hide_button_on_sites": {
-        "message": "Vertaalknop verbergen op specifieke websites:"
+        "message": "Verborgen op sites"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Voeg domeinen toe via het menu van het pop-upvenster op de site die u wilt uitsluiten."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "Minder"
     },
+    "options_select_langs_title": {
+        "message": "Talen"
+    },
     "select_lang_source": {
         "message": "Vertalen van"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "Vertaalknop verbergen"
     },
-    "popup_menu_options_link": {
-        "message": "Aanvullende instellingen"
+    "popup_menu_options_all_settings": {
+        "message": "Alle instellingen"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "Schakel over naar de eenvoudige modus"

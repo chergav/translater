@@ -1,24 +1,34 @@
-<div class="scrollbar flex h-full flex-col gap-4 overflow-y-auto p-6">
-	<div class="text-xl">{browser.i18n.getMessage('options_tab_general')}</div>
+<div class="scrollbar flex size-full flex-col gap-4 overflow-y-auto *:mx-auto *:w-full *:max-w-4xl">
+	<h1 class="text-xl text-color-on-surface-variant">
+		{browser.i18n.getMessage('options_tab_general')}
+	</h1>
 
-	<SettingsGroup>
+	<h2 class="text-sm font-medium text-color-on-surface-variant">
+		{browser.i18n.getMessage('options_select_langs_title')}
+	</h2>
+
+	<SegmentedList>
 		<SelectLanguageSimple
 			autoLang
 			icon={mdiArrowRightCircleOutline}
 			label={browser.i18n.getMessage('select_lang_source')}
+			small
 			bind:value={storage.settings.sourceLang}
 		/>
 
 		<SelectLanguageSimple
 			icon={mdiArrowLeftCircleOutline}
 			label={browser.i18n.getMessage('select_lang_target')}
+			small
 			bind:value={storage.settings.targetLang}
 		/>
-	</SettingsGroup>
+	</SegmentedList>
 
-	<div class="pt-2 text-xl">{browser.i18n.getMessage('options_general_translation_button')}</div>
+	<h2 class="mt-2 text-sm font-medium text-color-on-surface-variant">
+		{browser.i18n.getMessage('options_general_translation_button')}
+	</h2>
 
-	<SettingsGroup>
+	<SegmentedList>
 		<Switch
 			hint={browser.i18n.getMessage('options_inline_button_show_hint')}
 			icon={mdiText}
@@ -38,20 +48,22 @@
 			label={browser.i18n.getMessage('options_hide_translation_button')}
 			bind:checked={storage.settings.hideButtonForUserLanguage}
 		/>
+	</SegmentedList>
 
-		<div class="flex items-center gap-4 p-3">
-			<div>
-				<Icon d={mdiWebOff} />
-			</div>
+	<SegmentedList>
+		<div class="flex items-center gap-3 p-3">
+			<span class="text-color-on-surface-variant">
+				<Icon d={mdiWebOff} size="20" />
+			</span>
 			<div class="inline-flex flex-wrap items-center gap-2">
-				<p>{browser.i18n.getMessage('options_hide_button_on_sites')}</p>
+				<p>{browser.i18n.getMessage('options_hide_button_on_sites')}:</p>
 				{#each storage.settings.blacklistDomainForInline as domain, index (index)}
 					<Chip class="bg-color-surface" content={domain}>
 						{#snippet end()}
 							<Button
 								class="size-6"
 								icon={mdiClose}
-								iconSize="18"
+								iconSize="16"
 								onclick={() => {
 									deleteFromBlacklist(domain);
 								}}
@@ -71,13 +83,26 @@
 				{/each}
 			</div>
 		</div>
-	</SettingsGroup>
+	</SegmentedList>
 
-	<div class="pt-2 text-xl">{browser.i18n.getMessage('options_tab_popup_window')}</div>
+	<h2 class="mt-2 text-sm font-medium text-color-on-surface-variant">
+		{browser.i18n.getMessage('options_tab_popup_window')}
+	</h2>
 
-	<PopupModeSwitch />
+	<SegmentedList expressive>
+		{#each modes as { value, label, hint, icon } (value)}
+			<Radio
+				{hint}
+				{icon}
+				{label}
+				mode="list"
+				{value}
+				bind:group={storage.settings.popupMode}
+			/>
+		{/each}
+	</SegmentedList>
 
-	<SettingsGroup>
+	<SegmentedList>
 		<Switch
 			hint={browser.i18n.getMessage('options_general_show_on_selected_hint')}
 			icon={mdiMessageTextFastOutline}
@@ -108,20 +133,23 @@
 			label={browser.i18n.getMessage('options_show_transliteration')}
 			bind:checked={storage.settings.showTransliteration}
 		/>
+	</SegmentedList>
 
+	<SegmentedList>
 		<Select
 			icon={mdiFormatSize}
-			label="{browser.i18n.getMessage('options_font_size')}:"
+			label={browser.i18n.getMessage('options_font_size')}
+			small
 			bind:value={storage.settings.fontSize}
 		>
 			{#each fontSizes as { value, label } (value)}
 				<option {value}>{label}</option>
 			{/each}
 		</Select>
-		<div class="flex items-center gap-4 p-3">
-			<div>
-				<Icon d={mdiKeyboardOutline} />
-			</div>
+		<div class="flex items-center gap-3 p-3">
+			<span class="text-color-on-surface-variant">
+				<Icon d={mdiKeyboardOutline} size="20" />
+			</span>
 			<div class="flex w-full items-center justify-between">
 				<p>{browser.i18n.getMessage('options_keyboard_shortcut_open_popup')}:</p>
 				{#await shortcutKeysPromise then shortcutKeys}
@@ -139,23 +167,23 @@
 				</div>
 			{/if}
 		</div>
-	</SettingsGroup>
+	</SegmentedList>
 
 	<!-- <OAuth /> -->
 </div>
 
 <script lang="ts">
-import { FontSize } from '~/types';
+import { FontSize, PopupMode } from '~/types';
 import { storage } from '~/shared/storage.svelte';
 import SelectLanguageSimple from '~/lib/SelectLanguageSimple.svelte';
 import Button from '~/lib/Button.svelte';
 import Select from '~/lib/Select.svelte';
 import Switch from '~/lib/Switch.svelte';
-import SettingsGroup from '~/lib/SettingsGroup.svelte';
+import Radio from '~/lib/Radio.svelte';
+import SegmentedList from '~/lib/SegmentedList.svelte';
 import Chip from '~/lib/Chip.svelte';
 import Shortcuts from '~/lib/Shortcuts.svelte';
 import Icon from '~/lib/Icon.svelte';
-import PopupModeSwitch from './lib/PopupModeSwitch.svelte';
 import { getShortcutByCommand } from '~/shared/browser';
 import { getUILanguageCode, getDisplayedLanguageName } from '~/shared/languages';
 import {
@@ -174,6 +202,8 @@ import {
 	mdiAlphabetLatin,
 	mdiFormatSize,
 	mdiKeyboardOutline,
+	mdiArrowExpand,
+	mdiArrowCollapse,
 } from '@mdi/js';
 // import OAuth from './OAuth.svelte';
 
@@ -194,29 +224,49 @@ function getUserLanguage(){
 	return getDisplayedLanguageName(userUILanguageCode, 'name+code');
 }
 
+const modes: {
+	value: PopupMode
+	label: string
+	hint: string
+	icon: string
+}[] = [
+	{
+		value: PopupMode.Full,
+		label: browser.i18n.getMessage('options_general_mode_full'),
+		hint: browser.i18n.getMessage('options_general_mode_full_hint'),
+		icon: mdiArrowExpand,
+	},
+	{
+		value: PopupMode.Simple,
+		label: browser.i18n.getMessage('options_general_mode_simple'),
+		hint: browser.i18n.getMessage('options_general_mode_simple_hint'),
+		icon: mdiArrowCollapse,
+	},
+];
+
 const fontSizes: {
 	value: FontSize,
 	label: string
 }[] = [
 	{
 		value: FontSize.ExtraSmall,
-		label: browser.i18n.getMessage('options_font_size_xs'),
+		label: browser.i18n.getMessage('options_font_size_xs').toLowerCase(),
 	},
 	{
 		value: FontSize.Small,
-		label: browser.i18n.getMessage('options_font_size_sm'),
+		label: browser.i18n.getMessage('options_font_size_sm').toLowerCase(),
 	},
 	{
 		value: FontSize.Normal,
-		label: browser.i18n.getMessage('options_font_size_md'),
+		label: browser.i18n.getMessage('options_font_size_md').toLowerCase(),
 	},
 	{
 		value: FontSize.Large,
-		label: browser.i18n.getMessage('options_font_size_lg'),
+		label: browser.i18n.getMessage('options_font_size_lg').toLowerCase(),
 	},
 	{
 		value: FontSize.ExtraLarge,
-		label: browser.i18n.getMessage('options_font_size_xl'),
+		label: browser.i18n.getMessage('options_font_size_xl').toLowerCase(),
 	},
 ];
 </script>

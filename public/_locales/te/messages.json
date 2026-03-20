@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "చరిత్ర"
     },
+    "options_tab_support": {
+        "message": "మద్దతు"
+    },
     "options_general_translation_button": {
         "message": "అనువాద బటన్"
     },
@@ -75,7 +78,7 @@
         "message": "మీ సిస్టమ్ భాషలో వచనాన్ని ఎంచుకున్నప్పుడు బటన్ కనిపించదు"
     },
     "options_hide_button_on_sites": {
-        "message": "నిర్దిష్ట వెబ్‌సైట్‌లలో అనువాద బటన్‌ను దాచండి:"
+        "message": "సైట్‌లలో దాచబడింది"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "మీరు మినహాయించాలనుకుంటున్న సైట్‌లోని పాప్‌అప్ విండో మెనుని ఉపయోగించి డొమైన్‌లను జోడించండి."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "తక్కువ"
     },
+    "options_select_langs_title": {
+        "message": "భాషలు"
+    },
     "select_lang_source": {
         "message": "నుండి అనువదించండి"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "అనువాద బటన్‌ను దాచండి"
     },
-    "popup_menu_options_link": {
-        "message": "అదనపు సెట్టింగ్‌లు"
+    "popup_menu_options_all_settings": {
+        "message": "అన్ని సెట్టింగ్‌లు"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "సింపుల్ మోడ్‌కి మారండి"

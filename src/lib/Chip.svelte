@@ -1,11 +1,11 @@
 <div
 	class={[
-		'inline-flex items-center rounded-lg border border-color-surface-highest p-1 select-none',
+		'inline-flex h-8 items-center gap-1 rounded-lg border border-color-surface-highest pr-1 pl-3 select-none',
 		classValue,
 	]}
 >
 	{@render start?.()}
-	<span class="px-2 text-sm">{content}</span>
+	<span class="text-sm">{content}</span>
 	{@render end?.()}
 </div>
 

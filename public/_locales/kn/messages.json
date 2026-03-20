@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "ಇತಿಹಾಸ"
     },
+    "options_tab_support": {
+        "message": "ಬೆಂಬಲ"
+    },
     "options_general_translation_button": {
         "message": "ಅನುವಾದ ಬಟನ್"
     },
@@ -75,7 +78,7 @@
         "message": "ನಿಮ್ಮ ಸಿಸ್ಟಂ ಭಾಷೆಯಲ್ಲಿ ಪಠ್ಯವನ್ನು ಆಯ್ಕೆಮಾಡುವಾಗ ಬಟನ್ ಕಾಣಿಸುವುದಿಲ್ಲ"
     },
     "options_hide_button_on_sites": {
-        "message": "ನಿರ್ದಿಷ್ಟ ವೆಬ್‌ಸೈಟ್‌ಗಳಲ್ಲಿ ಅನುವಾದ ಬಟನ್ ಅನ್ನು ಮರೆಮಾಡಿ:"
+        "message": "ಸೈಟ್‌ಗಳಲ್ಲಿ ಮರೆಮಾಡಲಾಗಿದೆ"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "ನೀವು ಹೊರಗಿಡಲು ಬಯಸುವ ಸೈಟ್‌ನಲ್ಲಿ ಪಾಪ್ಅಪ್ ವಿಂಡೋದ ಮೆನುವನ್ನು ಬಳಸಿಕೊಂಡು ಡೊಮೇನ್‌ಗಳನ್ನು ಸೇರಿಸಿ."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "ಕಡಿಮೆ"
     },
+    "options_select_langs_title": {
+        "message": "ಭಾಷೆಗಳು"
+    },
     "select_lang_source": {
         "message": "ನಿಂದ ಅನುವಾದಿಸಿ"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "ಅನುವಾದ ಬಟನ್ ಅನ್ನು ಮರೆಮಾಡಿ"
     },
-    "popup_menu_options_link": {
-        "message": "ಹೆಚ್ಚುವರಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
+    "popup_menu_options_all_settings": {
+        "message": "ಎಲ್ಲಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "ಸರಳ ಮೋಡ್‌ಗೆ ಬದಲಿಸಿ"
@@ -549,7 +555,7 @@
         "message": "ಫ್ರಿಸಿಯನ್"
     },
     "language_ga": {
-        "message": "ಐರಿಶ್"
+        "message": "ಐರಿಷ್"
     },
     "language_gaa": {
         "message": "ಗಾ"
@@ -831,7 +837,7 @@
         "message": "ಪಂಜಾಬಿ (ಗುರುಮುಖಿ)"
     },
     "language_pa_Arab": {
-        "message": "ಪಂಜಾಬಿ (ಷಾಮುಖಿ)"
+        "message": "ಪಂಜಾಬಿ (ಶಾಮುಖಿ)"
     },
     "language_pag": {
         "message": "ಪಂಗಾಸಿನನ್"

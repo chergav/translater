@@ -1,64 +1,62 @@
 {#if definitions}
-	<div class="mt-1 overflow-hidden rounded-[14px]">
-		<div class="scrollbar max-h-96 overflow-y-auto bg-color-surface p-2">
-			{#each definitions as definition, index (index)}
-				<div class="mb-3 last:mb-0">
-					<div class="mb-2 font-medium text-color-primary capitalize">{definition.pos}</div>
-					<ul class="list-none space-y-3">
-						{#each definition.entry as defEntry, index (index)}
-							{@const defLabels = defEntry.label_info ? getLabels(defEntry.label_info) : []}
-							<div class="flex gap-4">
-								<span class="flex size-5 shrink-0 items-center justify-center rounded-full border border-color-surface-high">
-									{index + 1}
-								</span>
-								<li>
-									{#each defLabels as label, index (index)}
-										<span class="mr-1 rounded bg-color-surface-high px-1 py-[2px] text-xs font-medium uppercase">
-											{label}
-										</span>
-									{/each}
-									<div>{defEntry.gloss}</div>
-									{#if defEntry.example}
-										<div class="text-color-on-surface-variant">"{defEntry.example}"</div>
-									{/if}
-									{#if defEntry.synsets}
-										<div class="mt-2 mb-1 text-color-on-surface-variant">
-											{browser.i18n.getMessage('popup_definitions_synonyms')}
-										</div>
-										{#each sortSynonyms(defEntry.synsets) as entry, index (index)}
-											{#if entry.label_info}
-												{#each getLabels(entry.label_info) as label, index (index)}
-													{#if !defLabels.includes(label)}
-														<span class="ml-2 text-sm text-color-on-surface-variant italic">{label}:</span>
-													{/if}
-												{/each}
-											{/if}
-											{#each entry.synonym as synonym, index (index)}
-												<span
-													class={[
-														'mr-1 mb-1 inline-block cursor-pointer rounded-full px-2 py-1 transition-colors',
-														'border border-color-surface-high text-color-on-surface-variant',
-														'hover:bg-color-primary/10 hover:text-color-primary',
-													]}
-													onclick={() => {
-														translate(synonym);
-													}}
-													onkeypress={e => {
-														if (e.code === 'Enter')	translate(synonym);
-													}}
-													role="button"
-													tabindex="0"
-												>{synonym}</span>
+	<div class="scrollbar max-h-96 overflow-y-auto p-1">
+		{#each definitions as definition, index (index)}
+			<div class="mb-3 last:mb-0">
+				<div class="mb-2 font-medium text-color-primary capitalize">{definition.pos}</div>
+				<ul class="list-none space-y-3">
+					{#each definition.entry as defEntry, index (index)}
+						{@const defLabels = defEntry.label_info ? getLabels(defEntry.label_info) : []}
+						<div class="flex gap-4">
+							<span class="flex size-5 shrink-0 items-center justify-center rounded-full border border-color-surface-high">
+								{index + 1}
+							</span>
+							<li>
+								{#each defLabels as label, index (index)}
+									<span class="mr-1 rounded bg-color-surface-high px-1 py-[2px] text-xs font-medium uppercase">
+										{label}
+									</span>
+								{/each}
+								<div>{defEntry.gloss}</div>
+								{#if defEntry.example}
+									<div class="text-color-on-surface-variant">"{defEntry.example}"</div>
+								{/if}
+								{#if defEntry.synsets}
+									<div class="mt-2 mb-1 text-color-on-surface-variant">
+										{browser.i18n.getMessage('popup_definitions_synonyms')}
+									</div>
+									{#each sortSynonyms(defEntry.synsets) as entry, index (index)}
+										{#if entry.label_info}
+											{#each getLabels(entry.label_info) as label, index (index)}
+												{#if !defLabels.includes(label)}
+													<span class="ml-2 text-sm text-color-on-surface-variant italic">{label}:</span>
+												{/if}
 											{/each}
+										{/if}
+										{#each entry.synonym as synonym, index (index)}
+											<span
+												class={[
+													'mr-1 mb-1 inline-block cursor-pointer rounded-full px-2 py-1 transition-colors',
+													'border border-color-surface-high text-color-on-surface-variant',
+													'hover:bg-color-primary/10 hover:text-color-primary',
+												]}
+												onclick={() => {
+													translate(synonym);
+												}}
+												onkeypress={e => {
+													if (e.code === 'Enter')	translate(synonym);
+												}}
+												role="button"
+												tabindex="0"
+											>{synonym}</span>
 										{/each}
-									{/if}
-								</li>
-							</div>
-						{/each}
-					</ul>
-				</div>
-			{/each}
-		</div>
+									{/each}
+								{/if}
+							</li>
+						</div>
+					{/each}
+				</ul>
+			</div>
+		{/each}
 	</div>
 {/if}
 

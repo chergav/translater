@@ -1,4 +1,4 @@
-<div class="rounded-[16px] bg-color-surface p-1">
+<div class="rounded-xl bg-color-surface p-1">
 	<div class="flex flex-col gap-1">
 		<div class="scrollbar max-h-80 overflow-y-auto p-1 whitespace-pre-line">
 			{#if providerStore.isSelectedProviderGoogle}

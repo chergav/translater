@@ -48,6 +48,7 @@ export enum ThemeVariant {
 	Zinc = 'zinc',
 	Neutral = 'neutral',
 	Stone = 'stone',
+	Mauve = 'mauve',
 }
 
 export enum AccentColor {

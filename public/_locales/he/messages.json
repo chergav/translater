@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "היסטוריה"
     },
+    "options_tab_support": {
+        "message": "תמיכה"
+    },
     "options_general_translation_button": {
         "message": "כפתור תרגום"
     },
@@ -75,7 +78,7 @@
         "message": "הלחצן לא יופיע בעת בחירת טקסט בשפת המערכת שלך"
     },
     "options_hide_button_on_sites": {
-        "message": "הסתר לחצן תרגום באתרים ספציפיים:"
+        "message": "מוסתר באתרים"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "הוסף דומיינים באמצעות התפריט של חלון קופץ באתר שברצונך לא לכלול."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "פחות"
     },
+    "options_select_langs_title": {
+        "message": "שפות"
+    },
     "select_lang_source": {
         "message": "תרגם מ"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "הסתר לחצן תרגום"
     },
-    "popup_menu_options_link": {
-        "message": "הגדרות נוספות"
+    "popup_menu_options_all_settings": {
+        "message": "כל ההגדרות"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "עבור למצב פשוט"

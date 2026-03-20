@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "História"
     },
+    "options_tab_support": {
+        "message": "Podpora"
+    },
     "options_general_translation_button": {
         "message": "Tlačidlo prekladu"
     },
@@ -75,7 +78,7 @@
         "message": "Tlačidlo sa nezobrazí pri výbere textu v jazyku vášho systému"
     },
     "options_hide_button_on_sites": {
-        "message": "Tlačidlo Skryť preklad na konkrétnych webových stránkach:"
+        "message": "Skryté na stránkach"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Pridajte domény pomocou ponuky vyskakovacieho okna na stránke, ktorú chcete vylúčiť."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "Menej"
     },
+    "options_select_langs_title": {
+        "message": "Jazyky"
+    },
     "select_lang_source": {
         "message": "Preložiť z"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "Tlačidlo Skryť preklad"
     },
-    "popup_menu_options_link": {
-        "message": "Ďalšie nastavenia"
+    "popup_menu_options_all_settings": {
+        "message": "Všetky nastavenia"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "Prepnite do jednoduchého režimu"

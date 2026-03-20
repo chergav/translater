@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "Histoire"
     },
+    "options_tab_support": {
+        "message": "Assistance"
+    },
     "options_general_translation_button": {
         "message": "Bouton de traduction"
     },
@@ -75,7 +78,7 @@
         "message": "Le bouton n'apparaîtra pas lors de la sélection de texte dans la langue de votre système"
     },
     "options_hide_button_on_sites": {
-        "message": "Masquer le bouton de traduction sur des sites Web spécifiques :"
+        "message": "Caché sur les sites"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Ajoutez des domaines en utilisant le menu de la fenêtre contextuelle du site que vous souhaitez exclure."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "Moins"
     },
+    "options_select_langs_title": {
+        "message": "Langues"
+    },
     "select_lang_source": {
         "message": "Traduire de"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "Masquer le bouton de traduction"
     },
-    "popup_menu_options_link": {
-        "message": "Paramètres supplémentaires"
+    "popup_menu_options_all_settings": {
+        "message": "Tous les paramètres"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "Passer en mode simple"
@@ -762,7 +768,7 @@
         "message": "Malayalam"
     },
     "language_mn": {
-        "message": "Mongol"
+        "message": "mongol"
     },
     "language_mni_Mtei": {
         "message": "Meiteilon (Manipuri)"
@@ -870,7 +876,7 @@
         "message": "Romani"
     },
     "language_ru": {
-        "message": "russe"
+        "message": "Russe"
     },
     "language_rw": {
         "message": "kinyarwanda"
@@ -960,7 +966,7 @@
         "message": "Tétum"
     },
     "language_tg": {
-        "message": "Tadjik"
+        "message": "tadjik"
     },
     "language_th": {
         "message": "Thaï"
@@ -996,7 +1002,7 @@
         "message": "Tsonga"
     },
     "language_tt": {
-        "message": "tatare"
+        "message": "Tatar"
     },
     "language_tum": {
         "message": "Tumbuka"

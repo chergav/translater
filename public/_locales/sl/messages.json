@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "Zgodovina"
     },
+    "options_tab_support": {
+        "message": "Podpora"
+    },
     "options_general_translation_button": {
         "message": "Gumb za prevajanje"
     },
@@ -75,7 +78,7 @@
         "message": "Gumb se ne prikaže, ko izberete besedilo v vašem sistemskem jeziku"
     },
     "options_hide_button_on_sites": {
-        "message": "Skrij gumb za prevod na določenih spletnih mestih:"
+        "message": "Skrito na spletnih mestih"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Dodajte domene z uporabo menija pojavnega okna na mestu, ki ga želite izključiti."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "Manj"
     },
+    "options_select_langs_title": {
+        "message": "Jeziki"
+    },
     "select_lang_source": {
         "message": "Prevedi iz"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "Skrij gumb za prevajanje"
     },
-    "popup_menu_options_link": {
-        "message": "Dodatne nastavitve"
+    "popup_menu_options_all_settings": {
+        "message": "Vse nastavitve"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "Preklopite na preprost način"
@@ -618,7 +624,7 @@
         "message": "islandski"
     },
     "language_it": {
-        "message": "italijanščina"
+        "message": "Italijanski"
     },
     "language_iu": {
         "message": "inuktut (zlogovništvo)"

@@ -6,7 +6,7 @@
 	<button
 		class={[
 			'flex items-center justify-center rounded-lg p-0.5 shadow-lg',
-			'border border-color-surface-high bg-color-surface text-color-on-surface',
+			'border border-color-surface-high bg-color-surface text-color-on-surface-variant',
 		]}
 		onclick={store.openPopup}
 		title={browser.i18n.getMessage('tooltip_translate_text')}

@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "ઈતિહાસ"
     },
+    "options_tab_support": {
+        "message": "આધાર"
+    },
     "options_general_translation_button": {
         "message": "અનુવાદ બટન"
     },
@@ -75,7 +78,7 @@
         "message": "તમારી સિસ્ટમ ભાષામાં ટેક્સ્ટ પસંદ કરતી વખતે બટન દેખાશે નહીં"
     },
     "options_hide_button_on_sites": {
-        "message": "વિશિષ્ટ વેબસાઇટ્સ પર અનુવાદ બટન છુપાવો:"
+        "message": "સાઇટ્સ પર છુપાયેલ છે"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "તમે જે સાઇટને બાકાત કરવા માંગો છો તેના પર પોપઅપ વિન્ડોના મેનૂનો ઉપયોગ કરીને ડોમેન્સ ઉમેરો."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "ઓછા"
     },
+    "options_select_langs_title": {
+        "message": "ભાષાઓ"
+    },
     "select_lang_source": {
         "message": "થી અનુવાદ કરો"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "અનુવાદ બટન છુપાવો"
     },
-    "popup_menu_options_link": {
-        "message": "વધારાની સેટિંગ્સ"
+    "popup_menu_options_all_settings": {
+        "message": "બધી સેટિંગ્સ"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "સરળ મોડ પર સ્વિચ કરો"
@@ -528,7 +534,7 @@
         "message": "ફિજિયન"
     },
     "language_fo": {
-        "message": "ફરોઝ"
+        "message": "ફેરોઝ"
     },
     "language_fon": {
         "message": "ફોન"

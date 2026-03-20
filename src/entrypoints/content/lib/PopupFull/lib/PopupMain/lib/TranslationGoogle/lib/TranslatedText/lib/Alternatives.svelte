@@ -1,8 +1,8 @@
 <div
 	bind:this={portal}
 	class={[
-		'fixed scrollbar flex max-h-96 flex-col overflow-y-auto rounded-lg py-1 text-sm shadow',
-		'border border-color-surface-high bg-color-surface',
+		'fixed scrollbar flex max-h-96 flex-col overflow-y-auto rounded-2xl p-1 text-sm shadow-sm',
+		'bg-color-surface-container-low',
 	]}
 	use:portalAction
 
@@ -15,7 +15,7 @@
 		<button
 			class={[
 				'flex max-w-xl cursor-pointer items-center gap-2 py-2 pr-4 pl-3',
-				'border-b border-color-surface-high last:border-none',
+				'rounded-sm first:rounded-t-xl last:rounded-b-xl',
 				text === alt ? 'bg-color-primary/10' : 'hover:bg-color-primary/5',
 			]}
 			onclick={() => setAlt(alt)}
@@ -28,7 +28,7 @@
 						text === alt ? 'inline-flex' : 'hidden',
 					]}
 					d={mdiCheck}
-					size="20"
+					size="18"
 				/>
 			</span>
 			<span class="text-start">{alt}</span>

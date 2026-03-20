@@ -1,116 +1,113 @@
-<main class="flex flex-col gap-1 px-1 pb-1">
-	<div class="rounded-[16px] bg-color-surface p-1">
-		<div class="flex flex-col gap-1">
-			<div class="flex items-center justify-between">
-				<div class="flex items-center gap-1">
-					<SelectLanguage
-						autoLang
-						detectedLang={store.detectedLang}
-						onchange={store.reTranslate}
-						bind:value={storage.settings.sourceLang}
-					/>
-					<ButtonCopy text={store.textToTranslate} />
-					<TTS
-						targetLang={sourceTTSLang}
-						text={store.textToTranslate}
-					/>
+<div class="flex flex-col gap-1 p-1.5">
+	<div class="flex items-center justify-between">
+		<div class="flex items-center gap-1">
+			<SelectLanguage
+				autoLang
+				detectedLang={store.detectedLang}
+				onchange={store.reTranslate}
+				bind:value={storage.settings.sourceLang}
+			/>
+			<ButtonCopy text={store.textToTranslate} />
+			<TTS
+				targetLang={sourceTTSLang}
+				text={store.textToTranslate}
+			/>
+		</div>
+		<Button
+			icon={mdiChevronDown}
+			iconClass={[
+				'transition-transform',
+				storage.settings.showOriginalText && '-scale-y-100',
+			]}
+			onclick={toggleOriginalText}
+			size="xs"
+			title={browser.i18n.getMessage('options_show_original_text')}
+		/>
+	</div>
+	{#if storage.settings.showOriginalText}
+		<div
+			class="scrollbar max-h-96 overflow-y-auto whitespace-pre-line"
+			transition:slide={{ duration: 150 }}
+		>
+			<TextareaOrig />
+			{#if store.translated?.spell?.spell_html_res &&
+			store.translated.sentence.orig !== store.translated.spell.spell_res}
+				<div class="flex items-center gap-1 p-1">
+					<span>{browser.i18n.getMessage('popup_perhaps_you_meant')}</span>
+					<button
+						class="inline-flex flex-wrap gap-x-1 text-sm text-blue-600"
+						onclick={() => setCorrectText(store.translated?.spell.spell_res)}
+						type="button"
+					>
+						<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+						{@html store.translated.spell.spell_html_res}
+					</button>
 				</div>
-				<Button
-					icon={mdiChevronDown}
-					iconClass={[
-						'transition-transform',
-						storage.settings.showOriginalText && '-scale-y-100',
-					]}
-					onclick={toggleOriginalText}
-					size="xs"
-					title={browser.i18n.getMessage('options_show_original_text')}
-				/>
-			</div>
-			{#if storage.settings.showOriginalText}
-				<div
-					class="scrollbar max-h-96 overflow-y-auto whitespace-pre-line"
-					transition:slide={{ duration: 150 }}
-				>
-					<TextareaOrig />
-					{#if store.translated?.spell?.spell_html_res &&
-					store.translated.sentence.orig !== store.translated.spell.spell_res}
-						<div class="flex items-center gap-1 p-1">
-							<span>{browser.i18n.getMessage('popup_perhaps_you_meant')}</span>
-							<button
-								class="inline-flex flex-wrap gap-x-1 text-sm text-blue-600"
-								onclick={() => setCorrectText(store.translated?.spell.spell_res)}
-								type="button"
-							>
-								<!-- eslint-disable-next-line svelte/no-at-html-tags -->
-								{@html store.translated.spell.spell_html_res}
-							</button>
-						</div>
-					{/if}
-					{#if store.translated && storage.settings.showTransliteration}
-						<p class="px-1 text-sm text-color-on-surface-variant">{store.translated.sentence.src_translit}</p>
-					{/if}
-					{#if
-						storage.settings.sourceLang !== 'auto' &&
-						store.translated?.ld_result.srclangs &&
-						store.translated?.ld_result.srclangs[0] !== storage.settings.sourceLang}
-						<div class="flex items-center gap-1 p-1">
-							<span>{browser.i18n.getMessage('popup_original_language')}</span>
-							<button
-								class="inline-flex text-sm text-blue-600"
-								onclick={() => setCorrectSourceLang(store.translated?.ld_result.srclangs[0])}
-								type="button"
-							>
-								{getDisplayedLanguageName(store.translated?.ld_result.srclangs[0])}
-							</button>
-						</div>
-					{/if}
+			{/if}
+			{#if store.translated && storage.settings.showTransliteration}
+				<p class="px-1 text-sm text-color-on-surface-variant">{store.translated.sentence.src_translit}</p>
+			{/if}
+			{#if
+				storage.settings.sourceLang !== 'auto' &&
+				store.translated?.ld_result.srclangs &&
+				store.translated?.ld_result.srclangs[0] !== storage.settings.sourceLang}
+				<div class="flex items-center gap-1 p-1">
+					<span>{browser.i18n.getMessage('popup_original_language')}</span>
+					<button
+						class="inline-flex text-sm text-blue-600"
+						onclick={() => setCorrectSourceLang(store.translated?.ld_result.srclangs[0])}
+						type="button"
+					>
+						{getDisplayedLanguageName(store.translated?.ld_result.srclangs[0])}
+					</button>
 				</div>
 			{/if}
 		</div>
-	</div>
-	<div class="rounded-[16px] bg-color-surface p-1">
-		<div class="flex flex-col gap-1">
-			<div class="flex items-center justify-between">
-				<div class="flex items-center gap-1">
-					<SelectLanguage
-						markUILang
-						onchange={store.reTranslate}
-						bind:value={storage.settings.targetLang}
-					/>
-					<ButtonCopy text={translatedText} />
-					<TTS targetLang={storage.settings.targetLang} text={translatedText} />
-				</div>
-				{#if !providerStore.isSelectedProviderGoogle && store.translationAi}
-					{#if store.translationAi.isStreaming}
-						<div class="flex items-center gap-1">
-							<Loader />
-							<Button
-								icon={mdiStop}
-								onclick={store.stopTranslation}
-								size="xs"
-								title="Stop translation"
-							/>
-						</div>
-					{:else}
-						<Button
-							icon={mdiRefresh}
-							onclick={store.reTranslate}
-							size="xs"
-							title="Retry translation"
-						/>
-					{/if}
-				{/if}
-			</div>
-			<div class="scrollbar max-h-80 overflow-y-auto p-1 whitespace-pre-line">
-				{#if providerStore.isSelectedProviderGoogle}
-					<TranslationGoogle />
-				{:else}
-					<TranslationAi />
-				{/if}
-			</div>
+	{/if}
+</div>
+
+<div class="mx-2 h-0.5 bg-color-surface-high"></div>
+
+<div class="flex flex-col gap-1 p-1.5">
+	<div class="flex items-center justify-between">
+		<div class="flex items-center gap-1">
+			<SelectLanguage
+				markUILang
+				onchange={store.reTranslate}
+				bind:value={storage.settings.targetLang}
+			/>
+			<ButtonCopy text={translatedText} />
+			<TTS targetLang={storage.settings.targetLang} text={translatedText} />
 		</div>
+		{#if !providerStore.isSelectedProviderGoogle && store.translationAi}
+			{#if store.translationAi.isStreaming}
+				<div class="flex items-center gap-1">
+					<Loader />
+					<Button
+						icon={mdiStop}
+						onclick={store.stopTranslation}
+						size="xs"
+						title="Stop translation"
+					/>
+				</div>
+			{:else}
+				<Button
+					icon={mdiRefresh}
+					onclick={store.reTranslate}
+					size="xs"
+					title="Retry translation"
+				/>
+			{/if}
+		{/if}
 	</div>
-</main>
+	<div class="scrollbar max-h-80 overflow-y-auto p-1 whitespace-pre-line">
+		{#if providerStore.isSelectedProviderGoogle}
+			<TranslationGoogle />
+		{:else}
+			<TranslationAi />
+		{/if}
+	</div>
+</div>
 
 <script lang="ts">
 import { slide } from 'svelte/transition';

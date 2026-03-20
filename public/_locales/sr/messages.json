@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "Историја"
     },
+    "options_tab_support": {
+        "message": "Подршка"
+    },
     "options_general_translation_button": {
         "message": "Дугме за превод"
     },
@@ -75,7 +78,7 @@
         "message": "Дугме се неће појавити када бирате текст на језику вашег система"
     },
     "options_hide_button_on_sites": {
-        "message": "Сакриј дугме за превод на одређеним веб локацијама:"
+        "message": "Скривено на сајтовима"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Додајте домене помоћу менија искачућег прозора на сајту који желите да искључите."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "Мање"
     },
+    "options_select_langs_title": {
+        "message": "Језици"
+    },
     "select_lang_source": {
         "message": "Преведи са"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "Сакриј дугме за превод"
     },
-    "popup_menu_options_link": {
-        "message": "Додатна подешавања"
+    "popup_menu_options_all_settings": {
+        "message": "Сва подешавања"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "Пребаците се на једноставан режим"

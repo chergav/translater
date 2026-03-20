@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "Istorija"
     },
+    "options_tab_support": {
+        "message": "Palaikymas"
+    },
     "options_general_translation_button": {
         "message": "Vertimo mygtukas"
     },
@@ -75,7 +78,7 @@
         "message": "Pasirinkus tekstą sistemos kalba, mygtukas nebus rodomas"
     },
     "options_hide_button_on_sites": {
-        "message": "Slėpti vertimo mygtuką konkrečiose svetainėse:"
+        "message": "Paslėpta svetainėse"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Pridėkite domenus naudodami iššokančiojo lango meniu svetainėje, kurią norite išskirti."
@@ -111,7 +114,7 @@
         "message": "Modelis"
     },
     "options_appearance_theme": {
-        "message": "Tema"
+        "message": "tema"
     },
     "options_appearance_accent_color": {
         "message": "Akcentinė spalva"
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "Mažiau"
     },
+    "options_select_langs_title": {
+        "message": "Kalbos"
+    },
     "select_lang_source": {
         "message": "Išversti iš"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "Slėpti vertimo mygtuką"
     },
-    "popup_menu_options_link": {
-        "message": "Papildomi nustatymai"
+    "popup_menu_options_all_settings": {
+        "message": "Visi nustatymai"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "Perjunkite į paprastą režimą"
@@ -468,7 +474,7 @@
         "message": "danų"
     },
     "language_de": {
-        "message": "vokiečių kalba"
+        "message": "vokiškai"
     },
     "language_din": {
         "message": "Dinka"

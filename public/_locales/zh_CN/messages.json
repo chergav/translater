@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "历史"
     },
+    "options_tab_support": {
+        "message": "支持"
+    },
     "options_general_translation_button": {
         "message": "翻译按钮"
     },
@@ -75,7 +78,7 @@
         "message": "选择系统语言的文本时不会出现按钮"
     },
     "options_hide_button_on_sites": {
-        "message": "隐藏特定网站上的翻译按钮："
+        "message": "隐藏在网站上"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "使用要排除的网站上的弹出窗口菜单添加域。"
@@ -105,7 +108,7 @@
         "message": "单击外部时，弹出窗口保持打开状态。"
     },
     "options_providers_provider": {
-        "message": "提供者"
+        "message": "提供商"
     },
     "options_providers_model": {
         "message": "型号"
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "少"
     },
+    "options_select_langs_title": {
+        "message": "语言"
+    },
     "select_lang_source": {
         "message": "翻译自"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "隐藏翻译按钮"
     },
-    "popup_menu_options_link": {
-        "message": "附加设置"
+    "popup_menu_options_all_settings": {
+        "message": "所有设置"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "切换到简单模式"

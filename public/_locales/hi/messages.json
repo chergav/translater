@@ -27,10 +27,13 @@
         "message": "पॉपअप विंडो"
     },
     "options_tab_appearance": {
-        "message": "बाहरी रूप"
+        "message": "बाहरी स्वरूप"
     },
     "options_tab_history": {
         "message": "इतिहास"
+    },
+    "options_tab_support": {
+        "message": "समर्थन"
     },
     "options_general_translation_button": {
         "message": "अनुवाद बटन"
@@ -75,7 +78,7 @@
         "message": "आपके सिस्टम भाषा में टेक्स्ट का चयन करते समय बटन दिखाई नहीं देगा"
     },
     "options_hide_button_on_sites": {
-        "message": "विशिष्ट वेबसाइटों पर अनुवाद बटन छिपाएँ:"
+        "message": "साइटों पर छिपा हुआ"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "जिस साइट को आप बाहर करना चाहते हैं उस साइट पर पॉपअप विंडो के मेनू का उपयोग करके डोमेन जोड़ें।"
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "कम"
     },
+    "options_select_langs_title": {
+        "message": "भाषाएँ"
+    },
     "select_lang_source": {
         "message": "से अनुवाद करें"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "अनुवाद बटन छिपाएँ"
     },
-    "popup_menu_options_link": {
-        "message": "अतिरिक्त सेटिंग्स"
+    "popup_menu_options_all_settings": {
+        "message": "सभी सेटिंग्स"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "सरल मोड पर स्विच करें"

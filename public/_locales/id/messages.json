@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "Sejarah"
     },
+    "options_tab_support": {
+        "message": "Dukungan"
+    },
     "options_general_translation_button": {
         "message": "Tombol terjemahan"
     },
@@ -75,7 +78,7 @@
         "message": "Tombol tidak akan muncul saat memilih teks dalam bahasa sistem Anda"
     },
     "options_hide_button_on_sites": {
-        "message": "Sembunyikan tombol terjemahan di situs web tertentu:"
+        "message": "Tersembunyi di situs"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Tambahkan domain menggunakan menu jendela popup di situs yang ingin Anda kecualikan."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "Kurang"
     },
+    "options_select_langs_title": {
+        "message": "Bahasa"
+    },
     "select_lang_source": {
         "message": "Terjemahkan dari"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "Sembunyikan tombol terjemahkan"
     },
-    "popup_menu_options_link": {
-        "message": "Pengaturan tambahan"
+    "popup_menu_options_all_settings": {
+        "message": "Semua pengaturan"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "Beralih ke Mode Sederhana"
@@ -537,7 +543,7 @@
         "message": "Perancis"
     },
     "language_fr_CA": {
-        "message": "Prancis (Kanada)"
+        "message": "Perancis (Kanada)"
     },
     "language_fr_FR": {
         "message": "Perancis (Prancis)"

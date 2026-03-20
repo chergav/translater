@@ -36,7 +36,7 @@ export async function isBrowserTranslationAvailable(): Promise<boolean> {
 
 		// Reject only if explicitly unavailable (Edge)
 		// Accept if available (Chrome) or not-implemented (Opera)
-		return detectorStatus !== 'unavailable';
+		return detectorStatus === 'available';
 	} catch (error) {
 		console.error('Error checking browser translation availability:', error);
 		return false;
@@ -110,7 +110,7 @@ export async function translateWithTranslationAPI(
 	});
 
 	if (availability === 'unavailable') {
-		throw new Error(`Translation from ${sourceLang} to ${targetLang} is not supported`);
+		throw new Error(`[Translator API]: Translation from ${sourceLang} to ${targetLang} is not supported`);
 	}
 
 	if (availability === 'downloadable' || availability === 'downloading') {
@@ -181,7 +181,7 @@ export async function translateWithTranslationAPIStream(
 	});
 
 	if (availability === 'unavailable') {
-		throw new Error(`Translation from ${sourceLang} to ${targetLang} is not supported`);
+		throw new Error(`[Translator API]: Translation from ${sourceLang} to ${targetLang} is not supported`);
 	}
 
 	if (availability === 'downloadable' || availability === 'downloading') {

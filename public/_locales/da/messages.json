@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "Historie"
     },
+    "options_tab_support": {
+        "message": "Support"
+    },
     "options_general_translation_button": {
         "message": "Oversættelsesknap"
     },
@@ -75,7 +78,7 @@
         "message": "Knappen vises ikke, når du vælger tekst på dit systemsprog"
     },
     "options_hide_button_on_sites": {
-        "message": "Skjul oversættelsesknap på specifikke websteder:"
+        "message": "Skjult på websteder"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Tilføj domæner ved hjælp af menuen i popup-vinduet på det websted, du vil ekskludere."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "Mindre"
     },
+    "options_select_langs_title": {
+        "message": "Sprog"
+    },
     "select_lang_source": {
         "message": "Oversæt fra"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "Skjul oversæt-knap"
     },
-    "popup_menu_options_link": {
-        "message": "Yderligere indstillinger"
+    "popup_menu_options_all_settings": {
+        "message": "Alle indstillinger"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "Skift til simpel tilstand"

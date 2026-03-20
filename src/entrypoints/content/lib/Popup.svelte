@@ -1,8 +1,8 @@
 <div
 	style="left: {left}px; top: {top}px;"
 	class={[
-		'fixed z-9999999 flex h-fit rounded-[18px]',
-		'bg-color-surface-container text-start text-sm text-color-on-surface shadow-xl',
+		'fixed z-9999999 flex h-fit',
+		'text-start text-sm text-color-on-surface',
 		isFullMode ? 'w-xl' : 'w-fit max-w-sm min-w-64',
 		popupStore.dragging ? 'select-none' : 'select-auto',
 		POPUP_CLASS,
@@ -12,7 +12,12 @@
 	use:popupPosition
 	in:fade={{ duration: 150 }}
 >
-	<div class="flex w-full flex-col">
+	<div
+		class={[
+			'flex w-full flex-col rounded-xl bg-color-surface-container transition-shadow',
+			popupStore.dragging ? 'shadow-lg' : 'shadow-md',
+		]}
+	>
 		<header
 			class={[
 				'flex w-full items-center justify-between gap-1 p-1',

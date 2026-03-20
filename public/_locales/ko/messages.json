@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "역사"
     },
+    "options_tab_support": {
+        "message": "지원"
+    },
     "options_general_translation_button": {
         "message": "번역 버튼"
     },
@@ -75,7 +78,7 @@
         "message": "시스템 언어로 텍스트를 선택할 때 버튼이 표시되지 않습니다."
     },
     "options_hide_button_on_sites": {
-        "message": "특정 웹사이트에서 번역 버튼 숨기기:"
+        "message": "사이트에 숨겨져 있음"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "제외하려는 사이트의 팝업창 메뉴를 이용하여 도메인을 추가하세요."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "덜"
     },
+    "options_select_langs_title": {
+        "message": "언어"
+    },
     "select_lang_source": {
         "message": "번역:"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "번역 버튼 숨기기"
     },
-    "popup_menu_options_link": {
-        "message": "추가 설정"
+    "popup_menu_options_all_settings": {
+        "message": "모든 설정"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "단순 모드로 전환"
@@ -450,7 +456,7 @@
         "message": "크리미아 타타르어(키릴 문자)"
     },
     "language_crh_Latn": {
-        "message": "크림 타타르어(라틴어)"
+        "message": "크림 타타르어(라틴 문자)"
     },
     "language_crs": {
         "message": "세이셸 크리올"
@@ -624,7 +630,7 @@
         "message": "이누크투트어(음절)"
     },
     "language_iu_Latn": {
-        "message": "이누크투트어(라틴 문자)"
+        "message": "이누크투트어(라틴어)"
     },
     "language_iw": {
         "message": "히브리어"

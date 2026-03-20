@@ -1,5 +1,5 @@
-<div class="flex h-full flex-col">
-	<div class="flex items-center gap-1 border-b border-color-surface-high px-6 py-4">
+<div class="flex h-full flex-col *:mx-auto *:w-full *:max-w-4xl">
+	<div class="flex items-center gap-1 pb-2">
 		<div
 			class="relative flex max-w-full min-w-0 items-center"
 			onmouseenter={() => isInContainer = true}
@@ -59,7 +59,9 @@
 		/>
 	</div>
 
-	<div class="scrollbar flex h-full flex-col overflow-y-auto pt-4 pl-6">
+	<div class="mx-6 h-px bg-color-surface-high"></div>
+
+	<div class="scrollbar flex h-full flex-col overflow-y-auto py-4">
 		{#key providerStore.activeTabProviderId}
 			<Provider provider={providerStore.activeTabProvider} />
 		{/key}

@@ -1,10 +1,7 @@
 <button
 	class={base({
-		variant,
 		size,
 		isLabel: !!label,
-		isTab: !!tab,
-		isMenu: !!menu,
 		isActive: !!active,
 		class: className,
 	})}
@@ -17,10 +14,10 @@
 	{#if icon}
 		<Icon
 			class={iconClassName({
+				isActive: !!active,
 				class: iconClass,
-				isMenu: !!menu,
 			})}
-			d={icon}
+			d={active && iconActive ? iconActive : icon}
 			size={finalIconSize}
 		/>
 	{/if}
@@ -31,8 +28,8 @@
 	{#if iconRight}
 		<Icon
 			class={iconClassName({
+				isActive: !!active,
 				class: iconRightClass,
-				isMenu: !!menu,
 			})}
 			d={iconRight}
 			size={finalIconSize}
@@ -43,7 +40,7 @@
 <script lang="ts">
 import type { ComponentProps, Snippet } from 'svelte';
 import type { HTMLButtonAttributes, MouseEventHandler } from 'svelte/elements';
-import { tv, type VariantProps, type ClassValue } from 'tailwind-variants';
+import { tv, type ClassValue } from 'tailwind-variants';
 import Icon from './Icon.svelte';
 
 const cx = (...classes: string[]) => classes.join(' ');
@@ -51,25 +48,16 @@ const cx = (...classes: string[]) => classes.join(' ');
 const button = tv({
 	slots: {
 		base: [
-			'inline-flex items-center font-medium whitespace-nowrap',
-			'focus-visible:outline-custom',
-			'cursor-pointer transition-colors select-none',
+			'inline-flex w-full items-center justify-center font-medium whitespace-nowrap',
+			'cursor-pointer select-none focus-visible:outline-custom',
+			'transition-[color,background-color,border-radius] duration-200',
 			'[&_svg]:pointer-events-none [&_svg]:shrink-0',
 			'disabled:cursor-default disabled:opacity-50',
+			'bg-color-surface-container hover:bg-color-surface-high active:bg-color-surface-highest',
 		],
 		iconClassName: '',
 	},
 	variants: {
-		variant: {
-			text: 'text-color-primary outline-color-primary enabled:hover:bg-color-primary/10 enabled:active:bg-color-primary/20',
-			filled: 'bg-color-primary/100 text-color-on-primary outline-color-primary enabled:hover:bg-color-primary/90 enabled:active:bg-color-primary/80',
-			outlined: cx(
-				'relative text-color-primary outline-color-primary enabled:hover:bg-color-primary/10 enabled:active:bg-color-primary/20',
-				'before:pointer-events-none before:absolute before:inset-0 before:rounded-full before:border before:border-color-primary/50',
-			),
-			danger: 'bg-color-error/100 text-color-on-error outline-color-error enabled:hover:bg-color-error/90 enabled:active:bg-color-error/80',
-			dangerText: 'text-color-error outline-color-error enabled:hover:bg-color-error/10 enabled:active:bg-color-error/20',
-		},
 		size: {
 			xs: 'h-8 gap-1 px-3 text-sm',
 			sm: 'h-10 gap-2 px-4 text-sm',
@@ -77,25 +65,21 @@ const button = tv({
 			lg: 'h-24 gap-3 px-12 text-2xl',
 		},
 		isLabel: {
-			true: 'w-fit',
+			true: '',
 			false: '',
 		},
-		isTab: {
-			true: 'w-full justify-start',
-			false: 'justify-center',
-		},
-		isMenu: {
+		isActive: {
 			true: {
-				base: 'rounded-sm text-color-on-surface',
-				iconClassName: 'text-color-on-surface-variant',
+				base: cx(
+					'bg-color-primary/100 enabled:hover:bg-color-primary/90 enabled:active:bg-color-primary/80',
+					'rounded-4xl text-color-on-primary outline-color-primary',
+				),
+				iconClassName: 'text-color-on-primary',
 			},
 			false: {
-				base: 'rounded-full',
-				iconClassName: '',
+				base: 'rounded-lg text-color-on-surface',
+				iconClassName: 'text-color-on-surface-variant',
 			},
-		},
-		isActive: {
-			true: 'bg-color-primary/10',
 		},
 	},
 	compoundVariants: [
@@ -132,16 +116,14 @@ const button = tv({
 
 const { base, iconClassName } = button();
 
-type ButtonVariants = VariantProps<typeof button>;
 type ButtonSize = 'xs' | 'sm' | 'md' | 'lg';
 type IconSize = ComponentProps<typeof Icon>['size'];
 
-interface Props extends ButtonVariants, Omit<HTMLButtonAttributes, 'class'> {
+interface Props extends Omit<HTMLButtonAttributes, 'class'> {
 	label?: string
-	tab?: boolean
-	menu?: boolean
 	active?: boolean
 	icon?: string
+	iconActive?: string
 	iconClass?: ClassValue
 	iconRight?: string
 	iconRightClass?: ClassValue
@@ -165,18 +147,16 @@ const getIconSize = (buttonSize: ButtonSize, isIconOnly: boolean): IconSize => {
 
 let {
 	label = '',
-	tab = false,
-	menu = false,
 	active = false,
 	type = 'button',
 	icon = '',
+	iconActive,
 	iconClass = '',
 	iconRight = '',
 	iconRightClass = '',
 	iconSize,
 	class: className = '',
 	size = 'sm',
-	variant,
 	title,
 	'aria-label': ariaLabel,
 	onclick,

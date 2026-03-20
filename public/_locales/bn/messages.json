@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "ইতিহাস"
     },
+    "options_tab_support": {
+        "message": "সমর্থন"
+    },
     "options_general_translation_button": {
         "message": "অনুবাদ বোতাম"
     },
@@ -75,7 +78,7 @@
         "message": "আপনার সিস্টেমের ভাষায় পাঠ্য নির্বাচন করার সময় বোতাম প্রদর্শিত হবে না"
     },
     "options_hide_button_on_sites": {
-        "message": "নির্দিষ্ট ওয়েবসাইটে অনুবাদ বোতাম লুকান:"
+        "message": "সাইটে লুকানো"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "আপনি যে সাইটে বাদ দিতে চান তার পপআপ উইন্ডোর মেনু ব্যবহার করে ডোমেন যোগ করুন।"
@@ -87,7 +90,7 @@
         "message": "অনুবাদের পাশাপাশি মূল পাঠ্য প্রদর্শন করুন (শুধুমাত্র সম্পূর্ণ মোড)।"
     },
     "options_show_langs_simple": {
-        "message": "ভাষা যুগল দেখান"
+        "message": "ভাষা জোড়া দেখান"
     },
     "options_show_langs_simple_hint": {
         "message": "প্রদর্শন উত্স এবং লক্ষ্য ভাষা (কেবল সহজ মোড)।"
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "কম"
     },
+    "options_select_langs_title": {
+        "message": "ভাষা"
+    },
     "select_lang_source": {
         "message": "থেকে অনুবাদ করুন"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "অনুবাদ বোতাম লুকান"
     },
-    "popup_menu_options_link": {
-        "message": "অতিরিক্ত সেটিংস"
+    "popup_menu_options_all_settings": {
+        "message": "সমস্ত সেটিংস"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "সরল মোডে স্যুইচ করুন"
@@ -297,7 +303,7 @@
         "message": "ভাষা খুঁজুন (ISO কোড বা নাম)"
     },
     "select_language_search_no_results": {
-        "message": "কোনো ফলাফল নেই"
+        "message": "কোন ফলাফল নেই"
     },
     "try_my_extensions": {
         "message": "🚀 আমার অন্যান্য এক্সটেনশন চেষ্টা করুন"
@@ -510,7 +516,7 @@
         "message": "বাস্ক"
     },
     "language_fa": {
-        "message": "ফার্সি"
+        "message": "ফারসি"
     },
     "language_fa_AF": {
         "message": "দারি"
@@ -624,7 +630,7 @@
         "message": "ইনুক্টুট (সিলেবিক্স)"
     },
     "language_iu_Latn": {
-        "message": "ইনুকটুট (ল্যাটিন)"
+        "message": "ইনুক্টুট (ল্যাটিন)"
     },
     "language_iw": {
         "message": "হিব্রু"

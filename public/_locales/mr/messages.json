@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "इतिहास"
     },
+    "options_tab_support": {
+        "message": "सपोर्ट"
+    },
     "options_general_translation_button": {
         "message": "भाषांतर बटण"
     },
@@ -75,7 +78,7 @@
         "message": "तुमच्या सिस्टम भाषेतील मजकूर निवडताना बटण दिसणार नाही"
     },
     "options_hide_button_on_sites": {
-        "message": "विशिष्ट वेबसाइटवर भाषांतर बटण लपवा:"
+        "message": "साइट्सवर लपलेले"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "तुम्ही वगळू इच्छित असलेल्या साइटवरील पॉपअप विंडोचा मेनू वापरून डोमेन जोडा."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "कमी"
     },
+    "options_select_langs_title": {
+        "message": "भाषा"
+    },
     "select_lang_source": {
         "message": "वरून भाषांतर करा"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "भाषांतर बटण लपवा"
     },
-    "popup_menu_options_link": {
-        "message": "अतिरिक्त सेटिंग्ज"
+    "popup_menu_options_all_settings": {
+        "message": "सर्व सेटिंग्ज"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "साध्या मोडवर स्विच करा"
@@ -414,7 +420,7 @@
         "message": "बटक करो"
     },
     "language_bua": {
-        "message": "बुरयात"
+        "message": "बुरयत"
     },
     "language_ca": {
         "message": "कॅटलान"
@@ -489,7 +495,7 @@
         "message": "झोंगखा"
     },
     "language_ee": {
-        "message": "इवे"
+        "message": "इव"
     },
     "language_el": {
         "message": "ग्रीक"

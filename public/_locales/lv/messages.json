@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "Vēsture"
     },
+    "options_tab_support": {
+        "message": "Atbalsts"
+    },
     "options_general_translation_button": {
         "message": "Tulkošanas poga"
     },
@@ -75,7 +78,7 @@
         "message": "Poga netiks parādīta, atlasot tekstu sistēmas valodā"
     },
     "options_hide_button_on_sites": {
-        "message": "Paslēpt tulkošanas pogu noteiktās vietnēs:"
+        "message": "Slēpts vietnēs"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Pievienojiet domēnus, izmantojot uznirstošā loga izvēlni vietnē, kuru vēlaties izslēgt."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "Mazāk"
     },
+    "options_select_langs_title": {
+        "message": "Valodas"
+    },
     "select_lang_source": {
         "message": "Tulkot no"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "Paslēpt tulkošanas pogu"
     },
-    "popup_menu_options_link": {
-        "message": "Papildu iestatījumi"
+    "popup_menu_options_all_settings": {
+        "message": "Visi iestatījumi"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "Pārslēdzieties uz vienkāršo režīmu"

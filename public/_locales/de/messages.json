@@ -32,6 +32,9 @@
     "options_tab_history": {
         "message": "Geschichte"
     },
+    "options_tab_support": {
+        "message": "Unterstützung"
+    },
     "options_general_translation_button": {
         "message": "Schaltfläche „Übersetzung“."
     },
@@ -75,7 +78,7 @@
         "message": "Die Schaltfläche wird nicht angezeigt, wenn Sie Text in Ihrer Systemsprache auswählen"
     },
     "options_hide_button_on_sites": {
-        "message": "Übersetzungsschaltfläche auf bestimmten Websites ausblenden:"
+        "message": "Auf Websites versteckt"
     },
     "options_hide_button_on_sites_empty_list": {
         "message": "Fügen Sie Domains über das Menü des Popup-Fensters auf der Site hinzu, die Sie ausschließen möchten."
@@ -185,6 +188,9 @@
     "text_collapse": {
         "message": "Weniger"
     },
+    "options_select_langs_title": {
+        "message": "Sprachen"
+    },
     "select_lang_source": {
         "message": "Übersetzen von"
     },
@@ -227,8 +233,8 @@
     "popup_menu_hide_translate_button": {
         "message": "Schaltfläche „Übersetzen“ ausblenden"
     },
-    "popup_menu_options_link": {
-        "message": "Zusätzliche Einstellungen"
+    "popup_menu_options_all_settings": {
+        "message": "Alle Einstellungen"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "Wechseln Sie in den einfachen Modus"

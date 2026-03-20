@@ -38,77 +38,66 @@ body {
 [data-accent="amber"] {
 	--primary: var(--color-amber-800);
 	--on-primary: var(--color-white);
-	--on-primary-variant: var(--color-amber-200);
 
 	&:where([data-theme="dark"]) {
 		--primary: var(--color-amber-200);
 		--on-primary: var(--color-amber-900);
-		--on-primary-variant: var(--color-amber-800);
 	}
 }
 
 [data-accent="green"] {
 	--primary: var(--color-green-800);
 	--on-primary: var(--color-white);
-	--on-primary-variant: var(--color-green-200);
 
 	&:where([data-theme="dark"]) {
 		--primary: var(--color-green-200);
 		--on-primary: var(--color-green-900);
-		--on-primary-variant: var(--color-green-800);
 	}
 }
 
 [data-accent="blue"] {
 	--primary: var(--color-blue-800);
 	--on-primary: var(--color-white);
-	--on-primary-variant: var(--color-blue-200);
 
 	&:where([data-theme="dark"]) {
 		--primary: var(--color-blue-200);
 		--on-primary: var(--color-blue-900);
-		--on-primary-variant: var(--color-blue-800);
 	}
 }
 
 [data-accent="purple"] {
 	--primary: var(--color-purple-800);
 	--on-primary: var(--color-white);
-	--on-primary-variant: var(--color-purple-200);
 
 	&:where([data-theme="dark"]) {
 		--primary: var(--color-purple-200);
 		--on-primary: var(--color-purple-900);
-		--on-primary-variant: var(--color-purple-800);
 	}
 }
 
 [data-accent="pink"] {
 	--primary: var(--color-pink-800);
 	--on-primary: var(--color-white);
-	--on-primary-variant: var(--color-pink-200);
 
 	&:where([data-theme="dark"]) {
 		--primary: var(--color-pink-200);
 		--on-primary: var(--color-pink-900);
-		--on-primary-variant: var(--color-pink-800);
 	}
 }
 
 [data-accent="neutral"] {
 	--primary: var(--color-neutral-800);
 	--on-primary: var(--color-white);
-	--on-primary-variant: var(--color-neutral-200);
 
 	&:where([data-theme="dark"]) {
 		--primary: var(--color-neutral-200);
 		--on-primary: var(--color-neutral-900);
-		--on-primary-variant: var(--color-neutral-800);
 	}
 }
 
 [data-variant="slate"] {
 	--surface: var(--color-white);
+	--surface-container-low: var(--color-slate-50);
 	--surface-container: var(--color-slate-100);
 	--surface-high: var(--color-slate-200);
 	--surface-highest: var(--color-slate-300);
@@ -119,6 +108,7 @@ body {
 
 	&:where([data-theme="dark"]) {
 		--surface: var(--color-slate-950);
+		--surface-container-low: color-mix(in oklab, var(--color-slate-900) 50%, var(--color-slate-950));
 		--surface-container: var(--color-slate-900);
 		--surface-high: var(--color-slate-800);
 		--surface-highest: var(--color-slate-700);
@@ -131,6 +121,7 @@ body {
 
 [data-variant="gray"] {
 	--surface: var(--color-white);
+	--surface-container-low: var(--color-gray-50);
 	--surface-container: var(--color-gray-100);
 	--surface-high: var(--color-gray-200);
 	--surface-highest: var(--color-gray-300);
@@ -141,6 +132,7 @@ body {
 
 	&:where([data-theme="dark"]) {
 		--surface: var(--color-gray-950);
+		--surface-container-low: color-mix(in oklab, var(--color-gray-900) 50%, var(--color-gray-950));
 		--surface-container: var(--color-gray-900);
 		--surface-high: var(--color-gray-800);
 		--surface-highest: var(--color-gray-700);
@@ -153,6 +145,7 @@ body {
 
 [data-variant="zinc"] {
 	--surface: var(--color-white);
+	--surface-container-low: var(--color-zinc-50);
 	--surface-container: var(--color-zinc-100);
 	--surface-high: var(--color-zinc-200);
 	--surface-highest: var(--color-zinc-300);
@@ -163,6 +156,7 @@ body {
 
 	&:where([data-theme="dark"]) {
 		--surface: var(--color-zinc-950);
+		--surface-container-low: color-mix(in oklab, var(--color-zinc-900) 50%, var(--color-zinc-950));
 		--surface-container: var(--color-zinc-900);
 		--surface-high: var(--color-zinc-800);
 		--surface-highest: var(--color-zinc-700);
@@ -175,6 +169,7 @@ body {
 
 [data-variant="neutral"] {
 	--surface: var(--color-white);
+	--surface-container-low: var(--color-neutral-50);
 	--surface-container: var(--color-neutral-100);
 	--surface-high: var(--color-neutral-200);
 	--surface-highest: var(--color-neutral-300);
@@ -185,6 +180,7 @@ body {
 
 	&:where([data-theme="dark"]) {
 		--surface: var(--color-neutral-950);
+		--surface-container-low: color-mix(in oklab, var(--color-neutral-900) 50%, var(--color-neutral-950));
 		--surface-container: var(--color-neutral-900);
 		--surface-high: var(--color-neutral-800);
 		--surface-highest: var(--color-neutral-700);
@@ -197,6 +193,7 @@ body {
 
 [data-variant="stone"] {
 	--surface: var(--color-white);
+	--surface-container-low:var(--color-stone-50);
 	--surface-container: var(--color-stone-100);
 	--surface-high: var(--color-stone-200);
 	--surface-highest: var(--color-stone-300);
@@ -207,6 +204,7 @@ body {
 
 	&:where([data-theme="dark"]) {
 		--surface: var(--color-stone-950);
+		--surface-container-low: color-mix(in oklab, var(--color-stone-900) 50%, var(--color-stone-950));
 		--surface-container: var(--color-stone-900);
 		--surface-high: var(--color-stone-800);
 		--surface-highest: var(--color-stone-700);
@@ -214,6 +212,30 @@ body {
 		--on-surface-variant: var(--color-stone-400);
 		--outline: var(--color-stone-500);
 		--outline-variant: var(--color-stone-600);
+	}
+}
+
+[data-variant="mauve"] {
+	--surface: var(--color-white);
+	--surface-container-low: var(--color-mauve-50);
+	--surface-container: var(--color-mauve-100);
+	--surface-high: var(--color-mauve-200);
+	--surface-highest: var(--color-mauve-300);
+	--on-surface: var(--color-mauve-900);
+	--on-surface-variant: var(--color-mauve-600);
+	--outline: var(--color-mauve-500);
+	--outline-variant: var(--color-mauve-400);
+
+	&:where([data-theme="dark"]) {
+		--surface: var(--color-mauve-950);
+		--surface-container-low: color-mix(in oklab, var(--color-mauve-900) 50%, var(--color-mauve-950));
+		--surface-container: var(--color-mauve-900);
+		--surface-high: var(--color-mauve-800);
+		--surface-highest: var(--color-mauve-700);
+		--on-surface: var(--color-mauve-100);
+		--on-surface-variant: var(--color-mauve-400);
+		--outline: var(--color-mauve-500);
+		--outline-variant: var(--color-mauve-600);
 	}
 }
 
@@ -286,13 +308,13 @@ body {
 	/* Colors */
 	--ui-color-primary: var(--primary, var(--color-blue-800));
 	--ui-color-on-primary: var(--on-primary, var(--color-white));
-	--ui-color-on-primary-variant: var(--on-primary-variant, var(--color-neutral-200));
 
 	--ui-color-error: var(--error, var(--color-red-500));
 	--ui-color-on-error: var(--on-error, var(--color-white));
 	--ui-color-link: var(--link, var(--color-blue-500));
 
 	--ui-color-surface: var(--surface, var(--color-white));
+	--ui-color-surface-container-low: var(--surface-container-low, var(--color-gray-50));
 	--ui-color-surface-container: var(--surface-container, var(--color-gray-100));
 	--ui-color-surface-high: var(--surface-high, var(--color-gray-200));
 	--ui-color-surface-highest: var(--surface-highest, var(--color-gray-300));
