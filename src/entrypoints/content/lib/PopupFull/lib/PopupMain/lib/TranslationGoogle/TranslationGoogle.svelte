@@ -7,7 +7,7 @@
 	{/if}
 {:else if store.errors.length}
 	<p class="text-color-error">
-		Something went wrong: {store.errors.join(' ')}
+		{store.errors.join(' ')}
 	</p>
 {:else if store.isPending}
 	<div class="flex w-full justify-center py-2">

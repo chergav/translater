@@ -3,7 +3,7 @@ import { MessageConnectRequest, MessageConnectResponse } from '~/types';
 interface TranslationCallbacks {
 	onStart?: () => void;
 	onChunk?: (chunk: string, sourceLang?: string) => void;
-	onComplete?: (finalText: string, sourceLang?: string) => void;
+	onComplete?: (finalText: string, sourceLang?: string, cacheKey?: string) => void;
 	onCancel?: () => void;
 	onError?: (error: string) => void;
 	onDownloadProgress?: (percent: number) => void
@@ -57,7 +57,7 @@ class TranslationClient {
 				break;
 			case 'translation-complete':
 				this.isTranslating = false;
-				this.callbacks.onComplete?.(message.finalText, message.sourceLang);
+				this.callbacks.onComplete?.(message.finalText, message.sourceLang, message.cacheKey);
 				break;
 			case 'translation-cancel':
 				this.isTranslating = false;
@@ -80,6 +80,7 @@ class TranslationClient {
 		currentModelId: string,
 		callbacks: TranslationCallbacks,
 		sourceLang?: string,
+		ignoreCache?: boolean,
 	) {
 		if (this.isTranslating) {
 			this.cancelTranslation();
@@ -94,6 +95,7 @@ class TranslationClient {
 			targetLang,
 			currentModelId,
 			sourceLang,
+			ignoreCache,
 		} satisfies MessageConnectRequest);
 	}
 

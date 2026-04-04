@@ -102,10 +102,7 @@ function onMessage(
 	sendResponse: (response?: Message) => void,
 ) {
 	if (message.type === 'ping') {
-		sendResponse({
-			type: 'loaded',
-			content: {},
-		});
+		sendResponse({ type: 'loaded' });
 	}
 
 	if (message.type === 'createPopup') {

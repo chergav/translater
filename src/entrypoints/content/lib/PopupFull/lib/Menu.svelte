@@ -144,10 +144,7 @@ function addDomainToBlacklist() {
 }
 
 function openOptionsPage() {
-	browser.runtime.sendMessage<Message>({
-		type: 'openOptionsPage',
-		content: {},
-	});
+	browser.runtime.sendMessage<Message>({ type: 'openOptionsPage' });
 
 	closeMenu();
 }

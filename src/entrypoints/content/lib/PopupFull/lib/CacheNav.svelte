@@ -20,7 +20,7 @@ import { store } from '~/entrypoints/content/store.svelte';
 import Button from '~/lib/Button.svelte';
 import { mdiArrowLeft, mdiArrowRight } from '@mdi/js';
 
-let disabledPrev = $derived<boolean>(store.cacheIndex <= -store.cache.length);
+let disabledPrev = $derived<boolean>(store.cacheIndex <= -store.cacheKeys.length);
 let disabledNext = $derived<boolean>(store.cacheIndex >= -1);
 
 function cachePrev() {

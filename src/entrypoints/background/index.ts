@@ -1,5 +1,6 @@
 import type { Message } from '~/types';
 import { googleTranslate, googleTTS } from './providers/google';
+import { getCacheByKey } from './utils/cache';
 import { INSTALL_URL, getUninstallUrl } from '~/shared/constants';
 import { TranslationService } from './services/TranslationService';
 
@@ -77,6 +78,9 @@ export default defineBackground({
 					break;
 				case 'pingContentScript':
 					ensureContentScriptInActiveTab().then(sendResponse);
+					return true;
+				case 'getCachedItem':
+					getCacheByKey(message.content.cacheKey).then(sendResponse);
 					return true;
 				default:
 					console.error(`Message type "${message.type}" not found.`);
@@ -159,10 +163,7 @@ export default defineBackground({
 			if (!tabId) return false;
 
 			try {
-				await browser.tabs.sendMessage<Message>(tabId, {
-					type: 'ping',
-					content: {},
-				});
+				await browser.tabs.sendMessage<Message>(tabId, { type: 'ping' });
 				console.debug(`Content script exist in tab: ${tabId}`);
 				return true;
 			} catch (error) {

@@ -1,10 +1,15 @@
 import type { CacheTTS, TranslationAi, Message, HistoryItem, SettingsHistory } from '~/types';
-import type { GoogleTranslate, Translated, Sentence } from '~/types/google';
+import type { Translated } from '~/types/google';
 import { GOOGLE_TRANSLATE_MODEL_ID } from '~/types/providers';
 import { storage } from '~/shared/storage.svelte';
 import { normalizeLanguageCode } from '~/shared/languages';
 import { providerStore } from '~/entrypoints/options/lib/Providers/providerStore.svelte';
 import { translator } from './utils/TranslationClient';
+
+interface CacheEntry {
+	googleKey?: string
+	aiKey?: string
+}
 
 class Store {
 	public errors = $state<string[]>([]);
@@ -18,7 +23,7 @@ class Store {
 	public isInTextField = $state<boolean>(false);
 	public translated = $state<Translated | null>(null);
 	public translationAi = $state<TranslationAi | null>(null);
-	public cache = $state<Translated[]>([]);
+	public cacheKeys = $state<CacheEntry[]>([]);
 	public cacheIndex = $state<number>(-1);
 	public isPending = $state<boolean>(false);
 	public audioContextSource = $state<AudioBufferSourceNode | null>(null);
@@ -31,8 +36,9 @@ class Store {
 		!!this.translated?.definitions ||
 		!!this.translated?.examples,
 	);
+	public isCachedItem = $derived<boolean>(this.cacheIndex !== -1 && this.translationAi === null);
 
-	public async translate() {
+	public async translate(ignoreCache: boolean = false) {
 		const textToTranslate = this.textToTranslate.trim();
 		if (!textToTranslate) return;
 
@@ -48,22 +54,21 @@ class Store {
 
 		const [googleResult, aiResult] = await Promise.all([
 			this.translateGoogle(textToTranslate),
-			!this.isProviderGoogle ? this.translateAi(textToTranslate) : Promise.resolve(null),
+			!this.isProviderGoogle ? this.translateAi(textToTranslate, ignoreCache) : Promise.resolve(null),
 		]);
 
 		if (this.isProviderGoogle && !googleResult) {
-			this.errors.push('Google Translate service error');
 			return;
 		}
 
 		if (!this.isProviderGoogle && !aiResult) return;
 
 		const finalTranslatedText = !this.isProviderGoogle && aiResult
-			? aiResult
+			? aiResult.text
 			: googleResult?.sentence.trans || '';
 
 		this.addToHistory(textToTranslate, finalTranslatedText);
-		if (googleResult) this.addToCache(googleResult, finalTranslatedText);
+		this.addKeysToCache(googleResult?.cacheKey, aiResult?.cacheKey);
 	}
 
 	public stopTranslation = () => {
@@ -91,6 +96,12 @@ class Store {
 		}
 	};
 
+	public reTranslateIgnoreCache = () => {
+		if (this.textToTranslate) {
+			this.translate(true);
+		}
+	};
+
 	public reverseTranslation = () => {
 		if (!this.detectedLang) return;
 
@@ -110,23 +121,48 @@ class Store {
 		this.translate();
 	};
 
-	public setCacheItem(index: number) {
+	public async setCacheItem(index: number) {
 		this.cacheIndex = index;
-		const item = this.cache.at(this.cacheIndex);
+		const item = this.cacheKeys.at(this.cacheIndex);
 		if (!item) return;
 
-		this.translated = item;
-		if (this.translationAi) this.translationAi.text = item.sentence.trans || '';
-		this.detectedLang = item.src;
-		storage.settings.targetLang = item.targetLang;
+		const googleCache = await this.getCachedItem<Translated>(item.googleKey);
+		const aiCache = await this.getCachedItem<TranslationAi>(item.aiKey);
+
+		this.translated = googleCache;
+		this.translationAi = aiCache;
+		this.detectedLang = googleCache?.sourceLang;
+		storage.settings.targetLang = googleCache?.targetLang ?? storage.settings.targetLang;
 	}
 
-	private async translateAi(text: string): Promise<string | null> {
+	private async getCachedItem<T>(cacheKey?: string): Promise<T | null> {
+		if (!cacheKey) return null;
+
+		try {
+			const response: T = await browser.runtime.sendMessage<Message>({
+				type: 'getCachedItem',
+				content: { cacheKey },
+			});
+
+			return response;
+		} catch (error) {
+			console.error('Error get cached item: ', error);
+			return null;
+		}
+	}
+
+	private async translateAi(text: string, ignoreCache?: boolean): Promise<{
+		text: string,
+		cacheKey?: string
+	} | null> {
 		const sourceLang = storage.settings.sourceLang !== 'auto' ? storage.settings.sourceLang : undefined;
 		const targetLang = storage.settings.targetLang;
 		const modelId = storage.settings.modelId;
 
-		return new Promise<string | null>(resolve => {
+		return new Promise<{
+			text: string,
+			cacheKey?: string
+		} | null>(resolve => {
 			translator.translateText(
 				text,
 				targetLang,
@@ -151,7 +187,7 @@ class Store {
 							this.detectedLang ??= sourceLang;
 						}
 					},
-					onComplete: (finalText, sourceLang) => {
+					onComplete: (finalText, sourceLang, cacheKey) => {
 						if (this.translationAi) {
 							this.downloadProgress = null;
 							this.translationAi.text = finalText;
@@ -160,7 +196,10 @@ class Store {
 						if (sourceLang) {
 							this.detectedLang ??= sourceLang;
 						}
-						resolve(finalText);
+						resolve({
+							text: finalText,
+							cacheKey,
+						});
 					},
 					onError: error => {
 						console.log('Translation error:', error);
@@ -181,6 +220,7 @@ class Store {
 					},
 				},
 				sourceLang,
+				ignoreCache,
 			);
 		});
 	}
@@ -191,44 +231,29 @@ class Store {
 		const sourceLang =  storage.settings.sourceLang;
 		const targetLang = storage.settings.targetLang;
 
-		const fromCache = this.findInCache(
-			text,
-			this.detectedLang || sourceLang,
-			targetLang,
-		);
-
-		if (fromCache) {
-			this.applyCached(fromCache);
-			return fromCache;
-		}
-
 		const response = await this.getGoogleTranslate(sourceLang, targetLang, text);
 
 		if (!response || response.error) {
 			this.isPending = false;
 			console.debug(response?.error);
+			this.errors.push(response?.error || '');
 			return null;
 		}
 
 		this.detectedLang = response.src;
-
-		const sentence = this.buildSentence(response);
-		const translated: Translated = {
-			...response,
-			sentence,
-			sourceLang: this.detectedLang,
-			targetLang,
-		};
-
-		this.translated = translated;
+		this.translated = response;
 		this.isPending = false;
 
-		return translated;
+		return response;
 	}
 
-	private async getGoogleTranslate(sourceLang: string, targetLang: string, text: string) {
+	private async getGoogleTranslate(
+		sourceLang: string,
+		targetLang: string,
+		text: string,
+	): Promise<Translated | undefined> {
 		try {
-			const response: GoogleTranslate & { error: string } = await browser.runtime.sendMessage<Message>({
+			const response: Translated = await browser.runtime.sendMessage<Message>({
 				type: 'getTranslate',
 				content: {
 					sourceLang,
@@ -270,70 +295,19 @@ class Store {
 		await browser.storage.local.set({ history: trimmed });
 	}
 
-	private isDuplicateOfLastCached(item: Translated): boolean {
-		const last = this.cache.at(-1);
-		if (!last) return false;
+	private addKeysToCache(googleKey?: string, aiKey?: string) {
+		const last = this.cacheKeys.at(-1);
 
-		return (
-			last.sourceLang === item.sourceLang &&
-			last.targetLang === item.targetLang &&
-			last.sentence.orig === item.sentence.orig &&
-			last.sentence.trans === item.sentence.trans
-		);
-	}
-
-	private addToCache(googleResult: Translated, finalTranslatedText: string) {
-		const cached: Translated = {
-			...googleResult,
-			sentence: {
-				...googleResult.sentence,
-				trans: finalTranslatedText,
-			},
-		};
-
-		if (!this.isDuplicateOfLastCached(cached)) {
-			this.cache.push(cached);
+		if (last?.googleKey === googleKey && last?.aiKey === aiKey) {
+			return;
 		}
 
-		this.cacheIndex = -1; // reset to last element
-	}
+		this.cacheKeys.push({
+			googleKey,
+			aiKey,
+		});
 
-	private findInCache(
-		text: string,
-		sourceLang: string,
-		targetLang: string,
-	): Translated | undefined {
-		return this.cache.find(translated =>
-			translated.sentence.orig === text &&
-			translated.sourceLang === sourceLang &&
-			translated.targetLang === targetLang,
-		);
-	}
-
-	private applyCached(cached: Translated) {
-		this.translated = cached;
-		this.detectedLang = cached.sourceLang;
-		storage.settings.targetLang = cached.targetLang;
-	}
-
-	private buildSentence(resp: GoogleTranslate): Sentence {
-		const keys: Array<keyof Sentence> = [
-			'orig',
-			'trans',
-			'translit',
-			'src_translit',
-		];
-		const sentence = keys.reduce((acc, key) => {
-			const str = resp.sentences
-				.map(s => s[key] || '')
-				.join('');
-			return {
-				...acc,
-				[key]: str,
-			};
-		}, {} as Sentence);
-
-		return sentence;
+		this.cacheIndex = -1;
 	}
 }
 

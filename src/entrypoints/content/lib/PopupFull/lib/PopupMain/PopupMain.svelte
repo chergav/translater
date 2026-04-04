@@ -93,7 +93,7 @@
 			{:else}
 				<Button
 					icon={mdiRefresh}
-					onclick={store.reTranslate}
+					onclick={store.reTranslateIgnoreCache}
 					size="xs"
 					title="Retry translation"
 				/>
@@ -101,7 +101,7 @@
 		{/if}
 	</div>
 	<div class="scrollbar max-h-80 overflow-y-auto p-1 whitespace-pre-line">
-		{#if providerStore.isSelectedProviderGoogle}
+		{#if providerStore.isSelectedProviderGoogle || store.isCachedItem}
 			<TranslationGoogle />
 		{:else}
 			<TranslationAi />

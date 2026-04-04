@@ -83,23 +83,45 @@ export interface HistoryItem {
 	model?: string
 }
 
-export interface Message {
-	type: 'getTranslate'
-		| 'getTranslateTTS'
-		| 'openOptionsPage'
-		| 'openURL'
-		| 'openTranslator'
-		| 'createPopup'
-		| 'ping'
-		| 'loaded'
-		| 'pingContentScript'
-	content: {
-		sourceLang?: string
-		targetLang?: string
-		text?: string
-		url?: string
+export type Message =
+	{
+		type: 'getTranslate'
+		content: {
+			text: string
+			sourceLang: string
+			targetLang: string
+		}
 	}
-}
+	| {
+		type: 'getTranslateTTS'
+		content: {
+			text: string
+			targetLang: string
+		}
+	}
+	| { type: 'openOptionsPage' }
+	| {
+		type: 'openURL'
+		content: {
+			url: string
+		}
+	}
+	| {
+		type: 'createPopup'
+		content: {
+			text: string
+		}
+	}
+	| { type: 'openTranslator' }
+	| { type: 'ping' }
+	| { type: 'loaded' }
+	| { type: 'pingContentScript' }
+	| {
+		type: 'getCachedItem',
+		content: {
+			cacheKey: string
+		}
+	};
 
 export type MessageConnectRequest =
 	{
@@ -108,6 +130,7 @@ export type MessageConnectRequest =
 		targetLang: string
 		currentModelId: string
 		sourceLang?: string
+		ignoreCache?: boolean
 	}
 	| { type: 'cancel' };
 
@@ -122,6 +145,7 @@ export type MessageConnectResponse =
 		type: 'translation-complete'
 		finalText: string
 		sourceLang?: string
+		cacheKey?: string
 	}
 	| { type: 'translation-cancel' }
 	| {
@@ -165,6 +189,6 @@ export interface TranslationGoogle extends GoogleTranslate {
 
 export interface TranslationAi {
 	text: string
-	// model: string
-	isStreaming: boolean
+	sourceLang?: string
+	isStreaming?: boolean
 }

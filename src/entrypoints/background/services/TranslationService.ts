@@ -1,10 +1,11 @@
-import type { MessageConnectRequest, MessageConnectResponse, SettingsSync } from '~/types';
+import type { MessageConnectRequest, MessageConnectResponse, SettingsSync, TranslationAi } from '~/types';
 import type { TranslationProvider, TranslationModel } from '~/types/providers';
 import { OpenAI } from 'openai';
-import { languages } from '@/shared/languages';
+import { languages } from '~/shared/languages';
 import { builtinProviders } from '~/shared/providers';
 import { translateWithMyMemory } from '~/entrypoints/background/providers/myMemory';
 import { translateWithTranslationAPI } from '~/entrypoints/background/providers/browser';
+import { setCache, getCache } from '~/entrypoints/background/utils/cache';
 
 interface TranslationPort {
 	port: Browser.runtime.Port;
@@ -61,6 +62,7 @@ export class TranslationService {
 					message.targetLang,
 					message.currentModelId,
 					message.sourceLang,
+					message.ignoreCache,
 				);
 				break;
 			case 'cancel':
@@ -116,6 +118,7 @@ export class TranslationService {
 		targetLang: string,
 		currentModelId: string,
 		sourceLang?: string,
+		ignoreCache?: boolean,
 	) {
 		const portData = this.ports.get(tabId);
 		if (!portData) return;
@@ -137,6 +140,26 @@ export class TranslationService {
 			portData.port.postMessage({
 				type: 'translation-start',
 			} satisfies MessageConnectResponse);
+
+			if (!ignoreCache) {
+				const cached = await getCache<TranslationAi & { cacheKey: string }>(
+					truncatedText,
+					sourceLang || 'auto',
+					targetLang,
+					`${provider.id}/${model.id}`,
+				);
+
+				if (cached) {
+					portData.port.postMessage({
+						type: 'translation-complete',
+						finalText: cached.text,
+						sourceLang: cached.sourceLang,
+						cacheKey: cached.cacheKey,
+					} satisfies MessageConnectResponse);
+
+					return;
+				}
+			}
 
 			switch (provider.protocol) {
 				case 'simple-api':
@@ -186,10 +209,7 @@ export class TranslationService {
 		portData: TranslationPort,
 		sourceLanguage?: string,
 	) {
-		let response: {
-			translation: string
-			sourceLang: string
-		};
+		let response: TranslationAi;
 
 		switch (provider.id) {
 			case 'mymemory':
@@ -199,11 +219,15 @@ export class TranslationService {
 				throw new Error(`Unknown simple API provider: ${provider.id}`);
 		}
 
+		const cacheKey = await setCache(text, sourceLanguage || 'auto', tgtLang, `${provider.id}/${model.id}`, response);
+
 		portData.port.postMessage({
 			type: 'translation-complete',
-			finalText: response.translation,
+			finalText: response.text,
 			sourceLang: response.sourceLang,
+			cacheKey,
 		} satisfies MessageConnectResponse);
+
 	}
 
 	private async translateWithBrowserAPI(
@@ -215,7 +239,7 @@ export class TranslationService {
 		portData: TranslationPort,
 		sourceLanguage?: string,
 	) {
-		const { translation, sourceLang } = await translateWithTranslationAPI(
+		const response = await translateWithTranslationAPI(
 			text,
 			tgtLang,
 			controller.signal,
@@ -233,10 +257,13 @@ export class TranslationService {
 				type: 'translation-cancel',
 			} satisfies MessageConnectResponse);
 		} else {
+			const cacheKey = await setCache(text, sourceLanguage || 'auto', tgtLang, `${provider.id}/${model.id}`, response);
+
 			portData.port.postMessage({
 				type: 'translation-complete',
-				finalText: translation,
-				sourceLang,
+				finalText: response.text,
+				sourceLang: response.sourceLang,
+				cacheKey,
 			} satisfies MessageConnectResponse);
 		}
 	}

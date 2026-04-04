@@ -41,7 +41,7 @@
 					{#each provider.models as model (model.id)}
 						<ListboxOption
 							class={[
-								'flex cursor-pointer items-center gap-2 rounded-sm py-1.5 pr-2.5 pl-2 whitespace-nowrap first:rounded-t-xl',
+								'flex cursor-pointer items-center gap-1 rounded-sm py-1.5 pr-2.5 pl-2 whitespace-nowrap first:rounded-t-xl',
 								'transition-colors not-aria-selected:hover:bg-color-primary/5 aria-selected:bg-color-primary/10',
 								'aria-disabled:pointer-events-none aria-disabled:opacity-50',
 							]}

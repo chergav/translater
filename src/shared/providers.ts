@@ -10,7 +10,7 @@ export const builtinProviders: TranslationProvider[] = [
 		models: [
 			{
 				id: GOOGLE_TRANSLATE_MODEL_ID,
-				model: 'google-translate-free',
+				model: 'google-translate',
 				maxInputChars: 5000,
 			},
 		],
@@ -25,7 +25,7 @@ export const builtinProviders: TranslationProvider[] = [
 		models: [
 			{
 				id: 'mymemory-free',
-				model: 'mymemory-free',
+				model: 'mymemory',
 				maxInputChars: 500,
 			},
 		],
@@ -40,7 +40,7 @@ export const builtinProviders: TranslationProvider[] = [
 		models: [
 			{
 				id: 'translator-api-free',
-				model: 'translator-api-free',
+				model: 'translator-api',
 				maxInputChars: 5000,
 			},
 		],

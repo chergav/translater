@@ -107,10 +107,7 @@ function openOptionsPage() {
 }
 
 function openTranslator() {
-	browser.runtime.sendMessage<Message>({
-		type: 'openTranslator',
-		content: {},
-	});
+	browser.runtime.sendMessage<Message>({ type: 'openTranslator' });
 }
 
 let shortcutKeysPromise = getShortcutByCommand('open-translator');
@@ -131,10 +128,7 @@ async function requestPermissions() {
 }
 
 async function ensureContentScriptInActiveTab() {
-	return await browser.runtime.sendMessage<Message>({
-		type: 'pingContentScript',
-		content: {},
-	});
+	return await browser.runtime.sendMessage<Message>({ type: 'pingContentScript' });
 }
 
 $effect.pre(() => {

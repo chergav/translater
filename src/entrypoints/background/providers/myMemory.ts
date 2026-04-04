@@ -1,4 +1,4 @@
-import { Settings } from '~/types';
+import { Settings, TranslationAi } from '~/types';
 import { detectLanguage } from '~/entrypoints/background/utils/detectLanguage';
 import { generateUniqueEmail } from '~/entrypoints/background/utils/generateUniqueEmail';
 
@@ -32,10 +32,7 @@ export async function translateWithMyMemory(
 	targetLang: string,
 	signal: AbortSignal,
 	sourceLanguage?: string,
-): Promise<{
-	translation: string
-	sourceLang: string
-}> {
+): Promise<TranslationAi> {
 	const sourceLang = sourceLanguage ?? await detectLanguage(text);
 	const userEmail = await getUserEmail();
 
@@ -65,7 +62,7 @@ export async function translateWithMyMemory(
 	}
 
 	return {
-		translation: data.responseData.translatedText,
+		text: data.responseData.translatedText,
 		sourceLang,
 	};
 }

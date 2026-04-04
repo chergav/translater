@@ -28,7 +28,7 @@
 			{#each voices as voice (voice)}
 				<ListboxOption
 					class={[
-						'flex cursor-pointer items-center gap-2 py-1.5 pr-2.5 pl-2 whitespace-nowrap transition-colors',
+						'flex cursor-pointer items-center gap-1 py-1.5 pr-2.5 pl-2 whitespace-nowrap transition-colors',
 						'focus-within:outline-0 not-aria-selected:hover:bg-color-primary/5 focus:bg-color-primary/5 aria-selected:bg-color-primary/10',
 						'rounded-sm first:rounded-t-xl last:rounded-b-xl',
 					]}

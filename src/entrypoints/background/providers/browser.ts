@@ -1,3 +1,5 @@
+import { TranslationAi } from '~/types';
+
 export const unavailableErrorMessage = 'Browser Translation API is not available.\nThis feature only works in Chrome 138+, and Opera 122+.\nAvailability may be subject to geographical restrictions.';
 
 async function checkLanguageDetector(): Promise<'available' | 'unavailable' | 'not-implemented'> {
@@ -92,10 +94,7 @@ export async function translateWithTranslationAPI(
 	signal: AbortSignal,
 	onDownloadProgress?: (percent: number) => void,
 	sourceLanguage?: string,
-): Promise<{
-	translation: string
-	sourceLang: string
-}> {
+): Promise<TranslationAi> {
 	const isTranslationAPIAvailable = await isBrowserTranslationAvailable();
 
 	if (!isTranslationAPIAvailable) {
@@ -110,7 +109,7 @@ export async function translateWithTranslationAPI(
 	});
 
 	if (availability === 'unavailable') {
-		throw new Error(`[Translator API]: Translation from ${sourceLang} to ${targetLang} is not supported`);
+		throw new Error(`[Translator API]: Translation from ${sourceLang} to ${targetLang} is not supported.\nTry another provider`);
 	}
 
 	if (availability === 'downloadable' || availability === 'downloading') {
@@ -149,7 +148,7 @@ export async function translateWithTranslationAPI(
 	const translation = translatedLines.join('\n');
 
 	return {
-		translation,
+		text: translation,
 		sourceLang,
 	};
 }

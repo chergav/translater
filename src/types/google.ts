@@ -2,6 +2,8 @@ export interface Translated extends GoogleTranslate {
 	sentence: Sentence
 	sourceLang: string
 	targetLang: string
+	error?: string
+	cacheKey?: string
 }
 
 export interface GoogleTranslate {
