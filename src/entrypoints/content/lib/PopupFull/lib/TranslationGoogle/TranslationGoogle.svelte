@@ -5,9 +5,9 @@
 	{#if storage.settings.showTransliteration}
 		<p class="text-sm text-color-on-surface-variant">{store.translated.sentence.translit}</p>
 	{/if}
-{:else if store.errors.length}
+{:else if store.errors.google.length}
 	<p class="text-color-error">
-		{store.errors.join(' ')}
+		{store.errors.google.join('\n')}
 	</p>
 {:else if store.isPending}
 	<div class="flex w-full justify-center py-2">

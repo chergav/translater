@@ -11,8 +11,16 @@ interface CacheEntry {
 	aiKey?: string
 }
 
+interface Errors {
+	google: string[]
+	ai: string[]
+}
+
 class Store {
-	public errors = $state<string[]>([]);
+	public errors = $state<Errors>({
+		google: [],
+		ai: [],
+	});
 	public hostname = $state<string>('');
 	public detectedLang = $state<string>();
 	public selectedText = $state<string>('');
@@ -43,14 +51,19 @@ class Store {
 		if (!textToTranslate) return;
 
 		if (storage.settings.sourceLang === storage.settings.targetLang) {
-			this.errors.push('Source and target languages must be different');
+			const errorMsg = 'Source and target languages must be different';
+			this.errors.google.push(errorMsg);
+			this.errors.ai.push(errorMsg);
 			return;
 		}
 
 		this.translated = null;
 		this.translationAi = null;
 		// this.detectedLang = undefined;
-		this.errors = [];
+		this.errors = {
+			google: [],
+			ai: [],
+		};
 
 		const [googleResult, aiResult] = await Promise.all([
 			this.translateGoogle(textToTranslate),
@@ -81,7 +94,10 @@ class Store {
 		this.detectedLang = undefined;
 		this.translated = null;
 		this.translationAi = null;
-		this.errors = [];
+		this.errors = {
+			google: [],
+			ai: [],
+		};
 	};
 
 	public openPopup = () => {
@@ -203,7 +219,7 @@ class Store {
 					},
 					onError: error => {
 						console.log('Translation error:', error);
-						this.errors.push(error);
+						this.errors.ai.push(error);
 						if (this.translationAi) {
 							this.downloadProgress = null;
 							this.translationAi.isStreaming = false;
@@ -236,7 +252,7 @@ class Store {
 		if (!response || response.error) {
 			this.isPending = false;
 			console.debug(response?.error);
-			this.errors.push(response?.error || '');
+			this.errors.google.push(response?.error || '');
 			return null;
 		}
 

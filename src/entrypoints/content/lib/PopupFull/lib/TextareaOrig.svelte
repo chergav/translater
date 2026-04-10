@@ -1,9 +1,9 @@
-<div class="relative z-0 w-full overflow-hidden rounded-sm leading-0">
+<div class="relative z-0 flex min-h-0 flex-col overflow-hidden">
 	<div
 		bind:this={highlightContainer}
-		style="font-size: {storage.settings.fontSize}px; line-height: {storage.settings.fontSize * 1.6}px"
+		style={fontStyles}
 		class={[
-			'absolute top-0 right-0 left-0 -z-10 scrollbar-hidden max-h-80 min-h-8 w-full overflow-y-auto py-1 pr-9 pl-1',
+			'absolute inset-0 -z-10 scrollbar-hidden w-full overflow-y-auto py-1 pr-9 pl-1',
 			'border border-transparent whitespace-pre-line text-transparent',
 		]}
 	>
@@ -11,24 +11,26 @@
 		{@html highlightedText}
 	</div>
 	<textarea
-		bind:this={textarea}
-		style="font-size: {storage.settings.fontSize}px; line-height: {storage.settings.fontSize * 1.6}px"
+		style={fontStyles}
 		class={[
-			'z-10 scrollbar max-h-80 min-h-8 w-full resize-none overflow-y-auto rounded-sm py-1 pr-9 pl-1 text-base',
+			'z-10 scrollbar min-h-[38px] w-full resize-none rounded-sm py-1 pr-9 pl-1 whitespace-pre-line',
 			'border border-color-surface-high bg-transparent transition-colors hover:border-color-surface-highest',
 			'focus:border-color-primary focus:outline-none',
 		]}
+		{@attach autoResize}
+		{@attach focus}
 		oninput={onInput}
 		onscroll={onScroll}
 		rows="1"
 		spellcheck="false"
-		use:focus
-		use:resize
-	>{store.translated?.sentence.orig || store.textToTranslate}</textarea>
-	{#if store.translated?.sentence.orig}
-		<div transition:fade={{ duration: 150 }}>
+		bind:value
+	></textarea>
+	{#if value}
+		<div
+			class="absolute top-1 right-1 z-20"
+			transition:fade={{ duration: 150 }}
+		>
 			<Button
-				class="absolute top-0.5 right-0.5"
 				icon={mdiClose}
 				onclick={clearText}
 				size="xs"
@@ -39,7 +41,7 @@
 </div>
 
 <script lang="ts">
-import type { Action } from 'svelte/action';
+import type { Attachment } from 'svelte/attachments';
 import { fade } from 'svelte/transition';
 import { store } from '~/entrypoints/content/store.svelte';
 import { storage } from '~/shared/storage.svelte';
@@ -47,11 +49,13 @@ import Button from '~/lib/Button.svelte';
 import { mdiClose } from '@mdi/js';
 import { escapeRegExp } from '~/utils';
 
-let textarea = $state<HTMLTextAreaElement>();
+const MAX_HEIGHT = 300;
+let value = $derived(store.translated?.sentence.orig || store.textToTranslate);
 let highlightContainer = $state<HTMLDivElement>();
 let timeoutId = $state<number>();
+const fontStyles = $derived<string>(`font-size: ${storage.settings.fontSize}px; line-height: ${storage.settings.fontSize * 1.6}px`);
 let highlightedText = $derived.by<string>(() => {
-	let text = store.translated?.sentence.orig || store.textToTranslate;
+	let text = $state.snapshot(value);
 
 	if (store.textToHighlight) {
 		const escapedString = escapeRegExp(store.textToHighlight.trim());
@@ -63,25 +67,18 @@ let highlightedText = $derived.by<string>(() => {
 	return text;
 });
 
+const autoResize: Attachment<HTMLTextAreaElement> = el => {
+	if (value !== undefined) {
+		el.style.height = 'auto';
+		el.style.height = Math.min(el.scrollHeight, MAX_HEIGHT) + 4 + 'px';
+		console.debug('autoResize', el.style.height);
+	}
+	console.debug('autoResize');
+};
+
 function onScroll(event: Event) {
 	const target = event.target as HTMLTextAreaElement;
 	if (highlightContainer) highlightContainer.scrollTop = target.scrollTop;
-}
-
-const resize: Action<HTMLTextAreaElement> = () => {
-	$effect(() => {
-		if (store.translated?.sentence.orig || storage.settings.fontSize) {
-			textareaResize();
-		}
-	});
-};
-
-function textareaResize() {
-	if (textarea) {
-		textarea.style.height = 'auto';
-		const height = Math.max(textarea.scrollHeight, 34) + 2;
-		textarea.style.height = `${height}px`;
-	}
 }
 
 function debounceTranslate(text: string) {
@@ -98,22 +95,14 @@ function onInput(event: Event) {
 	const target = event.target as HTMLTextAreaElement;
 	const text = target.value.trim();
 	debounceTranslate(text);
-	textareaResize();
 }
 
-const focus: Action<HTMLTextAreaElement> = textarea => {
-	if (!store.selectedText) {
-		textarea.focus();
-	}
+const focus: Attachment<HTMLTextAreaElement> = el => {
+	if (!value) el.focus();
 };
 
 function clearText() {
-	if (textarea) {
-		textarea.value = '';
-		textarea.focus();
-	}
-
+	value = '';
 	store.resetTranslateStore();
-	textareaResize();
 }
 </script>

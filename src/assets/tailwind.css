@@ -362,6 +362,8 @@ body {
 }
 
 @utility scrollbar {
+	@apply overscroll-contain;
+
 	&::-webkit-scrollbar {
 		width: 6px;
 		height: 6px;

@@ -1,12 +1,27 @@
 <div
-	style="left: {left}px; top: {top}px;"
+	style:left="{popupLeft}px"
+	style:top="{popupTop}px"
+	style:width="{popupWidth}px"
+	style:transform="translate({moveDx}px, {moveDy}px)"
 	class={[
-		'fixed z-9999999 flex h-fit',
-		'text-start text-sm text-color-on-surface',
-		isFullMode ? 'w-xl' : 'w-fit max-w-sm min-w-64',
-		popupStore.dragging ? 'select-none' : 'select-auto',
+		'fixed z-999999999 flex h-fit max-h-[calc(100vh-16px)] min-h-0 p-1',
+		'text-sm text-color-on-surface will-change-transform',
+		popupStore.dragging || popupStore.resizing && 'select-none',
 		POPUP_CLASS,
 	]}
+	{@attach resize({
+		minWidth: popupMinWidth,
+		minHeight: popupMinHeight,
+		cursorContainer: CUSTOM_ELEMENT_TAG,
+		onStart: () => {
+			popupStore.resizing = true;
+		},
+		onEnd: e => {
+			popupLeft = e.x;
+			popupTop = e.y;
+			popupStore.resizing = false;
+		},
+	})}
 	onclickoutside={onClickOutside}
 	use:clickOutside
 	use:popupPosition
@@ -14,18 +29,28 @@
 >
 	<div
 		class={[
-			'flex w-full flex-col rounded-xl bg-color-surface-container transition-shadow',
+			'flex min-h-0 w-full flex-col rounded-xl bg-color-surface-container transition-shadow',
 			popupStore.dragging ? 'shadow-lg' : 'shadow-md',
 		]}
 	>
 		<header
-			class={[
-				'flex w-full items-center justify-between gap-1 p-1',
-				popupStore.dragging ? 'cursor-grabbing' : 'cursor-grab',
-			]}
-			onpointerdown={onDragStart}
-			role="toolbar"
-			tabindex="-1"
+			class="flex shrink-0 items-center justify-between gap-1 p-1"
+			{@attach drag({
+				onStart: () => {
+					popupStore.dragging = true;
+				},
+				onMove: e => {
+					moveDx = e.dx;
+					moveDy = e.dy;
+				},
+				onEnd: e => {
+					popupLeft += e.dx;
+					popupTop += e.dy;
+					moveDx = 0;
+					moveDy = 0;
+					popupStore.dragging = false;
+				},
+			})}
 		>
 			<div class="flex items-center gap-1">
 				<CacheNav />
@@ -79,6 +104,7 @@
 
 		{#if isFullMode}
 			<PopupFull />
+			<PopupFooter />
 		{:else}
 			<PopupSimple />
 		{/if}
@@ -99,32 +125,33 @@ import CacheNav from './PopupFull/lib/CacheNav.svelte';
 import SelectModel from './PopupFull/lib/SelectModel.svelte';
 import PopupFull from './PopupFull/PopupFull.svelte';
 import PopupSimple from './PopupSimple/PopupSimple.svelte';
+import PopupFooter from './PopupFull/lib/PopupFooter/PopupFooter.svelte';
 import SelectLanguage from '~/lib/SelectLanguage.svelte';
-import { computePosition, offset, flip, shift, type VirtualElement } from '@floating-ui/dom';
+import { computePosition, flip, shift, type VirtualElement } from '@floating-ui/dom';
 import { clickOutside } from '~/utils';
-import { POPUP_CLASS } from '~/shared/constants';
+import { drag } from '~/entrypoints/content/utils/drag';
+import { resize } from '~/entrypoints/content/utils/resize';
+import { POPUP_CLASS, CUSTOM_ELEMENT_TAG } from '~/shared/constants';
 import { mdiClose, mdiArrowExpand, mdiSwapHorizontal } from '@mdi/js';
 
-let left = $state<number>(20);
-let top = $state<number>(20);
-let prevX = $state<number | null>(null);
-let prevY = $state<number | null>(null);
+let popupLeft = $state<number>(20);
+let popupTop = $state<number>(20);
+let moveDx = $state(0);
+let moveDy = $state(0);
 let reference = $derived<VirtualElement>({
 	getBoundingClientRect: () => store.selectedElemRect || new DOMRect(20, 20, 0, 0),
 });
 const isFullMode = $derived<boolean>(storage.settings.popupMode === PopupMode.Full);
-
-const DRAG_THRESHOLD = 5;
-let dragStartX = $state<number | null>(null);
-let dragStartY = $state<number | null>(null);
-let dragInitialized = $state<boolean>(false);
+const popupWidth = $derived<number>(isFullMode ? 550 : storage.settings.simpleModeShowLangs ? 380 : 260);
+const popupMinWidth = $derived<number>(isFullMode ? 400 : storage.settings.simpleModeShowLangs ? 380 : 260);
+const popupMinHeight = $derived<number>(isFullMode ? store.showFooter ? 290 : 240 : 100);
 
 const popupPosition: Action<HTMLDivElement> = popup => {
 	computePosition(reference, popup, {
 		strategy: 'fixed',
 		placement: 'bottom-start',
 		middleware: [
-			offset(4),
+			// offset(4),
 			flip({ flipAlignment: false }),
 			shift({ padding: 10 }),
 		],
@@ -133,58 +160,10 @@ const popupPosition: Action<HTMLDivElement> = popup => {
 		const { innerWidth, innerHeight } = window;
 		if (x < 0 || x > innerWidth) x = 10;
 		if (y < 0 || y > innerHeight) y = 10;
-		left = x;
-		top = y;
+		popupLeft = x;
+		popupTop = y;
 	});
 };
-
-function onDragStart(event: PointerEvent) {
-	if (event.button !== 0) return;
-
-	dragStartX = event.clientX;
-	dragStartY = event.clientY;
-	dragInitialized = false;
-
-	window.addEventListener('pointermove', onDragMove);
-	window.addEventListener('pointerup', onDragEnd, { once: true });
-}
-
-function onDragMove(event: PointerEvent) {
-	if (dragStartX === null || dragStartY === null) return;
-
-	if (!dragInitialized) {
-		const dx = Math.abs(event.clientX - dragStartX);
-		const dy = Math.abs(event.clientY - dragStartY);
-		if (dx < DRAG_THRESHOLD && dy < DRAG_THRESHOLD) return;
-		dragInitialized = true;
-		popupStore.dragging = true;
-		prevX = event.clientX;
-		prevY = event.clientY;
-	}
-
-	if (prevX === null || prevY === null) return;
-	left += event.clientX - prevX;
-	top += event.clientY - prevY;
-	if (top < 0) top = 0;
-	prevX = event.clientX;
-	prevY = event.clientY;
-}
-
-function onDragEnd() {
-	window.removeEventListener('pointermove', onDragMove);
-	prevX = null;
-	prevY = null;
-	popupStore.dragging = false;
-
-	if (dragInitialized) {
-		// Block the click that fires right after pointerup
-		window.addEventListener('click', e => e.stopPropagation(), {
-			once: true,
-			capture: true,
-		});
-	}
-	dragInitialized = false;
-}
 
 function onClickOutside() {
 	if (!storage.settings.lockWindow) {
@@ -199,6 +178,7 @@ function switchToFullMode() {
 function closePopup() {
 	store.showPopup = false;
 }
+
 onDestroy(() => {
 	store.resetTranslateStore();
 });

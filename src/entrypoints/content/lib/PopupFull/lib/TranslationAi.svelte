@@ -16,9 +16,9 @@
 	</p>
 {/if}
 
-{#if store.errors.length}
+{#if store.errors.ai.length}
 	<p class="text-color-error">
-		{store.errors.join(' ')}
+		{store.errors.ai.join('\n')}
 	</p>
 {/if}
 

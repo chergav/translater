@@ -1,11 +1,10 @@
 <div
 	bind:this={portal}
 	class={[
-		'fixed scrollbar flex max-h-96 flex-col overflow-y-auto rounded-2xl p-1 text-sm shadow-sm',
-		'bg-color-surface-container-low',
+		'fixed z-9999999991 scrollbar flex max-h-96 flex-col overflow-y-auto rounded-2xl p-1 text-sm',
+		'bg-color-surface-container-low shadow-sm',
 	]}
 	use:portalAction
-
 	transition:fly={{
 		duration: 150,
 		y: 10,
@@ -41,7 +40,7 @@ import type { Action } from 'svelte/action';
 import { fly } from 'svelte/transition';
 import Icon from '~/lib/Icon.svelte';
 import { mdiCheck } from '@mdi/js';
-import { CUSTOM_ELEMENT_TAG, POPUP_CLASS } from '~/shared/constants';
+import { CUSTOM_ELEMENT_TAG } from '~/shared/constants';
 
 interface Props {
 	rect: DOMRect
@@ -68,7 +67,7 @@ const portalAction: Action<HTMLDivElement> = node => {
 	const root = document
 		.querySelector(CUSTOM_ELEMENT_TAG)!
 		.shadowRoot!
-		.querySelector(`.${POPUP_CLASS}`);
+		.querySelector('body');
 
 	if (root) {
 		node.style.top = `${rect.bottom}px`;

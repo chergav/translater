@@ -40,10 +40,13 @@
   "dependencies": {
     "@floating-ui/dom": "^1.7.4",
     "@fontsource-variable/inter": "^5.2.8",
+    "@interactjs/actions": "^1.10.27",
+    "@interactjs/auto-start": "^1.10.27",
+    "@interactjs/interact": "^1.10.27",
+    "@interactjs/modifiers": "^1.10.27",
     "@tailwindcss/vite": "^4.1.18",
     "fast-deep-equal": "^3.1.3",
     "openai": "^6.15.0",
-    "qr-code-styling": "^1.9.2",
     "runed": "^0.37.1",
     "tailwindcss": "^4.2.1"
   }

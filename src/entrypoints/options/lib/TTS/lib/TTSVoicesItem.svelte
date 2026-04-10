@@ -33,7 +33,7 @@
 import type { Language } from '~/types';
 import { storage } from '~/shared/storage.svelte';
 import Select from '~/lib/Select.svelte';
-import TTSButton from '~/entrypoints/content/lib/PopupFull/lib/PopupMain/lib/TTS/TTSButton.svelte';
+import TTSButton from '~/entrypoints/content/lib/PopupFull/lib/TTS/TTSButton.svelte';
 
 interface Props {
 	language: Language

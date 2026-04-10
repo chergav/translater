@@ -1,6 +1,6 @@
-<div class="rounded-xl bg-color-surface p-1">
-	<div class="flex flex-col gap-1">
-		<div class="scrollbar max-h-80 overflow-y-auto p-1 whitespace-pre-line">
+<div class="h-full min-h-0 rounded-xl bg-color-surface p-1">
+	<div class="flex h-full flex-col gap-1">
+		<div class="scrollbar overflow-y-auto p-1 wrap-break-word whitespace-pre-line">
 			{#if providerStore.isSelectedProviderGoogle || store.isCachedItem}
 				<TranslationGoogle />
 			{:else}
@@ -39,8 +39,8 @@
 import { storage } from '~/shared/storage.svelte';
 import { store } from '~/entrypoints/content/store.svelte';
 import { providerStore } from '~/entrypoints/options/lib/Providers/providerStore.svelte';
-import TranslationGoogle from '~/entrypoints/content/lib/PopupFull/lib/PopupMain/lib/TranslationGoogle/TranslationGoogle.svelte';
-import TranslationAi from '~/entrypoints/content/lib/PopupFull/lib/PopupMain/lib/TranslationAi.svelte';
+import TranslationGoogle from '~/entrypoints/content/lib/PopupFull/lib/TranslationGoogle/TranslationGoogle.svelte';
+import TranslationAi from '~/entrypoints/content/lib/PopupFull/lib/TranslationAi.svelte';
 import { getDisplayedLanguageName } from '~/shared/languages';
 
 function setCorrectSourceLang(sourceLang?: string) {

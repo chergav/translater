@@ -1,7 +1,7 @@
 {#if store.translated && store.showFooter}
-	<div class="h-px bg-color-surface-high"></div>
-	<footer class="flex flex-col items-center justify-center gap-1 rounded-b-xl p-1">
-		<div class="flex w-full max-w-xl items-center gap-0.5 overflow-hidden rounded-full">
+	<div class="h-px bg-color-outline-variant"></div>
+	<footer class="flex min-h-0 flex-col items-center justify-center gap-1 rounded-b-xl bg-color-surface p-1">
+		<div class="flex w-full max-w-xl shrink-0 items-center gap-0.5 overflow-hidden rounded-full">
 			{#each tabs as tab (tab.id)}
 				{#if tab.component && Object.hasOwn(store.translated, tab.srcKey)}
 					{@const isActiveTab = activeTab === tab.id}
@@ -21,7 +21,7 @@
 			{/each}
 		</div>
 		{#if CurrentComponent}
-			<div class="w-full *:-mr-1" transition:slide={{ duration: 200 }}>
+			<div class="flex min-h-0 w-full *:-mr-1 *:min-h-0" transition:slide={{ duration: 200 }}>
 				<CurrentComponent />
 			</div>
 		{/if}

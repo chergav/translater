@@ -55,7 +55,7 @@ import type { Language } from '~/types';
 import { store } from '~/entrypoints/options/store.svelte';
 import TTSVoicesItem from './lib/TTSVoicesItem.svelte';
 import { languagesLocalArray, getDisplayedLanguageName } from '~/shared/languages';
-import { getVoices } from '~/entrypoints/content/lib/PopupFull/lib/PopupMain/lib/TTS/utils/tts';
+import { getVoices } from '~/entrypoints/content/lib/PopupFull/lib/TTS/utils/tts';
 
 if (!store.voices) {
 	store.voices = getVoices();
