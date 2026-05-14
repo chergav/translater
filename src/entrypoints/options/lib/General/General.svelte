@@ -68,6 +68,19 @@
 	<PopupModeSwitch />
 
 	<SettingsGroup>
+	<div class="flex flex-col gap-2 p-2">
+		<label class="flex items-center justify-between">
+			<span>Pop-up width (px)</span>
+			<input type="number" bind:value={storage.settings.popupWidth} class="w-20 border rounded p-1" />
+		</label>
+		<label class="flex items-center justify-between">
+			<span>Pop-up height(not in use) (px)</span>
+			<input type="number" bind:value={storage.settings.popupHeight} class="w-20 border rounded p-1" />
+		</label>
+	</div>
+	</SettingsGroup>
+
+	<SettingsGroup>
 		<Switch
 			hint={browser.i18n.getMessage('options_general_show_on_selected_hint')}
 			label={browser.i18n.getMessage('options_general_show_on_selected')}

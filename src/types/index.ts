@@ -26,6 +26,8 @@ export interface Settings {
 	showPopupOnSelection: boolean
 	popupMode: PopupMode
 	simpleModeShowLangs: boolean
+	popupWidth: number; // popup width
+	popupHeight: number; // popup height - not in use for now(h-fit)
 }
 
 export interface SettingsSync {

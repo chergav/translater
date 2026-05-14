@@ -1,9 +1,8 @@
 <div
-	style="left: {left}px; top: {top}px;"
+	style="left: {left}px; top: {top}px; width: {storage.settings.popupWidth}px;"
 	class={[
-		'fixed z-9999999 flex h-fit rounded-[18px]',
+		'fixed z-9999999 flex h-fit rounded-[18px]', // height : h-fit, width : user preference
 		'bg-color-surface-container text-start text-sm text-color-on-surface shadow-xl',
-		isFullMode ? 'w-xl' : 'w-fit max-w-sm min-w-64',
 		popupStore.dragging ? 'select-none' : 'select-auto',
 		POPUP_CLASS,
 	]}

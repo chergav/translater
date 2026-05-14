@@ -26,6 +26,8 @@ const initialSettings: Settings = {
 	showPopupOnSelection: false,
 	popupMode: PopupMode.Full,
 	simpleModeShowLangs: true,
+	popupWidth: 800, // popup default width
+	popupHeight: 350, // popup default height(not in use for now, h-fit)
 };
 
 class Storage {
