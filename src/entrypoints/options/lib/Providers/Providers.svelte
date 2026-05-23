@@ -1,67 +1,38 @@
-<div class="flex h-full flex-col *:mx-auto *:w-full *:max-w-4xl">
-	<div class="flex items-center gap-1 pb-2">
-		<div
-			class="relative flex max-w-full min-w-0 items-center"
-			onmouseenter={() => isInContainer = true}
-			onmouseleave={() => isInContainer = false}
-			role="menu"
-			tabindex="-1"
-		>
-			{#if showScrollButtons && !scroll.arrived.left}
-				<div class="absolute left-0 z-10" transition:fade={{ duration: 150 }}>
-					<Button
-						disabled={scroll.arrived.left}
-						icon={mdiChevronLeft}
-						onclick={() => scroll.x -= 300}
-						title="Scroll left"
-						variant="filled"
-					/>
-				</div>
-			{/if}
-			<div
-				bind:this={scrollContainer}
-				class="scrollbar-hidden flex max-w-full items-center gap-0.5 overflow-x-auto"
+<div class="flex items-start gap-4 rounded-3xl bg-color-surface-container-high p-4">
+	<div class="scrollbar flex w-full max-w-48 flex-col overflow-y-auto p-1">
+		<div class="mb-4">
+			<Button
+				label="Add provider"
+				onclick={providerStore.addProvider}
+				title="Add custom provider"
 			>
-				{#each providerStore.providers as provider (provider.id)}
-					{@const unfinishedSetup = providerStore.isUnfinishedSetup(provider)}
-					{@const activeTabProvider = provider.id === providerStore.activeTabProviderId}
-					{@const selectedProvider = provider.id === providerStore.selectedProvider.id}
-
-					<Button
-						class="max-w-40"
-						active={activeTabProvider}
-						icon={selectedProvider ? mdiCheckCircleOutline : ''}
-						iconRight={unfinishedSetup ? mdiAlertCircleOutline : ''}
-						iconRightClass="text-color-error"
-						label={provider.name}
-						onclick={() => { providerStore.activeTabProviderId = provider.id; }}
-						title={unfinishedSetup ? 'Complete the setup' : provider.name}
-					/>
-				{/each}
-			</div>
-			{#if showScrollButtons && !scroll.arrived.right}
-				<div class="absolute right-0 z-10" transition:fade={{ duration: 150 }}>
-					<Button
-						disabled={scroll.arrived.right}
-						icon={mdiChevronRight}
-						onclick={() => scroll.x += 300}
-						title="Scroll right"
-						variant="filled"
-					/>
-				</div>
-			{/if}
+				{#snippet leadingIcon()}
+					<Add />
+				{/snippet}
+			</Button>
 		</div>
-		<Button
-			class="shrink-0"
-			icon={mdiPlus}
-			onclick={providerStore.addProvider}
-			title="Add custom provider"
-		/>
+		{#each providerStore.providers as provider (provider.id)}
+			{@const unfinishedSetup = providerStore.isUnfinishedSetup(provider)}
+			{@const activeTabProvider = provider.id === providerStore.activeTabProviderId}
+			{@const selectedProvider = provider.id === providerStore.selectedProvider.id}
+
+			<NavRailItem
+				active={activeTabProvider}
+				label={provider.name}
+				onclick={() => { providerStore.activeTabProviderId = provider.id; }}
+				size="sm"
+				title={unfinishedSetup ? 'Complete the setup' : provider.name}
+			>
+				{#snippet icon()}
+					{#if selectedProvider}
+						<CheckCircle />
+					{/if}
+				{/snippet}
+			</NavRailItem>
+		{/each}
 	</div>
 
-	<div class="mx-6 h-px bg-color-surface-high"></div>
-
-	<div class="scrollbar flex h-full flex-col overflow-y-auto py-4">
+	<div class="scrollbar flex w-full flex-col overflow-y-auto rounded-2xl bg-color-surface-bright p-4">
 		{#key providerStore.activeTabProviderId}
 			<Provider provider={providerStore.activeTabProvider} />
 		{/key}
@@ -70,24 +41,13 @@
 
 <script lang="ts">
 import { onMount } from 'svelte';
-import { fade } from 'svelte/transition';
 import { providerStore } from './providerStore.svelte';
-import Button from '~/lib/Button.svelte';
+import Button from '~/lib/base/Button.svelte';
+import NavRailItem from '~/lib/base/NavRailItem.svelte';
 import Provider from './lib/Provider.svelte';
-import { mdiPlus, mdiChevronLeft, mdiChevronRight, mdiCheckCircleOutline, mdiAlertCircleOutline } from '@mdi/js';
-import { ScrollState } from 'runed';
 import { isBrowserTranslationAvailable } from '~/entrypoints/background/providers/browser';
-
-let scrollContainer = $state<HTMLDivElement>();
-let containerClientWidth = $state<number>();
-let isInContainer = $state<boolean>(false);
-const isContainerOverflow = $derived<boolean>((scrollContainer?.scrollWidth || 0) > (containerClientWidth || 0));
-const showScrollButtons = $derived<boolean>(isInContainer && isContainerOverflow);
-
-const scroll = new ScrollState({
-	element: () => scrollContainer,
-	behavior: 'smooth',
-});
+import Add from '~icons/material-symbols/add-rounded';
+import CheckCircle from '~icons/material-symbols/check-circle-rounded';
 
 onMount(async () => {
 	providerStore.isTranslationAPIAvailable = await isBrowserTranslationAvailable();

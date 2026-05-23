@@ -1,5 +1,5 @@
 {#await voicesPromise}
-	<Loader />
+	<Loader class="size-6" />
 {:then voices}
 	<TTSButton {targetLang} {text} voices={getVoicesByLang(targetLang, voices)} />
 {/await}

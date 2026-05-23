@@ -1,29 +1,38 @@
 <div
 	class="absolute z-999999999"
 	use:triggerPosition
-	in:fade={{ duration: 150 }}
+	in:fade={{ duration: DURATION_IN }}
 >
 	<button
 		class={[
-			'flex items-center justify-center rounded-lg p-0.5 shadow-lg',
-			'border border-color-surface-high bg-color-surface text-color-on-surface-variant',
+			'group relative flex items-center justify-center rounded-lg p-1 shadow-md',
+			'bg-color-surface-container text-color-on-surface-variant',
 		]}
+		aria-label={browser.i18n.getMessage('tooltip_translate_text')}
 		onclick={store.openPopup}
 		title={browser.i18n.getMessage('tooltip_translate_text')}
 		type="button"
 	>
-		<Icon d={customTranslatePath} />
+		<span
+			class={[
+				'pointer-events-none absolute inset-0 rounded-[inherit] bg-color-on-surface opacity-0 transition-opacity ease-effects-fast',
+				'group-hover:opacity-hover group-focus-visible:opacity-pressed group-active:opacity-pressed group-disabled:opacity-disabled',
+			]}
+		></span>
+		<Icon d={customTranslatePath} size="22" />
 	</button>
 </div>
 
 <script lang="ts">
 import type { Action } from 'svelte/action';
 import { fade } from 'svelte/transition';
+import { storage } from '~/shared/storage.svelte';
 import { store } from '~/entrypoints/content/store.svelte';
 import { computePosition, offset, flip, type VirtualElement } from '@floating-ui/dom';
 import Icon from '~/lib/Icon.svelte';
 import { customTranslatePath } from '~/assets/icons/customTranslatePath';
 
+const DURATION_IN = $derived<number>(storage.motionDisabled ? 0 : 150);
 let reference = $derived<VirtualElement>({
 	getBoundingClientRect: () => store.selectedEndCoord || new DOMRect(),
 });

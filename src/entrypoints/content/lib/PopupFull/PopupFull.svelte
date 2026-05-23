@@ -1,5 +1,5 @@
-<main class="flex min-h-0 flex-col rounded-xl bg-color-surface">
-	<div class="flex min-h-0 flex-col gap-1 p-1.5">
+<main class="flex min-h-40 flex-1 flex-col rounded-xl bg-color-surface-bright">
+	<div class="flex min-h-0 flex-col gap-1 p-2">
 		<div class="flex shrink-0 items-center justify-between">
 			<div class="flex items-center gap-1">
 				<SelectLanguage
@@ -14,21 +14,27 @@
 					text={store.textToTranslate}
 				/>
 			</div>
-			<Button
-				icon={mdiChevronDown}
-				iconClass={[
-					'transition-transform',
-					storage.settings.showOriginalText && '-scale-y-100',
-				]}
+			<IconButton
+				color="standard"
 				onclick={toggleOriginalText}
+				selected={storage.settings.showOriginalText}
 				size="xs"
 				title={browser.i18n.getMessage('options_show_original_text')}
-			/>
+				toggle
+				width="wide"
+			>
+				<KeyboardArrowDown
+					class={[
+						'transition-transform ease-effects-fast',
+						storage.settings.showOriginalText && '-scale-y-100',
+					]}
+				/>
+			</IconButton>
 		</div>
 		{#if storage.settings.showOriginalText}
 			<div
 				class="flex min-h-0 flex-col whitespace-pre-line"
-				transition:slide={{ duration: 150 }}
+				transition:slide={{ duration: DURATION }}
 			>
 				<TextareaOrig />
 				{#if store.translated?.spell?.spell_html_res &&
@@ -46,7 +52,7 @@
 					</div>
 				{/if}
 				{#if store.translated && storage.settings.showTransliteration}
-					<p class="px-1 text-sm text-color-on-surface-variant">{store.translated.sentence.src_translit}</p>
+					<p class="px-1.5 text-sm text-color-on-surface-variant">{store.translated.sentence.src_translit}</p>
 				{/if}
 				{#if
 					storage.settings.sourceLang !== 'auto' &&
@@ -67,13 +73,12 @@
 		{/if}
 	</div>
 
-	<div class="mx-2 h-0.5 shrink-0 bg-color-outline-variant"></div>
+	<div class="mx-3 h-0.5 shrink-0 bg-color-surface-dim"></div>
 
-	<div class="flex min-h-0 flex-col gap-1 p-1.5">
+	<div class="flex min-h-0 flex-col gap-1 p-2">
 		<div class="flex shrink-0 items-center justify-between">
 			<div class="flex items-center gap-1">
 				<SelectLanguage
-					markUILang
 					onchange={store.reTranslate}
 					bind:value={storage.settings.targetLang}
 				/>
@@ -83,25 +88,29 @@
 			{#if !providerStore.isSelectedProviderGoogle && store.translationAi}
 				{#if store.translationAi.isStreaming}
 					<div class="flex items-center gap-1">
-						<Loader />
-						<Button
-							icon={mdiStop}
+						<Loader class="size-6" />
+						<IconButton
+							color="standard"
 							onclick={store.stopTranslation}
 							size="xs"
 							title="Stop translation"
-						/>
+						>
+							<Stop />
+						</IconButton>
 					</div>
 				{:else}
-					<Button
-						icon={mdiRefresh}
+					<IconButton
+						color="standard"
 						onclick={store.reTranslateIgnoreCache}
 						size="xs"
 						title="Retry translation"
-					/>
+					>
+						<Refresh />
+					</IconButton>
 				{/if}
 			{/if}
 		</div>
-		<div class="scrollbar min-h-0 overflow-y-auto p-1 wrap-break-word whitespace-pre-line">
+		<div class="scrollbar min-h-0 overflow-y-auto px-1.5 py-1 wrap-break-word whitespace-pre-line">
 			{#if providerStore.isSelectedProviderGoogle || store.isCachedItem}
 				<TranslationGoogle />
 			{:else}
@@ -116,16 +125,20 @@ import { slide } from 'svelte/transition';
 import { store } from '~/entrypoints/content/store.svelte';
 import { storage } from '~/shared/storage.svelte';
 import { providerStore } from '~/entrypoints/options/lib/Providers/providerStore.svelte';
-import Button from '~/lib/Button.svelte';
+import IconButton from '~/lib/base/IconButton.svelte';
 import Loader from '~/lib/Loader.svelte';
 import TextareaOrig from './lib/TextareaOrig.svelte';
 import TranslationGoogle from './lib/TranslationGoogle/TranslationGoogle.svelte';
 import TranslationAi from './lib/TranslationAi.svelte';
 import ButtonCopy from './lib/ButtonCopy.svelte';
 import TTS from './lib/TTS/TTS.svelte';
-import { mdiChevronDown, mdiRefresh, mdiStop } from '@mdi/js';
-import SelectLanguage from '~/lib/SelectLanguage.svelte';
+import KeyboardArrowDown from '~icons/material-symbols/keyboard-arrow-down-rounded';
+import Stop from '~icons/material-symbols/stop-rounded';
+import Refresh from '~icons/material-symbols/refresh-rounded';
+import SelectLanguage from '~/lib/SelectLanguage/SelectLanguage.svelte';
 import { getDisplayedLanguageName } from '~/shared/languages';
+
+const DURATION = $derived<number>(storage.motionDisabled ? 0 : 150);
 
 const translatedText = $derived<string>(
 	providerStore.isSelectedProviderGoogle

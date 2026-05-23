@@ -4,7 +4,7 @@
 			Downloading model: {store.downloadProgress}%
 		</p>
 	{/if}
-	<div style="font-size: {storage.settings.fontSize}px; line-height: {storage.settings.fontSize * 1.6}px">
+	<div class={fontClass}>
 		{store.translationAi.text}
 	</div>
 	{#if storage.settings.showTransliteration}
@@ -25,4 +25,7 @@
 <script lang="ts">
 import { storage } from '~/shared/storage.svelte';
 import { store } from '~/entrypoints/content/store.svelte';
+import { getFontClass } from '~/entrypoints/content/utils/fontSizeToClass';
+
+const fontClass = $derived<string>(getFontClass(storage.settings.fontSize));
 </script>

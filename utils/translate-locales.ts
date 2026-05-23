@@ -57,6 +57,7 @@ async function translateLocales(inputFile: string, locales: string[]) {
 			});
 			const response = await fetch(url);
 			const data: GoogleTranslate = await response.json();
+			// eslint-disable-next-line no-useless-assignment
 			const translatedArray = data.sentences?.reduce((a, v) => (a += v.trans), '').split(delimiter);
 			return {
 				locale,

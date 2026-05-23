@@ -1,46 +1,55 @@
 <div class="flex w-full flex-col gap-2">
-	<div class="flex w-full items-center gap-2">
-		<Input
-			disabled={!providerStore.isCustomProvider}
-			error={modelError}
-			focus={!model.model}
-			hiddenHint={providerStore.isCustomProvider ? 'Make sure the model is a chat model' : undefined}
-			label={browser.i18n.getMessage('options_providers_model')}
-			onblur={setModel}
-			oninput={validateModel}
-			placeholder="e.g. deepseek-ai/DeepSeek-V3"
-			required={providerStore.isCustomProvider}
-			spellcheck="false"
-			value={model.model}
-		/>
-		{#if selectedModel}
-			<div class="self-end py-2" title="Selected model">
-				<Icon class="text-color-primary" d={mdiCheckCircleOutline} />
-			</div>
-		{/if}
-	</div>
+	<TextField
+		disabled={!providerStore.isCustomProvider}
+		error={!!modelError}
+		errorText={modelError}
+		// focus={!model.model}
+		label={browser.i18n.getMessage('options_providers_model')}
+		onblur={setModel}
+		oninput={validateModel}
+		placeholder="e.g. deepseek-ai/DeepSeek-V3"
+		required={providerStore.isCustomProvider}
+		spellcheck="false"
+		supportingText={providerStore.isCustomProvider ? 'Make sure the model is a chat model' : undefined}
+		value={model.model}
+		variant="outlined"
+	>
+		{#snippet leadingIcon()}
+			{#if selectedModel}
+				<CheckCircle />
+			{/if}
+		{/snippet}
+	</TextField>
 
-	<Button
-		disabled={disabledSelect || selectedModel}
-		icon={mdiCheck}
-		label="Use this model"
-		onclick={selectModel}
-	/>
+	<span>
+		<Button
+			color="tonal"
+			disabled={disabledSelect || selectedModel}
+			label="Use this model"
+			onclick={selectModel}
+		>
+			{#snippet leadingIcon()}
+				<CheckCircleOutline />
+			{/snippet}
+		</Button>
+	</span>
 
 	{#if providerStore.isCustomProvider}
 		<Button
 			disabled={disabledSelect || testRequestPending}
-			icon={testRequestPending ? mdiLoading : mdiCheckNetworkOutline}
-			iconClass={[testRequestPending && 'animate-spin']}
+			// icon={testRequestPending ? mdiLoading : mdiCheckNetworkOutline}
+			// iconClass={[testRequestPending && 'animate-spin']}
 			label="Test request"
 			onclick={testRequest}
-		/>
+		></Button>
 		<Button
-			icon={mdiTrashCanOutline}
 			label="Delete model"
 			onclick={deleteModel}
-			variant="danger"
-		/>
+		>
+			{#snippet leadingIcon()}
+				<Delete />
+			{/snippet}
+		</Button>
 		<div class="text-sm">
 			{#if testResponse}
 				<div class="inline-flex items-center gap-1">
@@ -64,10 +73,11 @@
 import type { TranslationModel } from '~/types/providers';
 import { storage } from '~/shared/storage.svelte';
 import { providerStore } from '../providerStore.svelte';
-import Input from '~/lib/Input.svelte';
-import Button from '~/lib/Button.svelte';
-import Icon from '~/lib/Icon.svelte';
-import { mdiTrashCanOutline, mdiCheckCircleOutline, mdiCheck, mdiCheckNetworkOutline, mdiLoading } from '@mdi/js';
+import TextField from '~/lib/base/TextField.svelte';
+import Button from '~/lib/base/Button.svelte';
+import CheckCircle from '~icons/material-symbols/check-circle-rounded';
+import CheckCircleOutline from '~icons/material-symbols/check-circle-outline-rounded';
+import Delete from '~icons/material-symbols/delete-outline-rounded';
 import { testProviderConnection } from '../utils/testProviderConnection';
 import { OpenAI } from 'openai';
 

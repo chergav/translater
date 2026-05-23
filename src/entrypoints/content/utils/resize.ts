@@ -16,6 +16,8 @@ export interface ResizeEvent {
 }
 
 export interface ResizeOptions {
+	/** node to apply cursor styles */
+	handleElem?: HTMLElement
 	/** Hit zone thickness in px (default: 8) */
 	margin?: number;
 	minWidth?: number;
@@ -55,10 +57,11 @@ export function resize(options: ResizeOptions = {}): Attachment<HTMLElement> {
 			onEnd,
 		} = options;
 
+		const handleTarget = options.handleElem ?? node;
 		const ownerDoc = node.ownerDocument;
 
 		const cursorTarget: HTMLElement =
-			(cursorContainer ? ownerDoc.querySelector<HTMLElement>(cursorContainer) : null)
+			(cursorContainer ? ownerDoc.querySelector<HTMLElement>(cursorContainer) : node)
 			?? ownerDoc.body;
 
 		let dragging = false;
@@ -75,7 +78,7 @@ export function resize(options: ResizeOptions = {}): Attachment<HTMLElement> {
 		};
 
 		function getDirection(e: PointerEvent): ResizeDirection | null {
-			const r = node.getBoundingClientRect();
+			const r = handleTarget.getBoundingClientRect();
 			const dxR = r.right - e.clientX;
 			const dxL = e.clientX - r.left;
 			const dyB = r.bottom - e.clientY;
@@ -89,39 +92,6 @@ export function resize(options: ResizeOptions = {}): Attachment<HTMLElement> {
 
 			if (!ns && !ew) return null;
 			return (ns + ew) as ResizeDirection;
-		}
-
-		/**
-		 * Returns true if the click came from a child element that overflows
-		 * outside node's bounds (e.g. an open dropdown rendered via overflow:visible).
-		 *
-		 * These children are DOM-inside node but visually outside — the user is
-		 * clicking on the dropdown UI, not on the resize border.
-		 */
-		function isOverflowingChildClick(e: PointerEvent): boolean {
-			const target = e.target;
-			if (!(target instanceof HTMLElement) || target === node) return false;
-			if (!node.contains(target)) return false;
-
-			const nodeRect = node.getBoundingClientRect();
-			const targetRect = target.getBoundingClientRect();
-
-			// Check if the click point is outside the node rect but inside the target rect —
-			// meaning the user clicked on the part of the child that overflows the node
-			const clickX = e.clientX, clickY = e.clientY;
-			const clickOutsideNode =
-				clickX < nodeRect.left ||
-				clickX > nodeRect.right ||
-				clickY < nodeRect.top ||
-				clickY > nodeRect.bottom;
-
-			const clickInsideTarget =
-				clickX >= targetRect.left &&
-				clickX <= targetRect.right &&
-				clickY >= targetRect.top &&
-				clickY <= targetRect.bottom;
-
-			return clickOutsideNode && clickInsideTarget;
 		}
 
 		function buildEvent(dx: number, dy: number): ResizeEvent {
@@ -179,14 +149,21 @@ export function resize(options: ResizeOptions = {}): Attachment<HTMLElement> {
 				onMove?.(buildEvent(dx, dy));
 				return;
 			}
+
+			if (e.target !== handleTarget) {
+				handleTarget.style.cursor = '';
+				// handleTarget.style.outline = '';
+				return;
+			}
+
 			const dir = getDirection(e);
-			node.style.cursor = dir ? CURSOR_MAP[dir] : '';
+			handleTarget.style.cursor = dir ? CURSOR_MAP[dir] : '';
+			// handleTarget.style.outline = '6px solid green';
+			// handleTarget.style.outlineOffset = '-6px';
 		}
 
 		function handlePointerDown(e: PointerEvent): void {
-			// Click landed on a child that visually overflows outside node bounds
-			// (e.g. an open dropdown) — don't intercept, let it select normally
-			if (isOverflowingChildClick(e)) return;
+			if (e.target instanceof HTMLElement && e.target !== handleTarget) return;
 
 			const dir = getDirection(e);
 			if (!dir) return;
@@ -205,7 +182,7 @@ export function resize(options: ResizeOptions = {}): Attachment<HTMLElement> {
 				height: node.offsetHeight,
 			};
 
-			node.setPointerCapture(e.pointerId);
+			handleTarget.setPointerCapture(e.pointerId);
 			cursorTarget.style.cursor = CURSOR_MAP[dir];
 
 			onStart?.(buildEvent(0, 0));
@@ -219,14 +196,14 @@ export function resize(options: ResizeOptions = {}): Attachment<HTMLElement> {
 			direction = null;
 		}
 
-		node.addEventListener('pointermove', handlePointerMove);
-		node.addEventListener('pointerdown', handlePointerDown);
-		node.addEventListener('pointerup', handlePointerUp);
+		handleTarget.addEventListener('pointermove', handlePointerMove);
+		handleTarget.addEventListener('pointerdown', handlePointerDown);
+		handleTarget.addEventListener('pointerup', handlePointerUp);
 
 		return () => {
-			node.removeEventListener('pointermove', handlePointerMove);
-			node.removeEventListener('pointerdown', handlePointerDown);
-			node.removeEventListener('pointerup', handlePointerUp);
+			handleTarget.removeEventListener('pointermove', handlePointerMove);
+			handleTarget.removeEventListener('pointerdown', handlePointerDown);
+			handleTarget.removeEventListener('pointerup', handlePointerUp);
 		};
 	};
 }

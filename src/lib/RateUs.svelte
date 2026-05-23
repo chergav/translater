@@ -1,20 +1,22 @@
 <div class="flex w-fit flex-col items-center gap-2">
-	<p class="text-sm text-color-on-surface-variant">Let us know your vibe:</p>
-	<div class="flex items-center gap-2">
+	<p class="text-sm text-color-on-surface-variant">Let us know your vibe</p>
+	<div class="flex items-center gap-4.5">
 		{#each buttons as { label, handler } (label)}
-			<Button
-				class="text-lg"
-				{label}
+			<IconButton
+				color="outlined"
 				onclick={handler}
 				size="xs"
-				variant="outlined"
-			/>
+				title=""
+				width="wide"
+			>
+				<span class="text-lg">{label}</span>
+			</IconButton>
 		{/each}
 	</div>
 </div>
 
 <script lang="ts">
-import Button from '~/lib/Button.svelte';
+import IconButton from '~/lib/base/IconButton.svelte';
 import { RATE_MAX_URL, RATE_MAX_URL_FIREFOX, getUninstallUrl } from '~/shared/constants';
 
 interface Buttons {

@@ -1,52 +1,38 @@
-<label class="ignore-active inline-flex items-center justify-between gap-2 select-none">
-	<div class="flex items-center gap-3">
-		{#if icon}
-			<span class="text-color-on-surface-variant">
-				<Icon d={icon} size="20" />
-			</span>
-		{/if}
-		{#if label}
-			<span>{label}</span>
-		{/if}
-	</div>
-	<select
-		name="select"
-		class={[
-			'cursor-pointer rounded-sm bg-color-surface text-color-on-surface transition-colors',
-			'border border-color-surface-highest focus:border-color-outline-variant',
-			'focus-visible:outline-custom focus-visible:outline-color-primary',
-			small ? 'p-1.5 text-sm' : 'p-2.5 text-base',
-		]}
-		{onchange}
-		bind:value
-	>
-		{#each languages as { code, language } (code)}
-			<option value={code}>{language}</option>
-		{/each}
-	</select>
-</label>
+<Select
+	class={className}
+	{label}
+	{labelIcon}
+	{onchange}
+	size="xs"
+	bind:value
+>
+	{#each languages as { code, language } (code)}
+		<option value={code}>{language}</option>
+	{/each}
+</Select>
 
 <script lang="ts">
-import type { ChangeEventHandler } from 'svelte/elements';
+import type { Snippet } from 'svelte';
+import type { ChangeEventHandler, ClassValue } from 'svelte/elements';
 import type { Language } from '~/types';
+import Select from '~/lib/base/Select.svelte';
 import { languagesLocalArray, sourceLanguageAuto, getDisplayedLanguageName } from '~/shared/languages';
-import Icon from './Icon.svelte';
 
 interface Props {
 	value: string
 	label?: string
+	labelIcon?: Snippet
 	autoLang?: boolean
-	small?: boolean
-	icon?: string
+	class?: ClassValue
 	onchange?: ChangeEventHandler<HTMLSelectElement>
 }
 
 let {
 	value = $bindable(),
 	label,
+	labelIcon,
 	autoLang = false,
-	small = false,
-	icon,
+	class: className,
 	onchange,
 }: Props = $props();
 

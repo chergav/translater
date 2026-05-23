@@ -1,5 +1,5 @@
 {#if store.translated}
-	<div style="font-size: {storage.settings.fontSize}px; line-height: {storage.settings.fontSize * 1.6}px">
+	<div class={fontClass}>
 		<TranslatedText translated={store.translated} />
 	</div>
 	{#if storage.settings.showTransliteration}
@@ -11,7 +11,7 @@
 	</p>
 {:else if store.isPending}
 	<div class="flex w-full justify-center py-2">
-		<Loader />
+		<Loader class="size-6" />
 	</div>
 {:else}
 	<p class="text-color-on-surface-variant">
@@ -24,4 +24,7 @@ import { storage } from '~/shared/storage.svelte';
 import { store } from '~/entrypoints/content/store.svelte';
 import Loader from '~/lib/Loader.svelte';
 import TranslatedText from './lib/TranslatedText/TranslatedText.svelte';
+import { getFontClass } from '~/entrypoints/content/utils/fontSizeToClass';
+
+const fontClass = $derived<string>(getFontClass(storage.settings.fontSize));
 </script>

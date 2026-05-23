@@ -1,7 +1,8 @@
 <label
 	class={[
-		'group/label inline-flex w-fit cursor-pointer items-center gap-2 select-none',
+		'group/label flex w-fit cursor-pointer items-center gap-2 text-color-on-surface select-none',
 		'has-disabled:pointer-events-none has-disabled:opacity-50',
+		className,
 	]}
 >
 	<div class="group relative flex items-center justify-center">
@@ -16,8 +17,8 @@
 		<!-- background -->
 		<div
 			class={[
-				'absolute size-[18px] scale-50 rounded-xs opacity-0 transition-[background-color,_transform]',
-				'peer-checked:scale-100 peer-checked:bg-color-primary peer-checked:opacity-100',
+				'absolute size-[18px] scale-50 rounded-xs opacity-0 transition-[background-color,transform]',
+				'peer-checked:scale-100 peer-checked:bg-color-primary/100 peer-checked:opacity-100',
 			]}
 		></div>
 		<!-- mark -->
@@ -40,13 +41,13 @@
 		<div
 			class={[
 				'absolute size-10 rounded-full transition-colors',
-				'group-hover:bg-color-on-surface-variant/15 peer-checked:group-hover:bg-color-primary/15',
-				'group-hover:peer-active:bg-color-on-surface-variant/25 peer-checked:peer-active:group-hover:bg-color-primary/25',
-				'peer-focus-visible:outline-custom peer-focus-visible:outline-color-primary',
+				'group-hover:bg-color-on-surface/8 peer-checked:group-hover:bg-color-primary/8',
+				'group-hover:peer-active:bg-color-on-surface/16 peer-checked:peer-active:group-hover:bg-color-primary/16',
+				'peer-focus-visible:outline-common peer-focus-visible:outline-color-primary',
 			]}
 		></div>
 	</div>
-	<div class="flex flex-col gap-0.5">
+	<div class="flex flex-col">
 		<span>{label}</span>
 		{#if hint}
 			<span class="text-sm text-color-on-surface-variant">{hint}</span>
@@ -55,18 +56,20 @@
 </label>
 
 <script lang="ts">
-import type { HTMLInputAttributes } from 'svelte/elements';
+import type { HTMLInputAttributes, ClassValue } from 'svelte/elements';
 
 interface Props extends HTMLInputAttributes {
 	checked: boolean
 	label: string
 	hint?: string
+	class?: ClassValue
 }
 
 let {
 	checked = $bindable(),
 	label,
 	hint,
+	class: className,
 	...rest
 }: Props = $props();
 </script>

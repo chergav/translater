@@ -1,10 +1,14 @@
 import type { GoogleTranslate, Sentence } from '~/types/google';
 import type { TranslationProvider } from '~/types/providers';
+import type { Scheme } from '~/utils/material-color-helpers.js';
 
 export interface Settings {
 	theme: Theme
-	themeVariant: ThemeVariant
-	accentColor: AccentColor
+	accentColor: ThemeColor
+	contrastLevel: ContrastLevel
+	customTheme: string
+	seedColor: string
+	colorScheme: Scheme
 	fontSize: FontSize
 	sourceLang: string
 	targetLang: string
@@ -26,6 +30,7 @@ export interface Settings {
 	showPopupOnSelection: boolean
 	popupMode: PopupMode
 	simpleModeShowLangs: boolean
+	motionPreference: MotionPreference
 }
 
 export interface SettingsSync {
@@ -42,22 +47,31 @@ export enum Theme {
 	System = 'system',
 }
 
-export enum ThemeVariant {
-	Slate = 'slate',
-	Gray = 'gray',
-	Zinc = 'zinc',
-	Neutral = 'neutral',
-	Stone = 'stone',
-	Mauve = 'mauve',
+export enum ContrastLevel {
+	Default = 0.0,
+	Medium = 0.5,
+	High = 1.0,
 }
 
-export enum AccentColor {
+export enum Contrast {
+	Default = 'default',
+	Medium = 'medium',
+	High = 'high',
+}
+
+export enum ThemeColor {
+	Monochrome = 'neutral', // "monochrome" is "neutral" for backward compatibility
+	Yellow = 'yellow',
 	Amber = 'amber',
-	Green = 'green',
+	Orange = 'orange',
 	Blue = 'blue',
+	Cyan = 'cyan',
+	Green = 'green',
 	Purple = 'purple',
 	Pink = 'pink',
-	Neutral = 'neutral',
+	Red = 'red',
+	Teal = 'teal',
+	Custom = 'custom',
 }
 
 export enum FontSize {
@@ -71,7 +85,6 @@ export enum FontSize {
 export enum PopupMode {
 	Full = 'full',
 	Simple = 'simple',
-	// Inline = 'inline',
 }
 
 export interface HistoryItem {
@@ -191,4 +204,10 @@ export interface TranslationAi {
 	text: string
 	sourceLang?: string
 	isStreaming?: boolean
+}
+
+export enum MotionPreference {
+	Off = 'off',
+	System = 'system',
+	On = 'on',
 }

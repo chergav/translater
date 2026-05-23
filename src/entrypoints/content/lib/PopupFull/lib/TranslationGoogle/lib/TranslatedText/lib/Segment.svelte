@@ -1,20 +1,22 @@
 {#if segment.alternatives.length}
 	<span
+		class={[
+			'cursor-pointer rounded-xs text-color-on-surface hover:bg-color-secondary-container hover:text-color-on-secondary-container',
+			'transition-colors ease-effects-fast',
+			'outline-color-secondary focus-visible:outline-common',
+			altsOpen && 'bg-color-secondary-container text-color-on-secondary-container',
+		]}
 		onclick={openAlts}
 		onclickoutside={closeAlts}
-		onkeypress={() => {}}
+		onkeydown={onKeydownHandler}
 		onmouseenter={highlightOrigText}
 		onmouseleave={highlightOrigTextOff}
 		role="button"
 		tabindex="0"
+		title="Show alternatives"
 		use:clickOutside={actionParams}
 	>
-		<span
-			class={[
-				'cursor-pointer rounded-xs hover:bg-color-primary/15',
-				altsOpen && 'bg-color-primary/15',
-			]}
-		>{segmentText}</span>
+		{segmentText}
 	</span>
 	{#if altsOpen}
 		<Alternatives
@@ -31,7 +33,6 @@
 
 <script lang="ts">
 import type { TransSegment } from '~/types';
-
 import Alternatives from './Alternatives.svelte';
 import { type ActionParams, clickOutside } from '~/utils';
 import { store } from '~/entrypoints/content/store.svelte';
@@ -64,5 +65,12 @@ function highlightOrigText() {
 
 function highlightOrigTextOff() {
 	store.textToHighlight = '';
+}
+
+function onKeydownHandler(e: KeyboardEvent) {
+	if (e.code === 'Space' || e.code === 'Enter') {
+		e.preventDefault();
+		openAlts(e);
+	}
 }
 </script>

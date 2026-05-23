@@ -1,30 +1,31 @@
 <div
-	class="border-b border-color-surface-high py-2 text-sm last:border-b-0"
+	class="py-2 text-sm"
 	out:slide={{ duration: 250 }}
 >
-	<div class="mb-2 flex justify-between">
-		<div class="flex items-center gap-2">
-			<span>{getDisplayedLanguageName(historyItem.sourceLang)} -> {getDisplayedLanguageName(historyItem.targetLang)}</span>
+	<div class="flex justify-between">
+		<div class="flex items-center gap-2 text-xs">
+			<span class="font-medium">{getDisplayedLanguageName(historyItem.sourceLang)} -> {getDisplayedLanguageName(historyItem.targetLang)}</span>
 			{#if historyItem.model}
 				<span class="text-color-on-surface-variant">
 					[{historyItem.model}]
 				</span>
 			{/if}
 		</div>
-		<Button
-			icon={mdiTrashCanOutline}
+		<IconButton
+			color="standard"
 			onclick={() => {
 				storageHistory.delete(historyItem.time);
 			}}
 			size="xs"
 			title={browser.i18n.getMessage('options_delete_history_item')}
-			variant="dangerText"
-		/>
+		>
+			<Delete />
+		</IconButton>
 	</div>
 	<div class:line-clamp-1={truncateOrig}>
 		{historyItem.orig}
 	</div>
-	{#if truncateOrig || historyItem.orig.length > 100}
+	{#if truncateOrig || historyItem.orig.length > stringLengthMax}
 		<button
 			class="mb-1 cursor-pointer text-xs font-medium text-color-on-surface-variant underline"
 			onclick={() => {
@@ -38,7 +39,7 @@
 	<div class={[truncateTrans && 'line-clamp-1', 'text-color-on-surface-variant']}>
 		{historyItem.trans}
 	</div>
-	{#if truncateTrans || historyItem.trans.length > 100}
+	{#if truncateTrans || historyItem.trans.length > stringLengthMax}
 		<button
 			class="mb-1 cursor-pointer text-xs font-medium text-color-on-surface-variant underline"
 			onclick={() => {
@@ -55,8 +56,8 @@
 import type { HistoryItem } from '~/types';
 import { slide } from 'svelte/transition';
 import { storageHistory } from '../storageHistory.svelte';
-import Button from '~/lib/Button.svelte';
-import { mdiTrashCanOutline } from '@mdi/js';
+import IconButton from '~/lib/base/IconButton.svelte';
+import Delete from '~icons/material-symbols/delete-outline-rounded';
 import { getDisplayedLanguageName } from '~/shared/languages';
 
 interface Props {
@@ -65,8 +66,8 @@ interface Props {
 
 let { historyItem }: Props = $props();
 
-// svelte-ignore state_referenced_locally
-let truncateOrig = $state<boolean>(historyItem.orig.length > 100);
-// svelte-ignore state_referenced_locally
-let truncateTrans = $state<boolean>(historyItem.trans.length > 100);
+const stringLengthMax = 90;
+
+let truncateOrig = $derived<boolean>(historyItem.orig.length > stringLengthMax);
+let truncateTrans = $derived<boolean>(historyItem.trans.length > stringLengthMax);
 </script>

@@ -1,15 +1,19 @@
-<Button
+<IconButton
+	color="standard"
 	disabled={!isClipboardSupport || !text}
-	icon={isCopySuccess ? mdiCheckCircleOutline : isCopyFailure ? mdiAlertCircleOutline : mdiContentCopy}
-	iconClass={isCopySuccess ? 'text-green-500' : isCopyFailure ? 'text-red-500' : ''}
 	onclick={copyToClipboard}
 	size="xs"
 	{title}
-/>
+>
+	<Icon class={isCopySuccess ? 'text-green-500' : isCopyFailure ? 'text-color-error' : ''} />
+</IconButton>
 
 <script lang="ts">
-import Button from '~/lib/Button.svelte';
-import { mdiContentCopy, mdiCheckCircleOutline, mdiAlertCircleOutline } from '@mdi/js';
+import type { Component } from 'svelte';
+import IconButton from '~/lib/base/IconButton.svelte';
+import ContentCopy from '~icons/material-symbols/content-copy-outline-rounded';
+import Check from '~icons/material-symbols/check-circle-outline-rounded';
+import Error from '~icons/material-symbols/error-outline-rounded';
 
 interface Props {
 	text: string
@@ -25,6 +29,8 @@ let title = $derived(isClipboardSupport
 	? browser.i18n.getMessage('tooltip_copy_to_clipboard')
 	: browser.i18n.getMessage('tooltip_copy_not_support_on_http'),
 );
+
+let Icon = $derived<Component>(isCopySuccess ? Check : isCopyFailure ? Error :  ContentCopy);
 
 function reset() {
 	setTimeout(() => {

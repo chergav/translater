@@ -1,27 +1,56 @@
 {#if definitions}
-	<div class="scrollbar max-h-96 overflow-y-auto p-1">
+	<div>
 		{#each definitions as definition, index (index)}
 			<div class="mb-3 last:mb-0">
 				<div class="mb-2 font-medium text-color-primary capitalize">{definition.pos}</div>
 				<ul class="list-none space-y-3">
 					{#each definition.entry as defEntry, index (index)}
 						{@const defLabels = defEntry.label_info ? getLabels(defEntry.label_info) : []}
-						<div class="flex gap-4">
-							<span class="flex size-5 shrink-0 items-center justify-center rounded-full border border-color-surface-high">
+						<div class="flex gap-3">
+							<span class="flex size-5 shrink-0 items-center justify-center rounded-full border border-color-outline-variant">
 								{index + 1}
 							</span>
 							<li>
-								{#each defLabels as label, index (index)}
-									<span class="mr-1 rounded bg-color-surface-high px-1 py-[2px] text-xs font-medium uppercase">
-										{label}
-									</span>
-								{/each}
-								<div>{defEntry.gloss}</div>
+								{#if defLabels.length}
+									<div class="mb-1 flex items-center gap-1">
+										{#each defLabels as label, index (index)}
+											<span class="rounded-sm bg-color-surface-container-high px-1 py-0.5 text-xs font-medium uppercase">
+												{label}
+											</span>
+										{/each}
+									</div>
+								{/if}
+								<span
+									class={[
+										'cursor-pointer rounded-xs text-color-on-surface',
+										'hover:bg-color-secondary-container hover:text-color-on-secondary-container',
+										'transition-colors ease-effects-fast',
+										'outline-color-secondary focus-visible:outline-common',
+									]}
+									onclick={() => translate(defEntry.gloss)}
+									onkeydown={e => onKeydownHandler(e, defEntry.gloss)}
+									role="button"
+									tabindex="0"
+									title="Translate definition"
+								>{defEntry.gloss}</span>
 								{#if defEntry.example}
-									<div class="text-color-on-surface-variant">"{defEntry.example}"</div>
+									<br>
+									<span
+										class={[
+											'cursor-pointer rounded-xs text-color-on-surface-variant',
+											'hover:bg-color-secondary-container hover:text-color-on-secondary-container',
+											'transition-colors ease-effects-fast',
+											'outline-color-secondary focus-visible:outline-common',
+										]}
+										onclick={() => translate(defEntry.example!)}
+										onkeydown={e => onKeydownHandler(e, defEntry.example!)}
+										role="button"
+										tabindex="0"
+										title="Translate example"
+									>"{defEntry.example}"</span>
 								{/if}
 								{#if defEntry.synsets}
-									<div class="mt-2 mb-1 text-color-on-surface-variant">
+									<div class="my-1 text-color-on-surface-variant">
 										{browser.i18n.getMessage('popup_definitions_synonyms')}
 									</div>
 									{#each sortSynonyms(defEntry.synsets) as entry, index (index)}
@@ -33,21 +62,17 @@
 											{/each}
 										{/if}
 										{#each entry.synonym as synonym, index (index)}
-											<span
+											<button
 												class={[
-													'mr-1 mb-1 inline-block cursor-pointer rounded-full px-2 py-1 transition-colors',
-													'border border-color-surface-high text-color-on-surface-variant',
-													'hover:bg-color-primary/10 hover:text-color-primary',
+													'mr-1 mb-1 inline rounded-sm px-1.5 transition-colors ease-effects-fast',
+													'outline-color-secondary focus-visible:outline-common',
+													'bg-color-surface-container-high text-color-on-surface-variant',
+													'hover:bg-color-secondary-container hover:text-color-on-secondary-container',
 												]}
-												onclick={() => {
-													translate(synonym);
-												}}
-												onkeypress={e => {
-													if (e.code === 'Enter')	translate(synonym);
-												}}
-												role="button"
-												tabindex="0"
-											>{synonym}</span>
+												onclick={() => translate(synonym)}
+												onkeypress={e => onKeydownHandler(e, synonym)}
+												type="button"
+											>{synonym}</button>
 										{/each}
 									{/each}
 								{/if}
@@ -110,5 +135,12 @@ function getLabels(label: LabelInfo) {
 function translate(text: string) {
 	store.textToTranslate = text;
 	store.translate();
+}
+
+function onKeydownHandler(e: KeyboardEvent, text: string) {
+	if (e.code === 'Space' || e.code === 'Enter') {
+		e.preventDefault();
+		translate(text);
+	}
 }
 </script>

@@ -1,4 +1,4 @@
-<div class="h-full min-h-0 rounded-xl bg-color-surface p-1">
+<div class="h-full min-h-0 rounded-xl bg-color-surface-bright p-1">
 	<div class="flex h-full flex-col gap-1">
 		<div class="scrollbar overflow-y-auto p-1 wrap-break-word whitespace-pre-line">
 			{#if providerStore.isSelectedProviderGoogle || store.isCachedItem}

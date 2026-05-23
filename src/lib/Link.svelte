@@ -1,6 +1,6 @@
 <a
 	class={[
-		'inline-flex cursor-pointer items-center gap-1 text-color-link hover:underline',
+		'inline-flex items-center gap-1 text-color-primary hover:underline',
 		className,
 	]}
 	{href}
@@ -8,36 +8,33 @@
 	{target}
 	{...rest}
 >
+	{#if leadingIcon}
+		{@render leadingIcon()}
+	{/if}
 	<span>{label}</span>
-	{#if icon}
-		<Icon d={mdiOpenInNew} size={iconSize} />
+	{#if trailingIcon}
+		{@render trailingIcon()}
 	{/if}
 </a>
 
 <script lang="ts">
-import type { ComponentProps } from 'svelte';
+import type { Snippet } from 'svelte';
 import type { HTMLAnchorAttributes } from 'svelte/elements';
-import Icon from '~/lib/Icon.svelte';
-import { mdiOpenInNew } from '@mdi/js';
-
-type IconSize = ComponentProps<typeof Icon>['size'];
 
 interface Props extends HTMLAnchorAttributes {
-	href: string
 	label: string
 	class?: string
-	icon?: boolean
-	iconSize?: IconSize
-
+	leadingIcon?: Snippet
+	trailingIcon?: Snippet
 }
 
 let {
 	href,
 	label,
-	icon = false,
+	leadingIcon,
+	trailingIcon,
 	class: className = '',
 	target = '_blank',
-	iconSize = '18',
 	...rest
 }: Props = $props();
 </script>

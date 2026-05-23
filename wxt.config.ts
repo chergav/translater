@@ -1,13 +1,21 @@
 import { defineConfig } from 'wxt';
 import tailwindcss from '@tailwindcss/vite';
+import Icons from 'unplugin-icons/vite';
 
 // See https://wxt.dev/api/config.html
 export default defineConfig({
 	vite: () => ({
 		build: {
 			target: 'esnext',
+			cssMinify: 'esbuild',
 		},
-		plugins: [tailwindcss()],
+		plugins: [
+			tailwindcss(),
+			Icons({
+				compiler: 'svelte',
+				scale: 0,
+			}),
+		],
 	}),
 	srcDir: 'src',
 	modules: ['@wxt-dev/module-svelte'],
@@ -15,6 +23,9 @@ export default defineConfig({
 		disabled: true,
 	},
 	outDirTemplate: '{{browser}}-mv{{manifestVersion}}',
+	dev: {
+		server: { port: 3009 },
+	},
 	manifest: ({ browser }) => {
 		return {
 			name: '__MSG_app_name__',

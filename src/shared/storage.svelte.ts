@@ -1,13 +1,17 @@
-import { type Settings, Theme, ThemeVariant, AccentColor, FontSize, PopupMode } from '~/types';
+import { type Settings, Theme, ThemeColor, FontSize, PopupMode, ContrastLevel, Contrast, MotionPreference } from '~/types';
 import { GOOGLE_TRANSLATE_MODEL_ID } from '~/types/providers';
 import { MediaQuery } from 'svelte/reactivity';
 import { getUILanguageCode } from '~/shared/languages';
+import { CUSTOM_THEME_PRESET } from '~/shared/constants';
 import deepEqual from 'fast-deep-equal';
 
 const initialSettings: Settings = {
 	theme: Theme.System,
-	themeVariant: ThemeVariant.Slate,
-	accentColor: AccentColor.Blue,
+	accentColor: ThemeColor.Blue,
+	seedColor: '#6750A4',
+	colorScheme: 'rainbow',
+	customTheme: CUSTOM_THEME_PRESET,
+	contrastLevel: ContrastLevel.Default,
 	fontSize: FontSize.Normal,
 	sourceLang: 'auto',
 	targetLang: getUILanguageCode(),
@@ -18,7 +22,7 @@ const initialSettings: Settings = {
 	blacklistDomainForInline: [],
 	blacklistDomainForText: [],
 	historyEnable: true,
-	historyLength: 50,
+	historyLength: 100,
 	lockWindow: false,
 	ttsVoiceByLang: {},
 	modelId: GOOGLE_TRANSLATE_MODEL_ID,
@@ -26,20 +30,32 @@ const initialSettings: Settings = {
 	showPopupOnSelection: false,
 	popupMode: PopupMode.Full,
 	simpleModeShowLangs: true,
+	motionPreference: MotionPreference.System,
 };
+
+export const contrastLevelMap: Record<ContrastLevel, Contrast> = {
+	[ContrastLevel.Default]: Contrast.Default,
+	[ContrastLevel.Medium]: Contrast.Medium,
+	[ContrastLevel.High]: Contrast.High,
+} as const;
 
 class Storage {
 	#cleanup: () => void;
 	#isPreferredDark = new MediaQuery('prefers-color-scheme: dark');
+	#motionReduced = new MediaQuery('prefers-reduced-motion: reduce');
 	#lastExternalSnapshot: Partial<Settings> = {};
 	#prevSnapshot: Settings;
 	public settings: Settings;
 	public themeClass: Theme.Light | Theme.Dark;
+	public contrast: Contrast;
+	public motionDisabled: boolean;
 
 	public constructor(settings: Settings) {
 		this.settings = $state<Settings>(settings);
 		this.#prevSnapshot = settings;
 		this.themeClass = $derived(this.#getThemeClass(this.settings.theme));
+		this.contrast = $derived(contrastLevelMap[this.settings.contrastLevel]);
+		this.motionDisabled = $derived<boolean>(this.#getMotionPreferences(this.settings.motionPreference));
 		this.#cleanup = $effect.root(() => {
 			$effect(() => {
 				const stateSnapshot = $state.snapshot(this.settings);
@@ -54,6 +70,13 @@ class Storage {
 			return this.#isPreferredDark.current ? Theme.Dark : Theme.Light;
 		}
 		return theme;
+	}
+
+	#getMotionPreferences(motion: MotionPreference) {
+		if (motion === MotionPreference.System) {
+			return this.#motionReduced.current;
+		}
+		return motion === MotionPreference.Off;
 	}
 
 	async #sync(snapshot: Settings) {

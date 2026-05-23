@@ -1,17 +1,12 @@
-<Icon
-	class="animate-spin text-color-primary"
-	d={mdiLoading}
-	{size}
-/>
+<Progress class={['shrink-0 animate-spin text-color-primary', className]} />
 
 <script lang="ts">
-import type { ComponentProps } from 'svelte';
-import Icon from '~/lib/Icon.svelte';
-import { mdiLoading } from '@mdi/js';
+import type { ClassValue } from 'svelte/elements';
+import Progress from '~icons/material-symbols/progress-activity';
 
 interface Props {
-	size?: ComponentProps<typeof Icon>['size']
+	class?: ClassValue
 }
 
-let { size }: Props = $props();
+let { class: className }: Props = $props();
 </script>

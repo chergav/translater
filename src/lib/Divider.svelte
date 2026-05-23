@@ -1,13 +1,12 @@
 <div
 	class={[
-		'relative flex h-7 w-full items-center justify-center',
+		'flex h-7 w-full items-center',
 		className,
 	]}
 >
-	<div class="absolute h-px w-full border border-color-outline-variant"></div>
-	<div class="absolute flex h-7 items-center justify-center bg-color-surface px-2.5">
-		<div class="text-base text-color-on-surface-variant">{label}</div>
-	</div>
+	<div class="h-px w-full bg-color-outline-variant"></div>
+	<div class="px-2 text-base text-color-on-surface-variant">{label}</div>
+	<div class="h-px w-full bg-color-outline-variant"></div>
 </div>
 
 <script lang="ts">

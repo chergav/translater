@@ -107,6 +107,7 @@ export const googleTranslate = async ({
 If you use a VPN/Proxy, disable it or add the host "https://translate.googleapis.com" to the exceptions of your VPN/Proxy application.
 Or try another provider.`;
 		console.debug(msg);
+		// eslint-disable-next-line preserve-caught-error
 		throw new Error(msg);
 	}
 };

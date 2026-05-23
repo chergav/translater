@@ -5,7 +5,7 @@ import { CUSTOM_ELEMENT_TAG } from '~/shared/constants';
 import App from './App.svelte';
 import { mount, unmount } from 'svelte';
 import '~/assets/tailwind.css';
-import '@fontsource-variable/inter';
+import '@fontsource-variable/inter/index.css';
 
 export default async (ctx: ContentScriptContext) => {
 	const stylesText = await fetch(
@@ -16,8 +16,15 @@ export default async (ctx: ContentScriptContext) => {
 		name: CUSTOM_ELEMENT_TAG,
 		position: 'inline',
 		anchor: () => document.body || document.documentElement || document.querySelector('html') || null,
-		isolateEvents: true,
-		onMount: (container, shadow) => {
+		// use own isolateEvents, since it currently breaks the Svelte listener
+		// isolateEvents: true,
+		onMount: (container, shadow, shadowHost) => {
+			const controller = new AbortController();
+			['keydown', 'keyup', 'keypress'].forEach(type => {
+				shadowHost.addEventListener(type, e => e.stopPropagation(), {
+					signal: controller.signal,
+				});
+			});
 			const instanceId = Math.random().toString(36).substring(2, 15);
 			const { shadowCss, documentCss } = splitShadowRootCss(stylesText.trim());
 
@@ -36,13 +43,21 @@ export default async (ctx: ContentScriptContext) => {
 				(document.head ?? document.body).append(style);
 			}
 
-			return mount(App, {
-				target: container,
-			});
+			// return mount(App, {
+			// 	target: container,
+			// });
+
+			const app = mount(App, { target: container });
+			return {
+				app,
+				controller,
+			};
 		},
-		onRemove: app => {
-			if (app) unmount(app);
-			// console.debug('[Translator]: removing UI');
+		onRemove: mounted => {
+			if (mounted) {
+				unmount(mounted?.app);
+				mounted?.controller.abort();
+			}
 		},
 	});
 

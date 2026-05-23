@@ -1,7 +1,8 @@
 <div
-	data-accent={storage.settings.accentColor}
+	class={[ROOT_ELEM_CLASS, storage.motionDisabled && 'reduced-motion']}
+	data-contrast={storage.contrast}
 	data-theme={storage.themeClass}
-	data-variant={storage.settings.themeVariant}
+	data-theme-color={storage.settings.accentColor}
 >
 	{#await shouldShowButtonPromise then isUserLanguage}
 		{#if isUserLanguage && shouldShowTrigger}
@@ -20,7 +21,7 @@
 />
 
 <script lang="ts">
-import { type Message } from '~/types';
+import { type Message, ThemeColor } from '~/types';
 import { onMount, onDestroy } from 'svelte';
 import { storage } from '~/shared/storage.svelte';
 import { store } from './store.svelte';
@@ -28,7 +29,8 @@ import { providerStore } from '~/entrypoints/options/lib/Providers/providerStore
 import Trigger from './lib/Trigger.svelte';
 import Popup from './lib/Popup.svelte';
 import { getSelectedText, getSelectedElemRect, getSelectedEndCoord, isInTextField } from './utils';
-import { CUSTOM_ELEMENT_TAG } from '~/shared/constants';
+import { applyThemeString } from '~/utils/theme';
+import { CUSTOM_ELEMENT_TAG, ROOT_ELEM_CLASS } from '~/shared/constants';
 import { detectLanguage } from '~/shared/browser';
 import { isBrowserTranslationAvailable } from '~/entrypoints/background/providers/browser';
 import { useDebounce } from 'runed';
@@ -115,6 +117,13 @@ function onMessage(
 		}
 	}
 }
+
+$effect.pre(() => {
+	if (storage.settings.accentColor === ThemeColor.Custom && storage.settings.customTheme) {
+		const host = document.querySelector(CUSTOM_ELEMENT_TAG);
+		if (host?.shadowRoot) applyThemeString(host.shadowRoot, storage.settings.customTheme);
+	}
+});
 
 onMount(async () => {
 	browser.runtime.onMessage.addListener(onMessage);

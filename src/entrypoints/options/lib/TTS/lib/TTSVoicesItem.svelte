@@ -8,7 +8,7 @@
 			onchange={() => {
 				storage.settings.ttsVoiceByLang[language.code] = selectedVoice.name;
 			}}
-			small
+			size="xs"
 			bind:value={selectedVoice}
 		>
 			{#each voices as voice, index (index)}
@@ -32,7 +32,7 @@
 <script lang="ts">
 import type { Language } from '~/types';
 import { storage } from '~/shared/storage.svelte';
-import Select from '~/lib/Select.svelte';
+import Select from '~/lib/base/Select.svelte';
 import TTSButton from '~/entrypoints/content/lib/PopupFull/lib/TTS/TTSButton.svelte';
 
 interface Props {

@@ -5,8 +5,10 @@ export const builtinProviders: TranslationProvider[] = [
 		id: ProviderId.GoogleTranslate,
 		name: 'Google Translate',
 		protocol: 'simple-api',
-		requiresSubscription: false,
 		isBuiltin: true,
+		requiresSubscription: false,
+		// eslint-disable-next-line @stylistic/quotes
+		note: `To avoid rate limit errors, add "https://translate.googleapis.com" to your VPN/proxy exceptions.`,
 		models: [
 			{
 				id: GOOGLE_TRANSLATE_MODEL_ID,

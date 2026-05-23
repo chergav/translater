@@ -1,11 +1,11 @@
 {#if store.translated?.dict}
-	<div class="scrollbar max-h-96 overflow-y-auto p-1">
+	<div>
 		<table class="w-full text-sm">
 			<tbody>
 				{#each store.translated.dict as dict, index (index)}
 					<tr>
 						<td
-							class="w-full pb-2 font-medium text-color-primary capitalize"
+							class="w-full px-1.5 pb-2 font-medium text-color-primary capitalize"
 							colspan="2"
 						>{dict.pos}</td>
 						{#if index === 0}
@@ -15,48 +15,45 @@
 									title="Indicates how often a translation appears in public documents"
 								>
 									{browser.i18n.getMessage('popup_dictionary_frequency')}
-									<Icon d={mdiHelpCircleOutline} size="18" />
+									<Help class="size-4" />
 								</span>
 							</td>
 						{/if}
 					</tr>
 
 					{#each dict.entry as entry, index (index)}
-						<tr>
-							<td class="py-1 align-top whitespace-nowrap">
-								{entry.word}
+						<tr class="border-b border-color-outline-variant last:border-none">
+							<td class="py-1 align-top">
+								<button
+									class={[
+										'rounded-sm px-1.5 font-medium whitespace-nowrap transition-colors ease-effects-fast',
+										'outline-color-secondary focus-visible:outline-common',
+										'hover:bg-color-secondary-container hover:text-color-on-secondary-container',
+									]}
+									onclick={() => reverseTranslation(entry.word)}
+									onkeypress={e => onKeydownReverse(e, entry.word)}
+									type="button"
+								>{entry.word}</button>
 							</td>
-							<td class="px-2 py-1 text-color-on-surface-variant">
+							<td class="flex flex-wrap gap-1 px-2 py-1">
 								{#each entry.reverse_translation as reverse_translation, i (i)}
-									{@const lastIndex = entry.reverse_translation.length - 1}
-									<div class="inline-flex flex-wrap">
-										<span
-											class={[
-												'mx-[-5px] -my-px cursor-pointer rounded-md px-[5px] py-px transition-colors',
-												'hover:bg-color-primary/10 hover:text-color-primary',
-												currentWord === reverse_translation && 'bg-color-primary/10 text-color-primary',
-											]}
-											onclick={() => {
-												getTranslate(reverse_translation);
-											}}
-											onkeypress={e => {
-												if (e.code === 'Enter')	getTranslate(reverse_translation);
-											}}
-											onmouseenter={() => {
-												currentWord = reverse_translation;
-											}}
-											onmouseleave={() => {
-												currentWord = '';
-											}}
-											role="button"
-											tabindex="0"
-										>
-											{reverse_translation}
-										</span>
-										{#if i !== lastIndex}
-											<span>,&ensp;</span>
-										{/if}
-									</div>
+									<button
+										class={[
+											'inline-flex rounded-sm px-1.5 transition-colors ease-effects-fast',
+											'outline-color-secondary focus-visible:outline-common',
+											'hover:bg-color-secondary-container hover:text-color-on-secondary-container',
+											currentWord === reverse_translation ?
+												'bg-color-secondary-container text-color-on-secondary-container' :
+												'bg-color-surface-container-high text-color-on-surface-variant',
+										]}
+										onclick={() => translate(reverse_translation)}
+										onkeypress={e => onKeydownHandler(e, reverse_translation)}
+										onmouseenter={() => currentWord = reverse_translation}
+										onmouseleave={() => currentWord = ''}
+										type="button"
+									>
+										{reverse_translation}
+									</button>
 								{/each}
 							</td>
 							<td class="py-1 text-end align-top">
@@ -65,7 +62,7 @@
 										<div
 											class={[
 												'h-[6px] w-[12px]',
-												item ? 'bg-color-primary' : 'bg-color-primary/10',
+												item ? 'bg-color-tertiary' : 'bg-color-surface-container-highest',
 											]}
 										></div>
 									{/each}
@@ -86,8 +83,7 @@
 
 <script lang="ts">
 import { store } from '~/entrypoints/content/store.svelte';
-import Icon from '~/lib/Icon.svelte';
-import { mdiHelpCircleOutline } from '@mdi/js';
+import Help from '~icons/material-symbols/help-outline-rounded';
 
 let currentWord = $state<string>('');
 
@@ -99,8 +95,26 @@ function scoreHandler(n: number) {
 
 const last = (array: object[], index: number) => index === (array.length - 1);
 
-function getTranslate(text: string) {
+function translate(text: string) {
 	store.textToTranslate = text;
 	store.translate();
+}
+
+function onKeydownHandler(e: KeyboardEvent, text: string) {
+	if (e.code === 'Space' || e.code === 'Enter') {
+		e.preventDefault();
+		translate(text);
+	}
+}
+
+function reverseTranslation(text: string) {
+	store.reverseTranslation(text);
+}
+
+function onKeydownReverse(e: KeyboardEvent, text: string) {
+	if (e.code === 'Space' || e.code === 'Enter') {
+		e.preventDefault();
+		reverseTranslation(text);
+	}
 }
 </script>

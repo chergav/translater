@@ -1,4 +1,4 @@
-<div class="flex max-w-xl flex-col gap-4">
+<div class="flex flex-col gap-4">
 	{#if providerStore.activeTabProviderUnfinishedSetup}
 		<p class="text-sm text-color-error">
 			To use this provider, complete the setup.
@@ -15,39 +15,44 @@
 	{/if}
 
 	{#if provider.note}
-		<Alert text={provider.note} title="Note" />
+		<Alert text={provider.note} />
 	{/if}
 
-	<Input
+	<TextField
 		disabled={!providerStore.isCustomProvider}
 		label={browser.i18n.getMessage('options_providers_provider')}
 		onblur={setProviderName}
 		value={provider.name}
+		variant="outlined"
 	/>
 
 	{#if providerStore.isCustomProvider}
-		<Input
-			error={baseUrlError}
-			focus={!provider.baseUrl}
-			hiddenHint="Make sure the provider is compatible with the OpenAI API"
+		<TextField
+			error={!!baseUrlError}
+			errorText={baseUrlError}
+			// focus={!provider.baseUrl}
 			label="Base URL"
 			onblur={setBaseUrl}
 			oninput={validateBaseUrl}
 			placeholder="e.g. https://router.huggingface.co/v1"
 			required
 			spellcheck="false"
+			supportingText="Make sure the provider is compatible with the OpenAI API"
 			type="url"
 			value={provider.baseUrl || ''}
+			variant="outlined"
 		/>
-		<Input
-			error={apiKeyError}
-			hiddenHint="Don't worry, your API key will only be stored on your device"
+		<TextField
+			error={!!apiKeyError}
+			errorText={apiKeyError}
 			label="API Key"
 			onblur={setApiKey}
 			oninput={validateApiKey}
 			required
 			spellcheck="false"
+			supportingText="Don't worry, your API key will only be stored on your device"
 			value={provider.apiKey || ''}
+			variant="outlined"
 		/>
 	{/if}
 
@@ -60,22 +65,27 @@
 				<span class="text-color-error">*</span> - required fields
 			</span>
 			<Button
-				icon={mdiPlus}
+				color="outlined"
 				label="Add model"
 				onclick={providerStore.addModel}
-				variant="outlined"
-			/>
+			>
+				{#snippet leadingIcon()}
+					<Add />
+				{/snippet}
+			</Button>
 		{/if}
 	</div>
 
 	{#if providerStore.isCustomProvider}
-		<div class="my-1 border-b border-color-surface-high"></div>
+		<div class="my-1 border-b border-color-outline-variant"></div>
 		<Button
-			icon={mdiTrashCanOutline}
 			label="Delete provider"
 			onclick={deleteProvider}
-			variant="danger"
-		/>
+		>
+			{#snippet leadingIcon()}
+				<Delete />
+			{/snippet}
+		</Button>
 	{/if}
 
 	<!-- <pre class="text-sm">
@@ -86,11 +96,12 @@
 <script lang="ts">
 import { type TranslationProvider } from '~/types/providers';
 import { providerStore } from '../providerStore.svelte';
-import Button from '~/lib/Button.svelte';
-import Input from '~/lib/Input.svelte';
-import Alert from '~/lib/Alert.svelte';
+import Button from '~/lib/base/Button.svelte';
+import TextField from '~/lib/base/TextField.svelte';
+import Alert from '~/lib/base/Alert.svelte';
 import Model from './Model.svelte';
-import { mdiPlus, mdiTrashCanOutline } from '@mdi/js';
+import Add from '~icons/material-symbols/add-rounded';
+import Delete from '~icons/material-symbols/delete-outline-rounded';
 
 interface Props {
 	provider: TranslationProvider

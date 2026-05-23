@@ -118,7 +118,7 @@ class Store {
 		}
 	};
 
-	public reverseTranslation = () => {
+	public reverseTranslation = (text?: string) => {
 		if (!this.detectedLang) return;
 
 		const normalizedDetected = normalizeLanguageCode(this.detectedLang);
@@ -130,9 +130,13 @@ class Store {
 
 		storage.settings.targetLang = normalizedDetected;
 
-		this.textToTranslate = this.isProviderGoogle
-			? this.translated?.sentence.trans || ''
-			: this.translationAi?.text || '';
+		if (text) {
+			this.textToTranslate = text;
+		} else {
+			this.textToTranslate = this.isProviderGoogle
+				? this.translated?.sentence.trans || ''
+				: this.translationAi?.text || '';
+		}
 
 		this.translate();
 	};

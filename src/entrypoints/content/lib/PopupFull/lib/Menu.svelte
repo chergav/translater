@@ -1,117 +1,131 @@
-<div
-	class="relative select-none"
+<span
+	class="relative cursor-default"
 	onclickoutside={closeMenu}
 	use:clickOutside
 >
-	<div class="size-fit leading-0">
-		<Button
-			active={isOpen}
-			icon={mdiDotsVertical}
-			onclick={toggleMenu}
+	<IconButton
+		active={menuOpen}
+		color="standard"
+		onclick={toggleMenu}
+		size="xs"
+		title="menu"
+		bind:ref={buttonMenuRef}
+	>
+		<MoreVert />
+	</IconButton>
+
+	<Menu
+		align="end"
+		quick={storage.motionDisabled}
+		triggerRef={buttonMenuRef}
+		bind:open={menuOpen}
+	>
+		<MenuItem
+			disabled={!store.textToTranslate}
+			label={browser.i18n.getMessage('popup_menu_reverse_translate')}
+			onclick={handleReverseTranslate}
 			size="xs"
-		/>
-	</div>
-	{#if isOpen}
-		<div
-			class={[
-				'absolute top-full right-0 z-10 flex cursor-default flex-col gap-0.5 select-none',
-			]}
-			onpointerdown={e => e.stopPropagation()}
-			role="presentation"
-			transition:fly={{
-				duration: 150,
-				y: -10,
-			}}
 		>
-			<div class="flex flex-col rounded-t-2xl rounded-b-lg bg-color-surface-container-low p-1 shadow-sm">
-				<Button
-					class="rounded-t-xl"
-					icon={mdiSwapVertical}
-					label={browser.i18n.getMessage('popup_menu_reverse_translate')}
-					menu
-					onclick={handleReverseTranslate}
-					size="xs"
-					tab
-				/>
-				<Button
-					icon={mdiOpenInNew}
-					label="Google Translate"
-					menu
-					onclick={toGoogleTranslate}
-					size="xs"
-					tab
-				/>
-			</div>
-			<div class="flex flex-col rounded-lg bg-color-surface-container-low p-1 shadow-sm">
-				<Button
-					icon={storage.settings.lockWindow ? mdiLockOutline : mdiLockOpenVariantOutline}
-					label={storage.settings.lockWindow
-						? browser.i18n.getMessage('popup_menu_unlock_window')
-						: browser.i18n.getMessage('popup_menu_lock_window')}
-					menu
-					onclick={toggleLockWindow}
-					size="xs"
-					tab
-				/>
-				<Button
-					icon={isDomainInBlacklist ? mdiTranslate : mdiTranslateOff}
-					label={isDomainInBlacklist
-						? browser.i18n.getMessage('popup_menu_show_translate_button')
-						: browser.i18n.getMessage('popup_menu_hide_translate_button')}
-					menu
-					onclick={addDomainToBlacklist}
-					size="xs"
-					tab
-				/>
-				<Button
-					icon={mdiArrowCollapse}
-					label={browser.i18n.getMessage('popup_menu_switch_to_simple_mode')}
-					menu
-					onclick={switchToSimpleMode}
-					size="xs"
-					tab
-				/>
-			</div>
-			<div class="flex flex-col rounded-t-lg rounded-b-2xl bg-color-surface-container-low p-1 shadow-sm">
-				<Button
-					class="rounded-b-xl"
-					icon={mdiOpenInNew}
-					label={browser.i18n.getMessage('popup_menu_options_all_settings')}
-					menu
-					onclick={openOptionsPage}
-					size="xs"
-					tab
-				/>
-			</div>
-		</div>
-	{/if}
-</div>
+			{#snippet leadingIcon()}
+				<SwapVert />
+			{/snippet}
+		</MenuItem>
+		<MenuItem
+			disabled={!store.textToTranslate}
+			label="Google Translate"
+			onclick={toGoogleTranslate}
+			size="xs"
+		>
+			{#snippet leadingIcon()}
+				<GTranslate />
+			{/snippet}
+			{#snippet trailingIcon()}
+				<OpenInNew />
+			{/snippet}
+		</MenuItem>
+		<div class="mx-2 my-1 h-px bg-color-outline-variant"></div>
+		<MenuItem
+			keepOpen
+			label={storage.settings.lockWindow
+				? browser.i18n.getMessage('popup_menu_unlock_window')
+				: browser.i18n.getMessage('popup_menu_lock_window')}
+			onclick={toggleLockWindow}
+			size="xs"
+		>
+			{#snippet leadingIcon()}
+				{#if storage.settings.lockWindow}
+					<Lock />
+				{:else}
+					<LockOpen />
+				{/if}
+			{/snippet}
+		</MenuItem>
+		<MenuItem
+			keepOpen
+			label={isDomainInBlacklist
+				? browser.i18n.getMessage('popup_menu_show_translate_button')
+				: browser.i18n.getMessage('popup_menu_hide_translate_button')}
+			onclick={addDomainToBlacklist}
+			size="xs"
+		>
+			{#snippet leadingIcon()}
+				{#if isDomainInBlacklist}
+					<Visibility />
+				{:else}
+					<VisibilityOff />
+				{/if}
+			{/snippet}
+		</MenuItem>
+		<MenuItem
+			label={browser.i18n.getMessage('popup_menu_switch_to_simple_mode')}
+			onclick={switchToSimpleMode}
+			size="xs"
+		>
+			{#snippet leadingIcon()}
+				<ModeSimple />
+			{/snippet}
+		</MenuItem>
+		<div class="mx-2 my-1 h-px bg-color-outline-variant"></div>
+		<MenuItem
+			label={browser.i18n.getMessage('popup_menu_options_all_settings')}
+			onclick={openOptionsPage}
+			size="xs"
+		>
+			{#snippet leadingIcon()}
+				<SettingsOutline />
+			{/snippet}
+			{#snippet trailingIcon()}
+				<OpenInNew />
+			{/snippet}
+		</MenuItem>
+	</Menu>
+</span>
 
 <script lang="ts">
 import { type Message, PopupMode } from '~/types';
-import { fly } from 'svelte/transition';
-import Button from '~/lib/Button.svelte';
-import {
-	mdiDotsVertical,
-	mdiSwapVertical,
-	mdiOpenInNew,
-	mdiLockOutline,
-	mdiLockOpenVariantOutline,
-	mdiTranslate,
-	mdiTranslateOff,
-	mdiArrowCollapse,
-} from '@mdi/js';
-import { clickOutside } from '~/utils';
+import IconButton from '~/lib/base/IconButton.svelte';
+import { Menu, MenuItem } from '~/lib/base/Menu';
 import { store } from '~/entrypoints/content/store.svelte';
 import { storage } from '~/shared/storage.svelte';
 import { createLinkToGT } from '~/entrypoints/background/providers/google';
+import { clickOutside } from '~/utils';
+import MoreVert from '~icons/material-symbols/more-vert';
+import SwapVert from '~icons/material-symbols/swap-vert-rounded';
+import GTranslate from '~icons/material-symbols/g-translate';
+import OpenInNew from '~icons/material-symbols/open-in-new-rounded';
+import Lock from '~icons/material-symbols/lock-outline';
+import LockOpen from '~icons/material-symbols/lock-open-right-outline-rounded';
+import Visibility from '~icons/material-symbols/visibility-outline-rounded';
+import VisibilityOff from '~icons/material-symbols/visibility-off-outline-rounded';
+import ModeSimple from '~icons/material-symbols/close-fullscreen-rounded';
+import SettingsOutline from '~icons/material-symbols/settings-outline-rounded';
 
-let isOpen = $state<boolean>(false);
+let menuOpen = $state<boolean>(false);
+let buttonMenuRef = $state<HTMLButtonElement | null>(null);
 let isDomainInBlacklist = $derived<boolean>(storage.settings.blacklistDomainForInline.includes(store.hostname));
 
-const closeMenu = () => isOpen = false;
-
-const toggleMenu = () => isOpen = !isOpen;
+const closeMenu = () => menuOpen = false;
+const toggleMenu = () => menuOpen = !menuOpen;
 
 function switchToSimpleMode() {
 	storage.settings.popupMode = PopupMode.Simple;
@@ -126,7 +140,7 @@ function toGoogleTranslate() {
 	const url = createLinkToGT({
 		sl: storage.settings.sourceLang,
 		tl: storage.settings.targetLang,
-		text: store.translated?.sentence.orig,
+		text: store.textToTranslate,
 	});
 
 	browser.runtime.sendMessage<Message>({

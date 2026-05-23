@@ -1,22 +1,27 @@
-<Button
+<IconButton
+	color="standard"
 	disabled={status?.error || !text}
-	{icon}
-	iconClass={status?.waiting ? 'animate-spin' : ''}
 	onclick={startSpeak}
 	size="xs"
 	{title}
-/>
+>
+	<Icon class={[status?.waiting && 'animate-spin']} />
+</IconButton>
 {#if voices.length && voice && showTTSVoices}
 	<TTSVoices {targetLang} {voice} {voices} />
 {/if}
 
 <script lang="ts">
+import { type Component, onDestroy } from 'svelte';
 import { BrowserTTS } from './utils/BrowserTTS.svelte';
 import { GoogleTTS } from './utils/GoogleTTS.svelte';
 import { storage } from '~/shared/storage.svelte';
-import Button from '~/lib/Button.svelte';
+import IconButton from '~/lib/base/IconButton.svelte';
 import TTSVoices from './TTSVoices.svelte';
-import { mdiVolumeHigh, mdiVolumeMute, mdiStop, mdiLoading } from '@mdi/js';
+import NoSound from '~icons/material-symbols/no-sound-outline-rounded';
+import ProgressActivity from '~icons/material-symbols/progress-activity';
+import Stop from '~icons/material-symbols/stop-rounded';
+import VolumeUp from '~icons/material-symbols/volume-up-outline-rounded';
 import { type Status, getTTS } from './utils/tts';
 
 interface Props {
@@ -48,8 +53,8 @@ let voice = $derived(storage.settings.ttsVoiceByLang && storage.settings.ttsVoic
 	: voices[0],
 );
 
-let icon = $derived(
-	status?.error ? mdiVolumeMute : status?.waiting ? mdiLoading : status?.speaking ? mdiStop : mdiVolumeHigh,
+let Icon = $derived<Component>(
+	status?.error ? NoSound : status?.waiting ? ProgressActivity : status?.speaking ? Stop : VolumeUp,
 );
 
 function speak() {
@@ -80,9 +85,7 @@ function startSpeak() {
 	}
 }
 
-$effect(() => {
-	return () => {
-		stop();
-	};
+onDestroy(() => {
+	stop();
 });
 </script>

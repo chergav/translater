@@ -1,4 +1,5 @@
 import js from '@eslint/js';
+import { defineConfig } from 'eslint/config';
 import { includeIgnoreFile } from '@eslint/compat';
 import svelte from 'eslint-plugin-svelte';
 import globals from 'globals';
@@ -10,11 +11,11 @@ import eslintPluginBetterTailwindcss from 'eslint-plugin-better-tailwindcss';
 
 const gitignorePath = fileURLToPath(new URL('./.gitignore', import.meta.url));
 
-export default ts.config(
+export default defineConfig([
 	includeIgnoreFile(gitignorePath),
 	js.configs.recommended,
-	...ts.configs.recommended,
-	...svelte.configs.recommended,
+	ts.configs.recommended,
+	svelte.configs.recommended,
 	{
 		languageOptions: {
 			globals: {
@@ -29,6 +30,7 @@ export default ts.config(
 		rules: {
 			'no-undef': 'off',
 			'eqeqeq': ['error', 'always'],
+			// 'no-useless-assignment': 'off',
 			'@stylistic/max-len': ['error', {
 				code: 150,
 				tabWidth: 4,
@@ -64,6 +66,31 @@ export default ts.config(
 				asyncArrow: 'always',
 			}],
 
+			...eslintPluginBetterTailwindcss.configs['recommended-error'].rules,
+			'better-tailwindcss/enforce-consistent-line-wrapping': 'off',
+			'better-tailwindcss/no-unknown-classes': ['error', {
+				ignore: ['mark', 'ignore-active', 'reduced-motion'],
+			}],
+		},
+		settings: { 'better-tailwindcss': { entryPoint: 'src/assets/tailwind.css' } },
+	},
+	{
+		files: [
+			'**/*.svelte',
+			'**/*.svelte.ts',
+			'**/*.svelte.js',
+		],
+		ignores: ['eslint.config.js', 'svelte.config.js'],
+		languageOptions: {
+			parserOptions: {
+				projectService: true,
+				extraFileExtensions: ['.svelte'],
+				parser: ts.parser,
+				// svelteConfig,
+			},
+		},
+		rules: {
+			'no-useless-assignment': 'off',
 			'svelte/sort-attributes': [
 				'error',
 				{
@@ -156,29 +183,6 @@ export default ts.config(
 			'svelte/shorthand-attribute': ['error', { prefer: 'always' }],
 			'svelte/shorthand-directive': ['error', { prefer: 'always' }],
 			'svelte/spaced-html-comment': ['error', 'always'],
-
-			...eslintPluginBetterTailwindcss.configs['recommended-error'].rules,
-			'better-tailwindcss/enforce-consistent-line-wrapping': 'off',
-			'better-tailwindcss/no-unregistered-classes': ['error', {
-				ignore: ['mark', 'ignore-active'],
-			}],
-		},
-		settings: { 'better-tailwindcss': { entryPoint: 'src/assets/tailwind.css' } },
-	},
-	{
-		files: [
-			'**/*.svelte',
-			'**/*.svelte.ts',
-			'**/*.svelte.js',
-		],
-		ignores: ['eslint.config.js', 'svelte.config.js'],
-		languageOptions: {
-			parserOptions: {
-				projectService: true,
-				extraFileExtensions: ['.svelte'],
-				parser: ts.parser,
-				// svelteConfig,
-			},
 		},
 	},
-);
+]);
