@@ -36,9 +36,10 @@ export async function isBrowserTranslationAvailable(): Promise<boolean> {
 
 		const detectorStatus = await checkLanguageDetector();
 
-		// Reject only if explicitly unavailable (Edge)
-		// Accept if available (Chrome) or not-implemented (Opera)
-		return detectorStatus === 'available';
+		// 'available'         — Chrome: detector works fine
+		// 'unavailable'       — Edge: explicitly disabled
+		// null/undefined      — Opera: detector stripped from build
+		return detectorStatus !== 'unavailable';
 	} catch (error) {
 		console.error('Error checking browser translation availability:', error);
 		return false;

@@ -163,11 +163,12 @@ let reference = $derived<VirtualElement>({
 });
 const DURATION_IN = $derived<number>(storage.motionDisabled ? 0 : 300);
 const isFullMode = $derived<boolean>(storage.settings.popupMode === PopupMode.Full);
-let popupWidth = $derived<number>(isFullMode ? 550 : storage.settings.simpleModeShowLangs ? 380 : 260);
-const popupMinWidth = $derived<number>(isFullMode ? 400 : storage.settings.simpleModeShowLangs ? 380 : 260);
-const popupMinHeight = $derived<number>(isFullMode ? store.showFooter ? 250 : 210 : 100);
+let popupWidth = $derived<number>(isFullMode ? 550 : storage.settings.simpleModeShowLangs ? 400 : 260);
+const popupMinWidth = $derived<number>(isFullMode || storage.settings.simpleModeShowLangs ? 400 : 260);
+const popupMinHeight = $derived<number>(isFullMode ? 250 : 100);
 
 const popupPosition: Action<HTMLDivElement> = popup => {
+	console.debug('popupPosition');
 	computePosition(reference, popup, {
 		strategy: 'fixed',
 		placement: 'bottom-start',
