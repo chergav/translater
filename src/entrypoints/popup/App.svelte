@@ -130,8 +130,8 @@ function openExtensionsShortcuts() {
 	browser.tabs.create({ url: 'chrome://extensions/shortcuts' });
 }
 
-function getPermissions() {
-	return browser.permissions.contains(permissions);
+async function getPermissions() {
+	return await browser.permissions.contains(permissions);
 }
 
 async function requestPermissions() {

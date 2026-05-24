@@ -93,9 +93,8 @@ async function shouldShowButton() {
 	const detectedLanguage = await detectLanguage(store.selectedText);
 
 	if (!detectedLanguage) return true;
-	const userLanguage = browser.i18n.getUILanguage();
 
-	return !userLanguage.startsWith(detectedLanguage);
+	return !storage.settings.targetLang.startsWith(detectedLanguage);
 }
 
 function onMessage(

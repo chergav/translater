@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Atbalsts"
     },
+    "button_label_delete": {
+        "message": "Dzēst"
+    },
+    "button_label_cancel": {
+        "message": "Atcelt"
+    },
     "options_general_translation_button": {
         "message": "Tulkošanas poga"
     },
@@ -72,10 +78,10 @@
         "message": "Rādīt pogu, kad teksta ievades laukos ir atlasīts teksts."
     },
     "options_hide_translation_button": {
-        "message": "Slēpt tulkošanas pogu savai valodai"
+        "message": "Paslēpt tulkošanas pogu mērķa valodai"
     },
     "options_hide_translation_button_hint": {
-        "message": "Poga netiks parādīta, atlasot tekstu sistēmas valodā"
+        "message": "Paslēpts, ja atlasītais teksts ir mērķa valodā"
     },
     "options_hide_button_on_sites": {
         "message": "Slēpts vietnēs"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "Tēma"
     },
-    "options_appearance_accent_color": {
-        "message": "Akcenta krāsa"
+    "theme_light": {
+        "message": "Gaiša tēma"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Fons un vienkāršs teksts"
+    "theme_system": {
+        "message": "Sistēmas tēma"
+    },
+    "theme_dark": {
+        "message": "Tumša tēma"
+    },
+    "options_appearance_animations": {
+        "message": "Animācijas"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Iespējots"
+    },
+    "options_appearance_animations_system": {
+        "message": "Sekojiet sistēmai"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Samazināts"
+    },
+    "options_appearance_contrast": {
+        "message": "Kontrasta krāsa"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Noklusējums"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Vidēja"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Augsts"
+    },
+    "options_appearance_colors": {
+        "message": "Krāsas"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Pielāgota tēma"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Rediģēt pielāgoto motīvu"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Priekšskatījums"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Tēmu varianti"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Avota krāsa"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Izvēlieties krāsu motīvu ģenerēšanai"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Lietot motīvu"
     },
     "options_records_in_history": {
         "message": "Ieraksti vēsturē"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Dzēst no vēstures"
+    },
+    "options_delete_items": {
+        "message": "vienumi tiks dzēsti"
     },
     "options_tts_language": {
         "message": "Valoda"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "Tulkošana"
-    },
-    "theme_light": {
-        "message": "Viegla tēma"
-    },
-    "theme_dark": {
-        "message": "Tumša tēma"
-    },
-    "theme_system": {
-        "message": "Sistēmas tēma"
     },
     "tooltip_translate_text": {
         "message": "Tulkot atlasīto tekstu"

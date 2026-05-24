@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Toetus"
     },
+    "button_label_delete": {
+        "message": "Kustuta"
+    },
+    "button_label_cancel": {
+        "message": "Tühista"
+    },
     "options_general_translation_button": {
         "message": "Tõlke nupp"
     },
@@ -42,7 +48,7 @@
         "message": "ühtegi saiti pole valitud"
     },
     "options_general_show_on_selected": {
-        "message": "Kui tekst on valitud, kuvatakse hüpikaken"
+        "message": "Kuva hüpikaken, kui tekst on valitud"
     },
     "options_general_show_on_selected_hint": {
         "message": "Hüpikaken ilmub kohe pärast teksti valimist."
@@ -72,10 +78,10 @@
         "message": "Näita nuppu, kui tekstisisestusväljadel on tekst valitud."
     },
     "options_hide_translation_button": {
-        "message": "Peida oma keele tõlkenupp"
+        "message": "Peida sihtkeele tõlkenupp"
     },
     "options_hide_translation_button_hint": {
-        "message": "Süsteemi keeles teksti valimisel nuppu ei kuvata"
+        "message": "Peidetud, kui valitud tekst on sihtkeeles"
     },
     "options_hide_button_on_sites": {
         "message": "Saitidel peidetud"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "Teema"
     },
-    "options_appearance_accent_color": {
-        "message": "Aktsentvärv"
+    "theme_light": {
+        "message": "Kerge teema"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Taust ja lihttekst"
+    "theme_system": {
+        "message": "Süsteemi teema"
+    },
+    "theme_dark": {
+        "message": "Tume teema"
+    },
+    "options_appearance_animations": {
+        "message": "Animatsioonid"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Lubatud"
+    },
+    "options_appearance_animations_system": {
+        "message": "Järgige süsteemi"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Vähendatud"
+    },
+    "options_appearance_contrast": {
+        "message": "Kontrastne värv"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Vaikimisi"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Keskmine"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Kõrge"
+    },
+    "options_appearance_colors": {
+        "message": "Värvid"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Kohandatud teema"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Muutke kohandatud teemat"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Eelvaade"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Teema variandid"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Lähtevärv"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Valige teemade loomiseks värv"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Rakenda teema"
     },
     "options_records_in_history": {
         "message": "Sissekanded ajalukku"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Kustuta ajaloost"
+    },
+    "options_delete_items": {
+        "message": "üksused kustutatakse"
     },
     "options_tts_language": {
         "message": "Keel"
@@ -245,15 +305,6 @@
     "popup_placeholder_translation": {
         "message": "Tõlge"
     },
-    "theme_light": {
-        "message": "Kerge teema"
-    },
-    "theme_dark": {
-        "message": "Tume teema"
-    },
-    "theme_system": {
-        "message": "Süsteemi teema"
-    },
     "tooltip_translate_text": {
         "message": "Tõlgi valitud tekst"
     },
@@ -351,7 +402,7 @@
         "message": "Awadhi"
     },
     "language_ay": {
-        "message": "Aimara"
+        "message": "Aymara"
     },
     "language_az": {
         "message": "Aserbaidžaan"
@@ -636,7 +687,7 @@
         "message": "heebrea keel"
     },
     "language_ja": {
-        "message": "Jaapani"
+        "message": "jaapanlane"
     },
     "language_jam": {
         "message": "Jamaica Patois"

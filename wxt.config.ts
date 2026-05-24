@@ -38,9 +38,13 @@ export default defineConfig({
 						gecko: {
 							id: 'translater@chergav',
 							strict_min_version: '128.0',
+							data_collection_permissions: {
+								required: ['websiteContent'],
+								optional: ['technicalAndInteraction'],
+							},
 						},
 					},
-					optional_permissions: ['<all_urls>'],
+					optional_host_permissions: ['<all_urls>'],
 				}
 				: { minimum_chrome_version: '111' }
 			),

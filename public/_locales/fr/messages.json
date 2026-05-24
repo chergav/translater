@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Assistance"
     },
+    "button_label_delete": {
+        "message": "Supprimer"
+    },
+    "button_label_cancel": {
+        "message": "Annuler"
+    },
     "options_general_translation_button": {
         "message": "Bouton de traduction"
     },
@@ -72,10 +78,10 @@
         "message": "Afficher le bouton lorsque du texte est sélectionné dans les champs de saisie de texte."
     },
     "options_hide_translation_button": {
-        "message": "Masquer le bouton de traduction pour votre langue"
+        "message": "Masquer le bouton de traduction pour la langue cible"
     },
     "options_hide_translation_button_hint": {
-        "message": "Le bouton n'apparaîtra pas lors de la sélection de texte dans la langue de votre système"
+        "message": "Masqué lorsque le texte sélectionné est dans la langue cible"
     },
     "options_hide_button_on_sites": {
         "message": "Caché sur les sites"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "Thème"
     },
-    "options_appearance_accent_color": {
-        "message": "Couleur d'accentuation"
+    "theme_light": {
+        "message": "Thème lumière"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Contexte et texte brut"
+    "theme_system": {
+        "message": "Thème système"
+    },
+    "theme_dark": {
+        "message": "Thème sombre"
+    },
+    "options_appearance_animations": {
+        "message": "Animations"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Activé"
+    },
+    "options_appearance_animations_system": {
+        "message": "Suivre le système"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Réduit"
+    },
+    "options_appearance_contrast": {
+        "message": "Couleur contrastée"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Par défaut"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Moyen"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Élevé"
+    },
+    "options_appearance_colors": {
+        "message": "Couleurs"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Thème personnalisé"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Modifier un thème personnalisé"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Aperçu"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Variantes de thème"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Couleur source"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Sélectionnez une couleur pour générer des thèmes"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Appliquer le thème"
     },
     "options_records_in_history": {
         "message": "Entrées dans l'histoire"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Supprimer de l'historique"
+    },
+    "options_delete_items": {
+        "message": "les éléments seront supprimés"
     },
     "options_tts_language": {
         "message": "Langue"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "Traduction"
-    },
-    "theme_light": {
-        "message": "Thème lumière"
-    },
-    "theme_dark": {
-        "message": "Thème sombre"
-    },
-    "theme_system": {
-        "message": "Thème système"
     },
     "tooltip_translate_text": {
         "message": "Traduire le texte sélectionné"
@@ -372,7 +423,7 @@
         "message": "Baoulé"
     },
     "language_be": {
-        "message": "Biélorusse"
+        "message": "biélorusse"
     },
     "language_bem": {
         "message": "Bemba"
@@ -876,7 +927,7 @@
         "message": "Romani"
     },
     "language_ru": {
-        "message": "Russe"
+        "message": "russe"
     },
     "language_rw": {
         "message": "kinyarwanda"
@@ -966,7 +1017,7 @@
         "message": "Tétum"
     },
     "language_tg": {
-        "message": "tadjik"
+        "message": "Tadjik"
     },
     "language_th": {
         "message": "Thaï"

@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "ಬೆಂಬಲ"
     },
+    "button_label_delete": {
+        "message": "ಅಳಿಸಿ"
+    },
+    "button_label_cancel": {
+        "message": "ರದ್ದುಮಾಡಿ"
+    },
     "options_general_translation_button": {
         "message": "ಅನುವಾದ ಬಟನ್"
     },
@@ -72,10 +78,10 @@
         "message": "ಪಠ್ಯ ಇನ್‌ಪುಟ್ ಕ್ಷೇತ್ರಗಳಲ್ಲಿ ಪಠ್ಯವನ್ನು ಆಯ್ಕೆ ಮಾಡಿದಾಗ ಬಟನ್ ತೋರಿಸು."
     },
     "options_hide_translation_button": {
-        "message": "ನಿಮ್ಮ ಭಾಷೆಗೆ ಅನುವಾದ ಬಟನ್ ಅನ್ನು ಮರೆಮಾಡಿ"
+        "message": "ಗುರಿ ಭಾಷೆಗಾಗಿ ಅನುವಾದ ಬಟನ್ ಅನ್ನು ಮರೆಮಾಡಿ"
     },
     "options_hide_translation_button_hint": {
-        "message": "ನಿಮ್ಮ ಸಿಸ್ಟಂ ಭಾಷೆಯಲ್ಲಿ ಪಠ್ಯವನ್ನು ಆಯ್ಕೆಮಾಡುವಾಗ ಬಟನ್ ಕಾಣಿಸುವುದಿಲ್ಲ"
+        "message": "ಆಯ್ಕೆಮಾಡಿದ ಪಠ್ಯವು ಗುರಿ ಭಾಷೆಯಲ್ಲಿರುವಾಗ ಮರೆಮಾಡಲಾಗಿದೆ"
     },
     "options_hide_button_on_sites": {
         "message": "ಸೈಟ್‌ಗಳಲ್ಲಿ ಮರೆಮಾಡಲಾಗಿದೆ"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "ಥೀಮ್"
     },
-    "options_appearance_accent_color": {
-        "message": "ಉಚ್ಚಾರಣಾ ಬಣ್ಣ"
+    "theme_light": {
+        "message": "ಲೈಟ್ ಥೀಮ್"
     },
-    "options_appearance_bg_and_text": {
-        "message": "ಹಿನ್ನೆಲೆ ಮತ್ತು ಸರಳ ಪಠ್ಯ"
+    "theme_system": {
+        "message": "ಸಿಸ್ಟಮ್ ಥೀಮ್"
+    },
+    "theme_dark": {
+        "message": "ಡಾರ್ಕ್ ಥೀಮ್"
+    },
+    "options_appearance_animations": {
+        "message": "ಅನಿಮೇಷನ್‌ಗಳು"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ"
+    },
+    "options_appearance_animations_system": {
+        "message": "ವ್ಯವಸ್ಥೆಯನ್ನು ಅನುಸರಿಸಿ"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "ಕಡಿಮೆಯಾಗಿದೆ"
+    },
+    "options_appearance_contrast": {
+        "message": "ಕಾಂಟ್ರಾಸ್ಟ್ ಬಣ್ಣ"
+    },
+    "options_appearance_contrast_default": {
+        "message": "ಡೀಫಾಲ್ಟ್"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "ಮಧ್ಯಮ"
+    },
+    "options_appearance_contrast_high": {
+        "message": "ಹೆಚ್ಚು"
+    },
+    "options_appearance_colors": {
+        "message": "ಬಣ್ಣಗಳು"
+    },
+    "options_appearance_custom_theme": {
+        "message": "ಕಸ್ಟಮ್ ಥೀಮ್"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "ಕಸ್ಟಮ್ ಥೀಮ್ ಸಂಪಾದಿಸಿ"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "ಪೂರ್ವವೀಕ್ಷಣೆ"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "ಥೀಮ್ ರೂಪಾಂತರಗಳು"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "ಮೂಲ ಬಣ್ಣ"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "ಥೀಮ್‌ಗಳನ್ನು ರಚಿಸಲು ಬಣ್ಣವನ್ನು ಆಯ್ಕೆಮಾಡಿ"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "ಥೀಮ್ ಅನ್ನು ಅನ್ವಯಿಸಿ"
     },
     "options_records_in_history": {
         "message": "ಇತಿಹಾಸದಲ್ಲಿ ನಮೂದುಗಳು"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "ಇತಿಹಾಸದಿಂದ ಅಳಿಸಿ"
+    },
+    "options_delete_items": {
+        "message": "ಐಟಂಗಳನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ"
     },
     "options_tts_language": {
         "message": "ಭಾಷೆ"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "ಅನುವಾದ"
-    },
-    "theme_light": {
-        "message": "ಲೈಟ್ ಥೀಮ್"
-    },
-    "theme_dark": {
-        "message": "ಡಾರ್ಕ್ ಥೀಮ್"
-    },
-    "theme_system": {
-        "message": "ಸಿಸ್ಟಮ್ ಥೀಮ್"
     },
     "tooltip_translate_text": {
         "message": "ಆಯ್ದ ಪಠ್ಯವನ್ನು ಅನುವಾದಿಸಿ"
@@ -555,7 +606,7 @@
         "message": "ಫ್ರಿಸಿಯನ್"
     },
     "language_ga": {
-        "message": "ಐರಿಷ್"
+        "message": "ಐರಿಶ್"
     },
     "language_gaa": {
         "message": "ಗಾ"
@@ -837,7 +888,7 @@
         "message": "ಪಂಜಾಬಿ (ಗುರುಮುಖಿ)"
     },
     "language_pa_Arab": {
-        "message": "ಪಂಜಾಬಿ (ಶಾಮುಖಿ)"
+        "message": "ಪಂಜಾಬಿ (ಷಾಮುಖಿ)"
     },
     "language_pag": {
         "message": "ಪಂಗಾಸಿನನ್"
@@ -975,7 +1026,7 @@
         "message": "ಟಿಗ್ರಿನ್ಯಾ"
     },
     "language_tiv": {
-        "message": "ಟಿವಿ"
+        "message": "ಟಿವ್"
     },
     "language_tk": {
         "message": "ತುರ್ಕಮೆನ್"

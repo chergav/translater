@@ -2,12 +2,17 @@
 	<div>
 		{#each definitions as definition, index (index)}
 			<div class="mb-3 last:mb-0">
-				<div class="mb-2 font-medium text-color-primary capitalize">{definition.pos}</div>
+				<div class="mb-2 font-medium text-color-primary first-letter:uppercase">{definition.pos}</div>
 				<ul class="list-none space-y-3">
 					{#each definition.entry as defEntry, index (index)}
 						{@const defLabels = defEntry.label_info ? getLabels(defEntry.label_info) : []}
 						<div class="flex gap-3">
-							<span class="flex size-5 shrink-0 items-center justify-center rounded-full border border-color-outline-variant">
+							<span
+								class={[
+									'flex size-5 shrink-0 items-center justify-center rounded-full',
+									'bg-color-surface-container-high text-color-on-surface-variant',
+								]}
+							>
 								{index + 1}
 							</span>
 							<li>

@@ -5,7 +5,7 @@
 				{#each store.translated.dict as dict, index (index)}
 					<tr>
 						<td
-							class="w-full px-1.5 pb-2 font-medium text-color-primary capitalize"
+							class="w-full pb-2 font-medium text-color-primary first-letter:uppercase"
 							colspan="2"
 						>{dict.pos}</td>
 						{#if index === 0}

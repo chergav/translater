@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Поддержка"
     },
+    "button_label_delete": {
+        "message": "Удалить"
+    },
+    "button_label_cancel": {
+        "message": "Отмена"
+    },
     "options_general_translation_button": {
         "message": "Кнопка перевода"
     },
@@ -72,10 +78,10 @@
         "message": "Показывать кнопку, когда текст выделен в полях ввода текста."
     },
     "options_hide_translation_button": {
-        "message": "Скрыть кнопку перевода для вашего языка"
+        "message": "Скрыть кнопку перевода для целевого языка"
     },
     "options_hide_translation_button_hint": {
-        "message": "Кнопка не появится при выборе текста на языке вашей системы."
+        "message": "Скрыто, если выбранный текст находится на целевом языке."
     },
     "options_hide_button_on_sites": {
         "message": "Скрыто на сайтах"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "Тема"
     },
-    "options_appearance_accent_color": {
-        "message": "Акцентный цвет"
+    "theme_light": {
+        "message": "Светлая тема"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Фон и простой текст"
+    "theme_system": {
+        "message": "Системная тема"
+    },
+    "theme_dark": {
+        "message": "Темная тема"
+    },
+    "options_appearance_animations": {
+        "message": "Анимации"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Включено"
+    },
+    "options_appearance_animations_system": {
+        "message": "Следуйте системе"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Уменьшенный"
+    },
+    "options_appearance_contrast": {
+        "message": "Контрастный цвет"
+    },
+    "options_appearance_contrast_default": {
+        "message": "По умолчанию"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Средний"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Высокий"
+    },
+    "options_appearance_colors": {
+        "message": "Цвета"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Пользовательская тема"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Редактировать пользовательскую тему"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Предварительный просмотр"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Варианты тем"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Исходный цвет"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Выберите цвет для создания тем"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Применить тему"
     },
     "options_records_in_history": {
         "message": "Записи в истории"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Удалить из истории"
+    },
+    "options_delete_items": {
+        "message": "элементы будут удалены"
     },
     "options_tts_language": {
         "message": "Язык"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "Перевод"
-    },
-    "theme_light": {
-        "message": "Светлая тема"
-    },
-    "theme_dark": {
-        "message": "Темная тема"
-    },
-    "theme_system": {
-        "message": "Системная тема"
     },
     "tooltip_translate_text": {
         "message": "Перевести выделенный текст"
@@ -408,7 +459,7 @@
         "message": "тибетский"
     },
     "language_br": {
-        "message": "бретонский"
+        "message": "Бретонский"
     },
     "language_bs": {
         "message": "Боснийский"
@@ -423,7 +474,7 @@
         "message": "бурятский"
     },
     "language_ca": {
-        "message": "каталанский"
+        "message": "каталонский"
     },
     "language_ce": {
         "message": "Чеченский"
@@ -672,7 +723,7 @@
         "message": "Каннада"
     },
     "language_ko": {
-        "message": "Корейский"
+        "message": "корейский"
     },
     "language_kr": {
         "message": "Канури"

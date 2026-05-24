@@ -25,8 +25,9 @@
 		<div>
 			<Button
 				color="text"
+				disabled={!storageHistory.settings.history.length}
 				label={browser.i18n.getMessage('options_clear_history')}
-				onclick={clearHistory}
+				onclick={openDeleteDialog}
 			>
 				{#snippet leadingIcon()}
 					<Delete />
@@ -43,7 +44,14 @@
 				<HistoryEntry {historyItem} />
 			{/each}
 		</SegmentedList>
+	{:else}
+		<p class="text-center text-sm text-color-on-surface-variant">History is empty</p>
 	{/each}
+</div>
+
+<div>
+	<!-- div to avoid parent styles -->
+	<DialogDeleteHistory bind:open={dialogDeleteHistoryOpen} />
 </div>
 
 <script lang="ts">
@@ -54,12 +62,13 @@ import Switch from '~/lib/base/Switch.svelte';
 import Button from '~/lib/base/Button.svelte';
 import SegmentedList from '~/lib/base/SegmentedList.svelte';
 import HistoryEntry from './lib/HistoryEntry.svelte';
+import DialogDeleteHistory from './lib/DialogDeleteHistory.svelte';
 import HistoryRounded from '~icons/material-symbols/history-rounded';
 import Delete from '~icons/material-symbols/delete-outline-rounded';
 
-function clearHistory() {
-	if (confirm('Are you sure?')) {
-		storageHistory.clear();
-	}
+let dialogDeleteHistoryOpen = $state<boolean>(false);
+
+function openDeleteDialog() {
+	dialogDeleteHistoryOpen = true;
 }
 </script>

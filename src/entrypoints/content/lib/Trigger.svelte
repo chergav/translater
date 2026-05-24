@@ -5,8 +5,8 @@
 >
 	<button
 		class={[
-			'group relative flex items-center justify-center rounded-lg p-1 shadow-md',
-			'bg-color-surface-container text-color-on-surface-variant',
+			'group relative flex items-center justify-center rounded-lg p-1 shadow-md transition-colors ease-effects-fast',
+			'bg-color-surface-container text-color-on-surface-variant hover:text-color-on-surface',
 		]}
 		aria-label={browser.i18n.getMessage('tooltip_translate_text')}
 		onclick={store.openPopup}

@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Підтримка"
     },
+    "button_label_delete": {
+        "message": "Видалити"
+    },
+    "button_label_cancel": {
+        "message": "Скасувати"
+    },
     "options_general_translation_button": {
         "message": "Кнопка перекладу"
     },
@@ -72,10 +78,10 @@
         "message": "Показувати кнопку, коли текст вибрано в полях введення тексту."
     },
     "options_hide_translation_button": {
-        "message": "Приховати кнопку перекладу для вашої мови"
+        "message": "Приховати кнопку перекладу для цільової мови"
     },
     "options_hide_translation_button_hint": {
-        "message": "Кнопка не з’явиться під час вибору тексту системною мовою"
+        "message": "Приховано, якщо виділений текст перекладено мовою перекладу"
     },
     "options_hide_button_on_sites": {
         "message": "Приховані на сайтах"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "Тема"
     },
-    "options_appearance_accent_color": {
-        "message": "Акцентний колір"
+    "theme_light": {
+        "message": "Світла тема"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Фон і звичайний текст"
+    "theme_system": {
+        "message": "Тема системи"
+    },
+    "theme_dark": {
+        "message": "Темна тема"
+    },
+    "options_appearance_animations": {
+        "message": "анімації"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Увімкнено"
+    },
+    "options_appearance_animations_system": {
+        "message": "Слідкуйте за системою"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Зменшений"
+    },
+    "options_appearance_contrast": {
+        "message": "Контрастний колір"
+    },
+    "options_appearance_contrast_default": {
+        "message": "За замовчуванням"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Середній"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Високий"
+    },
+    "options_appearance_colors": {
+        "message": "Кольори"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Спеціальна тема"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Редагувати спеціальну тему"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Попередній перегляд"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Варіанти тем"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Вихідний колір"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Виберіть колір для створення тем"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Застосувати тему"
     },
     "options_records_in_history": {
         "message": "Записи в історії"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Видалити з історії"
+    },
+    "options_delete_items": {
+        "message": "елементів буде видалено"
     },
     "options_tts_language": {
         "message": "Мова"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "Переклад"
-    },
-    "theme_light": {
-        "message": "Світла тема"
-    },
-    "theme_dark": {
-        "message": "Темна тема"
-    },
-    "theme_system": {
-        "message": "Тема системи"
     },
     "tooltip_translate_text": {
         "message": "Перекласти виділений текст"
@@ -582,7 +633,7 @@
         "message": "Хауса"
     },
     "language_haw": {
-        "message": "Гавайська"
+        "message": "гавайський"
     },
     "language_hi": {
         "message": "Хінді"

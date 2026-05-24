@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Support"
     },
+    "button_label_delete": {
+        "message": "Slet"
+    },
+    "button_label_cancel": {
+        "message": "Annuller"
+    },
     "options_general_translation_button": {
         "message": "Oversættelsesknap"
     },
@@ -72,10 +78,10 @@
         "message": "Vis knap, når tekst er valgt i tekstindtastningsfelter."
     },
     "options_hide_translation_button": {
-        "message": "Skjul oversættelsesknappen for dit sprog"
+        "message": "Skjul oversættelsesknap til målsproget"
     },
     "options_hide_translation_button_hint": {
-        "message": "Knappen vises ikke, når du vælger tekst på dit systemsprog"
+        "message": "Skjult, når valgt tekst er på målsproget"
     },
     "options_hide_button_on_sites": {
         "message": "Skjult på websteder"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "Tema"
     },
-    "options_appearance_accent_color": {
-        "message": "Accent farve"
+    "theme_light": {
+        "message": "Lyst tema"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Baggrund og almindelig tekst"
+    "theme_system": {
+        "message": "System tema"
+    },
+    "theme_dark": {
+        "message": "Mørkt tema"
+    },
+    "options_appearance_animations": {
+        "message": "Animationer"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Aktiveret"
+    },
+    "options_appearance_animations_system": {
+        "message": "Følg systemet"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Reduceret"
+    },
+    "options_appearance_contrast": {
+        "message": "Kontrastfarve"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Standard"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Medium"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Høj"
+    },
+    "options_appearance_colors": {
+        "message": "Farver"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Brugerdefineret tema"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Rediger tilpasset tema"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Forhåndsvisning"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Temavarianter"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Kilde farve"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Vælg en farve for at generere temaer"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Anvend tema"
     },
     "options_records_in_history": {
         "message": "Indgange i historien"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Slet fra historikken"
+    },
+    "options_delete_items": {
+        "message": "elementer vil blive slettet"
     },
     "options_tts_language": {
         "message": "Sprog"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "Oversættelse"
-    },
-    "theme_light": {
-        "message": "Lyst tema"
-    },
-    "theme_dark": {
-        "message": "Mørkt tema"
-    },
-    "theme_system": {
-        "message": "System tema"
     },
     "tooltip_translate_text": {
         "message": "Oversæt valgt tekst"

@@ -65,7 +65,7 @@ const inputVariants = tv({
 			'group/input flex cursor-text flex-col gap-1',
 			'has-disabled:pointer-events-none has-disabled:opacity-disabled',
 		],
-		labelClass: 'inline-flex items-center text-sm',
+		labelClass: 'inline-flex items-center text-sm text-color-on-surface',
 		container: [
 			'relative flex rounded-t-sm py-2',
 			'[&_svg]:pointer-events-none [&_svg]:shrink-0',
@@ -79,7 +79,7 @@ const inputVariants = tv({
 			'after:transition-opacity after:ease-effects-fast group-has-focus/input:after:opacity-100 group-has-active/input:after:opacity-100',
 		],
 		content: 'relative flex w-full items-center',
-		inputClass: 'w-full text-base caret-color-primary outline-none placeholder:text-color-on-surface-variant',
+		inputClass: 'w-full text-base text-color-on-surface caret-color-primary outline-none placeholder:text-color-on-surface-variant',
 		iconClass: 'text-color-on-surface-variant [&:not(:has(svg))]:hidden [&>svg]:size-6',
 	},
 	variants: {

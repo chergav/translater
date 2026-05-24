@@ -4,7 +4,7 @@
 			Downloading model: {store.downloadProgress}%
 		</p>
 	{/if}
-	<div class={fontClass}>
+	<div class={['text-color-on-surface', fontClass]}>
 		{store.translationAi.text}
 	</div>
 	{#if storage.settings.showTransliteration}
@@ -17,7 +17,7 @@
 {/if}
 
 {#if store.errors.ai.length}
-	<p class="text-color-error">
+	<p class="text-sm text-color-error">
 		{store.errors.ai.join('\n')}
 	</p>
 {/if}

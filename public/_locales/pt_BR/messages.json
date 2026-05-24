@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Suporte"
     },
+    "button_label_delete": {
+        "message": "Excluir"
+    },
+    "button_label_cancel": {
+        "message": "Cancelar"
+    },
     "options_general_translation_button": {
         "message": "Botão de tradução"
     },
@@ -72,10 +78,10 @@
         "message": "Mostrar botão quando o texto é selecionado nos campos de entrada de texto."
     },
     "options_hide_translation_button": {
-        "message": "Oculte o botão de tradução para o seu idioma"
+        "message": "Ocultar botão de tradução para o idioma de destino"
     },
     "options_hide_translation_button_hint": {
-        "message": "O botão não aparecerá ao selecionar texto no idioma do seu sistema"
+        "message": "Oculto quando o texto selecionado está no idioma de destino"
     },
     "options_hide_button_on_sites": {
         "message": "Escondido em sites"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "Tema"
     },
-    "options_appearance_accent_color": {
-        "message": "Cor de destaque"
+    "theme_light": {
+        "message": "Tema claro"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Plano de fundo e texto simples"
+    "theme_system": {
+        "message": "Tema do sistema"
+    },
+    "theme_dark": {
+        "message": "Tema escuro"
+    },
+    "options_appearance_animations": {
+        "message": "Animações"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Habilitado"
+    },
+    "options_appearance_animations_system": {
+        "message": "Siga o sistema"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Reduzido"
+    },
+    "options_appearance_contrast": {
+        "message": "Cor de contraste"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Padrão"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Médio"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Alto"
+    },
+    "options_appearance_colors": {
+        "message": "Cores"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Tema personalizado"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Editar tema personalizado"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Visualização"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Variantes de tema"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Cor de origem"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Selecione uma cor para gerar temas"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Aplicar tema"
     },
     "options_records_in_history": {
         "message": "Entradas na história"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Excluir do histórico"
+    },
+    "options_delete_items": {
+        "message": "itens serão excluídos"
     },
     "options_tts_language": {
         "message": "Idioma"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "Tradução"
-    },
-    "theme_light": {
-        "message": "Tema claro"
-    },
-    "theme_dark": {
-        "message": "Tema escuro"
-    },
-    "theme_system": {
-        "message": "Tema do sistema"
     },
     "tooltip_translate_text": {
         "message": "Traduzir o texto selecionado"
@@ -423,7 +474,7 @@
         "message": "Buriate"
     },
     "language_ca": {
-        "message": "catalão"
+        "message": "Catalão"
     },
     "language_ce": {
         "message": "Checheno"
@@ -642,7 +693,7 @@
         "message": "Patois jamaicanos"
     },
     "language_jw": {
-        "message": "javanês"
+        "message": "Javanês"
     },
     "language_ka": {
         "message": "Georgiano"
@@ -750,7 +801,7 @@
         "message": "crioulo das Maurícias"
     },
     "language_mg": {
-        "message": "Malgaxe"
+        "message": "malgaxe"
     },
     "language_mh": {
         "message": "marshallês"
@@ -1053,7 +1104,7 @@
         "message": "Iorubá"
     },
     "language_yua": {
-        "message": "Yucateca maia"
+        "message": "Yucateca Maia"
     },
     "language_yue": {
         "message": "cantonês"

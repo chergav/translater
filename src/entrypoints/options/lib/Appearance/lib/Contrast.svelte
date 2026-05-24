@@ -30,19 +30,19 @@ const contrasts: {
 }[] = [
 	{
 		value: ContrastLevel.Default,
-		label: 'Default',
+		label: browser.i18n.getMessage('options_appearance_contrast_default'),
 		Icon: Eye,
 		iconOpacity: 0.33,
 	},
 	{
 		value: ContrastLevel.Medium,
-		label: 'Medium',
+		label: browser.i18n.getMessage('options_appearance_contrast_medium'),
 		Icon: Eye,
 		iconOpacity: 0.66,
 	},
 	{
 		value: ContrastLevel.High,
-		label: 'High',
+		label: browser.i18n.getMessage('options_appearance_contrast_high'),
 		Icon: Eye,
 		iconOpacity: 1,
 	},

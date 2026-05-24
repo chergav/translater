@@ -39,36 +39,6 @@ import type { HTMLInputAttributes } from 'svelte/elements';
 import { cn, type VariantProps, type ClassValue } from 'tailwind-variants';
 import { tv } from './utils/tv';
 
-type ButtonVariants = VariantProps<typeof button>;
-
-interface Props extends ButtonVariants, Omit<HTMLInputAttributes, 'class' | 'color' | 'size'> {
-	group: T
-	value: T
-	name: string
-	label?: string
-	title?: string
-	icon?: Snippet<[selected?: boolean]>
-	selectedIcon?: Snippet<[selected?: boolean]>
-	class?: ClassValue
-	children?: Snippet
-}
-
-let {
-	group = $bindable(),
-	value,
-	name,
-	color = 'filled',
-	label,
-	title,
-	icon,
-	selectedIcon,
-	size = 'sm',
-	class: className = '',
-	'aria-label': ariaLabel = title,
-	children,
-	...rest
-}: Props = $props();
-
 const button = tv({
 	slots: {
 		base: [
@@ -140,6 +110,36 @@ const button = tv({
 		size: 'sm',
 	},
 });
+
+type ButtonVariants = VariantProps<typeof button>;
+
+interface Props extends ButtonVariants, Omit<HTMLInputAttributes, 'class' | 'color' | 'size'> {
+	group: T
+	value: T
+	name: string
+	label?: string
+	title?: string
+	icon?: Snippet<[selected?: boolean]>
+	selectedIcon?: Snippet<[selected?: boolean]>
+	class?: ClassValue
+	children?: Snippet
+}
+
+let {
+	group = $bindable(),
+	value,
+	name,
+	color = 'filled',
+	label,
+	title,
+	icon,
+	selectedIcon,
+	size = 'sm',
+	class: className = '',
+	'aria-label': ariaLabel = title,
+	children,
+	...rest
+}: Props = $props();
 
 const { base, content, labelClass, iconClass, stateLayer } = button();
 const selected = $derived<boolean>(group === value);

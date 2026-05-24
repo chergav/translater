@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "الدعم"
     },
+    "button_label_delete": {
+        "message": "حذف"
+    },
+    "button_label_cancel": {
+        "message": "إلغاء"
+    },
     "options_general_translation_button": {
         "message": "زر الترجمة"
     },
@@ -72,10 +78,10 @@
         "message": "زر إظهار عند تحديد النص في حقول إدخال النص."
     },
     "options_hide_translation_button": {
-        "message": "إخفاء زر الترجمة للغتك"
+        "message": "إخفاء زر الترجمة للغة الهدف"
     },
     "options_hide_translation_button_hint": {
-        "message": "لن يظهر الزر عند تحديد النص بلغة النظام لديك"
+        "message": "مخفي عندما يكون النص المحدد باللغة الهدف"
     },
     "options_hide_button_on_sites": {
         "message": "مخفي في المواقع"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "الموضوع"
     },
-    "options_appearance_accent_color": {
-        "message": "لون مميز"
+    "theme_light": {
+        "message": "موضوع خفيف"
     },
-    "options_appearance_bg_and_text": {
-        "message": "الخلفية والنص العادي"
+    "theme_system": {
+        "message": "موضوع النظام"
+    },
+    "theme_dark": {
+        "message": "موضوع مظلم"
+    },
+    "options_appearance_animations": {
+        "message": "الرسوم المتحركة"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "ممكّن"
+    },
+    "options_appearance_animations_system": {
+        "message": "اتبع النظام"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "مخفض"
+    },
+    "options_appearance_contrast": {
+        "message": "لون التباين"
+    },
+    "options_appearance_contrast_default": {
+        "message": "الافتراضي"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "متوسط"
+    },
+    "options_appearance_contrast_high": {
+        "message": "عالية"
+    },
+    "options_appearance_colors": {
+        "message": "الألوان"
+    },
+    "options_appearance_custom_theme": {
+        "message": "موضوع مخصص"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "تحرير الموضوع المخصص"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "معاينة"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "متغيرات الموضوع"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "لون المصدر"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "حدد لونًا لإنشاء السمات"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "تطبيق الموضوع"
     },
     "options_records_in_history": {
         "message": "إدخالات في التاريخ"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "حذف من التاريخ"
+    },
+    "options_delete_items": {
+        "message": "سيتم حذف العناصر"
     },
     "options_tts_language": {
         "message": "اللغة"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "الترجمة"
-    },
-    "theme_light": {
-        "message": "موضوع خفيف"
-    },
-    "theme_dark": {
-        "message": "موضوع مظلم"
-    },
-    "theme_system": {
-        "message": "موضوع النظام"
     },
     "tooltip_translate_text": {
         "message": "ترجمة النص المحدد"
@@ -819,7 +870,7 @@
         "message": "النوير"
     },
     "language_ny": {
-        "message": "تشيتشيوا"
+        "message": "تشيشيوا"
     },
     "language_oc": {
         "message": "الأوكيتانية"

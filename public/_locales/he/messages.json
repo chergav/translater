@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "תמיכה"
     },
+    "button_label_delete": {
+        "message": "מחק"
+    },
+    "button_label_cancel": {
+        "message": "בטל"
+    },
     "options_general_translation_button": {
         "message": "כפתור תרגום"
     },
@@ -72,10 +78,10 @@
         "message": "הצג לחצן כאשר טקסט נבחר בשדות קלט טקסט."
     },
     "options_hide_translation_button": {
-        "message": "הסתר את לחצן התרגום עבור השפה שלך"
+        "message": "הסתר כפתור תרגום לשפת היעד"
     },
     "options_hide_translation_button_hint": {
-        "message": "הלחצן לא יופיע בעת בחירת טקסט בשפת המערכת שלך"
+        "message": "מוסתר כאשר הטקסט שנבחר הוא בשפת היעד"
     },
     "options_hide_button_on_sites": {
         "message": "מוסתר באתרים"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "נושא"
     },
-    "options_appearance_accent_color": {
-        "message": "צבע מבטא"
+    "theme_light": {
+        "message": "נושא קליל"
     },
-    "options_appearance_bg_and_text": {
-        "message": "רקע וטקסט רגיל"
+    "theme_system": {
+        "message": "נושא המערכת"
+    },
+    "theme_dark": {
+        "message": "נושא אפל"
+    },
+    "options_appearance_animations": {
+        "message": "אנימציות"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "מופעל"
+    },
+    "options_appearance_animations_system": {
+        "message": "עקוב אחר המערכת"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "מופחת"
+    },
+    "options_appearance_contrast": {
+        "message": "צבע ניגודי"
+    },
+    "options_appearance_contrast_default": {
+        "message": "ברירת מחדל"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "בינוני"
+    },
+    "options_appearance_contrast_high": {
+        "message": "גבוה"
+    },
+    "options_appearance_colors": {
+        "message": "צבעים"
+    },
+    "options_appearance_custom_theme": {
+        "message": "נושא מותאם אישית"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "ערוך עיצוב מותאם אישית"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "תצוגה מקדימה"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "גרסאות נושא"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "צבע המקור"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "בחר צבע ליצירת ערכות נושא"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "החל נושא"
     },
     "options_records_in_history": {
         "message": "ערכים בהיסטוריה"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "מחק מההיסטוריה"
+    },
+    "options_delete_items": {
+        "message": "פריטים יימחקו"
     },
     "options_tts_language": {
         "message": "שפה"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "תרגום"
-    },
-    "theme_light": {
-        "message": "נושא קליל"
-    },
-    "theme_dark": {
-        "message": "נושא אפל"
-    },
-    "theme_system": {
-        "message": "נושא המערכת"
     },
     "tooltip_translate_text": {
         "message": "תרגם טקסט נבחר"

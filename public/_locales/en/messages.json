@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Support"
     },
+    "button_label_delete": {
+        "message": "Delete"
+    },
+    "button_label_cancel": {
+        "message": "Cancel"
+    },
     "options_general_translation_button": {
         "message": "Translation button"
     },
@@ -72,10 +78,10 @@
         "message": "Show button when text is selected in text input fields."
     },
     "options_hide_translation_button": {
-        "message": "Hide the translation button for your language"
+        "message": "Hide translation button for target language"
     },
     "options_hide_translation_button_hint": {
-        "message": "Button won't appear when selecting text in your system language"
+        "message": "Hidden when selected text is in the target language"
     },
     "options_hide_button_on_sites": {
         "message": "Hidden on sites"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "Theme"
     },
-    "options_appearance_accent_color": {
-        "message": "Accent color"
+    "theme_light": {
+        "message": "Light theme"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Background and plain text"
+    "theme_system": {
+        "message": "System theme"
+    },
+    "theme_dark": {
+        "message": "Dark theme"
+    },
+    "options_appearance_animations": {
+        "message": "Animations"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Enabled"
+    },
+    "options_appearance_animations_system": {
+        "message": "Follow system"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Reduced"
+    },
+    "options_appearance_contrast": {
+        "message": "Contrast color"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Default"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Medium"
+    },
+    "options_appearance_contrast_high": {
+        "message": "High"
+    },
+    "options_appearance_colors": {
+        "message": "Colors"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Custom theme"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Edit custom theme"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Preview"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Theme variants"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Source color"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Select a color to generate themes"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Apply theme"
     },
     "options_records_in_history": {
         "message": "Entries in history"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Delete from history"
+    },
+    "options_delete_items": {
+        "message": "items will be deleted"
     },
     "options_tts_language": {
         "message": "Language"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "Translation"
-    },
-    "theme_light": {
-        "message": "Light theme"
-    },
-    "theme_dark": {
-        "message": "Dark theme"
-    },
-    "theme_system": {
-        "message": "System theme"
     },
     "tooltip_translate_text": {
         "message": "Translate selected text"

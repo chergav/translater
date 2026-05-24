@@ -42,12 +42,12 @@
 			data-contrast={storage.contrast}
 			data-theme={storage.themeClass}
 			data-theme-color={ThemeColor.Custom}
-			title="Custom color"
+			title={browser.i18n.getMessage('options_appearance_custom_theme')}
 		>
 			<input
 				name="theme-color"
 				class="peer sr-only"
-				aria-label="Custom color"
+				aria-label={browser.i18n.getMessage('options_appearance_custom_theme')}
 				type="radio"
 				value={ThemeColor.Custom}
 				bind:group={storage.settings.accentColor}
@@ -82,7 +82,7 @@
 			>
 				<IconButton
 					onclick={showDialogCustomTheme}
-					title="Edit custom color"
+					title={browser.i18n.getMessage('options_appearance_edit_custom_theme')}
 				>
 					<Edit />
 				</IconButton>

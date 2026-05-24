@@ -6,6 +6,10 @@
 import type { Snippet } from 'svelte';
 import { tv, type VariantProps, type ClassValue } from 'tailwind-variants';
 
+const list = tv({
+	base: 'flex shrink-0 flex-col gap-0.5 overflow-hidden rounded-2xl *:rounded-sm *:bg-color-surface-bright *:px-4 *:py-2.5',
+});
+
 type ListVariants = VariantProps<typeof list>;
 
 interface Props extends ListVariants {
@@ -17,8 +21,4 @@ let {
 	children,
 	class: className,
 }: Props = $props();
-
-const list = tv({
-	base: 'flex shrink-0 flex-col gap-0.5 overflow-hidden rounded-2xl *:bg-color-surface-bright *:px-4 *:py-2.5',
-});
 </script>

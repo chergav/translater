@@ -6,7 +6,7 @@
 		<p class="text-sm text-color-on-surface-variant">{store.translated.sentence.translit}</p>
 	{/if}
 {:else if store.errors.google.length}
-	<p class="text-color-error">
+	<p class="text-sm text-color-error">
 		{store.errors.google.join('\n')}
 	</p>
 {:else if store.isPending}

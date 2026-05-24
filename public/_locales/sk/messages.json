@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Podpora"
     },
+    "button_label_delete": {
+        "message": "Odstrániť"
+    },
+    "button_label_cancel": {
+        "message": "Zrušiť"
+    },
     "options_general_translation_button": {
         "message": "Tlačidlo prekladu"
     },
@@ -72,10 +78,10 @@
         "message": "Keď je v poliach na zadávanie textu vybratý text, tlačidlo Zobraziť."
     },
     "options_hide_translation_button": {
-        "message": "Skryť tlačidlo prekladu pre váš jazyk"
+        "message": "Skryť tlačidlo prekladu pre cieľový jazyk"
     },
     "options_hide_translation_button_hint": {
-        "message": "Tlačidlo sa nezobrazí pri výbere textu v jazyku vášho systému"
+        "message": "Skryté, keď je vybratý text v cieľovom jazyku"
     },
     "options_hide_button_on_sites": {
         "message": "Skryté na stránkach"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "Téma"
     },
-    "options_appearance_accent_color": {
-        "message": "Farba akcentu"
+    "theme_light": {
+        "message": "Svetlá téma"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Pozadie a obyčajný text"
+    "theme_system": {
+        "message": "Systémová téma"
+    },
+    "theme_dark": {
+        "message": "Tmavá téma"
+    },
+    "options_appearance_animations": {
+        "message": "Animácie"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Povolené"
+    },
+    "options_appearance_animations_system": {
+        "message": "Postupujte podľa systému"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Znížená"
+    },
+    "options_appearance_contrast": {
+        "message": "Kontrastná farba"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Predvolené"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Stredná"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Vysoká"
+    },
+    "options_appearance_colors": {
+        "message": "Farby"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Vlastný motív"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Upraviť vlastný motív"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Ukážka"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Varianty témy"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Farba zdroja"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Vyberte farbu na generovanie motívov"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Použiť motív"
     },
     "options_records_in_history": {
         "message": "Zápisy do histórie"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Odstrániť z histórie"
+    },
+    "options_delete_items": {
+        "message": "položky budú odstránené"
     },
     "options_tts_language": {
         "message": "Jazyk"
@@ -177,7 +237,7 @@
         "message": "Extra veľké (20px)"
     },
     "options_support_msg": {
-        "message": "Ak niečo nefunguje alebo máte nejaké návrhy, dajte mi vedieť"
+        "message": "Ak niečo nefunguje alebo máte nejaké návrhy, dajte mi vedieť tu"
     },
     "options_support_donations": {
         "message": "Ak chcete podporiť tento bezplatný softvér"
@@ -245,15 +305,6 @@
     "popup_placeholder_translation": {
         "message": "Preklad"
     },
-    "theme_light": {
-        "message": "Svetlá téma"
-    },
-    "theme_dark": {
-        "message": "Tmavá téma"
-    },
-    "theme_system": {
-        "message": "Systémová téma"
-    },
     "tooltip_translate_text": {
         "message": "Preložiť vybraný text"
     },
@@ -300,7 +351,7 @@
         "message": "Spravovať povolenia"
     },
     "select_language_search_placeholder": {
-        "message": "Vyhľadanie jazykov (kód ISO alebo názov)"
+        "message": "Nájsť jazyky (ISO kód alebo názov)"
     },
     "select_language_search_no_results": {
         "message": "Žiadne výsledky"

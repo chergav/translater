@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "サポート"
     },
+    "button_label_delete": {
+        "message": "削除"
+    },
+    "button_label_cancel": {
+        "message": "キャンセル"
+    },
     "options_general_translation_button": {
         "message": "翻訳ボタン"
     },
@@ -72,10 +78,10 @@
         "message": "テキスト入力フィールドでテキストが選択されているときにボタンを表示します。"
     },
     "options_hide_translation_button": {
-        "message": "あなたの言語の翻訳ボタンを非表示にする"
+        "message": "ターゲット言語の翻訳ボタンを非表示にする"
     },
     "options_hide_translation_button_hint": {
-        "message": "システム言語でテキストを選択するとボタンが表示されない"
+        "message": "選択したテキストがターゲット言語の場合は非表示になります"
     },
     "options_hide_button_on_sites": {
         "message": "サイトに隠されている"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "テーマ"
     },
-    "options_appearance_accent_color": {
-        "message": "アクセントカラー"
+    "theme_light": {
+        "message": "ライトテーマ"
     },
-    "options_appearance_bg_and_text": {
-        "message": "背景とプレーンテキスト"
+    "theme_system": {
+        "message": "システムテーマ"
+    },
+    "theme_dark": {
+        "message": "ダークテーマ"
+    },
+    "options_appearance_animations": {
+        "message": "アニメーション"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "有効"
+    },
+    "options_appearance_animations_system": {
+        "message": "フォローシステム"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "減少"
+    },
+    "options_appearance_contrast": {
+        "message": "コントラストカラー"
+    },
+    "options_appearance_contrast_default": {
+        "message": "デフォルト"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "中"
+    },
+    "options_appearance_contrast_high": {
+        "message": "高"
+    },
+    "options_appearance_colors": {
+        "message": "色"
+    },
+    "options_appearance_custom_theme": {
+        "message": "カスタムテーマ"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "カスタムテーマを編集する"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "プレビュー"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "テーマのバリエーション"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "ソースカラー"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "テーマを生成する色を選択してください"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "テーマを適用する"
     },
     "options_records_in_history": {
         "message": "履歴のエントリ"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "履歴から削除"
+    },
+    "options_delete_items": {
+        "message": "アイテムは削除されます"
     },
     "options_tts_language": {
         "message": "言語"
@@ -213,7 +273,7 @@
         "message": "例"
     },
     "popup_perhaps_you_meant": {
-        "message": "おそらく次のことを言いたかったのでしょう："
+        "message": "おそらく次のことを言いたかったのでしょう:"
     },
     "popup_original_language": {
         "message": "元の言語:"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "翻訳"
-    },
-    "theme_light": {
-        "message": "ライトテーマ"
-    },
-    "theme_dark": {
-        "message": "ダークテーマ"
-    },
-    "theme_system": {
-        "message": "システムテーマ"
     },
     "tooltip_translate_text": {
         "message": "選択したテキストを翻訳する"
@@ -681,7 +732,7 @@
         "message": "クリオ"
     },
     "language_ktu": {
-        "message": "キトゥバ"
+        "message": "キツバ"
     },
     "language_ku": {
         "message": "クルド語 (クルマンジ)"

@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Sokongan"
     },
+    "button_label_delete": {
+        "message": "Padam"
+    },
+    "button_label_cancel": {
+        "message": "Batal"
+    },
     "options_general_translation_button": {
         "message": "Butang terjemahan"
     },
@@ -72,10 +78,10 @@
         "message": "Tunjukkan butang apabila teks dipilih dalam medan input teks."
     },
     "options_hide_translation_button": {
-        "message": "Sembunyikan butang terjemahan untuk bahasa anda"
+        "message": "Sembunyikan butang terjemahan untuk bahasa sasaran"
     },
     "options_hide_translation_button_hint": {
-        "message": "Butang tidak akan muncul apabila memilih teks dalam bahasa sistem anda"
+        "message": "Tersembunyi apabila teks yang dipilih berada dalam bahasa sasaran"
     },
     "options_hide_button_on_sites": {
         "message": "Tersembunyi di tapak"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "Tema"
     },
-    "options_appearance_accent_color": {
-        "message": "Warna aksen"
+    "theme_light": {
+        "message": "Tema ringan"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Latar belakang dan teks biasa"
+    "theme_system": {
+        "message": "Tema sistem"
+    },
+    "theme_dark": {
+        "message": "Tema gelap"
+    },
+    "options_appearance_animations": {
+        "message": "Animasi"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Didayakan"
+    },
+    "options_appearance_animations_system": {
+        "message": "Ikut sistem"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Dikurangkan"
+    },
+    "options_appearance_contrast": {
+        "message": "Warna kontras"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Lalai"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Sederhana"
+    },
+    "options_appearance_contrast_high": {
+        "message": "tinggi"
+    },
+    "options_appearance_colors": {
+        "message": "warna"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Tema tersuai"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Edit tema tersuai"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Pratonton"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Varian tema"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Warna sumber"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Pilih warna untuk menjana tema"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Gunakan tema"
     },
     "options_records_in_history": {
         "message": "Entri dalam sejarah"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Padam daripada sejarah"
+    },
+    "options_delete_items": {
+        "message": "item akan dipadamkan"
     },
     "options_tts_language": {
         "message": "Bahasa"
@@ -153,7 +213,7 @@
         "message": "edit pintasan papan kekunci"
     },
     "options_keyboard_shortcut_open_popup": {
-        "message": "Pintasan papan kekunci untuk membuka tetingkap timbul"
+        "message": "Pintasan papan kekunci untuk membuka tetingkap pop timbul"
     },
     "options_key_combination_is_not_set": {
         "message": "pintasan papan kekunci tidak ditetapkan"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "Terjemahan"
-    },
-    "theme_light": {
-        "message": "Tema ringan"
-    },
-    "theme_dark": {
-        "message": "Tema gelap"
-    },
-    "theme_system": {
-        "message": "Tema sistem"
     },
     "tooltip_translate_text": {
         "message": "Terjemah teks yang dipilih"
@@ -912,7 +963,7 @@
         "message": "Sinhala"
     },
     "language_sk": {
-        "message": "Bahasa Slovak"
+        "message": "bahasa Slovak"
     },
     "language_sl": {
         "message": "Bahasa Slovenia"

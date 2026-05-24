@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "지원"
     },
+    "button_label_delete": {
+        "message": "삭제"
+    },
+    "button_label_cancel": {
+        "message": "취소"
+    },
     "options_general_translation_button": {
         "message": "번역 버튼"
     },
@@ -72,10 +78,10 @@
         "message": "텍스트 입력 필드에서 텍스트를 선택한 경우 버튼을 표시합니다."
     },
     "options_hide_translation_button": {
-        "message": "해당 언어의 번역 버튼 숨기기"
+        "message": "대상 언어 번역 버튼 숨기기"
     },
     "options_hide_translation_button_hint": {
-        "message": "시스템 언어로 텍스트를 선택할 때 버튼이 표시되지 않습니다."
+        "message": "선택한 텍스트가 대상 언어인 경우 숨겨집니다."
     },
     "options_hide_button_on_sites": {
         "message": "사이트에 숨겨져 있음"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "테마"
     },
-    "options_appearance_accent_color": {
-        "message": "악센트 색상"
+    "theme_light": {
+        "message": "밝은 테마"
     },
-    "options_appearance_bg_and_text": {
-        "message": "배경 및 일반 텍스트"
+    "theme_system": {
+        "message": "시스템 테마"
+    },
+    "theme_dark": {
+        "message": "어두운 테마"
+    },
+    "options_appearance_animations": {
+        "message": "애니메이션"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "활성화됨"
+    },
+    "options_appearance_animations_system": {
+        "message": "팔로우 시스템"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "감소"
+    },
+    "options_appearance_contrast": {
+        "message": "대비 색상"
+    },
+    "options_appearance_contrast_default": {
+        "message": "기본값"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "중간"
+    },
+    "options_appearance_contrast_high": {
+        "message": "높음"
+    },
+    "options_appearance_colors": {
+        "message": "색상"
+    },
+    "options_appearance_custom_theme": {
+        "message": "맞춤 테마"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "맞춤 테마 수정"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "미리보기"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "테마 변형"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "소스 색상"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "테마를 생성하려면 색상을 선택하세요."
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "테마 적용"
     },
     "options_records_in_history": {
         "message": "역사 항목"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "기록에서 삭제"
+    },
+    "options_delete_items": {
+        "message": "항목이 삭제됩니다"
     },
     "options_tts_language": {
         "message": "언어"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "번역"
-    },
-    "theme_light": {
-        "message": "밝은 테마"
-    },
-    "theme_dark": {
-        "message": "어두운 테마"
-    },
-    "theme_system": {
-        "message": "시스템 테마"
     },
     "tooltip_translate_text": {
         "message": "선택한 텍스트 번역"
@@ -456,7 +507,7 @@
         "message": "크리미아 타타르어(키릴 문자)"
     },
     "language_crh_Latn": {
-        "message": "크림 타타르어(라틴 문자)"
+        "message": "크림 타타르어(라틴어)"
     },
     "language_crs": {
         "message": "세이셸 크리올"

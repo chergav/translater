@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "поддръжка"
     },
+    "button_label_delete": {
+        "message": "Изтриване"
+    },
+    "button_label_cancel": {
+        "message": "Отказ"
+    },
     "options_general_translation_button": {
         "message": "Бутон за превод"
     },
@@ -72,10 +78,10 @@
         "message": "Показване на бутона, когато текстът е избран в полетата за въвеждане на текст."
     },
     "options_hide_translation_button": {
-        "message": "Скрийте бутона за превод за вашия език"
+        "message": "Скриване на бутона за превод за целевия език"
     },
     "options_hide_translation_button_hint": {
-        "message": "Бутонът няма да се появи, когато изберете текст на системния си език"
+        "message": "Скрит, когато избраният текст е на целевия език"
     },
     "options_hide_button_on_sites": {
         "message": "Скрити в сайтове"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "Тема"
     },
-    "options_appearance_accent_color": {
-        "message": "Цвят на акцента"
+    "theme_light": {
+        "message": "Лека тема"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Фон и обикновен текст"
+    "theme_system": {
+        "message": "Системна тема"
+    },
+    "theme_dark": {
+        "message": "Тъмна тема"
+    },
+    "options_appearance_animations": {
+        "message": "Анимации"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Активирано"
+    },
+    "options_appearance_animations_system": {
+        "message": "Следвайте системата"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Намалена"
+    },
+    "options_appearance_contrast": {
+        "message": "Контрастен цвят"
+    },
+    "options_appearance_contrast_default": {
+        "message": "По подразбиране"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Среден"
+    },
+    "options_appearance_contrast_high": {
+        "message": "високо"
+    },
+    "options_appearance_colors": {
+        "message": "Цветове"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Персонализирана тема"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Редактиране на персонализирана тема"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Преглед"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Варианти на темата"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Изходен цвят"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Изберете цвят за генериране на теми"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Прилагане на тема"
     },
     "options_records_in_history": {
         "message": "Записи в историята"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Изтриване от историята"
+    },
+    "options_delete_items": {
+        "message": "елементи ще бъдат изтрити"
     },
     "options_tts_language": {
         "message": "език"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "Превод"
-    },
-    "theme_light": {
-        "message": "Лека тема"
-    },
-    "theme_dark": {
-        "message": "Тъмна тема"
-    },
-    "theme_system": {
-        "message": "Системна тема"
     },
     "tooltip_translate_text": {
         "message": "Преведете избрания текст"

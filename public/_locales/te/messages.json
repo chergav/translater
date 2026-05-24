@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "మద్దతు"
     },
+    "button_label_delete": {
+        "message": "తొలగించు"
+    },
+    "button_label_cancel": {
+        "message": "రద్దు చేయి"
+    },
     "options_general_translation_button": {
         "message": "అనువాద బటన్"
     },
@@ -72,10 +78,10 @@
         "message": "టెక్స్ట్ ఇన్‌పుట్ ఫీల్డ్‌లలో టెక్స్ట్ ఎంచుకున్నప్పుడు బటన్‌ను చూపించు."
     },
     "options_hide_translation_button": {
-        "message": "మీ భాష కోసం అనువాద బటన్‌ను దాచండి"
+        "message": "లక్ష్య భాష కోసం అనువాద బటన్‌ను దాచండి"
     },
     "options_hide_translation_button_hint": {
-        "message": "మీ సిస్టమ్ భాషలో వచనాన్ని ఎంచుకున్నప్పుడు బటన్ కనిపించదు"
+        "message": "ఎంచుకున్న వచనం లక్ష్య భాషలో ఉన్నప్పుడు దాచబడుతుంది"
     },
     "options_hide_button_on_sites": {
         "message": "సైట్‌లలో దాచబడింది"
@@ -102,7 +108,7 @@
         "message": "లిప్యంతరీకరణ అందుబాటులో ఉంటే చూపించు."
     },
     "options_lock_popup_window": {
-        "message": "పాప్అప్ విండోను లాక్ చేయండి"
+        "message": "పాపప్ విండోను లాక్ చేయండి"
     },
     "options_lock_popup_window_hint": {
         "message": "బయట క్లిక్ చేసినప్పుడు పాప్అప్ తెరిచి ఉంటుంది."
@@ -116,14 +122,65 @@
     "options_appearance_theme": {
         "message": "థీమ్"
     },
-    "options_appearance_accent_color": {
-        "message": "యాస రంగు"
+    "theme_light": {
+        "message": "లైట్ థీమ్"
     },
-    "options_appearance_bg_and_text": {
-        "message": "నేపథ్యం మరియు సాదా వచనం"
+    "theme_system": {
+        "message": "సిస్టమ్ థీమ్"
+    },
+    "theme_dark": {
+        "message": "చీకటి థీమ్"
+    },
+    "options_appearance_animations": {
+        "message": "యానిమేషన్లు"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "ప్రారంభించబడింది"
+    },
+    "options_appearance_animations_system": {
+        "message": "వ్యవస్థను అనుసరించండి"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "తగ్గించబడింది"
+    },
+    "options_appearance_contrast": {
+        "message": "కాంట్రాస్ట్ రంగు"
+    },
+    "options_appearance_contrast_default": {
+        "message": "డిఫాల్ట్"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "మధ్యస్థం"
+    },
+    "options_appearance_contrast_high": {
+        "message": "అధిక"
+    },
+    "options_appearance_colors": {
+        "message": "రంగులు"
+    },
+    "options_appearance_custom_theme": {
+        "message": "అనుకూల థీమ్"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "అనుకూల థీమ్‌ను సవరించండి"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "ప్రివ్యూ"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "థీమ్ వేరియంట్‌లు"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "మూల రంగు"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "థీమ్‌లను రూపొందించడానికి రంగును ఎంచుకోండి"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "థీమ్‌ని వర్తింపజేయండి"
     },
     "options_records_in_history": {
-        "message": "చరిత్రలో ప్రవేశాలు"
+        "message": "చరిత్రలో ఎంట్రీలు"
     },
     "options_history_enable": {
         "message": "చరిత్రను ప్రారంభించండి"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "చరిత్ర నుండి తొలగించండి"
+    },
+    "options_delete_items": {
+        "message": "అంశాలు తొలగించబడతాయి"
     },
     "options_tts_language": {
         "message": "భాష"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "అనువాదం"
-    },
-    "theme_light": {
-        "message": "లైట్ థీమ్"
-    },
-    "theme_dark": {
-        "message": "చీకటి థీమ్"
-    },
-    "theme_system": {
-        "message": "సిస్టమ్ థీమ్"
     },
     "tooltip_translate_text": {
         "message": "ఎంచుకున్న వచనాన్ని అనువదించండి"
@@ -813,7 +864,7 @@
         "message": "Ndebele (దక్షిణం)"
     },
     "language_nso": {
-        "message": "సెపెడి"
+        "message": "సెపెడీ"
     },
     "language_nus": {
         "message": "న్యూర్"

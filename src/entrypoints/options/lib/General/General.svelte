@@ -52,7 +52,7 @@
 	</Switch>
 	<Switch
 		disabled={!storage.settings.inlineButtonShow && !storage.settings.textFieldButtonShow}
-		hint="{browser.i18n.getMessage('options_hide_translation_button_hint')}: {userLanguage}."
+		hint="{browser.i18n.getMessage('options_hide_translation_button_hint')}: {targetLang}"
 		label={browser.i18n.getMessage('options_hide_translation_button')}
 		bind:checked={storage.settings.hideButtonForUserLanguage}
 	>
@@ -179,7 +179,7 @@
 			<option {value}>{label}</option>
 		{/each}
 	</Select>
-	<div class="flex items-center gap-3 p-3">
+	<div class="flex items-center gap-3 rounded-sm p-3">
 		<span>
 			<Keyboard class="size-5 text-color-on-surface-variant" />
 		</span>
@@ -219,7 +219,7 @@ import SegmentedList from '~/lib/base/SegmentedList.svelte';
 import Chip from '~/lib/base/Chip.svelte';
 import Shortcuts from '~/lib/Shortcuts.svelte';
 import { getShortcutByCommand } from '~/shared/browser';
-import { getUILanguageCode, getDisplayedLanguageName } from '~/shared/languages';
+import { getDisplayedLanguageName } from '~/shared/languages';
 import FormatSize from '~icons/material-symbols/format-size-rounded';
 import Edit from '~icons/material-symbols/edit-outline-rounded';
 import Keyboard from '~icons/material-symbols/keyboard-alt-outline-rounded';
@@ -240,7 +240,7 @@ import Abc from '~icons/material-symbols/abc-rounded';
 
 // import OAuth from './OAuth.svelte';
 
-let userLanguage = $state<string>(getUserLanguage());
+let targetLang = $derived<string>(getDisplayedLanguageName(storage.settings.targetLang, 'name+code'));
 
 const deleteFromBlacklist = (domain: string) => {
 	storage.settings.blacklistDomainForInline = storage.settings.blacklistDomainForInline.filter(i => i !== domain);
@@ -251,11 +251,6 @@ let shortcutKeysPromise = getShortcutByCommand('open-translator');
 const openExtensionsShortcuts = () => {
 	browser.tabs.create({ url: 'chrome://extensions/shortcuts' });
 };
-
-function getUserLanguage(){
-	const userUILanguageCode = getUILanguageCode();
-	return getDisplayedLanguageName(userUILanguageCode, 'name+code');
-}
 
 const modes: {
 	value: PopupMode

@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Wsparcie"
     },
+    "button_label_delete": {
+        "message": "Usuń"
+    },
+    "button_label_cancel": {
+        "message": "Anuluj"
+    },
     "options_general_translation_button": {
         "message": "Przycisk tłumaczenia"
     },
@@ -72,10 +78,10 @@
         "message": "Pokaż przycisk, gdy w polach wprowadzania tekstu zaznaczony jest tekst."
     },
     "options_hide_translation_button": {
-        "message": "Ukryj przycisk tłumaczenia dla swojego języka"
+        "message": "Ukryj przycisk tłumaczenia dla języka docelowego"
     },
     "options_hide_translation_button_hint": {
-        "message": "Przycisk nie pojawi się podczas wybierania tekstu w języku systemu"
+        "message": "Ukryty, gdy zaznaczony tekst jest w języku docelowym"
     },
     "options_hide_button_on_sites": {
         "message": "Ukryte na stronach"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "Temat"
     },
-    "options_appearance_accent_color": {
-        "message": "Kolor akcentujący"
+    "theme_light": {
+        "message": "Lekki motyw"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Tło i zwykły tekst"
+    "theme_system": {
+        "message": "Motyw systemowy"
+    },
+    "theme_dark": {
+        "message": "Ciemny motyw"
+    },
+    "options_appearance_animations": {
+        "message": "Animacje"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Włączone"
+    },
+    "options_appearance_animations_system": {
+        "message": "Postępuj zgodnie z systemem"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Zredukowany"
+    },
+    "options_appearance_contrast": {
+        "message": "Kontrastowy kolor"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Domyślne"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Średni"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Wysoka"
+    },
+    "options_appearance_colors": {
+        "message": "Kolory"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Motyw niestandardowy"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Edytuj niestandardowy motyw"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Podgląd"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Warianty tematyczne"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Kolor źródłowy"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Wybierz kolor, aby wygenerować motywy"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Zastosuj motyw"
     },
     "options_records_in_history": {
         "message": "Wpisy w historii"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Usuń z historii"
+    },
+    "options_delete_items": {
+        "message": "elementy zostaną usunięte"
     },
     "options_tts_language": {
         "message": "Język"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "Tłumaczenie"
-    },
-    "theme_light": {
-        "message": "Lekki motyw"
-    },
-    "theme_dark": {
-        "message": "Ciemny motyw"
-    },
-    "theme_system": {
-        "message": "Motyw systemowy"
     },
     "tooltip_translate_text": {
         "message": "Przetłumacz zaznaczony tekst"
@@ -375,7 +426,7 @@
         "message": "białoruski"
     },
     "language_bem": {
-        "message": "Bemba"
+        "message": "Bembę"
     },
     "language_ber": {
         "message": "Tamazight (Tifinagh)"
@@ -582,7 +633,7 @@
         "message": "Hausa"
     },
     "language_haw": {
-        "message": "Hawajski"
+        "message": "hawajski"
     },
     "language_hi": {
         "message": "hindi"
@@ -1011,7 +1062,7 @@
         "message": "Tahitański"
     },
     "language_tyv": {
-        "message": "Tuwan"
+        "message": "Tuvan"
     },
     "language_udm": {
         "message": "Udmurt"
@@ -1062,7 +1113,7 @@
         "message": "Zapotek"
     },
     "language_zh_CN": {
-        "message": "Chiński (uproszczony)"
+        "message": "chiński (uproszczony)"
     },
     "language_zh_TW": {
         "message": "chiński (tradycyjny)"

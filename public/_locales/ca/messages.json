@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Suport"
     },
+    "button_label_delete": {
+        "message": "Suprimeix"
+    },
+    "button_label_cancel": {
+        "message": "Cancel·la"
+    },
     "options_general_translation_button": {
         "message": "Botó de traducció"
     },
@@ -72,10 +78,10 @@
         "message": "Mostra el botó quan el text està seleccionat als camps d'entrada de text."
     },
     "options_hide_translation_button": {
-        "message": "Amaga el botó de traducció del teu idioma"
+        "message": "Amaga el botó de traducció per a l'idioma d'arribada"
     },
     "options_hide_translation_button_hint": {
-        "message": "El botó no apareixerà quan seleccioneu text en l'idioma del vostre sistema"
+        "message": "S'amaga quan el text seleccionat està en l'idioma d'arribada"
     },
     "options_hide_button_on_sites": {
         "message": "Ocult als llocs"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "Tema"
     },
-    "options_appearance_accent_color": {
-        "message": "Color d'accent"
+    "theme_light": {
+        "message": "Tema lleuger"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Fons i text pla"
+    "theme_system": {
+        "message": "Tema del sistema"
+    },
+    "theme_dark": {
+        "message": "Tema fosc"
+    },
+    "options_appearance_animations": {
+        "message": "Animacions"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Habilitat"
+    },
+    "options_appearance_animations_system": {
+        "message": "Seguiu el sistema"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Reduït"
+    },
+    "options_appearance_contrast": {
+        "message": "Color de contrast"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Per defecte"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Mitjana"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Alt"
+    },
+    "options_appearance_colors": {
+        "message": "Colors"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Tema personalitzat"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Edita el tema personalitzat"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Vista prèvia"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Variants temàtiques"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Color d'origen"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Seleccioneu un color per generar temes"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Aplica el tema"
     },
     "options_records_in_history": {
         "message": "Entrades a la història"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Esborra de l'historial"
+    },
+    "options_delete_items": {
+        "message": "s'eliminaran els elements"
     },
     "options_tts_language": {
         "message": "Llengua"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "Traducció"
-    },
-    "theme_light": {
-        "message": "Tema lleuger"
-    },
-    "theme_dark": {
-        "message": "Tema fosc"
-    },
-    "theme_system": {
-        "message": "Tema del sistema"
     },
     "tooltip_translate_text": {
         "message": "Tradueix el text seleccionat"

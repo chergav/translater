@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Soporte"
     },
+    "button_label_delete": {
+        "message": "Eliminar"
+    },
+    "button_label_cancel": {
+        "message": "Cancelar"
+    },
     "options_general_translation_button": {
         "message": "Botón de traducción"
     },
@@ -72,10 +78,10 @@
         "message": "Mostrar botón cuando se selecciona texto en los campos de entrada de texto."
     },
     "options_hide_translation_button": {
-        "message": "Oculta el botón de traducción para tu idioma"
+        "message": "Ocultar botón de traducción para el idioma de destino"
     },
     "options_hide_translation_button_hint": {
-        "message": "El botón no aparecerá al seleccionar texto en el idioma de su sistema"
+        "message": "Oculto cuando el texto seleccionado está en el idioma de destino"
     },
     "options_hide_button_on_sites": {
         "message": "Oculto en sitios"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "Tema"
     },
-    "options_appearance_accent_color": {
-        "message": "Color de acento"
+    "theme_light": {
+        "message": "Tema ligero"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Fondo y texto sin formato"
+    "theme_system": {
+        "message": "Tema del sistema"
+    },
+    "theme_dark": {
+        "message": "tema oscuro"
+    },
+    "options_appearance_animations": {
+        "message": "Animaciones"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Habilitado"
+    },
+    "options_appearance_animations_system": {
+        "message": "Seguir sistema"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Reducido"
+    },
+    "options_appearance_contrast": {
+        "message": "color de contraste"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Predeterminado"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Medio"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Alto"
+    },
+    "options_appearance_colors": {
+        "message": "Colores"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Tema personalizado"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Editar tema personalizado"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Vista previa"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Variantes del tema"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Color de origen"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Selecciona un color para generar temas."
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Aplicar tema"
     },
     "options_records_in_history": {
         "message": "Entradas en la historia"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Eliminar del historial"
+    },
+    "options_delete_items": {
+        "message": "los elementos serán eliminados"
     },
     "options_tts_language": {
         "message": "Idioma"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "Traducción"
-    },
-    "theme_light": {
-        "message": "Tema ligero"
-    },
-    "theme_dark": {
-        "message": "tema oscuro"
-    },
-    "theme_system": {
-        "message": "Tema del sistema"
     },
     "tooltip_translate_text": {
         "message": "Traducir el texto seleccionado"
@@ -1050,7 +1101,7 @@
         "message": "yídish"
     },
     "language_yo": {
-        "message": "Yoruba"
+        "message": "yoruba"
     },
     "language_yua": {
         "message": "Maya yucateco"

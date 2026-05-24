@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Podpora"
     },
+    "button_label_delete": {
+        "message": "Smazat"
+    },
+    "button_label_cancel": {
+        "message": "Zrušit"
+    },
     "options_general_translation_button": {
         "message": "Překlad tlačítko"
     },
@@ -51,7 +57,7 @@
         "message": "Plný režim"
     },
     "options_general_mode_full_hint": {
-        "message": "Popup okno se všemi funkcemi."
+        "message": "Vyskakovací okno se všemi funkcemi."
     },
     "options_general_mode_simple": {
         "message": "Jednoduchý režim"
@@ -72,10 +78,10 @@
         "message": "Zobrazit tlačítko při výběru textu v polích pro zadávání textu."
     },
     "options_hide_translation_button": {
-        "message": "Skryjte tlačítko překladu pro váš jazyk"
+        "message": "Skrýt tlačítko překladu pro cílový jazyk"
     },
     "options_hide_translation_button_hint": {
-        "message": "Tlačítko se nezobrazí při výběru textu ve vašem systémovém jazyce"
+        "message": "Skrytý, když je vybraný text v cílovém jazyce"
     },
     "options_hide_button_on_sites": {
         "message": "Skryté na stránkách"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "téma"
     },
-    "options_appearance_accent_color": {
-        "message": "Barva přízvuku"
+    "theme_light": {
+        "message": "Světlé téma"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Pozadí a prostý text"
+    "theme_system": {
+        "message": "Systémové téma"
+    },
+    "theme_dark": {
+        "message": "Tmavé téma"
+    },
+    "options_appearance_animations": {
+        "message": "Animace"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Povoleno"
+    },
+    "options_appearance_animations_system": {
+        "message": "Sledujte systém"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Snížená"
+    },
+    "options_appearance_contrast": {
+        "message": "Kontrastní barva"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Výchozí"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Střední"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Vysoká"
+    },
+    "options_appearance_colors": {
+        "message": "Barvy"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Vlastní téma"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Upravit vlastní motiv"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Náhled"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Varianty motivu"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Barva zdroje"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Vyberte barvu pro generování motivů"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Použít motiv"
     },
     "options_records_in_history": {
         "message": "Zápisy do historie"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Smazat z historie"
+    },
+    "options_delete_items": {
+        "message": "položky budou smazány"
     },
     "options_tts_language": {
         "message": "Jazyk"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "Překlad"
-    },
-    "theme_light": {
-        "message": "Světlé téma"
-    },
-    "theme_dark": {
-        "message": "Tmavé téma"
-    },
-    "theme_system": {
-        "message": "Systémové téma"
     },
     "tooltip_translate_text": {
         "message": "Přeložte vybraný text"
@@ -1020,7 +1071,7 @@
         "message": "ujgurské"
     },
     "language_uk": {
-        "message": "Ukrajinština"
+        "message": "ukrajinský"
     },
     "language_ur": {
         "message": "urdština"

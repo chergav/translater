@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Υποστήριξη"
     },
+    "button_label_delete": {
+        "message": "Διαγραφή"
+    },
+    "button_label_cancel": {
+        "message": "Ακύρωση"
+    },
     "options_general_translation_button": {
         "message": "Κουμπί μετάφρασης"
     },
@@ -72,10 +78,10 @@
         "message": "Εμφάνιση κουμπιού όταν επιλέγεται κείμενο στα πεδία εισαγωγής κειμένου."
     },
     "options_hide_translation_button": {
-        "message": "Απόκρυψη του κουμπιού μετάφρασης για τη γλώσσα σας"
+        "message": "Απόκρυψη κουμπιού μετάφρασης για τη γλώσσα-στόχο"
     },
     "options_hide_translation_button_hint": {
-        "message": "Το κουμπί δεν θα εμφανίζεται όταν επιλέγετε κείμενο στη γλώσσα του συστήματός σας"
+        "message": "Κρύβεται όταν το επιλεγμένο κείμενο είναι στη γλώσσα προορισμού"
     },
     "options_hide_button_on_sites": {
         "message": "Κρυμμένο σε ιστότοπους"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "Θέμα"
     },
-    "options_appearance_accent_color": {
-        "message": "Χρώμα έμφασης"
+    "theme_light": {
+        "message": "Ελαφρύ θέμα"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Φόντο και απλό κείμενο"
+    "theme_system": {
+        "message": "Θέμα συστήματος"
+    },
+    "theme_dark": {
+        "message": "Σκοτεινό θέμα"
+    },
+    "options_appearance_animations": {
+        "message": "Κινούμενα σχέδια"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Ενεργοποιημένο"
+    },
+    "options_appearance_animations_system": {
+        "message": "Ακολουθήστε το σύστημα"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Μειώθηκε"
+    },
+    "options_appearance_contrast": {
+        "message": "Χρώμα αντίθεσης"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Προεπιλογή"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Μεσαίο"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Ψηλά"
+    },
+    "options_appearance_colors": {
+        "message": "Χρώματα"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Προσαρμοσμένο θέμα"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Επεξεργασία προσαρμοσμένου θέματος"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Προεπισκόπηση"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Παραλλαγές θεμάτων"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Χρώμα πηγής"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Επιλέξτε ένα χρώμα για να δημιουργήσετε θέματα"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Εφαρμογή θέματος"
     },
     "options_records_in_history": {
         "message": "Εγγραφές στην ιστορία"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Διαγραφή από το ιστορικό"
+    },
+    "options_delete_items": {
+        "message": "τα στοιχεία θα διαγραφούν"
     },
     "options_tts_language": {
         "message": "Γλώσσα"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "Μετάφραση"
-    },
-    "theme_light": {
-        "message": "Ελαφρύ θέμα"
-    },
-    "theme_dark": {
-        "message": "Σκοτεινό θέμα"
-    },
-    "theme_system": {
-        "message": "Θέμα συστήματος"
     },
     "tooltip_translate_text": {
         "message": "Μετάφραση επιλεγμένου κειμένου"
@@ -510,7 +561,7 @@
         "message": "Ισπανικά"
     },
     "language_et": {
-        "message": "Εσθονική"
+        "message": "Εσθονικά"
     },
     "language_eu": {
         "message": "Βάσκος"

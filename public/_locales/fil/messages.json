@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Suporta"
     },
+    "button_label_delete": {
+        "message": "Tanggalin"
+    },
+    "button_label_cancel": {
+        "message": "Kanselahin"
+    },
     "options_general_translation_button": {
         "message": "Button ng pagsasalin"
     },
@@ -72,10 +78,10 @@
         "message": "Ipakita ang pindutan kapag pinili ang teksto sa mga field ng text input."
     },
     "options_hide_translation_button": {
-        "message": "Itago ang button ng pagsasalin para sa iyong wika"
+        "message": "Itago ang pindutan ng pagsasalin para sa target na wika"
     },
     "options_hide_translation_button_hint": {
-        "message": "Hindi lalabas ang button kapag pumipili ng text sa iyong system language"
+        "message": "Nakatago kapag ang napiling teksto ay nasa target na wika"
     },
     "options_hide_button_on_sites": {
         "message": "Nakatago sa mga site"
@@ -111,16 +117,67 @@
         "message": "Provider"
     },
     "options_providers_model": {
-        "message": "Modelo"
+        "message": "modelo"
     },
     "options_appearance_theme": {
         "message": "Tema"
     },
-    "options_appearance_accent_color": {
-        "message": "Kulay ng accent"
+    "theme_light": {
+        "message": "Banayad na tema"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Background at plain text"
+    "theme_system": {
+        "message": "Tema ng system"
+    },
+    "theme_dark": {
+        "message": "Madilim na tema"
+    },
+    "options_appearance_animations": {
+        "message": "Mga animation"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Pinagana"
+    },
+    "options_appearance_animations_system": {
+        "message": "Sundin ang sistema"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Nabawasan"
+    },
+    "options_appearance_contrast": {
+        "message": "Contrast na kulay"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Default"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Katamtaman"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Mataas"
+    },
+    "options_appearance_colors": {
+        "message": "Mga kulay"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Custom na tema"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "I-edit ang custom na tema"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Silipin"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Mga variant ng tema"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Kulay ng pinagmulan"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Pumili ng isang kulay upang bumuo ng mga tema"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Ilapat ang tema"
     },
     "options_records_in_history": {
         "message": "Mga entry sa kasaysayan"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Tanggalin mula sa kasaysayan"
+    },
+    "options_delete_items": {
+        "message": "ang mga item ay tatanggalin"
     },
     "options_tts_language": {
         "message": "Wika"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "Pagsasalin"
-    },
-    "theme_light": {
-        "message": "Banayad na tema"
-    },
-    "theme_dark": {
-        "message": "Madilim na tema"
-    },
-    "theme_system": {
-        "message": "Tema ng system"
     },
     "tooltip_translate_text": {
         "message": "Isalin ang napiling teksto"

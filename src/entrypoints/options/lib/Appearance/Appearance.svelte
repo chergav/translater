@@ -26,7 +26,7 @@
 </div>
 
 <h2 class="text-sm font-medium text-color-on-surface-variant">
-	Animations
+	{browser.i18n.getMessage('options_appearance_animations')}
 </h2>
 <div class="flex justify-center rounded-2xl bg-color-surface-bright p-4">
 	<div class="flex items-center gap-0.5">
@@ -48,12 +48,16 @@
 	</div>
 </div>
 
-<h2 class="mt-2 text-sm font-medium text-color-on-surface-variant">Color contrast</h2>
+<h2 class="mt-2 text-sm font-medium text-color-on-surface-variant">
+	{browser.i18n.getMessage('options_appearance_contrast')}
+</h2>
 <div class="flex justify-center rounded-2xl bg-color-surface-bright p-4">
 	<Contrast />
 </div>
 
-<h2 class="mt-2 text-sm font-medium text-color-on-surface-variant">Colors</h2>
+<h2 class="mt-2 text-sm font-medium text-color-on-surface-variant">
+	{browser.i18n.getMessage('options_appearance_colors')}
+</h2>
 <div class="flex justify-center rounded-2xl bg-color-surface-bright px-4 py-5">
 	<Color />
 </div>
@@ -111,19 +115,19 @@ const motions: {
 }[] = [
 	{
 		value: MotionPreference.On,
-		label: 'Enabled',
+		label: browser.i18n.getMessage('options_appearance_animations_enabled'),
 		Icon: AnimationOutline,
 		SelectedIcon: Animation,
 	},
 	{
 		value: MotionPreference.System,
-		label: 'System default',
+		label: browser.i18n.getMessage('options_appearance_animations_system'),
 		Icon: DesktopWindowsOutline,
 		SelectedIcon: DesktopWindows,
 	},
 	{
 		value: MotionPreference.Off,
-		label: 'Reduced',
+		label: browser.i18n.getMessage('options_appearance_animations_reduced'),
 		Icon: PauseCircleOutline,
 		SelectedIcon: PauseCircle,
 	},

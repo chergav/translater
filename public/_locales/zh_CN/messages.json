@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "支持"
     },
+    "button_label_delete": {
+        "message": "删除"
+    },
+    "button_label_cancel": {
+        "message": "取消"
+    },
     "options_general_translation_button": {
         "message": "翻译按钮"
     },
@@ -72,10 +78,10 @@
         "message": "在文本输入字段中选择文本时显示按钮。"
     },
     "options_hide_translation_button": {
-        "message": "隐藏您的语言的翻译按钮"
+        "message": "隐藏目标语言的翻译按钮"
     },
     "options_hide_translation_button_hint": {
-        "message": "选择系统语言的文本时不会出现按钮"
+        "message": "当所选文本采用目标语言时隐藏"
     },
     "options_hide_button_on_sites": {
         "message": "隐藏在网站上"
@@ -108,7 +114,7 @@
         "message": "单击外部时，弹出窗口保持打开状态。"
     },
     "options_providers_provider": {
-        "message": "提供商"
+        "message": "提供者"
     },
     "options_providers_model": {
         "message": "型号"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "主题"
     },
-    "options_appearance_accent_color": {
-        "message": "强调色"
+    "theme_light": {
+        "message": "浅色主题"
     },
-    "options_appearance_bg_and_text": {
-        "message": "背景和纯文本"
+    "theme_system": {
+        "message": "系统主题"
+    },
+    "theme_dark": {
+        "message": "深色主题"
+    },
+    "options_appearance_animations": {
+        "message": "动画"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "启用"
+    },
+    "options_appearance_animations_system": {
+        "message": "关注系统"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "减少"
+    },
+    "options_appearance_contrast": {
+        "message": "对比色"
+    },
+    "options_appearance_contrast_default": {
+        "message": "默认"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "中等"
+    },
+    "options_appearance_contrast_high": {
+        "message": "高"
+    },
+    "options_appearance_colors": {
+        "message": "颜色"
+    },
+    "options_appearance_custom_theme": {
+        "message": "自定义主题"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "编辑自定义主题"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "预览"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "主题变体"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "源颜色"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "选择一种颜色来生成主题"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "应用主题"
     },
     "options_records_in_history": {
         "message": "历史记载"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "从历史记录中删除"
+    },
+    "options_delete_items": {
+        "message": "项目将被删除"
     },
     "options_tts_language": {
         "message": "语言"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "翻译"
-    },
-    "theme_light": {
-        "message": "浅色主题"
-    },
-    "theme_dark": {
-        "message": "深色主题"
-    },
-    "theme_system": {
-        "message": "系统主题"
     },
     "tooltip_translate_text": {
         "message": "翻译选定的文本"

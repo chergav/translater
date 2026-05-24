@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "આધાર"
     },
+    "button_label_delete": {
+        "message": "કાઢી નાખો"
+    },
+    "button_label_cancel": {
+        "message": "રદ કરો"
+    },
     "options_general_translation_button": {
         "message": "અનુવાદ બટન"
     },
@@ -72,10 +78,10 @@
         "message": "ટેક્સ્ટ ઇનપુટ ફીલ્ડમાં ટેક્સ્ટ પસંદ કરવામાં આવે ત્યારે બટન બતાવો."
     },
     "options_hide_translation_button": {
-        "message": "તમારી ભાષા માટે અનુવાદ બટન છુપાવો"
+        "message": "લક્ષ્ય ભાષા માટે અનુવાદ બટન છુપાવો"
     },
     "options_hide_translation_button_hint": {
-        "message": "તમારી સિસ્ટમ ભાષામાં ટેક્સ્ટ પસંદ કરતી વખતે બટન દેખાશે નહીં"
+        "message": "જ્યારે પસંદ કરેલ ટેક્સ્ટ લક્ષ્ય ભાષામાં હોય ત્યારે છુપાયેલ હોય છે"
     },
     "options_hide_button_on_sites": {
         "message": "સાઇટ્સ પર છુપાયેલ છે"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "થીમ"
     },
-    "options_appearance_accent_color": {
-        "message": "ઉચ્ચાર રંગ"
+    "theme_light": {
+        "message": "લાઇટ થીમ"
     },
-    "options_appearance_bg_and_text": {
-        "message": "પૃષ્ઠભૂમિ અને સાદો ટેક્સ્ટ"
+    "theme_system": {
+        "message": "સિસ્ટમ થીમ"
+    },
+    "theme_dark": {
+        "message": "ડાર્ક થીમ"
+    },
+    "options_appearance_animations": {
+        "message": "એનિમેશન"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "સક્ષમ"
+    },
+    "options_appearance_animations_system": {
+        "message": "સિસ્ટમ અનુસરો"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "ઘટાડી"
+    },
+    "options_appearance_contrast": {
+        "message": "કોન્ટ્રાસ્ટ રંગ"
+    },
+    "options_appearance_contrast_default": {
+        "message": "ડિફૉલ્ટ"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "મધ્યમ"
+    },
+    "options_appearance_contrast_high": {
+        "message": "ઉચ્ચ"
+    },
+    "options_appearance_colors": {
+        "message": "રંગો"
+    },
+    "options_appearance_custom_theme": {
+        "message": "કસ્ટમ થીમ"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "કસ્ટમ થીમ સંપાદિત કરો"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "પૂર્વાવલોકન"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "થીમ ચલો"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "સ્ત્રોત રંગ"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "થીમ્સ જનરેટ કરવા માટે રંગ પસંદ કરો"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "થીમ લાગુ કરો"
     },
     "options_records_in_history": {
         "message": "ઇતિહાસમાં પ્રવેશો"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "ઇતિહાસમાંથી કાઢી નાખો"
+    },
+    "options_delete_items": {
+        "message": "વસ્તુઓ કાઢી નાખવામાં આવશે"
     },
     "options_tts_language": {
         "message": "ભાષા"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "અનુવાદ"
-    },
-    "theme_light": {
-        "message": "લાઇટ થીમ"
-    },
-    "theme_dark": {
-        "message": "ડાર્ક થીમ"
-    },
-    "theme_system": {
-        "message": "સિસ્ટમ થીમ"
     },
     "tooltip_translate_text": {
         "message": "પસંદ કરેલ ટેક્સ્ટનો અનુવાદ કરો"

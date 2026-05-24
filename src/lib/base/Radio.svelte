@@ -56,30 +56,6 @@ import type { HTMLInputAttributes } from 'svelte/elements';
 import type { VariantProps, ClassValue } from 'tailwind-variants';
 import { tv } from './utils/tv';
 
-type Radio = VariantProps<typeof radio>;
-
-interface Props extends Radio, Omit<HTMLInputAttributes, 'class'> {
-	group: string
-	value: string
-	name: string
-	icon?: Snippet
-	label?: string
-	hint?: string
-	class?: ClassValue
-}
-
-let {
-	group = $bindable(),
-	value,
-	name,
-	icon,
-	label,
-	hint,
-	class: className,
-	variant = 'baseline',
-	...rest
-}: Props = $props();
-
 const radio = tv({
 	slots: {
 		base: [
@@ -143,6 +119,30 @@ const radio = tv({
 		variant: 'baseline',
 	},
 });
+
+type Radio = VariantProps<typeof radio>;
+
+interface Props extends Radio, Omit<HTMLInputAttributes, 'class'> {
+	group: string
+	value: string
+	name: string
+	icon?: Snippet
+	label?: string
+	hint?: string
+	class?: ClassValue
+}
+
+let {
+	group = $bindable(),
+	value,
+	name,
+	icon,
+	label,
+	hint,
+	class: className,
+	variant = 'baseline',
+	...rest
+}: Props = $props();
 
 const { base, stateLayer, iconClass, labelClass, hintClass, stateLayerIcon } = radio();
 </script>

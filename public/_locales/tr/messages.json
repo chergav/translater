@@ -27,13 +27,19 @@
         "message": "Açılır pencere"
     },
     "options_tab_appearance": {
-        "message": "Dış görünüş"
+        "message": "Dış görünüm"
     },
     "options_tab_history": {
         "message": "Tarih"
     },
     "options_tab_support": {
         "message": "Destek"
+    },
+    "button_label_delete": {
+        "message": "Sil"
+    },
+    "button_label_cancel": {
+        "message": "İptal"
     },
     "options_general_translation_button": {
         "message": "Çeviri düğmesi"
@@ -72,10 +78,10 @@
         "message": "Metin giriş alanlarında metin seçildiğinde düğmeyi göster."
     },
     "options_hide_translation_button": {
-        "message": "Dilinize ait çeviri düğmesini gizleyin"
+        "message": "Hedef dil için çeviri düğmesini gizle"
     },
     "options_hide_translation_button_hint": {
-        "message": "Sistem dilinizde metin seçerken düğme görünmeyecek"
+        "message": "Seçilen metin hedef dilde olduğunda gizlenir"
     },
     "options_hide_button_on_sites": {
         "message": "Sitelerde gizli"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "Tema"
     },
-    "options_appearance_accent_color": {
-        "message": "Vurgu rengi"
+    "theme_light": {
+        "message": "Işık teması"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Arka plan ve düz metin"
+    "theme_system": {
+        "message": "Sistem teması"
+    },
+    "theme_dark": {
+        "message": "Koyu tema"
+    },
+    "options_appearance_animations": {
+        "message": "Animasyonlar"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Etkin"
+    },
+    "options_appearance_animations_system": {
+        "message": "Sistemi takip et"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Azaltılmış"
+    },
+    "options_appearance_contrast": {
+        "message": "Kontrast rengi"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Varsayılan"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Orta"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Yüksek"
+    },
+    "options_appearance_colors": {
+        "message": "Renkler"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Özel tema"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Özel temayı düzenle"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Önizleme"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Tema çeşitleri"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Kaynak rengi"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Temalar oluşturmak için bir renk seçin"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Temayı uygula"
     },
     "options_records_in_history": {
         "message": "Tarihteki girişler"
@@ -134,6 +191,9 @@
     "options_delete_history_item": {
         "message": "Geçmişten sil"
     },
+    "options_delete_items": {
+        "message": "öğeler silinecek"
+    },
     "options_tts_language": {
         "message": "Dil"
     },
@@ -144,7 +204,7 @@
         "message": "Sesler"
     },
     "options_tts_table_caption": {
-        "message": "Bir dil listelenmiyorsa harici bir metin-konuşma hizmeti kullanılacaktır."
+        "message": "Bir dil listelenmiyorsa harici bir metin okuma hizmeti kullanılacaktır."
     },
     "options_tts_no_voices_found": {
         "message": "Tarayıcınız konuşma sentezini desteklemiyor. Bunun yerine harici bir hizmet kullanacağız."
@@ -245,15 +305,6 @@
     "popup_placeholder_translation": {
         "message": "Çeviri"
     },
-    "theme_light": {
-        "message": "Işık teması"
-    },
-    "theme_dark": {
-        "message": "Koyu tema"
-    },
-    "theme_system": {
-        "message": "Sistem teması"
-    },
     "tooltip_translate_text": {
         "message": "Seçili metni çevir"
     },
@@ -309,7 +360,7 @@
         "message": "🚀 Diğer uzantılarımı dene"
     },
     "language_auto": {
-        "message": "otomatik"
+        "message": "oto"
     },
     "language_detect": {
         "message": "dili tespit et"
@@ -624,7 +675,7 @@
         "message": "İzlandaca"
     },
     "language_it": {
-        "message": "İtalyan"
+        "message": "İtalyanca"
     },
     "language_iu": {
         "message": "İnuktuca (Heceler)"
@@ -720,7 +771,7 @@
         "message": "Litvanyalı"
     },
     "language_ltg": {
-        "message": "Latgalyaca"
+        "message": "Latgalya dili"
     },
     "language_lua": {
         "message": "Tshiluba"
@@ -831,7 +882,7 @@
         "message": "Odia (Oriya)"
     },
     "language_os": {
-        "message": "Osetyalı"
+        "message": "Osetçe"
     },
     "language_pa": {
         "message": "Pencapça (Gurmukhi)"

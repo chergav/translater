@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Supporto"
     },
+    "button_label_delete": {
+        "message": "Elimina"
+    },
+    "button_label_cancel": {
+        "message": "Annulla"
+    },
     "options_general_translation_button": {
         "message": "Pulsante di traduzione"
     },
@@ -72,10 +78,10 @@
         "message": "Mostra il pulsante quando il testo è selezionato nei campi di immissione testo."
     },
     "options_hide_translation_button": {
-        "message": "Nascondi il pulsante di traduzione per la tua lingua"
+        "message": "Nascondi il pulsante di traduzione per la lingua di destinazione"
     },
     "options_hide_translation_button_hint": {
-        "message": "Il pulsante non verrà visualizzato quando selezioni il testo nella lingua del tuo sistema"
+        "message": "Nascosto quando il testo selezionato è nella lingua di destinazione"
     },
     "options_hide_button_on_sites": {
         "message": "Nascosto sui siti"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "Tema"
     },
-    "options_appearance_accent_color": {
-        "message": "Colore accento"
+    "theme_light": {
+        "message": "Tema leggero"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Sfondo e testo normale"
+    "theme_system": {
+        "message": "Tema del sistema"
+    },
+    "theme_dark": {
+        "message": "Tema oscuro"
+    },
+    "options_appearance_animations": {
+        "message": "Animazioni"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Abilitato"
+    },
+    "options_appearance_animations_system": {
+        "message": "Segui il sistema"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Ridotto"
+    },
+    "options_appearance_contrast": {
+        "message": "Colore a contrasto"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Predefinito"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Medio"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Alto"
+    },
+    "options_appearance_colors": {
+        "message": "Colori"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Tema personalizzato"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Modifica tema personalizzato"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Anteprima"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Varianti del tema"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Colore di origine"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Seleziona un colore per generare temi"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Applica tema"
     },
     "options_records_in_history": {
         "message": "Voci nella storia"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Elimina dalla cronologia"
+    },
+    "options_delete_items": {
+        "message": "gli elementi verranno eliminati"
     },
     "options_tts_language": {
         "message": "Lingua"
@@ -245,15 +305,6 @@
     "popup_placeholder_translation": {
         "message": "Traduzione"
     },
-    "theme_light": {
-        "message": "Tema leggero"
-    },
-    "theme_dark": {
-        "message": "Tema oscuro"
-    },
-    "theme_system": {
-        "message": "Tema del sistema"
-    },
     "tooltip_translate_text": {
         "message": "Traduci il testo selezionato"
     },
@@ -345,7 +396,7 @@
         "message": "Assamese"
     },
     "language_av": {
-        "message": "Avaro"
+        "message": "Avar"
     },
     "language_awa": {
         "message": "Awadhi"
@@ -471,7 +522,7 @@
         "message": "Gallese"
     },
     "language_da": {
-        "message": "danese"
+        "message": "Danese"
     },
     "language_de": {
         "message": "tedesco"
@@ -672,7 +723,7 @@
         "message": "Kannada"
     },
     "language_ko": {
-        "message": "coreano"
+        "message": "Coreano"
     },
     "language_kr": {
         "message": "Kanuri"
@@ -855,7 +906,7 @@
         "message": "Pashtu"
     },
     "language_pt": {
-        "message": "portoghese"
+        "message": "Portoghese"
     },
     "language_pt_BR": {
         "message": "Portoghese (Brasile)"
@@ -903,7 +954,7 @@
         "message": "Sami (Nord)"
     },
     "language_sg": {
-        "message": "Sangò"
+        "message": "Sango"
     },
     "language_shn": {
         "message": "Shan"
@@ -1056,7 +1107,7 @@
         "message": "Maya yucatechi"
     },
     "language_yue": {
-        "message": "Cantonese"
+        "message": "cantonese"
     },
     "language_zap": {
         "message": "Zapoteco"

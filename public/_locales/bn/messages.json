@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "সমর্থন"
     },
+    "button_label_delete": {
+        "message": "মুছে দিন"
+    },
+    "button_label_cancel": {
+        "message": "বাতিল করুন"
+    },
     "options_general_translation_button": {
         "message": "অনুবাদ বোতাম"
     },
@@ -72,10 +78,10 @@
         "message": "টেক্সট ইনপুট ক্ষেত্রে টেক্সট নির্বাচন করা হলে বোতাম দেখান।"
     },
     "options_hide_translation_button": {
-        "message": "আপনার ভাষার জন্য অনুবাদ বোতামটি লুকান"
+        "message": "লক্ষ্য ভাষার জন্য অনুবাদ বোতাম লুকান"
     },
     "options_hide_translation_button_hint": {
-        "message": "আপনার সিস্টেমের ভাষায় পাঠ্য নির্বাচন করার সময় বোতাম প্রদর্শিত হবে না"
+        "message": "যখন নির্বাচিত পাঠ্য টার্গেট ভাষায় থাকে তখন লুকানো হয়"
     },
     "options_hide_button_on_sites": {
         "message": "সাইটে লুকানো"
@@ -90,7 +96,7 @@
         "message": "অনুবাদের পাশাপাশি মূল পাঠ্য প্রদর্শন করুন (শুধুমাত্র সম্পূর্ণ মোড)।"
     },
     "options_show_langs_simple": {
-        "message": "ভাষা জোড়া দেখান"
+        "message": "ভাষা যুগল দেখান"
     },
     "options_show_langs_simple_hint": {
         "message": "প্রদর্শন উত্স এবং লক্ষ্য ভাষা (কেবল সহজ মোড)।"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "থিম"
     },
-    "options_appearance_accent_color": {
-        "message": "অ্যাকসেন্ট রঙ"
+    "theme_light": {
+        "message": "হালকা থিম"
     },
-    "options_appearance_bg_and_text": {
-        "message": "ব্যাকগ্রাউন্ড এবং প্লেইন টেক্সট"
+    "theme_system": {
+        "message": "সিস্টেম থিম"
+    },
+    "theme_dark": {
+        "message": "গাঢ় থিম"
+    },
+    "options_appearance_animations": {
+        "message": "অ্যানিমেশন"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "সক্রিয়"
+    },
+    "options_appearance_animations_system": {
+        "message": "সিস্টেম অনুসরণ করুন"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "হ্রাস করা হয়েছে"
+    },
+    "options_appearance_contrast": {
+        "message": "কন্ট্রাস্ট রঙ"
+    },
+    "options_appearance_contrast_default": {
+        "message": "ডিফল্ট"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "মাঝারি"
+    },
+    "options_appearance_contrast_high": {
+        "message": "উচ্চ"
+    },
+    "options_appearance_colors": {
+        "message": "রং"
+    },
+    "options_appearance_custom_theme": {
+        "message": "কাস্টম থিম"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "কাস্টম থিম সম্পাদনা করুন"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "পূর্বরূপ"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "থিম বৈকল্পিক"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "উত্স রঙ"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "থিম তৈরি করতে একটি রঙ নির্বাচন করুন"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "থিম প্রয়োগ করুন"
     },
     "options_records_in_history": {
         "message": "ইতিহাসে এন্ট্রি"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "ইতিহাস থেকে মুছে ফেলুন"
+    },
+    "options_delete_items": {
+        "message": "আইটেম মুছে ফেলা হবে"
     },
     "options_tts_language": {
         "message": "ভাষা"
@@ -245,15 +305,6 @@
     "popup_placeholder_translation": {
         "message": "অনুবাদ"
     },
-    "theme_light": {
-        "message": "হালকা থিম"
-    },
-    "theme_dark": {
-        "message": "গাঢ় থিম"
-    },
-    "theme_system": {
-        "message": "সিস্টেম থিম"
-    },
     "tooltip_translate_text": {
         "message": "নির্বাচিত পাঠ্য অনুবাদ করুন"
     },
@@ -273,7 +324,7 @@
         "message": "ভাষা সমর্থন নয়"
     },
     "tooltip_go_back": {
-        "message": "ব্যাক"
+        "message": "ফিরে"
     },
     "tooltip_go_forward": {
         "message": "ফরোয়ার্ড"
@@ -348,7 +399,7 @@
         "message": "আভার"
     },
     "language_awa": {
-        "message": "অবধি"
+        "message": "আওয়াধি"
     },
     "language_ay": {
         "message": "আয়মারা"
@@ -384,7 +435,7 @@
         "message": "তামাজাইট"
     },
     "language_bew": {
-        "message": "বেতাবি"
+        "message": "বেতাউই"
     },
     "language_bg": {
         "message": "বুলগেরিয়ান"
@@ -516,7 +567,7 @@
         "message": "বাস্ক"
     },
     "language_fa": {
-        "message": "ফারসি"
+        "message": "ফার্সি"
     },
     "language_fa_AF": {
         "message": "দারি"
@@ -630,7 +681,7 @@
         "message": "ইনুক্টুট (সিলেবিক্স)"
     },
     "language_iu_Latn": {
-        "message": "ইনুক্টুট (ল্যাটিন)"
+        "message": "ইনুকটুট (ল্যাটিন)"
     },
     "language_iw": {
         "message": "হিব্রু"
@@ -654,7 +705,7 @@
         "message": "কিউকিচি'"
     },
     "language_kg": {
-        "message": "কিকংগো"
+        "message": "কিকঙ্গো"
     },
     "language_kha": {
         "message": "খাসি"
@@ -696,7 +747,7 @@
         "message": "ল্যাটিন"
     },
     "language_lb": {
-        "message": "লুক্সেমবার্গিশ"
+        "message": "লাক্সেমবার্গিশ"
     },
     "language_lg": {
         "message": "লুগান্ডা"

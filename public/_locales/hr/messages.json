@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "podrška"
     },
+    "button_label_delete": {
+        "message": "Izbriši"
+    },
+    "button_label_cancel": {
+        "message": "Odustani"
+    },
     "options_general_translation_button": {
         "message": "Gumb za prijevod"
     },
@@ -72,10 +78,10 @@
         "message": "Prikaži gumb kada je tekst odabran u poljima za unos teksta."
     },
     "options_hide_translation_button": {
-        "message": "Sakrij gumb za prijevod za svoj jezik"
+        "message": "Sakrij gumb za prijevod za ciljni jezik"
     },
     "options_hide_translation_button_hint": {
-        "message": "Gumb se neće pojaviti kada odaberete tekst na jeziku vašeg sustava"
+        "message": "Skriveno kada je odabrani tekst na ciljnom jeziku"
     },
     "options_hide_button_on_sites": {
         "message": "Skriveno na stranicama"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "Tema"
     },
-    "options_appearance_accent_color": {
-        "message": "Boja akcenta"
+    "theme_light": {
+        "message": "Lagana tema"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Pozadina i čisti tekst"
+    "theme_system": {
+        "message": "Tema sustava"
+    },
+    "theme_dark": {
+        "message": "Tamna tema"
+    },
+    "options_appearance_animations": {
+        "message": "Animacije"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Omogućeno"
+    },
+    "options_appearance_animations_system": {
+        "message": "Slijedite sustav"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Smanjeno"
+    },
+    "options_appearance_contrast": {
+        "message": "Boja kontrasta"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Zadano"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "srednje"
+    },
+    "options_appearance_contrast_high": {
+        "message": "visoko"
+    },
+    "options_appearance_colors": {
+        "message": "Boje"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Prilagođena tema"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Uredi prilagođenu temu"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Pregled"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Varijante tema"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Izvorna boja"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Odaberite boju za generiranje tema"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Primijeni temu"
     },
     "options_records_in_history": {
         "message": "Upisi u povijest"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Izbriši iz povijesti"
+    },
+    "options_delete_items": {
+        "message": "stavke će biti izbrisane"
     },
     "options_tts_language": {
         "message": "Jezik"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "Prijevod"
-    },
-    "theme_light": {
-        "message": "Lagana tema"
-    },
-    "theme_dark": {
-        "message": "Tamna tema"
-    },
-    "theme_system": {
-        "message": "Tema sustava"
     },
     "tooltip_translate_text": {
         "message": "Prevedite odabrani tekst"

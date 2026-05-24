@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Dukungan"
     },
+    "button_label_delete": {
+        "message": "Hapus"
+    },
+    "button_label_cancel": {
+        "message": "Batalkan"
+    },
     "options_general_translation_button": {
         "message": "Tombol terjemahan"
     },
@@ -72,10 +78,10 @@
         "message": "Tampilkan tombol ketika teks dipilih di kolom input teks."
     },
     "options_hide_translation_button": {
-        "message": "Sembunyikan tombol terjemahan untuk bahasa Anda"
+        "message": "Sembunyikan tombol terjemahan untuk bahasa target"
     },
     "options_hide_translation_button_hint": {
-        "message": "Tombol tidak akan muncul saat memilih teks dalam bahasa sistem Anda"
+        "message": "Tersembunyi ketika teks yang dipilih ada dalam bahasa target"
     },
     "options_hide_button_on_sites": {
         "message": "Tersembunyi di situs"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "Tema"
     },
-    "options_appearance_accent_color": {
-        "message": "Warna aksen"
+    "theme_light": {
+        "message": "Tema ringan"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Latar belakang dan teks biasa"
+    "theme_system": {
+        "message": "Tema sistem"
+    },
+    "theme_dark": {
+        "message": "Tema gelap"
+    },
+    "options_appearance_animations": {
+        "message": "Animasi"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Diaktifkan"
+    },
+    "options_appearance_animations_system": {
+        "message": "Ikuti sistem"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Dikurangi"
+    },
+    "options_appearance_contrast": {
+        "message": "Warna kontras"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Bawaan"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Sedang"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Tinggi"
+    },
+    "options_appearance_colors": {
+        "message": "Warna"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Tema khusus"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Edit tema khusus"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Pratinjau"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Varian tema"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Warna sumber"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Pilih warna untuk menghasilkan tema"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Terapkan tema"
     },
     "options_records_in_history": {
         "message": "Entri dalam sejarah"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Hapus dari riwayat"
+    },
+    "options_delete_items": {
+        "message": "item akan dihapus"
     },
     "options_tts_language": {
         "message": "Bahasa"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "Terjemahan"
-    },
-    "theme_light": {
-        "message": "Tema ringan"
-    },
-    "theme_dark": {
-        "message": "Tema gelap"
-    },
-    "theme_system": {
-        "message": "Tema sistem"
     },
     "tooltip_translate_text": {
         "message": "Terjemahkan teks yang dipilih"
@@ -543,7 +594,7 @@
         "message": "Perancis"
     },
     "language_fr_CA": {
-        "message": "Perancis (Kanada)"
+        "message": "Prancis (Kanada)"
     },
     "language_fr_FR": {
         "message": "Perancis (Prancis)"
@@ -936,7 +987,7 @@
         "message": "Swati"
     },
     "language_st": {
-        "message": "Sesoto"
+        "message": "Sesotho"
     },
     "language_su": {
         "message": "Sunda"
@@ -963,7 +1014,7 @@
         "message": "Telugu"
     },
     "language_tet": {
-        "message": "bahasa Tetum"
+        "message": "bahasa Tetun"
     },
     "language_tg": {
         "message": "Tajik"

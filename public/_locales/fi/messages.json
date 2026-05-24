@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Tuki"
     },
+    "button_label_delete": {
+        "message": "Poista"
+    },
+    "button_label_cancel": {
+        "message": "Peruuta"
+    },
     "options_general_translation_button": {
         "message": "Käännöspainike"
     },
@@ -72,10 +78,10 @@
         "message": "Näytä painike, kun teksti on valittuna tekstinsyöttökentissä."
     },
     "options_hide_translation_button": {
-        "message": "Piilota kielesi käännöspainike"
+        "message": "Piilota kohdekielen käännöspainike"
     },
     "options_hide_translation_button_hint": {
-        "message": "Painike ei tule näkyviin, kun valitset tekstiä järjestelmäsi kielellä"
+        "message": "Piilotettu, kun valittu teksti on kohdekielellä"
     },
     "options_hide_button_on_sites": {
         "message": "Piilotettu sivustoilla"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "Teema"
     },
-    "options_appearance_accent_color": {
-        "message": "Aksenttiväri"
+    "theme_light": {
+        "message": "Kevyt teema"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Tausta ja pelkkää tekstiä"
+    "theme_system": {
+        "message": "Järjestelmän teema"
+    },
+    "theme_dark": {
+        "message": "Tumma teema"
+    },
+    "options_appearance_animations": {
+        "message": "Animaatiot"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Käytössä"
+    },
+    "options_appearance_animations_system": {
+        "message": "Seuraa järjestelmää"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Vähennetty"
+    },
+    "options_appearance_contrast": {
+        "message": "Kontrastiväri"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Oletus"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Keskikokoinen"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Korkea"
+    },
+    "options_appearance_colors": {
+        "message": "värit"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Mukautettu teema"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Muokkaa muokattua teemaa"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Esikatselu"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Teeman muunnelmat"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Lähteen väri"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Valitse väri luodaksesi teemoja"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Käytä teemaa"
     },
     "options_records_in_history": {
         "message": "Merkinnät historiaan"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Poista historiasta"
+    },
+    "options_delete_items": {
+        "message": "kohteet poistetaan"
     },
     "options_tts_language": {
         "message": "Kieli"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "Käännös"
-    },
-    "theme_light": {
-        "message": "Kevyt teema"
-    },
-    "theme_dark": {
-        "message": "Tumma teema"
-    },
-    "theme_system": {
-        "message": "Järjestelmän teema"
     },
     "tooltip_translate_text": {
         "message": "Käännä valittu teksti"
@@ -594,7 +645,7 @@
         "message": "hmong"
     },
     "language_hr": {
-        "message": "kroatialainen"
+        "message": "Kroatia"
     },
     "language_hrx": {
         "message": "Hunsrik"

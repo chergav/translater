@@ -3,7 +3,7 @@
         "message": "مترجم - ترجمه متن انتخاب شده"
     },
     "app_description": {
-        "message": "متن انتخابی را با Google Translate ترجمه کنید"
+        "message": "متن انتخاب شده را با Google Translate ترجمه کنید"
     },
     "context_menus_title": {
         "message": "ترجمه متن انتخاب شده"
@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "پشتیبانی کنید"
     },
+    "button_label_delete": {
+        "message": "حذف کنید"
+    },
+    "button_label_cancel": {
+        "message": "لغو کنید"
+    },
     "options_general_translation_button": {
         "message": "دکمه ترجمه"
     },
@@ -42,7 +48,7 @@
         "message": "هیچ سایتی انتخاب نشده است"
     },
     "options_general_show_on_selected": {
-        "message": "هنگام انتخاب متن، پنجره بازشو نمایش داده شود"
+        "message": "هنگامی که متن انتخاب شده است پنجره بازشو نمایش داده شود"
     },
     "options_general_show_on_selected_hint": {
         "message": "پنجره پاپ آپ بلافاصله پس از انتخاب متن ظاهر می شود."
@@ -72,10 +78,10 @@
         "message": "هنگامی که متن در فیلدهای ورودی متن انتخاب شده است، دکمه نمایش داده شود."
     },
     "options_hide_translation_button": {
-        "message": "دکمه ترجمه زبان خود را پنهان کنید"
+        "message": "پنهان کردن دکمه ترجمه برای زبان مقصد"
     },
     "options_hide_translation_button_hint": {
-        "message": "دکمه هنگام انتخاب متن به زبان سیستم شما ظاهر نمی شود"
+        "message": "وقتی متن انتخاب شده به زبان مقصد باشد پنهان می شود"
     },
     "options_hide_button_on_sites": {
         "message": "در سایت ها پنهان شده است"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "موضوع"
     },
-    "options_appearance_accent_color": {
-        "message": "رنگ تاکیدی"
+    "theme_light": {
+        "message": "تم سبک"
     },
-    "options_appearance_bg_and_text": {
-        "message": "پس زمینه و متن ساده"
+    "theme_system": {
+        "message": "موضوع سیستم"
+    },
+    "theme_dark": {
+        "message": "تم تاریک"
+    },
+    "options_appearance_animations": {
+        "message": "انیمیشن ها"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "فعال شد"
+    },
+    "options_appearance_animations_system": {
+        "message": "سیستم را دنبال کنید"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "کاهش یافته است"
+    },
+    "options_appearance_contrast": {
+        "message": "رنگ کنتراست"
+    },
+    "options_appearance_contrast_default": {
+        "message": "پیش فرض"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "متوسط"
+    },
+    "options_appearance_contrast_high": {
+        "message": "بالا"
+    },
+    "options_appearance_colors": {
+        "message": "رنگ ها"
+    },
+    "options_appearance_custom_theme": {
+        "message": "تم سفارشی"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "تم سفارشی را ویرایش کنید"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "پیش نمایش"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "انواع تم"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "رنگ منبع"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "رنگی را برای ایجاد تم انتخاب کنید"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "تم را اعمال کنید"
     },
     "options_records_in_history": {
         "message": "نوشته های تاریخ"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "حذف از تاریخچه"
+    },
+    "options_delete_items": {
+        "message": "موارد حذف خواهند شد"
     },
     "options_tts_language": {
         "message": "زبان"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "ترجمه"
-    },
-    "theme_light": {
-        "message": "تم سبک"
-    },
-    "theme_dark": {
-        "message": "تم تاریک"
-    },
-    "theme_system": {
-        "message": "موضوع سیستم"
     },
     "tooltip_translate_text": {
         "message": "ترجمه متن انتخاب شده"

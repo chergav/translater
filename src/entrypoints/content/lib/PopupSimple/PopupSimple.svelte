@@ -25,8 +25,8 @@
 				<div class="flex flex-col gap-1 pt-2 text-sm">
 					{#each store.translated.dict as dict, index (index)}
 						<div>
-							<span class="text-color-on-surface-variant italic">{dict.pos}:</span>
-							<span>{dict.terms.join(', ')}</span>
+							<span class="font-medium text-color-primary">{dict.pos}:</span>
+							<span class="text-color-on-surface">{dict.terms.join(', ')}</span>
 						</div>
 					{/each}
 				</div>

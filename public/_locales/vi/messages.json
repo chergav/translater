@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Hỗ trợ"
     },
+    "button_label_delete": {
+        "message": "Xóa"
+    },
+    "button_label_cancel": {
+        "message": "Hủy bỏ"
+    },
     "options_general_translation_button": {
         "message": "Nút dịch"
     },
@@ -72,16 +78,16 @@
         "message": "Nút hiển thị khi văn bản được chọn trong các trường nhập văn bản."
     },
     "options_hide_translation_button": {
-        "message": "Ẩn nút dịch cho ngôn ngữ của bạn"
+        "message": "Ẩn nút dịch cho ngôn ngữ đích"
     },
     "options_hide_translation_button_hint": {
-        "message": "Nút sẽ không xuất hiện khi chọn văn bản bằng ngôn ngữ hệ thống của bạn"
+        "message": "Ẩn khi văn bản đã chọn ở ngôn ngữ đích"
     },
     "options_hide_button_on_sites": {
         "message": "Ẩn trên các trang web"
     },
     "options_hide_button_on_sites_empty_list": {
-        "message": "Thêm tên miền bằng menu cửa sổ bật lên trên trang web bạn muốn loại trừ."
+        "message": "Thêm tên miền bằng menu cửa sổ bật lên trên trang bạn muốn loại trừ."
     },
     "options_show_original_text": {
         "message": "Hiển thị văn bản nguồn"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "chủ đề"
     },
-    "options_appearance_accent_color": {
-        "message": "Màu nhấn"
+    "theme_light": {
+        "message": "Chủ đề nhẹ nhàng"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Nền và văn bản thuần túy"
+    "theme_system": {
+        "message": "Chủ đề hệ thống"
+    },
+    "theme_dark": {
+        "message": "Chủ đề tối"
+    },
+    "options_appearance_animations": {
+        "message": "Hoạt hình"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Đã bật"
+    },
+    "options_appearance_animations_system": {
+        "message": "Theo dõi hệ thống"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Giảm"
+    },
+    "options_appearance_contrast": {
+        "message": "Màu tương phản"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Mặc định"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Trung bình"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Cao"
+    },
+    "options_appearance_colors": {
+        "message": "Màu sắc"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Chủ đề tùy chỉnh"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Chỉnh sửa chủ đề tùy chỉnh"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Xem trước"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Các biến thể chủ đề"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Màu nguồn"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Chọn màu để tạo chủ đề"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Áp dụng chủ đề"
     },
     "options_records_in_history": {
         "message": "Mục nhập trong lịch sử"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Xóa khỏi lịch sử"
+    },
+    "options_delete_items": {
+        "message": "các mục sẽ bị xóa"
     },
     "options_tts_language": {
         "message": "Ngôn ngữ"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "Dịch thuật"
-    },
-    "theme_light": {
-        "message": "Chủ đề nhẹ nhàng"
-    },
-    "theme_dark": {
-        "message": "Chủ đề tối"
-    },
-    "theme_system": {
-        "message": "Chủ đề hệ thống"
     },
     "tooltip_translate_text": {
         "message": "Dịch văn bản đã chọn"
@@ -456,7 +507,7 @@
         "message": "Tiếng Tatar Krym (chữ Cyrillic)"
     },
     "language_crh_Latn": {
-        "message": "Tiếng Tatar Krym (tiếng Latinh)"
+        "message": "Tiếng Tatar Krym (tiếng Latin)"
     },
     "language_crs": {
         "message": "Tiếng Creole Seychellois"
@@ -969,7 +1020,7 @@
         "message": "Tiếng Tajik"
     },
     "language_th": {
-        "message": "Thái"
+        "message": "tiếng Thái"
     },
     "language_ti": {
         "message": "Tigrinya"

@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "ஆதரவு"
     },
+    "button_label_delete": {
+        "message": "நீக்கு"
+    },
+    "button_label_cancel": {
+        "message": "ரத்து செய்"
+    },
     "options_general_translation_button": {
         "message": "மொழிபெயர்ப்பு பொத்தான்"
     },
@@ -72,10 +78,10 @@
         "message": "உரை உள்ளீட்டு புலங்களில் உரை தேர்ந்தெடுக்கப்படும்போது பொத்தானைக் காட்டு."
     },
     "options_hide_translation_button": {
-        "message": "உங்கள் மொழிக்கான மொழிபெயர்ப்பு பொத்தானை மறைக்கவும்"
+        "message": "இலக்கு மொழிக்கான மொழிபெயர்ப்பு பொத்தானை மறை"
     },
     "options_hide_translation_button_hint": {
-        "message": "உங்கள் கணினி மொழியில் உரையைத் தேர்ந்தெடுக்கும்போது பட்டன் தோன்றாது"
+        "message": "தேர்ந்தெடுக்கப்பட்ட உரை இலக்கு மொழியில் இருக்கும்போது மறைக்கப்படும்"
     },
     "options_hide_button_on_sites": {
         "message": "தளங்களில் மறைக்கப்பட்டுள்ளது"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "தீம்"
     },
-    "options_appearance_accent_color": {
-        "message": "உச்சரிப்பு நிறம்"
+    "theme_light": {
+        "message": "ஒளி தீம்"
     },
-    "options_appearance_bg_and_text": {
-        "message": "பின்னணி மற்றும் எளிய உரை"
+    "theme_system": {
+        "message": "கணினி தீம்"
+    },
+    "theme_dark": {
+        "message": "இருண்ட தீம்"
+    },
+    "options_appearance_animations": {
+        "message": "அனிமேஷன்கள்"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "இயக்கப்பட்டது"
+    },
+    "options_appearance_animations_system": {
+        "message": "முறையைப் பின்பற்றவும்"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "குறைக்கப்பட்டது"
+    },
+    "options_appearance_contrast": {
+        "message": "மாறுபட்ட நிறம்"
+    },
+    "options_appearance_contrast_default": {
+        "message": "இயல்புநிலை"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "நடுத்தர"
+    },
+    "options_appearance_contrast_high": {
+        "message": "உயர்"
+    },
+    "options_appearance_colors": {
+        "message": "நிறங்கள்"
+    },
+    "options_appearance_custom_theme": {
+        "message": "தனிப்பயன் தீம்"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "தனிப்பயன் தீம் திருத்தவும்"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "முன்னோட்டம்"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "தீம் வகைகள்"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "மூல நிறம்"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "தீம்களை உருவாக்க வண்ணத்தைத் தேர்ந்தெடுக்கவும்"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "தீம் பயன்படுத்தவும்"
     },
     "options_records_in_history": {
         "message": "வரலாற்றில் உள்ளீடுகள்"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "வரலாற்றிலிருந்து நீக்கு"
+    },
+    "options_delete_items": {
+        "message": "பொருட்கள் நீக்கப்படும்"
     },
     "options_tts_language": {
         "message": "மொழி"
@@ -177,7 +237,7 @@
         "message": "கூடுதல் பெரியது (20px)"
     },
     "options_support_msg": {
-        "message": "ஏதாவது வேலை செய்யவில்லை என்றால் அல்லது உங்களுக்கு ஏதேனும் பரிந்துரைகள் இருந்தால், தயவுசெய்து எனக்கு இங்கே தெரியப்படுத்தவும்"
+        "message": "ஏதாவது வேலை செய்யவில்லை என்றால், அல்லது உங்களுக்கு ஏதேனும் பரிந்துரைகள் இருந்தால், தயவுசெய்து எனக்கு இங்கே தெரிவிக்கவும்"
     },
     "options_support_donations": {
         "message": "நீங்கள் இந்த இலவச மென்பொருளை ஆதரிக்க விரும்பினால்"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "மொழிபெயர்ப்பு"
-    },
-    "theme_light": {
-        "message": "ஒளி தீம்"
-    },
-    "theme_dark": {
-        "message": "இருண்ட தீம்"
-    },
-    "theme_system": {
-        "message": "கணினி தீம்"
     },
     "tooltip_translate_text": {
         "message": "தேர்ந்தெடுக்கப்பட்ட உரையை மொழிபெயர்க்கவும்"
@@ -579,7 +630,7 @@
         "message": "மேங்க்ஸ்"
     },
     "language_ha": {
-        "message": "ஹவுசா"
+        "message": "ஹௌசா"
     },
     "language_haw": {
         "message": "ஹவாய்"
@@ -612,7 +663,7 @@
         "message": "இபன்"
     },
     "language_id": {
-        "message": "இந்தோனேஷியன்"
+        "message": "இந்தோனேசியன்"
     },
     "language_ig": {
         "message": "இக்போ"

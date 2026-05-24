@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Sprijin"
     },
+    "button_label_delete": {
+        "message": "Ștergeți"
+    },
+    "button_label_cancel": {
+        "message": "Anulează"
+    },
     "options_general_translation_button": {
         "message": "Butonul de traducere"
     },
@@ -72,10 +78,10 @@
         "message": "Afișați butonul când este selectat text în câmpurile de introducere a textului."
     },
     "options_hide_translation_button": {
-        "message": "Ascundeți butonul de traducere pentru limba dvs"
+        "message": "Ascundeți butonul de traducere pentru limba țintă"
     },
     "options_hide_translation_button_hint": {
-        "message": "Butonul nu va apărea la selectarea textului în limba sistemului"
+        "message": "Ascuns când textul selectat este în limba țintă"
     },
     "options_hide_button_on_sites": {
         "message": "Ascuns pe site-uri"
@@ -87,7 +93,7 @@
         "message": "Afișați textul sursă"
     },
     "options_show_original_text_hint": {
-        "message": "Afișați textul original alături de traducere (numai în modul complet)."
+        "message": "Afișează textul original alături de traducere (numai în modul complet)."
     },
     "options_show_langs_simple": {
         "message": "Afișați perechea de limbi"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "Temă"
     },
-    "options_appearance_accent_color": {
-        "message": "Culoare de accent"
+    "theme_light": {
+        "message": "Tema ușoară"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Fundal și text simplu"
+    "theme_system": {
+        "message": "Tema sistemului"
+    },
+    "theme_dark": {
+        "message": "Tema întunecată"
+    },
+    "options_appearance_animations": {
+        "message": "Animații"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Activat"
+    },
+    "options_appearance_animations_system": {
+        "message": "Urmăriți sistemul"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Redus"
+    },
+    "options_appearance_contrast": {
+        "message": "Culoare de contrast"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Implicit"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Mediu"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Înalt"
+    },
+    "options_appearance_colors": {
+        "message": "Culori"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Temă personalizată"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Editați tema personalizată"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Previzualizare"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Variante de teme"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Culoare sursă"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Selectați o culoare pentru a genera teme"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Aplicați tema"
     },
     "options_records_in_history": {
         "message": "Intrări în istorie"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Ștergeți din istoric"
+    },
+    "options_delete_items": {
+        "message": "articolele vor fi șterse"
     },
     "options_tts_language": {
         "message": "Limba"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "Traducere"
-    },
-    "theme_light": {
-        "message": "Tema ușoară"
-    },
-    "theme_dark": {
-        "message": "Tema întunecată"
-    },
-    "theme_system": {
-        "message": "Tema sistemului"
     },
     "tooltip_translate_text": {
         "message": "Traduceți textul selectat"
@@ -372,7 +423,7 @@
         "message": "Baoulé"
     },
     "language_be": {
-        "message": "belarusă"
+        "message": "Belarus"
     },
     "language_bem": {
         "message": "Bemba"
@@ -918,7 +969,7 @@
         "message": "slovenă"
     },
     "language_sm": {
-        "message": "Samoan"
+        "message": "samoană"
     },
     "language_sn": {
         "message": "Shona"
@@ -969,7 +1020,7 @@
         "message": "Tadjik"
     },
     "language_th": {
-        "message": "thailandeză"
+        "message": "thailandez"
     },
     "language_ti": {
         "message": "Tigrinya"

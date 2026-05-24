@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "支援"
     },
+    "button_label_delete": {
+        "message": "刪除"
+    },
+    "button_label_cancel": {
+        "message": "取消"
+    },
     "options_general_translation_button": {
         "message": "翻譯按鈕"
     },
@@ -72,10 +78,10 @@
         "message": "在文字輸入欄位中選擇文字時顯示按鈕。"
     },
     "options_hide_translation_button": {
-        "message": "隱藏您的語言的翻譯按鈕"
+        "message": "隱藏目標語言的翻譯按鈕"
     },
     "options_hide_translation_button_hint": {
-        "message": "選擇系統語言的文字時不會出現按鈕"
+        "message": "當所選文字採用目標語言時隱藏"
     },
     "options_hide_button_on_sites": {
         "message": "隱藏在網站上"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "主題"
     },
-    "options_appearance_accent_color": {
-        "message": "強調色"
+    "theme_light": {
+        "message": "淺色主題"
     },
-    "options_appearance_bg_and_text": {
-        "message": "背景和純文字"
+    "theme_system": {
+        "message": "系統主題"
+    },
+    "theme_dark": {
+        "message": "深色主題"
+    },
+    "options_appearance_animations": {
+        "message": "動畫"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "啟用"
+    },
+    "options_appearance_animations_system": {
+        "message": "關注系統"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "減少"
+    },
+    "options_appearance_contrast": {
+        "message": "對比色"
+    },
+    "options_appearance_contrast_default": {
+        "message": "預設"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "中等"
+    },
+    "options_appearance_contrast_high": {
+        "message": "高"
+    },
+    "options_appearance_colors": {
+        "message": "顏色"
+    },
+    "options_appearance_custom_theme": {
+        "message": "自訂主題"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "編輯自訂主題"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "預覽"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "主題變體"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "來源顏色"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "選擇一種顏色來產生主題"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "應用主題"
     },
     "options_records_in_history": {
         "message": "歷史記載"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "從歷史記錄中刪除"
+    },
+    "options_delete_items": {
+        "message": "項目將被刪除"
     },
     "options_tts_language": {
         "message": "語言"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "翻譯"
-    },
-    "theme_light": {
-        "message": "淺色主題"
-    },
-    "theme_dark": {
-        "message": "深色主題"
-    },
-    "theme_system": {
-        "message": "系統主題"
     },
     "tooltip_translate_text": {
         "message": "翻譯選定的文本"

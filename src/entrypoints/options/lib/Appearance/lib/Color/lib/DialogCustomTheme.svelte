@@ -7,50 +7,66 @@
 		<Palette />
 	{/snippet}
 	{#snippet headline()}
-		Custom color
+		{browser.i18n.getMessage('options_appearance_custom_theme')}
 	{/snippet}
 
 	<div class="flex flex-col gap-4">
-		<div class="flex w-full flex-col gap-2 rounded-2xl bg-color-surface p-4">
-			<h2 class="mb-2 text-center text-sm font-medium text-color-on-surface-variant">Preview</h2>
-			<div class="flex justify-between gap-2">
-				<Button label="primary" />
-				<Button color="tonal" label="secondary" />
-				<Button color="text" label="tertiary" />
-			</div>
-			<div class="flex justify-between gap-2 text-sm font-medium">
-				<span class="text-color-primary">Text primary</span>
-				<span class="text-color-secondary">Text secondary</span>
-				<span class="text-color-tertiary">Text tertiary</span>
+		<div class="flex w-full flex-col gap-3 rounded-2xl bg-color-surface-bright p-4">
+			<h2 class="text-center text-sm font-medium text-color-on-surface-variant">
+				{browser.i18n.getMessage('options_appearance_custom_theme_preview')}
+			</h2>
+			<div class="flex justify-between text-sm">
+				<div class="flex h-full flex-col justify-between">
+					<Button label="Button" size="xs">
+						{#snippet leadingIcon()}
+							<Translate />
+						{/snippet}
+					</Button>
+					<Button color="tonal" label="Button" size="xs">
+						{#snippet leadingIcon()}
+							<Translate />
+						{/snippet}
+					</Button>
+					<Button color="text" label="Button" size="xs">
+						{#snippet leadingIcon()}
+							<Translate />
+						{/snippet}
+					</Button>
+				</div>
+
+				<div class="flex flex-col">
+					<div class="self-end">
+						<Button active color="text" label="Menu" size="xs" />
+					</div>
+					<div class="flex flex-col gap-0.5 rounded-2xl bg-color-surface-container-low p-1 shadow-sm select-none">
+						<div
+							class={[
+								'flex h-8 items-center rounded-t-xl rounded-b-sm px-3 whitespace-nowrap',
+								'cursor-pointer transition-colors ease-effects-fast',
+								'hover:bg-color-on-surface/8 active:bg-color-on-surface/14',
+							]}
+						>Menu item</div>
+						<div
+							class={[
+								'relative flex h-8 cursor-pointer items-center gap-2 rounded-xl px-3 whitespace-nowrap',
+								'bg-color-tertiary-container text-color-on-tertiary-container',
+								'before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:opacity-0',
+								'before:bg-color-on-tertiary-container before:transition-opacity before:ease-effects-fast',
+								'hover:before:opacity-hover active:before:opacity-pressed',
+							]}
+						>
+							<Check class="size-5" />
+							<span>Selected menu item</span>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
-		<!-- <div class="flex rounded-2xl bg-color-surface p-3 text-center text-sm select-none">
-			<div class="flex w-full flex-col overflow-hidden rounded-xl">
-				<div class="flex *:w-full *:p-2">
-					<div class="bg-color-primary">
-						<span class="text-color-on-primary">Primary</span>
-					</div>
-					<div class="bg-color-secondary">
-						<span class="text-color-on-secondary">Secondary</span>
-					</div>
-					<div class="bg-color-tertiary">
-						<span class="text-color-on-tertiary">Tertiary</span>
-					</div>
-				</div>
-				<div class="flex flex-col *:p-2">
-					<div class="bg-color-surface">
-						<span class="text-color-on-surface">Surface</span>
-					</div>
-					<div class="bg-color-surface-container">
-						<span class="text-color-on-surface">Container</span>
-					</div>
-				</div>
-			</div>
-		</div> -->
-
-		<div class="flex flex-col gap-2 rounded-2xl bg-color-surface-bright p-4">
-			<h2 class="mb-2 text-center text-sm font-medium text-color-on-surface-variant">Theme variants</h2>
+		<div class="flex flex-col gap-3 rounded-2xl bg-color-surface-bright p-4">
+			<h2 class="text-center text-sm font-medium text-color-on-surface-variant">
+				{browser.i18n.getMessage('options_appearance_custom_theme_variants')}
+			</h2>
 			<div class="grid grid-cols-4 gap-4">
 				{#each schemesPreview as { scheme, colors } (scheme)}
 					<label
@@ -67,7 +83,8 @@
 						>
 						<div
 							class={[
-								'relative overflow-hidden rounded-40 outline-offset-4 transition-[border-radius] duration-(--shape-duration) ease-expressive-spatial-fast',
+								'relative overflow-hidden rounded-40 outline-offset-4',
+								'transition-[border-radius] duration-(--shape-duration) ease-expressive-spatial-fast',
 								'peer-checked:rounded-28 peer-checked:outline-4 peer-checked:outline-color-primary peer-active:rounded-2xl',
 								'peer-focus-visible:outline-6',
 							]}
@@ -134,8 +151,12 @@
 			></div>
 			<div class="relative flex w-full items-center justify-between">
 				<div class="flex flex-col">
-					<span class="text-color-on-surface">Source color</span>
-					<span class="text-sm text-color-on-surface-variant">Select a color to generate themes</span>
+					<span class="text-color-on-surface">
+						{browser.i18n.getMessage('options_appearance_custom_theme_source')}
+					</span>
+					<span class="text-sm text-color-on-surface-variant">
+						{browser.i18n.getMessage('options_appearance_custom_theme_source_hint')}
+					</span>
 				</div>
 				<input
 					class="sr-only self-end"
@@ -155,8 +176,16 @@
 	</div>
 
 	{#snippet actions()}
-		<Button color="text" label="Cancel" onclick={resetPreviewTheme} />
-		<Button color="text" label="Apply" onclick={generateAndApplyTheme} />
+		<Button
+			color="text"
+			label={browser.i18n.getMessage('button_label_cancel')}
+			onclick={resetPreviewTheme}
+		/>
+		<Button
+			color="text"
+			label={browser.i18n.getMessage('options_appearance_custom_theme_apply')}
+			onclick={generateAndApplyTheme}
+		/>
 	{/snippet}
 </Dialog>
 
@@ -173,6 +202,8 @@ import LightModeOutline from '~icons/material-symbols/light-mode-outline-rounded
 import LightMode from '~icons/material-symbols/light-mode-rounded';
 import DarkModeOutline from '~icons/material-symbols/dark-mode-outline-rounded';
 import DarkMode from '~icons/material-symbols/dark-mode-rounded';
+import Translate from '~icons/material-symbols/translate-rounded';
+import Check from '~icons/material-symbols/check-rounded';
 import { useThrottle } from 'runed';
 import {
 	type SchemePreview,
@@ -246,23 +277,6 @@ const themes: {
 	},
 ];
 
-// const themes: {
-// 	value: Theme
-// 	title: string
-// 	icon: string
-// }[] = [
-// 	{
-// 		value: Theme.Light,
-// 		title: 'Light theme',
-// 		icon: mdiWeatherSunny,
-// 	},
-// 	{
-// 		value: Theme.Dark,
-// 		title: 'Dark theme',
-// 		icon: mdiWeatherNight,
-// 	},
-// ];
-
 const contrasts: {
 	value: ContrastLevel
 	title: string
@@ -271,19 +285,19 @@ const contrasts: {
 }[] = [
 	{
 		value: ContrastLevel.Default,
-		title: 'Default contrast',
+		title: browser.i18n.getMessage('options_appearance_contrast_default'),
 		Icon: Eye,
 		iconOpacity: 0.33,
 	},
 	{
 		value: ContrastLevel.Medium,
-		title: 'Medium contrast',
+		title: browser.i18n.getMessage('options_appearance_contrast_medium'),
 		Icon: Eye,
 		iconOpacity: 0.66,
 	},
 	{
 		value: ContrastLevel.High,
-		title: 'High contrast',
+		title: browser.i18n.getMessage('options_appearance_contrast_high'),
 		Icon: Eye,
 		iconOpacity: 1,
 	},

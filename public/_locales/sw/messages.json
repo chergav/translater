@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Msaada"
     },
+    "button_label_delete": {
+        "message": "Futa"
+    },
+    "button_label_cancel": {
+        "message": "Ghairi"
+    },
     "options_general_translation_button": {
         "message": "Kitufe cha kutafsiri"
     },
@@ -72,10 +78,10 @@
         "message": "Onyesha kitufe wakati maandishi yamechaguliwa katika sehemu za maandishi."
     },
     "options_hide_translation_button": {
-        "message": "Ficha kitufe cha kutafsiri kwa lugha yako"
+        "message": "Ficha kitufe cha kutafsiri kwa lugha lengwa"
     },
     "options_hide_translation_button_hint": {
-        "message": "Kitufe hakitaonekana wakati wa kuchagua maandishi katika lugha ya mfumo wako"
+        "message": "Hufichwa wakati maandishi yaliyochaguliwa yamo katika lugha lengwa"
     },
     "options_hide_button_on_sites": {
         "message": "Imefichwa kwenye tovuti"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "Mandhari"
     },
-    "options_appearance_accent_color": {
-        "message": "Rangi ya msisitizo"
+    "theme_light": {
+        "message": "Mandhari nyepesi"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Usuli na maandishi wazi"
+    "theme_system": {
+        "message": "Mandhari ya mfumo"
+    },
+    "theme_dark": {
+        "message": "Mandhari meusi"
+    },
+    "options_appearance_animations": {
+        "message": "Uhuishaji"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Imewashwa"
+    },
+    "options_appearance_animations_system": {
+        "message": "Fuata mfumo"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Imepunguzwa"
+    },
+    "options_appearance_contrast": {
+        "message": "Tofauti rangi"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Chaguomsingi"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Kati"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Juu"
+    },
+    "options_appearance_colors": {
+        "message": "Rangi"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Mandhari maalum"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Badilisha mandhari maalum"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Hakiki"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Vibadala vya mandhari"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Rangi ya chanzo"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Chagua rangi ili kuunda mandhari"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Tumia mandhari"
     },
     "options_records_in_history": {
         "message": "Maingizo katika historia"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Futa kutoka kwa historia"
+    },
+    "options_delete_items": {
+        "message": "vipengee vitafutwa"
     },
     "options_tts_language": {
         "message": "Lugha"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "Tafsiri"
-    },
-    "theme_light": {
-        "message": "Mandhari nyepesi"
-    },
-    "theme_dark": {
-        "message": "Mandhari meusi"
-    },
-    "theme_system": {
-        "message": "Mandhari ya mfumo"
     },
     "tooltip_translate_text": {
         "message": "Tafsiri maandishi uliyochagua"
@@ -603,7 +654,7 @@
         "message": "Krioli ya Haiti"
     },
     "language_hu": {
-        "message": "Kihungari"
+        "message": "Kihungaria"
     },
     "language_hy": {
         "message": "Kiarmenia"

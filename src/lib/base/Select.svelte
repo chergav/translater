@@ -1,6 +1,6 @@
 <label
 	class={[
-		'group flex items-center justify-between gap-2 select-none',
+		'group flex items-center justify-between gap-2 rounded-sm select-none',
 		'has-disabled:pointer-events-none has-disabled:opacity-disabled',
 		label || full ? 'w-full' : 'w-fit',
 		className,

@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Support"
     },
+    "button_label_delete": {
+        "message": "Ta bort"
+    },
+    "button_label_cancel": {
+        "message": "Avbryt"
+    },
     "options_general_translation_button": {
         "message": "Översättningsknapp"
     },
@@ -72,10 +78,10 @@
         "message": "Visa knapp när text är markerad i textinmatningsfält."
     },
     "options_hide_translation_button": {
-        "message": "Dölj översättningsknappen för ditt språk"
+        "message": "Dölj översättningsknapp för målspråk"
     },
     "options_hide_translation_button_hint": {
-        "message": "Knappen visas inte när du väljer text på ditt systemspråk"
+        "message": "Dold när vald text är på målspråket"
     },
     "options_hide_button_on_sites": {
         "message": "Gömd på sajter"
@@ -87,7 +93,7 @@
         "message": "Visa källtext"
     },
     "options_show_original_text_hint": {
-        "message": "Visa originaltext vid sidan av översättningen (endast helt läge)."
+        "message": "Visa originaltext vid sidan av översättningen (endast i fullständigt läge)."
     },
     "options_show_langs_simple": {
         "message": "Visa språkpar"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "Tema"
     },
-    "options_appearance_accent_color": {
-        "message": "Accentfärg"
+    "theme_light": {
+        "message": "Lätt tema"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Bakgrund och vanlig text"
+    "theme_system": {
+        "message": "Systemtema"
+    },
+    "theme_dark": {
+        "message": "Mörkt tema"
+    },
+    "options_appearance_animations": {
+        "message": "Animationer"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Aktiverad"
+    },
+    "options_appearance_animations_system": {
+        "message": "Följ systemet"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Minskad"
+    },
+    "options_appearance_contrast": {
+        "message": "Kontrastfärg"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Standard"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Medium"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Hög"
+    },
+    "options_appearance_colors": {
+        "message": "Färger"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Anpassat tema"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Redigera anpassat tema"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Förhandsgranska"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Temavarianter"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Källfärg"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Välj en färg för att skapa teman"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Använd tema"
     },
     "options_records_in_history": {
         "message": "Poster i historien"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Ta bort från historiken"
+    },
+    "options_delete_items": {
+        "message": "objekt kommer att raderas"
     },
     "options_tts_language": {
         "message": "Språk"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "Översättning"
-    },
-    "theme_light": {
-        "message": "Lätt tema"
-    },
-    "theme_dark": {
-        "message": "Mörkt tema"
-    },
-    "theme_system": {
-        "message": "Systemtema"
     },
     "tooltip_translate_text": {
         "message": "Översätt vald text"
@@ -639,7 +690,7 @@
         "message": "japanska"
     },
     "language_jam": {
-        "message": "Jamaican Patois"
+        "message": "Jamaicanska Patois"
     },
     "language_jw": {
         "message": "javanesiska"

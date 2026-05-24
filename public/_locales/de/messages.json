@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Unterstützung"
     },
+    "button_label_delete": {
+        "message": "Löschen"
+    },
+    "button_label_cancel": {
+        "message": "Abbrechen"
+    },
     "options_general_translation_button": {
         "message": "Schaltfläche „Übersetzung“."
     },
@@ -72,10 +78,10 @@
         "message": "Schaltfläche anzeigen, wenn Text in Texteingabefeldern ausgewählt ist."
     },
     "options_hide_translation_button": {
-        "message": "Blenden Sie die Übersetzungsschaltfläche für Ihre Sprache aus"
+        "message": "Übersetzungsschaltfläche für Zielsprache ausblenden"
     },
     "options_hide_translation_button_hint": {
-        "message": "Die Schaltfläche wird nicht angezeigt, wenn Sie Text in Ihrer Systemsprache auswählen"
+        "message": "Ausgeblendet, wenn der ausgewählte Text in der Zielsprache vorliegt"
     },
     "options_hide_button_on_sites": {
         "message": "Auf Websites versteckt"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "Thema"
     },
-    "options_appearance_accent_color": {
-        "message": "Akzentfarbe"
+    "theme_light": {
+        "message": "Lichtthema"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Hintergrund und Klartext"
+    "theme_system": {
+        "message": "Systemthema"
+    },
+    "theme_dark": {
+        "message": "Dunkles Thema"
+    },
+    "options_appearance_animations": {
+        "message": "Animationen"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Aktiviert"
+    },
+    "options_appearance_animations_system": {
+        "message": "Folgen Sie dem System"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Reduziert"
+    },
+    "options_appearance_contrast": {
+        "message": "Kontrastfarbe"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Standard"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Mittel"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Hoch"
+    },
+    "options_appearance_colors": {
+        "message": "Farben"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Benutzerdefiniertes Thema"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Benutzerdefiniertes Design bearbeiten"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Vorschau"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Themenvarianten"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Quellfarbe"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Wählen Sie eine Farbe aus, um Themen zu generieren"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Thema anwenden"
     },
     "options_records_in_history": {
         "message": "Einträge in der Geschichte"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Aus dem Verlauf löschen"
+    },
+    "options_delete_items": {
+        "message": "Elemente werden gelöscht"
     },
     "options_tts_language": {
         "message": "Sprache"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "Übersetzung"
-    },
-    "theme_light": {
-        "message": "Lichtthema"
-    },
-    "theme_dark": {
-        "message": "Dunkles Thema"
-    },
-    "theme_system": {
-        "message": "Systemthema"
     },
     "tooltip_translate_text": {
         "message": "Ausgewählten Text übersetzen"

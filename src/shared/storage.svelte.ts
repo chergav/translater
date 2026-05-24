@@ -29,7 +29,7 @@ const initialSettings: Settings = {
 	hideButtonForUserLanguage: false,
 	showPopupOnSelection: false,
 	popupMode: PopupMode.Full,
-	simpleModeShowLangs: true,
+	simpleModeShowLangs: false,
 	motionPreference: MotionPreference.System,
 };
 

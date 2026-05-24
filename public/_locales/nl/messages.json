@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Ondersteuning"
     },
+    "button_label_delete": {
+        "message": "Verwijderen"
+    },
+    "button_label_cancel": {
+        "message": "Annuleer"
+    },
     "options_general_translation_button": {
         "message": "Vertaalknop"
     },
@@ -72,10 +78,10 @@
         "message": "Knop Tonen wanneer tekst is geselecteerd in tekstinvoervelden."
     },
     "options_hide_translation_button": {
-        "message": "Verberg de vertaalknop voor uw taal"
+        "message": "Vertaalknop voor doeltaal verbergen"
     },
     "options_hide_translation_button_hint": {
-        "message": "De knop verschijnt niet wanneer u tekst in uw systeemtaal selecteert"
+        "message": "Verborgen wanneer de geselecteerde tekst in de doeltaal is"
     },
     "options_hide_button_on_sites": {
         "message": "Verborgen op sites"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "Thema"
     },
-    "options_appearance_accent_color": {
-        "message": "Accentkleur"
+    "theme_light": {
+        "message": "Licht thema"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Achtergrond en platte tekst"
+    "theme_system": {
+        "message": "Systeem thema"
+    },
+    "theme_dark": {
+        "message": "Donker thema"
+    },
+    "options_appearance_animations": {
+        "message": "Animaties"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Ingeschakeld"
+    },
+    "options_appearance_animations_system": {
+        "message": "Volg systeem"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Verlaagd"
+    },
+    "options_appearance_contrast": {
+        "message": "Contrasterende kleur"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Standaard"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Middelmatig"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Hoog"
+    },
+    "options_appearance_colors": {
+        "message": "Kleuren"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Aangepast thema"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Aangepast thema bewerken"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Voorbeeld"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Thema varianten"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Bronkleur"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Selecteer een kleur om thema's te genereren"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Thema toepassen"
     },
     "options_records_in_history": {
         "message": "Inzendingen in de geschiedenis"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Verwijderen uit de geschiedenis"
+    },
+    "options_delete_items": {
+        "message": "artikelen worden verwijderd"
     },
     "options_tts_language": {
         "message": "Taal"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "Vertaling"
-    },
-    "theme_light": {
-        "message": "Licht thema"
-    },
-    "theme_dark": {
-        "message": "Donker thema"
-    },
-    "theme_system": {
-        "message": "Systeem thema"
     },
     "tooltip_translate_text": {
         "message": "Vertaal geselecteerde tekst"

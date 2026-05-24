@@ -27,13 +27,19 @@
         "message": "पॉपअप विंडो"
     },
     "options_tab_appearance": {
-        "message": "बाहरी स्वरूप"
+        "message": "बाहरी रूप"
     },
     "options_tab_history": {
         "message": "इतिहास"
     },
     "options_tab_support": {
         "message": "समर्थन"
+    },
+    "button_label_delete": {
+        "message": "हटाएँ"
+    },
+    "button_label_cancel": {
+        "message": "रद्द करें"
     },
     "options_general_translation_button": {
         "message": "अनुवाद बटन"
@@ -72,10 +78,10 @@
         "message": "टेक्स्ट इनपुट फ़ील्ड में टेक्स्ट चयनित होने पर बटन दिखाएँ।"
     },
     "options_hide_translation_button": {
-        "message": "अपनी भाषा के लिए अनुवाद बटन छिपाएँ"
+        "message": "लक्ष्य भाषा के लिए अनुवाद बटन छिपाएँ"
     },
     "options_hide_translation_button_hint": {
-        "message": "आपके सिस्टम भाषा में टेक्स्ट का चयन करते समय बटन दिखाई नहीं देगा"
+        "message": "जब चयनित पाठ लक्ष्य भाषा में हो तो छिपाया जाता है"
     },
     "options_hide_button_on_sites": {
         "message": "साइटों पर छिपा हुआ"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "थीम"
     },
-    "options_appearance_accent_color": {
-        "message": "उच्चारण रंग"
+    "theme_light": {
+        "message": "प्रकाश विषय"
     },
-    "options_appearance_bg_and_text": {
-        "message": "पृष्ठभूमि और सादा पाठ"
+    "theme_system": {
+        "message": "सिस्टम थीम"
+    },
+    "theme_dark": {
+        "message": "डार्क थीम"
+    },
+    "options_appearance_animations": {
+        "message": "एनिमेशन"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "सक्षम"
+    },
+    "options_appearance_animations_system": {
+        "message": "सिस्टम का पालन करें"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "कम हो गया"
+    },
+    "options_appearance_contrast": {
+        "message": "कंट्रास्ट रंग"
+    },
+    "options_appearance_contrast_default": {
+        "message": "डिफ़ॉल्ट"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "मध्यम"
+    },
+    "options_appearance_contrast_high": {
+        "message": "ऊँचा"
+    },
+    "options_appearance_colors": {
+        "message": "रंग"
+    },
+    "options_appearance_custom_theme": {
+        "message": "कस्टम थीम"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "कस्टम थीम संपादित करें"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "पूर्वावलोकन"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "थीम वेरिएंट"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "स्रोत रंग"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "थीम जनरेट करने के लिए एक रंग चुनें"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "थीम लागू करें"
     },
     "options_records_in_history": {
         "message": "इतिहास में प्रविष्टियाँ"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "इतिहास से हटाएँ"
+    },
+    "options_delete_items": {
+        "message": "आइटम हटा दिए जाएंगे"
     },
     "options_tts_language": {
         "message": "भाषा"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "अनुवाद"
-    },
-    "theme_light": {
-        "message": "प्रकाश विषय"
-    },
-    "theme_dark": {
-        "message": "डार्क थीम"
-    },
-    "theme_system": {
-        "message": "सिस्टम थीम"
     },
     "tooltip_translate_text": {
         "message": "चयनित पाठ का अनुवाद करें"

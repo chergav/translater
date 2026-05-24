@@ -25,7 +25,6 @@
     "@eslint/compat": "^2.0.5",
     "@eslint/js": "^10.0.1",
     "@iconify-json/material-symbols": "^1.2.71",
-    "@mdi/js": "^7.4.47",
     "@stylistic/eslint-plugin": "^5.10.0",
     "@tsconfig/svelte": "^5.0.8",
     "@wxt-dev/module-svelte": "^2.0.5",

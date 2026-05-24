@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Palaikymas"
     },
+    "button_label_delete": {
+        "message": "Ištrinti"
+    },
+    "button_label_cancel": {
+        "message": "Atšaukti"
+    },
     "options_general_translation_button": {
         "message": "Vertimo mygtukas"
     },
@@ -72,10 +78,10 @@
         "message": "Rodyti mygtuką, kai teksto įvesties laukuose pasirenkamas tekstas."
     },
     "options_hide_translation_button": {
-        "message": "Slėpti savo kalbos vertimo mygtuką"
+        "message": "Slėpti vertimo mygtuką tikslinei kalbai"
     },
     "options_hide_translation_button_hint": {
-        "message": "Pasirinkus tekstą sistemos kalba, mygtukas nebus rodomas"
+        "message": "Paslėpta, kai pasirinktas tekstas yra tiksline kalba"
     },
     "options_hide_button_on_sites": {
         "message": "Paslėpta svetainėse"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "tema"
     },
-    "options_appearance_accent_color": {
-        "message": "Akcentinė spalva"
+    "theme_light": {
+        "message": "Šviesos tema"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Fonas ir paprastas tekstas"
+    "theme_system": {
+        "message": "Sistemos tema"
+    },
+    "theme_dark": {
+        "message": "Tamsi tema"
+    },
+    "options_appearance_animations": {
+        "message": "Animacijos"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Įjungta"
+    },
+    "options_appearance_animations_system": {
+        "message": "Sekite sistemą"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Sumažintas"
+    },
+    "options_appearance_contrast": {
+        "message": "Kontrastinė spalva"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Numatytoji"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Vidutinis"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Aukštas"
+    },
+    "options_appearance_colors": {
+        "message": "Spalvos"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Pasirinktinė tema"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Redaguoti pasirinktinę temą"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Peržiūra"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Temos variantai"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Šaltinio spalva"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Pasirinkite spalvą, kad sukurtumėte temas"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Taikyti temą"
     },
     "options_records_in_history": {
         "message": "Įrašai istorijoje"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Ištrinti iš istorijos"
+    },
+    "options_delete_items": {
+        "message": "elementai bus ištrinti"
     },
     "options_tts_language": {
         "message": "Kalba"
@@ -244,15 +304,6 @@
     },
     "popup_placeholder_translation": {
         "message": "Vertimas"
-    },
-    "theme_light": {
-        "message": "Šviesos tema"
-    },
-    "theme_dark": {
-        "message": "Tamsi tema"
-    },
-    "theme_system": {
-        "message": "Sistemos tema"
     },
     "tooltip_translate_text": {
         "message": "Išverskite pasirinktą tekstą"
@@ -474,7 +525,7 @@
         "message": "danų"
     },
     "language_de": {
-        "message": "vokiškai"
+        "message": "vokiečių"
     },
     "language_din": {
         "message": "Dinka"

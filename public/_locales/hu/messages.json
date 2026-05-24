@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "Támogatás"
     },
+    "button_label_delete": {
+        "message": "Törölje"
+    },
+    "button_label_cancel": {
+        "message": "Mégsem"
+    },
     "options_general_translation_button": {
         "message": "Fordítás gomb"
     },
@@ -72,10 +78,10 @@
         "message": "Gomb megjelenítése, ha szöveg van kiválasztva a szövegbeviteli mezőkben."
     },
     "options_hide_translation_button": {
-        "message": "Rejtsd el a nyelved fordítási gombját"
+        "message": "Fordítás gomb elrejtése a célnyelvhez"
     },
     "options_hide_translation_button_hint": {
-        "message": "A gomb nem jelenik meg, amikor szöveget választ ki a rendszer nyelvén"
+        "message": "Rejtett, ha a kijelölt szöveg a célnyelven van"
     },
     "options_hide_button_on_sites": {
         "message": "Rejtett webhelyeken"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "téma"
     },
-    "options_appearance_accent_color": {
-        "message": "Kiemelt szín"
+    "theme_light": {
+        "message": "Világos téma"
     },
-    "options_appearance_bg_and_text": {
-        "message": "Háttér és egyszerű szöveg"
+    "theme_system": {
+        "message": "Rendszer téma"
+    },
+    "theme_dark": {
+        "message": "Sötét téma"
+    },
+    "options_appearance_animations": {
+        "message": "Animációk"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "Engedélyezve"
+    },
+    "options_appearance_animations_system": {
+        "message": "Kövesse a rendszert"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "Csökkentett"
+    },
+    "options_appearance_contrast": {
+        "message": "Kontraszt szín"
+    },
+    "options_appearance_contrast_default": {
+        "message": "Alapértelmezett"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "Közepes"
+    },
+    "options_appearance_contrast_high": {
+        "message": "Magas"
+    },
+    "options_appearance_colors": {
+        "message": "Színek"
+    },
+    "options_appearance_custom_theme": {
+        "message": "Egyedi téma"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "Egyéni téma szerkesztése"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "Előnézet"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "Témaváltozatok"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "Forrás színe"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "Válasszon színt a témák létrehozásához"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "Téma alkalmazása"
     },
     "options_records_in_history": {
         "message": "Bejegyzések a történelembe"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "Törlés az előzményekből"
+    },
+    "options_delete_items": {
+        "message": "tételek törlődnek"
     },
     "options_tts_language": {
         "message": "Nyelv"
@@ -245,15 +305,6 @@
     "popup_placeholder_translation": {
         "message": "Fordítás"
     },
-    "theme_light": {
-        "message": "Világos téma"
-    },
-    "theme_dark": {
-        "message": "Sötét téma"
-    },
-    "theme_system": {
-        "message": "Rendszer téma"
-    },
     "tooltip_translate_text": {
         "message": "A kijelölt szöveg fordítása"
     },
@@ -294,7 +345,7 @@
         "message": "Indítás engedélyezése Firefoxban"
     },
     "forefox_perm_text": {
-        "message": "Ennek a bővítménynek szüksége van az Ön engedélyére a webhelyek eléréséhez és a Firefoxban való lefordításához"
+        "message": "Ennek a bővítménynek szüksége van az Ön engedélyére a webhelyek eléréséhez és lefordításához a Firefoxban"
     },
     "forefox_perm_button": {
         "message": "Engedélyek kezelése"

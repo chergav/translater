@@ -35,6 +35,12 @@
     "options_tab_support": {
         "message": "പിന്തുണ"
     },
+    "button_label_delete": {
+        "message": "ഇല്ലാതാക്കുക"
+    },
+    "button_label_cancel": {
+        "message": "റദ്ദാക്കുക"
+    },
     "options_general_translation_button": {
         "message": "വിവർത്തന ബട്ടൺ"
     },
@@ -72,10 +78,10 @@
         "message": "ടെക്സ്റ്റ് ഇൻപുട്ട് ഫീൽഡുകളിൽ ടെക്സ്റ്റ് തിരഞ്ഞെടുക്കുമ്പോൾ ബട്ടൺ കാണിക്കുക."
     },
     "options_hide_translation_button": {
-        "message": "നിങ്ങളുടെ ഭാഷയ്ക്കുള്ള വിവർത്തന ബട്ടൺ മറയ്ക്കുക"
+        "message": "ടാർഗെറ്റ് ഭാഷയ്‌ക്കായി വിവർത്തന ബട്ടൺ മറയ്‌ക്കുക"
     },
     "options_hide_translation_button_hint": {
-        "message": "നിങ്ങളുടെ സിസ്റ്റം ഭാഷയിൽ ടെക്സ്റ്റ് തിരഞ്ഞെടുക്കുമ്പോൾ ബട്ടൺ ദൃശ്യമാകില്ല"
+        "message": "തിരഞ്ഞെടുത്ത വാചകം ടാർഗെറ്റ് ഭാഷയിലായിരിക്കുമ്പോൾ മറച്ചിരിക്കുന്നു"
     },
     "options_hide_button_on_sites": {
         "message": "സൈറ്റുകളിൽ മറച്ചിരിക്കുന്നു"
@@ -116,11 +122,62 @@
     "options_appearance_theme": {
         "message": "തീം"
     },
-    "options_appearance_accent_color": {
-        "message": "ആക്സൻ്റ് നിറം"
+    "theme_light": {
+        "message": "ലൈറ്റ് തീം"
     },
-    "options_appearance_bg_and_text": {
-        "message": "പശ്ചാത്തലവും പ്ലെയിൻ ടെക്സ്റ്റും"
+    "theme_system": {
+        "message": "സിസ്റ്റം തീം"
+    },
+    "theme_dark": {
+        "message": "ഇരുണ്ട തീം"
+    },
+    "options_appearance_animations": {
+        "message": "ആനിമേഷനുകൾ"
+    },
+    "options_appearance_animations_enabled": {
+        "message": "പ്രവർത്തനക്ഷമമാക്കി"
+    },
+    "options_appearance_animations_system": {
+        "message": "സിസ്റ്റം പിന്തുടരുക"
+    },
+    "options_appearance_animations_reduced": {
+        "message": "കുറച്ചു"
+    },
+    "options_appearance_contrast": {
+        "message": "കോൺട്രാസ്റ്റ് നിറം"
+    },
+    "options_appearance_contrast_default": {
+        "message": "സ്ഥിരസ്ഥിതി"
+    },
+    "options_appearance_contrast_medium": {
+        "message": "ഇടത്തരം"
+    },
+    "options_appearance_contrast_high": {
+        "message": "ഉയർന്നത്"
+    },
+    "options_appearance_colors": {
+        "message": "നിറങ്ങൾ"
+    },
+    "options_appearance_custom_theme": {
+        "message": "ഇഷ്ടാനുസൃത തീം"
+    },
+    "options_appearance_edit_custom_theme": {
+        "message": "ഇഷ്ടാനുസൃത തീം എഡിറ്റ് ചെയ്യുക"
+    },
+    "options_appearance_custom_theme_preview": {
+        "message": "പ്രിവ്യൂ"
+    },
+    "options_appearance_custom_theme_variants": {
+        "message": "തീം വകഭേദങ്ങൾ"
+    },
+    "options_appearance_custom_theme_source": {
+        "message": "ഉറവിട നിറം"
+    },
+    "options_appearance_custom_theme_source_hint": {
+        "message": "തീമുകൾ സൃഷ്ടിക്കാൻ ഒരു നിറം തിരഞ്ഞെടുക്കുക"
+    },
+    "options_appearance_custom_theme_apply": {
+        "message": "തീം പ്രയോഗിക്കുക"
     },
     "options_records_in_history": {
         "message": "ചരിത്രത്തിലെ എൻട്രികൾ"
@@ -133,6 +190,9 @@
     },
     "options_delete_history_item": {
         "message": "ചരിത്രത്തിൽ നിന്ന് ഇല്ലാതാക്കുക"
+    },
+    "options_delete_items": {
+        "message": "ഇനങ്ങൾ ഇല്ലാതാക്കപ്പെടും"
     },
     "options_tts_language": {
         "message": "ഭാഷ"
@@ -240,19 +300,10 @@
         "message": "ലളിതമായ മോഡിലേക്ക് മാറുക"
     },
     "popup_menu_switch_to_full_mode": {
-        "message": "ഫുൾ മോഡിലേക്ക് മാറുക"
+        "message": "പൂർണ്ണ മോഡിലേക്ക് മാറുക"
     },
     "popup_placeholder_translation": {
         "message": "വിവർത്തനം"
-    },
-    "theme_light": {
-        "message": "ലൈറ്റ് തീം"
-    },
-    "theme_dark": {
-        "message": "ഇരുണ്ട തീം"
-    },
-    "theme_system": {
-        "message": "സിസ്റ്റം തീം"
     },
     "tooltip_translate_text": {
         "message": "തിരഞ്ഞെടുത്ത വാചകം വിവർത്തനം ചെയ്യുക"
@@ -291,7 +342,7 @@
         "message": "ഇന്നലെ"
     },
     "forefox_perm_header": {
-        "message": "ഫയർഫോക്സിൽ ലോഞ്ച് അനുവദിക്കുക"
+        "message": "Firefox-ൽ സമാരംഭം അനുവദിക്കുക"
     },
     "forefox_perm_text": {
         "message": "ഈ വിപുലീകരണത്തിന് വെബ്‌സൈറ്റുകൾ ആക്‌സസ് ചെയ്യാനും ഫയർഫോക്‌സിൽ വിവർത്തനം ചെയ്യാനും നിങ്ങളുടെ അനുമതി ആവശ്യമാണ്"
@@ -312,7 +363,7 @@
         "message": "ഓട്ടോ"
     },
     "language_detect": {
-        "message": "ഭാഷ കണ്ടെത്തുക"
+        "message": "ഭാഷ കണ്ടുപിടിക്കുക"
     },
     "language_aa": {
         "message": "അകലെ"
@@ -1062,7 +1113,7 @@
         "message": "സപ്പോടെക്"
     },
     "language_zh_CN": {
-        "message": "ചൈനീസ് (ലളിതമാക്കിയത്)"
+        "message": "ചൈനീസ് (ലളിതമായ)"
     },
     "language_zh_TW": {
         "message": "ചൈനീസ് (പരമ്പരാഗതം)"
