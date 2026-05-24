@@ -168,7 +168,6 @@ const popupMinWidth = $derived<number>(isFullMode || storage.settings.simpleMode
 const popupMinHeight = $derived<number>(isFullMode ? 250 : 100);
 
 const popupPosition: Action<HTMLDivElement> = popup => {
-	console.debug('popupPosition');
 	computePosition(reference, popup, {
 		strategy: 'fixed',
 		placement: 'bottom-start',

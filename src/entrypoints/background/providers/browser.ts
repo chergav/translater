@@ -11,6 +11,7 @@ async function checkLanguageDetector(): Promise<'available' | 'unavailable' | 'n
 		const result = await LanguageDetector.availability({
 			expectedInputLanguages: ['en', 'es', 'fr', 'de', 'ru', 'zh', 'ja', 'ko'],
 		});
+
 		return result === 'unavailable' ? 'unavailable' : 'available';
 	} catch (error) {
 		// Opera: API exists but throws - treat as not implemented
@@ -58,7 +59,7 @@ async function detectLanguage(text: string, signal: AbortSignal): Promise<string
 
 		if (signal.aborted) {
 			detector.destroy();
-			throw new DOMException('Translation cancelled', 'AbortError');
+			throw new DOMException('LanguageDetector cancelled', 'AbortError');
 		}
 
 		const results = await detector.detect(text, { signal });

@@ -131,6 +131,11 @@ export class TranslationService {
 		const controller = new AbortController();
 		portData.controller = controller;
 
+		const combinedSignal = AbortSignal.any([
+			controller.signal,
+			AbortSignal.timeout(5000),
+		]);
+
 		const tgtLang: string = targetLang || browser.i18n.getUILanguage();
 
 		try {
@@ -163,16 +168,16 @@ export class TranslationService {
 
 			switch (provider.protocol) {
 				case 'simple-api':
-					await this.translateWithSimpleAPI(provider, model, truncatedText, tgtLang, controller, portData, sourceLang);
+					await this.translateWithSimpleAPI(provider, model, truncatedText, tgtLang, combinedSignal, portData, sourceLang);
 					break;
 				case 'browser-api':
-					await this.translateWithBrowserAPI(provider, model, truncatedText, tgtLang, controller, portData, sourceLang);
+					await this.translateWithBrowserAPI(provider, model, truncatedText, tgtLang, combinedSignal, portData, sourceLang);
 					break;
 				case 'openai-stream':
-					await this.translateWithOpenAIStream(provider, model, truncatedText, tgtLang, controller, portData);
+					await this.translateWithOpenAIStream(provider, model, truncatedText, tgtLang, combinedSignal, portData);
 					break;
 				case 'custom-backend':
-					await this.translateWithCustomBackend(provider, model, truncatedText, tgtLang, controller, portData);
+					await this.translateWithCustomBackend(provider, model, truncatedText, tgtLang, combinedSignal, portData);
 					break;
 				default:
 					throw new Error(`Unknown protocol: ${provider.protocol}`);
@@ -205,7 +210,7 @@ export class TranslationService {
 		model: TranslationModel,
 		text: string,
 		tgtLang: string,
-		controller: AbortController,
+		signal: AbortSignal,
 		portData: TranslationPort,
 		sourceLanguage?: string,
 	) {
@@ -213,7 +218,7 @@ export class TranslationService {
 
 		switch (provider.id) {
 			case 'mymemory':
-				response = await translateWithMyMemory(text, tgtLang, controller.signal, sourceLanguage);
+				response = await translateWithMyMemory(text, tgtLang, signal, sourceLanguage);
 				break;
 			default:
 				throw new Error(`Unknown simple API provider: ${provider.id}`);
@@ -235,14 +240,14 @@ export class TranslationService {
 		model: TranslationModel,
 		text: string,
 		tgtLang: string,
-		controller: AbortController,
+		signal: AbortSignal,
 		portData: TranslationPort,
 		sourceLanguage?: string,
 	) {
 		const response = await translateWithTranslationAPI(
 			text,
 			tgtLang,
-			controller.signal,
+			signal,
 			(percent: number) => {
 				portData.port.postMessage({
 					type: 'download-progress',
@@ -252,7 +257,7 @@ export class TranslationService {
 			sourceLanguage,
 		);
 
-		if (controller.signal.aborted) {
+		if (signal.aborted) {
 			portData.port.postMessage({
 				type: 'translation-cancel',
 			} satisfies MessageConnectResponse);
@@ -364,7 +369,7 @@ ${text}
 		model: TranslationModel,
 		text: string,
 		tgtLang: string,
-		controller: AbortController,
+		signal: AbortSignal,
 		portData: TranslationPort,
 	) {
 		if (!provider.baseUrl || !provider.apiKey) {
@@ -390,13 +395,13 @@ ${text}
 			stream: true,
 			temperature: 0.1,
 		}, {
-			signal: controller.signal,
+			signal,
 		});
 
 		let translated = '';
 
 		for await (const chunk of stream) {
-			if (controller.signal.aborted) {
+			if (signal.aborted) {
 				break;
 			}
 
@@ -411,7 +416,7 @@ ${text}
 			}
 		}
 
-		if (controller.signal.aborted) {
+		if (signal.aborted) {
 			portData.port.postMessage({
 				type: 'translation-cancel',
 			} satisfies MessageConnectResponse);
@@ -428,7 +433,7 @@ ${text}
 		model: TranslationModel,
 		text: string,
 		tgtLang: string,
-		controller: AbortController,
+		signal: AbortSignal,
 		portData: TranslationPort,
 	) {
 		const response = await fetch('https://qwerty.com/api/translate', {
@@ -441,7 +446,7 @@ ${text}
 				text,
 				targetLang: tgtLang,
 			}),
-			signal: controller.signal,
+			signal,
 		});
 
 		if (!response.ok) {
