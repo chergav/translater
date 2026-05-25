@@ -151,9 +151,8 @@ body {
 }
 
 @utility scrollbar {
-	scrollbar-color: var(--ui-color-outline-variant, var(--color-neutral-300)) transparent;
+	scrollbar-color: var(--md-color-outline-variant, var(--color-neutral-300)) transparent;
     scrollbar-width: thin;
-	/* overscroll-behavior-y: contain; */
 
 	&::-webkit-scrollbar {
 		width: 5px;

@@ -7,9 +7,6 @@
 	<div class={['text-color-on-surface', fontClass]}>
 		{store.translationAi.text}
 	</div>
-	{#if storage.settings.showTransliteration}
-		<p class="text-sm text-color-on-surface-variant">{store.translated?.sentence.translit}</p>
-	{/if}
 {:else}
 	<p class="text-color-on-surface-variant">
 		{browser.i18n.getMessage('popup_placeholder_translation')}

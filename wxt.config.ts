@@ -46,7 +46,7 @@ export default defineConfig({
 					},
 					optional_host_permissions: ['<all_urls>'],
 				}
-				: { minimum_chrome_version: '111' }
+				: { minimum_chrome_version: '116' }
 			),
 			action: {
 				default_title: '__MSG_app_name__',

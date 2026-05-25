@@ -1,4 +1,5 @@
 <div
+	bind:this={wrapperElem}
 	style:left="{popupLeft}px"
 	style:top="{popupTop}px"
 	style:width="{popupWidth}px"
@@ -33,7 +34,7 @@
 >
 	<div
 		bind:this={handleElem}
-		class="flex size-full min-h-0 p-1.5"
+		class="flex size-full min-h-0 p-2"
 	>
 		<div
 			class={[
@@ -64,30 +65,6 @@
 					<CacheNav />
 					{#if isFullMode}
 						<SelectModel />
-					{:else if storage.settings.simpleModeShowLangs}
-						<SelectLanguage
-							align="center"
-							autoLang
-							detectedLang={store.detectedLang}
-							mode="simple"
-							onchange={store.reTranslate}
-							bind:value={storage.settings.sourceLang}
-						/>
-						<IconButton
-							color="standard"
-							disabled={!store.detectedLang}
-							onclick={handleReverseTranslate}
-							size="xs"
-							title={browser.i18n.getMessage('popup_menu_reverse_translate')}
-						>
-							<SwapHoriz />
-						</IconButton>
-						<SelectLanguage
-							align="center"
-							mode="simple"
-							onchange={store.reTranslate}
-							bind:value={storage.settings.targetLang}
-						/>
 					{/if}
 				</div>
 				<div class="flex items-center gap-1">
@@ -143,7 +120,6 @@ import SelectModel from './PopupFull/lib/SelectModel.svelte';
 import PopupFull from './PopupFull/PopupFull.svelte';
 import PopupSimple from './PopupSimple/PopupSimple.svelte';
 import PopupFooter from './PopupFull/lib/PopupFooter/PopupFooter.svelte';
-import SelectLanguage from '~/lib/SelectLanguage/SelectLanguage.svelte';
 import { type VirtualElement, computePosition, flip, shift, offset } from '@floating-ui/dom';
 import { clickOutside } from '~/utils';
 import { drag } from '~/entrypoints/content/utils/drag';
@@ -151,21 +127,21 @@ import { resize } from '~/entrypoints/content/utils/resize';
 import { CUSTOM_ELEMENT_TAG } from '~/shared/constants';
 import Close from '~icons/material-symbols/close-rounded';
 import ModeFull from '~icons/material-symbols/open-in-full-rounded';
-import SwapHoriz from '~icons/material-symbols/swap-horiz-rounded';
 
 let popupLeft = $state<number>(20);
 let popupTop = $state<number>(20);
 let moveDx = $state(0);
 let moveDy = $state(0);
+let wrapperElem = $state<HTMLDivElement | null>(null);
 let handleElem = $state<HTMLDivElement | null>(null);
 let reference = $derived<VirtualElement>({
 	getBoundingClientRect: () => store.selectedElemRect || new DOMRect(20, 20, 0, 0),
 });
 const DURATION_IN = $derived<number>(storage.motionDisabled ? 0 : 300);
 const isFullMode = $derived<boolean>(storage.settings.popupMode === PopupMode.Full);
-let popupWidth = $derived<number>(isFullMode ? 550 : storage.settings.simpleModeShowLangs ? 400 : 260);
-const popupMinWidth = $derived<number>(isFullMode || storage.settings.simpleModeShowLangs ? 400 : 260);
-const popupMinHeight = $derived<number>(isFullMode ? 250 : 100);
+let popupWidth = $derived<number>(isFullMode ? 550 : 280);
+const popupMinWidth = $derived<number>(isFullMode ? 400 : 280);
+const popupMinHeight = $derived<number>(isFullMode ? 256 : storage.settings.simpleModeShowLangs ? 140 : 100);
 
 const popupPosition: Action<HTMLDivElement> = popup => {
 	computePosition(reference, popup, {
@@ -200,9 +176,11 @@ function closePopup() {
 	store.showPopup = false;
 }
 
-function handleReverseTranslate() {
-	store.reverseTranslation();
-}
+$effect(() => {
+	if (storage.settings.popupMode && wrapperElem) {
+		wrapperElem.style.height = '';
+	}
+});
 
 onDestroy(() => {
 	store.resetTranslateStore();

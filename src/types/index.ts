@@ -1,6 +1,5 @@
 import type { GoogleTranslate, Sentence } from '~/types/google';
 import type { TranslationProvider } from '~/types/providers';
-import type { Scheme } from '~/utils/material-color-helpers.js';
 
 export interface Settings {
 	theme: Theme
@@ -8,7 +7,6 @@ export interface Settings {
 	contrastLevel: ContrastLevel
 	customTheme: string
 	seedColor: string
-	colorScheme: Scheme
 	fontSize: FontSize
 	sourceLang: string
 	targetLang: string
@@ -24,6 +22,7 @@ export interface Settings {
 	ttsVoiceByLang: {
 		[lang: string]: string
 	};
+	ttsProvider: TTSProvider
 	modelId: string
 	fakeUserEmail?: string
 	hideButtonForUserLanguage: boolean
@@ -85,6 +84,16 @@ export enum FontSize {
 export enum PopupMode {
 	Full = 'full',
 	Simple = 'simple',
+}
+
+export enum MotionPreference {
+	Off = 'off',
+	System = 'system',
+	On = 'on',
+}
+export enum TTSProvider {
+	Auto = 'auto',
+	Google = 'google',
 }
 
 export interface HistoryItem {
@@ -204,10 +213,4 @@ export interface TranslationAi {
 	text: string
 	sourceLang?: string
 	isStreaming?: boolean
-}
-
-export enum MotionPreference {
-	Off = 'off',
-	System = 'system',
-	On = 'on',
 }

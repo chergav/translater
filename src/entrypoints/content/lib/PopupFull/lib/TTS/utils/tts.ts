@@ -59,11 +59,11 @@ export const getVoicesByLang = (
 	voices: SpeechSynthesisVoice[],
 ) => voices ? voices.filter(i => i.lang.startsWith(targetLang)) : [];
 
-export const getTTS = (lang: string, voices: SpeechSynthesisVoice[]) => {
-	const isBrowserTTSAvailable = voices.find(v => v.lang.startsWith(lang));
+export const getTTS = (lang: string, voices: SpeechSynthesisVoice[], providerAuto: boolean) => {
+	if (providerAuto) {
+		const isBrowserTTSAvailable = voices.find(v => v.lang.startsWith(lang));
 
-	if (isBrowserTTSAvailable) {
-		return new BrowserTTS();
+		if (isBrowserTTSAvailable) return new BrowserTTS();
 	}
 
 	return new GoogleTTS();

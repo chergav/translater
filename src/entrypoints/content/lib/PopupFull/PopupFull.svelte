@@ -52,7 +52,7 @@
 					</div>
 				{/if}
 				{#if store.translated && storage.settings.showTransliteration}
-					<p class="scrollbar overflow-y-auto px-1.5 text-sm text-color-on-surface-variant">
+					<p class="scrollbar max-h-64 overflow-y-auto px-1.5 text-sm text-color-on-surface-variant">
 						{store.translated.sentence.src_translit}
 					</p>
 				{/if}

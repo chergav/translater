@@ -1,5 +1,5 @@
 {#if store.translated && store.showFooter}
-	<footer class="pointer-events-none absolute inset-x-0 top-full flex min-h-0 flex-col items-center justify-center gap-1.5 px-2">
+	<footer class="pointer-events-none absolute inset-x-0 top-full -mt-1 flex min-h-0 flex-col items-center justify-center gap-1 px-2">
 		<div
 			class={[
 				'flex items-center gap-0.5 rounded-full p-1',
@@ -26,14 +26,6 @@
 						{/snippet}
 						{#snippet selectedIcon()}
 							<tab.IconActive />
-						{/snippet}
-						{#snippet trailingIcon(selected)}
-							<KeyboardArrowDown
-								class={[
-									'transition-transform ease-effects-fast',
-									selected && '-scale-y-100',
-								]}
-							/>
 						{/snippet}
 					</Button>
 				{/if}
@@ -74,7 +66,6 @@ import Dictionary from './lib/Dictionary.svelte';
 import Definitions from './lib/Definitions.svelte';
 import Examples from './lib/Examples.svelte';
 import { expressiveSpatialFast } from '~/lib/base/utils/md3Easing';
-import KeyboardArrowDown from '~icons/material-symbols/keyboard-arrow-down-rounded';
 import DictionaryOutline from '~icons/material-symbols/dictionary-outline-rounded';
 import DictionaryFill from '~icons/material-symbols/dictionary-rounded';
 import TextSnippetOutline from '~icons/material-symbols/text-snippet-outline-rounded';

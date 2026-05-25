@@ -49,7 +49,7 @@
 	{/each}
 </div>
 
-<div>
+<div class="absolute">
 	<!-- div to avoid parent styles -->
 	<DialogDeleteHistory bind:open={dialogDeleteHistoryOpen} />
 </div>

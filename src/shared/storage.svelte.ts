@@ -1,4 +1,4 @@
-import { type Settings, Theme, ThemeColor, FontSize, PopupMode, ContrastLevel, Contrast, MotionPreference } from '~/types';
+import { type Settings, Theme, ThemeColor, FontSize, PopupMode, ContrastLevel, Contrast, MotionPreference, TTSProvider } from '~/types';
 import { GOOGLE_TRANSLATE_MODEL_ID } from '~/types/providers';
 import { MediaQuery } from 'svelte/reactivity';
 import { getUILanguageCode } from '~/shared/languages';
@@ -9,7 +9,6 @@ const initialSettings: Settings = {
 	theme: Theme.System,
 	accentColor: ThemeColor.Blue,
 	seedColor: '#6750A4',
-	colorScheme: 'rainbow',
 	customTheme: CUSTOM_THEME_PRESET,
 	contrastLevel: ContrastLevel.Default,
 	fontSize: FontSize.Normal,
@@ -25,6 +24,7 @@ const initialSettings: Settings = {
 	historyLength: 100,
 	lockWindow: false,
 	ttsVoiceByLang: {},
+	ttsProvider: TTSProvider.Auto,
 	modelId: GOOGLE_TRANSLATE_MODEL_ID,
 	hideButtonForUserLanguage: false,
 	showPopupOnSelection: false,

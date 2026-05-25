@@ -7,12 +7,13 @@
 >
 	<Icon class={[status?.waiting && 'animate-spin']} />
 </IconButton>
-{#if voices.length && voice && showTTSVoices}
+{#if voice && showVoicesButton}
 	<TTSVoices {targetLang} {voice} {voices} />
 {/if}
 
 <script lang="ts">
 import { type Component, onDestroy } from 'svelte';
+import { TTSProvider } from '~/types';
 import { BrowserTTS } from './utils/BrowserTTS.svelte';
 import { GoogleTTS } from './utils/GoogleTTS.svelte';
 import { storage } from '~/shared/storage.svelte';
@@ -38,24 +39,23 @@ let {
 	showTTSVoices = true,
 }: Props = $props();
 
-let tts = $derived<BrowserTTS | GoogleTTS>(getTTS(targetLang, voices));
+const autoTTSProvider = $derived<boolean>(storage.settings.ttsProvider === TTSProvider.Auto);
+let tts = $derived<BrowserTTS | GoogleTTS>(getTTS(targetLang, voices, autoTTSProvider));
 let	status = $derived<Status>(tts.status);
-
 let title = $derived(status?.error
 	? browser.i18n.getMessage('tooltip_listen_language_is_not_support')
 	: status?.speaking
 		? browser.i18n.getMessage('tooltip_listen_stop')
 		: browser.i18n.getMessage('tooltip_listen_to_the_text'),
 );
-
 let voice = $derived(storage.settings.ttsVoiceByLang && storage.settings.ttsVoiceByLang[targetLang]
 	? voices.find(i => i.name === storage.settings.ttsVoiceByLang[targetLang])
 	: voices[0],
 );
-
 let Icon = $derived<Component>(
 	status?.error ? NoSound : status?.waiting ? ProgressActivity : status?.speaking ? Stop : VolumeUp,
 );
+const showVoicesButton = $derived<boolean>(!!voices.length  && showTTSVoices && autoTTSProvider);
 
 function speak() {
 	if (tts instanceof BrowserTTS) {

@@ -7,7 +7,7 @@
 >
 	{#snippet listboxButton()}
 		<ListboxButton
-			class={[ mode === 'full' ? 'w-52' : 'max-w-32' ]}
+			class={[ mode === 'full' && 'w-52']}
 			lowAccent
 			size="xs"
 			title={button.title}

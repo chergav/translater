@@ -79,7 +79,7 @@
 							aria-label={scheme}
 							type="radio"
 							value={scheme}
-							bind:group={storage.settings.colorScheme}
+							bind:group={colorScheme}
 						>
 						<div
 							class={[
@@ -224,6 +224,7 @@ let {
 	open = $bindable(false),
 }: Props = $props();
 
+let colorScheme = $state<Scheme>('tonal-spot');
 let customColor = $state<string>(storage.settings.seedColor);
 let throttledCustomColor = $state<string>(storage.settings.seedColor);
 let themePreview = $derived<Theme>(storage.themeClass);
@@ -248,7 +249,7 @@ function applyPreviewTheme(hexColor: string, contrastLevel: number, scheme: Sche
 }
 
 function generateAndApplyTheme() {
-	const cssTheme = buildCustomThemeCSS(customColor, storage.settings.colorScheme);
+	const cssTheme = buildCustomThemeCSS(customColor, colorScheme);
 	storage.settings.seedColor = customColor;
 	storage.settings.customTheme = cssTheme;
 	storage.settings.accentColor = ThemeColor.Custom;
@@ -305,7 +306,7 @@ const contrasts: {
 
 $effect(() => {
 	if (open) {
-		applyPreviewTheme(throttledCustomColor, contrastLevel, storage.settings.colorScheme);
+		applyPreviewTheme(throttledCustomColor, contrastLevel, colorScheme);
 	}
 });
 </script>
