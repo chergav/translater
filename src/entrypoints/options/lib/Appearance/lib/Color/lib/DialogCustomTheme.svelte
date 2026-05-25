@@ -224,7 +224,7 @@ let {
 	open = $bindable(false),
 }: Props = $props();
 
-let colorScheme = $state<Scheme>('tonal-spot');
+let colorScheme = $state<Scheme>('rainbow');
 let customColor = $state<string>(storage.settings.seedColor);
 let throttledCustomColor = $state<string>(storage.settings.seedColor);
 let themePreview = $derived<Theme>(storage.themeClass);

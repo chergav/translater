@@ -144,7 +144,7 @@
         "message": "Azaltılmış"
     },
     "options_appearance_contrast": {
-        "message": "Kontrast rengi"
+        "message": "Renk kontrastı"
     },
     "options_appearance_contrast_default": {
         "message": "Varsayılan"
@@ -360,7 +360,7 @@
         "message": "🚀 Diğer uzantılarımı dene"
     },
     "language_auto": {
-        "message": "oto"
+        "message": "otomatik"
     },
     "language_detect": {
         "message": "dili tespit et"
@@ -675,7 +675,7 @@
         "message": "İzlandaca"
     },
     "language_it": {
-        "message": "İtalyanca"
+        "message": "İtalyan"
     },
     "language_iu": {
         "message": "İnuktuca (Heceler)"

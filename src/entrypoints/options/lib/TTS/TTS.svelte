@@ -28,7 +28,7 @@
 </h2>
 
 {#await store.voices}
-	<p>loading ...</p>
+	<Loader class="size-6" />
 {:then voices}
 	{#if voices?.length}
 		<table
@@ -82,6 +82,7 @@ import { type Language, TTSProvider } from '~/types';
 import { storage } from '~/shared/storage.svelte';
 import { store } from '~/entrypoints/options/store.svelte';
 import ConnectedButtonRadio from '~/lib/base/ConnectedButtonRadio.svelte';
+import Loader from '~/lib/Loader.svelte';
 import TTSVoicesItem from './lib/TTSVoicesItem.svelte';
 import { languagesLocalArray, getDisplayedLanguageName } from '~/shared/languages';
 import { getVoices } from '~/entrypoints/content/lib/PopupFull/lib/TTS/utils/tts';

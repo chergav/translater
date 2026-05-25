@@ -5,7 +5,7 @@ import type { ClassValue } from 'svelte/elements';
 import Progress from '~icons/material-symbols/progress-activity';
 
 interface Props {
-	class?: ClassValue
+	class: ClassValue
 }
 
 let { class: className }: Props = $props();

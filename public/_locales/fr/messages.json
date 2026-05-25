@@ -144,7 +144,7 @@
         "message": "Réduit"
     },
     "options_appearance_contrast": {
-        "message": "Couleur contrastée"
+        "message": "Contraste des couleurs"
     },
     "options_appearance_contrast_default": {
         "message": "Par défaut"
@@ -1017,7 +1017,7 @@
         "message": "Tétum"
     },
     "language_tg": {
-        "message": "Tadjik"
+        "message": "tadjik"
     },
     "language_th": {
         "message": "Thaï"

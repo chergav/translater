@@ -144,7 +144,7 @@
         "message": "कमी केले"
     },
     "options_appearance_contrast": {
-        "message": "कॉन्ट्रास्ट रंग"
+        "message": "रंग कॉन्ट्रास्ट"
     },
     "options_appearance_contrast_default": {
         "message": "डीफॉल्ट"
@@ -471,7 +471,7 @@
         "message": "बटक करो"
     },
     "language_bua": {
-        "message": "बुरयात"
+        "message": "बुरयत"
     },
     "language_ca": {
         "message": "कॅटलान"
@@ -678,7 +678,7 @@
         "message": "इटालियन"
     },
     "language_iu": {
-        "message": "Inuktut (अक्षांश)"
+        "message": "Inuktut (सिलॅबिक्स)"
     },
     "language_iu_Latn": {
         "message": "Inuktut (लॅटिन)"

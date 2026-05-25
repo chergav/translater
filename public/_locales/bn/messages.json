@@ -144,7 +144,7 @@
         "message": "হ্রাস করা হয়েছে"
     },
     "options_appearance_contrast": {
-        "message": "কন্ট্রাস্ট রঙ"
+        "message": "রঙের বৈসাদৃশ্য"
     },
     "options_appearance_contrast_default": {
         "message": "ডিফল্ট"
@@ -819,7 +819,7 @@
         "message": "মালায়লাম"
     },
     "language_mn": {
-        "message": "মঙ্গোলিয়ান"
+        "message": "মঙ্গোলীয়"
     },
     "language_mni_Mtei": {
         "message": "মেইটেইলন (মণিপুরি)"

@@ -144,7 +144,7 @@
         "message": "کاهش یافته است"
     },
     "options_appearance_contrast": {
-        "message": "رنگ کنتراست"
+        "message": "تضاد رنگ"
     },
     "options_appearance_contrast_default": {
         "message": "پیش فرض"
@@ -294,7 +294,7 @@
         "message": "پنهان کردن دکمه ترجمه"
     },
     "popup_menu_options_all_settings": {
-        "message": "تمام تنظیمات"
+        "message": "همه تنظیمات"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "به حالت ساده بروید"

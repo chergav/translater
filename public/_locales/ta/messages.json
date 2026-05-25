@@ -144,7 +144,7 @@
         "message": "குறைக்கப்பட்டது"
     },
     "options_appearance_contrast": {
-        "message": "மாறுபட்ட நிறம்"
+        "message": "வண்ண வேறுபாடு"
     },
     "options_appearance_contrast_default": {
         "message": "இயல்புநிலை"
@@ -630,7 +630,7 @@
         "message": "மேங்க்ஸ்"
     },
     "language_ha": {
-        "message": "ஹௌசா"
+        "message": "ஹவுசா"
     },
     "language_haw": {
         "message": "ஹவாய்"

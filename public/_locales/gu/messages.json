@@ -144,7 +144,7 @@
         "message": "ઘટાડી"
     },
     "options_appearance_contrast": {
-        "message": "કોન્ટ્રાસ્ટ રંગ"
+        "message": "રંગ વિરોધાભાસ"
     },
     "options_appearance_contrast_default": {
         "message": "ડિફૉલ્ટ"
@@ -861,7 +861,7 @@
         "message": "નોર્વેજીયન"
     },
     "language_nr": {
-        "message": "નેડેબેલે (દક્ષિણ)"
+        "message": "Ndebele (દક્ષિણ)"
     },
     "language_nso": {
         "message": "સેપેડી"
