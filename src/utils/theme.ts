@@ -78,7 +78,9 @@ export function applyThemeString(
 	if (!sheet) {
 		sheet = new CSSStyleSheet();
 		(globalThis as WithStylesheet)[ssName] = sheet;
-		doc.adoptedStyleSheets.push(sheet);
+		// https://bugzilla.mozilla.org/show_bug.cgi?id=1928865
+		// doc.adoptedStyleSheets.push(sheet);
+		doc.adoptedStyleSheets = [...doc.adoptedStyleSheets, sheet];
 	}
 
 	sheet.replaceSync(themeString);
@@ -92,7 +94,6 @@ export function removeThemeString(
 
 	if (sheet) {
 		doc.adoptedStyleSheets = doc.adoptedStyleSheets.filter(s => s !== sheet);
-
-		// delete (globalThis as WithStylesheet)[ssName];
+		delete (globalThis as WithStylesheet)[ssName];
 	}
 }
