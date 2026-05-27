@@ -72,15 +72,34 @@ export function applyThemeString(
 	themeString: string,
 	ssName = 'custom-theme',
 ) {
+	const isShadowRoot = !(doc instanceof Document);
+	const needsStyleEl = import.meta.env.FIREFOX && isShadowRoot;
+
+	if (needsStyleEl) {
+		// Firefox doesn't support adoptedStyleSheets in Shadow DOM
+		// https://bugzilla.mozilla.org/show_bug.cgi?id=1928865
+		const shadowRoot = doc as unknown as ShadowRoot;
+		const ownerDoc = shadowRoot.host.ownerDocument;
+
+		let styleEl = shadowRoot.querySelector<HTMLStyleElement>(
+			`style[data-name="${ssName}"]`,
+		);
+		if (!styleEl) {
+			styleEl = ownerDoc.createElement('style');
+			styleEl.setAttribute('data-name', ssName);
+			shadowRoot.appendChild(styleEl);
+		}
+		styleEl.textContent = themeString;
+		return;
+	}
+
 	// Get constructable stylesheet
 	let sheet = (globalThis as WithStylesheet)[ssName];
 	// Create a new sheet if it doesn't exist already and save it globally.
 	if (!sheet) {
 		sheet = new CSSStyleSheet();
 		(globalThis as WithStylesheet)[ssName] = sheet;
-		// https://bugzilla.mozilla.org/show_bug.cgi?id=1928865
-		// doc.adoptedStyleSheets.push(sheet);
-		doc.adoptedStyleSheets = [...doc.adoptedStyleSheets, sheet];
+		doc.adoptedStyleSheets.push(sheet);
 	}
 
 	sheet.replaceSync(themeString);
