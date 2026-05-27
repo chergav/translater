@@ -14,7 +14,7 @@
 	{#each alternatives as alt, i (i)}
 		<button
 			class={[
-				'flex max-w-xl min-w-32 cursor-pointer items-center gap-2 px-3 py-1.5 transition-colors',
+				'flex max-w-xl min-w-32 cursor-pointer items-center gap-2 px-3 py-1.5 font-medium transition-colors',
 				'first:rounded-t-xl last:rounded-b-xl',
 				text === alt ?
 					'rounded-xl bg-color-tertiary-container text-color-on-tertiary-container hover:bg-color-tertiary-container/92' :

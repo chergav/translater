@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "Hantera behörigheter"
     },
+    "select_language_pinned": {
+        "message": "Fästa språk"
+    },
+    "select_language_pin_lang": {
+        "message": "Fäst språk till toppen"
+    },
+    "select_language_unpin_lang": {
+        "message": "Ta bort fäst språk"
+    },
+    "select_language_all_langs": {
+        "message": "Alla språk"
+    },
     "select_language_search_placeholder": {
-        "message": "Hitta språk (ISO-kod eller namn)"
+        "message": "språknamn eller ISO-kod"
     },
     "select_language_search_no_results": {
         "message": "Inga resultat"
@@ -690,7 +702,7 @@
         "message": "japanska"
     },
     "language_jam": {
-        "message": "Jamaicanska Patois"
+        "message": "Jamaican Patois"
     },
     "language_jw": {
         "message": "javanesiska"

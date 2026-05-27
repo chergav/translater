@@ -123,7 +123,7 @@
         "message": "Tēma"
     },
     "theme_light": {
-        "message": "Gaiša tēma"
+        "message": "Viegla tēma"
     },
     "theme_system": {
         "message": "Sistēmas tēma"
@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "Pārvaldīt atļaujas"
     },
+    "select_language_pinned": {
+        "message": "Piespraustas valodas"
+    },
+    "select_language_pin_lang": {
+        "message": "Piespraust valodu augšpusē"
+    },
+    "select_language_unpin_lang": {
+        "message": "Noņemiet piesprausto valodu"
+    },
+    "select_language_all_langs": {
+        "message": "Visas valodas"
+    },
     "select_language_search_placeholder": {
-        "message": "Atrast valodas (ISO kods vai nosaukums)"
+        "message": "valodas nosaukums vai ISO kods"
     },
     "select_language_search_no_results": {
         "message": "Nav rezultātu"
@@ -378,7 +390,7 @@
         "message": "Acholi"
     },
     "language_af": {
-        "message": "afrikāņi"
+        "message": "afrikandu"
     },
     "language_ak": {
         "message": "Tvi (Akan)"

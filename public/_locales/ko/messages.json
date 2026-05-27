@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "권한 관리"
     },
+    "select_language_pinned": {
+        "message": "고정된 언어"
+    },
+    "select_language_pin_lang": {
+        "message": "상단에 언어 고정"
+    },
+    "select_language_unpin_lang": {
+        "message": "고정된 언어 제거"
+    },
+    "select_language_all_langs": {
+        "message": "모든 언어"
+    },
     "select_language_search_placeholder": {
-        "message": "언어 찾기(ISO 코드 또는 이름)"
+        "message": "언어 이름 또는 ISO 코드"
     },
     "select_language_search_no_results": {
         "message": "결과 없음"
@@ -1017,7 +1029,7 @@
         "message": "테툼"
     },
     "language_tg": {
-        "message": "타지크어"
+        "message": "타직어"
     },
     "language_th": {
         "message": "태국어"

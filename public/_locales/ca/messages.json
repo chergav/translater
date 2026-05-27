@@ -111,7 +111,7 @@
         "message": "Bloqueja la finestra emergent"
     },
     "options_lock_popup_window_hint": {
-        "message": "La finestra emergent es manté oberta quan feu clic a fora."
+        "message": "La finestra emergent es manté oberta quan feu clic a l'exterior."
     },
     "options_providers_provider": {
         "message": "Proveïdor"
@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "Gestionar els permisos"
     },
+    "select_language_pinned": {
+        "message": "Llengües fixades"
+    },
+    "select_language_pin_lang": {
+        "message": "Fixeu l'idioma a la part superior"
+    },
+    "select_language_unpin_lang": {
+        "message": "Elimina el llenguatge fixat"
+    },
+    "select_language_all_langs": {
+        "message": "Tots els idiomes"
+    },
     "select_language_search_placeholder": {
-        "message": "Cerca idiomes (codi ISO o nom)"
+        "message": "nom de l'idioma o codi ISO"
     },
     "select_language_search_no_results": {
         "message": "Sense resultats"
@@ -801,7 +813,7 @@
         "message": "crioll de Maurici"
     },
     "language_mg": {
-        "message": "malgaix"
+        "message": "malgaxe"
     },
     "language_mh": {
         "message": "Marshallesa"

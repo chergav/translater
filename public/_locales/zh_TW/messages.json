@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "管理權限"
     },
+    "select_language_pinned": {
+        "message": "固定語言"
+    },
+    "select_language_pin_lang": {
+        "message": "將語言置頂"
+    },
+    "select_language_unpin_lang": {
+        "message": "刪除固定語言"
+    },
+    "select_language_all_langs": {
+        "message": "所有語言"
+    },
     "select_language_search_placeholder": {
-        "message": "尋找語言（ISO 代碼或名稱）"
+        "message": "語言名稱或 ISO 代碼"
     },
     "select_language_search_no_results": {
         "message": "沒有結果"

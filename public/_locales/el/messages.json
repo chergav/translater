@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "Διαχείριση δικαιωμάτων"
     },
+    "select_language_pinned": {
+        "message": "Καρφιτσωμένες γλώσσες"
+    },
+    "select_language_pin_lang": {
+        "message": "Καρφιτσώστε τη γλώσσα στην κορυφή"
+    },
+    "select_language_unpin_lang": {
+        "message": "Κατάργηση καρφιτσωμένης γλώσσας"
+    },
+    "select_language_all_langs": {
+        "message": "Όλες οι γλώσσες"
+    },
     "select_language_search_placeholder": {
-        "message": "Εύρεση γλωσσών (κωδικός ISO ή όνομα)"
+        "message": "όνομα γλώσσας ή κωδικός ISO"
     },
     "select_language_search_no_results": {
         "message": "Κανένα αποτέλεσμα"

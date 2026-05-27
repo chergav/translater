@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "परवानग्या व्यवस्थापित करा"
     },
+    "select_language_pinned": {
+        "message": "पिन केलेल्या भाषा"
+    },
+    "select_language_pin_lang": {
+        "message": "भाषा शीर्षस्थानी पिन करा"
+    },
+    "select_language_unpin_lang": {
+        "message": "पिन केलेली भाषा काढा"
+    },
+    "select_language_all_langs": {
+        "message": "सर्व भाषा"
+    },
     "select_language_search_placeholder": {
-        "message": "भाषा शोधा (ISO कोड किंवा नाव)"
+        "message": "भाषा नाव किंवा ISO कोड"
     },
     "select_language_search_no_results": {
         "message": "कोणतेही परिणाम नाहीत"

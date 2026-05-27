@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "إدارة الأذونات"
     },
+    "select_language_pinned": {
+        "message": "اللغات المثبتة"
+    },
+    "select_language_pin_lang": {
+        "message": "تثبيت اللغة في الأعلى"
+    },
+    "select_language_unpin_lang": {
+        "message": "إزالة اللغة المثبتة"
+    },
+    "select_language_all_langs": {
+        "message": "جميع اللغات"
+    },
     "select_language_search_placeholder": {
-        "message": "البحث عن اللغات (رمز ISO أو الاسم)"
+        "message": "اسم اللغة أو رمز ISO"
     },
     "select_language_search_no_results": {
         "message": "لا توجد نتائج"

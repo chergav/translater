@@ -13,12 +13,12 @@
 	{#if open}
 		<div
 			class={[
-				'absolute z-20 flex max-h-80 flex-col overflow-hidden rounded-lg shadow-sm',
+				'absolute z-20 flex max-h-96 flex-col overflow-hidden rounded-lg shadow-sm',
 				'bg-color-surface-container-low',
 				isFlipped ? 'bottom-full' : 'top-full',
 				alignClass,
 			]}
-			onintrostart={() => scrollToSelected()}
+			// onintrostart={() => scrollToSelected()}
 			in:fly={{
 				y: flyY,
 				duration: DURATION_IN,
@@ -89,10 +89,10 @@ let {
 	onchange,
 	align = 'start',
 	quick = false,
-	columns = 2,
+	columns = 1,
 }: Props = $props();
 
-const DROPDOWN_HEIGHT = 320;
+const DROPDOWN_HEIGHT = 384;
 let containerRef = $state<HTMLElement | null>(null);
 let searchRef = $state<HTMLInputElement | null>(null);
 let isFlipped = $state(false);
@@ -207,11 +207,11 @@ function triggerKeydown(e: KeyboardEvent) {
 	}
 }
 
-function getSelectedItem():  HTMLElement | undefined {
-	const items = getItems(containerRef, 'option');
-	const selectedItem = items.find(item => item.ariaSelected === 'true');
-	return selectedItem;
-}
+// function getSelectedItem():  HTMLElement | undefined {
+// 	const items = getItems(containerRef, 'option');
+// 	const selectedItem = items.find(item => item.ariaSelected === 'true');
+// 	return selectedItem;
+// }
 
 // async function focusSelected() {
 // 	await tick();
@@ -219,8 +219,8 @@ function getSelectedItem():  HTMLElement | undefined {
 // 	selectedItem?.focus({ preventScroll: true });
 // }
 
-function scrollToSelected() {
-	const selectedItem = getSelectedItem();
-	selectedItem?.scrollIntoView({ block: 'nearest' });
-}
+// function scrollToSelected() {
+// 	const selectedItem = getSelectedItem();
+// 	selectedItem?.scrollIntoView({ block: 'nearest' });
+// }
 </script>

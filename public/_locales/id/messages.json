@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "Kelola izin"
     },
+    "select_language_pinned": {
+        "message": "Bahasa yang disematkan"
+    },
+    "select_language_pin_lang": {
+        "message": "Sematkan bahasa ke atas"
+    },
+    "select_language_unpin_lang": {
+        "message": "Hapus bahasa yang disematkan"
+    },
+    "select_language_all_langs": {
+        "message": "Semua bahasa"
+    },
     "select_language_search_placeholder": {
-        "message": "Temukan bahasa (kode atau nama ISO)"
+        "message": "nama bahasa atau kode ISO"
     },
     "select_language_search_no_results": {
         "message": "Tidak ada hasil"
@@ -987,7 +999,7 @@
         "message": "Swati"
     },
     "language_st": {
-        "message": "Sesoto"
+        "message": "Sesotho"
     },
     "language_su": {
         "message": "Sunda"
@@ -1014,7 +1026,7 @@
         "message": "Telugu"
     },
     "language_tet": {
-        "message": "bahasa Tetun"
+        "message": "bahasa Tetum"
     },
     "language_tg": {
         "message": "Tajik"

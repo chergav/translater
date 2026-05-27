@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "Pamahalaan ang mga pahintulot"
     },
+    "select_language_pinned": {
+        "message": "Mga naka-pin na wika"
+    },
+    "select_language_pin_lang": {
+        "message": "I-pin ang wika sa itaas"
+    },
+    "select_language_unpin_lang": {
+        "message": "Alisin ang naka-pin na wika"
+    },
+    "select_language_all_langs": {
+        "message": "Lahat ng wika"
+    },
     "select_language_search_placeholder": {
-        "message": "Maghanap ng mga wika (ISO code o pangalan)"
+        "message": "pangalan ng wika o ISO code"
     },
     "select_language_search_no_results": {
         "message": "Walang resulta"

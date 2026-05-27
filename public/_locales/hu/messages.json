@@ -18,7 +18,7 @@
         "message": "Nyissa meg a Fordítót"
     },
     "popup_or": {
-        "message": "vagy"
+        "message": "Or"
     },
     "options_tab_general": {
         "message": "Általános beállítások"
@@ -39,7 +39,7 @@
         "message": "Törölje"
     },
     "button_label_cancel": {
-        "message": "Mégsem"
+        "message": "Mégse"
     },
     "options_general_translation_button": {
         "message": "Fordítás gomb"
@@ -240,7 +240,7 @@
         "message": "Ha valami nem működik, vagy bármilyen javaslata van, kérjük, jelezze itt"
     },
     "options_support_donations": {
-        "message": "Ha szeretné támogatni ezt az ingyenes szoftvert"
+        "message": "Ha támogatni szeretné ezt az ingyenes szoftvert"
     },
     "text_expand": {
         "message": "Többet"
@@ -345,13 +345,25 @@
         "message": "Indítás engedélyezése Firefoxban"
     },
     "forefox_perm_text": {
-        "message": "Ennek a bővítménynek szüksége van az Ön engedélyére a webhelyek eléréséhez és lefordításához a Firefoxban"
+        "message": "Ennek a bővítménynek szüksége van az Ön engedélyére a webhelyek eléréséhez és a Firefoxban való lefordításához"
     },
     "forefox_perm_button": {
         "message": "Engedélyek kezelése"
     },
+    "select_language_pinned": {
+        "message": "Rögzített nyelvek"
+    },
+    "select_language_pin_lang": {
+        "message": "Nyelv rögzítése a tetejére"
+    },
+    "select_language_unpin_lang": {
+        "message": "A rögzített nyelv eltávolítása"
+    },
+    "select_language_all_langs": {
+        "message": "Minden nyelv"
+    },
     "select_language_search_placeholder": {
-        "message": "Nyelvek keresése (ISO kód vagy név)"
+        "message": "nyelv neve vagy ISO kódja"
     },
     "select_language_search_no_results": {
         "message": "Nincs eredmény"

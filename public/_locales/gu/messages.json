@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "પરવાનગીઓનું સંચાલન કરો"
     },
+    "select_language_pinned": {
+        "message": "પિન કરેલી ભાષાઓ"
+    },
+    "select_language_pin_lang": {
+        "message": "ભાષાને ટોચ પર પિન કરો"
+    },
+    "select_language_unpin_lang": {
+        "message": "પિન કરેલી ભાષા દૂર કરો"
+    },
+    "select_language_all_langs": {
+        "message": "બધી ભાષાઓ"
+    },
     "select_language_search_placeholder": {
-        "message": "ભાષાઓ શોધો (ISO કોડ અથવા નામ)"
+        "message": "ભાષા નામ અથવા ISO કોડ"
     },
     "select_language_search_no_results": {
         "message": "કોઈ પરિણામ નથી"
@@ -585,7 +597,7 @@
         "message": "ફિજિયન"
     },
     "language_fo": {
-        "message": "ફેરોઝ"
+        "message": "ફરોઝ"
     },
     "language_fon": {
         "message": "ફોન"
@@ -861,7 +873,7 @@
         "message": "નોર્વેજીયન"
     },
     "language_nr": {
-        "message": "Ndebele (દક્ષિણ)"
+        "message": "નેડેબેલે (દક્ષિણ)"
     },
     "language_nso": {
         "message": "સેપેડી"

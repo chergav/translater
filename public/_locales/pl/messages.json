@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "Zarządzaj uprawnieniami"
     },
+    "select_language_pinned": {
+        "message": "Przypięte języki"
+    },
+    "select_language_pin_lang": {
+        "message": "Przypnij język na górze"
+    },
+    "select_language_unpin_lang": {
+        "message": "Usuń przypięty język"
+    },
+    "select_language_all_langs": {
+        "message": "Wszystkie języki"
+    },
     "select_language_search_placeholder": {
-        "message": "Znajdź języki (kod ISO lub nazwa)"
+        "message": "nazwa języka lub kod ISO"
     },
     "select_language_search_no_results": {
         "message": "Brak wyników"
@@ -426,7 +438,7 @@
         "message": "białoruski"
     },
     "language_bem": {
-        "message": "Bembę"
+        "message": "Bemba"
     },
     "language_ber": {
         "message": "Tamazight (Tifinagh)"
@@ -834,7 +846,7 @@
         "message": "Malajski (Jawi)"
     },
     "language_mt": {
-        "message": "maltański"
+        "message": "Maltański"
     },
     "language_mwr": {
         "message": "Marwadi"
@@ -1113,7 +1125,7 @@
         "message": "Zapotek"
     },
     "language_zh_CN": {
-        "message": "chiński (uproszczony)"
+        "message": "Chiński (uproszczony)"
     },
     "language_zh_TW": {
         "message": "chiński (tradycyjny)"

@@ -80,7 +80,6 @@
 							<ModeFull />
 						</IconButton>
 					{/if}
-
 					<IconButton
 						color="standard"
 						onclick={closePopup}

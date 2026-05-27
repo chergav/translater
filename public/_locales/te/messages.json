@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "అనుమతులను నిర్వహించండి"
     },
+    "select_language_pinned": {
+        "message": "పిన్ చేసిన భాషలు"
+    },
+    "select_language_pin_lang": {
+        "message": "పైభాగానికి భాషను పిన్ చేయండి"
+    },
+    "select_language_unpin_lang": {
+        "message": "పిన్ చేసిన భాషను తీసివేయండి"
+    },
+    "select_language_all_langs": {
+        "message": "అన్ని భాషలు"
+    },
     "select_language_search_placeholder": {
-        "message": "భాషలను కనుగొనండి (ISO కోడ్ లేదా పేరు)"
+        "message": "భాష పేరు లేదా ISO కోడ్"
     },
     "select_language_search_no_results": {
         "message": "ఫలితాలు లేవు"
@@ -372,7 +384,7 @@
         "message": "అబ్ఖాజ్"
     },
     "language_ace": {
-        "message": "అచెనెస్"
+        "message": "అచెనీస్"
     },
     "language_ach": {
         "message": "అచోలి"
@@ -864,7 +876,7 @@
         "message": "Ndebele (దక్షిణం)"
     },
     "language_nso": {
-        "message": "సెపెడీ"
+        "message": "సెపెడి"
     },
     "language_nus": {
         "message": "న్యూర్"

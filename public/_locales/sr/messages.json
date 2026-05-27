@@ -129,7 +129,7 @@
         "message": "Системска тема"
     },
     "theme_dark": {
-        "message": "Мрачна тема"
+        "message": "Тамна тема"
     },
     "options_appearance_animations": {
         "message": "Анимације"
@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "Управљајте дозволама"
     },
+    "select_language_pinned": {
+        "message": "Закачени језици"
+    },
+    "select_language_pin_lang": {
+        "message": "Закачите језик на врх"
+    },
+    "select_language_unpin_lang": {
+        "message": "Уклоните закачени језик"
+    },
+    "select_language_all_langs": {
+        "message": "Сви језици"
+    },
     "select_language_search_placeholder": {
-        "message": "Пронађите језике (ИСО код или име)"
+        "message": "назив језика или ИСО код"
     },
     "select_language_search_no_results": {
         "message": "Нема резултата"

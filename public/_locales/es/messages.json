@@ -132,7 +132,7 @@
         "message": "tema oscuro"
     },
     "options_appearance_animations": {
-        "message": "Animaciones"
+        "message": "animaciones"
     },
     "options_appearance_animations_enabled": {
         "message": "Habilitado"
@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "Administrar permisos"
     },
+    "select_language_pinned": {
+        "message": "Idiomas fijados"
+    },
+    "select_language_pin_lang": {
+        "message": "Fijar idioma arriba"
+    },
+    "select_language_unpin_lang": {
+        "message": "Quitar idioma fijado"
+    },
+    "select_language_all_langs": {
+        "message": "Todos los idiomas"
+    },
     "select_language_search_placeholder": {
-        "message": "Buscar idiomas (código ISO o nombre)"
+        "message": "nombre del idioma o código ISO"
     },
     "select_language_search_no_results": {
         "message": "Sin resultados"

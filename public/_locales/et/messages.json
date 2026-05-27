@@ -48,7 +48,7 @@
         "message": "ühtegi saiti pole valitud"
     },
     "options_general_show_on_selected": {
-        "message": "Kuva hüpikaken, kui tekst on valitud"
+        "message": "Kui tekst on valitud, kuvatakse hüpikaken"
     },
     "options_general_show_on_selected_hint": {
         "message": "Hüpikaken ilmub kohe pärast teksti valimist."
@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "Lubade haldamine"
     },
+    "select_language_pinned": {
+        "message": "Kinnitatud keeled"
+    },
+    "select_language_pin_lang": {
+        "message": "Kinnitage keel üles"
+    },
+    "select_language_unpin_lang": {
+        "message": "Eemaldage kinnitatud keel"
+    },
+    "select_language_all_langs": {
+        "message": "Kõik keeled"
+    },
     "select_language_search_placeholder": {
-        "message": "Keelte otsimine (ISO-kood või nimi)"
+        "message": "keele nimi või ISO kood"
     },
     "select_language_search_no_results": {
         "message": "Tulemusi pole"
@@ -402,7 +414,7 @@
         "message": "Awadhi"
     },
     "language_ay": {
-        "message": "Aimara"
+        "message": "Aymara"
     },
     "language_az": {
         "message": "Aserbaidžaan"
@@ -687,7 +699,7 @@
         "message": "heebrea keel"
     },
     "language_ja": {
-        "message": "jaapanlane"
+        "message": "Jaapani"
     },
     "language_jam": {
         "message": "Jamaica Patois"

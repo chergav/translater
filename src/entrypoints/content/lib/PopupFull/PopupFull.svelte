@@ -40,9 +40,11 @@
 				{#if store.translated?.spell?.spell_html_res &&
 				store.translated.sentence.orig !== store.translated.spell.spell_res}
 					<div class="flex items-center gap-1 p-1">
-						<span>{browser.i18n.getMessage('popup_perhaps_you_meant')}</span>
+						<span class="text-sm text-color-on-surface-variant">
+							{browser.i18n.getMessage('popup_perhaps_you_meant')}
+						</span>
 						<button
-							class="inline-flex flex-wrap gap-x-1 text-sm text-blue-600"
+							class="inline-flex flex-wrap gap-x-1 text-start text-sm text-color-primary"
 							onclick={() => setCorrectText(store.translated?.spell.spell_res)}
 							type="button"
 						>
@@ -61,9 +63,11 @@
 					store.translated?.ld_result.srclangs &&
 					store.translated?.ld_result.srclangs[0] !== storage.settings.sourceLang}
 					<div class="flex items-center gap-1 p-1">
-						<span>{browser.i18n.getMessage('popup_original_language')}</span>
+						<span class="text-sm text-color-on-surface-variant">
+							{browser.i18n.getMessage('popup_original_language')}
+						</span>
 						<button
-							class="inline-flex text-sm text-blue-600"
+							class="inline-flex text-sm text-color-primary"
 							onclick={() => setCorrectSourceLang(store.translated?.ld_result.srclangs[0])}
 							type="button"
 						>

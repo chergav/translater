@@ -234,7 +234,7 @@
         "message": "Groß (18px)"
     },
     "options_font_size_xl": {
-        "message": "Extra groß (20px)"
+        "message": "Extra groß (20 Pixel)"
     },
     "options_support_msg": {
         "message": "Wenn etwas nicht funktioniert oder Sie Vorschläge haben, lassen Sie es mich bitte hier wissen"
@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "Berechtigungen verwalten"
     },
+    "select_language_pinned": {
+        "message": "Angepinnte Sprachen"
+    },
+    "select_language_pin_lang": {
+        "message": "Sprache nach oben pinnen"
+    },
+    "select_language_unpin_lang": {
+        "message": "Angeheftete Sprache entfernen"
+    },
+    "select_language_all_langs": {
+        "message": "Alle Sprachen"
+    },
     "select_language_search_placeholder": {
-        "message": "Sprachen suchen (ISO-Code oder Name)"
+        "message": "Sprachname oder ISO-Code"
     },
     "select_language_search_no_results": {
         "message": "Keine Ergebnisse"

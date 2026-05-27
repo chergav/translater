@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "അനുമതികൾ നിയന്ത്രിക്കുക"
     },
+    "select_language_pinned": {
+        "message": "പിൻ ചെയ്‌ത ഭാഷകൾ"
+    },
+    "select_language_pin_lang": {
+        "message": "മുകളിലേക്ക് ഭാഷ പിൻ ചെയ്യുക"
+    },
+    "select_language_unpin_lang": {
+        "message": "പിൻ ചെയ്‌ത ഭാഷ നീക്കം ചെയ്യുക"
+    },
+    "select_language_all_langs": {
+        "message": "എല്ലാ ഭാഷകളും"
+    },
     "select_language_search_placeholder": {
-        "message": "ഭാഷകൾ കണ്ടെത്തുക (ISO കോഡ് അല്ലെങ്കിൽ പേര്)"
+        "message": "ഭാഷയുടെ പേര് അല്ലെങ്കിൽ ISO കോഡ്"
     },
     "select_language_search_no_results": {
         "message": "ഫലങ്ങളൊന്നുമില്ല"
@@ -402,7 +414,7 @@
         "message": "കാലാവധി"
     },
     "language_ay": {
-        "message": "അയ്മാര"
+        "message": "അയ്മര"
     },
     "language_az": {
         "message": "അസർബൈജാനി"
@@ -678,7 +690,7 @@
         "message": "ഇറ്റാലിയൻ"
     },
     "language_iu": {
-        "message": "ഇനുക്തുട്ട് (സിലബിക്സ്)"
+        "message": "Inuktut (സിലബിക്സ്)"
     },
     "language_iu_Latn": {
         "message": "ഇനുക്തുട്ട് (ലാറ്റിൻ)"
@@ -864,7 +876,7 @@
         "message": "എൻഡെബെലെ (തെക്ക്)"
     },
     "language_nso": {
-        "message": "സെപ്പേഡി"
+        "message": "സെപീഡി"
     },
     "language_nus": {
         "message": "ന്യൂയർ"
@@ -1113,7 +1125,7 @@
         "message": "സപ്പോടെക്"
     },
     "language_zh_CN": {
-        "message": "ചൈനീസ് (ലളിതമായ)"
+        "message": "ചൈനീസ് (ലളിതമാക്കിയത്)"
     },
     "language_zh_TW": {
         "message": "ചൈനീസ് (പരമ്പരാഗതം)"

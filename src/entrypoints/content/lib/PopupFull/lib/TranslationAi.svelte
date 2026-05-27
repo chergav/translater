@@ -8,7 +8,7 @@
 		{store.translationAi.text}
 	</div>
 {:else}
-	<p class="text-color-on-surface-variant">
+	<p class="text-sm text-color-on-surface-variant">
 		{browser.i18n.getMessage('popup_placeholder_translation')}
 	</p>
 {/if}

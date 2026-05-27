@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "ፈቃዶችን ያስተዳድሩ"
     },
+    "select_language_pinned": {
+        "message": "የተሰኩ ቋንቋዎች"
+    },
+    "select_language_pin_lang": {
+        "message": "ቋንቋውን ከላይ ይሰኩት"
+    },
+    "select_language_unpin_lang": {
+        "message": "የተሰካውን ቋንቋ አስወግድ"
+    },
+    "select_language_all_langs": {
+        "message": "ሁሉም ቋንቋዎች"
+    },
     "select_language_search_placeholder": {
-        "message": "ቋንቋዎችን ያግኙ (አይኤስኦ ኮድ ወይም ስም)"
+        "message": "የቋንቋ ስም ወይም የ ISO ኮድ"
     },
     "select_language_search_no_results": {
         "message": "ምንም ውጤት የለም።"

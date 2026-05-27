@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "Upravljanje dopuštenjima"
     },
+    "select_language_pinned": {
+        "message": "Prikvačeni jezici"
+    },
+    "select_language_pin_lang": {
+        "message": "Prikvači jezik na vrh"
+    },
+    "select_language_unpin_lang": {
+        "message": "Uklonite prikvačeni jezik"
+    },
+    "select_language_all_langs": {
+        "message": "Svi jezici"
+    },
     "select_language_search_placeholder": {
-        "message": "Pronađite jezike (ISO kod ili naziv)"
+        "message": "naziv jezika ili ISO kod"
     },
     "select_language_search_no_results": {
         "message": "Nema rezultata"

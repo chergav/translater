@@ -39,7 +39,7 @@
         "message": "ಅಳಿಸಿ"
     },
     "button_label_cancel": {
-        "message": "ರದ್ದುಮಾಡಿ"
+        "message": "ರದ್ದುಮಾಡು"
     },
     "options_general_translation_button": {
         "message": "ಅನುವಾದ ಬಟನ್"
@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "ಅನುಮತಿಗಳನ್ನು ನಿರ್ವಹಿಸಿ"
     },
+    "select_language_pinned": {
+        "message": "ಪಿನ್ ಮಾಡಿದ ಭಾಷೆಗಳು"
+    },
+    "select_language_pin_lang": {
+        "message": "ಭಾಷೆಯನ್ನು ಮೇಲಕ್ಕೆ ಪಿನ್ ಮಾಡಿ"
+    },
+    "select_language_unpin_lang": {
+        "message": "ಪಿನ್ ಮಾಡಿದ ಭಾಷೆಯನ್ನು ತೆಗೆದುಹಾಕಿ"
+    },
+    "select_language_all_langs": {
+        "message": "ಎಲ್ಲಾ ಭಾಷೆಗಳು"
+    },
     "select_language_search_placeholder": {
-        "message": "ಭಾಷೆಗಳನ್ನು ಹುಡುಕಿ (ISO ಕೋಡ್ ಅಥವಾ ಹೆಸರು)"
+        "message": "ಭಾಷೆಯ ಹೆಸರು ಅಥವಾ ISO ಕೋಡ್"
     },
     "select_language_search_no_results": {
         "message": "ಯಾವುದೇ ಫಲಿತಾಂಶಗಳಿಲ್ಲ"
@@ -606,7 +618,7 @@
         "message": "ಫ್ರಿಸಿಯನ್"
     },
     "language_ga": {
-        "message": "ಐರಿಶ್"
+        "message": "ಐರಿಷ್"
     },
     "language_gaa": {
         "message": "ಗಾ"
@@ -888,7 +900,7 @@
         "message": "ಪಂಜಾಬಿ (ಗುರುಮುಖಿ)"
     },
     "language_pa_Arab": {
-        "message": "ಪಂಜಾಬಿ (ಷಾಮುಖಿ)"
+        "message": "ಪಂಜಾಬಿ (ಶಾಮುಖಿ)"
     },
     "language_pag": {
         "message": "ಪಂಗಾಸಿನನ್"

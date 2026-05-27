@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "Spravovať povolenia"
     },
+    "select_language_pinned": {
+        "message": "Pripnuté jazyky"
+    },
+    "select_language_pin_lang": {
+        "message": "Pripnúť jazyk na začiatok"
+    },
+    "select_language_unpin_lang": {
+        "message": "Odstráňte pripnutý jazyk"
+    },
+    "select_language_all_langs": {
+        "message": "Všetky jazyky"
+    },
     "select_language_search_placeholder": {
-        "message": "Nájsť jazyky (ISO kód alebo názov)"
+        "message": "názov jazyka alebo kód ISO"
     },
     "select_language_search_no_results": {
         "message": "Žiadne výsledky"

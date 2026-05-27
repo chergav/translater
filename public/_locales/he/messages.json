@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "נהל הרשאות"
     },
+    "select_language_pinned": {
+        "message": "שפות מוצמדות"
+    },
+    "select_language_pin_lang": {
+        "message": "הצמד את השפה למעלה"
+    },
+    "select_language_unpin_lang": {
+        "message": "הסר שפה מוצמדת"
+    },
+    "select_language_all_langs": {
+        "message": "כל השפות"
+    },
     "select_language_search_placeholder": {
-        "message": "מצא שפות (קוד ISO או שם)"
+        "message": "שם שפה או קוד ISO"
     },
     "select_language_search_no_results": {
         "message": "אין תוצאות"

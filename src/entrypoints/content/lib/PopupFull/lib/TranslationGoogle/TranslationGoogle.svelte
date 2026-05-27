@@ -14,7 +14,7 @@
 		<Loader class="size-6" />
 	</div>
 {:else}
-	<p class="text-color-on-surface-variant">
+	<p class="text-sm text-color-on-surface-variant">
 		{browser.i18n.getMessage('popup_placeholder_translation')}
 	</p>
 {/if}

@@ -36,7 +36,7 @@
         "message": "সমর্থন"
     },
     "button_label_delete": {
-        "message": "মুছে দিন"
+        "message": "মুছুন"
     },
     "button_label_cancel": {
         "message": "বাতিল করুন"
@@ -324,7 +324,7 @@
         "message": "ভাষা সমর্থন নয়"
     },
     "tooltip_go_back": {
-        "message": "ফিরে"
+        "message": "ব্যাক"
     },
     "tooltip_go_forward": {
         "message": "ফরোয়ার্ড"
@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "অনুমতি পরিচালনা করুন"
     },
+    "select_language_pinned": {
+        "message": "পিন করা ভাষা"
+    },
+    "select_language_pin_lang": {
+        "message": "ভাষাকে উপরে পিন করুন"
+    },
+    "select_language_unpin_lang": {
+        "message": "পিন করা ভাষা সরান"
+    },
+    "select_language_all_langs": {
+        "message": "সব ভাষা"
+    },
     "select_language_search_placeholder": {
-        "message": "ভাষা খুঁজুন (ISO কোড বা নাম)"
+        "message": "ভাষার নাম বা আইএসও কোড"
     },
     "select_language_search_no_results": {
         "message": "কোন ফলাফল নেই"
@@ -435,7 +447,7 @@
         "message": "তামাজাইট"
     },
     "language_bew": {
-        "message": "বেতাউই"
+        "message": "বেতাবি"
     },
     "language_bg": {
         "message": "বুলগেরিয়ান"
@@ -567,7 +579,7 @@
         "message": "বাস্ক"
     },
     "language_fa": {
-        "message": "ফার্সি"
+        "message": "ফারসি"
     },
     "language_fa_AF": {
         "message": "দারি"
@@ -705,7 +717,7 @@
         "message": "কিউকিচি'"
     },
     "language_kg": {
-        "message": "কিকঙ্গো"
+        "message": "কিকংগো"
     },
     "language_kha": {
         "message": "খাসি"
@@ -747,7 +759,7 @@
         "message": "ল্যাটিন"
     },
     "language_lb": {
-        "message": "লাক্সেমবার্গিশ"
+        "message": "লুক্সেমবার্গিশ"
     },
     "language_lg": {
         "message": "লুগান্ডা"

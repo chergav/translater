@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "Gérer les autorisations"
     },
+    "select_language_pinned": {
+        "message": "Langues épinglées"
+    },
+    "select_language_pin_lang": {
+        "message": "Épingler la langue en haut"
+    },
+    "select_language_unpin_lang": {
+        "message": "Supprimer la langue épinglée"
+    },
+    "select_language_all_langs": {
+        "message": "Toutes les langues"
+    },
     "select_language_search_placeholder": {
-        "message": "Rechercher des langues (code ISO ou nom)"
+        "message": "nom de la langue ou code ISO"
     },
     "select_language_search_no_results": {
         "message": "Aucun résultat"
@@ -927,7 +939,7 @@
         "message": "Romani"
     },
     "language_ru": {
-        "message": "russe"
+        "message": "Russe"
     },
     "language_rw": {
         "message": "kinyarwanda"

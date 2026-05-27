@@ -3,7 +3,7 @@
         "message": "مترجم - ترجمه متن انتخاب شده"
     },
     "app_description": {
-        "message": "متن انتخاب شده را با Google Translate ترجمه کنید"
+        "message": "متن انتخابی را با Google Translate ترجمه کنید"
     },
     "context_menus_title": {
         "message": "ترجمه متن انتخاب شده"
@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "مجوزها را مدیریت کنید"
     },
+    "select_language_pinned": {
+        "message": "زبان های پین شده"
+    },
+    "select_language_pin_lang": {
+        "message": "زبان را به بالا پین کنید"
+    },
+    "select_language_unpin_lang": {
+        "message": "زبان پین شده را حذف کنید"
+    },
+    "select_language_all_langs": {
+        "message": "همه زبان ها"
+    },
     "select_language_search_placeholder": {
-        "message": "یافتن زبان ها (کد یا نام ISO)"
+        "message": "نام زبان یا کد ISO"
     },
     "select_language_search_no_results": {
         "message": "هیچ نتیجه ای وجود ندارد"
@@ -519,7 +531,7 @@
         "message": "چوواش"
     },
     "language_cy": {
-        "message": "ولز"
+        "message": "ولزی"
     },
     "language_da": {
         "message": "دانمارکی"

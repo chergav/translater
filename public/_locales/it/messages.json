@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "Gestisci le autorizzazioni"
     },
+    "select_language_pinned": {
+        "message": "Lingue appuntate"
+    },
+    "select_language_pin_lang": {
+        "message": "Aggiungi la lingua in alto"
+    },
+    "select_language_unpin_lang": {
+        "message": "Rimuovi la lingua bloccata"
+    },
+    "select_language_all_langs": {
+        "message": "Tutte le lingue"
+    },
     "select_language_search_placeholder": {
-        "message": "Trova lingue (codice ISO o nome)"
+        "message": "nome della lingua o codice ISO"
     },
     "select_language_search_no_results": {
         "message": "Nessun risultato"
@@ -474,7 +486,7 @@
         "message": "Buriato"
     },
     "language_ca": {
-        "message": "Catalano"
+        "message": "catalano"
     },
     "language_ce": {
         "message": "Ceceno"
@@ -747,7 +759,7 @@
         "message": "latino"
     },
     "language_lb": {
-        "message": "Lussemburghese"
+        "message": "lussemburghese"
     },
     "language_lg": {
         "message": "Uganda"

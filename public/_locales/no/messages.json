@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "Administrer tillatelser"
     },
+    "select_language_pinned": {
+        "message": "Festede språk"
+    },
+    "select_language_pin_lang": {
+        "message": "Fest språk til toppen"
+    },
+    "select_language_unpin_lang": {
+        "message": "Fjern festet språk"
+    },
+    "select_language_all_langs": {
+        "message": "Alle språk"
+    },
     "select_language_search_placeholder": {
-        "message": "Finn språk (ISO-kode eller navn)"
+        "message": "språknavn eller ISO-kode"
     },
     "select_language_search_no_results": {
         "message": "Ingen resultater"
@@ -459,7 +471,7 @@
         "message": "tibetansk"
     },
     "language_br": {
-        "message": "Bretonsk"
+        "message": "Breton"
     },
     "language_bs": {
         "message": "bosnisk"
@@ -798,10 +810,10 @@
         "message": "Mamma"
     },
     "language_mfe": {
-        "message": "mauritisk kreolsk"
+        "message": "Mauritisk kreolsk"
     },
     "language_mg": {
-        "message": "madagaskisk"
+        "message": "Madagaskar"
     },
     "language_mh": {
         "message": "Marshalleser"

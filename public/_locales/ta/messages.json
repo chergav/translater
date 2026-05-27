@@ -237,7 +237,7 @@
         "message": "கூடுதல் பெரியது (20px)"
     },
     "options_support_msg": {
-        "message": "ஏதாவது வேலை செய்யவில்லை என்றால், அல்லது உங்களுக்கு ஏதேனும் பரிந்துரைகள் இருந்தால், தயவுசெய்து எனக்கு இங்கே தெரிவிக்கவும்"
+        "message": "ஏதாவது வேலை செய்யவில்லை என்றால் அல்லது உங்களுக்கு ஏதேனும் பரிந்துரைகள் இருந்தால், தயவுசெய்து எனக்கு இங்கே தெரியப்படுத்தவும்"
     },
     "options_support_donations": {
         "message": "நீங்கள் இந்த இலவச மென்பொருளை ஆதரிக்க விரும்பினால்"
@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "அனுமதிகளை நிர்வகிக்கவும்"
     },
+    "select_language_pinned": {
+        "message": "பின் செய்யப்பட்ட மொழிகள்"
+    },
+    "select_language_pin_lang": {
+        "message": "மேலே மொழியை பின் செய்யவும்"
+    },
+    "select_language_unpin_lang": {
+        "message": "பின் செய்யப்பட்ட மொழியை அகற்று"
+    },
+    "select_language_all_langs": {
+        "message": "அனைத்து மொழிகளும்"
+    },
     "select_language_search_placeholder": {
-        "message": "மொழிகளைக் கண்டறியவும் (ISO குறியீடு அல்லது பெயர்)"
+        "message": "மொழி பெயர் அல்லது ISO குறியீடு"
     },
     "select_language_search_no_results": {
         "message": "முடிவுகள் இல்லை"
@@ -582,7 +594,7 @@
         "message": "பிலிப்பினோ (டகாலாக்)"
     },
     "language_fj": {
-        "message": "பிஜியன்"
+        "message": "ஃபிஜியன்"
     },
     "language_fo": {
         "message": "ஃபரோஸ்"
@@ -630,7 +642,7 @@
         "message": "மேங்க்ஸ்"
     },
     "language_ha": {
-        "message": "ஹவுசா"
+        "message": "ஹௌசா"
     },
     "language_haw": {
         "message": "ஹவாய்"
@@ -663,7 +675,7 @@
         "message": "இபன்"
     },
     "language_id": {
-        "message": "இந்தோனேசியன்"
+        "message": "இந்தோனேஷியன்"
     },
     "language_ig": {
         "message": "இக்போ"

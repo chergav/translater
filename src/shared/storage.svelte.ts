@@ -14,6 +14,7 @@ const initialSettings: Settings = {
 	fontSize: FontSize.Normal,
 	sourceLang: 'auto',
 	targetLang: getUILanguageCode(),
+	pinedLangs: [],
 	inlineButtonShow: true,
 	textFieldButtonShow: true,
 	showOriginalText: true,

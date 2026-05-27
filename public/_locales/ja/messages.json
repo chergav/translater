@@ -273,7 +273,7 @@
         "message": "例"
     },
     "popup_perhaps_you_meant": {
-        "message": "おそらく次のことを言いたかったのでしょう:"
+        "message": "おそらく次のことを言いたかったのでしょう："
     },
     "popup_original_language": {
         "message": "元の言語:"
@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "権限の管理"
     },
+    "select_language_pinned": {
+        "message": "固定された言語"
+    },
+    "select_language_pin_lang": {
+        "message": "言語を上部に固定する"
+    },
+    "select_language_unpin_lang": {
+        "message": "固定された言語を削除する"
+    },
+    "select_language_all_langs": {
+        "message": "すべての言語"
+    },
     "select_language_search_placeholder": {
-        "message": "言語の検索 (ISO コードまたは名前)"
+        "message": "言語名または ISO コード"
     },
     "select_language_search_no_results": {
         "message": "結果はありません"

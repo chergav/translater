@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "Quản lý quyền"
     },
+    "select_language_pinned": {
+        "message": "Ngôn ngữ được ghim"
+    },
+    "select_language_pin_lang": {
+        "message": "Ghim ngôn ngữ lên đầu"
+    },
+    "select_language_unpin_lang": {
+        "message": "Xóa ngôn ngữ được ghim"
+    },
+    "select_language_all_langs": {
+        "message": "Tất cả ngôn ngữ"
+    },
     "select_language_search_placeholder": {
-        "message": "Tìm ngôn ngữ (mã ISO hoặc tên)"
+        "message": "tên ngôn ngữ hoặc mã ISO"
     },
     "select_language_search_no_results": {
         "message": "Không có kết quả"
@@ -753,7 +765,7 @@
         "message": "Luganda"
     },
     "language_li": {
-        "message": "tiếng Limburg"
+        "message": "Tiếng Limburg"
     },
     "language_lij": {
         "message": "tiếng Ligurian"
@@ -954,7 +966,7 @@
         "message": "Sami (Miền Bắc)"
     },
     "language_sg": {
-        "message": "sango"
+        "message": "Sango"
     },
     "language_shn": {
         "message": "Sơn"

@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "Administrer tilladelser"
     },
+    "select_language_pinned": {
+        "message": "Fastgjorte sprog"
+    },
+    "select_language_pin_lang": {
+        "message": "Fastgør sprog til toppen"
+    },
+    "select_language_unpin_lang": {
+        "message": "Fjern fastgjort sprog"
+    },
+    "select_language_all_langs": {
+        "message": "Alle sprog"
+    },
     "select_language_search_placeholder": {
-        "message": "Find sprog (ISO-kode eller navn)"
+        "message": "sprognavn eller ISO-kode"
     },
     "select_language_search_no_results": {
         "message": "Ingen resultater"

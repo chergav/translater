@@ -10,6 +10,7 @@ export interface Settings {
 	fontSize: FontSize
 	sourceLang: string
 	targetLang: string
+	pinedLangs: string[]
 	inlineButtonShow: boolean
 	textFieldButtonShow: boolean
 	showOriginalText: boolean

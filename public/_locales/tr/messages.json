@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "İzinleri yönet"
     },
+    "select_language_pinned": {
+        "message": "Sabitlenmiş diller"
+    },
+    "select_language_pin_lang": {
+        "message": "Dili en üste sabitle"
+    },
+    "select_language_unpin_lang": {
+        "message": "Sabitlenmiş dili kaldır"
+    },
+    "select_language_all_langs": {
+        "message": "Tüm diller"
+    },
     "select_language_search_placeholder": {
-        "message": "Dilleri bulun (ISO kodu veya adı)"
+        "message": "dil adı veya ISO kodu"
     },
     "select_language_search_no_results": {
         "message": "Sonuç yok"
@@ -675,7 +687,7 @@
         "message": "İzlandaca"
     },
     "language_it": {
-        "message": "İtalyan"
+        "message": "İtalyanca"
     },
     "language_iu": {
         "message": "İnuktuca (Heceler)"
@@ -696,7 +708,7 @@
         "message": "Cava"
     },
     "language_ka": {
-        "message": "Gürcü"
+        "message": "Gürcüce"
     },
     "language_kac": {
         "message": "Jingpo"
@@ -771,7 +783,7 @@
         "message": "Litvanyalı"
     },
     "language_ltg": {
-        "message": "Latgalya dili"
+        "message": "Latgalyaca"
     },
     "language_lua": {
         "message": "Tshiluba"

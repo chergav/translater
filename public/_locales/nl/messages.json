@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "Beheer machtigingen"
     },
+    "select_language_pinned": {
+        "message": "Vastgezette talen"
+    },
+    "select_language_pin_lang": {
+        "message": "Taal vastzetten bovenaan"
+    },
+    "select_language_unpin_lang": {
+        "message": "Vastgezette taal verwijderen"
+    },
+    "select_language_all_langs": {
+        "message": "Alle talen"
+    },
     "select_language_search_placeholder": {
-        "message": "Talen zoeken (ISO-code of naam)"
+        "message": "taalnaam of ISO-code"
     },
     "select_language_search_no_results": {
         "message": "Geen resultaten"

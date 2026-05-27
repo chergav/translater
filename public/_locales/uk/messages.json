@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "Керувати дозволами"
     },
+    "select_language_pinned": {
+        "message": "Закріплені мови"
+    },
+    "select_language_pin_lang": {
+        "message": "Закріпити мову вгорі"
+    },
+    "select_language_unpin_lang": {
+        "message": "Видалити закріплену мову"
+    },
+    "select_language_all_langs": {
+        "message": "Всі мови"
+    },
     "select_language_search_placeholder": {
-        "message": "Пошук мов (код або назва ISO)"
+        "message": "назву мови або код ISO"
     },
     "select_language_search_no_results": {
         "message": "Результатів немає"
@@ -633,7 +645,7 @@
         "message": "Хауса"
     },
     "language_haw": {
-        "message": "гавайський"
+        "message": "Гавайська"
     },
     "language_hi": {
         "message": "Хінді"

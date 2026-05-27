@@ -1,6 +1,5 @@
 <Listbox
 	{align}
-	columns={search ? 1 : 2}
 	{onchange}
 	quick={storage.motionDisabled}
 	bind:value
@@ -16,10 +15,34 @@
 	{#snippet listboxSearch()}
 		<ListboxSearch bind:value={search} />
 	{/snippet}
-	<div class="flex gap-0.5">
-		{#each chunked as column, i (i)}
+	<ul class="flex flex-1 flex-col gap-0.5">
+		{#if autoLang && !searchTrimmed}
+			<ListboxOption
+				label={sourceLanguageAuto.language}
+				value={sourceLanguageAuto.code}
+			>
+				{#snippet leadingIcon(selected)}
+					{#if selected}
+						<CheckRounded />
+					{/if}
+				{/snippet}
+				{#snippet trailingIcon()}
+					<Awesome />
+				{/snippet}
+			</ListboxOption>
+			<div class="mx-2 my-1 h-px shrink-0 bg-color-outline-variant"></div>
+		{/if}
+
+		{#if pinedLangs.length && !searchTrimmed}
+			<li
+				class="px-3 py-1 text-xs font-medium text-color-on-surface-variant"
+				aria-hidden="true"
+				role="presentation"
+			>
+				{browser.i18n.getMessage('select_language_pinned')}
+			</li>
 			<ul class="flex flex-1 flex-col gap-0.5">
-				{#each column as { code, language } (code)}
+				{#each pinedLangs as { code, language } (code)}
 					<ListboxOption
 						label={language}
 						value={code}
@@ -29,15 +52,69 @@
 								<CheckRounded />
 							{/if}
 						{/snippet}
+						{#snippet trailingIcon()}
+							<button
+								class={[
+									'flex size-6 rounded-full p-0.5 hover:bg-color-on-surface/8 active:bg-color-on-surface/16',
+									'opacity-0 group-hover/lang:opacity-100 group-focus-visible/lang:opacity-100',
+									'transition-opacity ease-effects-fast',
+								]}
+								onclick={e => unpinLanguage(e, code)}
+								title={browser.i18n.getMessage('select_language_unpin_lang')}
+								type="button"
+							>
+								<KeepOff />
+							</button>
+						{/snippet}
 					</ListboxOption>
-				{:else}
-					<p class="px-3 py-2 text-sm text-color-on-surface-variant">
-						{browser.i18n.getMessage('select_language_search_no_results')}
-					</p>
 				{/each}
 			</ul>
+			<div class="mx-2 my-1 h-px shrink-0 bg-color-outline-variant"></div>
+		{/if}
+
+		<li
+			class="px-3 py-1 text-xs font-medium text-color-on-surface-variant"
+			aria-hidden="true"
+			role="presentation"
+		>
+			{browser.i18n.getMessage('select_language_all_langs')}
+		</li>
+
+		{#each filteredLangs as { code, language, pinned, pinTitle } (code)}
+			<ListboxOption
+				label={language}
+				value={code}
+			>
+				{#snippet leadingIcon(selected)}
+					{#if selected}
+						<CheckRounded />
+					{/if}
+				{/snippet}
+				{#snippet trailingIcon()}
+					<button
+						class={[
+							'flex size-6 rounded-full p-0.5 hover:bg-color-on-surface/8 active:bg-color-on-surface/16',
+							'opacity-0 group-hover/lang:opacity-100 group-focus-visible/lang:opacity-100',
+							'transition-opacity ease-effects-fast',
+						]}
+						onclick={e => pinned ? unpinLanguage(e, code) : pinLanguage(e, code)}
+						title={pinTitle}
+						type="button"
+					>
+						{#if pinned}
+							<KeepOff />
+						{:else}
+							<Keep />
+						{/if}
+					</button>
+				{/snippet}
+			</ListboxOption>
+		{:else}
+			<p class="px-3 py-2 text-sm text-color-on-surface-variant">
+				{browser.i18n.getMessage('select_language_search_no_results')}
+			</p>
 		{/each}
-	</div>
+	</ul>
 </Listbox>
 
 <script lang="ts">
@@ -49,6 +126,9 @@ import ListboxButton from './lib/ListboxButton.svelte';
 import ListboxSearch from './lib/ListboxSearch.svelte';
 import { languagesLocalArray, sourceLanguageAuto, getDisplayedLanguageName } from '~/shared/languages';
 import CheckRounded from '~icons/material-symbols/check-rounded';
+import KeepOff from '~icons/material-symbols/keep-off-outline-rounded';
+import Keep from '~icons/material-symbols/keep-outline-rounded';
+import Awesome from '~icons/material-symbols/auto-awesome-rounded';
 
 type ListboxProps = ComponentProps<typeof Listbox>;
 
@@ -75,18 +155,28 @@ let {
 interface Language {
 	code: string
 	language: string
+	pinned?: boolean
+	pinTitle?: string
 }
 
 let search = $state<string>('');
 const searchTrimmed = $derived<string>(search.trim());
 
-const languages = $derived<Language[]>([
-	...(autoLang ? [sourceLanguageAuto] : []),
-	...languagesLocalArray.map(({ code }) => ({
-		code,
-		language: getDisplayedLanguageName(code, 'name+code'),
-	})),
-]);
+const languages = $derived(
+	languagesLocalArray.map(({ code }): Language => {
+		const pinned = storage.settings.pinedLangs.includes(code);
+		return {
+			code,
+			language: getDisplayedLanguageName(code, 'name+code'),
+			pinned,
+			pinTitle: browser.i18n.getMessage(
+				pinned ? 'select_language_unpin_lang' : 'select_language_pin_lang',
+			),
+		};
+	}),
+);
+
+const pinedLangs = $derived(languages.filter(({ code }) => storage.settings.pinedLangs.includes(code)));
 
 const button = $derived.by(() => {
 	const isAuto = value === 'auto' && detectedLang;
@@ -108,19 +198,23 @@ const filteredLangs = $derived.by<Language[]>(() => {
 
 	return languages
 		.filter(i => i.language.toLowerCase().includes(searchTrimmed.toLowerCase()))
-		.map(({ code, language }) => ({
+		.map(({ code, language, pinned, pinTitle }) => ({
 			code,
 			language: language.replace(re, '<mark>$&</mark>'),
+			pinned,
+			pinTitle,
 		}));
 });
 
-// console.log(filteredLangs[0]);
+function pinLanguage(e: Event, code: string) {
+	e.stopPropagation();
+	if (!storage.settings.pinedLangs.includes(code)) {
+		storage.settings.pinedLangs.push(code);
+	}
+}
 
-const chunked = $derived(searchTrimmed
-	? [filteredLangs]
-	: [
-		filteredLangs.slice(0, Math.ceil(filteredLangs.length / 2)),
-		filteredLangs.slice(Math.ceil(filteredLangs.length / 2)),
-	],
-);
+function unpinLanguage(e: Event, code: string) {
+	e.stopPropagation();
+	storage.settings.pinedLangs = storage.settings.pinedLangs.filter(v => v !== code);
+}
 </script>

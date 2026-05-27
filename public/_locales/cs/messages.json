@@ -350,8 +350,20 @@
     "forefox_perm_button": {
         "message": "Spravovat oprávnění"
     },
+    "select_language_pinned": {
+        "message": "Připnuté jazyky"
+    },
+    "select_language_pin_lang": {
+        "message": "Připnout jazyk nahoru"
+    },
+    "select_language_unpin_lang": {
+        "message": "Odebrat připnutý jazyk"
+    },
+    "select_language_all_langs": {
+        "message": "Všechny jazyky"
+    },
     "select_language_search_placeholder": {
-        "message": "Najít jazyky (kód ISO nebo název)"
+        "message": "název jazyka nebo kód ISO"
     },
     "select_language_search_no_results": {
         "message": "Žádné výsledky"
@@ -1071,7 +1083,7 @@
         "message": "ujgurské"
     },
     "language_uk": {
-        "message": "ukrajinský"
+        "message": "Ukrajinština"
     },
     "language_ur": {
         "message": "urdština"
