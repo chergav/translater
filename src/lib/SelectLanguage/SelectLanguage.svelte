@@ -2,15 +2,22 @@
 	{align}
 	{onchange}
 	quick={storage.motionDisabled}
+	scrollToSelected={shouldScrollToSelected}
+	{triggerRef}
 	bind:value
 >
-	{#snippet listboxButton()}
-		<ListboxButton
+	{#snippet listboxButton({ open, toggle, triggerKeydown })}
+		<Button
 			class={[ mode === 'full' && 'w-52']}
-			lowAccent
+			active={open}
+			color="text"
+			label={button.label}
+			onclick={toggle}
+			onkeydown={triggerKeydown}
 			size="xs"
 			title={button.title}
-		>{button.label}</ListboxButton>
+			bind:ref={triggerRef}
+		/>
 	{/snippet}
 	{#snippet listboxSearch()}
 		<ListboxSearch bind:value={search} />
@@ -43,30 +50,37 @@
 			</li>
 			<ul class="flex flex-1 flex-col gap-0.5">
 				{#each pinedLangs as { code, language } (code)}
-					<ListboxOption
-						label={language}
-						value={code}
+					<div
+						animate:flip={{
+							duration: durationFlip,
+							easing: expressiveSpatialFast,
+						}}
 					>
-						{#snippet leadingIcon(selected)}
-							{#if selected}
-								<CheckRounded />
-							{/if}
-						{/snippet}
-						{#snippet trailingIcon()}
-							<button
-								class={[
-									'flex size-6 rounded-full p-0.5 hover:bg-color-on-surface/8 active:bg-color-on-surface/16',
-									'opacity-0 group-hover/lang:opacity-100 group-focus-visible/lang:opacity-100',
-									'transition-opacity ease-effects-fast',
-								]}
-								onclick={e => unpinLanguage(e, code)}
-								title={browser.i18n.getMessage('select_language_unpin_lang')}
-								type="button"
-							>
-								<KeepOff />
-							</button>
-						{/snippet}
-					</ListboxOption>
+						<ListboxOption
+							label={language}
+							value={code}
+						>
+							{#snippet leadingIcon(selected)}
+								{#if selected}
+									<CheckRounded />
+								{/if}
+							{/snippet}
+							{#snippet trailingIcon()}
+								<button
+									class={[
+										'flex size-6 rounded-full p-0.5 hover:bg-color-on-surface/8 active:bg-color-on-surface/16',
+										'opacity-0 group-hover/lang:opacity-100 group-focus-visible/lang:opacity-100',
+										'transition-opacity ease-effects-fast',
+									]}
+									onclick={e => unpinLanguage(e, code)}
+									title={browser.i18n.getMessage('select_language_unpin_lang')}
+									type="button"
+								>
+									<KeepOff />
+								</button>
+							{/snippet}
+						</ListboxOption>
+					</div>
 				{/each}
 			</ul>
 			<div class="mx-2 my-1 h-px shrink-0 bg-color-outline-variant"></div>
@@ -119,11 +133,13 @@
 
 <script lang="ts">
 import type { ComponentProps } from 'svelte';
+import { flip } from 'svelte/animate';
 import { storage } from '~/shared/storage.svelte';
+import { expressiveSpatialFast } from '~/lib/base/utils/md3Easing';
 import Listbox from './lib/Listbox.svelte';
 import ListboxOption from './lib/ListboxOption.svelte';
-import ListboxButton from './lib/ListboxButton.svelte';
 import ListboxSearch from './lib/ListboxSearch.svelte';
+import Button from '~/lib/base/Button.svelte';
 import { languagesLocalArray, sourceLanguageAuto, getDisplayedLanguageName } from '~/shared/languages';
 import CheckRounded from '~icons/material-symbols/check-rounded';
 import KeepOff from '~icons/material-symbols/keep-off-outline-rounded';
@@ -159,8 +175,10 @@ interface Language {
 	pinTitle?: string
 }
 
+let triggerRef = $state<HTMLButtonElement| null>(null);
 let search = $state<string>('');
 const searchTrimmed = $derived<string>(search.trim());
+const durationFlip = $derived<number>(storage.motionDisabled ? 0 : 350);
 
 const languages = $derived(
 	languagesLocalArray.map(({ code }): Language => {
@@ -177,6 +195,7 @@ const languages = $derived(
 );
 
 const pinedLangs = $derived(languages.filter(({ code }) => storage.settings.pinedLangs.includes(code)));
+const shouldScrollToSelected = $derived<boolean>(!storage.settings.pinedLangs.includes(value));
 
 const button = $derived.by(() => {
 	const isAuto = value === 'auto' && detectedLang;

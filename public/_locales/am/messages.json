@@ -222,19 +222,19 @@
         "message": "የቅርጸ ቁምፊ መጠን"
     },
     "options_font_size_xs": {
-        "message": "በጣም ትንሽ (12 ፒክስል)"
+        "message": "ተጨማሪ ትንሽ"
     },
     "options_font_size_sm": {
-        "message": "ትንሽ (14 ፒክስል)"
+        "message": "ትንሽ"
     },
     "options_font_size_md": {
-        "message": "መደበኛ (16 ፒክስል)"
+        "message": "መካከለኛ (የሚመከር)"
     },
     "options_font_size_lg": {
-        "message": "ትልቅ (18 ፒክስል)"
+        "message": "ትልቅ"
     },
     "options_font_size_xl": {
-        "message": "በጣም ትልቅ (20 ፒክስል)"
+        "message": "በጣም ትልቅ"
     },
     "options_support_msg": {
         "message": "የሆነ ነገር የማይሰራ ከሆነ ወይም ማንኛውም አስተያየት ካለዎት እባክዎን እዚህ ያሳውቁኝ።"
@@ -375,7 +375,7 @@
         "message": "አውቶማቲክ"
     },
     "language_detect": {
-        "message": "ቋንቋን መለየት"
+        "message": "ቋንቋን ፈልግ"
     },
     "language_aa": {
         "message": "አፋር"

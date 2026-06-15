@@ -222,19 +222,19 @@
         "message": "फॉन्ट आकार"
     },
     "options_font_size_xs": {
-        "message": "अतिरिक्त लहान (12px)"
+        "message": "अतिरिक्त लहान"
     },
     "options_font_size_sm": {
-        "message": "लहान (14px)"
+        "message": "लहान"
     },
     "options_font_size_md": {
-        "message": "सामान्य (16px)"
+        "message": "मध्यम (शिफारस केलेले)"
     },
     "options_font_size_lg": {
-        "message": "मोठा (18px)"
+        "message": "मोठा"
     },
     "options_font_size_xl": {
-        "message": "अतिरिक्त मोठा (20px)"
+        "message": "अतिरिक्त मोठे"
     },
     "options_support_msg": {
         "message": "काहीतरी काम करत नसल्यास, किंवा तुमच्या काही सूचना असल्यास, कृपया मला येथे कळवा"
@@ -558,7 +558,7 @@
         "message": "झोंगखा"
     },
     "language_ee": {
-        "message": "इव"
+        "message": "इवे"
     },
     "language_el": {
         "message": "ग्रीक"
@@ -690,7 +690,7 @@
         "message": "इटालियन"
     },
     "language_iu": {
-        "message": "Inuktut (सिलॅबिक्स)"
+        "message": "Inuktut (अक्षांश)"
     },
     "language_iu_Latn": {
         "message": "Inuktut (लॅटिन)"

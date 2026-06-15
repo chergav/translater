@@ -222,19 +222,19 @@
         "message": "Teckenstorlek"
     },
     "options_font_size_xs": {
-        "message": "Extra liten (12px)"
+        "message": "Extra liten"
     },
     "options_font_size_sm": {
-        "message": "Liten (14px)"
+        "message": "Liten"
     },
     "options_font_size_md": {
-        "message": "Normal (16px)"
+        "message": "Medium (rekommenderas)"
     },
     "options_font_size_lg": {
-        "message": "Stor (18px)"
+        "message": "Stora"
     },
     "options_font_size_xl": {
-        "message": "Extra stor (20px)"
+        "message": "Extra stor"
     },
     "options_support_msg": {
         "message": "Om något inte fungerar, eller om du har några förslag, vänligen meddela mig här"
@@ -375,7 +375,7 @@
         "message": "auto"
     },
     "language_detect": {
-        "message": "upptäcka språk"
+        "message": "Upptäck språk"
     },
     "language_aa": {
         "message": "Afar"

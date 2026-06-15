@@ -222,19 +222,19 @@
         "message": "Šrifto dydis"
     },
     "options_font_size_xs": {
-        "message": "Itin mažas (12 piks.)"
+        "message": "Itin mažas"
     },
     "options_font_size_sm": {
-        "message": "Mažas (14 piks.)"
+        "message": "Mažas"
     },
     "options_font_size_md": {
-        "message": "Įprasta (16 pikselių)"
+        "message": "Vidutinė (rekomenduojama)"
     },
     "options_font_size_lg": {
-        "message": "Didelis (18 piks.)"
+        "message": "Didelis"
     },
     "options_font_size_xl": {
-        "message": "Itin didelis (20 piks.)"
+        "message": "Itin didelis"
     },
     "options_support_msg": {
         "message": "Jei kažkas neveikia arba turite kokių nors pasiūlymų, praneškite man čia"
@@ -375,7 +375,7 @@
         "message": "auto"
     },
     "language_detect": {
-        "message": "aptikti kalbą"
+        "message": "Aptikti kalbą"
     },
     "language_aa": {
         "message": "Toli"

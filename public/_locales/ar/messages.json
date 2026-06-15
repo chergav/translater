@@ -222,19 +222,19 @@
         "message": "حجم الخط"
     },
     "options_font_size_xs": {
-        "message": "صغير جدًا (12 بكسل)"
+        "message": "صغير جدًا"
     },
     "options_font_size_sm": {
-        "message": "صغير (14 بكسل)"
+        "message": "صغير"
     },
     "options_font_size_md": {
-        "message": "عادي (16 بكسل)"
+        "message": "متوسط (مستحسن)"
     },
     "options_font_size_lg": {
-        "message": "كبير (18 بكسل)"
+        "message": "كبير"
     },
     "options_font_size_xl": {
-        "message": "كبير جدًا (20 بكسل)"
+        "message": "كبير جدًا"
     },
     "options_support_msg": {
         "message": "إذا كان هناك شيء لا يعمل، أو كان لديك أي اقتراحات، فيرجى إبلاغي بذلك هنا"

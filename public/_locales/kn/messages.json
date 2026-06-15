@@ -39,7 +39,7 @@
         "message": "ಅಳಿಸಿ"
     },
     "button_label_cancel": {
-        "message": "ರದ್ದುಮಾಡು"
+        "message": "ರದ್ದುಮಾಡಿ"
     },
     "options_general_translation_button": {
         "message": "ಅನುವಾದ ಬಟನ್"
@@ -222,19 +222,19 @@
         "message": "ಫಾಂಟ್ ಗಾತ್ರ"
     },
     "options_font_size_xs": {
-        "message": "ಹೆಚ್ಚುವರಿ ಚಿಕ್ಕದು (12px)"
+        "message": "ಹೆಚ್ಚುವರಿ ಚಿಕ್ಕದು"
     },
     "options_font_size_sm": {
-        "message": "ಚಿಕ್ಕದು (14px)"
+        "message": "ಚಿಕ್ಕದು"
     },
     "options_font_size_md": {
-        "message": "ಸಾಮಾನ್ಯ (16px)"
+        "message": "ಮಧ್ಯಮ (ಶಿಫಾರಸು ಮಾಡಲಾಗಿದೆ)"
     },
     "options_font_size_lg": {
-        "message": "ದೊಡ್ಡದು (18px)"
+        "message": "ದೊಡ್ಡದು"
     },
     "options_font_size_xl": {
-        "message": "ಹೆಚ್ಚು ದೊಡ್ಡದು (20px)"
+        "message": "ಹೆಚ್ಚುವರಿ ದೊಡ್ಡದು"
     },
     "options_support_msg": {
         "message": "ಏನಾದರೂ ಕೆಲಸ ಮಾಡದಿದ್ದರೆ ಅಥವಾ ನೀವು ಯಾವುದೇ ಸಲಹೆಗಳನ್ನು ಹೊಂದಿದ್ದರೆ, ದಯವಿಟ್ಟು ನನಗೆ ಇಲ್ಲಿ ತಿಳಿಸಿ"
@@ -618,7 +618,7 @@
         "message": "ಫ್ರಿಸಿಯನ್"
     },
     "language_ga": {
-        "message": "ಐರಿಷ್"
+        "message": "ಐರಿಶ್"
     },
     "language_gaa": {
         "message": "ಗಾ"
@@ -1038,7 +1038,7 @@
         "message": "ಟಿಗ್ರಿನ್ಯಾ"
     },
     "language_tiv": {
-        "message": "ಟಿವ್"
+        "message": "ಟಿವಿ"
     },
     "language_tk": {
         "message": "ತುರ್ಕಮೆನ್"

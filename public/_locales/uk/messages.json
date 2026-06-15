@@ -222,19 +222,19 @@
         "message": "Розмір шрифту"
     },
     "options_font_size_xs": {
-        "message": "Дуже малий (12 пікселів)"
+        "message": "Дуже малий"
     },
     "options_font_size_sm": {
-        "message": "Малий (14 пікселів)"
+        "message": "Маленький"
     },
     "options_font_size_md": {
-        "message": "Нормальний (16 пікселів)"
+        "message": "Середній (рекомендовано)"
     },
     "options_font_size_lg": {
-        "message": "Великий (18 пікселів)"
+        "message": "Великий"
     },
     "options_font_size_xl": {
-        "message": "Дуже великий (20 пікселів)"
+        "message": "Дуже великий"
     },
     "options_support_msg": {
         "message": "Якщо щось не працює або у вас є якісь пропозиції, повідомте мене тут"
@@ -375,7 +375,7 @@
         "message": "авто"
     },
     "language_detect": {
-        "message": "виявити мову"
+        "message": "Визначити мову"
     },
     "language_aa": {
         "message": "Здалеку"

@@ -222,19 +222,19 @@
         "message": "Skriftstørrelse"
     },
     "options_font_size_xs": {
-        "message": "Ekstra liten (12px)"
+        "message": "Ekstra liten"
     },
     "options_font_size_sm": {
-        "message": "Liten (14 piksler)"
+        "message": "Liten"
     },
     "options_font_size_md": {
-        "message": "Normal (16px)"
+        "message": "Middels (anbefalt)"
     },
     "options_font_size_lg": {
-        "message": "Stor (18 piksler)"
+        "message": "Stor"
     },
     "options_font_size_xl": {
-        "message": "Ekstra stor (20px)"
+        "message": "Ekstra stor"
     },
     "options_support_msg": {
         "message": "Hvis noe ikke fungerer, eller du har noen forslag, vennligst gi meg beskjed her"
@@ -375,7 +375,7 @@
         "message": "auto"
     },
     "language_detect": {
-        "message": "oppdage språk"
+        "message": "Oppdag språk"
     },
     "language_aa": {
         "message": "Afar"

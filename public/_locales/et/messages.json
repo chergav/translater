@@ -222,19 +222,19 @@
         "message": "Fondi suurus"
     },
     "options_font_size_xs": {
-        "message": "Eriti väike (12 pikslit)"
+        "message": "Eriti väike"
     },
     "options_font_size_sm": {
-        "message": "Väike (14 pikslit)"
+        "message": "Väike"
     },
     "options_font_size_md": {
-        "message": "Tavaline (16 pikslit)"
+        "message": "Keskmine (soovitatav)"
     },
     "options_font_size_lg": {
-        "message": "Suur (18 pikslit)"
+        "message": "Suur"
     },
     "options_font_size_xl": {
-        "message": "Eriti suur (20 pikslit)"
+        "message": "Eriti suur"
     },
     "options_support_msg": {
         "message": "Kui midagi ei tööta või teil on ettepanekuid, andke mulle siin teada"
@@ -375,7 +375,7 @@
         "message": "auto"
     },
     "language_detect": {
-        "message": "keelt tuvastada"
+        "message": "Keele tuvastamine"
     },
     "language_aa": {
         "message": "Kaugelt"

@@ -222,19 +222,19 @@
         "message": "எழுத்துரு அளவு"
     },
     "options_font_size_xs": {
-        "message": "கூடுதல் சிறியது (12px)"
+        "message": "கூடுதல் சிறியது"
     },
     "options_font_size_sm": {
-        "message": "சிறியது (14px)"
+        "message": "சிறியது"
     },
     "options_font_size_md": {
-        "message": "இயல்பான (16px)"
+        "message": "நடுத்தர (பரிந்துரைக்கப்படுகிறது)"
     },
     "options_font_size_lg": {
-        "message": "பெரியது (18px)"
+        "message": "பெரியது"
     },
     "options_font_size_xl": {
-        "message": "கூடுதல் பெரியது (20px)"
+        "message": "கூடுதல் பெரியது"
     },
     "options_support_msg": {
         "message": "ஏதாவது வேலை செய்யவில்லை என்றால் அல்லது உங்களுக்கு ஏதேனும் பரிந்துரைகள் இருந்தால், தயவுசெய்து எனக்கு இங்கே தெரியப்படுத்தவும்"
@@ -594,7 +594,7 @@
         "message": "பிலிப்பினோ (டகாலாக்)"
     },
     "language_fj": {
-        "message": "ஃபிஜியன்"
+        "message": "பிஜியன்"
     },
     "language_fo": {
         "message": "ஃபரோஸ்"

@@ -13,7 +13,6 @@
 		onmouseleave={highlightOrigTextOff}
 		role="button"
 		tabindex="0"
-		title="Show alternatives"
 		use:clickOutside={actionParams}
 	>
 		{segmentText}

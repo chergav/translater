@@ -18,7 +18,7 @@
 				isFlipped ? 'bottom-full' : 'top-full',
 				alignClass,
 			]}
-			// onintrostart={() => scrollToSelected()}
+			onintrostart={handleOnintrostart}
 			in:fly={{
 				y: flyY,
 				duration: DURATION_IN,
@@ -77,6 +77,7 @@ interface Props {
 	align?: MenuAlign;
 	quick?: boolean
 	columns?: number
+	scrollToSelected?: boolean
 }
 
 let {
@@ -90,6 +91,7 @@ let {
 	align = 'start',
 	quick = false,
 	columns = 1,
+	scrollToSelected = false,
 }: Props = $props();
 
 const DROPDOWN_HEIGHT = 384;
@@ -207,11 +209,11 @@ function triggerKeydown(e: KeyboardEvent) {
 	}
 }
 
-// function getSelectedItem():  HTMLElement | undefined {
-// 	const items = getItems(containerRef, 'option');
-// 	const selectedItem = items.find(item => item.ariaSelected === 'true');
-// 	return selectedItem;
-// }
+function getSelectedItem():  HTMLElement | undefined {
+	const items = getItems(containerRef, 'option');
+	const selectedItem = items.find(item => item.ariaSelected === 'true');
+	return selectedItem;
+}
 
 // async function focusSelected() {
 // 	await tick();
@@ -219,8 +221,10 @@ function triggerKeydown(e: KeyboardEvent) {
 // 	selectedItem?.focus({ preventScroll: true });
 // }
 
-// function scrollToSelected() {
-// 	const selectedItem = getSelectedItem();
-// 	selectedItem?.scrollIntoView({ block: 'nearest' });
-// }
+function handleOnintrostart() {
+	if (!scrollToSelected) return;
+
+	const selectedItem = getSelectedItem();
+	selectedItem?.scrollIntoView({ block: 'nearest' });
+}
 </script>

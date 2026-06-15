@@ -222,19 +222,19 @@
         "message": "Veličina slova"
     },
     "options_font_size_xs": {
-        "message": "Vrlo mali (12 px)"
+        "message": "Ekstra mali"
     },
     "options_font_size_sm": {
-        "message": "Mali (14 px)"
+        "message": "mali"
     },
     "options_font_size_md": {
-        "message": "Normalno (16 px)"
+        "message": "Srednje (preporučeno)"
     },
     "options_font_size_lg": {
-        "message": "Veliki (18 px)"
+        "message": "velika"
     },
     "options_font_size_xl": {
-        "message": "Izuzetno veliki (20 px)"
+        "message": "Iznimno velik"
     },
     "options_support_msg": {
         "message": "Ako nešto ne radi ili imate prijedloge, javite mi ovdje"
@@ -375,7 +375,7 @@
         "message": "auto"
     },
     "language_detect": {
-        "message": "otkriti jezik"
+        "message": "Otkrij jezik"
     },
     "language_aa": {
         "message": "Daleko"

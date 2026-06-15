@@ -1,5 +1,5 @@
 <main class="flex min-h-40 flex-1 flex-col rounded-xl bg-color-surface-bright">
-	<div class="flex min-h-0 flex-col gap-1 p-2">
+	<div class="flex min-h-0 flex-col gap-1 p-1">
 		<div class="flex shrink-0 items-center justify-between">
 			<div class="flex items-center gap-1">
 				<SelectLanguage
@@ -81,7 +81,7 @@
 
 	<div class="mx-3 h-0.5 shrink-0 bg-color-surface-dim"></div>
 
-	<div class="flex min-h-0 flex-col gap-1 p-2">
+	<div class="flex min-h-0 flex-col gap-1 p-1">
 		<div class="flex shrink-0 items-center justify-between">
 			<div class="flex items-center gap-1">
 				<SelectLanguage

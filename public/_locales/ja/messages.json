@@ -222,19 +222,19 @@
         "message": "フォントサイズ"
     },
     "options_font_size_xs": {
-        "message": "極小 (12px)"
+        "message": "特小"
     },
     "options_font_size_sm": {
-        "message": "小 (14px)"
+        "message": "小"
     },
     "options_font_size_md": {
-        "message": "通常(16px)"
+        "message": "中 (推奨)"
     },
     "options_font_size_lg": {
-        "message": "大 (18px)"
+        "message": "大"
     },
     "options_font_size_xl": {
-        "message": "特大 (20px)"
+        "message": "特大"
     },
     "options_support_msg": {
         "message": "何かうまくいかない場合、またはご提案がある場合は、ここでお知らせください"
@@ -375,7 +375,7 @@
         "message": "自動"
     },
     "language_detect": {
-        "message": "言語を検出する"
+        "message": "言語の検出"
     },
     "language_aa": {
         "message": "遠くまで"

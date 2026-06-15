@@ -222,19 +222,19 @@
         "message": "ขนาดตัวอักษร"
     },
     "options_font_size_xs": {
-        "message": "ขนาดเล็กพิเศษ (12px)"
+        "message": "เล็กพิเศษ"
     },
     "options_font_size_sm": {
-        "message": "ขนาดเล็ก (14px)"
+        "message": "เล็ก"
     },
     "options_font_size_md": {
-        "message": "ปกติ (16px)"
+        "message": "ปานกลาง (แนะนำ)"
     },
     "options_font_size_lg": {
-        "message": "ใหญ่ (18px)"
+        "message": "ใหญ่"
     },
     "options_font_size_xl": {
-        "message": "ใหญ่พิเศษ (20px)"
+        "message": "ใหญ่พิเศษ"
     },
     "options_support_msg": {
         "message": "หากมีบางอย่างใช้งานไม่ได้หรือคุณมีข้อเสนอแนะ โปรดแจ้งให้เราทราบที่นี่"

@@ -222,19 +222,19 @@
         "message": "Schriftgröße"
     },
     "options_font_size_xs": {
-        "message": "Extra klein (12px)"
+        "message": "Extra klein"
     },
     "options_font_size_sm": {
-        "message": "Klein (14px)"
+        "message": "Klein"
     },
     "options_font_size_md": {
-        "message": "Normal (16px)"
+        "message": "Mittel (empfohlen)"
     },
     "options_font_size_lg": {
-        "message": "Groß (18px)"
+        "message": "Groß"
     },
     "options_font_size_xl": {
-        "message": "Extra groß (20 Pixel)"
+        "message": "Extra groß"
     },
     "options_support_msg": {
         "message": "Wenn etwas nicht funktioniert oder Sie Vorschläge haben, lassen Sie es mich bitte hier wissen"

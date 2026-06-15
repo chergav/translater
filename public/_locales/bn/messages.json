@@ -222,19 +222,19 @@
         "message": "ফন্ট সাইজ"
     },
     "options_font_size_xs": {
-        "message": "অতিরিক্ত ছোট (12px)"
+        "message": "অতিরিক্ত ছোট"
     },
     "options_font_size_sm": {
-        "message": "ছোট (14px)"
+        "message": "ছোট"
     },
     "options_font_size_md": {
-        "message": "সাধারণ (16px)"
+        "message": "মাঝারি (প্রস্তাবিত)"
     },
     "options_font_size_lg": {
-        "message": "বড় (18px)"
+        "message": "বড়"
     },
     "options_font_size_xl": {
-        "message": "অতিরিক্ত বড় (20px)"
+        "message": "অতিরিক্ত বড়"
     },
     "options_support_msg": {
         "message": "যদি কিছু কাজ না করে, বা আপনার কোন পরামর্শ থাকে, দয়া করে আমাকে এখানে জানান"
@@ -267,7 +267,7 @@
         "message": "সংজ্ঞা"
     },
     "popup_definitions_synonyms": {
-        "message": "প্রতিশব্দ:"
+        "message": "সমার্থক শব্দ:"
     },
     "popup_examples": {
         "message": "উদাহরণ"
@@ -375,7 +375,7 @@
         "message": "স্বয়ংক্রিয়"
     },
     "language_detect": {
-        "message": "ভাষা সনাক্ত করা"
+        "message": "ভাষা সনাক্ত করুন"
     },
     "language_aa": {
         "message": "আফার"
@@ -411,7 +411,7 @@
         "message": "আভার"
     },
     "language_awa": {
-        "message": "আওয়াধি"
+        "message": "অবধি"
     },
     "language_ay": {
         "message": "আয়মারা"
@@ -447,7 +447,7 @@
         "message": "তামাজাইট"
     },
     "language_bew": {
-        "message": "বেতাবি"
+        "message": "বেতাউই"
     },
     "language_bg": {
         "message": "বুলগেরিয়ান"
@@ -579,7 +579,7 @@
         "message": "বাস্ক"
     },
     "language_fa": {
-        "message": "ফারসি"
+        "message": "ফার্সি"
     },
     "language_fa_AF": {
         "message": "দারি"
@@ -759,7 +759,7 @@
         "message": "ল্যাটিন"
     },
     "language_lb": {
-        "message": "লুক্সেমবার্গিশ"
+        "message": "লাক্সেমবার্গিশ"
     },
     "language_lg": {
         "message": "লুগান্ডা"

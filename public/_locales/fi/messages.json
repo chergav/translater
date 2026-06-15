@@ -222,19 +222,19 @@
         "message": "Fontin koko"
     },
     "options_font_size_xs": {
-        "message": "Erittäin pieni (12px)"
+        "message": "Erittäin pieni"
     },
     "options_font_size_sm": {
-        "message": "Pieni (14px)"
+        "message": "Pieni"
     },
     "options_font_size_md": {
-        "message": "Normaali (16 kuvapistettä)"
+        "message": "Keskitaso (suositus)"
     },
     "options_font_size_lg": {
-        "message": "Suuri (18px)"
+        "message": "Suuri"
     },
     "options_font_size_xl": {
-        "message": "Erittäin suuri (20px)"
+        "message": "Erittäin suuri"
     },
     "options_support_msg": {
         "message": "Jos jokin ei toimi tai sinulla on ehdotuksia, ilmoita minulle täällä"
@@ -375,7 +375,7 @@
         "message": "auto"
     },
     "language_detect": {
-        "message": "tunnistaa kieltä"
+        "message": "Tunnista kieli"
     },
     "language_aa": {
         "message": "Kaukana"
@@ -657,7 +657,7 @@
         "message": "hmong"
     },
     "language_hr": {
-        "message": "kroatialainen"
+        "message": "Kroatia"
     },
     "language_hrx": {
         "message": "Hunsrik"

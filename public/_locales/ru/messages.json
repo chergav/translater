@@ -222,19 +222,19 @@
         "message": "Размер шрифта"
     },
     "options_font_size_xs": {
-        "message": "Очень маленький (12 пикселей)"
+        "message": "Очень маленький"
     },
     "options_font_size_sm": {
-        "message": "Маленький (14 пикселей)"
+        "message": "Маленький"
     },
     "options_font_size_md": {
-        "message": "Обычный (16 пикселей)"
+        "message": "Средний (рекомендуется)"
     },
     "options_font_size_lg": {
-        "message": "Большой (18 пикселей)"
+        "message": "Большой"
     },
     "options_font_size_xl": {
-        "message": "Очень большой (20 пикселей)"
+        "message": "Очень большой"
     },
     "options_support_msg": {
         "message": "Если что-то не работает или у вас есть какие-либо предложения, пожалуйста, дайте мне знать здесь."
@@ -375,7 +375,7 @@
         "message": "авто"
     },
     "language_detect": {
-        "message": "обнаружить язык"
+        "message": "Определить язык"
     },
     "language_aa": {
         "message": "издалека"
@@ -471,7 +471,7 @@
         "message": "тибетский"
     },
     "language_br": {
-        "message": "Бретонский"
+        "message": "бретонский"
     },
     "language_bs": {
         "message": "Боснийский"
@@ -483,10 +483,10 @@
         "message": "Батак Каро"
     },
     "language_bua": {
-        "message": "бурятский"
+        "message": "Бурятский"
     },
     "language_ca": {
-        "message": "каталонский"
+        "message": "каталанский"
     },
     "language_ce": {
         "message": "Чеченский"

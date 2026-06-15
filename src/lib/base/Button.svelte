@@ -76,9 +76,9 @@ const buttonVariants = tv({
 			'pointer-events-none absolute inset-0 rounded-[inherit] opacity-0 transition-opacity ease-effects-fast',
 			'group-hover:opacity-hover group-focus-visible:opacity-pressed group-active:opacity-pressed',
 		],
-		content: 'relative flex items-center group-disabled:text-color-on-surface group-disabled:opacity-disabled',
+		content: 'relative flex w-full items-center group-disabled:text-color-on-surface group-disabled:opacity-disabled',
 		iconClass: '',
-		labelClass: 'font-medium whitespace-nowrap',
+		labelClass: 'max-w-full truncate font-medium whitespace-nowrap',
 	},
 	variants: {
 		color: {

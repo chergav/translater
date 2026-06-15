@@ -222,19 +222,19 @@
         "message": "फ़ॉन्ट आकार"
     },
     "options_font_size_xs": {
-        "message": "अतिरिक्त छोटा (12px)"
+        "message": "अतिरिक्त छोटा"
     },
     "options_font_size_sm": {
-        "message": "छोटा (14पिक्सेल)"
+        "message": "छोटा"
     },
     "options_font_size_md": {
-        "message": "सामान्य (16px)"
+        "message": "मध्यम (अनुशंसित)"
     },
     "options_font_size_lg": {
-        "message": "बड़ा (18px)"
+        "message": "बड़ा"
     },
     "options_font_size_xl": {
-        "message": "अतिरिक्त बड़ा (20px)"
+        "message": "अतिरिक्त बड़ा"
     },
     "options_support_msg": {
         "message": "यदि कुछ काम नहीं कर रहा है, या आपके पास कोई सुझाव है, तो कृपया मुझे यहां बताएं"

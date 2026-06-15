@@ -278,23 +278,23 @@ const fontSizes: {
 }[] = [
 	{
 		value: FontSize.ExtraSmall,
-		label: browser.i18n.getMessage('options_font_size_xs').toLowerCase(),
+		label: browser.i18n.getMessage('options_font_size_xs'),
 	},
 	{
 		value: FontSize.Small,
-		label: browser.i18n.getMessage('options_font_size_sm').toLowerCase(),
+		label: browser.i18n.getMessage('options_font_size_sm'),
 	},
 	{
 		value: FontSize.Normal,
-		label: browser.i18n.getMessage('options_font_size_md').toLowerCase(),
+		label: browser.i18n.getMessage('options_font_size_md'),
 	},
 	{
 		value: FontSize.Large,
-		label: browser.i18n.getMessage('options_font_size_lg').toLowerCase(),
+		label: browser.i18n.getMessage('options_font_size_lg'),
 	},
 	{
 		value: FontSize.ExtraLarge,
-		label: browser.i18n.getMessage('options_font_size_xl').toLowerCase(),
+		label: browser.i18n.getMessage('options_font_size_xl'),
 	},
 ];
 </script>

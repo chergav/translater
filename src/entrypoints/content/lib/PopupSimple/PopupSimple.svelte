@@ -1,7 +1,7 @@
 <div class="h-full min-h-0 rounded-xl bg-color-surface-bright p-1">
 	<div class="flex h-full flex-col">
 		{#if storage.settings.simpleModeShowLangs}
-			<div class="flex items-center gap-1 p-1">
+			<div class="flex items-center gap-1">
 				<SelectLanguage
 					align="center"
 					autoLang

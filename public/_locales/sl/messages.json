@@ -222,19 +222,19 @@
         "message": "Velikost pisave"
     },
     "options_font_size_xs": {
-        "message": "Zelo majhen (12 slikovnih pik)"
+        "message": "Zelo majhna"
     },
     "options_font_size_sm": {
-        "message": "Majhen (14 slikovnih pik)"
+        "message": "majhna"
     },
     "options_font_size_md": {
-        "message": "Normalno (16 slikovnih pik)"
+        "message": "Srednje (priporočeno)"
     },
     "options_font_size_lg": {
-        "message": "Velika (18 slikovnih pik)"
+        "message": "Velik"
     },
     "options_font_size_xl": {
-        "message": "Zelo velik (20 slikovnih pik)"
+        "message": "Zelo velik"
     },
     "options_support_msg": {
         "message": "Če nekaj ne deluje ali imate kakršne koli predloge, mi to sporočite tukaj"
@@ -375,7 +375,7 @@
         "message": "avto"
     },
     "language_detect": {
-        "message": "zaznati jezik"
+        "message": "Zaznaj jezik"
     },
     "language_aa": {
         "message": "Od daleč"

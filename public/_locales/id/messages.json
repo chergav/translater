@@ -222,19 +222,19 @@
         "message": "Ukuran huruf"
     },
     "options_font_size_xs": {
-        "message": "Ekstra kecil (12 piksel)"
+        "message": "Ekstra Kecil"
     },
     "options_font_size_sm": {
-        "message": "Kecil (14 piksel)"
+        "message": "Kecil"
     },
     "options_font_size_md": {
-        "message": "Biasa (16 piksel)"
+        "message": "Sedang (disarankan)"
     },
     "options_font_size_lg": {
-        "message": "Besar (18 piksel)"
+        "message": "Besar"
     },
     "options_font_size_xl": {
-        "message": "Ekstra besar (20 piksel)"
+        "message": "Ekstra Besar"
     },
     "options_support_msg": {
         "message": "Jika ada yang tidak berfungsi, atau Anda punya saran, beri tahu saya di sini"
@@ -375,7 +375,7 @@
         "message": "otomatis"
     },
     "language_detect": {
-        "message": "mendeteksi bahasa"
+        "message": "Deteksi bahasa"
     },
     "language_aa": {
         "message": "Jauh"
@@ -1026,7 +1026,7 @@
         "message": "Telugu"
     },
     "language_tet": {
-        "message": "bahasa Tetum"
+        "message": "bahasa Tetun"
     },
     "language_tg": {
         "message": "Tajik"

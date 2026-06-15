@@ -6,6 +6,9 @@
 	size="xs"
 	bind:value
 >
+	{#if autoLang}
+		<option value={sourceLanguageAuto.code}>{sourceLanguageAuto.language}</option>
+	{/if}
 	{#each languages as { code, language } (code)}
 		<option value={code}>{language}</option>
 	{/each}
@@ -36,11 +39,10 @@ let {
 	onchange,
 }: Props = $props();
 
-const languages = $derived<Language[]>([
-	...(autoLang ? [sourceLanguageAuto] : []),
-	...languagesLocalArray.map(({ code }) => ({
+const languages = $derived<Language[]>(
+	languagesLocalArray.map(({ code }) => ({
 		code,
 		language: getDisplayedLanguageName(code, 'name+code'),
 	})),
-]);
+);
 </script>

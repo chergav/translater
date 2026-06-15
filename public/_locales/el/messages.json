@@ -222,19 +222,19 @@
         "message": "Μέγεθος γραμματοσειράς"
     },
     "options_font_size_xs": {
-        "message": "Εξαιρετικά μικρό (12 px)"
+        "message": "Extra Small"
     },
     "options_font_size_sm": {
-        "message": "Μικρό (14 εικονοστοιχεία)"
+        "message": "Μικρό"
     },
     "options_font_size_md": {
-        "message": "Κανονικό (16 εικονοστοιχεία)"
+        "message": "Μεσαία (συνιστάται)"
     },
     "options_font_size_lg": {
-        "message": "Μεγάλο (18 εικονοστοιχεία)"
+        "message": "Μεγάλο"
     },
     "options_font_size_xl": {
-        "message": "Εξαιρετικά μεγάλο (20 εικονοστοιχεία)"
+        "message": "Extra Large"
     },
     "options_support_msg": {
         "message": "Εάν κάτι δεν λειτουργεί ή έχετε οποιεσδήποτε προτάσεις, ενημερώστε με εδώ"
@@ -375,7 +375,7 @@
         "message": "αυτόματο"
     },
     "language_detect": {
-        "message": "ανίχνευση γλώσσας"
+        "message": "Ανίχνευση γλώσσας"
     },
     "language_aa": {
         "message": "Άφαρ"
@@ -795,7 +795,7 @@
         "message": "Μίζο"
     },
     "language_lv": {
-        "message": "λετονική"
+        "message": "Λετονική"
     },
     "language_mad": {
         "message": "Μαντουρέζα"

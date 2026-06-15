@@ -222,19 +222,19 @@
         "message": "Lettergrootte"
     },
     "options_font_size_xs": {
-        "message": "Extra klein (12px)"
+        "message": "Extra klein"
     },
     "options_font_size_sm": {
-        "message": "Klein (14px)"
+        "message": "Klein"
     },
     "options_font_size_md": {
-        "message": "Normaal (16px)"
+        "message": "Gemiddeld (aanbevolen)"
     },
     "options_font_size_lg": {
-        "message": "Groot (18px)"
+        "message": "Groot"
     },
     "options_font_size_xl": {
-        "message": "Extra groot (20px)"
+        "message": "Extra groot"
     },
     "options_support_msg": {
         "message": "Als iets niet werkt of als u suggesties heeft, kunt u mij dit hier laten weten"
@@ -375,7 +375,7 @@
         "message": "auto"
     },
     "language_detect": {
-        "message": "taal detecteren"
+        "message": "Taal detecteren"
     },
     "language_aa": {
         "message": "Ver weg"

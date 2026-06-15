@@ -174,7 +174,7 @@
         "message": "Kaynak rengi"
     },
     "options_appearance_custom_theme_source_hint": {
-        "message": "Temalar oluşturmak için bir renk seçin"
+        "message": "Tema oluşturmak için bir renk seçin"
     },
     "options_appearance_custom_theme_apply": {
         "message": "Temayı uygula"
@@ -222,19 +222,19 @@
         "message": "Yazı tipi boyutu"
     },
     "options_font_size_xs": {
-        "message": "Ekstra küçük (12 piksel)"
+        "message": "Ekstra Küçük"
     },
     "options_font_size_sm": {
-        "message": "Küçük (14 piksel)"
+        "message": "Küçük"
     },
     "options_font_size_md": {
-        "message": "Normal (16 piksel)"
+        "message": "Orta (önerilir)"
     },
     "options_font_size_lg": {
-        "message": "Büyük (18 piksel)"
+        "message": "Büyük"
     },
     "options_font_size_xl": {
-        "message": "Ekstra büyük (20 piksel)"
+        "message": "Ekstra Büyük"
     },
     "options_support_msg": {
         "message": "Bir şeyler yolunda gitmiyorsa veya önerileriniz varsa lütfen buradan bana bildirin"
@@ -375,7 +375,7 @@
         "message": "otomatik"
     },
     "language_detect": {
-        "message": "dili tespit et"
+        "message": "Dili algıla"
     },
     "language_aa": {
         "message": "Uzak"
@@ -894,7 +894,7 @@
         "message": "Odia (Oriya)"
     },
     "language_os": {
-        "message": "Osetçe"
+        "message": "Osetyalı"
     },
     "language_pa": {
         "message": "Pencapça (Gurmukhi)"

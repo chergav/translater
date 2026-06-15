@@ -16,7 +16,6 @@
 							onkeydown={e => onKeydownHandler(e, example.text)}
 							role="button"
 							tabindex="0"
-							title="Translate example"
 						>
 							<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 							{@html example.text}

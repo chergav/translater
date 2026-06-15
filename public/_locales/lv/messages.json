@@ -222,19 +222,19 @@
         "message": "Fonta lielums"
     },
     "options_font_size_xs": {
-        "message": "Īpaši mazs (12 pikseļi)"
+        "message": "Īpaši mazs"
     },
     "options_font_size_sm": {
-        "message": "Mazs (14 pikseļi)"
+        "message": "Mazs"
     },
     "options_font_size_md": {
-        "message": "Parasts (16 pikseļi)"
+        "message": "Vidējs (ieteicams)"
     },
     "options_font_size_lg": {
-        "message": "Liels (18 pikseļi)"
+        "message": "Liels"
     },
     "options_font_size_xl": {
-        "message": "Īpaši liels (20 pikseļi)"
+        "message": "Īpaši liels"
     },
     "options_support_msg": {
         "message": "Ja kaut kas nedarbojas vai jums ir kādi ieteikumi, lūdzu, paziņojiet man šeit"
@@ -375,7 +375,7 @@
         "message": "auto"
     },
     "language_detect": {
-        "message": "noteikt valodu"
+        "message": "Noteikt valodu"
     },
     "language_aa": {
         "message": "Tālu"

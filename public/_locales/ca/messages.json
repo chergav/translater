@@ -111,7 +111,7 @@
         "message": "Bloqueja la finestra emergent"
     },
     "options_lock_popup_window_hint": {
-        "message": "La finestra emergent es manté oberta quan feu clic a l'exterior."
+        "message": "La finestra emergent es manté oberta quan feu clic a fora."
     },
     "options_providers_provider": {
         "message": "Proveïdor"
@@ -222,19 +222,19 @@
         "message": "Mida de la lletra"
     },
     "options_font_size_xs": {
-        "message": "Extra petit (12 píxels)"
+        "message": "Extra petit"
     },
     "options_font_size_sm": {
-        "message": "Petit (14 píxels)"
+        "message": "Petit"
     },
     "options_font_size_md": {
-        "message": "Normal (16 píxels)"
+        "message": "Mitjà (recomanat)"
     },
     "options_font_size_lg": {
-        "message": "Gran (18 píxels)"
+        "message": "Gran"
     },
     "options_font_size_xl": {
-        "message": "Extragran (20 píxels)"
+        "message": "Extragran"
     },
     "options_support_msg": {
         "message": "Si alguna cosa no funciona, o si teniu algun suggeriment, feu-m'ho saber aquí"
@@ -375,7 +375,7 @@
         "message": "automàtic"
     },
     "language_detect": {
-        "message": "detectar el llenguatge"
+        "message": "Detectar el llenguatge"
     },
     "language_aa": {
         "message": "De lluny"

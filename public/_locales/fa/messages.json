@@ -222,19 +222,19 @@
         "message": "اندازه فونت"
     },
     "options_font_size_xs": {
-        "message": "بسیار کوچک (12 پیکسل)"
+        "message": "فوق العاده کوچک"
     },
     "options_font_size_sm": {
-        "message": "کوچک (14 پیکسل)"
+        "message": "کوچک"
     },
     "options_font_size_md": {
-        "message": "معمولی (16 پیکسل)"
+        "message": "متوسط (توصیه می شود)"
     },
     "options_font_size_lg": {
-        "message": "بزرگ (18 پیکسل)"
+        "message": "بزرگ"
     },
     "options_font_size_xl": {
-        "message": "بسیار بزرگ (20 پیکسل)"
+        "message": "فوق العاده بزرگ"
     },
     "options_support_msg": {
         "message": "اگر چیزی کار نمی کند، یا پیشنهادی دارید، لطفاً اینجا به من اطلاع دهید"

@@ -222,19 +222,19 @@
         "message": "Величина фонта"
     },
     "options_font_size_xs": {
-        "message": "Веома мали (12 пиксела)"
+        "message": "Ектра Смалл"
     },
     "options_font_size_sm": {
-        "message": "Мала (14 пиксела)"
+        "message": "Мала"
     },
     "options_font_size_md": {
-        "message": "Нормално (16 пиксела)"
+        "message": "средње (препоручено)"
     },
     "options_font_size_lg": {
-        "message": "велико (18 пиксела)"
+        "message": "Велики"
     },
     "options_font_size_xl": {
-        "message": "Веома велики (20 пиксела)"
+        "message": "Ектра Ларге"
     },
     "options_support_msg": {
         "message": "Ако нешто не ради или имате било какве предлоге, јавите ми овде"
@@ -375,7 +375,7 @@
         "message": "ауто"
     },
     "language_detect": {
-        "message": "детектовати језик"
+        "message": "Откријте језик"
     },
     "language_aa": {
         "message": "Афар"

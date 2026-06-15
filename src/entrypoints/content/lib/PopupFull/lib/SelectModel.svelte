@@ -10,7 +10,7 @@
 			size="xs"
 			title="{providerStore.selectedProvider.name}/{providerStore.selectedModel.model}"
 		>
-			{providerStore.selectedProvider.name}/{providerStore.selectedModel.model}
+			{providerStore.selectedModel.model}
 		</ListboxButton>
 	{/snippet}
 
@@ -34,26 +34,16 @@
 </Listbox>
 
 <script lang="ts">
-// import type { Message } from '~/types';
 import { ProviderId } from '~/types/providers';
 import { storage } from '~/shared/storage.svelte';
 import { store } from '~/entrypoints/content/store.svelte';
 import { providerStore } from '~/entrypoints/options/lib/Providers/providerStore.svelte';
 import { Listbox, ListboxOption, ListboxButton } from '~/lib/base/Listbox';
 import Check from '~icons/material-symbols/check-rounded';
-// import OpenInNew from '~icons/material-symbols/open-in-new-rounded';
 
 function onSelectModel() {
 	if (!providerStore.isSelectedProviderGoogle) {
 		store.translate();
 	}
 }
-
-// function openOptionsPage() {
-// 	const url = browser.runtime.getURL('/options.html') + '#providers';
-// 	browser.runtime.sendMessage<Message>({
-// 		type: 'openURL',
-// 		content: { url },
-// 	});
-// }
 </script>

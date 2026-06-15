@@ -222,19 +222,19 @@
         "message": "ഫോണ്ട് വലിപ്പം"
     },
     "options_font_size_xs": {
-        "message": "വളരെ ചെറുത് (12px)"
+        "message": "അധിക ചെറുത്"
     },
     "options_font_size_sm": {
-        "message": "ചെറുത് (14px)"
+        "message": "ചെറുത്"
     },
     "options_font_size_md": {
-        "message": "സാധാരണ (16px)"
+        "message": "ഇടത്തരം (ശുപാർശ ചെയ്യുന്നത്)"
     },
     "options_font_size_lg": {
-        "message": "വലുത് (18px)"
+        "message": "വലിയ"
     },
     "options_font_size_xl": {
-        "message": "വളരെ വലുത് (20px)"
+        "message": "എക്സ്ട്രാ ലാർജ്"
     },
     "options_support_msg": {
         "message": "എന്തെങ്കിലും പ്രവർത്തിക്കുന്നില്ലെങ്കിൽ, അല്ലെങ്കിൽ നിങ്ങൾക്ക് എന്തെങ്കിലും നിർദ്ദേശങ്ങൾ ഉണ്ടെങ്കിൽ, ദയവായി എന്നെ ഇവിടെ അറിയിക്കുക"
@@ -375,7 +375,7 @@
         "message": "ഓട്ടോ"
     },
     "language_detect": {
-        "message": "ഭാഷ കണ്ടുപിടിക്കുക"
+        "message": "ഭാഷ കണ്ടെത്തുക"
     },
     "language_aa": {
         "message": "അകലെ"
@@ -690,7 +690,7 @@
         "message": "ഇറ്റാലിയൻ"
     },
     "language_iu": {
-        "message": "Inuktut (സിലബിക്സ്)"
+        "message": "ഇനുക്തുട്ട് (സിലബിക്സ്)"
     },
     "language_iu_Latn": {
         "message": "ഇനുക്തുട്ട് (ലാറ്റിൻ)"
@@ -1053,7 +1053,7 @@
         "message": "ടോംഗൻ"
     },
     "language_tpi": {
-        "message": "ടോക് പിസിൻ"
+        "message": "ടോക്ക് പിസിൻ"
     },
     "language_tr": {
         "message": "ടർക്കിഷ്"

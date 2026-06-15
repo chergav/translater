@@ -222,19 +222,19 @@
         "message": "Dimensione del carattere"
     },
     "options_font_size_xs": {
-        "message": "Molto piccolo (12px)"
+        "message": "Molto piccolo"
     },
     "options_font_size_sm": {
-        "message": "Piccolo (14px)"
+        "message": "Piccolo"
     },
     "options_font_size_md": {
-        "message": "Normale (16px)"
+        "message": "Medio (consigliato)"
     },
     "options_font_size_lg": {
-        "message": "Grande (18px)"
+        "message": "Grande"
     },
     "options_font_size_xl": {
-        "message": "Molto grande (20px)"
+        "message": "Molto grande"
     },
     "options_support_msg": {
         "message": "Se qualcosa non funziona o hai qualche suggerimento, faccelo sapere qui"
@@ -375,7 +375,7 @@
         "message": "automatico"
     },
     "language_detect": {
-        "message": "rilevare la lingua"
+        "message": "Rileva la lingua"
     },
     "language_aa": {
         "message": "Lontano"
@@ -534,7 +534,7 @@
         "message": "Gallese"
     },
     "language_da": {
-        "message": "danese"
+        "message": "Danese"
     },
     "language_de": {
         "message": "tedesco"
@@ -759,7 +759,7 @@
         "message": "latino"
     },
     "language_lb": {
-        "message": "lussemburghese"
+        "message": "Lussemburghese"
     },
     "language_lg": {
         "message": "Uganda"

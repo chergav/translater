@@ -222,19 +222,19 @@
         "message": "Rozmiar czcionki"
     },
     "options_font_size_xs": {
-        "message": "Bardzo mały (12px)"
+        "message": "Bardzo mały"
     },
     "options_font_size_sm": {
-        "message": "Mały (14 pikseli)"
+        "message": "Mały"
     },
     "options_font_size_md": {
-        "message": "Normalny (16 pikseli)"
+        "message": "Średni (zalecany)"
     },
     "options_font_size_lg": {
-        "message": "Duży (18 pikseli)"
+        "message": "Duży"
     },
     "options_font_size_xl": {
-        "message": "Bardzo duży (20px)"
+        "message": "Bardzo duży"
     },
     "options_support_msg": {
         "message": "Jeśli coś nie działa lub masz jakieś sugestie, daj mi znać tutaj"
@@ -375,7 +375,7 @@
         "message": "auto"
     },
     "language_detect": {
-        "message": "wykryć język"
+        "message": "Wykryj język"
     },
     "language_aa": {
         "message": "Daleko"
@@ -573,7 +573,7 @@
         "message": "Hiszpański"
     },
     "language_et": {
-        "message": "estoński"
+        "message": "Estoński"
     },
     "language_eu": {
         "message": "baskijski"
@@ -957,7 +957,7 @@
         "message": "Santali (łac.)"
     },
     "language_scn": {
-        "message": "Sycylijczyk"
+        "message": "Sycylijski"
     },
     "language_sd": {
         "message": "Sindhi"
@@ -1125,7 +1125,7 @@
         "message": "Zapotek"
     },
     "language_zh_CN": {
-        "message": "Chiński (uproszczony)"
+        "message": "chiński (uproszczony)"
     },
     "language_zh_TW": {
         "message": "chiński (tradycyjny)"

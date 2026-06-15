@@ -222,19 +222,19 @@
         "message": "Tamaño de fuente"
     },
     "options_font_size_xs": {
-        "message": "Extrapequeño (12px)"
+        "message": "Extrapequeño"
     },
     "options_font_size_sm": {
-        "message": "Pequeño (14px)"
+        "message": "Pequeño"
     },
     "options_font_size_md": {
-        "message": "Normal (16 píxeles)"
+        "message": "Medio (recomendado)"
     },
     "options_font_size_lg": {
-        "message": "Grande (18 píxeles)"
+        "message": "Grande"
     },
     "options_font_size_xl": {
-        "message": "Extra grande (20 px)"
+        "message": "extra grande"
     },
     "options_support_msg": {
         "message": "Si algo no funciona o tienes alguna sugerencia, házmelo saber aquí."
@@ -375,7 +375,7 @@
         "message": "automático"
     },
     "language_detect": {
-        "message": "detectar idioma"
+        "message": "Detectar idioma"
     },
     "language_aa": {
         "message": "lejos"

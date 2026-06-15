@@ -222,19 +222,19 @@
         "message": "Tamanho da fonte"
     },
     "options_font_size_xs": {
-        "message": "Extra pequeno (12px)"
+        "message": "Extra pequeno"
     },
     "options_font_size_sm": {
-        "message": "Pequeno (14px)"
+        "message": "Pequeno"
     },
     "options_font_size_md": {
-        "message": "Normal (16px)"
+        "message": "Médio (recomendado)"
     },
     "options_font_size_lg": {
-        "message": "Grande (18px)"
+        "message": "Grande"
     },
     "options_font_size_xl": {
-        "message": "Extra grande (20px)"
+        "message": "Extra Grande"
     },
     "options_support_msg": {
         "message": "Se algo não estiver funcionando ou você tiver alguma sugestão, por favor me avise aqui"
@@ -375,7 +375,7 @@
         "message": "automático"
     },
     "language_detect": {
-        "message": "detectar idioma"
+        "message": "Detectar idioma"
     },
     "language_aa": {
         "message": "Longe"
@@ -813,7 +813,7 @@
         "message": "crioulo das Maurícias"
     },
     "language_mg": {
-        "message": "Malgaxe"
+        "message": "malgaxe"
     },
     "language_mh": {
         "message": "marshallês"

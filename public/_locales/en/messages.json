@@ -222,19 +222,19 @@
         "message": "Font size"
     },
     "options_font_size_xs": {
-        "message": "Extra small (12px)"
+        "message": "Extra Small"
     },
     "options_font_size_sm": {
-        "message": "Small (14px)"
+        "message": "Small"
     },
     "options_font_size_md": {
-        "message": "Normal (16px)"
+        "message": "Medium (recommended)"
     },
     "options_font_size_lg": {
-        "message": "Large (18px)"
+        "message": "Large"
     },
     "options_font_size_xl": {
-        "message": "Extra large (20px)"
+        "message": "Extra Large"
     },
     "options_support_msg": {
         "message": "If something isn’t working, or you have any suggestions, please let me know here"
@@ -375,7 +375,7 @@
         "message": "auto"
     },
     "language_detect": {
-        "message": "detect language"
+        "message": "Detect language"
     },
     "language_aa": {
         "message": "Afar"

@@ -36,7 +36,6 @@
 									onkeydown={e => onKeydownHandler(e, defEntry.gloss)}
 									role="button"
 									tabindex="0"
-									title="Translate definition"
 								>{defEntry.gloss}</span>
 								{#if defEntry.example}
 									<br>
@@ -51,7 +50,6 @@
 										onkeydown={e => onKeydownHandler(e, defEntry.example!)}
 										role="button"
 										tabindex="0"
-										title="Translate example"
 									>"{defEntry.example}"</span>
 								{/if}
 								{#if defEntry.synsets}

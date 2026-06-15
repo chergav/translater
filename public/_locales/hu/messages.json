@@ -39,7 +39,7 @@
         "message": "Törölje"
     },
     "button_label_cancel": {
-        "message": "Mégse"
+        "message": "Mégsem"
     },
     "options_general_translation_button": {
         "message": "Fordítás gomb"
@@ -222,25 +222,25 @@
         "message": "Betűméret"
     },
     "options_font_size_xs": {
-        "message": "Extra kicsi (12 képpont)"
+        "message": "Extra kicsi"
     },
     "options_font_size_sm": {
-        "message": "Kicsi (14 képpont)"
+        "message": "Kicsi"
     },
     "options_font_size_md": {
-        "message": "Normál (16 képpont)"
+        "message": "Közepes (ajánlott)"
     },
     "options_font_size_lg": {
-        "message": "Nagy (18 képpont)"
+        "message": "Nagy"
     },
     "options_font_size_xl": {
-        "message": "Extra nagy (20 képpont)"
+        "message": "Extra nagy"
     },
     "options_support_msg": {
         "message": "Ha valami nem működik, vagy bármilyen javaslata van, kérjük, jelezze itt"
     },
     "options_support_donations": {
-        "message": "Ha támogatni szeretné ezt az ingyenes szoftvert"
+        "message": "Ha szeretné támogatni ezt az ingyenes szoftvert"
     },
     "text_expand": {
         "message": "Többet"
@@ -375,7 +375,7 @@
         "message": "auto"
     },
     "language_detect": {
-        "message": "észleli a nyelvet"
+        "message": "Nyelv észlelése"
     },
     "language_aa": {
         "message": "Távol"

@@ -222,19 +222,19 @@
         "message": "ફોન્ટનું કદ"
     },
     "options_font_size_xs": {
-        "message": "વધારાનું નાનું (12px)"
+        "message": "વધારાના નાના"
     },
     "options_font_size_sm": {
-        "message": "નાનું (14px)"
+        "message": "નાના"
     },
     "options_font_size_md": {
-        "message": "સામાન્ય (16px)"
+        "message": "મધ્યમ (ભલામણ કરેલ)"
     },
     "options_font_size_lg": {
-        "message": "મોટું (18px)"
+        "message": "વિશાળ"
     },
     "options_font_size_xl": {
-        "message": "વધારાનું મોટું (20px)"
+        "message": "વધારાનું મોટું"
     },
     "options_support_msg": {
         "message": "જો કંઈક કામ કરતું નથી, અથવા તમારી પાસે કોઈ સૂચનો છે, તો કૃપા કરીને મને અહીં જણાવો"
@@ -597,7 +597,7 @@
         "message": "ફિજિયન"
     },
     "language_fo": {
-        "message": "ફરોઝ"
+        "message": "ફેરોઝ"
     },
     "language_fon": {
         "message": "ફોન"
@@ -660,7 +660,7 @@
         "message": "ક્રોએશિયન"
     },
     "language_hrx": {
-        "message": "હંસરિક"
+        "message": "હંસરીક"
     },
     "language_ht": {
         "message": "હૈતીયન ક્રેઓલ"

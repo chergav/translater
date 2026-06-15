@@ -222,19 +222,19 @@
         "message": "ఫాంట్ పరిమాణం"
     },
     "options_font_size_xs": {
-        "message": "అదనపు చిన్నది (12px)"
+        "message": "అదనపు చిన్నది"
     },
     "options_font_size_sm": {
-        "message": "చిన్నది (14px)"
+        "message": "చిన్నది"
     },
     "options_font_size_md": {
-        "message": "సాధారణ (16px)"
+        "message": "మధ్యస్థం (సిఫార్సు చేయబడింది)"
     },
     "options_font_size_lg": {
-        "message": "పెద్దది (18px)"
+        "message": "పెద్దది"
     },
     "options_font_size_xl": {
-        "message": "చాలా పెద్దది (20px)"
+        "message": "అదనపు పెద్దది"
     },
     "options_support_msg": {
         "message": "ఏదైనా పని చేయకుంటే, లేదా మీకు ఏవైనా సూచనలు ఉంటే, దయచేసి నాకు ఇక్కడ తెలియజేయండి"

@@ -222,19 +222,19 @@
         "message": "글꼴 크기"
     },
     "options_font_size_xs": {
-        "message": "아주 작게(12px)"
+        "message": "아주 작은"
     },
     "options_font_size_sm": {
-        "message": "작음(14px)"
+        "message": "작은"
     },
     "options_font_size_md": {
-        "message": "일반(16px)"
+        "message": "중간(권장)"
     },
     "options_font_size_lg": {
-        "message": "대형(18px)"
+        "message": "대형"
     },
     "options_font_size_xl": {
-        "message": "특대형(20px)"
+        "message": "특대형"
     },
     "options_support_msg": {
         "message": "문제가 발생하거나 제안 사항이 있으면 여기로 알려주시기 바랍니다."

@@ -207,7 +207,7 @@
         "message": "אם שפה לא רשומה, ייעשה שימוש בשירות טקסט לדיבור חיצוני."
     },
     "options_tts_no_voices_found": {
-        "message": "הדפדפן שלך אינו תומך בסינתזת דיבור. במקום זאת נשתמש בשירות חיצוני."
+        "message": "הדפדפן שלך אינו תומך בסינתזה של דיבור. במקום זאת נשתמש בשירות חיצוני."
     },
     "options_edit_keyboard_shortcut": {
         "message": "ערוך קיצורי מקלדת"
@@ -222,19 +222,19 @@
         "message": "גודל גופן"
     },
     "options_font_size_xs": {
-        "message": "קטן במיוחד (12 פיקסלים)"
+        "message": "קטן במיוחד"
     },
     "options_font_size_sm": {
-        "message": "קטן (14 פיקסלים)"
+        "message": "קטן"
     },
     "options_font_size_md": {
-        "message": "רגיל (16 פיקסלים)"
+        "message": "בינוני (מומלץ)"
     },
     "options_font_size_lg": {
-        "message": "גדול (18 פיקסלים)"
+        "message": "גדול"
     },
     "options_font_size_xl": {
-        "message": "גדול במיוחד (20 פיקסלים)"
+        "message": "גדול במיוחד"
     },
     "options_support_msg": {
         "message": "אם משהו לא עובד, או שיש לך הצעות, אנא הודע לי כאן"
@@ -375,7 +375,7 @@
         "message": "אוטומטי"
     },
     "language_detect": {
-        "message": "לזהות שפה"
+        "message": "זיהוי שפה"
     },
     "language_aa": {
         "message": "רחוק"

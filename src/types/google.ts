@@ -17,6 +17,7 @@ export interface GoogleTranslate {
 	synsets: Synset[]
 	definitions: Definition[]
 	examples: Examples
+	related_words?: RelatedWords
 }
 
 export interface Sentence {
@@ -119,4 +120,8 @@ export interface Examples {
 export interface Example {
 	text: string
 	definition_id: string
+}
+
+export interface RelatedWords {
+	word: string[]
 }

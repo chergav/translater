@@ -222,19 +222,19 @@
         "message": "Ukubwa wa herufi"
     },
     "options_font_size_xs": {
-        "message": "Ndogo zaidi (12px)"
+        "message": "Kidogo Zaidi"
     },
     "options_font_size_sm": {
-        "message": "Ndogo (14px)"
+        "message": "Ndogo"
     },
     "options_font_size_md": {
-        "message": "Kawaida (16px)"
+        "message": "Kati (inapendekezwa)"
     },
     "options_font_size_lg": {
-        "message": "Kubwa (18px)"
+        "message": "Kubwa"
     },
     "options_font_size_xl": {
-        "message": "Kubwa zaidi (20px)"
+        "message": "Kubwa Zaidi"
     },
     "options_support_msg": {
         "message": "Ikiwa kitu hakifanyi kazi, au una mapendekezo yoyote, tafadhali nijulishe hapa"
@@ -375,7 +375,7 @@
         "message": "kiotomatiki"
     },
     "language_detect": {
-        "message": "kugundua lugha"
+        "message": "Tambua lugha"
     },
     "language_aa": {
         "message": "Mbali"

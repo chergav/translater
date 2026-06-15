@@ -222,19 +222,19 @@
         "message": "Veľkosť písma"
     },
     "options_font_size_xs": {
-        "message": "Extra malý (12px)"
+        "message": "Extra malý"
     },
     "options_font_size_sm": {
-        "message": "Malý (14px)"
+        "message": "Malý"
     },
     "options_font_size_md": {
-        "message": "Normálne (16 pixelov)"
+        "message": "Stredné (odporúčané)"
     },
     "options_font_size_lg": {
-        "message": "Veľký (18px)"
+        "message": "Veľký"
     },
     "options_font_size_xl": {
-        "message": "Extra veľké (20px)"
+        "message": "Extra veľké"
     },
     "options_support_msg": {
         "message": "Ak niečo nefunguje alebo máte nejaké návrhy, dajte mi vedieť tu"
@@ -375,7 +375,7 @@
         "message": "auto"
     },
     "language_detect": {
-        "message": "detekovať jazyk"
+        "message": "Rozpoznať jazyk"
     },
     "language_aa": {
         "message": "Afar"

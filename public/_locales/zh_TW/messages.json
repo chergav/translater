@@ -222,19 +222,19 @@
         "message": "字體大小"
     },
     "options_font_size_xs": {
-        "message": "超小（12 像素）"
+        "message": "特小號"
     },
     "options_font_size_sm": {
-        "message": "小（14 像素）"
+        "message": "小號"
     },
     "options_font_size_md": {
-        "message": "正常（16 像素）"
+        "message": "中（推薦）"
     },
     "options_font_size_lg": {
-        "message": "大（18 像素）"
+        "message": "大號"
     },
     "options_font_size_xl": {
-        "message": "超大（20 像素）"
+        "message": "特大號"
     },
     "options_support_msg": {
         "message": "如果出現問題，或您有任何建議，請在此告訴我"

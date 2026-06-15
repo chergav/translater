@@ -222,22 +222,22 @@
         "message": "Taille de la police"
     },
     "options_font_size_xs": {
-        "message": "Très petit (12px)"
+        "message": "Très petit"
     },
     "options_font_size_sm": {
-        "message": "Petit (14px)"
+        "message": "Petit"
     },
     "options_font_size_md": {
-        "message": "Normale (16px)"
+        "message": "Moyen (recommandé)"
     },
     "options_font_size_lg": {
-        "message": "Grand (18px)"
+        "message": "Grand"
     },
     "options_font_size_xl": {
-        "message": "Très grand (20px)"
+        "message": "Très grand"
     },
     "options_support_msg": {
-        "message": "Si quelque chose ne fonctionne pas ou si vous avez des suggestions, faites-le moi savoir ici"
+        "message": "Si quelque chose ne fonctionne pas ou si vous avez des suggestions, faites-le-moi savoir ici"
     },
     "options_support_donations": {
         "message": "Si vous souhaitez soutenir ce logiciel gratuit"
@@ -375,7 +375,7 @@
         "message": "automobile"
     },
     "language_detect": {
-        "message": "détecter la langue"
+        "message": "Détecter la langue"
     },
     "language_aa": {
         "message": "Loin"
@@ -939,7 +939,7 @@
         "message": "Romani"
     },
     "language_ru": {
-        "message": "Russe"
+        "message": "russe"
     },
     "language_rw": {
         "message": "kinyarwanda"

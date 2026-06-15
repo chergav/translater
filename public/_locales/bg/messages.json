@@ -222,19 +222,19 @@
         "message": "Размер на шрифта"
     },
     "options_font_size_xs": {
-        "message": "Изключително малък (12px)"
+        "message": "Изключително малък"
     },
     "options_font_size_sm": {
-        "message": "Малък (14px)"
+        "message": "малък"
     },
     "options_font_size_md": {
-        "message": "Нормално (16px)"
+        "message": "Средно (препоръчително)"
     },
     "options_font_size_lg": {
-        "message": "Голям (18px)"
+        "message": "Голям"
     },
     "options_font_size_xl": {
-        "message": "Много голям (20px)"
+        "message": "Изключително голям"
     },
     "options_support_msg": {
         "message": "Ако нещо не работи или имате някакви предложения, моля, уведомете ме тук"
@@ -375,7 +375,7 @@
         "message": "авто"
     },
     "language_detect": {
-        "message": "откриване на език"
+        "message": "Откриване на език"
     },
     "language_aa": {
         "message": "отдалеч"

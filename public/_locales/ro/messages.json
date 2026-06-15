@@ -195,7 +195,7 @@
         "message": "articolele vor fi șterse"
     },
     "options_tts_language": {
-        "message": "Limba"
+        "message": "Limbă"
     },
     "options_tts_default_voice": {
         "message": "Voce implicită"
@@ -222,19 +222,19 @@
         "message": "Dimensiunea fontului"
     },
     "options_font_size_xs": {
-        "message": "Foarte mic (12px)"
+        "message": "Extra Mic"
     },
     "options_font_size_sm": {
-        "message": "Mic (14 px)"
+        "message": "Mic"
     },
     "options_font_size_md": {
-        "message": "Normal (16 pixeli)"
+        "message": "Medie (recomandat)"
     },
     "options_font_size_lg": {
-        "message": "Mare (18 px)"
+        "message": "Mare"
     },
     "options_font_size_xl": {
-        "message": "Foarte mare (20px)"
+        "message": "Extra Large"
     },
     "options_support_msg": {
         "message": "Dacă ceva nu funcționează sau aveți sugestii, vă rugăm să-mi spuneți aici"
@@ -375,7 +375,7 @@
         "message": "auto"
     },
     "language_detect": {
-        "message": "detectează limbajul"
+        "message": "Detectează limba"
     },
     "language_aa": {
         "message": "De departe"

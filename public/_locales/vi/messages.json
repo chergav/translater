@@ -222,19 +222,19 @@
         "message": "Cỡ chữ"
     },
     "options_font_size_xs": {
-        "message": "Cực nhỏ (12px)"
+        "message": "cực nhỏ"
     },
     "options_font_size_sm": {
-        "message": "Nhỏ (14px)"
+        "message": "nhỏ"
     },
     "options_font_size_md": {
-        "message": "Bình thường (16px)"
+        "message": "Trung bình (khuyên dùng)"
     },
     "options_font_size_lg": {
-        "message": "Lớn (18px)"
+        "message": "lớn"
     },
     "options_font_size_xl": {
-        "message": "Cực lớn (20px)"
+        "message": "Cực lớn"
     },
     "options_support_msg": {
         "message": "Nếu có điều gì đó không hiệu quả hoặc bạn có bất kỳ đề xuất nào, vui lòng cho tôi biết tại đây"
@@ -375,7 +375,7 @@
         "message": "tự động"
     },
     "language_detect": {
-        "message": "phát hiện ngôn ngữ"
+        "message": "Phát hiện ngôn ngữ"
     },
     "language_aa": {
         "message": "Xa"

@@ -117,7 +117,7 @@
         "message": "Provider"
     },
     "options_providers_model": {
-        "message": "modelo"
+        "message": "Modelo"
     },
     "options_appearance_theme": {
         "message": "Tema"
@@ -222,19 +222,19 @@
         "message": "Laki ng font"
     },
     "options_font_size_xs": {
-        "message": "Napakaliit (12px)"
+        "message": "Extra Small"
     },
     "options_font_size_sm": {
-        "message": "Maliit (14px)"
+        "message": "Maliit"
     },
     "options_font_size_md": {
-        "message": "Normal (16px)"
+        "message": "Katamtaman (inirerekomenda)"
     },
     "options_font_size_lg": {
-        "message": "Malaki (18px)"
+        "message": "Malaki"
     },
     "options_font_size_xl": {
-        "message": "Sobrang laki (20px)"
+        "message": "Extra Large"
     },
     "options_support_msg": {
         "message": "Kung may hindi gumagana, o mayroon kang anumang mga mungkahi, mangyaring ipaalam sa akin dito"
@@ -375,7 +375,7 @@
         "message": "sasakyan"
     },
     "language_detect": {
-        "message": "tuklasin ang wika"
+        "message": "I-detect ang wika"
     },
     "language_aa": {
         "message": "Malayo"
