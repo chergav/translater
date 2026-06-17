@@ -27,7 +27,7 @@
         "message": "పాప్అప్ విండో"
     },
     "options_tab_appearance": {
-        "message": "బాహ్య స్వరూపం"
+        "message": "స్వరూపం"
     },
     "options_tab_history": {
         "message": "చరిత్ర"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "అనువాదాన్ని మాత్రమే చూపించు, మరేమీ లేదు."
+    },
+    "options_general_layout_vert": {
+        "message": "నిలువు లేఅవుట్"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "అనువాదం అసలు (పూర్తి మోడ్ మాత్రమే) క్రింద కనిపిస్తుంది."
+    },
+    "options_general_layout_horiz": {
+        "message": "క్షితిజసమాంతర లేఅవుట్"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "అనువాదం అసలు (పూర్తి మోడ్ మాత్రమే) పక్కన కనిపిస్తుంది."
     },
     "options_inline_button_show": {
         "message": "వచనాన్ని ఎంచుకున్నప్పుడు చూపు బటన్"
@@ -384,7 +396,7 @@
         "message": "అబ్ఖాజ్"
     },
     "language_ace": {
-        "message": "అచెనీస్"
+        "message": "అచెనెస్"
     },
     "language_ach": {
         "message": "అచోలి"

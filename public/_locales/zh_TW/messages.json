@@ -65,6 +65,18 @@
     "options_general_mode_simple_hint": {
         "message": "只顯示翻譯，不顯示其他內容。"
     },
+    "options_general_layout_vert": {
+        "message": "垂直佈局"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "翻譯顯示在原文下方（僅限完整模式）。"
+    },
+    "options_general_layout_horiz": {
+        "message": "水平佈局"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "翻譯出現在原文旁邊（僅限完整模式）。"
+    },
     "options_inline_button_show": {
         "message": "選擇文字時顯示按鈕"
     },
@@ -495,7 +507,7 @@
         "message": "宿霧語"
     },
     "language_cgg": {
-        "message": "基加"
+        "message": "基賀"
     },
     "language_ch": {
         "message": "查莫羅語"

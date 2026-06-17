@@ -27,7 +27,7 @@
         "message": "पॉपअप विंडो"
     },
     "options_tab_appearance": {
-        "message": "बाह्य स्वरूप"
+        "message": "देखावा"
     },
     "options_tab_history": {
         "message": "इतिहास"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "फक्त भाषांतर दाखवा, बाकी काही नाही."
+    },
+    "options_general_layout_vert": {
+        "message": "अनुलंब मांडणी"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "भाषांतर मूळच्या खाली दिसते (फक्त पूर्ण मोड)."
+    },
+    "options_general_layout_horiz": {
+        "message": "क्षैतिज मांडणी"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "भाषांतर मूळच्या पुढे दिसते (फक्त पूर्ण मोड)."
     },
     "options_inline_button_show": {
         "message": "मजकूर निवडल्यावर बटण दर्शवा"
@@ -690,7 +702,7 @@
         "message": "इटालियन"
     },
     "language_iu": {
-        "message": "Inuktut (अक्षांश)"
+        "message": "Inuktut (सिलॅबिक्स)"
     },
     "language_iu_Latn": {
         "message": "Inuktut (लॅटिन)"

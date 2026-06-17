@@ -27,7 +27,7 @@
         "message": "Vyskakovací okno"
     },
     "options_tab_appearance": {
-        "message": "Vnější vzhled"
+        "message": "Vzhled"
     },
     "options_tab_history": {
         "message": "Historie"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Zobrazit pouze překlad, nic jiného."
+    },
+    "options_general_layout_vert": {
+        "message": "Vertikální rozvržení"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "Překlad se zobrazí pod originálem (pouze v plném režimu)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Horizontální rozvržení"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "Překlad se zobrazí vedle originálu (pouze v plném režimu)."
     },
     "options_inline_button_show": {
         "message": "Zobrazit tlačítko při výběru textu"

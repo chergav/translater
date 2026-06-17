@@ -8,7 +8,7 @@
 >
 	{#snippet listboxButton({ open, toggle, triggerKeydown })}
 		<Button
-			class={[ mode === 'full' && 'w-52']}
+			class={triggerClass}
 			active={open}
 			color="text"
 			label={button.label}
@@ -133,6 +133,7 @@
 
 <script lang="ts">
 import type { ComponentProps } from 'svelte';
+import { PopupMode, PopupLayout } from '~/types';
 import { flip } from 'svelte/animate';
 import { storage } from '~/shared/storage.svelte';
 import { expressiveSpatialFast } from '~/lib/base/utils/md3Easing';
@@ -148,14 +149,13 @@ import Awesome from '~icons/material-symbols/auto-awesome-rounded';
 
 type ListboxProps = ComponentProps<typeof Listbox>;
 
-type Mode = 'full' | 'simple';
-
 interface Props {
 	value: ListboxProps['value']
 	align?: ListboxProps['align']
 	autoLang?: boolean
 	detectedLang?: string
-	mode?: Mode
+	mode?: PopupMode
+	layout?: PopupLayout
 	onchange?: ListboxProps['onchange']
 }
 
@@ -164,7 +164,8 @@ let {
 	align = 'start',
 	autoLang = false,
 	detectedLang,
-	mode =  'full',
+	mode =  PopupMode.Full,
+	layout = PopupLayout.Vert,
 	onchange,
 }: Props = $props();
 
@@ -179,6 +180,7 @@ let triggerRef = $state<HTMLButtonElement| null>(null);
 let search = $state<string>('');
 const searchTrimmed = $derived<string>(search.trim());
 const durationFlip = $derived<number>(storage.motionDisabled ? 0 : 350);
+const triggerClass = $derived<string>(mode === PopupMode.Full ? layout === PopupLayout.Horiz ? 'w-36' : 'w-52' : '');
 
 const languages = $derived(
 	languagesLocalArray.map(({ code }): Language => {

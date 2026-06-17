@@ -27,7 +27,7 @@
         "message": "Попуп прозор"
     },
     "options_tab_appearance": {
-        "message": "Спољашњи изглед"
+        "message": "Изглед"
     },
     "options_tab_history": {
         "message": "Историја"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Покажи само превод, ништа друго."
+    },
+    "options_general_layout_vert": {
+        "message": "Вертицал Лаиоут"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "Превод се појављује испод оригинала (само у пуном режиму)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Хоризонтал Лаиоут"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "Превод се појављује поред оригинала (само у пуном режиму)."
     },
     "options_inline_button_show": {
         "message": "Дугме Прикажи када је текст изабран"
@@ -237,7 +249,7 @@
         "message": "Ектра Ларге"
     },
     "options_support_msg": {
-        "message": "Ако нешто не ради или имате било какве предлоге, јавите ми овде"
+        "message": "Ако нешто не ради или имате било какве сугестије, јавите ми овде"
     },
     "options_support_donations": {
         "message": "Ако желите да подржите овај бесплатни софтвер"

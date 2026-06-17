@@ -5,7 +5,7 @@
 	style:width="{popupWidth}px"
 	style:transform="translate({moveDx}px, {moveDy}px)"
 	class={[
-		'fixed z-999999999 flex size-fit max-h-[calc(100vh-16px)] min-h-0 flex-col',
+		'fixed z-999999999 flex size-fit max-h-[calc(100vh-40px)] min-h-0 flex-col',
 		popupStore.dragging || popupStore.resizing && 'select-none',
 	]}
 	{@attach resize({
@@ -105,7 +105,8 @@
 
 <script lang="ts">
 import type { Action } from 'svelte/action';
-import { PopupMode } from '~/types';
+import { untrack } from 'svelte';
+import { PopupMode, PopupLayout } from '~/types';
 import { onDestroy } from 'svelte';
 import { fade } from 'svelte/transition';
 import { storage } from '~/shared/storage.svelte';
@@ -138,9 +139,10 @@ let reference = $derived<VirtualElement>({
 });
 const DURATION_IN = $derived<number>(storage.motionDisabled ? 0 : 300);
 const isFullMode = $derived<boolean>(storage.settings.popupMode === PopupMode.Full);
-let popupWidth = $derived<number>(isFullMode ? 550 : 280);
-const popupMinWidth = $derived<number>(isFullMode ? 400 : 280);
-const popupMinHeight = $derived<number>(isFullMode ? 256 : storage.settings.simpleModeShowLangs ? 140 : 100);
+const isHoriz = $derived<boolean>(storage.settings.popupLayout === PopupLayout.Horiz);
+let popupWidth = $derived<number>(isFullMode ? 540 : 280);
+const popupMinWidth = $derived<number>(isFullMode ? isHoriz ? 540 : 400 : 280);
+const popupMinHeight = $derived<number>(isFullMode ? isHoriz ? 160 : 256 : storage.settings.simpleModeShowLangs ? 140 : 100);
 
 const popupPosition: Action<HTMLDivElement> = popup => {
 	computePosition(reference, popup, {
@@ -175,9 +177,15 @@ function closePopup() {
 	store.showPopup = false;
 }
 
+function getPopupWidth() {
+	const width = untrack(() => popupWidth);
+	return width < popupMinWidth ? popupMinWidth : width;
+}
+
 $effect(() => {
-	if (storage.settings.popupMode && wrapperElem) {
+	if (wrapperElem) {
 		wrapperElem.style.height = '';
+		wrapperElem.style.width = `${getPopupWidth()}px`;
 	}
 });
 

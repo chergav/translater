@@ -27,13 +27,13 @@
         "message": "Popup-vindu"
     },
     "options_tab_appearance": {
-        "message": "Ytre utseende"
+        "message": "Utseende"
     },
     "options_tab_history": {
         "message": "Historie"
     },
     "options_tab_support": {
-        "message": "Støtte"
+        "message": "Support"
     },
     "button_label_delete": {
         "message": "Slett"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Vis kun oversettelsen, ingenting annet."
+    },
+    "options_general_layout_vert": {
+        "message": "Vertikal layout"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "Oversettelsen vises under originalen (kun full modus)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Horisontalt oppsett"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "Oversettelse vises ved siden av originalen (kun full modus)."
     },
     "options_inline_button_show": {
         "message": "Vis knapp når tekst er valgt"
@@ -471,7 +483,7 @@
         "message": "tibetansk"
     },
     "language_br": {
-        "message": "Breton"
+        "message": "Bretonsk"
     },
     "language_bs": {
         "message": "bosnisk"
@@ -810,10 +822,10 @@
         "message": "Mamma"
     },
     "language_mfe": {
-        "message": "Mauritisk kreolsk"
+        "message": "mauritisk kreolsk"
     },
     "language_mg": {
-        "message": "Madagaskar"
+        "message": "madagaskisk"
     },
     "language_mh": {
         "message": "Marshalleser"

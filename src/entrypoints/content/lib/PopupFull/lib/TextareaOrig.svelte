@@ -1,8 +1,8 @@
-<label class="group/textarea relative z-0 flex min-h-0 flex-col overflow-hidden">
+<label class={['group/textarea relative z-0 flex min-h-0 flex-col overflow-hidden', isHoriz && 'h-full']}>
 	<div
 		bind:this={highlightContainer}
 		class={[
-			'absolute inset-0 -z-10 scrollbar-hidden w-full overflow-y-auto py-2 pr-9 pl-1.5',
+			'absolute inset-0 -z-10 scrollbar-transparent overflow-y-auto py-2 pr-9 pl-1.5',
 			'whitespace-pre-line text-transparent',
 			fontClass,
 		]}
@@ -12,7 +12,7 @@
 	</div>
 	<textarea
 		class={[
-			'z-10 scrollbar min-h-10 w-full resize-none rounded-sm py-2 pr-9 pl-1.5 whitespace-pre-line',
+			'z-10 scrollbar size-full min-h-10 resize-none rounded-sm py-2 pr-9 pl-1.5 whitespace-pre-line',
 			'border-none bg-transparent text-color-on-surface caret-color-primary outline-none focus:outline-none',
 			fontClass,
 		]}
@@ -54,6 +54,7 @@
 
 <script lang="ts">
 import type { Attachment } from 'svelte/attachments';
+import { PopupLayout } from '~/types';
 import { fade } from 'svelte/transition';
 import { store } from '~/entrypoints/content/store.svelte';
 import { storage } from '~/shared/storage.svelte';
@@ -61,11 +62,12 @@ import { getFontClass } from '~/entrypoints/content/utils/fontSizeToClass';
 import IconButton from '~/lib/base/IconButton.svelte';
 import Close from '~icons/material-symbols/close-rounded';
 
-const MAX_HEIGHT = 300;
 let value = $derived(store.translated?.sentence.orig || store.textToTranslate);
 let highlightContainer = $state<HTMLDivElement>();
 let timeoutId = $state<number>();
 const fontClass = $derived<string>(getFontClass(storage.settings.fontSize));
+const isHoriz = $derived<boolean>(storage.settings.popupLayout === PopupLayout.Horiz);
+const maxHeight = $derived<number>(isHoriz ? Infinity : 300);
 let highlightedText = $derived.by<string>(() => {
 	let text = $state.snapshot(value);
 
@@ -82,7 +84,7 @@ let highlightedText = $derived.by<string>(() => {
 const autoResize: Attachment<HTMLTextAreaElement> = el => {
 	if (value !== undefined) {
 		el.style.height = 'auto';
-		el.style.height = Math.min(el.scrollHeight, MAX_HEIGHT) + 'px';
+		el.style.height = Math.min(el.scrollHeight, maxHeight) + 'px';
 	}
 };
 

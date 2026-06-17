@@ -65,6 +65,18 @@
     "options_general_mode_simple_hint": {
         "message": "Näytä vain käännös, ei mitään muuta."
     },
+    "options_general_layout_vert": {
+        "message": "Pysty asettelu"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "Käännös näkyy alkuperäisen alapuolella (vain täysi tila)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Vaakasuora asettelu"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "Käännös näkyy alkuperäisen vieressä (vain täysi tila)."
+    },
     "options_inline_button_show": {
         "message": "Näytä painike, kun teksti on valittuna"
     },
@@ -657,7 +669,7 @@
         "message": "hmong"
     },
     "language_hr": {
-        "message": "Kroatia"
+        "message": "kroatialainen"
     },
     "language_hrx": {
         "message": "Hunsrik"

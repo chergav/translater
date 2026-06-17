@@ -27,7 +27,7 @@
         "message": "Açılır pencere"
     },
     "options_tab_appearance": {
-        "message": "Dış görünüm"
+        "message": "Görünüm"
     },
     "options_tab_history": {
         "message": "Tarih"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Yalnızca çeviriyi göster, başka bir şeyi göster."
+    },
+    "options_general_layout_vert": {
+        "message": "Dikey Düzen"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "Çeviri orijinalin altında görünür (yalnızca tam mod)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Yatay Düzen"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "Çeviri orijinalin yanında görünür (yalnızca tam modda)."
     },
     "options_inline_button_show": {
         "message": "Metin seçildiğinde düğmeyi göster"
@@ -174,7 +186,7 @@
         "message": "Kaynak rengi"
     },
     "options_appearance_custom_theme_source_hint": {
-        "message": "Tema oluşturmak için bir renk seçin"
+        "message": "Temalar oluşturmak için bir renk seçin"
     },
     "options_appearance_custom_theme_apply": {
         "message": "Temayı uygula"
@@ -204,7 +216,7 @@
         "message": "Sesler"
     },
     "options_tts_table_caption": {
-        "message": "Bir dil listelenmiyorsa harici bir metin okuma hizmeti kullanılacaktır."
+        "message": "Bir dil listelenmiyorsa harici bir metin-konuşma hizmeti kullanılacaktır."
     },
     "options_tts_no_voices_found": {
         "message": "Tarayıcınız konuşma sentezini desteklemiyor. Bunun yerine harici bir hizmet kullanacağız."
@@ -228,7 +240,7 @@
         "message": "Küçük"
     },
     "options_font_size_md": {
-        "message": "Orta (önerilir)"
+        "message": "Orta (önerilen)"
     },
     "options_font_size_lg": {
         "message": "Büyük"
@@ -372,7 +384,7 @@
         "message": "🚀 Diğer uzantılarımı dene"
     },
     "language_auto": {
-        "message": "otomatik"
+        "message": "oto"
     },
     "language_detect": {
         "message": "Dili algıla"
@@ -687,7 +699,7 @@
         "message": "İzlandaca"
     },
     "language_it": {
-        "message": "İtalyanca"
+        "message": "İtalyan"
     },
     "language_iu": {
         "message": "İnuktuca (Heceler)"
@@ -708,7 +720,7 @@
         "message": "Cava"
     },
     "language_ka": {
-        "message": "Gürcüce"
+        "message": "Gürcü"
     },
     "language_kac": {
         "message": "Jingpo"
@@ -783,7 +795,7 @@
         "message": "Litvanyalı"
     },
     "language_ltg": {
-        "message": "Latgalyaca"
+        "message": "Latgalya dili"
     },
     "language_lua": {
         "message": "Tshiluba"
@@ -846,7 +858,7 @@
         "message": "Malayca (Jawi)"
     },
     "language_mt": {
-        "message": "Malta dili"
+        "message": "Malta"
     },
     "language_mwr": {
         "message": "Marwadi"
@@ -894,7 +906,7 @@
         "message": "Odia (Oriya)"
     },
     "language_os": {
-        "message": "Osetyalı"
+        "message": "Osetçe"
     },
     "language_pa": {
         "message": "Pencapça (Gurmukhi)"

@@ -27,7 +27,7 @@
         "message": "পপআপ উইন্ডো"
     },
     "options_tab_appearance": {
-        "message": "বাইরের চেহারা"
+        "message": "চেহারা"
     },
     "options_tab_history": {
         "message": "ইতিহাস"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "শুধুমাত্র অনুবাদ দেখান, অন্য কিছু নয়।"
+    },
+    "options_general_layout_vert": {
+        "message": "উল্লম্ব বিন্যাস"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "অনুবাদ মূলের নীচে প্রদর্শিত হয় (শুধুমাত্র সম্পূর্ণ মোড)।"
+    },
+    "options_general_layout_horiz": {
+        "message": "অনুভূমিক বিন্যাস"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "অনুবাদ মূলের পাশে প্রদর্শিত হয় (শুধুমাত্র সম্পূর্ণ মোড)।"
     },
     "options_inline_button_show": {
         "message": "পাঠ্য নির্বাচন করা হলে বোতাম প্রদর্শন করুন"
@@ -354,7 +366,7 @@
         "message": "পিন করা ভাষা"
     },
     "select_language_pin_lang": {
-        "message": "ভাষাকে উপরে পিন করুন"
+        "message": "শীর্ষে ভাষা পিন করুন"
     },
     "select_language_unpin_lang": {
         "message": "পিন করা ভাষা সরান"
@@ -579,7 +591,7 @@
         "message": "বাস্ক"
     },
     "language_fa": {
-        "message": "ফার্সি"
+        "message": "ফারসি"
     },
     "language_fa_AF": {
         "message": "দারি"
@@ -693,7 +705,7 @@
         "message": "ইনুক্টুট (সিলেবিক্স)"
     },
     "language_iu_Latn": {
-        "message": "ইনুকটুট (ল্যাটিন)"
+        "message": "ইনুক্টুট (ল্যাটিন)"
     },
     "language_iw": {
         "message": "হিব্রু"

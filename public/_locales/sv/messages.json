@@ -27,7 +27,7 @@
         "message": "Popup-fönster"
     },
     "options_tab_appearance": {
-        "message": "Yttre utseende"
+        "message": "Utseende"
     },
     "options_tab_history": {
         "message": "Historia"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Visa endast översättningen, inget annat."
+    },
+    "options_general_layout_vert": {
+        "message": "Vertikal layout"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "Översättningen visas under originalet (endast fullt läge)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Horisontell layout"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "Översättningen visas bredvid originalet (endast fullt läge)."
     },
     "options_inline_button_show": {
         "message": "Visa knapp när text är markerad"

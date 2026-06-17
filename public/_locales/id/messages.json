@@ -27,7 +27,7 @@
         "message": "Jendela munculan"
     },
     "options_tab_appearance": {
-        "message": "Penampilan luar"
+        "message": "Penampilan"
     },
     "options_tab_history": {
         "message": "Sejarah"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Tampilkan hanya terjemahannya, tidak ada yang lain."
+    },
+    "options_general_layout_vert": {
+        "message": "Tata Letak Vertikal"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "Terjemahan muncul di bawah aslinya (hanya mode penuh)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Tata Letak Horisontal"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "Terjemahan muncul di sebelah aslinya (hanya mode penuh)."
     },
     "options_inline_button_show": {
         "message": "Tampilkan tombol ketika teks dipilih"
@@ -999,7 +1011,7 @@
         "message": "Swati"
     },
     "language_st": {
-        "message": "Sesotho"
+        "message": "Sesoto"
     },
     "language_su": {
         "message": "Sunda"
@@ -1026,7 +1038,7 @@
         "message": "Telugu"
     },
     "language_tet": {
-        "message": "bahasa Tetun"
+        "message": "bahasa Tetum"
     },
     "language_tg": {
         "message": "Tajik"

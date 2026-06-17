@@ -27,7 +27,7 @@
         "message": "پنجره پاپ آپ"
     },
     "options_tab_appearance": {
-        "message": "ظاهر بیرونی"
+        "message": "ظاهر"
     },
     "options_tab_history": {
         "message": "تاریخچه"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "فقط ترجمه را نشان دهید، هیچ چیز دیگری."
+    },
+    "options_general_layout_vert": {
+        "message": "طرح بندی عمودی"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "ترجمه در زیر نسخه اصلی ظاهر می شود (فقط حالت کامل)."
+    },
+    "options_general_layout_horiz": {
+        "message": "چیدمان افقی"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "ترجمه در کنار نسخه اصلی ظاهر می شود (فقط حالت کامل)."
     },
     "options_inline_button_show": {
         "message": "نمایش دکمه زمانی که متن انتخاب شده است"
@@ -294,7 +306,7 @@
         "message": "پنهان کردن دکمه ترجمه"
     },
     "popup_menu_options_all_settings": {
-        "message": "همه تنظیمات"
+        "message": "تمام تنظیمات"
     },
     "popup_menu_switch_to_simple_mode": {
         "message": "به حالت ساده بروید"

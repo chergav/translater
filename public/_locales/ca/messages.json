@@ -27,7 +27,7 @@
         "message": "Finestra emergent"
     },
     "options_tab_appearance": {
-        "message": "Aspecte exterior"
+        "message": "Aparença"
     },
     "options_tab_history": {
         "message": "Història"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Mostra només la traducció, res més."
+    },
+    "options_general_layout_vert": {
+        "message": "Disseny vertical"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "La traducció apareix a sota de l'original (només en mode complet)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Disseny horitzontal"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "La traducció apareix al costat de l'original (només en mode complet)."
     },
     "options_inline_button_show": {
         "message": "Mostra el botó quan el text està seleccionat"
@@ -111,7 +123,7 @@
         "message": "Bloqueja la finestra emergent"
     },
     "options_lock_popup_window_hint": {
-        "message": "La finestra emergent es manté oberta quan feu clic a fora."
+        "message": "La finestra emergent es manté oberta quan feu clic a l'exterior."
     },
     "options_providers_provider": {
         "message": "Proveïdor"
@@ -363,7 +375,7 @@
         "message": "Tots els idiomes"
     },
     "select_language_search_placeholder": {
-        "message": "nom de l'idioma o codi ISO"
+        "message": "nom d'idioma o codi ISO"
     },
     "select_language_search_no_results": {
         "message": "Sense resultats"
@@ -864,7 +876,7 @@
         "message": "Nepalbhasa (Newari)"
     },
     "language_nhe": {
-        "message": "Nàhuatl (Huasteca oriental)"
+        "message": "Nàhuatl (Huasteca Oriental)"
     },
     "language_nl": {
         "message": "holandès"

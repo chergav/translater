@@ -65,6 +65,18 @@
     "options_general_mode_simple_hint": {
         "message": "Показывать только перевод и ничего больше."
     },
+    "options_general_layout_vert": {
+        "message": "Вертикальная компоновка"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "Перевод отображается под оригиналом (только в полном режиме)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Горизонтальная компоновка"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "Перевод отображается рядом с оригиналом (только в полном режиме)."
+    },
     "options_inline_button_show": {
         "message": "Показывать кнопку, когда выделен текст"
     },
@@ -1107,7 +1119,7 @@
         "message": "Волоф"
     },
     "language_xh": {
-        "message": "Коса"
+        "message": "коса"
     },
     "language_yi": {
         "message": "идиш"

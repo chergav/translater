@@ -65,6 +65,18 @@
     "options_general_mode_simple_hint": {
         "message": "只显示翻译，不显示其他内容。"
     },
+    "options_general_layout_vert": {
+        "message": "垂直布局"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "翻译显示在原文下方（仅限完整模式）。"
+    },
+    "options_general_layout_horiz": {
+        "message": "水平布局"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "翻译出现在原文旁边（仅限完整模式）。"
+    },
     "options_inline_button_show": {
         "message": "选择文本时显示按钮"
     },
@@ -495,7 +507,7 @@
         "message": "宿务语"
     },
     "language_cgg": {
-        "message": "基加"
+        "message": "基贺"
     },
     "language_ch": {
         "message": "查莫罗语"

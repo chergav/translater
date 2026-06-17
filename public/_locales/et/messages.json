@@ -27,7 +27,7 @@
         "message": "Hüpikaken"
     },
     "options_tab_appearance": {
-        "message": "Väline välimus"
+        "message": "Välimus"
     },
     "options_tab_history": {
         "message": "Ajalugu"
@@ -48,7 +48,7 @@
         "message": "ühtegi saiti pole valitud"
     },
     "options_general_show_on_selected": {
-        "message": "Kui tekst on valitud, kuvatakse hüpikaken"
+        "message": "Kuva hüpikaken, kui tekst on valitud"
     },
     "options_general_show_on_selected_hint": {
         "message": "Hüpikaken ilmub kohe pärast teksti valimist."
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Näita ainult tõlget, mitte midagi muud."
+    },
+    "options_general_layout_vert": {
+        "message": "Vertikaalne paigutus"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "Tõlge kuvatakse originaali all (ainult täisrežiimis)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Horisontaalne paigutus"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "Tõlge kuvatakse originaali kõrval (ainult täisrežiimis)."
     },
     "options_inline_button_show": {
         "message": "Näita nuppu, kui tekst on valitud"
@@ -414,7 +426,7 @@
         "message": "Awadhi"
     },
     "language_ay": {
-        "message": "Aymara"
+        "message": "Aimara"
     },
     "language_az": {
         "message": "Aserbaidžaan"
@@ -696,7 +708,7 @@
         "message": "inuktut (ladina)"
     },
     "language_iw": {
-        "message": "heebrea keel"
+        "message": "heebrea"
     },
     "language_ja": {
         "message": "Jaapani"

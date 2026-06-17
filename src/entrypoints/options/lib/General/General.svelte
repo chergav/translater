@@ -119,6 +119,24 @@
 </SegmentedList>
 
 <SegmentedList>
+	{#each layouts as { value, label, hint, Icon } (value)}
+		<Radio
+			name="popupLayout"
+			disabled={!isFullMode}
+			{hint}
+			{label}
+			{value}
+			variant="expressive"
+			bind:group={storage.settings.popupLayout}
+		>
+			{#snippet icon()}
+				<Icon />
+			{/snippet}
+		</Radio>
+	{/each}
+</SegmentedList>
+
+<SegmentedList>
 	<Switch
 		hint={browser.i18n.getMessage('options_general_show_on_selected_hint')}
 		label={browser.i18n.getMessage('options_general_show_on_selected')}
@@ -138,6 +156,7 @@
 		{/snippet}
 	</Switch>
 	<Switch
+		disabled={isFullMode}
 		hint={browser.i18n.getMessage('options_show_langs_simple_hint')}
 		label={browser.i18n.getMessage('options_show_langs_simple')}
 		bind:checked={storage.settings.simpleModeShowLangs}
@@ -146,7 +165,7 @@
 			<Language />
 		{/snippet}
 	</Switch>
-	<Switch
+	<!-- <Switch
 		hint={browser.i18n.getMessage('options_show_original_text_hint')}
 		label={browser.i18n.getMessage('options_show_original_text')}
 		bind:checked={storage.settings.showOriginalText}
@@ -154,7 +173,7 @@
 		{#snippet icon()}
 			<TextAd />
 		{/snippet}
-	</Switch>
+	</Switch> -->
 	<Switch
 		hint={browser.i18n.getMessage('options_show_transliteration_hint')}
 		label={browser.i18n.getMessage('options_show_transliteration')}
@@ -208,7 +227,7 @@
 
 <script lang="ts">
 import type { Component } from 'svelte';
-import { FontSize, PopupMode } from '~/types';
+import { FontSize, PopupMode, PopupLayout } from '~/types';
 import { storage } from '~/shared/storage.svelte';
 import SelectLanguageSimple from '~/lib/SelectLanguageSimple.svelte';
 import IconButton from '~/lib/base/IconButton.svelte';
@@ -235,11 +254,14 @@ import DoNotDisturbOn from '~icons/material-symbols/do-not-disturb-on-outline-ro
 import Acute from '~icons/material-symbols/acute-outline-rounded';
 import Lock from '~icons/material-symbols/lock-outline';
 import Language from '~icons/material-symbols/language';
-import TextAd from '~icons/material-symbols/text-ad-outline-rounded';
+// import TextAd from '~icons/material-symbols/text-ad-outline-rounded';
 import Abc from '~icons/material-symbols/abc-rounded';
+import Vertical from '~icons/material-symbols/splitscreen-portrait-outline-rounded';
+import Horizontal from '~icons/material-symbols/splitscreen-landscape-outline-rounded';
 
 // import OAuth from './OAuth.svelte';
 
+let isFullMode = $derived<boolean>(storage.settings.popupMode === PopupMode.Full);
 let targetLang = $derived<string>(getDisplayedLanguageName(storage.settings.targetLang, 'name+code'));
 
 const deleteFromBlacklist = (domain: string) => {
@@ -269,6 +291,26 @@ const modes: {
 		label: browser.i18n.getMessage('options_general_mode_simple'),
 		hint: browser.i18n.getMessage('options_general_mode_simple_hint'),
 		Icon: ModeSimple,
+	},
+];
+
+const layouts: {
+	value: PopupLayout
+	label: string
+	hint: string
+	Icon: Component
+}[] = [
+	{
+		value: PopupLayout.Vert,
+		label: browser.i18n.getMessage('options_general_layout_vert'),
+		hint: browser.i18n.getMessage('options_general_layout_vert_hint'),
+		Icon: Vertical,
+	},
+	{
+		value: PopupLayout.Horiz,
+		label: browser.i18n.getMessage('options_general_layout_horiz'),
+		hint: browser.i18n.getMessage('options_general_layout_horiz_hint'),
+		Icon: Horizontal,
 	},
 ];
 

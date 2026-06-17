@@ -27,7 +27,7 @@
         "message": "Iššokantis langas"
     },
     "options_tab_appearance": {
-        "message": "Išorinė išvaizda"
+        "message": "Išvaizda"
     },
     "options_tab_history": {
         "message": "Istorija"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Rodyti tik vertimą, nieko daugiau."
+    },
+    "options_general_layout_vert": {
+        "message": "Vertikalus išdėstymas"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "Vertimas rodomas po originalu (tik viso režimo)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Horizontalus išdėstymas"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "Vertimas rodomas šalia originalo (tik viso režimo)."
     },
     "options_inline_button_show": {
         "message": "Rodyti mygtuką, kai pasirenkamas tekstas"
@@ -120,7 +132,7 @@
         "message": "Modelis"
     },
     "options_appearance_theme": {
-        "message": "tema"
+        "message": "Tema"
     },
     "theme_light": {
         "message": "Šviesos tema"

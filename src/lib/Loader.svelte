@@ -1,4 +1,9 @@
-<Progress class={['shrink-0 animate-spin text-color-primary', className]} />
+<Progress
+	class={[
+		'shrink-0 animate-spin text-color-primary',
+		className,
+	]}
+/>
 
 <script lang="ts">
 import type { ClassValue } from 'svelte/elements';

@@ -27,7 +27,7 @@
         "message": "Tetingkap timbul"
     },
     "options_tab_appearance": {
-        "message": "Penampilan luar"
+        "message": "Penampilan"
     },
     "options_tab_history": {
         "message": "Sejarah"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Tunjukkan terjemahan sahaja, tiada yang lain."
+    },
+    "options_general_layout_vert": {
+        "message": "Susun Atur Menegak"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "Terjemahan muncul di bawah yang asal (mod penuh sahaja)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Susun Atur Mendatar"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "Terjemahan muncul di sebelah asal (mod penuh sahaja)."
     },
     "options_inline_button_show": {
         "message": "Tunjukkan butang apabila teks dipilih"
@@ -213,7 +225,7 @@
         "message": "edit pintasan papan kekunci"
     },
     "options_keyboard_shortcut_open_popup": {
-        "message": "Pintasan papan kekunci untuk membuka tetingkap pop timbul"
+        "message": "Pintasan papan kekunci untuk membuka tetingkap timbul"
     },
     "options_key_combination_is_not_set": {
         "message": "pintasan papan kekunci tidak ditetapkan"
@@ -567,7 +579,7 @@
         "message": "Inggeris"
     },
     "language_eo": {
-        "message": "Esperanto"
+        "message": "bahasa Esperanto"
     },
     "language_es": {
         "message": "bahasa Sepanyol"
@@ -975,7 +987,7 @@
         "message": "Sinhala"
     },
     "language_sk": {
-        "message": "bahasa Slovak"
+        "message": "Bahasa Slovak"
     },
     "language_sl": {
         "message": "Bahasa Slovenia"
@@ -1008,7 +1020,7 @@
         "message": "Susu"
     },
     "language_sv": {
-        "message": "bahasa Sweden"
+        "message": "Bahasa Sweden"
     },
     "language_sw": {
         "message": "bahasa Swahili"

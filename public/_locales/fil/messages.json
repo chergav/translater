@@ -27,7 +27,7 @@
         "message": "Popup window"
     },
     "options_tab_appearance": {
-        "message": "Panlabas na anyo"
+        "message": "Hitsura"
     },
     "options_tab_history": {
         "message": "Kasaysayan"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Ipakita lamang ang pagsasalin, wala nang iba pa."
+    },
+    "options_general_layout_vert": {
+        "message": "Patayong Layout"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "Lumalabas ang pagsasalin sa ibaba ng orihinal (full mode lamang)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Pahalang na Layout"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "Lumalabas ang pagsasalin sa tabi ng orihinal (full mode lamang)."
     },
     "options_inline_button_show": {
         "message": "Ipakita ang pindutan kapag pinili ang teksto"
@@ -360,7 +372,7 @@
         "message": "Alisin ang naka-pin na wika"
     },
     "select_language_all_langs": {
-        "message": "Lahat ng wika"
+        "message": "Lahat ng mga wika"
     },
     "select_language_search_placeholder": {
         "message": "pangalan ng wika o ISO code"

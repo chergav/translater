@@ -27,7 +27,7 @@
         "message": "Janela pop-up"
     },
     "options_tab_appearance": {
-        "message": "Aparência externa"
+        "message": "Aparência"
     },
     "options_tab_history": {
         "message": "História"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Mostre apenas a tradução, nada mais."
+    },
+    "options_general_layout_vert": {
+        "message": "Layout vertical"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "A tradução aparece abaixo do original (apenas modo completo)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Layout horizontal"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "A tradução aparece ao lado do original (apenas modo completo)."
     },
     "options_inline_button_show": {
         "message": "Mostrar botão quando o texto é selecionado"
@@ -222,7 +234,7 @@
         "message": "Tamanho da fonte"
     },
     "options_font_size_xs": {
-        "message": "Extra pequeno"
+        "message": "Extra Pequeno"
     },
     "options_font_size_sm": {
         "message": "Pequeno"
@@ -705,7 +717,7 @@
         "message": "Patois jamaicanos"
     },
     "language_jw": {
-        "message": "Javanês"
+        "message": "javanês"
     },
     "language_ka": {
         "message": "Georgiano"
@@ -813,7 +825,7 @@
         "message": "crioulo das Maurícias"
     },
     "language_mg": {
-        "message": "malgaxe"
+        "message": "Malgaxe"
     },
     "language_mh": {
         "message": "marshallês"
@@ -828,7 +840,7 @@
         "message": "Macedônio"
     },
     "language_ml": {
-        "message": "malaiala"
+        "message": "Malaiala"
     },
     "language_mn": {
         "message": "Mongol"
@@ -846,7 +858,7 @@
         "message": "Malaio (Jawi)"
     },
     "language_mt": {
-        "message": "Maltês"
+        "message": "maltês"
     },
     "language_mwr": {
         "message": "Marwadi"
@@ -1017,7 +1029,7 @@
         "message": "Silésia"
     },
     "language_ta": {
-        "message": "Tâmil"
+        "message": "tâmil"
     },
     "language_tcy": {
         "message": "Tulú"
@@ -1065,7 +1077,7 @@
         "message": "Tsonga"
     },
     "language_tt": {
-        "message": "Tártaro"
+        "message": "tártaro"
     },
     "language_tum": {
         "message": "Tumbuka"

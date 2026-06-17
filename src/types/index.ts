@@ -13,7 +13,7 @@ export interface Settings {
 	pinedLangs: string[]
 	inlineButtonShow: boolean
 	textFieldButtonShow: boolean
-	showOriginalText: boolean
+	// showOriginalText: boolean
 	showTransliteration: boolean
 	blacklistDomainForInline: string[]
 	blacklistDomainForText: string[]
@@ -29,6 +29,7 @@ export interface Settings {
 	hideButtonForUserLanguage: boolean
 	showPopupOnSelection: boolean
 	popupMode: PopupMode
+	popupLayout: PopupLayout
 	simpleModeShowLangs: boolean
 	motionPreference: MotionPreference
 }
@@ -85,6 +86,11 @@ export enum FontSize {
 export enum PopupMode {
 	Full = 'full',
 	Simple = 'simple',
+}
+
+export enum PopupLayout {
+	Vert = 'vert',
+	Horiz = 'horiz',
 }
 
 export enum MotionPreference {

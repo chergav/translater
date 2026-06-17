@@ -27,7 +27,7 @@
         "message": "பாப்அப் சாளரம்"
     },
     "options_tab_appearance": {
-        "message": "வெளிப்புற தோற்றம்"
+        "message": "தோற்றம்"
     },
     "options_tab_history": {
         "message": "வரலாறு"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "மொழிபெயர்ப்பை மட்டும் காட்டுங்கள், வேறு எதுவும் இல்லை."
+    },
+    "options_general_layout_vert": {
+        "message": "செங்குத்து தளவமைப்பு"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "மொழிபெயர்ப்பு அசலுக்குக் கீழே தோன்றும் (முழு பயன்முறை மட்டும்)."
+    },
+    "options_general_layout_horiz": {
+        "message": "கிடைமட்ட தளவமைப்பு"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "மூலத்திற்கு அடுத்ததாக மொழிபெயர்ப்பு தோன்றும் (முழு பயன்முறை மட்டும்)."
     },
     "options_inline_button_show": {
         "message": "உரை தேர்ந்தெடுக்கப்படும்போது பொத்தானைக் காட்டு"
@@ -237,7 +249,7 @@
         "message": "கூடுதல் பெரியது"
     },
     "options_support_msg": {
-        "message": "ஏதாவது வேலை செய்யவில்லை என்றால் அல்லது உங்களுக்கு ஏதேனும் பரிந்துரைகள் இருந்தால், தயவுசெய்து எனக்கு இங்கே தெரியப்படுத்தவும்"
+        "message": "ஏதாவது வேலை செய்யவில்லை என்றால், அல்லது உங்களுக்கு ஏதேனும் பரிந்துரைகள் இருந்தால், தயவுசெய்து எனக்கு இங்கே தெரிவிக்கவும்"
     },
     "options_support_donations": {
         "message": "நீங்கள் இந்த இலவச மென்பொருளை ஆதரிக்க விரும்பினால்"
@@ -594,7 +606,7 @@
         "message": "பிலிப்பினோ (டகாலாக்)"
     },
     "language_fj": {
-        "message": "பிஜியன்"
+        "message": "ஃபிஜியன்"
     },
     "language_fo": {
         "message": "ஃபரோஸ்"
@@ -642,7 +654,7 @@
         "message": "மேங்க்ஸ்"
     },
     "language_ha": {
-        "message": "ஹௌசா"
+        "message": "ஹவுசா"
     },
     "language_haw": {
         "message": "ஹவாய்"

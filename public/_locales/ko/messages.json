@@ -65,6 +65,18 @@
     "options_general_mode_simple_hint": {
         "message": "번역만 표시하고 다른 내용은 표시하지 않습니다."
     },
+    "options_general_layout_vert": {
+        "message": "수직 레이아웃"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "번역은 원본 아래에 나타납니다(전체 모드에만 해당)."
+    },
+    "options_general_layout_horiz": {
+        "message": "수평 레이아웃"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "번역은 원본 옆에 나타납니다(전체 모드에만 해당)."
+    },
     "options_inline_button_show": {
         "message": "텍스트가 선택되면 버튼 표시"
     },

@@ -27,7 +27,7 @@
         "message": "חלון קופץ"
     },
     "options_tab_appearance": {
-        "message": "מראה חיצוני"
+        "message": "מראה"
     },
     "options_tab_history": {
         "message": "היסטוריה"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "הצג רק את התרגום, שום דבר אחר."
+    },
+    "options_general_layout_vert": {
+        "message": "פריסה אנכית"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "התרגום מופיע מתחת למקור (מצב מלא בלבד)."
+    },
+    "options_general_layout_horiz": {
+        "message": "פריסה אופקית"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "התרגום מופיע ליד המקור (מצב מלא בלבד)."
     },
     "options_inline_button_show": {
         "message": "הצג כפתור כאשר טקסט נבחר"
@@ -207,7 +219,7 @@
         "message": "אם שפה לא רשומה, ייעשה שימוש בשירות טקסט לדיבור חיצוני."
     },
     "options_tts_no_voices_found": {
-        "message": "הדפדפן שלך אינו תומך בסינתזה של דיבור. במקום זאת נשתמש בשירות חיצוני."
+        "message": "הדפדפן שלך אינו תומך בסינתזת דיבור. במקום זאת נשתמש בשירות חיצוני."
     },
     "options_edit_keyboard_shortcut": {
         "message": "ערוך קיצורי מקלדת"
@@ -774,7 +786,7 @@
         "message": "לומברד"
     },
     "language_ln": {
-        "message": "לינגאלה"
+        "message": "לינגלה"
     },
     "language_lo": {
         "message": "לאו"

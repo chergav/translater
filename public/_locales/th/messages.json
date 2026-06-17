@@ -27,7 +27,7 @@
         "message": "หน้าต่างป๊อปอัป"
     },
     "options_tab_appearance": {
-        "message": "ลักษณะภายนอก"
+        "message": "ลักษณะที่ปรากฏ"
     },
     "options_tab_history": {
         "message": "ประวัติศาสตร์"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "แสดงเฉพาะคำแปลเท่านั้น ไม่มีอะไรอื่นอีก"
+    },
+    "options_general_layout_vert": {
+        "message": "เค้าโครงแนวตั้ง"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "คำแปลจะปรากฏด้านล่างต้นฉบับ (โหมดเต็มเท่านั้น)"
+    },
+    "options_general_layout_horiz": {
+        "message": "เค้าโครงแนวนอน"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "คำแปลจะปรากฏถัดจากต้นฉบับ (โหมดเต็มเท่านั้น)"
     },
     "options_inline_button_show": {
         "message": "ปุ่มแสดงเมื่อเลือกข้อความ"

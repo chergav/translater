@@ -6,7 +6,7 @@
 					align="center"
 					autoLang
 					detectedLang={store.detectedLang}
-					mode="simple"
+					mode={PopupMode.Simple}
 					onchange={store.reTranslate}
 					bind:value={storage.settings.sourceLang}
 				/>
@@ -21,7 +21,7 @@
 				</IconButton>
 				<SelectLanguage
 					align="center"
-					mode="simple"
+					mode={PopupMode.Simple}
 					onchange={store.reTranslate}
 					bind:value={storage.settings.targetLang}
 				/>
@@ -63,6 +63,7 @@
 </div>
 
 <script lang="ts">
+import { PopupMode } from '~/types';
 import { storage } from '~/shared/storage.svelte';
 import { store } from '~/entrypoints/content/store.svelte';
 import { providerStore } from '~/entrypoints/options/lib/Providers/providerStore.svelte';

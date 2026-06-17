@@ -1,4 +1,4 @@
-import { type Settings, Theme, ThemeColor, FontSize, PopupMode, ContrastLevel, Contrast, MotionPreference, TTSProvider } from '~/types';
+import { type Settings, Theme, ThemeColor, FontSize, PopupMode, PopupLayout, ContrastLevel, Contrast, MotionPreference, TTSProvider } from '~/types';
 import { GOOGLE_TRANSLATE_MODEL_ID } from '~/types/providers';
 import { MediaQuery } from 'svelte/reactivity';
 import { getUILanguageCode } from '~/shared/languages';
@@ -17,7 +17,7 @@ const initialSettings: Settings = {
 	pinedLangs: [],
 	inlineButtonShow: true,
 	textFieldButtonShow: true,
-	showOriginalText: true,
+	// showOriginalText: true,
 	showTransliteration: true,
 	blacklistDomainForInline: [],
 	blacklistDomainForText: [],
@@ -30,6 +30,7 @@ const initialSettings: Settings = {
 	hideButtonForUserLanguage: false,
 	showPopupOnSelection: false,
 	popupMode: PopupMode.Full,
+	popupLayout: PopupLayout.Vert,
 	simpleModeShowLangs: false,
 	motionPreference: MotionPreference.System,
 };

@@ -65,6 +65,18 @@
     "options_general_mode_simple_hint": {
         "message": "Показване само на превода, нищо друго."
     },
+    "options_general_layout_vert": {
+        "message": "Вертикално оформление"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "Преводът се показва под оригинала (само пълен режим)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Хоризонтално оформление"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "Преводът се появява до оригинала (само пълен режим)."
+    },
     "options_inline_button_show": {
         "message": "Показване на бутона, когато текстът е избран"
     },

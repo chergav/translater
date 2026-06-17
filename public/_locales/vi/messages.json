@@ -27,7 +27,7 @@
         "message": "Cửa sổ bật lên"
     },
     "options_tab_appearance": {
-        "message": "Hình dáng bên ngoài"
+        "message": "Ngoại hình"
     },
     "options_tab_history": {
         "message": "Lịch sử"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Chỉ hiển thị bản dịch, không có gì khác."
+    },
+    "options_general_layout_vert": {
+        "message": "Bố cục dọc"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "Bản dịch xuất hiện bên dưới bản gốc (chỉ ở chế độ đầy đủ)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Bố cục ngang"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "Bản dịch xuất hiện bên cạnh bản gốc (chỉ ở chế độ đầy đủ)."
     },
     "options_inline_button_show": {
         "message": "Nút hiển thị khi văn bản được chọn"
@@ -765,7 +777,7 @@
         "message": "Luganda"
     },
     "language_li": {
-        "message": "Tiếng Limburg"
+        "message": "tiếng Limburg"
     },
     "language_lij": {
         "message": "tiếng Ligurian"
@@ -966,7 +978,7 @@
         "message": "Sami (Miền Bắc)"
     },
     "language_sg": {
-        "message": "Sango"
+        "message": "sango"
     },
     "language_shn": {
         "message": "Sơn"
@@ -990,7 +1002,7 @@
         "message": "tiếng Somali"
     },
     "language_sq": {
-        "message": "tiếng Albania"
+        "message": "Tiếng Albania"
     },
     "language_sr": {
         "message": "tiếng Serbia"

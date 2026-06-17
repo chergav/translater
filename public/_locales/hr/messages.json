@@ -27,7 +27,7 @@
         "message": "Skočni prozor"
     },
     "options_tab_appearance": {
-        "message": "Vanjski izgled"
+        "message": "Izgled"
     },
     "options_tab_history": {
         "message": "Povijest"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Prikaži samo prijevod, ništa drugo."
+    },
+    "options_general_layout_vert": {
+        "message": "Vertikalni raspored"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "Prijevod se pojavljuje ispod izvornika (samo puni način)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Horizontalni raspored"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "Prijevod se pojavljuje pored izvornika (samo puni način)."
     },
     "options_inline_button_show": {
         "message": "Prikaži gumb kada je tekst odabran"
@@ -225,7 +237,7 @@
         "message": "Ekstra mali"
     },
     "options_font_size_sm": {
-        "message": "mali"
+        "message": "mala"
     },
     "options_font_size_md": {
         "message": "Srednje (preporučeno)"

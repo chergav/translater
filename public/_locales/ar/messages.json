@@ -27,7 +27,7 @@
         "message": "نافذة منبثقة"
     },
     "options_tab_appearance": {
-        "message": "المظهر الخارجي"
+        "message": "المظهر"
     },
     "options_tab_history": {
         "message": "التاريخ"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "عرض الترجمة فقط، ولا شيء آخر."
+    },
+    "options_general_layout_vert": {
+        "message": "التخطيط العمودي"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "تظهر الترجمة أسفل النص الأصلي (الوضع الكامل فقط)."
+    },
+    "options_general_layout_horiz": {
+        "message": "التخطيط الأفقي"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "تظهر الترجمة بجوار النسخة الأصلية (الوضع الكامل فقط)."
     },
     "options_inline_button_show": {
         "message": "زر إظهار عند تحديد النص"

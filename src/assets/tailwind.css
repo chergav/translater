@@ -193,6 +193,23 @@ body {
 	}
 }
 
+@utility scrollbar-transparent {
+	scrollbar-color: transparent transparent;
+    scrollbar-width: thin;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	&::-webkit-scrollbar-corner {
+		display: none;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: transparent;
+	}
+}
+
 @utility scrollbar-stable {
 	scrollbar-gutter: stable;
 }

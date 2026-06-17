@@ -27,7 +27,7 @@
         "message": "Wyskakujące okienko"
     },
     "options_tab_appearance": {
-        "message": "Wygląd zewnętrzny"
+        "message": "Wygląd"
     },
     "options_tab_history": {
         "message": "Historia"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Pokaż tylko tłumaczenie, nic więcej."
+    },
+    "options_general_layout_vert": {
+        "message": "Układ pionowy"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "Tłumaczenie pojawia się pod oryginałem (tylko w trybie pełnym)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Układ poziomy"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "Tłumaczenie pojawia się obok oryginału (tylko w trybie pełnym)."
     },
     "options_inline_button_show": {
         "message": "Pokaż przycisk, gdy zaznaczony jest tekst"
@@ -846,7 +858,7 @@
         "message": "Malajski (Jawi)"
     },
     "language_mt": {
-        "message": "Maltański"
+        "message": "maltański"
     },
     "language_mwr": {
         "message": "Marwadi"
@@ -1065,7 +1077,7 @@
         "message": "Tsonga"
     },
     "language_tt": {
-        "message": "Tatarski"
+        "message": "tatarski"
     },
     "language_tum": {
         "message": "Tumbuka"
@@ -1125,7 +1137,7 @@
         "message": "Zapotek"
     },
     "language_zh_CN": {
-        "message": "chiński (uproszczony)"
+        "message": "Chiński (uproszczony)"
     },
     "language_zh_TW": {
         "message": "chiński (tradycyjny)"

@@ -27,7 +27,7 @@
         "message": "Pojavno okno"
     },
     "options_tab_appearance": {
-        "message": "Zunanji videz"
+        "message": "Videz"
     },
     "options_tab_history": {
         "message": "Zgodovina"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Prikaži samo prevod, nič drugega."
+    },
+    "options_general_layout_vert": {
+        "message": "Vertikalna postavitev"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "Prevod se prikaže pod izvirnikom (samo polni način)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Horizontalna postavitev"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "Prevod se pojavi poleg izvirnika (samo polni način)."
     },
     "options_inline_button_show": {
         "message": "Pokaži gumb, ko je izbrano besedilo"

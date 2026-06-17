@@ -27,7 +27,7 @@
         "message": "Popup-vindue"
     },
     "options_tab_appearance": {
-        "message": "Ydre udseende"
+        "message": "Udseende"
     },
     "options_tab_history": {
         "message": "Historie"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Vis kun oversættelsen, intet andet."
+    },
+    "options_general_layout_vert": {
+        "message": "Lodret layout"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "Oversættelsen vises under originalen (kun fuld tilstand)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Vandret layout"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "Oversættelse vises ved siden af originalen (kun fuld tilstand)."
     },
     "options_inline_button_show": {
         "message": "Vis knap, når tekst er valgt"
@@ -123,7 +135,7 @@
         "message": "Tema"
     },
     "theme_light": {
-        "message": "Lyst tema"
+        "message": "Lys tema"
     },
     "theme_system": {
         "message": "System tema"

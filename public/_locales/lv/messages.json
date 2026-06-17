@@ -27,7 +27,7 @@
         "message": "Uznirstošais logs"
     },
     "options_tab_appearance": {
-        "message": "Ārējais izskats"
+        "message": "Izskats"
     },
     "options_tab_history": {
         "message": "Vēsture"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Rādīt tikai tulkojumu, neko citu."
+    },
+    "options_general_layout_vert": {
+        "message": "Vertikālais izkārtojums"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "Tulkojums parādās zem oriģināla (tikai pilnais režīms)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Horizontālais izkārtojums"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "Tulkojums tiek parādīts blakus oriģinālam (tikai pilnajā režīmā)."
     },
     "options_inline_button_show": {
         "message": "Rādīt pogu, kad ir atlasīts teksts"
@@ -312,7 +324,7 @@
         "message": "Kopēt starpliktuvē"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "Kopēšana netiek atbalstīta HTTP vietnēs"
+        "message": "HTTP vietnēs kopēšana netiek atbalstīta"
     },
     "tooltip_listen_to_the_text": {
         "message": "Klausieties tekstu"
@@ -696,7 +708,7 @@
         "message": "inuktut (latīņu)"
     },
     "language_iw": {
-        "message": "ebreju valoda"
+        "message": "ivrits"
     },
     "language_ja": {
         "message": "japāņi"
@@ -933,7 +945,7 @@
         "message": "Rundi"
     },
     "language_ro": {
-        "message": "rumāņu valoda"
+        "message": "rumāņu"
     },
     "language_rom": {
         "message": "romu valoda"

@@ -27,7 +27,7 @@
         "message": "Pop-upvenster"
     },
     "options_tab_appearance": {
-        "message": "Uiterlijke verschijning"
+        "message": "Uiterlijk"
     },
     "options_tab_history": {
         "message": "Geschiedenis"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Toon alleen de vertaling, niets anders."
+    },
+    "options_general_layout_vert": {
+        "message": "Verticale indeling"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "De vertaling verschijnt onder het origineel (alleen volledige modus)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Horizontale lay-out"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "De vertaling verschijnt naast het origineel (alleen in de volledige modus)."
     },
     "options_inline_button_show": {
         "message": "Knop weergeven wanneer tekst is geselecteerd"

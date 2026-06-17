@@ -27,7 +27,7 @@
         "message": "പോപ്പ്അപ്പ് വിൻഡോ"
     },
     "options_tab_appearance": {
-        "message": "ബാഹ്യ രൂപം"
+        "message": "രൂപഭാവം"
     },
     "options_tab_history": {
         "message": "ചരിത്രം"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "വിവർത്തനം മാത്രം കാണിക്കുക, മറ്റൊന്നുമല്ല."
+    },
+    "options_general_layout_vert": {
+        "message": "ലംബ ലേഔട്ട്"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "വിവർത്തനം ഒറിജിനലിന് താഴെ ദൃശ്യമാകുന്നു (പൂർണ്ണ മോഡ് മാത്രം)."
+    },
+    "options_general_layout_horiz": {
+        "message": "തിരശ്ചീന ലേഔട്ട്"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "ഒറിജിനലിന് അടുത്തായി വിവർത്തനം ദൃശ്യമാകുന്നു (പൂർണ്ണ മോഡ് മാത്രം)."
     },
     "options_inline_button_show": {
         "message": "ടെക്സ്റ്റ് തിരഞ്ഞെടുക്കുമ്പോൾ ബട്ടൺ കാണിക്കുക"
@@ -162,7 +174,7 @@
         "message": "ഇഷ്ടാനുസൃത തീം"
     },
     "options_appearance_edit_custom_theme": {
-        "message": "ഇഷ്ടാനുസൃത തീം എഡിറ്റ് ചെയ്യുക"
+        "message": "ഇഷ്‌ടാനുസൃത തീം എഡിറ്റ് ചെയ്യുക"
     },
     "options_appearance_custom_theme_preview": {
         "message": "പ്രിവ്യൂ"
@@ -414,7 +426,7 @@
         "message": "കാലാവധി"
     },
     "language_ay": {
-        "message": "അയ്മര"
+        "message": "അയ്മാര"
     },
     "language_az": {
         "message": "അസർബൈജാനി"
@@ -495,7 +507,7 @@
         "message": "സെബുവാനോ"
     },
     "language_cgg": {
-        "message": "കിഗ"
+        "message": "കിഗാ"
     },
     "language_ch": {
         "message": "ചമോറോ"
@@ -1053,7 +1065,7 @@
         "message": "ടോംഗൻ"
     },
     "language_tpi": {
-        "message": "ടോക്ക് പിസിൻ"
+        "message": "ടോക് പിസിൻ"
     },
     "language_tr": {
         "message": "ടർക്കിഷ്"

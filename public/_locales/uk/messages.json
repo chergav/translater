@@ -65,6 +65,18 @@
     "options_general_mode_simple_hint": {
         "message": "Показувати лише переклад, більше нічого."
     },
+    "options_general_layout_vert": {
+        "message": "Вертикальна розкладка"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "Переклад відображається під оригіналом (тільки повний режим)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Горизонтальний макет"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "Переклад відображається поруч з оригіналом (тільки повний режим)."
+    },
     "options_inline_button_show": {
         "message": "Показувати кнопку, коли вибрано текст"
     },

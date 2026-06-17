@@ -27,7 +27,7 @@
         "message": "Finestra popup"
     },
     "options_tab_appearance": {
-        "message": "Aspetto esterno"
+        "message": "Aspetto"
     },
     "options_tab_history": {
         "message": "Storia"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Mostra solo la traduzione, nient'altro."
+    },
+    "options_general_layout_vert": {
+        "message": "Disposizione verticale"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "La traduzione appare sotto l'originale (solo modalità completa)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Disposizione orizzontale"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "La traduzione appare accanto all'originale (solo modalità completa)."
     },
     "options_inline_button_show": {
         "message": "Mostra il pulsante quando il testo è selezionato"
@@ -486,7 +498,7 @@
         "message": "Buriato"
     },
     "language_ca": {
-        "message": "catalano"
+        "message": "Catalano"
     },
     "language_ce": {
         "message": "Ceceno"
@@ -534,7 +546,7 @@
         "message": "Gallese"
     },
     "language_da": {
-        "message": "Danese"
+        "message": "danese"
     },
     "language_de": {
         "message": "tedesco"
@@ -918,7 +930,7 @@
         "message": "Pashtu"
     },
     "language_pt": {
-        "message": "Portoghese"
+        "message": "portoghese"
     },
     "language_pt_BR": {
         "message": "Portoghese (Brasile)"
@@ -936,7 +948,7 @@
         "message": "rumeno"
     },
     "language_rom": {
-        "message": "Romanì"
+        "message": "Romani"
     },
     "language_ru": {
         "message": "Russo"

@@ -85,6 +85,21 @@
 				<ModeSimple />
 			{/snippet}
 		</MenuItem>
+		<MenuItem
+			label={isHoriz
+				? browser.i18n.getMessage('options_general_layout_vert')
+				: browser.i18n.getMessage('options_general_layout_horiz')}
+			onclick={toggleLayout}
+			size="xs"
+		>
+			{#snippet leadingIcon()}
+				{#if isHoriz}
+					<Vertical />
+				{:else}
+					<Horizontal />
+				{/if}
+			{/snippet}
+		</MenuItem>
 		<div class="mx-2 my-1 h-px bg-color-outline-variant"></div>
 		<MenuItem
 			label={browser.i18n.getMessage('popup_menu_options_all_settings')}
@@ -102,7 +117,7 @@
 </span>
 
 <script lang="ts">
-import { type Message, PopupMode } from '~/types';
+import { type Message, PopupMode, PopupLayout } from '~/types';
 import IconButton from '~/lib/base/IconButton.svelte';
 import { Menu, MenuItem } from '~/lib/base/Menu';
 import { store } from '~/entrypoints/content/store.svelte';
@@ -119,10 +134,13 @@ import Visibility from '~icons/material-symbols/visibility-outline-rounded';
 import VisibilityOff from '~icons/material-symbols/visibility-off-outline-rounded';
 import ModeSimple from '~icons/material-symbols/close-fullscreen-rounded';
 import SettingsOutline from '~icons/material-symbols/settings-outline-rounded';
+import Vertical from '~icons/material-symbols/splitscreen-portrait-outline-rounded';
+import Horizontal from '~icons/material-symbols/splitscreen-landscape-outline-rounded';
 
 let menuOpen = $state<boolean>(false);
 let buttonMenuRef = $state<HTMLButtonElement | null>(null);
 let isDomainInBlacklist = $derived<boolean>(storage.settings.blacklistDomainForInline.includes(store.hostname));
+const isHoriz = $derived<boolean>(storage.settings.popupLayout === PopupLayout.Horiz);
 
 const closeMenu = () => menuOpen = false;
 const toggleMenu = () => menuOpen = !menuOpen;
@@ -165,5 +183,9 @@ function openOptionsPage() {
 
 function toggleLockWindow() {
 	storage.settings.lockWindow = !storage.settings.lockWindow;
+}
+
+function toggleLayout() {
+	storage.settings.popupLayout = storage.settings.popupLayout === PopupLayout.Vert ? PopupLayout.Horiz : PopupLayout.Vert;
 }
 </script>

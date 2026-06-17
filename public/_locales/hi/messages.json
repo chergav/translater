@@ -27,7 +27,7 @@
         "message": "पॉपअप विंडो"
     },
     "options_tab_appearance": {
-        "message": "बाहरी रूप"
+        "message": "दिखावट"
     },
     "options_tab_history": {
         "message": "इतिहास"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "केवल अनुवाद दिखाएँ, और कुछ नहीं।"
+    },
+    "options_general_layout_vert": {
+        "message": "लंबवत लेआउट"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "अनुवाद मूल (केवल पूर्ण मोड) के नीचे दिखाई देता है।"
+    },
+    "options_general_layout_horiz": {
+        "message": "क्षैतिज लेआउट"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "अनुवाद मूल (केवल पूर्ण मोड) के बगल में दिखाई देता है।"
     },
     "options_inline_button_show": {
         "message": "टेक्स्ट चयनित होने पर बटन दिखाएँ"

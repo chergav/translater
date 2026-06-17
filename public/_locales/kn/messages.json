@@ -27,7 +27,7 @@
         "message": "ಪಾಪ್ಅಪ್ ವಿಂಡೋ"
     },
     "options_tab_appearance": {
-        "message": "ಬಾಹ್ಯ ನೋಟ"
+        "message": "ಗೋಚರತೆ"
     },
     "options_tab_history": {
         "message": "ಇತಿಹಾಸ"
@@ -39,7 +39,7 @@
         "message": "ಅಳಿಸಿ"
     },
     "button_label_cancel": {
-        "message": "ರದ್ದುಮಾಡಿ"
+        "message": "ರದ್ದುಮಾಡು"
     },
     "options_general_translation_button": {
         "message": "ಅನುವಾದ ಬಟನ್"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "ಅನುವಾದವನ್ನು ಮಾತ್ರ ತೋರಿಸು, ಬೇರೇನೂ ಇಲ್ಲ."
+    },
+    "options_general_layout_vert": {
+        "message": "ಲಂಬ ಲೇಔಟ್"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "ಅನುವಾದವು ಮೂಲಕ್ಕಿಂತ ಕೆಳಗೆ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ (ಪೂರ್ಣ ಮೋಡ್ ಮಾತ್ರ)."
+    },
+    "options_general_layout_horiz": {
+        "message": "ಸಮತಲ ಲೇಔಟ್"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "ಅನುವಾದವು ಮೂಲದ ಪಕ್ಕದಲ್ಲಿ ಗೋಚರಿಸುತ್ತದೆ (ಪೂರ್ಣ ಮೋಡ್ ಮಾತ್ರ)."
     },
     "options_inline_button_show": {
         "message": "ಪಠ್ಯವನ್ನು ಆಯ್ಕೆ ಮಾಡಿದಾಗ ಬಟನ್ ತೋರಿಸು"
@@ -357,7 +369,7 @@
         "message": "ಭಾಷೆಯನ್ನು ಮೇಲಕ್ಕೆ ಪಿನ್ ಮಾಡಿ"
     },
     "select_language_unpin_lang": {
-        "message": "ಪಿನ್ ಮಾಡಿದ ಭಾಷೆಯನ್ನು ತೆಗೆದುಹಾಕಿ"
+        "message": "ಪಿನ್ ಮಾಡಲಾದ ಭಾಷೆಯನ್ನು ತೆಗೆದುಹಾಕಿ"
     },
     "select_language_all_langs": {
         "message": "ಎಲ್ಲಾ ಭಾಷೆಗಳು"
@@ -618,7 +630,7 @@
         "message": "ಫ್ರಿಸಿಯನ್"
     },
     "language_ga": {
-        "message": "ಐರಿಶ್"
+        "message": "ಐರಿಷ್"
     },
     "language_gaa": {
         "message": "ಗಾ"
@@ -900,7 +912,7 @@
         "message": "ಪಂಜಾಬಿ (ಗುರುಮುಖಿ)"
     },
     "language_pa_Arab": {
-        "message": "ಪಂಜಾಬಿ (ಶಾಮುಖಿ)"
+        "message": "ಪಂಜಾಬಿ (ಷಾಮುಖಿ)"
     },
     "language_pag": {
         "message": "ಪಂಗಾಸಿನನ್"

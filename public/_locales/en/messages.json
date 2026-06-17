@@ -27,7 +27,7 @@
         "message": "Popup window"
     },
     "options_tab_appearance": {
-        "message": "Outer appearance"
+        "message": "Appearance"
     },
     "options_tab_history": {
         "message": "History"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Show only the translation, nothing else."
+    },
+    "options_general_layout_vert": {
+        "message": "Vertical Layout"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "Translation appears below the original (full mode only)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Horizontal Layout"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "Translation appears next to the original (full mode only)."
     },
     "options_inline_button_show": {
         "message": "Show button when text is selected"

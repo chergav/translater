@@ -27,7 +27,7 @@
         "message": "Popup-Fenster"
     },
     "options_tab_appearance": {
-        "message": "Äußeres Erscheinungsbild"
+        "message": "Aussehen"
     },
     "options_tab_history": {
         "message": "Geschichte"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Nur die Übersetzung anzeigen, sonst nichts."
+    },
+    "options_general_layout_vert": {
+        "message": "Vertikales Layout"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "Die Übersetzung erscheint unterhalb des Originals (nur Vollmodus)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Horizontales Layout"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "Die Übersetzung erscheint neben dem Original (nur Vollmodus)."
     },
     "options_inline_button_show": {
         "message": "Schaltfläche anzeigen, wenn Text ausgewählt ist"
@@ -174,7 +186,7 @@
         "message": "Quellfarbe"
     },
     "options_appearance_custom_theme_source_hint": {
-        "message": "Wählen Sie eine Farbe aus, um Themen zu generieren"
+        "message": "Wählen Sie eine Farbe aus, um Themen zu erstellen"
     },
     "options_appearance_custom_theme_apply": {
         "message": "Thema anwenden"

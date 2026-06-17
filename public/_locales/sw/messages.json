@@ -27,7 +27,7 @@
         "message": "Dirisha ibukizi"
     },
     "options_tab_appearance": {
-        "message": "Muonekano wa nje"
+        "message": "Muonekano"
     },
     "options_tab_history": {
         "message": "Historia"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Onyesha tafsiri pekee, hakuna kingine."
+    },
+    "options_general_layout_vert": {
+        "message": "Mpangilio Wima"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "Tafsiri inaonekana chini ya asili (hali kamili pekee)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Mpangilio wa Mlalo"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "Tafsiri inaonekana karibu na asili (hali kamili pekee)."
     },
     "options_inline_button_show": {
         "message": "Onyesha kitufe wakati maandishi yamechaguliwa"

@@ -65,6 +65,18 @@
     "options_general_mode_simple_hint": {
         "message": "翻訳のみを表示し、他には何も表示しません。"
     },
+    "options_general_layout_vert": {
+        "message": "縦型レイアウト"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "翻訳はオリジナルの下に表示されます (フル モードのみ)。"
+    },
+    "options_general_layout_horiz": {
+        "message": "横型レイアウト"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "翻訳はオリジナルの横に表示されます (フル モードのみ)。"
+    },
     "options_inline_button_show": {
         "message": "テキストが選択されているときにボタンを表示する"
     },
@@ -273,7 +285,7 @@
         "message": "例"
     },
     "popup_perhaps_you_meant": {
-        "message": "おそらく次のことを言いたかったのでしょう："
+        "message": "おそらく次のことを言いたかったのでしょう:"
     },
     "popup_original_language": {
         "message": "元の言語:"

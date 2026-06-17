@@ -27,7 +27,7 @@
         "message": "Αναδυόμενο παράθυρο"
     },
     "options_tab_appearance": {
-        "message": "Εξωτερική εμφάνιση"
+        "message": "Εμφάνιση"
     },
     "options_tab_history": {
         "message": "Ιστορία"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Δείξτε μόνο τη μετάφραση, τίποτα άλλο."
+    },
+    "options_general_layout_vert": {
+        "message": "Κάθετη διάταξη"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "Η μετάφραση εμφανίζεται κάτω από το πρωτότυπο (μόνο σε πλήρη λειτουργία)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Οριζόντια διάταξη"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "Η μετάφραση εμφανίζεται δίπλα στο πρωτότυπο (μόνο σε πλήρη λειτουργία)."
     },
     "options_inline_button_show": {
         "message": "Εμφάνιση κουμπιού όταν είναι επιλεγμένο κείμενο"
@@ -573,7 +585,7 @@
         "message": "Ισπανικά"
     },
     "language_et": {
-        "message": "Εσθονικά"
+        "message": "Εσθονική"
     },
     "language_eu": {
         "message": "Βάσκος"
@@ -795,7 +807,7 @@
         "message": "Μίζο"
     },
     "language_lv": {
-        "message": "Λετονική"
+        "message": "λετονική"
     },
     "language_mad": {
         "message": "Μαντουρέζα"

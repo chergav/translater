@@ -18,7 +18,7 @@
         "message": "Nyissa meg a Fordítót"
     },
     "popup_or": {
-        "message": "Or"
+        "message": "vagy"
     },
     "options_tab_general": {
         "message": "Általános beállítások"
@@ -27,7 +27,7 @@
         "message": "Felugró ablak"
     },
     "options_tab_appearance": {
-        "message": "Külső megjelenés"
+        "message": "Megjelenés"
     },
     "options_tab_history": {
         "message": "Történelem"
@@ -39,7 +39,7 @@
         "message": "Törölje"
     },
     "button_label_cancel": {
-        "message": "Mégsem"
+        "message": "Mégse"
     },
     "options_general_translation_button": {
         "message": "Fordítás gomb"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Csak a fordítást mutasd, semmi mást."
+    },
+    "options_general_layout_vert": {
+        "message": "Függőleges elrendezés"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "A fordítás az eredeti alatt jelenik meg (csak teljes módban)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Vízszintes elrendezés"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "A fordítás az eredeti mellett jelenik meg (csak teljes módban)."
     },
     "options_inline_button_show": {
         "message": "A gomb megjelenítése, ha szöveg van kiválasztva"
@@ -174,7 +186,7 @@
         "message": "Forrás színe"
     },
     "options_appearance_custom_theme_source_hint": {
-        "message": "Válasszon színt a témák létrehozásához"
+        "message": "Válasszon egy színt a témák létrehozásához"
     },
     "options_appearance_custom_theme_apply": {
         "message": "Téma alkalmazása"

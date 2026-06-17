@@ -27,7 +27,7 @@
         "message": "ብቅ ባይ መስኮት"
     },
     "options_tab_appearance": {
-        "message": "ውጫዊ ገጽታ"
+        "message": "መልክ"
     },
     "options_tab_history": {
         "message": "ታሪክ"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "ትርጉሙን ብቻ አሳይ፣ ሌላ ምንም ነገር የለም።"
+    },
+    "options_general_layout_vert": {
+        "message": "አቀባዊ አቀማመጥ"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "ትርጉም ከዋናው በታች ይታያል (ሙሉ ሁነታ ብቻ)።"
+    },
+    "options_general_layout_horiz": {
+        "message": "አግድም አቀማመጥ"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "ትርጉም ከዋናው ቀጥሎ ይታያል (ሙሉ ሁነታ ብቻ)።"
     },
     "options_inline_button_show": {
         "message": "ጽሑፍ ሲመረጥ አዝራሩን አሳይ"

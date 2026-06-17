@@ -27,7 +27,7 @@
         "message": "Fenêtre contextuelle"
     },
     "options_tab_appearance": {
-        "message": "Aspect extérieur"
+        "message": "Apparence"
     },
     "options_tab_history": {
         "message": "Histoire"
@@ -64,6 +64,18 @@
     },
     "options_general_mode_simple_hint": {
         "message": "Afficher uniquement la traduction, rien d'autre."
+    },
+    "options_general_layout_vert": {
+        "message": "Disposition verticale"
+    },
+    "options_general_layout_vert_hint": {
+        "message": "La traduction apparaît sous l'original (mode complet uniquement)."
+    },
+    "options_general_layout_horiz": {
+        "message": "Disposition horizontale"
+    },
+    "options_general_layout_horiz_hint": {
+        "message": "La traduction apparaît à côté de l'original (mode complet uniquement)."
     },
     "options_inline_button_show": {
         "message": "Afficher le bouton lorsque le texte est sélectionné"
@@ -237,7 +249,7 @@
         "message": "Très grand"
     },
     "options_support_msg": {
-        "message": "Si quelque chose ne fonctionne pas ou si vous avez des suggestions, faites-le-moi savoir ici"
+        "message": "Si quelque chose ne fonctionne pas ou si vous avez des suggestions, faites-le moi savoir ici"
     },
     "options_support_donations": {
         "message": "Si vous souhaitez soutenir ce logiciel gratuit"
@@ -939,7 +951,7 @@
         "message": "Romani"
     },
     "language_ru": {
-        "message": "russe"
+        "message": "Russe"
     },
     "language_rw": {
         "message": "kinyarwanda"
@@ -1035,7 +1047,7 @@
         "message": "Thaï"
     },
     "language_ti": {
-        "message": "Tigrigna"
+        "message": "Tigrinya"
     },
     "language_tiv": {
         "message": "TIV"
