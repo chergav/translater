@@ -197,6 +197,15 @@
     "options_history_enable": {
         "message": "Dayakan sejarah"
     },
+    "options_history_sort_asc": {
+        "message": "Isih menaik"
+    },
+    "options_history_sort_desc": {
+        "message": "Isih menurun"
+    },
+    "options_history_menu_download": {
+        "message": "Muat turun sejarah sebagai fail"
+    },
     "options_clear_history": {
         "message": "Padam sejarah"
     },
@@ -205,6 +214,18 @@
     },
     "options_delete_items": {
         "message": "item akan dipadamkan"
+    },
+    "options_history_exp_date": {
+        "message": "tarikh"
+    },
+    "options_history_exp_direction": {
+        "message": "Arah"
+    },
+    "options_history_exp_original": {
+        "message": "Asal"
+    },
+    "options_history_exp_translation": {
+        "message": "Terjemahan"
     },
     "options_tts_language": {
         "message": "Bahasa"
@@ -346,6 +367,9 @@
     },
     "tooltip_clear_search": {
         "message": "Kosongkan carian"
+    },
+    "snackbar_copied": {
+        "message": "disalin"
     },
     "date_today": {
         "message": "hari ini"
@@ -579,7 +603,7 @@
         "message": "Inggeris"
     },
     "language_eo": {
-        "message": "bahasa Esperanto"
+        "message": "Esperanto"
     },
     "language_es": {
         "message": "bahasa Sepanyol"
@@ -1020,7 +1044,7 @@
         "message": "Susu"
     },
     "language_sv": {
-        "message": "Bahasa Sweden"
+        "message": "bahasa Sweden"
     },
     "language_sw": {
         "message": "bahasa Swahili"

@@ -197,6 +197,15 @@
     "options_history_enable": {
         "message": "Geschiedenis inschakelen"
     },
+    "options_history_sort_asc": {
+        "message": "Sorteer oplopend"
+    },
+    "options_history_sort_desc": {
+        "message": "Sorteer aflopend"
+    },
+    "options_history_menu_download": {
+        "message": "Geschiedenis downloaden als bestand"
+    },
     "options_clear_history": {
         "message": "Geschiedenis verwijderen"
     },
@@ -206,11 +215,23 @@
     "options_delete_items": {
         "message": "artikelen worden verwijderd"
     },
+    "options_history_exp_date": {
+        "message": "Datum"
+    },
+    "options_history_exp_direction": {
+        "message": "Richting"
+    },
+    "options_history_exp_original": {
+        "message": "Origineel"
+    },
+    "options_history_exp_translation": {
+        "message": "Vertaling"
+    },
     "options_tts_language": {
         "message": "Taal"
     },
     "options_tts_default_voice": {
-        "message": "Standaard stem"
+        "message": "Standaardstem"
     },
     "options_tts_voices": {
         "message": "Stemmen"
@@ -346,6 +367,9 @@
     },
     "tooltip_clear_search": {
         "message": "Duidelijke zoekopdracht"
+    },
+    "snackbar_copied": {
+        "message": "Gekopieerd"
     },
     "date_today": {
         "message": "vandaag"
@@ -513,7 +537,7 @@
         "message": "Chamorro"
     },
     "language_chk": {
-        "message": "Chuukese"
+        "message": "Chuukees"
     },
     "language_chm": {
         "message": "Weide Mari"

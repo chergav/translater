@@ -197,6 +197,15 @@
     "options_history_enable": {
         "message": "Ota historia käyttöön"
     },
+    "options_history_sort_asc": {
+        "message": "Lajittele nousevasti"
+    },
+    "options_history_sort_desc": {
+        "message": "Lajittele laskevasti"
+    },
+    "options_history_menu_download": {
+        "message": "Lataushistoria tiedostona"
+    },
     "options_clear_history": {
         "message": "Poista historia"
     },
@@ -205,6 +214,18 @@
     },
     "options_delete_items": {
         "message": "kohteet poistetaan"
+    },
+    "options_history_exp_date": {
+        "message": "Päivämäärä"
+    },
+    "options_history_exp_direction": {
+        "message": "Suunta"
+    },
+    "options_history_exp_original": {
+        "message": "Alkuperäinen"
+    },
+    "options_history_exp_translation": {
+        "message": "Käännös"
     },
     "options_tts_language": {
         "message": "Kieli"
@@ -346,6 +367,9 @@
     },
     "tooltip_clear_search": {
         "message": "Tyhjennä haku"
+    },
+    "snackbar_copied": {
+        "message": "Kopioitu"
     },
     "date_today": {
         "message": "tänään"

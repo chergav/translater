@@ -21,6 +21,11 @@
 		{#if label}
 			<span class={labelClass({ size })}>{label}</span>
 		{/if}
+		{#if trailingIcon}
+			<span class={iconClass({ size })} aria-hidden="true">
+				{@render trailingIcon(selected)}
+			</span>
+		{/if}
 	</span>
 	<input
 		{name}
@@ -121,6 +126,7 @@ interface Props extends ButtonVariants, Omit<HTMLInputAttributes, 'class' | 'col
 	title?: string
 	icon?: Snippet<[selected?: boolean]>
 	selectedIcon?: Snippet<[selected?: boolean]>
+	trailingIcon?: Snippet<[selected?: boolean]>
 	class?: ClassValue
 	children?: Snippet
 }
@@ -134,6 +140,7 @@ let {
 	title,
 	icon,
 	selectedIcon,
+	trailingIcon,
 	size = 'sm',
 	class: className = '',
 	'aria-label': ariaLabel = title,

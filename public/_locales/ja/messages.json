@@ -197,6 +197,15 @@
     "options_history_enable": {
         "message": "履歴を有効にする"
     },
+    "options_history_sort_asc": {
+        "message": "昇順に並べ替えます"
+    },
+    "options_history_sort_desc": {
+        "message": "降順で並べ替え"
+    },
+    "options_history_menu_download": {
+        "message": "ダウンロード履歴をファイルとして保存"
+    },
     "options_clear_history": {
         "message": "履歴の削除"
     },
@@ -205,6 +214,18 @@
     },
     "options_delete_items": {
         "message": "アイテムは削除されます"
+    },
+    "options_history_exp_date": {
+        "message": "日付"
+    },
+    "options_history_exp_direction": {
+        "message": "方向"
+    },
+    "options_history_exp_original": {
+        "message": "オリジナル"
+    },
+    "options_history_exp_translation": {
+        "message": "翻訳"
     },
     "options_tts_language": {
         "message": "言語"
@@ -285,7 +306,7 @@
         "message": "例"
     },
     "popup_perhaps_you_meant": {
-        "message": "おそらく次のことを言いたかったのでしょう:"
+        "message": "おそらく次のことを言いたかったのでしょう："
     },
     "popup_original_language": {
         "message": "元の言語:"
@@ -346,6 +367,9 @@
     },
     "tooltip_clear_search": {
         "message": "検索をクリア"
+    },
+    "snackbar_copied": {
+        "message": "コピーされました"
     },
     "date_today": {
         "message": "今日"
@@ -747,7 +771,7 @@
         "message": "カンナダ語"
     },
     "language_ko": {
-        "message": "韓国人"
+        "message": "韓国語"
     },
     "language_kr": {
         "message": "カヌリ"

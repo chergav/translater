@@ -36,7 +36,7 @@
         "message": "সমর্থন"
     },
     "button_label_delete": {
-        "message": "মুছুন"
+        "message": "মুছে দিন"
     },
     "button_label_cancel": {
         "message": "বাতিল করুন"
@@ -197,6 +197,15 @@
     "options_history_enable": {
         "message": "ইতিহাস সক্ষম করুন"
     },
+    "options_history_sort_asc": {
+        "message": "আরোহী সাজান"
+    },
+    "options_history_sort_desc": {
+        "message": "সাজানো অবরোহ"
+    },
+    "options_history_menu_download": {
+        "message": "একটি ফাইল হিসাবে ইতিহাস ডাউনলোড করুন"
+    },
     "options_clear_history": {
         "message": "ইতিহাস মুছুন"
     },
@@ -205,6 +214,18 @@
     },
     "options_delete_items": {
         "message": "আইটেম মুছে ফেলা হবে"
+    },
+    "options_history_exp_date": {
+        "message": "তারিখ"
+    },
+    "options_history_exp_direction": {
+        "message": "দিকনির্দেশনা"
+    },
+    "options_history_exp_original": {
+        "message": "আসল"
+    },
+    "options_history_exp_translation": {
+        "message": "অনুবাদ"
     },
     "options_tts_language": {
         "message": "ভাষা"
@@ -279,7 +300,7 @@
         "message": "সংজ্ঞা"
     },
     "popup_definitions_synonyms": {
-        "message": "সমার্থক শব্দ:"
+        "message": "প্রতিশব্দ:"
     },
     "popup_examples": {
         "message": "উদাহরণ"
@@ -347,6 +368,9 @@
     "tooltip_clear_search": {
         "message": "সাফ অনুসন্ধান"
     },
+    "snackbar_copied": {
+        "message": "কপি করা হয়েছে"
+    },
     "date_today": {
         "message": "আজ"
     },
@@ -366,7 +390,7 @@
         "message": "পিন করা ভাষা"
     },
     "select_language_pin_lang": {
-        "message": "শীর্ষে ভাষা পিন করুন"
+        "message": "ভাষাকে উপরে পিন করুন"
     },
     "select_language_unpin_lang": {
         "message": "পিন করা ভাষা সরান"
@@ -423,7 +447,7 @@
         "message": "আভার"
     },
     "language_awa": {
-        "message": "অবধি"
+        "message": "আওয়াধি"
     },
     "language_ay": {
         "message": "আয়মারা"
@@ -459,7 +483,7 @@
         "message": "তামাজাইট"
     },
     "language_bew": {
-        "message": "বেতাউই"
+        "message": "বেতাবি"
     },
     "language_bg": {
         "message": "বুলগেরিয়ান"
@@ -591,7 +615,7 @@
         "message": "বাস্ক"
     },
     "language_fa": {
-        "message": "ফারসি"
+        "message": "ফার্সি"
     },
     "language_fa_AF": {
         "message": "দারি"
@@ -705,7 +729,7 @@
         "message": "ইনুক্টুট (সিলেবিক্স)"
     },
     "language_iu_Latn": {
-        "message": "ইনুক্টুট (ল্যাটিন)"
+        "message": "ইনুকটুট (ল্যাটিন)"
     },
     "language_iw": {
         "message": "হিব্রু"
@@ -843,7 +867,7 @@
         "message": "মালায়লাম"
     },
     "language_mn": {
-        "message": "মঙ্গোলীয়"
+        "message": "মঙ্গোলিয়ান"
     },
     "language_mni_Mtei": {
         "message": "মেইটেইলন (মণিপুরি)"

@@ -10,20 +10,31 @@ const initialSettings: SettingsHistory = {
 	history: [],
 };
 
-export class StorageHistory {
-	public settings: SettingsHistory;
-	public groupedHistory: GroupedHistory = $derived.by(() => {
-		const sorted = this.settings.history.toSorted((a, b) => b.time - a.time);
+export enum SortOrder {
+	Asc = 'asc',
+	Desc = 'desc',
+}
 
-		return sorted.reduce<GroupedHistory>((acc, item) => {
-			const date = getRelativeDate(item.time);
-			(acc[date] ||= []).push(item);
-			return acc;
-		}, {});
-	});
+class StorageHistory {
+	public settings: SettingsHistory;
+	public sortOrder: SortOrder = $state(SortOrder.Desc);
+	public sortedHistory: HistoryItem[];
+	public groupedHistory: GroupedHistory;
 
 	public constructor(settings: SettingsHistory) {
 		this.settings = $state<SettingsHistory>(settings);
+		this.sortedHistory = $derived(
+			this.settings.history.toSorted((a, b) =>
+				this.sortOrder === SortOrder.Desc ? b.time - a.time : a.time - b.time,
+			),
+		);
+		this.groupedHistory = $derived(
+			this.sortedHistory.reduce<GroupedHistory>((acc, item) => {
+				const date = getRelativeDate(item.time);
+				(acc[date] ||= []).push(item);
+				return acc;
+			}, {}),
+		);
 		browser.storage.local.onChanged.addListener(this.#onStorageChange);
 	}
 

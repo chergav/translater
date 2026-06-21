@@ -197,6 +197,15 @@
     "options_history_enable": {
         "message": "Activați istoricul"
     },
+    "options_history_sort_asc": {
+        "message": "Sortați crescător"
+    },
+    "options_history_sort_desc": {
+        "message": "Sortați descendent"
+    },
+    "options_history_menu_download": {
+        "message": "Descărcați istoricul ca fișier"
+    },
     "options_clear_history": {
         "message": "Ștergeți istoricul"
     },
@@ -205,6 +214,18 @@
     },
     "options_delete_items": {
         "message": "articolele vor fi șterse"
+    },
+    "options_history_exp_date": {
+        "message": "Data"
+    },
+    "options_history_exp_direction": {
+        "message": "Direcția"
+    },
+    "options_history_exp_original": {
+        "message": "Original"
+    },
+    "options_history_exp_translation": {
+        "message": "Traducere"
     },
     "options_tts_language": {
         "message": "Limba"
@@ -346,6 +367,9 @@
     },
     "tooltip_clear_search": {
         "message": "Ștergeți căutarea"
+    },
+    "snackbar_copied": {
+        "message": "Copiat"
     },
     "date_today": {
         "message": "azi"
@@ -540,7 +564,7 @@
         "message": "cehă"
     },
     "language_cv": {
-        "message": "civaș"
+        "message": "ciuvaș"
     },
     "language_cy": {
         "message": "galeză"
@@ -993,7 +1017,7 @@
         "message": "slovenă"
     },
     "language_sm": {
-        "message": "Samoan"
+        "message": "samoană"
     },
     "language_sn": {
         "message": "Shona"

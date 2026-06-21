@@ -197,6 +197,15 @@
     "options_history_enable": {
         "message": "Activa l'historial"
     },
+    "options_history_sort_asc": {
+        "message": "Ordena ascendent"
+    },
+    "options_history_sort_desc": {
+        "message": "Ordena descendent"
+    },
+    "options_history_menu_download": {
+        "message": "Baixeu l'historial com a fitxer"
+    },
     "options_clear_history": {
         "message": "Suprimeix l'historial"
     },
@@ -205,6 +214,18 @@
     },
     "options_delete_items": {
         "message": "s'eliminaran els elements"
+    },
+    "options_history_exp_date": {
+        "message": "Data"
+    },
+    "options_history_exp_direction": {
+        "message": "Direcció"
+    },
+    "options_history_exp_original": {
+        "message": "Original"
+    },
+    "options_history_exp_translation": {
+        "message": "Traducció"
     },
     "options_tts_language": {
         "message": "Llengua"
@@ -346,6 +367,9 @@
     },
     "tooltip_clear_search": {
         "message": "Esborra la cerca"
+    },
+    "snackbar_copied": {
+        "message": "Copiat"
     },
     "date_today": {
         "message": "avui"

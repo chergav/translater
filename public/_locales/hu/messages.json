@@ -186,7 +186,7 @@
         "message": "Forrás színe"
     },
     "options_appearance_custom_theme_source_hint": {
-        "message": "Válasszon egy színt a témák létrehozásához"
+        "message": "Válasszon színt a témák létrehozásához"
     },
     "options_appearance_custom_theme_apply": {
         "message": "Téma alkalmazása"
@@ -197,6 +197,15 @@
     "options_history_enable": {
         "message": "Előzmények engedélyezése"
     },
+    "options_history_sort_asc": {
+        "message": "Növekvő rendezés"
+    },
+    "options_history_sort_desc": {
+        "message": "Csökkenő rendezés"
+    },
+    "options_history_menu_download": {
+        "message": "Letöltési előzmények fájlként"
+    },
     "options_clear_history": {
         "message": "Törölje az előzményeket"
     },
@@ -205,6 +214,18 @@
     },
     "options_delete_items": {
         "message": "tételek törlődnek"
+    },
+    "options_history_exp_date": {
+        "message": "Dátum"
+    },
+    "options_history_exp_direction": {
+        "message": "Irány"
+    },
+    "options_history_exp_original": {
+        "message": "Eredeti"
+    },
+    "options_history_exp_translation": {
+        "message": "Fordítás"
     },
     "options_tts_language": {
         "message": "Nyelv"
@@ -252,7 +273,7 @@
         "message": "Ha valami nem működik, vagy bármilyen javaslata van, kérjük, jelezze itt"
     },
     "options_support_donations": {
-        "message": "Ha szeretné támogatni ezt az ingyenes szoftvert"
+        "message": "Ha támogatni szeretné ezt az ingyenes szoftvert"
     },
     "text_expand": {
         "message": "Többet"
@@ -347,6 +368,9 @@
     "tooltip_clear_search": {
         "message": "Keresés törlése"
     },
+    "snackbar_copied": {
+        "message": "Másolva"
+    },
     "date_today": {
         "message": "ma"
     },
@@ -381,7 +405,7 @@
         "message": "Nincs eredmény"
     },
     "try_my_extensions": {
-        "message": "🚀 Próbáld ki a többi bővítményem is"
+        "message": "🚀 Próbáld ki a többi kiterjesztésemet is"
     },
     "language_auto": {
         "message": "auto"

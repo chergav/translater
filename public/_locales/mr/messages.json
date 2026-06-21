@@ -197,6 +197,15 @@
     "options_history_enable": {
         "message": "इतिहास सक्षम करा"
     },
+    "options_history_sort_asc": {
+        "message": "चढत्या क्रमाने क्रमवारी लावा"
+    },
+    "options_history_sort_desc": {
+        "message": "उतरत्या क्रमाने क्रमवारी लावा"
+    },
+    "options_history_menu_download": {
+        "message": "फाइल म्हणून इतिहास डाउनलोड करा"
+    },
     "options_clear_history": {
         "message": "इतिहास हटवा"
     },
@@ -205,6 +214,18 @@
     },
     "options_delete_items": {
         "message": "आयटम हटवले जातील"
+    },
+    "options_history_exp_date": {
+        "message": "तारीख"
+    },
+    "options_history_exp_direction": {
+        "message": "दिशा"
+    },
+    "options_history_exp_original": {
+        "message": "मूळ"
+    },
+    "options_history_exp_translation": {
+        "message": "भाषांतर"
     },
     "options_tts_language": {
         "message": "भाषा"
@@ -346,6 +367,9 @@
     },
     "tooltip_clear_search": {
         "message": "शोध साफ करा"
+    },
+    "snackbar_copied": {
+        "message": "कॉपी केले"
     },
     "date_today": {
         "message": "आज"
@@ -495,7 +519,7 @@
         "message": "बटक करो"
     },
     "language_bua": {
-        "message": "बुरयत"
+        "message": "बुरयात"
     },
     "language_ca": {
         "message": "कॅटलान"
@@ -702,7 +726,7 @@
         "message": "इटालियन"
     },
     "language_iu": {
-        "message": "Inuktut (सिलॅबिक्स)"
+        "message": "Inuktut (अक्षांश)"
     },
     "language_iu_Latn": {
         "message": "Inuktut (लॅटिन)"

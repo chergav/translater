@@ -132,7 +132,7 @@
         "message": "Modelis"
     },
     "options_appearance_theme": {
-        "message": "Tema"
+        "message": "tema"
     },
     "theme_light": {
         "message": "Šviesos tema"
@@ -197,6 +197,15 @@
     "options_history_enable": {
         "message": "Įgalinti istoriją"
     },
+    "options_history_sort_asc": {
+        "message": "Rūšiuoti didėjančia tvarka"
+    },
+    "options_history_sort_desc": {
+        "message": "Rūšiuoti mažėjančia tvarka"
+    },
+    "options_history_menu_download": {
+        "message": "Atsisiųsti istoriją kaip failą"
+    },
     "options_clear_history": {
         "message": "Ištrinti istoriją"
     },
@@ -205,6 +214,18 @@
     },
     "options_delete_items": {
         "message": "elementai bus ištrinti"
+    },
+    "options_history_exp_date": {
+        "message": "Data"
+    },
+    "options_history_exp_direction": {
+        "message": "Kryptis"
+    },
+    "options_history_exp_original": {
+        "message": "Originalus"
+    },
+    "options_history_exp_translation": {
+        "message": "Vertimas"
     },
     "options_tts_language": {
         "message": "Kalba"
@@ -346,6 +367,9 @@
     },
     "tooltip_clear_search": {
         "message": "Išvalyti paiešką"
+    },
+    "snackbar_copied": {
+        "message": "Nukopijuota"
     },
     "date_today": {
         "message": "šiandien"

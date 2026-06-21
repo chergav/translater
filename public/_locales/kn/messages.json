@@ -39,7 +39,7 @@
         "message": "ಅಳಿಸಿ"
     },
     "button_label_cancel": {
-        "message": "ರದ್ದುಮಾಡು"
+        "message": "ರದ್ದುಮಾಡಿ"
     },
     "options_general_translation_button": {
         "message": "ಅನುವಾದ ಬಟನ್"
@@ -197,6 +197,15 @@
     "options_history_enable": {
         "message": "ಇತಿಹಾಸವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ"
     },
+    "options_history_sort_asc": {
+        "message": "ಆರೋಹಣವನ್ನು ವಿಂಗಡಿಸಿ"
+    },
+    "options_history_sort_desc": {
+        "message": "ಅವರೋಹಣವನ್ನು ವಿಂಗಡಿಸಿ"
+    },
+    "options_history_menu_download": {
+        "message": "ಇತಿಹಾಸವನ್ನು ಫೈಲ್ ಆಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
+    },
     "options_clear_history": {
         "message": "ಇತಿಹಾಸವನ್ನು ಅಳಿಸಿ"
     },
@@ -205,6 +214,18 @@
     },
     "options_delete_items": {
         "message": "ಐಟಂಗಳನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ"
+    },
+    "options_history_exp_date": {
+        "message": "ದಿನಾಂಕ"
+    },
+    "options_history_exp_direction": {
+        "message": "ನಿರ್ದೇಶನ"
+    },
+    "options_history_exp_original": {
+        "message": "ಮೂಲ"
+    },
+    "options_history_exp_translation": {
+        "message": "ಅನುವಾದ"
     },
     "options_tts_language": {
         "message": "ಭಾಷೆ"
@@ -347,6 +368,9 @@
     "tooltip_clear_search": {
         "message": "ಹುಡುಕಾಟವನ್ನು ತೆರವುಗೊಳಿಸಿ"
     },
+    "snackbar_copied": {
+        "message": "ನಕಲು ಮಾಡಲಾಗಿದೆ"
+    },
     "date_today": {
         "message": "ಇಂದು"
     },
@@ -369,7 +393,7 @@
         "message": "ಭಾಷೆಯನ್ನು ಮೇಲಕ್ಕೆ ಪಿನ್ ಮಾಡಿ"
     },
     "select_language_unpin_lang": {
-        "message": "ಪಿನ್ ಮಾಡಲಾದ ಭಾಷೆಯನ್ನು ತೆಗೆದುಹಾಕಿ"
+        "message": "ಪಿನ್ ಮಾಡಿದ ಭಾಷೆಯನ್ನು ತೆಗೆದುಹಾಕಿ"
     },
     "select_language_all_langs": {
         "message": "ಎಲ್ಲಾ ಭಾಷೆಗಳು"
@@ -630,7 +654,7 @@
         "message": "ಫ್ರಿಸಿಯನ್"
     },
     "language_ga": {
-        "message": "ಐರಿಷ್"
+        "message": "ಐರಿಶ್"
     },
     "language_gaa": {
         "message": "ಗಾ"
@@ -912,7 +936,7 @@
         "message": "ಪಂಜಾಬಿ (ಗುರುಮುಖಿ)"
     },
     "language_pa_Arab": {
-        "message": "ಪಂಜಾಬಿ (ಷಾಮುಖಿ)"
+        "message": "ಪಂಜಾಬಿ (ಶಾಮುಖಿ)"
     },
     "language_pag": {
         "message": "ಪಂಗಾಸಿನನ್"

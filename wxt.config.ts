@@ -67,6 +67,7 @@ export default defineConfig({
 				'scripting',
 			],
 			host_permissions: ['<all_urls>'],
+			optional_permissions: ['downloads'],
 		};
 	},
 });

@@ -197,6 +197,15 @@
     "options_history_enable": {
         "message": "வரலாற்றை இயக்கு"
     },
+    "options_history_sort_asc": {
+        "message": "ஏறுவரிசையில் வரிசைப்படுத்து"
+    },
+    "options_history_sort_desc": {
+        "message": "வரிசைப்படுத்து"
+    },
+    "options_history_menu_download": {
+        "message": "வரலாற்றை கோப்பாகப் பதிவிறக்கவும்"
+    },
     "options_clear_history": {
         "message": "வரலாற்றை நீக்கு"
     },
@@ -205,6 +214,18 @@
     },
     "options_delete_items": {
         "message": "பொருட்கள் நீக்கப்படும்"
+    },
+    "options_history_exp_date": {
+        "message": "தேதி"
+    },
+    "options_history_exp_direction": {
+        "message": "திசை"
+    },
+    "options_history_exp_original": {
+        "message": "அசல்"
+    },
+    "options_history_exp_translation": {
+        "message": "மொழிபெயர்ப்பு"
     },
     "options_tts_language": {
         "message": "மொழி"
@@ -346,6 +367,9 @@
     },
     "tooltip_clear_search": {
         "message": "தெளிவான தேடல்"
+    },
+    "snackbar_copied": {
+        "message": "நகலெடுக்கப்பட்டது"
     },
     "date_today": {
         "message": "இன்று"
@@ -606,7 +630,7 @@
         "message": "பிலிப்பினோ (டகாலாக்)"
     },
     "language_fj": {
-        "message": "ஃபிஜியன்"
+        "message": "பிஜியன்"
     },
     "language_fo": {
         "message": "ஃபரோஸ்"
@@ -654,7 +678,7 @@
         "message": "மேங்க்ஸ்"
     },
     "language_ha": {
-        "message": "ஹவுசா"
+        "message": "ஹௌசா"
     },
     "language_haw": {
         "message": "ஹவாய்"
@@ -687,7 +711,7 @@
         "message": "இபன்"
     },
     "language_id": {
-        "message": "இந்தோனேஷியன்"
+        "message": "இந்தோனேசியன்"
     },
     "language_ig": {
         "message": "இக்போ"

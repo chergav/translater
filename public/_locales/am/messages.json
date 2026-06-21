@@ -123,7 +123,7 @@
         "message": "ብቅ ባይ መስኮትን ቆልፍ"
     },
     "options_lock_popup_window_hint": {
-        "message": "ብቅ-ባይ ወደ ውጭ ሲጫኑ ክፍት ሆኖ ይቆያል።"
+        "message": "ብቅ ባይ ወደ ውጭ ጠቅ ሲደረግ ክፍት ሆኖ ይቆያል።"
     },
     "options_providers_provider": {
         "message": "አቅራቢ"
@@ -197,6 +197,15 @@
     "options_history_enable": {
         "message": "ታሪክን አንቃ"
     },
+    "options_history_sort_asc": {
+        "message": "ወደ ላይ ደርድር"
+    },
+    "options_history_sort_desc": {
+        "message": "የሚወርድ ደርድር"
+    },
+    "options_history_menu_download": {
+        "message": "ታሪክን እንደ ፋይል አውርድ"
+    },
     "options_clear_history": {
         "message": "ታሪክ ሰርዝ"
     },
@@ -205,6 +214,18 @@
     },
     "options_delete_items": {
         "message": "ንጥሎች ይሰረዛሉ"
+    },
+    "options_history_exp_date": {
+        "message": "ቀን"
+    },
+    "options_history_exp_direction": {
+        "message": "አቅጣጫ"
+    },
+    "options_history_exp_original": {
+        "message": "ኦሪጅናል"
+    },
+    "options_history_exp_translation": {
+        "message": "ትርጉም"
     },
     "options_tts_language": {
         "message": "ቋንቋ"
@@ -346,6 +367,9 @@
     },
     "tooltip_clear_search": {
         "message": "ፍለጋን አጽዳ"
+    },
+    "snackbar_copied": {
+        "message": "ተገልብጧል"
     },
     "date_today": {
         "message": "ዛሬ"

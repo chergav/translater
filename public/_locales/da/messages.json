@@ -135,7 +135,7 @@
         "message": "Tema"
     },
     "theme_light": {
-        "message": "Lys tema"
+        "message": "Lyst tema"
     },
     "theme_system": {
         "message": "System tema"
@@ -197,6 +197,15 @@
     "options_history_enable": {
         "message": "Aktiver historik"
     },
+    "options_history_sort_asc": {
+        "message": "Sorter stigende"
+    },
+    "options_history_sort_desc": {
+        "message": "Sorter faldende"
+    },
+    "options_history_menu_download": {
+        "message": "Download historie som en fil"
+    },
     "options_clear_history": {
         "message": "Slet historik"
     },
@@ -205,6 +214,18 @@
     },
     "options_delete_items": {
         "message": "elementer vil blive slettet"
+    },
+    "options_history_exp_date": {
+        "message": "Dato"
+    },
+    "options_history_exp_direction": {
+        "message": "Retning"
+    },
+    "options_history_exp_original": {
+        "message": "Original"
+    },
+    "options_history_exp_translation": {
+        "message": "Oversættelse"
     },
     "options_tts_language": {
         "message": "Sprog"
@@ -346,6 +367,9 @@
     },
     "tooltip_clear_search": {
         "message": "Ryd søgning"
+    },
+    "snackbar_copied": {
+        "message": "Kopieret"
     },
     "date_today": {
         "message": "i dag"

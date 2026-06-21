@@ -3,7 +3,7 @@
         "message": "مترجم - ترجمه متن انتخاب شده"
     },
     "app_description": {
-        "message": "متن انتخابی را با Google Translate ترجمه کنید"
+        "message": "متن انتخاب شده را با Google Translate ترجمه کنید"
     },
     "context_menus_title": {
         "message": "ترجمه متن انتخاب شده"
@@ -48,7 +48,7 @@
         "message": "هیچ سایتی انتخاب نشده است"
     },
     "options_general_show_on_selected": {
-        "message": "هنگامی که متن انتخاب شده است پنجره بازشو نمایش داده شود"
+        "message": "هنگام انتخاب متن، پنجره بازشو نمایش داده شود"
     },
     "options_general_show_on_selected_hint": {
         "message": "پنجره پاپ آپ بلافاصله پس از انتخاب متن ظاهر می شود."
@@ -197,6 +197,15 @@
     "options_history_enable": {
         "message": "فعال کردن سابقه"
     },
+    "options_history_sort_asc": {
+        "message": "مرتب سازی صعودی"
+    },
+    "options_history_sort_desc": {
+        "message": "مرتب سازی نزولی"
+    },
+    "options_history_menu_download": {
+        "message": "دانلود تاریخچه به صورت فایل"
+    },
     "options_clear_history": {
         "message": "حذف تاریخچه"
     },
@@ -205,6 +214,18 @@
     },
     "options_delete_items": {
         "message": "موارد حذف خواهند شد"
+    },
+    "options_history_exp_date": {
+        "message": "تاریخ"
+    },
+    "options_history_exp_direction": {
+        "message": "جهت"
+    },
+    "options_history_exp_original": {
+        "message": "اصل"
+    },
+    "options_history_exp_translation": {
+        "message": "ترجمه"
     },
     "options_tts_language": {
         "message": "زبان"
@@ -346,6 +367,9 @@
     },
     "tooltip_clear_search": {
         "message": "جستجو را پاک کنید"
+    },
+    "snackbar_copied": {
+        "message": "کپی شده"
     },
     "date_today": {
         "message": "امروز"
@@ -543,7 +567,7 @@
         "message": "چوواش"
     },
     "language_cy": {
-        "message": "ولزی"
+        "message": "ولز"
     },
     "language_da": {
         "message": "دانمارکی"

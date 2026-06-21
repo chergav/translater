@@ -197,6 +197,15 @@
     "options_history_enable": {
         "message": "Iespējot vēsturi"
     },
+    "options_history_sort_asc": {
+        "message": "Kārtot augošā secībā"
+    },
+    "options_history_sort_desc": {
+        "message": "Kārtot dilstošā secībā"
+    },
+    "options_history_menu_download": {
+        "message": "Lejupielādes vēsture kā fails"
+    },
     "options_clear_history": {
         "message": "Dzēst vēsturi"
     },
@@ -205,6 +214,18 @@
     },
     "options_delete_items": {
         "message": "vienumi tiks dzēsti"
+    },
+    "options_history_exp_date": {
+        "message": "Datums"
+    },
+    "options_history_exp_direction": {
+        "message": "Virziens"
+    },
+    "options_history_exp_original": {
+        "message": "Oriģināls"
+    },
+    "options_history_exp_translation": {
+        "message": "Tulkošana"
     },
     "options_tts_language": {
         "message": "Valoda"
@@ -324,7 +345,7 @@
         "message": "Kopēt starpliktuvē"
     },
     "tooltip_copy_not_support_on_http": {
-        "message": "HTTP vietnēs kopēšana netiek atbalstīta"
+        "message": "Kopēšana netiek atbalstīta HTTP vietnēs"
     },
     "tooltip_listen_to_the_text": {
         "message": "Klausieties tekstu"
@@ -346,6 +367,9 @@
     },
     "tooltip_clear_search": {
         "message": "Notīrīt meklēšanu"
+    },
+    "snackbar_copied": {
+        "message": "Kopēts"
     },
     "date_today": {
         "message": "šodien"
@@ -402,7 +426,7 @@
         "message": "Acholi"
     },
     "language_af": {
-        "message": "afrikandu"
+        "message": "afrikāņi"
     },
     "language_ak": {
         "message": "Tvi (Akan)"
@@ -708,7 +732,7 @@
         "message": "inuktut (latīņu)"
     },
     "language_iw": {
-        "message": "ivrits"
+        "message": "ebreju valoda"
     },
     "language_ja": {
         "message": "japāņi"
@@ -945,7 +969,7 @@
         "message": "Rundi"
     },
     "language_ro": {
-        "message": "rumāņu"
+        "message": "rumāņu valoda"
     },
     "language_rom": {
         "message": "romu valoda"

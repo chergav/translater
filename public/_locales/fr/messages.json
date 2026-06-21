@@ -197,6 +197,15 @@
     "options_history_enable": {
         "message": "Activer l'historique"
     },
+    "options_history_sort_asc": {
+        "message": "Trier par ordre croissant"
+    },
+    "options_history_sort_desc": {
+        "message": "Trier par ordre décroissant"
+    },
+    "options_history_menu_download": {
+        "message": "Télécharger l'historique sous forme de fichier"
+    },
     "options_clear_history": {
         "message": "Supprimer l'historique"
     },
@@ -205,6 +214,18 @@
     },
     "options_delete_items": {
         "message": "les éléments seront supprimés"
+    },
+    "options_history_exp_date": {
+        "message": "Date"
+    },
+    "options_history_exp_direction": {
+        "message": "Direction"
+    },
+    "options_history_exp_original": {
+        "message": "Originale"
+    },
+    "options_history_exp_translation": {
+        "message": "Traduction"
     },
     "options_tts_language": {
         "message": "Langue"
@@ -347,6 +368,9 @@
     "tooltip_clear_search": {
         "message": "Effacer la recherche"
     },
+    "snackbar_copied": {
+        "message": "Copié"
+    },
     "date_today": {
         "message": "aujourd'hui"
     },
@@ -447,7 +471,7 @@
         "message": "Baoulé"
     },
     "language_be": {
-        "message": "biélorusse"
+        "message": "Biélorusse"
     },
     "language_bem": {
         "message": "Bemba"
@@ -951,7 +975,7 @@
         "message": "Romani"
     },
     "language_ru": {
-        "message": "Russe"
+        "message": "russe"
     },
     "language_rw": {
         "message": "kinyarwanda"
@@ -1047,7 +1071,7 @@
         "message": "Thaï"
     },
     "language_ti": {
-        "message": "Tigrinya"
+        "message": "Tigrigna"
     },
     "language_tiv": {
         "message": "TIV"

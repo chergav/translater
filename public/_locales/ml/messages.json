@@ -174,7 +174,7 @@
         "message": "ഇഷ്ടാനുസൃത തീം"
     },
     "options_appearance_edit_custom_theme": {
-        "message": "ഇഷ്‌ടാനുസൃത തീം എഡിറ്റ് ചെയ്യുക"
+        "message": "ഇഷ്ടാനുസൃത തീം എഡിറ്റ് ചെയ്യുക"
     },
     "options_appearance_custom_theme_preview": {
         "message": "പ്രിവ്യൂ"
@@ -197,6 +197,15 @@
     "options_history_enable": {
         "message": "ചരിത്രം പ്രവർത്തനക്ഷമമാക്കുക"
     },
+    "options_history_sort_asc": {
+        "message": "ആരോഹണക്രമത്തിൽ അടുക്കുക"
+    },
+    "options_history_sort_desc": {
+        "message": "അവരോഹണക്രമം അടുക്കുക"
+    },
+    "options_history_menu_download": {
+        "message": "ചരിത്രം ഒരു ഫയലായി ഡൗൺലോഡ് ചെയ്യുക"
+    },
     "options_clear_history": {
         "message": "ചരിത്രം ഇല്ലാതാക്കുക"
     },
@@ -205,6 +214,18 @@
     },
     "options_delete_items": {
         "message": "ഇനങ്ങൾ ഇല്ലാതാക്കപ്പെടും"
+    },
+    "options_history_exp_date": {
+        "message": "തീയതി"
+    },
+    "options_history_exp_direction": {
+        "message": "ദിശ"
+    },
+    "options_history_exp_original": {
+        "message": "ഒറിജിനൽ"
+    },
+    "options_history_exp_translation": {
+        "message": "വിവർത്തനം"
     },
     "options_tts_language": {
         "message": "ഭാഷ"
@@ -347,6 +368,9 @@
     "tooltip_clear_search": {
         "message": "തിരയൽ മായ്‌ക്കുക"
     },
+    "snackbar_copied": {
+        "message": "പകർത്തി"
+    },
     "date_today": {
         "message": "ഇന്ന്"
     },
@@ -426,7 +450,7 @@
         "message": "കാലാവധി"
     },
     "language_ay": {
-        "message": "അയ്മാര"
+        "message": "അയ്മര"
     },
     "language_az": {
         "message": "അസർബൈജാനി"
@@ -507,13 +531,13 @@
         "message": "സെബുവാനോ"
     },
     "language_cgg": {
-        "message": "കിഗാ"
+        "message": "കിഗ"
     },
     "language_ch": {
         "message": "ചമോറോ"
     },
     "language_chk": {
-        "message": "ചുകീസ്"
+        "message": "ചുക്കീസ്"
     },
     "language_chm": {
         "message": "മേഡോ മാരി"
@@ -702,7 +726,7 @@
         "message": "ഇറ്റാലിയൻ"
     },
     "language_iu": {
-        "message": "ഇനുക്തുട്ട് (സിലബിക്സ്)"
+        "message": "Inuktut (സിലബിക്സ്)"
     },
     "language_iu_Latn": {
         "message": "ഇനുക്തുട്ട് (ലാറ്റിൻ)"

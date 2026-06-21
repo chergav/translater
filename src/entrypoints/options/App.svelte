@@ -53,6 +53,8 @@
 	</div>
 </main>
 
+<Toaster invert position="bottom-left" richColors theme={storage.settings.theme} />
+
 <svelte:head>
 	<title>{browser.i18n.getMessage('options_title')}</title>
 </svelte:head>
@@ -84,6 +86,7 @@ import VolumeUp from '~icons/material-symbols/volume-up-rounded';
 import HistoryRounded from '~icons/material-symbols/history-rounded';
 import HelpOutline from '~icons/material-symbols/help-outline-rounded';
 import Help from '~icons/material-symbols/help-rounded';
+import { Toaster } from 'svelte-sonner';
 
 type TabsHash = '#general' | '#providers' | '#appearance' | '#tts' | '#history' | '#support';
 

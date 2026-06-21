@@ -126,7 +126,7 @@
         "message": "单击外部时，弹出窗口保持打开状态。"
     },
     "options_providers_provider": {
-        "message": "提供者"
+        "message": "提供商"
     },
     "options_providers_model": {
         "message": "型号"
@@ -197,6 +197,15 @@
     "options_history_enable": {
         "message": "启用历史记录"
     },
+    "options_history_sort_asc": {
+        "message": "升序排序"
+    },
+    "options_history_sort_desc": {
+        "message": "降序排序"
+    },
+    "options_history_menu_download": {
+        "message": "将历史记录下载为文件"
+    },
     "options_clear_history": {
         "message": "删除历史记录"
     },
@@ -205,6 +214,18 @@
     },
     "options_delete_items": {
         "message": "项目将被删除"
+    },
+    "options_history_exp_date": {
+        "message": "日期"
+    },
+    "options_history_exp_direction": {
+        "message": "方向"
+    },
+    "options_history_exp_original": {
+        "message": "原创"
+    },
+    "options_history_exp_translation": {
+        "message": "翻译"
     },
     "options_tts_language": {
         "message": "语言"
@@ -346,6 +367,9 @@
     },
     "tooltip_clear_search": {
         "message": "清除搜索"
+    },
+    "snackbar_copied": {
+        "message": "已复制"
     },
     "date_today": {
         "message": "今天"
@@ -507,7 +531,7 @@
         "message": "宿务语"
     },
     "language_cgg": {
-        "message": "基贺"
+        "message": "基加"
     },
     "language_ch": {
         "message": "查莫罗语"

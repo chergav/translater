@@ -197,6 +197,15 @@
     "options_history_enable": {
         "message": "Активиране на историята"
     },
+    "options_history_sort_asc": {
+        "message": "Подреждане във възходящ ред"
+    },
+    "options_history_sort_desc": {
+        "message": "Сортиране в низходящ ред"
+    },
+    "options_history_menu_download": {
+        "message": "Изтегляне на хронология като файл"
+    },
     "options_clear_history": {
         "message": "Изтриване на историята"
     },
@@ -205,6 +214,18 @@
     },
     "options_delete_items": {
         "message": "елементи ще бъдат изтрити"
+    },
+    "options_history_exp_date": {
+        "message": "Дата"
+    },
+    "options_history_exp_direction": {
+        "message": "Посока"
+    },
+    "options_history_exp_original": {
+        "message": "Оригинален"
+    },
+    "options_history_exp_translation": {
+        "message": "Превод"
     },
     "options_tts_language": {
         "message": "език"
@@ -346,6 +367,9 @@
     },
     "tooltip_clear_search": {
         "message": "Изчистете търсенето"
+    },
+    "snackbar_copied": {
+        "message": "Копирано"
     },
     "date_today": {
         "message": "днес"

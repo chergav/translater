@@ -197,6 +197,15 @@
     "options_history_enable": {
         "message": "ઇતિહાસ સક્ષમ કરો"
     },
+    "options_history_sort_asc": {
+        "message": "ચડતા સૉર્ટ કરો"
+    },
+    "options_history_sort_desc": {
+        "message": "ઉતરતા ક્રમમાં સૉર્ટ કરો"
+    },
+    "options_history_menu_download": {
+        "message": "ફાઇલ તરીકે ઇતિહાસ ડાઉનલોડ કરો"
+    },
     "options_clear_history": {
         "message": "ઇતિહાસ કાઢી નાખો"
     },
@@ -205,6 +214,18 @@
     },
     "options_delete_items": {
         "message": "વસ્તુઓ કાઢી નાખવામાં આવશે"
+    },
+    "options_history_exp_date": {
+        "message": "તારીખ"
+    },
+    "options_history_exp_direction": {
+        "message": "દિશા"
+    },
+    "options_history_exp_original": {
+        "message": "મૂળ"
+    },
+    "options_history_exp_translation": {
+        "message": "અનુવાદ"
     },
     "options_tts_language": {
         "message": "ભાષા"
@@ -346,6 +367,9 @@
     },
     "tooltip_clear_search": {
         "message": "શોધ સાફ કરો"
+    },
+    "snackbar_copied": {
+        "message": "નકલ કરી"
     },
     "date_today": {
         "message": "આજે"
@@ -609,7 +633,7 @@
         "message": "ફિજિયન"
     },
     "language_fo": {
-        "message": "ફેરોઝ"
+        "message": "ફરોઝ"
     },
     "language_fon": {
         "message": "ફોન"
@@ -672,7 +696,7 @@
         "message": "ક્રોએશિયન"
     },
     "language_hrx": {
-        "message": "હંસરિક"
+        "message": "હંસરીક"
     },
     "language_ht": {
         "message": "હૈતીયન ક્રેઓલ"
@@ -885,7 +909,7 @@
         "message": "નોર્વેજીયન"
     },
     "language_nr": {
-        "message": "Ndebele (દક્ષિણ)"
+        "message": "નેડેબેલે (દક્ષિણ)"
     },
     "language_nso": {
         "message": "સેપેડી"

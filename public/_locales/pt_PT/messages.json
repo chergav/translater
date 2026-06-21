@@ -197,6 +197,15 @@
     "options_history_enable": {
         "message": "Ativar histórico"
     },
+    "options_history_sort_asc": {
+        "message": "Classificar em ordem crescente"
+    },
+    "options_history_sort_desc": {
+        "message": "Classificar em ordem decrescente"
+    },
+    "options_history_menu_download": {
+        "message": "Baixe o histórico como um arquivo"
+    },
     "options_clear_history": {
         "message": "Excluir histórico"
     },
@@ -205,6 +214,18 @@
     },
     "options_delete_items": {
         "message": "itens serão excluídos"
+    },
+    "options_history_exp_date": {
+        "message": "Data"
+    },
+    "options_history_exp_direction": {
+        "message": "Direção"
+    },
+    "options_history_exp_original": {
+        "message": "Originais"
+    },
+    "options_history_exp_translation": {
+        "message": "Tradução"
     },
     "options_tts_language": {
         "message": "Idioma"
@@ -346,6 +367,9 @@
     },
     "tooltip_clear_search": {
         "message": "Limpar pesquisa"
+    },
+    "snackbar_copied": {
+        "message": "Copiado"
     },
     "date_today": {
         "message": "hoje"
@@ -825,7 +849,7 @@
         "message": "crioulo das Maurícias"
     },
     "language_mg": {
-        "message": "Malgaxe"
+        "message": "malgaxe"
     },
     "language_mh": {
         "message": "marshallês"
@@ -840,7 +864,7 @@
         "message": "Macedônio"
     },
     "language_ml": {
-        "message": "Malaiala"
+        "message": "malaiala"
     },
     "language_mn": {
         "message": "Mongol"
@@ -858,7 +882,7 @@
         "message": "Malaio (Jawi)"
     },
     "language_mt": {
-        "message": "maltês"
+        "message": "Maltês"
     },
     "language_mwr": {
         "message": "Marwadi"

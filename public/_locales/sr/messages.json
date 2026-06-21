@@ -66,7 +66,7 @@
         "message": "Покажи само превод, ништа друго."
     },
     "options_general_layout_vert": {
-        "message": "Вертицал Лаиоут"
+        "message": "Вертикални распоред"
     },
     "options_general_layout_vert_hint": {
         "message": "Превод се појављује испод оригинала (само у пуном режиму)."
@@ -197,6 +197,15 @@
     "options_history_enable": {
         "message": "Омогући историју"
     },
+    "options_history_sort_asc": {
+        "message": "Сортирај узлазно"
+    },
+    "options_history_sort_desc": {
+        "message": "Сортирај опадајуће"
+    },
+    "options_history_menu_download": {
+        "message": "Историја преузимања у облику датотеке"
+    },
     "options_clear_history": {
         "message": "Избриши историју"
     },
@@ -205,6 +214,18 @@
     },
     "options_delete_items": {
         "message": "ставке ће бити избрисане"
+    },
+    "options_history_exp_date": {
+        "message": "Датум"
+    },
+    "options_history_exp_direction": {
+        "message": "Правац"
+    },
+    "options_history_exp_original": {
+        "message": "Оригинал"
+    },
+    "options_history_exp_translation": {
+        "message": "Превод"
     },
     "options_tts_language": {
         "message": "Језик"
@@ -249,7 +270,7 @@
         "message": "Ектра Ларге"
     },
     "options_support_msg": {
-        "message": "Ако нешто не ради или имате било какве сугестије, јавите ми овде"
+        "message": "Ако нешто не ради или имате било какве предлоге, јавите ми овде"
     },
     "options_support_donations": {
         "message": "Ако желите да подржите овај бесплатни софтвер"
@@ -346,6 +367,9 @@
     },
     "tooltip_clear_search": {
         "message": "Обриши претрагу"
+    },
+    "snackbar_copied": {
+        "message": "Копирано"
     },
     "date_today": {
         "message": "данас"

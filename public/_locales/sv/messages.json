@@ -197,6 +197,15 @@
     "options_history_enable": {
         "message": "Aktivera historik"
     },
+    "options_history_sort_asc": {
+        "message": "Sortera stigande"
+    },
+    "options_history_sort_desc": {
+        "message": "Sortera fallande"
+    },
+    "options_history_menu_download": {
+        "message": "Ladda ner historik som en fil"
+    },
     "options_clear_history": {
         "message": "Ta bort historik"
     },
@@ -205,6 +214,18 @@
     },
     "options_delete_items": {
         "message": "objekt kommer att raderas"
+    },
+    "options_history_exp_date": {
+        "message": "Datum"
+    },
+    "options_history_exp_direction": {
+        "message": "Riktning"
+    },
+    "options_history_exp_original": {
+        "message": "Original"
+    },
+    "options_history_exp_translation": {
+        "message": "Översättning"
     },
     "options_tts_language": {
         "message": "Språk"
@@ -346,6 +367,9 @@
     },
     "tooltip_clear_search": {
         "message": "Rensa sökning"
+    },
+    "snackbar_copied": {
+        "message": "Kopierade"
     },
     "date_today": {
         "message": "idag"
@@ -678,7 +702,7 @@
         "message": "haitisk kreol"
     },
     "language_hu": {
-        "message": "ungerska"
+        "message": "Ungerska"
     },
     "language_hy": {
         "message": "armeniska"

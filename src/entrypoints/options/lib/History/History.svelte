@@ -22,17 +22,25 @@
 				{/each}
 			</Select>
 		</div>
-		<div>
-			<Button
-				color="text"
-				disabled={!storageHistory.settings.history.length}
-				label={browser.i18n.getMessage('options_clear_history')}
-				onclick={openDeleteDialog}
-			>
-				{#snippet leadingIcon()}
-					<Delete />
-				{/snippet}
-			</Button>
+		<div class="flex items-center gap-2">
+			<div class="flex items-center gap-0.5">
+				{#each sortHistory as { value, title, Icon } (value)}
+					<ConnectedButtonRadio
+						name="sortOrder"
+						color="tonal"
+						size="xs"
+						{title}
+						{value}
+						bind:group={storageHistory.sortOrder}
+					>
+						{#snippet icon()}
+							<Icon />
+						{/snippet}
+						<List class="size-5" />
+					</ConnectedButtonRadio>
+				{/each}
+			</div>
+			<HistoryMenu />
 		</div>
 	</div>
 </div>
@@ -49,26 +57,35 @@
 	{/each}
 </div>
 
-<div class="absolute">
-	<!-- div to avoid parent styles -->
-	<DialogDeleteHistory bind:open={dialogDeleteHistoryOpen} />
-</div>
-
 <script lang="ts">
+import type { Component } from 'svelte';
 import { storage } from '~/shared/storage.svelte';
-import { storageHistory } from './storageHistory.svelte';
+import { storageHistory, SortOrder } from './storageHistory.svelte';
 import Select from '~/lib/base/Select.svelte';
 import Switch from '~/lib/base/Switch.svelte';
-import Button from '~/lib/base/Button.svelte';
+import ConnectedButtonRadio from '~/lib/base/ConnectedButtonRadio.svelte';
 import SegmentedList from '~/lib/base/SegmentedList.svelte';
 import HistoryEntry from './lib/HistoryEntry.svelte';
-import DialogDeleteHistory from './lib/DialogDeleteHistory.svelte';
+import HistoryMenu from './lib/HistoryMenu.svelte';
 import HistoryRounded from '~icons/material-symbols/history-rounded';
-import Delete from '~icons/material-symbols/delete-outline-rounded';
+import List from '~icons/material-symbols/list-rounded';
+import Ascending from '~icons/material-symbols/arrow-upward-alt-rounded';
+import Descending from '~icons/material-symbols/arrow-downward-alt-rounded';
 
-let dialogDeleteHistoryOpen = $state<boolean>(false);
-
-function openDeleteDialog() {
-	dialogDeleteHistoryOpen = true;
-}
+const sortHistory: {
+	value: SortOrder
+	title: string
+	Icon: Component
+}[] = [
+	{
+		value: SortOrder.Asc,
+		title: browser.i18n.getMessage('options_history_sort_asc'),
+		Icon: Ascending,
+	},
+	{
+		value: SortOrder.Desc,
+		title: browser.i18n.getMessage('options_history_sort_desc'),
+		Icon: Descending,
+	},
+];
 </script>

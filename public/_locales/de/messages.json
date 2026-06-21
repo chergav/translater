@@ -186,7 +186,7 @@
         "message": "Quellfarbe"
     },
     "options_appearance_custom_theme_source_hint": {
-        "message": "Wählen Sie eine Farbe aus, um Themen zu erstellen"
+        "message": "Wählen Sie eine Farbe aus, um Themen zu generieren"
     },
     "options_appearance_custom_theme_apply": {
         "message": "Thema anwenden"
@@ -197,6 +197,15 @@
     "options_history_enable": {
         "message": "Verlauf aktivieren"
     },
+    "options_history_sort_asc": {
+        "message": "Aufsteigend sortieren"
+    },
+    "options_history_sort_desc": {
+        "message": "Absteigend sortieren"
+    },
+    "options_history_menu_download": {
+        "message": "Laden Sie den Verlauf als Datei herunter"
+    },
     "options_clear_history": {
         "message": "Verlauf löschen"
     },
@@ -205,6 +214,18 @@
     },
     "options_delete_items": {
         "message": "Elemente werden gelöscht"
+    },
+    "options_history_exp_date": {
+        "message": "Datum"
+    },
+    "options_history_exp_direction": {
+        "message": "Richtung"
+    },
+    "options_history_exp_original": {
+        "message": "Original"
+    },
+    "options_history_exp_translation": {
+        "message": "Übersetzung"
     },
     "options_tts_language": {
         "message": "Sprache"
@@ -346,6 +367,9 @@
     },
     "tooltip_clear_search": {
         "message": "Suche löschen"
+    },
+    "snackbar_copied": {
+        "message": "Kopiert"
     },
     "date_today": {
         "message": "heute"
