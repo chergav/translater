@@ -95,30 +95,29 @@ async function copyHistory() {
 }
 
 async function grantPermission() {
-	const result = await browser.permissions.contains({ permissions: ['downloads'] });
-
-	if (result) return true;
-
-	const granted = await browser.permissions.request({ permissions: ['downloads'] });
-
-	return granted;
+	return await browser.permissions.request({ permissions: ['downloads'] });
 }
 
 async function download(textContent: string) {
 	const blob = new Blob([textContent], { type: 'text/plain' });
 	const url = URL.createObjectURL(blob);
 
-	await browser.downloads.download({
+	const downloadId = await browser.downloads.download({
 		filename: 'history.txt',
 		url,
 		saveAs: true,
 	});
 
-	browser.downloads.onChanged.addListener(delta => {
+	function onChanged(delta: Browser.downloads.DownloadDelta) {
+		if (delta.id !== downloadId) return;
+
 		if (delta.state?.current === 'complete' || delta.state?.current === 'interrupted') {
 			URL.revokeObjectURL(url);
+			browser.downloads.onChanged.removeListener(onChanged);
 		}
-	});
+	}
+
+	browser.downloads.onChanged.addListener(onChanged);
 }
 
 async function downloadHistory() {
