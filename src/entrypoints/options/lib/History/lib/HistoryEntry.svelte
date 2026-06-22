@@ -11,79 +11,51 @@
 				</span>
 			{/if}
 		</div>
-		<!-- <div> -->
-			<!-- <IconButton
-				color="standard"
-				onclick={() => copyToClipboard('text')}
-				size="xs"
-				title="Copy as Plain Text"
-			>
-				<Copy />
-			</IconButton>
+		<span
+			class="relative"
+			onclickoutside={() => menuOpen = false}
+			use:clickOutside
+		>
 			<IconButton
+				active={menuOpen}
 				color="standard"
-				onclick={() => copyToClipboard('markdown')}
+				onclick={() => menuOpen = !menuOpen}
 				size="xs"
-				title="Copy as Markdown"
+				title="More"
+				bind:ref={menuTrigger}
 			>
-				<Copy />
+				<More />
 			</IconButton>
-			<IconButton
-				color="standard"
-				onclick={() => {
-					storageHistory.delete(historyItem.time);
-				}}
-				size="xs"
-				title={browser.i18n.getMessage('options_delete_history_item')}
+			<Menu
+				align="end"
+				triggerRef={menuTrigger}
+				bind:open={menuOpen}
 			>
-				<Delete />
-			</IconButton> -->
-			<span
-				class="relative cursor-default"
-				onclickoutside={() => menuOpen = false}
-				use:clickOutside
-			>
-				<IconButton
-					active={menuOpen}
-					color="standard"
-					onclick={() => menuOpen = !menuOpen}
+				<MenuItem
+					disabled={!storageHistory.settings.history.length}
+					label={browser.i18n.getMessage('tooltip_copy_to_clipboard')}
+					onclick={copyHistoryItem}
 					size="xs"
-					title="More"
-					bind:ref={menuTrigger}
 				>
-					<More />
-				</IconButton>
-				<Menu
-					align="end"
-					triggerRef={menuTrigger}
-					bind:open={menuOpen}
+					{#snippet leadingIcon()}
+						<Copy />
+					{/snippet}
+				</MenuItem>
+				<div class="mx-2 my-1 h-px bg-color-outline-variant"></div>
+				<MenuItem
+					disabled={!storageHistory.settings.history.length}
+					label={browser.i18n.getMessage('options_delete_history_item')}
+					onclick={() => {
+						storageHistory.delete(historyItem.time);
+					}}
+					size="xs"
 				>
-					<MenuItem
-						disabled={!storageHistory.settings.history.length}
-						label={browser.i18n.getMessage('tooltip_copy_to_clipboard')}
-						onclick={copyHistoryItem}
-						size="xs"
-					>
-						{#snippet leadingIcon()}
-							<Copy />
-						{/snippet}
-					</MenuItem>
-					<div class="mx-2 my-1 h-px bg-color-outline-variant"></div>
-					<MenuItem
-						disabled={!storageHistory.settings.history.length}
-						label={browser.i18n.getMessage('options_delete_history_item')}
-						onclick={() => {
-							storageHistory.delete(historyItem.time);
-						}}
-						size="xs"
-					>
-						{#snippet leadingIcon()}
-							<Delete />
-						{/snippet}
-					</MenuItem>
-				</Menu>
-			</span>
-		<!-- </div> -->
+					{#snippet leadingIcon()}
+						<Delete />
+					{/snippet}
+				</MenuItem>
+			</Menu>
+		</span>
 	</div>
 	<div class:line-clamp-1={truncateOrig}>
 		{historyItem.orig}

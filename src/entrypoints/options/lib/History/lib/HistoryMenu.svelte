@@ -1,5 +1,5 @@
 <span
-	class="relative cursor-default"
+	class="relative"
 	onclickoutside={() => menuOpen = false}
 	use:clickOutside
 >
@@ -49,7 +49,6 @@
 	</Menu>
 </span>
 
-<!-- div to avoid parent styles -->
 <div class="absolute">
 	<DialogDeleteHistory bind:open={dialogDeleteHistoryOpen} />
 </div>
@@ -100,7 +99,7 @@ async function grantPermission() {
 
 	if (result) return true;
 
-	const granted = browser.permissions.request({ permissions: ['downloads'] });
+	const granted = await browser.permissions.request({ permissions: ['downloads'] });
 
 	return granted;
 }
